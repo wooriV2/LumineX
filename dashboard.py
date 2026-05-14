@@ -386,10 +386,53 @@ with tab1:
     col1, col2 = st.columns(2)
     with col1:
         selected_preset = st.selectbox("🎨 프리셋 선택", options=presets, format_func=lambda x: f"• {x}")
-    with col2:
-        preset_appearance = st.selectbox("👩 모델 외모 — 인종/국적", list(MODEL_APPEARANCE.keys()), key="preset_appearance")
 
-    preset_body = st.selectbox("👤 모델 체형 — 바디 타입", list(MODEL_TYPES.keys()), key="preset_body")
+    # ── 8개 오버라이드 섹션 ──────────────────────────────
+    NONE = "None — 프리셋 기본값 사용"
+
+    col1, col2 = st.columns(2)
+    with col1:
+        preset_appearance = st.selectbox(
+            "👩 인종/국적",
+            [NONE] + list(MODEL_APPEARANCE.keys()),
+            key="preset_appearance"
+        )
+        preset_body = st.selectbox(
+            "👤 체형",
+            [NONE] + list(MODEL_TYPES.keys()),
+            key="preset_body"
+        )
+        preset_outfit = st.selectbox(
+            "👗 의상",
+            [NONE] + list(OUTFIT_TYPES.keys()),
+            key="preset_outfit"
+        )
+        preset_material = st.selectbox(
+            "🧵 소재",
+            [NONE] + list(MATERIALS.keys()),
+            key="preset_material"
+        )
+    with col2:
+        preset_framing = st.selectbox(
+            "📸 프레이밍",
+            [NONE] + list(CAMERA_ANGLES.keys()),
+            key="preset_framing"
+        )
+        preset_footwear = st.selectbox(
+            "👠 신발",
+            [NONE] + list(FOOTWEAR.keys()),
+            key="preset_footwear"
+        )
+        preset_lighting = st.selectbox(
+            "💡 조명 오버라이드",
+            [NONE] + list(LIGHTING.keys()),
+            key="preset_lighting"
+        )
+        preset_style = st.selectbox(
+            "🎬 스타일 레퍼런스",
+            [NONE] + list(STYLES.keys()),
+            key="preset_style"
+        )
 
     col_a, col_b, col_c = st.columns([1, 1, 2])
     with col_a:
@@ -400,20 +443,37 @@ with tab1:
     if "preset_prompt" not in st.session_state:
         st.session_state.preset_prompt = ""
 
+    def build_preset_overrides() -> str:
+        """선택된 오버라이드 요소들을 프롬프트 문자열로 조합"""
+        parts = []
+        if preset_appearance != NONE:
+            parts.append(f"Model appearance: {MODEL_APPEARANCE[preset_appearance]}.")
+        if preset_body != NONE:
+            parts.append(f"Body: {MODEL_TYPES[preset_body]}.")
+        if preset_outfit != NONE:
+            od = OUTFIT_TYPES[preset_outfit]
+            outfit_str = od["gemini"] if isinstance(od, dict) else od
+            parts.append(f"Wearing: {outfit_str}.")
+        if preset_material != NONE:
+            parts.append(f"Material: {MATERIALS[preset_material]}.")
+        if preset_framing != NONE:
+            parts.append(f"Framing: {CAMERA_ANGLES[preset_framing]}.")
+        if preset_footwear != NONE:
+            parts.append(f"{FOOTWEAR[preset_footwear]}.")
+        if preset_lighting != NONE:
+            parts.append(f"Lighting override: {LIGHTING[preset_lighting]}.")
+        if preset_style != NONE:
+            parts.append(f"Style: {STYLES[preset_style]}.")
+        return " ".join(parts)
+
     if btn_ai and selected_preset:
-        st.session_state.preset_prompt = ""  # 초기화
+        st.session_state.preset_prompt = ""
         with st.spinner("Claude가 프롬프트 생성 중..."):
             try:
                 raw = generate_prompt_with_ai(selected_preset)
-                appearance = MODEL_APPEARANCE.get(preset_appearance, "")
-                body = MODEL_TYPES.get(preset_body, "")
-                prefix = []
-                if appearance:
-                    prefix.append(appearance.split(',')[0])
-                if body:
-                    prefix.append(body.split(',')[0])
-                if prefix:
-                    raw = f"Model: {', '.join(prefix)}. " + raw
+                overrides = build_preset_overrides()
+                if overrides:
+                    raw = overrides + " " + raw
                 aspect_desc = ASPECT_RATIOS.get(global_aspect, "")
                 if aspect_desc:
                     raw += f" {aspect_desc}, vertical portrait orientation, taller than wide."
@@ -422,21 +482,42 @@ with tab1:
                 st.error(f"오류: {str(e)}")
 
     if btn_quick and selected_preset:
-        st.session_state.preset_prompt = ""  # 초기화
+        st.session_state.preset_prompt = ""
         preset = load_preset(selected_preset)
-        raw = build_prompt(preset)
-        appearance = MODEL_APPEARANCE.get(preset_appearance, "")
-        body = MODEL_TYPES.get(preset_body, "")
-        prefix = []
-        if appearance:
-            prefix.append(appearance)
-        if body:
-            prefix.append(body)
-        if prefix:
-            raw = f"Model appearance and body: {', '.join(prefix)}. " + raw
-        aspect_desc = ASPECT_RATIOS.get(global_aspect, "")
-        if aspect_desc:
+        overrides = build_preset_overrides()
+        aspect_desc = ASPECT_RATIOS.get(global_aspect, "portrait 2:3 vertical")
+
+        if global_platform == "Gemini":
+            raw = build_prompt(preset)
+            if overrides:
+                raw = overrides + " " + raw
             raw += f" {aspect_desc}, vertical portrait orientation, taller than wide."
+
+        elif global_platform == "ChatGPT (DALL-E)":
+            raw = build_prompt(preset)
+            if overrides:
+                raw = overrides + " " + raw
+            raw += (
+                f" {aspect_desc}. "
+                f"Photorealistic, hyperrealistic skin texture, natural pore detail, "
+                f"professional color grading, award-winning fashion photography, "
+                f"stunning editorial masterpiece quality."
+            )
+
+        else:  # Midjourney
+            raw = build_prompt(preset)
+            if overrides:
+                raw = overrides + " " + raw
+            ar_map = {
+                "세로 2:3 — 인물 기본": "2:3",
+                "세로 3:4 — 전신샷": "3:4",
+                "가로 16:9 — 시네마틱": "16:9",
+                "가로 4:3 — 화보": "4:3",
+                "정방형 1:1 — 인스타": "1:1",
+            }
+            ar = ar_map.get(global_aspect, "2:3")
+            raw += f" --ar {ar} --style raw --q 2"
+
         st.session_state.preset_prompt = raw
 
     if st.session_state.preset_prompt:
