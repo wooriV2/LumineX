@@ -561,7 +561,7 @@ with tab2:
 
     col1, col2 = st.columns(2)
     with col1:
-        appearance  = st.selectbox("👩 모델 외모 — 인종/국적",      list(MODEL_APPEARANCE.keys()),   index=list(MODEL_APPEARANCE.keys()).index(st.session_state.get("r_appearance", list(MODEL_APPEARANCE.keys())[0])), key="manual_appearance")
+        appearance  = st.selectbox("👩 모델 외모 — 인종/국적 ",     list(MODEL_APPEARANCE.keys()),   index=list(MODEL_APPEARANCE.keys()).index(st.session_state.get("r_appearance", list(MODEL_APPEARANCE.keys())[0])))
         model_type  = st.selectbox("👤 모델 타입 — 체형과 비율",    list(MODEL_TYPES.keys()),        index=list(MODEL_TYPES.keys()).index(st.session_state.get("r_model", list(MODEL_TYPES.keys())[0])))
         outfit      = st.selectbox("👗 의상 타입 — 스타일",         list(OUTFIT_TYPES.keys()),       index=list(OUTFIT_TYPES.keys()).index(st.session_state.get("r_outfit", list(OUTFIT_TYPES.keys())[0])))
         material    = st.selectbox("🧵 소재 — 옷감 질감",           list(MATERIALS.keys()),          index=list(MATERIALS.keys()).index(st.session_state.get("r_material", list(MATERIALS.keys())[0])))
