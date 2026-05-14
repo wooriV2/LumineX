@@ -444,11 +444,18 @@ with tab1:
 
     col_a, col_b, col_c = st.columns([1, 1, 2])
     with col_a:
-        btn_ai = st.button("🤖 AI 생성", use_container_width=True, type="primary")
+        btn_ai = st.button("🤖 AI 생성", use_container_width=True, type="primary", key="preset_btn_ai")
     with col_b:
-        btn_quick = st.button("⚡ 빠른 생성", use_container_width=True)
+        btn_quick = st.button("⚡ 빠른 생성", use_container_width=True, key="preset_btn_quick")
 
     if "preset_prompt" not in st.session_state:
+        st.session_state.preset_prompt = ""
+    if "preset_selected" not in st.session_state:
+        st.session_state.preset_selected = ""
+
+    # 프리셋 변경 감지 → 자동 초기화
+    if selected_preset != st.session_state.preset_selected:
+        st.session_state.preset_selected = selected_preset
         st.session_state.preset_prompt = ""
 
     def build_preset_overrides() -> dict:
