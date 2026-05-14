@@ -1,20 +1,23 @@
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
 
-# ─── Gemini ───────────────────────────────────────────
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-GEMINI_MODEL = "gemini-2.5-flash-image"
+try:
+    import streamlit as st
+    GEMINI_API_KEY    = st.secrets.get("GEMINI_API_KEY", os.getenv("GEMINI_API_KEY", ""))
+    ANTHROPIC_API_KEY = st.secrets.get("ANTHROPIC_API_KEY", os.getenv("ANTHROPIC_API_KEY", ""))
+except Exception:
+    GEMINI_API_KEY    = os.getenv("GEMINI_API_KEY", "")
+    ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 
-# ─── 출력 설정 ────────────────────────────────────────
-OUTPUT_DIR     = os.path.join(os.path.dirname(__file__), "output")
-IMAGE_FORMAT   = "png"          # png | jpg
-
-# ─── 프롬프트 엔진 설정 ───────────────────────────────
-DEFAULT_ASPECT  = "3:4"         # 세로형 인물 기본값
-BATCH_SIZE      = 4             # 배치 생성 기본 수량
-RANDOM_SEED     = None          # None = 매번 다름
-
-# ─── 프로바이더 선택 ──────────────────────────────────
-ACTIVE_PROVIDER = "pollinations"      # gemini | stability | midjourney
+GEMINI_MODEL    = "gemini-2.5-flash-image"
+OUTPUT_DIR      = os.path.join(os.path.dirname(__file__), "output")
+IMAGE_FORMAT    = "png"
+DEFAULT_ASPECT  = "3:4"
+BATCH_SIZE      = 4
+RANDOM_SEED     = None
+ACTIVE_PROVIDER = "pollinations"
