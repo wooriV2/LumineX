@@ -443,28 +443,47 @@ with tab1:
     if "preset_prompt" not in st.session_state:
         st.session_state.preset_prompt = ""
 
-    def build_preset_overrides() -> str:
-        """선택된 오버라이드 요소들을 프롬프트 문자열로 조합"""
-        parts = []
+    def build_preset_overrides() -> dict:
+        """선택된 오버라이드 요소들을 딕셔너리로 반환 (프리셋 필드 덮어쓰기용)"""
+        overrides = {}
         if preset_appearance != NONE:
-            parts.append(f"Model appearance: {MODEL_APPEARANCE[preset_appearance]}.")
+            overrides['appearance'] = MODEL_APPEARANCE[preset_appearance]
         if preset_body != NONE:
-            parts.append(f"Body: {MODEL_TYPES[preset_body]}.")
+            overrides['body'] = MODEL_TYPES[preset_body]
         if preset_outfit != NONE:
             od = OUTFIT_TYPES[preset_outfit]
-            outfit_str = od["gemini"] if isinstance(od, dict) else od
-            parts.append(f"Wearing: {outfit_str}.")
+            overrides['outfit'] = od["gemini"] if isinstance(od, dict) else od
         if preset_material != NONE:
-            parts.append(f"Material: {MATERIALS[preset_material]}.")
+            overrides['material'] = MATERIALS[preset_material]
         if preset_framing != NONE:
-            parts.append(f"Framing: {CAMERA_ANGLES[preset_framing]}.")
+            overrides['framing'] = CAMERA_ANGLES[preset_framing]
         if preset_footwear != NONE:
-            parts.append(f"{FOOTWEAR[preset_footwear]}.")
+            overrides['footwear'] = FOOTWEAR[preset_footwear]
         if preset_lighting != NONE:
-            parts.append(f"Lighting override: {LIGHTING[preset_lighting]}.")
+            overrides['lighting'] = LIGHTING[preset_lighting]
         if preset_style != NONE:
-            parts.append(f"Style: {STYLES[preset_style]}.")
-        return " ".join(parts)
+            overrides['style'] = STYLES[preset_style]
+        return overrides
+
+    def apply_overrides_to_prompt(preset: dict, overrides: dict) -> str:
+        """오버라이드를 프리셋에 적용해서 프롬프트 생성"""
+        p = {**preset, **overrides}
+        appearance_str = f"Model appearance: {overrides['appearance']}. " if 'appearance' in overrides else ""
+        framing_str = overrides.get('framing', 'full body shot')
+        footwear_str = f", {overrides['footwear']}" if 'footwear' in overrides else ""
+
+        prompt = (
+            f"Professional fashion photograph, {framing_str}. "
+            f"{appearance_str}"
+            f"Model: {p.get('subject', 'a stunning female model')}. "
+            f"Body: {p.get('body', '')}. "
+            f"Wearing: {p.get('outfit', '')}, made of {p.get('material', '')}{footwear_str}. "
+            f"Environment: {p.get('environment', '')}. "
+            f"Lighting: {p.get('lighting', '')}. "
+            f"Style: {p.get('style', '')}. "
+            f"{p.get('quality', 'ultra-sharp, 8K, professional photography')}."
+        )
+        return prompt.strip()
 
     if btn_ai and selected_preset:
         st.session_state.preset_prompt = ""
@@ -472,8 +491,13 @@ with tab1:
             try:
                 raw = generate_prompt_with_ai(selected_preset)
                 overrides = build_preset_overrides()
-                if overrides:
-                    raw = overrides + " " + raw
+                prefix = []
+                if 'appearance' in overrides:
+                    prefix.append(overrides['appearance'].split(',')[0])
+                if 'body' in overrides:
+                    prefix.append(overrides['body'].split(',')[0])
+                if prefix:
+                    raw = f"Model: {', '.join(prefix)}. " + raw
                 aspect_desc = ASPECT_RATIOS.get(global_aspect, "")
                 if aspect_desc:
                     raw += f" {aspect_desc}, vertical portrait orientation, taller than wide."
@@ -486,17 +510,12 @@ with tab1:
         preset = load_preset(selected_preset)
         overrides = build_preset_overrides()
         aspect_desc = ASPECT_RATIOS.get(global_aspect, "portrait 2:3 vertical")
+        raw = apply_overrides_to_prompt(preset, overrides)
 
         if global_platform == "Gemini":
-            raw = build_prompt(preset)
-            if overrides:
-                raw = overrides + " " + raw
             raw += f" {aspect_desc}, vertical portrait orientation, taller than wide."
 
         elif global_platform == "ChatGPT (DALL-E)":
-            raw = build_prompt(preset)
-            if overrides:
-                raw = overrides + " " + raw
             raw += (
                 f" {aspect_desc}. "
                 f"Photorealistic, hyperrealistic skin texture, natural pore detail, "
@@ -505,9 +524,6 @@ with tab1:
             )
 
         else:  # Midjourney
-            raw = build_prompt(preset)
-            if overrides:
-                raw = overrides + " " + raw
             ar_map = {
                 "세로 2:3 — 인물 기본": "2:3",
                 "세로 3:4 — 전신샷": "3:4",
