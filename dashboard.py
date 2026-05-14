@@ -338,6 +338,14 @@ with st.sidebar:
     global_realism = st.toggle("📷 실사 모드", value=True, help="photorealistic 키워드 자동 추가 (Gemini 전용)")
 
     st.markdown("---")
+    st.markdown("### 🎬 영상 플랫폼")
+    global_video_platform = st.radio(
+        "영상 생성 플랫폼",
+        options=["Veo 3 (Gemini)", "Kling AI", "Runway", "Hailuo"],
+        index=0,
+    )
+
+    st.markdown("---")
     platform_colors = {"Gemini": "🔵", "ChatGPT (DALL-E)": "🟢", "Midjourney": "🟣"}
     st.markdown(f"**플랫폼:** {platform_colors[global_platform]} `{global_platform}`")
     st.markdown(f"**비율:** `{global_aspect.split('—')[0].strip()}`")
@@ -672,8 +680,16 @@ st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ Lu
 # 탭 4: 영상 프롬프트 (Veo 3)
 # ══════════════════════════════════════════════════════════
 with tab4:
-    st.markdown("### 🎬 영상 프롬프트 생성 (Veo 3)")
-    st.caption("Gemini 대화창의 Veo 3에 붙여넣어 영상을 생성하세요.")
+    st.markdown(f"### 🎬 영상 프롬프트 생성 — {global_video_platform}")
+
+    VIDEO_PLATFORM_TIPS = {
+        "Veo 3 (Gemini)": ("🔵", "gemini.google.com", "Gemini Advanced 구독 필요. 좌측 메뉴에서 Veo 3 선택."),
+        "Kling AI": ("🟡", "klingai.com", "무료 티어 사용 가능. 매일 크레딧 지급."),
+        "Runway": ("🟢", "runwayml.com", "무료 크레딧 제공. Gen-3 Alpha 사용."),
+        "Hailuo": ("🟠", "hailuoai.video", "완전 무료. 중국 서비스."),
+    }
+    color, url, tip = VIDEO_PLATFORM_TIPS[global_video_platform]
+    st.info(f"{color} **{global_video_platform}** — {tip} → [{url}](https://{url})")
 
     # ── 영상 설정 ──────────────────────────────────────────
     VIDEO_DURATIONS = {
@@ -824,10 +840,32 @@ Rules:
         st.caption("👆 복사 후 Gemini 대화창 → Veo 3에 붙여넣으세요!")
 
         st.markdown("---")
-        st.markdown("### 💡 Veo 3 사용 방법")
-        st.markdown("""
+        st.markdown(f"### 💡 {global_video_platform} 사용 방법")
+        if global_video_platform == "Veo 3 (Gemini)":
+            st.markdown("""
 1. [gemini.google.com](https://gemini.google.com) 접속
 2. 좌측 **Veo 3** 선택
 3. 위 프롬프트 붙여넣기
 4. 생성 클릭!
-        """)
+            """)
+        elif global_video_platform == "Kling AI":
+            st.markdown("""
+1. [klingai.com](https://klingai.com) 접속
+2. **Text to Video** 선택
+3. 위 프롬프트 붙여넣기
+4. 생성 클릭!
+            """)
+        elif global_video_platform == "Runway":
+            st.markdown("""
+1. [runwayml.com](https://runwayml.com) 접속
+2. **Gen-3 Alpha** 선택
+3. 위 프롬프트 붙여넣기
+4. 생성 클릭!
+            """)
+        else:  # Hailuo
+            st.markdown("""
+1. [hailuoai.video](https://hailuoai.video) 접속
+2. **Text to Video** 선택
+3. 위 프롬프트 붙여넣기
+4. 생성 클릭!
+            """)
