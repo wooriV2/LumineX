@@ -58,6 +58,12 @@ MODEL_APPEARANCE = {
     "💃 라틴 — 브론즈 태닝, 볼륨감, 브라질/콜롬비안": "Latina beauty, bronzed tan glowing skin, voluptuous curves, Brazilian Colombian exotic",
     "✨ 혼혈 — 이국적 믹스, 독특한 매력": "Mixed race exotic beauty, unique blend of features, strikingly beautiful face",
     "🖤 흑인 — 짙은 피부, 강렬한 이목구비, 파워풀": "Black beauty, rich deep dark skin, powerful striking features, African goddess",
+    "🇧🇷 브라질리언 — 브라질, 구릿빛 피부, 풍만한 글래머": "Brazilian beauty, bronzed tan skin, full voluptuous curves, tropical glamour",
+    "🇨🇴 콜롬비안 — 콜롬비아, 이국적 라틴 미녀": "Colombian beauty, exotic Latin features, olive skin, sultry dark eyes",
+    "🇸🇪 스칸디나비안 — 북유럽, 금발, 차갑고 우아한": "Scandinavian beauty, platinum blonde, ice blue eyes, tall elegant Nordic features",
+    "🇷🇺 동유럽 — 슬라브 미녀, 강한 골격, 매혹적": "Eastern European beauty, Slavic features, high cheekbones, mysterious allure",
+    "🇲🇦 모로칸 — 북아프리카, 이국적 중동+아프리카 믹스": "Moroccan beauty, exotic North African features, olive skin, dark almond eyes",
+    "🇪🇬 이집트 — 클레오파트라 느낌, 강렬한 눈매": "Egyptian beauty, Cleopatra-like features, intense dark eyes, Mediterranean skin",
 }
 
 MODEL_TYPES = {
@@ -68,6 +74,9 @@ MODEL_TYPES = {
     "피트니스 — 탄탄한 복근, 근육미, 스포티": "athletic fitness model, defined abs, toned muscular legs, powerful physique",
     "소프트 글램 — 부드러운 곡선, 여성스러운": "soft glamour model, feminine gentle curves, elegant posture, graceful",
     "런웨이 — 초장신, 극도로 늘씬, 다리 길이 강조": "extremely tall runway model, impossibly long legs, ultra-slender waist, elongated silhouette",
+    "플러스사이즈 글래머 — 풍만하고 자신감 넘치는": "plus-size glamour model, full voluptuous curves, confident powerful presence, body positive glamour",
+    "피트니스 비키니 컴페티션 — 대회용 극강 근육미": "fitness bikini competition model, extremely defined muscles, competition-ready physique, shredded athletic body",
+    "발레리나 — 길고 가늘고 극도로 우아한": "ballerina physique, extremely slender and elongated, graceful elegant posture, dancer's perfect poise",
 }
 
 OUTFIT_TYPES = {
@@ -124,6 +133,23 @@ OUTFIT_TYPES = {
         "gemini": "sports bra, high-waist leggings, midriff bare, fitness editorial",
         "chatgpt": "athletic sports bra, high-waist leggings, fitness editorial, Sports Illustrated",
     },
+    # ── 스페셜 ─────────────────────────────────────────────
+    "모노키니 — 원피스 수영복 변형, 대담한 컷아웃": {
+        "gemini": "monokini swimsuit, bold cutout one-piece, daring swimwear design",
+        "chatgpt": "designer monokini, cutout one-piece swimsuit, bold editorial swimwear",
+    },
+    "웨딩 드레스 — 럭셔리 브라이달, 관능적": {
+        "gemini": "luxurious wedding dress, plunging neckline bridal gown, sensual bridal fashion",
+        "chatgpt": "luxury bridal gown, dramatic wedding dress, high fashion bridal editorial",
+    },
+    "코트 only — 롱코트만 입은 미니멀 글래머": {
+        "gemini": "long coat only, nothing underneath, minimal glamour, coat barely covering",
+        "chatgpt": "oversized long coat, minimalist glamour, fashion editorial coat look",
+    },
+    "가죽 재킷 + 란제리 — 엣지있는 레이어드": {
+        "gemini": "leather jacket over lingerie, edgy layered look, rock glamour style",
+        "chatgpt": "leather jacket with lingerie, edgy fashion editorial, bold layered style",
+    },
 }
 
 ENVIRONMENTS = {
@@ -148,6 +174,10 @@ ENVIRONMENTS = {
     "사하라 골든아워 — 황금빛 사막": "Sahara desert dunes, golden hour sunset, dramatic sky",
     "화산 절벽 — 극적인 자연": "dramatic volcanic cliff, stormy ocean, powerful nature",
     "얼음 동굴 — 크리스탈 블루": "ice cave interior, crystal blue formations, ethereal light",
+    "부다페스트 온천 — 럭셔리 스파, 증기": "Budapest thermal bath, luxury spa pool, steam and warm water",
+    "모로코 리야드 — 이슬람 아치, 타일": "Moroccan riad, ornate Islamic arches, colorful mosaic tiles",
+    "싱가포르 인피니티 풀 — 마리나베이 뷰": "Singapore Marina Bay Sands infinity pool, city skyline view",
+    "발리 정글 빌라 — 열대 럭셔리, 자연": "Bali jungle villa, tropical luxury, lush greenery, infinity pool",
 }
 
 STYLES = {
@@ -175,6 +205,9 @@ MATERIALS = {
     "크리스탈 메쉬 — 망사에 크리스탈": "crystal mesh, rhinestone-embellished sheer fabric",
     "벨벳 — 부드럽고 고급스러운": "crushed velvet, rich luxurious texture",
     "골드 포일 — 황금빛 메탈릭": "metallic gold foil, mirror-finish gold surface",
+    "크로셰 — 뜨개 수영복, 보헤미안": "crochet knit fabric, handmade boho swimwear style",
+    "골드 체인 메쉬 — 금속 체인 망사": "gold chain mail mesh, metallic chainlink fabric",
+    "페더 — 깃털 장식, 쇼걸 글래머": "feather-trimmed fabric, showgirl glamour, luxury plumes",
 }
 
 LIGHTING = {
@@ -225,6 +258,9 @@ HAIR_STYLES = {
     "빅 볼륨 — 풍성하고 글래머러스": "big voluminous glamorous hair, full body",
     "웻룩 — 젖은 듯한 윤기": "wet look slicked back hair, glossy and sleek",
     "바람에 날리는 — 역동적인 플로잉": "windswept flowing hair, dynamic movement",
+    "브레이드 — 땋은 머리, 보헤미안": "braided hair, bohemian braids, artistic weave",
+    "크롭 픽시컷 — 짧고 대담한": "short pixie cut, bold cropped hair, edgy chic",
+    "코르넬로 — 뿔 모양 아방가르드 업스타일": "avant-garde horn updo, sculptural hair art, editorial",
 }
 
 HAIR_COLORS = {
@@ -251,6 +287,9 @@ POSES = {
     "크로스 암 — 팔짱 끼고 강렬한 시선": "arms crossed, intense gaze, powerful commanding expression",
     "손 들어 — 머리 위로 손, 관능적": "arms raised above head, sensual elongated pose, arched back",
     "등 보이기 — 백뷰, 어깨 라인 강조": "back view pose, spine visible, shoulder blade emphasis",
+    "누운 포즈 — 바닥/침대에 관능적으로": "lying down pose, reclined on floor or bed, sensual and languid",
+    "수영장 입수 — 물가에서 다이빙 직전": "standing at pool edge, about to dive, water reflection below",
+    "거울 앞 — 거울 반영, 이중 시선": "standing before mirror, reflection visible, double perspective pose",
 }
 
 COLOR_GRADES = {
