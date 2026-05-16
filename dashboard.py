@@ -276,6 +276,50 @@ HAIR_COLORS = {
     "오닉스 블루블랙 — 블루 광택 검정": "blue-black hair, onyx with blue sheen",
 }
 
+MAKEUP = {
+    "AI 자동 — 프롬프트 기반": "",
+    "스모키 아이 — 강렬한 눈매, 다크 섀도우": "dramatic smoky eye makeup, dark eyeshadow, intense gaze",
+    "누드 글램 — 자연스럽고 섹시한": "nude glam makeup, natural yet sexy, glossy lips, subtle glow",
+    "레드립 — 클래식 빨간 입술": "classic red lip makeup, bold red lipstick, timeless glamour",
+    "글리터 글램 — 반짝이는 파티 메이크업": "glitter glam makeup, sparkling eyeshadow, festival beauty",
+    "노메이크업 — 청순 내추럴": "no-makeup natural look, fresh dewy skin, barely-there beauty",
+    "고딕 다크 — 다크 립, 페일 스킨": "gothic dark makeup, black or deep plum lips, pale dramatic skin",
+    "메탈릭 아이 — 금속빛 아이섀도우": "metallic eye makeup, chrome silver or gold eyeshadow, futuristic",
+    "선번 글로우 — 여름 태양 느낌": "sun-kissed glow makeup, bronzed healthy skin, summer radiance",
+    "코랄 핑크 — 발랄하고 귀여운": "coral pink makeup, fresh peachy tones, youthful glow",
+    "오렌지 팝 — 트렌디한 컬러풀": "bold orange makeup, trendy color pop, fashion editorial look",
+    "캣아이 — 날카로운 아이라인": "sharp cat eye liner, winged eyeliner, feline sexy look",
+    "홀로그램 — 아방가르드 미래적": "holographic makeup, iridescent highlights, avant-garde editorial",
+}
+
+ACCESSORIES = {
+    "AI 자동 — 프롬프트 기반": "",
+    "골드 주얼리 — 목걸이+귀걸이 골드 세트": "gold jewelry set, gold necklace and earrings, luxury accessories",
+    "다이아몬드 — 럭셔리 다이아 주얼리": "diamond jewelry, sparkling diamond necklace and earrings, ultra luxury",
+    "초커 — 섹시한 목 초커": "choker necklace, sexy neck choker, edgy accessory",
+    "바디체인 — 몸에 두르는 골드 체인": "gold body chain, draped across torso, glamorous body jewelry",
+    "레이어드 체인 — 여러 겹 목걸이": "layered chain necklaces, multiple gold chains, trendy stacked look",
+    "진주 — 클래식 우아한 진주": "pearl jewelry, classic pearl necklace and earrings, timeless elegance",
+    "크리스탈 — 반짝이는 크리스탈 주얼리": "crystal jewelry, sparkling rhinestone accessories, glamorous",
+    "귀걸이만 — 드라마틱한 드롭 귀걸이": "statement drop earrings only, dramatic dangling earrings",
+    "럭셔리 워치 — 명품 시계": "luxury watch, designer timepiece on wrist, status accessory",
+    "팔찌 스택 — 여러 겹 팔찌": "stacked bracelets, multiple bangles and cuffs on wrist",
+    "없음 — 미니멀 액세서리 없음": "no accessories, minimalist, clean look",
+}
+
+SKIN_TONES = {
+    "AI 자동 — 프롬프트 기반": "",
+    "오일드 스킨 — 윤기있는 글로시 피부": "oiled glossy skin, shiny wet-look skin, body oil gleaming",
+    "태닝 — 브론즈 골든 태닝": "bronzed tan skin, golden sun-kissed tan, beach goddess",
+    "딥 태닝 — 짙은 초콜릿 태닝": "deep dark tan, rich chocolate bronzed skin, intense tanning",
+    "페일 — 창백하고 신비로운": "pale porcelain skin, ethereal fair complexion, mysterious allure",
+    "글로우 — 발광하는 빛나는 피부": "luminous glowing skin, radiant inner glow, lit-from-within effect",
+    "매트 — 무광 세련된 피부": "matte flawless skin, powdery smooth complexion, editorial finish",
+    "듀이 — 촉촉하고 생기있는": "dewy fresh skin, hydrated plump complexion, youthful glow",
+    "스웨티 — 운동 후 땀나는 느낌": "sweaty glistening skin, post-workout sheen, athletic perspiration",
+    "프로스티 — 차갑고 얼음같은 피부": "frosty icy skin tone, cold ethereal complexion, winter goddess",
+}
+
 POSES = {
     "파워 스탠딩 — 손 허리, 당당한 자세": "powerful standing pose, hands on hips, confident dominant stance",
     "런웨이 워킹 — 카메라를 향해 걸어오는": "walking confidently toward camera, runway catwalk stride",
@@ -318,11 +362,17 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     hair_style  = HAIR_STYLES.get(data.get('hair_style', ''), '')
     hair_color  = HAIR_COLORS.get(data.get('hair_color', ''), '')
     hair_str    = " ".join(filter(None, [hair_color, hair_style]))
+    makeup      = MAKEUP.get(data.get('makeup', ''), '')
+    accessories = ACCESSORIES.get(data.get('accessories', ''), '')
+    skin_tone   = SKIN_TONES.get(data.get('skin_tone', ''), '')
 
     parts = [
         f"Professional fashion photograph, {CAMERA_ANGLES[data['angle']]}, model fills the entire frame.",
         f"Model: stunning {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
+        f"Skin: {skin_tone}." if skin_tone else "",
         f"Hair: {hair_str}." if hair_str else "",
+        f"Makeup: {makeup}." if makeup else "",
+        f"Accessories: {accessories}." if accessories else "",
         f"Pose: {pose}." if pose else "",
         f"Wearing: {outfit}, made of {MATERIALS[data['material']]}{', ' + footwear if footwear else ''}.",
         f"Environment: {ENVIRONMENTS[data['env']]}, background softly blurred bokeh.",
@@ -366,12 +416,18 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     hair_style  = HAIR_STYLES.get(data.get('hair_style', ''), '')
     hair_color  = HAIR_COLORS.get(data.get('hair_color', ''), '')
     hair_str    = " ".join(filter(None, [hair_color, hair_style]))
+    makeup      = MAKEUP.get(data.get('makeup', ''), '')
+    accessories = ACCESSORIES.get(data.get('accessories', ''), '')
+    skin_tone   = SKIN_TONES.get(data.get('skin_tone', ''), '')
     appearance_desc = f"with {appearance}" if appearance else ""
 
     return (
         f"Professional fashion photograph, {aspect_desc}, {angle}. "
         f"A stunning {model} {appearance_desc}, commanding the frame with confidence and elegance. "
+        f"{'Skin: ' + skin_tone + '. ' if skin_tone else ''}"
         f"{'Hair: ' + hair_str + '. ' if hair_str else ''}"
+        f"{'Makeup: ' + makeup + '. ' if makeup else ''}"
+        f"{'Accessories: ' + accessories + '. ' if accessories else ''}"
         f"{'Pose: ' + pose + '. ' if pose else ''}"
         f"She wears {outfit}, crafted from {material}{', ' + footwear if footwear else ''}. "
         f"The scene unfolds at {env}, "
@@ -695,6 +751,9 @@ with tab2:
         st.session_state.r_color_grade = random.choice(list(COLOR_GRADES.keys()))
         st.session_state.r_hair_style  = random.choice(list(HAIR_STYLES.keys()))
         st.session_state.r_hair_color  = random.choice(list(HAIR_COLORS.keys()))
+        st.session_state.r_makeup      = random.choice(list(MAKEUP.keys()))
+        st.session_state.r_accessories = random.choice(list(ACCESSORIES.keys()))
+        st.session_state.r_skin_tone   = random.choice(list(SKIN_TONES.keys()))
         st.session_state.r_env         = random.choice(list(ENVIRONMENTS.keys()))
         st.session_state.r_light       = random.choice(list(LIGHTING.keys()))
         st.session_state.r_angle       = random.choice(list(CAMERA_ANGLES.keys()))
@@ -710,8 +769,11 @@ with tab2:
         footwear    = st.selectbox("👠 신발 — 힐/부츠 스타일",      list(FOOTWEAR.keys()),           index=list(FOOTWEAR.keys()).index(st.session_state.get("r_footwear", list(FOOTWEAR.keys())[0])))
         pose        = st.selectbox("💃 포즈 — 자세와 동작",         list(POSES.keys()),              index=list(POSES.keys()).index(st.session_state.get("r_pose", list(POSES.keys())[0])))
         hair_style  = st.selectbox("💇 헤어스타일",                 list(HAIR_STYLES.keys()),        index=list(HAIR_STYLES.keys()).index(st.session_state.get("r_hair_style", list(HAIR_STYLES.keys())[0])))
-    with col2:
         hair_color  = st.selectbox("🎨 헤어컬러",                   list(HAIR_COLORS.keys()),        index=list(HAIR_COLORS.keys()).index(st.session_state.get("r_hair_color", list(HAIR_COLORS.keys())[0])))
+        makeup      = st.selectbox("💄 메이크업",                   list(MAKEUP.keys()),             index=list(MAKEUP.keys()).index(st.session_state.get("r_makeup", list(MAKEUP.keys())[0])))
+    with col2:
+        accessories = st.selectbox("💍 액세서리",                   list(ACCESSORIES.keys()),        index=list(ACCESSORIES.keys()).index(st.session_state.get("r_accessories", list(ACCESSORIES.keys())[0])))
+        skin_tone   = st.selectbox("🌊 피부 톤/질감",               list(SKIN_TONES.keys()),         index=list(SKIN_TONES.keys()).index(st.session_state.get("r_skin_tone", list(SKIN_TONES.keys())[0])))
         color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",      list(COLOR_GRADES.keys()),       index=list(COLOR_GRADES.keys()).index(st.session_state.get("r_color_grade", list(COLOR_GRADES.keys())[0])))
         style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",     list(STYLES.keys()),             index=list(STYLES.keys()).index(st.session_state.get("r_style", list(STYLES.keys())[0])))
         environment = st.selectbox("🏙️ 환경 — 촬영 장소",          list(ENVIRONMENTS.keys()),       index=list(ENVIRONMENTS.keys()).index(st.session_state.get("r_env", list(ENVIRONMENTS.keys())[0])))
@@ -735,6 +797,8 @@ with tab2:
             "material": material, "footwear": footwear,
             "pose": pose, "color_grade": color_grade,
             "hair_style": hair_style, "hair_color": hair_color,
+            "makeup": makeup, "accessories": accessories,
+            "skin_tone": skin_tone,
             "env": environment, "light": lighting,
             "angle": angle, "style": style, "camera": camera,
         }
@@ -796,6 +860,9 @@ with tab3:
             "color_grade": random.choice(list(COLOR_GRADES.keys())),
             "hair_style":  random.choice(list(HAIR_STYLES.keys())),
             "hair_color":  random.choice(list(HAIR_COLORS.keys())),
+            "makeup":      random.choice(list(MAKEUP.keys())),
+            "accessories": random.choice(list(ACCESSORIES.keys())),
+            "skin_tone":   random.choice(list(SKIN_TONES.keys())),
             "env":         random.choice(list(ENVIRONMENTS.keys())),
             "light":       random.choice(list(LIGHTING.keys())),
             "angle":       random.choice(list(CAMERA_ANGLES.keys())),
