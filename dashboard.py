@@ -214,7 +214,57 @@ CAMERAS = {
     "페이즈원 XF IQ4 — 110mm f/2.8 중형": "Phase One XF IQ4 110mm f/2.8 medium format ISO 50",
 }
 
-# ─── 플랫폼별 프롬프트 빌더 ──────────────────────────────
+HAIR_STYLES = {
+    "AI 자동 — 프롬프트 기반": "",
+    "롱 웨이브 — 긴 웨이브, 볼륨감": "long wavy hair, voluminous waves, flowing",
+    "롱 스트레이트 — 긴 생머리, 실키": "long straight silky hair, sleek and smooth",
+    "하이 포니테일 — 높은 포니테일, 섹시": "high ponytail, sleek tight ponytail, sexy",
+    "업스타일 — 올린 머리, 우아한": "elegant updo, sophisticated chignon, classic",
+    "단발 — 깔끔한 보브컷": "sleek bob cut, sharp jawline bob",
+    "웨이브 하프업 — 반묶음 웨이브": "half-up half-down wavy hair, romantic style",
+    "빅 볼륨 — 풍성하고 글래머러스": "big voluminous glamorous hair, full body",
+    "웻룩 — 젖은 듯한 윤기": "wet look slicked back hair, glossy and sleek",
+    "바람에 날리는 — 역동적인 플로잉": "windswept flowing hair, dynamic movement",
+}
+
+HAIR_COLORS = {
+    "AI 자동 — 프롬프트 기반": "",
+    "블랙 — 짙은 검정, 아시안 느낌": "jet black hair, deep dark black",
+    "다크 브라운 — 짙은 갈색": "dark brown hair, rich chocolate brown",
+    "라이트 브라운 — 밝은 갈색": "light brown hair, warm caramel brown",
+    "골든 블론드 — 황금빛 금발": "golden blonde hair, sun-kissed golden",
+    "플래티넘 블론드 — 밝은 백금 금발": "platinum blonde hair, icy white blonde",
+    "레드 — 붉은 빨간 머리": "red hair, vibrant auburn red",
+    "버건디 — 와인빛 다크 레드": "burgundy hair, deep wine dark red",
+    "로즈골드 — 핑크빛 골드": "rose gold hair, pink golden shimmer",
+    "오닉스 블루블랙 — 블루 광택 검정": "blue-black hair, onyx with blue sheen",
+}
+
+POSES = {
+    "파워 스탠딩 — 손 허리, 당당한 자세": "powerful standing pose, hands on hips, confident dominant stance",
+    "런웨이 워킹 — 카메라를 향해 걸어오는": "walking confidently toward camera, runway catwalk stride",
+    "S커브 — 한쪽 다리 구부린 섹시 포즈": "sexy S-curve pose, one leg bent, hip tilted, sultry stance",
+    "백포즈 — 뒤돌아 어깨 너머 시선": "back to camera, looking over shoulder seductively, rear view",
+    "기댄 포즈 — 벽에 기댄 캐주얼": "leaning against wall, casual yet sexy pose, relaxed confidence",
+    "앉은 포즈 — 바닥/의자에 우아하게": "seated elegantly, legs crossed, sophisticated sitting pose",
+    "역동적 — 머리카락 날리는 움직임": "dynamic pose, hair flowing in wind, motion blur effect",
+    "크로스 암 — 팔짱 끼고 강렬한 시선": "arms crossed, intense gaze, powerful commanding expression",
+    "손 들어 — 머리 위로 손, 관능적": "arms raised above head, sensual elongated pose, arched back",
+    "등 보이기 — 백뷰, 어깨 라인 강조": "back view pose, spine visible, shoulder blade emphasis",
+}
+
+COLOR_GRADES = {
+    "컬러 — 자연스러운 색감 (기본)": "",
+    "흑백 — 클래식 모노크롬": "black and white photography, classic monochrome, high contrast B&W",
+    "시네마틱 틸 & 오렌지 — 영화적": "cinematic teal and orange color grade, Hollywood film look",
+    "골든 — 따뜻한 황금빛 필름": "warm golden film grade, vintage golden hour tone",
+    "다크 무드 — 어둡고 드라마틱": "dark moody color grade, deep shadows, dramatic contrast",
+    "쿨 블루 — 차갑고 세련된": "cool blue color grade, cold steel tones, sleek editorial",
+    "핑크 글램 — 핑크빛 글래머": "soft pink glamour grade, rose gold tones, feminine glow",
+    "하이키 — 밝고 화사한 흰빛": "high key bright white tone, overexposed glamour, clean light",
+    "빈티지 필름 — 필름 느낌": "vintage film grain, faded colors, analog photography look",
+}
+
 
 def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     """Gemini: 자연어 서술형, 길고 묘사적"""
@@ -224,15 +274,23 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     outfit_data = OUTFIT_TYPES[data['outfit']]
     outfit      = outfit_data["gemini"] if isinstance(outfit_data, dict) else outfit_data
     footwear    = FOOTWEAR.get(data.get('footwear', ''), '')
+    pose        = POSES.get(data.get('pose', ''), '')
+    color_grade = COLOR_GRADES.get(data.get('color_grade', ''), '')
+    hair_style  = HAIR_STYLES.get(data.get('hair_style', ''), '')
+    hair_color  = HAIR_COLORS.get(data.get('hair_color', ''), '')
+    hair_str    = " ".join(filter(None, [hair_color, hair_style]))
 
     parts = [
         f"Professional fashion photograph, {CAMERA_ANGLES[data['angle']]}, model fills the entire frame.",
         f"Model: stunning {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
+        f"Hair: {hair_str}." if hair_str else "",
+        f"Pose: {pose}." if pose else "",
         f"Wearing: {outfit}, made of {MATERIALS[data['material']]}{', ' + footwear if footwear else ''}.",
         f"Environment: {ENVIRONMENTS[data['env']]}, background softly blurred bokeh.",
         f"Lighting: {LIGHTING[data['light']]}.",
         f"Style reference: {STYLES[data['style']]}.",
         f"Camera: {CAMERAS[data['camera']]}, sharp focus on model.",
+        f"Color grade: {color_grade}." if color_grade else "",
     ]
     suffix = []
     if realism_kw:
@@ -264,17 +322,25 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     camera      = CAMERAS[data['camera']]
     angle       = CAMERA_ANGLES[data['angle']]
     footwear    = FOOTWEAR.get(data.get('footwear', ''), '')
+    pose        = POSES.get(data.get('pose', ''), '')
+    color_grade = COLOR_GRADES.get(data.get('color_grade', ''), '')
+    hair_style  = HAIR_STYLES.get(data.get('hair_style', ''), '')
+    hair_color  = HAIR_COLORS.get(data.get('hair_color', ''), '')
+    hair_str    = " ".join(filter(None, [hair_color, hair_style]))
     appearance_desc = f"with {appearance}" if appearance else ""
 
     return (
         f"Professional fashion photograph, {aspect_desc}, {angle}. "
         f"A stunning {model} {appearance_desc}, commanding the frame with confidence and elegance. "
+        f"{'Hair: ' + hair_str + '. ' if hair_str else ''}"
+        f"{'Pose: ' + pose + '. ' if pose else ''}"
         f"She wears {outfit}, crafted from {material}{', ' + footwear if footwear else ''}. "
         f"The scene unfolds at {env}, "
         f"bathed in {light}, creating a breathtaking atmosphere. "
         f"Shot in the style of {style}, "
         f"captured on {camera} with razor-sharp focus on the model. "
         f"The model fills the entire frame, background softly blurred. "
+        f"{'Color grade: ' + color_grade + '. ' if color_grade else ''}"
         f"Photorealistic, hyperrealistic skin texture, natural pore detail, "
         f"professional color grading, award-winning fashion photography, "
         f"stunning editorial masterpiece quality."
@@ -420,7 +486,17 @@ with tab1:
             [NONE] + list(MATERIALS.keys()),
             key="preset_material"
         )
+        preset_pose = st.selectbox(
+            "💃 포즈",
+            [NONE] + list(POSES.keys()),
+            key="preset_pose"
+        )
     with col2:
+        preset_color_grade = st.selectbox(
+            "🎨 색감",
+            [NONE] + list(COLOR_GRADES.keys()),
+            key="preset_color_grade"
+        )
         preset_framing = st.selectbox(
             "📸 프레이밍",
             [NONE] + list(CAMERA_ANGLES.keys()),
@@ -470,6 +546,10 @@ with tab1:
             overrides['outfit'] = od["gemini"] if isinstance(od, dict) else od
         if preset_material != NONE:
             overrides['material'] = MATERIALS[preset_material]
+        if preset_pose != NONE:
+            overrides['pose'] = POSES[preset_pose]
+        if preset_color_grade != NONE:
+            overrides['color_grade'] = COLOR_GRADES[preset_color_grade]
         if preset_framing != NONE:
             overrides['framing'] = CAMERA_ANGLES[preset_framing]
         if preset_footwear != NONE:
@@ -484,18 +564,22 @@ with tab1:
         """오버라이드를 프리셋에 적용해서 프롬프트 생성"""
         p = {**preset, **overrides}
         appearance_str = f"Model appearance: {overrides['appearance']}. " if 'appearance' in overrides else ""
-        framing_str = overrides.get('framing', 'full body shot')
-        footwear_str = f", {overrides['footwear']}" if 'footwear' in overrides else ""
+        framing_str    = overrides.get('framing', 'full body shot')
+        footwear_str   = f", {overrides['footwear']}" if 'footwear' in overrides else ""
+        pose_str       = f"Pose: {overrides['pose']}. " if 'pose' in overrides else ""
+        color_str      = f"Color grade: {overrides['color_grade']}. " if 'color_grade' in overrides else ""
 
         prompt = (
             f"Professional fashion photograph, {framing_str}. "
             f"{appearance_str}"
             f"Model: {p.get('subject', 'a stunning female model')}. "
             f"Body: {p.get('body', '')}. "
+            f"{pose_str}"
             f"Wearing: {p.get('outfit', '')}, made of {p.get('material', '')}{footwear_str}. "
             f"Environment: {p.get('environment', '')}. "
             f"Lighting: {p.get('lighting', '')}. "
             f"Style: {p.get('style', '')}. "
+            f"{color_str}"
             f"{p.get('quality', 'ultra-sharp, 8K, professional photography')}."
         )
         return prompt.strip()
@@ -563,16 +647,20 @@ with tab2:
     st.markdown("### 요소별 수동 조합")
 
     if st.button("🎲 전체 랜덤으로 채우기"):
-        st.session_state.r_appearance = random.choice(list(MODEL_APPEARANCE.keys()))
-        st.session_state.r_model      = random.choice(list(MODEL_TYPES.keys()))
-        st.session_state.r_outfit     = random.choice(list(OUTFIT_TYPES.keys()))
-        st.session_state.r_material   = random.choice(list(MATERIALS.keys()))
-        st.session_state.r_footwear   = random.choice(list(FOOTWEAR.keys()))
-        st.session_state.r_env        = random.choice(list(ENVIRONMENTS.keys()))
-        st.session_state.r_light      = random.choice(list(LIGHTING.keys()))
-        st.session_state.r_angle      = random.choice(list(CAMERA_ANGLES.keys()))
-        st.session_state.r_style      = random.choice(list(STYLES.keys()))
-        st.session_state.r_camera     = random.choice(list(CAMERAS.keys()))
+        st.session_state.r_appearance  = random.choice(list(MODEL_APPEARANCE.keys()))
+        st.session_state.r_model       = random.choice(list(MODEL_TYPES.keys()))
+        st.session_state.r_outfit      = random.choice(list(OUTFIT_TYPES.keys()))
+        st.session_state.r_material    = random.choice(list(MATERIALS.keys()))
+        st.session_state.r_footwear    = random.choice(list(FOOTWEAR.keys()))
+        st.session_state.r_pose        = random.choice(list(POSES.keys()))
+        st.session_state.r_color_grade = random.choice(list(COLOR_GRADES.keys()))
+        st.session_state.r_hair_style  = random.choice(list(HAIR_STYLES.keys()))
+        st.session_state.r_hair_color  = random.choice(list(HAIR_COLORS.keys()))
+        st.session_state.r_env         = random.choice(list(ENVIRONMENTS.keys()))
+        st.session_state.r_light       = random.choice(list(LIGHTING.keys()))
+        st.session_state.r_angle       = random.choice(list(CAMERA_ANGLES.keys()))
+        st.session_state.r_style       = random.choice(list(STYLES.keys()))
+        st.session_state.r_camera      = random.choice(list(CAMERAS.keys()))
 
     col1, col2 = st.columns(2)
     with col1:
@@ -581,7 +669,11 @@ with tab2:
         outfit      = st.selectbox("👗 의상 타입 — 스타일",         list(OUTFIT_TYPES.keys()),       index=list(OUTFIT_TYPES.keys()).index(st.session_state.get("r_outfit", list(OUTFIT_TYPES.keys())[0])))
         material    = st.selectbox("🧵 소재 — 옷감 질감",           list(MATERIALS.keys()),          index=list(MATERIALS.keys()).index(st.session_state.get("r_material", list(MATERIALS.keys())[0])))
         footwear    = st.selectbox("👠 신발 — 힐/부츠 스타일",      list(FOOTWEAR.keys()),           index=list(FOOTWEAR.keys()).index(st.session_state.get("r_footwear", list(FOOTWEAR.keys())[0])))
+        pose        = st.selectbox("💃 포즈 — 자세와 동작",         list(POSES.keys()),              index=list(POSES.keys()).index(st.session_state.get("r_pose", list(POSES.keys())[0])))
+        hair_style  = st.selectbox("💇 헤어스타일",                 list(HAIR_STYLES.keys()),        index=list(HAIR_STYLES.keys()).index(st.session_state.get("r_hair_style", list(HAIR_STYLES.keys())[0])))
     with col2:
+        hair_color  = st.selectbox("🎨 헤어컬러",                   list(HAIR_COLORS.keys()),        index=list(HAIR_COLORS.keys()).index(st.session_state.get("r_hair_color", list(HAIR_COLORS.keys())[0])))
+        color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",      list(COLOR_GRADES.keys()),       index=list(COLOR_GRADES.keys()).index(st.session_state.get("r_color_grade", list(COLOR_GRADES.keys())[0])))
         style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",     list(STYLES.keys()),             index=list(STYLES.keys()).index(st.session_state.get("r_style", list(STYLES.keys())[0])))
         environment = st.selectbox("🏙️ 환경 — 촬영 장소",          list(ENVIRONMENTS.keys()),       index=list(ENVIRONMENTS.keys()).index(st.session_state.get("r_env", list(ENVIRONMENTS.keys())[0])))
         lighting    = st.selectbox("💡 조명 — 빛의 분위기",         list(LIGHTING.keys()),           index=list(LIGHTING.keys()).index(st.session_state.get("r_light", list(LIGHTING.keys())[0])))
@@ -602,6 +694,8 @@ with tab2:
             "appearance": appearance,
             "model": model_type, "outfit": outfit,
             "material": material, "footwear": footwear,
+            "pose": pose, "color_grade": color_grade,
+            "hair_style": hair_style, "hair_color": hair_color,
             "env": environment, "light": lighting,
             "angle": angle, "style": style, "camera": camera,
         }
@@ -654,16 +748,20 @@ with tab3:
 
     if btn_rand:
         data = {
-            "appearance": random.choice(list(MODEL_APPEARANCE.keys())),
-            "model":    random.choice(list(MODEL_TYPES.keys())),
-            "outfit":   random.choice(list(OUTFIT_TYPES.keys())),
-            "material": random.choice(list(MATERIALS.keys())),
-            "footwear": random.choice(list(FOOTWEAR.keys())),
-            "env":      random.choice(list(ENVIRONMENTS.keys())),
-            "light":    random.choice(list(LIGHTING.keys())),
-            "angle":    random.choice(list(CAMERA_ANGLES.keys())),
-            "style":    random.choice(list(STYLES.keys())),
-            "camera":   random.choice(list(CAMERAS.keys())),
+            "appearance":  random.choice(list(MODEL_APPEARANCE.keys())),
+            "model":       random.choice(list(MODEL_TYPES.keys())),
+            "outfit":      random.choice(list(OUTFIT_TYPES.keys())),
+            "material":    random.choice(list(MATERIALS.keys())),
+            "footwear":    random.choice(list(FOOTWEAR.keys())),
+            "pose":        random.choice(list(POSES.keys())),
+            "color_grade": random.choice(list(COLOR_GRADES.keys())),
+            "hair_style":  random.choice(list(HAIR_STYLES.keys())),
+            "hair_color":  random.choice(list(HAIR_COLORS.keys())),
+            "env":         random.choice(list(ENVIRONMENTS.keys())),
+            "light":       random.choice(list(LIGHTING.keys())),
+            "angle":       random.choice(list(CAMERA_ANGLES.keys())),
+            "style":       random.choice(list(STYLES.keys())),
+            "camera":      random.choice(list(CAMERAS.keys())),
         }
         st.session_state.random_prompt = get_prompt(data)
 
