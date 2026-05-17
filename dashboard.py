@@ -304,6 +304,29 @@ HAIR_COLORS = {
     "오닉스 블루블랙 — 블루 광택 검정": "blue-black hair, onyx with blue sheen",
 }
 
+MODEL_COUNT = {
+    "1명 — 싱글 모델 (기본)": {
+        "count": 1,
+        "prompt": "A stunning female model",
+    },
+    "2명 — 듀오, 두 모델 나란히": {
+        "count": 2,
+        "prompt": "Two stunning female models standing together side by side",
+    },
+    "2명 — 듀오, 대비되는 포즈": {
+        "count": 2,
+        "prompt": "Two stunning female models, contrasting poses, one in foreground one behind",
+    },
+    "3명 — 트리오, 세 모델": {
+        "count": 3,
+        "prompt": "Three stunning female models posing together, trio fashion editorial",
+    },
+    "그룹 — VS 런웨이 그룹샷": {
+        "count": 4,
+        "prompt": "Group of stunning female models on runway, Victoria's Secret fashion show group shot",
+    },
+}
+
 MAKEUP = {
     "AI 자동 — 프롬프트 기반": "",
     "스모키 아이 — 강렬한 눈매, 다크 섀도우": "dramatic smoky eye makeup, dark eyeshadow, intense gaze",
@@ -393,10 +416,12 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     makeup      = MAKEUP.get(data.get('makeup', ''), '')
     accessories = ACCESSORIES.get(data.get('accessories', ''), '')
     skin_tone   = SKIN_TONES.get(data.get('skin_tone', ''), '')
+    count_data  = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
+    model_subject = count_data['prompt']
 
     parts = [
         f"Professional fashion photograph, {CAMERA_ANGLES[data['angle']]}, model fills the entire frame.",
-        f"Model: stunning {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
+        f"{model_subject}: {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
         f"Skin: {skin_tone}." if skin_tone else "",
         f"Hair: {hair_str}." if hair_str else "",
         f"Makeup: {makeup}." if makeup else "",
@@ -447,22 +472,23 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     makeup      = MAKEUP.get(data.get('makeup', ''), '')
     accessories = ACCESSORIES.get(data.get('accessories', ''), '')
     skin_tone   = SKIN_TONES.get(data.get('skin_tone', ''), '')
+    count_data  = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
+    model_subject = count_data['prompt']
     appearance_desc = f"with {appearance}" if appearance else ""
 
     return (
         f"Professional fashion photograph, {aspect_desc}, {angle}. "
-        f"A stunning {model} {appearance_desc}, commanding the frame with confidence and elegance. "
+        f"{model_subject} {appearance_desc}, {model}, commanding the frame with confidence and elegance. "
         f"{'Skin: ' + skin_tone + '. ' if skin_tone else ''}"
         f"{'Hair: ' + hair_str + '. ' if hair_str else ''}"
         f"{'Makeup: ' + makeup + '. ' if makeup else ''}"
         f"{'Accessories: ' + accessories + '. ' if accessories else ''}"
         f"{'Pose: ' + pose + '. ' if pose else ''}"
-        f"She wears {outfit}, crafted from {material}{', ' + footwear if footwear else ''}. "
+        f"Wearing {outfit}, crafted from {material}{', ' + footwear if footwear else ''}. "
         f"The scene unfolds at {env}, "
         f"bathed in {light}, creating a breathtaking atmosphere. "
         f"Shot in the style of {style}, "
         f"captured on {camera} with razor-sharp focus on the model. "
-        f"The model fills the entire frame, background softly blurred. "
         f"{'Color grade: ' + color_grade + '. ' if color_grade else ''}"
         f"Photorealistic, hyperrealistic skin texture, natural pore detail, "
         f"professional color grading, award-winning fashion photography, "
@@ -782,6 +808,7 @@ with tab2:
         st.session_state.r_makeup      = random.choice(list(MAKEUP.keys()))
         st.session_state.r_accessories = random.choice(list(ACCESSORIES.keys()))
         st.session_state.r_skin_tone   = random.choice(list(SKIN_TONES.keys()))
+        st.session_state.r_model_count = random.choice(list(MODEL_COUNT.keys())[:2])  # 1명 또는 2명만 랜덤
         st.session_state.r_env         = random.choice(list(ENVIRONMENTS.keys()))
         st.session_state.r_light       = random.choice(list(LIGHTING.keys()))
         st.session_state.r_angle       = random.choice(list(CAMERA_ANGLES.keys()))
@@ -799,6 +826,7 @@ with tab2:
         hair_style  = st.selectbox("💇 헤어스타일",                 list(HAIR_STYLES.keys()),        index=list(HAIR_STYLES.keys()).index(st.session_state.get("r_hair_style", list(HAIR_STYLES.keys())[0])))
         hair_color  = st.selectbox("🎨 헤어컬러",                   list(HAIR_COLORS.keys()),        index=list(HAIR_COLORS.keys()).index(st.session_state.get("r_hair_color", list(HAIR_COLORS.keys())[0])))
         makeup      = st.selectbox("💄 메이크업",                   list(MAKEUP.keys()),             index=list(MAKEUP.keys()).index(st.session_state.get("r_makeup", list(MAKEUP.keys())[0])))
+        model_count = st.selectbox("👥 모델 수",                    list(MODEL_COUNT.keys()),        index=list(MODEL_COUNT.keys()).index(st.session_state.get("r_model_count", list(MODEL_COUNT.keys())[0])))
     with col2:
         accessories = st.selectbox("💍 액세서리",                   list(ACCESSORIES.keys()),        index=list(ACCESSORIES.keys()).index(st.session_state.get("r_accessories", list(ACCESSORIES.keys())[0])))
         skin_tone   = st.selectbox("🌊 피부 톤/질감",               list(SKIN_TONES.keys()),         index=list(SKIN_TONES.keys()).index(st.session_state.get("r_skin_tone", list(SKIN_TONES.keys())[0])))
@@ -826,7 +854,7 @@ with tab2:
             "pose": pose, "color_grade": color_grade,
             "hair_style": hair_style, "hair_color": hair_color,
             "makeup": makeup, "accessories": accessories,
-            "skin_tone": skin_tone,
+            "skin_tone": skin_tone, "model_count": model_count,
             "env": environment, "light": lighting,
             "angle": angle, "style": style, "camera": camera,
         }
