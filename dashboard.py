@@ -178,6 +178,16 @@ ENVIRONMENTS = {
     "모로코 리야드 — 이슬람 아치, 타일": "Moroccan riad, ornate Islamic arches, colorful mosaic tiles",
     "싱가포르 인피니티 풀 — 마리나베이 뷰": "Singapore Marina Bay Sands infinity pool, city skyline view",
     "발리 정글 빌라 — 열대 럭셔리, 자연": "Bali jungle villa, tropical luxury, lush greenery, infinity pool",
+    "모던 럭셔리 맨션 — 현대적 고급 저택": "modern luxury mansion interior, sleek contemporary design, high ceilings",
+    "사이버펑크 네온 도시 — 미래 도시 거리": "cyberpunk neon city street, futuristic urban dystopia, neon signs",
+    "미래 SF 복도 — 우주선/미래 건물": "futuristic sci-fi corridor, spaceship interior, glowing panels",
+    "럭셔리 호텔 스위트 — 펜트하우스 스위트룸": "luxury hotel suite, penthouse bedroom, floor-to-ceiling windows",
+    "빗속 도시 거리 — 비 오는 도시, 반사": "rain-soaked urban street, wet pavement reflections, city lights",
+    "지중해 해변 마을 — 화이트 빌리지": "Mediterranean seaside village, white-washed buildings, blue sea",
+    "자연 폭포 낙원 — 열대 폭포, 자연": "tropical forest waterfall paradise, lush jungle, cascading water",
+    "설산 리조트 — 눈 덮인 산, 스키 럭셔리": "snow-covered mountain luxury resort, alpine chalet, winter scenery",
+    "우아한 볼룸 — 샹들리에, 대형 파티홀": "elegant grand ballroom, crystal chandeliers, marble floors, opulent",
+    "루프탑 도시 스카이라인 — 도시 전경": "rooftop city skyline, panoramic urban view, golden sunset",
 }
 
 STYLES = {
@@ -208,6 +218,9 @@ MATERIALS = {
     "크로셰 — 뜨개 수영복, 보헤미안": "crochet knit fabric, handmade boho swimwear style",
     "골드 체인 메쉬 — 금속 체인 망사": "gold chain mail mesh, metallic chainlink fabric",
     "페더 — 깃털 장식, 쇼걸 글래머": "feather-trimmed fabric, showgirl glamour, luxury plumes",
+    "니트 — 몸에 딱 붙는 립 니트": "ribbed knit fabric, body-hugging stretch knit",
+    "PVC — 투명 비닐, 미래적": "clear PVC vinyl, transparent plastic material, futuristic",
+    "데님 — 청바지 소재, 캐주얼 섹시": "denim fabric, sexy denim, casual glamour",
 }
 
 LIGHTING = {
@@ -219,6 +232,11 @@ LIGHTING = {
     "하드 스트로브 — 바디 정의 강조": "harsh direct strobe, body muscle definition emphasis",
     "볼류메트릭 포그 — 시네마틱 안개빛": "volumetric fog cinematic light, atmospheric mood",
     "림라이트 실루엣 — 역광 실루엣": "strong rim backlight, silhouette definition, halo effect",
+    "문라이트 — 달빛, 신비로운 야외": "moonlight, silvery blue natural light, mysterious outdoor glow",
+    "네온 핑크 — 핑크 단색 네온": "single pink neon light, hot pink glow, moody pink atmosphere",
+    "파이어 — 불빛, 따뜻한 드라마틱": "firelight, warm flickering flames, dramatic orange glow",
+    "수중 반사 — 수영장 물빛 반사": "underwater pool light reflection, rippling aqua light patterns",
+    "스플릿 라이팅 — 얼굴 반반 명암": "split lighting, half face light half shadow, dramatic contrast",
 }
 
 CAMERA_ANGLES = {
@@ -227,6 +245,10 @@ CAMERA_ANGLES = {
     "웨이스트샷 — 상반신 집중": "waist-up shot upper body emphasis",
     "로우앵글 — 다리 강조, 아래서 위로": "low angle upward shot legs dramatically elongated",
     "클로즈업 — 얼굴+가슴 집중": "close-up beauty shot face and upper chest",
+    "오버헤드 — 위에서 내려다보기": "overhead top-down angle, bird's eye view",
+    "사이드 프로필 — 옆모습 실루엣": "side profile shot, elegant silhouette from the side",
+    "백샷 — 뒤에서 촬영, 등 강조": "rear view back shot, spine and back emphasis",
+    "익스트림 클로즈업 — 얼굴만 극접사": "extreme close-up face only, skin texture detail",
 }
 
 FOOTWEAR = {
@@ -236,6 +258,9 @@ FOOTWEAR = {
     "무릎까지 부츠 — 니하이 부츠, 섹시한": "wearing knee-high boots, sexy long legs",
     "허벅지까지 부츠 — 싸이하이 부츠": "wearing thigh-high boots, ultra sexy",
     "포인티드 토 힐 — 뾰족한 앞코 힐": "wearing pointed toe stiletto pumps, classic glamour",
+    "글래디에이터 샌들 — 끈이 종아리까지": "wearing gladiator sandals, lace-up straps up the calf",
+    "뮬 힐 — 뒤가 없는 슬링백 힐": "wearing mule heels, backless slip-on stiletto",
+    "크리스탈 힐 — 반짝이는 투명 힐": "wearing crystal clear transparent heels, Cinderella glass slipper",
     "맨발 — 자연스러운": "barefoot, natural",
 }
 
@@ -245,6 +270,9 @@ CAMERAS = {
     "소니 A7R V — 50mm f/1.4": "Sony A7R V 50mm f/1.4 ISO 100",
     "니콘 Z9 — 85mm f/1.8": "Nikon Z9 85mm f/1.8 ISO 100",
     "페이즈원 XF IQ4 — 110mm f/2.8 중형": "Phase One XF IQ4 110mm f/2.8 medium format ISO 50",
+    "라이카 SL2 — 50mm f/1.4 독일 감성": "Leica SL2 50mm f/1.4 Summilux, German precision",
+    "후지 GFX 100S — 중형 110mm": "Fujifilm GFX 100S 110mm f/2 medium format",
+    "아이폰 시네마틱 — 모바일 시네마틱 모드": "iPhone cinematic mode, natural realistic style",
 }
 
 HAIR_STYLES = {
