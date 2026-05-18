@@ -327,6 +327,118 @@ MODEL_COUNT = {
     },
 }
 
+ERA = {
+    "없음": "",
+    "현대 — 2020년대 트렌디": "contemporary 2020s fashion, modern trendy style",
+    "레트로 80s — 네온, 빅헤어, 글램록": "retro 1980s fashion, neon colors, big hair, glam rock era",
+    "레트로 90s — 슈퍼모델 황금시대": "1990s supermodel era, minimalist chic, heroin chic aesthetic",
+    "빅토리안 — 코르셋, 드라마틱": "Victorian era fashion, dramatic corset, ornate period costume",
+    "1920s 플래퍼 — 재즈시대 글래머": "1920s flapper era, art deco glamour, jazz age fashion",
+    "미래 2100년 — SF 하이테크": "year 2100 futuristic fashion, high-tech sci-fi costume, future era",
+    "고대 그리스 — 여신 드레이핑": "ancient Greek goddess, draped fabric, classical mythology aesthetic",
+}
+
+CONCEPT = {
+    "없음": "",
+    "CEO 글래머 — 파워수트, 강한 여성": "powerful CEO glamour, sharp power suit, dominant businesswoman",
+    "악당 빌런 — 다크 글래머, 카리스마": "villain dark glamour, evil seductive charisma, dark queen energy",
+    "여전사 — 갑옷+글래머 융합": "warrior goddess, glamorous armor, fierce battle-ready beauty",
+    "팝스타 — 무대 의상, 공연 에너지": "pop star stage costume, performance energy, concert glamour",
+    "비밀요원 — 스파이 글래머, 미스터리": "secret agent spy glamour, mysterious sleek operative, femme fatale",
+    "여신 — 신화적 존재, 초월적 아름다움": "mythological goddess, ethereal divine beauty, supernatural aura",
+    "뱀파이어 — 다크 불멸의 존재": "vampire dark immortal beauty, gothic supernatural elegance",
+    "인어 — 바다의 여신": "mermaid ocean goddess, aquatic beauty, sea creature glamour",
+    "천사 — 천상의 존재": "angel celestial beauty, ethereal divine wings, heavenly glamour",
+    "마녀 — 마법사 글래머": "witch magical glamour, mystical sorceress, dark magic beauty",
+}
+
+SPECIAL_EFFECTS = {
+    "없음": "",
+    "불꽃 — 주변에 불이 타오르는": "surrounded by flames and fire, dramatic fire effects",
+    "물 — 물에 젖거나 물속 장면": "water effects, soaking wet, underwater or water splashing",
+    "연기 — 드라이아이스 안개": "dry ice smoke effects, mysterious fog surrounding model",
+    "꽃비 — 꽃잎이 날리는": "flower petals raining down, blooming flowers surrounding",
+    "번개 — 번개가 치는 배경": "lightning strike background, electric energy, storm effects",
+    "우주 — 별빛, 은하수 배경": "galaxy and stars background, cosmic universe, nebula effects",
+    "거울 파편 — 깨진 거울 조각": "broken mirror shards floating, glass fragments effect",
+    "황금 — 황금 가루가 날리는": "golden dust particles floating, gilded shimmer effect",
+    "얼음 — 얼음 결정, 냉기": "ice crystal effects, frozen breath, winter frost magic",
+    "네온 빛줄기 — 네온 레이저 빛": "neon laser light beams, colorful light rays cutting through",
+}
+
+IMAGE_STYLE = {
+    "없음": "",
+    "하이퍼리얼 — 극사실주의 사진": "hyperrealistic photography, ultra-detailed photorealism",
+    "오일페인팅 — 유화 회화 느낌": "oil painting style, painterly brushstrokes, fine art aesthetic",
+    "필름누아르 — 1940s 흑백 시네마": "film noir style, 1940s black and white cinema, dramatic shadows",
+    "팝아트 — 앤디워홀 스타일": "pop art style, Andy Warhol inspired, bold graphic colors",
+    "수채화 — 부드러운 수채화": "watercolor painting style, soft translucent washes",
+    "만화 — 코믹북 스타일": "comic book style, graphic novel illustration, bold outlines",
+    "3D 렌더링 — CGI 퀄리티": "3D rendered CGI quality, Unreal Engine photorealistic render",
+    "글리치 아트 — 디지털 왜곡": "glitch art effect, digital distortion, cyberpunk pixel corruption",
+    "더블 익스포저 — 이중 노출": "double exposure photography, overlapping silhouette effect",
+    "타블로 — 르네상스 명화 스타일": "Renaissance painting tableau, classical masterpiece composition",
+}
+
+PROPS = {
+    "없음": "",
+    "스포츠카 — 페라리/람보르기니": "posing with Ferrari or Lamborghini sports car, luxury supercar",
+    "오토바이 — 바이크 위에": "sitting on motorcycle, biker glamour, powerful motorbike",
+    "말 — 승마 글래머": "with horse, equestrian glamour, majestic stallion",
+    "의자 — 럭셔리 체어 포즈": "with luxury chair, seated or draped over elegant furniture",
+    "우산 — 비 오는 날 우산": "holding umbrella in rain, elegant rainy day accessory",
+    "꽃다발 — 화려한 꽃": "holding large flower bouquet, floral luxury arrangement",
+    "검/칼 — 여전사 무기": "holding sword or blade, warrior weapon, powerful stance",
+    "샴페인 — 럭셔리 파티": "holding champagne glass, luxury party celebration",
+    "고양이 — 팜므파탈과 고양이": "with elegant cat, femme fatale and feline, mysterious companion",
+    "거울 — 손거울 들고": "holding ornate mirror, self-reflection pose, vanity glamour",
+}
+
+BODY_WEIGHT = {
+    "없음": "",
+    "애노렉식 — 극도로 마른, 뼈만 앙상한": "anorexic extremely emaciated body, bones visibly protruding, skeletal figure, severely underweight, no body fat whatsoever",
+    "익스트림 슬림 — 뼈가 보이는 초마름": "extremely underweight body, visible ribs and hip bones, very bony thin figure, severely slim, waif-like skeletal",
+    "슈퍼 슬림 — 매우 마른 하이패션": "super slim ultra-thin body, very narrow waist, no curves, razor-thin silhouette, high fashion underweight model",
+    "슬림 — 날씬한 체형": "slim slender body, lean light frame, thin waist, minimal body fat, delicate figure",
+    "슬림 톤 — 날씬하고 탄탄한": "slim toned athletic body, lean defined muscles, flat stomach, light but fit",
+    "애슬레틱 — 탄탄한 운동선수": "athletic muscular body, defined muscles, sports-toned physique, powerful build, visible muscle definition",
+    "핏 글래머 — 탄탄하면서 볼륨": "fit glamorous body, toned yet curvy, athletic hourglass, defined abs with full bust and hips",
+    "보통 — 평균적인 자연스러운": "average natural body type, realistic proportions, normal weight, natural soft curves",
+    "커브 — 자연스러운 여성 곡선미": "curvy feminine body, natural soft curves, womanly figure, healthy weight with visible curves",
+    "풀 피규어 — 풍만하고 글래머러스": "full figure glamorous body, voluptuous curves, plus glamour, full bust and hips, soft rounded stomach",
+    "플러스사이즈 — 플러스사이즈 모델": "plus-size model body, full voluptuous figure, size 16-18, soft belly, full thighs, body positive",
+    "라지 플러스 — 매우 풍만한 체형": "large plus-size body, size 20-22, very full figure, round soft belly, heavy thighs, wide hips, abundant curves",
+    "BBW 글래머 — 극도로 풍만한 글래머": "BBW glamour body, obese figure, large protruding belly, very full heavy thighs, wide heavy hips, chubby arms, overweight body, 250 pound figure",
+    "슈퍼 BBW — 매우 큰 풍만한 체형": "super BBW body, massively obese figure, very large hanging belly with multiple rolls, enormous thighs, very heavy arms, extremely wide hips, significantly overweight, 300+ pound body type",
+}
+
+BUST_SIZE = {
+    "없음": "",
+    "플랫 — 거의 없는 평평한": "very flat chest, barely-there bust, AA-cup, no breast tissue visible",
+    "스몰 — 작은 가슴": "small A-cup breasts, petite modest chest, minimal bust",
+    "미디엄 스몰 — 약간 작은": "B-cup breasts, natural modest bust, small but present",
+    "미디엄 — 보통 사이즈": "C-cup breasts, natural proportionate bust, medium fullness",
+    "풀 미디엄 — 보통보다 약간 큰": "full D-cup breasts, naturally full bust, prominent cleavage",
+    "라지 — 큰 가슴": "large DD-cup breasts, very full heavy bust, deep cleavage, overflowing top",
+    "엑스라지 — 매우 큰 가슴": "extremely large DDD/F-cup breasts, massive heavy bust, extreme cleavage, barely contained",
+    "슈퍼 라지 — 극도로 큰 가슴": "enormous G/H-cup breasts, gigantic heavy bust, overflowing, extremely voluminous chest",
+    "글래머 — 완벽한 글래머 볼륨": "perfect glamour bust, lifted full round breasts, maximum volume cleavage, pinup perfection",
+}
+
+HIP_SIZE = {
+    "없음": "",
+    "플랫 — 거의 없는 평평한 힙": "very flat hips, no curves, straight boyish lower body, minimal buttocks",
+    "슬림 — 날씬한 힙": "slim narrow hips, small flat buttocks, petite lower body",
+    "미디엄 — 보통 힙": "medium hips, natural proportionate buttocks, modest curves",
+    "풀 — 풍만한 힙": "full round hips, prominent rounded buttocks, womanly curves, wide hip-to-waist ratio",
+    "글래머 힙 — 모래시계 글래머": "dramatic hourglass hips, very wide full hips, large round prominent buttocks, extreme waist-to-hip ratio",
+    "라지 힙 — 큰 힙": "very large wide hips, large heavy buttocks, thick full thighs, abundant lower body curves",
+    "바비 힙 — 극강 모래시계": "extreme Barbie hourglass, impossibly wide hips, tiny waist, enormous round buttocks, hyper-feminine silhouette",
+    "브라질리언 힙 — 크고 둥근": "Brazilian-style enormous round buttocks, very large protruding rear, thick heavy thighs, maximum gluteal volume",
+    "슈퍼 커브 — 극도로 풍만한 힙": "super curvy massive hips, extremely wide lower body, huge round heavy buttocks, thighs touching, very thick legs",
+    "엑스트림 커브 — 과장된 곡선": "hyper-exaggerated curves, cartoonishly wide hips, gigantic round protruding buttocks, maximum possible hip volume, impossibly curvy",
+}
+
 MAKEUP = {
     "AI 자동 — 프롬프트 기반": "",
     "스모키 아이 — 강렬한 눈매, 다크 섀도우": "dramatic smoky eye makeup, dark eyeshadow, intense gaze",
@@ -413,24 +525,39 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     hair_style  = HAIR_STYLES.get(data.get('hair_style', ''), '')
     hair_color  = HAIR_COLORS.get(data.get('hair_color', ''), '')
     hair_str    = " ".join(filter(None, [hair_color, hair_style]))
-    makeup      = MAKEUP.get(data.get('makeup', ''), '')
-    accessories = ACCESSORIES.get(data.get('accessories', ''), '')
-    skin_tone   = SKIN_TONES.get(data.get('skin_tone', ''), '')
-    count_data  = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
-    model_subject = count_data['prompt']
+    makeup         = MAKEUP.get(data.get('makeup', ''), '')
+    accessories    = ACCESSORIES.get(data.get('accessories', ''), '')
+    skin_tone      = SKIN_TONES.get(data.get('skin_tone', ''), '')
+    count_data     = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
+    model_subject  = count_data['prompt']
+    era            = ERA.get(data.get('era', ''), '')
+    concept        = CONCEPT.get(data.get('concept', ''), '')
+    special_fx     = SPECIAL_EFFECTS.get(data.get('special_effects', ''), '')
+    img_style      = IMAGE_STYLE.get(data.get('image_style', ''), '')
+    props          = PROPS.get(data.get('props', ''), '')
+    body_weight    = BODY_WEIGHT.get(data.get('body_weight', ''), '')
+    bust_size      = BUST_SIZE.get(data.get('bust_size', ''), '')
+    hip_size       = HIP_SIZE.get(data.get('hip_size', ''), '')
+    body_str       = ", ".join(filter(None, [body_weight, bust_size, hip_size]))
 
     parts = [
         f"Professional fashion photograph, {CAMERA_ANGLES[data['angle']]}, model fills the entire frame.",
         f"{model_subject}: {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
+        f"Body details: {body_str}." if body_str else "",
+        f"Era: {era}." if era else "",
+        f"Concept: {concept}." if concept else "",
         f"Skin: {skin_tone}." if skin_tone else "",
         f"Hair: {hair_str}." if hair_str else "",
         f"Makeup: {makeup}." if makeup else "",
         f"Accessories: {accessories}." if accessories else "",
+        f"Props: {props}." if props else "",
         f"Pose: {pose}." if pose else "",
         f"Wearing: {outfit}, made of {MATERIALS[data['material']]}{', ' + footwear if footwear else ''}.",
         f"Environment: {ENVIRONMENTS[data['env']]}, background softly blurred bokeh.",
+        f"Special effects: {special_fx}." if special_fx else "",
         f"Lighting: {LIGHTING[data['light']]}.",
         f"Style reference: {STYLES[data['style']]}.",
+        f"Image style: {img_style}." if img_style else "",
         f"Camera: {CAMERAS[data['camera']]}, sharp focus on model.",
         f"Color grade: {color_grade}." if color_grade else "",
     ]
@@ -469,24 +596,39 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     hair_style  = HAIR_STYLES.get(data.get('hair_style', ''), '')
     hair_color  = HAIR_COLORS.get(data.get('hair_color', ''), '')
     hair_str    = " ".join(filter(None, [hair_color, hair_style]))
-    makeup      = MAKEUP.get(data.get('makeup', ''), '')
-    accessories = ACCESSORIES.get(data.get('accessories', ''), '')
-    skin_tone   = SKIN_TONES.get(data.get('skin_tone', ''), '')
-    count_data  = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
-    model_subject = count_data['prompt']
+    makeup         = MAKEUP.get(data.get('makeup', ''), '')
+    accessories    = ACCESSORIES.get(data.get('accessories', ''), '')
+    skin_tone      = SKIN_TONES.get(data.get('skin_tone', ''), '')
+    count_data     = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
+    model_subject  = count_data['prompt']
+    era            = ERA.get(data.get('era', ''), '')
+    concept        = CONCEPT.get(data.get('concept', ''), '')
+    special_fx     = SPECIAL_EFFECTS.get(data.get('special_effects', ''), '')
+    img_style      = IMAGE_STYLE.get(data.get('image_style', ''), '')
+    props          = PROPS.get(data.get('props', ''), '')
+    body_weight    = BODY_WEIGHT.get(data.get('body_weight', ''), '')
+    bust_size      = BUST_SIZE.get(data.get('bust_size', ''), '')
+    hip_size       = HIP_SIZE.get(data.get('hip_size', ''), '')
+    body_str       = ", ".join(filter(None, [body_weight, bust_size, hip_size]))
     appearance_desc = f"with {appearance}" if appearance else ""
 
     return (
         f"Professional fashion photograph, {aspect_desc}, {angle}. "
         f"{model_subject} {appearance_desc}, {model}, commanding the frame with confidence and elegance. "
+        f"{'Body: ' + body_str + '. ' if body_str else ''}"
+        f"{'Era: ' + era + '. ' if era else ''}"
+        f"{'Concept: ' + concept + '. ' if concept else ''}"
         f"{'Skin: ' + skin_tone + '. ' if skin_tone else ''}"
         f"{'Hair: ' + hair_str + '. ' if hair_str else ''}"
         f"{'Makeup: ' + makeup + '. ' if makeup else ''}"
         f"{'Accessories: ' + accessories + '. ' if accessories else ''}"
+        f"{'Props: ' + props + '. ' if props else ''}"
         f"{'Pose: ' + pose + '. ' if pose else ''}"
         f"Wearing {outfit}, crafted from {material}{', ' + footwear if footwear else ''}. "
         f"The scene unfolds at {env}, "
+        f"{'Special effects: ' + special_fx + '. ' if special_fx else ''}"
         f"bathed in {light}, creating a breathtaking atmosphere. "
+        f"{'Image style: ' + img_style + '. ' if img_style else ''}"
         f"Shot in the style of {style}, "
         f"captured on {camera} with razor-sharp focus on the model. "
         f"{'Color grade: ' + color_grade + '. ' if color_grade else ''}"
@@ -808,7 +950,15 @@ with tab2:
         st.session_state.r_makeup      = random.choice(list(MAKEUP.keys()))
         st.session_state.r_accessories = random.choice(list(ACCESSORIES.keys()))
         st.session_state.r_skin_tone   = random.choice(list(SKIN_TONES.keys()))
-        st.session_state.r_model_count = random.choice(list(MODEL_COUNT.keys())[:2])  # 1명 또는 2명만 랜덤
+        st.session_state.r_model_count    = random.choice(list(MODEL_COUNT.keys())[:2])
+        st.session_state.r_era            = "없음"
+        st.session_state.r_concept        = "없음"
+        st.session_state.r_special_effects = "없음"
+        st.session_state.r_image_style    = "없음"
+        st.session_state.r_props          = "없음"
+        st.session_state.r_body_weight    = "없음"
+        st.session_state.r_bust_size      = "없음"
+        st.session_state.r_hip_size       = "없음"
         st.session_state.r_env         = random.choice(list(ENVIRONMENTS.keys()))
         st.session_state.r_light       = random.choice(list(LIGHTING.keys()))
         st.session_state.r_angle       = random.choice(list(CAMERA_ANGLES.keys()))
@@ -827,15 +977,23 @@ with tab2:
         hair_color  = st.selectbox("🎨 헤어컬러",                   list(HAIR_COLORS.keys()),        index=list(HAIR_COLORS.keys()).index(st.session_state.get("r_hair_color", list(HAIR_COLORS.keys())[0])))
         makeup      = st.selectbox("💄 메이크업",                   list(MAKEUP.keys()),             index=list(MAKEUP.keys()).index(st.session_state.get("r_makeup", list(MAKEUP.keys())[0])))
         model_count = st.selectbox("👥 모델 수",                    list(MODEL_COUNT.keys()),        index=list(MODEL_COUNT.keys()).index(st.session_state.get("r_model_count", list(MODEL_COUNT.keys())[0])))
+        era         = st.selectbox("🌍 시대/시간대",                 list(ERA.keys()),                index=list(ERA.keys()).index(st.session_state.get("r_era", list(ERA.keys())[0])))
+        concept     = st.selectbox("🎭 컨셉/페르소나",               list(CONCEPT.keys()),            index=list(CONCEPT.keys()).index(st.session_state.get("r_concept", list(CONCEPT.keys())[0])))
+        body_weight = st.selectbox("⚖️ 체중/체형",                  list(BODY_WEIGHT.keys()),        index=list(BODY_WEIGHT.keys()).index(st.session_state.get("r_body_weight", list(BODY_WEIGHT.keys())[0])))
+        bust_size   = st.selectbox("👙 가슴 사이즈",                 list(BUST_SIZE.keys()),          index=list(BUST_SIZE.keys()).index(st.session_state.get("r_bust_size", list(BUST_SIZE.keys())[0])))
+        hip_size    = st.selectbox("🍑 힙 사이즈",                   list(HIP_SIZE.keys()),           index=list(HIP_SIZE.keys()).index(st.session_state.get("r_hip_size", list(HIP_SIZE.keys())[0])))
     with col2:
-        accessories = st.selectbox("💍 액세서리",                   list(ACCESSORIES.keys()),        index=list(ACCESSORIES.keys()).index(st.session_state.get("r_accessories", list(ACCESSORIES.keys())[0])))
-        skin_tone   = st.selectbox("🌊 피부 톤/질감",               list(SKIN_TONES.keys()),         index=list(SKIN_TONES.keys()).index(st.session_state.get("r_skin_tone", list(SKIN_TONES.keys())[0])))
-        color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",      list(COLOR_GRADES.keys()),       index=list(COLOR_GRADES.keys()).index(st.session_state.get("r_color_grade", list(COLOR_GRADES.keys())[0])))
-        style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",     list(STYLES.keys()),             index=list(STYLES.keys()).index(st.session_state.get("r_style", list(STYLES.keys())[0])))
-        environment = st.selectbox("🏙️ 환경 — 촬영 장소",          list(ENVIRONMENTS.keys()),       index=list(ENVIRONMENTS.keys()).index(st.session_state.get("r_env", list(ENVIRONMENTS.keys())[0])))
-        lighting    = st.selectbox("💡 조명 — 빛의 분위기",         list(LIGHTING.keys()),           index=list(LIGHTING.keys()).index(st.session_state.get("r_light", list(LIGHTING.keys())[0])))
-        angle       = st.selectbox("📸 카메라 앵글 — 촬영 각도",    list(CAMERA_ANGLES.keys()),      index=list(CAMERA_ANGLES.keys()).index(st.session_state.get("r_angle", list(CAMERA_ANGLES.keys())[0])))
-        camera      = st.selectbox("📷 카메라 — 장비",              list(CAMERAS.keys()),            index=list(CAMERAS.keys()).index(st.session_state.get("r_camera", list(CAMERAS.keys())[0])))
+        accessories  = st.selectbox("💍 액세서리",                   list(ACCESSORIES.keys()),        index=list(ACCESSORIES.keys()).index(st.session_state.get("r_accessories", list(ACCESSORIES.keys())[0])))
+        skin_tone    = st.selectbox("🌊 피부 톤/질감",               list(SKIN_TONES.keys()),         index=list(SKIN_TONES.keys()).index(st.session_state.get("r_skin_tone", list(SKIN_TONES.keys())[0])))
+        special_fx   = st.selectbox("🌈 특수 효과",                  list(SPECIAL_EFFECTS.keys()),    index=list(SPECIAL_EFFECTS.keys()).index(st.session_state.get("r_special_effects", list(SPECIAL_EFFECTS.keys())[0])))
+        img_style    = st.selectbox("📐 이미지 스타일",              list(IMAGE_STYLE.keys()),        index=list(IMAGE_STYLE.keys()).index(st.session_state.get("r_image_style", list(IMAGE_STYLE.keys())[0])))
+        props        = st.selectbox("🎪 특별 소품",                  list(PROPS.keys()),              index=list(PROPS.keys()).index(st.session_state.get("r_props", list(PROPS.keys())[0])))
+        color_grade  = st.selectbox("🖼️ 색감 — 컬러 그레이딩",      list(COLOR_GRADES.keys()),       index=list(COLOR_GRADES.keys()).index(st.session_state.get("r_color_grade", list(COLOR_GRADES.keys())[0])))
+        style        = st.selectbox("🎬 스타일 — 화보 레퍼런스",     list(STYLES.keys()),             index=list(STYLES.keys()).index(st.session_state.get("r_style", list(STYLES.keys())[0])))
+        environment  = st.selectbox("🏙️ 환경 — 촬영 장소",          list(ENVIRONMENTS.keys()),       index=list(ENVIRONMENTS.keys()).index(st.session_state.get("r_env", list(ENVIRONMENTS.keys())[0])))
+        lighting     = st.selectbox("💡 조명 — 빛의 분위기",         list(LIGHTING.keys()),           index=list(LIGHTING.keys()).index(st.session_state.get("r_light", list(LIGHTING.keys())[0])))
+        angle        = st.selectbox("📸 카메라 앵글 — 촬영 각도",    list(CAMERA_ANGLES.keys()),      index=list(CAMERA_ANGLES.keys()).index(st.session_state.get("r_angle", list(CAMERA_ANGLES.keys())[0])))
+        camera       = st.selectbox("📷 카메라 — 장비",              list(CAMERAS.keys()),            index=list(CAMERAS.keys()).index(st.session_state.get("r_camera", list(CAMERAS.keys())[0])))
 
     col_x, col_y, _ = st.columns([1, 1, 2])
     with col_x:
@@ -855,6 +1013,11 @@ with tab2:
             "hair_style": hair_style, "hair_color": hair_color,
             "makeup": makeup, "accessories": accessories,
             "skin_tone": skin_tone, "model_count": model_count,
+            "era": era, "concept": concept,
+            "special_effects": special_fx,
+            "image_style": img_style, "props": props,
+            "body_weight": body_weight,
+            "bust_size": bust_size, "hip_size": hip_size,
             "env": environment, "light": lighting,
             "angle": angle, "style": style, "camera": camera,
         }
@@ -907,23 +1070,32 @@ with tab3:
 
     if btn_rand:
         data = {
-            "appearance":  random.choice(list(MODEL_APPEARANCE.keys())),
-            "model":       random.choice(list(MODEL_TYPES.keys())),
-            "outfit":      random.choice(list(OUTFIT_TYPES.keys())),
-            "material":    random.choice(list(MATERIALS.keys())),
-            "footwear":    random.choice(list(FOOTWEAR.keys())),
-            "pose":        random.choice(list(POSES.keys())),
-            "color_grade": random.choice(list(COLOR_GRADES.keys())),
-            "hair_style":  random.choice(list(HAIR_STYLES.keys())),
-            "hair_color":  random.choice(list(HAIR_COLORS.keys())),
-            "makeup":      random.choice(list(MAKEUP.keys())),
-            "accessories": random.choice(list(ACCESSORIES.keys())),
-            "skin_tone":   random.choice(list(SKIN_TONES.keys())),
-            "env":         random.choice(list(ENVIRONMENTS.keys())),
-            "light":       random.choice(list(LIGHTING.keys())),
-            "angle":       random.choice(list(CAMERA_ANGLES.keys())),
-            "style":       random.choice(list(STYLES.keys())),
-            "camera":      random.choice(list(CAMERAS.keys())),
+            "appearance":      random.choice(list(MODEL_APPEARANCE.keys())),
+            "model":           random.choice(list(MODEL_TYPES.keys())),
+            "outfit":          random.choice(list(OUTFIT_TYPES.keys())),
+            "material":        random.choice(list(MATERIALS.keys())),
+            "footwear":        random.choice(list(FOOTWEAR.keys())),
+            "pose":            random.choice(list(POSES.keys())),
+            "color_grade":     random.choice(list(COLOR_GRADES.keys())),
+            "hair_style":      random.choice(list(HAIR_STYLES.keys())),
+            "hair_color":      random.choice(list(HAIR_COLORS.keys())),
+            "makeup":          random.choice(list(MAKEUP.keys())),
+            "accessories":     random.choice(list(ACCESSORIES.keys())),
+            "skin_tone":       random.choice(list(SKIN_TONES.keys())),
+            "model_count":     random.choice(list(MODEL_COUNT.keys())[:2]),
+            "era":             "없음",
+            "concept":         "없음",
+            "special_effects": "없음",
+            "image_style":     "없음",
+            "props":           "없음",
+            "body_weight":     "없음",
+            "bust_size":       "없음",
+            "hip_size":        "없음",
+            "env":             random.choice(list(ENVIRONMENTS.keys())),
+            "light":           random.choice(list(LIGHTING.keys())),
+            "angle":           random.choice(list(CAMERA_ANGLES.keys())),
+            "style":           random.choice(list(STYLES.keys())),
+            "camera":          random.choice(list(CAMERAS.keys())),
         }
         st.session_state.random_prompt = get_prompt(data)
 
