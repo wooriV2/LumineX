@@ -1,5 +1,5 @@
 """
-LumineX Dashboard v2.3 - 멀티 플랫폼 프롬프트 생성
+LumineX Dashboard v2.7 - 멀티 플랫폼 프롬프트 생성
 실행: streamlit run dashboard.py
 """
 
@@ -22,16 +22,214 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    .stApp { background-color: #0a0a0a; }
-    h1, h2, h3 { color: #f5c518 !important; }
-    .stTextArea textarea {
-        background-color: #111 !important;
-        color: #ffffff !important;
-        border: 1px solid #444 !important;
-        font-size: 0.85rem !important;
-    }
-    .stButton > button { border-radius: 6px; font-weight: bold; }
-    hr { border-color: #333 !important; }
+/* ── 전체 배경 ── */
+.stApp { background-color: #080808 !important; }
+[data-testid="stAppViewContainer"] { background-color: #080808 !important; }
+[data-testid="stHeader"] { background-color: #080808 !important; }
+
+/* ── 사이드바 ── */
+[data-testid="stSidebar"] {
+    background-color: #0f0f0f !important;
+    border-right: 1px solid #1e1e1e !important;
+}
+[data-testid="stSidebar"] .stMarkdown p,
+[data-testid="stSidebar"] label { color: #aaa !important; font-size: 0.78rem !important; }
+[data-testid="stSidebar"] h3 {
+    color: #8a6f30 !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 2.5px !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+}
+
+/* ── 헤딩 ── */
+h1, h2, h3 { color: #c9a84c !important; letter-spacing: 2px !important; }
+h1 { font-size: 1.8rem !important; }
+h2 { font-size: 1.1rem !important; }
+h3 {
+    font-size: 0.65rem !important;
+    letter-spacing: 2.5px !important;
+    text-transform: uppercase !important;
+    color: #8a6f30 !important;
+}
+
+/* ── 탭 ── */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: transparent !important;
+    border-bottom: 1px solid #1e1e1e !important;
+    gap: 0 !important;
+}
+.stTabs [data-baseweb="tab"] {
+    background-color: transparent !important;
+    color: #555 !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 0.5px !important;
+    padding: 10px 20px !important;
+    border-bottom: 2px solid transparent !important;
+}
+.stTabs [aria-selected="true"] {
+    color: #c9a84c !important;
+    border-bottom: 2px solid #c9a84c !important;
+    background-color: transparent !important;
+}
+.stTabs [data-baseweb="tab-highlight"] { display: none !important; }
+.stTabs [data-baseweb="tab-border"] { display: none !important; }
+
+/* ── 셀렉트박스 ── */
+.stSelectbox > div > div {
+    background-color: #1c1c1c !important;
+    border: 1px solid #333 !important;
+    border-radius: 6px !important;
+    color: #e0e0e0 !important;
+    font-size: 0.8rem !important;
+    transition: border-color 0.2s !important;
+}
+.stSelectbox > div > div:hover {
+    border-color: rgba(201,168,76,0.35) !important;
+}
+.stSelectbox > div > div:focus-within {
+    border-color: rgba(201,168,76,0.6) !important;
+    box-shadow: 0 0 0 1px rgba(201,168,76,0.2) !important;
+}
+.stSelectbox label {
+    color: #c9a84c !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+}
+/* 셀렉트박스 내부 텍스트 */
+.stSelectbox [data-baseweb="select"] span,
+.stSelectbox [data-baseweb="select"] div,
+.stSelectbox [data-baseweb="select"] input {
+    color: #ddd !important;
+}
+/* 드롭다운 메뉴 */
+[data-baseweb="popover"] [data-baseweb="menu"] {
+    background-color: #1c1c1c !important;
+    border: 1px solid #333 !important;
+}
+[data-baseweb="popover"] li {
+    background-color: #1c1c1c !important;
+    color: #ccc !important;
+    font-size: 0.8rem !important;
+}
+[data-baseweb="popover"] li:hover {
+    background-color: rgba(201,168,76,0.08) !important;
+    color: #c9a84c !important;
+}
+
+/* ── 버튼 ── */
+.stButton > button {
+    border-radius: 6px !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    transition: all 0.2s !important;
+    height: 42px !important;
+}
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #c9a84c, #a07830) !important;
+    border: none !important;
+    color: #000 !important;
+}
+.stButton > button[kind="primary"]:hover {
+    background: linear-gradient(135deg, #e8c96a, #c9a84c) !important;
+    transform: translateY(-1px) !important;
+}
+.stButton > button[kind="secondary"] {
+    background: transparent !important;
+    border: 1px solid rgba(201,168,76,0.4) !important;
+    color: #c9a84c !important;
+}
+.stButton > button[kind="secondary"]:hover {
+    background: rgba(201,168,76,0.08) !important;
+    border-color: rgba(201,168,76,0.7) !important;
+}
+
+/* ── 라디오 버튼 ── */
+.stRadio > div { gap: 6px !important; }
+.stRadio label {
+    background: #111 !important;
+    border: 1px solid #222 !important;
+    border-radius: 6px !important;
+    padding: 7px 12px !important;
+    font-size: 0.78rem !important;
+    color: #666 !important;
+    cursor: pointer !important;
+    transition: all 0.2s !important;
+}
+.stRadio label:has(input:checked) {
+    background: rgba(201,168,76,0.1) !important;
+    border-color: rgba(201,168,76,0.4) !important;
+    color: #c9a84c !important;
+}
+
+/* ── 텍스트 에어리어 ── */
+.stTextArea textarea {
+    background-color: #0d0d0d !important;
+    color: #ccc !important;
+    border: 1px solid #1e1e1e !important;
+    border-radius: 6px !important;
+    font-size: 0.78rem !important;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+    line-height: 1.8 !important;
+}
+.stTextArea textarea:focus {
+    border-color: rgba(201,168,76,0.4) !important;
+    box-shadow: 0 0 0 1px rgba(201,168,76,0.15) !important;
+}
+
+/* ── code 블록 ── */
+.stCode {
+    background-color: #0d0d0d !important;
+    border: 1px solid rgba(201,168,76,0.2) !important;
+    border-radius: 6px !important;
+}
+.stCode code {
+    color: #a8945a !important;
+    font-size: 0.75rem !important;
+    line-height: 1.8 !important;
+}
+.stCode button {
+    background: rgba(201,168,76,0.1) !important;
+    border: 1px solid rgba(201,168,76,0.3) !important;
+    color: #c9a84c !important;
+    border-radius: 4px !important;
+}
+.stCode button:hover {
+    background: rgba(201,168,76,0.2) !important;
+}
+
+/* ── 토글 ── */
+[data-testid="stToggle"] > div {
+    background-color: #c9a84c !important;
+}
+
+/* ── info/success 박스 ── */
+.stAlert {
+    background-color: #111 !important;
+    border: 1px solid #222 !important;
+    border-radius: 6px !important;
+    color: #888 !important;
+    font-size: 0.78rem !important;
+}
+
+/* ── 구분선 ── */
+hr { border-color: #1e1e1e !important; margin: 12px 0 !important; }
+
+/* ── caption ── */
+.stCaption { color: #666 !important; font-size: 0.7rem !important; letter-spacing: 0.5px !important; }
+
+/* ── 일반 텍스트 ── */
+p, li, .stMarkdown { color: #bbb !important; font-size: 0.82rem !important; }
+
+/* ── 스크롤바 ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #8a6f30; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -46,13 +244,11 @@ ASPECT_RATIOS = {
 
 # ─── 데이터 ───────────────────────────────────────────────
 MODEL_APPEARANCE = {
-    # 아시안
     "🇰🇷 한국 — K-beauty, 하얀 피부, 또렷한 이목구비": "Korean beauty, fair porcelain skin, sharp elegant facial features, K-beauty aesthetic",
     "🇯🇵 일본 — J-beauty, 도자기 피부, 섬세한 이목구비": "Japanese beauty, porcelain delicate skin, refined subtle features, J-beauty aesthetic",
     "🇨🇳 중국 — 우아한 골격, 세련된 동양미": "Chinese beauty, elegant facial bone structure, sophisticated Eastern features",
     "🌏 동남아 — 골든 태닝, 이국적 태국/베트남 미녀": "Southeast Asian beauty, golden tan glowing skin, exotic Thai Vietnamese features",
     "🌙 중동 — 올리브 피부, 깊은 눈, 아라비안 뷰티": "Middle Eastern beauty, warm olive skin, deep dark sultry eyes, Arabian exotic features",
-    # 서양/기타
     "🇪🇺 유럽 — 백인, 강한 골격, 유러피안 미녀": "European Caucasian beauty, fair skin, strong bone structure, classic European features",
     "🇺🇸 미국 — 올아메리칸, 건강미, 애슬레틱": "All-American beauty, sun-kissed healthy skin, fresh athletic look, girl-next-door glamour",
     "💃 라틴 — 브론즈 태닝, 볼륨감, 브라질/콜롬비안": "Latina beauty, bronzed tan glowing skin, voluptuous curves, Brazilian Colombian exotic",
@@ -66,6 +262,19 @@ MODEL_APPEARANCE = {
     "🇪🇬 이집트 — 클레오파트라 느낌, 강렬한 눈매": "Egyptian beauty, Cleopatra-like features, intense dark eyes, Mediterranean skin",
 }
 
+AGE_APPEARANCE = {
+    "없음": "",
+    "18-20 — 어린 성인, 청순한": "18-20 years old young adult, fresh youthful face, college age",
+    "20대 초반 — 발랄하고 생기있는": "early 20s, vibrant youthful beauty, 21-24 years old",
+    "20대 중반 — 전성기 글래머": "mid 20s, peak glamour beauty, 25-27 years old",
+    "20대 후반 — 성숙미 시작": "late 20s, maturing beauty, 28-29 years old, sophisticated",
+    "30대 초반 — 세련된 성숙미": "early 30s, refined mature beauty, 30-33 years old, elegant",
+    "30대 중반 — 카리스마 있는": "mid 30s, charismatic mature glamour, 34-37 years old",
+    "40대 — 우아한 중년 글래머": "40s, elegant mature woman, 40-49 years old, sophisticated glamour",
+    "50대 — 실버 글래머": "50s, silver glamour, mature distinguished beauty, 50-59 years old",
+    "60대+ — 우아한 시니어": "60s and above, gracefully aged beauty, senior glamour, distinguished",
+}
+
 MODEL_TYPES = {
     "글래머 피트니스 — 탄탄+볼륨, 섹시한 근육미": "glamorous fitness model, full bust, toned abs, round hips, fit and voluptuous, hourglass figure",
     "핫 글래머 — 가슴 볼륨, 잘록한 허리, 풍만한 힙": "hot glamour model, full voluptuous bust, extremely narrow waist, full round hips, ultra hourglass",
@@ -77,19 +286,64 @@ MODEL_TYPES = {
     "플러스사이즈 글래머 — 풍만하고 자신감 넘치는": "plus-size glamour model, full voluptuous curves, confident powerful presence, body positive glamour",
     "피트니스 비키니 컴페티션 — 대회용 극강 근육미": "fitness bikini competition model, extremely defined muscles, competition-ready physique, shredded athletic body",
     "발레리나 — 길고 가늘고 극도로 우아한": "ballerina physique, extremely slender and elongated, graceful elegant posture, dancer's perfect poise",
+    "BBW 글래머 — 풍만한 볼륨, 큰 허리": "BBW glamour model, massive full bust, very wide thick waist, enormous hips, super plus-size hourglass, heavily overweight figure, large soft belly, thick heavy arms",
+    "슈퍼 BBW 글래머 — 극도로 풍만": "super BBW glamour model, gigantic full bust, no waist definition, extremely wide thick torso, massively obese figure, 300+ pound glamour, enormous hanging belly, massive thighs, very heavy arms, super wide hips",
+}
+
+BODY_WEIGHT = {
+    "없음": "",
+    "애노렉식 — 극도로 마른, 뼈만 앙상한": "anorexic extremely emaciated body, bones visibly protruding, skeletal figure, severely underweight, no body fat whatsoever",
+    "익스트림 슬림 — 뼈가 보이는 초마름": "extremely underweight body, visible ribs and hip bones, very bony thin figure, severely slim, waif-like skeletal",
+    "슈퍼 슬림 — 매우 마른 하이패션": "super slim ultra-thin body, very narrow waist, no curves, razor-thin silhouette, high fashion underweight model",
+    "슬림 — 날씬한 체형": "slim slender body, lean light frame, thin waist, minimal body fat, delicate figure",
+    "슬림 톤 — 날씬하고 탄탄한": "slim toned athletic body, lean defined muscles, flat stomach, light but fit",
+    "애슬레틱 — 탄탄한 운동선수": "athletic muscular body, defined muscles, sports-toned physique, powerful build, visible muscle definition",
+    "핏 글래머 — 탄탄하면서 볼륨": "fit glamorous body, toned yet curvy, athletic hourglass, defined abs with full bust and hips",
+    "보통 — 평균적인 자연스러운": "average natural body type, realistic proportions, normal weight, natural soft curves",
+    "커브 — 자연스러운 여성 곡선미": "curvy feminine body, natural soft curves, womanly figure, healthy weight with visible curves",
+    "풀 피규어 — 풍만하고 글래머러스": "full figure glamorous body, voluptuous curves, plus glamour, full bust and hips, soft rounded stomach",
+    "플러스사이즈 — 플러스사이즈 모델": "plus-size model body, full voluptuous figure, size 16-18, soft belly, full thighs, wide hips, body positive",
+    "라지 플러스 — 매우 풍만한 체형": "large plus-size body, size 20-22, very full figure, round soft belly, heavy thighs, wide hips, abundant curves",
+    "BBW 글래머 — 극도로 풍만한 글래머": "BBW glamour body, obese figure, large protruding belly, very full heavy thighs, wide heavy hips, chubby arms, overweight body, 250 pound figure",
+    "슈퍼 BBW — 매우 큰 풍만한 체형": "super BBW body, massively obese figure, very large hanging belly with multiple rolls, three distinct belly rolls, upper belly roll, middle belly roll, lower apron belly hanging over waistband, enormous thighs, very heavy arms, extremely wide hips, significantly overweight, 400+ pound body type",
+}
+
+BUST_SIZE = {
+    "없음": "",
+    "플랫 — 거의 없는 평평한": "very flat chest, barely-there bust, AA-cup, no breast tissue visible",
+    "스몰 — 작은 가슴": "small A-cup breasts, petite modest chest, minimal bust",
+    "미디엄 스몰 — 약간 작은": "B-cup breasts, natural modest bust, small but present",
+    "미디엄 — 보통 사이즈": "C-cup breasts, natural proportionate bust, medium fullness",
+    "풀 미디엄 — 보통보다 약간 큰": "full D-cup breasts, naturally full bust, prominent cleavage",
+    "라지 — 큰 가슴": "large DD-cup breasts, very full heavy bust, deep cleavage, overflowing top",
+    "엑스라지 — 매우 큰 가슴": "extremely large DDD/F-cup breasts, massive heavy bust, extreme cleavage, barely contained",
+    "슈퍼 라지 — 극도로 큰 가슴": "enormous G/H-cup breasts, gigantic heavy pendulous bust, overflowing any top, extremely voluminous chest, very large sagging heavy breasts, maximum breast size",
+    "글래머 — 완벽한 글래머 볼륨": "extremely large H/I/J-cup breasts, impossibly enormous heavy bust, massively overflowing any top, gigantic round voluminous bust, breasts spilling out completely, extreme maximum breast size, very heavy pendulous breasts, unrealistically large chest",
+}
+
+HIP_SIZE = {
+    "없음": "",
+    "플랫 — 거의 없는 평평한 힙": "very flat hips, no curves, straight boyish lower body, minimal buttocks",
+    "슬림 — 날씬한 힙": "slim narrow hips, small flat buttocks, petite lower body",
+    "미디엄 — 보통 힙": "medium hips, natural proportionate buttocks, modest curves",
+    "풀 — 풍만한 힙": "full round hips, prominent rounded buttocks, womanly curves, wide hip-to-waist ratio",
+    "글래머 힙 — 모래시계 글래머": "dramatic hourglass hips, very wide full hips, large round prominent buttocks, extreme waist-to-hip ratio",
+    "라지 힙 — 큰 힙": "very large wide hips, large heavy buttocks, thick full thighs, abundant lower body curves",
+    "바비 힙 — 극강 모래시계": "extreme Barbie hourglass, impossibly wide hips, tiny waist, enormous round buttocks, hyper-feminine silhouette",
+    "브라질리언 힙 — 크고 둥근": "Brazilian-style enormous round buttocks, very large protruding rear, thick heavy thighs, maximum gluteal volume",
+    "슈퍼 커브 — 극도로 풍만한 힙": "super curvy massive hips, extremely wide lower body, huge round heavy buttocks, thighs touching, very thick legs",
+    "엑스트림 커브 — 과장된 곡선": "hyper-exaggerated curves, cartoonishly wide hips, gigantic round protruding buttocks, maximum possible hip volume, impossibly curvy",
 }
 
 OUTFIT_TYPES = {
-    # ── 비키니/수영복 ──────────────────────────────────────
     "마이크로 비키니 — 끈 비키니, SI 수영복 화보": {
-        "gemini": "micro string bikini, barely-there coverage, Sports Illustrated swimsuit style",
+        "gemini": "micro string bikini, Sports Illustrated swimsuit editorial, minimal coverage string bikini, tiny triangle top, thong bottom, fashion photography swimwear",
         "chatgpt": "designer string bikini, minimalist swimwear, Sports Illustrated editorial style",
     },
     "원피스 수영복 — 하이컷, 컷아웃 디자인": {
         "gemini": "high-cut one-piece swimsuit, bold cutouts, athletic glamour",
         "chatgpt": "high-cut designer one-piece swimsuit, artistic cutouts, Sports Illustrated style",
     },
-    # ── 미니/드레스 ────────────────────────────────────────
     "컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인": {
         "gemini": "cutout mini dress, strategic skin-baring cutouts, bold editorial design",
         "chatgpt": "designer cutout mini dress, architectural cutout details, fashion editorial",
@@ -106,7 +360,6 @@ OUTFIT_TYPES = {
         "gemini": "bodycon mini dress, body-hugging silhouette, glamorous tight fit",
         "chatgpt": "bodycon mini dress, figure-hugging design, glamorous fashion editorial",
     },
-    # ── 코르셋/탑 ──────────────────────────────────────────
     "코르셋 드레스 — 잘록한 허리, 볼륨감 강조": {
         "gemini": "corset mini dress, cinched waist, décolletage emphasis, dramatic silhouette",
         "chatgpt": "fashion corset dress, cinched waist, dramatic neckline, haute couture style",
@@ -115,7 +368,6 @@ OUTFIT_TYPES = {
         "gemini": "bra top, ultra-high slit skirt, maximum leg exposure, editorial",
         "chatgpt": "fashion bra top, high slit skirt, long leg emphasis, Vogue editorial",
     },
-    # ── 란제리/바디수트 ────────────────────────────────────
     "란제리 에디토리얼 — VS 스타일, 실크 레이스": {
         "gemini": "luxury silk lace lingerie, Victoria's Secret editorial style, glamorous",
         "chatgpt": "luxury silk lace fashion set, Victoria's Secret editorial, artistic glamour photography",
@@ -128,12 +380,10 @@ OUTFIT_TYPES = {
         "gemini": "open back mini dress, plunging neckline, backless glamour",
         "chatgpt": "backless mini dress, dramatic plunging neckline, high-fashion editorial",
     },
-    # ── 피트니스 ───────────────────────────────────────────
     "스포츠브라+레깅스 — 핫한 피트니스 룩": {
         "gemini": "sports bra, high-waist leggings, midriff bare, fitness editorial",
         "chatgpt": "athletic sports bra, high-waist leggings, fitness editorial, Sports Illustrated",
     },
-    # ── 스페셜 ─────────────────────────────────────────────
     "모노키니 — 원피스 수영복 변형, 대담한 컷아웃": {
         "gemini": "monokini swimsuit, bold cutout one-piece, daring swimwear design",
         "chatgpt": "designer monokini, cutout one-piece swimsuit, bold editorial swimwear",
@@ -153,21 +403,18 @@ OUTFIT_TYPES = {
 }
 
 ENVIRONMENTS = {
-    # ── 럭셔리/도시 ────────────────────────────────────────
     "미니멀 스튜디오 — 흰 배경, 깔끔": "pure white minimalist studio, seamless backdrop",
     "두바이 펜트하우스 루프탑 — 야경": "Dubai luxury penthouse rooftop, city skyline at night, Burj Khalifa view",
     "모나코 테라스 — 지중해 야경": "Monaco luxury terrace, Mediterranean night view, superyachts harbor",
     "베르사유 궁전 — 황금빛 홀": "Palace of Versailles golden hall, ornate chandeliers, luxury interior",
     "뉴욕 루프탑 — 맨하탄 야경": "New York City rooftop, Manhattan skyline at night, urban glamour",
     "파리 오스만 발코니 — 에펠탑 뷰": "Paris Haussmann balcony, Eiffel Tower view, golden hour",
-    # ── 리조트/해변 ────────────────────────────────────────
     "럭셔리 인피니티 풀 — 열대 리조트": "luxury infinity pool edge, tropical resort, palm trees",
     "산토리니 절벽 — 에게해 야경": "Santorini cliff, blue dome church, Aegean sea at night",
     "말디브 수상빌라 — 크리스탈 바다": "Maldives overwater villa, crystal turquoise sea, tropical paradise",
     "리비에라 절벽 — 지중해 낮": "French Riviera cliff, azure Mediterranean sea, golden sunlight",
     "마이애미 비치 — 선셋": "Miami Beach sunset, Ocean Drive, warm pink sky",
     "럭셔리 요트 덱 — 지중해": "luxury superyacht deck, Mediterranean sea, ocean horizon",
-    # ── 시네마틱/다크 ──────────────────────────────────────
     "도쿄 네온 거리 — 비 오는 밤": "Shinjuku neon-lit rainy alley, Tokyo cyberpunk night",
     "다크 바로크 — 화려한 실내": "dark baroque opulent chamber, velvet and gold interior",
     "파리 패션위크 런웨이 — 모던 무대": "Paris fashion week modernist runway stage, fashion show",
@@ -305,26 +552,11 @@ HAIR_COLORS = {
 }
 
 MODEL_COUNT = {
-    "1명 — 싱글 모델 (기본)": {
-        "count": 1,
-        "prompt": "A stunning female model",
-    },
-    "2명 — 듀오, 두 모델 나란히": {
-        "count": 2,
-        "prompt": "Two stunning female models standing together side by side",
-    },
-    "2명 — 듀오, 대비되는 포즈": {
-        "count": 2,
-        "prompt": "Two stunning female models, contrasting poses, one in foreground one behind",
-    },
-    "3명 — 트리오, 세 모델": {
-        "count": 3,
-        "prompt": "Three stunning female models posing together, trio fashion editorial",
-    },
-    "그룹 — VS 런웨이 그룹샷": {
-        "count": 4,
-        "prompt": "Group of stunning female models on runway, Victoria's Secret fashion show group shot",
-    },
+    "1명 — 싱글 모델 (기본)": {"count": 1, "prompt": "A stunning female model"},
+    "2명 — 듀오, 두 모델 나란히": {"count": 2, "prompt": "Two stunning female models standing together side by side"},
+    "2명 — 듀오, 대비되는 포즈": {"count": 2, "prompt": "Two stunning female models, contrasting poses, one in foreground one behind"},
+    "3명 — 트리오, 세 모델": {"count": 3, "prompt": "Three stunning female models posing together, trio fashion editorial"},
+    "그룹 — VS 런웨이 그룹샷": {"count": 4, "prompt": "Group of stunning female models on runway, Victoria's Secret fashion show group shot"},
 }
 
 ERA = {
@@ -392,51 +624,6 @@ PROPS = {
     "샴페인 — 럭셔리 파티": "holding champagne glass, luxury party celebration",
     "고양이 — 팜므파탈과 고양이": "with elegant cat, femme fatale and feline, mysterious companion",
     "거울 — 손거울 들고": "holding ornate mirror, self-reflection pose, vanity glamour",
-}
-
-BODY_WEIGHT = {
-    "없음": "",
-    "애노렉식 — 극도로 마른, 뼈만 앙상한": "anorexic extremely emaciated body, bones visibly protruding, skeletal figure, severely underweight, no body fat whatsoever",
-    "익스트림 슬림 — 뼈가 보이는 초마름": "extremely underweight body, visible ribs and hip bones, very bony thin figure, severely slim, waif-like skeletal",
-    "슈퍼 슬림 — 매우 마른 하이패션": "super slim ultra-thin body, very narrow waist, no curves, razor-thin silhouette, high fashion underweight model",
-    "슬림 — 날씬한 체형": "slim slender body, lean light frame, thin waist, minimal body fat, delicate figure",
-    "슬림 톤 — 날씬하고 탄탄한": "slim toned athletic body, lean defined muscles, flat stomach, light but fit",
-    "애슬레틱 — 탄탄한 운동선수": "athletic muscular body, defined muscles, sports-toned physique, powerful build, visible muscle definition",
-    "핏 글래머 — 탄탄하면서 볼륨": "fit glamorous body, toned yet curvy, athletic hourglass, defined abs with full bust and hips",
-    "보통 — 평균적인 자연스러운": "average natural body type, realistic proportions, normal weight, natural soft curves",
-    "커브 — 자연스러운 여성 곡선미": "curvy feminine body, natural soft curves, womanly figure, healthy weight with visible curves",
-    "풀 피규어 — 풍만하고 글래머러스": "full figure glamorous body, voluptuous curves, plus glamour, full bust and hips, soft rounded stomach",
-    "플러스사이즈 — 플러스사이즈 모델": "plus-size model body, full voluptuous figure, size 16-18, soft belly, full thighs, body positive",
-    "라지 플러스 — 매우 풍만한 체형": "large plus-size body, size 20-22, very full figure, round soft belly, heavy thighs, wide hips, abundant curves",
-    "BBW 글래머 — 극도로 풍만한 글래머": "BBW glamour body, obese figure, large protruding belly, very full heavy thighs, wide heavy hips, chubby arms, overweight body, 250 pound figure",
-    "슈퍼 BBW — 매우 큰 풍만한 체형": "super BBW body, massively obese figure, very large hanging belly with multiple rolls, enormous thighs, very heavy arms, extremely wide hips, significantly overweight, 300+ pound body type",
-}
-
-BUST_SIZE = {
-    "없음": "",
-    "플랫 — 거의 없는 평평한": "very flat chest, barely-there bust, AA-cup, no breast tissue visible",
-    "스몰 — 작은 가슴": "small A-cup breasts, petite modest chest, minimal bust",
-    "미디엄 스몰 — 약간 작은": "B-cup breasts, natural modest bust, small but present",
-    "미디엄 — 보통 사이즈": "C-cup breasts, natural proportionate bust, medium fullness",
-    "풀 미디엄 — 보통보다 약간 큰": "full D-cup breasts, naturally full bust, prominent cleavage",
-    "라지 — 큰 가슴": "large DD-cup breasts, very full heavy bust, deep cleavage, overflowing top",
-    "엑스라지 — 매우 큰 가슴": "extremely large DDD/F-cup breasts, massive heavy bust, extreme cleavage, barely contained",
-    "슈퍼 라지 — 극도로 큰 가슴": "enormous G/H-cup breasts, gigantic heavy bust, overflowing, extremely voluminous chest",
-    "글래머 — 완벽한 글래머 볼륨": "perfect glamour bust, lifted full round breasts, maximum volume cleavage, pinup perfection",
-}
-
-HIP_SIZE = {
-    "없음": "",
-    "플랫 — 거의 없는 평평한 힙": "very flat hips, no curves, straight boyish lower body, minimal buttocks",
-    "슬림 — 날씬한 힙": "slim narrow hips, small flat buttocks, petite lower body",
-    "미디엄 — 보통 힙": "medium hips, natural proportionate buttocks, modest curves",
-    "풀 — 풍만한 힙": "full round hips, prominent rounded buttocks, womanly curves, wide hip-to-waist ratio",
-    "글래머 힙 — 모래시계 글래머": "dramatic hourglass hips, very wide full hips, large round prominent buttocks, extreme waist-to-hip ratio",
-    "라지 힙 — 큰 힙": "very large wide hips, large heavy buttocks, thick full thighs, abundant lower body curves",
-    "바비 힙 — 극강 모래시계": "extreme Barbie hourglass, impossibly wide hips, tiny waist, enormous round buttocks, hyper-feminine silhouette",
-    "브라질리언 힙 — 크고 둥근": "Brazilian-style enormous round buttocks, very large protruding rear, thick heavy thighs, maximum gluteal volume",
-    "슈퍼 커브 — 극도로 풍만한 힙": "super curvy massive hips, extremely wide lower body, huge round heavy buttocks, thighs touching, very thick legs",
-    "엑스트림 커브 — 과장된 곡선": "hyper-exaggerated curves, cartoonishly wide hips, gigantic round protruding buttocks, maximum possible hip volume, impossibly curvy",
 }
 
 MAKEUP = {
@@ -513,36 +700,37 @@ COLOR_GRADES = {
 
 
 def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
-    """Gemini: 자연어 서술형, 길고 묘사적"""
-    aspect_desc = ASPECT_RATIOS.get(aspect, "")
-    realism_kw  = "photorealistic, RAW photo, hyperrealistic, natural skin texture, pore detail, film grain, professional photographer" if realism else ""
-    appearance  = MODEL_APPEARANCE.get(data.get('appearance', ''), '')
-    outfit_data = OUTFIT_TYPES[data['outfit']]
-    outfit      = outfit_data["gemini"] if isinstance(outfit_data, dict) else outfit_data
-    footwear    = FOOTWEAR.get(data.get('footwear', ''), '')
-    pose        = POSES.get(data.get('pose', ''), '')
-    color_grade = COLOR_GRADES.get(data.get('color_grade', ''), '')
-    hair_style  = HAIR_STYLES.get(data.get('hair_style', ''), '')
-    hair_color  = HAIR_COLORS.get(data.get('hair_color', ''), '')
-    hair_str    = " ".join(filter(None, [hair_color, hair_style]))
-    makeup         = MAKEUP.get(data.get('makeup', ''), '')
-    accessories    = ACCESSORIES.get(data.get('accessories', ''), '')
-    skin_tone      = SKIN_TONES.get(data.get('skin_tone', ''), '')
-    count_data     = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
-    model_subject  = count_data['prompt']
-    era            = ERA.get(data.get('era', ''), '')
-    concept        = CONCEPT.get(data.get('concept', ''), '')
-    special_fx     = SPECIAL_EFFECTS.get(data.get('special_effects', ''), '')
-    img_style      = IMAGE_STYLE.get(data.get('image_style', ''), '')
-    props          = PROPS.get(data.get('props', ''), '')
-    body_weight    = BODY_WEIGHT.get(data.get('body_weight', ''), '')
-    bust_size      = BUST_SIZE.get(data.get('bust_size', ''), '')
-    hip_size       = HIP_SIZE.get(data.get('hip_size', ''), '')
-    body_str       = ", ".join(filter(None, [body_weight, bust_size, hip_size]))
+    aspect_desc   = ASPECT_RATIOS.get(aspect, "")
+    realism_kw    = "photorealistic, RAW photo, hyperrealistic, natural skin texture, pore detail, film grain, professional photographer" if realism else ""
+    appearance    = MODEL_APPEARANCE.get(data.get('appearance', ''), '')
+    age           = AGE_APPEARANCE.get(data.get('age', ''), '')
+    outfit_data   = OUTFIT_TYPES[data['outfit']]
+    outfit        = outfit_data["gemini"] if isinstance(outfit_data, dict) else outfit_data
+    footwear      = FOOTWEAR.get(data.get('footwear', ''), '')
+    pose          = POSES.get(data.get('pose', ''), '')
+    color_grade   = COLOR_GRADES.get(data.get('color_grade', ''), '')
+    hair_style    = HAIR_STYLES.get(data.get('hair_style', ''), '')
+    hair_color    = HAIR_COLORS.get(data.get('hair_color', ''), '')
+    hair_str      = " ".join(filter(None, [hair_color, hair_style]))
+    makeup        = MAKEUP.get(data.get('makeup', ''), '')
+    accessories   = ACCESSORIES.get(data.get('accessories', ''), '')
+    skin_tone     = SKIN_TONES.get(data.get('skin_tone', ''), '')
+    count_data    = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
+    model_subject = count_data['prompt']
+    era           = ERA.get(data.get('era', ''), '')
+    concept       = CONCEPT.get(data.get('concept', ''), '')
+    special_fx    = SPECIAL_EFFECTS.get(data.get('special_effects', ''), '')
+    img_style     = IMAGE_STYLE.get(data.get('image_style', ''), '')
+    props         = PROPS.get(data.get('props', ''), '')
+    body_weight   = BODY_WEIGHT.get(data.get('body_weight', ''), '')
+    bust_size     = BUST_SIZE.get(data.get('bust_size', ''), '')
+    hip_size      = HIP_SIZE.get(data.get('hip_size', ''), '')
+    body_str      = ", ".join(filter(None, [body_weight, bust_size, hip_size]))
 
     parts = [
         f"Professional fashion photograph, {CAMERA_ANGLES[data['angle']]}, model fills the entire frame.",
         f"{model_subject}: {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
+        f"Age: {age}." if age else "",
         f"Body details: {body_str}." if body_str else "",
         f"Era: {era}." if era else "",
         f"Concept: {concept}." if concept else "",
@@ -567,11 +755,10 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     if aspect_desc:
         suffix.append(aspect_desc)
     suffix.append("model is the absolute primary subject, tight framing, background secondary")
-    return " ".join(parts) + " " + ", ".join(suffix) + "."
+    return " ".join(filter(None, parts)) + " " + ", ".join(suffix) + "."
 
 
 def build_chatgpt_prompt(data: dict, aspect: str) -> str:
-    """ChatGPT(DALL-E): 150-200단어 서술형, 필터 안전"""
     aspect_map = {
         "세로 2:3 — 인물 기본": "vertical portrait 2:3",
         "세로 3:4 — 전신샷": "vertical portrait 3:4",
@@ -579,42 +766,44 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         "가로 4:3 — 화보": "wide editorial 4:3",
         "정방형 1:1 — 인스타": "square format 1:1",
     }
-    aspect_desc = aspect_map.get(aspect, "vertical portrait 2:3")
-    appearance  = MODEL_APPEARANCE.get(data.get('appearance', ''), '')
-    model       = MODEL_TYPES[data['model']]
-    outfit_data = OUTFIT_TYPES[data['outfit']]
-    outfit      = outfit_data["chatgpt"] if isinstance(outfit_data, dict) else outfit_data
-    material    = MATERIALS[data['material']]
-    env         = ENVIRONMENTS[data['env']]
-    light       = LIGHTING[data['light']]
-    style       = STYLES[data['style']]
-    camera      = CAMERAS[data['camera']]
-    angle       = CAMERA_ANGLES[data['angle']]
-    footwear    = FOOTWEAR.get(data.get('footwear', ''), '')
-    pose        = POSES.get(data.get('pose', ''), '')
-    color_grade = COLOR_GRADES.get(data.get('color_grade', ''), '')
-    hair_style  = HAIR_STYLES.get(data.get('hair_style', ''), '')
-    hair_color  = HAIR_COLORS.get(data.get('hair_color', ''), '')
-    hair_str    = " ".join(filter(None, [hair_color, hair_style]))
-    makeup         = MAKEUP.get(data.get('makeup', ''), '')
-    accessories    = ACCESSORIES.get(data.get('accessories', ''), '')
-    skin_tone      = SKIN_TONES.get(data.get('skin_tone', ''), '')
-    count_data     = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
-    model_subject  = count_data['prompt']
-    era            = ERA.get(data.get('era', ''), '')
-    concept        = CONCEPT.get(data.get('concept', ''), '')
-    special_fx     = SPECIAL_EFFECTS.get(data.get('special_effects', ''), '')
-    img_style      = IMAGE_STYLE.get(data.get('image_style', ''), '')
-    props          = PROPS.get(data.get('props', ''), '')
-    body_weight    = BODY_WEIGHT.get(data.get('body_weight', ''), '')
-    bust_size      = BUST_SIZE.get(data.get('bust_size', ''), '')
-    hip_size       = HIP_SIZE.get(data.get('hip_size', ''), '')
-    body_str       = ", ".join(filter(None, [body_weight, bust_size, hip_size]))
+    aspect_desc   = aspect_map.get(aspect, "vertical portrait 2:3")
+    appearance    = MODEL_APPEARANCE.get(data.get('appearance', ''), '')
+    age           = AGE_APPEARANCE.get(data.get('age', ''), '')
+    model         = MODEL_TYPES[data['model']]
+    outfit_data   = OUTFIT_TYPES[data['outfit']]
+    outfit        = outfit_data["chatgpt"] if isinstance(outfit_data, dict) else outfit_data
+    material      = MATERIALS[data['material']]
+    env           = ENVIRONMENTS[data['env']]
+    light         = LIGHTING[data['light']]
+    style         = STYLES[data['style']]
+    camera        = CAMERAS[data['camera']]
+    angle         = CAMERA_ANGLES[data['angle']]
+    footwear      = FOOTWEAR.get(data.get('footwear', ''), '')
+    pose          = POSES.get(data.get('pose', ''), '')
+    color_grade   = COLOR_GRADES.get(data.get('color_grade', ''), '')
+    hair_style    = HAIR_STYLES.get(data.get('hair_style', ''), '')
+    hair_color    = HAIR_COLORS.get(data.get('hair_color', ''), '')
+    hair_str      = " ".join(filter(None, [hair_color, hair_style]))
+    makeup        = MAKEUP.get(data.get('makeup', ''), '')
+    accessories   = ACCESSORIES.get(data.get('accessories', ''), '')
+    skin_tone     = SKIN_TONES.get(data.get('skin_tone', ''), '')
+    count_data    = MODEL_COUNT.get(data.get('model_count', '1명 — 싱글 모델 (기본)'), MODEL_COUNT['1명 — 싱글 모델 (기본)'])
+    model_subject = count_data['prompt']
+    era           = ERA.get(data.get('era', ''), '')
+    concept       = CONCEPT.get(data.get('concept', ''), '')
+    special_fx    = SPECIAL_EFFECTS.get(data.get('special_effects', ''), '')
+    img_style     = IMAGE_STYLE.get(data.get('image_style', ''), '')
+    props         = PROPS.get(data.get('props', ''), '')
+    body_weight   = BODY_WEIGHT.get(data.get('body_weight', ''), '')
+    bust_size     = BUST_SIZE.get(data.get('bust_size', ''), '')
+    hip_size      = HIP_SIZE.get(data.get('hip_size', ''), '')
+    body_str      = ", ".join(filter(None, [body_weight, bust_size, hip_size]))
     appearance_desc = f"with {appearance}" if appearance else ""
 
     return (
         f"Professional fashion photograph, {aspect_desc}, {angle}. "
         f"{model_subject} {appearance_desc}, {model}, commanding the frame with confidence and elegance. "
+        f"{'Age: ' + age + '. ' if age else ''}"
         f"{'Body: ' + body_str + '. ' if body_str else ''}"
         f"{'Era: ' + era + '. ' if era else ''}"
         f"{'Concept: ' + concept + '. ' if concept else ''}"
@@ -639,7 +828,6 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
 
 
 def build_midjourney_prompt(data: dict, aspect: str) -> str:
-    """Midjourney: 태그 나열 + 파라미터"""
     ar_map = {
         "세로 2:3 — 인물 기본": "2:3",
         "세로 3:4 — 전신샷": "3:4",
@@ -647,16 +835,15 @@ def build_midjourney_prompt(data: dict, aspect: str) -> str:
         "가로 4:3 — 화보": "4:3",
         "정방형 1:1 — 인스타": "1:1",
     }
-    ar         = ar_map.get(aspect, "2:3")
-    appearance = MODEL_APPEARANCE.get(data.get('appearance', ''), '').split(',')[0]
-
-    model_short    = MODEL_TYPES[data['model']].split(',')[0]
-    outfit_data    = OUTFIT_TYPES[data['outfit']]
-    outfit_short   = (outfit_data["chatgpt"] if isinstance(outfit_data, dict) else outfit_data).split(',')[0]
+    ar            = ar_map.get(aspect, "2:3")
+    appearance    = MODEL_APPEARANCE.get(data.get('appearance', ''), '').split(',')[0]
+    model_short   = MODEL_TYPES[data['model']].split(',')[0]
+    outfit_data   = OUTFIT_TYPES[data['outfit']]
+    outfit_short  = (outfit_data["chatgpt"] if isinstance(outfit_data, dict) else outfit_data).split(',')[0]
     material_short = MATERIALS[data['material']].split(',')[0]
-    env_short      = ENVIRONMENTS[data['env']].split(',')[0]
-    light_short    = LIGHTING[data['light']].split(',')[0]
-    style_short    = STYLES[data['style']].split(',')[0]
+    env_short     = ENVIRONMENTS[data['env']].split(',')[0]
+    light_short   = LIGHTING[data['light']].split(',')[0]
+    style_short   = STYLES[data['style']].split(',')[0]
     footwear_short = FOOTWEAR.get(data.get('footwear', ''), '').split(',')[0]
 
     tags = [t for t in [
@@ -670,9 +857,12 @@ def build_midjourney_prompt(data: dict, aspect: str) -> str:
 
 
 # ─── 헤더 ─────────────────────────────────────────────────
-st.markdown('<h1 style="color:#f5c518;letter-spacing:6px;font-size:2.2rem;">✦ LumineX</h1>', unsafe_allow_html=True)
-st.markdown('<p style="color:#666;font-size:0.85rem;margin-top:-15px;">AI Fashion Image Prompt Engine v2.5</p>', unsafe_allow_html=True)
-st.markdown("---")
+st.markdown('''
+<div style="padding:8px 0 20px;">
+  <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#444;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v2.7</div>
+</div>
+''', unsafe_allow_html=True)
 
 # ─── 사이드바 ─────────────────────────────────────────────
 with st.sidebar:
@@ -683,7 +873,6 @@ with st.sidebar:
         "🖥️ 출력 플랫폼",
         options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"],
         index=0,
-        help="플랫폼에 맞는 프롬프트 스타일로 자동 변환"
     )
 
     global_aspect = st.selectbox(
@@ -692,7 +881,7 @@ with st.sidebar:
         index=0,
     )
 
-    global_realism = st.toggle("📷 실사 모드", value=True, help="photorealistic 키워드 자동 추가 (Gemini 전용)")
+    global_realism = st.toggle("📷 실사 모드", value=True)
 
     st.markdown("---")
     st.markdown("### 🎬 영상 플랫폼")
@@ -752,115 +941,59 @@ with tab1:
     with col1:
         selected_preset = st.selectbox("🎨 프리셋 선택", options=presets, format_func=lambda x: f"• {x}")
 
-    # ── 8개 오버라이드 섹션 ──────────────────────────────
     NONE = "None — 프리셋 기본값 사용"
 
     col1, col2 = st.columns(2)
     with col1:
-        preset_appearance = st.selectbox(
-            "👩 인종/국적",
-            [NONE] + list(MODEL_APPEARANCE.keys()),
-            key="preset_appearance"
-        )
-        preset_body = st.selectbox(
-            "👤 체형",
-            [NONE] + list(MODEL_TYPES.keys()),
-            key="preset_body"
-        )
-        preset_outfit = st.selectbox(
-            "👗 의상",
-            [NONE] + list(OUTFIT_TYPES.keys()),
-            key="preset_outfit"
-        )
-        preset_material = st.selectbox(
-            "🧵 소재",
-            [NONE] + list(MATERIALS.keys()),
-            key="preset_material"
-        )
-        preset_pose = st.selectbox(
-            "💃 포즈",
-            [NONE] + list(POSES.keys()),
-            key="preset_pose"
-        )
+        preset_appearance = st.selectbox("👩 인종/국적", [NONE] + list(MODEL_APPEARANCE.keys()), key="preset_appearance")
+        preset_body       = st.selectbox("👤 체형", [NONE] + list(MODEL_TYPES.keys()), key="preset_body")
+        preset_outfit     = st.selectbox("👗 의상", [NONE] + list(OUTFIT_TYPES.keys()), key="preset_outfit")
+        preset_material   = st.selectbox("🧵 소재", [NONE] + list(MATERIALS.keys()), key="preset_material")
+        preset_pose       = st.selectbox("💃 포즈", [NONE] + list(POSES.keys()), key="preset_pose")
     with col2:
-        preset_color_grade = st.selectbox(
-            "🎨 색감",
-            [NONE] + list(COLOR_GRADES.keys()),
-            key="preset_color_grade"
-        )
-        preset_framing = st.selectbox(
-            "📸 프레이밍",
-            [NONE] + list(CAMERA_ANGLES.keys()),
-            key="preset_framing"
-        )
-        preset_footwear = st.selectbox(
-            "👠 신발",
-            [NONE] + list(FOOTWEAR.keys()),
-            key="preset_footwear"
-        )
-        preset_lighting = st.selectbox(
-            "💡 조명 오버라이드",
-            [NONE] + list(LIGHTING.keys()),
-            key="preset_lighting"
-        )
-        preset_style = st.selectbox(
-            "🎬 스타일 레퍼런스",
-            [NONE] + list(STYLES.keys()),
-            key="preset_style"
-        )
+        preset_color_grade = st.selectbox("🎨 색감", [NONE] + list(COLOR_GRADES.keys()), key="preset_color_grade")
+        preset_framing     = st.selectbox("📸 프레이밍", [NONE] + list(CAMERA_ANGLES.keys()), key="preset_framing")
+        preset_footwear    = st.selectbox("👠 신발", [NONE] + list(FOOTWEAR.keys()), key="preset_footwear")
+        preset_lighting    = st.selectbox("💡 조명 오버라이드", [NONE] + list(LIGHTING.keys()), key="preset_lighting")
+        preset_style       = st.selectbox("🎬 스타일 레퍼런스", [NONE] + list(STYLES.keys()), key="preset_style")
 
     col_a, col_b, col_c = st.columns([1, 1, 2])
     with col_a:
-        btn_ai = st.button("🤖 AI 생성", use_container_width=True, type="primary", key="preset_btn_ai")
+        btn_ai    = st.button("🤖 AI 생성", use_container_width=True, type="primary", key="preset_btn_ai")
     with col_b:
         btn_quick = st.button("⚡ 빠른 생성", use_container_width=True, key="preset_btn_quick")
 
-    if "preset_prompt" not in st.session_state:
-        st.session_state.preset_prompt = ""
-    if "preset_selected" not in st.session_state:
-        st.session_state.preset_selected = ""
+    if "preset_prompt"   not in st.session_state: st.session_state.preset_prompt   = ""
+    if "preset_selected" not in st.session_state: st.session_state.preset_selected = ""
 
-    # 프리셋 변경 감지 → 자동 초기화
     if selected_preset != st.session_state.preset_selected:
         st.session_state.preset_selected = selected_preset
-        st.session_state.preset_prompt = ""
+        st.session_state.preset_prompt   = ""
 
     def build_preset_overrides() -> dict:
-        """선택된 오버라이드 요소들을 딕셔너리로 반환 (프리셋 필드 덮어쓰기용)"""
         overrides = {}
-        if preset_appearance != NONE:
-            overrides['appearance'] = MODEL_APPEARANCE[preset_appearance]
-        if preset_body != NONE:
-            overrides['body'] = MODEL_TYPES[preset_body]
-        if preset_outfit != NONE:
+        if preset_appearance != NONE: overrides['appearance'] = MODEL_APPEARANCE[preset_appearance]
+        if preset_body       != NONE: overrides['body']       = MODEL_TYPES[preset_body]
+        if preset_outfit     != NONE:
             od = OUTFIT_TYPES[preset_outfit]
             overrides['outfit'] = od["gemini"] if isinstance(od, dict) else od
-        if preset_material != NONE:
-            overrides['material'] = MATERIALS[preset_material]
-        if preset_pose != NONE:
-            overrides['pose'] = POSES[preset_pose]
-        if preset_color_grade != NONE:
-            overrides['color_grade'] = COLOR_GRADES[preset_color_grade]
-        if preset_framing != NONE:
-            overrides['framing'] = CAMERA_ANGLES[preset_framing]
-        if preset_footwear != NONE:
-            overrides['footwear'] = FOOTWEAR[preset_footwear]
-        if preset_lighting != NONE:
-            overrides['lighting'] = LIGHTING[preset_lighting]
-        if preset_style != NONE:
-            overrides['style'] = STYLES[preset_style]
+        if preset_material   != NONE: overrides['material']   = MATERIALS[preset_material]
+        if preset_pose       != NONE: overrides['pose']       = POSES[preset_pose]
+        if preset_color_grade != NONE: overrides['color_grade'] = COLOR_GRADES[preset_color_grade]
+        if preset_framing    != NONE: overrides['framing']    = CAMERA_ANGLES[preset_framing]
+        if preset_footwear   != NONE: overrides['footwear']   = FOOTWEAR[preset_footwear]
+        if preset_lighting   != NONE: overrides['lighting']   = LIGHTING[preset_lighting]
+        if preset_style      != NONE: overrides['style']      = STYLES[preset_style]
         return overrides
 
     def apply_overrides_to_prompt(preset: dict, overrides: dict) -> str:
-        """오버라이드를 프리셋에 적용해서 프롬프트 생성"""
-        p = {**preset, **overrides}
+        p              = {**preset, **overrides}
         appearance_str = f"Model appearance: {overrides['appearance']}. " if 'appearance' in overrides else ""
         framing_str    = overrides.get('framing', 'full body shot')
         footwear_str   = f", {overrides['footwear']}" if 'footwear' in overrides else ""
         pose_str       = f"Pose: {overrides['pose']}. " if 'pose' in overrides else ""
         color_str      = f"Color grade: {overrides['color_grade']}. " if 'color_grade' in overrides else ""
-
-        prompt = (
+        return (
             f"Professional fashion photograph, {framing_str}. "
             f"{appearance_str}"
             f"Model: {p.get('subject', 'a stunning female model')}. "
@@ -872,58 +1005,38 @@ with tab1:
             f"Style: {p.get('style', '')}. "
             f"{color_str}"
             f"{p.get('quality', 'ultra-sharp, 8K, professional photography')}."
-        )
-        return prompt.strip()
+        ).strip()
 
     if btn_ai and selected_preset:
         st.session_state.preset_prompt = ""
         with st.spinner("Claude가 프롬프트 생성 중..."):
             try:
-                raw = generate_prompt_with_ai(selected_preset)
+                raw       = generate_prompt_with_ai(selected_preset)
                 overrides = build_preset_overrides()
-                prefix = []
-                if 'appearance' in overrides:
-                    prefix.append(overrides['appearance'].split(',')[0])
-                if 'body' in overrides:
-                    prefix.append(overrides['body'].split(',')[0])
-                if prefix:
-                    raw = f"Model: {', '.join(prefix)}. " + raw
+                prefix    = []
+                if 'appearance' in overrides: prefix.append(overrides['appearance'].split(',')[0])
+                if 'body'       in overrides: prefix.append(overrides['body'].split(',')[0])
+                if prefix: raw = f"Model: {', '.join(prefix)}. " + raw
                 aspect_desc = ASPECT_RATIOS.get(global_aspect, "")
-                if aspect_desc:
-                    raw += f" {aspect_desc}, vertical portrait orientation, taller than wide."
+                if aspect_desc: raw += f" {aspect_desc}, vertical portrait orientation, taller than wide."
                 st.session_state.preset_prompt = raw
             except Exception as e:
                 st.error(f"오류: {str(e)}")
 
     if btn_quick and selected_preset:
         st.session_state.preset_prompt = ""
-        preset = load_preset(selected_preset)
-        overrides = build_preset_overrides()
+        preset      = load_preset(selected_preset)
+        overrides   = build_preset_overrides()
         aspect_desc = ASPECT_RATIOS.get(global_aspect, "portrait 2:3 vertical")
-        raw = apply_overrides_to_prompt(preset, overrides)
-
+        raw         = apply_overrides_to_prompt(preset, overrides)
         if global_platform == "Gemini":
             raw += f" {aspect_desc}, vertical portrait orientation, taller than wide."
-
         elif global_platform == "ChatGPT (DALL-E)":
-            raw += (
-                f" {aspect_desc}. "
-                f"Photorealistic, hyperrealistic skin texture, natural pore detail, "
-                f"professional color grading, award-winning fashion photography, "
-                f"stunning editorial masterpiece quality."
-            )
-
-        else:  # Midjourney
-            ar_map = {
-                "세로 2:3 — 인물 기본": "2:3",
-                "세로 3:4 — 전신샷": "3:4",
-                "가로 16:9 — 시네마틱": "16:9",
-                "가로 4:3 — 화보": "4:3",
-                "정방형 1:1 — 인스타": "1:1",
-            }
-            ar = ar_map.get(global_aspect, "2:3")
+            raw += (f" {aspect_desc}. Photorealistic, hyperrealistic skin texture, natural pore detail, "
+                    f"professional color grading, award-winning fashion photography, stunning editorial masterpiece quality.")
+        else:
+            ar  = {"세로 2:3 — 인물 기본":"2:3","세로 3:4 — 전신샷":"3:4","가로 16:9 — 시네마틱":"16:9","가로 4:3 — 화보":"4:3","정방형 1:1 — 인스타":"1:1"}.get(global_aspect, "2:3")
             raw += f" --ar {ar} --style raw --q 2"
-
         st.session_state.preset_prompt = raw
 
     if st.session_state.preset_prompt:
@@ -938,66 +1051,73 @@ with tab2:
     st.markdown("### 요소별 수동 조합")
 
     if st.button("🎲 전체 랜덤으로 채우기"):
-        st.session_state.r_appearance  = random.choice(list(MODEL_APPEARANCE.keys()))
-        st.session_state.r_model       = random.choice(list(MODEL_TYPES.keys()))
-        st.session_state.r_outfit      = random.choice(list(OUTFIT_TYPES.keys()))
-        st.session_state.r_material    = random.choice(list(MATERIALS.keys()))
-        st.session_state.r_footwear    = random.choice(list(FOOTWEAR.keys()))
-        st.session_state.r_pose        = random.choice(list(POSES.keys()))
-        st.session_state.r_color_grade = random.choice(list(COLOR_GRADES.keys()))
-        st.session_state.r_hair_style  = random.choice(list(HAIR_STYLES.keys()))
-        st.session_state.r_hair_color  = random.choice(list(HAIR_COLORS.keys()))
-        st.session_state.r_makeup      = random.choice(list(MAKEUP.keys()))
-        st.session_state.r_accessories = random.choice(list(ACCESSORIES.keys()))
-        st.session_state.r_skin_tone   = random.choice(list(SKIN_TONES.keys()))
-        st.session_state.r_model_count    = random.choice(list(MODEL_COUNT.keys())[:2])
-        st.session_state.r_era            = "없음"
-        st.session_state.r_concept        = "없음"
+        st.session_state.r_appearance      = random.choice(list(MODEL_APPEARANCE.keys()))
+        st.session_state.r_age             = "없음"
+        st.session_state.r_model           = random.choice(list(MODEL_TYPES.keys()))
+        st.session_state.r_outfit          = random.choice(list(OUTFIT_TYPES.keys()))
+        st.session_state.r_material        = random.choice(list(MATERIALS.keys()))
+        st.session_state.r_footwear        = random.choice(list(FOOTWEAR.keys()))
+        st.session_state.r_pose            = random.choice(list(POSES.keys()))
+        st.session_state.r_color_grade     = random.choice(list(COLOR_GRADES.keys()))
+        st.session_state.r_hair_style      = random.choice(list(HAIR_STYLES.keys()))
+        st.session_state.r_hair_color      = random.choice(list(HAIR_COLORS.keys()))
+        st.session_state.r_makeup          = random.choice(list(MAKEUP.keys()))
+        st.session_state.r_accessories     = random.choice(list(ACCESSORIES.keys()))
+        st.session_state.r_skin_tone       = random.choice(list(SKIN_TONES.keys()))
+        st.session_state.r_model_count     = random.choice(list(MODEL_COUNT.keys())[:2])
+        st.session_state.r_era             = "없음"
+        st.session_state.r_concept         = "없음"
         st.session_state.r_special_effects = "없음"
-        st.session_state.r_image_style    = "없음"
-        st.session_state.r_props          = "없음"
-        st.session_state.r_body_weight    = "없음"
-        st.session_state.r_bust_size      = "없음"
-        st.session_state.r_hip_size       = "없음"
-        st.session_state.r_env         = random.choice(list(ENVIRONMENTS.keys()))
-        st.session_state.r_light       = random.choice(list(LIGHTING.keys()))
-        st.session_state.r_angle       = random.choice(list(CAMERA_ANGLES.keys()))
-        st.session_state.r_style       = random.choice(list(STYLES.keys()))
-        st.session_state.r_camera      = random.choice(list(CAMERAS.keys()))
+        st.session_state.r_image_style     = "없음"
+        st.session_state.r_props           = "없음"
+        st.session_state.r_body_weight     = "없음"
+        st.session_state.r_bust_size       = "없음"
+        st.session_state.r_hip_size        = "없음"
+        st.session_state.r_env             = random.choice(list(ENVIRONMENTS.keys()))
+        st.session_state.r_light           = random.choice(list(LIGHTING.keys()))
+        st.session_state.r_angle           = random.choice(list(CAMERA_ANGLES.keys()))
+        st.session_state.r_style           = random.choice(list(STYLES.keys()))
+        st.session_state.r_camera          = random.choice(list(CAMERAS.keys()))
+
+    def idx(d, key, default=0):
+        keys = list(d.keys())
+        val  = st.session_state.get(key, keys[default])
+        return keys.index(val) if val in keys else default
 
     col1, col2 = st.columns(2)
     with col1:
-        appearance  = st.selectbox("👩 모델 외모 — 인종/국적 ",     list(MODEL_APPEARANCE.keys()),   index=list(MODEL_APPEARANCE.keys()).index(st.session_state.get("r_appearance", list(MODEL_APPEARANCE.keys())[0])))
-        model_type  = st.selectbox("👤 모델 타입 — 체형과 비율",    list(MODEL_TYPES.keys()),        index=list(MODEL_TYPES.keys()).index(st.session_state.get("r_model", list(MODEL_TYPES.keys())[0])))
-        outfit      = st.selectbox("👗 의상 타입 — 스타일",         list(OUTFIT_TYPES.keys()),       index=list(OUTFIT_TYPES.keys()).index(st.session_state.get("r_outfit", list(OUTFIT_TYPES.keys())[0])))
-        material    = st.selectbox("🧵 소재 — 옷감 질감",           list(MATERIALS.keys()),          index=list(MATERIALS.keys()).index(st.session_state.get("r_material", list(MATERIALS.keys())[0])))
-        footwear    = st.selectbox("👠 신발 — 힐/부츠 스타일",      list(FOOTWEAR.keys()),           index=list(FOOTWEAR.keys()).index(st.session_state.get("r_footwear", list(FOOTWEAR.keys())[0])))
-        pose        = st.selectbox("💃 포즈 — 자세와 동작",         list(POSES.keys()),              index=list(POSES.keys()).index(st.session_state.get("r_pose", list(POSES.keys())[0])))
-        hair_style  = st.selectbox("💇 헤어스타일",                 list(HAIR_STYLES.keys()),        index=list(HAIR_STYLES.keys()).index(st.session_state.get("r_hair_style", list(HAIR_STYLES.keys())[0])))
-        hair_color  = st.selectbox("🎨 헤어컬러",                   list(HAIR_COLORS.keys()),        index=list(HAIR_COLORS.keys()).index(st.session_state.get("r_hair_color", list(HAIR_COLORS.keys())[0])))
-        makeup      = st.selectbox("💄 메이크업",                   list(MAKEUP.keys()),             index=list(MAKEUP.keys()).index(st.session_state.get("r_makeup", list(MAKEUP.keys())[0])))
-        model_count = st.selectbox("👥 모델 수",                    list(MODEL_COUNT.keys()),        index=list(MODEL_COUNT.keys()).index(st.session_state.get("r_model_count", list(MODEL_COUNT.keys())[0])))
-        era         = st.selectbox("🌍 시대/시간대",                 list(ERA.keys()),                index=list(ERA.keys()).index(st.session_state.get("r_era", list(ERA.keys())[0])))
-        concept     = st.selectbox("🎭 컨셉/페르소나",               list(CONCEPT.keys()),            index=list(CONCEPT.keys()).index(st.session_state.get("r_concept", list(CONCEPT.keys())[0])))
-        body_weight = st.selectbox("⚖️ 체중/체형",                  list(BODY_WEIGHT.keys()),        index=list(BODY_WEIGHT.keys()).index(st.session_state.get("r_body_weight", list(BODY_WEIGHT.keys())[0])))
-        bust_size   = st.selectbox("👙 가슴 사이즈",                 list(BUST_SIZE.keys()),          index=list(BUST_SIZE.keys()).index(st.session_state.get("r_bust_size", list(BUST_SIZE.keys())[0])))
-        hip_size    = st.selectbox("🍑 힙 사이즈",                   list(HIP_SIZE.keys()),           index=list(HIP_SIZE.keys()).index(st.session_state.get("r_hip_size", list(HIP_SIZE.keys())[0])))
+        appearance  = st.selectbox("👩 모델 외모 — 인종/국적",   list(MODEL_APPEARANCE.keys()), index=idx(MODEL_APPEARANCE, "r_appearance"))
+        age         = st.selectbox("🎂 연령대",                   list(AGE_APPEARANCE.keys()),   index=idx(AGE_APPEARANCE,   "r_age"))
+        model_type  = st.selectbox("👤 모델 타입 — 체형과 비율", list(MODEL_TYPES.keys()),       index=idx(MODEL_TYPES,      "r_model"))
+        outfit      = st.selectbox("👗 의상 타입 — 스타일",      list(OUTFIT_TYPES.keys()),      index=idx(OUTFIT_TYPES,     "r_outfit"))
+        material    = st.selectbox("🧵 소재 — 옷감 질감",        list(MATERIALS.keys()),         index=idx(MATERIALS,        "r_material"))
+        footwear    = st.selectbox("👠 신발 — 힐/부츠 스타일",   list(FOOTWEAR.keys()),          index=idx(FOOTWEAR,         "r_footwear"))
+        pose        = st.selectbox("💃 포즈 — 자세와 동작",      list(POSES.keys()),             index=idx(POSES,            "r_pose"))
+        hair_style  = st.selectbox("💇 헤어스타일",              list(HAIR_STYLES.keys()),       index=idx(HAIR_STYLES,      "r_hair_style"))
+        hair_color  = st.selectbox("🎨 헤어컬러",               list(HAIR_COLORS.keys()),       index=idx(HAIR_COLORS,      "r_hair_color"))
+        makeup      = st.selectbox("💄 메이크업",                list(MAKEUP.keys()),            index=idx(MAKEUP,           "r_makeup"))
+        model_count = st.selectbox("👥 모델 수",                 list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
+        era         = st.selectbox("🌍 시대/시간대",              list(ERA.keys()),               index=idx(ERA,              "r_era"))
+        concept     = st.selectbox("🎭 컨셉/페르소나",            list(CONCEPT.keys()),           index=idx(CONCEPT,          "r_concept"))
+        body_weight = st.selectbox("⚖️ 체중/체형",               list(BODY_WEIGHT.keys()),       index=idx(BODY_WEIGHT,      "r_body_weight"))
+        bust_size   = st.selectbox("👙 가슴 사이즈",              list(BUST_SIZE.keys()),         index=idx(BUST_SIZE,        "r_bust_size"))
+        hip_size    = st.selectbox("🍑 힙 사이즈",               list(HIP_SIZE.keys()),          index=idx(HIP_SIZE,         "r_hip_size"))
     with col2:
-        accessories  = st.selectbox("💍 액세서리",                   list(ACCESSORIES.keys()),        index=list(ACCESSORIES.keys()).index(st.session_state.get("r_accessories", list(ACCESSORIES.keys())[0])))
-        skin_tone    = st.selectbox("🌊 피부 톤/질감",               list(SKIN_TONES.keys()),         index=list(SKIN_TONES.keys()).index(st.session_state.get("r_skin_tone", list(SKIN_TONES.keys())[0])))
-        special_fx   = st.selectbox("🌈 특수 효과",                  list(SPECIAL_EFFECTS.keys()),    index=list(SPECIAL_EFFECTS.keys()).index(st.session_state.get("r_special_effects", list(SPECIAL_EFFECTS.keys())[0])))
-        img_style    = st.selectbox("📐 이미지 스타일",              list(IMAGE_STYLE.keys()),        index=list(IMAGE_STYLE.keys()).index(st.session_state.get("r_image_style", list(IMAGE_STYLE.keys())[0])))
-        props        = st.selectbox("🎪 특별 소품",                  list(PROPS.keys()),              index=list(PROPS.keys()).index(st.session_state.get("r_props", list(PROPS.keys())[0])))
-        color_grade  = st.selectbox("🖼️ 색감 — 컬러 그레이딩",      list(COLOR_GRADES.keys()),       index=list(COLOR_GRADES.keys()).index(st.session_state.get("r_color_grade", list(COLOR_GRADES.keys())[0])))
-        style        = st.selectbox("🎬 스타일 — 화보 레퍼런스",     list(STYLES.keys()),             index=list(STYLES.keys()).index(st.session_state.get("r_style", list(STYLES.keys())[0])))
-        environment  = st.selectbox("🏙️ 환경 — 촬영 장소",          list(ENVIRONMENTS.keys()),       index=list(ENVIRONMENTS.keys()).index(st.session_state.get("r_env", list(ENVIRONMENTS.keys())[0])))
-        lighting     = st.selectbox("💡 조명 — 빛의 분위기",         list(LIGHTING.keys()),           index=list(LIGHTING.keys()).index(st.session_state.get("r_light", list(LIGHTING.keys())[0])))
-        angle        = st.selectbox("📸 카메라 앵글 — 촬영 각도",    list(CAMERA_ANGLES.keys()),      index=list(CAMERA_ANGLES.keys()).index(st.session_state.get("r_angle", list(CAMERA_ANGLES.keys())[0])))
-        camera       = st.selectbox("📷 카메라 — 장비",              list(CAMERAS.keys()),            index=list(CAMERAS.keys()).index(st.session_state.get("r_camera", list(CAMERAS.keys())[0])))
+        accessories = st.selectbox("💍 액세서리",                list(ACCESSORIES.keys()),       index=idx(ACCESSORIES,      "r_accessories"))
+        skin_tone   = st.selectbox("🌊 피부 톤/질감",            list(SKIN_TONES.keys()),        index=idx(SKIN_TONES,       "r_skin_tone"))
+        special_fx  = st.selectbox("🌈 특수 효과",               list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
+        img_style   = st.selectbox("📐 이미지 스타일",           list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
+        props       = st.selectbox("🎪 특별 소품",               list(PROPS.keys()),             index=idx(PROPS,            "r_props"))
+        color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",   list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
+        style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",  list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
+        environment = st.selectbox("🏙️ 환경 — 촬영 장소",       list(ENVIRONMENTS.keys()),      index=idx(ENVIRONMENTS,     "r_env"))
+        lighting    = st.selectbox("💡 조명 — 빛의 분위기",      list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
+        angle       = st.selectbox("📸 카메라 앵글 — 촬영 각도", list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
+        camera      = st.selectbox("📷 카메라 — 장비",           list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
 
     col_x, col_y, _ = st.columns([1, 1, 2])
     with col_x:
-        btn_build = st.button("✨ 프롬프트 조합", type="primary", use_container_width=True)
+        btn_build      = st.button("✨ 프롬프트 조합", type="primary", use_container_width=True)
     with col_y:
         btn_ai_enhance = st.button("🤖 AI로 강화", use_container_width=True)
 
@@ -1006,7 +1126,7 @@ with tab2:
 
     if btn_build:
         data = {
-            "appearance": appearance,
+            "appearance": appearance, "age": age,
             "model": model_type, "outfit": outfit,
             "material": material, "footwear": footwear,
             "pose": pose, "color_grade": color_grade,
@@ -1061,7 +1181,7 @@ with tab3:
 
     col1, col2, _ = st.columns([1, 1, 2])
     with col1:
-        btn_rand = st.button("🎲 랜덤 생성", type="primary", use_container_width=True)
+        btn_rand    = st.button("🎲 랜덤 생성", type="primary", use_container_width=True)
     with col2:
         btn_rand_ai = st.button("🤖 AI 랜덤", use_container_width=True)
 
@@ -1071,6 +1191,7 @@ with tab3:
     if btn_rand:
         data = {
             "appearance":      random.choice(list(MODEL_APPEARANCE.keys())),
+            "age":             "없음",
             "model":           random.choice(list(MODEL_TYPES.keys())),
             "outfit":          random.choice(list(OUTFIT_TYPES.keys())),
             "material":        random.choice(list(MATERIALS.keys())),
@@ -1113,141 +1234,100 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v2.6 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v2.7 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
-# 탭 4: 영상 프롬프트 (Veo 3)
+# 탭 4: 영상 프롬프트
 # ══════════════════════════════════════════════════════════
 with tab4:
     st.markdown(f"### 🎬 영상 프롬프트 생성 — {global_video_platform}")
 
     VIDEO_PLATFORM_TIPS = {
         "Veo 3 (Gemini)": ("🔵", "gemini.google.com", "Gemini Advanced 구독 필요. 좌측 메뉴에서 Veo 3 선택."),
-        "Kling AI": ("🟡", "klingai.com", "무료 티어 사용 가능. 매일 크레딧 지급."),
-        "Runway": ("🟢", "runwayml.com", "무료 크레딧 제공. Gen-3 Alpha 사용."),
-        "Hailuo": ("🟠", "hailuoai.video", "완전 무료. 중국 서비스."),
+        "Kling AI":        ("🟡", "klingai.com",       "무료 티어 사용 가능. 매일 크레딧 지급."),
+        "Runway":          ("🟢", "runwayml.com",      "무료 크레딧 제공. Gen-3 Alpha 사용."),
+        "Hailuo":          ("🟠", "hailuoai.video",    "완전 무료. 중국 서비스."),
     }
     color, url, tip = VIDEO_PLATFORM_TIPS[global_video_platform]
     st.info(f"{color} **{global_video_platform}** — {tip} → [{url}](https://{url})")
 
-    # ── 영상 설정 ──────────────────────────────────────────
     VIDEO_DURATIONS = {
         "5초 — 짧고 임팩트 있는": "5 seconds",
-        "8초 — 표준 클립": "8 seconds",
-        "10초 — 긴 클립": "10 seconds",
+        "8초 — 표준 클립":        "8 seconds",
+        "10초 — 긴 클립":         "10 seconds",
     }
-
     VIDEO_MOTIONS = {
-        "워킹 — 런웨이 워크, 카메라 정면": "walking towards camera, confident runway walk, slow motion",
-        "턴 — 360도 회전, 의상 전체 공개": "slow 360 degree turn, revealing full outfit",
-        "포즈 — 정적 포즈, 바람에 머리 날림": "standing pose, hair flowing in wind, subtle movement",
-        "댄스 — 섹시한 느낌의 부드러운 움직임": "slow sensual dance movement, fluid motion",
-        "워킹+턴 — 걷다가 카메라 보며 턴": "walking then turning to camera, fashion editorial motion",
-        "등장 — 안개/빛 속에서 천천히 등장": "emerging slowly from mist and light, dramatic entrance",
+        "워킹 — 런웨이 워크, 카메라 정면":      "walking towards camera, confident runway walk, slow motion",
+        "턴 — 360도 회전, 의상 전체 공개":       "slow 360 degree turn, revealing full outfit",
+        "포즈 — 정적 포즈, 바람에 머리 날림":    "standing pose, hair flowing in wind, subtle movement",
+        "댄스 — 섹시한 느낌의 부드러운 움직임":  "slow sensual dance movement, fluid motion",
+        "워킹+턴 — 걷다가 카메라 보며 턴":       "walking then turning to camera, fashion editorial motion",
+        "등장 — 안개/빛 속에서 천천히 등장":     "emerging slowly from mist and light, dramatic entrance",
     }
-
     VIDEO_CAMERAS = {
-        "시네마틱 — 느린 달리샷": "slow cinematic dolly shot, smooth camera movement",
-        "오빗 — 모델 주위를 도는 카메라": "slow orbit around subject, 360 camera movement",
+        "시네마틱 — 느린 달리샷":          "slow cinematic dolly shot, smooth camera movement",
+        "오빗 — 모델 주위를 도는 카메라":  "slow orbit around subject, 360 camera movement",
         "줌인 — 전신에서 얼굴로 천천히 줌": "slow zoom from full body to face, intimate close-up",
         "로우앵글 — 아래서 위로 올려다보기": "low angle upward camera, powerful perspective",
-        "하이앵글 — 위에서 내려다보기": "high angle downward camera, elegant perspective",
+        "하이앵글 — 위에서 내려다보기":    "high angle downward camera, elegant perspective",
         "핸드헬드 — 약간의 흔들림, 현장감": "slight handheld camera movement, documentary feel",
     }
-
     VIDEO_ATMOSPHERES = {
-        "럭셔리 글래머 — 화려하고 고급스러운": "luxury glamour atmosphere, high-end fashion film",
-        "다크 시네마틱 — 어둡고 영화적인": "dark cinematic atmosphere, noir fashion film",
-        "골든아워 — 따뜻한 황금빛": "golden hour warm light, dreamy fashion film",
+        "럭셔리 글래머 — 화려하고 고급스러운":  "luxury glamour atmosphere, high-end fashion film",
+        "다크 시네마틱 — 어둡고 영화적인":      "dark cinematic atmosphere, noir fashion film",
+        "골든아워 — 따뜻한 황금빛":             "golden hour warm light, dreamy fashion film",
         "네온 사이버펑크 — 미래적 네온 분위기": "neon cyberpunk atmosphere, futuristic fashion film",
-        "미니멀 클린 — 깔끔하고 모던한": "minimal clean white atmosphere, modern fashion film",
-        "에디토리얼 — 잡지 화보 느낌": "editorial fashion film, Vogue video style",
+        "미니멀 클린 — 깔끔하고 모던한":        "minimal clean white atmosphere, modern fashion film",
+        "에디토리얼 — 잡지 화보 느낌":          "editorial fashion film, Vogue video style",
     }
 
     col1, col2 = st.columns(2)
     with col1:
-        # 이미지 프롬프트 기반 생성
         st.markdown("**📝 기존 프롬프트 기반으로 변환**")
-        source_prompt = st.text_area(
-            "이미지 프롬프트 붙여넣기 (선택사항)",
-            placeholder="기존 이미지 프롬프트를 여기에 붙여넣으면 영상용으로 변환해줘요...",
-            height=120,
-            key="video_source"
-        )
-        video_duration = st.selectbox("⏱️ 영상 길이", list(VIDEO_DURATIONS.keys()))
-        video_motion   = st.selectbox("🏃 모션 타입", list(VIDEO_MOTIONS.keys()))
-
+        source_prompt    = st.text_area("이미지 프롬프트 붙여넣기 (선택사항)", placeholder="기존 이미지 프롬프트를 여기에 붙여넣으면 영상용으로 변환해줘요...", height=120, key="video_source")
+        video_duration   = st.selectbox("⏱️ 영상 길이", list(VIDEO_DURATIONS.keys()))
+        video_motion     = st.selectbox("🏃 모션 타입", list(VIDEO_MOTIONS.keys()))
     with col2:
-        video_camera    = st.selectbox("📷 카메라 무브먼트", list(VIDEO_CAMERAS.keys()))
+        video_camera     = st.selectbox("📷 카메라 무브먼트", list(VIDEO_CAMERAS.keys()))
         video_atmosphere = st.selectbox("🌟 분위기", list(VIDEO_ATMOSPHERES.keys()))
-        video_appearance = st.selectbox(
-            "👩 모델 외모",
-            ["None — 프롬프트 기반"] + list(MODEL_APPEARANCE.keys()),
-            key="video_appearance"
-        )
-        video_outfit = st.selectbox(
-            "👗 의상",
-            ["None — 프롬프트 기반"] + list(OUTFIT_TYPES.keys()),
-            key="video_outfit"
-        )
+        video_appearance = st.selectbox("👩 모델 외모", ["None — 프롬프트 기반"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
+        video_outfit     = st.selectbox("👗 의상", ["None — 프롬프트 기반"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
 
     st.markdown("")
     col_x, col_y, _ = st.columns([1, 1, 2])
     with col_x:
         btn_video_build = st.button("🎬 영상 프롬프트 생성", type="primary", use_container_width=True)
     with col_y:
-        btn_video_ai = st.button("🤖 AI로 강화", use_container_width=True, key="btn_video_ai")
+        btn_video_ai    = st.button("🤖 AI로 강화", use_container_width=True, key="btn_video_ai")
 
     if "video_prompt" not in st.session_state:
         st.session_state.video_prompt = ""
 
     if btn_video_build:
         st.session_state.video_prompt = ""
-        dur  = VIDEO_DURATIONS[video_duration]
-        mot  = VIDEO_MOTIONS[video_motion]
-        cam  = VIDEO_CAMERAS[video_camera]
-        atm  = VIDEO_ATMOSPHERES[video_atmosphere]
-
-        appearance_str = ""
-        if video_appearance != "None — 프롬프트 기반":
-            appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. "
-
-        outfit_str = ""
+        dur = VIDEO_DURATIONS[video_duration]
+        mot = VIDEO_MOTIONS[video_motion]
+        cam = VIDEO_CAMERAS[video_camera]
+        atm = VIDEO_ATMOSPHERES[video_atmosphere]
+        appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None — 프롬프트 기반" else ""
+        outfit_str     = ""
         if video_outfit != "None — 프롬프트 기반":
             od = OUTFIT_TYPES[video_outfit]
             outfit_str = f"Wearing: {(od['gemini'] if isinstance(od, dict) else od).split(',')[0]}. "
-
-        if source_prompt:
-            # 기존 이미지 프롬프트 기반 변환
-            video_prompt = (
-                f"Cinematic fashion video, {dur}. "
-                f"Based on: {source_prompt[:200]}. "
-                f"{appearance_str}{outfit_str}"
-                f"Motion: {mot}. "
-                f"Camera: {cam}. "
-                f"Atmosphere: {atm}. "
-                f"Photorealistic, hyperrealistic, 4K cinematic quality, "
-                f"professional fashion film, no text, no watermark."
-            )
-        else:
-            # 새로 생성
-            video_prompt = (
-                f"Cinematic fashion video, {dur}. "
-                f"{appearance_str}{outfit_str}"
-                f"Motion: {mot}. "
-                f"Camera: {cam}. "
-                f"Atmosphere: {atm}. "
-                f"Photorealistic, hyperrealistic, 4K cinematic quality, "
-                f"professional fashion film, no text, no watermark."
-            )
-        st.session_state.video_prompt = video_prompt
+        base = f"Based on: {source_prompt[:200]}. " if source_prompt else ""
+        st.session_state.video_prompt = (
+            f"Cinematic fashion video, {dur}. {base}"
+            f"{appearance_str}{outfit_str}"
+            f"Motion: {mot}. Camera: {cam}. Atmosphere: {atm}. "
+            f"Photorealistic, hyperrealistic, 4K cinematic quality, professional fashion film, no text, no watermark."
+        )
 
     if btn_video_ai and (source_prompt or st.session_state.video_prompt):
         with st.spinner("Claude가 영상 프롬프트 강화 중..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
-                base = source_prompt or st.session_state.video_prompt
+                base   = source_prompt or st.session_state.video_prompt
                 response = client.messages.create(
                     model="claude-sonnet-4-5",
                     max_tokens=500,
@@ -1276,35 +1356,15 @@ Rules:
     if st.session_state.video_prompt:
         st.text_area("생성된 영상 프롬프트", value=st.session_state.video_prompt, height=180)
         st.code(st.session_state.video_prompt, language=None)
-        st.caption("👆 복사 후 Gemini 대화창 → Veo 3에 붙여넣으세요!")
+        st.caption("👆 복사 후 해당 플랫폼에 붙여넣으세요!")
 
         st.markdown("---")
         st.markdown(f"### 💡 {global_video_platform} 사용 방법")
         if global_video_platform == "Veo 3 (Gemini)":
-            st.markdown("""
-1. [gemini.google.com](https://gemini.google.com) 접속
-2. 좌측 **Veo 3** 선택
-3. 위 프롬프트 붙여넣기
-4. 생성 클릭!
-            """)
+            st.markdown("1. [gemini.google.com](https://gemini.google.com) 접속\n2. 좌측 **Veo 3** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         elif global_video_platform == "Kling AI":
-            st.markdown("""
-1. [klingai.com](https://klingai.com) 접속
-2. **Text to Video** 선택
-3. 위 프롬프트 붙여넣기
-4. 생성 클릭!
-            """)
+            st.markdown("1. [klingai.com](https://klingai.com) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         elif global_video_platform == "Runway":
-            st.markdown("""
-1. [runwayml.com](https://runwayml.com) 접속
-2. **Gen-3 Alpha** 선택
-3. 위 프롬프트 붙여넣기
-4. 생성 클릭!
-            """)
-        else:  # Hailuo
-            st.markdown("""
-1. [hailuoai.video](https://hailuoai.video) 접속
-2. **Text to Video** 선택
-3. 위 프롬프트 붙여넣기
-4. 생성 클릭!
-            """)
+            st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+        else:
+            st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
