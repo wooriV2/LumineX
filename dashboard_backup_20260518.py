@@ -5,10 +5,7 @@ LumineX Dashboard v2.7 - 멀티 플랫폼 프롬프트 생성
 
 import sys
 import random
-import os
 from pathlib import Path
-from dotenv import load_dotenv
-load_dotenv()
 
 sys.path.insert(0, str(Path(__file__).parent))
 
