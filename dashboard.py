@@ -101,6 +101,8 @@ MODEL_APPEARANCE = {
 
 AGE_APPEARANCE = {
     "없음": "",
+    "16-17 — 틴에이저, 앳된 얼굴": "16-17 years old teenager, very young fresh face, high school age",
+    "18 — 갓 성인, 청초한": "just turned 18, extremely fresh youthful face, barely adult",
     "18-20 — 어린 성인, 청순한": "18-20 years old young adult, fresh youthful face, college age",
     "20대 초반 — 발랄하고 생기있는": "early 20s, vibrant youthful beauty, 21-24 years old",
     "20대 중반 — 전성기 글래머": "mid 20s, peak glamour beauty, 25-27 years old",
@@ -110,6 +112,8 @@ AGE_APPEARANCE = {
     "40대 — 우아한 중년 글래머": "40s, elegant mature woman, 40-49 years old, sophisticated glamour",
     "50대 — 실버 글래머": "50s, silver glamour, mature distinguished beauty, 50-59 years old",
     "60대+ — 우아한 시니어": "60s and above, gracefully aged beauty, senior glamour, distinguished",
+    "70대 — 품위있는 노년 글래머": "70s, dignified senior glamour, 70-79 years old, gracefully aged",
+    "80대+ — 우아한 장년 글래머": "80s and above, elegant elderly glamour, 80+ years old, timeless beauty",
 }
 
 MODEL_TYPES = {
