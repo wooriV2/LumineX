@@ -279,18 +279,96 @@ AGE_APPEARANCE = {
 }
 
 MODEL_TYPES = {
-    "글래머 피트니스 — 탄탄+볼륨, 섹시한 근육미": "glamorous fitness model, full bust, toned abs, round hips, fit and voluptuous, hourglass figure",
-    "핫 글래머 — 가슴 볼륨, 잘록한 허리, 풍만한 힙": "hot glamour model, full voluptuous bust, extremely narrow waist, full round hips, ultra hourglass",
-    "빅토리아 시크릿 — VS앤젤, 완벽한 볼륨+탄탄": "Victoria's Secret Angel, perfect full bust, toned flat abs, long legs, curvaceous yet athletic",
-    "런웨이 글램 — 늘씬하면서 볼륨감 있는": "tall runway model, long legs, slender yet curvaceous, elegant glamorous figure",
-    "피트니스 — 탄탄한 복근, 근육미, 스포티": "athletic fitness model, defined abs, toned muscular legs, powerful physique",
-    "소프트 글램 — 부드러운 곡선, 여성스러운": "soft glamour model, feminine gentle curves, elegant posture, graceful",
-    "런웨이 — 초장신, 극도로 늘씬, 다리 길이 강조": "extremely tall runway model, impossibly long legs, ultra-slender waist, elongated silhouette",
-    "플러스사이즈 글래머 — 풍만하고 자신감 넘치는": "plus-size glamour model, full voluptuous curves, confident powerful presence, body positive glamour",
-    "피트니스 비키니 컴페티션 — 대회용 극강 근육미": "fitness bikini competition model, extremely defined muscles, competition-ready physique, shredded athletic body",
-    "발레리나 — 길고 가늘고 극도로 우아한": "ballerina physique, extremely slender and elongated, graceful elegant posture, dancer's perfect poise",
-    "BBW 글래머 — 풍만한 볼륨, 큰 허리": "BBW glamour model, massive full bust, very wide thick waist, enormous hips, super plus-size hourglass, heavily overweight figure, large soft belly, thick heavy arms",
-    "슈퍼 BBW 글래머 — 극도로 풍만": "super BBW glamour model, gigantic full bust, no waist definition, extremely wide thick torso, massively obese figure, 300+ pound glamour, enormous hanging belly, massive thighs, very heavy arms, super wide hips",
+    # ── 극초슬림 계열 ──
+    "울트라 슬림 — 뼈가 보이는 하이패션":
+    "ultra-thin high fashion model, very slender waif figure, barely visible small bust, extremely narrow hips, razor-thin silhouette, fashion week physique",
+
+    "슈퍼 슬림 — 매우 마른 런웨이":
+    "super slim runway model, very thin frame, minimal bust, narrow hips, elongated ultra-slender body, editorial thin",
+
+    "슬림 런웨이 — 초장신 늘씬":
+    "extremely tall runway model, impossibly long legs, ultra-slender waist, small A-cup bust, narrow hips, elongated silhouette",
+
+    "슬림 엘레강스 — 날씬하고 우아한":
+    "slender elegant model, slim narrow frame, small B-cup bust, slim narrow hips, graceful delicate figure",
+
+    # ── 슬림톤 계열 ──
+    "슬림 톤 — 날씬하고 탄탄한":
+    "slim toned model, lean athletic build, flat stomach, small C-cup bust, slim toned hips, light but defined",
+
+    "발레리나 — 길고 가늘고 우아한":
+    "ballerina physique, extremely slender elongated figure, small bust, narrow hips, graceful elegant posture, dancer's perfect poise",
+
+    "슬림 피트니스 — 날씬한 운동선수":
+    "slim fitness model, lean defined muscles, flat abs, small C-cup bust, athletic slim hips, lightweight athletic",
+
+    # ── 애슬레틱 계열 ──
+    "피트니스 — 탄탄한 복근, 근육미":
+    "athletic fitness model, defined six-pack abs, toned muscular legs, full C-cup bust, round athletic hips, powerful physique",
+
+    "비키니 컴페티션 — 대회용 극강 근육":
+    "bikini competition model, extremely defined muscles, shredded competition physique, full D-cup bust, round athletic hips, competition-ready body",
+
+    "파워 피트니스 — 강한 근육미":
+    "power fitness model, very muscular defined body, strong arms and legs, full D-cup bust, muscular round hips, powerful athletic build",
+
+    "스포츠 글램 — 탄탄+볼륨":
+    "sports glamour model, toned athletic body with curves, defined abs, full D-cup bust, round hips, fit and voluptuous",
+
+    # ── 글래머 계열 ──
+    "소프트 글램 — 부드러운 여성미":
+    "soft glamour model, feminine gentle curves, full C-cup bust, round soft hips, elegant graceful figure, naturally beautiful",
+
+    "VS 앤젤 — 완벽한 VS 글래머":
+    "Victoria's Secret Angel, perfect full D-cup bust, toned flat abs, long legs, round hips, curvaceous yet athletic, runway perfect",
+
+    "핫 글래머 — 잘록한 허리+볼륨":
+    "hot glamour model, full DD-cup bust, extremely narrow cinched waist, very wide round hips, ultra hourglass figure",
+
+    "슈퍼 글래머 — 극강 모래시계":
+    "super glamour model, enormous F-cup bust overflowing, impossibly tiny waist, enormous wide round hips, maximum hourglass, pinup perfection",
+
+    "럭셔리 글램 — 고급스러운 볼륨":
+    "luxury glamour model, full DD-cup bust, defined waist, wide round hips, sophisticated voluptuous elegance, high-end glamour",
+
+    # ── 커브 계열 ──
+    "내추럴 커브 — 자연스러운 곡선미":
+    "natural curvy model, naturally full C-cup bust, round natural hips, soft gentle curves, realistic womanly figure",
+
+    "소프트 커브 — 부드럽고 풍만한":
+    "soft curvy model, full D-cup bust, wide round hips, full soft thighs, gentle voluptuous curves, feminine warmth",
+
+    "풀 커브 — 볼륨감 있는 커브":
+    "full curvy model, very full DD-cup bust, very wide hips, full round thighs, voluptuous hourglass, abundant curves",
+
+    "글래머 커브 — 커브+글래머 믹스":
+    "glamour curvy model, large DD/F-cup bust, dramatic waist-to-hip ratio, very wide round hips, thick thighs, glamorous voluptuous",
+
+    # ── 플러스사이즈 계열 ──
+    "플러스 내추럴 — 자연스러운 플러스":
+    "natural plus-size model, full bust, soft rounded belly, wide hips, full thighs, body positive natural figure, size 14-16",
+
+    "플러스 글램 — 플러스사이즈 글래머":
+    "plus-size glamour model, very full heavy bust, soft belly, wide full hips, thick thighs, confident voluptuous presence, size 16-18",
+
+    "라지 플러스 — 매우 풍만한":
+    "large plus-size model, large heavy bust, round protruding belly, very wide hips, heavy full thighs, abundant curves, size 20-22",
+
+    "슈퍼 플러스 — 초풍만":
+    "super plus-size model, enormous heavy bust, large soft belly rolls, extremely wide hips, very heavy thighs, massively full figure, size 24+",
+
+    # ── BBW 계열 ──
+    "BBW 글래머 — BBW 글래머":
+    "BBW glamour model, massive full heavy bust, large protruding belly, very wide thick hips, heavy arms, chubby full thighs, 250 pound glamour figure",
+
+    "라지 BBW — 큰 BBW":
+    "large BBW model, very large heavy pendulous bust, large hanging belly with rolls, extremely wide hips, massive thighs, very heavy arms, 300+ pound figure",
+
+    "슈퍼 BBW — 극도로 풍만한":
+    "super BBW model, gigantic pendulous bust, no waist definition, massively obese figure, large apron belly with multiple rolls, enormous thighs, 400+ pound body",
+
+    "슈퍼 BBW 글래머 — 극도로 풍만한 글래머":
+    "super BBW glamour model, gigantic full bust, no waist definition, extremely wide thick torso, massively obese figure, apron belly hanging low, belly folds cascading, enormous thighs, very heavy arms, 400+ pound glamour",
 }
 
 BODY_WEIGHT = {
