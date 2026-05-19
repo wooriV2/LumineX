@@ -383,6 +383,15 @@ HAIR_STYLES = {
     "브레이드 — 땋은 머리, 보헤미안": "braided hair, bohemian braids, artistic weave",
     "크롭 픽시컷 — 짧고 대담한": "short pixie cut, bold cropped hair, edgy chic",
     "코르넬로 — 뿔 모양 아방가르드": "avant-garde horn updo, sculptural hair art, editorial",
+    # ── 추가 ──
+    "프렌치 보브 — 클래식 파리지앵 단발": "French bob, classic Parisian chin-length cut, sleek fringe",
+    "울프컷 — 레이어드 섹시 울프": "wolf cut, layered shaggy style, curtain bangs, effortless sexy",
+    "스택드 보브 — 뒤짧고 앞긴 엣지 단발": "stacked bob, shorter back longer front, edgy angled cut",
+    "컬리 비치웨이브 — 해변 곱슬 웨이브": "curly beach waves, natural tousled curls, sun-kissed texture",
+    "슬릭백 올백 — 뒤로 완전히 넘긴": "sleek slicked back hair, pulled back tight, wet gel look",
+    "루즈 업도 — 흘러내리는 웨이브 업": "loose romantic updo, soft tendrils falling, undone elegance",
+    "스포티 번 — 높은 번 헤어": "high messy bun, sporty topknot, casual athletic chic",
+    "사이드 스웹 — 한쪽으로 넘긴 글래머": "side-swept hair, dramatic one-side drape, old Hollywood glamour",
 }
 
 HAIR_COLORS = {
