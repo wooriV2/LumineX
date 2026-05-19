@@ -1230,38 +1230,52 @@ with tab2:
     st.caption("💡 핵심 요소(외모/체형/의상/환경)만 선택해도 좋은 프롬프트가 나와요. 나머지는 필요할 때만!")
 
     if st.button("🎲 전체 랜덤으로 채우기"):
-        st.session_state.r_appearance      = random.choice(list(MODEL_APPEARANCE.keys()))
-        st.session_state.r_age             = "없음"
-        st.session_state.r_model           = random.choice(list(MODEL_TYPES.keys()))
-        st.session_state.r_outfit          = random.choice(list(OUTFIT_TYPES.keys()))
-        st.session_state.r_material        = random.choice(list(MATERIALS.keys()))
-        st.session_state.r_footwear        = "없음"
-        st.session_state.r_pose            = "없음"
-        st.session_state.r_color_grade     = "없음"
-        st.session_state.r_hair_style      = "없음"
-        st.session_state.r_hair_color      = "없음"
-        st.session_state.r_makeup          = "없음"
-        st.session_state.r_accessories     = "없음"
-        st.session_state.r_skin_tone       = "없음"
-        st.session_state.r_model_count     = "1명 — 싱글 모델 (기본)"
-        st.session_state.r_era             = "없음"
-        st.session_state.r_concept         = "없음"
-        st.session_state.r_special_effects = "없음"
-        st.session_state.r_image_style     = "없음"
-        st.session_state.r_props           = "없음"
-        st.session_state.r_body_weight     = "없음"
-        st.session_state.r_bust_size       = "없음"
-        st.session_state.r_hip_size        = "없음"
-        st.session_state.r_weather         = "없음"
-        st.session_state.r_expression      = "없음"
-        st.session_state.r_tattoo          = "없음"
-        st.session_state.r_body_oil        = "없음"
-        st.session_state.r_bg_crowd        = "없음"
-        st.session_state.r_env             = random.choice(list(ENVIRONMENTS.keys()))
-        st.session_state.r_light           = random.choice(list(LIGHTING.keys()))
-        st.session_state.r_angle           = random.choice(list(CAMERA_ANGLES.keys()))
-        st.session_state.r_style           = random.choice(list(STYLES.keys()))
-        st.session_state.r_camera          = random.choice(list(CAMERAS.keys()))
+        def rnd(d):
+            """없음 제외하고 랜덤 뽑기"""
+            keys = [k for k in d.keys() if k != "없음"]
+            return random.choice(keys) if keys else "없음"
+
+        # 고정 섹션 — 항상 랜덤
+        st.session_state.r_appearance  = rnd(MODEL_APPEARANCE)
+        st.session_state.r_model       = rnd(MODEL_TYPES)
+        st.session_state.r_outfit      = rnd(OUTFIT_TYPES)
+        st.session_state.r_material    = rnd(MATERIALS)
+        st.session_state.r_env         = rnd(ENVIRONMENTS)
+        st.session_state.r_light       = rnd(LIGHTING)
+        st.session_state.r_angle       = rnd(CAMERA_ANGLES)
+        st.session_state.r_style       = rnd(STYLES)
+        st.session_state.r_camera      = rnd(CAMERAS)
+        st.session_state.r_pose        = rnd(POSES)
+        st.session_state.r_expression  = rnd(EXPRESSION)
+        st.session_state.r_skin_tone   = rnd(SKIN_TONES)
+        st.session_state.r_hair_style  = rnd(HAIR_STYLES)
+        st.session_state.r_hair_color  = rnd(HAIR_COLORS)
+        st.session_state.r_makeup      = rnd(MAKEUP)
+
+        # 확률 섹션 — 50% 랜덤, 50% 없음
+        def rnd_maybe(d, prob=0.5):
+            return rnd(d) if random.random() < prob else "없음"
+
+        st.session_state.r_footwear        = rnd_maybe(FOOTWEAR,       0.50)
+        st.session_state.r_color_grade     = rnd_maybe(COLOR_GRADES,   0.50)
+        st.session_state.r_accessories     = rnd_maybe(ACCESSORIES,    0.40)
+        st.session_state.r_body_oil        = rnd_maybe(BODY_OIL,       0.30)
+        st.session_state.r_weather         = rnd_maybe(WEATHER,        0.30)
+        st.session_state.r_bg_crowd        = rnd_maybe(BG_CROWD,       0.30)
+        st.session_state.r_tattoo          = rnd_maybe(TATTOO,         0.15)
+        st.session_state.r_special_effects = rnd_maybe(SPECIAL_EFFECTS,0.15)
+        st.session_state.r_props           = rnd_maybe(PROPS,          0.15)
+        st.session_state.r_image_style     = rnd_maybe(IMAGE_STYLE,    0.15)
+        st.session_state.r_era             = rnd_maybe(ERA,            0.15)
+        st.session_state.r_concept         = rnd_maybe(CONCEPT,        0.15)
+
+        # 보정 섹션 — 기본 없음
+        st.session_state.r_age         = "없음"
+        st.session_state.r_model_count = "1명 — 싱글 모델 (기본)"
+        st.session_state.r_body_weight = "없음"
+        st.session_state.r_bust_size   = "없음"
+        st.session_state.r_hip_size    = "없음"
+        st.rerun()
 
     def idx(d, key, default=0):
         keys = list(d.keys())
