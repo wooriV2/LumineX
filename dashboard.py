@@ -1,5 +1,5 @@
 """
-LumineX Dashboard v3.0 - 포즈 확장 + 날씨/표정/문신/바디오일/배경인물 추가
+LumineX Dashboard v3.2 - 스마트 랜덤 session_state+rerun 방식으로 수정
 실행: streamlit run dashboard.py
 """
 
@@ -101,8 +101,6 @@ MODEL_APPEARANCE = {
 
 AGE_APPEARANCE = {
     "없음": "",
-    "16-17 — 틴에이저, 앳된 얼굴": "16-17 years old teenager, very young fresh face, high school age",
-    "18 — 갓 성인, 청초한": "just turned 18, extremely fresh youthful face, barely adult",
     "18-20 — 어린 성인, 청순한": "18-20 years old young adult, fresh youthful face, college age",
     "20대 초반 — 발랄하고 생기있는": "early 20s, vibrant youthful beauty, 21-24 years old",
     "20대 중반 — 전성기 글래머": "mid 20s, peak glamour beauty, 25-27 years old",
@@ -112,8 +110,6 @@ AGE_APPEARANCE = {
     "40대 — 우아한 중년 글래머": "40s, elegant mature woman, 40-49 years old, sophisticated glamour",
     "50대 — 실버 글래머": "50s, silver glamour, mature distinguished beauty, 50-59 years old",
     "60대+ — 우아한 시니어": "60s and above, gracefully aged beauty, senior glamour, distinguished",
-    "70대 — 품위있는 노년 글래머": "70s, dignified senior glamour, 70-79 years old, gracefully aged",
-    "80대+ — 우아한 장년 글래머": "80s and above, elegant elderly glamour, 80+ years old, timeless beauty",
 }
 
 MODEL_TYPES = {
@@ -530,6 +526,7 @@ SKIN_TONES = {
 }
 
 POSES = {
+    "없음": "",
     # ── 스탠딩 계열 ──
     "파워 스탠딩 — 손 허리, 당당한": "powerful standing pose, hands on hips, confident dominant stance",
     "런웨이 워킹 — 카메라를 향해": "walking confidently toward camera, runway catwalk stride",
@@ -811,7 +808,7 @@ def build_midjourney_prompt(data: dict, aspect: str) -> str:
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#444;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.0</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#444;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.2</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -1239,7 +1236,7 @@ with tab2:
         st.session_state.r_outfit          = random.choice(list(OUTFIT_TYPES.keys()))
         st.session_state.r_material        = random.choice(list(MATERIALS.keys()))
         st.session_state.r_footwear        = "없음"
-        st.session_state.r_pose            = random.choice(list(POSES.keys()))
+        st.session_state.r_pose            = "없음"
         st.session_state.r_color_grade     = "없음"
         st.session_state.r_hair_style      = "없음"
         st.session_state.r_hair_color      = "없음"
@@ -1409,26 +1406,118 @@ Respond in Korean. Format:
         st.markdown("---")
 
     if btn_build:
+        def smart_update(key, d, prob):
+            """session_state[key]가 없음이면 prob 확률로 랜덤 업데이트"""
+            cur = st.session_state.get(key, "없음")
+            if cur == "없음":
+                keys = [k for k in d.keys() if k != "없음"]
+                if keys and random.random() < prob:
+                    st.session_state[key] = random.choice(keys)
+
+        # 80% — 거의 항상
+        smart_update("r_pose",        POSES,          0.80)
+        smart_update("r_expression",  EXPRESSION,     0.80)
+        smart_update("r_skin_tone",   SKIN_TONES,     0.80)
+        # 50% — 절반 확률
+        smart_update("r_hair_style",  HAIR_STYLES,    0.50)
+        smart_update("r_hair_color",  HAIR_COLORS,    0.50)
+        smart_update("r_makeup",      MAKEUP,         0.50)
+        smart_update("r_footwear",    FOOTWEAR,       0.50)
+        smart_update("r_color_grade", COLOR_GRADES,   0.50)
+        # 30% — 가끔
+        smart_update("r_accessories", ACCESSORIES,    0.30)
+        smart_update("r_body_oil",    BODY_OIL,       0.30)
+        smart_update("r_weather",     WEATHER,        0.30)
+        smart_update("r_bg_crowd",    BG_CROWD,       0.30)
+        # 15% — 드물게
+        smart_update("r_tattoo",      TATTOO,         0.15)
+        smart_update("r_special_effects", SPECIAL_EFFECTS, 0.15)
+        smart_update("r_props",       PROPS,          0.15)
+        smart_update("r_image_style", IMAGE_STYLE,    0.15)
+        smart_update("r_era",         ERA,            0.15)
+        smart_update("r_concept",     CONCEPT,        0.15)
+
+        st.session_state._trigger_build = True
+        st.rerun()
+
+    # rerun 후 실제 프롬프트 생성
+    if st.session_state.get("_trigger_build", False):
+        st.session_state._trigger_build = False
+
+        # 현재 session_state 값으로 data 구성
+        def ss(key, d, default=None):
+            keys = list(d.keys())
+            val = st.session_state.get(key, keys[0] if keys else "없음")
+            return val if val in d else (keys[0] if keys else "없음")
+
+        # 자동 선택된 항목 추적 (이전값과 비교)
+        _prev = {k: st.session_state.get(f"_prev_{k}", "없음") for k in [
+            "r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color",
+            "r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil",
+            "r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props",
+            "r_image_style","r_era","r_concept",
+        ]}
+        auto_labels = {
+            "r_pose": "💃 포즈", "r_expression": "😏 표정", "r_skin_tone": "🌊 피부",
+            "r_hair_style": "💇 헤어", "r_hair_color": "🎨 헤어컬러", "r_makeup": "💄 메이크업",
+            "r_footwear": "👠 신발", "r_color_grade": "🖼️ 색감", "r_accessories": "💍 액세서리",
+            "r_body_oil": "✨ 바디오일", "r_weather": "🌦️ 날씨", "r_bg_crowd": "👥 배경",
+            "r_tattoo": "🎨 문신", "r_special_effects": "🌈 특수효과", "r_props": "🎪 소품",
+            "r_image_style": "📐 이미지스타일", "r_era": "🌍 시대", "r_concept": "🎭 컨셉",
+        }
+        picked_items = {}
+        for key, label in auto_labels.items():
+            cur = st.session_state.get(key, "없음")
+            if _prev[key] == "없음" and cur != "없음":
+                picked_items[label] = cur.split("—")[0].strip()
+            # 다음 비교를 위해 현재값 저장
+            st.session_state[f"_prev_{key}"] = cur
+
+        if picked_items:
+            picked_str = "  |  ".join([f"{k} → **{v}**" for k, v in picked_items.items()])
+            st.session_state._auto_picked_msg = f"🎲 자동 선택: {picked_str}"
+        else:
+            st.session_state._auto_picked_msg = ""
+
         data = {
-            "appearance": appearance, "age": age,
-            "model": model_type, "outfit": outfit,
-            "material": material, "footwear": footwear,
-            "pose": pose, "color_grade": color_grade,
-            "hair_style": hair_style, "hair_color": hair_color,
-            "makeup": makeup, "accessories": accessories,
-            "skin_tone": skin_tone, "model_count": model_count,
-            "era": era, "concept": concept,
-            "special_effects": special_fx,
-            "image_style": img_style, "props": props,
-            "body_weight": body_weight,
-            "bust_size": bust_size, "hip_size": hip_size,
-            "weather": weather, "expression": expression,
-            "tattoo": tattoo, "body_oil": body_oil,
-            "bg_crowd": bg_crowd,
-            "env": environment, "light": lighting,
-            "angle": angle, "style": style, "camera": camera,
+            "appearance":    ss("r_appearance",  MODEL_APPEARANCE),
+            "age":           ss("r_age",          AGE_APPEARANCE),
+            "model":         ss("r_model",        MODEL_TYPES),
+            "outfit":        ss("r_outfit",       OUTFIT_TYPES),
+            "material":      ss("r_material",     MATERIALS),
+            "footwear":      ss("r_footwear",     FOOTWEAR),
+            "pose":          ss("r_pose",         POSES),
+            "color_grade":   ss("r_color_grade",  COLOR_GRADES),
+            "hair_style":    ss("r_hair_style",   HAIR_STYLES),
+            "hair_color":    ss("r_hair_color",   HAIR_COLORS),
+            "makeup":        ss("r_makeup",       MAKEUP),
+            "accessories":   ss("r_accessories",  ACCESSORIES),
+            "skin_tone":     ss("r_skin_tone",    SKIN_TONES),
+            "model_count":   ss("r_model_count",  MODEL_COUNT),
+            "era":           ss("r_era",          ERA),
+            "concept":       ss("r_concept",      CONCEPT),
+            "special_effects": ss("r_special_effects", SPECIAL_EFFECTS),
+            "image_style":   ss("r_image_style",  IMAGE_STYLE),
+            "props":         ss("r_props",        PROPS),
+            "body_weight":   ss("r_body_weight",  BODY_WEIGHT),
+            "bust_size":     ss("r_bust_size",    BUST_SIZE),
+            "hip_size":      ss("r_hip_size",     HIP_SIZE),
+            "weather":       ss("r_weather",      WEATHER),
+            "expression":    ss("r_expression",   EXPRESSION),
+            "tattoo":        ss("r_tattoo",       TATTOO),
+            "body_oil":      ss("r_body_oil",     BODY_OIL),
+            "bg_crowd":      ss("r_bg_crowd",     BG_CROWD),
+            "env":           ss("r_env",          ENVIRONMENTS),
+            "light":         ss("r_light",        LIGHTING),
+            "angle":         ss("r_angle",        CAMERA_ANGLES),
+            "style":         ss("r_style",        STYLES),
+            "camera":        ss("r_camera",       CAMERAS),
         }
         st.session_state.manual_prompt = get_prompt(data)
+
+    # 자동선택 메시지 표시
+    if st.session_state.get("_auto_picked_msg"):
+        st.info(st.session_state._auto_picked_msg)
 
     if btn_ai_enhance and st.session_state.manual_prompt:
         with st.spinner("Claude가 프롬프트 강화 중..."):
@@ -1521,7 +1610,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.0 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.2 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
