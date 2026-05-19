@@ -1,5 +1,5 @@
 """
-LumineX Dashboard v2.9 - 멀티 플랫폼 프롬프트 생성 + 추천조합 + AI검수
+LumineX Dashboard v3.0 - 포즈 확장 + 날씨/표정/문신/바디오일/배경인물 추가
 실행: streamlit run dashboard.py
 """
 
@@ -517,19 +517,116 @@ SKIN_TONES = {
 }
 
 POSES = {
+    # ── 스탠딩 계열 ──
     "파워 스탠딩 — 손 허리, 당당한": "powerful standing pose, hands on hips, confident dominant stance",
     "런웨이 워킹 — 카메라를 향해": "walking confidently toward camera, runway catwalk stride",
+    "걸어가는 뒷모습 — 카메라 등지고 걷기": "walking away from camera, back view, confident stride, looking over shoulder",
     "S커브 — 한쪽 다리 구부린 섹시": "sexy S-curve pose, one leg bent, hip tilted, sultry stance",
-    "백포즈 — 뒤돌아 어깨 너머 시선": "back to camera, looking over shoulder seductively",
-    "기댄 포즈 — 벽에 기댄 캐주얼": "leaning against wall, casual yet sexy pose, relaxed confidence",
-    "앉은 포즈 — 바닥/의자에 우아하게": "seated elegantly, legs crossed, sophisticated sitting pose",
-    "역동적 — 머리카락 날리는 움직임": "dynamic pose, hair flowing in wind, motion blur effect",
     "크로스 암 — 팔짱 끼고 강렬한": "arms crossed, intense gaze, powerful commanding expression",
     "손 들어 — 머리 위로 손, 관능적": "arms raised above head, sensual elongated pose, arched back",
-    "등 보이기 — 백뷰, 어깨 라인": "back view pose, spine visible, shoulder blade emphasis",
+    "기둥 포즈 — 기둥 감싸며 기댄": "leaning against pillar, arms wrapped around column, seductive lean",
+    # ── 기대기 계열 ──
+    "기댄 포즈 — 벽에 기댄 캐주얼": "leaning against wall, casual yet sexy pose, relaxed confidence",
+    "창문 기대기 — 창문에 손 짚고 빛 받으며": "leaning against window, hand pressed on glass, backlit silhouette, dreamy glow",
+    "차 위 포즈 — 보닛에 기댄 글래머": "leaning on car hood, luxury supercar, sultry glamour pose",
+    # ── 앉기 계열 ──
+    "앉은 포즈 — 바닥/의자에 우아하게": "seated elegantly, legs crossed, sophisticated sitting pose",
+    "땅에 앉기 — 무릎 세우고 바닥에": "sitting on floor, knees drawn up, casual intimate pose",
+    "계단 포즈 — 계단에 앉거나 기댄": "seated or leaning on staircase steps, architectural glamour",
+    # ── 눕기 계열 ──
     "누운 포즈 — 바닥/침대에 관능적": "lying down pose, reclined on floor or bed, sensual and languid",
+    "엎드린 포즈 — 배를 깔고 관능적": "lying face down, propped on elbows, arched back, looking at camera",
+    # ── 뒷모습 계열 ──
+    "백포즈 — 뒤돌아 어깨 너머 시선": "back to camera, looking over shoulder seductively",
+    "등 보이기 — 백뷰, 어깨 라인": "back view pose, spine visible, shoulder blade emphasis",
+    # ── 역동적 계열 ──
+    "역동적 — 머리카락 날리는 움직임": "dynamic pose, hair flowing in wind, motion blur effect",
+    "스트레칭 — 몸을 길게 늘인 유연한": "full body stretch pose, elongated limbs, graceful flexibility, dancer energy",
+    "점프 — 공중에 뜬 역동적": "mid-air jump pose, feet off ground, dynamic energy, motion captured",
+    # ── 수중/풀 계열 ──
     "수영장 입수 — 물가에서 다이빙": "standing at pool edge, about to dive, water reflection below",
+    "수영장 물속 — 하반신 물에 잠긴": "standing waist-deep in pool, water surface at hips, wet glistening body",
+    "욕조 포즈 — 욕조 안 럭셔리": "reclining in luxury bathtub, bubbles or petals, spa glamour",
+    # ── 얼굴/클로즈업 계열 ──
+    "손으로 얼굴 감싸기 — 양손으로 얼굴": "hands framing face, fingers touching cheeks, intimate beauty pose",
+    "턱 괴기 — 손으로 턱 받치고": "chin resting on hand, thoughtful seductive gaze, close-up ready",
     "거울 앞 — 거울 반영, 이중 시선": "standing before mirror, reflection visible, double perspective pose",
+}
+
+# ── 날씨/기상 ──
+WEATHER = {
+    "없음": "",
+    "맑음 — 강한 햇살, 선명한 그림자": "bright sunny day, strong sunlight, sharp shadows, clear blue sky",
+    "골든아워 — 석양 직전 황금빛": "golden hour just before sunset, warm amber light flooding the scene",
+    "흐림 — 부드러운 확산광, 무드있는": "overcast sky, soft diffused light, moody atmospheric feel",
+    "비 — 빗속, 젖은 바닥 반사": "raining, wet ground reflections, rain droplets, dramatic rain atmosphere",
+    "폭우 — 거센 비, 극적인 분위기": "heavy downpour, intense rain, dramatic storm, soaking wet everything",
+    "안개 — 신비로운 안개, 몽환적": "dense fog, mysterious misty atmosphere, ethereal soft focus background",
+    "눈 — 눈 내리는, 겨울 분위기": "snowfall, snowflakes falling, winter atmosphere, breath visible in cold air",
+    "번개/폭풍 — 극적인 폭풍우": "lightning storm, dramatic storm clouds, electric atmosphere, intense weather",
+    "바람 — 강한 바람, 옷과 머리 날림": "strong wind, clothes and hair dramatically blown, dynamic wind effect",
+    "황사/모래폭풍 — 사막 먼지 분위기": "sandstorm dust haze, desert wind, warm orange dusty atmosphere",
+    "무지개 — 비 온 뒤 무지개": "rainbow after rain, fresh air, vibrant colors in sky, hopeful atmosphere",
+}
+
+# ── 표정/눈빛 ──
+EXPRESSION = {
+    "없음": "",
+    "도발적 — 강렬하고 유혹적인 눈빛": "seductive provocative gaze, smoldering eyes, sultry expression, lips slightly parted",
+    "차가운 — 무표정, 냉한 카리스마": "cold expressionless face, icy stare, aloof powerful charisma, stone cold beauty",
+    "당당한 — 자신감 넘치는 눈빛": "confident powerful expression, direct commanding gaze, dominant energy",
+    "미소 — 부드러운 매혹적 미소": "soft alluring smile, gentle warm expression, approachable glamour",
+    "활짝 웃음 — 환한 밝은 미소": "bright radiant smile, joyful expression, teeth showing, infectious happiness",
+    "청순 — 순수하고 맑은 눈빛": "innocent pure expression, wide bright eyes, fresh youthful look, doe-eyed",
+    "신비로운 — 알 수 없는 표정": "mysterious enigmatic expression, subtle smirk, secretive knowing look",
+    "관능적 — 반쯤 감은 눈, 육감적": "half-lidded sensual eyes, heavy-lidded gaze, deeply seductive expression",
+    "강렬한 — 눈을 부릅뜨고 압도하는": "intense piercing stare, powerful overwhelming gaze, magnetic eye contact",
+    "우수 — 슬프고 몽환적인 눈빛": "melancholic dreamy expression, faraway gaze, wistful beauty",
+    "화난 — 강렬한 분노, 악당 느낌": "fierce angry expression, villainous intensity, dark powerful rage",
+    "입술 벌림 — 입술 살짝 열린": "lips slightly parted, open mouth, breathless expression, editorial beauty",
+}
+
+# ── 문신/바디아트 ──
+TATTOO = {
+    "없음": "",
+    "슬리브 타투 — 한쪽 팔 전체 문신": "full sleeve tattoo on one arm, intricate detailed ink art",
+    "목 타투 — 목 옆 작은 문신": "small delicate neck tattoo, side of neck ink",
+    "가슴 타투 — 가슴 위 문신": "chest tattoo above bust, decorative upper chest ink",
+    "등 타투 — 등 전체 대형 문신": "large back tattoo, full back ink art, intricate spine tattoo",
+    "허리 타투 — 허리 옆 타투": "hip/waist tattoo, lower side tattoo, sensual placement",
+    "손 타투 — 손등/손가락 문신": "hand and finger tattoos, knuckle ink, delicate hand art",
+    "꽃 타투 — 플로럴 패턴": "floral tattoo pattern, rose and botanical ink, feminine tattoo art",
+    "기하학 타투 — 선명한 기하학적": "geometric tattoo, clean line art, minimalist geometric ink",
+    "뱀 타투 — 뱀 문양, 엣지있는": "snake tattoo, serpent ink art, edgy mystical tattoo",
+    "천사/악마 타투 — 종교적 아트워크": "angel or demon tattoo, religious iconography ink, dramatic body art",
+    "부족 타투 — 폴리네시안/마오리": "tribal tattoo, Polynesian Maori style ink, bold black patterns",
+    "전신 바디페인팅 — 몸에 그림": "full body painting art, painted skin, artistic body art canvas",
+}
+
+# ── 바디 오일/글로스 강도 ──
+BODY_OIL = {
+    "없음": "",
+    "라이트 글로우 — 자연스러운 윤기": "light natural skin glow, subtle healthy sheen, barely-there luminosity",
+    "새틴 글로우 — 새틴처럼 빛나는": "satin skin finish, smooth silky sheen, elegant glow",
+    "미디엄 오일 — 적당한 오일감": "medium body oil, moderate skin glistening, healthy oiled appearance",
+    "하이 글로스 — 강한 오일, 반짝이는": "high gloss body oil, heavily oiled glistening skin, wet-look shine",
+    "익스트림 웻룩 — 물에 젖은 듯한": "extreme wet-look skin, soaking wet glistening appearance, dripping oil effect",
+    "선탠 오일 — 골든 태닝 오일": "tanning oil sheen, golden bronzed glistening skin, beach goddess oil",
+    "메탈릭 글로스 — 금속빛 광택": "metallic body gloss, chrome-like skin sheen, futuristic metallic finish",
+    "스웨티 글로스 — 땀+오일 믹스": "sweaty oiled skin, post-workout glistening, athletic perspiration mixed with oil",
+}
+
+# ── 배경 인물 ──
+BG_CROWD = {
+    "없음": "",
+    "완전 단독 — 배경에 아무도 없음": "completely alone, empty background, solitary subject, no other people",
+    "흐릿한 군중 — 배경에 흐릿한 사람들": "blurred crowd in background, busy environment, bokeh people, social scene",
+    "런웨이 관중 — 패션쇼 관중석": "fashion show audience in background, runway crowd, photographers flashing",
+    "파티 군중 — 화려한 파티 배경": "glamorous party crowd in background, celebratory atmosphere, luxury event",
+    "도시 행인 — 거리의 지나가는 사람들": "urban pedestrians blurred in background, busy city street life",
+    "해변 군중 — 해변의 사람들": "beach crowd in background, summer beach scene, vacationers blurred",
+    "두 명 — 다른 모델 한 명 배경에": "another model blurred in background, duo scene, second figure",
+    "그림자 인물 — 배경에 실루엣만": "shadowy silhouette figures in background, mysterious dark outlines",
 }
 
 COLOR_GRADES = {
@@ -572,6 +669,11 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     bust_size     = BUST_SIZE.get(data.get('bust_size', ''), '')
     hip_size      = HIP_SIZE.get(data.get('hip_size', ''), '')
     body_str      = ", ".join(filter(None, [body_weight, bust_size, hip_size]))
+    weather       = WEATHER.get(data.get('weather', ''), '')
+    expression    = EXPRESSION.get(data.get('expression', ''), '')
+    tattoo        = TATTOO.get(data.get('tattoo', ''), '')
+    body_oil      = BODY_OIL.get(data.get('body_oil', ''), '')
+    bg_crowd      = BG_CROWD.get(data.get('bg_crowd', ''), '')
 
     parts = [
         f"Professional fashion photograph, {CAMERA_ANGLES[data['angle']]}, model fills the entire frame.",
@@ -580,7 +682,10 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         f"Body adjustment: {body_str}." if body_str else "",
         f"Era: {era}." if era else "",
         f"Concept: {concept}." if concept else "",
+        f"Expression: {expression}." if expression else "",
         f"Skin: {skin_tone}." if skin_tone else "",
+        f"Body oil: {body_oil}." if body_oil else "",
+        f"Tattoo/Body art: {tattoo}." if tattoo else "",
         f"Hair: {hair_str}." if hair_str else "",
         f"Makeup: {makeup}." if makeup else "",
         f"Accessories: {accessories}." if accessories else "",
@@ -588,6 +693,8 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         f"Pose: {pose}." if pose else "",
         f"Wearing: {outfit}, made of {MATERIALS[data['material']]}{', ' + footwear if footwear else ''}.",
         f"Environment: {ENVIRONMENTS[data['env']]}, background softly blurred bokeh.",
+        f"Weather: {weather}." if weather else "",
+        f"Background: {bg_crowd}." if bg_crowd else "",
         f"Special effects: {special_fx}." if special_fx else "",
         f"Lighting: {LIGHTING[data['light']]}.",
         f"Style reference: {STYLES[data['style']]}.",
@@ -636,6 +743,11 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     bust_size     = BUST_SIZE.get(data.get('bust_size', ''), '')
     hip_size      = HIP_SIZE.get(data.get('hip_size', ''), '')
     body_str      = ", ".join(filter(None, [body_weight, bust_size, hip_size]))
+    weather       = WEATHER.get(data.get('weather', ''), '')
+    expression    = EXPRESSION.get(data.get('expression', ''), '')
+    tattoo        = TATTOO.get(data.get('tattoo', ''), '')
+    body_oil      = BODY_OIL.get(data.get('body_oil', ''), '')
+    bg_crowd      = BG_CROWD.get(data.get('bg_crowd', ''), '')
     appearance_desc = f"with {appearance}" if appearance else ""
 
     return (
@@ -645,14 +757,19 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         f"{'Body adjustment: ' + body_str + '. ' if body_str else ''}"
         f"{'Era: ' + era + '. ' if era else ''}"
         f"{'Concept: ' + concept + '. ' if concept else ''}"
+        f"{'Expression: ' + expression + '. ' if expression else ''}"
         f"{'Skin: ' + skin_tone + '. ' if skin_tone else ''}"
+        f"{'Body oil: ' + body_oil + '. ' if body_oil else ''}"
+        f"{'Tattoo: ' + tattoo + '. ' if tattoo else ''}"
         f"{'Hair: ' + hair_str + '. ' if hair_str else ''}"
         f"{'Makeup: ' + makeup + '. ' if makeup else ''}"
         f"{'Accessories: ' + accessories + '. ' if accessories else ''}"
         f"{'Props: ' + props + '. ' if props else ''}"
         f"{'Pose: ' + pose + '. ' if pose else ''}"
         f"Wearing {outfit}, crafted from {material}{', ' + footwear if footwear else ''}. "
-        f"Scene at {env}, {'Special effects: ' + special_fx + '. ' if special_fx else ''}"
+        f"Scene at {env}, {'Weather: ' + weather + '. ' if weather else ''}"
+        f"{'Background: ' + bg_crowd + '. ' if bg_crowd else ''}"
+        f"{'Special effects: ' + special_fx + '. ' if special_fx else ''}"
         f"bathed in {light}. "
         f"{'Image style: ' + img_style + '. ' if img_style else ''}"
         f"Style of {style}, captured on {camera}. "
@@ -681,7 +798,7 @@ def build_midjourney_prompt(data: dict, aspect: str) -> str:
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#444;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v2.9</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#444;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.0</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -1125,6 +1242,11 @@ with tab2:
         st.session_state.r_body_weight     = "없음"
         st.session_state.r_bust_size       = "없음"
         st.session_state.r_hip_size        = "없음"
+        st.session_state.r_weather         = "없음"
+        st.session_state.r_expression      = "없음"
+        st.session_state.r_tattoo          = "없음"
+        st.session_state.r_body_oil        = "없음"
+        st.session_state.r_bg_crowd        = "없음"
         st.session_state.r_env             = random.choice(list(ENVIRONMENTS.keys()))
         st.session_state.r_light           = random.choice(list(LIGHTING.keys()))
         st.session_state.r_angle           = random.choice(list(CAMERA_ANGLES.keys()))
@@ -1154,15 +1276,20 @@ with tab2:
         body_weight = st.selectbox("⚖️ 체형 보정 추가",          list(BODY_WEIGHT.keys()),       index=idx(BODY_WEIGHT,      "r_body_weight"))
         bust_size   = st.selectbox("👙 가슴 보정 추가",           list(BUST_SIZE.keys()),         index=idx(BUST_SIZE,        "r_bust_size"))
         hip_size    = st.selectbox("🍑 힙 보정 추가",            list(HIP_SIZE.keys()),          index=idx(HIP_SIZE,         "r_hip_size"))
+        expression  = st.selectbox("😏 표정/눈빛",               list(EXPRESSION.keys()),        index=idx(EXPRESSION,       "r_expression"))
     with col2:
         accessories = st.selectbox("💍 액세서리",                list(ACCESSORIES.keys()),       index=idx(ACCESSORIES,      "r_accessories"))
         skin_tone   = st.selectbox("🌊 피부 톤/질감",            list(SKIN_TONES.keys()),        index=idx(SKIN_TONES,       "r_skin_tone"))
+        body_oil    = st.selectbox("✨ 바디 오일/글로스",         list(BODY_OIL.keys()),          index=idx(BODY_OIL,         "r_body_oil"))
+        tattoo      = st.selectbox("🎨 문신/바디아트",            list(TATTOO.keys()),            index=idx(TATTOO,           "r_tattoo"))
         special_fx  = st.selectbox("🌈 특수 효과",               list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
         img_style   = st.selectbox("📐 이미지 스타일",           list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
         props       = st.selectbox("🎪 특별 소품",               list(PROPS.keys()),             index=idx(PROPS,            "r_props"))
         color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",   list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
         style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",  list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
         environment = st.selectbox("🏙️ 환경 — 촬영 장소",       list(ENVIRONMENTS.keys()),      index=idx(ENVIRONMENTS,     "r_env"))
+        weather     = st.selectbox("🌦️ 날씨/기상",               list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
+        bg_crowd    = st.selectbox("👥 배경 인물",               list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
         lighting    = st.selectbox("💡 조명 — 빛의 분위기",      list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
         angle       = st.selectbox("📸 카메라 앵글",             list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
         camera      = st.selectbox("📷 카메라 — 장비",           list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
@@ -1282,6 +1409,9 @@ Respond in Korean. Format:
             "image_style": img_style, "props": props,
             "body_weight": body_weight,
             "bust_size": bust_size, "hip_size": hip_size,
+            "weather": weather, "expression": expression,
+            "tattoo": tattoo, "body_oil": body_oil,
+            "bg_crowd": bg_crowd,
             "env": environment, "light": lighting,
             "angle": angle, "style": style, "camera": camera,
         }
@@ -1378,7 +1508,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v2.9 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.0 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
