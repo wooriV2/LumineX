@@ -73,7 +73,7 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     suffix = []
     if realism_kw: suffix.append(realism_kw)
     if aspect_desc: suffix.append(aspect_desc)
-    suffix.append("model is the absolute primary subject, tight framing, background secondary")
+    suffix.append("model is the primary subject, elegant editorial framing, background secondary")
     return " ".join(filter(None, parts)) + " " + ", ".join(suffix) + "."
 
 
@@ -119,10 +119,10 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     appearance_desc = f"with {appearance}" if appearance else ""
 
     return (
-        f"Professional fashion photograph, {aspect_desc}, {angle}. "
-        f"{model_subject} {appearance_desc}, {model}, commanding the frame. "
+        f"Professional luxury fashion editorial photograph, {aspect_desc}, {angle}. "
+        f"{model_subject} {appearance_desc}, {model}, elegant couture presence. "
         f"{'Age: ' + age + '. ' if age else ''}"
-        f"{'Body adjustment: ' + body_str + '. ' if body_str else ''}"
+        f"{'Body: ' + body_str + '. ' if body_str else ''}"
         f"{'Era: ' + era + '. ' if era else ''}"
         f"{'Concept: ' + concept + '. ' if concept else ''}"
         f"{'Expression: ' + expression + '. ' if expression else ''}"
@@ -142,7 +142,7 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         f"{'Image style: ' + img_style + '. ' if img_style else ''}"
         f"Style of {style}, captured on {camera}. "
         f"{'Color grade: ' + color_grade + '. ' if color_grade else ''}"
-        f"Photorealistic, hyperrealistic skin texture, award-winning fashion photography."
+        f"Photorealistic, hyperrealistic skin texture, cinematic realism, award-winning fashion photography."
     )
 
 

@@ -713,14 +713,41 @@ with tab2:
 
                 # 안전한 대체 옵션 목록
                 safe_options = {
-                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["코트 only — 롱코트만 입은 미니멀 글래머", "란제리 에디토리얼 — VS 스타일, 실크 레이스", "시스루 바디수트 — 메쉬, 아방가르드"]],
-                    "material":  [k for k in MATERIALS.keys() if k not in ["라텍스 — 피부 밀착, 세컨드스킨", "시스루 오간자 — 반투명, 살이 비치는", "PVC — 투명 비닐, 미래적"]],
-                    "angle":     list(CAMERA_ANGLES.keys()),
-                    "pose":      [k for k in POSES.keys() if k != "없음"],
-                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in ["스웨티 — 운동 후 땀나는 느낌", "오일드 스킨 — 윤기있는 글로시"]],
+                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in [
+                        "코트 only — 롱코트만 입은 미니멀 글래머",
+                        "란제리 에디토리얼 — VS 스타일, 실크 레이스",
+                        "시스루 바디수트 — 메쉬, 아방가르드",
+                        "브라탑+하이슬릿 — 브라탑, 롱 하이슬릿",
+                        "마이크로 비키니 — 끈 비키니, SI 수영복 화보",
+                        "모노키니 — 원피스 수영복 변형, 대담한 컷아웃",
+                    ]],
+                    "material":  [k for k in MATERIALS.keys() if k not in [
+                        "라텍스 — 피부 밀착, 세컨드스킨",
+                        "시스루 오간자 — 반투명, 살이 비치는",
+                        "PVC — 투명 비닐, 미래적",
+                        "골드 체인 메쉬 — 금속 체인 망사",
+                    ]],
+                    "angle":     [k for k in CAMERA_ANGLES.keys() if k not in [
+                        "오버헤드 — 위에서 내려다보기",
+                        "로우앵글 — 다리 강조, 아래서 위로",
+                    ]],
+                    "pose":      [k for k in POSES.keys() if k not in [
+                        "없음",
+                        "수영장 물속 — 하반신 물에 잠긴",
+                        "엎드린 포즈 — 배를 깔고 관능적",
+                        "백포즈 — 뒤돌아 어깨 너머 시선",
+                        "등 보이기 — 백뷰, 어깨 라인",
+                    ]],
+                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in [
+                        "스웨티 — 운동 후 땀나는 느낌",
+                        "오일드 스킨 — 윤기있는 글로시",
+                    ]],
                     "body_oil":  ["없음", "라이트 글로우 — 자연스러운 윤기", "새틴 글로우 — 새틴처럼 빛나는"],
                     "weather":   [k for k in WEATHER.keys() if k not in ["폭우 — 거센 비, 극적인 분위기"]],
-                    "style":     [k for k in STYLES.keys()],
+                    "style":     [k for k in STYLES.keys() if k not in [
+                        "빅토리아 시크릿 패션쇼",
+                        "스포츠 일러스트레이티드 수영복",
+                    ]],
                     "lighting":  list(LIGHTING.keys()),
                     "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["더블 익스포저 — 이중 노출"]],
                 }
@@ -728,22 +755,50 @@ with tab2:
                 response = client.messages.create(
                     model="claude-sonnet-4-5",
                     max_tokens=1200,
-                    messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst.
+                    messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst for Gemini and ChatGPT/DALL-E.
 
-Analyze this fashion photo prompt combination for AI filter risks.
-Identify elements that together create a "sensual/adult content" signal when combined.
+Analyze this fashion photo prompt combination for AI content filter risks.
+Both platforms block combinations that signal "adult/fetish content" even if individual elements seem safe.
 
 Current combination:
 {chr(10).join([f"- {k}: {v}" for k, v in current_combo.items()])}
 
-Rules for risk assessment:
-1. Single risky element = usually OK
-2. 3+ risky elements together = likely blocked
-3. Risky combos: wet skin + swimwear + curvy body + sensual pose + back view
-4. Risky combos: tight framing + spine emphasis + sweaty + revealing outfit
-5. Style keywords like "sensual" amplify all other risks
+CONFIRMED BLOCKED PATTERNS (from real test data):
+🔴 INSTANT BLOCK (either platform):
+- Any cup size mention (D-cup, DD-cup, C-cup etc)
+- "ultra sexy", "sexy" as descriptor
+- maximum leg exposure
+- skin visible beneath (transparent fabric)
+- innocent/doe-eyed + voluptuous body + revealing outfit
+- breathless expression + revealing outfit
+- overhead angle + transparent material + curvy body + wet skin
 
-Respond ONLY in this exact JSON format, no other text:
+🔴 CHATGPT BLOCKED COMBOS:
+- low angle + wet/oiled skin + bust emphasis + slit skirt
+- back-facing + over-shoulder + bodysuit/swimsuit + wet skin + low angle
+- tight framing + fills frame + back view + curves emphasis
+- femme fatale concept + wet body + revealing outfit
+
+🔴 GEMINI BLOCKED COMBOS:
+- bra top (직접 언급)
+- ultra-high slit + maximum leg exposure (직접 언급)
+- open back + plunging neckline + backless glamour (조합)
+- transparent PVC + voluptuous body (조합)
+- 3+ body parts emphasized simultaneously (bust + hips + thighs)
+- VS/Sports Illustrated reference + revealing outfit + wet body
+
+✅ SAFE ALTERNATIVES:
+- overhead → "cinematic high-angle fashion composition"
+- wet/oiled body → "luminous healthy complexion"
+- transparent → "elegant translucent couture fabric"
+- bra top → "structured couture crop top"
+- maximum exposure → "asymmetrical runway skirt"
+- back view + spine → "elegant over-shoulder runway pose"
+- femme fatale → remove or use "mysterious operative"
+
+Risk scoring: count risky elements, 3+ = HIGH risk
+
+Respond ONLY in this exact JSON format:
 {{
   "risk_level": "HIGH/MEDIUM/LOW",
   "issues": ["issue1", "issue2"],
@@ -758,6 +813,8 @@ Respond ONLY in this exact JSON format, no other text:
     "style": "replacement key or null",
     "img_style": "replacement key or null"
   }},
+  "summary": "한국어로 2-3줄 요약"
+}}
   "summary": "한국어로 2-3줄 요약"
 }}
 

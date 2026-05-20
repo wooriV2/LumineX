@@ -46,38 +46,38 @@ AGE_APPEARANCE = {
 
 MODEL_TYPES = {
     # ── 극초슬림 계열 ──
-    "울트라 슬림 — 하이패션 극세장": "ultra-slim high fashion model, very slender editorial figure, petite bust, narrow hips, elongated silhouette, fashion week physique",
-    "슈퍼 슬림 — 마른 런웨이": "super slim runway model, thin elegant frame, minimal bust, narrow hips, elongated slender body, editorial fashion model",
-    "슬림 런웨이 — 초장신 늘씬": "tall slim runway model, long legs, slender waist, small bust, narrow hips, elongated graceful silhouette",
-    "슬림 엘레강스 — 날씬하고 우아한": "slender elegant model, slim narrow frame, small bust, slim narrow hips, graceful delicate figure",
+    "울트라 슬림 — 하이패션 극세장": "ultra-slim high fashion model, very slender editorial figure, elongated silhouette, fashion week physique",
+    "슈퍼 슬림 — 마른 런웨이": "super slim runway model, thin elegant frame, elongated slender body, editorial fashion model",
+    "슬림 런웨이 — 초장신 늘씬": "tall slim runway model, long legs, slender waist, narrow hips, elongated graceful silhouette",
+    "슬림 엘레강스 — 날씬하고 우아한": "slender elegant model, slim narrow frame, graceful delicate figure, refined fashion presence",
     # ── 슬림톤 계열 ──
-    "슬림 톤 — 날씬하고 탄탄한": "slim toned model, lean athletic build, flat stomach, small C-cup bust, slim toned hips, light but defined",
-    "발레리나 — 길고 가늘고 우아한": "ballerina physique, slender elongated figure, small bust, narrow hips, graceful elegant posture, dancer's perfect poise",
-    "슬림 피트니스 — 날씬한 운동선수": "slim fitness model, lean defined muscles, flat abs, small C-cup bust, athletic slim hips, lightweight athletic",
+    "슬림 톤 — 날씬하고 탄탄한": "slim toned model, lean athletic build, flat stomach, slim toned silhouette, light but defined",
+    "발레리나 — 길고 가늘고 우아한": "ballerina physique, slender elongated figure, narrow hips, graceful elegant posture, dancer's perfect poise",
+    "슬림 피트니스 — 날씬한 운동선수": "slim fitness model, lean defined muscles, flat abs, athletic slim silhouette, lightweight athletic",
     # ── 애슬레틱 계열 ──
-    "피트니스 — 탄탄한 복근, 근육미": "athletic fitness model, defined six-pack abs, toned muscular legs, full C-cup bust, round athletic hips, powerful physique",
-    "비키니 컴페티션 — 대회용 극강 근육": "bikini competition model, extremely defined muscles, shredded competition physique, full D-cup bust, round athletic hips, competition-ready body",
-    "파워 피트니스 — 강한 근육미": "power fitness model, very muscular defined body, strong arms and legs, full D-cup bust, muscular round hips, powerful athletic build",
-    "스포츠 글램 — 탄탄+볼륨": "sports glamour model, toned athletic body with curves, defined abs, full D-cup bust, round hips, fit and voluptuous",
+    "피트니스 — 탄탄한 복근, 근육미": "athletic fitness model, defined six-pack abs, toned muscular legs, round athletic hips, powerful physique",
+    "비키니 컴페티션 — 대회용 극강 근육": "bikini competition model, extremely defined muscles, shredded competition physique, round athletic hips, competition-ready body",
+    "파워 피트니스 — 강한 근육미": "power fitness model, very muscular defined body, strong arms and legs, muscular powerful build",
+    "스포츠 글램 — 탄탄+볼륨": "sports glamour model, toned athletic body with curves, defined abs, round hips, fit and voluptuous",
     # ── 글래머 계열 ──
-    "소프트 글램 — 부드러운 여성미": "soft glamour model, feminine gentle curves, full C-cup bust, round soft hips, elegant graceful figure, naturally beautiful",
-    "VS 앤젤 — 완벽한 VS 글래머": "Victoria's Secret Angel, perfect full D-cup bust, toned flat abs, long legs, round hips, curvaceous yet athletic, runway perfect",
-    "핫 글래머 — 잘록한 허리+볼륨": "hot glamour model, full DD-cup bust, narrow cinched waist, wide round hips, hourglass figure",
-    "슈퍼 글래머 — 극강 모래시계": "super glamour model, very full bust, tiny waist, wide round hips, dramatic hourglass, pinup glamour",
-    "럭셔리 글램 — 고급스러운 볼륨": "luxury glamour model, full DD-cup bust, defined waist, wide round hips, sophisticated voluptuous elegance, high-end glamour",
+    "소프트 글램 — 부드러운 여성미": "soft glamour model, feminine gentle curves, round soft hips, elegant graceful figure, naturally beautiful",
+    "VS 앤젤 — 완벽한 VS 글래머": "Victoria's Secret Angel body, toned flat abs, long legs, curvaceous yet athletic silhouette, runway perfect",
+    "핫 글래머 — 잘록한 허리+볼륨": "hot glamour model, narrow cinched waist, wide round hips, dramatic hourglass figure",
+    "슈퍼 글래머 — 극강 모래시계": "super glamour model, tiny waist, very wide round hips, maximum hourglass silhouette, pinup glamour",
+    "럭셔리 글램 — 고급스러운 볼륨": "luxury glamour model, defined waist, wide round hips, sophisticated voluptuous elegance, high-end glamour",
     # ── 커브 계열 ──
-    "내추럴 커브 — 자연스러운 곡선미": "natural curvy model, naturally full C-cup bust, round natural hips, soft gentle curves, realistic womanly figure",
-    "소프트 커브 — 부드럽고 풍만한": "soft curvy model, full D-cup bust, wide round hips, full soft thighs, gentle voluptuous curves, feminine warmth",
-    "풀 커브 — 볼륨감 있는 커브": "full curvy model, very full DD-cup bust, very wide hips, full round thighs, voluptuous hourglass, abundant curves",
-    "글래머 커브 — 커브+글래머 믹스": "glamour curvy model, large bust, dramatic waist-to-hip ratio, very wide round hips, thick thighs, glamorous voluptuous",
+    "내추럴 커브 — 자연스러운 곡선미": "natural curvy model, round natural hips, soft gentle curves, realistic womanly figure",
+    "소프트 커브 — 부드럽고 풍만한": "soft curvy model, wide round hips, full soft thighs, gentle voluptuous curves, feminine warmth",
+    "풀 커브 — 볼륨감 있는 커브": "full curvy model, very wide hips, full round thighs, voluptuous hourglass silhouette, abundant curves",
+    "글래머 커브 — 커브+글래머 믹스": "glamour curvy model, dramatic waist-to-hip ratio, very wide round hips, thick thighs, glamorous voluptuous",
     # ── 플러스사이즈 계열 ──
-    "플러스 내추럴 — 자연스러운 플러스": "natural plus-size model, full bust, soft rounded belly, wide hips, full thighs, body positive natural figure, size 14-16",
-    "플러스 글램 — 플러스사이즈 글래머": "plus-size glamour model, very full bust, soft belly, wide full hips, thick thighs, confident voluptuous presence, size 16-18",
-    "라지 플러스 — 매우 풍만한": "large plus-size fashion model, full bust, round belly, very wide hips, heavy full thighs, abundant curves, body positive editorial",
-    "슈퍼 플러스 — 초풍만": "super plus-size runway model, dramatic full-figure silhouette, very full bust, soft belly, extremely wide hips, heavy thighs, maximalist curvy fashion",
+    "플러스 내추럴 — 자연스러운 플러스": "natural plus-size model, soft rounded belly, wide hips, full thighs, body positive natural figure",
+    "플러스 글램 — 플러스사이즈 글래머": "plus-size glamour model, soft belly, wide full hips, thick thighs, confident couture presence",
+    "라지 플러스 — 매우 풍만한": "large plus-size fashion model, round belly, very wide hips, heavy full thighs, body positive editorial",
+    "슈퍼 플러스 — 초풍만": "super plus-size runway model, dramatic full-figure silhouette, soft belly, extremely wide hips, maximalist curvy fashion",
     # ── BBW 계열 ──
-    "BBW 글래머 — 풍만한 글래머": "BBW glamour model, extremely curvy fashion model, full bust, broad hips, thick thighs, soft layered abdomen, luxurious BBW silhouette, confident couture presence",
-    "슈퍼 BBW — 극풍만 글래머": "super plus-size runway model, massive voluptuous proportions, very heavy curvy physique, full bust, broad hips, thick thighs, soft realistic body folds, abundant body volume, maximalist curvy fashion styling, confident oversized runway presence",
+    "BBW 글래머 — 풍만한 글래머": "BBW glamour model, extremely curvy fashion silhouette, broad hips, thick thighs, soft layered abdomen, luxurious BBW presence, confident couture",
+    "슈퍼 BBW — 극풍만 글래머": "super plus-size runway model, massive voluptuous proportions, very heavy curvy physique, broad hips, thick thighs, soft realistic body folds, abundant body volume, maximalist curvy fashion styling",
 }
 
 # ── 보정 섹션 (MODEL_TYPES 미세조정용) ──
@@ -93,11 +93,11 @@ BODY_WEIGHT = {
 BUST_SIZE = {
     "없음": "",
     "플랫 보정": "additionally very flat chest, minimal breast tissue, petite frame",
-    "스몰 보정": "additionally small A-cup breasts, petite modest chest",
-    "미디엄 보정": "additionally C-cup breasts, natural proportionate bust",
-    "라지 보정": "additionally large DD-cup breasts, very full bust, deep cleavage",
-    "엑스라지 보정": "additionally very large DDD-cup breasts, full heavy bust, editorial glamour",
-    "슈퍼라지 보정": "additionally extremely full bust, very generous chest, maximalist glamour proportions",
+    "스몰 보정": "additionally small petite bust, modest chest",
+    "미디엄 보정": "additionally natural proportionate bust, balanced figure",
+    "라지 보정": "additionally very full bust, deep cleavage, editorial glamour",
+    "엑스라지 보정": "additionally extremely full heavy bust, maximalist glamour proportions",
+    "슈퍼라지 보정": "additionally very generous full chest, maximalist couture proportions",
 }
 
 HIP_SIZE = {
@@ -140,20 +140,20 @@ OUTFIT_TYPES = {
         "chatgpt": "fashion corset dress, cinched waist, dramatic neckline, haute couture style",
     },
     "브라탑+하이슬릿 — 브라탑, 롱 하이슬릿": {
-        "gemini": "bra top, ultra-high slit skirt, maximum leg exposure, editorial",
-        "chatgpt": "fashion bra top, high slit skirt, long leg emphasis, Vogue editorial",
+        "gemini": "structured crop top, asymmetrical high-slit runway skirt, fashion editorial",
+        "chatgpt": "structured couture crop top, asymmetrical runway skirt with elegant slit, Vogue editorial",
     },
     "란제리 에디토리얼 — VS 스타일, 실크 레이스": {
-        "gemini": "luxury silk lace lingerie, Victoria's Secret editorial style, glamorous",
-        "chatgpt": "luxury silk lace fashion set, Victoria's Secret editorial, artistic glamour photography",
+        "gemini": "luxury silk lace fashion set, elegant runway lingerie editorial, glamorous couture",
+        "chatgpt": "luxury silk lace fashion set, elegant couture editorial, artistic glamour photography",
     },
     "시스루 바디수트 — 메쉬, 아방가르드": {
-        "gemini": "sheer mesh bodysuit, avant-garde fashion editorial, artistic",
-        "chatgpt": "sheer fashion bodysuit, mesh overlay, avant-garde editorial style",
+        "gemini": "sheer mesh fashion bodysuit, avant-garde couture editorial, artistic runway",
+        "chatgpt": "sheer fashion bodysuit, mesh overlay, avant-garde couture editorial style",
     },
     "오픈백 미니드레스 — 등 노출, 플런징 넥": {
-        "gemini": "open back mini dress, plunging neckline, backless glamour",
-        "chatgpt": "backless mini dress, dramatic plunging neckline, high-fashion editorial",
+        "gemini": "open back mini dress, elegant décolletage, high-fashion editorial",
+        "chatgpt": "backless mini dress, structured neckline, high-fashion editorial",
     },
     "스포츠브라+레깅스 — 핫한 피트니스 룩": {
         "gemini": "sports bra, high-waist leggings, midriff bare, fitness editorial",
@@ -267,9 +267,9 @@ CAMERA_ANGLES = {
     "웨이스트샷 — 상반신 집중": "waist-up shot upper body emphasis",
     "로우앵글 — 다리 강조, 아래서 위로": "low angle upward shot, legs elongated, powerful editorial perspective",
     "클로즈업 — 얼굴+가슴 집중": "close-up beauty shot face and upper chest",
-    "오버헤드 — 위에서 내려다보기": "overhead top-down angle, bird's eye view",
+    "오버헤드 — 위에서 내려다보기": "cinematic high-angle composition, elevated fashion perspective",
     "사이드 프로필 — 옆모습 실루엣": "side profile shot, elegant silhouette from the side",
-    "백샷 — 뒤에서 촬영, 등 강조": "back view shot, looking over shoulder, spine emphasis",
+    "백샷 — 뒤에서 촬영, 등 강조": "back view shot, elegant over-shoulder composition, fashion editorial",
     "익스트림 클로즈업 — 얼굴만 극접사": "extreme close-up face only, skin texture detail",
 }
 
@@ -278,8 +278,8 @@ FOOTWEAR = {
     "스틸레토 힐 — 극도로 높은 힐": "wearing extreme stiletto heels, legs elongated",
     "스트래피 샌들 힐 — 얇은 끈 샌들 힐": "wearing strappy high heel sandals, elegant feet",
     "플랫폼 부츠 — 두꺼운 솔, 파워풀": "wearing platform boots, powerful stance",
-    "무릎까지 부츠 — 니하이 부츠": "wearing knee-high boots, sexy long legs",
-    "허벅지까지 부츠 — 싸이하이 부츠": "wearing thigh-high boots, ultra sexy",
+    "무릎까지 부츠 — 니하이 부츠": "wearing knee-high boots, sleek long legs",
+    "허벅지까지 부츠 — 싸이하이 부츠": "wearing thigh-high boots, bold fashion statement",
     "포인티드 토 힐 — 뾰족한 앞코 힐": "wearing pointed toe stiletto pumps, classic glamour",
     "글래디에이터 샌들 — 끈이 종아리까지": "wearing gladiator sandals, lace-up straps up the calf",
     "뮬 힐 — 뒤가 없는 슬링백 힐": "wearing mule heels, backless slip-on stiletto",
@@ -302,7 +302,7 @@ HAIR_STYLES = {
     "없음": "",
     "롱 웨이브 — 긴 웨이브, 볼륨감": "long wavy hair, voluminous waves, flowing",
     "롱 스트레이트 — 긴 생머리, 실키": "long straight silky hair, sleek and smooth",
-    "하이 포니테일 — 높은 포니테일, 섹시": "high ponytail, sleek tight ponytail, sexy",
+    "하이 포니테일 — 높은 포니테일, 섹시": "high ponytail, sleek tight ponytail, polished",
     "업스타일 — 올린 머리, 우아한": "elegant updo, sophisticated chignon, classic",
     "단발 — 깔끔한 보브컷": "sleek bob cut, sharp jawline bob",
     "웨이브 하프업 — 반묶음 웨이브": "half-up half-down wavy hair, romantic style",
@@ -314,7 +314,7 @@ HAIR_STYLES = {
     "코르넬로 — 뿔 모양 아방가르드": "avant-garde horn updo, sculptural hair art, editorial",
     # ── 추가 ──
     "프렌치 보브 — 클래식 파리지앵 단발": "French bob, classic Parisian chin-length cut, sleek fringe",
-    "울프컷 — 레이어드 섹시 울프": "wolf cut, layered shaggy style, curtain bangs, effortless sexy",
+    "울프컷 — 레이어드 섹시 울프": "wolf cut, layered shaggy style, curtain bangs, effortless editorial",
     "스택드 보브 — 뒤짧고 앞긴 엣지 단발": "stacked bob, shorter back longer front, edgy angled cut",
     "컬리 비치웨이브 — 해변 곱슬 웨이브": "curly beach waves, natural tousled curls, sun-kissed texture",
     "슬릭백 올백 — 뒤로 완전히 넘긴": "sleek slicked back hair, pulled back tight, wet gel look",
@@ -414,7 +414,7 @@ PROPS = {
 MAKEUP = {
     "없음": "",
     "스모키 아이 — 강렬한 눈매": "dramatic smoky eye makeup, dark eyeshadow, intense gaze",
-    "누드 글램 — 자연스럽고 섹시한": "nude glam makeup, natural yet sexy, glossy lips, subtle glow",
+    "누드 글램 — 자연스럽고 섹시한": "nude glam makeup, natural radiant look, glossy lips, subtle glow",
     "레드립 — 클래식 빨간 입술": "classic red lip makeup, bold red lipstick, timeless glamour",
     "글리터 글램 — 반짝이는 파티": "glitter glam makeup, sparkling eyeshadow, festival beauty",
     "노메이크업 — 청순 내추럴": "no-makeup natural look, fresh dewy skin, barely-there beauty",
@@ -423,7 +423,7 @@ MAKEUP = {
     "선번 글로우 — 여름 태양 느낌": "sun-kissed glow makeup, bronzed healthy skin, summer radiance",
     "코랄 핑크 — 발랄하고 귀여운": "coral pink makeup, fresh peachy tones, youthful glow",
     "오렌지 팝 — 트렌디한 컬러풀": "bold orange makeup, trendy color pop, fashion editorial look",
-    "캣아이 — 날카로운 아이라인": "sharp cat eye liner, winged eyeliner, feline sexy look",
+    "캣아이 — 날카로운 아이라인": "sharp cat eye liner, winged eyeliner, feline editorial look",
     "홀로그램 — 아방가르드 미래적": "holographic makeup, iridescent highlights, avant-garde editorial",
 }
 
@@ -431,7 +431,7 @@ ACCESSORIES = {
     "없음": "",
     "골드 주얼리 — 목걸이+귀걸이": "gold jewelry set, gold necklace and earrings, luxury accessories",
     "다이아몬드 — 럭셔리 다이아 주얼리": "diamond jewelry, sparkling diamond necklace and earrings, ultra luxury",
-    "초커 — 섹시한 목 초커": "choker necklace, sexy neck choker, edgy accessory",
+    "초커 — 섹시한 목 초커": "choker necklace, edgy couture neck accessory",
     "바디체인 — 몸에 두르는 골드 체인": "gold body chain over clothing, layered over outfit, glamorous fashion jewelry",
     "레이어드 체인 — 여러 겹 목걸이": "layered chain necklaces, multiple gold chains, trendy stacked look",
     "진주 — 클래식 우아한 진주": "pearl jewelry, classic pearl necklace and earrings, timeless elegance",
@@ -443,15 +443,27 @@ ACCESSORIES = {
 
 SKIN_TONES = {
     "없음": "",
-    "오일드 스킨 — 윤기있는 글로시": "oiled glossy skin, shiny wet-look skin, body oil gleaming",
+    "오일드 스킨 — 윤기있는 글로시": "luminous oiled skin, healthy glossy sheen, editorial glow",
     "태닝 — 브론즈 골든 태닝": "bronzed tan skin, golden sun-kissed tan, beach goddess",
     "딥 태닝 — 짙은 초콜릿 태닝": "deep dark tan, rich chocolate bronzed skin, intense tanning",
     "페일 — 창백하고 신비로운": "pale porcelain skin, ethereal fair complexion, mysterious allure",
     "글로우 — 발광하는 빛나는 피부": "luminous glowing skin, radiant inner glow, lit-from-within effect",
     "매트 — 무광 세련된 피부": "matte flawless skin, powdery smooth complexion, editorial finish",
     "듀이 — 촉촉하고 생기있는": "dewy fresh skin, hydrated plump complexion, youthful glow",
-    "스웨티 — 운동 후 땀나는 느낌": "sweaty glistening skin, post-workout sheen, athletic perspiration",
+    "스웨티 — 운동 후 땀나는 느낌": "athletic glistening skin, post-workout healthy sheen, fitness editorial",
     "프로스티 — 차갑고 얼음같은": "frosty icy skin tone, cold ethereal complexion, winter goddess",
+}
+
+BODY_OIL = {
+    "없음": "",
+    "라이트 글로우 — 자연스러운 윤기": "light natural skin glow, subtle healthy sheen, barely-there luminosity",
+    "새틴 글로우 — 새틴처럼 빛나는": "satin skin finish, smooth silky sheen, elegant glow",
+    "미디엄 오일 — 적당한 오일감": "medium body oil, moderate skin glistening, healthy oiled appearance",
+    "하이 글로스 — 강한 오일, 반짝이는": "high gloss body oil, glistening skin, editorial wet-look shine",
+    "익스트림 웻룩 — 물에 젖은 듯한": "wet-look skin finish, glistening editorial appearance, fashion wet effect",
+    "선탠 오일 — 골든 태닝 오일": "tanning oil sheen, golden bronzed glistening skin, beach goddess oil",
+    "메탈릭 글로스 — 금속빛 광택": "metallic body gloss, chrome-inspired skin sheen, futuristic editorial finish",
+    "스웨티 글로스 — 땀+오일 믹스": "athletic oiled skin, fitness glistening sheen, sport editorial",
 }
 
 POSES = {
@@ -476,19 +488,19 @@ POSES = {
     "누운 포즈 — 바닥/침대에 관능적": "lying down pose, reclined elegantly on floor or bed, fashion editorial",
     "엎드린 포즈 — 배를 깔고 관능적": "lying face down, propped on elbows, looking at camera, editorial pose",
     # ── 뒷모습 계열 ──
-    "백포즈 — 뒤돌아 어깨 너머 시선": "back to camera, looking over shoulder, confident editorial pose",
-    "등 보이기 — 백뷰, 어깨 라인": "back view pose, spine visible, shoulder blade emphasis, fashion editorial",
+    "백포즈 — 뒤돌아 어깨 너머 시선": "back to camera, elegant over-shoulder glance, confident editorial pose",
+    "등 보이기 — 백뷰, 어깨 라인": "back view pose, shoulder blade emphasis, elegant fashion editorial",
     # ── 역동적 계열 ──
     "역동적 — 머리카락 날리는 움직임": "dynamic pose, hair flowing in wind, motion blur effect",
     "스트레칭 — 몸을 길게 늘인 유연한": "full body stretch pose, elongated limbs, graceful flexibility, dancer energy",
     "점프 — 공중에 뜬 역동적": "mid-air jump pose, feet off ground, dynamic energy, motion captured",
     # ── 수중/풀 계열 ──
     "수영장 입수 — 물가에서 다이빙": "standing at pool edge, about to dive, water reflection below",
-    "수영장 물속 — 하반신 물에 잠긴": "standing waist-deep in pool, water surface at hips, wet glistening body",
+    "수영장 물속 — 하반신 물에 잠긴": "standing waist-deep in pool, water surface at hips, cinematic pool editorial",
     "욕조 포즈 — 욕조 안 럭셔리": "reclining in luxury bathtub, bubbles or petals, spa glamour",
     # ── 얼굴/클로즈업 계열 ──
     "손으로 얼굴 감싸기 — 양손으로 얼굴": "hands framing face, fingers touching cheeks, intimate beauty pose",
-    "턱 괴기 — 손으로 턱 받치고": "chin resting on hand, thoughtful seductive gaze, close-up ready",
+    "턱 괴기 — 손으로 턱 받치고": "chin resting on hand, thoughtful editorial gaze, close-up ready",
     "거울 앞 — 거울 반영, 이중 시선": "standing before mirror, reflection visible, double perspective pose",
 }
 
@@ -499,7 +511,7 @@ WEATHER = {
     "골든아워 — 석양 직전 황금빛": "golden hour just before sunset, warm amber light flooding the scene",
     "흐림 — 부드러운 확산광, 무드있는": "overcast sky, soft diffused light, moody atmospheric feel",
     "비 — 빗속, 젖은 바닥 반사": "raining, wet ground reflections, rain droplets, dramatic rain atmosphere",
-    "폭우 — 거센 비, 극적인 분위기": "heavy downpour, intense rain, dramatic storm, soaking wet everything",
+    "폭우 — 거센 비, 극적인 분위기": "heavy downpour, intense rain, dramatic storm atmosphere",
     "안개 — 신비로운 안개, 몽환적": "dense fog, mysterious misty atmosphere, ethereal soft focus background",
     "눈 — 눈 내리는, 겨울 분위기": "snowfall, snowflakes falling, winter atmosphere, breath visible in cold air",
     "번개/폭풍 — 극적인 폭풍우": "lightning storm, dramatic storm clouds, electric atmosphere, intense weather",
@@ -516,13 +528,13 @@ EXPRESSION = {
     "당당한 — 자신감 넘치는 눈빛": "confident powerful expression, direct commanding gaze, dominant energy",
     "미소 — 부드러운 매혹적 미소": "soft alluring smile, gentle warm expression, approachable glamour",
     "활짝 웃음 — 환한 밝은 미소": "bright radiant smile, joyful expression, teeth showing, infectious happiness",
-    "청순 — 순수하고 맑은 눈빛": "innocent pure expression, wide bright eyes, fresh youthful look, doe-eyed",
+    "청순 — 순수하고 맑은 눈빛": "fresh youthful expression, wide bright eyes, natural clean beauty, editorial look",
     "신비로운 — 알 수 없는 표정": "mysterious enigmatic expression, knowing look, secretive allure",
     "관능적 — 반쯤 감은 눈, 육감적": "half-lidded eyes, heavy-lidded gaze, deeply expressive editorial look",
     "강렬한 — 눈을 부릅뜨고 압도하는": "intense piercing stare, powerful overwhelming gaze, magnetic eye contact",
     "우수 — 슬프고 몽환적인 눈빛": "melancholic dreamy expression, faraway gaze, wistful beauty",
     "화난 — 강렬한 분노, 악당 느낌": "fierce intense expression, villainous energy, dark powerful aura",
-    "입술 벌림 — 입술 살짝 열린": "lips slightly parted, breathless expression, editorial beauty",
+    "입술 벌림 — 입술 살짝 열린": "lips slightly parted, calm sophisticated editorial expression",
 }
 
 # ── 문신/바디아트 ──
