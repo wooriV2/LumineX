@@ -29,11 +29,96 @@ from core.data import (
 from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations
 from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
 
+st.set_page_config(
+    page_title="LumineX Dashboard",
+    page_icon="✦",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+# ─── 다크 테마 CSS ────────────────────────────────────────
+BG       = "#1e1e1e"
+BG_SIDE  = "#252526"
+BG_INPUT = "#2d2d2d"
+BG_CARD  = "#2a2a2a"
+GOLD     = "#c9a84c"
+GOLD_DIM = "#8a6f30"
+BORDER   = "#3a3a3a"
+TEXT     = "#d4d4d4"
+TEXT_DIM = "#888"
+
+st.markdown(f"""
+<style>
+/* ── 전체 배경 ── */
+.stApp, [data-testid="stAppViewContainer"] {{ background-color: {BG} !important; }}
+[data-testid="stHeader"] {{ background-color: {BG} !important; }}
+
+/* ── 사이드바 ── */
+[data-testid="stSidebar"] {{ background-color: {BG_SIDE} !important; border-right: 1px solid {BORDER} !important; }}
+[data-testid="stSidebar"] .stMarkdown p,
+[data-testid="stSidebar"] label {{ color: {TEXT_DIM} !important; font-size: 0.78rem !important; }}
+[data-testid="stSidebar"] h3 {{ color: {GOLD_DIM} !important; font-size: 0.65rem !important; letter-spacing: 2.5px !important; text-transform: uppercase !important; }}
+
+/* ── 헤딩 ── */
+h1, h2, h3, h4, h5 {{ color: {GOLD} !important; letter-spacing: 1.5px !important; }}
+
+/* ── 탭 ── */
+.stTabs [data-baseweb="tab-list"] {{ background-color: transparent !important; border-bottom: 1px solid {BORDER} !important; gap: 0 !important; }}
+.stTabs [data-baseweb="tab"] {{ background-color: transparent !important; color: {TEXT_DIM} !important; font-size: 0.78rem !important; padding: 10px 20px !important; border-bottom: 2px solid transparent !important; }}
+.stTabs [aria-selected="true"] {{ color: {GOLD} !important; border-bottom: 2px solid {GOLD} !important; background-color: transparent !important; }}
+.stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] {{ display: none !important; }}
+
+/* ── 셀렉트박스 ── */
+.stSelectbox > div > div {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
+.stSelectbox > div > div:hover {{ border-color: rgba(201,168,76,0.4) !important; }}
+.stSelectbox > div > div:focus-within {{ border-color: rgba(201,168,76,0.7) !important; box-shadow: 0 0 0 1px rgba(201,168,76,0.2) !important; }}
+.stSelectbox label {{ color: {GOLD} !important; font-size: 0.68rem !important; letter-spacing: 1.2px !important; text-transform: uppercase !important; font-weight: 600 !important; }}
+.stSelectbox [data-baseweb="select"] span,
+.stSelectbox [data-baseweb="select"] div,
+.stSelectbox [data-baseweb="select"] input {{ color: {TEXT} !important; }}
+[data-baseweb="popover"] [data-baseweb="menu"] {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; }}
+[data-baseweb="popover"] li {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
+[data-baseweb="popover"] li:hover {{ background-color: rgba(201,168,76,0.1) !important; color: {GOLD} !important; }}
+
+/* ── 버튼 ── */
+.stButton > button {{ border-radius: 6px !important; font-size: 0.75rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important; font-weight: 700 !important; transition: all 0.2s !important; height: 42px !important; }}
+.stButton > button[kind="primary"] {{ background: linear-gradient(135deg, {GOLD}, {GOLD_DIM}) !important; border: none !important; color: #111 !important; }}
+.stButton > button[kind="primary"]:hover {{ background: linear-gradient(135deg, #e8c96a, {GOLD}) !important; transform: translateY(-1px) !important; }}
+.stButton > button[kind="secondary"] {{ background: transparent !important; border: 1px solid rgba(201,168,76,0.4) !important; color: {GOLD} !important; }}
+.stButton > button[kind="secondary"]:hover {{ background: rgba(201,168,76,0.08) !important; border-color: rgba(201,168,76,0.7) !important; }}
+
+/* ── 라디오 ── */
+.stRadio > div {{ gap: 6px !important; }}
+.stRadio label {{ background: {BG_CARD} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; padding: 7px 12px !important; font-size: 0.78rem !important; color: {TEXT_DIM} !important; cursor: pointer !important; transition: all 0.2s !important; }}
+.stRadio label:has(input:checked) {{ background: rgba(201,168,76,0.12) !important; border-color: rgba(201,168,76,0.5) !important; color: {GOLD} !important; }}
+
+/* ── 텍스트에어리어 ── */
+.stTextArea textarea {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; font-size: 0.78rem !important; line-height: 1.8 !important; }}
+.stTextArea textarea:focus {{ border-color: rgba(201,168,76,0.5) !important; box-shadow: 0 0 0 1px rgba(201,168,76,0.15) !important; }}
+
+/* ── 코드블록 ── */
+.stCode {{ background-color: {BG_INPUT} !important; border: 1px solid rgba(201,168,76,0.25) !important; border-radius: 6px !important; }}
+.stCode code {{ color: #ce9178 !important; font-size: 0.75rem !important; line-height: 1.8 !important; }}
+.stCode button {{ background: rgba(201,168,76,0.1) !important; border: 1px solid rgba(201,168,76,0.3) !important; color: {GOLD} !important; border-radius: 4px !important; }}
+
+/* ── 기타 ── */
+[data-testid="stToggle"] > div {{ background-color: {GOLD} !important; }}
+.stAlert {{ background-color: {BG_CARD} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; color: {TEXT_DIM} !important; font-size: 0.78rem !important; }}
+hr {{ border-color: {BORDER} !important; margin: 12px 0 !important; }}
+.stCaption {{ color: {TEXT_DIM} !important; font-size: 0.7rem !important; }}
+p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }}
+::-webkit-scrollbar {{ width: 4px; }}
+::-webkit-scrollbar-track {{ background: {BG}; }}
+::-webkit-scrollbar-thumb {{ background: {BORDER}; border-radius: 2px; }}
+::-webkit-scrollbar-thumb:hover {{ background: {GOLD_DIM}; }}
+</style>
+""", unsafe_allow_html=True)
+
 # ─── 헤더 ─────────────────────────────────────────────────
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#444;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.2</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.3</div>
 </div>
 ''', unsafe_allow_html=True)
 
