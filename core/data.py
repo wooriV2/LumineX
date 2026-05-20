@@ -570,3 +570,15 @@ BG_CROWD = {
     "두 명 — 다른 모델 한 명 배경에": "another model blurred in background, duo scene, second figure",
     "그림자 인물 — 배경에 실루엣만": "shadowy silhouette figures in background, mysterious dark outlines",
 }
+
+COLOR_GRADES = {
+    "없음": "",
+    "흑백 — 클래식 모노크롬": "black and white photography, classic monochrome, high contrast B&W",
+    "시네마틱 틸 & 오렌지 — 영화적": "cinematic teal and orange color grade, Hollywood film look",
+    "골든 — 따뜻한 황금빛 필름": "warm golden film grade, vintage golden hour tone",
+    "다크 무드 — 어둡고 드라마틱": "dark moody color grade, deep shadows, dramatic contrast",
+    "쿨 블루 — 차갑고 세련된": "cool blue color grade, cold steel tones, sleek editorial",
+    "핑크 글램 — 핑크빛 글래머": "soft pink glamour grade, rose gold tones, feminine glow",
+    "하이키 — 밝고 화사한 흰빛": "high key bright white tone, overexposed glamour, clean light",
+    "빈티지 필름 — 필름 느낌": "vintage film grain, faded colors, analog photography look",
+}
