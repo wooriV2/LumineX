@@ -26,7 +26,7 @@ from core.data import (
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD,
     COLOR_GRADES,
 )
-from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations
+from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
 from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
 
 st.set_page_config(
@@ -919,6 +919,38 @@ Only replace fields that are risky. Use exact key names from the options above. 
         smart_update("r_concept",     CONCEPT,        0.15)
 
         st.session_state._trigger_build = True
+
+        # ── selectbox 현재값 session_state 동기화 (자동필터용) ──
+        st.session_state.r_outfit      = outfit
+        st.session_state.r_material    = material
+        st.session_state.r_angle       = angle
+        st.session_state.r_model       = model_type
+        st.session_state.r_style       = style
+        st.session_state.r_skin_tone   = skin_tone
+        st.session_state.r_body_oil    = body_oil
+        st.session_state.r_weather     = weather
+        st.session_state.r_expression  = expression
+        st.session_state.r_env         = environment
+        st.session_state.r_light       = lighting
+        st.session_state.r_camera      = camera
+
+        # ── 자동 필터 검수 (규칙 기반) ──────────────────────
+        filter_result = auto_filter_check(dict(st.session_state))
+        if filter_result["replacements"]:
+            for ss_key, new_val in filter_result["replacements"].items():
+                st.session_state[ss_key] = new_val
+            risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(filter_result["risk_level"], "⚪")
+            replaced_labels = {
+                "r_angle": "앵글", "r_pose": "포즈", "r_outfit": "의상",
+                "r_material": "소재", "r_skin_tone": "피부", "r_body_oil": "바디오일",
+                "r_style": "스타일", "r_expression": "표정", "r_model": "체형",
+            }
+            changed = "  |  ".join([f"{replaced_labels.get(k, k)} → **{v.split('—')[0].strip()}**" for k, v in filter_result["replacements"].items()])
+            st.session_state._auto_filter_msg = f"{risk_emoji} 필터 자동 조정: {changed}"
+        else:
+            risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(filter_result["risk_level"], "⚪")
+            st.session_state._auto_filter_msg = f"{risk_emoji} 필터 검수 통과 (점수: {filter_result['total_score']})"
+
         st.rerun()
 
     # rerun 후 실제 프롬프트 생성
@@ -999,6 +1031,16 @@ Only replace fields that are risky. Use exact key names from the options above. 
     # 자동선택 메시지 표시
     if st.session_state.get("_auto_picked_msg"):
         st.info(st.session_state._auto_picked_msg)
+
+    # 자동 필터 검수 메시지 표시
+    if st.session_state.get("_auto_filter_msg"):
+        msg = st.session_state._auto_filter_msg
+        if "🔴" in msg:
+            st.warning(msg)
+        elif "🟡" in msg:
+            st.info(msg)
+        else:
+            st.success(msg)
 
     if btn_ai_enhance and st.session_state.manual_prompt:
         with st.spinner("Claude가 프롬프트 강화 중..."):
