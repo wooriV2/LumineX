@@ -685,49 +685,145 @@ with tab2:
     if "review_result" not in st.session_state:
         st.session_state.review_result = ""
 
-    # ── 방법 3: AI 검수 ─────────────────────────────────────
+    # ── 방법 3: AI 검수 (분석 + 자동 교체) ────────────────────
     if btn_ai_review:
         st.session_state.review_result = ""
-        with st.spinner("Claude가 조합 검수 중..."):
+        with st.spinner("Claude가 조합 검수 + 자동 수정 중..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
+
+                # 현재 선택값 목록 전달
+                current_combo = {
+                    "model":       model_type,
+                    "outfit":      outfit,
+                    "material":    material,
+                    "angle":       angle,
+                    "pose":        pose,
+                    "skin_tone":   skin_tone,
+                    "body_oil":    body_oil,
+                    "weather":     weather,
+                    "style":       style,
+                    "lighting":    lighting,
+                    "expression":  expression,
+                    "bg_crowd":    bg_crowd,
+                    "img_style":   img_style,
+                    "color_grade": color_grade,
+                }
+
+                # 안전한 대체 옵션 목록
+                safe_options = {
+                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["코트 only — 롱코트만 입은 미니멀 글래머", "란제리 에디토리얼 — VS 스타일, 실크 레이스", "시스루 바디수트 — 메쉬, 아방가르드"]],
+                    "material":  [k for k in MATERIALS.keys() if k not in ["라텍스 — 피부 밀착, 세컨드스킨", "시스루 오간자 — 반투명, 살이 비치는", "PVC — 투명 비닐, 미래적"]],
+                    "angle":     list(CAMERA_ANGLES.keys()),
+                    "pose":      [k for k in POSES.keys() if k != "없음"],
+                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in ["스웨티 — 운동 후 땀나는 느낌", "오일드 스킨 — 윤기있는 글로시"]],
+                    "body_oil":  ["없음", "라이트 글로우 — 자연스러운 윤기", "새틴 글로우 — 새틴처럼 빛나는"],
+                    "weather":   [k for k in WEATHER.keys() if k not in ["폭우 — 거센 비, 극적인 분위기"]],
+                    "style":     [k for k in STYLES.keys()],
+                    "lighting":  list(LIGHTING.keys()),
+                    "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["더블 익스포저 — 이중 노출"]],
+                }
+
                 response = client.messages.create(
                     model="claude-sonnet-4-5",
-                    max_tokens=800,
-                    messages=[{"role": "user", "content": f"""You are an expert AI image prompt analyst for fashion photography.
-Review this combination for conflicts and issues:
+                    max_tokens=1200,
+                    messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst.
 
-- 체형(Body type): {model_type}
-- 의상(Outfit): {outfit}
-- 소재(Material): {material}
-- 앵글(Angle): {angle}
-- 포즈(Pose): {pose}
-- 환경(Environment): {environment}
-- 스타일(Style): {style}
-- 조명(Lighting): {lighting}
+Analyze this fashion photo prompt combination for AI filter risks.
+Identify elements that together create a "sensual/adult content" signal when combined.
 
-Analyze for:
-1. Angle vs Pose conflicts (e.g. waist-up + full body pose)
-2. Body type vs Outfit/Material conflicts (e.g. BBW + latex)
-3. Style vs Environment mood mismatch (e.g. cyberpunk + golden sunset)
-4. Any other AI generation issues
+Current combination:
+{chr(10).join([f"- {k}: {v}" for k, v in current_combo.items()])}
 
-Respond in Korean. Format:
-⚠️ 충돌/문제:
-[list each issue]
+Rules for risk assessment:
+1. Single risky element = usually OK
+2. 3+ risky elements together = likely blocked
+3. Risky combos: wet skin + swimwear + curvy body + sensual pose + back view
+4. Risky combos: tight framing + spine emphasis + sweaty + revealing outfit
+5. Style keywords like "sensual" amplify all other risks
 
-✅ 수정 제안:
-[specific fix for each issue]
+Respond ONLY in this exact JSON format, no other text:
+{{
+  "risk_level": "HIGH/MEDIUM/LOW",
+  "issues": ["issue1", "issue2"],
+  "replacements": {{
+    "outfit": "replacement key or null",
+    "material": "replacement key or null",
+    "angle": "replacement key or null",
+    "pose": "replacement key or null",
+    "skin_tone": "replacement key or null",
+    "body_oil": "replacement key or null",
+    "weather": "replacement key or null",
+    "style": "replacement key or null",
+    "img_style": "replacement key or null"
+  }},
+  "summary": "한국어로 2-3줄 요약"
+}}
 
-🎯 최적 조합:
-[brief recommended combination]"""}]
+Available safe options per field:
+outfit: {safe_options['outfit'][:6]}
+material: {safe_options['material'][:6]}
+angle: {safe_options['angle']}
+pose: {safe_options['pose'][:8]}
+skin_tone: {safe_options['skin_tone']}
+body_oil: {safe_options['body_oil']}
+weather: {safe_options['weather'][:6]}
+style: {safe_options['style']}
+img_style: {safe_options['img_style']}
+
+Only replace fields that are risky. Use exact key names from the options above. Use null if field is safe."""}]
                 )
-                st.session_state.review_result = response.content[0].text.strip()
-            except Exception as e:
-                st.error(f"오류: {str(e)}")
 
-    if st.session_state.review_result:
+                raw = response.content[0].text.strip()
+                # JSON 파싱
+                import json, re
+                json_match = re.search(r'\{.*\}', raw, re.DOTALL)
+                if json_match:
+                    result = json.loads(json_match.group())
+                    risk    = result.get("risk_level", "UNKNOWN")
+                    issues  = result.get("issues", [])
+                    repls   = result.get("replacements", {})
+                    summary = result.get("summary", "")
+
+                    # 위험 요소 자동 교체
+                    KEY_MAP = {
+                        "outfit":    "r_outfit",
+                        "material":  "r_material",
+                        "angle":     "r_angle",
+                        "pose":      "r_pose",
+                        "skin_tone": "r_skin_tone",
+                        "body_oil":  "r_body_oil",
+                        "weather":   "r_weather",
+                        "style":     "r_style",
+                        "img_style": "r_image_style",
+                    }
+                    replaced = {}
+                    for field, new_val in repls.items():
+                        if new_val and new_val != "null":
+                            ss_key = KEY_MAP.get(field)
+                            if ss_key:
+                                st.session_state[ss_key] = new_val
+                                replaced[field] = new_val
+
+                    # 결과 메시지 저장
+                    risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(risk, "⚪")
+                    msg = f"{risk_emoji} **리스크: {risk}**\n\n"
+                    if issues:
+                        msg += "**⚠️ 감지된 문제:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
+                    if replaced:
+                        msg += "**🔄 자동 교체된 항목:**\n" + "\n".join([f"- {k} → `{v.split('—')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
+                    msg += f"**💬 요약:** {summary}"
+                    st.session_state.review_result = msg
+
+                    if replaced:
+                        st.session_state._trigger_build = True
+                        st.rerun()
+
+            except Exception as e:
+                st.session_state.review_result = f"오류: {str(e)}"
+
+    if st.session_state.get("review_result"):
         st.markdown("---")
         st.markdown("#### 🔍 AI 검수 결과")
         st.markdown(st.session_state.review_result)
