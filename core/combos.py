@@ -271,4 +271,168 @@ def get_combo_recommendations(model_type: str) -> dict:
     """체형에 맞는 추천 조합 반환"""
     return GOOD_COMBOS.get(model_type, {})
 
+
 # ══════════════════════════════════════════════════════════
+# 자동 필터 검수 (규칙 기반, API 없음)
+# ══════════════════════════════════════════════════════════
+
+# 위험 요소 점수 매핑
+RISK_SCORES = {
+    # 앵글
+    "오버헤드":           ("angle",    2),
+    "로우앵글":           ("angle",    1),
+    "백샷":               ("angle",    1),
+    # 포즈
+    "수영장 물속":        ("pose",     2),
+    "엎드린 포즈":        ("pose",     2),
+    "등 보이기":          ("pose",     1),
+    "백포즈":             ("pose",     1),
+    "걸어가는 뒷모습":    ("pose",     1),
+    # 의상
+    "마이크로 비키니":    ("outfit",   2),
+    "모노키니":           ("outfit",   2),
+    "브라탑":             ("outfit",   2),
+    "란제리":             ("outfit",   2),
+    "시스루 바디수트":    ("outfit",   2),
+    "코트 only":          ("outfit",   2),
+    "원피스 수영복":      ("outfit",   1),
+    "마이크로 비키니 — 끈 비키니": ("outfit", 2),
+    # 소재
+    "PVC":                ("material", 3),
+    "시스루 오간자":      ("material", 2),
+    "라텍스":             ("material", 2),
+    "골드 체인 메쉬":     ("material", 1),
+    # 피부/오일
+    "오일드 스킨":        ("skin",     1),
+    "스웨티":             ("skin",     1),
+    "익스트림 웻룩":      ("oil",      2),
+    "하이 글로스":        ("oil",      1),
+    "메탈릭 글로스":      ("oil",      1),
+    # 날씨
+    "폭우":               ("weather",  1),
+    # 스타일
+    "빅토리아 시크릿":    ("style",    1),
+    "스포츠 일러스트레이티드": ("style", 1),
+    # 표정
+    "입술 벌림":          ("expr",     1),
+    "청순":               ("expr",     1),
+    # 체형
+    "플러스 글램":        ("model",    1),
+    "라지 플러스":        ("model",    1),
+    "슈퍼 플러스":        ("model",    1),
+    "BBW":                ("model",    2),
+    "슈퍼 BBW":           ("model",    2),
+}
+
+# 자동 교체 규칙 (위험요소 → 안전 대체)
+AUTO_REPLACE_RULES = {
+    # (위험 키워드, 필드) → 대체 값
+    ("오버헤드", "angle"):        "3/4 샷 — 허벅지까지",
+    ("로우앵글", "angle"):        "전신샷 — 머리부터 발끝",
+    ("백샷", "angle"):            "3/4 샷 — 허벅지까지",
+    ("수영장 물속", "pose"):      "파워 스탠딩 — 손 허리, 당당한",
+    ("엎드린 포즈", "pose"):      "앉은 포즈 — 바닥/의자에 우아하게",
+    ("등 보이기", "pose"):        "파워 스탠딩 — 손 허리, 당당한",
+    ("백포즈", "pose"):           "S커브 — 한쪽 다리 구부린 섹시",
+    ("마이크로 비키니", "outfit"): "바디콘 미니드레스 — 몸매 강조, 타이트핏",
+    ("모노키니", "outfit"):       "원피스 수영복 — 하이컷, 컷아웃 디자인",
+    ("브라탑+하이슬릿", "outfit"): "컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인",
+    ("란제리 에디토리얼", "outfit"): "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인",
+    ("시스루 바디수트", "outfit"): "바디콘 미니드레스 — 몸매 강조, 타이트핏",
+    ("코트 only", "outfit"):      "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인",
+    ("PVC", "material"):          "리퀴드 새틴 — 액체처럼 흐르는 광택",
+    ("시스루 오간자", "material"): "리퀴드 새틴 — 액체처럼 흐르는 광택",
+    ("라텍스", "material"):       "리퀴드 새틴 — 액체처럼 흐르는 광택",
+    ("익스트림 웻룩", "oil"):     "새틴 글로우 — 새틴처럼 빛나는",
+    ("빅토리아 시크릿", "style"): "하퍼스 바자 — 관능적 에디토리얼",
+    ("스포츠 일러스트레이티드", "style"): "베르사체 캠페인 — 대담한 럭셔리",
+}
+
+# 고위험 조합 (이 조합이 동시에 있으면 강제 교체)
+HIGH_RISK_COMBOS = [
+    # (필드1, 키워드1, 필드2, 키워드2, 교체할 필드, 대체값)
+    ("angle", "오버헤드", "material", "PVC",       "material", "리퀴드 새틴 — 액체처럼 흐르는 광택"),
+    ("angle", "오버헤드", "material", "시스루",    "angle",    "3/4 샷 — 허벅지까지"),
+    ("angle", "로우앵글", "skin",     "스웨티",    "skin",     "글로우 — 발광하는 빛나는 피부"),
+    ("angle", "로우앵글", "oil",      "하이 글로스","oil",     "라이트 글로우 — 자연스러운 윤기"),
+    ("pose",  "백포즈",   "material", "PVC",       "material", "리퀴드 새틴 — 액체처럼 흐르는 광택"),
+    ("pose",  "백포즈",   "outfit",   "수영복",    "pose",     "파워 스탠딩 — 손 허리, 당당한"),
+    ("pose",  "백포즈",   "skin",     "스웨티",    "skin",     "글로우 — 발광하는 빛나는 피부"),
+    ("model", "BBW",      "outfit",   "비키니",    "outfit",   "바디콘 미니드레스 — 몸매 강조, 타이트핏"),
+    ("model", "BBW",      "material", "라텍스",    "material", "벨벳 — 부드럽고 고급스러운"),
+    ("model", "BBW",      "material", "PVC",       "material", "벨벳 — 부드럽고 고급스러운"),
+    ("expr",  "청순",     "outfit",   "비키니",    "expr",     "당당한 — 자신감 넘치는 눈빛"),
+    ("expr",  "청순",     "material", "라텍스",    "expr",     "당당한 — 자신감 넘치는 눈빛"),
+    ("expr",  "청순",     "material", "PVC",       "expr",     "당당한 — 자신감 넘치는 눈빛"),
+    ("expr",  "입술 벌림","outfit",   "비키니",    "expr",     "당당한 — 자신감 넘치는 눈빛"),
+    ("expr",  "입술 벌림","pose",     "백포즈",    "expr",     "강렬한 — 눈을 부릅뜨고 압도하는"),
+]
+
+FIELD_TO_SESSION_KEY = {
+    "angle":    "r_angle",
+    "pose":     "r_pose",
+    "outfit":   "r_outfit",
+    "material": "r_material",
+    "skin":     "r_skin_tone",
+    "oil":      "r_body_oil",
+    "style":    "r_style",
+    "expr":     "r_expression",
+    "model":    "r_model",
+}
+
+def auto_filter_check(session_state: dict) -> dict:
+    """
+    규칙 기반 자동 필터 검수
+    위험 조합 감지 → session_state 키 교체 딕셔너리 반환
+    """
+    # 현재 선택값 수집
+    current = {
+        "angle":    session_state.get("r_angle", ""),
+        "pose":     session_state.get("r_pose", ""),
+        "outfit":   session_state.get("r_outfit", ""),
+        "material": session_state.get("r_material", ""),
+        "skin":     session_state.get("r_skin_tone", ""),
+        "oil":      session_state.get("r_body_oil", ""),
+        "style":    session_state.get("r_style", ""),
+        "expr":     session_state.get("r_expression", ""),
+        "model":    session_state.get("r_model", ""),
+        "weather":  session_state.get("r_weather", ""),
+    }
+
+    # 리스크 점수 계산
+    total_score = 0
+    triggered = []
+    for keyword, (field, score) in RISK_SCORES.items():
+        val = current.get(field, "")
+        if keyword.lower() in val.lower():
+            total_score += score
+            triggered.append((keyword, field, score))
+
+    replacements = {}
+
+    # 고위험 조합 먼저 체크
+    for f1, kw1, f2, kw2, replace_field, replace_val in HIGH_RISK_COMBOS:
+        v1 = current.get(f1, "").lower()
+        v2 = current.get(f2, "").lower()
+        if kw1.lower() in v1 and kw2.lower() in v2:
+            ss_key = FIELD_TO_SESSION_KEY.get(replace_field)
+            if ss_key:
+                replacements[ss_key] = replace_val
+
+    # 총 점수 3점 이상이면 개별 교체 실행
+    if total_score >= 3:
+        for keyword, field, score in triggered:
+            if score >= 2:  # 고위험 단독 요소만 교체
+                replace_key = (keyword, field)
+                if replace_key in AUTO_REPLACE_RULES:
+                    ss_key = FIELD_TO_SESSION_KEY.get(field)
+                    if ss_key and ss_key not in replacements:
+                        replacements[ss_key] = AUTO_REPLACE_RULES[replace_key]
+
+    risk_level = "HIGH" if total_score >= 4 else "MEDIUM" if total_score >= 2 else "LOW"
+    return {
+        "risk_level":   risk_level,
+        "total_score":  total_score,
+        "triggered":    triggered,
+        "replacements": replacements,
+    }
