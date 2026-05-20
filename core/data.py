@@ -168,12 +168,12 @@ OUTFIT_TYPES = {
         "chatgpt": "luxury bridal gown, dramatic wedding dress, high fashion bridal editorial",
     },
     "코트 only — 롱코트만 입은 미니멀 글래머": {
-        "gemini": "oversized long coat, minimalist fashion editorial, coat as sole garment, sleek glamour",
-        "chatgpt": "oversized long coat, minimalist glamour, fashion editorial coat look",
+        "gemini": "oversized structured long coat, fully covered couture fashion, sleek editorial coat styling, luxury outerwear",
+        "chatgpt": "oversized luxury long coat, fully covered couture editorial, high-fashion outerwear look",
     },
     "가죽 재킷 + 란제리 — 엣지있는 레이어드": {
-        "gemini": "leather jacket over lingerie, edgy layered look, rock glamour style",
-        "chatgpt": "leather jacket with lingerie, edgy fashion editorial, bold layered style",
+        "gemini": "leather jacket with silk camisole, edgy layered fashion editorial, rock glamour styling",
+        "chatgpt": "leather jacket layered over camisole, edgy fashion editorial, bold layered style",
     },
 }
 
@@ -255,7 +255,7 @@ LIGHTING = {
     "볼류메트릭 포그 — 시네마틱 안개빛": "volumetric fog cinematic light, atmospheric mood",
     "림라이트 실루엣 — 역광 실루엣": "strong rim backlight, silhouette definition, halo effect",
     "문라이트 — 달빛, 신비로운 야외": "moonlight, silvery blue natural light, mysterious outdoor glow",
-    "네온 핑크 — 핑크 단색 네온": "single pink neon light, hot pink glow, moody pink atmosphere",
+    "네온 핑크 — 핑크 단색 네온": "pink neon accent light, rose-toned atmospheric glow, fashion editorial lighting",
     "파이어 — 불빛, 따뜻한 드라마틱": "firelight, warm flickering flames, dramatic orange glow",
     "수중 반사 — 수영장 물빛 반사": "underwater pool light reflection, rippling aqua light patterns",
     "스플릿 라이팅 — 얼굴 반반 명암": "split lighting, half face light half shadow, dramatic contrast",
@@ -265,7 +265,7 @@ CAMERA_ANGLES = {
     "전신샷 — 머리부터 발끝": "full body head-to-toe shot",
     "3/4 샷 — 허벅지까지": "3/4 body shot thigh to head",
     "웨이스트샷 — 상반신 집중": "waist-up shot upper body emphasis",
-    "로우앵글 — 다리 강조, 아래서 위로": "low angle upward shot legs dramatically elongated",
+    "로우앵글 — 다리 강조, 아래서 위로": "low angle upward shot, legs elongated, powerful editorial perspective",
     "클로즈업 — 얼굴+가슴 집중": "close-up beauty shot face and upper chest",
     "오버헤드 — 위에서 내려다보기": "overhead top-down angle, bird's eye view",
     "사이드 프로필 — 옆모습 실루엣": "side profile shot, elegant silhouette from the side",
@@ -393,7 +393,7 @@ IMAGE_STYLE = {
     "만화 — 코믹북 스타일": "comic book style, graphic novel illustration, bold outlines",
     "3D 렌더링 — CGI 퀄리티": "3D rendered CGI quality, Unreal Engine photorealistic render",
     "글리치 아트 — 디지털 왜곡": "glitch art effect, digital distortion, cyberpunk pixel corruption",
-    "더블 익스포저 — 이중 노출": "double exposure photography, overlapping silhouette effect",
+    "더블 익스포저 — 이중 노출": "double exposure photography, artistic silhouette overlay, fine art editorial",
     "타블로 — 르네상스 명화 스타일": "Renaissance painting tableau, classical masterpiece composition",
 }
 
@@ -432,7 +432,7 @@ ACCESSORIES = {
     "골드 주얼리 — 목걸이+귀걸이": "gold jewelry set, gold necklace and earrings, luxury accessories",
     "다이아몬드 — 럭셔리 다이아 주얼리": "diamond jewelry, sparkling diamond necklace and earrings, ultra luxury",
     "초커 — 섹시한 목 초커": "choker necklace, sexy neck choker, edgy accessory",
-    "바디체인 — 몸에 두르는 골드 체인": "gold body chain, draped across torso, glamorous body jewelry",
+    "바디체인 — 몸에 두르는 골드 체인": "gold body chain over clothing, layered over outfit, glamorous fashion jewelry",
     "레이어드 체인 — 여러 겹 목걸이": "layered chain necklaces, multiple gold chains, trendy stacked look",
     "진주 — 클래식 우아한 진주": "pearl jewelry, classic pearl necklace and earrings, timeless elegance",
     "크리스탈 — 반짝이는 크리스탈": "crystal jewelry, sparkling rhinestone accessories, glamorous",
@@ -460,24 +460,24 @@ POSES = {
     "파워 스탠딩 — 손 허리, 당당한": "powerful standing pose, hands on hips, confident dominant stance",
     "런웨이 워킹 — 카메라를 향해": "walking confidently toward camera, runway catwalk stride",
     "걸어가는 뒷모습 — 카메라 등지고 걷기": "walking away from camera, back view, confident stride, looking over shoulder",
-    "S커브 — 한쪽 다리 구부린 섹시": "sexy S-curve pose, one leg bent, hip tilted, sultry stance",
+    "S커브 — 한쪽 다리 구부린 섹시": "S-curve pose, one leg bent, hip tilted, confident fashion stance",
     "크로스 암 — 팔짱 끼고 강렬한": "arms crossed, intense gaze, powerful commanding expression",
-    "손 들어 — 머리 위로 손, 관능적": "arms raised above head, sensual elongated pose, arched back",
-    "기둥 포즈 — 기둥 감싸며 기댄": "leaning against pillar, arms wrapped around column, seductive lean",
+    "손 들어 — 머리 위로 손, 관능적": "arms raised above head, elongated elegant pose, arched back, fashion editorial",
+    "기둥 포즈 — 기둥 감싸며 기댄": "leaning against pillar, arms resting on column, elegant architectural pose",
     # ── 기대기 계열 ──
-    "기댄 포즈 — 벽에 기댄 캐주얼": "leaning against wall, casual yet sexy pose, relaxed confidence",
+    "기댄 포즈 — 벽에 기댄 캐주얼": "leaning against wall, casual confident pose, relaxed editorial stance",
     "창문 기대기 — 창문에 손 짚고 빛 받으며": "leaning against window, hand pressed on glass, backlit silhouette, dreamy glow",
-    "차 위 포즈 — 보닛에 기댄 글래머": "leaning on car hood, luxury supercar, sultry glamour pose",
+    "차 위 포즈 — 보닛에 기댄 글래머": "leaning on car hood, luxury supercar, confident glamour pose, fashion editorial",
     # ── 앉기 계열 ──
     "앉은 포즈 — 바닥/의자에 우아하게": "seated elegantly, legs crossed, sophisticated sitting pose",
     "땅에 앉기 — 무릎 세우고 바닥에": "sitting on floor, knees drawn up, casual intimate pose",
     "계단 포즈 — 계단에 앉거나 기댄": "seated or leaning on staircase steps, architectural glamour",
     # ── 눕기 계열 ──
-    "누운 포즈 — 바닥/침대에 관능적": "lying down pose, reclined on floor or bed, sensual and languid",
-    "엎드린 포즈 — 배를 깔고 관능적": "lying face down, propped on elbows, arched back, looking at camera",
+    "누운 포즈 — 바닥/침대에 관능적": "lying down pose, reclined elegantly on floor or bed, fashion editorial",
+    "엎드린 포즈 — 배를 깔고 관능적": "lying face down, propped on elbows, looking at camera, editorial pose",
     # ── 뒷모습 계열 ──
-    "백포즈 — 뒤돌아 어깨 너머 시선": "back to camera, looking over shoulder seductively",
-    "등 보이기 — 백뷰, 어깨 라인": "back view pose, spine visible, shoulder blade emphasis",
+    "백포즈 — 뒤돌아 어깨 너머 시선": "back to camera, looking over shoulder, confident editorial pose",
+    "등 보이기 — 백뷰, 어깨 라인": "back view pose, spine visible, shoulder blade emphasis, fashion editorial",
     # ── 역동적 계열 ──
     "역동적 — 머리카락 날리는 움직임": "dynamic pose, hair flowing in wind, motion blur effect",
     "스트레칭 — 몸을 길게 늘인 유연한": "full body stretch pose, elongated limbs, graceful flexibility, dancer energy",
@@ -511,18 +511,18 @@ WEATHER = {
 # ── 표정/눈빛 ──
 EXPRESSION = {
     "없음": "",
-    "도발적 — 강렬하고 유혹적인 눈빛": "seductive provocative gaze, smoldering eyes, sultry expression, lips slightly parted",
+    "도발적 — 강렬하고 유혹적인 눈빛": "intense confident gaze, smoldering eyes, powerful editorial expression",
     "차가운 — 무표정, 냉한 카리스마": "cold expressionless face, icy stare, aloof powerful charisma, stone cold beauty",
     "당당한 — 자신감 넘치는 눈빛": "confident powerful expression, direct commanding gaze, dominant energy",
     "미소 — 부드러운 매혹적 미소": "soft alluring smile, gentle warm expression, approachable glamour",
     "활짝 웃음 — 환한 밝은 미소": "bright radiant smile, joyful expression, teeth showing, infectious happiness",
     "청순 — 순수하고 맑은 눈빛": "innocent pure expression, wide bright eyes, fresh youthful look, doe-eyed",
-    "신비로운 — 알 수 없는 표정": "mysterious enigmatic expression, subtle smirk, secretive knowing look",
-    "관능적 — 반쯤 감은 눈, 육감적": "half-lidded sensual eyes, heavy-lidded gaze, deeply seductive expression",
+    "신비로운 — 알 수 없는 표정": "mysterious enigmatic expression, knowing look, secretive allure",
+    "관능적 — 반쯤 감은 눈, 육감적": "half-lidded eyes, heavy-lidded gaze, deeply expressive editorial look",
     "강렬한 — 눈을 부릅뜨고 압도하는": "intense piercing stare, powerful overwhelming gaze, magnetic eye contact",
     "우수 — 슬프고 몽환적인 눈빛": "melancholic dreamy expression, faraway gaze, wistful beauty",
-    "화난 — 강렬한 분노, 악당 느낌": "fierce angry expression, villainous intensity, dark powerful rage",
-    "입술 벌림 — 입술 살짝 열린": "lips slightly parted, open mouth, breathless expression, editorial beauty",
+    "화난 — 강렬한 분노, 악당 느낌": "fierce intense expression, villainous energy, dark powerful aura",
+    "입술 벌림 — 입술 살짝 열린": "lips slightly parted, breathless expression, editorial beauty",
 }
 
 # ── 문신/바디아트 ──
@@ -530,9 +530,9 @@ TATTOO = {
     "없음": "",
     "슬리브 타투 — 한쪽 팔 전체 문신": "full sleeve tattoo on one arm, intricate detailed ink art",
     "목 타투 — 목 옆 작은 문신": "small delicate neck tattoo, side of neck ink",
-    "가슴 타투 — 가슴 위 문신": "chest tattoo above bust, decorative upper chest ink",
+    "가슴 타투 — 가슴 위 문신": "chest tattoo above collarbone, decorative upper chest ink, fashion editorial",
     "등 타투 — 등 전체 대형 문신": "large back tattoo, full back ink art, intricate spine tattoo",
-    "허리 타투 — 허리 옆 타투": "hip/waist tattoo, lower side tattoo, sensual placement",
+    "허리 타투 — 허리 옆 타투": "hip waist tattoo, lower side tattoo, artistic placement",
     "손 타투 — 손등/손가락 문신": "hand and finger tattoos, knuckle ink, delicate hand art",
     "꽃 타투 — 플로럴 패턴": "floral tattoo pattern, rose and botanical ink, feminine tattoo art",
     "기하학 타투 — 선명한 기하학적": "geometric tattoo, clean line art, minimalist geometric ink",
