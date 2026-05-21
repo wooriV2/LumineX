@@ -295,6 +295,16 @@ MATERIALS = {
     "니트 — 몸에 딱 붙는 립 니트": "ribbed knit fabric, body-hugging stretch knit",
     "PVC — 투명 비닐, 미래적": "clear PVC vinyl, transparent plastic material, futuristic",
     "데님 — 청바지 소재, 캐주얼 섹시": "denim fabric, sexy denim, casual glamour",
+    "시폰 — 가볍고 나풀거리는": "lightweight chiffon fabric, flowing airy drape, soft feminine movement",
+    "린넨 — 자연스러운 여름 소재": "natural linen fabric, breathable summer texture, casual luxury",
+    "코튼 보일 — 얇고 시원한": "cotton voile fabric, lightweight sheer cotton, fresh summer feel",
+    "플로럴 프린트 — 꽃무늬 패턴": "floral printed fabric, botanical pattern, vibrant summer print",
+    "트로피컬 프린트 — 열대 패턴": "tropical print fabric, exotic botanical pattern, vacation glamour",
+    "타이다이 — 염색 패턴": "tie-dye fabric, hand-dyed swirling pattern, bohemian editorial",
+    "스트라이프 — 줄무늬 여름": "classic stripe fabric, nautical or summer stripe pattern, clean editorial",
+    "레이스 — 섬세한 레이스 소재": "delicate lace fabric, intricate lacework, feminine luxury texture",
+    "테리클로스 — 수건 소재, 해변": "terry cloth fabric, beach towel texture, casual resort glamour",
+    "네오프렌 — 탄탄한 구조적": "neoprene fabric, structured sculpting material, modern couture",
 }
 
 LIGHTING = {
