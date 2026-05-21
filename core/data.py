@@ -179,6 +179,42 @@ OUTFIT_TYPES = {
         "gemini": "leather jacket with silk camisole, edgy layered fashion editorial, rock glamour styling",
         "chatgpt": "leather jacket layered over camisole, edgy fashion editorial, bold layered style",
     },
+    "선드레스 — 민소매 여름 원피스": {
+        "gemini": "sundress, sleeveless summer dress, flowy feminine silhouette, casual glamour",
+        "chatgpt": "sundress, sleeveless summer dress, elegant casual editorial",
+    },
+    "홀터넥 드레스 — 목 끈, 등 노출": {
+        "gemini": "halter neck dress, tied at neck, open back, summer glamour editorial",
+        "chatgpt": "halter neck dress, elegant open back, luxury summer editorial",
+    },
+    "오프숄더 드레스 — 어깨 드러나는": {
+        "gemini": "off-shoulder dress, bardot neckline, elegant shoulder reveal, summer fashion",
+        "chatgpt": "off-shoulder dress, bardot style, sophisticated summer editorial",
+    },
+    "스파게티 스트랩 드레스 — 얇은 끈": {
+        "gemini": "spaghetti strap dress, thin shoulder straps, elegant summer silhouette",
+        "chatgpt": "spaghetti strap dress, delicate straps, luxury summer editorial",
+    },
+    "랩 드레스 — 앞 여밈 여름 원피스": {
+        "gemini": "wrap dress, front-tie waist, flowing summer dress, feminine editorial",
+        "chatgpt": "wrap dress, tied waist, elegant flowing summer editorial",
+    },
+    "플로럴 맥시 스커트 — 꽃무늬 긴 치마": {
+        "gemini": "floral maxi skirt, long flowing floral print, bohemian summer fashion",
+        "chatgpt": "floral maxi skirt, elegant long flowing skirt, summer editorial",
+    },
+    "보헤미안 티어드 스커트 — 레이어드 치마": {
+        "gemini": "bohemian tiered skirt, layered flowing fabric, free-spirited summer style",
+        "chatgpt": "tiered boho skirt, layered summer skirt, artistic editorial",
+    },
+    "사롱/파레오 — 해변용 두르는 치마": {
+        "gemini": "sarong pareo beach wrap skirt, tied at hip, tropical beach glamour",
+        "chatgpt": "sarong beach wrap, elegant tropical editorial, beach fashion",
+    },
+    "미니 플레어 스커트 — 짧고 퍼지는": {
+        "gemini": "mini flare skirt, short A-line flared skirt, playful summer fashion",
+        "chatgpt": "mini flare skirt, short A-line, playful summer editorial",
+    },
 }
 
 ENVIRONMENTS = {
