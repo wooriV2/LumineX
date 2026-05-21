@@ -519,6 +519,16 @@ ACCESSORIES = {
     "귀걸이만 — 드라마틱한 드롭 귀걸이": "statement drop earrings only, dramatic dangling earrings",
     "럭셔리 워치 — 명품 시계": "luxury watch, designer timepiece on wrist, status accessory",
     "팔찌 스택 — 여러 겹 팔찌": "stacked bracelets, multiple bangles and cuffs on wrist",
+    "선글라스 — 오버사이즈 명품 선글라스": "oversized designer sunglasses, luxury eyewear, glamorous shades",
+    "캣아이 선글라스 — 고양이 눈 선글라스": "cat-eye sunglasses, vintage glamour eyewear, retro chic",
+    "스포츠 선글라스 — 애슬레틱 선글라스": "sporty wraparound sunglasses, athletic eyewear, dynamic look",
+    "밀짚 모자 — 여름 비치 햇": "straw sun hat, beach summer hat, boho glamour",
+    "카우보이 햇 — 웨스턴 스타일": "cowboy hat, western style, bold fashion statement",
+    "베레모 — 파리지앵 스타일": "beret hat, Parisian chic, classic French fashion",
+    "페도라 — 클래식 페도라": "fedora hat, classic sophisticated hat, timeless glamour",
+    "야구모자 — 스트릿 캐주얼": "baseball cap, streetwear casual, sporty chic editorial",
+    "터번 — 이국적 헤드랩": "turban headwrap, exotic editorial, bold fashion statement",
+    "크라운/왕관 — 여왕 글래머": "jeweled crown tiara, queen glamour, royal luxury editorial",
 }
 
 SKIN_TONES = {
