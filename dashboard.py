@@ -931,6 +931,8 @@ Only replace fields that are risky. Use exact key names from the options above. 
         st.session_state.r_material    = material
         st.session_state.r_angle       = angle
         st.session_state.r_model       = model_type
+        st.session_state.r_age         = age
+        st.session_state.r_model_count = model_count
         st.session_state.r_style       = style
         st.session_state.r_skin_tone   = skin_tone
         st.session_state.r_body_oil    = body_oil
