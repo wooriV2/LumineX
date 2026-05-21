@@ -316,13 +316,16 @@ LIGHTING = {
 CAMERA_ANGLES = {
     "전신샷 — 머리부터 발끝": "full body head-to-toe shot",
     "3/4 샷 — 허벅지까지": "3/4 body shot thigh to head",
-    "웨이스트샷 — 상반신 집중": "waist-up shot upper body emphasis",
-    "로우앵글 — 다리 강조, 아래서 위로": "low angle upward shot, legs elongated, powerful editorial perspective",
-    "클로즈업 — 얼굴+가슴 집중": "close-up beauty shot face and upper chest",
+    "니어샷 — 무릎 위까지": "knee-up editorial shot, three-quarter length composition",
+    "웨이스트샷 — 상반신 집중": "waist-up cinematic composition",
+    "로우앵글 — 아래서 위로 올려다보기": "low angle upward shot, powerful editorial perspective",
+    "클로즈업 — 얼굴+상체 집중": "close-up beauty shot, face and shoulder emphasis",
     "오버헤드 — 위에서 내려다보기": "cinematic high-angle composition, elevated fashion perspective",
     "사이드 프로필 — 옆모습 실루엣": "side profile shot, elegant silhouette from the side",
     "백샷 — 뒤에서 촬영, 등 강조": "back view shot, elegant over-shoulder composition, fashion editorial",
     "익스트림 클로즈업 — 얼굴만 극접사": "extreme close-up face only, skin texture detail",
+    "더치앵글 — 기울어진 역동적": "dutch angle tilt, dynamic editorial composition",
+    "버즈아이 — 45도 하이앵글": "45 degree high angle, elegant elevated editorial perspective",
 }
 
 FOOTWEAR = {
