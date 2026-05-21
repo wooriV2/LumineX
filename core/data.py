@@ -29,6 +29,10 @@ MODEL_APPEARANCE = {
     "🇷🇺 동유럽 — 슬라브 미녀, 강한 골격, 매혹적": "Eastern European beauty, Slavic features, high cheekbones, mysterious allure",
     "🇲🇦 모로칸 — 북아프리카, 이국적 중동+아프리카 믹스": "Moroccan beauty, exotic North African features, olive skin, dark almond eyes",
     "🇪🇬 이집트 — 클레오파트라 느낌, 강렬한 눈매": "Egyptian beauty, Cleopatra-like features, intense dark eyes, Mediterranean skin",
+    "🇮🇳 인도 — 볼리우드, 황금 피부, 강렬한 눈매": "Indian beauty, golden warm skin, Bollywood glamour, expressive dark eyes, exotic features",
+    "🇵🇭 필리핀 — 동남아+스페인 혼혈 미녀": "Filipino beauty, mixed Southeast Asian Spanish features, warm tan skin, exotic mestiza",
+    "🇯🇲 자메이카 — 카리브해, 이국적 혼혈": "Jamaican beauty, Caribbean exotic features, warm brown skin, tropical island glamour",
+    "🇰🇪 케냐 — 동아프리카, 강렬하고 우아한": "Kenyan beauty, East African features, rich dark skin, powerful elegant presence",
 }
 
 AGE_APPEARANCE = {
@@ -210,6 +214,12 @@ ENVIRONMENTS = {
     "설산 리조트 — 눈 덮인 산, 스키 럭셔리": "snow-covered mountain luxury resort, alpine chalet, winter scenery",
     "우아한 볼룸 — 샹들리에, 대형 파티홀": "elegant grand ballroom, crystal chandeliers, marble floors, opulent",
     "루프탑 도시 스카이라인 — 도시 전경": "rooftop city skyline, panoramic urban view, golden sunset",
+    "도쿄 신사 — 일본 전통+현대 융합": "Tokyo Shinto shrine, traditional Japanese architecture, modern city contrast",
+    "인도 궁전 — 무굴 건축, 황금빛": "Indian Mughal palace, ornate architecture, golden opulent interior, Taj Mahal inspired",
+    "나미비아 사막 — 붉은 모래, 극적": "Namib desert red dunes, dramatic African landscape, surreal orange sky",
+    "아이슬란드 빙하 — 오로라, 신비로운": "Iceland glacier, northern lights aurora borealis, mystical arctic landscape",
+    "방콕 사원 — 황금 불탑, 이국적": "Bangkok golden temple, ornate Thai architecture, exotic Southeast Asian glamour",
+    "마라케시 수크 — 모로코 시장, 컬러풀": "Marrakech souk market, colorful Moroccan bazaar, exotic North African atmosphere",
 }
 
 STYLES = {
@@ -224,6 +234,12 @@ STYLES = {
     "알렉산더 맥퀸 — 드라마틱": "Alexander McQueen dramatic fashion editorial",
     "사이버펑크 — 시네마틱": "cyberpunk cinematic fashion photography",
     "스포츠 럭셔리 — 나이키/아디다스 하이엔드": "luxury sports editorial, high-end athletic fashion",
+    "발렌시아가 — 아방가르드 미래적": "Balenciaga avant-garde futuristic fashion editorial",
+    "샤넬 — 클래식 럭셔리 우아함": "Chanel classic luxury elegance, timeless couture editorial",
+    "지방시 — 다크 럭셔리 강렬함": "Givenchy dark luxury editorial, intense couture glamour",
+    "발망 — 파워 글래머 구조적": "Balmain power glamour, structured couture editorial, bold luxury",
+    "구찌 — 이클레틱 맥시멀리즘": "Gucci eclectic maximalism, bold prints, luxury fashion editorial",
+    "프라다 — 지적인 미니멀 럭셔리": "Prada intellectual minimalist luxury, avant-garde editorial",
 }
 
 MATERIALS = {
@@ -357,16 +373,44 @@ ERA = {
 
 CONCEPT = {
     "없음": "",
+    # ── 현대 ──
     "CEO 글래머 — 파워수트, 강한 여성": "powerful CEO glamour, sharp power suit, dominant businesswoman",
     "악당 빌런 — 다크 글래머, 카리스마": "villain dark glamour, evil seductive charisma, dark queen energy",
     "여전사 — 갑옷+글래머 융합": "warrior goddess, glamorous armor, fierce battle-ready beauty",
     "팝스타 — 무대 의상, 공연 에너지": "pop star stage costume, performance energy, concert glamour",
-    "비밀요원 — 스파이 글래머, 미스터리": "secret agent spy glamour, mysterious sleek operative, femme fatale",
+    "비밀요원 — 스파이 글래머, 미스터리": "secret agent spy glamour, mysterious sleek operative",
+    # ── 서양 신화/판타지 ──
     "여신 — 신화적 존재, 초월적 아름다움": "mythological goddess, ethereal divine beauty, supernatural aura",
-    "뱀파이어 — 다크 불멸의 존재": "vampire dark immortal beauty, gothic supernatural elegance",
-    "인어 — 바다의 여신": "mermaid ocean goddess, aquatic beauty, sea creature glamour",
     "천사 — 천상의 존재": "angel celestial beauty, ethereal divine wings, heavenly glamour",
+    "인어 — 바다의 여신": "mermaid ocean goddess, aquatic beauty, sea creature glamour",
+    "요정 — 숲의 정령, 에테리얼 판타지": "forest fairy, ethereal fantasy beauty, delicate nature spirit glamour",
+    "님프 — 자연의 정령, 신비로운": "nature nymph, mystical forest spirit, ethereal natural beauty",
+    "발키리 — 북유럽 전쟁 여신": "Valkyrie Norse warrior goddess, armored glamour, fierce Nordic beauty",
+    "사이렌 — 바다 요정, 유혹적": "siren sea enchantress, mysterious oceanic allure, mythological beauty",
+    "드래곤 퀸 — 판타지 여왕": "dragon queen, fantasy ruler, powerful mystical sovereignty, fierce glamour",
+    "메두사 — 그리스 신화, 강렬한": "Medusa Greek mythology, serpentine beauty, intense powerful gaze",
+    "다크 엘프 — 어둠의 정령": "dark elf fantasy beauty, mysterious shadow creature, edgy supernatural elegance",
+    "아마조네스 — 전설의 여전사": "Amazon warrior queen, legendary female warrior, fierce battle glamour",
+    # ── 동양 신화/판타지 ──
+    "선녀 — 천상의 동양 미녀": "celestial Korean Chinese fairy, heavenly Eastern beauty, elegant divine draping",
+    "항아 — 달의 여신": "Chang'e moon goddess, Chinese mythology, ethereal lunar beauty",
+    "낙신 — 낙수의 여신": "Luoshen river goddess, classical Chinese beauty, elegant divine draping",
+    "용녀 — 동양 용의 딸": "dragon princess Eastern mythology, mystical powerful beauty, divine dragon lineage",
+    "구미호 — 요염한 여우 정령": "nine-tailed fox spirit, seductive Korean mythology, mysterious fox glamour",
+    "백사 — 뱀 정령 글래머": "white snake spirit, Chinese mythology glamour, mystical serpentine beauty",
+    "설녀 — 설원의 정령": "Yuki-onna snow spirit, Japanese mythology, icy ethereal winter beauty",
+    "경국지색 — 절세 동양 미인": "legendary Eastern beauty, nation-toppling glamour, classical Asian magnificence",
+    # ── 중동/아프리카/남미 신화 ──
+    "클레오파트라 — 이집트 여왕": "Cleopatra Egyptian queen, ancient royal glamour, intense iconic beauty",
+    "이슈타르 — 바빌론 사랑의 여신": "Ishtar Babylonian goddess of love, ancient Middle Eastern divine beauty",
+    "셰헤라자데 — 천일야화의 신비": "Scheherazade Arabian nights, exotic Middle Eastern storyteller glamour",
+    "오슌 — 황금빛 사랑의 여신": "Oshun Yoruba goddess of love, golden African divine beauty, river goddess",
+    "예마야 — 바다의 어머니 여신": "Yemaya ocean mother goddess, African mythology, powerful divine femininity",
+    "익스첼 — 마야 달의 여신": "Ixchel Mayan moon goddess, ancient Mesoamerican divine beauty",
+    # ── 다크/판타지 ──
+    "뱀파이어 — 다크 불멸의 존재": "vampire dark immortal beauty, gothic supernatural elegance",
     "마녀 — 마법사 글래머": "witch magical glamour, mystical sorceress, dark magic beauty",
+    "릴리스 — 다크 글래머 고대 존재": "Lilith dark ancient beauty, powerful feminine mystique, gothic supernatural allure",
 }
 
 SPECIAL_EFFECTS = {
@@ -590,4 +634,49 @@ COLOR_GRADES = {
     "핑크 글램 — 핑크빛 글래머": "soft pink glamour grade, rose gold tones, feminine glow",
     "하이키 — 밝고 화사한 흰빛": "high key bright white tone, overexposed glamour, clean light",
     "빈티지 필름 — 필름 느낌": "vintage film grain, faded colors, analog photography look",
+    "퍼플 무드 — 보라빛 신비로운": "purple moody color grade, violet atmospheric tones, mysterious glow",
+    "에메랄드 — 초록빛 럭셔리": "emerald green color grade, rich jewel tones, luxury editorial",
+    "세피아 — 따뜻한 앤티크": "sepia tone, warm antique finish, nostalgic editorial",
+}
+
+# ── 무드/분위기 ──
+MOOD = {
+    "없음": "",
+    "다크 글래머 — 어둡고 강렬한": "dark glamour mood, intense dramatic atmosphere, powerful editorial energy",
+    "몽환적 — 꿈결같은 부드러운": "dreamy ethereal mood, soft romantic atmosphere, fantasy editorial",
+    "하이패션 에디토리얼 — 차갑고 세련된": "high fashion editorial mood, cold sophisticated atmosphere, sharp luxury",
+    "보헤미안 — 자유롭고 자연스러운": "bohemian free-spirited mood, natural earthy atmosphere, artistic editorial",
+    "레트로 핀업 — 복고풍 글래머": "retro pin-up mood, vintage glamour atmosphere, classic playful editorial",
+    "사이버펑크 글램 — 미래적 어두운": "cyberpunk glamour mood, futuristic neon atmosphere, dystopian editorial",
+    "로맨틱 — 부드럽고 따뜻한": "romantic mood, soft warm atmosphere, tender feminine editorial",
+    "파워풀 — 강렬하고 압도적인": "powerful commanding mood, intense dominant atmosphere, fierce editorial",
+    "미스터리 — 신비롭고 매혹적": "mysterious alluring mood, enigmatic atmosphere, captivating editorial",
+    "럭셔리 — 고급스럽고 우아한": "luxury opulent mood, sophisticated elegant atmosphere, high-end editorial",
+    "플레이풀 — 발랄하고 생기있는": "playful vibrant mood, energetic joyful atmosphere, fresh editorial",
+    "세레니티 — 평화롭고 고요한": "serene tranquil mood, peaceful calm atmosphere, meditative editorial",
+}
+
+# ── 촬영 시간대 ──
+TIME_OF_DAY = {
+    "없음": "",
+    "새벽 블루아워 — 해뜨기 직전 신비로운": "blue hour just before dawn, mystical pre-sunrise light, cool blue atmospheric glow",
+    "골든아워 아침 — 이른 아침 햇살": "morning golden hour, soft warm early sunlight, fresh dewy atmosphere",
+    "정오 — 강한 직사광선 선명한": "midday harsh sunlight, strong direct light, sharp shadows, high contrast",
+    "오후 — 따뜻한 햇살 여유로운": "late afternoon warm sunlight, relaxed golden atmosphere, soft shadows",
+    "황혼 — 해질 무렵 드라마틱": "dusk twilight, dramatic sunset colors, sky ablaze with color",
+    "심야 — 완전한 어둠 신비로운": "deep midnight, complete darkness, mysterious nocturnal atmosphere",
+    "오로라 — 북극광 신비로운 밤": "aurora borealis night, northern lights dancing, mystical arctic atmosphere",
+}
+
+# ── 렌즈/초점 효과 ──
+LENS_EFFECT = {
+    "없음": "",
+    "얕은 심도 — 배경 극도 흐림": "extremely shallow depth of field, background heavily blurred, subject sharp",
+    "렌즈플레어 — 빛 번짐 효과": "dramatic lens flare, light streaks and halos, cinematic sun flare effect",
+    "소프트포커스 — 몽환적 흐림": "soft focus dreamy effect, gentle blur, ethereal soft glow",
+    "틸트시프트 — 미니어처 효과": "tilt-shift effect, selective focus, miniature world aesthetic",
+    "어안렌즈 — 왜곡된 광각": "fisheye lens distortion, ultra wide angle, dramatic perspective warp",
+    "롱렌즈 압축 — 배경 압축 효과": "telephoto lens compression, background dramatically compressed, intimate portrait",
+    "프리즘 효과 — 무지개 빛 분산": "prism glass effect, rainbow light dispersion, colorful light refraction",
+    "빈티지 렌즈 — 필름카메라 감성": "vintage lens rendering, slight vignette, period-accurate optical character",
 }

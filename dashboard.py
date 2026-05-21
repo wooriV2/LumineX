@@ -24,7 +24,7 @@ from core.data import (
     ERA, CONCEPT, SPECIAL_EFFECTS, IMAGE_STYLE, PROPS,
     MAKEUP, ACCESSORIES, SKIN_TONES,
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD,
-    COLOR_GRADES,
+    COLOR_GRADES, MOOD, TIME_OF_DAY, LENS_EFFECT,
 )
 from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
 from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
@@ -572,12 +572,15 @@ with tab2:
         st.session_state.r_body_oil        = rnd_maybe(BODY_OIL,       0.30)
         st.session_state.r_weather         = rnd_maybe(WEATHER,        0.30)
         st.session_state.r_bg_crowd        = rnd_maybe(BG_CROWD,       0.30)
+        st.session_state.r_mood            = rnd_maybe(MOOD,           0.30)
+        st.session_state.r_time_of_day     = rnd_maybe(TIME_OF_DAY,   0.30)
         st.session_state.r_tattoo          = rnd_maybe(TATTOO,         0.15)
         st.session_state.r_special_effects = rnd_maybe(SPECIAL_EFFECTS,0.15)
         st.session_state.r_props           = rnd_maybe(PROPS,          0.15)
         st.session_state.r_image_style     = rnd_maybe(IMAGE_STYLE,    0.15)
         st.session_state.r_era             = rnd_maybe(ERA,            0.15)
         st.session_state.r_concept         = rnd_maybe(CONCEPT,        0.15)
+        st.session_state.r_lens_effect     = rnd_maybe(LENS_EFFECT,    0.15)
 
         # 보정 섹션 — 기본 없음
         st.session_state.r_age         = "없음"
@@ -623,11 +626,14 @@ with tab2:
         st.markdown("##### 🏙️ 환경")
         environment = st.selectbox("🏙️ 촬영 장소",                list(ENVIRONMENTS.keys()),      index=idx(ENVIRONMENTS,     "r_env"))
         weather     = st.selectbox("🌦️ 날씨/기상",                 list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
+        time_of_day = st.selectbox("🕐 촬영 시간대",               list(TIME_OF_DAY.keys()),       index=idx(TIME_OF_DAY,      "r_time_of_day"))
         lighting    = st.selectbox("💡 조명 — 빛의 분위기",        list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
         angle       = st.selectbox("📸 카메라 앵글",               list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
         camera      = st.selectbox("📷 카메라 — 장비",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
+        lens_effect = st.selectbox("🔭 렌즈/초점 효과",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
         style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",    list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
         color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",     list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
+        mood        = st.selectbox("🎭 무드/분위기",               list(MOOD.keys()),              index=idx(MOOD,             "r_mood"))
         special_fx  = st.selectbox("🌈 특수 효과",                 list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
         img_style   = st.selectbox("📐 이미지 스타일",             list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
         bg_crowd    = st.selectbox("👥 배경 인물",                 list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
@@ -933,6 +939,9 @@ Only replace fields that are risky. Use exact key names from the options above. 
         st.session_state.r_env         = environment
         st.session_state.r_light       = lighting
         st.session_state.r_camera      = camera
+        st.session_state.r_mood        = mood
+        st.session_state.r_time_of_day = time_of_day
+        st.session_state.r_lens_effect = lens_effect
 
         # ── 자동 필터 검수 (규칙 기반) ──────────────────────
         filter_result = auto_filter_check(dict(st.session_state))
@@ -1020,6 +1029,9 @@ Only replace fields that are risky. Use exact key names from the options above. 
             "tattoo":        ss("r_tattoo",       TATTOO),
             "body_oil":      ss("r_body_oil",     BODY_OIL),
             "bg_crowd":      ss("r_bg_crowd",     BG_CROWD),
+            "mood":          ss("r_mood",         MOOD),
+            "time_of_day":   ss("r_time_of_day",  TIME_OF_DAY),
+            "lens_effect":   ss("r_lens_effect",  LENS_EFFECT),
             "env":           ss("r_env",          ENVIRONMENTS),
             "light":         ss("r_light",        LIGHTING),
             "angle":         ss("r_angle",        CAMERA_ANGLES),

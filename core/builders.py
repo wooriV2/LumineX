@@ -8,6 +8,7 @@ from core.data import (
     FOOTWEAR, CAMERAS, HAIR_STYLES, HAIR_COLORS, MODEL_COUNT, ERA, CONCEPT,
     SPECIAL_EFFECTS, IMAGE_STYLE, PROPS, MAKEUP, ACCESSORIES, SKIN_TONES,
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD, COLOR_GRADES, ASPECT_RATIOS,
+    MOOD, TIME_OF_DAY, LENS_EFFECT,
 )
 
 def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
@@ -42,6 +43,9 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     tattoo        = TATTOO.get(data.get('tattoo', ''), '')
     body_oil      = BODY_OIL.get(data.get('body_oil', ''), '')
     bg_crowd      = BG_CROWD.get(data.get('bg_crowd', ''), '')
+    mood          = MOOD.get(data.get('mood', ''), '')
+    time_of_day   = TIME_OF_DAY.get(data.get('time_of_day', ''), '')
+    lens_effect   = LENS_EFFECT.get(data.get('lens_effect', ''), '')
 
     parts = [
         f"Professional fashion photograph, {CAMERA_ANGLES[data['angle']]}, model fills the entire frame.",
@@ -50,6 +54,7 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         f"Body adjustment: {body_str}." if body_str else "",
         f"Era: {era}." if era else "",
         f"Concept: {concept}." if concept else "",
+        f"Mood: {mood}." if mood else "",
         f"Expression: {expression}." if expression else "",
         f"Skin: {skin_tone}." if skin_tone else "",
         f"Body oil: {body_oil}." if body_oil else "",
@@ -61,10 +66,12 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         f"Pose: {pose}." if pose else "",
         f"Wearing: {outfit}, made of {MATERIALS[data['material']]}{', ' + footwear if footwear else ''}.",
         f"Environment: {ENVIRONMENTS[data['env']]}, background softly blurred bokeh.",
+        f"Time of day: {time_of_day}." if time_of_day else "",
         f"Weather: {weather}." if weather else "",
         f"Background: {bg_crowd}." if bg_crowd else "",
         f"Special effects: {special_fx}." if special_fx else "",
         f"Lighting: {LIGHTING[data['light']]}.",
+        f"Lens effect: {lens_effect}." if lens_effect else "",
         f"Style reference: {STYLES[data['style']]}.",
         f"Image style: {img_style}." if img_style else "",
         f"Camera: {CAMERAS[data['camera']]}, sharp focus on model.",
@@ -116,6 +123,9 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     tattoo        = TATTOO.get(data.get('tattoo', ''), '')
     body_oil      = BODY_OIL.get(data.get('body_oil', ''), '')
     bg_crowd      = BG_CROWD.get(data.get('bg_crowd', ''), '')
+    mood          = MOOD.get(data.get('mood', ''), '')
+    time_of_day   = TIME_OF_DAY.get(data.get('time_of_day', ''), '')
+    lens_effect   = LENS_EFFECT.get(data.get('lens_effect', ''), '')
     appearance_desc = f"with {appearance}" if appearance else ""
 
     return (
@@ -125,6 +135,7 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         f"{'Body: ' + body_str + '. ' if body_str else ''}"
         f"{'Era: ' + era + '. ' if era else ''}"
         f"{'Concept: ' + concept + '. ' if concept else ''}"
+        f"{'Mood: ' + mood + '. ' if mood else ''}"
         f"{'Expression: ' + expression + '. ' if expression else ''}"
         f"{'Skin: ' + skin_tone + '. ' if skin_tone else ''}"
         f"{'Body oil: ' + body_oil + '. ' if body_oil else ''}"
@@ -135,10 +146,12 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         f"{'Props: ' + props + '. ' if props else ''}"
         f"{'Pose: ' + pose + '. ' if pose else ''}"
         f"Wearing {outfit}, crafted from {material}{', ' + footwear if footwear else ''}. "
-        f"Scene at {env}, {'Weather: ' + weather + '. ' if weather else ''}"
+        f"Scene at {env}, {'Time: ' + time_of_day + '. ' if time_of_day else ''}"
+        f"{'Weather: ' + weather + '. ' if weather else ''}"
         f"{'Background: ' + bg_crowd + '. ' if bg_crowd else ''}"
         f"{'Special effects: ' + special_fx + '. ' if special_fx else ''}"
         f"bathed in {light}. "
+        f"{'Lens effect: ' + lens_effect + '. ' if lens_effect else ''}"
         f"{'Image style: ' + img_style + '. ' if img_style else ''}"
         f"Style of {style}, captured on {camera}. "
         f"{'Color grade: ' + color_grade + '. ' if color_grade else ''}"
