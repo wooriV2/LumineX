@@ -431,7 +431,7 @@ FIELD_TO_SESSION_KEY = {
     "weather":  "r_weather",
 }
 
-def auto_filter_check(session_state: dict, platform: str = "Gemini", manual_selections: set = None) -> dict:
+def auto_filter_check(session_state: dict, platform: str = "Gemini", manual_selections: set = None, art_fallback: bool = False) -> dict:
     """
     규칙 기반 자동 필터 검수
     - manual_selections: 사용자가 직접 선택한 필드 세트 (보호 대상)
@@ -487,10 +487,9 @@ def auto_filter_check(session_state: dict, platform: str = "Gemini", manual_sele
                         if ss_key not in manual_selections:
                             replacements[ss_key] = AUTO_REPLACE_RULES[replace_key]
 
-    # ── 3번: 위험 감지 시 아트 스타일 자동 적용 ──
-    # HIGH 위험이고 이미지 스타일이 없을 때 → 아트 스타일로 완화
+    # ── 3번: 위험 감지 시 아트 스타일 자동 적용 (옵션 ON일 때만) ──
     risk_level = "HIGH" if total_score >= 4 else "MEDIUM" if total_score >= 2 else "LOW"
-    if risk_level == "HIGH" and "r_image_style" not in manual_selections:
+    if art_fallback and risk_level == "HIGH" and "r_image_style" not in manual_selections:
         platform_key = "chatgpt" if "ChatGPT" in platform else "gemini"
         art_style = ART_STYLE_MITIGATION.get(platform_key, "수채화 — 부드러운 수채화")
         current_img_style = session_state.get("r_image_style", "없음")

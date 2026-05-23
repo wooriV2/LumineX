@@ -138,7 +138,8 @@ with st.sidebar:
     st.markdown("---")
     global_platform = st.radio("🖥️ 출력 플랫폼", options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"], index=0)
     global_aspect   = st.selectbox("📐 이미지 비율", options=list(ASPECT_RATIOS.keys()), index=0)
-    global_realism  = st.toggle("📷 실사 모드", value=True)
+    global_realism      = st.toggle("📷 실사 모드", value=True)
+    global_art_fallback = st.toggle("🎨 위험 시 아트 스타일", value=False, help="HIGH 위험 감지 시 수채화/흑백 자동 적용 — 통과율 우선")
     st.markdown("---")
     st.markdown("### 🎬 영상 플랫폼")
     global_video_platform = st.radio("영상 생성 플랫폼", options=["Veo 3 (Gemini)", "Kling AI", "Runway", "Hailuo"], index=0)
@@ -662,14 +663,18 @@ style: {safe_options['style']}"""}]
 
         # ── 1번: 수동 선택 보호 세트 구성 ──
         manual_sel = set()
-        # 의상은 항상 수동 선택으로 보호 → 위험 시 다른 요소 교체
-        manual_sel.add("r_outfit")
+        # 사용자가 직접 의상을 선택한 경우 보호
+        if outfit != list(OUTFIT_TYPES.keys())[0]:
+            manual_sel.add("r_outfit")
+        if use_separate:
+            manual_sel.add("r_outfit")  # 상하의 분리 사용 시 의상 보호
 
         # ── 자동 필터 검수 (플랫폼, 수동선택 전달) ──
         filter_result = auto_filter_check(
             dict(st.session_state),
             platform=global_platform,
             manual_selections=manual_sel,
+            art_fallback=global_art_fallback,
         )
         if filter_result["replacements"]:
             for ss_key, new_val in filter_result["replacements"].items():
