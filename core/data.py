@@ -215,6 +215,40 @@ OUTFIT_TYPES = {
         "gemini": "mini flare skirt, short A-line flared skirt, playful summer fashion",
         "chatgpt": "mini flare skirt, short A-line, playful summer editorial",
     },
+    "골프/테니스 스커트 — 스포티 미니스커트": {
+        "gemini": "golf tennis mini skirt, pleated sporty skirt, athletic glamour, country club chic",
+        "chatgpt": "golf tennis pleated mini skirt, sporty chic editorial, athletic fashion",
+    },
+}
+
+# ── 상의/하의 분리 선택 ──
+TOP_TYPES = {
+    "없음 (의상 타입 사용)": "",
+    "크롭 탑 — 짧은 탑, 배꼽 노출": "crop top, midriff-baring, casual chic",
+    "브라렛 — 브라렛 스타일 탑": "bralette top, delicate strappy design, feminine editorial",
+    "티셔츠 — 캐주얼 티셔츠": "fitted t-shirt, casual chic, everyday glamour",
+    "탱크탑 — 민소매 탑": "tank top, sleeveless, casual athletic editorial",
+    "오프숄더 탑 — 어깨 드러나는 탑": "off-shoulder top, bardot neckline, elegant shoulder reveal",
+    "홀터넥 탑 — 목 끈 탑": "halter neck top, tied at neck, open back design",
+    "코르셋 탑 — 잘록한 허리 강조": "corset top, boned structure, cinched waist emphasis",
+    "버튼업 셔츠 — 단추 셔츠 (열린)": "open button-up shirt, relaxed editorial, effortless chic",
+    "니트 스웨터 — 타이트 니트": "fitted knit sweater, body-hugging ribbed knit, cozy glamour",
+    "블레이저 — 테일러드 재킷": "tailored blazer, structured jacket, power fashion editorial",
+}
+
+BOTTOM_TYPES = {
+    "없음 (의상 타입 사용)": "",
+    "미니 스커트 — 짧은 치마": "mini skirt, short hemline, bold fashion editorial",
+    "미디 스커트 — 무릎 아래 치마": "midi skirt, below-knee length, elegant editorial",
+    "맥시 스커트 — 긴 치마": "maxi skirt, floor-length flowing skirt, dramatic editorial",
+    "골프/테니스 스커트 — 스포티 미니": "golf tennis mini skirt, pleated sporty skirt, athletic glamour",
+    "플레어 스커트 — 퍼지는 스커트": "flare skirt, A-line silhouette, feminine movement",
+    "타이트 미니 — 몸에 딱 붙는 미니": "tight bodycon mini skirt, figure-hugging short skirt",
+    "하이웨이스트 쇼츠 — 반바지": "high-waist shorts, cropped legs, casual glamour editorial",
+    "데님 쇼츠 — 청반바지": "denim cut-off shorts, casual summer editorial",
+    "레깅스 — 타이트 레깅스": "high-waist leggings, fitted athletic pants, fitness editorial",
+    "와이드 팬츠 — 넓은 바지": "wide-leg trousers, flowing palazzo pants, elegant editorial",
+    "하이슬릿 스커트 — 트임 있는 스커트": "high-slit skirt, dramatic leg reveal, red carpet editorial",
 }
 
 ENVIRONMENTS = {
@@ -256,6 +290,16 @@ ENVIRONMENTS = {
     "아이슬란드 빙하 — 오로라, 신비로운": "Iceland glacier, northern lights aurora borealis, mystical arctic landscape",
     "방콕 사원 — 황금 불탑, 이국적": "Bangkok golden temple, ornate Thai architecture, exotic Southeast Asian glamour",
     "마라케시 수크 — 모로코 시장, 컬러풀": "Marrakech souk market, colorful Moroccan bazaar, exotic North African atmosphere",
+    # ── 실내 환경 태그 (날씨 충돌 감지용) ──
+    "컨트리클럽 — 골프코스, 잔디밭": "country club golf course, manicured green lawn, preppy glamour",
+    "테니스 코트 — 클래식 테니스 클럽": "tennis court, classic tennis club, athletic glamour editorial",
+}
+
+# 실내 환경 키워드 목록 (날씨 충돌 감지용)
+INDOOR_ENVIRONMENTS = {
+    "미니멀 스튜디오", "베르사유 궁전", "다크 바로크", "파리 패션위크 런웨이",
+    "부다페스트 온천", "모로코 리야드", "모던 럭셔리 맨션", "미래 SF 복도",
+    "럭셔리 호텔 스위트", "우아한 볼룸",
 }
 
 STYLES = {
@@ -338,6 +382,22 @@ CAMERA_ANGLES = {
     "버즈아이 — 45도 하이앵글": "45 degree high angle, elegant elevated editorial perspective",
 }
 
+# 전신 강조 앵글 (fills frame suffix 제거 대상)
+FULLBODY_ANGLES = {"전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "니어샷 — 무릎 위까지"}
+# 클로즈업 앵글 (full body suffix 제거 대상)
+CLOSEUP_ANGLES = {"클로즈업 — 얼굴+상체 집중", "익스트림 클로즈업 — 얼굴만 극접사", "웨이스트샷 — 상반신 집중"}
+
+# 아트 스타일 목록 (실사 suffix 제거 대상)
+ART_IMAGE_STYLES = {
+    "오일페인팅 — 유화 회화 느낌",
+    "필름누아르 — 1940s 흑백 시네마",
+    "팝아트 — 앤디워홀 스타일",
+    "수채화 — 부드러운 수채화",
+    "만화 — 코믹북 스타일",
+    "글리치 아트 — 디지털 왜곡",
+    "타블로 — 르네상스 명화 스타일",
+}
+
 FOOTWEAR = {
     "없음": "",
     "스틸레토 힐 — 극도로 높은 힐": "wearing extreme stiletto heels, legs elongated",
@@ -350,6 +410,8 @@ FOOTWEAR = {
     "뮬 힐 — 뒤가 없는 슬링백 힐": "wearing mule heels, backless slip-on stiletto",
     "크리스탈 힐 — 반짝이는 투명 힐": "wearing crystal clear transparent heels",
     "맨발 — 자연스러운": "barefoot, natural",
+    "스포츠 스니커즈 — 운동화": "wearing sporty sneakers, athletic shoes, casual glamour",
+    "골프화 — 스포티 골프 슈즈": "wearing golf shoes, sporty footwear, country club style",
 }
 
 CAMERAS = {
@@ -377,7 +439,6 @@ HAIR_STYLES = {
     "브레이드 — 땋은 머리, 보헤미안": "braided hair, bohemian braids, artistic weave",
     "크롭 픽시컷 — 짧고 대담한": "short pixie cut, bold cropped hair, edgy chic",
     "코르넬로 — 뿔 모양 아방가르드": "avant-garde horn updo, sculptural hair art, editorial",
-    # ── 추가 ──
     "프렌치 보브 — 클래식 파리지앵 단발": "French bob, classic Parisian chin-length cut, sleek fringe",
     "울프컷 — 레이어드 섹시 울프": "wolf cut, layered shaggy style, curtain bangs, effortless editorial",
     "스택드 보브 — 뒤짧고 앞긴 엣지 단발": "stacked bob, shorter back longer front, edgy angled cut",
@@ -422,13 +483,11 @@ ERA = {
 
 CONCEPT = {
     "없음": "",
-    # ── 현대 ──
     "CEO 글래머 — 파워수트, 강한 여성": "powerful CEO glamour, sharp power suit, dominant businesswoman",
     "악당 빌런 — 다크 글래머, 카리스마": "villain dark glamour, evil seductive charisma, dark queen energy",
     "여전사 — 갑옷+글래머 융합": "warrior goddess, glamorous armor, fierce battle-ready beauty",
     "팝스타 — 무대 의상, 공연 에너지": "pop star stage costume, performance energy, concert glamour",
     "비밀요원 — 스파이 글래머, 미스터리": "secret agent spy glamour, mysterious sleek operative",
-    # ── 서양 신화/판타지 ──
     "여신 — 신화적 존재, 초월적 아름다움": "mythological goddess, ethereal divine beauty, supernatural aura",
     "천사 — 천상의 존재": "angel celestial beauty, ethereal divine wings, heavenly glamour",
     "인어 — 바다의 여신": "mermaid ocean goddess, aquatic beauty, sea creature glamour",
@@ -440,7 +499,6 @@ CONCEPT = {
     "메두사 — 그리스 신화, 강렬한": "Medusa Greek mythology, serpentine beauty, intense powerful gaze",
     "다크 엘프 — 어둠의 정령": "dark elf fantasy beauty, mysterious shadow creature, edgy supernatural elegance",
     "아마조네스 — 전설의 여전사": "Amazon warrior queen, legendary female warrior, fierce battle glamour",
-    # ── 동양 신화/판타지 ──
     "선녀 — 천상의 동양 미녀": "celestial Korean Chinese fairy, heavenly Eastern beauty, elegant divine draping",
     "항아 — 달의 여신": "Chang'e moon goddess, Chinese mythology, ethereal lunar beauty",
     "낙신 — 낙수의 여신": "Luoshen river goddess, classical Chinese beauty, elegant divine draping",
@@ -449,14 +507,12 @@ CONCEPT = {
     "백사 — 뱀 정령 글래머": "white snake spirit, Chinese mythology glamour, mystical serpentine beauty",
     "설녀 — 설원의 정령": "Yuki-onna snow spirit, Japanese mythology, icy ethereal winter beauty",
     "경국지색 — 절세 동양 미인": "legendary Eastern beauty, nation-toppling glamour, classical Asian magnificence",
-    # ── 중동/아프리카/남미 신화 ──
     "클레오파트라 — 이집트 여왕": "Cleopatra Egyptian queen, ancient royal glamour, intense iconic beauty",
     "이슈타르 — 바빌론 사랑의 여신": "Ishtar Babylonian goddess of love, ancient Middle Eastern divine beauty",
     "셰헤라자데 — 천일야화의 신비": "Scheherazade Arabian nights, exotic Middle Eastern storyteller glamour",
     "오슌 — 황금빛 사랑의 여신": "Oshun Yoruba goddess of love, golden African divine beauty, river goddess",
     "예마야 — 바다의 어머니 여신": "Yemaya ocean mother goddess, African mythology, powerful divine femininity",
     "익스첼 — 마야 달의 여신": "Ixchel Mayan moon goddess, ancient Mesoamerican divine beauty",
-    # ── 다크/판타지 ──
     "뱀파이어 — 다크 불멸의 존재": "vampire dark immortal beauty, gothic supernatural elegance",
     "마녀 — 마법사 글래머": "witch magical glamour, mystical sorceress, dark magic beauty",
     "릴리스 — 다크 글래머 고대 존재": "Lilith dark ancient beauty, powerful feminine mystique, gothic supernatural allure",
@@ -502,6 +558,8 @@ PROPS = {
     "샴페인 — 럭셔리 파티": "holding champagne glass, luxury party celebration",
     "고양이 — 팜므파탈과 고양이": "with elegant cat, femme fatale and feline, mysterious companion",
     "거울 — 손거울 들고": "holding ornate mirror, self-reflection pose, vanity glamour",
+    "골프채 — 골프 클럽 포즈": "holding golf club, golf course editorial, sporty glamour",
+    "테니스 라켓 — 테니스 포즈": "holding tennis racket, tennis court editorial, athletic chic",
 }
 
 MAKEUP = {
@@ -542,6 +600,7 @@ ACCESSORIES = {
     "야구모자 — 스트릿 캐주얼": "baseball cap, streetwear casual, sporty chic editorial",
     "터번 — 이국적 헤드랩": "turban headwrap, exotic editorial, bold fashion statement",
     "크라운/왕관 — 여왕 글래머": "jeweled crown tiara, queen glamour, royal luxury editorial",
+    "골프 바이저 — 스포티 골프 바이저": "golf visor, sporty sun visor, country club athletic chic",
 }
 
 SKIN_TONES = {
@@ -562,16 +621,15 @@ BODY_OIL = {
     "라이트 글로우 — 자연스러운 윤기": "light natural skin glow, subtle healthy sheen, barely-there luminosity",
     "새틴 글로우 — 새틴처럼 빛나는": "satin skin finish, smooth silky sheen, elegant glow",
     "미디엄 오일 — 적당한 오일감": "medium body oil, moderate skin glistening, healthy oiled appearance",
-    "하이 글로스 — 강한 오일, 반짝이는": "high gloss body oil, glistening skin, editorial wet-look shine",
-    "익스트림 웻룩 — 물에 젖은 듯한": "wet-look skin finish, glistening editorial appearance, fashion wet effect",
-    "선탠 오일 — 골든 태닝 오일": "tanning oil sheen, golden bronzed glistening skin, beach goddess oil",
-    "메탈릭 글로스 — 금속빛 광택": "metallic body gloss, chrome-inspired skin sheen, futuristic editorial finish",
-    "스웨티 글로스 — 땀+오일 믹스": "athletic oiled skin, fitness glistening sheen, sport editorial",
+    "하이 글로스 — 강한 오일, 반짝이는": "high gloss body oil, heavily oiled glistening skin, wet-look shine",
+    "익스트림 웻룩 — 물에 젖은 듯한": "extreme wet-look skin, soaking wet glistening appearance, dripping oil effect",
+    "선탄 오일 — 골든 태닝 오일": "tanning oil sheen, golden bronzed glistening skin, beach goddess oil",
+    "메탈릭 글로스 — 금속빛 광택": "metallic body gloss, chrome-like skin sheen, futuristic metallic finish",
+    "스웨티 글로스 — 땀+오일 믹스": "sweaty oiled skin, post-workout glistening, athletic perspiration mixed with oil",
 }
 
 POSES = {
     "없음": "",
-    # ── 스탠딩 계열 ──
     "파워 스탠딩 — 손 허리, 당당한": "powerful standing pose, hands on hips, confident dominant stance",
     "런웨이 워킹 — 카메라를 향해": "walking confidently toward camera, runway catwalk stride",
     "걸어가는 뒷모습 — 카메라 등지고 걷기": "walking away from camera, back view, confident stride, looking over shoulder",
@@ -579,35 +637,27 @@ POSES = {
     "크로스 암 — 팔짱 끼고 강렬한": "arms crossed, intense gaze, powerful commanding expression",
     "손 들어 — 머리 위로 손, 관능적": "arms raised above head, elongated elegant pose, arched back, fashion editorial",
     "기둥 포즈 — 기둥 감싸며 기댄": "leaning against pillar, arms resting on column, elegant architectural pose",
-    # ── 기대기 계열 ──
     "기댄 포즈 — 벽에 기댄 캐주얼": "leaning against wall, casual confident pose, relaxed editorial stance",
     "창문 기대기 — 창문에 손 짚고 빛 받으며": "leaning against window, hand pressed on glass, backlit silhouette, dreamy glow",
     "차 위 포즈 — 보닛에 기댄 글래머": "leaning on car hood, luxury supercar, confident glamour pose, fashion editorial",
-    # ── 앉기 계열 ──
     "앉은 포즈 — 바닥/의자에 우아하게": "seated elegantly, legs crossed, sophisticated sitting pose",
     "땅에 앉기 — 무릎 세우고 바닥에": "sitting on floor, knees drawn up, casual intimate pose",
     "계단 포즈 — 계단에 앉거나 기댄": "seated or leaning on staircase steps, architectural glamour",
-    # ── 눕기 계열 ──
     "누운 포즈 — 바닥/침대에 관능적": "lying down pose, reclined elegantly on floor or bed, fashion editorial",
     "엎드린 포즈 — 배를 깔고 관능적": "lying face down, propped on elbows, looking at camera, editorial pose",
-    # ── 뒷모습 계열 ──
     "백포즈 — 뒤돌아 어깨 너머 시선": "back to camera, elegant over-shoulder glance, confident editorial pose",
     "등 보이기 — 백뷰, 어깨 라인": "back view pose, shoulder blade emphasis, elegant fashion editorial",
-    # ── 역동적 계열 ──
     "역동적 — 머리카락 날리는 움직임": "dynamic pose, hair flowing in wind, motion blur effect",
     "스트레칭 — 몸을 길게 늘인 유연한": "full body stretch pose, elongated limbs, graceful flexibility, dancer energy",
     "점프 — 공중에 뜬 역동적": "mid-air jump pose, feet off ground, dynamic energy, motion captured",
-    # ── 수중/풀 계열 ──
     "수영장 입수 — 물가에서 다이빙": "standing at pool edge, about to dive, water reflection below",
     "수영장 물속 — 하반신 물에 잠긴": "standing waist-deep in pool, water surface at hips, cinematic pool editorial",
     "욕조 포즈 — 욕조 안 럭셔리": "reclining in luxury bathtub, bubbles or petals, spa glamour",
-    # ── 얼굴/클로즈업 계열 ──
     "손으로 얼굴 감싸기 — 양손으로 얼굴": "hands framing face, fingers touching cheeks, intimate beauty pose",
     "턱 괴기 — 손으로 턱 받치고": "chin resting on hand, thoughtful editorial gaze, close-up ready",
     "거울 앞 — 거울 반영, 이중 시선": "standing before mirror, reflection visible, double perspective pose",
 }
 
-# ── 날씨/기상 ──
 WEATHER = {
     "없음": "",
     "맑음 — 강한 햇살, 선명한 그림자": "bright sunny day, strong sunlight, sharp shadows, clear blue sky",
@@ -623,7 +673,6 @@ WEATHER = {
     "무지개 — 비 온 뒤 무지개": "rainbow after rain, fresh air, vibrant colors in sky, hopeful atmosphere",
 }
 
-# ── 표정/눈빛 ──
 EXPRESSION = {
     "없음": "",
     "도발적 — 강렬하고 유혹적인 눈빛": "intense confident gaze, smoldering eyes, powerful editorial expression",
@@ -640,7 +689,6 @@ EXPRESSION = {
     "입술 벌림 — 입술 살짝 열린": "lips slightly parted, calm sophisticated editorial expression",
 }
 
-# ── 문신/바디아트 ──
 TATTOO = {
     "없음": "",
     "슬리브 타투 — 한쪽 팔 전체 문신": "full sleeve tattoo on one arm, intricate detailed ink art",
@@ -657,20 +705,6 @@ TATTOO = {
     "전신 바디페인팅 — 몸에 그림": "full body painting art, painted skin, artistic body art canvas",
 }
 
-# ── 바디 오일/글로스 강도 ──
-BODY_OIL = {
-    "없음": "",
-    "라이트 글로우 — 자연스러운 윤기": "light natural skin glow, subtle healthy sheen, barely-there luminosity",
-    "새틴 글로우 — 새틴처럼 빛나는": "satin skin finish, smooth silky sheen, elegant glow",
-    "미디엄 오일 — 적당한 오일감": "medium body oil, moderate skin glistening, healthy oiled appearance",
-    "하이 글로스 — 강한 오일, 반짝이는": "high gloss body oil, heavily oiled glistening skin, wet-look shine",
-    "익스트림 웻룩 — 물에 젖은 듯한": "extreme wet-look skin, soaking wet glistening appearance, dripping oil effect",
-    "선탠 오일 — 골든 태닝 오일": "tanning oil sheen, golden bronzed glistening skin, beach goddess oil",
-    "메탈릭 글로스 — 금속빛 광택": "metallic body gloss, chrome-like skin sheen, futuristic metallic finish",
-    "스웨티 글로스 — 땀+오일 믹스": "sweaty oiled skin, post-workout glistening, athletic perspiration mixed with oil",
-}
-
-# ── 배경 인물 ──
 BG_CROWD = {
     "없음": "",
     "완전 단독 — 배경에 아무도 없음": "completely alone, empty background, solitary subject, no other people",
@@ -698,7 +732,6 @@ COLOR_GRADES = {
     "세피아 — 따뜻한 앤티크": "sepia tone, warm antique finish, nostalgic editorial",
 }
 
-# ── 무드/분위기 ──
 MOOD = {
     "없음": "",
     "다크 글래머 — 어둡고 강렬한": "dark glamour mood, intense dramatic atmosphere, powerful editorial energy",
@@ -715,7 +748,6 @@ MOOD = {
     "세레니티 — 평화롭고 고요한": "serene tranquil mood, peaceful calm atmosphere, meditative editorial",
 }
 
-# ── 촬영 시간대 ──
 TIME_OF_DAY = {
     "없음": "",
     "새벽 블루아워 — 해뜨기 직전 신비로운": "blue hour just before dawn, mystical pre-sunrise light, cool blue atmospheric glow",
@@ -727,7 +759,6 @@ TIME_OF_DAY = {
     "오로라 — 북극광 신비로운 밤": "aurora borealis night, northern lights dancing, mystical arctic atmosphere",
 }
 
-# ── 렌즈/초점 효과 ──
 LENS_EFFECT = {
     "없음": "",
     "얕은 심도 — 배경 극도 흐림": "extremely shallow depth of field, background heavily blurred, subject sharp",

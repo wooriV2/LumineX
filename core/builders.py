@@ -9,11 +9,45 @@ from core.data import (
     SPECIAL_EFFECTS, IMAGE_STYLE, PROPS, MAKEUP, ACCESSORIES, SKIN_TONES,
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD, COLOR_GRADES, ASPECT_RATIOS,
     MOOD, TIME_OF_DAY, LENS_EFFECT,
+    ART_IMAGE_STYLES, FULLBODY_ANGLES, CLOSEUP_ANGLES,
 )
+
+# ── 실사 suffix 키워드 ──
+REALISM_SUFFIX = "photorealistic, RAW photo, hyperrealistic, natural skin texture, pore detail, film grain, professional photographer"
+REALISM_KEYWORDS = ["photorealistic", "RAW photo", "hyperrealistic", "natural skin texture", "pore detail", "film grain"]
+
+
+def _is_art_style(image_style: str) -> bool:
+    """아트 스타일 여부 판단"""
+    return image_style in ART_IMAGE_STYLES
+
+
+def _get_frame_suffix(angle: str) -> str:
+    """
+    4번: 앵글에 따라 suffix 자동 조정
+    - 전신샷: 'model fills the entire frame' 유지, 'close-up' 제거
+    - 클로즈업: 'close-up portrait framing' 사용
+    - 기타: 기본
+    """
+    if angle in FULLBODY_ANGLES:
+        return "model fills the entire frame"
+    elif angle in CLOSEUP_ANGLES:
+        return "intimate close-up portrait framing"
+    else:
+        return "model fills the entire frame"
+
 
 def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     aspect_desc   = ASPECT_RATIOS.get(aspect, "")
-    realism_kw    = "photorealistic, RAW photo, hyperrealistic, natural skin texture, pore detail, film grain, professional photographer" if realism else ""
+    image_style_key = data.get('image_style', '없음')
+    is_art        = _is_art_style(image_style_key)
+
+    # ── 2번: 아트 스타일이면 실사 suffix 제거 ──
+    if realism and not is_art:
+        realism_kw = REALISM_SUFFIX
+    else:
+        realism_kw = ""
+
     appearance    = MODEL_APPEARANCE.get(data.get('appearance', ''), '')
     age           = AGE_APPEARANCE.get(data.get('age', ''), '')
     outfit_data   = OUTFIT_TYPES[data['outfit']]
@@ -32,7 +66,7 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     era           = ERA.get(data.get('era', ''), '')
     concept       = CONCEPT.get(data.get('concept', ''), '')
     special_fx    = SPECIAL_EFFECTS.get(data.get('special_effects', ''), '')
-    img_style     = IMAGE_STYLE.get(data.get('image_style', ''), '')
+    img_style     = IMAGE_STYLE.get(image_style_key, '')
     props         = PROPS.get(data.get('props', ''), '')
     body_weight   = BODY_WEIGHT.get(data.get('body_weight', ''), '')
     bust_size     = BUST_SIZE.get(data.get('bust_size', ''), '')
@@ -47,8 +81,24 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     time_of_day   = TIME_OF_DAY.get(data.get('time_of_day', ''), '')
     lens_effect   = LENS_EFFECT.get(data.get('lens_effect', ''), '')
 
+    # ── 4번: 앵글별 frame suffix ──
+    angle_key   = data['angle']
+    angle_val   = CAMERA_ANGLES[angle_key]
+    frame_suffix = _get_frame_suffix(angle_key)
+
+    # ── 상하의 분리 조합 처리 ──
+    top_val    = data.get('top_type', '')
+    bottom_val = data.get('bottom_type', '')
+    if top_val and bottom_val:
+        from core.data import TOP_TYPES, BOTTOM_TYPES
+        top_text    = TOP_TYPES.get(top_val, '')
+        bottom_text = BOTTOM_TYPES.get(bottom_val, '')
+        outfit_wearing = f"{top_text}, {bottom_text}" if top_text and bottom_text else outfit
+    else:
+        outfit_wearing = outfit
+
     parts = [
-        f"Professional fashion photograph, {CAMERA_ANGLES[data['angle']]}, model fills the entire frame.",
+        f"Professional fashion photograph, {angle_val}, {frame_suffix}.",
         f"{model_subject}: {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
         f"Age: {age}." if age else "",
         f"Body adjustment: {body_str}." if body_str else "",
@@ -64,7 +114,7 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         f"Accessories: {accessories}." if accessories else "",
         f"Props: {props}." if props else "",
         f"Pose: {pose}." if pose else "",
-        f"Wearing: {outfit}, made of {MATERIALS[data['material']]}{', ' + footwear if footwear else ''}.",
+        f"Wearing: {outfit_wearing}, made of {MATERIALS[data['material']]}{', ' + footwear if footwear else ''}.",
         f"Environment: {ENVIRONMENTS[data['env']]}, background softly blurred bokeh.",
         f"Time of day: {time_of_day}." if time_of_day else "",
         f"Weather: {weather}." if weather else "",
@@ -78,15 +128,26 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         f"Color grade: {color_grade}." if color_grade else "",
     ]
     suffix = []
-    if realism_kw: suffix.append(realism_kw)
-    if aspect_desc: suffix.append(aspect_desc)
+    if realism_kw:
+        suffix.append(realism_kw)
+    if aspect_desc:
+        suffix.append(aspect_desc)
     suffix.append("model is the primary subject, elegant editorial framing, background secondary")
     return " ".join(filter(None, parts)) + " " + ", ".join(suffix) + "."
 
 
 def build_chatgpt_prompt(data: dict, aspect: str) -> str:
-    aspect_map    = {"세로 2:3 — 인물 기본": "vertical portrait 2:3", "세로 3:4 — 전신샷": "vertical portrait 3:4", "가로 16:9 — 시네마틱": "wide cinematic 16:9", "가로 4:3 — 화보": "wide editorial 4:3", "정방형 1:1 — 인스타": "square format 1:1"}
+    aspect_map    = {
+        "세로 2:3 — 인물 기본": "vertical portrait 2:3",
+        "세로 3:4 — 전신샷": "vertical portrait 3:4",
+        "가로 16:9 — 시네마틱": "wide cinematic 16:9",
+        "가로 4:3 — 화보": "wide editorial 4:3",
+        "정방형 1:1 — 인스타": "square format 1:1",
+    }
     aspect_desc   = aspect_map.get(aspect, "vertical portrait 2:3")
+    image_style_key = data.get('image_style', '없음')
+    is_art        = _is_art_style(image_style_key)
+
     appearance    = MODEL_APPEARANCE.get(data.get('appearance', ''), '')
     age           = AGE_APPEARANCE.get(data.get('age', ''), '')
     model         = MODEL_TYPES[data['model']]
@@ -97,7 +158,8 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     light         = LIGHTING[data['light']]
     style         = STYLES[data['style']]
     camera        = CAMERAS[data['camera']]
-    angle         = CAMERA_ANGLES[data['angle']]
+    angle_key     = data['angle']
+    angle         = CAMERA_ANGLES[angle_key]
     footwear      = FOOTWEAR.get(data.get('footwear', ''), '')
     pose          = POSES.get(data.get('pose', ''), '')
     color_grade   = COLOR_GRADES.get(data.get('color_grade', ''), '')
@@ -112,7 +174,7 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     era           = ERA.get(data.get('era', ''), '')
     concept       = CONCEPT.get(data.get('concept', ''), '')
     special_fx    = SPECIAL_EFFECTS.get(data.get('special_effects', ''), '')
-    img_style     = IMAGE_STYLE.get(data.get('image_style', ''), '')
+    img_style     = IMAGE_STYLE.get(image_style_key, '')
     props         = PROPS.get(data.get('props', ''), '')
     body_weight   = BODY_WEIGHT.get(data.get('body_weight', ''), '')
     bust_size     = BUST_SIZE.get(data.get('bust_size', ''), '')
@@ -128,8 +190,30 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     lens_effect   = LENS_EFFECT.get(data.get('lens_effect', ''), '')
     appearance_desc = f"with {appearance}" if appearance else ""
 
+    # ── 4번: 앵글별 frame suffix ──
+    frame_suffix = _get_frame_suffix(angle_key)
+
+    # ── 상하의 분리 조합 처리 ──
+    top_val    = data.get('top_type', '')
+    bottom_val = data.get('bottom_type', '')
+    if top_val and bottom_val:
+        from core.data import TOP_TYPES, BOTTOM_TYPES
+        top_text    = TOP_TYPES.get(top_val, '')
+        bottom_text = BOTTOM_TYPES.get(bottom_val, '')
+        outfit_wearing = f"{top_text}, {bottom_text}" if top_text and bottom_text else outfit
+    else:
+        outfit_wearing = outfit
+
+    # ── 2번: 아트 스타일이면 실사 suffix 제거 ──
+    if is_art:
+        realism_suffix = img_style  # 아트 스타일 설명만
+        quality_suffix = "award-winning fashion photography."
+    else:
+        realism_suffix = "Photorealistic, hyperrealistic skin texture, cinematic realism, award-winning fashion photography."
+        quality_suffix = ""
+
     return (
-        f"Professional luxury fashion editorial photograph, {aspect_desc}, {angle}. "
+        f"Professional luxury fashion editorial photograph, {aspect_desc}, {angle}, {frame_suffix}. "
         f"{model_subject} {appearance_desc}, {model}, elegant couture presence. "
         f"{'Age: ' + age + '. ' if age else ''}"
         f"{'Body: ' + body_str + '. ' if body_str else ''}"
@@ -145,7 +229,7 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         f"{'Accessories: ' + accessories + '. ' if accessories else ''}"
         f"{'Props: ' + props + '. ' if props else ''}"
         f"{'Pose: ' + pose + '. ' if pose else ''}"
-        f"Wearing {outfit}, crafted from {material}{', ' + footwear if footwear else ''}. "
+        f"Wearing {outfit_wearing}, crafted from {material}{', ' + footwear if footwear else ''}. "
         f"Scene at {env}, {'Time: ' + time_of_day + '. ' if time_of_day else ''}"
         f"{'Weather: ' + weather + '. ' if weather else ''}"
         f"{'Background: ' + bg_crowd + '. ' if bg_crowd else ''}"
@@ -155,12 +239,18 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         f"{'Image style: ' + img_style + '. ' if img_style else ''}"
         f"Style of {style}, captured on {camera}. "
         f"{'Color grade: ' + color_grade + '. ' if color_grade else ''}"
-        f"Photorealistic, hyperrealistic skin texture, cinematic realism, award-winning fashion photography."
+        f"{realism_suffix}"
     )
 
 
 def build_midjourney_prompt(data: dict, aspect: str) -> str:
-    ar_map        = {"세로 2:3 — 인물 기본":"2:3","세로 3:4 — 전신샷":"3:4","가로 16:9 — 시네마틱":"16:9","가로 4:3 — 화보":"4:3","정방형 1:1 — 인스타":"1:1"}
+    ar_map        = {
+        "세로 2:3 — 인물 기본": "2:3",
+        "세로 3:4 — 전신샷": "3:4",
+        "가로 16:9 — 시네마틱": "16:9",
+        "가로 4:3 — 화보": "4:3",
+        "정방형 1:1 — 인스타": "1:1",
+    }
     ar            = ar_map.get(aspect, "2:3")
     appearance    = MODEL_APPEARANCE.get(data.get('appearance', ''), '').split(',')[0]
     model_short   = MODEL_TYPES[data['model']].split(',')[0]
@@ -171,5 +261,19 @@ def build_midjourney_prompt(data: dict, aspect: str) -> str:
     light_short   = LIGHTING[data['light']].split(',')[0]
     style_short   = STYLES[data['style']].split(',')[0]
     footwear_short = FOOTWEAR.get(data.get('footwear', ''), '').split(',')[0]
-    tags = [t for t in [appearance, model_short, outfit_short, material_short, footwear_short, env_short, light_short, style_short, "photorealistic", "hyperrealistic", "fashion editorial", "sharp focus", "8K"] if t]
+    image_style_key = data.get('image_style', '없음')
+    is_art        = _is_art_style(image_style_key)
+
+    tags = [t for t in [
+        appearance, model_short, outfit_short, material_short, footwear_short,
+        env_short, light_short, style_short,
+    ] if t]
+
+    if is_art:
+        img_style_short = IMAGE_STYLE.get(image_style_key, '').split(',')[0]
+        if img_style_short:
+            tags.append(img_style_short)
+    else:
+        tags.extend(["photorealistic", "hyperrealistic", "fashion editorial", "sharp focus", "8K"])
+
     return f"{', '.join(tags)} --ar {ar} --style raw --q 2"

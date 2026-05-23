@@ -4,11 +4,11 @@ LumineX core/combos.py
 """
 
 # ══════════════════════════════════════════════════════════
-# 방법 2: 추천 조합 데이터
+# 추천 조합 데이터
 # ══════════════════════════════════════════════════════════
 GOOD_COMBOS = {
     # ── 극초슬림 계열 ──
-    "울트라 슬림 — 뼈가 보이는 하이패션": {
+    "울트라 슬림 — 하이패션 극세장": {
         "outfit":   ["컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "시스루 바디수트 — 메쉬, 아방가르드"],
         "material": ["시스루 오간자 — 반투명, 살이 비치는", "리퀴드 새틴 — 액체처럼 흐르는 광택", "메탈릭 비닐 — 금속 광택, 미래적"],
         "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "사이드 프로필 — 옆모습 실루엣"],
@@ -40,7 +40,6 @@ GOOD_COMBOS = {
         "style":    ["하퍼스 바자 — 관능적 에디토리얼", "발렌티노 — 레드 카펫 럭셔리", "보그 이탈리아 하이패션"],
         "env":      ["베르사유 궁전 — 황금빛 홀", "파리 오스만 발코니 — 에펠탑 뷰", "우아한 볼룸 — 샹들리에, 대형 파티홀"],
     },
-    # ── 슬림톤 계열 ──
     "슬림 톤 — 날씬하고 탄탄한": {
         "outfit":   ["스포츠브라+레깅스 — 핫한 피트니스 룩", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "마이크로 비키니 — 끈 비키니, SI 수영복 화보"],
         "material": ["웻룩 스판덱스 — 젖은 듯한 느낌", "라텍스 — 피부 밀착, 세컨드스킨", "리퀴드 새틴 — 액체처럼 흐르는 광택"],
@@ -65,7 +64,6 @@ GOOD_COMBOS = {
         "style":    ["스포츠 일러스트레이티드 수영복", "스포츠 럭셔리 — 나이키/아디다스 하이엔드"],
         "env":      ["럭셔리 인피니티 풀 — 열대 리조트", "마이애미 비치 — 선셋"],
     },
-    # ── 애슬레틱 계열 ──
     "피트니스 — 탄탄한 복근, 근육미": {
         "outfit":   ["스포츠브라+레깅스 — 핫한 피트니스 룩", "마이크로 비키니 — 끈 비키니, SI 수영복 화보", "바디콘 미니드레스 — 몸매 강조, 타이트핏"],
         "material": ["웻룩 스판덱스 — 젖은 듯한 느낌", "라텍스 — 피부 밀착, 세컨드스킨", "메탈릭 비닐 — 금속 광택, 미래적"],
@@ -98,7 +96,6 @@ GOOD_COMBOS = {
         "style":    ["빅토리아 시크릿 패션쇼", "스포츠 일러스트레이티드 수영복"],
         "env":      ["럭셔리 인피니티 풀 — 열대 리조트", "마이애미 비치 — 선셋", "말디브 수상빌라 — 크리스탈 바다"],
     },
-    # ── 글래머 계열 ──
     "소프트 글램 — 부드러운 여성미": {
         "outfit":   ["하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "코르셋 드레스 — 잘록한 허리, 볼륨감 강조"],
         "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "시퀸 — 빛을 받으면 반짝이는"],
@@ -139,7 +136,6 @@ GOOD_COMBOS = {
         "style":    ["발렌티노 — 레드 카펫 럭셔리", "하퍼스 바자 — 관능적 에디토리얼", "돌체앤가바나 — 이탈리안 글래머"],
         "env":      ["베르사유 궁전 — 황금빛 홀", "모나코 테라스 — 지중해 야경", "우아한 볼룸 — 샹들리에, 대형 파티홀"],
     },
-    # ── 커브 계열 ──
     "내추럴 커브 — 자연스러운 곡선미": {
         "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "원피스 수영복 — 하이컷, 컷아웃 디자인", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인"],
         "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "니트 — 몸에 딱 붙는 립 니트"],
@@ -172,7 +168,6 @@ GOOD_COMBOS = {
         "style":    ["베르사체 캠페인 — 대담한 럭셔리", "티에리 뮈글러 — 파워 패션"],
         "env":      ["다크 바로크 — 화려한 실내", "두바이 펜트하우스 루프탑 — 야경"],
     },
-    # ── 플러스사이즈 계열 ──
     "플러스 내추럴 — 자연스러운 플러스": {
         "outfit":   ["원피스 수영복 — 하이컷, 컷아웃 디자인", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인"],
         "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "니트 — 몸에 딱 붙는 립 니트"],
@@ -205,7 +200,6 @@ GOOD_COMBOS = {
         "style":    ["하퍼스 바자 — 관능적 에디토리얼"],
         "env":      ["럭셔리 호텔 스위트 — 펜트하우스 스위트룸", "다크 바로크 — 화려한 실내"],
     },
-    # ── BBW 계열 ──
     "BBW 글래머 — BBW 글래머": {
         "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "란제리 에디토리얼 — VS 스타일, 실크 레이스", "원피스 수영복 — 하이컷, 컷아웃 디자인"],
         "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "시퀸 — 빛을 받으면 반짝이는"],
@@ -240,7 +234,9 @@ GOOD_COMBOS = {
     },
 }
 
-# 충돌 규칙 (angle_keyword, pose_keyword, 경고메시지)
+# ══════════════════════════════════════════════════════════
+# 충돌 규칙
+# ══════════════════════════════════════════════════════════
 CONFLICT_RULES = [
     ("웨이스트샷", "pool", "앵글(상반신)과 포즈(풀사이드) 불일치 → 전신샷 권장"),
     ("웨이스트샷", "diving", "앵글(상반신)과 포즈(다이빙) 불일치 → 전신샷 권장"),
@@ -256,7 +252,13 @@ CONFLICT_RULES = [
     ("누운 포즈", "전신샷", "누운 포즈 + 전신샷 → 로우앵글 또는 오버헤드 권장"),
 ]
 
-def check_conflicts(angle: str, pose: str, style: str, environment: str, model: str, material: str) -> list:
+# 실내 환경 키워드 (날씨 충돌 감지용)
+INDOOR_ENV_KEYWORDS = [
+    "스튜디오", "베르사유", "바로크", "런웨이", "온천", "리야드", "맨션",
+    "복도", "호텔 스위트", "볼룸", "우아한 볼룸",
+]
+
+def check_conflicts(angle: str, pose: str, style: str, environment: str, model: str, material: str, weather: str = "") -> list:
     """충돌 감지 → 경고 메시지 리스트 반환"""
     warnings = []
     combined = f"{angle} {pose} {style} {environment} {model} {material}".lower()
@@ -265,6 +267,14 @@ def check_conflicts(angle: str, pose: str, style: str, environment: str, model: 
         k2 = kw2.lower()
         if k1 in combined and k2 in combined:
             warnings.append(msg)
+
+    # ── 5번: 실내 환경 + 야외 날씨 충돌 감지 ──
+    if weather and weather != "없음":
+        env_lower = environment.lower()
+        is_indoor = any(kw in env_lower for kw in INDOOR_ENV_KEYWORDS)
+        if is_indoor:
+            warnings.append(f"⚠️ 실내 환경({environment.split('—')[0].strip()})에 날씨 효과({weather.split('—')[0].strip()}) 선택됨 → 날씨 제거 권장")
+
     return warnings
 
 def get_combo_recommendations(model_type: str) -> dict:
@@ -276,50 +286,40 @@ def get_combo_recommendations(model_type: str) -> dict:
 # 자동 필터 검수 (규칙 기반, API 없음)
 # ══════════════════════════════════════════════════════════
 
-# 위험 요소 점수 매핑 (누적 테스트 데이터 기반)
 RISK_SCORES = {
-    # ── 앵글 ──
-    "오버헤드":               ("angle",    3),  # 단독도 위험
-    "로우앵글":               ("angle",    2),  # legs elongated와 조합 시 즉시 차단
-    "백샷":                   ("angle",    2),  # over-shoulder 조합 시 위험
-    # ── 포즈 ──
-    "수영장 물속":            ("pose",     3),  # 수영복+볼륨체형과 조합 즉시 차단
-    "수영장 입수":            ("pose",     2),  # pool + 노출 위험
-    "엎드린 포즈":            ("pose",     2),  # 란제리+침대 조합 위험
-    "누운 포즈":              ("pose",     2),  # 란제리+침대 조합 즉시 차단
-    "등 보이기":              ("pose",     2),  # 단독도 성적 글래머 포즈
-    "백포즈":                 ("pose",     2),  # over-shoulder 단독 위험
+    "오버헤드":               ("angle",    3),
+    "로우앵글":               ("angle",    2),
+    "백샷":                   ("angle",    2),
+    "수영장 물속":            ("pose",     3),
+    "수영장 입수":            ("pose",     2),
+    "엎드린 포즈":            ("pose",     2),
+    "누운 포즈":              ("pose",     2),
+    "등 보이기":              ("pose",     2),
+    "백포즈":                 ("pose",     2),
     "걸어가는 뒷모습":        ("pose",     1),
-    # ── 의상 ──
     "마이크로 비키니":        ("outfit",   3),
     "모노키니":               ("outfit",   2),
     "브라탑+하이슬릿":        ("outfit",   2),
-    "란제리 에디토리얼":      ("outfit",   3),  # 누운포즈와 즉시 차단
+    "란제리 에디토리얼":      ("outfit",   3),
     "시스루 바디수트":        ("outfit",   2),
     "코트 only":              ("outfit",   2),
     "원피스 수영복":          ("outfit",   1),
-    # ── 소재 ──
-    "PVC":                    ("material", 3),  # 단독도 고위험
-    "시스루 오간자":          ("material", 2),  # skin visible 연상
+    "PVC":                    ("material", 3),
+    "시스루 오간자":          ("material", 2),
     "라텍스":                 ("material", 2),
-    "골드 체인 메쉬":         ("material", 2),  # plunging neckline과 조합 위험
-    "크리스탈 메쉬":          ("material", 2),  # décolletage와 조합 위험
-    # ── 피부/오일 ──
-    "오일드 스킨":            ("skin",     2),  # 볼륨체형과 조합 위험
-    "스웨티":                 ("skin",     2),  # 노출의상과 조합 위험
-    "익스트림 웻룩":          ("oil",      3),  # dripping 표현 포함
-    "하이 글로스":            ("oil",      2),  # 노출의상과 조합 위험
-    "메탈릭 글로스":          ("oil",      2),  # chrome skin 포함
-    "선탠 오일":              ("oil",      1),
-    # ── 날씨 ──
-    "폭우":                   ("weather",  2),  # soaking wet 연상
-    # ── 스타일 ──
-    "빅토리아 시크릿":        ("style",    2),  # 란제리 연상 강함
-    "스포츠 일러스트레이티드": ("style",   2),  # 수영복 화보 연상
-    # ── 표정 ──
+    "골드 체인 메쉬":         ("material", 2),
+    "크리스탈 메쉬":          ("material", 2),
+    "오일드 스킨":            ("skin",     2),
+    "스웨티":                 ("skin",     2),
+    "익스트림 웻룩":          ("oil",      3),
+    "하이 글로스":            ("oil",      2),
+    "메탈릭 글로스":          ("oil",      2),
+    "선탄 오일":              ("oil",      1),
+    "폭우":                   ("weather",  2),
+    "빅토리아 시크릿":        ("style",    2),
+    "스포츠 일러스트레이티드": ("style",   2),
     "입술 벌림":              ("expr",     1),
-    "청순":                   ("expr",     2),  # 성적 요소와 조합 즉시 차단
-    # ── 체형 ──
+    "청순":                   ("expr",     2),
     "플러스 글램":            ("model",    1),
     "라지 플러스":            ("model",    1),
     "슈퍼 플러스":            ("model",    2),
@@ -327,7 +327,13 @@ RISK_SCORES = {
     "슈퍼 BBW":               ("model",    3),
 }
 
-# 자동 교체 규칙 (누적 데이터 기반 안전 대체)
+# ── 아트 스타일 자동 완화 매핑 (3번 항목) ──
+# 위험 감지 시 플랫폼별 아트 스타일 적용
+ART_STYLE_MITIGATION = {
+    "chatgpt": "수채화 — 부드러운 수채화",    # ChatGPT: 수채화/유화
+    "gemini":  "흑백 — 클래식 모노크롬",      # Gemini: 흑백
+}
+
 AUTO_REPLACE_RULES = {
     ("오버헤드", "angle"):             "3/4 샷 — 허벅지까지",
     ("로우앵글", "angle"):             "전신샷 — 머리부터 발끝",
@@ -338,7 +344,7 @@ AUTO_REPLACE_RULES = {
     ("누운 포즈", "pose"):             "앉은 포즈 — 바닥/의자에 우아하게",
     ("등 보이기", "pose"):             "파워 스탠딩 — 손 허리, 당당한",
     ("백포즈", "pose"):                "S커브 — 한쪽 다리 구부린 섹시",
-    ("마이크로 비키니", "outfit"):     "바디콘 미니드레스 — 몸매 강조, 타이트핏",
+    # 마이크로 비키니는 수동 선택 보호 → auto_filter_check에서 처리
     ("모노키니", "outfit"):            "원피스 수영복 — 하이컷, 컷아웃 디자인",
     ("브라탑+하이슬릿", "outfit"):     "컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인",
     ("란제리 에디토리얼", "outfit"):   "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인",
@@ -358,26 +364,18 @@ AUTO_REPLACE_RULES = {
     ("스웨티", "skin"):                "글로우 — 발광하는 빛나는 피부",
 }
 
-# 고위험 조합 (동시에 있으면 강제 교체) — 누적 테스트 데이터 기반
 HIGH_RISK_COMBOS = [
-    # (필드1, 키워드1, 필드2, 키워드2, 교체할 필드, 대체값)
-
-    # ── 오버헤드 조합 ──
     ("angle", "오버헤드", "material", "PVC",        "material", "리퀴드 새틴 — 액체처럼 흐르는 광택"),
     ("angle", "오버헤드", "material", "시스루",     "angle",    "3/4 샷 — 허벅지까지"),
     ("angle", "오버헤드", "skin",     "오일드",     "skin",     "글로우 — 발광하는 빛나는 피부"),
     ("angle", "오버헤드", "model",    "BBW",        "angle",    "3/4 샷 — 허벅지까지"),
     ("angle", "오버헤드", "model",    "플러스",     "angle",    "3/4 샷 — 허벅지까지"),
-
-    # ── 로우앵글 조합 ──
     ("angle", "로우앵글", "skin",     "스웨티",     "skin",     "글로우 — 발광하는 빛나는 피부"),
     ("angle", "로우앵글", "oil",      "하이 글로스","oil",      "라이트 글로우 — 자연스러운 윤기"),
     ("angle", "로우앵글", "oil",      "메탈릭",     "oil",      "새틴 글로우 — 새틴처럼 빛나는"),
     ("angle", "로우앵글", "outfit",   "비키니",     "angle",    "전신샷 — 머리부터 발끝"),
     ("angle", "로우앵글", "style",    "스포츠 일러스트레이티드", "style", "베르사체 캠페인 — 대담한 럭셔리"),
     ("angle", "로우앵글", "pose",     "수영장",     "pose",     "파워 스탠딩 — 손 허리, 당당한"),
-
-    # ── 뒤태 포즈 조합 ──
     ("pose",  "백포즈",   "material", "PVC",        "material", "리퀴드 새틴 — 액체처럼 흐르는 광택"),
     ("pose",  "백포즈",   "outfit",   "수영복",     "pose",     "파워 스탠딩 — 손 허리, 당당한"),
     ("pose",  "백포즈",   "outfit",   "비키니",     "pose",     "파워 스탠딩 — 손 허리, 당당한"),
@@ -385,20 +383,14 @@ HIGH_RISK_COMBOS = [
     ("pose",  "백포즈",   "oil",      "하이 글로스","oil",      "라이트 글로우 — 자연스러운 윤기"),
     ("pose",  "백포즈",   "style",    "빅토리아 시크릿", "style", "하퍼스 바자 — 관능적 에디토리얼"),
     ("pose",  "등 보이기","material", "체인 메쉬",  "material", "시퀸 — 빛을 받으면 반짝이는"),
-
-    # ── 란제리+눕기 즉시 차단 ──
     ("outfit", "란제리",  "pose",     "누운 포즈",  "pose",     "앉은 포즈 — 바닥/의자에 우아하게"),
     ("outfit", "란제리",  "pose",     "엎드린 포즈","pose",     "앉은 포즈 — 바닥/의자에 우아하게"),
     ("outfit", "란제리",  "oil",      "익스트림",   "oil",      "새틴 글로우 — 새틴처럼 빛나는"),
     ("outfit", "란제리",  "style",    "빅토리아 시크릿", "style", "하퍼스 바자 — 관능적 에디토리얼"),
-
-    # ── 수영장+노출 조합 ──
     ("pose",  "수영장",   "oil",      "하이 글로스","oil",      "라이트 글로우 — 자연스러운 윤기"),
     ("pose",  "수영장",   "oil",      "메탈릭",     "oil",      "새틴 글로우 — 새틴처럼 빛나는"),
     ("pose",  "수영장",   "outfit",   "비키니",     "pose",     "앉은 포즈 — 바닥/의자에 우아하게"),
     ("pose",  "수영장",   "style",    "스포츠 일러스트레이티드", "style", "베르사체 캠페인 — 대담한 럭셔리"),
-
-    # ── BBW/플러스 고위험 조합 ──
     ("model", "BBW",      "outfit",   "비키니",     "outfit",   "바디콘 미니드레스 — 몸매 강조, 타이트핏"),
     ("model", "BBW",      "outfit",   "란제리",     "outfit",   "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인"),
     ("model", "BBW",      "material", "라텍스",     "material", "벨벳 — 부드럽고 고급스러운"),
@@ -408,14 +400,10 @@ HIGH_RISK_COMBOS = [
     ("model", "슈퍼 플러스","material","PVC",       "material", "벨벳 — 부드럽고 고급스러운"),
     ("model", "플러스",   "material", "PVC",        "material", "리퀴드 새틴 — 액체처럼 흐르는 광택"),
     ("model", "플러스",   "oil",      "메탈릭 글로스","oil",    "라이트 글로우 — 자연스러운 윤기"),
-
-    # ── 투명+노출 조합 ──
     ("material","PVC",    "outfit",   "비키니",     "material", "리퀴드 새틴 — 액체처럼 흐르는 광택"),
     ("material","PVC",    "pose",     "백포즈",     "material", "리퀴드 새틴 — 액체처럼 흐르는 광택"),
     ("material","시스루", "oil",      "오일드",     "oil",      "글로우 — 발광하는 빛나는 피부"),
     ("material","체인 메쉬","style",  "빅토리아 시크릿","style","하퍼스 바자 — 관능적 에디토리얼"),
-
-    # ── 표정 위험 조합 ──
     ("expr",  "청순",     "outfit",   "비키니",     "expr",     "당당한 — 자신감 넘치는 눈빛"),
     ("expr",  "청순",     "outfit",   "란제리",     "expr",     "당당한 — 자신감 넘치는 눈빛"),
     ("expr",  "청순",     "material", "라텍스",     "expr",     "당당한 — 자신감 넘치는 눈빛"),
@@ -423,13 +411,9 @@ HIGH_RISK_COMBOS = [
     ("expr",  "입술 벌림","outfit",   "비키니",     "expr",     "당당한 — 자신감 넘치는 눈빛"),
     ("expr",  "입술 벌림","pose",     "백포즈",     "expr",     "강렬한 — 눈을 부릅뜨고 압도하는"),
     ("expr",  "입술 벌림","pose",     "누운 포즈",  "expr",     "강렬한 — 눈을 부릅뜨고 압도하는"),
-
-    # ── VS/SI 스타일 위험 조합 ──
     ("style", "빅토리아 시크릿","oil","메탈릭",     "style",    "하퍼스 바자 — 관능적 에디토리얼"),
     ("style", "빅토리아 시크릿","skin","오일드",    "style",    "하퍼스 바자 — 관능적 에디토리얼"),
     ("style", "스포츠 일러스트레이티드","oil","하이 글로스","style","베르사체 캠페인 — 대담한 럭셔리"),
-
-    # ── 3중 위험: 로우앵글+수영장+오일 ──
     ("angle", "로우앵글", "weather",  "폭우",       "weather",  "골든아워 — 석양 직전 황금빛"),
     ("pose",  "수영장",   "weather",  "폭우",       "weather",  "골든아워 — 석양 직전 황금빛"),
 ]
@@ -444,14 +428,18 @@ FIELD_TO_SESSION_KEY = {
     "style":    "r_style",
     "expr":     "r_expression",
     "model":    "r_model",
+    "weather":  "r_weather",
 }
 
-def auto_filter_check(session_state: dict) -> dict:
+def auto_filter_check(session_state: dict, platform: str = "Gemini", manual_selections: set = None) -> dict:
     """
     규칙 기반 자동 필터 검수
-    위험 조합 감지 → session_state 키 교체 딕셔너리 반환
+    - manual_selections: 사용자가 직접 선택한 필드 세트 (보호 대상)
+    - platform: 위험 감지 시 아트 스타일 적용 플랫폼 결정
     """
-    # 현재 선택값 수집
+    if manual_selections is None:
+        manual_selections = set()
+
     current = {
         "angle":    session_state.get("r_angle", ""),
         "pose":     session_state.get("r_pose", ""),
@@ -483,19 +471,32 @@ def auto_filter_check(session_state: dict) -> dict:
         if kw1.lower() in v1 and kw2.lower() in v2:
             ss_key = FIELD_TO_SESSION_KEY.get(replace_field)
             if ss_key:
-                replacements[ss_key] = replace_val
+                # ── 1번: 수동 선택 보호 ──
+                if ss_key not in manual_selections:
+                    replacements[ss_key] = replace_val
 
-    # 총 점수 3점 이상이면 개별 교체 실행
+    # 총 점수 3점 이상이면 개별 교체
     if total_score >= 3:
         for keyword, field, score in triggered:
-            if score >= 2:  # 고위험 단독 요소만 교체
+            if score >= 2:
                 replace_key = (keyword, field)
                 if replace_key in AUTO_REPLACE_RULES:
                     ss_key = FIELD_TO_SESSION_KEY.get(field)
                     if ss_key and ss_key not in replacements:
-                        replacements[ss_key] = AUTO_REPLACE_RULES[replace_key]
+                        # ── 1번: 수동 선택 보호 ──
+                        if ss_key not in manual_selections:
+                            replacements[ss_key] = AUTO_REPLACE_RULES[replace_key]
 
+    # ── 3번: 위험 감지 시 아트 스타일 자동 적용 ──
+    # HIGH 위험이고 이미지 스타일이 없을 때 → 아트 스타일로 완화
     risk_level = "HIGH" if total_score >= 4 else "MEDIUM" if total_score >= 2 else "LOW"
+    if risk_level == "HIGH" and "r_image_style" not in manual_selections:
+        platform_key = "chatgpt" if "ChatGPT" in platform else "gemini"
+        art_style = ART_STYLE_MITIGATION.get(platform_key, "수채화 — 부드러운 수채화")
+        current_img_style = session_state.get("r_image_style", "없음")
+        if current_img_style == "없음":
+            replacements["r_image_style"] = art_style
+
     return {
         "risk_level":   risk_level,
         "total_score":  total_score,

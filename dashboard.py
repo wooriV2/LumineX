@@ -1,6 +1,15 @@
 """
-LumineX Dashboard v3.3 - 리팩토링: 데이터/로직 분리
+LumineX Dashboard v3.4 - 리팩토링: 데이터/로직 분리
 실행: streamlit run dashboard.py
+
+v3.4 변경사항:
+1. 마이크로 비키니 수동 선택 보호
+2. 아트 스타일 + 실사 suffix 충돌 해결
+3. 위험 감지 시 아트 스타일 자동 완화
+4. 전신샷/클로즈업 suffix 자동 조정
+5. 실내 환경 + 야외 날씨 충돌 경고
+6. 상하의 분리 선택 옵션 + 골프/테니스 스커트
+7. Gemini 새 창 열기 버튼
 """
 
 import sys
@@ -25,6 +34,7 @@ from core.data import (
     MAKEUP, ACCESSORIES, SKIN_TONES,
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD,
     COLOR_GRADES, MOOD, TIME_OF_DAY, LENS_EFFECT,
+    TOP_TYPES, BOTTOM_TYPES,  # 6번: 상하의 분리
 )
 from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
 from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
@@ -118,7 +128,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.3</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.4</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -150,276 +160,15 @@ with st.sidebar:
     else:
         st.warning("태그 나열 + --파라미터 방식.")
 
+    # ── 7번: Gemini 새 창 열기 버튼 ──
+    if global_platform == "Gemini":
+        st.markdown("---")
+        st.markdown("### 🔄 Gemini 세션")
+        if st.button("🆕 Gemini 새 창 열기", use_container_width=True, help="누적 맥락 초기화 — 새 대화창에서 시작"):
+            import webbrowser
+            webbrowser.open("https://gemini.google.com/app")
+        st.caption("💡 같은 창 반복 생성 시 타투/헤어 오염 주의")
 
-# ══════════════════════════════════════════════════════════
-# 방법 2: 추천 조합 데이터
-# ══════════════════════════════════════════════════════════
-GOOD_COMBOS = {
-    # ── 극초슬림 계열 ──
-    "울트라 슬림 — 뼈가 보이는 하이패션": {
-        "outfit":   ["컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "시스루 바디수트 — 메쉬, 아방가르드"],
-        "material": ["시스루 오간자 — 반투명, 살이 비치는", "리퀴드 새틴 — 액체처럼 흐르는 광택", "메탈릭 비닐 — 금속 광택, 미래적"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "사이드 프로필 — 옆모습 실루엣"],
-        "pose":     ["런웨이 워킹 — 카메라를 향해", "파워 스탠딩 — 손 허리, 당당한", "S커브 — 한쪽 다리 구부린 섹시"],
-        "style":    ["보그 이탈리아 하이패션", "알렉산더 맥퀸 — 드라마틱", "티에리 뮈글러 — 파워 패션"],
-        "env":      ["파리 패션위크 런웨이 — 모던 무대", "미니멀 스튜디오 — 흰 배경, 깔끔", "다크 바로크 — 화려한 실내"],
-    },
-    "슈퍼 슬림 — 매우 마른 런웨이": {
-        "outfit":   ["컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "시스루 바디수트 — 메쉬, 아방가르드"],
-        "material": ["시스루 오간자 — 반투명, 살이 비치는", "리퀴드 새틴 — 액체처럼 흐르는 광택"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["런웨이 워킹 — 카메라를 향해", "파워 스탠딩 — 손 허리, 당당한"],
-        "style":    ["보그 이탈리아 하이패션", "알렉산더 맥퀸 — 드라마틱"],
-        "env":      ["파리 패션위크 런웨이 — 모던 무대", "미니멀 스튜디오 — 흰 배경, 깔끔"],
-    },
-    "슬림 런웨이 — 초장신 늘씬": {
-        "outfit":   ["하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인", "브라탑+하이슬릿 — 브라탑, 롱 하이슬릿"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "시스루 오간자 — 반투명, 살이 비치는"],
-        "angle":    ["전신샷 — 머리부터 발끝", "로우앵글 — 다리 강조, 아래서 위로"],
-        "pose":     ["런웨이 워킹 — 카메라를 향해", "S커브 — 한쪽 다리 구부린 섹시"],
-        "style":    ["보그 이탈리아 하이패션", "빅토리아 시크릿 패션쇼"],
-        "env":      ["파리 패션위크 런웨이 — 모던 무대", "미니멀 스튜디오 — 흰 배경, 깔끔"],
-    },
-    "슬림 엘레강스 — 날씬하고 우아한": {
-        "outfit":   ["하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "웨딩 드레스 — 럭셔리 브라이달, 관능적", "오픈백 미니드레스 — 등 노출, 플런징 넥"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "시퀸 — 빛을 받으면 반짝이는"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "사이드 프로필 — 옆모습 실루엣"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게", "S커브 — 한쪽 다리 구부린 섹시"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼", "발렌티노 — 레드 카펫 럭셔리", "보그 이탈리아 하이패션"],
-        "env":      ["베르사유 궁전 — 황금빛 홀", "파리 오스만 발코니 — 에펠탑 뷰", "우아한 볼룸 — 샹들리에, 대형 파티홀"],
-    },
-    # ── 슬림톤 계열 ──
-    "슬림 톤 — 날씬하고 탄탄한": {
-        "outfit":   ["스포츠브라+레깅스 — 핫한 피트니스 룩", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "마이크로 비키니 — 끈 비키니, SI 수영복 화보"],
-        "material": ["웻룩 스판덱스 — 젖은 듯한 느낌", "라텍스 — 피부 밀착, 세컨드스킨", "리퀴드 새틴 — 액체처럼 흐르는 광택"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "로우앵글 — 다리 강조, 아래서 위로"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "S커브 — 한쪽 다리 구부린 섹시", "런웨이 워킹 — 카메라를 향해"],
-        "style":    ["스포츠 일러스트레이티드 수영복", "빅토리아 시크릿 패션쇼", "스포츠 럭셔리 — 나이키/아디다스 하이엔드"],
-        "env":      ["럭셔리 인피니티 풀 — 열대 리조트", "마이애미 비치 — 선셋", "말디브 수상빌라 — 크리스탈 바다"],
-    },
-    "발레리나 — 길고 가늘고 우아한": {
-        "outfit":   ["하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "웨딩 드레스 — 럭셔리 브라이달, 관능적", "컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인"],
-        "material": ["시스루 오간자 — 반투명, 살이 비치는", "리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운"],
-        "angle":    ["전신샷 — 머리부터 발끝", "사이드 프로필 — 옆모습 실루엣"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "손 들어 — 머리 위로 손, 관능적", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["보그 이탈리아 하이패션", "하퍼스 바자 — 관능적 에디토리얼"],
-        "env":      ["미니멀 스튜디오 — 흰 배경, 깔끔", "베르사유 궁전 — 황금빛 홀"],
-    },
-    "슬림 피트니스 — 날씬한 운동선수": {
-        "outfit":   ["스포츠브라+레깅스 — 핫한 피트니스 룩", "마이크로 비키니 — 끈 비키니, SI 수영복 화보", "바디콘 미니드레스 — 몸매 강조, 타이트핏"],
-        "material": ["웻룩 스판덱스 — 젖은 듯한 느낌", "라텍스 — 피부 밀착, 세컨드스킨"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "크로스 암 — 팔짱 끼고 강렬한", "S커브 — 한쪽 다리 구부린 섹시"],
-        "style":    ["스포츠 일러스트레이티드 수영복", "스포츠 럭셔리 — 나이키/아디다스 하이엔드"],
-        "env":      ["럭셔리 인피니티 풀 — 열대 리조트", "마이애미 비치 — 선셋"],
-    },
-    # ── 애슬레틱 계열 ──
-    "피트니스 — 탄탄한 복근, 근육미": {
-        "outfit":   ["스포츠브라+레깅스 — 핫한 피트니스 룩", "마이크로 비키니 — 끈 비키니, SI 수영복 화보", "바디콘 미니드레스 — 몸매 강조, 타이트핏"],
-        "material": ["웻룩 스판덱스 — 젖은 듯한 느낌", "라텍스 — 피부 밀착, 세컨드스킨", "메탈릭 비닐 — 금속 광택, 미래적"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "로우앵글 — 다리 강조, 아래서 위로"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "크로스 암 — 팔짱 끼고 강렬한", "S커브 — 한쪽 다리 구부린 섹시"],
-        "style":    ["스포츠 일러스트레이티드 수영복", "빅토리아 시크릿 패션쇼", "스포츠 럭셔리 — 나이키/아디다스 하이엔드"],
-        "env":      ["럭셔리 인피니티 풀 — 열대 리조트", "마이애미 비치 — 선셋", "미니멀 스튜디오 — 흰 배경, 깔끔"],
-    },
-    "비키니 컴페티션 — 대회용 극강 근육": {
-        "outfit":   ["마이크로 비키니 — 끈 비키니, SI 수영복 화보", "스포츠브라+레깅스 — 핫한 피트니스 룩", "원피스 수영복 — 하이컷, 컷아웃 디자인"],
-        "material": ["웻룩 스판덱스 — 젖은 듯한 느낌", "시퀸 — 빛을 받으면 반짝이는", "메탈릭 비닐 — 금속 광택, 미래적"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "크로스 암 — 팔짱 끼고 강렬한"],
-        "style":    ["스포츠 일러스트레이티드 수영복", "스포츠 럭셔리 — 나이키/아디다스 하이엔드"],
-        "env":      ["미니멀 스튜디오 — 흰 배경, 깔끔", "마이애미 비치 — 선셋"],
-    },
-    "파워 피트니스 — 강한 근육미": {
-        "outfit":   ["스포츠브라+레깅스 — 핫한 피트니스 룩", "마이크로 비키니 — 끈 비키니, SI 수영복 화보", "바디콘 미니드레스 — 몸매 강조, 타이트핏"],
-        "material": ["웻룩 스판덱스 — 젖은 듯한 느낌", "라텍스 — 피부 밀착, 세컨드스킨", "메탈릭 비닐 — 금속 광택, 미래적"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "크로스 암 — 팔짱 끼고 강렬한"],
-        "style":    ["스포츠 럭셔리 — 나이키/아디다스 하이엔드", "티에리 뮈글러 — 파워 패션"],
-        "env":      ["미니멀 스튜디오 — 흰 배경, 깔끔", "마이애미 비치 — 선셋"],
-    },
-    "스포츠 글램 — 탄탄+볼륨": {
-        "outfit":   ["마이크로 비키니 — 끈 비키니, SI 수영복 화보", "스포츠브라+레깅스 — 핫한 피트니스 룩", "바디콘 미니드레스 — 몸매 강조, 타이트핏"],
-        "material": ["웻룩 스판덱스 — 젖은 듯한 느낌", "리퀴드 새틴 — 액체처럼 흐르는 광택", "시퀸 — 빛을 받으면 반짝이는"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "로우앵글 — 다리 강조, 아래서 위로"],
-        "pose":     ["S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한"],
-        "style":    ["빅토리아 시크릿 패션쇼", "스포츠 일러스트레이티드 수영복"],
-        "env":      ["럭셔리 인피니티 풀 — 열대 리조트", "마이애미 비치 — 선셋", "말디브 수상빌라 — 크리스탈 바다"],
-    },
-    # ── 글래머 계열 ──
-    "소프트 글램 — 부드러운 여성미": {
-        "outfit":   ["하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "코르셋 드레스 — 잘록한 허리, 볼륨감 강조"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "시퀸 — 빛을 받으면 반짝이는"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["빅토리아 시크릿 패션쇼", "하퍼스 바자 — 관능적 에디토리얼", "돌체앤가바나 — 이탈리안 글래머"],
-        "env":      ["모나코 테라스 — 지중해 야경", "파리 오스만 발코니 — 에펠탑 뷰", "두바이 펜트하우스 루프탑 — 야경"],
-    },
-    "VS 앤젤 — 완벽한 VS 글래머": {
-        "outfit":   ["마이크로 비키니 — 끈 비키니, SI 수영복 화보", "란제리 에디토리얼 — VS 스타일, 실크 레이스", "바디콘 미니드레스 — 몸매 강조, 타이트핏"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "시퀸 — 빛을 받으면 반짝이는", "크리스탈 메쉬 — 망사에 크리스탈"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "로우앵글 — 다리 강조, 아래서 위로"],
-        "pose":     ["런웨이 워킹 — 카메라를 향해", "S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한"],
-        "style":    ["빅토리아 시크릿 패션쇼", "스포츠 일러스트레이티드 수영복"],
-        "env":      ["파리 패션위크 런웨이 — 모던 무대", "미니멀 스튜디오 — 흰 배경, 깔끔", "두바이 펜트하우스 루프탑 — 야경"],
-    },
-    "핫 글래머 — 잘록한 허리+볼륨": {
-        "outfit":   ["코르셋 드레스 — 잘록한 허리, 볼륨감 강조", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인"],
-        "material": ["라텍스 — 피부 밀착, 세컨드스킨", "리퀴드 새틴 — 액체처럼 흐르는 광택", "페이턴트 레더 — 하이글로스 가죽"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한", "백포즈 — 뒤돌아 어깨 너머 시선"],
-        "style":    ["베르사체 캠페인 — 대담한 럭셔리", "돌체앤가바나 — 이탈리안 글래머", "티에리 뮈글러 — 파워 패션"],
-        "env":      ["두바이 펜트하우스 루프탑 — 야경", "모나코 테라스 — 지중해 야경", "다크 바로크 — 화려한 실내"],
-    },
-    "슈퍼 글래머 — 극강 모래시계": {
-        "outfit":   ["코르셋 드레스 — 잘록한 허리, 볼륨감 강조", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인"],
-        "material": ["라텍스 — 피부 밀착, 세컨드스킨", "리퀴드 새틴 — 액체처럼 흐르는 광택", "페이턴트 레더 — 하이글로스 가죽"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한"],
-        "style":    ["베르사체 캠페인 — 대담한 럭셔리", "티에리 뮈글러 — 파워 패션"],
-        "env":      ["다크 바로크 — 화려한 실내", "두바이 펜트하우스 루프탑 — 야경"],
-    },
-    "럭셔리 글램 — 고급스러운 볼륨": {
-        "outfit":   ["하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인", "웨딩 드레스 — 럭셔리 브라이달, 관능적", "코르셋 드레스 — 잘록한 허리, 볼륨감 강조"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "시퀸 — 빛을 받으면 반짝이는"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["발렌티노 — 레드 카펫 럭셔리", "하퍼스 바자 — 관능적 에디토리얼", "돌체앤가바나 — 이탈리안 글래머"],
-        "env":      ["베르사유 궁전 — 황금빛 홀", "모나코 테라스 — 지중해 야경", "우아한 볼룸 — 샹들리에, 대형 파티홀"],
-    },
-    # ── 커브 계열 ──
-    "내추럴 커브 — 자연스러운 곡선미": {
-        "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "원피스 수영복 — 하이컷, 컷아웃 디자인", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "니트 — 몸에 딱 붙는 립 니트"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["빅토리아 시크릿 패션쇼", "하퍼스 바자 — 관능적 에디토리얼"],
-        "env":      ["말디브 수상빌라 — 크리스탈 바다", "파리 오스만 발코니 — 에펠탑 뷰", "럭셔리 인피니티 풀 — 열대 리조트"],
-    },
-    "소프트 커브 — 부드럽고 풍만한": {
-        "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "원피스 수영복 — 하이컷, 컷아웃 디자인", "코르셋 드레스 — 잘록한 허리, 볼륨감 강조"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "니트 — 몸에 딱 붙는 립 니트"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼", "돌체앤가바나 — 이탈리안 글래머"],
-        "env":      ["말디브 수상빌라 — 크리스탈 바다", "럭셔리 인피니티 풀 — 열대 리조트"],
-    },
-    "풀 커브 — 볼륨감 있는 커브": {
-        "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "원피스 수영복 — 하이컷, 컷아웃 디자인", "란제리 에디토리얼 — VS 스타일, 실크 레이스"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "니트 — 몸에 딱 붙는 립 니트"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한", "누운 포즈 — 바닥/침대에 관능적"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼", "베르사체 캠페인 — 대담한 럭셔리"],
-        "env":      ["럭셔리 호텔 스위트 — 펜트하우스 스위트룸", "다크 바로크 — 화려한 실내"],
-    },
-    "글래머 커브 — 커브+글래머 믹스": {
-        "outfit":   ["코르셋 드레스 — 잘록한 허리, 볼륨감 강조", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "란제리 에디토리얼 — VS 스타일, 실크 레이스"],
-        "material": ["라텍스 — 피부 밀착, 세컨드스킨", "리퀴드 새틴 — 액체처럼 흐르는 광택", "페이턴트 레더 — 하이글로스 가죽"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["S커브 — 한쪽 다리 구부린 섹시", "파워 스탠딩 — 손 허리, 당당한", "백포즈 — 뒤돌아 어깨 너머 시선"],
-        "style":    ["베르사체 캠페인 — 대담한 럭셔리", "티에리 뮈글러 — 파워 패션"],
-        "env":      ["다크 바로크 — 화려한 실내", "두바이 펜트하우스 루프탑 — 야경"],
-    },
-    # ── 플러스사이즈 계열 ──
-    "플러스 내추럴 — 자연스러운 플러스": {
-        "outfit":   ["원피스 수영복 — 하이컷, 컷아웃 디자인", "바디콘 미니드레스 — 몸매 강조, 타이트핏", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "니트 — 몸에 딱 붙는 립 니트"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "S커브 — 한쪽 다리 구부린 섹시", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼", "스포츠 일러스트레이티드 수영복"],
-        "env":      ["말디브 수상빌라 — 크리스탈 바다", "럭셔리 인피니티 풀 — 열대 리조트", "파리 오스만 발코니 — 에펠탑 뷰"],
-    },
-    "플러스 글램 — 플러스사이즈 글래머": {
-        "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "코르셋 드레스 — 잘록한 허리, 볼륨감 강조", "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "시퀸 — 빛을 받으면 반짝이는"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "S커브 — 한쪽 다리 구부린 섹시"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼", "베르사체 캠페인 — 대담한 럭셔리"],
-        "env":      ["다크 바로크 — 화려한 실내", "두바이 펜트하우스 루프탑 — 야경", "우아한 볼룸 — 샹들리에, 대형 파티홀"],
-    },
-    "라지 플러스 — 매우 풍만한": {
-        "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "란제리 에디토리얼 — VS 스타일, 실크 레이스", "원피스 수영복 — 하이컷, 컷아웃 디자인"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "니트 — 몸에 딱 붙는 립 니트"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게", "누운 포즈 — 바닥/침대에 관능적"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼", "스포츠 일러스트레이티드 수영복"],
-        "env":      ["럭셔리 호텔 스위트 — 펜트하우스 스위트룸", "다크 바로크 — 화려한 실내"],
-    },
-    "슈퍼 플러스 — 초풍만": {
-        "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "란제리 에디토리얼 — VS 스타일, 실크 레이스", "원피스 수영복 — 하이컷, 컷아웃 디자인"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼"],
-        "env":      ["럭셔리 호텔 스위트 — 펜트하우스 스위트룸", "다크 바로크 — 화려한 실내"],
-    },
-    # ── BBW 계열 ──
-    "BBW 글래머 — BBW 글래머": {
-        "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "란제리 에디토리얼 — VS 스타일, 실크 레이스", "원피스 수영복 — 하이컷, 컷아웃 디자인"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "시퀸 — 빛을 받으면 반짝이는"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게", "누운 포즈 — 바닥/침대에 관능적"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼", "스포츠 일러스트레이티드 수영복"],
-        "env":      ["럭셔리 호텔 스위트 — 펜트하우스 스위트룸", "다크 바로크 — 화려한 실내", "도쿄 네온 거리 — 비 오는 밤"],
-    },
-    "라지 BBW — 큰 BBW": {
-        "outfit":   ["바디콘 미니드레스 — 몸매 강조, 타이트핏", "란제리 에디토리얼 — VS 스타일, 실크 레이스", "원피스 수영복 — 하이컷, 컷아웃 디자인"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼"],
-        "env":      ["럭셔리 호텔 스위트 — 펜트하우스 스위트룸", "다크 바로크 — 화려한 실내"],
-    },
-    "슈퍼 BBW — 극도로 풍만한": {
-        "outfit":   ["란제리 에디토리얼 — VS 스타일, 실크 레이스", "바디콘 미니드레스 — 몸매 강조, 타이트핏"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼"],
-        "env":      ["럭셔리 호텔 스위트 — 펜트하우스 스위트룸", "다크 바로크 — 화려한 실내"],
-    },
-    "슈퍼 BBW 글래머 — 극도로 풍만한 글래머": {
-        "outfit":   ["란제리 에디토리얼 — VS 스타일, 실크 레이스", "바디콘 미니드레스 — 몸매 강조, 타이트핏"],
-        "material": ["리퀴드 새틴 — 액체처럼 흐르는 광택", "벨벳 — 부드럽고 고급스러운", "시퀸 — 빛을 받으면 반짝이는"],
-        "angle":    ["전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지"],
-        "pose":     ["파워 스탠딩 — 손 허리, 당당한", "앉은 포즈 — 바닥/의자에 우아하게"],
-        "style":    ["하퍼스 바자 — 관능적 에디토리얼", "베르사체 캠페인 — 대담한 럭셔리"],
-        "env":      ["럭셔리 호텔 스위트 — 펜트하우스 스위트룸", "다크 바로크 — 화려한 실내", "두바이 펜트하우스 루프탑 — 야경"],
-    },
-}
-
-# 충돌 규칙 (angle_keyword, pose_keyword, 경고메시지)
-CONFLICT_RULES = [
-    ("웨이스트샷", "pool", "앵글(상반신)과 포즈(풀사이드) 불일치 → 전신샷 권장"),
-    ("웨이스트샷", "diving", "앵글(상반신)과 포즈(다이빙) 불일치 → 전신샷 권장"),
-    ("클로즈업", "전신", "클로즈업 앵글에 전신 포즈 → 웨이스트샷 권장"),
-    ("익스트림 클로즈업", "런웨이", "극접사 앵글에 워킹 포즈 → 전신샷 권장"),
-    ("사이버펑크", "골든선셋", "스타일(사이버펑크)과 환경(골든선셋) 분위기 불일치"),
-    ("사이버펑크", "베르사유", "스타일(사이버펑크)과 환경(궁전) 불일치"),
-    ("빅토리안", "사이버펑크", "시대(빅토리안)과 스타일(사이버펑크) 불일치"),
-    ("BBW", "latex", "BBW 체형 + 라텍스 → AI 타협 가능성 높음, 새틴/벨벳 권장"),
-    ("슈퍼 BBW", "latex", "슈퍼BBW + 라텍스 → AI 거부 가능성, 새틴/벨벳으로 변경 강력 권장"),
-    ("슈퍼 플러스", "latex", "슈퍼플러스 + 라텍스 → AI 타협 가능성 높음"),
-    ("수영장 입수", "웨이스트샷", "다이빙 포즈에 상반신 앵글 → 전신샷 권장"),
-    ("누운 포즈", "전신샷", "누운 포즈 + 전신샷 → 로우앵글 또는 오버헤드 권장"),
-]
-
-def check_conflicts(angle: str, pose: str, style: str, environment: str, model: str, material: str) -> list:
-    """충돌 감지 → 경고 메시지 리스트 반환"""
-    warnings = []
-    combined = f"{angle} {pose} {style} {environment} {model} {material}".lower()
-    for kw1, kw2, msg in CONFLICT_RULES:
-        k1 = kw1.lower()
-        k2 = kw2.lower()
-        if k1 in combined and k2 in combined:
-            warnings.append(msg)
-    return warnings
-
-def get_combo_recommendations(model_type: str) -> dict:
-    """체형에 맞는 추천 조합 반환"""
-    return GOOD_COMBOS.get(model_type, {})
-
-# ══════════════════════════════════════════════════════════
 
 def get_prompt(data: dict) -> str:
     if global_platform == "Gemini":
@@ -541,11 +290,9 @@ with tab2:
 
     if st.button("🎲 전체 랜덤으로 채우기"):
         def rnd(d):
-            """없음 제외하고 랜덤 뽑기"""
             keys = [k for k in d.keys() if k != "없음"]
             return random.choice(keys) if keys else "없음"
 
-        # 고정 섹션 — 항상 랜덤
         st.session_state.r_appearance  = rnd(MODEL_APPEARANCE)
         st.session_state.r_model       = rnd(MODEL_TYPES)
         st.session_state.r_outfit      = rnd(OUTFIT_TYPES)
@@ -562,7 +309,6 @@ with tab2:
         st.session_state.r_hair_color  = rnd(HAIR_COLORS)
         st.session_state.r_makeup      = rnd(MAKEUP)
 
-        # 확률 섹션 — 50% 랜덤, 50% 없음
         def rnd_maybe(d, prob=0.5):
             return rnd(d) if random.random() < prob else "없음"
 
@@ -582,7 +328,6 @@ with tab2:
         st.session_state.r_concept         = rnd_maybe(CONCEPT,        0.15)
         st.session_state.r_lens_effect     = rnd_maybe(LENS_EFFECT,    0.15)
 
-        # 보정 섹션 — 기본 없음
         st.session_state.r_age         = "없음"
         st.session_state.r_model_count = "1명 — 싱글 모델 (기본)"
         st.session_state.r_body_weight = "없음"
@@ -612,6 +357,17 @@ with tab2:
     with col2:
         st.markdown("##### 👗 스타일")
         outfit      = st.selectbox("👗 의상 타입",                 list(OUTFIT_TYPES.keys()),      index=idx(OUTFIT_TYPES,     "r_outfit"))
+
+        # ── 6번: 상하의 분리 선택 ──
+        use_separate = st.checkbox("✂️ 상하의 분리 선택", value=False, key="use_separate_outfit",
+                                   help="의상 타입 대신 상의+하의를 각각 선택")
+        if use_separate:
+            top_type    = st.selectbox("👕 상의",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
+            bottom_type = st.selectbox("👖 하의",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
+        else:
+            top_type    = "없음 (의상 타입 사용)"
+            bottom_type = "없음 (의상 타입 사용)"
+
         material    = st.selectbox("🧵 소재 — 옷감 질감",          list(MATERIALS.keys()),         index=idx(MATERIALS,        "r_material"))
         footwear    = st.selectbox("👠 신발",                      list(FOOTWEAR.keys()),          index=idx(FOOTWEAR,         "r_footwear"))
         pose        = st.selectbox("💃 포즈 — 자세와 동작",        list(POSES.keys()),             index=idx(POSES,            "r_pose"))
@@ -638,7 +394,7 @@ with tab2:
         img_style   = st.selectbox("📐 이미지 스타일",             list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
         bg_crowd    = st.selectbox("👥 배경 인물",                 list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
 
-    # ── 방법 2: 추천 조합 표시 ──────────────────────────────
+    # ── 추천 조합 표시 ──
     rec = get_combo_recommendations(model_type)
     if rec:
         with st.expander("✅ 이 체형에 잘 맞는 조합 추천", expanded=False):
@@ -672,8 +428,8 @@ with tab2:
                     st.markdown(f"{'🟡 ' if is_selected else '• '}{e.split('—')[0].strip()}")
             st.caption("🟡 = 현재 선택됨  •  = 추천 항목")
 
-    # ── 충돌 감지 실시간 표시 ───────────────────────────────
-    conflicts = check_conflicts(angle, pose, style, environment, model_type, material)
+    # ── 5번: 충돌 감지 (weather 파라미터 추가) ──
+    conflicts = check_conflicts(angle, pose, style, environment, model_type, material, weather)
     if conflicts:
         for c in conflicts:
             st.warning(f"⚠️ {c}")
@@ -691,7 +447,7 @@ with tab2:
     if "review_result" not in st.session_state:
         st.session_state.review_result = ""
 
-    # ── 방법 3: AI 검수 (분석 + 자동 교체) ────────────────────
+    # ── AI 검수 ──
     if btn_ai_review:
         st.session_state.review_result = ""
         with st.spinner("Claude가 조합 검수 + 자동 수정 중..."):
@@ -699,7 +455,6 @@ with tab2:
                 import anthropic
                 client = anthropic.Anthropic()
 
-                # 현재 선택값 목록 전달
                 current_combo = {
                     "model":       model_type,
                     "outfit":      outfit,
@@ -717,7 +472,6 @@ with tab2:
                     "color_grade": color_grade,
                 }
 
-                # 안전한 대체 옵션 목록
                 safe_options = {
                     "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in [
                         "코트 only — 롱코트만 입은 미니멀 글래머",
@@ -764,82 +518,51 @@ with tab2:
                     messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst for Gemini and ChatGPT/DALL-E.
 
 Analyze this fashion photo prompt combination for AI content filter risks.
-Both platforms block combinations that signal "adult/fetish content" even if individual elements seem safe.
 
 Current combination:
 {chr(10).join([f"- {k}: {v}" for k, v in current_combo.items()])}
 
-CONFIRMED BLOCKED PATTERNS (from real test data):
-🔴 INSTANT BLOCK (either platform):
-- Any cup size mention (D-cup, DD-cup, C-cup etc)
-- "ultra sexy", "sexy" as descriptor
-- maximum leg exposure
-- skin visible beneath (transparent fabric)
-- innocent/doe-eyed + voluptuous body + revealing outfit
-- breathless expression + revealing outfit
-- overhead angle + transparent material + curvy body + wet skin
-
-🔴 CHATGPT BLOCKED COMBOS:
-- low angle + wet/oiled skin + bust emphasis + slit skirt
-- back-facing + over-shoulder + bodysuit/swimsuit + wet skin + low angle
-- tight framing + fills frame + back view + curves emphasis
-- femme fatale concept + wet body + revealing outfit
-
-🔴 GEMINI BLOCKED COMBOS:
-- bra top (직접 언급)
-- ultra-high slit + maximum leg exposure (직접 언급)
-- open back + plunging neckline + backless glamour (조합)
-- transparent PVC + voluptuous body (조합)
-- 3+ body parts emphasized simultaneously (bust + hips + thighs)
-- VS/Sports Illustrated reference + revealing outfit + wet body
+CONFIRMED BLOCKED PATTERNS:
+🔴 INSTANT BLOCK: cup size mention, ultra/sexy descriptors, overhead+transparent+wet+curvy, innocent+sexual elements
+🔴 CHATGPT: low angle+wet+bust+slit, back view+bodysuit+wet+low angle, crystal mesh+sheer+spaghetti+jump+extreme stiletto+femme fatale
+🔴 GEMINI: transparent PVC+voluptuous, 3+ body parts emphasized, VS reference+revealing+wet
 
 ✅ SAFE ALTERNATIVES:
-- overhead → "cinematic high-angle fashion composition"
-- wet/oiled body → "luminous healthy complexion"
-- transparent → "elegant translucent couture fabric"
-- bra top → "structured couture crop top"
-- maximum exposure → "asymmetrical runway skirt"
-- back view + spine → "elegant over-shoulder runway pose"
-- femme fatale → remove or use "mysterious operative"
+- sheer/mesh/crystal → luxury satin/silk couture
+- extreme stiletto → elegant heels
+- mid-air jump → dynamic fashion pose
+- VS Angel body → high-fashion runway physique
 
-Risk scoring: count risky elements, 3+ = HIGH risk
+Risk: 3+ risky elements = HIGH
 
-Respond ONLY in this exact JSON format:
+Respond ONLY in JSON:
 {{
   "risk_level": "HIGH/MEDIUM/LOW",
-  "issues": ["issue1", "issue2"],
+  "issues": ["issue1"],
   "replacements": {{
-    "outfit": "replacement key or null",
-    "material": "replacement key or null",
-    "angle": "replacement key or null",
-    "pose": "replacement key or null",
-    "skin_tone": "replacement key or null",
-    "body_oil": "replacement key or null",
-    "weather": "replacement key or null",
-    "style": "replacement key or null",
-    "img_style": "replacement key or null"
+    "outfit": "key or null",
+    "material": "key or null",
+    "angle": "key or null",
+    "pose": "key or null",
+    "skin_tone": "key or null",
+    "body_oil": "key or null",
+    "weather": "key or null",
+    "style": "key or null",
+    "img_style": "key or null"
   }},
-  "summary": "한국어로 2-3줄 요약"
-}}
-  "summary": "한국어로 2-3줄 요약"
+  "summary": "한국어 2-3줄"
 }}
 
-Available safe options per field:
+Available options:
 outfit: {safe_options['outfit'][:6]}
 material: {safe_options['material'][:6]}
 angle: {safe_options['angle']}
 pose: {safe_options['pose'][:8]}
-skin_tone: {safe_options['skin_tone']}
 body_oil: {safe_options['body_oil']}
-weather: {safe_options['weather'][:6]}
-style: {safe_options['style']}
-img_style: {safe_options['img_style']}
-
-Only replace fields that are risky. Use exact key names from the options above. Use null if field is safe."""}]
+style: {safe_options['style']}"""}]
                 )
 
                 raw = response.content[0].text.strip()
-                # JSON 파싱
                 import json, re
                 json_match = re.search(r'\{.*\}', raw, re.DOTALL)
                 if json_match:
@@ -849,7 +572,6 @@ Only replace fields that are risky. Use exact key names from the options above. 
                     repls   = result.get("replacements", {})
                     summary = result.get("summary", "")
 
-                    # 위험 요소 자동 교체
                     KEY_MAP = {
                         "outfit":    "r_outfit",
                         "material":  "r_material",
@@ -869,7 +591,6 @@ Only replace fields that are risky. Use exact key names from the options above. 
                                 st.session_state[ss_key] = new_val
                                 replaced[field] = new_val
 
-                    # 결과 메시지 저장
                     risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(risk, "⚪")
                     msg = f"{risk_emoji} **리스크: {risk}**\n\n"
                     if issues:
@@ -894,29 +615,24 @@ Only replace fields that are risky. Use exact key names from the options above. 
 
     if btn_build:
         def smart_update(key, d, prob):
-            """session_state[key]가 없음이면 prob 확률로 랜덤 업데이트"""
             cur = st.session_state.get(key, "없음")
             if cur == "없음":
                 keys = [k for k in d.keys() if k != "없음"]
                 if keys and random.random() < prob:
                     st.session_state[key] = random.choice(keys)
 
-        # 80% — 거의 항상
         smart_update("r_pose",        POSES,          0.80)
         smart_update("r_expression",  EXPRESSION,     0.80)
         smart_update("r_skin_tone",   SKIN_TONES,     0.80)
-        # 50% — 절반 확률
         smart_update("r_hair_style",  HAIR_STYLES,    0.50)
         smart_update("r_hair_color",  HAIR_COLORS,    0.50)
         smart_update("r_makeup",      MAKEUP,         0.50)
         smart_update("r_footwear",    FOOTWEAR,       0.50)
         smart_update("r_color_grade", COLOR_GRADES,   0.50)
-        # 30% — 가끔
         smart_update("r_accessories", ACCESSORIES,    0.30)
         smart_update("r_body_oil",    BODY_OIL,       0.30)
         smart_update("r_weather",     WEATHER,        0.30)
         smart_update("r_bg_crowd",    BG_CROWD,       0.30)
-        # 15% — 드물게
         smart_update("r_tattoo",      TATTOO,         0.15)
         smart_update("r_special_effects", SPECIAL_EFFECTS, 0.15)
         smart_update("r_props",       PROPS,          0.15)
@@ -926,7 +642,6 @@ Only replace fields that are risky. Use exact key names from the options above. 
 
         st.session_state._trigger_build = True
 
-        # ── selectbox 현재값 session_state 동기화 (자동필터용) ──
         st.session_state.r_outfit      = outfit
         st.session_state.r_material    = material
         st.session_state.r_angle       = angle
@@ -945,8 +660,20 @@ Only replace fields that are risky. Use exact key names from the options above. 
         st.session_state.r_time_of_day = time_of_day
         st.session_state.r_lens_effect = lens_effect
 
-        # ── 자동 필터 검수 (규칙 기반) ──────────────────────
-        filter_result = auto_filter_check(dict(st.session_state))
+        # ── 1번: 수동 선택 보호 세트 구성 ──
+        manual_sel = set()
+        # 사용자가 직접 의상을 선택한 경우 보호
+        if outfit != list(OUTFIT_TYPES.keys())[0]:
+            manual_sel.add("r_outfit")
+        if use_separate:
+            manual_sel.add("r_outfit")  # 상하의 분리 사용 시 의상 보호
+
+        # ── 자동 필터 검수 (플랫폼, 수동선택 전달) ──
+        filter_result = auto_filter_check(
+            dict(st.session_state),
+            platform=global_platform,
+            manual_selections=manual_sel,
+        )
         if filter_result["replacements"]:
             for ss_key, new_val in filter_result["replacements"].items():
                 st.session_state[ss_key] = new_val
@@ -955,6 +682,7 @@ Only replace fields that are risky. Use exact key names from the options above. 
                 "r_angle": "앵글", "r_pose": "포즈", "r_outfit": "의상",
                 "r_material": "소재", "r_skin_tone": "피부", "r_body_oil": "바디오일",
                 "r_style": "스타일", "r_expression": "표정", "r_model": "체형",
+                "r_image_style": "이미지스타일",
             }
             changed = "  |  ".join([f"{replaced_labels.get(k, k)} → **{v.split('—')[0].strip()}**" for k, v in filter_result["replacements"].items()])
             st.session_state._auto_filter_msg = f"{risk_emoji} 필터 자동 조정: {changed}"
@@ -968,13 +696,11 @@ Only replace fields that are risky. Use exact key names from the options above. 
     if st.session_state.get("_trigger_build", False):
         st.session_state._trigger_build = False
 
-        # 현재 session_state 값으로 data 구성
         def ss(key, d, default=None):
             keys = list(d.keys())
             val = st.session_state.get(key, keys[0] if keys else "없음")
             return val if val in d else (keys[0] if keys else "없음")
 
-        # 자동 선택된 항목 추적 (이전값과 비교)
         _prev = {k: st.session_state.get(f"_prev_{k}", "없음") for k in [
             "r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color",
             "r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil",
@@ -994,7 +720,6 @@ Only replace fields that are risky. Use exact key names from the options above. 
             cur = st.session_state.get(key, "없음")
             if _prev[key] == "없음" and cur != "없음":
                 picked_items[label] = cur.split("—")[0].strip()
-            # 다음 비교를 위해 현재값 저장
             st.session_state[f"_prev_{key}"] = cur
 
         if picked_items:
@@ -1039,14 +764,15 @@ Only replace fields that are risky. Use exact key names from the options above. 
             "angle":         ss("r_angle",        CAMERA_ANGLES),
             "style":         ss("r_style",        STYLES),
             "camera":        ss("r_camera",       CAMERAS),
+            # ── 6번: 상하의 분리 ──
+            "top_type":      st.session_state.get("r_top_type", "없음 (의상 타입 사용)"),
+            "bottom_type":   st.session_state.get("r_bottom_type", "없음 (의상 타입 사용)"),
         }
         st.session_state.manual_prompt = get_prompt(data)
 
-    # 자동선택 메시지 표시
     if st.session_state.get("_auto_picked_msg"):
         st.info(st.session_state._auto_picked_msg)
 
-    # 자동 필터 검수 메시지 표시
     if st.session_state.get("_auto_filter_msg"):
         msg = st.session_state._auto_filter_msg
         if "🔴" in msg:
@@ -1130,6 +856,8 @@ with tab3:
             "angle":           random.choice(list(CAMERA_ANGLES.keys())),
             "style":           random.choice(list(STYLES.keys())),
             "camera":          random.choice(list(CAMERAS.keys())),
+            "top_type":        "없음 (의상 타입 사용)",
+            "bottom_type":     "없음 (의상 타입 사용)",
         }
         st.session_state.random_prompt = get_prompt(data)
 
@@ -1147,7 +875,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.2 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
