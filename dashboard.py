@@ -357,15 +357,26 @@ with tab2:
         model_count = st.selectbox("👥 모델 수",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
     with col2:
         st.markdown("##### 👗 스타일")
-        outfit      = st.selectbox("👗 의상 타입",                 list(OUTFIT_TYPES.keys()),      index=idx(OUTFIT_TYPES,     "r_outfit"))
-
         # ── 6번: 상하의 분리 선택 ──
         use_separate = st.checkbox("✂️ 상하의 분리 선택", value=False, key="use_separate_outfit",
-                                   help="의상 타입 대신 상의+하의를 각각 선택")
+                                   help="상의+하의를 각각 선택해 조합")
         if use_separate:
             top_type    = st.selectbox("👕 상의",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
             bottom_type = st.selectbox("👖 하의",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
+            # 선택 조합 배지 표시
+            top_label    = top_type.split("—")[0].strip()    if top_type    != "없음 (의상 타입 사용)" else "없음"
+            bottom_label = bottom_type.split("—")[0].strip() if bottom_type != "없음 (의상 타입 사용)" else "없음"
+            st.markdown(f"""
+<div style="background:#2a2a2a;border:1px solid #c9a84c33;border-radius:8px;padding:8px 12px;margin:4px 0;">
+  <span style="font-size:0.7rem;color:#888;letter-spacing:1px;">선택된 조합</span><br>
+  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;margin-right:4px;">👕 {top_label}</span>
+  <span style="color:#555;margin-right:4px;">+</span>
+  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;">👖 {bottom_label}</span>
+</div>
+""", unsafe_allow_html=True)
+            outfit = list(OUTFIT_TYPES.keys())[0]  # 의상 타입은 무시
         else:
+            outfit      = st.selectbox("👗 의상 타입",  list(OUTFIT_TYPES.keys()), index=idx(OUTFIT_TYPES, "r_outfit"))
             top_type    = "없음 (의상 타입 사용)"
             bottom_type = "없음 (의상 타입 사용)"
 
