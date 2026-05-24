@@ -334,6 +334,8 @@ with tab2:
         st.session_state.r_body_weight = "없음"
         st.session_state.r_bust_size   = "없음"
         st.session_state.r_hip_size    = "없음"
+        # ── 상하의 분리 체크박스 상태 보존 ──
+        st.session_state["use_separate_outfit"] = st.session_state.get("use_separate_outfit", False)
         st.rerun()
 
     def idx(d, key, default=0):
