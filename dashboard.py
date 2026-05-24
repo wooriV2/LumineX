@@ -334,8 +334,13 @@ with tab2:
         st.session_state.r_body_weight = "없음"
         st.session_state.r_bust_size   = "없음"
         st.session_state.r_hip_size    = "없음"
-        # ── 상하의 분리 체크박스 상태 보존 ──
+        # ── 상하의 분리 체크박스 상태 보존 + 랜덤 채우기 ──
         st.session_state["use_separate_outfit"] = st.session_state.get("use_separate_outfit", False)
+        if st.session_state.get("use_separate_outfit", False):
+            top_keys = [k for k in TOP_TYPES.keys() if k != "없음 (의상 타입 사용)"]
+            bot_keys = [k for k in BOTTOM_TYPES.keys() if k != "없음 (의상 타입 사용)"]
+            if top_keys: st.session_state["r_top_type"] = random.choice(top_keys)
+            if bot_keys: st.session_state["r_bottom_type"] = random.choice(bot_keys)
         st.rerun()
 
     def idx(d, key, default=0):
