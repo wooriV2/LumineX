@@ -4,11 +4,19 @@ LumineX core/data.py
 """
 
 ASPECT_RATIOS = {
-    "세로 2:3 — 인물 기본": "portrait 2:3 vertical",
+    # ── 기본 (세로) ──
+    "세로 2:3 — 인물 기본 ★": "portrait 2:3 vertical",
+    "세로 9:16 — 모바일/릴스": "portrait 9:16 vertical, mobile optimized",
     "세로 3:4 — 전신샷": "portrait 3:4 vertical",
-    "가로 16:9 — 시네마틱": "landscape 16:9 cinematic wide",
-    "가로 4:3 — 화보": "landscape 4:3 editorial wide",
-    "정방형 1:1 — 인스타": "square 1:1",
+    "세로 4:5 — 인스타 세로": "portrait 4:5 vertical, Instagram optimized",
+    # ── 정방형 ──
+    "정방형 1:1 — 인스타 피드": "square 1:1",
+    # ── 가로 ──
+    "가로 16:9 — 시네마틱 와이드": "landscape 16:9 cinematic wide",
+    "가로 4:3 — 화보/매거진": "landscape 4:3 editorial wide",
+    "가로 3:2 — 클래식 가로": "landscape 3:2 horizontal",
+    "가로 2:1 — 파노라마": "landscape 2:1 panoramic wide",
+    "가로 21:9 — 울트라와이드": "landscape 21:9 ultrawide cinematic",
 }
 
 # ─── 데이터 ───────────────────────────────────────────────
@@ -43,9 +51,12 @@ AGE_APPEARANCE = {
     "20대 후반 — 성숙미 시작": "late 20s, maturing beauty, 28-29 years old, sophisticated",
     "30대 초반 — 세련된 성숙미": "early 30s, refined mature beauty, 30-33 years old, elegant",
     "30대 중반 — 카리스마 있는": "mid 30s, charismatic mature glamour, 34-37 years old",
-    "40대 — 우아한 중년 글래머": "40s, elegant mature woman, 40-49 years old, sophisticated glamour",
+    "30대 후반 — 원숙한 매력": "late 30s, ripened allure, 38-39 years old, sophisticated confidence",
+    "40대 초반 — 우아한 성숙미": "early 40s, elegantly mature, 40-44 years old, refined glamour",
+    "40대 후반 — 카리스마 중년": "late 40s, powerful mature charisma, 45-49 years old, distinguished",
     "50대 — 실버 글래머": "50s, silver glamour, mature distinguished beauty, 50-59 years old",
-    "60대+ — 우아한 시니어": "60s and above, gracefully aged beauty, senior glamour, distinguished",
+    "60대 — 우아한 시니어": "60s, gracefully aged beauty, senior glamour, distinguished elegance",
+    "70대+ — 레전더리 시니어": "70s and above, legendary senior beauty, timeless grace, iconic presence",
 }
 
 MODEL_TYPES = {
@@ -224,6 +235,12 @@ OUTFIT_TYPES = {
 # ── 상의/하의 분리 선택 ──
 TOP_TYPES = {
     "없음 (의상 타입 사용)": "",
+    # ── 수영복/비키니 ──
+    "비키니 탑 — 트라이앵글 탑": "luxury triangle bikini top, elegant swimwear editorial",
+    "마이크로 비키니 탑 — 미니멀 트라이앵글": "luxury satin bikini top, minimal triangle design, high fashion swimwear",
+    "스포츠 비키니 탑 — 피트니스 스포츠브라": "athletic sports bikini top, fitness editorial, sporty glamour",
+    "밴도 탑 — 스트랩리스 밴도": "bandeau strapless top, minimalist swimwear, fashion editorial",
+    # ── 캐주얼/패션 ──
     "크롭 탑 — 짧은 탑, 배꼽 노출": "crop top, midriff-baring, casual chic",
     "브라렛 — 브라렛 스타일 탑": "bralette top, delicate strappy design, feminine editorial",
     "티셔츠 — 캐주얼 티셔츠": "fitted t-shirt, casual chic, everyday glamour",
@@ -238,17 +255,24 @@ TOP_TYPES = {
 
 BOTTOM_TYPES = {
     "없음 (의상 타입 사용)": "",
+    # ── 수영복/비키니 ──
+    "비키니 바텀 — 하이컷 비키니": "luxury high-cut bikini bottom, elegant swimwear editorial",
+    "마이크로 비키니 바텀 — 미니멀 커버리지": "luxury high-cut bikini bottom, minimal coverage, high fashion swimwear",
+    "보드숏 — 서퍼 스타일": "board shorts, surfer style, casual beach editorial",
+    # ── 스커트 ──
     "미니 스커트 — 짧은 치마": "mini skirt, short hemline, bold fashion editorial",
     "미디 스커트 — 무릎 아래 치마": "midi skirt, below-knee length, elegant editorial",
     "맥시 스커트 — 긴 치마": "maxi skirt, floor-length flowing skirt, dramatic editorial",
     "골프/테니스 스커트 — 스포티 미니": "golf tennis mini skirt, pleated sporty skirt, athletic glamour",
     "플레어 스커트 — 퍼지는 스커트": "flare skirt, A-line silhouette, feminine movement",
     "타이트 미니 — 몸에 딱 붙는 미니": "tight bodycon mini skirt, figure-hugging short skirt",
+    "하이슬릿 스커트 — 트임 있는 스커트": "high-slit skirt, dramatic leg reveal, red carpet editorial",
+    # ── 팬츠/쇼츠 ──
     "하이웨이스트 쇼츠 — 반바지": "high-waist shorts, cropped legs, casual glamour editorial",
     "데님 쇼츠 — 청반바지": "denim cut-off shorts, casual summer editorial",
     "레깅스 — 타이트 레깅스": "high-waist leggings, fitted athletic pants, fitness editorial",
     "와이드 팬츠 — 넓은 바지": "wide-leg trousers, flowing palazzo pants, elegant editorial",
-    "하이슬릿 스커트 — 트임 있는 스커트": "high-slit skirt, dramatic leg reveal, red carpet editorial",
+    "스키니 팬츠 — 슬림 팬츠": "skinny pants, slim-fit trousers, sleek fashion editorial",
 }
 
 ENVIRONMENTS = {
@@ -447,6 +471,21 @@ HAIR_STYLES = {
     "루즈 업도 — 흘러내리는 웨이브 업": "loose romantic updo, soft tendrils falling, undone elegance",
     "스포티 번 — 높은 번 헤어": "high messy bun, sporty topknot, casual athletic chic",
     "사이드 스웹 — 한쪽으로 넘긴 글래머": "side-swept hair, dramatic one-side drape, old Hollywood glamour",
+    # ── 브레이드 계열 ──
+    "박스 브레이드 — 아프리칸 박스 브레이드": "box braids, African-inspired box braids, bold editorial statement",
+    "콘로우 — 두피 밀착 땋기": "cornrow braids, sleek scalp braids, powerful editorial look",
+    "브레이드 크라운 — 머리 위 땋은 왕관": "braided crown, crown braid updo, goddess editorial style",
+    "보호 스타일 — 점보 트위스트": "jumbo twists, protective style, editorial natural hair",
+    # ── 자연 곱슬 계열 ──
+    "아프로 — 자연 곱슬 아프로": "natural afro hair, voluminous coil curls, powerful natural beauty",
+    "컬리 내추럴 — 자연 곱슬": "natural curly hair, defined coils, fresh natural editorial",
+    "롱 컬리 — 긴 곱슬머리": "long curly hair, voluminous cascading curls, romantic editorial",
+    # ── 미디엄 길이 ──
+    "미디엄 웨이브 — 중간 길이 웨이브": "medium length wavy hair, shoulder-length waves, effortless editorial",
+    "미디엄 스트레이트 — 중간 길이 생머리": "medium straight hair, sleek shoulder-length, clean editorial",
+    # ── 개성 있는 스타일 ──
+    "투블록 — 언더컷 투블록": "undercut two-block haircut, edgy modern style, bold editorial",
+    "딥 사이드파트 — 깊은 가르마": "deep side part, dramatic parting, old Hollywood glamour",
 }
 
 HAIR_COLORS = {

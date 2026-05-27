@@ -137,7 +137,7 @@ with st.sidebar:
     st.markdown("### ⚙️ 전역 설정")
     st.markdown("---")
     global_platform = st.radio("🖥️ 출력 플랫폼", options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"], index=0)
-    global_aspect   = st.selectbox("📐 이미지 비율", options=list(ASPECT_RATIOS.keys()), index=0)
+    global_aspect   = st.selectbox("📐 이미지 비율", options=list(ASPECT_RATIOS.keys()), index=0, help="★ = 기본값 권장")
     global_realism      = st.toggle("📷 실사 모드", value=True)
     global_art_fallback = st.toggle("🎨 위험 시 아트 스타일", value=False, help="HIGH 위험 감지 시 수채화/흑백 자동 적용 — 통과율 우선")
     st.markdown("---")

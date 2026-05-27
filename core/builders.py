@@ -138,11 +138,16 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
 
 def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     aspect_map    = {
-        "세로 2:3 — 인물 기본": "vertical portrait 2:3",
+        "세로 2:3 — 인물 기본 ★": "vertical portrait 2:3",
+        "세로 9:16 — 모바일/릴스": "vertical portrait 9:16, mobile format",
         "세로 3:4 — 전신샷": "vertical portrait 3:4",
-        "가로 16:9 — 시네마틱": "wide cinematic 16:9",
-        "가로 4:3 — 화보": "wide editorial 4:3",
-        "정방형 1:1 — 인스타": "square format 1:1",
+        "세로 4:5 — 인스타 세로": "vertical portrait 4:5",
+        "정방형 1:1 — 인스타 피드": "square format 1:1",
+        "가로 16:9 — 시네마틱 와이드": "wide cinematic 16:9",
+        "가로 4:3 — 화보/매거진": "wide editorial 4:3",
+        "가로 3:2 — 클래식 가로": "wide classic 3:2",
+        "가로 2:1 — 파노라마": "wide panoramic 2:1",
+        "가로 21:9 — 울트라와이드": "ultrawide cinematic 21:9",
     }
     aspect_desc   = aspect_map.get(aspect, "vertical portrait 2:3")
     image_style_key = data.get('image_style', '없음')
@@ -245,11 +250,16 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
 
 def build_midjourney_prompt(data: dict, aspect: str) -> str:
     ar_map        = {
-        "세로 2:3 — 인물 기본": "2:3",
+        "세로 2:3 — 인물 기본 ★": "2:3",
+        "세로 9:16 — 모바일/릴스": "9:16",
         "세로 3:4 — 전신샷": "3:4",
-        "가로 16:9 — 시네마틱": "16:9",
-        "가로 4:3 — 화보": "4:3",
-        "정방형 1:1 — 인스타": "1:1",
+        "세로 4:5 — 인스타 세로": "4:5",
+        "정방형 1:1 — 인스타 피드": "1:1",
+        "가로 16:9 — 시네마틱 와이드": "16:9",
+        "가로 4:3 — 화보/매거진": "4:3",
+        "가로 3:2 — 클래식 가로": "3:2",
+        "가로 2:1 — 파노라마": "2:1",
+        "가로 21:9 — 울트라와이드": "21:9",
     }
     ar            = ar_map.get(aspect, "2:3")
     appearance    = MODEL_APPEARANCE.get(data.get('appearance', ''), '').split(',')[0]
