@@ -344,6 +344,23 @@ STYLES = {
     "발망 — 파워 글래머 구조적": "Balmain power glamour, structured couture editorial, bold luxury",
     "구찌 — 이클레틱 맥시멀리즘": "Gucci eclectic maximalism, bold prints, luxury fashion editorial",
     "프라다 — 지적인 미니멀 럭셔리": "Prada intellectual minimalist luxury, avant-garde editorial",
+    # ── 패션 잡지 커버 ──
+    "보그 커버 — 클래식 화이트 배경": "Vogue magazine cover, clean white background, direct camera gaze, text space at top, iconic fashion cover shot",
+    "하퍼스 바자 커버 — 다크 럭셔리": "Harper's Bazaar magazine cover, dark luxury background, dramatic lighting, high fashion cover editorial",
+    "엘르 커버 — 컬러풀 팝": "Elle magazine cover, colorful vibrant background, playful glamour, modern fashion cover shot",
+    "코스모폴리탄 커버 — 글래머": "Cosmopolitan magazine cover, bold glamour, direct eye contact, confident beauty cover shot",
+    "W 매거진 커버 — 아방가르드": "W Magazine cover, avant-garde artistic composition, bold editorial cover, luxury fashion",
+    "누메로 커버 — 아트 에디토리얼": "Numero magazine cover, artistic editorial, high concept fashion cover photography",
+    # ── 스포츠/피트니스 잡지 커버 ──
+    "머슬앤피트니스 커버 — 피트니스": "Muscle and Fitness magazine cover, athletic glamour, fitness model cover shot, strong confident pose",
+    "셰이프 커버 — 건강미": "Shape magazine cover, healthy athletic beauty, fitness lifestyle cover, energetic pose",
+    "러너스 월드 커버 — 애슬레틱": "Runner's World magazine cover, athletic editorial, dynamic running pose, sports lifestyle",
+    "나이키 캠페인 — 파워 스포츠": "Nike campaign editorial, powerful athletic presence, sports performance photography",
+    # ── 라이프스타일/문화 커버 ──
+    "내셔널지오그래픽 — 문화/여행": "National Geographic style editorial, cultural fashion photography, travel lifestyle cover",
+    "롤링스톤 커버 — 록스타 글래머": "Rolling Stone magazine cover, rock star glamour, bold artistic cover shot",
+    "타임 — 파워풀 포트레이트": "Time magazine cover style, powerful portrait, strong direct gaze, iconic cover composition",
+    "플레이보이 빈티지 — 클래식 글래머": "vintage glamour photography, classic pin-up editorial, retro glamour cover style",
 }
 
 MATERIALS = {
