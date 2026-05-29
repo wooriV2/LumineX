@@ -35,6 +35,7 @@ from core.data import (
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD,
     COLOR_GRADES, MOOD, TIME_OF_DAY, LENS_EFFECT,
     TOP_TYPES, BOTTOM_TYPES,  # 6번: 상하의 분리
+    SKIN_DETAILS, NAILS,        # 신규 섹션
 )
 from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
 from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
