@@ -667,6 +667,49 @@ BODY_OIL = {
     "스웨티 글로스 — 땀+오일 믹스": "sweaty oiled skin, post-workout glistening, athletic perspiration mixed with oil",
 }
 
+# ── 피부 디테일 ──
+SKIN_DETAILS = {
+    "없음": "",
+    # ── 탄 라인 ──
+    "비키니 탄 라인 — 희미한 수영복 자국": "subtle bikini tan lines, sun-kissed skin contrast, beach goddess",
+    "딥 탄 라인 — 선명한 탄 자국": "defined tan lines, strong swimsuit tan marks, bronzed skin contrast",
+    "서퍼 탄 라인 — 자연스러운 서퍼 탄": "natural surfer tan lines, sun-kissed outdoor tanning, beach athletic",
+    # ── 주근깨 ──
+    "자연 주근깨 — 코+볼 주근깨": "natural freckles across nose and cheeks, sun-kissed freckled skin",
+    "골든 주근깨 — 황금빛 주근깨": "golden sun freckles, warm scattered freckles, sun-kissed beauty marks",
+    "연한 주근깨 — 희미한 주근깨": "light subtle freckles, barely-there freckles, natural skin texture",
+    "짙은 주근깨 — 선명한 주근깨": "heavy freckles, bold freckled skin, strong freckle pattern",
+    # ── 피부 결 ──
+    "매끄러운 — 완벽하게 매끄러운": "porcelain smooth skin, flawless perfection, editorial finish",
+    "자연 결 — 자연스러운 피부 결": "natural skin texture, visible pores, realistic skin detail",
+    "보습 광채 — 촉촉한 광채": "hydrated dewy glow, plump moisturized skin, healthy luminosity",
+    # ── 특별 마킹 ──
+    "버스마크 — 자연스러운 점/마킹": "natural beauty marks, moles, authentic skin markings",
+    "스트레치 마크 — 바디 포지티브": "natural stretch marks, body positive skin, authentic beauty",
+}
+
+# ── 네일 ──
+NAILS = {
+    "없음": "",
+    # ── 기본 컬러 ──
+    "레드 네일 — 클래식 레드": "classic red nail polish, bold red nails, timeless glamour",
+    "누드 네일 — 자연스러운 누드": "nude nail polish, natural nail color, subtle elegance",
+    "블랙 네일 — 엣지 블랙": "black nail polish, edgy dark nails, bold statement",
+    "화이트 네일 — 깔끔한 화이트": "white nail polish, clean minimal nails, fresh editorial",
+    "핑크 네일 — 소프트 핑크": "soft pink nail polish, feminine nails, delicate glamour",
+    # ── 특별 스타일 ──
+    "글리터 네일 — 반짝이는 글리터": "glitter nail polish, sparkly nails, glamorous shimmer",
+    "홀로그램 네일 — 홀로그램 효과": "holographic nail polish, iridescent nails, futuristic shimmer",
+    "프렌치 네일 — 클래식 프렌치": "French manicure, white tip nails, classic elegance",
+    "옴브레 네일 — 그라데이션": "ombre gradient nails, color fade nail art, artistic nails",
+    "네일 아트 — 정교한 네일 아트": "intricate nail art design, hand-painted nails, artistic manicure",
+    # ── 길이/형태 ──
+    "롱 스틸레토 — 길고 뾰족한": "long stiletto nails, sharp pointed tips, dramatic length",
+    "롱 아몬드 — 길고 아몬드형": "long almond-shaped nails, elegant curved tips",
+    "숏 스퀘어 — 짧은 네모형": "short square nails, clean squared tips, minimal style",
+    "발레리나 — 관棺형 발레리나": "coffin-shaped nails, ballerina nails, dramatic length",
+}
+
 POSES = {
     "없음": "",
     "파워 스탠딩 — 손 허리, 당당한": "powerful standing pose, hands on hips, confident dominant stance",

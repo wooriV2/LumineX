@@ -328,6 +328,8 @@ with tab2:
         st.session_state.r_era             = rnd_maybe(ERA,            0.15)
         st.session_state.r_concept         = rnd_maybe(CONCEPT,        0.15)
         st.session_state.r_lens_effect     = rnd_maybe(LENS_EFFECT,    0.15)
+        st.session_state.r_skin_detail     = rnd_maybe(SKIN_DETAILS,   0.20)
+        st.session_state.r_nails           = rnd_maybe(NAILS,          0.30)
 
         st.session_state.r_age         = "없음"
         st.session_state.r_model_count = "1명 — 싱글 모델 (기본)"
@@ -361,6 +363,8 @@ with tab2:
         body_oil    = st.selectbox("✨ 바디 오일/글로스",           list(BODY_OIL.keys()),          index=idx(BODY_OIL,         "r_body_oil"))
         expression  = st.selectbox("😏 표정/눈빛",                 list(EXPRESSION.keys()),        index=idx(EXPRESSION,       "r_expression"))
         tattoo      = st.selectbox("🎨 문신/바디아트",              list(TATTOO.keys()),            index=idx(TATTOO,           "r_tattoo"))
+        skin_detail = st.selectbox("🌿 피부 디테일",               list(SKIN_DETAILS.keys()),      index=idx(SKIN_DETAILS,     "r_skin_detail"))
+        nails       = st.selectbox("💅 네일",                      list(NAILS.keys()),             index=idx(NAILS,            "r_nails"))
         model_count = st.selectbox("👥 모델 수",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
     with col2:
         st.markdown("##### 👗 스타일")
@@ -774,6 +778,8 @@ style: {safe_options['style']}"""}]
             "weather":       ss("r_weather",      WEATHER),
             "expression":    ss("r_expression",   EXPRESSION),
             "tattoo":        ss("r_tattoo",       TATTOO),
+            "skin_detail":   ss("r_skin_detail",  SKIN_DETAILS),
+            "nails":         ss("r_nails",         NAILS),
             "body_oil":      ss("r_body_oil",     BODY_OIL),
             "bg_crowd":      ss("r_bg_crowd",     BG_CROWD),
             "mood":          ss("r_mood",         MOOD),

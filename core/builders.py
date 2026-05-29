@@ -9,6 +9,7 @@ from core.data import (
     SPECIAL_EFFECTS, IMAGE_STYLE, PROPS, MAKEUP, ACCESSORIES, SKIN_TONES,
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD, COLOR_GRADES, ASPECT_RATIOS,
     MOOD, TIME_OF_DAY, LENS_EFFECT,
+    SKIN_DETAILS, NAILS,
     ART_IMAGE_STYLES, FULLBODY_ANGLES, CLOSEUP_ANGLES,
 )
 
@@ -80,6 +81,8 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     mood          = MOOD.get(data.get('mood', ''), '')
     time_of_day   = TIME_OF_DAY.get(data.get('time_of_day', ''), '')
     lens_effect   = LENS_EFFECT.get(data.get('lens_effect', ''), '')
+    skin_detail   = SKIN_DETAILS.get(data.get('skin_detail', ''), '')
+    nails         = NAILS.get(data.get('nails', ''), '')
 
     # ── 4번: 앵글별 frame suffix ──
     angle_key   = data['angle']
@@ -109,6 +112,8 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         f"Skin: {skin_tone}." if skin_tone else "",
         f"Body oil: {body_oil}." if body_oil else "",
         f"Tattoo/Body art: {tattoo}." if tattoo else "",
+        f"Skin detail: {skin_detail}." if skin_detail else "",
+        f"Nails: {nails}." if nails else "",
         f"Hair: {hair_str}." if hair_str else "",
         f"Makeup: {makeup}." if makeup else "",
         f"Accessories: {accessories}." if accessories else "",
@@ -193,6 +198,8 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     mood          = MOOD.get(data.get('mood', ''), '')
     time_of_day   = TIME_OF_DAY.get(data.get('time_of_day', ''), '')
     lens_effect   = LENS_EFFECT.get(data.get('lens_effect', ''), '')
+    skin_detail   = SKIN_DETAILS.get(data.get('skin_detail', ''), '')
+    nails         = NAILS.get(data.get('nails', ''), '')
     appearance_desc = f"with {appearance}" if appearance else ""
 
     # ── 4번: 앵글별 frame suffix ──
