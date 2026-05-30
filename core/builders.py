@@ -4,7 +4,7 @@ LumineX core/builders.py
 """
 from core.data import (
     MODEL_APPEARANCE, AGE_APPEARANCE, MODEL_TYPES, BODY_WEIGHT, BUST_SIZE, HIP_SIZE,
-    OUTFIT_TYPES, MATERIALS, ENVIRONMENTS, STYLES, LIGHTING, CAMERA_ANGLES,
+    OUTFIT_TYPES, MATERIALS, ENVIRONMENTS, STYLES, LIGHTING, CAMERA_ANGLES, FRAMING,
     FOOTWEAR, CAMERAS, HAIR_STYLES, HAIR_COLORS, MODEL_COUNT, ERA, CONCEPT,
     SPECIAL_EFFECTS, IMAGE_STYLE, PROPS, MAKEUP, ACCESSORIES, SKIN_TONES,
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD, COLOR_GRADES, ASPECT_RATIOS,
@@ -23,14 +23,18 @@ def _is_art_style(image_style: str) -> bool:
     return image_style in ART_IMAGE_STYLES
 
 
-def _get_frame_suffix(angle: str) -> str:
+def _get_frame_suffix(framing: str, angle: str = "") -> str:
     """
-    4번: 앵글에 따라 suffix 자동 조정
-    - 전신샷: 'model fills the entire frame' 유지, 'close-up' 제거
+    프레이밍에 따라 suffix 자동 조정
+    - 전신샷: 'model fills the entire frame' 유지
     - 클로즈업: 'close-up portrait framing' 사용
     - 기타: 기본
     """
-    if angle in FULLBODY_ANGLES:
+    if framing in FULLBODY_ANGLES:
+        return "model fills the entire frame"
+    elif framing in CLOSEUP_ANGLES:
+        return "intimate close-up portrait framing"
+    elif angle in FULLBODY_ANGLES:
         return "model fills the entire frame"
     elif angle in CLOSEUP_ANGLES:
         return "intimate close-up portrait framing"
@@ -85,9 +89,11 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     nails         = NAILS.get(data.get('nails', ''), '')
 
     # ── 4번: 앵글별 frame suffix ──
-    angle_key   = data['angle']
-    angle_val   = CAMERA_ANGLES[angle_key]
-    frame_suffix = _get_frame_suffix(angle_key)
+    angle_key    = data.get('angle', '없음')
+    angle_val    = CAMERA_ANGLES.get(angle_key, '') if angle_key != '없음' else ''
+    framing_key  = data.get('framing', '없음')
+    framing_val  = FRAMING.get(framing_key, '') if framing_key != '없음' else ''
+    frame_suffix = _get_frame_suffix(framing_key, angle_key)
 
     # ── 상하의 분리 조합 처리 ──
     top_val    = data.get('top_type', '')
@@ -101,7 +107,7 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         outfit_wearing = outfit
 
     parts = [
-        f"Professional fashion photograph, {angle_val}, {frame_suffix}.",
+        f"Professional fashion photograph, {framing_val + ", " if framing_val else ""}{angle_val + ", " if angle_val else ""}{frame_suffix}.",
         f"{model_subject}: {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
         f"Age: {age}." if age else "",
         f"Body adjustment: {body_str}." if body_str else "",
@@ -168,8 +174,10 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     light         = LIGHTING[data['light']]
     style         = STYLES[data['style']]
     camera        = CAMERAS[data['camera']]
-    angle_key     = data['angle']
-    angle         = CAMERA_ANGLES[angle_key]
+    angle_key     = data.get('angle', '없음')
+    angle         = CAMERA_ANGLES.get(angle_key, '') if angle_key != '없음' else ''
+    framing_key   = data.get('framing', '없음')
+    framing_val   = FRAMING.get(framing_key, '') if framing_key != '없음' else ''
     footwear      = FOOTWEAR.get(data.get('footwear', ''), '')
     pose          = POSES.get(data.get('pose', ''), '')
     color_grade   = COLOR_GRADES.get(data.get('color_grade', ''), '')
@@ -203,7 +211,7 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     appearance_desc = f"with {appearance}" if appearance else ""
 
     # ── 4번: 앵글별 frame suffix ──
-    frame_suffix = _get_frame_suffix(angle_key)
+    frame_suffix = _get_frame_suffix(framing_key, angle_key)
 
     # ── 상하의 분리 조합 처리 ──
     top_val    = data.get('top_type', '')
@@ -225,7 +233,7 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         quality_suffix = ""
 
     return (
-        f"Professional luxury fashion editorial photograph, {aspect_desc}, {angle}, {frame_suffix}. "
+        f"Professional luxury fashion editorial photograph, {aspect_desc}, {framing_val + ", " if framing_val else ""}{angle + ", " if angle else ""}{frame_suffix}. "
         f"{model_subject} {appearance_desc}, {model}, elegant couture presence. "
         f"{'Age: ' + age + '. ' if age else ''}"
         f"{'Body: ' + body_str + '. ' if body_str else ''}"

@@ -35,7 +35,8 @@ from core.data import (
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD,
     COLOR_GRADES, MOOD, TIME_OF_DAY, LENS_EFFECT,
     TOP_TYPES, BOTTOM_TYPES,  # 6번: 상하의 분리
-    SKIN_DETAILS, NAILS,        # 신규 섹션
+    SKIN_DETAILS, NAILS,      # 신규 섹션
+    FRAMING,                  # 프레이밍 분리
 )
 from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
 from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
@@ -301,6 +302,7 @@ with tab2:
         st.session_state.r_material    = rnd(MATERIALS)
         st.session_state.r_env         = rnd(ENVIRONMENTS)
         st.session_state.r_light       = rnd(LIGHTING)
+        st.session_state.r_framing     = rnd(FRAMING)
         st.session_state.r_angle       = rnd(CAMERA_ANGLES)
         st.session_state.r_style       = rnd(STYLES)
         st.session_state.r_camera      = rnd(CAMERAS)
@@ -408,6 +410,7 @@ with tab2:
         weather     = st.selectbox("🌦️ 날씨/기상",                 list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
         time_of_day = st.selectbox("🕐 촬영 시간대",               list(TIME_OF_DAY.keys()),       index=idx(TIME_OF_DAY,      "r_time_of_day"))
         lighting    = st.selectbox("💡 조명 — 빛의 분위기",        list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
+        framing     = st.selectbox("🖼️ 프레이밍 — 구도/크기",          list(FRAMING.keys()),           index=idx(FRAMING,          "r_framing"))
         angle       = st.selectbox("📸 카메라 앵글",               list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
         camera      = st.selectbox("📷 카메라 — 장비",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
         lens_effect = st.selectbox("🔭 렌즈/초점 효과",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
@@ -788,6 +791,7 @@ style: {safe_options['style']}"""}]
             "lens_effect":   ss("r_lens_effect",  LENS_EFFECT),
             "env":           ss("r_env",          ENVIRONMENTS),
             "light":         ss("r_light",        LIGHTING),
+            "framing":       ss("r_framing",      FRAMING),
             "angle":         ss("r_angle",        CAMERA_ANGLES),
             "style":         ss("r_style",        STYLES),
             "camera":        ss("r_camera",       CAMERAS),

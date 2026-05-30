@@ -408,25 +408,39 @@ LIGHTING = {
     "스플릿 라이팅 — 얼굴 반반 명암": "split lighting, half face light half shadow, dramatic contrast",
 }
 
-CAMERA_ANGLES = {
-    "전신샷 — 머리부터 발끝": "full body head-to-toe shot",
+# ── 프레이밍 (피사체를 얼마나 담느냐) ──
+FRAMING = {
+    "없음": "",
+    "전신샷 — 머리부터 발끝": "full body head-to-toe shot, model fills the entire frame",
+    "7/8 샷 — 발목까지": "7/8 shot ankle to head, almost full body",
     "3/4 샷 — 허벅지까지": "3/4 body shot thigh to head",
     "니어샷 — 무릎 위까지": "knee-up editorial shot, three-quarter length composition",
-    "웨이스트샷 — 상반신 집중": "waist-up cinematic composition",
-    "로우앵글 — 아래서 위로 올려다보기": "low angle upward shot, powerful editorial perspective",
-    "클로즈업 — 얼굴+상체 집중": "close-up beauty shot, face and shoulder emphasis",
-    "오버헤드 — 위에서 내려다보기": "cinematic high-angle composition, elevated fashion perspective",
-    "사이드 프로필 — 옆모습 실루엣": "side profile shot, elegant silhouette from the side",
-    "백샷 — 뒤에서 촬영, 등 강조": "back view shot, elegant over-shoulder composition, fashion editorial",
-    "익스트림 클로즈업 — 얼굴만 극접사": "extreme close-up face only, skin texture detail",
-    "더치앵글 — 기울어진 역동적": "dutch angle tilt, dynamic editorial composition",
-    "버즈아이 — 45도 하이앵글": "45 degree high angle, elegant elevated editorial perspective",
+    "웨이스트샷 — 허리 위 상반신": "waist-up cinematic composition",
+    "버스트샷 — 가슴 위 상반신": "bust shot chest to head, upper body portrait",
+    "클로즈업 — 얼굴+어깨": "close-up beauty shot, face and shoulder emphasis",
+    "익스트림 클로즈업 — 얼굴만": "extreme close-up face only, skin texture detail, intimate portrait",
+    "디테일샷 — 신체 부위 클로즈업": "detail shot, specific body part close-up, fashion detail emphasis",
+    "환경 포트레이트 — 배경+인물 동등": "environmental portrait, subject and background equal emphasis",
+    "매거진 커버 — 텍스트 공간 확보": "magazine cover framing, text space at top, iconic cover composition",
 }
 
-# 전신 강조 앵글 (fills frame suffix 제거 대상)
-FULLBODY_ANGLES = {"전신샷 — 머리부터 발끝", "3/4 샷 — 허벅지까지", "니어샷 — 무릎 위까지"}
-# 클로즈업 앵글 (full body suffix 제거 대상)
-CLOSEUP_ANGLES = {"클로즈업 — 얼굴+상체 집중", "익스트림 클로즈업 — 얼굴만 극접사", "웨이스트샷 — 상반신 집중"}
+# ── 카메라 앵글 (카메라 위치/방향) ──
+CAMERA_ANGLES = {
+    "없음": "",
+    "아이레벨 — 정면 수평": "eye level straight-on shot, direct frontal composition",
+    "로우앵글 — 아래서 위로": "low angle upward shot, powerful editorial perspective",
+    "하이앵글 — 위에서 내려다보기": "cinematic high-angle composition, elevated fashion perspective",
+    "버즈아이 — 45도 하이앵글": "45 degree high angle, elegant elevated editorial perspective",
+    "더치앵글 — 기울어진 역동적": "dutch angle tilt, dynamic editorial composition",
+    "사이드 프로필 — 옆모습": "side profile shot, elegant silhouette from the side",
+    "백샷 — 뒤에서 촬영": "back view shot, elegant over-shoulder composition, fashion editorial",
+    "쓰리쿼터 앵글 — 45도 정면": "three-quarter angle, 45 degree front view, classic portrait angle",
+}
+
+# 전신 강조 프레이밍 (fills frame suffix 제거 대상)
+FULLBODY_ANGLES = {"전신샷 — 머리부터 발끝", "7/8 샷 — 발목까지", "3/4 샷 — 허벅지까지", "니어샷 — 무릎 위까지"}
+# 클로즈업 프레이밍 (full body suffix 제거 대상)
+CLOSEUP_ANGLES = {"클로즈업 — 얼굴+어깨", "익스트림 클로즈업 — 얼굴만", "버스트샷 — 가슴 위 상반신", "웨이스트샷 — 허리 위 상반신"}
 
 # 아트 스타일 목록 (실사 suffix 제거 대상)
 ART_IMAGE_STYLES = {
