@@ -477,18 +477,36 @@ ART_IMAGE_STYLES = {
 
 FOOTWEAR = {
     "없음": "",
+    # ── 힐 계열 ──
     "스틸레토 힐 — 극도로 높은 힐": "wearing extreme stiletto heels, legs elongated",
-    "스트래피 샌들 힐 — 얇은 끈 샌들 힐": "wearing strappy high heel sandals, elegant feet",
-    "플랫폼 부츠 — 두꺼운 솔, 파워풀": "wearing platform boots, powerful stance",
+    "메가 플랫폼 스틸레토 — 초두꺼운 플랫폼+힐": "wearing mega platform stiletto heels, extremely thick platform sole with sky-high heel, towering height",
+    "플랫폼 힐 — 두꺼운 앞굽 힐": "wearing platform heels, thick platform sole, elevated glamour",
+    "청키 힐 — 두꺼운 굵은 힐": "wearing chunky block heels, thick square heel, bold statement",
+    "키튼 힐 — 낮고 섬세한 힐": "wearing kitten heels, delicate low heel, refined elegance",
+    "웨지 힐 — 쐐기형 힐": "wearing wedge heels, solid wedge sole, casual glamour",
+    "포인티드 토 힐 — 뾰족한 앞코 힐": "wearing pointed toe stiletto pumps, classic glamour",
+    "스트래피 샌들 힐 — 얇은 끈 샌들": "wearing strappy high heel sandals, elegant feet",
+    "뮬 힐 — 뒤가 없는 슬립온": "wearing mule heels, backless slip-on stiletto",
+    "크리스탈 힐 — 반짝이는 투명 힐": "wearing crystal clear transparent heels",
+    "골드 힐 — 골드 메탈릭 힐": "wearing gold metallic heels, luxury gold stiletto, glamorous",
+    "앵클 스트랩 힐 — 발목 끈 힐": "wearing ankle strap heels, elegant ankle wrap",
+    # ── 부츠 계열 ──
+    "플랫폼 부츠 — 두꺼운 솔 부츠": "wearing platform boots, thick sole, powerful stance",
     "무릎까지 부츠 — 니하이 부츠": "wearing knee-high boots, sleek long legs",
     "허벅지까지 부츠 — 싸이하이 부츠": "wearing thigh-high boots, bold fashion statement",
-    "포인티드 토 힐 — 뾰족한 앞코 힐": "wearing pointed toe stiletto pumps, classic glamour",
-    "글래디에이터 샌들 — 끈이 종아리까지": "wearing gladiator sandals, lace-up straps up the calf",
-    "뮬 힐 — 뒤가 없는 슬링백 힐": "wearing mule heels, backless slip-on stiletto",
-    "크리스탈 힐 — 반짝이는 투명 힐": "wearing crystal clear transparent heels",
+    "앵클 부츠 — 발목 부츠": "wearing ankle boots, sleek short boots, edgy chic",
+    "카우보이 부츠 — 웨스턴 스타일": "wearing cowboy boots, western style, bold fashion statement",
+    "PVC 부츠 — 투명 비닐 부츠": "wearing clear PVC transparent boots, futuristic fashion",
+    # ── 샌들/플랫 계열 ──
+    "글래디에이터 샌들 — 종아리까지 끈": "wearing gladiator sandals, lace-up straps up the calf",
+    "플랫폼 샌들 — 두꺼운 플랫폼 샌들": "wearing platform sandals, thick platform sole sandal, summer glamour",
+    "슬라이드 샌들 — 오픈토 슬라이드": "wearing slide sandals, open toe slip-on, luxury resort style",
     "맨발 — 자연스러운": "barefoot, natural",
+    # ── 스포츠/캐주얼 ──
     "스포츠 스니커즈 — 운동화": "wearing sporty sneakers, athletic shoes, casual glamour",
+    "하이탑 스니커즈 — 높은 운동화": "wearing high-top sneakers, bold statement athletic shoes",
     "골프화 — 스포티 골프 슈즈": "wearing golf shoes, sporty footwear, country club style",
+    "테니스화 — 클래식 테니스 슈즈": "wearing tennis shoes, classic court shoes, sporty chic",
 }
 
 CAMERAS = {
