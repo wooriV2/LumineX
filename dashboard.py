@@ -306,7 +306,7 @@ with tab2:
         st.session_state.r_framing     = rnd(FRAMING)
         st.session_state.r_angle       = rnd(CAMERA_ANGLES)
         st.session_state.r_style       = rnd(STYLES)
-        st.session_state.r_cover_style = rnd_maybe(COVER_STYLES, 0.20)
+        st.session_state.r_cover_style = "없음"
         st.session_state.r_camera      = rnd(CAMERAS)
         st.session_state.r_pose        = rnd(POSES)
         st.session_state.r_expression  = rnd(EXPRESSION)
@@ -335,6 +335,7 @@ with tab2:
         st.session_state.r_lens_effect     = rnd_maybe(LENS_EFFECT,    0.15)
         st.session_state.r_skin_detail     = rnd_maybe(SKIN_DETAILS,   0.20)
         st.session_state.r_nails           = rnd_maybe(NAILS,          0.30)
+        st.session_state.r_cover_style     = rnd_maybe(COVER_STYLES,   0.20)
 
         st.session_state.r_age         = "없음"
         st.session_state.r_model_count = "1명 — 싱글 모델 (기본)"
