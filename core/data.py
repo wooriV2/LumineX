@@ -327,40 +327,62 @@ INDOOR_ENVIRONMENTS = {
 }
 
 STYLES = {
-    "빅토리아 시크릿 패션쇼": "Victoria's Secret fashion show runway editorial",
-    "스포츠 일러스트레이티드 수영복": "Sports Illustrated swimsuit special edition",
-    "보그 이탈리아 하이패션": "Vogue Italia high-fashion editorial",
-    "베르사체 캠페인 — 대담한 럭셔리": "Versace campaign bold luxury glamour",
-    "하퍼스 바자 — 관능적 에디토리얼": "Harper's Bazaar sensual fashion editorial",
-    "발렌티노 — 레드 카펫 럭셔리": "Valentino red carpet luxury editorial",
-    "돌체앤가바나 — 이탈리안 글래머": "Dolce and Gabbana Italian glamour editorial",
-    "티에리 뮈글러 — 파워 패션": "Thierry Mugler inspired power fashion editorial",
-    "알렉산더 맥퀸 — 드라마틱": "Alexander McQueen dramatic fashion editorial",
-    "사이버펑크 — 시네마틱": "cyberpunk cinematic fashion photography",
-    "스포츠 럭셔리 — 나이키/아디다스 하이엔드": "luxury sports editorial, high-end athletic fashion",
-    "발렌시아가 — 아방가르드 미래적": "Balenciaga avant-garde futuristic fashion editorial",
+    # ── 빅 하우스 ──
+    "빅토리아 시크릿 패션쇼": "Victoria's Secret fashion show editorial, VS Angel body, glamorous lingerie runway",
+    "스포츠 일러스트레이티드 수영복": "Sports Illustrated swimsuit editorial, luxury beach photography",
+    "보그 이탈리아 하이패션": "Vogue Italia high-fashion editorial, avant-garde luxury photography",
+    "베르사체 캠페인 — 대담한 럭셔리": "Versace campaign bold luxury glamour, structured couture editorial",
+    "하퍼스 바자 — 관능적 에디토리얼": "Harper's Bazaar sensual fashion editorial, cinematic glamour",
+    "발렌티노 — 레드 카펫 럭셔리": "Valentino red carpet luxury editorial, haute couture photography",
+    "돌체앤가바나 — 이탈리안 글래머": "Dolce and Gabbana Italian glamour, Mediterranean luxury editorial",
+    "티에리 뮈글러 — 파워 패션": "Thierry Mugler power fashion editorial, dark haute couture photography",
+    "알렉산더 맥퀸 — 드라마틱": "Alexander McQueen dramatic fashion editorial, dark artistic photography",
+    "발렌시아가 — 아방가르드 미래적": "Balenciaga avant-garde futuristic editorial, conceptual luxury fashion",
     "샤넬 — 클래식 럭셔리 우아함": "Chanel classic luxury elegance, timeless couture editorial",
     "지방시 — 다크 럭셔리 강렬함": "Givenchy dark luxury editorial, intense couture glamour",
     "발망 — 파워 글래머 구조적": "Balmain power glamour, structured couture editorial, bold luxury",
     "구찌 — 이클레틱 맥시멀리즘": "Gucci eclectic maximalism, bold prints, luxury fashion editorial",
     "프라다 — 지적인 미니멀 럭셔리": "Prada intellectual minimalist luxury, avant-garde editorial",
-    # ── 패션 잡지 커버 ──
-    "보그 커버 — 클래식 화이트 배경": "Vogue magazine cover, clean white background, direct camera gaze, text space at top, iconic fashion cover shot",
-    "하퍼스 바자 커버 — 다크 럭셔리": "Harper's Bazaar magazine cover, dark luxury background, dramatic lighting, high fashion cover editorial",
-    "엘르 커버 — 컬러풀 팝": "Elle magazine cover, colorful vibrant background, playful glamour, modern fashion cover shot",
-    "코스모폴리탄 커버 — 글래머": "Cosmopolitan magazine cover, bold glamour, direct eye contact, confident beauty cover shot",
-    "W 매거진 커버 — 아방가르드": "W Magazine cover, avant-garde artistic composition, bold editorial cover, luxury fashion",
-    "누메로 커버 — 아트 에디토리얼": "Numero magazine cover, artistic editorial, high concept fashion cover photography",
-    # ── 스포츠/피트니스 잡지 커버 ──
-    "머슬앤피트니스 커버 — 피트니스": "Muscle and Fitness magazine cover, athletic glamour, fitness model cover shot, strong confident pose",
-    "셰이프 커버 — 건강미": "Shape magazine cover, healthy athletic beauty, fitness lifestyle cover, energetic pose",
-    "러너스 월드 커버 — 애슬레틱": "Runner's World magazine cover, athletic editorial, dynamic running pose, sports lifestyle",
+    "이브 생 로랑 — 록시크 럭셔리": "Yves Saint Laurent rock chic luxury, bold feminine power editorial",
+    "버버리 — 브리티시 럭셔리": "Burberry British luxury editorial, classic heritage fashion photography",
+    "에르메스 — 절제된 최상급 럭셔리": "Hermes understated ultimate luxury, quiet elegance editorial",
+    "로에베 — 아트 럭셔리": "Loewe art luxury editorial, craft-driven fashion photography",
+    # ── 캠페인/무드 ──
+    "사이버펑크 — 시네마틱": "cyberpunk cinematic fashion photography",
+    "스포츠 럭셔리 — 나이키/아디다스 하이엔드": "luxury sports editorial, high-end athletic fashion",
     "나이키 캠페인 — 파워 스포츠": "Nike campaign editorial, powerful athletic presence, sports performance photography",
-    # ── 라이프스타일/문화 커버 ──
-    "내셔널지오그래픽 — 문화/여행": "National Geographic style editorial, cultural fashion photography, travel lifestyle cover",
-    "롤링스톤 커버 — 록스타 글래머": "Rolling Stone magazine cover, rock star glamour, bold artistic cover shot",
-    "타임 — 파워풀 포트레이트": "Time magazine cover style, powerful portrait, strong direct gaze, iconic cover composition",
-    "플레이보이 빈티지 — 클래식 글래머": "vintage glamour photography, classic pin-up editorial, retro glamour cover style",
+    "아디다스 오리지널스 — 스트릿 럭셔리": "Adidas Originals street luxury campaign, urban athletic editorial",
+    "올드 머니 — 조용한 럭셔리": "old money aesthetic editorial, quiet luxury fashion photography",
+    "클린 걸 — 미니멀 뷰티": "clean girl aesthetic editorial, minimalist beauty fashion photography",
+    "다크 아카데미아 — 지적 무드": "dark academia aesthetic editorial, intellectual moody fashion photography",
+}
+
+# ── 잡지/화보 커버 ──
+COVER_STYLES = {
+    "없음": "",
+    # ── 패션 잡지 ──
+    "보그 커버 — 클래식 화이트": "Vogue magazine cover layout, clean white background, direct camera gaze, text space at top, iconic fashion cover composition",
+    "하퍼스 바자 커버 — 다크 럭셔리": "Harper's Bazaar magazine cover layout, dark luxury atmosphere, dramatic lighting, high fashion cover editorial",
+    "엘르 커버 — 컬러풀 팝": "Elle magazine cover layout, colorful vibrant background, playful glamour, modern fashion cover shot",
+    "코스모폴리탄 커버 — 글래머": "Cosmopolitan magazine cover layout, bold glamour, direct eye contact, confident beauty cover composition",
+    "W 매거진 커버 — 아방가르드": "W Magazine cover layout, avant-garde artistic composition, bold editorial cover, luxury fashion",
+    "누메로 커버 — 아트 에디토리얼": "Numero magazine cover layout, artistic editorial, high concept fashion cover photography",
+    "보그 파리 커버 — 프렌치 시크": "Vogue Paris cover layout, French chic, effortless luxury, Parisian fashion cover",
+    "아이-D 커버 — 윙크 시그니처": "i-D magazine cover layout, signature wink pose, street fashion cover photography",
+    "다즈드 커버 — 실험적": "Dazed magazine cover layout, experimental editorial, boundary-pushing fashion cover",
+    "인터뷰 커버 — 아이코닉 팝아트": "Interview magazine cover layout, iconic pop art inspired, bold graphic cover composition",
+    # ── 스포츠/피트니스 ──
+    "머슬앤피트니스 커버 — 피트니스": "Muscle and Fitness magazine cover layout, athletic glamour, fitness model cover shot, strong confident pose",
+    "셰이프 커버 — 건강미": "Shape magazine cover layout, healthy athletic beauty, fitness lifestyle cover, energetic pose",
+    "러너스 월드 커버 — 애슬레틱": "Runner's World magazine cover layout, athletic editorial, dynamic running pose, sports lifestyle",
+    "수영복 화보 커버 — SI 스타일": "Sports Illustrated swimsuit issue cover layout, luxury beach photography, iconic swimwear cover",
+    "피트니스 RX 커버 — 바디빌딩": "Fitness RX magazine cover layout, bodybuilding glamour, competition physique cover shot",
+    # ── 라이프스타일/문화 ──
+    "내셔널지오그래픽 — 문화/여행": "National Geographic style cover layout, cultural fashion photography, travel lifestyle cover",
+    "롤링스톤 커버 — 록스타 글래머": "Rolling Stone magazine cover layout, rock star glamour, bold artistic cover shot",
+    "타임 — 파워풀 포트레이트": "Time magazine cover layout, powerful portrait, strong direct gaze, iconic cover composition",
+    "플레이보이 빈티지 — 클래식 글래머": "vintage glamour photography cover layout, classic pin-up editorial, retro glamour cover style",
+    "GQ 커버 — 하이엔드 글래머": "GQ magazine cover layout, high-end fashion glamour, sophisticated editorial cover",
 }
 
 MATERIALS = {

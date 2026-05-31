@@ -37,6 +37,7 @@ from core.data import (
     TOP_TYPES, BOTTOM_TYPES,  # 6번: 상하의 분리
     SKIN_DETAILS, NAILS,      # 신규 섹션
     FRAMING,                  # 프레이밍 분리
+    COVER_STYLES,             # 잡지/화보 커버
 )
 from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
 from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
@@ -305,6 +306,7 @@ with tab2:
         st.session_state.r_framing     = rnd(FRAMING)
         st.session_state.r_angle       = rnd(CAMERA_ANGLES)
         st.session_state.r_style       = rnd(STYLES)
+        st.session_state.r_cover_style = rnd_maybe(COVER_STYLES, 0.20)
         st.session_state.r_camera      = rnd(CAMERAS)
         st.session_state.r_pose        = rnd(POSES)
         st.session_state.r_expression  = rnd(EXPRESSION)
@@ -415,6 +417,7 @@ with tab2:
         camera      = st.selectbox("📷 카메라 — 장비",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
         lens_effect = st.selectbox("🔭 렌즈/초점 효과",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
         style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",    list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
+        cover_style = st.selectbox("📰 커버 스타일 — 잡지/화보",    list(COVER_STYLES.keys()),      index=idx(COVER_STYLES,     "r_cover_style"))
         color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",     list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
         mood        = st.selectbox("🎭 무드/분위기",               list(MOOD.keys()),              index=idx(MOOD,             "r_mood"))
         special_fx  = st.selectbox("🌈 특수 효과",                 list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
@@ -794,6 +797,7 @@ style: {safe_options['style']}"""}]
             "framing":       ss("r_framing",      FRAMING),
             "angle":         ss("r_angle",        CAMERA_ANGLES),
             "style":         ss("r_style",        STYLES),
+            "cover_style":   ss("r_cover_style",   COVER_STYLES),
             "camera":        ss("r_camera",       CAMERAS),
             # ── 6번: 상하의 분리 ──
             "top_type":      st.session_state.get("r_top_type", "없음 (의상 타입 사용)"),
