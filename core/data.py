@@ -93,6 +93,8 @@ MODEL_TYPES = {
     # ── BBW 계열 ──
     "BBW 글래머 — 풍만한 글래머": "BBW glamour model, extremely curvy fashion silhouette, broad hips, thick thighs, soft layered abdomen, luxurious BBW presence, confident couture",
     "슈퍼 BBW — 극풍만 글래머": "super plus-size runway model, massive voluptuous proportions, very heavy curvy physique, broad hips, thick thighs, soft realistic body folds, abundant body volume, maximalist curvy fashion styling",
+    # ── 블랙 글래머 계열 ──
+    "블랙 글래머 — 극강 모래시계 흑인 체형": "Black beauty hourglass, impossibly dramatic waist-to-hip ratio, extremely wide round hips, ultra-narrow waist, very thick thighs, full heavy round buttocks, abundant voluptuous curves, African goddess proportions",
 }
 
 # ── 보정 섹션 (MODEL_TYPES 미세조정용) ──
@@ -314,6 +316,7 @@ ENVIRONMENTS = {
     "아이슬란드 빙하 — 오로라, 신비로운": "Iceland glacier, northern lights aurora borealis, mystical arctic landscape",
     "방콕 사원 — 황금 불탑, 이국적": "Bangkok golden temple, ornate Thai architecture, exotic Southeast Asian glamour",
     "마라케시 수크 — 모로코 시장, 컬러풀": "Marrakech souk market, colorful Moroccan bazaar, exotic North African atmosphere",
+    "루브르 박물관 — 파리 루브르, 그랜드 갤러리": "The Louvre Museum interior, grand ornate gallery halls, classical artwork on walls, marble floors, Paris luxury",
     # ── 실내 환경 태그 (날씨 충돌 감지용) ──
     "컨트리클럽 — 골프코스, 잔디밭": "country club golf course, manicured green lawn, preppy glamour",
     "테니스 코트 — 클래식 테니스 클럽": "tennis court, classic tennis club, athletic glamour editorial",
@@ -557,6 +560,11 @@ HAIR_STYLES = {
     # ── 개성 있는 스타일 ──
     "투블록 — 언더컷 투블록": "undercut two-block haircut, edgy modern style, bold editorial",
     "딥 사이드파트 — 깊은 가르마": "deep side part, dramatic parting, old Hollywood glamour",
+    # ── 귀여움/발랄 ──
+    "트윈테일 — 양갈래 발랄한": "twin tails, double pigtails, playful cute kawaii hairstyle",
+    "사이드 포니 — 한쪽 묶음 발랄": "side ponytail, one-side tied hair, playful casual cute style",
+    "낮은 트윈번 — 양쪽 낮은 번": "low twin buns, double low buns, cute playful hairstyle",
+    "헤드밴드 업 — 헤드밴드로 올린": "headband pushed back hair, casual cute style, fresh editorial",
 }
 
 HAIR_COLORS = {
@@ -809,6 +817,13 @@ POSES = {
     "손으로 얼굴 감싸기 — 양손으로 얼굴": "hands framing face, fingers touching cheeks, intimate beauty pose",
     "턱 괴기 — 손으로 턱 받치고": "chin resting on hand, thoughtful editorial gaze, close-up ready",
     "거울 앞 — 거울 반영, 이중 시선": "standing before mirror, reflection visible, double perspective pose",
+    # ── 귀여움/발랄 ──
+    "브이 포즈 — 손가락 브이, 발랄한": "peace sign V pose, fingers up, playful cute gesture, kawaii editorial",
+    "하트 손 — 손가락으로 하트": "finger heart gesture, Korean heart pose, cute playful editorial",
+    "양손 볼 감싸기 — 귀엽고 청순한": "both hands cupping face, cute shy pose, adorable innocent editorial",
+    "점프 하트 — 공중에서 발랄하게": "jumping with joy, arms spread wide, energetic playful pose, dynamic editorial",
+    "머리 위 하트 — 팔로 하트 모양": "arms forming heart shape above head, cute playful pose, fun editorial",
+    "등 뒤로 손 — 수줍은 포즈": "hands clasped behind back, shy innocent stance, cute editorial pose",
 }
 
 WEATHER = {
@@ -840,6 +855,12 @@ EXPRESSION = {
     "우수 — 슬프고 몽환적인 눈빛": "melancholic dreamy expression, faraway gaze, wistful beauty",
     "화난 — 강렬한 분노, 악당 느낌": "fierce intense expression, villainous energy, dark powerful aura",
     "입술 벌림 — 입술 살짝 열린": "lips slightly parted, calm sophisticated editorial expression",
+    # ── 귀여움/발랄 ──
+    "윙크 — 장난스러운 윙크": "playful wink, one eye closed, mischievous cute expression",
+    "혀 내밀기 — 발랄하고 귀여운": "tongue sticking out slightly, playful cheeky expression, cute editorial",
+    "수줍은 미소 — 청순하고 귀여운": "shy sweet smile, bashful cute expression, innocent beauty",
+    "볼 부풀리기 — 귀엽고 유쾌한": "puffed cheeks, playful pouty expression, adorable cute face",
+    "깜짝 놀란 — 눈 크게 뜨고 귀여운": "wide-eyed surprised expression, cute shocked face, playful editorial",
 }
 
 TATTOO = {
@@ -856,6 +877,8 @@ TATTOO = {
     "천사/악마 타투 — 종교적 아트워크": "angel or demon tattoo, religious iconography ink, dramatic body art",
     "부족 타투 — 폴리네시안/마오리": "tribal tattoo, Polynesian Maori style ink, bold black patterns",
     "전신 바디페인팅 — 몸에 그림": "full body painting art, painted skin, artistic body art canvas",
+    "전신 커버 타투 — 머리부터 발끝 빽빽한 타투": "full body tattoo coverage, head-to-toe intricate tattoo artwork, densely tattooed skin, tattoo collector aesthetic, heavily inked from neck to toe",
+    "이레즈미 전신 — 일본 전통 전신 타투": "Japanese irezumi full body tattoo, traditional Japanese ink art, full body coverage, intricate cultural patterns",
 }
 
 BG_CROWD = {
