@@ -824,6 +824,17 @@ POSES = {
     "점프 하트 — 공중에서 발랄하게": "jumping with joy, arms spread wide, energetic playful pose, dynamic editorial",
     "머리 위 하트 — 팔로 하트 모양": "arms forming heart shape above head, cute playful pose, fun editorial",
     "등 뒤로 손 — 수줍은 포즈": "hands clasped behind back, shy innocent stance, cute editorial pose",
+    # ── 신규 추가 ──
+    "무릎 꿇기 — 의식적/신성한 포즈": "kneeling ceremonial pose, knees on floor, hands clasped or raised, sacred ritual energy",
+    "측면 포즈 — 옆모습 실루엣": "profile side view, facing sideways, elegant side silhouette, fashion editorial",
+    "발레 포즈 — 한 발로 균형 잡는": "ballet arabesque pose, one leg raised, graceful dancer balance, elegant extension",
+    "기도 포즈 — 손 모아 위로 올린": "hands pressed together raised above head, devotional prayer pose, spiritual editorial",
+    "왕좌 포즈 — 의자에 군림하듯 앉은": "seated on ornate throne chair, commanding regal pose, legs crossed, queen energy",
+    "뒤로 기울기 — 아치형으로 몸을 젖힌": "backbend arch pose, spine arched backward, dramatic body curve, dance editorial",
+    "앉아서 무릎 안기 — 바닥에 무릎 끌어안고": "sitting on floor, knees drawn to chest, intimate contemplative pose",
+    "옆으로 누운 — 사이드뷰로 누운": "lying on side, elegant lateral pose, side profile reclined, fashion editorial",
+    "스쿼트 포즈 — 낮게 앉은 역동적": "deep squat pose, low dynamic stance, powerful athletic energy, editorial",
+    "기대어 앉기 — 한쪽으로 기울어 앉은": "sitting leaning to one side, relaxed asymmetric pose, casual glamour",
 }
 
 WEATHER = {
