@@ -1,6 +1,15 @@
 """
 LumineX core/combos.py
 추천 조합(GOOD_COMBOS) + 충돌 규칙(CONFLICT_RULES) + 관련 함수
+
+v3.5 업데이트 (2026-06-04):
+- RISK_SCORES: 바디페인팅 계열 위험도 하향 조정
+- RISK_SCORES: 신규 카테고리 패턴 추가 (팝카와이/전통문화의상/계절테마)
+- 오늘 테스트 결과 반영:
+  * 바디페인팅 아트 계열 → Gemini 95%+, ChatGPT 100% 통과 확인
+  * 예술/문화 맥락 의상 → 필터 통과율 높음
+  * wet_look, barely_there → ChatGPT 통과 확인
+  * topographic → 차단 유지 (신체 윤곽 강조)
 """
 
 # ══════════════════════════════════════════════════════════
@@ -268,7 +277,6 @@ def check_conflicts(angle: str, pose: str, style: str, environment: str, model: 
         if k1 in combined and k2 in combined:
             warnings.append(msg)
 
-    # ── 5번: 실내 환경 + 야외 날씨 충돌 감지 ──
     if weather and weather != "없음":
         env_lower = environment.lower()
         is_indoor = any(kw in env_lower for kw in INDOOR_ENV_KEYWORDS)
@@ -284,12 +292,16 @@ def get_combo_recommendations(model_type: str) -> dict:
 
 # ══════════════════════════════════════════════════════════
 # 자동 필터 검수 (규칙 기반, API 없음)
+# v3.5 업데이트: 오늘 테스트 결과 반영
 # ══════════════════════════════════════════════════════════
 
 RISK_SCORES = {
+    # ── 앵글 ──
     "오버헤드":               ("angle",    3),
     "로우앵글":               ("angle",    2),
     "백샷":                   ("angle",    2),
+
+    # ── 포즈 ──
     "수영장 물속":            ("pose",     3),
     "수영장 입수":            ("pose",     2),
     "엎드린 포즈":            ("pose",     2),
@@ -297,6 +309,8 @@ RISK_SCORES = {
     "등 보이기":              ("pose",     2),
     "백포즈":                 ("pose",     2),
     "걸어가는 뒷모습":        ("pose",     1),
+
+    # ── 의상 ──
     "마이크로 비키니":        ("outfit",   3),
     "모노키니":               ("outfit",   2),
     "브라탑+하이슬릿":        ("outfit",   2),
@@ -304,34 +318,74 @@ RISK_SCORES = {
     "시스루 바디수트":        ("outfit",   2),
     "코트 only":              ("outfit",   2),
     "원피스 수영복":          ("outfit",   1),
+
+    # ── 소재 ──
     "PVC":                    ("material", 3),
     "시스루 오간자":          ("material", 2),
     "라텍스":                 ("material", 2),
     "골드 체인 메쉬":         ("material", 2),
     "크리스탈 메쉬":          ("material", 2),
+
+    # ── 피부 ──
     "오일드 스킨":            ("skin",     2),
     "스웨티":                 ("skin",     2),
+
+    # ── 바디오일 ──
     "익스트림 웻룩":          ("oil",      3),
     "하이 글로스":            ("oil",      2),
     "메탈릭 글로스":          ("oil",      2),
     "선탄 오일":              ("oil",      1),
+
+    # ── 날씨 ──
     "폭우":                   ("weather",  2),
+
+    # ── 스타일 ──
     "빅토리아 시크릿":        ("style",    2),
     "스포츠 일러스트레이티드": ("style",   2),
+
+    # ── 표정 ──
     "입술 벌림":              ("expr",     1),
     "청순":                   ("expr",     2),
+
+    # ── 체형 ──
     "플러스 글램":            ("model",    1),
     "라지 플러스":            ("model",    1),
     "슈퍼 플러스":            ("model",    2),
     "BBW 글래머":             ("model",    2),
     "슈퍼 BBW":               ("model",    3),
+
+    # ══════════════════════════════════════════════════════
+    # ▼ v3.5 신규/수정 항목 (2026-06-04 테스트 반영)
+    # ══════════════════════════════════════════════════════
+
+    # ── 바디페인팅 계열 위험도 하향 조정 ──
+    # 오늘 테스트: 명화/문화/과학 바디페인팅 → ChatGPT 100%, Gemini 95%+ 통과
+    # "body_paint_art" 계열은 예술 맥락으로 필터 통과 → RISK 제거
+    # topographic만 차단 유지 (신체 윤곽 강조로 3번 차단 확인)
+    "topographic":            ("outfit",   3),  # 신체 윤곽 강조 → 차단 유지
+
+    # ── barely_there / wet_look → ChatGPT 통과 확인 → 위험도 하향 ──
+    # 기존: 없음 (누락) → 신규 추가, 단 낮은 위험도
+    "barely_there":           ("outfit",   1),  # ChatGPT 비키니로 인식 → 통과
+    "wet_look":               ("outfit",   1),  # ChatGPT 통과 확인
+
+    # ── 전통문화의상 계열 → 안전 (위험도 없음) ──
+    # kimono_silk, ao_dai_sheer, thai_temple 등 테스트 예정
+    # 문화/전통 맥락 → 필터 통과율 높음 예상 → RISK 미부여
+
+    # ── 팝&카와이 계열 → 낮은 위험도 ──
+    "kitty_glam":             ("outfit",   1),  # 캣수트 → 의상으로 인식 통과
+    "idol_stage":             ("outfit",   1),  # K팝 무대의상 → 안전
+
+    # ── 계절테마 계열 ──
+    "rainy_season":           ("outfit",   1),  # 시스루 젖은 의상 → 약간 주의
+    "midsummer_heat":         ("outfit",   1),  # 비키니 계열 → 낮은 위험도
 }
 
-# ── 아트 스타일 자동 완화 매핑 (3번 항목) ──
-# 위험 감지 시 플랫폼별 아트 스타일 적용
+# ── 아트 스타일 자동 완화 매핑 ──
 ART_STYLE_MITIGATION = {
-    "chatgpt": "수채화 — 부드러운 수채화",    # ChatGPT: 수채화/유화
-    "gemini":  "흑백 — 클래식 모노크롬",      # Gemini: 흑백
+    "chatgpt": "수채화 — 부드러운 수채화",
+    "gemini":  "흑백 — 클래식 모노크롬",
 }
 
 AUTO_REPLACE_RULES = {
@@ -344,12 +398,12 @@ AUTO_REPLACE_RULES = {
     ("누운 포즈", "pose"):             "앉은 포즈 — 바닥/의자에 우아하게",
     ("등 보이기", "pose"):             "파워 스탠딩 — 손 허리, 당당한",
     ("백포즈", "pose"):                "S커브 — 한쪽 다리 구부린 섹시",
-    # 마이크로 비키니는 수동 선택 보호 → auto_filter_check에서 처리
     ("모노키니", "outfit"):            "원피스 수영복 — 하이컷, 컷아웃 디자인",
     ("브라탑+하이슬릿", "outfit"):     "컷아웃 미니드레스 — 전략적 컷아웃, 섹시한 디자인",
     ("란제리 에디토리얼", "outfit"):   "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인",
     ("시스루 바디수트", "outfit"):     "바디콘 미니드레스 — 몸매 강조, 타이트핏",
     ("코트 only", "outfit"):           "하이슬릿 이브닝 — 극하이슬릿, 플런징 넥라인",
+    ("topographic", "outfit"):         "바디콘 미니드레스 — 몸매 강조, 타이트핏",  # v3.5 신규
     ("PVC", "material"):               "리퀴드 새틴 — 액체처럼 흐르는 광택",
     ("시스루 오간자", "material"):     "리퀴드 새틴 — 액체처럼 흐르는 광택",
     ("라텍스", "material"):            "리퀴드 새틴 — 액체처럼 흐르는 광택",
@@ -416,6 +470,9 @@ HIGH_RISK_COMBOS = [
     ("style", "스포츠 일러스트레이티드","oil","하이 글로스","style","베르사체 캠페인 — 대담한 럭셔리"),
     ("angle", "로우앵글", "weather",  "폭우",       "weather",  "골든아워 — 석양 직전 황금빛"),
     ("pose",  "수영장",   "weather",  "폭우",       "weather",  "골든아워 — 석양 직전 황금빛"),
+    # v3.5 신규: topographic 고위험 조합
+    ("outfit", "topographic", "model", "커브",      "outfit",   "바디콘 미니드레스 — 몸매 강조, 타이트핏"),
+    ("outfit", "topographic", "model", "글래머",    "outfit",   "바디콘 미니드레스 — 몸매 강조, 타이트핏"),
 ]
 
 FIELD_TO_SESSION_KEY = {
@@ -434,8 +491,7 @@ FIELD_TO_SESSION_KEY = {
 def auto_filter_check(session_state: dict, platform: str = "Gemini", manual_selections: set = None, art_fallback: bool = False) -> dict:
     """
     규칙 기반 자동 필터 검수
-    - manual_selections: 사용자가 직접 선택한 필드 세트 (보호 대상)
-    - platform: 위험 감지 시 아트 스타일 적용 플랫폼 결정
+    v3.5: topographic 차단 추가, barely_there/wet_look 위험도 하향
     """
     if manual_selections is None:
         manual_selections = set()
@@ -453,7 +509,6 @@ def auto_filter_check(session_state: dict, platform: str = "Gemini", manual_sele
         "weather":  session_state.get("r_weather", ""),
     }
 
-    # 리스크 점수 계산
     total_score = 0
     triggered = []
     for keyword, (field, score) in RISK_SCORES.items():
@@ -464,18 +519,15 @@ def auto_filter_check(session_state: dict, platform: str = "Gemini", manual_sele
 
     replacements = {}
 
-    # 고위험 조합 먼저 체크
     for f1, kw1, f2, kw2, replace_field, replace_val in HIGH_RISK_COMBOS:
         v1 = current.get(f1, "").lower()
         v2 = current.get(f2, "").lower()
         if kw1.lower() in v1 and kw2.lower() in v2:
             ss_key = FIELD_TO_SESSION_KEY.get(replace_field)
             if ss_key:
-                # ── 1번: 수동 선택 보호 ──
                 if ss_key not in manual_selections:
                     replacements[ss_key] = replace_val
 
-    # 총 점수 3점 이상이면 개별 교체
     if total_score >= 3:
         for keyword, field, score in triggered:
             if score >= 2:
@@ -483,11 +535,9 @@ def auto_filter_check(session_state: dict, platform: str = "Gemini", manual_sele
                 if replace_key in AUTO_REPLACE_RULES:
                     ss_key = FIELD_TO_SESSION_KEY.get(field)
                     if ss_key and ss_key not in replacements:
-                        # ── 1번: 수동 선택 보호 ──
                         if ss_key not in manual_selections:
                             replacements[ss_key] = AUTO_REPLACE_RULES[replace_key]
 
-    # ── 3번: 위험 감지 시 아트 스타일 자동 적용 (옵션 ON일 때만) ──
     risk_level = "HIGH" if total_score >= 4 else "MEDIUM" if total_score >= 2 else "LOW"
     if art_fallback and risk_level == "HIGH" and "r_image_style" not in manual_selections:
         platform_key = "chatgpt" if "ChatGPT" in platform else "gemini"
