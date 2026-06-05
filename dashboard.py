@@ -1,15 +1,15 @@
 """
-LumineX Dashboard v3.4 - 리팩토링: 데이터/로직 분리
+LumineX Dashboard v3.5 - 신규 카테고리 섹션 추가
 실행: streamlit run dashboard.py
 
-v3.4 변경사항:
-1. 마이크로 비키니 수동 선택 보호
-2. 아트 스타일 + 실사 suffix 충돌 해결
-3. 위험 감지 시 아트 스타일 자동 완화
-4. 전신샷/클로즈업 suffix 자동 조정
-5. 실내 환경 + 야외 날씨 충돌 경고
-6. 상하의 분리 선택 옵션 + 골프/테니스 스커트
-7. Gemini 새 창 열기 버튼
+v3.5 변경사항 (2026-06-04):
+1. 프리셋 모드 — 카테고리 필터 추가 (14개 카테고리)
+2. 신규 카테고리 섹션 3개 추가:
+   - 🍬 팝 & 카와이
+   - 👘 전통 & 문화의상
+   - 🌸 계절 & 테마
+3. 버전 표기 v3.4 → v3.5
+4. combos.py v3.5 연동 (topographic 차단, barely_there/wet_look 위험도 하향)
 """
 
 import sys
@@ -34,10 +34,10 @@ from core.data import (
     MAKEUP, ACCESSORIES, SKIN_TONES,
     POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD,
     COLOR_GRADES, MOOD, TIME_OF_DAY, LENS_EFFECT,
-    TOP_TYPES, BOTTOM_TYPES,  # 6번: 상하의 분리
-    SKIN_DETAILS, NAILS,      # 신규 섹션
-    FRAMING,                  # 프레이밍 분리
-    COVER_STYLES,             # 잡지/화보 커버
+    TOP_TYPES, BOTTOM_TYPES,
+    SKIN_DETAILS, NAILS,
+    FRAMING,
+    COVER_STYLES,
 )
 from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
 from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
@@ -48,6 +48,142 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+# ─── 카테고리별 프리셋 매핑 (v3.5 신규) ─────────────────────
+PRESET_CATEGORIES = {
+    "🖌️ 바디페인팅 & 스킨 트랜스폼": [
+        "bioluminescent_ink","klimt_gold_body","vangogh_body","dali_surreal","munch_scream",
+        "monet_bloom","mucha_nouveau","hokusai_wave","kandinsky_abstract","pollock_splash",
+        "broken_porcelain","marble_veins","henna_goddess_body","oil_slick_body","liquid_chrome_body",
+        "ink_wash_body","body_paint_art","watercolor_goddess","fresco_goddess","fresco_awakening",
+        "tableau_vivant","coral_reef","leopard_dissolve","peacock_feather","snake_scale",
+        "butterfly_wing","deep_ocean_map","dna_helix","star_map","neuron_network","neon_circuit",
+        "topographic","maori_moko","aztec_warrior","egypt_hieroglyph","celtic_knotwork",
+        "polynesian_tribal","viking_rune","inca_geometric","chinese_dragon","aboriginal_dot",
+        "galaxy_skin","crystal_growth","tree_of_life","moonphase_body","shadow_lace",
+        "ash_phoenix","half_statue",
+        # v12 신규
+        "rembrandt_chiaroscuro","klimt_silver","matisse_cutout","mondrian_body","basquiat_street",
+        "warhol_pop","lichtenstein_dot","huli_wigman","nuba_body","wodaabe_beauty","mehndi_full",
+        "mayan_ritual","haida_totem","aurora_skin","crystal_mineral","tide_pool","magnetic_field",
+        "cell_division",
+    ],
+    "💫 글래머 & 럭셔리": [
+        "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
+        "elite_lingerie","lingerie_noir","noir_opulence","platinum_elite","ivory_silk","ivory_tower",
+        "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
+        "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
+        "feather_cascade","feather_touch","golden_oil","golden_nude","gold_temptress","red_temptress",
+        "veil_goddess","petal_goddess","cobweb_drape",
+        # v11 신규
+        "casino_royale","black_tie_gala","champagne_tower","fur_coat_only",
+    ],
+    "🌿 자연 & 원소": [
+        "lava_flow","ocean_surge","ice_palace","ice_refraction","blizzard_queen","sandstorm_veil",
+        "storm_couture","heat_shimmer","water_reflection","waterfall_goddess","rain_soaked",
+        "mist_goddess","mist_vanguard","winter_forest","desert_mirage","desert_oracle",
+        "desert_sand_glam","cliff_edge","arctic_minimal","dawn_awakening","aurora_drape",
+        "aurora_spirit","lightning_body","solar_flare","tropical_storm","santorini_lightning",
+        "smoke_veil","liquid_gold_pour","liquid_mirror","prism_light","shattered_glass","zero_gravity",
+        # v11 신규
+        "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
+    ],
+    "🌃 도시 & 나이트": [
+        "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
+        "rooftop_midnight","rooftop_party","midnight_goddess","midnight_monolith","nightclub_vip",
+        "monaco_nights","miami_afterglow","azure_nights","blue_hour_goddess","candlelight_noir",
+        "jazz_club","jazz_age","noir_ballet","urban_vanguard","brutalist_glam","after_dark_minimal",
+        "disco_goddess","music_festival","new_year_countdown","cyber_fire","cyber_silk","emerald_city",
+        # v11 신규
+        "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
+    ],
+    "🎬 에디토리얼 & 무드": [
+        "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
+        "light_driven","backlit_silk","mirror_goddess","mirror_room","eclipse_body","chrome_skin",
+        "neon_body","plasma_aura","molten_chrome","mercury_rising","mercury_pool","titanium_body",
+        "snowflake_skin","80s_power","y2k_chrome","harajuku_doll","doll_house","bubble_tea",
+        "bohemian_paris","origami_couture",
+        # v11 신규
+        "wet_glass","smoke_studio","infrared_beauty","grain_film",
+    ],
+    "🏺 문명 & 신화": [
+        "cleopatra_gold","pharaoh_queen","byzantine_empress","maasai_warrior","nine_tails",
+        "moonrise_ceremony","oracle_smoke","ritual_ash","ruins_goddess","renaissance_fantasy",
+        "renaissance_nude","cathedral_light","baroque_punk","art_gallery","museum_glamour",
+        "library_secret","living_sculpture","living_statue","sculpture_goddess","marble_goddess",
+        "marble_minimal","viking_queen",
+        # v11 신규
+        "sumerian_queen","ming_empress","aztec_sun_goddess","celtic_warrior_queen",
+    ],
+    "✈️ 직업 & 라이프스타일": [
+        "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
+        "cruise_hostess","yacht_captain","yacht_club","sommelier","wine_tasting","casino_dealer",
+        "private_jet","helipad","luxury_shopping","golf_glam","golf_caddie","tennis_luxe",
+        "tennis_referee","f1_grid_girl","equestrian_glam","cheerleader","architect_chic",
+        "fitness_power","yoga_goddess",
+        # v11 신규
+        "barista_chic","gallery_curator","horse_racing","scuba_instructor",
+    ],
+    "🔮 판타지 & 다크": [
+        "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
+        "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
+        "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
+        "zombie_apocalypse","dark_academia","gothic_romance","double_exposure_dark",
+        "double_exposure_ethereal","oil_slick_noir",
+        # v11 신규
+        "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
+    ],
+    "⚔️ 파워 & 엣지": [
+        "valkyrie_storm","savage_leather","latex_venom","biker_glam","shadow_play","frozen_latex",
+        "chrome_vixen","chain_goddess","fencer_noir","martial_arts","boxing_glamour","power_curve",
+        "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent","oil_goddess",
+        # v11 신규
+        "riot_goddess","punk_queen","steel_warrior","cage_fighter",
+    ],
+    "🏖️ 비치 & 리조트": [
+        "summer_beach","surfer_goddess","aqua_bikini","barely_there","golden_summer","pool_goddess",
+        "poolside_noir","infinity_pool","riviera_heat","beach_bonfire","wet_look_goddess",
+        "scuba_goddess","glass_floor","glass_house","ski_chalet","vineyard_harvest","spa_noir",
+        "balcony_goddess",
+        # v11 신규
+        "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
+    ],
+    "🎭 퍼포먼스 & 댄스": [
+        "flamenco_queen","tango_passion","burlesque","showgirl","cabaret_star","circus_performer",
+        "pole_art","candy_rave","ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
+        "opera_night","christmas_glamour","pop_art_glamour","ribbon_goddess","petal_storm",
+        "midnight_bath",
+        # v11 신규
+        "ballet_noir","broadway_diva","street_dance","drag_glamour",
+    ],
+    "👘 전통 & 문화의상": [
+        "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
+        "harem_goddess","belly_dancer","odalisque","imperial_silk",
+        # v10 신규
+        "kimono_silk","ao_dai_sheer","thai_temple","indian_bridal","moroccan_kaftan",
+        "persian_court","yoruba_glamour","balinese_goddess","chinese_qipao_slit","scottish_corset",
+    ],
+    "🌸 계절 & 테마": [
+        "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
+        "sunflower_field","greenhouse_eden","tropical_night",
+        # v10 신규
+        "first_snow","golden_autumn","midsummer_heat","rainy_season","harvest_moon",
+        "winter_solstice","cherry_blossom_night","tropical_monsoon",
+    ],
+    "🍬 팝 & 카와이": [
+        "bubble_tea","doll_house","harajuku_doll","pastel_fairy","candy_rave","pop_art_glamour",
+        # v10 신규
+        "y2k_fairy","pink_champagne","cotton_candy","angel_baby","idol_stage","kitty_glam",
+        "strawberry_milk","cherry_pop","neon_kawaii","fairy_kei",
+    ],
+}
+
+# SS tier 프리셋
+SS_TIER = {
+    "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
+    "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
+    "ash_phoenix","lichtenstein_dot","warhol_pop","mondrian_body",
+}
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
 BG       = "#1e1e1e"
@@ -124,6 +260,19 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 ::-webkit-scrollbar-track {{ background: {BG}; }}
 ::-webkit-scrollbar-thumb {{ background: {BORDER}; border-radius: 2px; }}
 ::-webkit-scrollbar-thumb:hover {{ background: {GOLD_DIM}; }}
+
+/* ── SS tier 뱃지 ── */
+.ss-badge {{
+    display: inline-block;
+    background: linear-gradient(135deg, #c9a84c, #8a6f30);
+    color: #111;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+    letter-spacing: 0.5px;
+}}
 </style>
 """, unsafe_allow_html=True)
 
@@ -131,7 +280,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.4</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.5</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -164,7 +313,6 @@ with st.sidebar:
     else:
         st.warning("태그 나열 + --파라미터 방식.")
 
-    # ── 7번: Gemini 새 창 열기 버튼 ──
     if global_platform == "Gemini":
         st.markdown("---")
         st.markdown("### 🔄 Gemini 세션")
@@ -172,6 +320,14 @@ with st.sidebar:
             import webbrowser
             webbrowser.open("https://gemini.google.com/app")
         st.caption("💡 같은 창 반복 생성 시 타투/헤어 오염 주의")
+
+    # ── v3.5 신규: 사이드바 프리셋 통계 ──
+    st.markdown("---")
+    st.markdown("### 📊 프리셋 현황")
+    total = sum(len(v) for v in PRESET_CATEGORIES.values())
+    st.markdown(f"**총 프리셋:** `{total}개`")
+    st.markdown(f"**SS tier:** `{len(SS_TIER)}개`")
+    st.markdown(f"**카테고리:** `{len(PRESET_CATEGORIES)}개`")
 
 
 def get_prompt(data: dict) -> str:
@@ -186,14 +342,60 @@ def get_prompt(data: dict) -> str:
 tab1, tab2, tab3, tab4 = st.tabs(["🎨 프리셋 모드", "🛠️ 수동 조합", "🎲 랜덤 모드", "🎬 영상 프롬프트"])
 
 # ══════════════════════════════════════════════════════════
-# 탭 1: 프리셋 모드
+# 탭 1: 프리셋 모드 (v3.5 — 카테고리 필터 추가)
 # ══════════════════════════════════════════════════════════
 with tab1:
     st.markdown("### 프리셋으로 프롬프트 생성")
-    presets = list_presets()
-    col1, _ = st.columns(2)
+
+    # ── v3.5 신규: 카테고리 필터 ──
+    col_cat, col_search = st.columns([2, 1])
+    with col_cat:
+        all_cats = ["🌟 전체"] + list(PRESET_CATEGORIES.keys())
+        selected_cat = st.selectbox("📂 카테고리 필터", options=all_cats, index=0, key="preset_cat_filter")
+    with col_search:
+        search_query = st.text_input("🔍 프리셋 검색", placeholder="이름 검색...", key="preset_search")
+
+    # 카테고리/검색 기반 프리셋 목록 필터링
+    all_presets = list_presets()
+    if selected_cat == "🌟 전체":
+        filtered_presets = all_presets
+    else:
+        cat_list = PRESET_CATEGORIES.get(selected_cat, [])
+        filtered_presets = [p for p in all_presets if p in cat_list]
+
+    if search_query:
+        filtered_presets = [p for p in filtered_presets if search_query.lower() in p.lower()]
+
+    # SS tier 표시
+    def format_preset(name):
+        if name in SS_TIER:
+            return f"⭐ {name} [SS]"
+        return f"• {name}"
+
+    col1, col2 = st.columns([2, 1])
     with col1:
-        selected_preset = st.selectbox("🎨 프리셋 선택", options=presets, format_func=lambda x: f"• {x}")
+        if filtered_presets:
+            selected_preset = st.selectbox(
+                f"🎨 프리셋 선택 ({len(filtered_presets)}개)",
+                options=filtered_presets,
+                format_func=format_preset
+            )
+        else:
+            st.warning("해당 카테고리에 프리셋이 없어요.")
+            selected_preset = None
+    with col2:
+        if selected_cat != "🌟 전체":
+            ss_count = sum(1 for p in filtered_presets if p in SS_TIER)
+            st.markdown(f"""
+<div style="background:{BG_CARD};border:1px solid {BORDER};border-radius:8px;padding:10px 14px;margin-top:28px;">
+  <div style="font-size:0.65rem;color:{TEXT_DIM};letter-spacing:1px;">카테고리 현황</div>
+  <div style="font-size:1.1rem;font-weight:700;color:{GOLD};margin-top:4px;">{len(filtered_presets)}개</div>
+  <div style="font-size:0.7rem;color:{TEXT_DIM};">⭐ SS tier {ss_count}개</div>
+</div>
+""", unsafe_allow_html=True)
+
+    if not selected_preset:
+        st.stop()
 
     NONE = "None — 프리셋 기본값 사용"
     col1, col2, col3 = st.columns(3)
@@ -367,7 +569,6 @@ with tab2:
         st.session_state.r_body_weight = "없음"
         st.session_state.r_bust_size   = "없음"
         st.session_state.r_hip_size    = "없음"
-        # ── 상하의 분리 체크박스 상태 보존 + 랜덤 채우기 ──
         st.session_state["use_separate_outfit"] = st.session_state.get("use_separate_outfit", False)
         if st.session_state.get("use_separate_outfit", False):
             top_keys = [k for k in TOP_TYPES.keys() if k != "없음 (의상 타입 사용)"]
@@ -399,13 +600,11 @@ with tab2:
         model_count = st.selectbox("👥 모델 수",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
     with col2:
         st.markdown("##### 👗 스타일")
-        # ── 6번: 상하의 분리 선택 ──
         use_separate = st.checkbox("✂️ 상하의 분리 선택", value=False, key="use_separate_outfit",
                                    help="상의+하의를 각각 선택해 조합")
         if use_separate:
             top_type    = st.selectbox("👕 상의",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
             bottom_type = st.selectbox("👖 하의",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
-            # 선택 조합 배지 표시
             top_label    = top_type.split("—")[0].strip()    if top_type    != "없음 (의상 타입 사용)" else "없음"
             bottom_label = bottom_type.split("—")[0].strip() if bottom_type != "없음 (의상 타입 사용)" else "없음"
             st.markdown(f"""
@@ -416,7 +615,7 @@ with tab2:
   <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;">👖 {bottom_label}</span>
 </div>
 """, unsafe_allow_html=True)
-            outfit = list(OUTFIT_TYPES.keys())[0]  # 의상 타입은 무시
+            outfit = list(OUTFIT_TYPES.keys())[0]
         else:
             outfit      = st.selectbox("👗 의상 타입",  list(OUTFIT_TYPES.keys()), index=idx(OUTFIT_TYPES, "r_outfit"))
             top_type    = "없음 (의상 타입 사용)"
@@ -438,7 +637,7 @@ with tab2:
         weather     = st.selectbox("🌦️ 날씨/기상",                 list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
         time_of_day = st.selectbox("🕐 촬영 시간대",               list(TIME_OF_DAY.keys()),       index=idx(TIME_OF_DAY,      "r_time_of_day"))
         lighting    = st.selectbox("💡 조명 — 빛의 분위기",        list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
-        framing     = st.selectbox("🖼️ 프레이밍 — 구도/크기",          list(FRAMING.keys()),           index=idx(FRAMING,          "r_framing"))
+        framing     = st.selectbox("🖼️ 프레이밍 — 구도/크기",      list(FRAMING.keys()),           index=idx(FRAMING,          "r_framing"))
         angle       = st.selectbox("📸 카메라 앵글",               list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
         camera      = st.selectbox("📷 카메라 — 장비",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
         lens_effect = st.selectbox("🔭 렌즈/초점 효과",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
@@ -450,7 +649,6 @@ with tab2:
         img_style   = st.selectbox("📐 이미지 스타일",             list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
         bg_crowd    = st.selectbox("👥 배경 인물",                 list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
 
-    # ── 추천 조합 표시 ──
     rec = get_combo_recommendations(model_type)
     if rec:
         with st.expander("✅ 이 체형에 잘 맞는 조합 추천", expanded=False):
@@ -458,33 +656,26 @@ with tab2:
             with rc1:
                 st.markdown("**👗 의상**")
                 for o in rec.get("outfit", []):
-                    is_selected = (outfit == o)
-                    st.markdown(f"{'🟡 ' if is_selected else '• '}{o.split('—')[0].strip()}")
+                    st.markdown(f"{'🟡 ' if outfit == o else '• '}{o.split('—')[0].strip()}")
                 st.markdown("**🧵 소재**")
                 for m in rec.get("material", []):
-                    is_selected = (material == m)
-                    st.markdown(f"{'🟡 ' if is_selected else '• '}{m.split('—')[0].strip()}")
+                    st.markdown(f"{'🟡 ' if material == m else '• '}{m.split('—')[0].strip()}")
             with rc2:
                 st.markdown("**📸 앵글**")
                 for a in rec.get("angle", []):
-                    is_selected = (angle == a)
-                    st.markdown(f"{'🟡 ' if is_selected else '• '}{a.split('—')[0].strip()}")
+                    st.markdown(f"{'🟡 ' if angle == a else '• '}{a.split('—')[0].strip()}")
                 st.markdown("**💃 포즈**")
                 for p in rec.get("pose", []):
-                    is_selected = (pose == p)
-                    st.markdown(f"{'🟡 ' if is_selected else '• '}{p.split('—')[0].strip()}")
+                    st.markdown(f"{'🟡 ' if pose == p else '• '}{p.split('—')[0].strip()}")
             with rc3:
                 st.markdown("**🎬 스타일**")
                 for s in rec.get("style", []):
-                    is_selected = (style == s)
-                    st.markdown(f"{'🟡 ' if is_selected else '• '}{s.split('—')[0].strip()}")
+                    st.markdown(f"{'🟡 ' if style == s else '• '}{s.split('—')[0].strip()}")
                 st.markdown("**🏙️ 환경**")
                 for e in rec.get("env", []):
-                    is_selected = (environment == e)
-                    st.markdown(f"{'🟡 ' if is_selected else '• '}{e.split('—')[0].strip()}")
+                    st.markdown(f"{'🟡 ' if environment == e else '• '}{e.split('—')[0].strip()}")
             st.caption("🟡 = 현재 선택됨  •  = 추천 항목")
 
-    # ── 5번: 충돌 감지 (weather 파라미터 추가) ──
     conflicts = check_conflicts(angle, pose, style, environment, model_type, material, weather)
     if conflicts:
         for c in conflicts:
@@ -503,112 +694,46 @@ with tab2:
     if "review_result" not in st.session_state:
         st.session_state.review_result = ""
 
-    # ── AI 검수 ──
     if btn_ai_review:
         st.session_state.review_result = ""
         with st.spinner("Claude가 조합 검수 + 자동 수정 중..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
-
                 current_combo = {
-                    "model":       model_type,
-                    "outfit":      outfit,
-                    "material":    material,
-                    "angle":       angle,
-                    "pose":        pose,
-                    "skin_tone":   skin_tone,
-                    "body_oil":    body_oil,
-                    "weather":     weather,
-                    "style":       style,
-                    "lighting":    lighting,
-                    "expression":  expression,
-                    "bg_crowd":    bg_crowd,
-                    "img_style":   img_style,
-                    "color_grade": color_grade,
+                    "model": model_type, "outfit": outfit, "material": material,
+                    "angle": angle, "pose": pose, "skin_tone": skin_tone,
+                    "body_oil": body_oil, "weather": weather, "style": style,
+                    "lighting": lighting, "expression": expression,
+                    "bg_crowd": bg_crowd, "img_style": img_style, "color_grade": color_grade,
                 }
-
                 safe_options = {
-                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in [
-                        "코트 only — 롱코트만 입은 미니멀 글래머",
-                        "란제리 에디토리얼 — VS 스타일, 실크 레이스",
-                        "시스루 바디수트 — 메쉬, 아방가르드",
-                        "브라탑+하이슬릿 — 브라탑, 롱 하이슬릿",
-                        "마이크로 비키니 — 끈 비키니, SI 수영복 화보",
-                        "모노키니 — 원피스 수영복 변형, 대담한 컷아웃",
-                    ]],
-                    "material":  [k for k in MATERIALS.keys() if k not in [
-                        "라텍스 — 피부 밀착, 세컨드스킨",
-                        "시스루 오간자 — 반투명, 살이 비치는",
-                        "PVC — 투명 비닐, 미래적",
-                        "골드 체인 메쉬 — 금속 체인 망사",
-                    ]],
-                    "angle":     [k for k in CAMERA_ANGLES.keys() if k not in [
-                        "오버헤드 — 위에서 내려다보기",
-                        "로우앵글 — 다리 강조, 아래서 위로",
-                    ]],
-                    "pose":      [k for k in POSES.keys() if k not in [
-                        "없음",
-                        "수영장 물속 — 하반신 물에 잠긴",
-                        "엎드린 포즈 — 배를 깔고 관능적",
-                        "백포즈 — 뒤돌아 어깨 너머 시선",
-                        "등 보이기 — 백뷰, 어깨 라인",
-                    ]],
-                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in [
-                        "스웨티 — 운동 후 땀나는 느낌",
-                        "오일드 스킨 — 윤기있는 글로시",
-                    ]],
+                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["코트 only — 롱코트만 입은 미니멀 글래머","란제리 에디토리얼 — VS 스타일, 실크 레이스","시스루 바디수트 — 메쉬, 아방가르드","브라탑+하이슬릿 — 브라탑, 롱 하이슬릿","마이크로 비키니 — 끈 비키니, SI 수영복 화보","모노키니 — 원피스 수영복 변형, 대담한 컷아웃"]],
+                    "material":  [k for k in MATERIALS.keys() if k not in ["라텍스 — 피부 밀착, 세컨드스킨","시스루 오간자 — 반투명, 살이 비치는","PVC — 투명 비닐, 미래적","골드 체인 메쉬 — 금속 체인 망사"]],
+                    "angle":     [k for k in CAMERA_ANGLES.keys() if k not in ["오버헤드 — 위에서 내려다보기","로우앵글 — 다리 강조, 아래서 위로"]],
+                    "pose":      [k for k in POSES.keys() if k not in ["없음","수영장 물속 — 하반신 물에 잠긴","엎드린 포즈 — 배를 깔고 관능적","백포즈 — 뒤돌아 어깨 너머 시선","등 보이기 — 백뷰, 어깨 라인"]],
+                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in ["스웨티 — 운동 후 땀나는 느낌","오일드 스킨 — 윤기있는 글로시"]],
                     "body_oil":  ["없음", "라이트 글로우 — 자연스러운 윤기", "새틴 글로우 — 새틴처럼 빛나는"],
                     "weather":   [k for k in WEATHER.keys() if k not in ["폭우 — 거센 비, 극적인 분위기"]],
-                    "style":     [k for k in STYLES.keys() if k not in [
-                        "빅토리아 시크릿 패션쇼",
-                        "스포츠 일러스트레이티드 수영복",
-                    ]],
+                    "style":     [k for k in STYLES.keys() if k not in ["빅토리아 시크릿 패션쇼","스포츠 일러스트레이티드 수영복"]],
                     "lighting":  list(LIGHTING.keys()),
                     "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["더블 익스포저 — 이중 노출"]],
                 }
-
                 response = client.messages.create(
                     model="claude-sonnet-4-5",
                     max_tokens=1200,
                     messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst for Gemini and ChatGPT/DALL-E.
-
 Analyze this fashion photo prompt combination for AI content filter risks.
-
 Current combination:
 {chr(10).join([f"- {k}: {v}" for k, v in current_combo.items()])}
-
 CONFIRMED BLOCKED PATTERNS:
 🔴 INSTANT BLOCK: cup size mention, ultra/sexy descriptors, overhead+transparent+wet+curvy, innocent+sexual elements
-🔴 CHATGPT: low angle+wet+bust+slit, back view+bodysuit+wet+low angle, crystal mesh+sheer+spaghetti+jump+extreme stiletto+femme fatale
+🔴 CHATGPT: low angle+wet+bust+slit, back view+bodysuit+wet+low angle
 🔴 GEMINI: transparent PVC+voluptuous, 3+ body parts emphasized, VS reference+revealing+wet
-
-✅ SAFE ALTERNATIVES:
-- sheer/mesh/crystal → luxury satin/silk couture
-- extreme stiletto → elegant heels
-- mid-air jump → dynamic fashion pose
-- VS Angel body → high-fashion runway physique
-
+✅ SAFE: body paint art, cultural/ethnic traditional costume, artistic context → high pass rate
 Risk: 3+ risky elements = HIGH
-
 Respond ONLY in JSON:
-{{
-  "risk_level": "HIGH/MEDIUM/LOW",
-  "issues": ["issue1"],
-  "replacements": {{
-    "outfit": "key or null",
-    "material": "key or null",
-    "angle": "key or null",
-    "pose": "key or null",
-    "skin_tone": "key or null",
-    "body_oil": "key or null",
-    "weather": "key or null",
-    "style": "key or null",
-    "img_style": "key or null"
-  }},
-  "summary": "한국어 2-3줄"
-}}
-
+{{"risk_level": "HIGH/MEDIUM/LOW","issues": ["issue1"],"replacements": {{"outfit": "key or null","material": "key or null","angle": "key or null","pose": "key or null","skin_tone": "key or null","body_oil": "key or null","weather": "key or null","style": "key or null","img_style": "key or null"}},"summary": "한국어 2-3줄"}}
 Available options:
 outfit: {safe_options['outfit'][:6]}
 material: {safe_options['material'][:6]}
@@ -617,28 +742,16 @@ pose: {safe_options['pose'][:8]}
 body_oil: {safe_options['body_oil']}
 style: {safe_options['style']}"""}]
                 )
-
                 raw = response.content[0].text.strip()
                 import json, re
                 json_match = re.search(r'\{.*\}', raw, re.DOTALL)
                 if json_match:
-                    result = json.loads(json_match.group())
+                    result  = json.loads(json_match.group())
                     risk    = result.get("risk_level", "UNKNOWN")
                     issues  = result.get("issues", [])
                     repls   = result.get("replacements", {})
                     summary = result.get("summary", "")
-
-                    KEY_MAP = {
-                        "outfit":    "r_outfit",
-                        "material":  "r_material",
-                        "angle":     "r_angle",
-                        "pose":      "r_pose",
-                        "skin_tone": "r_skin_tone",
-                        "body_oil":  "r_body_oil",
-                        "weather":   "r_weather",
-                        "style":     "r_style",
-                        "img_style": "r_image_style",
-                    }
+                    KEY_MAP = {"outfit":"r_outfit","material":"r_material","angle":"r_angle","pose":"r_pose","skin_tone":"r_skin_tone","body_oil":"r_body_oil","weather":"r_weather","style":"r_style","img_style":"r_image_style"}
                     replaced = {}
                     for field, new_val in repls.items():
                         if new_val and new_val != "null":
@@ -646,20 +759,15 @@ style: {safe_options['style']}"""}]
                             if ss_key:
                                 st.session_state[ss_key] = new_val
                                 replaced[field] = new_val
-
                     risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(risk, "⚪")
                     msg = f"{risk_emoji} **리스크: {risk}**\n\n"
-                    if issues:
-                        msg += "**⚠️ 감지된 문제:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
-                    if replaced:
-                        msg += "**🔄 자동 교체된 항목:**\n" + "\n".join([f"- {k} → `{v.split('—')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
+                    if issues: msg += "**⚠️ 감지된 문제:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
+                    if replaced: msg += "**🔄 자동 교체된 항목:**\n" + "\n".join([f"- {k} → `{v.split('—')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
                     msg += f"**💬 요약:** {summary}"
                     st.session_state.review_result = msg
-
                     if replaced:
                         st.session_state._trigger_build = True
                         st.rerun()
-
             except Exception as e:
                 st.session_state.review_result = f"오류: {str(e)}"
 
@@ -697,7 +805,6 @@ style: {safe_options['style']}"""}]
         smart_update("r_concept",     CONCEPT,        0.15)
 
         st.session_state._trigger_build = True
-
         st.session_state.r_outfit      = outfit
         st.session_state.r_material    = material
         st.session_state.r_angle       = angle
@@ -716,15 +823,10 @@ style: {safe_options['style']}"""}]
         st.session_state.r_time_of_day = time_of_day
         st.session_state.r_lens_effect = lens_effect
 
-        # ── 1번: 수동 선택 보호 세트 구성 ──
         manual_sel = set()
-        # 사용자가 직접 의상을 선택한 경우 보호
-        if outfit != list(OUTFIT_TYPES.keys())[0]:
-            manual_sel.add("r_outfit")
-        if use_separate:
-            manual_sel.add("r_outfit")  # 상하의 분리 사용 시 의상 보호
+        if outfit != list(OUTFIT_TYPES.keys())[0]: manual_sel.add("r_outfit")
+        if use_separate: manual_sel.add("r_outfit")
 
-        # ── 자동 필터 검수 (플랫폼, 수동선택 전달) ──
         filter_result = auto_filter_check(
             dict(st.session_state),
             platform=global_platform,
@@ -735,12 +837,7 @@ style: {safe_options['style']}"""}]
             for ss_key, new_val in filter_result["replacements"].items():
                 st.session_state[ss_key] = new_val
             risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(filter_result["risk_level"], "⚪")
-            replaced_labels = {
-                "r_angle": "앵글", "r_pose": "포즈", "r_outfit": "의상",
-                "r_material": "소재", "r_skin_tone": "피부", "r_body_oil": "바디오일",
-                "r_style": "스타일", "r_expression": "표정", "r_model": "체형",
-                "r_image_style": "이미지스타일",
-            }
+            replaced_labels = {"r_angle":"앵글","r_pose":"포즈","r_outfit":"의상","r_material":"소재","r_skin_tone":"피부","r_body_oil":"바디오일","r_style":"스타일","r_expression":"표정","r_model":"체형","r_image_style":"이미지스타일"}
             changed = "  |  ".join([f"{replaced_labels.get(k, k)} → **{v.split('—')[0].strip()}**" for k, v in filter_result["replacements"].items()])
             st.session_state._auto_filter_msg = f"{risk_emoji} 필터 자동 조정: {changed}"
         else:
@@ -749,7 +846,6 @@ style: {safe_options['style']}"""}]
 
         st.rerun()
 
-    # rerun 후 실제 프롬프트 생성
     if st.session_state.get("_trigger_build", False):
         st.session_state._trigger_build = False
 
@@ -758,20 +854,8 @@ style: {safe_options['style']}"""}]
             val = st.session_state.get(key, keys[0] if keys else "없음")
             return val if val in d else (keys[0] if keys else "없음")
 
-        _prev = {k: st.session_state.get(f"_prev_{k}", "없음") for k in [
-            "r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color",
-            "r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil",
-            "r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props",
-            "r_image_style","r_era","r_concept",
-        ]}
-        auto_labels = {
-            "r_pose": "💃 포즈", "r_expression": "😏 표정", "r_skin_tone": "🌊 피부",
-            "r_hair_style": "💇 헤어", "r_hair_color": "🎨 헤어컬러", "r_makeup": "💄 메이크업",
-            "r_footwear": "👠 신발", "r_color_grade": "🖼️ 색감", "r_accessories": "💍 액세서리",
-            "r_body_oil": "✨ 바디오일", "r_weather": "🌦️ 날씨", "r_bg_crowd": "👥 배경",
-            "r_tattoo": "🎨 문신", "r_special_effects": "🌈 특수효과", "r_props": "🎪 소품",
-            "r_image_style": "📐 이미지스타일", "r_era": "🌍 시대", "r_concept": "🎭 컨셉",
-        }
+        _prev = {k: st.session_state.get(f"_prev_{k}", "없음") for k in ["r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color","r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil","r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props","r_image_style","r_era","r_concept"]}
+        auto_labels = {"r_pose":"💃 포즈","r_expression":"😏 표정","r_skin_tone":"🌊 피부","r_hair_style":"💇 헤어","r_hair_color":"🎨 헤어컬러","r_makeup":"💄 메이크업","r_footwear":"👠 신발","r_color_grade":"🖼️ 색감","r_accessories":"💍 액세서리","r_body_oil":"✨ 바디오일","r_weather":"🌦️ 날씨","r_bg_crowd":"👥 배경","r_tattoo":"🎨 문신","r_special_effects":"🌈 특수효과","r_props":"🎪 소품","r_image_style":"📐 이미지스타일","r_era":"🌍 시대","r_concept":"🎭 컨셉"}
         picked_items = {}
         for key, label in auto_labels.items():
             cur = st.session_state.get(key, "없음")
@@ -780,8 +864,7 @@ style: {safe_options['style']}"""}]
             st.session_state[f"_prev_{key}"] = cur
 
         if picked_items:
-            picked_str = "  |  ".join([f"{k} → **{v}**" for k, v in picked_items.items()])
-            st.session_state._auto_picked_msg = f"🎲 자동 선택: {picked_str}"
+            st.session_state._auto_picked_msg = f"🎲 자동 선택: {'  |  '.join([f'{k} → **{v}**' for k, v in picked_items.items()])}"
         else:
             st.session_state._auto_picked_msg = ""
 
@@ -812,7 +895,7 @@ style: {safe_options['style']}"""}]
             "expression":    ss("r_expression",   EXPRESSION),
             "tattoo":        ss("r_tattoo",       TATTOO),
             "skin_detail":   ss("r_skin_detail",  SKIN_DETAILS),
-            "nails":         ss("r_nails",         NAILS),
+            "nails":         ss("r_nails",        NAILS),
             "body_oil":      ss("r_body_oil",     BODY_OIL),
             "bg_crowd":      ss("r_bg_crowd",     BG_CROWD),
             "mood":          ss("r_mood",         MOOD),
@@ -823,9 +906,8 @@ style: {safe_options['style']}"""}]
             "framing":       ss("r_framing",      FRAMING),
             "angle":         ss("r_angle",        CAMERA_ANGLES),
             "style":         ss("r_style",        STYLES),
-            "cover_style":   ss("r_cover_style",   COVER_STYLES),
+            "cover_style":   ss("r_cover_style",  COVER_STYLES),
             "camera":        ss("r_camera",       CAMERAS),
-            # ── 6번: 상하의 분리 ──
             "top_type":      st.session_state.get("r_top_type", "없음 (의상 타입 사용)"),
             "bottom_type":   st.session_state.get("r_bottom_type", "없음 (의상 타입 사용)"),
         }
@@ -836,12 +918,9 @@ style: {safe_options['style']}"""}]
 
     if st.session_state.get("_auto_filter_msg"):
         msg = st.session_state._auto_filter_msg
-        if "🔴" in msg:
-            st.warning(msg)
-        elif "🟡" in msg:
-            st.info(msg)
-        else:
-            st.success(msg)
+        if "🔴" in msg: st.warning(msg)
+        elif "🟡" in msg: st.info(msg)
+        else: st.success(msg)
 
     if btn_ai_enhance and st.session_state.manual_prompt:
         with st.spinner("Claude가 프롬프트 강화 중..."):
@@ -936,7 +1015,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.5 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
