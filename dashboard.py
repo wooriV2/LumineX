@@ -1,8 +1,8 @@
 """
-LumineX Dashboard v4.0
+LumineX Dashboard v4.1
 실행: streamlit run dashboard.py
 
-v4.0 변경사항 (2026-06-06):
+v4.1 변경사항 (2026-06-06):
 1. PRESET_CATEGORIES — v13/v14 프리셋 전체 반영
    - 🖌️ 바디페인팅: v14 관능적 바디페인팅 35개 추가 (총 101개)
    - 🍬 팝 & 카와이: v13 추가 20개 반영
@@ -49,7 +49,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── 카테고리별 프리셋 매핑 (v4.0 전체 반영) ─────────────────
+# ─── 카테고리별 프리셋 매핑 (v4.1 전체 반영) ─────────────────
 PRESET_CATEGORIES = {
     "🖌️ 바디페인팅 & 스킨 트랜스폼": [
         # 기존
@@ -117,6 +117,15 @@ PRESET_CATEGORIES = {
         "red_fox","hyena_spots",
         # 🦄 신화/판타지
         "koi_dragon","unicorn_opal","gryphon_feather","sphinx_cat","basilisk_scales",
+        # v19 — 한국 바디아트 10개
+        "dancheong_body","najeonchilgi_body","goryeo_celadon_body","minhwa_body",
+        "korean_tiger_body","pojagi_body","taegeuk_body","silla_crown_body",
+        "dansaekhwa_body","najeon_abalone",
+        # v19 — 한국 동물/신수 (바디아트)
+        "baekhak_crane","korean_dragon_body","phoenix_jujakk",
+        "baekho_white_tiger","hyeonmu_turtle","cheongnyong_dragon",
+        # v19 — 한국 자연/식물 바디아트
+        "mugunghwa_body","korean_lotus_body","korean_plum_body","korean_bamboo_body",
     ],
     "💫 글래머 & 럭셔리": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
@@ -169,6 +178,8 @@ PRESET_CATEGORIES = {
         # v17 보강
         "aphrodite_glam","artemis_huntress","freya_norse","kali_goddess",
         "isis_egypt","lakshmi_goddess","oshun_yoruba","morgan_le_fay",
+        # v19 — 한국 신수/정령
+        "haetae_guardian","dokkaebi_spirit","korean_tiger_spirit","gyeongbokgung_night",
     ],
     "✈️ 직업 & 라이프스타일": [
         "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
@@ -233,6 +244,10 @@ PRESET_CATEGORIES = {
         # v17 보강
         "hanfu_goddess","cheongsam_slit","kebaya_java","dashiki_glam","kaftan_sheer",
         "flamenco_dress","dirndl_glam","hanbok_modern","ao_dai_glamour","saree_draped_sensual",
+        # v19 — 한국 역사/전통
+        "joseon_queen","joseon_consort","gisaeng_glamour","gisaeng_noir","mudang_shaman",
+        "haenyeo_goddess","silla_empress","goguryeo_warrior","goryeo_empress","joseon_painter",
+        "korean_shaman_fire","baekje_lotus","silla_gold_crown",
     ],
     "🌸 계절 & 테마": [
         "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
@@ -253,6 +268,9 @@ PRESET_CATEGORIES = {
         "lolita_gothic","disco_barbie","space_babe","bubblegum_pop","rainbow_rave","glitter_bomb",
         "arcade_queen","virtual_idol","tokimeki_pop","kpop_idol","korean_ulzzang","kbeauty_goddess",
         "kdrama_heroine","manga_girl",
+        # v19 — K-컬처/뷰티
+        "kpop_girl_crush","hallyu_goddess","kbeauty_glass_skin",
+        "kdrama_villain_queen","kdrama_chaebol_heir","gangnam_luxury_glam",
     ],
     "💋 관능 & 에로틱 글래머": [
         # 란제리 & 바디콘
@@ -355,7 +373,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.0</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.1</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -962,7 +980,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.0 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.1 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
