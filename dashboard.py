@@ -1,8 +1,8 @@
 """
-LumineX Dashboard v3.9
+LumineX Dashboard v4.0
 실행: streamlit run dashboard.py
 
-v3.9 변경사항 (2026-06-06):
+v4.0 변경사항 (2026-06-06):
 1. PRESET_CATEGORIES — v13/v14 프리셋 전체 반영
    - 🖌️ 바디페인팅: v14 관능적 바디페인팅 35개 추가 (총 101개)
    - 🍬 팝 & 카와이: v13 추가 20개 반영
@@ -49,7 +49,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── 카테고리별 프리셋 매핑 (v3.9 전체 반영) ─────────────────
+# ─── 카테고리별 프리셋 매핑 (v4.0 전체 반영) ─────────────────
 PRESET_CATEGORIES = {
     "🖌️ 바디페인팅 & 스킨 트랜스폼": [
         # 기존
@@ -97,6 +97,26 @@ PRESET_CATEGORIES = {
         # v15 — 과학/자연 10개
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
         "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
+        # v18 — 동물 바디페인팅 50개
+        # 🐆 대형 맹수
+        "panther_black","cheetah_speed","lion_golden","cougar_tawny","snow_leopard","ocelot_wild",
+        # 🐍 파충류
+        "chameleon_skin","dragon_scales_red","komodo_dragon","gecko_pattern","crocodile_skin",
+        "boa_constrictor","king_cobra_hood",
+        # 🦋 곤충
+        "butterfly_monarch","butterfly_morpho","dragonfly_iridescent","scarab_beetle",
+        "praying_mantis","luna_moth","atlas_moth",
+        # 🦅 조류
+        "eagle_wings","flamingo_pink","owl_feather","parrot_tropical","hummingbird_iridescent",
+        "phoenix_rising","swan_white","macaw_scarlet","bird_of_paradise",
+        # 🌊 해양
+        "octopus_ink","koi_fish","jellyfish_glow","seahorse_fantasy","mantis_shrimp",
+        "anglerfish_deep","nudibranch_sea","lionfish_venomous","cuttlefish_chromo",
+        # 🦌 포유류/야생
+        "wolf_grey","zebra_stripes","giraffe_pattern","dalmatian_spots","arctic_fox",
+        "red_fox","hyena_spots",
+        # 🦄 신화/판타지
+        "koi_dragon","unicorn_opal","gryphon_feather","sphinx_cat","basilisk_scales",
     ],
     "💫 글래머 & 럭셔리": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
@@ -335,7 +355,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.9</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.0</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -942,7 +962,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.9 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.0 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
