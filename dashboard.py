@@ -1,8 +1,8 @@
 """
-LumineX Dashboard v3.8
+LumineX Dashboard v3.9
 실행: streamlit run dashboard.py
 
-v3.8 변경사항 (2026-06-06):
+v3.9 변경사항 (2026-06-06):
 1. PRESET_CATEGORIES — v13/v14 프리셋 전체 반영
    - 🖌️ 바디페인팅: v14 관능적 바디페인팅 35개 추가 (총 101개)
    - 🍬 팝 & 카와이: v13 추가 20개 반영
@@ -49,7 +49,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── 카테고리별 프리셋 매핑 (v3.8 전체 반영) ─────────────────
+# ─── 카테고리별 프리셋 매핑 (v3.9 전체 반영) ─────────────────
 PRESET_CATEGORIES = {
     "🖌️ 바디페인팅 & 스킨 트랜스폼": [
         # 기존
@@ -146,6 +146,9 @@ PRESET_CATEGORIES = {
         "marble_minimal","viking_queen",
         # v11
         "sumerian_queen","ming_empress","aztec_sun_goddess","celtic_warrior_queen",
+        # v17 보강
+        "aphrodite_glam","artemis_huntress","freya_norse","kali_goddess",
+        "isis_egypt","lakshmi_goddess","oshun_yoruba","morgan_le_fay",
     ],
     "✈️ 직업 & 라이프스타일": [
         "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
@@ -197,6 +200,9 @@ PRESET_CATEGORIES = {
         "midnight_bath",
         # v11
         "ballet_noir","broadway_diva","street_dance","drag_glamour",
+        # v17 보강
+        "belly_dance_glam","lap_dance_glam","striptease_art","pole_dance_power",
+        "samba_carnival","hula_goddess","jazz_dance_glam","kathak_dance",
     ],
     "👘 전통 & 문화의상": [
         "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
@@ -204,6 +210,9 @@ PRESET_CATEGORIES = {
         # v10
         "kimono_silk","ao_dai_sheer","thai_temple","indian_bridal","moroccan_kaftan",
         "persian_court","yoruba_glamour","balinese_goddess","chinese_qipao_slit","scottish_corset",
+        # v17 보강
+        "hanfu_goddess","cheongsam_slit","kebaya_java","dashiki_glam","kaftan_sheer",
+        "flamenco_dress","dirndl_glam","hanbok_modern","ao_dai_glamour","saree_draped_sensual",
     ],
     "🌸 계절 & 테마": [
         "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
@@ -211,6 +220,9 @@ PRESET_CATEGORIES = {
         # v10
         "first_snow","golden_autumn","midsummer_heat","rainy_season","harvest_moon",
         "winter_solstice","cherry_blossom_night","tropical_monsoon",
+        # v17 보강
+        "halloween_glam","christmas_boudoir","new_year_glam","sakura_night_glam",
+        "summer_solstice_glam","autumn_gold_sensual","snow_queen_erotic","monsoon_goddess",
     ],
     "🍬 팝 & 카와이": [
         # v10
@@ -319,7 +331,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.8</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.9</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -926,7 +938,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.8 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.9 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
