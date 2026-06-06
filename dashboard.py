@@ -1,5 +1,5 @@
 """
-LumineX Dashboard v4.1
+LumineX Dashboard v4.2
 실행: streamlit run dashboard.py
 
 v4.1 변경사항 (2026-06-06):
@@ -297,17 +297,28 @@ PRESET_CATEGORIES = {
     ],
 }
 
-# SS tier (22개 확정)
+# SS tier (48개 확정)
 SS_TIER = {
+    # 기존 명화/예술 계열
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
     "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
     "ash_phoenix","lichtenstein_dot","warhol_pop","mondrian_body",
-    # v14 신규
+    # v14
     "lace_body_paint","jewelry_trompe_loeil",
-    # v15 신규 (테스트 확인)
+    # v15 명화
     "klimt_silver","botticelli_venus","liquid_gold_drip","mermaid_scales","tiger_stripes_body",
-    # v16 신규 (ChatGPT 테스트 확인)
+    # v16 관능
     "latex_queen",
+    # v18 동물 1차 테스트
+    "mantis_shrimp","chameleon_skin","peacock_feather","koi_fish",
+    "phoenix_rising","jellyfish_glow","butterfly_morpho","panther_black",
+    # v18 동물 2차 테스트
+    "octopus_ink","polynesian_tribal","flamingo_pink","macaw_scarlet",
+    "nudibranch_sea","hummingbird_iridescent","snow_leopard","scarab_beetle",
+    # v18 동물 3차 테스트
+    "arctic_fox","sphinx_cat","atlas_moth","lionfish_venomous",
+    "eagle_wings","lion_golden","dragonfly_iridescent","koi_dragon",
+    "unicorn_opal","butterfly_monarch",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
@@ -373,7 +384,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.1</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.2</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -980,7 +991,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.1 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.2 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
