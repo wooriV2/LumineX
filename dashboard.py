@@ -259,7 +259,7 @@ PRESET_CATEGORIES = {
     ],
 }
 
-# SS tier (21개 확정)
+# SS tier (22개 확정)
 SS_TIER = {
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
     "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
@@ -268,6 +268,8 @@ SS_TIER = {
     "lace_body_paint","jewelry_trompe_loeil",
     # v15 신규 (테스트 확인)
     "klimt_silver","botticelli_venus","liquid_gold_drip","mermaid_scales","tiger_stripes_body",
+    # v16 신규 (ChatGPT 테스트 확인)
+    "latex_queen",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
