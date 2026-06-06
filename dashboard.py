@@ -89,7 +89,7 @@ PRESET_CATEGORIES = {
         "renoir_soft","botticelli_venus","titian_goddess","rubens_baroque","ingres_odalisque",
         "waterhouse_nymph","rossetti_dante","alma_tadema","vigee_lebrun",
         # v15 — 생존/최근 작가 6개
-        "banksy_stencil","keith_haring_body","yayoi_kusama","takashi_murakami",
+        "keith_haring_body","yayoi_kusama","takashi_murakami",
         "jean_dubuffet","jean_cocteau",
         # v15 — 부족/문화 10개
         "bodi_clay","ndebele_pattern","tuareg_indigo","mursi_lip","himba_ochre",
