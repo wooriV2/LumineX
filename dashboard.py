@@ -329,6 +329,9 @@ SS_TIER = {
     "najeon_abalone","giraffe_pattern","zebra_stripes","dragon_scales_red",
     # 2026-06-06 추가 테스트 확정 (빌더수정으로 천오인식 해결)
     "alma_tadema","gauguin_tropics","melting_chocolate",
+    # 2026-06-06 동물/조류/재테스트 확정 7개
+    "parrot_tropical","boa_constrictor","king_cobra_hood","cheetah_speed",
+    "bird_of_paradise","owl_feather","crocodile_skin",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
