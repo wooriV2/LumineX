@@ -1,8 +1,8 @@
 """
-LumineX Dashboard v3.7
+LumineX Dashboard v3.8
 실행: streamlit run dashboard.py
 
-v3.7 변경사항 (2026-06-06):
+v3.8 변경사항 (2026-06-06):
 1. PRESET_CATEGORIES — v13/v14 프리셋 전체 반영
    - 🖌️ 바디페인팅: v14 관능적 바디페인팅 35개 추가 (총 101개)
    - 🍬 팝 & 카와이: v13 추가 20개 반영
@@ -49,7 +49,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── 카테고리별 프리셋 매핑 (v3.7 전체 반영) ─────────────────
+# ─── 카테고리별 프리셋 매핑 (v3.8 전체 반영) ─────────────────
 PRESET_CATEGORIES = {
     "🖌️ 바디페인팅 & 스킨 트랜스폼": [
         # 기존
@@ -107,6 +107,9 @@ PRESET_CATEGORIES = {
         "veil_goddess","petal_goddess","cobweb_drape",
         # v11
         "casino_royale","black_tie_gala","champagne_tower","fur_coat_only",
+        # v16 보강
+        "plunge_gown","slit_maxi","cutout_bodysuit","sheer_overlay",
+        "jeweled_bikini_top","golden_drape_goddess","crystal_gown","feather_trim_mini",
     ],
     "🌿 자연 & 원소": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","blizzard_queen","sandstorm_veil",
@@ -164,6 +167,8 @@ PRESET_CATEGORIES = {
         "double_exposure_ethereal","oil_slick_noir",
         # v11
         "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
+        # v16 보강
+        "dark_succubus","vampire_seduction","witch_sensual","dark_fairy_erotic","shadow_seductress",
     ],
     "⚔️ 파워 & 엣지": [
         "valkyrie_storm","savage_leather","latex_venom","biker_glam","shadow_play","frozen_latex",
@@ -171,6 +176,8 @@ PRESET_CATEGORIES = {
         "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent","oil_goddess",
         # v11
         "riot_goddess","punk_queen","steel_warrior","cage_fighter",
+        # v16 보강
+        "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
     ],
     "🏖️ 비치 & 리조트": [
         "summer_beach","surfer_goddess","aqua_bikini","barely_there","golden_summer","pool_goddess",
@@ -179,6 +186,9 @@ PRESET_CATEGORIES = {
         "balcony_goddess",
         # v11
         "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
+        # v16 보강
+        "thong_bikini","micro_bikini_gold","sarong_goddess",
+        "wet_bikini_pool","topless_editorial","nude_beach_art",
     ],
     "🎭 퍼포먼스 & 댄스": [
         "flamenco_queen","tango_passion","burlesque","showgirl","cabaret_star","circus_performer",
@@ -211,6 +221,18 @@ PRESET_CATEGORIES = {
         "lolita_gothic","disco_barbie","space_babe","bubblegum_pop","rainbow_rave","glitter_bomb",
         "arcade_queen","virtual_idol","tokimeki_pop","kpop_idol","korean_ulzzang","kbeauty_goddess",
         "kdrama_heroine","manga_girl",
+    ],
+    "💋 관능 & 에로틱 글래머": [
+        # 란제리 & 바디콘
+        "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
+        # 웻룩 & 오일
+        "wet_silk_gown","oil_goddess_gold","pool_wet_glam","rain_soaked_dress","sweat_glam",
+        # 스트립 & 미니멀
+        "micro_dress_only","barely_covered","deep_plunge_gown","backless_extreme","one_strap_gown",
+        # 파워 섹시
+        "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
+        # 핀업 & 레트로
+        "pinup_classic","vargas_girl","bombshell_retro","bunny_suit","playboy_glam",
     ],
     "🎌 애니 & 글래머": [
         # v13 일본 계열
@@ -297,7 +319,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.7</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.8</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -904,7 +926,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.7 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.8 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
