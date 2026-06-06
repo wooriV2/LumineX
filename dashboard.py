@@ -1,1896 +1,1130 @@
 """
-dashboard.py - Claude Asset Engine 대시보드 (모바일 반응형)
+LumineX Dashboard v3.5 - 신규 카테고리 섹션 추가
+실행: streamlit run dashboard.py
+
+v3.5 변경사항 (2026-06-04):
+1. 프리셋 모드 — 카테고리 필터 추가 (14개 카테고리)
+2. 신규 카테고리 섹션 3개 추가:
+   - 🍬 팝 & 카와이
+   - 👘 전통 & 문화의상
+   - 🌸 계절 & 테마
+3. 버전 표기 v3.4 → v3.5
+4. combos.py v3.5 연동 (topographic 차단, barely_there/wet_look 위험도 하향)
 """
 
-import json
-import streamlit as st
-import plotly.graph_objects as go
-from datetime import date
-from decimal import Decimal
+import sys
+import random
 from pathlib import Path
-import yfinance as yf
+from dotenv import load_dotenv
+load_dotenv()
 
-from asset_engine.config import load_kis_config
-from asset_engine.models.asset import AssetRole, AssetType, Exchange, Market
-from asset_engine.models.asset import Asset
-from asset_engine.models.money import Currency, Money
-from asset_engine.models.portfolio import FxRates
-from asset_engine.presets.buffett_compound_defense import BUFFETT_COMPOUND_DEFENSE
-from asset_engine.providers.fx_provider import YFinanceFxProvider
-from asset_engine.providers.indicator_provider import YFinanceIndicatorProvider
-from asset_engine.providers.kis_broker import KISAdapter
-from asset_engine.providers.fdr_provider import FDRProvider
-from asset_engine.providers.dart_provider import DARTProvider
-from asset_engine.engine.regime import RegimeEngine
-from asset_engine.engine.rebalance import RebalanceEngine
-from asset_engine.engine.safety import create_safety_guard
-from asset_engine.engine.correlation_guard import CorrelationGuard, default_guard
-from asset_engine.engine.scoring import StockScorer
-from asset_engine.engine.scoring_cache import get_or_fetch_score, invalidate_all_cache
-from asset_engine.models.action import AlertLevel
+sys.path.insert(0, str(Path(__file__).parent))
 
-
-# =============================================================================
-# 설정
-# =============================================================================
-
-TRANSACTION_COST = 0.00015   # 수수료 0.015%
-TAX_TRANSACTION = 0.0018     # 거래세 0.18%
-
-ROLE_MAP = {
-    "360750": AssetRole.CORE,
-    "360750": AssetRole.CORE,
-    "000660": AssetRole.GROWTH,
-    "005930": AssetRole.CORE,
-    "030200": AssetRole.INCOME,
-}
-
-DART_CORP_CODES = {
-    "005930": "00126380",
-    "000660": "00164779",
-    "030200": "00104899",
-    "360750": None,
-}
-
-PRESET = BUFFETT_COMPOUND_DEFENSE
-
-ROLE_COLOR = {
-    "Core": "#4C9EEB",
-    "Income": "#00C896",
-    "Growth": "#9B59B6",
-    "Hedge": "#F5A623",
-    "Special": "#E74C3C",
-}
-
-# 추천 후보 모드별 파일
-BUY_CANDIDATES_DIR = Path("cache/recommend_buy")
-BUCKETS_PATH = Path("cache/buckets.json")
-MODE_FILE_MAP = {
-    "🏛️ 버핏형": "buffett",
-    "⚖️ 균형형": "balanced",
-    "🚀 성장형": "growth",
-}
-
-
-# =============================================================================
-# 페이지 설정
-# =============================================================================
+import streamlit as st
+from core.engine import list_presets, load_preset, build_prompt
+from core.prompt_generator import generate_prompt_with_ai
+from core.data import (
+    ASPECT_RATIOS,
+    MODEL_APPEARANCE, AGE_APPEARANCE, MODEL_TYPES,
+    BODY_WEIGHT, BUST_SIZE, HIP_SIZE,
+    OUTFIT_TYPES, MATERIALS, ENVIRONMENTS, STYLES,
+    LIGHTING, CAMERA_ANGLES, FOOTWEAR, CAMERAS,
+    HAIR_STYLES, HAIR_COLORS, MODEL_COUNT,
+    ERA, CONCEPT, SPECIAL_EFFECTS, IMAGE_STYLE, PROPS,
+    MAKEUP, ACCESSORIES, SKIN_TONES,
+    POSES, WEATHER, EXPRESSION, TATTOO, BODY_OIL, BG_CROWD,
+    COLOR_GRADES, MOOD, TIME_OF_DAY, LENS_EFFECT,
+    TOP_TYPES, BOTTOM_TYPES,
+    SKIN_DETAILS, NAILS,
+    FRAMING,
+    COVER_STYLES,
+)
+from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
+from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
 
 st.set_page_config(
-    page_title="Claude Asset Engine",
-    page_icon="📊",
+    page_title="LumineX Dashboard",
+    page_icon="✦",
     layout="wide",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="expanded",
 )
 
-st.markdown("""
+# ─── 카테고리별 프리셋 매핑 (v3.5 신규) ─────────────────────
+PRESET_CATEGORIES = {
+    "🖌️ 바디페인팅 & 스킨 트랜스폼": [
+        "bioluminescent_ink","klimt_gold_body","vangogh_body","dali_surreal","munch_scream",
+        "monet_bloom","mucha_nouveau","hokusai_wave","kandinsky_abstract","pollock_splash",
+        "broken_porcelain","marble_veins","henna_goddess_body","oil_slick_body","liquid_chrome_body",
+        "ink_wash_body","body_paint_art","watercolor_goddess","fresco_goddess","fresco_awakening",
+        "tableau_vivant","coral_reef","leopard_dissolve","peacock_feather","snake_scale",
+        "butterfly_wing","deep_ocean_map","dna_helix","star_map","neuron_network","neon_circuit",
+        "topographic","maori_moko","aztec_warrior","egypt_hieroglyph","celtic_knotwork",
+        "polynesian_tribal","viking_rune","inca_geometric","chinese_dragon","aboriginal_dot",
+        "galaxy_skin","crystal_growth","tree_of_life","moonphase_body","shadow_lace",
+        "ash_phoenix","half_statue",
+        # v12 신규
+        "rembrandt_chiaroscuro","klimt_silver","matisse_cutout","mondrian_body","basquiat_street",
+        "warhol_pop","lichtenstein_dot","huli_wigman","nuba_body","wodaabe_beauty","mehndi_full",
+        "mayan_ritual","haida_totem","aurora_skin","crystal_mineral","tide_pool","magnetic_field",
+        "cell_division",
+    ],
+    "💫 글래머 & 럭셔리": [
+        "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
+        "elite_lingerie","lingerie_noir","noir_opulence","platinum_elite","ivory_silk","ivory_tower",
+        "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
+        "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
+        "feather_cascade","feather_touch","golden_oil","golden_nude","gold_temptress","red_temptress",
+        "veil_goddess","petal_goddess","cobweb_drape",
+        # v11 신규
+        "casino_royale","black_tie_gala","champagne_tower","fur_coat_only",
+    ],
+    "🌿 자연 & 원소": [
+        "lava_flow","ocean_surge","ice_palace","ice_refraction","blizzard_queen","sandstorm_veil",
+        "storm_couture","heat_shimmer","water_reflection","waterfall_goddess","rain_soaked",
+        "mist_goddess","mist_vanguard","winter_forest","desert_mirage","desert_oracle",
+        "desert_sand_glam","cliff_edge","arctic_minimal","dawn_awakening","aurora_drape",
+        "aurora_spirit","lightning_body","solar_flare","tropical_storm","santorini_lightning",
+        "smoke_veil","liquid_gold_pour","liquid_mirror","prism_light","shattered_glass","zero_gravity",
+        # v11 신규
+        "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
+    ],
+    "🌃 도시 & 나이트": [
+        "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
+        "rooftop_midnight","rooftop_party","midnight_goddess","midnight_monolith","nightclub_vip",
+        "monaco_nights","miami_afterglow","azure_nights","blue_hour_goddess","candlelight_noir",
+        "jazz_club","jazz_age","noir_ballet","urban_vanguard","brutalist_glam","after_dark_minimal",
+        "disco_goddess","music_festival","new_year_countdown","cyber_fire","cyber_silk","emerald_city",
+        # v11 신규
+        "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
+    ],
+    "🎬 에디토리얼 & 무드": [
+        "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
+        "light_driven","backlit_silk","mirror_goddess","mirror_room","eclipse_body","chrome_skin",
+        "neon_body","plasma_aura","molten_chrome","mercury_rising","mercury_pool","titanium_body",
+        "snowflake_skin","80s_power","y2k_chrome","harajuku_doll","doll_house","bubble_tea",
+        "bohemian_paris","origami_couture",
+        # v11 신규
+        "wet_glass","smoke_studio","infrared_beauty","grain_film",
+    ],
+    "🏺 문명 & 신화": [
+        "cleopatra_gold","pharaoh_queen","byzantine_empress","maasai_warrior","nine_tails",
+        "moonrise_ceremony","oracle_smoke","ritual_ash","ruins_goddess","renaissance_fantasy",
+        "renaissance_nude","cathedral_light","baroque_punk","art_gallery","museum_glamour",
+        "library_secret","living_sculpture","living_statue","sculpture_goddess","marble_goddess",
+        "marble_minimal","viking_queen",
+        # v11 신규
+        "sumerian_queen","ming_empress","aztec_sun_goddess","celtic_warrior_queen",
+    ],
+    "✈️ 직업 & 라이프스타일": [
+        "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
+        "cruise_hostess","yacht_captain","yacht_club","sommelier","wine_tasting","casino_dealer",
+        "private_jet","helipad","luxury_shopping","golf_glam","golf_caddie","tennis_luxe",
+        "tennis_referee","f1_grid_girl","equestrian_glam","cheerleader","architect_chic",
+        "fitness_power","yoga_goddess",
+        # v11 신규
+        "barista_chic","gallery_curator","horse_racing","scuba_instructor",
+    ],
+    "🔮 판타지 & 다크": [
+        "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
+        "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
+        "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
+        "zombie_apocalypse","dark_academia","gothic_romance","double_exposure_dark",
+        "double_exposure_ethereal","oil_slick_noir",
+        # v11 신규
+        "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
+    ],
+    "⚔️ 파워 & 엣지": [
+        "valkyrie_storm","savage_leather","latex_venom","biker_glam","shadow_play","frozen_latex",
+        "chrome_vixen","chain_goddess","fencer_noir","martial_arts","boxing_glamour","power_curve",
+        "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent","oil_goddess",
+        # v11 신규
+        "riot_goddess","punk_queen","steel_warrior","cage_fighter",
+    ],
+    "🏖️ 비치 & 리조트": [
+        "summer_beach","surfer_goddess","aqua_bikini","barely_there","golden_summer","pool_goddess",
+        "poolside_noir","infinity_pool","riviera_heat","beach_bonfire","wet_look_goddess",
+        "scuba_goddess","glass_floor","glass_house","ski_chalet","vineyard_harvest","spa_noir",
+        "balcony_goddess",
+        # v11 신규
+        "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
+    ],
+    "🎭 퍼포먼스 & 댄스": [
+        "flamenco_queen","tango_passion","burlesque","showgirl","cabaret_star","circus_performer",
+        "pole_art","candy_rave","ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
+        "opera_night","christmas_glamour","pop_art_glamour","ribbon_goddess","petal_storm",
+        "midnight_bath",
+        # v11 신규
+        "ballet_noir","broadway_diva","street_dance","drag_glamour",
+    ],
+    "👘 전통 & 문화의상": [
+        "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
+        "harem_goddess","belly_dancer","odalisque","imperial_silk",
+        # v10 신규
+        "kimono_silk","ao_dai_sheer","thai_temple","indian_bridal","moroccan_kaftan",
+        "persian_court","yoruba_glamour","balinese_goddess","chinese_qipao_slit","scottish_corset",
+    ],
+    "🌸 계절 & 테마": [
+        "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
+        "sunflower_field","greenhouse_eden","tropical_night",
+        # v10 신규
+        "first_snow","golden_autumn","midsummer_heat","rainy_season","harvest_moon",
+        "winter_solstice","cherry_blossom_night","tropical_monsoon",
+    ],
+    "🍬 팝 & 카와이": [
+        "bubble_tea","doll_house","harajuku_doll","pastel_fairy","candy_rave","pop_art_glamour",
+        # v10 신규
+        "y2k_fairy","pink_champagne","cotton_candy","angel_baby","idol_stage","kitty_glam",
+        "strawberry_milk","cherry_pop","neon_kawaii","fairy_kei",
+    ],
+}
+
+# SS tier 프리셋
+SS_TIER = {
+    "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
+    "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
+    "ash_phoenix","lichtenstein_dot","warhol_pop","mondrian_body",
+}
+
+# ─── 다크 테마 CSS ────────────────────────────────────────
+BG       = "#1e1e1e"
+BG_SIDE  = "#252526"
+BG_INPUT = "#2d2d2d"
+BG_CARD  = "#2a2a2a"
+GOLD     = "#c9a84c"
+GOLD_DIM = "#8a6f30"
+BORDER   = "#3a3a3a"
+TEXT     = "#d4d4d4"
+TEXT_DIM = "#888"
+
+st.markdown(f"""
 <style>
-    .main { background-color: #0E1117; }
-    div[data-testid="stMetric"] {
-        background: #1E2130;
-        border-radius: 12px;
-        padding: 12px;
-        border: 1px solid #2D3250;
-    }
-    div[data-testid="stMetric"] label { font-size: 11px !important; }
-    div[data-testid="stMetric"] [data-testid="stMetricValue"] { font-size: 16px !important; }
-    .stButton > button { min-height: 44px; font-size: 15px; }
-    .stTabs [data-baseweb="tab"] { font-size: 14px; padding: 10px 16px; }
-    [data-testid="column"] { padding: 0 4px !important; }
-    section[data-testid="stSidebar"] { min-width: 260px; max-width: 300px; }
-    details summary { min-height: 44px; display: flex; align-items: center; }
-    @media (max-width: 768px) {
-        div[data-testid="stMetric"] { padding: 8px; }
-        div[data-testid="stMetric"] label { font-size: 10px !important; }
-        div[data-testid="stMetric"] [data-testid="stMetricValue"] { font-size: 13px !important; }
-        h1 { font-size: 1.4rem !important; }
-        h3 { font-size: 1.1rem !important; }
-    }
+/* ── 전체 배경 ── */
+.stApp, [data-testid="stAppViewContainer"] {{ background-color: {BG} !important; }}
+[data-testid="stHeader"] {{ background-color: {BG} !important; }}
+
+/* ── 사이드바 ── */
+[data-testid="stSidebar"] {{ background-color: {BG_SIDE} !important; border-right: 1px solid {BORDER} !important; }}
+[data-testid="stSidebar"] .stMarkdown p,
+[data-testid="stSidebar"] label {{ color: {TEXT_DIM} !important; font-size: 0.78rem !important; }}
+[data-testid="stSidebar"] h3 {{ color: {GOLD_DIM} !important; font-size: 0.65rem !important; letter-spacing: 2.5px !important; text-transform: uppercase !important; }}
+
+/* ── 헤딩 ── */
+h1, h2, h3, h4, h5 {{ color: {GOLD} !important; letter-spacing: 1.5px !important; }}
+
+/* ── 탭 ── */
+.stTabs [data-baseweb="tab-list"] {{ background-color: transparent !important; border-bottom: 1px solid {BORDER} !important; gap: 0 !important; }}
+.stTabs [data-baseweb="tab"] {{ background-color: transparent !important; color: {TEXT_DIM} !important; font-size: 0.78rem !important; padding: 10px 20px !important; border-bottom: 2px solid transparent !important; }}
+.stTabs [aria-selected="true"] {{ color: {GOLD} !important; border-bottom: 2px solid {GOLD} !important; background-color: transparent !important; }}
+.stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] {{ display: none !important; }}
+
+/* ── 셀렉트박스 ── */
+.stSelectbox > div > div {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
+.stSelectbox > div > div:hover {{ border-color: rgba(201,168,76,0.4) !important; }}
+.stSelectbox > div > div:focus-within {{ border-color: rgba(201,168,76,0.7) !important; box-shadow: 0 0 0 1px rgba(201,168,76,0.2) !important; }}
+.stSelectbox label {{ color: {GOLD} !important; font-size: 0.68rem !important; letter-spacing: 1.2px !important; text-transform: uppercase !important; font-weight: 600 !important; }}
+.stSelectbox [data-baseweb="select"] span,
+.stSelectbox [data-baseweb="select"] div,
+.stSelectbox [data-baseweb="select"] input {{ color: {TEXT} !important; }}
+[data-baseweb="popover"] [data-baseweb="menu"] {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; }}
+[data-baseweb="popover"] li {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
+[data-baseweb="popover"] li:hover {{ background-color: rgba(201,168,76,0.1) !important; color: {GOLD} !important; }}
+
+/* ── 버튼 ── */
+.stButton > button {{ border-radius: 6px !important; font-size: 0.75rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important; font-weight: 700 !important; transition: all 0.2s !important; height: 42px !important; }}
+.stButton > button[kind="primary"] {{ background: linear-gradient(135deg, {GOLD}, {GOLD_DIM}) !important; border: none !important; color: #111 !important; }}
+.stButton > button[kind="primary"]:hover {{ background: linear-gradient(135deg, #e8c96a, {GOLD}) !important; transform: translateY(-1px) !important; }}
+.stButton > button[kind="secondary"] {{ background: transparent !important; border: 1px solid rgba(201,168,76,0.4) !important; color: {GOLD} !important; }}
+.stButton > button[kind="secondary"]:hover {{ background: rgba(201,168,76,0.08) !important; border-color: rgba(201,168,76,0.7) !important; }}
+
+/* ── 라디오 ── */
+.stRadio > div {{ gap: 6px !important; }}
+.stRadio label {{ background: {BG_CARD} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; padding: 7px 12px !important; font-size: 0.78rem !important; color: {TEXT_DIM} !important; cursor: pointer !important; transition: all 0.2s !important; }}
+.stRadio label:has(input:checked) {{ background: rgba(201,168,76,0.12) !important; border-color: rgba(201,168,76,0.5) !important; color: {GOLD} !important; }}
+
+/* ── 텍스트에어리어 ── */
+.stTextArea textarea {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; font-size: 0.78rem !important; line-height: 1.8 !important; }}
+.stTextArea textarea:focus {{ border-color: rgba(201,168,76,0.5) !important; box-shadow: 0 0 0 1px rgba(201,168,76,0.15) !important; }}
+
+/* ── 코드블록 ── */
+.stCode {{ background-color: {BG_INPUT} !important; border: 1px solid rgba(201,168,76,0.25) !important; border-radius: 6px !important; }}
+.stCode code {{ color: #ce9178 !important; font-size: 0.75rem !important; line-height: 1.8 !important; }}
+.stCode button {{ background: rgba(201,168,76,0.1) !important; border: 1px solid rgba(201,168,76,0.3) !important; color: {GOLD} !important; border-radius: 4px !important; }}
+
+/* ── 기타 ── */
+[data-testid="stToggle"] > div {{ background-color: {GOLD} !important; }}
+.stAlert {{ background-color: {BG_CARD} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; color: {TEXT_DIM} !important; font-size: 0.78rem !important; }}
+hr {{ border-color: {BORDER} !important; margin: 12px 0 !important; }}
+.stCaption {{ color: {TEXT_DIM} !important; font-size: 0.7rem !important; }}
+p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }}
+::-webkit-scrollbar {{ width: 4px; }}
+::-webkit-scrollbar-track {{ background: {BG}; }}
+::-webkit-scrollbar-thumb {{ background: {BORDER}; border-radius: 2px; }}
+::-webkit-scrollbar-thumb:hover {{ background: {GOLD_DIM}; }}
+
+/* ── SS tier 뱃지 ── */
+.ss-badge {{
+    display: inline-block;
+    background: linear-gradient(135deg, #c9a84c, #8a6f30);
+    color: #111;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 4px;
+    letter-spacing: 0.5px;
+}}
 </style>
 """, unsafe_allow_html=True)
 
+# ─── 헤더 ─────────────────────────────────────────────────
+st.markdown('''
+<div style="padding:8px 0 20px;">
+  <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.5</div>
+</div>
+''', unsafe_allow_html=True)
 
-# =============================================================================
-# 데이터 로딩
-# =============================================================================
-
-@st.cache_data(ttl=300)
-def load_data(is_paper: bool):
-    config = load_kis_config(is_paper=is_paper)
-    adapter = KISAdapter(
-        app_key=config.app_key,
-        app_secret=config.app_secret,
-        account_no=config.account_no,
-        is_paper=config.is_paper,
-    )
-    portfolio = adapter.get_portfolio(role_map=ROLE_MAP)
-
-    fx_provider = YFinanceFxProvider()
-    fx_rate = fx_provider.get_rate(Currency.USD, Currency.KRW)
-    fx = FxRates(
-        base=Currency.KRW,
-        rates={Currency.USD: fx_rate},
-        as_of=date.today(),
-    )
-
-    prices = {}
-    for pos in portfolio.positions:
-        try:
-            prices[pos.asset.ticker] = adapter.get_current_price(pos.asset)
-        except Exception:
-            try:
-                kr_provider = FDRProvider()
-                prices[pos.asset.ticker] = kr_provider.get_current_price(pos.asset)
-            except Exception:
-                pass
-
-    indicator = YFinanceIndicatorProvider()
-    snapshot = indicator.get_market_snapshot()
-
-    regime_engine = RegimeEngine(preset=PRESET)
-    regime, _ = regime_engine.determine_regime(snapshot)
-
-    rebalance_engine = RebalanceEngine(preset=PRESET)
-    total = portfolio.total_value(prices, fx)
-    output = rebalance_engine.run(
-        portfolio=portfolio,
-        prices=prices,
-        fx=fx,
-        regime=regime,
-        peak_value=total,
-    )
-
-    return {
-        "portfolio": portfolio,
-        "prices": prices,
-        "fx": fx,
-        "fx_rate": fx_rate,
-        "snapshot": snapshot,
-        "regime": regime,
-        "output": output,
-        "total": total,
-        "adapter": adapter,
-    }
-
-
-def fetch_score_for(ticker: str, name: str, corp_code: str) -> object:
-    dart = DARTProvider()
-    scorer = StockScorer(preset=PRESET)
-    ttm, label = dart.get_ttm_financials(corp_code)
-    trend = dart.get_trend_metrics(corp_code, years=10)
-    latest_year = dart.get_latest_fiscal_year(corp_code)
-    dividend = dart.get_dividend_history(corp_code, year=latest_year)
-    yf_ticker = yf.Ticker(f"{ticker}.KS")
-    info = yf_ticker.info
-    current_price = info.get("currentPrice") or info.get("regularMarketPrice") or 0
-    per = info.get("trailingPE") or 0
-    if per == 0 and current_price > 0:
-        shares = info.get("sharesOutstanding") or 0
-        net_income = float(ttm.get("net_income", 0))
-        if shares > 0 and net_income > 0:
-            per = current_price / (net_income / shares)
-    pbr = info.get("priceToBook") or 0
-    if pbr == 0 and current_price > 0:
-        shares = info.get("sharesOutstanding") or 0
-        total_equity = float(ttm.get("total_equity", 0))
-        if shares > 0 and total_equity > 0:
-            pbr = current_price / (total_equity / shares)
-    beta = info.get("beta") or 1.0
-    div_yield_raw = info.get("dividendYield") or 0
-    div_yield = div_yield_raw * 100 if div_yield_raw <= 1 else div_yield_raw
-    market_data = {"per": per, "pbr": pbr, "beta": beta, "dividend_yield": div_yield}
-    return scorer.score(
-        ticker=ticker, name=name, ttm=ttm,
-        market_data=market_data, dividend=dividend,
-        trend=trend, data_label=label,
-    )
-
-
-def load_buy_candidates_by_mode(mode: str):
-    safe = MODE_FILE_MAP.get(mode, "unknown")
-    path = BUY_CANDIDATES_DIR / f"{safe}.json"
-    if not path.exists():
-        return None
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return None
-
-def load_buckets() -> dict:
-    if not BUCKETS_PATH.exists():
-        return {}
-    try:
-        with open(BUCKETS_PATH, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return {}
-
-def save_buckets(data: dict) -> None:
-    with open(BUCKETS_PATH, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)        
-
-
-def get_current_price_by_ticker(ticker: str, is_paper: bool) -> tuple:
-    try:
-        config = load_kis_config(is_paper=is_paper)
-        adapter = KISAdapter(
-            app_key=config.app_key,
-            app_secret=config.app_secret,
-            account_no=config.account_no,
-            is_paper=config.is_paper,
-        )
-        asset = Asset(
-            ticker=ticker, name=ticker,
-            market=Market.KR, asset_type=AssetType.STOCK,
-            currency=Currency.KRW, exchange=Exchange.KRX,
-            candidate_roles=[AssetRole.CORE],
-        )
-        price = adapter.get_current_price(asset)
-        try:
-            info = yf.Ticker(f"{ticker}.KS").info
-            name = info.get("longName") or info.get("shortName") or ticker
-        except Exception:
-            name = ticker
-        return price, name
-    except Exception as e:
-        return None, str(e)
-
-
-def place_manual_order(ticker: str, name: str, quantity: int, is_paper: bool, side: str = "buy") -> str:
-    config = load_kis_config(is_paper=is_paper)
-    adapter = KISAdapter(
-        app_key=config.app_key,
-        app_secret=config.app_secret,
-        account_no=config.account_no,
-        is_paper=config.is_paper,
-    )
-    asset = Asset(
-        ticker=ticker, name=name,
-        market=Market.KR, asset_type=AssetType.STOCK,
-        currency=Currency.KRW, exchange=Exchange.KRX,
-        candidate_roles=[AssetRole.CORE],
-    )
-    if side == "buy":
-        return adapter.place_buy_order(asset=asset, quantity=Decimal(str(quantity)))
-    else:
-        return adapter.place_sell_order(asset=asset, quantity=Decimal(str(quantity)))
-
-
-# =============================================================================
-# 사이드바
-# =============================================================================
-
+# ─── 사이드바 ─────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### ⚙️ 설정")
-    is_paper = st.toggle("모의투자", value=False)
+    st.markdown("### ⚙️ 전역 설정")
     st.markdown("---")
-    if st.button("🔄 데이터 새로고침", use_container_width=True):
-        st.cache_data.clear()
-        st.rerun()
+    global_platform = st.radio("🖥️ 출력 플랫폼", options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"], index=0)
+    global_aspect   = st.selectbox("📐 이미지 비율", options=list(ASPECT_RATIOS.keys()), index=0, help="★ = 기본값 권장")
+    global_realism      = st.toggle("📷 실사 모드", value=True)
+    global_art_fallback = st.toggle("🎨 위험 시 아트 스타일", value=False, help="HIGH 위험 감지 시 수채화/흑백 자동 적용 — 통과율 우선")
     st.markdown("---")
-    st.markdown("### 📋 프리셋")
-    st.markdown(f"**{PRESET.name}**")
-    st.markdown(f"기본 목표: {PRESET.target_return.baseline*100:.0f}%")
-    st.markdown(f"도전 목표: {PRESET.target_return.stretch*100:.0f}%")
+    st.markdown("### 🎬 영상 플랫폼")
+    global_video_platform = st.radio("영상 생성 플랫폼", options=["Veo 3 (Gemini)", "Kling AI", "Runway", "Hailuo"], index=0)
     st.markdown("---")
-    st.markdown("### 🎯 목표 비중")
-    for role in AssetRole:
-        target = PRESET.role_targets.get(role)
-        color = ROLE_COLOR.get(role.value, "#8B9AB0")
-        st.markdown(
-            f"<span style='color:{color}'>■</span> **{role.value}**: {target*100:.0f}%",
-            unsafe_allow_html=True,
-        )
+    platform_colors = {"Gemini": "🔵", "ChatGPT (DALL-E)": "🟢", "Midjourney": "🟣"}
+    st.markdown(f"**플랫폼:** {platform_colors[global_platform]} `{global_platform}`")
+    st.markdown(f"**비율:** `{global_aspect.split('—')[0].strip()}`")
+    if global_platform == "Gemini":
+        st.markdown(f"**실사:** `{'ON ✅' if global_realism else 'OFF'}`")
+    st.markdown("---")
+    st.markdown("### 📌 사용법")
+    st.markdown("1. 플랫폼 선택\n2. 탭 선택\n3. 요소 선택\n4. **프롬프트 조합** 클릭\n5. 코드박스 클릭 → 복사\n6. 해당 플랫폼에 붙여넣기")
+    st.markdown("---")
+    st.markdown("### 💡 플랫폼 팁")
+    if global_platform == "Gemini":
+        st.info("자연어 서술형. 길고 상세할수록 좋아요.")
+    elif global_platform == "ChatGPT (DALL-E)":
+        st.success("키워드 중심. 짧고 강렬하게!")
+    else:
+        st.warning("태그 나열 + --파라미터 방식.")
+
+    if global_platform == "Gemini":
+        st.markdown("---")
+        st.markdown("### 🔄 Gemini 세션")
+        if st.button("🆕 Gemini 새 창 열기", use_container_width=True, help="누적 맥락 초기화 — 새 대화창에서 시작"):
+            import webbrowser
+            webbrowser.open("https://gemini.google.com/app")
+        st.caption("💡 같은 창 반복 생성 시 타투/헤어 오염 주의")
+
+    # ── v3.5 신규: 사이드바 프리셋 통계 ──
+    st.markdown("---")
+    st.markdown("### 📊 프리셋 현황")
+    total = sum(len(v) for v in PRESET_CATEGORIES.values())
+    st.markdown(f"**총 프리셋:** `{total}개`")
+    st.markdown(f"**SS tier:** `{len(SS_TIER)}개`")
+    st.markdown(f"**카테고리:** `{len(PRESET_CATEGORIES)}개`")
 
 
-# =============================================================================
-# 메인
-# =============================================================================
+def get_prompt(data: dict) -> str:
+    if global_platform == "Gemini":
+        return build_gemini_prompt(data, global_aspect, global_realism)
+    elif global_platform == "ChatGPT (DALL-E)":
+        return build_chatgpt_prompt(data, global_aspect)
+    else:
+        return build_midjourney_prompt(data, global_aspect)
 
-st.markdown("# 📊 Claude Asset Engine")
-st.markdown(f"*{date.today().strftime('%Y년 %m월 %d일')} 기준*")
-st.markdown("---")
 
-with st.spinner("데이터 조회 중..."):
-    try:
-        data = load_data(is_paper=is_paper)
-    except Exception as e:
-        st.error(f"데이터 로딩 실패: {e}")
+tab1, tab2, tab3, tab4 = st.tabs(["🎨 프리셋 모드", "🛠️ 수동 조합", "🎲 랜덤 모드", "🎬 영상 프롬프트"])
+
+# ══════════════════════════════════════════════════════════
+# 탭 1: 프리셋 모드 (v3.5 — 카테고리 필터 추가)
+# ══════════════════════════════════════════════════════════
+with tab1:
+    st.markdown("### 프리셋으로 프롬프트 생성")
+
+    # ── v3.5 신규: 카테고리 필터 ──
+    col_cat, col_search = st.columns([2, 1])
+    with col_cat:
+        all_cats = ["🌟 전체"] + list(PRESET_CATEGORIES.keys())
+        selected_cat = st.selectbox("📂 카테고리 필터", options=all_cats, index=0, key="preset_cat_filter")
+    with col_search:
+        search_query = st.text_input("🔍 프리셋 검색", placeholder="이름 검색...", key="preset_search")
+
+    # 카테고리/검색 기반 프리셋 목록 필터링
+    all_presets = list_presets()
+    if selected_cat == "🌟 전체":
+        filtered_presets = all_presets
+    else:
+        cat_list = PRESET_CATEGORIES.get(selected_cat, [])
+        filtered_presets = [p for p in all_presets if p in cat_list]
+
+    if search_query:
+        filtered_presets = [p for p in filtered_presets if search_query.lower() in p.lower()]
+
+    # SS tier 표시
+    def format_preset(name):
+        if name in SS_TIER:
+            return f"⭐ {name} [SS]"
+        return f"• {name}"
+
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        if filtered_presets:
+            selected_preset = st.selectbox(
+                f"🎨 프리셋 선택 ({len(filtered_presets)}개)",
+                options=filtered_presets,
+                format_func=format_preset
+            )
+        else:
+            st.warning("해당 카테고리에 프리셋이 없어요.")
+            selected_preset = None
+    with col2:
+        if selected_cat != "🌟 전체":
+            ss_count = sum(1 for p in filtered_presets if p in SS_TIER)
+            st.markdown(f"""
+<div style="background:{BG_CARD};border:1px solid {BORDER};border-radius:8px;padding:10px 14px;margin-top:28px;">
+  <div style="font-size:0.65rem;color:{TEXT_DIM};letter-spacing:1px;">카테고리 현황</div>
+  <div style="font-size:1.1rem;font-weight:700;color:{GOLD};margin-top:4px;">{len(filtered_presets)}개</div>
+  <div style="font-size:0.7rem;color:{TEXT_DIM};">⭐ SS tier {ss_count}개</div>
+</div>
+""", unsafe_allow_html=True)
+
+    if not selected_preset:
         st.stop()
 
-portfolio = data["portfolio"]
-prices = data["prices"]
-fx = data["fx"]
-snapshot = data["snapshot"]
-regime = data["regime"]
-output = data["output"]
-total = data["total"]
-
-# =============================================================================
-# 탭 구조
-# =============================================================================
-
-tab_overview, tab_core, tab_satellite, tab_positions, tab_rebalance, tab_analysis, tab_recommend, tab_manual = st.tabs([
-    "📊 개요", "🏛️ Core", "🚀 Satellite", "📋 포지션", "⚖️ 리밸런싱", "📈 종목분석", "🎯 추천 후보", "🔍 수동 매수"
-])
-
-
-# ── TAB 1: 개요 ──────────────────────────────────────────────────────────────
-with tab_overview:
-    col1, col2 = st.columns(2)
+    NONE = "None — 프리셋 기본값 사용"
+    col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric(label="💰 총액", value=f"{total.amount:,.0f} KRW")
+        preset_appearance  = st.selectbox("👩 인종/국적",       [NONE] + list(MODEL_APPEARANCE.keys()), key="preset_appearance")
+        preset_age         = st.selectbox("🎂 연령대",          [NONE] + list(AGE_APPEARANCE.keys()),   key="preset_age")
+        preset_body        = st.selectbox("👤 체형",            [NONE] + list(MODEL_TYPES.keys()),      key="preset_body")
+        preset_outfit      = st.selectbox("👗 의상",            [NONE] + list(OUTFIT_TYPES.keys()),     key="preset_outfit")
+        preset_material    = st.selectbox("🧵 소재",            [NONE] + list(MATERIALS.keys()),        key="preset_material")
+        preset_footwear    = st.selectbox("👠 신발",            [NONE] + list(FOOTWEAR.keys()),         key="preset_footwear")
+        preset_nails       = st.selectbox("💅 네일",            [NONE] + list(NAILS.keys()),            key="preset_nails")
+        preset_skin_detail = st.selectbox("🌿 피부 디테일",     [NONE] + list(SKIN_DETAILS.keys()),     key="preset_skin_detail")
+        preset_body_oil    = st.selectbox("✨ 바디 오일",        [NONE] + list(BODY_OIL.keys()),         key="preset_body_oil")
     with col2:
-        st.metric(label="🌍 레짐", value=regime.value)
-
-    col3, col4, col5 = st.columns(3)
+        preset_hair_style  = st.selectbox("💇 헤어스타일",      [NONE] + list(HAIR_STYLES.keys()),      key="preset_hair_style")
+        preset_pose        = st.selectbox("💃 포즈",            [NONE] + list(POSES.keys()),            key="preset_pose")
+        preset_framing     = st.selectbox("🖼️ 프레이밍",        [NONE] + list(FRAMING.keys()),          key="preset_framing")
+        preset_angle       = st.selectbox("📸 카메라 앵글",     [NONE] + list(CAMERA_ANGLES.keys()),    key="preset_angle")
+        preset_lighting    = st.selectbox("💡 조명",            [NONE] + list(LIGHTING.keys()),         key="preset_lighting")
+        preset_color_grade = st.selectbox("🎨 색감",            [NONE] + list(COLOR_GRADES.keys()),     key="preset_color_grade")
+        preset_style       = st.selectbox("🎬 스타일",          [NONE] + list(STYLES.keys()),           key="preset_style")
+        preset_cover_style = st.selectbox("📰 커버 스타일",     [NONE] + list(COVER_STYLES.keys()),     key="preset_cover_style")
     with col3:
-        st.metric(label="📉 MDD", value=f"{output.current_mdd*100:.1f}%")
-    with col4:
-        cash_weight = portfolio.cash_weight(prices, fx)
-        st.metric(
-            label="💵 현금",
-            value=f"{cash_weight*100:.1f}%",
-            delta=f"목표 {PRESET.constraints.normal_cash_weight*100:.0f}%",
-        )
-    with col5:
-        st.metric(
-            label="📋 제안",
-            value=f"{len(output.actions)}건",
-            delta=f"알림 {len(output.alerts)}건",
-        )
+        preset_environment = st.selectbox("🏙️ 환경",            [NONE] + list(ENVIRONMENTS.keys()),     key="preset_environment")
+        preset_weather     = st.selectbox("🌦️ 날씨",            [NONE] + list(WEATHER.keys()),          key="preset_weather")
+        preset_image_style = st.selectbox("📐 이미지 스타일",   [NONE] + list(IMAGE_STYLE.keys()),      key="preset_image_style")
+        preset_special_fx  = st.selectbox("🌈 특수 효과",       [NONE] + list(SPECIAL_EFFECTS.keys()),  key="preset_special_fx")
+        preset_mood        = st.selectbox("🎭 무드",            [NONE] + list(MOOD.keys()),             key="preset_mood")
 
-    st.markdown("---")
-    st.markdown("### 🌍 시장 지표")
-    col1, col2 = st.columns(2)
-    with col1:
-        st.metric(
-            label="S&P500", value=f"{snapshot.sp500:,.0f}",
-            delta=f"MA200 {'위' if not snapshot.is_below_ma200() else '아래'}",
-        )
-        dd = snapshot.sp500_drawdown_from_52w_high * 100
-        st.metric(label="52주 고점 대비", value=f"{dd:.1f}%")
-    with col2:
-        st.metric(label="VIX", value=f"{snapshot.vix:.1f}",
-                  delta="정상" if snapshot.vix < 25 else "주의")
-        st.metric(label="환율", value=f"{data['fx_rate']:,.0f} KRW", delta="1 USD")
+    col_a, col_b, _ = st.columns([1, 1, 2])
+    with col_a:
+        btn_ai    = st.button("🤖 AI 생성",   use_container_width=True, type="primary", key="preset_btn_ai")
+    with col_b:
+        btn_quick = st.button("⚡ 빠른 생성", use_container_width=True, key="preset_btn_quick")
 
-    st.markdown("---")
-    chart_tab1, chart_tab2 = st.tabs(["역할별 비중", "포트폴리오 구성"])
+    if "preset_prompt"   not in st.session_state: st.session_state.preset_prompt   = ""
+    if "preset_selected" not in st.session_state: st.session_state.preset_selected = ""
+    if selected_preset != st.session_state.preset_selected:
+        st.session_state.preset_selected = selected_preset
+        st.session_state.preset_prompt   = ""
 
-    with chart_tab1:
-        role_alloc = portfolio.allocation_by_role(prices, fx)
-        roles, currents, targets, colors = [], [], [], []
-        for role in AssetRole:
-            current = float(role_alloc.get(role, 0))
-            target = float(PRESET.role_targets.get(role))
-            if current > 0 or target > 0:
-                roles.append(role.value)
-                currents.append(round(current * 100, 1))
-                targets.append(round(target * 100, 1))
-                colors.append(ROLE_COLOR.get(role.value, "#8B9AB0"))
-        fig = go.Figure()
-        fig.add_trace(go.Bar(
-            name="현재", x=roles, y=currents, marker_color=colors, opacity=0.9,
-            text=[f"{v}%" for v in currents], textposition="outside",
-        ))
-        fig.add_trace(go.Bar(
-            name="목표", x=roles, y=targets, marker_color=colors, opacity=0.3,
-            text=[f"{v}%" for v in targets], textposition="outside",
-        ))
-        fig.update_layout(
-            barmode="group", plot_bgcolor="#0E1117", paper_bgcolor="#0E1117",
-            font_color="#FFFFFF", height=280, margin=dict(t=30, b=20, l=0, r=0),
-            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
-            yaxis=dict(gridcolor="#2D3250", ticksuffix="%"),
-            xaxis=dict(gridcolor="#2D3250"),
-        )
-        st.plotly_chart(fig, use_container_width=True)
+    def build_preset_overrides() -> dict:
+        overrides = {}
+        if preset_appearance  != NONE: overrides['appearance']  = MODEL_APPEARANCE[preset_appearance]
+        if preset_age         != NONE: overrides['age']         = AGE_APPEARANCE[preset_age]
+        if preset_body        != NONE: overrides['body']        = MODEL_TYPES[preset_body]
+        if preset_outfit      != NONE:
+            od = OUTFIT_TYPES[preset_outfit]
+            overrides['outfit'] = od["gemini"] if isinstance(od, dict) else od
+        if preset_material    != NONE: overrides['material']    = MATERIALS[preset_material]
+        if preset_pose        != NONE: overrides['pose']        = POSES[preset_pose]
+        if preset_framing     != NONE: overrides['framing']     = FRAMING[preset_framing]
+        if preset_angle       != NONE: overrides['angle']       = CAMERA_ANGLES[preset_angle]
+        if preset_footwear    != NONE: overrides['footwear']    = FOOTWEAR[preset_footwear]
+        if preset_nails       != NONE: overrides['nails']       = NAILS[preset_nails]
+        if preset_skin_detail != NONE: overrides['skin_detail'] = SKIN_DETAILS[preset_skin_detail]
+        if preset_body_oil    != NONE: overrides['body_oil']    = BODY_OIL[preset_body_oil]
+        if preset_hair_style  != NONE: overrides['hair_style']  = HAIR_STYLES[preset_hair_style]
+        if preset_color_grade != NONE: overrides['color_grade'] = COLOR_GRADES[preset_color_grade]
+        if preset_lighting    != NONE: overrides['lighting']    = LIGHTING[preset_lighting]
+        if preset_style       != NONE: overrides['style']       = STYLES[preset_style]
+        if preset_cover_style != NONE: overrides['cover_style'] = COVER_STYLES[preset_cover_style]
+        if preset_environment != NONE: overrides['environment'] = ENVIRONMENTS[preset_environment]
+        if preset_weather     != NONE: overrides['weather']     = WEATHER[preset_weather]
+        if preset_image_style != NONE: overrides['image_style'] = IMAGE_STYLE[preset_image_style]
+        if preset_special_fx  != NONE: overrides['special_fx']  = SPECIAL_EFFECTS[preset_special_fx]
+        if preset_mood        != NONE: overrides['mood']        = MOOD[preset_mood]
+        return overrides
 
-    with chart_tab2:
-        labels, values, pie_colors = [], [], []
-        for pos in portfolio.positions:
-            if pos.asset.ticker in prices:
-                price = prices[pos.asset.ticker]
-                value = pos.market_value_in(price, fx, Currency.KRW)
-                labels.append(pos.asset.name)
-                values.append(float(value.amount))
-                pie_colors.append(ROLE_COLOR.get(pos.role.value, "#8B9AB0"))
-        cash_total = portfolio.total_cash(fx)
-        if not cash_total.is_zero():
-            labels.append("현금")
-            values.append(float(cash_total.amount))
-            pie_colors.append("#8B9AB0")
-        if values:
-            fig2 = go.Figure(go.Pie(
-                labels=labels, values=values, marker_colors=pie_colors,
-                hole=0.5, textinfo="label+percent", textfont_size=11,
-            ))
-            fig2.update_layout(
-                plot_bgcolor="#0E1117", paper_bgcolor="#0E1117",
-                font_color="#FFFFFF", height=280,
-                margin=dict(t=20, b=20, l=0, r=0), showlegend=False,
-            )
-            st.plotly_chart(fig2, use_container_width=True)
+    def apply_overrides_to_prompt(preset: dict, overrides: dict) -> str:
+        p = {**preset, **overrides}
+        return (
+            f"Professional fashion photograph, {overrides.get('framing', 'full body shot')}. "
+            f"{'Model appearance: ' + overrides['appearance'] + '. ' if 'appearance' in overrides else ''}"
+            f"Model: {p.get('subject', 'a stunning female model')}. Body: {p.get('body', '')}. "
+            f"{'Pose: ' + overrides['pose'] + '. ' if 'pose' in overrides else ''}"
+            f"Wearing: {p.get('outfit', '')}, made of {p.get('material', '')}{', ' + overrides['footwear'] if 'footwear' in overrides else ''}. "
+            f"Environment: {p.get('environment', '')}. Lighting: {p.get('lighting', '')}. Style: {p.get('style', '')}. "
+            f"{'Color grade: ' + overrides['color_grade'] + '. ' if 'color_grade' in overrides else ''}"
+            f"{p.get('quality', 'ultra-sharp, 8K, professional photography')}."
+        ).strip()
 
-    if output.alerts:
-        st.markdown("### 🔔 알림")
-        for alert in output.alerts:
-            if alert.level == AlertLevel.CRITICAL:
-                st.error(f"🚨 **{alert.title}**: {alert.message}")
-            elif alert.level == AlertLevel.WARNING:
-                st.warning(f"⚠️ **{alert.title}**: {alert.message}")
-            else:
-                st.info(f"ℹ️ **{alert.title}**: {alert.message}")
-
-# ── TAB Core ──────────────────────────────────────────────────────────────────
-with tab_core:
-    buckets = load_buckets()
-    core = buckets.get("core", {})
-    targets = core.get("targets", {})
-    last_rebalance = core.get("last_rebalance", "미실행")
-    rebalance_cycle = core.get("rebalance_cycle", "monthly")
-    core_total = core.get("initial_total", 0)
-    core_tickers = set(targets.keys())
-
-    # Core 종목 필터링 (portfolio에서 buckets.json Core 티커 기준)
-    core_positions = [p for p in portfolio.positions if p.asset.ticker in core_tickers]
-
-    # Core 합산 계산
-    core_eval = Decimal("0")
-    core_cost = Decimal("0")
-    core_pnl  = Decimal("0")
-    for pos in core_positions:
-        if pos.asset.ticker in prices:
-            p_obj = prices[pos.asset.ticker]
-            core_eval += pos.market_value(p_obj).amount
-            core_cost += pos.cost_basis().amount
-            core_pnl  += pos.unrealized_pnl(p_obj).amount
-
-    core_pnl_rate = float(core_pnl / core_cost * 100) if core_cost > 0 else 0
-    core_cash = Decimal(str(core_total)) - core_cost
-    c_color = "#00C896" if core_pnl >= 0 else "#FF4E6A"
-    c_sign  = "+" if core_pnl >= 0 else ""
-
-    # ── 상단 요약 (한투 앱 스타일) ──
-    st.markdown(
-        f"<div style='background:linear-gradient(135deg,#111520,#161C2A);border-radius:14px;"
-        f"padding:18px 22px;border:1px solid #1E2535;margin-bottom:14px'>"
-        f"<div style='color:#4A5470;font-size:10px;font-weight:700;letter-spacing:0.1em;"
-        f"text-transform:uppercase;margin-bottom:6px'>Core 버킷 평가손익</div>"
-        f"<div style='display:flex;align-items:baseline;gap:12px;margin-bottom:14px'>"
-        f"<span style='color:{c_color};font-size:28px;font-weight:700;"
-        f"font-family:JetBrains Mono,monospace'>{c_sign}{float(core_pnl):,.0f}</span>"
-        f"<span style='color:{c_color};font-size:16px;font-weight:700'>"
-        f"{c_sign}{core_pnl_rate:.2f}%</span></div>"
-        f"<div style='display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px'>"
-        f"<div><div style='color:#4A5470;font-size:10px;margin-bottom:3px'>평가금액</div>"
-        f"<div style='color:#C8D0E0;font-size:14px;font-weight:600;"
-        f"font-family:JetBrains Mono,monospace'>{float(core_eval):,.0f}</div></div>"
-        f"<div><div style='color:#4A5470;font-size:10px;margin-bottom:3px'>매입금액</div>"
-        f"<div style='color:#C8D0E0;font-size:14px;font-weight:600;"
-        f"font-family:JetBrains Mono,monospace'>{float(core_cost):,.0f}</div></div>"
-        f"<div><div style='color:#4A5470;font-size:10px;margin-bottom:3px'>잔여현금</div>"
-        f"<div style='color:#C8D0E0;font-size:14px;font-weight:600;"
-        f"font-family:JetBrains Mono,monospace'>{float(core_cash):,.0f}</div></div>"
-        f"<div><div style='color:#4A5470;font-size:10px;margin-bottom:3px'>마지막 리밸런싱</div>"
-        f"<div style='color:#C8D0E0;font-size:12px;font-weight:600'>{last_rebalance or '미실행'}</div></div>"
-        f"</div></div>",
-        unsafe_allow_html=True,
-    )
-
-    # ── 실제 보유 현황 테이블 ──
-    st.markdown("<div class='section-header'>실제 보유 현황</div>", unsafe_allow_html=True)
-
-    # 현재가 조회 (리밸런싱 계산용)
-    core_prices = {}
-    for ticker in targets:
-        if targets[ticker].get("is_fund"):
-            continue
-        try:
-            cfg = load_kis_config(is_paper=is_paper)
-            adp = KISAdapter(app_key=cfg.app_key, app_secret=cfg.app_secret,
-                             account_no=cfg.account_no, is_paper=cfg.is_paper)
-            asset_obj = Asset(ticker=ticker, name=targets[ticker]["name"],
-                              market=Market.KR, asset_type=AssetType.STOCK,
-                              currency=Currency.KRW, exchange=Exchange.KRX,
-                              candidate_roles=[AssetRole.CORE])
-            core_prices[ticker] = float(adp.get_current_price(asset_obj).amount)
-        except Exception:
-            core_prices[ticker] = 0
-
-    if core_positions:
-        st.markdown(
-            "<div style='display:grid;grid-template-columns:2.5fr 1.2fr 0.8fr 1.1fr 1.1fr 1.2fr 0.9fr;"
-            "background:#0F1320;border-radius:8px 8px 0 0;padding:7px 14px;border:1px solid #1A2030'>"
-            "<div class='lbl'>종목명</div>"
-            "<div class='lbl' style='text-align:right'>평가손익</div>"
-            "<div class='lbl' style='text-align:right'>보유</div>"
-            "<div class='lbl' style='text-align:right'>매입단가</div>"
-            "<div class='lbl' style='text-align:right'>현재가</div>"
-            "<div class='lbl' style='text-align:right'>평가금액</div>"
-            "<div class='lbl' style='text-align:right'>비중</div>"
-            "</div>",
-            unsafe_allow_html=True,
-        )
-        for i, pos in enumerate(core_positions):
-            tk = pos.asset.ticker
-            if tk not in prices:
-                continue
-            p_obj   = prices[tk]
-            pnl_pos = pos.unrealized_pnl(p_obj)
-            cost_p  = pos.cost_basis()
-            val_pos = pos.market_value(p_obj)
-            avg_p   = float(cost_p.amount / pos.quantity) if pos.quantity > 0 else 0
-            pnl_r   = float(pnl_pos.amount / cost_p.amount * 100) if cost_p.amount > 0 else 0
-            weight  = float(val_pos.amount / core_eval * 100) if core_eval > 0 else 0
-            target_pct = targets.get(tk, {}).get("target_pct", 0)
-            diff_pct = weight - target_pct
-            w_color = "#00C896" if abs(diff_pct) <= 2 else "#F5A623" if abs(diff_pct) <= 5 else "#FF4E6A"
-            pc = "#00C896" if pnl_r >= 0 else "#FF4E6A"
-            ps = "+" if pnl_r >= 0 else ""
-            br = "border-radius:0 0 8px 8px" if i == len(core_positions)-1 else "border-radius:0"
-            st.markdown(
-                f"<div style='display:grid;grid-template-columns:2.5fr 1.2fr 0.8fr 1.1fr 1.1fr 1.2fr 0.9fr;"
-                f"background:#111520;padding:10px 14px;{br};"
-                f"border:1px solid #1A2030;border-top:none;align-items:center'>"
-                f"<div><div style='font-size:13px;font-weight:600;color:#C8D0E0'>{pos.asset.name}</div>"
-                f"<div style='color:#3A4560;font-size:10px;font-family:JetBrains Mono,monospace;margin-top:1px'>{tk}</div></div>"
-                f"<div style='text-align:right'>"
-                f"<div style='color:{pc};font-size:12px;font-weight:700;font-family:JetBrains Mono,monospace'>{ps}{pnl_r:.2f}%</div>"
-                f"<div style='color:{pc};font-size:10px;opacity:0.8'>{ps}{float(pnl_pos.amount):,.0f}</div></div>"
-                f"<div style='text-align:right;color:#C8D0E0;font-size:13px;font-weight:600;"
-                f"font-family:JetBrains Mono,monospace'>{int(pos.quantity):,}주</div>"
-                f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                f"font-family:JetBrains Mono,monospace'>{avg_p:,.0f}</div>"
-                f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                f"font-family:JetBrains Mono,monospace'>{float(p_obj.amount):,.0f}</div>"
-                f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                f"font-family:JetBrains Mono,monospace'>{float(val_pos.amount):,.0f}</div>"
-                f"<div style='text-align:right'>"
-                f"<div style='color:{w_color};font-size:12px;font-weight:700'>{weight:.1f}%</div>"
-                f"<div style='color:{w_color};font-size:9px'>목표 {target_pct}%</div></div>"
-                f"</div>",
-                unsafe_allow_html=True,
-            )
-    else:
-        st.info("KIS 잔고에서 Core 종목을 찾을 수 없습니다.")
-
-    # ── 종목별 목표 비중 (하단 expander) ──
-    st.markdown("<hr class='divider-line'>", unsafe_allow_html=True)
-    with st.expander("📊 종목별 목표 비중 설정 보기", expanded=False):
-        st.markdown(
-            "<div style='display:grid;grid-template-columns:2.5fr 0.8fr 1.2fr 1fr 1fr;"
-            "background:#0F1320;border-radius:8px 8px 0 0;padding:7px 14px;border:1px solid #1A2030'>"
-            "<div class='lbl'>종목명</div>"
-            "<div class='lbl' style='text-align:right'>목표비중</div>"
-            "<div class='lbl' style='text-align:right'>목표금액</div>"
-            "<div class='lbl' style='text-align:right'>현재가</div>"
-            "<div class='lbl' style='text-align:right'>목표수량</div>"
-            "</div>",
-            unsafe_allow_html=True,
-        )
-        ticker_items = list(targets.items())
-        for i, (ticker, info) in enumerate(ticker_items):
-            target_pct = info["target_pct"]
-            target_amt = core_total * target_pct / 100
-            is_fund = info.get("is_fund", False)
-            br = "border-radius:0 0 8px 8px" if i == len(ticker_items)-1 else "border-radius:0"
-            if is_fund:
-                st.markdown(
-                    f"<div style='display:grid;grid-template-columns:2.5fr 0.8fr 1.2fr 1fr 1fr;"
-                    f"background:#111520;padding:10px 14px;{br};"
-                    f"border:1px solid #1A2030;border-top:none;align-items:center'>"
-                    f"<div><div style='font-size:13px;font-weight:600;color:#C8D0E0'>{info['name']}</div>"
-                    f"<div style='margin-top:2px'><span style='background:#F5A62320;color:#F5A623;"
-                    f"padding:1px 6px;border-radius:4px;font-size:9px;font-weight:700'>펀드</span></div></div>"
-                    f"<div style='text-align:right;color:#4C9EEB;font-weight:700;"
-                    f"font-family:JetBrains Mono,monospace'>{target_pct}%</div>"
-                    f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                    f"font-family:JetBrains Mono,monospace'>{target_amt:,.0f}</div>"
-                    f"<div style='text-align:right;color:#3A4560;font-size:11px'>-</div>"
-                    f"<div style='text-align:right;color:#3A4560;font-size:11px'>-</div>"
-                    f"</div>", unsafe_allow_html=True)
-            else:
-                cp = core_prices.get(ticker, 0)
-                tq = int(target_amt / cp) if cp > 0 else 0
-                st.markdown(
-                    f"<div style='display:grid;grid-template-columns:2.5fr 0.8fr 1.2fr 1fr 1fr;"
-                    f"background:#111520;padding:10px 14px;{br};"
-                    f"border:1px solid #1A2030;border-top:none;align-items:center'>"
-                    f"<div><div style='font-size:13px;font-weight:600;color:#C8D0E0'>{info['name']}</div>"
-                    f"<div style='color:#3A4560;font-size:10px;font-family:JetBrains Mono,monospace;margin-top:1px'>{ticker}</div></div>"
-                    f"<div style='text-align:right;color:#4C9EEB;font-size:14px;font-weight:700;"
-                    f"font-family:JetBrains Mono,monospace'>{target_pct}%</div>"
-                    f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                    f"font-family:JetBrains Mono,monospace'>{target_amt:,.0f}</div>"
-                    f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                    f"font-family:JetBrains Mono,monospace'>{cp:,.0f}</div>"
-                    f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                    f"font-family:JetBrains Mono,monospace'>{tq:,}주</div>"
-                    f"</div>", unsafe_allow_html=True)
-
-    # Core 리밸런싱
-    st.markdown("<hr class='divider-line'>", unsafe_allow_html=True)
-    st.markdown("<div class='section-header'>Core 리밸런싱</div>", unsafe_allow_html=True)
-    st.caption("현재 보유 수량 vs 목표 수량 비교 → 매수/매도 제안")
-
-    if st.button("📊 리밸런싱 계산", use_container_width=True, key="core_rebal_calc"):
-        st.session_state["core_rebal_show"] = True
-
-    if st.session_state.get("core_rebal_show"):
-        rebal_actions = []
-        for ticker, info in targets.items():
-            if info.get("is_fund"):
-                continue
-            target_pct = info["target_pct"]
-            target_amt = core_total * target_pct / 100
-            current_price = core_prices.get(ticker, 0)
-            if current_price <= 0:
-                continue
-            target_qty = int(target_amt / current_price)
-
-            # 현재 보유 수량 조회
+    if btn_ai and selected_preset:
+        st.session_state.preset_prompt = ""
+        with st.spinner("Claude가 프롬프트 생성 중..."):
             try:
-                config = load_kis_config(is_paper=is_paper)
-                adapter = KISAdapter(
-                    app_key=config.app_key,
-                    app_secret=config.app_secret,
-                    account_no=config.account_no,
-                    is_paper=config.is_paper,
-                )
-                portfolio_data = adapter.get_portfolio(role_map=ROLE_MAP)
-                current_qty = 0
-                for pos in portfolio_data.positions:
-                    if pos.asset.ticker == ticker:
-                        current_qty = int(pos.quantity)
-                        break
-            except Exception:
-                current_qty = 0
+                raw       = generate_prompt_with_ai(selected_preset)
+                overrides = build_preset_overrides()
+                prefix    = []
+                if 'appearance' in overrides: prefix.append(overrides['appearance'].split(',')[0])
+                if 'body'       in overrides: prefix.append(overrides['body'].split(',')[0])
+                if prefix: raw = f"Model: {', '.join(prefix)}. " + raw
+                aspect_desc = ASPECT_RATIOS.get(global_aspect, "")
+                if aspect_desc: raw += f" {aspect_desc}."
+                st.session_state.preset_prompt = raw
+            except Exception as e:
+                st.error(f"오류: {str(e)}")
 
-            diff_qty = target_qty - current_qty
-            if diff_qty == 0:
-                continue
-
-            # 허용밴드 체크
-            band_pct = core.get("band_pct", 2.0)
-            min_order_amount = core.get("min_order_amount", 100000)
-            current_pct = (current_qty * current_price / core_total * 100) if core_total > 0 else 0
-            lower_band = target_pct - band_pct
-            upper_band = target_pct + band_pct
-            amt = abs(diff_qty) * current_price
-
-            # 허용밴드 내이거나 최소 주문금액 미만이면 스킵
-            if lower_band <= current_pct <= upper_band:
-                continue
-            if amt < min_order_amount:
-                continue
-
-            action = "BUY" if diff_qty > 0 else "SELL"
-            color = "#00C896" if action == "BUY" else "#E74C3C"
-
-            rebal_actions.append({
-                "ticker": ticker,
-                "name": info["name"],
-                "action": action,
-                "current_qty": current_qty,
-                "target_qty": target_qty,
-                "diff_qty": abs(diff_qty),
-                "price": current_price,
-                "amount": amt,
-                "color": color,
-                "current_pct": round(current_pct, 1),
-                "lower_band": lower_band,
-                "upper_band": upper_band,
-            })
-
-        if not rebal_actions:
-            st.success("✅ 리밸런싱 불필요! 모든 종목이 목표 수량입니다.")
+    if btn_quick and selected_preset:
+        st.session_state.preset_prompt = ""
+        raw = apply_overrides_to_prompt(load_preset(selected_preset), build_preset_overrides())
+        aspect_desc = ASPECT_RATIOS.get(global_aspect, "portrait 2:3 vertical")
+        if global_platform == "Gemini":
+            raw += f" {aspect_desc}."
+        elif global_platform == "ChatGPT (DALL-E)":
+            raw += f" {aspect_desc}. Photorealistic, hyperrealistic skin texture, award-winning fashion photography."
         else:
-            st.session_state["core_rebal_actions"] = rebal_actions
+            ar = {"세로 2:3 — 인물 기본":"2:3","세로 3:4 — 전신샷":"3:4","가로 16:9 — 시네마틱":"16:9","가로 4:3 — 화보":"4:3","정방형 1:1 — 인스타":"1:1"}.get(global_aspect, "2:3")
+            raw += f" --ar {ar} --style raw --q 2"
+        st.session_state.preset_prompt = raw
 
-    if st.session_state.get("core_rebal_actions"):
-        rebal_list = st.session_state["core_rebal_actions"]
-        
-        # 전체 요약
-        total_buy = sum(a["amount"] for a in rebal_list if a["action"] == "BUY")
-        total_sell = sum(a["amount"] for a in rebal_list if a["action"] == "SELL")
-        st.info(f"📋 총 {len(rebal_list)}종목 | 매수 {total_buy:,.0f}원 | 매도 {total_sell:,.0f}원")
+    if st.session_state.preset_prompt:
+        st.text_area("생성된 프롬프트", value=st.session_state.preset_prompt, height=160)
+        st.code(st.session_state.preset_prompt, language=None)
+        st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
-        # 전체 일괄 실행 버튼
-        if st.button("🚀 전체 일괄 실행", type="primary", use_container_width=True, key="cr_bulk"):
-            st.session_state["cr_bulk_confirm"] = True
+# ══════════════════════════════════════════════════════════
+# 탭 2: 수동 조합
+# ══════════════════════════════════════════════════════════
+with tab2:
+    st.markdown("### 요소별 수동 조합")
+    st.caption("💡 핵심 요소(외모/체형/의상/환경)만 선택해도 좋은 프롬프트가 나와요. 나머지는 필요할 때만!")
 
-        if st.session_state.get("cr_bulk_confirm"):
-            st.warning(f"⚠️ 정말 {len(rebal_list)}종목 전체 주문하시겠습니까?")
-            col_bulk_yes, col_bulk_no = st.columns(2)
-            with col_bulk_yes:
-                if st.button("🔴 전체 일괄 확인 - 실행", type="primary",
-                             use_container_width=True, key="cr_bulk_final"):
-                    config = load_kis_config(is_paper=is_paper)
-                    adapter = KISAdapter(
-                        app_key=config.app_key,
-                        app_secret=config.app_secret,
-                        account_no=config.account_no,
-                        is_paper=config.is_paper,
-                    )
-                    success_list, fail_list = [], []
-                    progress = st.progress(0, text="일괄 주문 중...")
-                    for i, a in enumerate(rebal_list):
-                        try:
-                            asset = Asset(
-                                ticker=a["ticker"], name=a["name"],
-                                market=Market.KR, asset_type=AssetType.STOCK,
-                                currency=Currency.KRW, exchange=Exchange.KRX,
-                                candidate_roles=[AssetRole.CORE],
-                            )
-                            if a["action"] == "BUY":
-                                adapter.place_buy_order(asset=asset, quantity=Decimal(str(a["diff_qty"])))
-                            else:
-                                adapter.place_sell_order(asset=asset, quantity=Decimal(str(a["diff_qty"])))
-                            success_list.append(a["name"])
-                        except Exception as e:
-                            fail_list.append(f"{a['name']}: {e}")
-                        progress.progress(int((i+1)/len(rebal_list)*100),
-                                          text=f"{a['name']} 주문 중... ({i+1}/{len(rebal_list)})")
-                    progress.empty()
-                    buckets["core"]["last_rebalance"] = str(date.today())
-                    save_buckets(buckets)
-                    if success_list:
-                        st.success(f"✅ 완료: {', '.join(success_list)}")
-                    if fail_list:
-                        for fail_msg in fail_list:
-                            st.error(f"❌ 실패: {fail_msg}")
-                    st.session_state["cr_bulk_confirm"] = None
-                    st.session_state["core_rebal_actions"] = None
-                    st.cache_data.clear()
-            with col_bulk_no:
-                if st.button("취소", key="cr_bulk_no", use_container_width=True):
-                    st.session_state["cr_bulk_confirm"] = None
+    if st.button("🎲 전체 랜덤으로 채우기"):
+        def rnd(d):
+            keys = [k for k in d.keys() if k != "없음"]
+            return random.choice(keys) if keys else "없음"
 
-        # 수정
-        st.markdown("---")
-        if st.session_state.get("core_rebal_actions"):
-            for idx, a in enumerate(st.session_state["core_rebal_actions"]):
-                st.markdown(
-                    f"<div style='background:#1E2130; border-radius:10px; padding:12px; "
-                    f"border:1px solid #2D3250; margin-bottom:6px'>"
-                    f"<div style='display:flex; justify-content:space-between'>"
-                    f"<span><strong>{a['name']}</strong> "
-                    f"<code style='font-size:11px; color:#8B9AB0'>{a['ticker']}</code></span>"
-                    f"<span style='color:{a['color']}; font-weight:700'>{a['action']} {a['diff_qty']}주</span>"
-                    f"</div>"
-                    f"<div style='color:#8B9AB0; font-size:12px; margin-top:4px'>"
-                    f"현재 {a['current_qty']}주 ({a.get('current_pct', 0):.1f}%) → "
-                    f"목표 {a['target_qty']}주 ({a['price'] * a['target_qty'] / core_total * 100:.1f}%) | "
-                    f"허용밴드 {a.get('lower_band', 0):.1f}%~{a.get('upper_band', 0):.1f}% | "
-                    f"현재가 {a['price']:,.0f}원 | 예상금액 {a['amount']:,.0f}원"
-                    f"</div></div>",
-                    unsafe_allow_html=True,
-                )
+        st.session_state.r_appearance  = rnd(MODEL_APPEARANCE)
+        st.session_state.r_model       = rnd(MODEL_TYPES)
+        st.session_state.r_outfit      = rnd(OUTFIT_TYPES)
+        st.session_state.r_material    = rnd(MATERIALS)
+        st.session_state.r_env         = rnd(ENVIRONMENTS)
+        st.session_state.r_light       = rnd(LIGHTING)
+        st.session_state.r_framing     = rnd(FRAMING)
+        st.session_state.r_angle       = rnd(CAMERA_ANGLES)
+        st.session_state.r_style       = rnd(STYLES)
+        st.session_state.r_cover_style = "없음"
+        st.session_state.r_camera      = rnd(CAMERAS)
+        st.session_state.r_pose        = rnd(POSES)
+        st.session_state.r_expression  = rnd(EXPRESSION)
+        st.session_state.r_skin_tone   = rnd(SKIN_TONES)
+        st.session_state.r_hair_style  = rnd(HAIR_STYLES)
+        st.session_state.r_hair_color  = rnd(HAIR_COLORS)
+        st.session_state.r_makeup      = rnd(MAKEUP)
 
-            cr_key = f"core_rebal_{idx}"
+        def rnd_maybe(d, prob=0.5):
+            return rnd(d) if random.random() < prob else "없음"
 
-            # 수량 조정 슬라이더
-            max_qty = max(a["diff_qty"] * 2, 1)
-            adjusted_qty = st.slider(
-                f"{a['name']} 주문 수량 조정",
-                min_value=1,
-                max_value=int(max_qty),
-                value=int(a["diff_qty"]),
-                key=f"cr_qty_{cr_key}",
-            )
-            adjusted_amount = adjusted_qty * a["price"]
-            st.caption(f"조정 금액: {adjusted_amount:,.0f}원 (원래 {a['diff_qty']}주 → {adjusted_qty}주)")
+        st.session_state.r_footwear        = rnd_maybe(FOOTWEAR,       0.50)
+        st.session_state.r_color_grade     = rnd_maybe(COLOR_GRADES,   0.50)
+        st.session_state.r_accessories     = rnd_maybe(ACCESSORIES,    0.40)
+        st.session_state.r_body_oil        = rnd_maybe(BODY_OIL,       0.30)
+        st.session_state.r_weather         = rnd_maybe(WEATHER,        0.30)
+        st.session_state.r_bg_crowd        = rnd_maybe(BG_CROWD,       0.30)
+        st.session_state.r_mood            = rnd_maybe(MOOD,           0.30)
+        st.session_state.r_time_of_day     = rnd_maybe(TIME_OF_DAY,   0.30)
+        st.session_state.r_tattoo          = rnd_maybe(TATTOO,         0.15)
+        st.session_state.r_special_effects = rnd_maybe(SPECIAL_EFFECTS,0.15)
+        st.session_state.r_props           = rnd_maybe(PROPS,          0.15)
+        st.session_state.r_image_style     = rnd_maybe(IMAGE_STYLE,    0.15)
+        st.session_state.r_era             = rnd_maybe(ERA,            0.15)
+        st.session_state.r_concept         = rnd_maybe(CONCEPT,        0.15)
+        st.session_state.r_lens_effect     = rnd_maybe(LENS_EFFECT,    0.15)
+        st.session_state.r_skin_detail     = rnd_maybe(SKIN_DETAILS,   0.20)
+        st.session_state.r_nails           = rnd_maybe(NAILS,          0.30)
+        st.session_state.r_cover_style     = rnd_maybe(COVER_STYLES,   0.20)
 
-            if st.button(f"✅ {a['name']} {a['action']} 승인",
-                         key=f"cr_approve_{cr_key}", use_container_width=True):
-                st.session_state[f"cr_confirm_{cr_key}"] = True
-
-            if st.session_state.get(f"cr_confirm_{cr_key}"):
-                st.warning(
-                    f"⚠️ 정말 실행? **{a['action']} {a['name']}** | "
-                    f"{adjusted_qty}주 | {adjusted_amount:,.0f}원"
-                )
-                col_yes, col_no = st.columns(2)
-                with col_yes:
-                    if st.button("🔴 최종 확인 - 실행",
-                                 key=f"cr_final_{cr_key}",
-                                 type="primary", use_container_width=True):
-                        try:
-                            config = load_kis_config(is_paper=is_paper)
-                            adapter = KISAdapter(
-                                app_key=config.app_key,
-                                app_secret=config.app_secret,
-                                account_no=config.account_no,
-                                is_paper=config.is_paper,
-                            )
-                            asset = Asset(
-                                ticker=a["ticker"], name=a["name"],
-                                market=Market.KR, asset_type=AssetType.STOCK,
-                                currency=Currency.KRW, exchange=Exchange.KRX,
-                                candidate_roles=[AssetRole.CORE],
-                            )
-                            if a["action"] == "BUY":
-                                order_id = adapter.place_buy_order(
-                                    asset=asset, quantity=Decimal(str(adjusted_qty))
-                                )
-                            else:
-                                order_id = adapter.place_sell_order(
-                                    asset=asset, quantity=Decimal(str(adjusted_qty))
-                                )
-                            buckets["core"]["last_rebalance"] = str(date.today())
-                            save_buckets(buckets)
-                            st.success(f"✅ {a['name']} {a['action']} 완료!")
-                            st.session_state[f"cr_confirm_{cr_key}"] = None
-                            st.session_state["core_rebal_actions"] = None
-                            st.session_state["core_rebal_show"] = False
-                            st.cache_data.clear()
-                        except Exception as e:
-                            st.error(f"주문 실패: {e}")
-                with col_no:
-                    if st.button("취소", key=f"cr_no_{cr_key}",
-                                 use_container_width=True):
-                        st.session_state[f"cr_confirm_{cr_key}"] = None
-            st.markdown("---")
-
-    st.markdown("---")
-
-    # 자금 투입/인출
-    st.markdown("#### 💰 자금 관리")
-    col_in, col_out = st.columns(2)
-    with col_in:
-        st.markdown("**➕ 자금 투입**")
-        add_amount = st.number_input(
-            "투입 금액 (원)", min_value=0, value=0, step=100000,
-            key="core_add_amount"
-        )
-        if st.button("➕ Core 투입 실행", use_container_width=True, key="core_add_btn"):
-            if add_amount > 0:
-                buckets["core"]["initial_total"] = core_total + add_amount
-                buckets["transfers"].append({
-                    "date": str(date.today()),
-                    "bucket": "core",
-                    "type": "deposit",
-                    "amount": add_amount,
-                })
-                save_buckets(buckets)
-                st.success(f"✅ {add_amount:,.0f}원 투입 완료!")
-                st.rerun()
-            else:
-                st.warning("금액을 입력하세요.")
-
-    with col_out:
-        st.markdown("**➖ 자금 인출**")
-        withdraw_amount = st.number_input(
-            "인출 금액 (원)", min_value=0, value=0, step=100000,
-            key="core_withdraw_amount"
-        )
-        if st.button("➖ Core 인출 실행", use_container_width=True, key="core_withdraw_btn"):
-            if withdraw_amount > 0 and withdraw_amount <= core_total:
-                st.session_state["core_withdraw_confirm"] = True
-            elif withdraw_amount > core_total:
-                st.error("인출 금액이 총액을 초과합니다.")
-            else:
-                st.warning("금액을 입력하세요.")
-
-        if st.session_state.get("core_withdraw_confirm"):
-            st.warning(f"⚠️ {withdraw_amount:,.0f}원 인출하시겠습니까?")
-            col_yes, col_no = st.columns(2)
-            with col_yes:
-                if st.button("🔴 인출 확정", key="core_withdraw_yes",
-                             type="primary", use_container_width=True):
-                    buckets["core"]["initial_total"] = core_total - withdraw_amount
-                    buckets["transfers"].append({
-                        "date": str(date.today()),
-                        "bucket": "core",
-                        "type": "withdraw",
-                        "amount": withdraw_amount,
-                    })
-                    save_buckets(buckets)
-                    st.success(f"✅ {withdraw_amount:,.0f}원 인출 완료!")
-                    st.session_state["core_withdraw_confirm"] = False
-                    st.rerun()
-            with col_no:
-                if st.button("취소", key="core_withdraw_no", use_container_width=True):
-                    st.session_state["core_withdraw_confirm"] = False
-
-    # 자금 이동 내역
-    transfers = [t for t in buckets.get("transfers", []) if t["bucket"] == "core"]
-    if transfers:
-        st.markdown("---")
-        st.markdown("#### 📋 자금 이동 내역")
-        for t in reversed(transfers[-10:]):
-            icon = "➕" if t["type"] == "deposit" else "➖"
-            color = "#00C896" if t["type"] == "deposit" else "#E74C3C"
-            st.markdown(
-                f"<div style='color:{color}; font-size:13px'>"
-                f"{icon} {t['date']} | {t['amount']:,.0f} KRW</div>",
-                unsafe_allow_html=True,
-            )
-
-
-# ── TAB Satellite ──────────────────────────────────────────────────────────────
-with tab_satellite:
-    buckets = load_buckets()
-    satellite = buckets.get("satellite", {})
-    sat_total = satellite.get("initial_total", 0)
-    sat_holdings = satellite.get("holdings", {})
-    sat_last_rebalance = satellite.get("last_rebalance", "미실행")
-    sat_tickers = set(sat_holdings.keys())
-
-    # 포트폴리오 구성 규칙 로드
-    rules = satellite.get("rules", {})
-    max_stocks = rules.get("max_stocks", 20)
-    max_single_pct = rules.get("max_single_pct", 5.0)
-    max_sector_pct = rules.get("max_sector_pct", 25.0)
-    min_entry_score = rules.get("min_entry_score", 70.0)
-    min_hold_score = rules.get("min_hold_score", 60.0)
-    min_cash_pct = rules.get("min_cash_pct", 5.0)
-
-    # KIS 잔고 기준 Satellite 종목 필터링
-    sat_positions = [p for p in portfolio.positions if p.asset.ticker in sat_tickers]
-
-    # Satellite 합산 계산
-    sat_eval = Decimal("0")
-    sat_cost = Decimal("0")
-    sat_pnl  = Decimal("0")
-    for pos in sat_positions:
-        if pos.asset.ticker in prices:
-            p_obj = prices[pos.asset.ticker]
-            sat_eval += pos.market_value(p_obj).amount
-            sat_cost += pos.cost_basis().amount
-            sat_pnl  += pos.unrealized_pnl(p_obj).amount
-
-    sat_pnl_rate = float(sat_pnl / sat_cost * 100) if sat_cost > 0 else 0
-    s_color = "#00C896" if sat_pnl >= 0 else "#FF4E6A"
-    s_sign  = "+" if sat_pnl >= 0 else ""
-
-    # ── 상단 요약 ──
-    st.markdown(
-        f"<div style='background:linear-gradient(135deg,#111520,#161C2A);border-radius:14px;"
-        f"padding:18px 22px;border:1px solid #1E2535;margin-bottom:14px'>"
-        f"<div style='color:#4A5470;font-size:10px;font-weight:700;letter-spacing:0.1em;"
-        f"text-transform:uppercase;margin-bottom:6px'>Satellite 버킷 평가손익</div>"
-        f"<div style='display:flex;align-items:baseline;gap:12px;margin-bottom:14px'>"
-        f"<span style='color:{s_color};font-size:28px;font-weight:700;"
-        f"font-family:JetBrains Mono,monospace'>{s_sign}{float(sat_pnl):,.0f}</span>"
-        f"<span style='color:{s_color};font-size:16px;font-weight:700'>"
-        f"{s_sign}{sat_pnl_rate:.2f}%</span></div>"
-        f"<div style='display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px'>"
-        f"<div><div style='color:#4A5470;font-size:10px;margin-bottom:3px'>평가금액</div>"
-        f"<div style='color:#C8D0E0;font-size:14px;font-weight:600;"
-        f"font-family:JetBrains Mono,monospace'>{float(sat_eval):,.0f}</div></div>"
-        f"<div><div style='color:#4A5470;font-size:10px;margin-bottom:3px'>매입금액</div>"
-        f"<div style='color:#C8D0E0;font-size:14px;font-weight:600;"
-        f"font-family:JetBrains Mono,monospace'>{float(sat_cost):,.0f}</div></div>"
-        f"<div><div style='color:#4A5470;font-size:10px;margin-bottom:3px'>보유 종목</div>"
-        f"<div style='color:#C8D0E0;font-size:14px;font-weight:600'>"
-        f"{len(sat_positions)}개 / 최대 {max_stocks}개</div></div>"
-        f"<div><div style='color:#4A5470;font-size:10px;margin-bottom:3px'>마지막 리밸런싱</div>"
-        f"<div style='color:#C8D0E0;font-size:12px;font-weight:600'>{sat_last_rebalance or '미실행'}</div></div>"
-        f"</div></div>",
-        unsafe_allow_html=True,
-    )
-
-    # 규칙 설정 UI
-    with st.expander("⚙️ 포트폴리오 구성 규칙 설정", expanded=False):
-        st.caption("변경 후 저장 버튼을 누르세요.")
-        col_r1, col_r2, col_r3 = st.columns(3)
-        with col_r1:
-            new_max_stocks = st.slider("최대 종목 수", 10, 30, max_stocks, key="rule_max_stocks")
-            new_min_entry = st.slider("신규 편입 최소 점수", 60, 85, int(min_entry_score), key="rule_min_entry")
-        with col_r2:
-            new_max_single = st.slider("종목당 최대 비중 (%)", 3, 15, int(max_single_pct), key="rule_max_single")
-            new_min_hold = st.slider("보유 유지 최소 점수", 50, 75, int(min_hold_score), key="rule_min_hold")
-        with col_r3:
-            new_max_sector = st.slider("섹터 최대 비중 (%)", 15, 50, int(max_sector_pct), key="rule_max_sector")
-            new_min_cash = st.slider("현금 최소 비중 (%)", 0, 20, int(min_cash_pct), key="rule_min_cash")
-
-        if st.button("💾 규칙 저장", use_container_width=True, key="save_rules"):
-            buckets["satellite"]["rules"] = {
-                "max_stocks": new_max_stocks,
-                "max_single_pct": float(new_max_single),
-                "max_sector_pct": float(new_max_sector),
-                "min_entry_score": float(new_min_entry),
-                "min_hold_score": float(new_min_hold),
-                "min_cash_pct": float(new_min_cash),
-            }
-            save_buckets(buckets)
-            st.success("✅ 규칙 저장 완료!")
-            st.rerun()
-
-    st.markdown("<hr class='divider-line'>", unsafe_allow_html=True)
-
-    # 포트폴리오 규칙 위반 경보
-    violations = []
-    if len(sat_holdings) > max_stocks:
-        violations.append(f"⚠️ 종목 수 초과: {len(sat_holdings)}개 (한도 {max_stocks}개)")
-    for ticker, holding in sat_holdings.items():
-        if holding.get("total_score", 100) < min_hold_score:
-            violations.append(f"⚠️ {holding.get('name', ticker)}: 점수 {holding.get('total_score', 0):.0f}점 (유지기준 {min_hold_score:.0f}점)")
-    if violations:
-        for v in violations:
-            st.warning(v)
-
-    # ── 실제 보유 현황 테이블 (KIS 잔고 기준 + buckets 메타데이터) ──
-    st.markdown("<div class='section-header'>보유 종목 현황</div>", unsafe_allow_html=True)
-    if sat_positions:
-        st.markdown(
-            "<div style='display:grid;grid-template-columns:2fr 1.1fr 0.7fr 1fr 1fr 1.1fr 0.8fr;"
-            "background:#0F1320;border-radius:8px 8px 0 0;padding:7px 14px;border:1px solid #1A2030'>"
-            "<div class='lbl'>종목명</div>"
-            "<div class='lbl' style='text-align:right'>평가손익</div>"
-            "<div class='lbl' style='text-align:right'>보유</div>"
-            "<div class='lbl' style='text-align:right'>매입단가</div>"
-            "<div class='lbl' style='text-align:right'>현재가</div>"
-            "<div class='lbl' style='text-align:right'>평가금액</div>"
-            "<div class='lbl' style='text-align:center'>상태/매도</div>"
-            "</div>",
-            unsafe_allow_html=True,
-        )
-        for i, pos in enumerate(sat_positions):
-            tk = pos.asset.ticker
-            if tk not in prices:
-                continue
-            p_obj   = prices[tk]
-            pnl_pos = pos.unrealized_pnl(p_obj)
-            cost_p  = pos.cost_basis()
-            val_pos = pos.market_value(p_obj)
-            avg_p   = float(cost_p.amount / pos.quantity) if pos.quantity > 0 else 0
-            pnl_r   = float(pnl_pos.amount / cost_p.amount * 100) if cost_p.amount > 0 else 0
-            pc = "#00C896" if pnl_r >= 0 else "#FF4E6A"
-            ps = "+" if pnl_r >= 0 else ""
-            meta        = sat_holdings.get(tk, {})
-            entry_score = meta.get("entry_score", 0)
-            total_score = meta.get("total_score", 0)
-            momentum    = meta.get("momentum_score", 0)
-            score_drop  = entry_score - total_score
-            thesis_break = momentum < 40 or total_score < min_hold_score or score_drop >= 15
-            if thesis_break:
-                status_txt   = "🔴매도검토"
-                status_color = "#FF4E6A"
-                row_bg = "#130D10"
-            elif score_drop >= 10:
-                status_txt   = "⚠️하락주의"
-                status_color = "#F5A623"
-                row_bg = "#131208"
-            else:
-                status_txt   = "✅유지"
-                status_color = "#00C896"
-                row_bg = "#111520"
-
-            br = "border-radius:0 0 8px 8px" if i == len(sat_positions)-1 else "border-radius:0"
-            col_row, col_btn = st.columns([11, 1])
-            with col_row:
-                st.markdown(
-                    f"<div style='display:grid;grid-template-columns:2fr 1.1fr 0.7fr 1fr 1fr 1.1fr 0.8fr;"
-                    f"background:{row_bg};padding:10px 14px;{br};"
-                    f"border:1px solid #1A2030;border-top:none;align-items:center'>"
-                    f"<div><div style='font-size:13px;font-weight:600;color:#C8D0E0'>{pos.asset.name}</div>"
-                    f"<div style='color:#3A4560;font-size:10px;font-family:JetBrains Mono,monospace;margin-top:1px'>"
-                    f"{tk} · 편입 {meta.get('entry_date','')}</div></div>"
-                    f"<div style='text-align:right'>"
-                    f"<div style='color:{pc};font-size:12px;font-weight:700;font-family:JetBrains Mono,monospace'>{ps}{pnl_r:.2f}%</div>"
-                    f"<div style='color:{pc};font-size:10px;opacity:0.8'>{ps}{float(pnl_pos.amount):,.0f}</div></div>"
-                    f"<div style='text-align:right;color:#C8D0E0;font-size:13px;font-weight:600;"
-                    f"font-family:JetBrains Mono,monospace'>{int(pos.quantity):,}주</div>"
-                    f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                    f"font-family:JetBrains Mono,monospace'>{avg_p:,.0f}</div>"
-                    f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                    f"font-family:JetBrains Mono,monospace'>{float(p_obj.amount):,.0f}</div>"
-                    f"<div style='text-align:right;color:#C8D0E0;font-size:12px;"
-                    f"font-family:JetBrains Mono,monospace'>{float(val_pos.amount):,.0f}</div>"
-                    f"<div style='text-align:center'>"
-                    f"<span style='color:{status_color};font-size:10px;font-weight:700'>{status_txt}</span></div>"
-                    f"</div>",
-                    unsafe_allow_html=True,
-                )
-            with col_btn:
-                if st.button("매도", key=f"sat_del_{tk}", use_container_width=True):
-                    del sat_holdings[tk]
-                    buckets["satellite"]["holdings"] = sat_holdings
-                    save_buckets(buckets)
-                    st.success(f"✅ {pos.asset.name} 매도됨!")
-                    st.rerun()
-    elif sat_holdings:
-        st.info("KIS 잔고와 매칭되는 Satellite 종목이 없습니다. 잔고를 확인해 주세요.")
-    else:
-        st.info("보유 종목이 없습니다. 추천 엔진에서 편입하세요.")
-
-    st.markdown("---")
-
-    # Satellite 분기 교체
-
-    st.markdown("#### 🔄 분기 교체 관리")
-    if sat_holdings:
-        # 하위 30% 매도 후보 계산
-        sorted_holdings = sorted(
-            sat_holdings.items(),
-            key=lambda x: x[1].get("total_score", 0)
-        )
-        bottom_30_count = max(1, int(len(sorted_holdings) * 0.3))
-        sell_candidates = sorted_holdings[:bottom_30_count]
-
-        st.caption(f"보유 {len(sat_holdings)}종목 중 하위 30% → {bottom_30_count}종목 매도 후보")
-        st.markdown("**📉 매도 후보 (하위 30%)**")
-
-        for ticker, holding in sell_candidates:
-            momentum = holding.get("momentum_score", 0)
-            total_score = holding.get("total_score", 0)
-            early_exit = momentum < 40
-
-            status_color = "#E74C3C" if early_exit else "#F5A623"
-            status_text = "⚠️ 조기매도" if early_exit else "🔄 교체 후보"
-
-            st.markdown(
-                f"<div style='background:#1E2130; border-radius:10px; padding:12px; "
-                f"border:1px solid {status_color}40; margin-bottom:6px'>"
-                f"<div style='display:flex; justify-content:space-between'>"
-                f"<span><strong>{holding.get('name', ticker)}</strong> "
-                f"<code style='font-size:11px; color:#8B9AB0'>{ticker}</code></span>"
-                f"<span style='color:{status_color}; font-size:12px'>{status_text}</span>"
-                f"</div>"
-                f"<div style='color:#8B9AB0; font-size:12px; margin-top:4px'>"
-                f"총점: {total_score}점 | 모멘텀: {momentum}점 | "
-                f"편입일: {holding.get('entry_date', '-')}"
-                f"</div></div>",
-                unsafe_allow_html=True,
-            )
-
-            sc_key = f"sat_sell_{ticker}"
-            if st.button(f"📉 {holding.get('name', ticker)} 매도 승인",
-                         key=f"sc_btn_{sc_key}", use_container_width=True):
-                st.session_state[f"sc_confirm_{sc_key}"] = True
-
-            if st.session_state.get(f"sc_confirm_{sc_key}"):
-                st.warning(f"⚠️ {holding.get('name', ticker)} 매도 후 Satellite에서 제거합니다.")
-                col_yes, col_no = st.columns(2)
-                with col_yes:
-                    if st.button("🔴 매도 확정", key=f"sc_final_{sc_key}",
-                                 type="primary", use_container_width=True):
-                        try:
-                            config = load_kis_config(is_paper=is_paper)
-                            adapter = KISAdapter(
-                                app_key=config.app_key,
-                                app_secret=config.app_secret,
-                                account_no=config.account_no,
-                                is_paper=config.is_paper,
-                            )
-                            asset = Asset(
-                                ticker=ticker,
-                                name=holding.get("name", ticker),
-                                market=Market.KR,
-                                asset_type=AssetType.STOCK,
-                                currency=Currency.KRW,
-                                exchange=Exchange.KRX,
-                                candidate_roles=[AssetRole.CORE],
-                            )
-                            portfolio_data = adapter.get_portfolio(role_map=ROLE_MAP)
-                            sell_qty = 0
-                            for pos in portfolio_data.positions:
-                                if pos.asset.ticker == ticker:
-                                    sell_qty = int(pos.quantity)
-                                    break
-                            if sell_qty > 0:
-                                order_id = adapter.place_sell_order(
-                                    asset=asset,
-                                    quantity=Decimal(str(sell_qty))
-                                )
-                                st.success(f"✅ {holding.get('name', ticker)} 매도 완료!")
-                            del sat_holdings[ticker]
-                            buckets["satellite"]["holdings"] = sat_holdings
-                            buckets["satellite"]["last_rebalance"] = str(date.today())
-                            save_buckets(buckets)
-                            st.session_state[f"sc_confirm_{sc_key}"] = None
-                            st.cache_data.clear()
-                            st.rerun()
-                        except Exception as e:
-                            st.error(f"매도 실패: {e}")
-                with col_no:
-                    if st.button("취소", key=f"sc_no_{sc_key}",
-                                 use_container_width=True):
-                        st.session_state[f"sc_confirm_{sc_key}"] = None
-    else:
-        st.info("보유 종목이 없어 분기 교체를 진행할 수 없습니다.")
-
-    st.markdown("---")
-
-    # 추천 엔진 BUY 종목 연동
-    st.markdown("#### 🎯 편입 후보 (추천 엔진 BUY)")
-    sat_mode = st.selectbox(
-        "전략 모드", options=["🏛️ 버핏형", "⚖️ 균형형", "🚀 성장형"],
-        key="sat_mode"
-    )
-    sat_candidates_data = load_buy_candidates_by_mode(sat_mode)
-    if sat_candidates_data:
-        candidates = sat_candidates_data.get("buy_candidates", [])
-        # 이미 보유 중인 종목 제외
-        new_candidates = [c for c in candidates if c["ticker"] not in sat_holdings]
-        st.caption(f"신규 편입 가능: {len(new_candidates)}종목")
-        for c in new_candidates[:10]:
-            score = c["score"]
-            # 규칙 검증
-            rule_ok = True
-            rule_msg = ""
-            if score < min_entry_score:
-                rule_ok = False
-                rule_msg = f"점수 미달 ({score:.0f}점 < {min_entry_score:.0f}점)"
-            elif len(sat_holdings) >= max_stocks:
-                rule_ok = False
-                rule_msg = f"종목 수 한도 초과 ({max_stocks}개)"
-
-            col_info, col_btn = st.columns([4, 1])
-            with col_info:
-                score_color = "#00C896" if rule_ok else "#E74C3C"
-                st.markdown(
-                    f"**{c['name']}** `{c['ticker']}` | "
-                    f"<span style='color:{score_color}'>총점 {score:.0f}점</span> | "
-                    f"모멘텀 {c.get('momentum_score', 0):.0f}점"
-                    + (f" | ⚠️ {rule_msg}" if not rule_ok else ""),
-                    unsafe_allow_html=True,
-                )
-            with col_btn:
-                # CorrelationGuard 검증
-                corr_ok, corr_violation = default_guard.check_candidate(
-                    candidate_ticker=c["ticker"],
-                    candidate_name=c["name"],
-                    candidate_sector=c.get("sector", ""),
-                    current_holdings=sat_holdings,
-                )
-                if rule_ok and corr_ok:
-                    if st.button("편입", key=f"sat_add_{c['ticker']}", use_container_width=True):
-                        sat_holdings[c["ticker"]] = {
-                            "name": c["name"],
-                            "entry_date": str(date.today()),
-                            "entry_score": score,
-                            "total_score": score,
-                            "momentum_score": c.get("momentum_score", 0),
-                            "sector": c.get("sector", ""),
-                        }
-                        buckets["satellite"]["holdings"] = sat_holdings
-                        save_buckets(buckets)
-                        st.success(f"✅ {c['name']} 편입됨!")
-                        st.rerun()
-                elif not corr_ok:
-                    st.button("⛔ 상관관계", key=f"sat_add_{c['ticker']}", use_container_width=True, disabled=True)
-                    st.caption(f"⚠️ {corr_violation.reason[:40]}")
-                else:
-                    st.button("차단", key=f"sat_add_{c['ticker']}", use_container_width=True, disabled=True)
-    else:
-        st.info("추천 엔진을 먼저 실행하세요.")
-
-    st.markdown("---")
-
-    # 자금 투입/인출
-    st.markdown("#### 💰 자금 관리")
-    col_in, col_out = st.columns(2)
-    with col_in:
-        st.markdown("**➕ 자금 투입**")
-        sat_add = st.number_input(
-            "투입 금액 (원)", min_value=0, value=0, step=100000,
-            key="sat_add_amount"
-        )
-        if st.button("➕ Satellite 투입", use_container_width=True, key="sat_add_btn"):
-            if sat_add > 0:
-                buckets["satellite"]["initial_total"] = sat_total + sat_add
-                buckets["transfers"].append({
-                    "date": str(date.today()),
-                    "bucket": "satellite",
-                    "type": "deposit",
-                    "amount": sat_add,
-                })
-                save_buckets(buckets)
-                st.success(f"✅ {sat_add:,.0f}원 투입 완료!")
-                st.rerun()
-            else:
-                st.warning("금액을 입력하세요.")
-
-    with col_out:
-        st.markdown("**➖ 자금 인출**")
-        sat_withdraw = st.number_input(
-            "인출 금액 (원)", min_value=0, value=0, step=100000,
-            key="sat_withdraw_amount"
-        )
-        if st.button("➖ Satellite 인출", use_container_width=True, key="sat_withdraw_btn"):
-            if sat_withdraw > 0 and sat_withdraw <= sat_total:
-                st.session_state["sat_withdraw_confirm"] = True
-            elif sat_withdraw > sat_total:
-                st.error("인출 금액이 총액을 초과합니다.")
-            else:
-                st.warning("금액을 입력하세요.")
-
-        if st.session_state.get("sat_withdraw_confirm"):
-            st.warning(f"⚠️ {sat_withdraw:,.0f}원 인출하시겠습니까?")
-            col_yes, col_no = st.columns(2)
-            with col_yes:
-                if st.button("🔴 인출 확정", key="sat_withdraw_yes",
-                             type="primary", use_container_width=True):
-                    buckets["satellite"]["initial_total"] = sat_total - sat_withdraw
-                    buckets["transfers"].append({
-                        "date": str(date.today()),
-                        "bucket": "satellite",
-                        "type": "withdraw",
-                        "amount": sat_withdraw,
-                    })
-                    save_buckets(buckets)
-                    st.success(f"✅ {sat_withdraw:,.0f}원 인출 완료!")
-                    st.session_state["sat_withdraw_confirm"] = False
-                    st.rerun()
-            with col_no:
-                if st.button("취소", key="sat_withdraw_no", use_container_width=True):
-                    st.session_state["sat_withdraw_confirm"] = False
-
-    # 자금 이동 내역
-    sat_transfers = [t for t in buckets.get("transfers", []) if t["bucket"] == "satellite"]
-    if sat_transfers:
-        st.markdown("---")
-        st.markdown("#### 📋 자금 이동 내역")
-        for t in reversed(sat_transfers[-10:]):
-            icon = "➕" if t["type"] == "deposit" else "➖"
-            color = "#00C896" if t["type"] == "deposit" else "#E74C3C"
-            st.markdown(
-                f"<div style='color:{color}; font-size:13px'>"
-                f"{icon} {t['date']} | {t['amount']:,.0f} KRW</div>",
-                unsafe_allow_html=True,
-            )
-
-# ── TAB 2: 포지션 ─────────────────────────────────────────────────────────────
-with tab_positions:
-    total_pnl = Decimal("0")
-    for pos in portfolio.positions:
-        if pos.asset.ticker in prices:
-            total_pnl += pos.unrealized_pnl(prices[pos.asset.ticker]).amount
-
-    pnl_color = "#00C896" if total_pnl >= 0 else "#E74C3C"
-    pnl_sign = "+" if total_pnl >= 0 else ""
-    st.markdown(
-        f"**총 손익: <span style='color:{pnl_color}'>{pnl_sign}{total_pnl:,.0f} KRW</span>**",
-        unsafe_allow_html=True,
-    )
-    st.markdown(f"**{len(portfolio.positions)}종목 보유**")
-    st.markdown("---")
-
-    for pos in portfolio.positions:
-        ticker = pos.asset.ticker
-        if ticker not in prices:
-            continue
-        price = prices[ticker]
-        pnl = pos.unrealized_pnl(price)
-        pnl_rate = pnl.amount / pos.cost_basis().amount * 100
-        value = pos.market_value(price)
-        role_color = ROLE_COLOR.get(pos.role.value, "#8B9AB0")
-        pnl_color2 = "#00C896" if pnl_rate >= 0 else "#E74C3C"
-        pnl_sign2 = "+" if pnl_rate >= 0 else ""
-
-        st.markdown(
-            f"<div style='background:#1E2130; border-radius:12px; padding:14px; "
-            f"border:1px solid #2D3250; margin-bottom:10px'>"
-            f"<div style='display:flex; justify-content:space-between; align-items:center; margin-bottom:6px'>"
-            f"<span><span style='color:{role_color}'>■</span> "
-            f"<strong>{pos.asset.name}</strong> "
-            f"<code style='font-size:11px; color:#8B9AB0'>{ticker}</code></span>"
-            f"<span style='background:{role_color}20; color:{role_color}; "
-            f"padding:2px 8px; border-radius:10px; font-size:11px'>{pos.role.value}</span>"
-            f"</div>"
-            f"<div style='display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; font-size:13px'>"
-            f"<div><div style='color:#8B9AB0; font-size:11px'>보유수량</div>"
-            f"<div><strong>{pos.quantity:.0f}주</strong></div></div>"
-            f"<div><div style='color:#8B9AB0; font-size:11px'>현재가</div>"
-            f"<div><strong>{price}</strong></div></div>"
-            f"<div><div style='color:#8B9AB0; font-size:11px'>평가액</div>"
-            f"<div><strong>{value}</strong></div></div>"
-            f"</div>"
-            f"<div style='margin-top:8px; font-size:14px; font-weight:700; color:{pnl_color2}'>"
-            f"{pnl_sign2}{pnl_rate:.1f}% &nbsp; ({pnl_sign2}{pnl.amount:,.0f} KRW)"
-            f"</div></div>",
-            unsafe_allow_html=True,
-        )
-
-
-# ── TAB 3: 리밸런싱 ───────────────────────────────────────────────────────────
-with tab_rebalance:
-    guard = create_safety_guard(is_paper=is_paper)
-
-    if output.actions:
-        st.info("💡 **Level 2 반자동**: 승인 → 이중 확인 → 실제 주문")
-        st.markdown("---")
-
-        for i, action in enumerate(output.actions):
-            ok, reason = guard.check(action)
-            icon = "📈" if action.is_buy() else "📉"
-            color = "#00C896" if action.is_buy() else "#E74C3C"
-
-            st.markdown(
-                f"<div style='background:#1E2130; border-radius:12px; padding:14px; "
-                f"border:1px solid #2D3250; margin-bottom:10px'>"
-                f"<div style='font-size:16px; font-weight:700; margin-bottom:4px'>"
-                f"{icon} {action.asset.name} "
-                f"<span style='color:{color}; font-size:14px'>{action.action_type}</span></div>"
-                f"<div style='color:#8B9AB0; font-size:12px; margin-bottom:4px'>"
-                f"{action.current_weight*100:.1f}% → {action.target_weight*100:.1f}% "
-                f"&nbsp;|&nbsp; {action.suggested_amount} | {action.suggested_quantity:.0f}주</div>"
-                f"<div style='color:#8B9AB0; font-size:12px'>"
-                f"이유: {action.reason} &nbsp;|&nbsp; 우선순위: {action.priority}</div>"
-                f"</div>",
-                unsafe_allow_html=True,
-            )
-
-            if not ok:
-                st.markdown(f"🚫 **차단됨**: {reason}")
-            else:
-                col_approve, col_reject = st.columns(2)
-                with col_approve:
-                    if st.button("✅ 승인", key=f"approve_{i}",
-                                 type="primary", use_container_width=True):
-                        st.session_state[f"confirm_{i}"] = True
-                with col_reject:
-                    if st.button("❌ 거부", key=f"reject_{i}", use_container_width=True):
-                        st.session_state[f"confirm_{i}"] = False
-                        st.warning(f"{action.asset.name} 거부됨.")
-
-            if st.session_state.get(f"confirm_{i}") is True:
-                qty_str = f" | {action.suggested_quantity:.0f}주" if action.suggested_quantity else ""
-
-                # 포트폴리오 변화 미리보기
-                st.markdown("#### 📊 주문 전/후 포트폴리오 변화 미리보기")
-                total_amount = float(total.amount)
-                order_amount = float(action.suggested_amount.amount) if action.suggested_amount else 0
-                order_pct = order_amount / total_amount * 100 if total_amount > 0 else 0
-
-                # 현재 비중
-                current_pct = float(action.current_weight * 100)
-                # 주문 후 예상 비중
-                if action.is_buy():
-                    after_pct = current_pct + order_pct
-                else:
-                    after_pct = current_pct - order_pct
-
-                # 예상 거래비용
-                est_cost = order_amount * (TRANSACTION_COST + TAX_TRANSACTION)
-                
-                col_p1, col_p2, col_p3, col_p4 = st.columns(4)
-                with col_p1:
-                    st.metric("현재 비중", f"{current_pct:.1f}%")
-                with col_p2:
-                    delta = f"+{after_pct - current_pct:.1f}%" if action.is_buy() else f"{after_pct - current_pct:.1f}%"
-                    st.metric("주문 후 비중", f"{after_pct:.1f}%", delta=delta)
-                with col_p3:
-                    st.metric("주문 금액", f"{order_amount:,.0f}원")
-                with col_p4:
-                    st.metric("예상 거래비용", f"{est_cost:,.0f}원")
-
-                st.warning(
-                    f"⚠️ 정말 실행? **{action.action_type}** "
-                    f"{action.asset.name} | {action.suggested_amount}{qty_str}"
-                )
-                col_yes, col_no = st.columns(2)
-                with col_yes:
-                    if st.button("🔴 최종 확인 - 실행", key=f"final_yes_{i}",
-                                 type="primary", use_container_width=True):
-                        try:
-                            config = load_kis_config(is_paper=is_paper)
-                            adapter = KISAdapter(
-                                app_key=config.app_key,
-                                app_secret=config.app_secret,
-                                account_no=config.account_no,
-                                is_paper=config.is_paper,
-                            )
-                            if action.is_buy():
-                                order_id = adapter.place_buy_order(
-                                    asset=action.asset,
-                                    quantity=action.suggested_quantity or Decimal("1"),
-                                )
-                            else:
-                                order_id = adapter.place_sell_order(
-                                    asset=action.asset,
-                                    quantity=action.suggested_quantity or Decimal("1"),
-                                )
-                            guard.record_order(action)
-                            st.session_state[f"confirm_{i}"] = None
-                            st.success(f"✅ 주문 완료! {order_id or '체결 확인 중'}")
-                            st.cache_data.clear()
-                        except Exception as e:
-                            st.error(f"주문 실패: {e}")
-                with col_no:
-                    if st.button("취소", key=f"final_no_{i}", use_container_width=True):
-                        st.session_state[f"confirm_{i}"] = None
-
-            st.markdown("---")
-    else:
-        st.success("✅ 리밸런싱 불필요.")
-
-
-# ── TAB 4: 종목 분석 ──────────────────────────────────────────────────────────
-with tab_analysis:
-    st.caption("TTM + 10년 추세 기반 | DART 재무데이터 + yfinance | 24시간 캐시")
-
-    if st.button("🔄 스코어 갱신", use_container_width=True, key="refresh_score"):
-        invalidate_all_cache()
+        st.session_state.r_age         = "없음"
+        st.session_state.r_model_count = "1명 — 싱글 모델 (기본)"
+        st.session_state.r_body_weight = "없음"
+        st.session_state.r_bust_size   = "없음"
+        st.session_state.r_hip_size    = "없음"
+        st.session_state["use_separate_outfit"] = st.session_state.get("use_separate_outfit", False)
+        if st.session_state.get("use_separate_outfit", False):
+            top_keys = [k for k in TOP_TYPES.keys() if k != "없음 (의상 타입 사용)"]
+            bot_keys = [k for k in BOTTOM_TYPES.keys() if k != "없음 (의상 타입 사용)"]
+            if top_keys: st.session_state["r_top_type"] = random.choice(top_keys)
+            if bot_keys: st.session_state["r_bottom_type"] = random.choice(bot_keys)
         st.rerun()
 
-    st.markdown("---")
+    def idx(d, key, default=0):
+        keys = list(d.keys())
+        val  = st.session_state.get(key, keys[default])
+        return keys.index(val) if val in keys else default
 
-    for pos in portfolio.positions:
-        ticker = pos.asset.ticker
-        corp_code = DART_CORP_CODES.get(ticker)
-
-        if not corp_code:
-            st.caption(f"  {pos.asset.name}: ETF/펀드는 스코어링 미지원")
-            continue
-
-        with st.spinner(f"{pos.asset.name} 분석 중..."):
-            try:
-                result = get_or_fetch_score(
-                    ticker=ticker,
-                    name=pos.asset.name,
-                    fetch_fn=lambda t=ticker, n=pos.asset.name, cc=corp_code: fetch_score_for(t, n, cc),
-                )
-
-                decision_color = {
-                    "BUY": "#00C896", "WATCH": "#F5A623", "AVOID": "#E74C3C",
-                }.get(result.decision, "#8B9AB0")
-                role_color = ROLE_COLOR.get(pos.role.value, "#8B9AB0")
-                bar_width = int(result.total_score)
-
-                st.markdown(
-                    f"<div style='background:#1E2130; border-radius:12px; padding:14px; "
-                    f"border:1px solid #2D3250; margin-bottom:6px'>"
-                    f"<div style='display:flex; justify-content:space-between; align-items:center; margin-bottom:8px'>"
-                    f"<span><span style='color:{role_color}'>■</span> "
-                    f"<strong>{result.name}</strong> "
-                    f"<code style='font-size:11px; color:#8B9AB0'>{ticker}</code></span>"
-                    f"<span style='background:{decision_color}30; color:{decision_color}; "
-                    f"padding:3px 10px; border-radius:10px; font-size:13px; font-weight:700'>"
-                    f"{result.decision} {result.total_score:.0f}점</span>"
-                    f"</div>"
-                    f"<div style='background:#2D3250; border-radius:4px; height:5px; margin-bottom:10px'>"
-                    f"<div style='background:{decision_color}; width:{bar_width}%; "
-                    f"height:5px; border-radius:4px'></div></div>"
-                    f"<div style='display:grid; grid-template-columns:repeat(5,1fr); gap:6px; text-align:center'>"
-                    f"<div><div style='color:#8B9AB0; font-size:10px'>우량성</div>"
-                    f"<div style='font-size:15px; font-weight:700'>{result.quality_score:.0f}</div></div>"
-                    f"<div><div style='color:#8B9AB0; font-size:10px'>밸류</div>"
-                    f"<div style='font-size:15px; font-weight:700'>{result.valuation_score:.0f}</div></div>"
-                    f"<div><div style='color:#8B9AB0; font-size:10px'>배당</div>"
-                    f"<div style='font-size:15px; font-weight:700'>{result.dividend_score:.0f}</div></div>"
-                    f"<div><div style='color:#8B9AB0; font-size:10px'>성장</div>"
-                    f"<div style='font-size:15px; font-weight:700'>{result.growth_score:.0f}</div></div>"
-                    f"<div><div style='color:#8B9AB0; font-size:10px'>리스크</div>"
-                    f"<div style='font-size:15px; font-weight:700'>{result.risk_score:.0f}</div></div>"
-                    f"</div>"
-                    f"{'<div style=margin-top:6px;font-size:11px;color:#8B9AB0>' + result.data_label + '</div>' if hasattr(result, 'data_label') and result.data_label else ''}"
-                    f"</div>",
-                    unsafe_allow_html=True,
-                )
-
-                if result.reasons or result.warnings:
-                    with st.expander("상세 분석 보기"):
-                        if result.reasons:
-                            st.markdown("**긍정 요인:**")
-                            for r in result.reasons:
-                                st.markdown(f"  ✅ {r}")
-                        if result.warnings:
-                            st.markdown("**주의 요인:**")
-                            for w in result.warnings:
-                                st.markdown(f"  ⚠️ {w}")
-
-                st.markdown("---")
-
-            except Exception as e:
-                st.warning(f"{pos.asset.name} 분석 실패: {e}")
-
-
-# ── TAB 5: 추천 후보 ──────────────────────────────────────────────────────────
-with tab_recommend:
-    st.markdown("### 🎯 추천 편입 후보")
-    st.info("💡 각 전략 모드별 BUY 종목입니다. 추천 엔진을 먼저 실행하세요.")
-    st.caption("streamlit run recommend.py --server.port 8502")
-
-    # 백테스트 리포트 표시
-    REPORT_PATH = Path("cache/backtest_report.json")
-    if REPORT_PATH.exists():
-        try:
-            with open(REPORT_PATH, "r", encoding="utf-8") as f:
-                report = json.load(f)
-            st.markdown("#### 📊 추천 전략 백테스트 리포트")
-            col1, col2, col3 = st.columns(3)
-            for i, (mode_file, mode_label) in enumerate([
-                ("buffett", "🏛️ 버핏형"), ("balanced", "⚖️ 균형형"), ("growth", "🚀 성장형")
-            ]):
-                d = report.get(mode_file, {})
-                if not d:
-                    continue
-                with [col1, col2, col3][i]:
-                    cagr_color = "#00C896" if d.get("avg_cagr", 0) > 0 else "#E74C3C"
-                    st.markdown(
-                        f"<div style='background:#1E2130; border-radius:10px; padding:12px; "
-                        f"border:1px solid #2D3250; text-align:center'>"
-                        f"<div style='font-size:14px; font-weight:700; margin-bottom:8px'>{mode_label}</div>"
-                        f"<div style='color:{cagr_color}; font-size:20px; font-weight:700'>"
-                        f"{d.get('avg_cagr', 0):.1f}%</div>"
-                        f"<div style='color:#8B9AB0; font-size:11px'>평균 CAGR</div>"
-                        f"<div style='margin-top:6px; font-size:12px'>"
-                        f"MDD {d.get('avg_mdd', 0):.1f}% | "
-                        f"Sharpe {d.get('avg_sharpe', 0):.2f} | "
-                        f"승률 {d.get('win_rate', 0):.0f}%</div>"
-                        f"<div style='color:#8B9AB0; font-size:10px; margin-top:4px'>"
-                        f"{d.get('period', '')} | {d.get('generated_at', '')}</div>"
-                        f"</div>",
-                        unsafe_allow_html=True,
-                    )
-        except Exception:
-            pass
-
-    st.markdown("---")
-
-    mode_tab1, mode_tab2, mode_tab3 = st.tabs(["🏛️ 버핏형", "⚖️ 균형형", "🚀 성장형"])
-
-    def render_candidate_tab(mode_name, tab):
-        with tab:
-            data_rc = load_buy_candidates_by_mode(mode_name)
-            if not data_rc:
-                st.info(f"{mode_name} 추천 데이터가 없습니다.")
-                st.code("streamlit run recommend.py --server.port 8502", language="bash")
-                return
-
-            generated_at = data_rc.get("generated_at", "")
-            candidates = data_rc.get("buy_candidates", [])
-            st.markdown(f"*실행: {generated_at} | BUY {len(candidates)}종목*")
-            st.markdown("---")
-
-            if not candidates:
-                st.warning(f"{mode_name} BUY 후보가 없습니다.")
-                return
-
-            for idx, c in enumerate(candidates):
-                color = "#00C896"
-                score = c.get("score", 0)
-                bar_width = int(score)
-                market_badge = "🔵 코스피" if c.get("market") == "KOSPI" else "🟠 코스닥"
-                per_str = f"{c['per']:.1f}배" if c.get("per") else "-"
-                pbr_str = f"{c['pbr']:.1f}배" if c.get("pbr") else "-"
-                roe_str = f"{c['roe']*100:.1f}%" if c.get("roe") else "-"
-                div_str = f"{c['dividend_yield']*100:.1f}%" if c.get("dividend_yield") else "-"
-
-                st.markdown(
-                    f"<div style='background:#1E2130; border-radius:14px; padding:16px; "
-                    f"border:1px solid #2D3250; margin-bottom:8px'>"
-                    f"<div style='display:flex; justify-content:space-between; align-items:center; margin-bottom:6px'>"
-                    f"<span style='font-size:16px; font-weight:700'>"
-                    f"{c['name']} "
-                    f"<code style='font-size:11px; color:#8B9AB0'>{c['ticker']}</code> "
-                    f"<span style='font-size:11px; color:#8B9AB0'>{market_badge}</span>"
-                    f"</span>"
-                    f"<span style='background:{color}30; color:{color}; padding:3px 12px; "
-                    f"border-radius:10px; font-size:14px; font-weight:700'>"
-                    f"BUY {score:.0f}점</span>"
-                    f"</div>"
-                    f"<div style='background:#2D3250; border-radius:8px; padding:7px 12px; "
-                    f"margin-bottom:8px; font-size:12px; color:#FFFFFF'>💡 {c.get('reason', '')}</div>"
-                    f"<div style='background:#0E1117; border-radius:4px; height:4px; margin-bottom:10px'>"
-                    f"<div style='background:{color}; width:{bar_width}%; height:4px; border-radius:4px'></div>"
-                    f"</div>"
-                    f"<div style='display:grid; grid-template-columns:repeat(5,1fr); gap:6px; "
-                    f"text-align:center; margin-bottom:8px'>"
-                    f"<div style='background:#0E1117; border-radius:6px; padding:6px'>"
-                    f"<div style='color:#8B9AB0; font-size:10px'>우량성</div>"
-                    f"<div style='font-size:13px; font-weight:700; color:#00C896'>{c.get('quality_score', 0):.0f}</div></div>"
-                    f"<div style='background:#0E1117; border-radius:6px; padding:6px'>"
-                    f"<div style='color:#8B9AB0; font-size:10px'>밸류</div>"
-                    f"<div style='font-size:13px; font-weight:700; color:#4C9EEB'>{c.get('valuation_score', 0):.0f}</div></div>"
-                    f"<div style='background:#0E1117; border-radius:6px; padding:6px'>"
-                    f"<div style='color:#8B9AB0; font-size:10px'>성장</div>"
-                    f"<div style='font-size:13px; font-weight:700; color:#9B59B6'>{c.get('growth_score', 0):.0f}</div></div>"
-                    f"<div style='background:#0E1117; border-radius:6px; padding:6px'>"
-                    f"<div style='color:#8B9AB0; font-size:10px'>모멘텀</div>"
-                    f"<div style='font-size:13px; font-weight:700; color:#F5A623'>{c.get('momentum_score', 0):.0f}</div></div>"
-                    f"<div style='background:#0E1117; border-radius:6px; padding:6px'>"
-                    f"<div style='color:#8B9AB0; font-size:10px'>안정성</div>"
-                    f"<div style='font-size:13px; font-weight:700; color:#00C896'>{c.get('stability_score', 0):.0f}</div></div>"
-                    f"</div>"
-                    f"<div style='display:grid; grid-template-columns:repeat(4,1fr); gap:6px; "
-                    f"font-size:11px; color:#8B9AB0'>"
-                    f"<div>ROE: <strong style='color:#fff'>{roe_str}</strong></div>"
-                    f"<div>PER: <strong style='color:#fff'>{per_str}</strong></div>"
-                    f"<div>PBR: <strong style='color:#fff'>{pbr_str}</strong></div>"
-                    f"<div>배당(참고): <strong style='color:#fff'>{div_str}</strong></div>"
-                    f"</div></div>",
-                    unsafe_allow_html=True,
-                )
-
-                rc_key = f"rc_{mode_name}_{idx}"
-                if st.button(f"🔍 {c['name']} 편입 검토", key=f"btn_{rc_key}", use_container_width=True):
-                    st.session_state[f"rc_open_{rc_key}"] = True
-
-                if st.session_state.get(f"rc_open_{rc_key}"):
-                    with st.spinner(f"{c['name']} 현재가 조회 중..."):
-                        price_obj, stock_name = get_current_price_by_ticker(c["ticker"], is_paper)
-                    if price_obj:
-                        current_price = float(price_obj.amount)
-                        st.info(f"📊 **{c['name']}** 현재가: **{current_price:,.0f} KRW**")
-                        qty = st.number_input(
-                            "매수 수량 (주)", min_value=1, max_value=10000, value=1, step=1,
-                            key=f"qty_{rc_key}",
-                        )
-                        total_amt = current_price * qty
-                        st.caption(f"예상 금액: {total_amt:,.0f} KRW")
-                        col_buy, col_cancel = st.columns(2)
-                        with col_buy:
-                            if st.button("✅ 매수 승인", key=f"approve_{rc_key}",
-                                         type="primary", use_container_width=True):
-                                st.session_state[f"rc_confirm_{rc_key}"] = True
-                        with col_cancel:
-                            if st.button("취소", key=f"cancel_{rc_key}", use_container_width=True):
-                                st.session_state[f"rc_open_{rc_key}"] = False
-                                st.session_state[f"rc_confirm_{rc_key}"] = None
-
-                        if st.session_state.get(f"rc_confirm_{rc_key}"):
-                            st.warning(
-                                f"⚠️ 정말 실행? **BUY {c['name']}** | "
-                                f"{qty}주 | {total_amt:,.0f} KRW"
-                            )
-                            col_yes, col_no = st.columns(2)
-                            with col_yes:
-                                if st.button("🔴 최종 확인 - 실행", key=f"final_{rc_key}",
-                                             type="primary", use_container_width=True):
-                                    try:
-                                        order_id = place_manual_order(
-                                            ticker=c["ticker"], name=c["name"],
-                                            quantity=qty, is_paper=is_paper, side="buy",
-                                        )
-                                        st.success(f"✅ 주문 완료! {order_id or '체결 확인 중'}")
-                                        st.session_state[f"rc_open_{rc_key}"] = False
-                                        st.session_state[f"rc_confirm_{rc_key}"] = None
-                                        st.cache_data.clear()
-                                    except Exception as e:
-                                        st.error(f"주문 실패: {e}")
-                            with col_no:
-                                if st.button("취소", key=f"final_no_{rc_key}", use_container_width=True):
-                                    st.session_state[f"rc_confirm_{rc_key}"] = None
-                    else:
-                        st.error(f"현재가 조회 실패: {stock_name}")
-                st.markdown("---")
-
-    render_candidate_tab("🏛️ 버핏형", mode_tab1)
-    render_candidate_tab("⚖️ 균형형", mode_tab2)
-    render_candidate_tab("🚀 성장형", mode_tab3)
-
-
-# ── TAB 6: 수동 매수 ──────────────────────────────────────────────────────────
-with tab_manual:
-    st.markdown("### 🔍 종목 검색 매수")
-    st.caption("티커(종목코드) 입력 → 현재가 조회 → 수량 입력 → 매수")
-    st.markdown("---")
-
-    col_ticker, col_search = st.columns([3, 1])
-    with col_ticker:
-        manual_ticker = st.text_input(
-            "종목코드 입력 (예: 005930)",
-            placeholder="6자리 종목코드",
-            key="manual_ticker",
-        ).strip()
-    with col_search:
-        st.markdown("<div style='margin-top:28px'>", unsafe_allow_html=True)
-        search_btn = st.button("🔍 조회", use_container_width=True, key="search_btn")
-        st.markdown("</div>", unsafe_allow_html=True)
-
-    if search_btn and manual_ticker:
-        if len(manual_ticker) != 6 or not manual_ticker.isdigit():
-            st.error("6자리 숫자 종목코드를 입력하세요.")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown("##### 👤 모델")
+        appearance  = st.selectbox("👩 외모 — 인종/국적",          list(MODEL_APPEARANCE.keys()), index=idx(MODEL_APPEARANCE, "r_appearance"))
+        age         = st.selectbox("🎂 연령대",                     list(AGE_APPEARANCE.keys()),   index=idx(AGE_APPEARANCE,   "r_age"))
+        model_type  = st.selectbox("👤 체형과 비율",               list(MODEL_TYPES.keys()),       index=idx(MODEL_TYPES,      "r_model"))
+        body_weight = st.selectbox("⚖️ 체형 보정",                 list(BODY_WEIGHT.keys()),       index=idx(BODY_WEIGHT,      "r_body_weight"))
+        bust_size   = st.selectbox("👙 가슴 보정",                  list(BUST_SIZE.keys()),         index=idx(BUST_SIZE,        "r_bust_size"))
+        hip_size    = st.selectbox("🍑 힙 보정",                   list(HIP_SIZE.keys()),          index=idx(HIP_SIZE,         "r_hip_size"))
+        skin_tone   = st.selectbox("🌊 피부 톤/질감",              list(SKIN_TONES.keys()),        index=idx(SKIN_TONES,       "r_skin_tone"))
+        body_oil    = st.selectbox("✨ 바디 오일/글로스",           list(BODY_OIL.keys()),          index=idx(BODY_OIL,         "r_body_oil"))
+        expression  = st.selectbox("😏 표정/눈빛",                 list(EXPRESSION.keys()),        index=idx(EXPRESSION,       "r_expression"))
+        tattoo      = st.selectbox("🎨 문신/바디아트",              list(TATTOO.keys()),            index=idx(TATTOO,           "r_tattoo"))
+        skin_detail = st.selectbox("🌿 피부 디테일",               list(SKIN_DETAILS.keys()),      index=idx(SKIN_DETAILS,     "r_skin_detail"))
+        nails       = st.selectbox("💅 네일",                      list(NAILS.keys()),             index=idx(NAILS,            "r_nails"))
+        model_count = st.selectbox("👥 모델 수",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
+    with col2:
+        st.markdown("##### 👗 스타일")
+        use_separate = st.checkbox("✂️ 상하의 분리 선택", value=False, key="use_separate_outfit",
+                                   help="상의+하의를 각각 선택해 조합")
+        if use_separate:
+            top_type    = st.selectbox("👕 상의",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
+            bottom_type = st.selectbox("👖 하의",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
+            top_label    = top_type.split("—")[0].strip()    if top_type    != "없음 (의상 타입 사용)" else "없음"
+            bottom_label = bottom_type.split("—")[0].strip() if bottom_type != "없음 (의상 타입 사용)" else "없음"
+            st.markdown(f"""
+<div style="background:#2a2a2a;border:1px solid #c9a84c33;border-radius:8px;padding:8px 12px;margin:4px 0;">
+  <span style="font-size:0.7rem;color:#888;letter-spacing:1px;">선택된 조합</span><br>
+  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;margin-right:4px;">👕 {top_label}</span>
+  <span style="color:#555;margin-right:4px;">+</span>
+  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;">👖 {bottom_label}</span>
+</div>
+""", unsafe_allow_html=True)
+            outfit = list(OUTFIT_TYPES.keys())[0]
         else:
-            with st.spinner(f"{manual_ticker} 조회 중..."):
-                price_obj, stock_name = get_current_price_by_ticker(manual_ticker, is_paper)
-            if price_obj:
-                current_price = float(price_obj.amount)
-                st.session_state["manual_price"] = current_price
-                st.session_state["manual_name"] = stock_name
-                st.session_state["manual_ticker_confirmed"] = manual_ticker
-                st.success(f"✅ **{stock_name}** ({manual_ticker}) | 현재가: **{current_price:,.0f} KRW**")
-            else:
-                st.error(f"조회 실패: {stock_name}")
+            outfit      = st.selectbox("👗 의상 타입",  list(OUTFIT_TYPES.keys()), index=idx(OUTFIT_TYPES, "r_outfit"))
+            top_type    = "없음 (의상 타입 사용)"
+            bottom_type = "없음 (의상 타입 사용)"
 
-    if st.session_state.get("manual_price") and st.session_state.get("manual_ticker_confirmed"):
-        current_price = st.session_state["manual_price"]
-        stock_name = st.session_state["manual_name"]
-        confirmed_ticker = st.session_state["manual_ticker_confirmed"]
+        material    = st.selectbox("🧵 소재 — 옷감 질감",          list(MATERIALS.keys()),         index=idx(MATERIALS,        "r_material"))
+        footwear    = st.selectbox("👠 신발",                      list(FOOTWEAR.keys()),          index=idx(FOOTWEAR,         "r_footwear"))
+        pose        = st.selectbox("💃 포즈 — 자세와 동작",        list(POSES.keys()),             index=idx(POSES,            "r_pose"))
+        hair_style  = st.selectbox("💇 헤어스타일",                list(HAIR_STYLES.keys()),       index=idx(HAIR_STYLES,      "r_hair_style"))
+        hair_color  = st.selectbox("🎨 헤어컬러",                 list(HAIR_COLORS.keys()),       index=idx(HAIR_COLORS,      "r_hair_color"))
+        makeup      = st.selectbox("💄 메이크업",                  list(MAKEUP.keys()),            index=idx(MAKEUP,           "r_makeup"))
+        accessories = st.selectbox("💍 액세서리",                  list(ACCESSORIES.keys()),       index=idx(ACCESSORIES,      "r_accessories"))
+        props       = st.selectbox("🎪 특별 소품",                 list(PROPS.keys()),             index=idx(PROPS,            "r_props"))
+        era         = st.selectbox("🌍 시대/시간대",                list(ERA.keys()),               index=idx(ERA,              "r_era"))
+        concept     = st.selectbox("🎭 컨셉/페르소나",              list(CONCEPT.keys()),           index=idx(CONCEPT,          "r_concept"))
+    with col3:
+        st.markdown("##### 🏙️ 환경")
+        environment = st.selectbox("🏙️ 촬영 장소",                list(ENVIRONMENTS.keys()),      index=idx(ENVIRONMENTS,     "r_env"))
+        weather     = st.selectbox("🌦️ 날씨/기상",                 list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
+        time_of_day = st.selectbox("🕐 촬영 시간대",               list(TIME_OF_DAY.keys()),       index=idx(TIME_OF_DAY,      "r_time_of_day"))
+        lighting    = st.selectbox("💡 조명 — 빛의 분위기",        list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
+        framing     = st.selectbox("🖼️ 프레이밍 — 구도/크기",      list(FRAMING.keys()),           index=idx(FRAMING,          "r_framing"))
+        angle       = st.selectbox("📸 카메라 앵글",               list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
+        camera      = st.selectbox("📷 카메라 — 장비",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
+        lens_effect = st.selectbox("🔭 렌즈/초점 효과",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
+        style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",    list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
+        cover_style = st.selectbox("📰 커버 스타일 — 잡지/화보",    list(COVER_STYLES.keys()),      index=idx(COVER_STYLES,     "r_cover_style"))
+        color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",     list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
+        mood        = st.selectbox("🎭 무드/분위기",               list(MOOD.keys()),              index=idx(MOOD,             "r_mood"))
+        special_fx  = st.selectbox("🌈 특수 효과",                 list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
+        img_style   = st.selectbox("📐 이미지 스타일",             list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
+        bg_crowd    = st.selectbox("👥 배경 인물",                 list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
 
+    rec = get_combo_recommendations(model_type)
+    if rec:
+        with st.expander("✅ 이 체형에 잘 맞는 조합 추천", expanded=False):
+            rc1, rc2, rc3 = st.columns(3)
+            with rc1:
+                st.markdown("**👗 의상**")
+                for o in rec.get("outfit", []):
+                    st.markdown(f"{'🟡 ' if outfit == o else '• '}{o.split('—')[0].strip()}")
+                st.markdown("**🧵 소재**")
+                for m in rec.get("material", []):
+                    st.markdown(f"{'🟡 ' if material == m else '• '}{m.split('—')[0].strip()}")
+            with rc2:
+                st.markdown("**📸 앵글**")
+                for a in rec.get("angle", []):
+                    st.markdown(f"{'🟡 ' if angle == a else '• '}{a.split('—')[0].strip()}")
+                st.markdown("**💃 포즈**")
+                for p in rec.get("pose", []):
+                    st.markdown(f"{'🟡 ' if pose == p else '• '}{p.split('—')[0].strip()}")
+            with rc3:
+                st.markdown("**🎬 스타일**")
+                for s in rec.get("style", []):
+                    st.markdown(f"{'🟡 ' if style == s else '• '}{s.split('—')[0].strip()}")
+                st.markdown("**🏙️ 환경**")
+                for e in rec.get("env", []):
+                    st.markdown(f"{'🟡 ' if environment == e else '• '}{e.split('—')[0].strip()}")
+            st.caption("🟡 = 현재 선택됨  •  = 추천 항목")
+
+    conflicts = check_conflicts(angle, pose, style, environment, model_type, material, weather)
+    if conflicts:
+        for c in conflicts:
+            st.warning(f"⚠️ {c}")
+
+    col_x, col_y, col_z, _ = st.columns([1, 1, 1, 1])
+    with col_x:
+        btn_build      = st.button("✨ 프롬프트 조합", type="primary", use_container_width=True)
+    with col_y:
+        btn_ai_enhance = st.button("🤖 AI로 강화", use_container_width=True)
+    with col_z:
+        btn_ai_review  = st.button("🔍 AI 검수", use_container_width=True)
+
+    if "manual_prompt" not in st.session_state:
+        st.session_state.manual_prompt = ""
+    if "review_result" not in st.session_state:
+        st.session_state.review_result = ""
+
+    if btn_ai_review:
+        st.session_state.review_result = ""
+        with st.spinner("Claude가 조합 검수 + 자동 수정 중..."):
+            try:
+                import anthropic
+                client = anthropic.Anthropic()
+                current_combo = {
+                    "model": model_type, "outfit": outfit, "material": material,
+                    "angle": angle, "pose": pose, "skin_tone": skin_tone,
+                    "body_oil": body_oil, "weather": weather, "style": style,
+                    "lighting": lighting, "expression": expression,
+                    "bg_crowd": bg_crowd, "img_style": img_style, "color_grade": color_grade,
+                }
+                safe_options = {
+                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["코트 only — 롱코트만 입은 미니멀 글래머","란제리 에디토리얼 — VS 스타일, 실크 레이스","시스루 바디수트 — 메쉬, 아방가르드","브라탑+하이슬릿 — 브라탑, 롱 하이슬릿","마이크로 비키니 — 끈 비키니, SI 수영복 화보","모노키니 — 원피스 수영복 변형, 대담한 컷아웃"]],
+                    "material":  [k for k in MATERIALS.keys() if k not in ["라텍스 — 피부 밀착, 세컨드스킨","시스루 오간자 — 반투명, 살이 비치는","PVC — 투명 비닐, 미래적","골드 체인 메쉬 — 금속 체인 망사"]],
+                    "angle":     [k for k in CAMERA_ANGLES.keys() if k not in ["오버헤드 — 위에서 내려다보기","로우앵글 — 다리 강조, 아래서 위로"]],
+                    "pose":      [k for k in POSES.keys() if k not in ["없음","수영장 물속 — 하반신 물에 잠긴","엎드린 포즈 — 배를 깔고 관능적","백포즈 — 뒤돌아 어깨 너머 시선","등 보이기 — 백뷰, 어깨 라인"]],
+                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in ["스웨티 — 운동 후 땀나는 느낌","오일드 스킨 — 윤기있는 글로시"]],
+                    "body_oil":  ["없음", "라이트 글로우 — 자연스러운 윤기", "새틴 글로우 — 새틴처럼 빛나는"],
+                    "weather":   [k for k in WEATHER.keys() if k not in ["폭우 — 거센 비, 극적인 분위기"]],
+                    "style":     [k for k in STYLES.keys() if k not in ["빅토리아 시크릿 패션쇼","스포츠 일러스트레이티드 수영복"]],
+                    "lighting":  list(LIGHTING.keys()),
+                    "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["더블 익스포저 — 이중 노출"]],
+                }
+                response = client.messages.create(
+                    model="claude-sonnet-4-5",
+                    max_tokens=1200,
+                    messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst for Gemini and ChatGPT/DALL-E.
+Analyze this fashion photo prompt combination for AI content filter risks.
+Current combination:
+{chr(10).join([f"- {k}: {v}" for k, v in current_combo.items()])}
+CONFIRMED BLOCKED PATTERNS:
+🔴 INSTANT BLOCK: cup size mention, ultra/sexy descriptors, overhead+transparent+wet+curvy, innocent+sexual elements
+🔴 CHATGPT: low angle+wet+bust+slit, back view+bodysuit+wet+low angle
+🔴 GEMINI: transparent PVC+voluptuous, 3+ body parts emphasized, VS reference+revealing+wet
+✅ SAFE: body paint art, cultural/ethnic traditional costume, artistic context → high pass rate
+Risk: 3+ risky elements = HIGH
+Respond ONLY in JSON:
+{{"risk_level": "HIGH/MEDIUM/LOW","issues": ["issue1"],"replacements": {{"outfit": "key or null","material": "key or null","angle": "key or null","pose": "key or null","skin_tone": "key or null","body_oil": "key or null","weather": "key or null","style": "key or null","img_style": "key or null"}},"summary": "한국어 2-3줄"}}
+Available options:
+outfit: {safe_options['outfit'][:6]}
+material: {safe_options['material'][:6]}
+angle: {safe_options['angle']}
+pose: {safe_options['pose'][:8]}
+body_oil: {safe_options['body_oil']}
+style: {safe_options['style']}"""}]
+                )
+                raw = response.content[0].text.strip()
+                import json, re
+                json_match = re.search(r'\{.*\}', raw, re.DOTALL)
+                if json_match:
+                    result  = json.loads(json_match.group())
+                    risk    = result.get("risk_level", "UNKNOWN")
+                    issues  = result.get("issues", [])
+                    repls   = result.get("replacements", {})
+                    summary = result.get("summary", "")
+                    KEY_MAP = {"outfit":"r_outfit","material":"r_material","angle":"r_angle","pose":"r_pose","skin_tone":"r_skin_tone","body_oil":"r_body_oil","weather":"r_weather","style":"r_style","img_style":"r_image_style"}
+                    replaced = {}
+                    for field, new_val in repls.items():
+                        if new_val and new_val != "null":
+                            ss_key = KEY_MAP.get(field)
+                            if ss_key:
+                                st.session_state[ss_key] = new_val
+                                replaced[field] = new_val
+                    risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(risk, "⚪")
+                    msg = f"{risk_emoji} **리스크: {risk}**\n\n"
+                    if issues: msg += "**⚠️ 감지된 문제:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
+                    if replaced: msg += "**🔄 자동 교체된 항목:**\n" + "\n".join([f"- {k} → `{v.split('—')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
+                    msg += f"**💬 요약:** {summary}"
+                    st.session_state.review_result = msg
+                    if replaced:
+                        st.session_state._trigger_build = True
+                        st.rerun()
+            except Exception as e:
+                st.session_state.review_result = f"오류: {str(e)}"
+
+    if st.session_state.get("review_result"):
         st.markdown("---")
-        st.markdown(f"**{stock_name}** `{confirmed_ticker}` | 현재가: **{current_price:,.0f} KRW**")
+        st.markdown("#### 🔍 AI 검수 결과")
+        st.markdown(st.session_state.review_result)
+        st.markdown("---")
 
-        col_side, col_qty = st.columns(2)
-        with col_side:
-            order_side = st.selectbox("매수/매도", options=["매수", "매도"], key="manual_side")
-        with col_qty:
-            manual_qty = st.number_input(
-                "수량 (주)", min_value=1, max_value=100000, value=1, step=1,
-                key="manual_qty",
-            )
+    if btn_build:
+        def smart_update(key, d, prob):
+            cur = st.session_state.get(key, "없음")
+            if cur == "없음":
+                keys = [k for k in d.keys() if k != "없음"]
+                if keys and random.random() < prob:
+                    st.session_state[key] = random.choice(keys)
 
-        total_amt = current_price * manual_qty
-        side_str = "BUY" if order_side == "매수" else "SELL"
-        side_color = "#00C896" if order_side == "매수" else "#E74C3C"
-        st.markdown(
-            f"<div style='background:#1E2130; border-radius:10px; padding:12px; margin:8px 0'>"
-            f"<span style='color:{side_color}; font-weight:700'>{side_str}</span> "
-            f"{stock_name} | {manual_qty}주 | "
-            f"<strong>{total_amt:,.0f} KRW</strong>"
-            f"</div>",
-            unsafe_allow_html=True,
+        smart_update("r_pose",        POSES,          0.80)
+        smart_update("r_expression",  EXPRESSION,     0.80)
+        smart_update("r_skin_tone",   SKIN_TONES,     0.80)
+        smart_update("r_hair_style",  HAIR_STYLES,    0.50)
+        smart_update("r_hair_color",  HAIR_COLORS,    0.50)
+        smart_update("r_makeup",      MAKEUP,         0.50)
+        smart_update("r_footwear",    FOOTWEAR,       0.50)
+        smart_update("r_color_grade", COLOR_GRADES,   0.50)
+        smart_update("r_accessories", ACCESSORIES,    0.30)
+        smart_update("r_body_oil",    BODY_OIL,       0.30)
+        smart_update("r_weather",     WEATHER,        0.30)
+        smart_update("r_bg_crowd",    BG_CROWD,       0.30)
+        smart_update("r_tattoo",      TATTOO,         0.15)
+        smart_update("r_special_effects", SPECIAL_EFFECTS, 0.15)
+        smart_update("r_props",       PROPS,          0.15)
+        smart_update("r_image_style", IMAGE_STYLE,    0.15)
+        smart_update("r_era",         ERA,            0.15)
+        smart_update("r_concept",     CONCEPT,        0.15)
+
+        st.session_state._trigger_build = True
+        st.session_state.r_outfit      = outfit
+        st.session_state.r_material    = material
+        st.session_state.r_angle       = angle
+        st.session_state.r_model       = model_type
+        st.session_state.r_age         = age
+        st.session_state.r_model_count = model_count
+        st.session_state.r_style       = style
+        st.session_state.r_skin_tone   = skin_tone
+        st.session_state.r_body_oil    = body_oil
+        st.session_state.r_weather     = weather
+        st.session_state.r_expression  = expression
+        st.session_state.r_env         = environment
+        st.session_state.r_light       = lighting
+        st.session_state.r_camera      = camera
+        st.session_state.r_mood        = mood
+        st.session_state.r_time_of_day = time_of_day
+        st.session_state.r_lens_effect = lens_effect
+
+        manual_sel = set()
+        if outfit != list(OUTFIT_TYPES.keys())[0]: manual_sel.add("r_outfit")
+        if use_separate: manual_sel.add("r_outfit")
+
+        filter_result = auto_filter_check(
+            dict(st.session_state),
+            platform=global_platform,
+            manual_selections=manual_sel,
+            art_fallback=global_art_fallback,
+        )
+        if filter_result["replacements"]:
+            for ss_key, new_val in filter_result["replacements"].items():
+                st.session_state[ss_key] = new_val
+            risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(filter_result["risk_level"], "⚪")
+            replaced_labels = {"r_angle":"앵글","r_pose":"포즈","r_outfit":"의상","r_material":"소재","r_skin_tone":"피부","r_body_oil":"바디오일","r_style":"스타일","r_expression":"표정","r_model":"체형","r_image_style":"이미지스타일"}
+            changed = "  |  ".join([f"{replaced_labels.get(k, k)} → **{v.split('—')[0].strip()}**" for k, v in filter_result["replacements"].items()])
+            st.session_state._auto_filter_msg = f"{risk_emoji} 필터 자동 조정: {changed}"
+        else:
+            risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(filter_result["risk_level"], "⚪")
+            st.session_state._auto_filter_msg = f"{risk_emoji} 필터 검수 통과 (점수: {filter_result['total_score']})"
+
+        st.rerun()
+
+    if st.session_state.get("_trigger_build", False):
+        st.session_state._trigger_build = False
+
+        def ss(key, d, default=None):
+            keys = list(d.keys())
+            val = st.session_state.get(key, keys[0] if keys else "없음")
+            return val if val in d else (keys[0] if keys else "없음")
+
+        _prev = {k: st.session_state.get(f"_prev_{k}", "없음") for k in ["r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color","r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil","r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props","r_image_style","r_era","r_concept"]}
+        auto_labels = {"r_pose":"💃 포즈","r_expression":"😏 표정","r_skin_tone":"🌊 피부","r_hair_style":"💇 헤어","r_hair_color":"🎨 헤어컬러","r_makeup":"💄 메이크업","r_footwear":"👠 신발","r_color_grade":"🖼️ 색감","r_accessories":"💍 액세서리","r_body_oil":"✨ 바디오일","r_weather":"🌦️ 날씨","r_bg_crowd":"👥 배경","r_tattoo":"🎨 문신","r_special_effects":"🌈 특수효과","r_props":"🎪 소품","r_image_style":"📐 이미지스타일","r_era":"🌍 시대","r_concept":"🎭 컨셉"}
+        picked_items = {}
+        for key, label in auto_labels.items():
+            cur = st.session_state.get(key, "없음")
+            if _prev[key] == "없음" and cur != "없음":
+                picked_items[label] = cur.split("—")[0].strip()
+            st.session_state[f"_prev_{key}"] = cur
+
+        if picked_items:
+            st.session_state._auto_picked_msg = f"🎲 자동 선택: {'  |  '.join([f'{k} → **{v}**' for k, v in picked_items.items()])}"
+        else:
+            st.session_state._auto_picked_msg = ""
+
+        data = {
+            "appearance":    ss("r_appearance",  MODEL_APPEARANCE),
+            "age":           ss("r_age",          AGE_APPEARANCE),
+            "model":         ss("r_model",        MODEL_TYPES),
+            "outfit":        ss("r_outfit",       OUTFIT_TYPES),
+            "material":      ss("r_material",     MATERIALS),
+            "footwear":      ss("r_footwear",     FOOTWEAR),
+            "pose":          ss("r_pose",         POSES),
+            "color_grade":   ss("r_color_grade",  COLOR_GRADES),
+            "hair_style":    ss("r_hair_style",   HAIR_STYLES),
+            "hair_color":    ss("r_hair_color",   HAIR_COLORS),
+            "makeup":        ss("r_makeup",       MAKEUP),
+            "accessories":   ss("r_accessories",  ACCESSORIES),
+            "skin_tone":     ss("r_skin_tone",    SKIN_TONES),
+            "model_count":   ss("r_model_count",  MODEL_COUNT),
+            "era":           ss("r_era",          ERA),
+            "concept":       ss("r_concept",      CONCEPT),
+            "special_effects": ss("r_special_effects", SPECIAL_EFFECTS),
+            "image_style":   ss("r_image_style",  IMAGE_STYLE),
+            "props":         ss("r_props",        PROPS),
+            "body_weight":   ss("r_body_weight",  BODY_WEIGHT),
+            "bust_size":     ss("r_bust_size",    BUST_SIZE),
+            "hip_size":      ss("r_hip_size",     HIP_SIZE),
+            "weather":       ss("r_weather",      WEATHER),
+            "expression":    ss("r_expression",   EXPRESSION),
+            "tattoo":        ss("r_tattoo",       TATTOO),
+            "skin_detail":   ss("r_skin_detail",  SKIN_DETAILS),
+            "nails":         ss("r_nails",        NAILS),
+            "body_oil":      ss("r_body_oil",     BODY_OIL),
+            "bg_crowd":      ss("r_bg_crowd",     BG_CROWD),
+            "mood":          ss("r_mood",         MOOD),
+            "time_of_day":   ss("r_time_of_day",  TIME_OF_DAY),
+            "lens_effect":   ss("r_lens_effect",  LENS_EFFECT),
+            "env":           ss("r_env",          ENVIRONMENTS),
+            "light":         ss("r_light",        LIGHTING),
+            "framing":       ss("r_framing",      FRAMING),
+            "angle":         ss("r_angle",        CAMERA_ANGLES),
+            "style":         ss("r_style",        STYLES),
+            "cover_style":   ss("r_cover_style",  COVER_STYLES),
+            "camera":        ss("r_camera",       CAMERAS),
+            "top_type":      st.session_state.get("r_top_type", "없음 (의상 타입 사용)"),
+            "bottom_type":   st.session_state.get("r_bottom_type", "없음 (의상 타입 사용)"),
+        }
+        st.session_state.manual_prompt = get_prompt(data)
+
+    if st.session_state.get("_auto_picked_msg"):
+        st.info(st.session_state._auto_picked_msg)
+
+    if st.session_state.get("_auto_filter_msg"):
+        msg = st.session_state._auto_filter_msg
+        if "🔴" in msg: st.warning(msg)
+        elif "🟡" in msg: st.info(msg)
+        else: st.success(msg)
+
+    if btn_ai_enhance and st.session_state.manual_prompt:
+        with st.spinner("Claude가 프롬프트 강화 중..."):
+            try:
+                import anthropic
+                client = anthropic.Anthropic()
+                platform_instruction = {
+                    "Gemini": "Make it detailed and descriptive (150-200 words), natural language style.",
+                    "ChatGPT (DALL-E)": "Make it concise and keyword-focused (under 80 words), punchy style.",
+                    "Midjourney": "Convert to comma-separated tags with --ar 2:3 --style raw --q 2 at the end.",
+                }
+                response = client.messages.create(
+                    model="claude-sonnet-4-5",
+                    max_tokens=500,
+                    messages=[{"role": "user", "content": f"""Enhance this fashion photography prompt for {global_platform}.
+Rules: model fills frame, photorealistic skin.
+{platform_instruction[global_platform]}
+Output ONLY the prompt:
+
+{st.session_state.manual_prompt}"""}]
+                )
+                st.session_state.manual_prompt = response.content[0].text.strip()
+            except Exception as e:
+                st.error(f"오류: {str(e)}")
+
+    if st.session_state.manual_prompt:
+        st.text_area("조합된 프롬프트", value=st.session_state.manual_prompt, height=160)
+        st.code(st.session_state.manual_prompt, language=None)
+        st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
+
+# ══════════════════════════════════════════════════════════
+# 탭 3: 랜덤 모드
+# ══════════════════════════════════════════════════════════
+with tab3:
+    st.markdown("### 완전 랜덤 프롬프트 생성")
+    st.caption("핵심 요소만 랜덤 조합 — 프롬프트 최적 길이 유지")
+
+    col1, col2, _ = st.columns([1, 1, 2])
+    with col1:
+        btn_rand    = st.button("🎲 랜덤 생성", type="primary", use_container_width=True)
+    with col2:
+        btn_rand_ai = st.button("🤖 AI 랜덤", use_container_width=True)
+
+    if "random_prompt" not in st.session_state:
+        st.session_state.random_prompt = ""
+
+    if btn_rand:
+        data = {
+            "appearance":      random.choice(list(MODEL_APPEARANCE.keys())),
+            "age":             "없음",
+            "model":           random.choice(list(MODEL_TYPES.keys())),
+            "outfit":          random.choice(list(OUTFIT_TYPES.keys())),
+            "material":        random.choice(list(MATERIALS.keys())),
+            "footwear":        "없음",
+            "pose":            random.choice(list(POSES.keys())),
+            "color_grade":     "없음",
+            "hair_style":      "없음",
+            "hair_color":      "없음",
+            "makeup":          "없음",
+            "accessories":     "없음",
+            "skin_tone":       "없음",
+            "model_count":     "1명 — 싱글 모델 (기본)",
+            "era":             "없음",
+            "concept":         "없음",
+            "special_effects": "없음",
+            "image_style":     "없음",
+            "props":           "없음",
+            "body_weight":     "없음",
+            "bust_size":       "없음",
+            "hip_size":        "없음",
+            "env":             random.choice(list(ENVIRONMENTS.keys())),
+            "light":           random.choice(list(LIGHTING.keys())),
+            "angle":           random.choice(list(CAMERA_ANGLES.keys())),
+            "style":           random.choice(list(STYLES.keys())),
+            "camera":          random.choice(list(CAMERAS.keys())),
+            "top_type":        "없음 (의상 타입 사용)",
+            "bottom_type":     "없음 (의상 타입 사용)",
+        }
+        st.session_state.random_prompt = get_prompt(data)
+
+    if btn_rand_ai:
+        preset_name = random.choice(list_presets())
+        with st.spinner(f"Claude가 [{preset_name}] 기반으로 생성 중..."):
+            try:
+                st.session_state.random_prompt = generate_prompt_with_ai(preset_name)
+            except Exception as e:
+                st.error(f"오류: {str(e)}")
+
+    if st.session_state.random_prompt:
+        st.text_area("랜덤 프롬프트", value=st.session_state.random_prompt, height=160)
+        st.code(st.session_state.random_prompt, language=None)
+        st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
+
+st.markdown("---")
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.5 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+
+# ══════════════════════════════════════════════════════════
+# 탭 4: 영상 프롬프트
+# ══════════════════════════════════════════════════════════
+with tab4:
+    st.markdown(f"### 🎬 영상 프롬프트 생성 — {global_video_platform}")
+
+    VIDEO_PLATFORM_TIPS = {
+        "Veo 3 (Gemini)": ("🔵", "gemini.google.com", "Gemini Advanced 구독 필요. 좌측 메뉴에서 Veo 3 선택."),
+        "Kling AI":        ("🟡", "klingai.com",       "무료 티어 사용 가능. 매일 크레딧 지급."),
+        "Runway":          ("🟢", "runwayml.com",      "무료 크레딧 제공. Gen-3 Alpha 사용."),
+        "Hailuo":          ("🟠", "hailuoai.video",    "완전 무료. 중국 서비스."),
+    }
+    color, url, tip = VIDEO_PLATFORM_TIPS[global_video_platform]
+    st.info(f"{color} **{global_video_platform}** — {tip} → [{url}](https://{url})")
+
+    VIDEO_DURATIONS  = {"5초 — 짧고 임팩트 있는": "5 seconds", "8초 — 표준 클립": "8 seconds", "10초 — 긴 클립": "10 seconds"}
+    VIDEO_MOTIONS    = {
+        "워킹 — 런웨이 워크, 카메라 정면":     "walking towards camera, confident runway walk, slow motion",
+        "턴 — 360도 회전, 의상 전체 공개":      "slow 360 degree turn, revealing full outfit",
+        "포즈 — 정적 포즈, 바람에 머리 날림":   "standing pose, hair flowing in wind, subtle movement",
+        "댄스 — 섹시한 느낌의 부드러운 움직임": "slow sensual dance movement, fluid motion",
+        "워킹+턴 — 걷다가 카메라 보며 턴":      "walking then turning to camera, fashion editorial motion",
+        "등장 — 안개/빛 속에서 천천히 등장":    "emerging slowly from mist and light, dramatic entrance",
+    }
+    VIDEO_CAMERAS    = {
+        "시네마틱 — 느린 달리샷":           "slow cinematic dolly shot, smooth camera movement",
+        "오빗 — 모델 주위를 도는 카메라":   "slow orbit around subject, 360 camera movement",
+        "줌인 — 전신에서 얼굴로 천천히 줌": "slow zoom from full body to face, intimate close-up",
+        "로우앵글 — 아래서 위로 올려다보기": "low angle upward camera, powerful perspective",
+        "하이앵글 — 위에서 내려다보기":     "high angle downward camera, elegant perspective",
+        "핸드헬드 — 약간의 흔들림, 현장감":  "slight handheld camera movement, documentary feel",
+    }
+    VIDEO_ATMOSPHERES = {
+        "럭셔리 글래머 — 화려하고 고급스러운":  "luxury glamour atmosphere, high-end fashion film",
+        "다크 시네마틱 — 어둡고 영화적인":      "dark cinematic atmosphere, noir fashion film",
+        "골든아워 — 따뜻한 황금빛":             "golden hour warm light, dreamy fashion film",
+        "네온 사이버펑크 — 미래적 네온 분위기": "neon cyberpunk atmosphere, futuristic fashion film",
+        "미니멀 클린 — 깔끔하고 모던한":        "minimal clean white atmosphere, modern fashion film",
+        "에디토리얼 — 잡지 화보 느낌":          "editorial fashion film, Vogue video style",
+    }
+
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("**📝 기존 프롬프트 기반으로 변환**")
+        source_prompt    = st.text_area("이미지 프롬프트 붙여넣기 (선택사항)", placeholder="기존 이미지 프롬프트를 여기에 붙여넣으면 영상용으로 변환해줘요...", height=120, key="video_source")
+        video_duration   = st.selectbox("⏱️ 영상 길이", list(VIDEO_DURATIONS.keys()))
+        video_motion     = st.selectbox("🏃 모션 타입", list(VIDEO_MOTIONS.keys()))
+    with col2:
+        video_camera     = st.selectbox("📷 카메라 무브먼트", list(VIDEO_CAMERAS.keys()))
+        video_atmosphere = st.selectbox("🌟 분위기", list(VIDEO_ATMOSPHERES.keys()))
+        video_appearance = st.selectbox("👩 모델 외모", ["None — 프롬프트 기반"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
+        video_outfit     = st.selectbox("👗 의상", ["None — 프롬프트 기반"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
+
+    st.markdown("")
+    col_x, col_y, _ = st.columns([1, 1, 2])
+    with col_x:
+        btn_video_build = st.button("🎬 영상 프롬프트 생성", type="primary", use_container_width=True)
+    with col_y:
+        btn_video_ai    = st.button("🤖 AI로 강화", use_container_width=True, key="btn_video_ai")
+
+    if "video_prompt" not in st.session_state:
+        st.session_state.video_prompt = ""
+
+    if btn_video_build:
+        st.session_state.video_prompt = ""
+        appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None — 프롬프트 기반" else ""
+        outfit_str = ""
+        if video_outfit != "None — 프롬프트 기반":
+            od = OUTFIT_TYPES[video_outfit]
+            outfit_str = f"Wearing: {(od['gemini'] if isinstance(od, dict) else od).split(',')[0]}. "
+        base = f"Based on: {source_prompt[:200]}. " if source_prompt else ""
+        st.session_state.video_prompt = (
+            f"Cinematic fashion video, {VIDEO_DURATIONS[video_duration]}. {base}"
+            f"{appearance_str}{outfit_str}"
+            f"Motion: {VIDEO_MOTIONS[video_motion]}. Camera: {VIDEO_CAMERAS[video_camera]}. "
+            f"Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}. "
+            f"Photorealistic, hyperrealistic, 4K cinematic quality, professional fashion film, no text, no watermark."
         )
 
-        if st.button("✅ 승인", type="primary", use_container_width=True, key="manual_approve"):
-            st.session_state["manual_confirm"] = True
+    if btn_video_ai and (source_prompt or st.session_state.video_prompt):
+        with st.spinner("Claude가 영상 프롬프트 강화 중..."):
+            try:
+                import anthropic
+                client = anthropic.Anthropic()
+                base   = source_prompt or st.session_state.video_prompt
+                response = client.messages.create(
+                    model="claude-sonnet-4-5",
+                    max_tokens=500,
+                    messages=[{"role": "user", "content": f"""You are an expert video prompt engineer.
+Create a powerful cinematic fashion video prompt based on this: {base}
+Settings: Duration: {VIDEO_DURATIONS[video_duration]}, Motion: {VIDEO_MOTIONS[video_motion]}, Camera: {VIDEO_CAMERAS[video_camera]}, Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}
+Rules: Cinematic, photorealistic, 4K. No text overlays. Output ONLY the prompt, 100-150 words."""}]
+                )
+                st.session_state.video_prompt = response.content[0].text.strip()
+            except Exception as e:
+                st.error(f"오류: {str(e)}")
 
-        if st.session_state.get("manual_confirm"):
-            st.warning(
-                f"⚠️ 정말 실행? **{side_str} {stock_name}** | "
-                f"{manual_qty}주 | {total_amt:,.0f} KRW"
-            )
-            col_yes, col_no = st.columns(2)
-            with col_yes:
-                if st.button("🔴 최종 확인 - 실행", type="primary",
-                             use_container_width=True, key="manual_final"):
-                    try:
-                        order_id = place_manual_order(
-                            ticker=confirmed_ticker, name=stock_name,
-                            quantity=manual_qty, is_paper=is_paper,
-                            side="buy" if order_side == "매수" else "sell",
-                        )
-                        st.success(f"✅ 주문 완료! {order_id or '체결 확인 중'}")
-                        # Satellite holdings 자동 저장 (매수 시)
-                        if order_side == "매수":
-                            buckets = load_buckets()
-                            if confirmed_ticker not in buckets["satellite"]["holdings"]:
-                                buckets["satellite"]["holdings"][confirmed_ticker] = {
-                                    "name": stock_name,
-                                    "entry_date": datetime.now().strftime("%Y-%m-%d"),
-                                    "entry_score": 0.0,
-                                    "total_score": 0.0,
-                                    "momentum_score": 0.0,
-                                    "sector": "기타"
-                                }
-                                save_buckets(buckets)
-                        st.session_state["manual_confirm"] = False
-                        st.session_state["manual_price"] = None
-                        st.session_state["manual_ticker_confirmed"] = None
-                        st.cache_data.clear()
-                    except Exception as e:
-                        st.error(f"주문 실패: {e}")
-            with col_no:
-                if st.button("취소", use_container_width=True, key="manual_cancel"):
-                    st.session_state["manual_confirm"] = False
-
-
-# =============================================================================
-# 푸터
-# =============================================================================
-
-mode_text = "모의투자" if is_paper else "실전투자"
-st.markdown(
-    f"<div style='text-align:center; color:#8B9AB0; font-size:12px; margin-top:20px'>"
-    f"Claude Asset Engine | BUFFETT_COMPOUND_DEFENSE | {mode_text} | 데이터 5분 캐시"
-    f"</div>",
-    unsafe_allow_html=True,
-)
+    if st.session_state.video_prompt:
+        st.text_area("생성된 영상 프롬프트", value=st.session_state.video_prompt, height=180)
+        st.code(st.session_state.video_prompt, language=None)
+        st.caption("👆 복사 후 해당 플랫폼에 붙여넣으세요!")
+        st.markdown("---")
+        st.markdown(f"### 💡 {global_video_platform} 사용 방법")
+        if global_video_platform == "Veo 3 (Gemini)":
+            st.markdown("1. [gemini.google.com](https://gemini.google.com) 접속\n2. 좌측 **Veo 3** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+        elif global_video_platform == "Kling AI":
+            st.markdown("1. [klingai.com](https://klingai.com) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+        elif global_video_platform == "Runway":
+            st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+        else:
+            st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
