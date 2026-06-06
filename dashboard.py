@@ -40,7 +40,7 @@ from core.data import (
     COVER_STYLES,
 )
 from core.combos import GOOD_COMBOS, CONFLICT_RULES, check_conflicts, get_combo_recommendations, auto_filter_check
-from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
+from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt, _build_wearing_line
 
 st.set_page_config(
     page_title="LumineX Dashboard",
