@@ -1,15 +1,15 @@
 """
-LumineX Dashboard v3.5 - 신규 카테고리 섹션 추가
+LumineX Dashboard v3.6
 실행: streamlit run dashboard.py
 
-v3.5 변경사항 (2026-06-04):
-1. 프리셋 모드 — 카테고리 필터 추가 (14개 카테고리)
-2. 신규 카테고리 섹션 3개 추가:
-   - 🍬 팝 & 카와이
-   - 👘 전통 & 문화의상
-   - 🌸 계절 & 테마
-3. 버전 표기 v3.4 → v3.5
-4. combos.py v3.5 연동 (topographic 차단, barely_there/wet_look 위험도 하향)
+v3.6 변경사항 (2026-06-06):
+1. PRESET_CATEGORIES — v13/v14 프리셋 전체 반영
+   - 🖌️ 바디페인팅: v14 관능적 바디페인팅 35개 추가 (총 101개)
+   - 🍬 팝 & 카와이: v13 추가 20개 반영
+   - 🎌 애니 & 글래머: 신규 카테고리 (30개)
+   - ✈️ 직업 & 라이프스타일: v13 스포츠 6개 추가
+2. SS_TIER: lace_body_paint / jewelry_trompe_loeil 추가 (총 16개)
+3. 버전 표기 v3.5 → v3.6
 """
 
 import sys
@@ -49,9 +49,10 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── 카테고리별 프리셋 매핑 (v3.5 신규) ─────────────────────
+# ─── 카테고리별 프리셋 매핑 (v3.6 전체 반영) ─────────────────
 PRESET_CATEGORIES = {
     "🖌️ 바디페인팅 & 스킨 트랜스폼": [
+        # 기존
         "bioluminescent_ink","klimt_gold_body","vangogh_body","dali_surreal","munch_scream",
         "monet_bloom","mucha_nouveau","hokusai_wave","kandinsky_abstract","pollock_splash",
         "broken_porcelain","marble_veins","henna_goddess_body","oil_slick_body","liquid_chrome_body",
@@ -62,11 +63,27 @@ PRESET_CATEGORIES = {
         "polynesian_tribal","viking_rune","inca_geometric","chinese_dragon","aboriginal_dot",
         "galaxy_skin","crystal_growth","tree_of_life","moonphase_body","shadow_lace",
         "ash_phoenix","half_statue",
-        # v12 신규
+        # v12
         "rembrandt_chiaroscuro","klimt_silver","matisse_cutout","mondrian_body","basquiat_street",
         "warhol_pop","lichtenstein_dot","huli_wigman","nuba_body","wodaabe_beauty","mehndi_full",
         "mayan_ritual","haida_totem","aurora_skin","crystal_mineral","tide_pool","magnetic_field",
         "cell_division",
+        # v14 — 관능적 바디페인팅 35개
+        # 💧 액체/흐름
+        "melting_chocolate","liquid_gold_drip","silver_mercury_body","ink_pour_body",
+        "paint_splash_body","milk_bath_body",
+        # 🌺 자연 관능
+        "rose_petal_body","orchid_body","vine_wrap_body","lotus_body","poison_flower",
+        # 🌊 원소 관능
+        "fire_skin","water_ripple_body","frost_crystallize","storm_static_body","smoke_body_art",
+        # 💋 글래머 관능
+        "lace_body_paint","fishnet_paint","chain_body_paint","jewelry_trompe_loeil","mandala_body",
+        # 🎨 아트 관능
+        "body_calligraphy","zentangle_body","constellation_body","circuit_erotic","tarot_body",
+        # 🌙 신비 관능
+        "moon_tattoo_body","rune_body_art","alchemy_body","henna_erotic",
+        # 🐍 동물 관능
+        "python_scales","jaguar_spots","mermaid_scales","raven_feathers","tiger_stripes_body",
     ],
     "💫 글래머 & 럭셔리": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
@@ -75,7 +92,7 @@ PRESET_CATEGORIES = {
         "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
         "feather_cascade","feather_touch","golden_oil","golden_nude","gold_temptress","red_temptress",
         "veil_goddess","petal_goddess","cobweb_drape",
-        # v11 신규
+        # v11
         "casino_royale","black_tie_gala","champagne_tower","fur_coat_only",
     ],
     "🌿 자연 & 원소": [
@@ -85,7 +102,7 @@ PRESET_CATEGORIES = {
         "desert_sand_glam","cliff_edge","arctic_minimal","dawn_awakening","aurora_drape",
         "aurora_spirit","lightning_body","solar_flare","tropical_storm","santorini_lightning",
         "smoke_veil","liquid_gold_pour","liquid_mirror","prism_light","shattered_glass","zero_gravity",
-        # v11 신규
+        # v11
         "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
     ],
     "🌃 도시 & 나이트": [
@@ -94,7 +111,7 @@ PRESET_CATEGORIES = {
         "monaco_nights","miami_afterglow","azure_nights","blue_hour_goddess","candlelight_noir",
         "jazz_club","jazz_age","noir_ballet","urban_vanguard","brutalist_glam","after_dark_minimal",
         "disco_goddess","music_festival","new_year_countdown","cyber_fire","cyber_silk","emerald_city",
-        # v11 신규
+        # v11
         "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
     ],
     "🎬 에디토리얼 & 무드": [
@@ -103,7 +120,7 @@ PRESET_CATEGORIES = {
         "neon_body","plasma_aura","molten_chrome","mercury_rising","mercury_pool","titanium_body",
         "snowflake_skin","80s_power","y2k_chrome","harajuku_doll","doll_house","bubble_tea",
         "bohemian_paris","origami_couture",
-        # v11 신규
+        # v11
         "wet_glass","smoke_studio","infrared_beauty","grain_film",
     ],
     "🏺 문명 & 신화": [
@@ -112,7 +129,7 @@ PRESET_CATEGORIES = {
         "renaissance_nude","cathedral_light","baroque_punk","art_gallery","museum_glamour",
         "library_secret","living_sculpture","living_statue","sculpture_goddess","marble_goddess",
         "marble_minimal","viking_queen",
-        # v11 신규
+        # v11
         "sumerian_queen","ming_empress","aztec_sun_goddess","celtic_warrior_queen",
     ],
     "✈️ 직업 & 라이프스타일": [
@@ -121,8 +138,11 @@ PRESET_CATEGORIES = {
         "private_jet","helipad","luxury_shopping","golf_glam","golf_caddie","tennis_luxe",
         "tennis_referee","f1_grid_girl","equestrian_glam","cheerleader","architect_chic",
         "fitness_power","yoga_goddess",
-        # v11 신규
+        # v11
         "barista_chic","gallery_curator","horse_racing","scuba_instructor",
+        # v13 스포츠
+        "ballet_prima","gymnastics_editorial","figure_skater","tennis_champion",
+        "archery_goddess","carnival_rio",
     ],
     "🔮 판타지 & 다크": [
         "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
@@ -130,14 +150,14 @@ PRESET_CATEGORIES = {
         "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
         "zombie_apocalypse","dark_academia","gothic_romance","double_exposure_dark",
         "double_exposure_ethereal","oil_slick_noir",
-        # v11 신규
+        # v11
         "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
     ],
     "⚔️ 파워 & 엣지": [
         "valkyrie_storm","savage_leather","latex_venom","biker_glam","shadow_play","frozen_latex",
         "chrome_vixen","chain_goddess","fencer_noir","martial_arts","boxing_glamour","power_curve",
         "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent","oil_goddess",
-        # v11 신규
+        # v11
         "riot_goddess","punk_queen","steel_warrior","cage_fighter",
     ],
     "🏖️ 비치 & 리조트": [
@@ -145,7 +165,7 @@ PRESET_CATEGORIES = {
         "poolside_noir","infinity_pool","riviera_heat","beach_bonfire","wet_look_goddess",
         "scuba_goddess","glass_floor","glass_house","ski_chalet","vineyard_harvest","spa_noir",
         "balcony_goddess",
-        # v11 신규
+        # v11
         "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
     ],
     "🎭 퍼포먼스 & 댄스": [
@@ -153,36 +173,54 @@ PRESET_CATEGORIES = {
         "pole_art","candy_rave","ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
         "opera_night","christmas_glamour","pop_art_glamour","ribbon_goddess","petal_storm",
         "midnight_bath",
-        # v11 신규
+        # v11
         "ballet_noir","broadway_diva","street_dance","drag_glamour",
     ],
     "👘 전통 & 문화의상": [
         "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
         "harem_goddess","belly_dancer","odalisque","imperial_silk",
-        # v10 신규
+        # v10
         "kimono_silk","ao_dai_sheer","thai_temple","indian_bridal","moroccan_kaftan",
         "persian_court","yoruba_glamour","balinese_goddess","chinese_qipao_slit","scottish_corset",
     ],
     "🌸 계절 & 테마": [
         "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
         "sunflower_field","greenhouse_eden","tropical_night",
-        # v10 신규
+        # v10
         "first_snow","golden_autumn","midsummer_heat","rainy_season","harvest_moon",
         "winter_solstice","cherry_blossom_night","tropical_monsoon",
     ],
     "🍬 팝 & 카와이": [
         "bubble_tea","doll_house","harajuku_doll","pastel_fairy","candy_rave","pop_art_glamour",
-        # v10 신규
+        # v10
         "y2k_fairy","pink_champagne","cotton_candy","angel_baby","idol_stage","kitty_glam",
         "strawberry_milk","cherry_pop","neon_kawaii","fairy_kei",
+        # v13
+        "gyaru_glam","kogal_style","hime_gyaru","decora_kei","maid_glamour","visual_kei",
+        "lolita_gothic","disco_barbie","space_babe","bubblegum_pop","rainbow_rave","glitter_bomb",
+        "arcade_queen","virtual_idol","tokimeki_pop","kpop_idol","korean_ulzzang","kbeauty_goddess",
+        "kdrama_heroine","manga_girl",
+    ],
+    "🎌 애니 & 글래머": [
+        # v13 일본 계열
+        "zero_suit","battle_bikini","succubus_anime","catgirl_luxe","dark_magical_girl",
+        "witch_apprentice","fallen_angel_anime","kunoichi_glam","oni_warrior","samurai_bride",
+        "dragon_princess","android_girl","pilot_suit","neon_android","vampire_seductress",
+        # v13 글로벌 계열
+        "cosmic_warrior_glam","dark_jester_glam","poison_ivy_vines","storm_goddess",
+        "dark_sorceress_glam","jessica_rabbit_glam","webtoon_heroine","manhwa_villainess",
+        "barbarella_retro","vampirella_dark","ghost_shell","android_2b","street_fighter_chun",
+        "dark_elsa","sailor_moon_dark",
     ],
 }
 
-# SS tier 프리셋
+# SS tier (16개 확정)
 SS_TIER = {
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
     "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
     "ash_phoenix","lichtenstein_dot","warhol_pop","mondrian_body",
+    # v14 신규 SS tier
+    "lace_body_paint","jewelry_trompe_loeil",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
@@ -198,26 +236,17 @@ TEXT_DIM = "#888"
 
 st.markdown(f"""
 <style>
-/* ── 전체 배경 ── */
 .stApp, [data-testid="stAppViewContainer"] {{ background-color: {BG} !important; }}
 [data-testid="stHeader"] {{ background-color: {BG} !important; }}
-
-/* ── 사이드바 ── */
 [data-testid="stSidebar"] {{ background-color: {BG_SIDE} !important; border-right: 1px solid {BORDER} !important; }}
 [data-testid="stSidebar"] .stMarkdown p,
 [data-testid="stSidebar"] label {{ color: {TEXT_DIM} !important; font-size: 0.78rem !important; }}
 [data-testid="stSidebar"] h3 {{ color: {GOLD_DIM} !important; font-size: 0.65rem !important; letter-spacing: 2.5px !important; text-transform: uppercase !important; }}
-
-/* ── 헤딩 ── */
 h1, h2, h3, h4, h5 {{ color: {GOLD} !important; letter-spacing: 1.5px !important; }}
-
-/* ── 탭 ── */
 .stTabs [data-baseweb="tab-list"] {{ background-color: transparent !important; border-bottom: 1px solid {BORDER} !important; gap: 0 !important; }}
 .stTabs [data-baseweb="tab"] {{ background-color: transparent !important; color: {TEXT_DIM} !important; font-size: 0.78rem !important; padding: 10px 20px !important; border-bottom: 2px solid transparent !important; }}
 .stTabs [aria-selected="true"] {{ color: {GOLD} !important; border-bottom: 2px solid {GOLD} !important; background-color: transparent !important; }}
 .stTabs [data-baseweb="tab-highlight"], .stTabs [data-baseweb="tab-border"] {{ display: none !important; }}
-
-/* ── 셀렉트박스 ── */
 .stSelectbox > div > div {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
 .stSelectbox > div > div:hover {{ border-color: rgba(201,168,76,0.4) !important; }}
 .stSelectbox > div > div:focus-within {{ border-color: rgba(201,168,76,0.7) !important; box-shadow: 0 0 0 1px rgba(201,168,76,0.2) !important; }}
@@ -228,29 +257,19 @@ h1, h2, h3, h4, h5 {{ color: {GOLD} !important; letter-spacing: 1.5px !important
 [data-baseweb="popover"] [data-baseweb="menu"] {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; }}
 [data-baseweb="popover"] li {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
 [data-baseweb="popover"] li:hover {{ background-color: rgba(201,168,76,0.1) !important; color: {GOLD} !important; }}
-
-/* ── 버튼 ── */
 .stButton > button {{ border-radius: 6px !important; font-size: 0.75rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important; font-weight: 700 !important; transition: all 0.2s !important; height: 42px !important; }}
 .stButton > button[kind="primary"] {{ background: linear-gradient(135deg, {GOLD}, {GOLD_DIM}) !important; border: none !important; color: #111 !important; }}
 .stButton > button[kind="primary"]:hover {{ background: linear-gradient(135deg, #e8c96a, {GOLD}) !important; transform: translateY(-1px) !important; }}
 .stButton > button[kind="secondary"] {{ background: transparent !important; border: 1px solid rgba(201,168,76,0.4) !important; color: {GOLD} !important; }}
 .stButton > button[kind="secondary"]:hover {{ background: rgba(201,168,76,0.08) !important; border-color: rgba(201,168,76,0.7) !important; }}
-
-/* ── 라디오 ── */
 .stRadio > div {{ gap: 6px !important; }}
 .stRadio label {{ background: {BG_CARD} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; padding: 7px 12px !important; font-size: 0.78rem !important; color: {TEXT_DIM} !important; cursor: pointer !important; transition: all 0.2s !important; }}
 .stRadio label:has(input:checked) {{ background: rgba(201,168,76,0.12) !important; border-color: rgba(201,168,76,0.5) !important; color: {GOLD} !important; }}
-
-/* ── 텍스트에어리어 ── */
 .stTextArea textarea {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; font-size: 0.78rem !important; line-height: 1.8 !important; }}
 .stTextArea textarea:focus {{ border-color: rgba(201,168,76,0.5) !important; box-shadow: 0 0 0 1px rgba(201,168,76,0.15) !important; }}
-
-/* ── 코드블록 ── */
 .stCode {{ background-color: {BG_INPUT} !important; border: 1px solid rgba(201,168,76,0.25) !important; border-radius: 6px !important; }}
 .stCode code {{ color: #ce9178 !important; font-size: 0.75rem !important; line-height: 1.8 !important; }}
 .stCode button {{ background: rgba(201,168,76,0.1) !important; border: 1px solid rgba(201,168,76,0.3) !important; color: {GOLD} !important; border-radius: 4px !important; }}
-
-/* ── 기타 ── */
 [data-testid="stToggle"] > div {{ background-color: {GOLD} !important; }}
 .stAlert {{ background-color: {BG_CARD} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; color: {TEXT_DIM} !important; font-size: 0.78rem !important; }}
 hr {{ border-color: {BORDER} !important; margin: 12px 0 !important; }}
@@ -260,19 +279,6 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 ::-webkit-scrollbar-track {{ background: {BG}; }}
 ::-webkit-scrollbar-thumb {{ background: {BORDER}; border-radius: 2px; }}
 ::-webkit-scrollbar-thumb:hover {{ background: {GOLD_DIM}; }}
-
-/* ── SS tier 뱃지 ── */
-.ss-badge {{
-    display: inline-block;
-    background: linear-gradient(135deg, #c9a84c, #8a6f30);
-    color: #111;
-    font-size: 0.6rem;
-    font-weight: 700;
-    padding: 1px 5px;
-    border-radius: 3px;
-    margin-left: 4px;
-    letter-spacing: 0.5px;
-}}
 </style>
 """, unsafe_allow_html=True)
 
@@ -280,7 +286,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.5</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.6</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -291,7 +297,7 @@ with st.sidebar:
     global_platform = st.radio("🖥️ 출력 플랫폼", options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"], index=0)
     global_aspect   = st.selectbox("📐 이미지 비율", options=list(ASPECT_RATIOS.keys()), index=0, help="★ = 기본값 권장")
     global_realism      = st.toggle("📷 실사 모드", value=True)
-    global_art_fallback = st.toggle("🎨 위험 시 아트 스타일", value=False, help="HIGH 위험 감지 시 수채화/흑백 자동 적용 — 통과율 우선")
+    global_art_fallback = st.toggle("🎨 위험 시 아트 스타일", value=False, help="HIGH 위험 감지 시 수채화/흑백 자동 적용")
     st.markdown("---")
     st.markdown("### 🎬 영상 플랫폼")
     global_video_platform = st.radio("영상 생성 플랫폼", options=["Veo 3 (Gemini)", "Kling AI", "Runway", "Hailuo"], index=0)
@@ -312,16 +318,13 @@ with st.sidebar:
         st.success("키워드 중심. 짧고 강렬하게!")
     else:
         st.warning("태그 나열 + --파라미터 방식.")
-
     if global_platform == "Gemini":
         st.markdown("---")
         st.markdown("### 🔄 Gemini 세션")
-        if st.button("🆕 Gemini 새 창 열기", use_container_width=True, help="누적 맥락 초기화 — 새 대화창에서 시작"):
+        if st.button("🆕 Gemini 새 창 열기", use_container_width=True, help="누적 맥락 초기화"):
             import webbrowser
             webbrowser.open("https://gemini.google.com/app")
         st.caption("💡 같은 창 반복 생성 시 타투/헤어 오염 주의")
-
-    # ── v3.5 신규: 사이드바 프리셋 통계 ──
     st.markdown("---")
     st.markdown("### 📊 프리셋 현황")
     total = sum(len(v) for v in PRESET_CATEGORIES.values())
@@ -342,12 +345,11 @@ def get_prompt(data: dict) -> str:
 tab1, tab2, tab3, tab4 = st.tabs(["🎨 프리셋 모드", "🛠️ 수동 조합", "🎲 랜덤 모드", "🎬 영상 프롬프트"])
 
 # ══════════════════════════════════════════════════════════
-# 탭 1: 프리셋 모드 (v3.5 — 카테고리 필터 추가)
+# 탭 1: 프리셋 모드
 # ══════════════════════════════════════════════════════════
 with tab1:
     st.markdown("### 프리셋으로 프롬프트 생성")
 
-    # ── v3.5 신규: 카테고리 필터 ──
     col_cat, col_search = st.columns([2, 1])
     with col_cat:
         all_cats = ["🌟 전체"] + list(PRESET_CATEGORIES.keys())
@@ -355,7 +357,6 @@ with tab1:
     with col_search:
         search_query = st.text_input("🔍 프리셋 검색", placeholder="이름 검색...", key="preset_search")
 
-    # 카테고리/검색 기반 프리셋 목록 필터링
     all_presets = list_presets()
     if selected_cat == "🌟 전체":
         filtered_presets = all_presets
@@ -366,7 +367,6 @@ with tab1:
     if search_query:
         filtered_presets = [p for p in filtered_presets if search_query.lower() in p.lower()]
 
-    # SS tier 표시
     def format_preset(name):
         if name in SS_TIER:
             return f"⭐ {name} [SS]"
@@ -517,13 +517,12 @@ with tab1:
 # ══════════════════════════════════════════════════════════
 with tab2:
     st.markdown("### 요소별 수동 조합")
-    st.caption("💡 핵심 요소(외모/체형/의상/환경)만 선택해도 좋은 프롬프트가 나와요. 나머지는 필요할 때만!")
+    st.caption("💡 핵심 요소(외모/체형/의상/환경)만 선택해도 좋은 프롬프트가 나와요.")
 
     if st.button("🎲 전체 랜덤으로 채우기"):
         def rnd(d):
             keys = [k for k in d.keys() if k != "없음"]
             return random.choice(keys) if keys else "없음"
-
         st.session_state.r_appearance  = rnd(MODEL_APPEARANCE)
         st.session_state.r_model       = rnd(MODEL_TYPES)
         st.session_state.r_outfit      = rnd(OUTFIT_TYPES)
@@ -541,10 +540,8 @@ with tab2:
         st.session_state.r_hair_style  = rnd(HAIR_STYLES)
         st.session_state.r_hair_color  = rnd(HAIR_COLORS)
         st.session_state.r_makeup      = rnd(MAKEUP)
-
         def rnd_maybe(d, prob=0.5):
             return rnd(d) if random.random() < prob else "없음"
-
         st.session_state.r_footwear        = rnd_maybe(FOOTWEAR,       0.50)
         st.session_state.r_color_grade     = rnd_maybe(COLOR_GRADES,   0.50)
         st.session_state.r_accessories     = rnd_maybe(ACCESSORIES,    0.40)
@@ -563,7 +560,6 @@ with tab2:
         st.session_state.r_skin_detail     = rnd_maybe(SKIN_DETAILS,   0.20)
         st.session_state.r_nails           = rnd_maybe(NAILS,          0.30)
         st.session_state.r_cover_style     = rnd_maybe(COVER_STYLES,   0.20)
-
         st.session_state.r_age         = "없음"
         st.session_state.r_model_count = "1명 — 싱글 모델 (기본)"
         st.session_state.r_body_weight = "없음"
@@ -600,8 +596,7 @@ with tab2:
         model_count = st.selectbox("👥 모델 수",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
     with col2:
         st.markdown("##### 👗 스타일")
-        use_separate = st.checkbox("✂️ 상하의 분리 선택", value=False, key="use_separate_outfit",
-                                   help="상의+하의를 각각 선택해 조합")
+        use_separate = st.checkbox("✂️ 상하의 분리 선택", value=False, key="use_separate_outfit", help="상의+하의를 각각 선택해 조합")
         if use_separate:
             top_type    = st.selectbox("👕 상의",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
             bottom_type = st.selectbox("👖 하의",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
@@ -620,7 +615,6 @@ with tab2:
             outfit      = st.selectbox("👗 의상 타입",  list(OUTFIT_TYPES.keys()), index=idx(OUTFIT_TYPES, "r_outfit"))
             top_type    = "없음 (의상 타입 사용)"
             bottom_type = "없음 (의상 타입 사용)"
-
         material    = st.selectbox("🧵 소재 — 옷감 질감",          list(MATERIALS.keys()),         index=idx(MATERIALS,        "r_material"))
         footwear    = st.selectbox("👠 신발",                      list(FOOTWEAR.keys()),          index=idx(FOOTWEAR,         "r_footwear"))
         pose        = st.selectbox("💃 포즈 — 자세와 동작",        list(POSES.keys()),             index=idx(POSES,            "r_pose"))
@@ -655,44 +649,32 @@ with tab2:
             rc1, rc2, rc3 = st.columns(3)
             with rc1:
                 st.markdown("**👗 의상**")
-                for o in rec.get("outfit", []):
-                    st.markdown(f"{'🟡 ' if outfit == o else '• '}{o.split('—')[0].strip()}")
+                for o in rec.get("outfit", []): st.markdown(f"{'🟡 ' if outfit == o else '• '}{o.split('—')[0].strip()}")
                 st.markdown("**🧵 소재**")
-                for m in rec.get("material", []):
-                    st.markdown(f"{'🟡 ' if material == m else '• '}{m.split('—')[0].strip()}")
+                for m in rec.get("material", []): st.markdown(f"{'🟡 ' if material == m else '• '}{m.split('—')[0].strip()}")
             with rc2:
                 st.markdown("**📸 앵글**")
-                for a in rec.get("angle", []):
-                    st.markdown(f"{'🟡 ' if angle == a else '• '}{a.split('—')[0].strip()}")
+                for a in rec.get("angle", []): st.markdown(f"{'🟡 ' if angle == a else '• '}{a.split('—')[0].strip()}")
                 st.markdown("**💃 포즈**")
-                for p in rec.get("pose", []):
-                    st.markdown(f"{'🟡 ' if pose == p else '• '}{p.split('—')[0].strip()}")
+                for p in rec.get("pose", []): st.markdown(f"{'🟡 ' if pose == p else '• '}{p.split('—')[0].strip()}")
             with rc3:
                 st.markdown("**🎬 스타일**")
-                for s in rec.get("style", []):
-                    st.markdown(f"{'🟡 ' if style == s else '• '}{s.split('—')[0].strip()}")
+                for s in rec.get("style", []): st.markdown(f"{'🟡 ' if style == s else '• '}{s.split('—')[0].strip()}")
                 st.markdown("**🏙️ 환경**")
-                for e in rec.get("env", []):
-                    st.markdown(f"{'🟡 ' if environment == e else '• '}{e.split('—')[0].strip()}")
+                for e in rec.get("env", []): st.markdown(f"{'🟡 ' if environment == e else '• '}{e.split('—')[0].strip()}")
             st.caption("🟡 = 현재 선택됨  •  = 추천 항목")
 
     conflicts = check_conflicts(angle, pose, style, environment, model_type, material, weather)
     if conflicts:
-        for c in conflicts:
-            st.warning(f"⚠️ {c}")
+        for c in conflicts: st.warning(f"⚠️ {c}")
 
     col_x, col_y, col_z, _ = st.columns([1, 1, 1, 1])
-    with col_x:
-        btn_build      = st.button("✨ 프롬프트 조합", type="primary", use_container_width=True)
-    with col_y:
-        btn_ai_enhance = st.button("🤖 AI로 강화", use_container_width=True)
-    with col_z:
-        btn_ai_review  = st.button("🔍 AI 검수", use_container_width=True)
+    with col_x: btn_build      = st.button("✨ 프롬프트 조합", type="primary", use_container_width=True)
+    with col_y: btn_ai_enhance = st.button("🤖 AI로 강화", use_container_width=True)
+    with col_z: btn_ai_review  = st.button("🔍 AI 검수", use_container_width=True)
 
-    if "manual_prompt" not in st.session_state:
-        st.session_state.manual_prompt = ""
-    if "review_result" not in st.session_state:
-        st.session_state.review_result = ""
+    if "manual_prompt" not in st.session_state: st.session_state.manual_prompt = ""
+    if "review_result" not in st.session_state: st.session_state.review_result = ""
 
     if btn_ai_review:
         st.session_state.review_result = ""
@@ -700,13 +682,7 @@ with tab2:
             try:
                 import anthropic
                 client = anthropic.Anthropic()
-                current_combo = {
-                    "model": model_type, "outfit": outfit, "material": material,
-                    "angle": angle, "pose": pose, "skin_tone": skin_tone,
-                    "body_oil": body_oil, "weather": weather, "style": style,
-                    "lighting": lighting, "expression": expression,
-                    "bg_crowd": bg_crowd, "img_style": img_style, "color_grade": color_grade,
-                }
+                current_combo = {"model": model_type, "outfit": outfit, "material": material, "angle": angle, "pose": pose, "skin_tone": skin_tone, "body_oil": body_oil, "weather": weather, "style": style, "lighting": lighting, "expression": expression, "bg_crowd": bg_crowd, "img_style": img_style, "color_grade": color_grade}
                 safe_options = {
                     "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["코트 only — 롱코트만 입은 미니멀 글래머","란제리 에디토리얼 — VS 스타일, 실크 레이스","시스루 바디수트 — 메쉬, 아방가르드","브라탑+하이슬릿 — 브라탑, 롱 하이슬릿","마이크로 비키니 — 끈 비키니, SI 수영복 화보","모노키니 — 원피스 수영복 변형, 대담한 컷아웃"]],
                     "material":  [k for k in MATERIALS.keys() if k not in ["라텍스 — 피부 밀착, 세컨드스킨","시스루 오간자 — 반투명, 살이 비치는","PVC — 투명 비닐, 미래적","골드 체인 메쉬 — 금속 체인 망사"]],
@@ -720,36 +696,23 @@ with tab2:
                     "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["더블 익스포저 — 이중 노출"]],
                 }
                 response = client.messages.create(
-                    model="claude-sonnet-4-5",
-                    max_tokens=1200,
-                    messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst for Gemini and ChatGPT/DALL-E.
-Analyze this fashion photo prompt combination for AI content filter risks.
-Current combination:
+                    model="claude-sonnet-4-5", max_tokens=1200,
+                    messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst.
+Analyze this combination for risks:
 {chr(10).join([f"- {k}: {v}" for k, v in current_combo.items()])}
-CONFIRMED BLOCKED PATTERNS:
-🔴 INSTANT BLOCK: cup size mention, ultra/sexy descriptors, overhead+transparent+wet+curvy, innocent+sexual elements
-🔴 CHATGPT: low angle+wet+bust+slit, back view+bodysuit+wet+low angle
-🔴 GEMINI: transparent PVC+voluptuous, 3+ body parts emphasized, VS reference+revealing+wet
-✅ SAFE: body paint art, cultural/ethnic traditional costume, artistic context → high pass rate
+SAFE: body paint art, cultural costume, artistic context → high pass rate
 Risk: 3+ risky elements = HIGH
 Respond ONLY in JSON:
-{{"risk_level": "HIGH/MEDIUM/LOW","issues": ["issue1"],"replacements": {{"outfit": "key or null","material": "key or null","angle": "key or null","pose": "key or null","skin_tone": "key or null","body_oil": "key or null","weather": "key or null","style": "key or null","img_style": "key or null"}},"summary": "한국어 2-3줄"}}
-Available options:
-outfit: {safe_options['outfit'][:6]}
-material: {safe_options['material'][:6]}
-angle: {safe_options['angle']}
-pose: {safe_options['pose'][:8]}
-body_oil: {safe_options['body_oil']}
-style: {safe_options['style']}"""}]
+{{"risk_level": "HIGH/MEDIUM/LOW","issues": ["issue1"],"replacements": {{"outfit": "key or null","material": "key or null","angle": "key or null","pose": "key or null","skin_tone": "key or null","body_oil": "key or null","weather": "key or null","style": "key or null","img_style": "key or null"}},"summary": "한국어 2-3줄"}}"""}]
                 )
                 raw = response.content[0].text.strip()
                 import json, re
                 json_match = re.search(r'\{.*\}', raw, re.DOTALL)
                 if json_match:
-                    result  = json.loads(json_match.group())
-                    risk    = result.get("risk_level", "UNKNOWN")
-                    issues  = result.get("issues", [])
-                    repls   = result.get("replacements", {})
+                    result = json.loads(json_match.group())
+                    risk = result.get("risk_level", "UNKNOWN")
+                    issues = result.get("issues", [])
+                    repls = result.get("replacements", {})
                     summary = result.get("summary", "")
                     KEY_MAP = {"outfit":"r_outfit","material":"r_material","angle":"r_angle","pose":"r_pose","skin_tone":"r_skin_tone","body_oil":"r_body_oil","weather":"r_weather","style":"r_style","img_style":"r_image_style"}
                     replaced = {}
@@ -762,7 +725,7 @@ style: {safe_options['style']}"""}]
                     risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(risk, "⚪")
                     msg = f"{risk_emoji} **리스크: {risk}**\n\n"
                     if issues: msg += "**⚠️ 감지된 문제:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
-                    if replaced: msg += "**🔄 자동 교체된 항목:**\n" + "\n".join([f"- {k} → `{v.split('—')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
+                    if replaced: msg += "**🔄 자동 교체:**\n" + "\n".join([f"- {k} → `{v.split('—')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
                     msg += f"**💬 요약:** {summary}"
                     st.session_state.review_result = msg
                     if replaced:
@@ -784,7 +747,6 @@ style: {safe_options['style']}"""}]
                 keys = [k for k in d.keys() if k != "없음"]
                 if keys and random.random() < prob:
                     st.session_state[key] = random.choice(keys)
-
         smart_update("r_pose",        POSES,          0.80)
         smart_update("r_expression",  EXPRESSION,     0.80)
         smart_update("r_skin_tone",   SKIN_TONES,     0.80)
@@ -803,7 +765,6 @@ style: {safe_options['style']}"""}]
         smart_update("r_image_style", IMAGE_STYLE,    0.15)
         smart_update("r_era",         ERA,            0.15)
         smart_update("r_concept",     CONCEPT,        0.15)
-
         st.session_state._trigger_build = True
         st.session_state.r_outfit      = outfit
         st.session_state.r_material    = material
@@ -822,17 +783,10 @@ style: {safe_options['style']}"""}]
         st.session_state.r_mood        = mood
         st.session_state.r_time_of_day = time_of_day
         st.session_state.r_lens_effect = lens_effect
-
         manual_sel = set()
         if outfit != list(OUTFIT_TYPES.keys())[0]: manual_sel.add("r_outfit")
         if use_separate: manual_sel.add("r_outfit")
-
-        filter_result = auto_filter_check(
-            dict(st.session_state),
-            platform=global_platform,
-            manual_selections=manual_sel,
-            art_fallback=global_art_fallback,
-        )
+        filter_result = auto_filter_check(dict(st.session_state), platform=global_platform, manual_selections=manual_sel, art_fallback=global_art_fallback)
         if filter_result["replacements"]:
             for ss_key, new_val in filter_result["replacements"].items():
                 st.session_state[ss_key] = new_val
@@ -843,17 +797,14 @@ style: {safe_options['style']}"""}]
         else:
             risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(filter_result["risk_level"], "⚪")
             st.session_state._auto_filter_msg = f"{risk_emoji} 필터 검수 통과 (점수: {filter_result['total_score']})"
-
         st.rerun()
 
     if st.session_state.get("_trigger_build", False):
         st.session_state._trigger_build = False
-
         def ss(key, d, default=None):
             keys = list(d.keys())
             val = st.session_state.get(key, keys[0] if keys else "없음")
             return val if val in d else (keys[0] if keys else "없음")
-
         _prev = {k: st.session_state.get(f"_prev_{k}", "없음") for k in ["r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color","r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil","r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props","r_image_style","r_era","r_concept"]}
         auto_labels = {"r_pose":"💃 포즈","r_expression":"😏 표정","r_skin_tone":"🌊 피부","r_hair_style":"💇 헤어","r_hair_color":"🎨 헤어컬러","r_makeup":"💄 메이크업","r_footwear":"👠 신발","r_color_grade":"🖼️ 색감","r_accessories":"💍 액세서리","r_body_oil":"✨ 바디오일","r_weather":"🌦️ 날씨","r_bg_crowd":"👥 배경","r_tattoo":"🎨 문신","r_special_effects":"🌈 특수효과","r_props":"🎪 소품","r_image_style":"📐 이미지스타일","r_era":"🌍 시대","r_concept":"🎭 컨셉"}
         picked_items = {}
@@ -862,60 +813,37 @@ style: {safe_options['style']}"""}]
             if _prev[key] == "없음" and cur != "없음":
                 picked_items[label] = cur.split("—")[0].strip()
             st.session_state[f"_prev_{key}"] = cur
-
         if picked_items:
             st.session_state._auto_picked_msg = f"🎲 자동 선택: {'  |  '.join([f'{k} → **{v}**' for k, v in picked_items.items()])}"
         else:
             st.session_state._auto_picked_msg = ""
-
         data = {
-            "appearance":    ss("r_appearance",  MODEL_APPEARANCE),
-            "age":           ss("r_age",          AGE_APPEARANCE),
-            "model":         ss("r_model",        MODEL_TYPES),
-            "outfit":        ss("r_outfit",       OUTFIT_TYPES),
-            "material":      ss("r_material",     MATERIALS),
-            "footwear":      ss("r_footwear",     FOOTWEAR),
-            "pose":          ss("r_pose",         POSES),
-            "color_grade":   ss("r_color_grade",  COLOR_GRADES),
-            "hair_style":    ss("r_hair_style",   HAIR_STYLES),
-            "hair_color":    ss("r_hair_color",   HAIR_COLORS),
-            "makeup":        ss("r_makeup",       MAKEUP),
-            "accessories":   ss("r_accessories",  ACCESSORIES),
-            "skin_tone":     ss("r_skin_tone",    SKIN_TONES),
-            "model_count":   ss("r_model_count",  MODEL_COUNT),
-            "era":           ss("r_era",          ERA),
-            "concept":       ss("r_concept",      CONCEPT),
+            "appearance": ss("r_appearance", MODEL_APPEARANCE), "age": ss("r_age", AGE_APPEARANCE),
+            "model": ss("r_model", MODEL_TYPES), "outfit": ss("r_outfit", OUTFIT_TYPES),
+            "material": ss("r_material", MATERIALS), "footwear": ss("r_footwear", FOOTWEAR),
+            "pose": ss("r_pose", POSES), "color_grade": ss("r_color_grade", COLOR_GRADES),
+            "hair_style": ss("r_hair_style", HAIR_STYLES), "hair_color": ss("r_hair_color", HAIR_COLORS),
+            "makeup": ss("r_makeup", MAKEUP), "accessories": ss("r_accessories", ACCESSORIES),
+            "skin_tone": ss("r_skin_tone", SKIN_TONES), "model_count": ss("r_model_count", MODEL_COUNT),
+            "era": ss("r_era", ERA), "concept": ss("r_concept", CONCEPT),
             "special_effects": ss("r_special_effects", SPECIAL_EFFECTS),
-            "image_style":   ss("r_image_style",  IMAGE_STYLE),
-            "props":         ss("r_props",        PROPS),
-            "body_weight":   ss("r_body_weight",  BODY_WEIGHT),
-            "bust_size":     ss("r_bust_size",    BUST_SIZE),
-            "hip_size":      ss("r_hip_size",     HIP_SIZE),
-            "weather":       ss("r_weather",      WEATHER),
-            "expression":    ss("r_expression",   EXPRESSION),
-            "tattoo":        ss("r_tattoo",       TATTOO),
-            "skin_detail":   ss("r_skin_detail",  SKIN_DETAILS),
-            "nails":         ss("r_nails",        NAILS),
-            "body_oil":      ss("r_body_oil",     BODY_OIL),
-            "bg_crowd":      ss("r_bg_crowd",     BG_CROWD),
-            "mood":          ss("r_mood",         MOOD),
-            "time_of_day":   ss("r_time_of_day",  TIME_OF_DAY),
-            "lens_effect":   ss("r_lens_effect",  LENS_EFFECT),
-            "env":           ss("r_env",          ENVIRONMENTS),
-            "light":         ss("r_light",        LIGHTING),
-            "framing":       ss("r_framing",      FRAMING),
-            "angle":         ss("r_angle",        CAMERA_ANGLES),
-            "style":         ss("r_style",        STYLES),
-            "cover_style":   ss("r_cover_style",  COVER_STYLES),
-            "camera":        ss("r_camera",       CAMERAS),
-            "top_type":      st.session_state.get("r_top_type", "없음 (의상 타입 사용)"),
-            "bottom_type":   st.session_state.get("r_bottom_type", "없음 (의상 타입 사용)"),
+            "image_style": ss("r_image_style", IMAGE_STYLE), "props": ss("r_props", PROPS),
+            "body_weight": ss("r_body_weight", BODY_WEIGHT), "bust_size": ss("r_bust_size", BUST_SIZE),
+            "hip_size": ss("r_hip_size", HIP_SIZE), "weather": ss("r_weather", WEATHER),
+            "expression": ss("r_expression", EXPRESSION), "tattoo": ss("r_tattoo", TATTOO),
+            "skin_detail": ss("r_skin_detail", SKIN_DETAILS), "nails": ss("r_nails", NAILS),
+            "body_oil": ss("r_body_oil", BODY_OIL), "bg_crowd": ss("r_bg_crowd", BG_CROWD),
+            "mood": ss("r_mood", MOOD), "time_of_day": ss("r_time_of_day", TIME_OF_DAY),
+            "lens_effect": ss("r_lens_effect", LENS_EFFECT), "env": ss("r_env", ENVIRONMENTS),
+            "light": ss("r_light", LIGHTING), "framing": ss("r_framing", FRAMING),
+            "angle": ss("r_angle", CAMERA_ANGLES), "style": ss("r_style", STYLES),
+            "cover_style": ss("r_cover_style", COVER_STYLES), "camera": ss("r_camera", CAMERAS),
+            "top_type": st.session_state.get("r_top_type", "없음 (의상 타입 사용)"),
+            "bottom_type": st.session_state.get("r_bottom_type", "없음 (의상 타입 사용)"),
         }
         st.session_state.manual_prompt = get_prompt(data)
 
-    if st.session_state.get("_auto_picked_msg"):
-        st.info(st.session_state._auto_picked_msg)
-
+    if st.session_state.get("_auto_picked_msg"): st.info(st.session_state._auto_picked_msg)
     if st.session_state.get("_auto_filter_msg"):
         msg = st.session_state._auto_filter_msg
         if "🔴" in msg: st.warning(msg)
@@ -927,21 +855,9 @@ style: {safe_options['style']}"""}]
             try:
                 import anthropic
                 client = anthropic.Anthropic()
-                platform_instruction = {
-                    "Gemini": "Make it detailed and descriptive (150-200 words), natural language style.",
-                    "ChatGPT (DALL-E)": "Make it concise and keyword-focused (under 80 words), punchy style.",
-                    "Midjourney": "Convert to comma-separated tags with --ar 2:3 --style raw --q 2 at the end.",
-                }
-                response = client.messages.create(
-                    model="claude-sonnet-4-5",
-                    max_tokens=500,
-                    messages=[{"role": "user", "content": f"""Enhance this fashion photography prompt for {global_platform}.
-Rules: model fills frame, photorealistic skin.
-{platform_instruction[global_platform]}
-Output ONLY the prompt:
-
-{st.session_state.manual_prompt}"""}]
-                )
+                platform_instruction = {"Gemini": "Make it detailed and descriptive (150-200 words), natural language style.", "ChatGPT (DALL-E)": "Make it concise and keyword-focused (under 80 words), punchy style.", "Midjourney": "Convert to comma-separated tags with --ar 2:3 --style raw --q 2 at the end."}
+                response = client.messages.create(model="claude-sonnet-4-5", max_tokens=500,
+                    messages=[{"role": "user", "content": f"Enhance this fashion photography prompt for {global_platform}.\nRules: model fills frame, photorealistic skin.\n{platform_instruction[global_platform]}\nOutput ONLY the prompt:\n\n{st.session_state.manual_prompt}"}])
                 st.session_state.manual_prompt = response.content[0].text.strip()
             except Exception as e:
                 st.error(f"오류: {str(e)}")
@@ -957,50 +873,13 @@ Output ONLY the prompt:
 with tab3:
     st.markdown("### 완전 랜덤 프롬프트 생성")
     st.caption("핵심 요소만 랜덤 조합 — 프롬프트 최적 길이 유지")
-
     col1, col2, _ = st.columns([1, 1, 2])
-    with col1:
-        btn_rand    = st.button("🎲 랜덤 생성", type="primary", use_container_width=True)
-    with col2:
-        btn_rand_ai = st.button("🤖 AI 랜덤", use_container_width=True)
-
-    if "random_prompt" not in st.session_state:
-        st.session_state.random_prompt = ""
-
+    with col1: btn_rand    = st.button("🎲 랜덤 생성", type="primary", use_container_width=True)
+    with col2: btn_rand_ai = st.button("🤖 AI 랜덤", use_container_width=True)
+    if "random_prompt" not in st.session_state: st.session_state.random_prompt = ""
     if btn_rand:
-        data = {
-            "appearance":      random.choice(list(MODEL_APPEARANCE.keys())),
-            "age":             "없음",
-            "model":           random.choice(list(MODEL_TYPES.keys())),
-            "outfit":          random.choice(list(OUTFIT_TYPES.keys())),
-            "material":        random.choice(list(MATERIALS.keys())),
-            "footwear":        "없음",
-            "pose":            random.choice(list(POSES.keys())),
-            "color_grade":     "없음",
-            "hair_style":      "없음",
-            "hair_color":      "없음",
-            "makeup":          "없음",
-            "accessories":     "없음",
-            "skin_tone":       "없음",
-            "model_count":     "1명 — 싱글 모델 (기본)",
-            "era":             "없음",
-            "concept":         "없음",
-            "special_effects": "없음",
-            "image_style":     "없음",
-            "props":           "없음",
-            "body_weight":     "없음",
-            "bust_size":       "없음",
-            "hip_size":        "없음",
-            "env":             random.choice(list(ENVIRONMENTS.keys())),
-            "light":           random.choice(list(LIGHTING.keys())),
-            "angle":           random.choice(list(CAMERA_ANGLES.keys())),
-            "style":           random.choice(list(STYLES.keys())),
-            "camera":          random.choice(list(CAMERAS.keys())),
-            "top_type":        "없음 (의상 타입 사용)",
-            "bottom_type":     "없음 (의상 타입 사용)",
-        }
+        data = {"appearance": random.choice(list(MODEL_APPEARANCE.keys())), "age": "없음", "model": random.choice(list(MODEL_TYPES.keys())), "outfit": random.choice(list(OUTFIT_TYPES.keys())), "material": random.choice(list(MATERIALS.keys())), "footwear": "없음", "pose": random.choice(list(POSES.keys())), "color_grade": "없음", "hair_style": "없음", "hair_color": "없음", "makeup": "없음", "accessories": "없음", "skin_tone": "없음", "model_count": "1명 — 싱글 모델 (기본)", "era": "없음", "concept": "없음", "special_effects": "없음", "image_style": "없음", "props": "없음", "body_weight": "없음", "bust_size": "없음", "hip_size": "없음", "env": random.choice(list(ENVIRONMENTS.keys())), "light": random.choice(list(LIGHTING.keys())), "angle": random.choice(list(CAMERA_ANGLES.keys())), "style": random.choice(list(STYLES.keys())), "camera": random.choice(list(CAMERAS.keys())), "top_type": "없음 (의상 타입 사용)", "bottom_type": "없음 (의상 타입 사용)"}
         st.session_state.random_prompt = get_prompt(data)
-
     if btn_rand_ai:
         preset_name = random.choice(list_presets())
         with st.spinner(f"Claude가 [{preset_name}] 기반으로 생성 중..."):
@@ -1008,78 +887,42 @@ with tab3:
                 st.session_state.random_prompt = generate_prompt_with_ai(preset_name)
             except Exception as e:
                 st.error(f"오류: {str(e)}")
-
     if st.session_state.random_prompt:
         st.text_area("랜덤 프롬프트", value=st.session_state.random_prompt, height=160)
         st.code(st.session_state.random_prompt, language=None)
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.5 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.6 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
 # ══════════════════════════════════════════════════════════
 with tab4:
     st.markdown(f"### 🎬 영상 프롬프트 생성 — {global_video_platform}")
-
-    VIDEO_PLATFORM_TIPS = {
-        "Veo 3 (Gemini)": ("🔵", "gemini.google.com", "Gemini Advanced 구독 필요. 좌측 메뉴에서 Veo 3 선택."),
-        "Kling AI":        ("🟡", "klingai.com",       "무료 티어 사용 가능. 매일 크레딧 지급."),
-        "Runway":          ("🟢", "runwayml.com",      "무료 크레딧 제공. Gen-3 Alpha 사용."),
-        "Hailuo":          ("🟠", "hailuoai.video",    "완전 무료. 중국 서비스."),
-    }
+    VIDEO_PLATFORM_TIPS = {"Veo 3 (Gemini)": ("🔵", "gemini.google.com", "Gemini Advanced 구독 필요. 좌측 메뉴에서 Veo 3 선택."), "Kling AI": ("🟡", "klingai.com", "무료 티어 사용 가능. 매일 크레딧 지급."), "Runway": ("🟢", "runwayml.com", "무료 크레딧 제공. Gen-3 Alpha 사용."), "Hailuo": ("🟠", "hailuoai.video", "완전 무료. 중국 서비스.")}
     color, url, tip = VIDEO_PLATFORM_TIPS[global_video_platform]
     st.info(f"{color} **{global_video_platform}** — {tip} → [{url}](https://{url})")
-
     VIDEO_DURATIONS  = {"5초 — 짧고 임팩트 있는": "5 seconds", "8초 — 표준 클립": "8 seconds", "10초 — 긴 클립": "10 seconds"}
-    VIDEO_MOTIONS    = {
-        "워킹 — 런웨이 워크, 카메라 정면":     "walking towards camera, confident runway walk, slow motion",
-        "턴 — 360도 회전, 의상 전체 공개":      "slow 360 degree turn, revealing full outfit",
-        "포즈 — 정적 포즈, 바람에 머리 날림":   "standing pose, hair flowing in wind, subtle movement",
-        "댄스 — 섹시한 느낌의 부드러운 움직임": "slow sensual dance movement, fluid motion",
-        "워킹+턴 — 걷다가 카메라 보며 턴":      "walking then turning to camera, fashion editorial motion",
-        "등장 — 안개/빛 속에서 천천히 등장":    "emerging slowly from mist and light, dramatic entrance",
-    }
-    VIDEO_CAMERAS    = {
-        "시네마틱 — 느린 달리샷":           "slow cinematic dolly shot, smooth camera movement",
-        "오빗 — 모델 주위를 도는 카메라":   "slow orbit around subject, 360 camera movement",
-        "줌인 — 전신에서 얼굴로 천천히 줌": "slow zoom from full body to face, intimate close-up",
-        "로우앵글 — 아래서 위로 올려다보기": "low angle upward camera, powerful perspective",
-        "하이앵글 — 위에서 내려다보기":     "high angle downward camera, elegant perspective",
-        "핸드헬드 — 약간의 흔들림, 현장감":  "slight handheld camera movement, documentary feel",
-    }
-    VIDEO_ATMOSPHERES = {
-        "럭셔리 글래머 — 화려하고 고급스러운":  "luxury glamour atmosphere, high-end fashion film",
-        "다크 시네마틱 — 어둡고 영화적인":      "dark cinematic atmosphere, noir fashion film",
-        "골든아워 — 따뜻한 황금빛":             "golden hour warm light, dreamy fashion film",
-        "네온 사이버펑크 — 미래적 네온 분위기": "neon cyberpunk atmosphere, futuristic fashion film",
-        "미니멀 클린 — 깔끔하고 모던한":        "minimal clean white atmosphere, modern fashion film",
-        "에디토리얼 — 잡지 화보 느낌":          "editorial fashion film, Vogue video style",
-    }
-
+    VIDEO_MOTIONS    = {"워킹 — 런웨이 워크, 카메라 정면": "walking towards camera, confident runway walk, slow motion", "턴 — 360도 회전, 의상 전체 공개": "slow 360 degree turn, revealing full outfit", "포즈 — 정적 포즈, 바람에 머리 날림": "standing pose, hair flowing in wind, subtle movement", "댄스 — 섹시한 느낌의 부드러운 움직임": "slow sensual dance movement, fluid motion", "워킹+턴 — 걷다가 카메라 보며 턴": "walking then turning to camera, fashion editorial motion", "등장 — 안개/빛 속에서 천천히 등장": "emerging slowly from mist and light, dramatic entrance"}
+    VIDEO_CAMERAS    = {"시네마틱 — 느린 달리샷": "slow cinematic dolly shot, smooth camera movement", "오빗 — 모델 주위를 도는 카메라": "slow orbit around subject, 360 camera movement", "줌인 — 전신에서 얼굴로 천천히 줌": "slow zoom from full body to face, intimate close-up", "로우앵글 — 아래서 위로 올려다보기": "low angle upward camera, powerful perspective", "하이앵글 — 위에서 내려다보기": "high angle downward camera, elegant perspective", "핸드헬드 — 약간의 흔들림, 현장감": "slight handheld camera movement, documentary feel"}
+    VIDEO_ATMOSPHERES = {"럭셔리 글래머 — 화려하고 고급스러운": "luxury glamour atmosphere, high-end fashion film", "다크 시네마틱 — 어둡고 영화적인": "dark cinematic atmosphere, noir fashion film", "골든아워 — 따뜻한 황금빛": "golden hour warm light, dreamy fashion film", "네온 사이버펑크 — 미래적 네온 분위기": "neon cyberpunk atmosphere, futuristic fashion film", "미니멀 클린 — 깔끔하고 모던한": "minimal clean white atmosphere, modern fashion film", "에디토리얼 — 잡지 화보 느낌": "editorial fashion film, Vogue video style"}
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("**📝 기존 프롬프트 기반으로 변환**")
-        source_prompt    = st.text_area("이미지 프롬프트 붙여넣기 (선택사항)", placeholder="기존 이미지 프롬프트를 여기에 붙여넣으면 영상용으로 변환해줘요...", height=120, key="video_source")
-        video_duration   = st.selectbox("⏱️ 영상 길이", list(VIDEO_DURATIONS.keys()))
-        video_motion     = st.selectbox("🏃 모션 타입", list(VIDEO_MOTIONS.keys()))
+        source_prompt  = st.text_area("이미지 프롬프트 붙여넣기 (선택사항)", placeholder="기존 이미지 프롬프트를 여기에 붙여넣으면 영상용으로 변환해줘요...", height=120, key="video_source")
+        video_duration = st.selectbox("⏱️ 영상 길이", list(VIDEO_DURATIONS.keys()))
+        video_motion   = st.selectbox("🏃 모션 타입", list(VIDEO_MOTIONS.keys()))
     with col2:
         video_camera     = st.selectbox("📷 카메라 무브먼트", list(VIDEO_CAMERAS.keys()))
         video_atmosphere = st.selectbox("🌟 분위기", list(VIDEO_ATMOSPHERES.keys()))
         video_appearance = st.selectbox("👩 모델 외모", ["None — 프롬프트 기반"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
         video_outfit     = st.selectbox("👗 의상", ["None — 프롬프트 기반"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
-
     st.markdown("")
     col_x, col_y, _ = st.columns([1, 1, 2])
-    with col_x:
-        btn_video_build = st.button("🎬 영상 프롬프트 생성", type="primary", use_container_width=True)
-    with col_y:
-        btn_video_ai    = st.button("🤖 AI로 강화", use_container_width=True, key="btn_video_ai")
-
-    if "video_prompt" not in st.session_state:
-        st.session_state.video_prompt = ""
-
+    with col_x: btn_video_build = st.button("🎬 영상 프롬프트 생성", type="primary", use_container_width=True)
+    with col_y: btn_video_ai    = st.button("🤖 AI로 강화", use_container_width=True, key="btn_video_ai")
+    if "video_prompt" not in st.session_state: st.session_state.video_prompt = ""
     if btn_video_build:
         st.session_state.video_prompt = ""
         appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None — 프롬프트 기반" else ""
@@ -1088,32 +931,18 @@ with tab4:
             od = OUTFIT_TYPES[video_outfit]
             outfit_str = f"Wearing: {(od['gemini'] if isinstance(od, dict) else od).split(',')[0]}. "
         base = f"Based on: {source_prompt[:200]}. " if source_prompt else ""
-        st.session_state.video_prompt = (
-            f"Cinematic fashion video, {VIDEO_DURATIONS[video_duration]}. {base}"
-            f"{appearance_str}{outfit_str}"
-            f"Motion: {VIDEO_MOTIONS[video_motion]}. Camera: {VIDEO_CAMERAS[video_camera]}. "
-            f"Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}. "
-            f"Photorealistic, hyperrealistic, 4K cinematic quality, professional fashion film, no text, no watermark."
-        )
-
+        st.session_state.video_prompt = (f"Cinematic fashion video, {VIDEO_DURATIONS[video_duration]}. {base}{appearance_str}{outfit_str}Motion: {VIDEO_MOTIONS[video_motion]}. Camera: {VIDEO_CAMERAS[video_camera]}. Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}. Photorealistic, hyperrealistic, 4K cinematic quality, professional fashion film, no text, no watermark.")
     if btn_video_ai and (source_prompt or st.session_state.video_prompt):
         with st.spinner("Claude가 영상 프롬프트 강화 중..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
-                base   = source_prompt or st.session_state.video_prompt
-                response = client.messages.create(
-                    model="claude-sonnet-4-5",
-                    max_tokens=500,
-                    messages=[{"role": "user", "content": f"""You are an expert video prompt engineer.
-Create a powerful cinematic fashion video prompt based on this: {base}
-Settings: Duration: {VIDEO_DURATIONS[video_duration]}, Motion: {VIDEO_MOTIONS[video_motion]}, Camera: {VIDEO_CAMERAS[video_camera]}, Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}
-Rules: Cinematic, photorealistic, 4K. No text overlays. Output ONLY the prompt, 100-150 words."""}]
-                )
+                base = source_prompt or st.session_state.video_prompt
+                response = client.messages.create(model="claude-sonnet-4-5", max_tokens=500,
+                    messages=[{"role": "user", "content": f"You are an expert video prompt engineer.\nCreate a powerful cinematic fashion video prompt based on this: {base}\nSettings: Duration: {VIDEO_DURATIONS[video_duration]}, Motion: {VIDEO_MOTIONS[video_motion]}, Camera: {VIDEO_CAMERAS[video_camera]}, Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}\nRules: Cinematic, photorealistic, 4K. No text overlays. Output ONLY the prompt, 100-150 words."}])
                 st.session_state.video_prompt = response.content[0].text.strip()
             except Exception as e:
                 st.error(f"오류: {str(e)}")
-
     if st.session_state.video_prompt:
         st.text_area("생성된 영상 프롬프트", value=st.session_state.video_prompt, height=180)
         st.code(st.session_state.video_prompt, language=None)
