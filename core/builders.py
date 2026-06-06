@@ -23,6 +23,47 @@ def _is_art_style(image_style: str) -> bool:
     return image_style in ART_IMAGE_STYLES
 
 
+# ── 바디페인팅 판별 (의상 오인식 방지용) ──
+BODYPAINT_KEYWORDS = [
+    "body paint", "painted on bare skin", "painted directly", "trompe",
+    "no clothing", "no fabric", "painted illusion", "body art",
+    "stencil", "expressionist patterns painted", "motifs painted",
+    "painted across body", "patterns painted",
+]
+
+def _is_bodypaint(outfit_text: str, material_text: str = "") -> bool:
+    """outfit/material 텍스트에 바디페인팅 신호가 있으면 True"""
+    combined = f"{outfit_text} {material_text}".lower()
+    return any(kw.lower() in combined for kw in BODYPAINT_KEYWORDS)
+
+
+def _build_wearing_line(outfit_wearing: str, material_text: str, footwear: str) -> str:
+    """
+    바디페인팅이면 'Body fully painted with:' + 맨발 강제,
+    일반 의상이면 기존 'Wearing:' 포맷 반환
+    """
+    if _is_bodypaint(outfit_wearing, material_text):
+        return (
+            f"Body fully painted with: {outfit_wearing}. "
+            f"The entire design is body paint pigment applied directly on bare skin, "
+            f"NOT clothing, NOT fabric, painted with {material_text}. Barefoot."
+        )
+    else:
+        return f"Wearing: {outfit_wearing}, made of {material_text}{', ' + footwear if footwear else ''}."
+
+
+def _build_wearing_phrase_chatgpt(outfit_wearing: str, material_text: str, footwear: str) -> str:
+    """ChatGPT 빌더용 wearing 구문 (문장 중간 삽입형)"""
+    if _is_bodypaint(outfit_wearing, material_text):
+        return (
+            f"Body fully painted with {outfit_wearing}, "
+            f"the entire design is body paint pigment on bare skin, NOT clothing, NOT fabric, "
+            f"painted with {material_text}, barefoot. "
+        )
+    else:
+        return f"Wearing {outfit_wearing}, crafted from {material_text}{', ' + footwear if footwear else ''}. "
+
+
 def _get_frame_suffix(framing: str, angle: str = "") -> str:
     """
     프레이밍에 따라 suffix 자동 조정
@@ -106,8 +147,15 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
     else:
         outfit_wearing = outfit
 
+    # ── 바디페인팅이면 "Wearing:" 대신 "Body painted:" + 맨발 강제 ──
+    material_text = MATERIALS[data['material']]
+    wearing_line = _build_wearing_line(outfit_wearing, material_text, footwear)
+
+    framing_prefix = f"{framing_val}, " if framing_val else ""
+    angle_prefix   = f"{angle_val}, " if angle_val else ""
+
     parts = [
-        f"Professional fashion photograph, {framing_val + ", " if framing_val else ""}{angle_val + ", " if angle_val else ""}{frame_suffix}.",
+        f"Professional fashion photograph, {framing_prefix}{angle_prefix}{frame_suffix}.",
         f"{model_subject}: {MODEL_TYPES[data['model']]}{', ' + appearance if appearance else ''}.",
         f"Age: {age}." if age else "",
         f"Body adjustment: {body_str}." if body_str else "",
@@ -125,7 +173,7 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
         f"Accessories: {accessories}." if accessories else "",
         f"Props: {props}." if props else "",
         f"Pose: {pose}." if pose else "",
-        f"Wearing: {outfit_wearing}, made of {MATERIALS[data['material']]}{', ' + footwear if footwear else ''}.",
+        wearing_line,
         f"Environment: {ENVIRONMENTS[data['env']]}, background softly blurred bokeh.",
         f"Time of day: {time_of_day}." if time_of_day else "",
         f"Weather: {weather}." if weather else "",
@@ -224,6 +272,9 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
     else:
         outfit_wearing = outfit
 
+    # ── 바디페인팅이면 "Wearing" 대신 "Body painted" + 맨발 강제 ──
+    wearing_phrase = _build_wearing_phrase_chatgpt(outfit_wearing, material, footwear)
+
     # ── 2번: 아트 스타일이면 실사 suffix 제거 ──
     if is_art:
         realism_suffix = img_style  # 아트 스타일 설명만
@@ -232,8 +283,11 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         realism_suffix = "Photorealistic, hyperrealistic skin texture, cinematic realism, award-winning fashion photography."
         quality_suffix = ""
 
+    framing_prefix = f"{framing_val}, " if framing_val else ""
+    angle_prefix   = f"{angle}, " if angle else ""
+
     return (
-        f"Professional luxury fashion editorial photograph, {aspect_desc}, {framing_val + ", " if framing_val else ""}{angle + ", " if angle else ""}{frame_suffix}. "
+        f"Professional luxury fashion editorial photograph, {aspect_desc}, {framing_prefix}{angle_prefix}{frame_suffix}. "
         f"{model_subject} {appearance_desc}, {model}, elegant couture presence. "
         f"{'Age: ' + age + '. ' if age else ''}"
         f"{'Body: ' + body_str + '. ' if body_str else ''}"
@@ -249,7 +303,7 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         f"{'Accessories: ' + accessories + '. ' if accessories else ''}"
         f"{'Props: ' + props + '. ' if props else ''}"
         f"{'Pose: ' + pose + '. ' if pose else ''}"
-        f"Wearing {outfit_wearing}, crafted from {material}{', ' + footwear if footwear else ''}. "
+        f"{wearing_phrase}"
         f"Scene at {env}, {'Time: ' + time_of_day + '. ' if time_of_day else ''}"
         f"{'Weather: ' + weather + '. ' if weather else ''}"
         f"{'Background: ' + bg_crowd + '. ' if bg_crowd else ''}"
@@ -280,7 +334,8 @@ def build_midjourney_prompt(data: dict, aspect: str) -> str:
     appearance    = MODEL_APPEARANCE.get(data.get('appearance', ''), '').split(',')[0]
     model_short   = MODEL_TYPES[data['model']].split(',')[0]
     outfit_data   = OUTFIT_TYPES[data['outfit']]
-    outfit_short  = (outfit_data["chatgpt"] if isinstance(outfit_data, dict) else outfit_data).split(',')[0]
+    outfit_full   = (outfit_data["chatgpt"] if isinstance(outfit_data, dict) else outfit_data)
+    outfit_short  = outfit_full.split(',')[0]
     material_short = MATERIALS[data['material']].split(',')[0]
     env_short     = ENVIRONMENTS[data['env']].split(',')[0]
     light_short   = LIGHTING[data['light']].split(',')[0]
@@ -288,6 +343,11 @@ def build_midjourney_prompt(data: dict, aspect: str) -> str:
     footwear_short = FOOTWEAR.get(data.get('footwear', ''), '').split(',')[0]
     image_style_key = data.get('image_style', '없음')
     is_art        = _is_art_style(image_style_key)
+
+    # ── 바디페인팅이면 의상 태그를 body paint로 치환 + footwear 제거 ──
+    if _is_bodypaint(outfit_full, MATERIALS[data['material']]):
+        outfit_short = f"full body paint, {outfit_short}, painted on bare skin not clothing"
+        footwear_short = "barefoot"
 
     tags = [t for t in [
         appearance, model_short, outfit_short, material_short, footwear_short,
