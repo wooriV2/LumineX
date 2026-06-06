@@ -319,6 +319,14 @@ SS_TIER = {
     "arctic_fox","sphinx_cat","atlas_moth","lionfish_venomous",
     "eagle_wings","lion_golden","dragonfly_iridescent","koi_dragon",
     "unicorn_opal","butterfly_monarch",
+    # 2026-06-06 명화/작가 테스트 확정
+    "degas_dancer","toulouse_lautrec","waterhouse_nymph",
+    "takashi_murakami","yayoi_kusama","keith_haring_body",
+    # 2026-06-06 한국테마 테스트 확정
+    "dancheong_body","najeonchilgi_body","goryeo_celadon_body",
+    "minhwa_body","korean_tiger_body","silla_crown_body",
+    # 2026-06-06 동물/자연 테스트 확정
+    "najeon_abalone","giraffe_pattern","zebra_stripes","dragon_scales_red",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
@@ -384,7 +392,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.2</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.3</div>
 </div>
 ''', unsafe_allow_html=True)
 
