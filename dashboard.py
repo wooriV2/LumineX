@@ -565,12 +565,16 @@ with tab1:
 
     def apply_overrides_to_prompt(preset: dict, overrides: dict) -> str:
         p = {**preset, **overrides}
+        outfit_text   = p.get('outfit', '')
+        material_text = p.get('material', '')
+        footwear_text = overrides.get('footwear', '')
+        wearing_line  = _build_wearing_line(outfit_text, material_text, footwear_text)
         return (
             f"Professional fashion photograph, {overrides.get('framing', 'full body shot')}. "
             f"{'Model appearance: ' + overrides['appearance'] + '. ' if 'appearance' in overrides else ''}"
             f"Model: {p.get('subject', 'a stunning female model')}. Body: {p.get('body', '')}. "
             f"{'Pose: ' + overrides['pose'] + '. ' if 'pose' in overrides else ''}"
-            f"Wearing: {p.get('outfit', '')}, made of {p.get('material', '')}{', ' + overrides['footwear'] if 'footwear' in overrides else ''}. "
+            f"{wearing_line} "
             f"Environment: {p.get('environment', '')}. Lighting: {p.get('lighting', '')}. Style: {p.get('style', '')}. "
             f"{'Color grade: ' + overrides['color_grade'] + '. ' if 'color_grade' in overrides else ''}"
             f"{p.get('quality', 'ultra-sharp, 8K, professional photography')}."
