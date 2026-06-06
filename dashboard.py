@@ -327,6 +327,8 @@ SS_TIER = {
     "minhwa_body","korean_tiger_body","silla_crown_body",
     # 2026-06-06 동물/자연 테스트 확정
     "najeon_abalone","giraffe_pattern","zebra_stripes","dragon_scales_red",
+    # 2026-06-06 추가 테스트 확정 (빌더수정으로 천오인식 해결)
+    "alma_tadema","gauguin_tropics","melting_chocolate",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
@@ -1003,7 +1005,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.2 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.3 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
