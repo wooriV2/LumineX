@@ -1,8 +1,8 @@
 """
-LumineX Dashboard v3.6
+LumineX Dashboard v3.7
 실행: streamlit run dashboard.py
 
-v3.6 변경사항 (2026-06-06):
+v3.7 변경사항 (2026-06-06):
 1. PRESET_CATEGORIES — v13/v14 프리셋 전체 반영
    - 🖌️ 바디페인팅: v14 관능적 바디페인팅 35개 추가 (총 101개)
    - 🍬 팝 & 카와이: v13 추가 20개 반영
@@ -49,7 +49,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── 카테고리별 프리셋 매핑 (v3.6 전체 반영) ─────────────────
+# ─── 카테고리별 프리셋 매핑 (v3.7 전체 반영) ─────────────────
 PRESET_CATEGORIES = {
     "🖌️ 바디페인팅 & 스킨 트랜스폼": [
         # 기존
@@ -84,6 +84,19 @@ PRESET_CATEGORIES = {
         "moon_tattoo_body","rune_body_art","alchemy_body","henna_erotic",
         # 🐍 동물 관능
         "python_scales","jaguar_spots","mermaid_scales","raven_feathers","tiger_stripes_body",
+        # v15 — 명화/작가 퍼블릭 도메인 14개
+        "cezanne_body","gauguin_tropics","toulouse_lautrec","schiele_body","degas_dancer",
+        "renoir_soft","botticelli_venus","titian_goddess","rubens_baroque","ingres_odalisque",
+        "waterhouse_nymph","rossetti_dante","alma_tadema","vigee_lebrun",
+        # v15 — 생존/최근 작가 6개
+        "banksy_stencil","keith_haring_body","yayoi_kusama","takashi_murakami",
+        "jean_dubuffet","jean_cocteau",
+        # v15 — 부족/문화 10개
+        "bodi_clay","ndebele_pattern","tuareg_indigo","mursi_lip","himba_ochre",
+        "surma_body","asaro_mudmen","kayapo_brasil","nuba_scarification","kayan_neck",
+        # v15 — 과학/자연 10개
+        "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
+        "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
     ],
     "💫 글래머 & 럭셔리": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
@@ -118,8 +131,7 @@ PRESET_CATEGORIES = {
         "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
         "light_driven","backlit_silk","mirror_goddess","mirror_room","eclipse_body","chrome_skin",
         "neon_body","plasma_aura","molten_chrome","mercury_rising","mercury_pool","titanium_body",
-        "snowflake_skin","80s_power","y2k_chrome","harajuku_doll","doll_house","bubble_tea",
-        "bohemian_paris","origami_couture",
+        "snowflake_skin","80s_power","y2k_chrome","bohemian_paris","origami_couture",
         # v11
         "wet_glass","smoke_studio","infrared_beauty","grain_film",
     ],
@@ -191,7 +203,6 @@ PRESET_CATEGORIES = {
         "winter_solstice","cherry_blossom_night","tropical_monsoon",
     ],
     "🍬 팝 & 카와이": [
-        "bubble_tea","doll_house","harajuku_doll","pastel_fairy","candy_rave","pop_art_glamour",
         # v10
         "y2k_fairy","pink_champagne","cotton_candy","angel_baby","idol_stage","kitty_glam",
         "strawberry_milk","cherry_pop","neon_kawaii","fairy_kei",
@@ -286,7 +297,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.6</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v3.7</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -893,7 +904,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.6 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v3.7 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
