@@ -199,7 +199,7 @@ PRESET_CATEGORIES = {
         "pole_dance_extreme","fire_goddess",
         "succubus_full","dark_angel_fallen","alien_queen_body",
         "body_paint_nude","micro_thong_only","tape_bondage",
-        "metal_bondage","military_domme","lap_dance_extreme",
+        "metal_bondage","lap_dance_extreme",
     ],
     "🌿 자연 & 원소": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","blizzard_queen","sandstorm_veil",
