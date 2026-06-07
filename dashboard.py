@@ -183,6 +183,17 @@ PRESET_CATEGORIES = {
         "vinyl_goddess","corset_stockings","catsuit_zipper","bodystocking",
         "secretary_after_hours","nurse_sensual","maid_sensual","leather_bodysuit",
         "wet_latex","fetish_boots_only","dominatrix_red","fishnet_bodysuit",
+        # v22 — 에로틱 & 페티쉬 강화 26개
+        "transparent_dress","sheer_catsuit",
+        "latex_transparent","latex_hood_full","pvc_transparent_full",
+        "chrome_bodysuit","mirror_dress","liquid_metal_body",
+        "suspension_art",
+        "dominatrix_full_armor","goddess_throne",
+        "teacher_after_class","doctor_sensual","police_dominatrix","stewardess_dark",
+        "pole_dance_extreme","fire_goddess",
+        "succubus_full","dark_angel_fallen","alien_queen_body",
+        "body_paint_nude","micro_thong_only","tape_bondage",
+        "metal_bondage","military_domme","lap_dance_extreme",
     ],
     "🌿 자연 & 원소": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","blizzard_queen","sandstorm_veil",
