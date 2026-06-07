@@ -88,7 +88,7 @@ PRESET_CATEGORIES = {
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
         "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
         # v18 — 동물 바디페인팅 50개
-        "panther_black","cheetah_speed","lion_golden","cougar_tawny","snow_leopard","ocelot_wild",
+        "panther_black","cheetah_speed","lion_golden","snow_leopard","ocelot_wild",
         "chameleon_skin","dragon_scales_red","komodo_dragon","gecko_pattern","crocodile_skin",
         "boa_constrictor","king_cobra_hood",
         "butterfly_monarch","butterfly_morpho","dragonfly_iridescent","scarab_beetle",
@@ -340,6 +340,9 @@ SS_TIER = {
     "union_jack_body","usa_stars_stripes_body","hieroglyph_body",
     "south_africa_flag_body","mexico_flag_body","brazil_flag_body",
     "ocelot_wild","ndebele_pattern",
+    # 2026-06-07 문명/자연/동물 6개
+    "celtic_knot_body","greek_mosaic_body","ocean_depth_body",
+    "weather_map_body","bauhaus_body","wolf_grey",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
@@ -1080,5 +1083,6 @@ with tab4:
             st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         else:
             st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+
 
 
