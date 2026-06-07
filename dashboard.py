@@ -1,4 +1,4 @@
-"""
+﻿"""
 LumineX Dashboard v4.3
 실행: streamlit run dashboard.py
 
@@ -331,6 +331,11 @@ SS_TIER = {
     # 2026-06-06 동물/조류/재테스트 확정 7개
     "parrot_tropical","boa_constrictor","king_cobra_hood","cheetah_speed",
     "bird_of_paradise","owl_feather","crocodile_skin",
+    # 2026-06-07 한국 신수 4개
+    "phoenix_jujakk","cheongnyong_dragon","korean_dragon_body","haetae_guardian",
+    # 2026-06-07 v20 SS 6개
+    "coral_reef_body","galaxy_nebula_body","islamic_geometric_body",
+    "aztec_calendar_body","stained_glass_body","mushroom_forest_body",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
@@ -1071,3 +1076,4 @@ with tab4:
             st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         else:
             st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+
