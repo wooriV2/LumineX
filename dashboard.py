@@ -9,6 +9,12 @@ v4.4 변경사항 (2026-06-07):
    - 🔥 핫 & 섹시 신설 (43개)
    - 💋 에로틱 & 페티쉬 신설 (26개)
 2. 각 카테고리에서 섹시 계열 프리셋 이동 정리
+
+v4.4.1 SS tier 엄격 재검토 (2026-06-07):
+- SS 강등(S): burlesque, dominatrix_glam, corset_stockings,
+  dark_fairy_erotic, tape_bondage, metal_bondage
+- SS 제거: military_domme (나치 상징 생성 리스크 — 프리셋 정의 수정 필요)
+- SS tier 128 → 121개
 """
 
 import sys
@@ -384,16 +390,18 @@ SS_TIER = {
     "weather_map_body","bauhaus_body","wolf_grey",
     # 2026-06-07 지오드+아랍 2개
     "geode_crystal_body","arabic_calligraphy_body",
-    # 2026-06-07 v22 에로틱&페티쉬 SS 28개
+    # 2026-06-07 v22 에로틱&페티쉬 SS — 엄격 재검토 후 확정 21개
+    #   (강등 S: burlesque, dominatrix_glam, corset_stockings,
+    #    dark_fairy_erotic, tape_bondage, metal_bondage)
+    #   (제거: military_domme — 나치 상징 생성 리스크, 프리셋 수정 필요)
     "transparent_dress","sheer_catsuit","latex_transparent","pvc_transparent_full",
     "chrome_bodysuit","mirror_dress","liquid_metal_body","suspension_art",
-    "dominatrix_full_armor","goddess_throne","dominatrix_glam",
+    "dominatrix_full_armor","goddess_throne",
     "doctor_sensual","police_dominatrix",
     "pole_dance_extreme","fire_goddess",
     "succubus_full","dark_angel_fallen","alien_queen_body",
-    "body_paint_nude","tape_bondage","metal_bondage","military_domme",
-    "burlesque","cabaret_star","chrome_vixen","corset_stockings",
-    "dark_fairy_erotic","dark_succubus",
+    "body_paint_nude",
+    "cabaret_star","chrome_vixen","dark_succubus",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
@@ -459,7 +467,7 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.3</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.4</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -1134,6 +1142,3 @@ with tab4:
             st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         else:
             st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
-
-
-
