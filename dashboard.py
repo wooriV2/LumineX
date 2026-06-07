@@ -1,15 +1,12 @@
 """
-LumineX Dashboard v4.2
+LumineX Dashboard v4.3
 실행: streamlit run dashboard.py
 
-v4.1 변경사항 (2026-06-06):
-1. PRESET_CATEGORIES — v13/v14 프리셋 전체 반영
-   - 🖌️ 바디페인팅: v14 관능적 바디페인팅 35개 추가 (총 101개)
-   - 🍬 팝 & 카와이: v13 추가 20개 반영
-   - 🎌 애니 & 글래머: 신규 카테고리 (30개)
-   - ✈️ 직업 & 라이프스타일: v13 스포츠 6개 추가
-2. SS_TIER: lace_body_paint / jewelry_trompe_loeil 추가 (총 16개)
-3. 버전 표기 v3.5 → v3.6
+v4.3 변경사항 (2026-06-07):
+1. PRESET_CATEGORIES — v20 프리셋 38개 반영
+   - 🖌️ 바디페인팅: 지도/과학/문명/패턴/식물/환경융합 31개 추가
+   - 🏺 문명 & 신화: 국기 8개 추가
+2. 총 프리셋: 697 → 735개
 """
 
 import sys
@@ -49,7 +46,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# ─── 카테고리별 프리셋 매핑 (v4.1 전체 반영) ─────────────────
+# ─── 카테고리별 프리셋 매핑 ─────────────────────────────────
 PRESET_CATEGORIES = {
     "🖌️ 바디페인팅 & 스킨 트랜스폼": [
         # 기존
@@ -69,26 +66,19 @@ PRESET_CATEGORIES = {
         "mayan_ritual","haida_totem","aurora_skin","crystal_mineral","tide_pool","magnetic_field",
         "cell_division",
         # v14 — 관능적 바디페인팅 35개
-        # 💧 액체/흐름
         "melting_chocolate","liquid_gold_drip","silver_mercury_body","ink_pour_body",
         "paint_splash_body","milk_bath_body",
-        # 🌺 자연 관능
         "rose_petal_body","orchid_body","vine_wrap_body","lotus_body","poison_flower",
-        # 🌊 원소 관능
         "fire_skin","water_ripple_body","frost_crystallize","storm_static_body","smoke_body_art",
-        # 💋 글래머 관능
         "lace_body_paint","fishnet_paint","chain_body_paint","jewelry_trompe_loeil","mandala_body",
-        # 🎨 아트 관능
         "body_calligraphy","zentangle_body","constellation_body","circuit_erotic","tarot_body",
-        # 🌙 신비 관능
         "moon_tattoo_body","rune_body_art","alchemy_body","henna_erotic",
-        # 🐍 동물 관능
         "python_scales","jaguar_spots","mermaid_scales","raven_feathers","tiger_stripes_body",
         # v15 — 명화/작가 퍼블릭 도메인 14개
         "cezanne_body","gauguin_tropics","toulouse_lautrec","schiele_body","degas_dancer",
         "renoir_soft","botticelli_venus","titian_goddess","rubens_baroque","ingres_odalisque",
         "waterhouse_nymph","rossetti_dante","alma_tadema","vigee_lebrun",
-        # v15 — 생존/최근 작가 6개
+        # v15 — 생존/최근 작가 5개
         "keith_haring_body","yayoi_kusama","takashi_murakami",
         "jean_dubuffet","jean_cocteau",
         # v15 — 부족/문화 10개
@@ -98,24 +88,17 @@ PRESET_CATEGORIES = {
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
         "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
         # v18 — 동물 바디페인팅 50개
-        # 🐆 대형 맹수
         "panther_black","cheetah_speed","lion_golden","cougar_tawny","snow_leopard","ocelot_wild",
-        # 🐍 파충류
         "chameleon_skin","dragon_scales_red","komodo_dragon","gecko_pattern","crocodile_skin",
         "boa_constrictor","king_cobra_hood",
-        # 🦋 곤충
         "butterfly_monarch","butterfly_morpho","dragonfly_iridescent","scarab_beetle",
         "praying_mantis","luna_moth","atlas_moth",
-        # 🦅 조류
         "eagle_wings","flamingo_pink","owl_feather","parrot_tropical","hummingbird_iridescent",
         "phoenix_rising","swan_white","macaw_scarlet","bird_of_paradise",
-        # 🌊 해양
         "octopus_ink","koi_fish","jellyfish_glow","seahorse_fantasy","mantis_shrimp",
         "anglerfish_deep","nudibranch_sea","lionfish_venomous","cuttlefish_chromo",
-        # 🦌 포유류/야생
         "wolf_grey","zebra_stripes","giraffe_pattern","dalmatian_spots","arctic_fox",
         "red_fox","hyena_spots",
-        # 🦄 신화/판타지
         "koi_dragon","unicorn_opal","gryphon_feather","sphinx_cat","basilisk_scales",
         # v19 — 한국 바디아트 10개
         "dancheong_body","najeonchilgi_body","goryeo_celadon_body","minhwa_body",
@@ -126,6 +109,23 @@ PRESET_CATEGORIES = {
         "baekho_white_tiger","hyeonmu_turtle","cheongnyong_dragon",
         # v19 — 한국 자연/식물 바디아트
         "mugunghwa_body","korean_lotus_body","korean_plum_body","korean_bamboo_body",
+        # v20 — 지도 계열 13개
+        "world_map_body","topographic_body","ocean_depth_body","thermal_map_body",
+        "weather_map_body","subway_map_body","europe_political_body","africa_tribes_body",
+        "japan_prefecture_body","ancient_map_body","fantasy_map_body","star_map_body",
+        "usa_county_map_body",
+        # v20 — 과학/자연현상 5개
+        "thermal_scan_body","xray_body","circuit_board_body","galaxy_nebula_body",
+        "crystal_geode_body",
+        # v20 — 문명/문자 6개
+        "hieroglyph_body","aztec_calendar_body","celtic_knot_body",
+        "arabic_calligraphy_body","islamic_geometric_body","greek_mosaic_body",
+        # v20 — 식물/자연 3개
+        "autumn_leaves_body","coral_reef_body","mushroom_forest_body",
+        # v20 — 건축/패턴 2개
+        "stained_glass_body","bauhaus_body",
+        # v20 — 환경융합 2개
+        "urban_decay_body","forest_stone_body",
     ],
     "💫 글래머 & 럭셔리": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
@@ -180,6 +180,10 @@ PRESET_CATEGORIES = {
         "isis_egypt","lakshmi_goddess","oshun_yoruba","morgan_le_fay",
         # v19 — 한국 신수/정령
         "haetae_guardian","dokkaebi_spirit","korean_tiger_spirit","gyeongbokgung_night",
+        # v20 — 국기 8개
+        "union_jack_body","brazil_flag_body","usa_stars_stripes_body",
+        "japan_rising_sun_body","south_africa_flag_body","india_flag_body",
+        "mexico_flag_body","ukraine_flag_body",
     ],
     "✈️ 직업 & 라이프스타일": [
         "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
@@ -273,15 +277,10 @@ PRESET_CATEGORIES = {
         "kdrama_villain_queen","kdrama_chaebol_heir","gangnam_luxury_glam",
     ],
     "💋 관능 & 에로틱 글래머": [
-        # 란제리 & 바디콘
         "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
-        # 웻룩 & 오일
         "wet_silk_gown","oil_goddess_gold","pool_wet_glam","rain_soaked_dress","sweat_glam",
-        # 스트립 & 미니멀
         "micro_dress_only","barely_covered","deep_plunge_gown","backless_extreme","one_strap_gown",
-        # 파워 섹시
         "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
-        # 핀업 & 레트로
         "pinup_classic","vargas_girl","bombshell_retro","bunny_suit","playboy_glam",
     ],
     "🎌 애니 & 글래머": [
@@ -297,7 +296,7 @@ PRESET_CATEGORIES = {
     ],
 }
 
-# SS tier (48개 확정)
+# SS tier
 SS_TIER = {
     # 기존 명화/예술 계열
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
@@ -327,7 +326,7 @@ SS_TIER = {
     "minhwa_body","korean_tiger_body","silla_crown_body",
     # 2026-06-06 동물/자연 테스트 확정
     "najeon_abalone","giraffe_pattern","zebra_stripes","dragon_scales_red",
-    # 2026-06-06 추가 테스트 확정 (빌더수정으로 천오인식 해결)
+    # 2026-06-06 추가 테스트 확정
     "alma_tadema","gauguin_tropics","melting_chocolate",
     # 2026-06-06 동물/조류/재테스트 확정 7개
     "parrot_tropical","boa_constrictor","king_cobra_hood","cheetah_speed",
