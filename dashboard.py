@@ -141,6 +141,10 @@ PRESET_CATEGORIES = {
         # v16
         "plunge_gown","slit_maxi","cutout_bodysuit","sheer_overlay",
         "jeweled_bikini_top","golden_drape_goddess","crystal_gown","feather_trim_mini",
+        # v21 — 럭셔리 글래머 13개
+        "luxury_noir","diamond_couture","velvet_serpent","opera_glam","silver_screen",
+        "lace_noir","white_silk_goddess","crystal_bodycon","penthouse_glam",
+        "midnight_couture","crimson_gown","serpentine_dress","baroque_glam",
     ],
     "🔥 핫 & 섹시": [
         # 기존 관능 & 에로틱 글래머
@@ -158,6 +162,11 @@ PRESET_CATEGORIES = {
         "snow_queen_erotic","autumn_gold_sensual","christmas_boudoir","summer_solstice_glam",
         # 란제리/페티쉬 경계
         "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
+        # v21 — 핫 & 섹시 19개
+        "fishnet_goddess","see_through_gown","wet_tshirt","string_bikini","lace_bodysuit",
+        "satin_slip","velvet_corset","body_chain_only","strappy_dress","cut_out_swimsuit",
+        "monokini_goddess","champagne_drip","neon_bodysuit","bikini_top_only",
+        "white_linen_sheer","oil_drip_body","yoga_pants_glam","micro_skirt","halter_glam",
     ],
     "💋 에로틱 & 페티쉬": [
         # 파워&엣지에서 이동
@@ -169,6 +178,11 @@ PRESET_CATEGORIES = {
         "lap_dance_glam","striptease_art","pole_dance_power","midnight_bath","belly_dance_glam",
         # 판타지에서 이동
         "dark_succubus","vampire_seduction","witch_sensual","dark_fairy_erotic","shadow_seductress",
+        # v21 — 에로틱 & 페티쉬 16개
+        "latex_catsuit_red","rubber_goddess","harness_only","rope_bondage_art",
+        "vinyl_goddess","corset_stockings","catsuit_zipper","bodystocking",
+        "secretary_after_hours","nurse_sensual","maid_sensual","leather_bodysuit",
+        "wet_latex","fetish_boots_only","dominatrix_red","fishnet_bodysuit",
     ],
     "🌿 자연 & 원소": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","blizzard_queen","sandstorm_veil",
