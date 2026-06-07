@@ -1,4 +1,4 @@
-﻿"""
+"""
 LumineX Dashboard v4.4
 실행: streamlit run dashboard.py
 
@@ -96,7 +96,7 @@ PRESET_CATEGORIES = {
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
         "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
         # v18 — 동물 바디페인팅 50개
-        "panther_black","cheetah_speed","lion_golden","snow_leopard","ocelot_wild",
+        "panther_black","cheetah_speed","snow_leopard","ocelot_wild",
         "chameleon_skin","dragon_scales_red","komodo_dragon","gecko_pattern","crocodile_skin",
         "boa_constrictor","king_cobra_hood",
         "butterfly_monarch","butterfly_morpho","dragonfly_iridescent","scarab_beetle",
@@ -104,7 +104,7 @@ PRESET_CATEGORIES = {
         "eagle_wings","flamingo_pink","owl_feather","parrot_tropical","hummingbird_iridescent",
         "phoenix_rising","swan_white","macaw_scarlet","bird_of_paradise",
         "octopus_ink","koi_fish","jellyfish_glow","seahorse_fantasy","mantis_shrimp",
-        "anglerfish_deep","nudibranch_sea","lionfish_venomous","cuttlefish_chromo",
+        "anglerfish_deep","nudibranch_sea","cuttlefish_chromo",
         "wolf_grey","zebra_stripes","giraffe_pattern","dalmatian_spots","arctic_fox",
         "red_fox","hyena_spots",
         "koi_dragon","unicorn_opal","gryphon_feather","sphinx_cat","basilisk_scales",
@@ -354,15 +354,11 @@ SS_TIER = {
     # v16 관능
     "latex_queen",
     # v18 동물 1차 테스트
-    "mantis_shrimp","chameleon_skin","peacock_feather","koi_fish",
-    "phoenix_rising","jellyfish_glow","butterfly_morpho","panther_black",
-    # v18 동물 2차 테스트
-    "octopus_ink","polynesian_tribal","flamingo_pink","macaw_scarlet",
-    "nudibranch_sea","hummingbird_iridescent","snow_leopard","scarab_beetle",
-    # v18 동물 3차 테스트
-    "arctic_fox","sphinx_cat","atlas_moth","lionfish_venomous",
-    "eagle_wings","lion_golden","dragonfly_iridescent","koi_dragon",
-    "unicorn_opal","butterfly_monarch",
+    # v18 동물 SS — 엄격 재검토 후 확정 (2026-06-07)
+    "mantis_shrimp","phoenix_rising","jellyfish_glow","panther_black",
+    "octopus_ink","snow_leopard","scarab_beetle",
+    "atlas_moth","eagle_wings","butterfly_monarch",
+    "arctic_fox",  # SS 경계 — 2장째 일관성 확인 필요
     # 2026-06-06 명화/작가 테스트 확정
     "degas_dancer","toulouse_lautrec","waterhouse_nymph",
     "takashi_murakami","yayoi_kusama","keith_haring_body",
