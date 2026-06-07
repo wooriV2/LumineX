@@ -384,6 +384,16 @@ SS_TIER = {
     "weather_map_body","bauhaus_body","wolf_grey",
     # 2026-06-07 지오드+아랍 2개
     "geode_crystal_body","arabic_calligraphy_body",
+    # 2026-06-07 v22 에로틱&페티쉬 SS 28개
+    "transparent_dress","sheer_catsuit","latex_transparent","pvc_transparent_full",
+    "chrome_bodysuit","mirror_dress","liquid_metal_body","suspension_art",
+    "dominatrix_full_armor","goddess_throne","dominatrix_glam",
+    "doctor_sensual","police_dominatrix",
+    "pole_dance_extreme","fire_goddess",
+    "succubus_full","dark_angel_fallen","alien_queen_body",
+    "body_paint_nude","tape_bondage","metal_bondage","military_domme",
+    "burlesque","cabaret_star","chrome_vixen","corset_stockings",
+    "dark_fairy_erotic","dark_succubus",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
