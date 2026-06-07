@@ -82,7 +82,7 @@ PRESET_CATEGORIES = {
         "keith_haring_body","yayoi_kusama","takashi_murakami",
         "jean_dubuffet","jean_cocteau",
         # v15 — 부족/문화 10개
-        "bodi_clay","ndebele_pattern","tuareg_indigo","mursi_lip","himba_ochre",
+        "bodi_clay","ndebele_pattern","tuareg_indigo","mursi_lip",
         "surma_body","asaro_mudmen","kayapo_brasil","nuba_scarification","kayan_neck",
         # v15 — 과학/자연 10개
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
@@ -112,7 +112,7 @@ PRESET_CATEGORIES = {
         # v20 — 지도 계열 13개
         "world_map_body","topographic_body","ocean_depth_body","thermal_map_body",
         "weather_map_body","subway_map_body","europe_political_body","africa_tribes_body",
-        "japan_prefecture_body","ancient_map_body","fantasy_map_body","star_map_body",
+        "japan_prefecture_body","ancient_map_body","star_map_body",
         "usa_county_map_body",
         # v20 — 과학/자연현상 5개
         "thermal_scan_body","xray_body","circuit_board_body","galaxy_nebula_body",
@@ -343,6 +343,8 @@ SS_TIER = {
     # 2026-06-07 문명/자연/동물 6개
     "celtic_knot_body","greek_mosaic_body","ocean_depth_body",
     "weather_map_body","bauhaus_body","wolf_grey",
+    # 2026-06-07 지오드+아랍 2개
+    "geode_crystal_body","arabic_calligraphy_body",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
