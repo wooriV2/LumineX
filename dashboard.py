@@ -336,6 +336,10 @@ SS_TIER = {
     # 2026-06-07 v20 SS 6개
     "coral_reef_body","galaxy_nebula_body","islamic_geometric_body",
     "aztec_calendar_body","stained_glass_body","mushroom_forest_body",
+    # 2026-06-07 국기/문명/동물/부족 8개
+    "union_jack_body","usa_stars_stripes_body","hieroglyph_body",
+    "south_africa_flag_body","mexico_flag_body","brazil_flag_body",
+    "ocelot_wild","ndebele_pattern",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
@@ -1076,4 +1080,5 @@ with tab4:
             st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         else:
             st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+
 
