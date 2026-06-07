@@ -1,12 +1,14 @@
 ﻿"""
-LumineX Dashboard v4.3
+LumineX Dashboard v4.4
 실행: streamlit run dashboard.py
 
-v4.3 변경사항 (2026-06-07):
-1. PRESET_CATEGORIES — v20 프리셋 38개 반영
-   - 🖌️ 바디페인팅: 지도/과학/문명/패턴/식물/환경융합 31개 추가
-   - 🏺 문명 & 신화: 국기 8개 추가
-2. 총 프리셋: 697 → 735개
+v4.4 변경사항 (2026-06-07):
+1. 카테고리 재편 (B안) — 섹시/글래머 3분류
+   - 💫 글래머 & 럭셔리 → 💫 럭셔리 글래머 (41개)
+   - 💋 관능 & 에로틱 글래머 → 삭제
+   - 🔥 핫 & 섹시 신설 (43개)
+   - 💋 에로틱 & 페티쉬 신설 (26개)
+2. 각 카테고리에서 섹시 계열 프리셋 이동 정리
 """
 
 import sys
@@ -127,18 +129,46 @@ PRESET_CATEGORIES = {
         # v20 — 환경융합 2개
         "urban_decay_body","forest_stone_body",
     ],
-    "💫 글래머 & 럭셔리": [
+    "💫 럭셔리 글래머": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
-        "elite_lingerie","lingerie_noir","noir_opulence","platinum_elite","ivory_silk","ivory_tower",
+        "noir_opulence","platinum_elite","ivory_silk","ivory_tower",
         "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
         "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
         "feather_cascade","feather_touch","golden_oil","golden_nude","gold_temptress","red_temptress",
         "veil_goddess","petal_goddess","cobweb_drape",
         # v11
         "casino_royale","black_tie_gala","champagne_tower","fur_coat_only",
-        # v16 보강
+        # v16
         "plunge_gown","slit_maxi","cutout_bodysuit","sheer_overlay",
         "jeweled_bikini_top","golden_drape_goddess","crystal_gown","feather_trim_mini",
+    ],
+    "🔥 핫 & 섹시": [
+        # 기존 관능 & 에로틱 글래머
+        "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
+        "wet_silk_gown","oil_goddess_gold","pool_wet_glam","rain_soaked_dress","sweat_glam",
+        "micro_dress_only","barely_covered","deep_plunge_gown","backless_extreme","one_strap_gown",
+        "pinup_classic","vargas_girl","bombshell_retro","bunny_suit","playboy_glam",
+        # 럭셔리에서 이동
+        "elite_lingerie","lingerie_noir",
+        # 비치에서 이동
+        "barely_there","wet_look_goddess","thong_bikini","micro_bikini_gold",
+        "sarong_goddess","wet_bikini_pool","topless_editorial","nude_beach_art",
+        "aqua_bikini","golden_summer","riviera_heat",
+        # 계절에서 이동
+        "snow_queen_erotic","autumn_gold_sensual","christmas_boudoir","summer_solstice_glam",
+        # 란제리/페티쉬 경계
+        "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
+    ],
+    "💋 에로틱 & 페티쉬": [
+        # 파워&엣지에서 이동
+        "latex_venom","frozen_latex","chrome_vixen","chain_goddess",
+        "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
+        "oil_goddess","savage_leather",
+        # 퍼포먼스에서 이동
+        "burlesque","showgirl","cabaret_star","pole_art","candy_rave",
+        "lap_dance_glam","striptease_art","pole_dance_power","midnight_bath","belly_dance_glam",
+        # 판타지에서 이동
+        "dark_succubus","vampire_seduction","witch_sensual","dark_fairy_erotic","shadow_seductress",
     ],
     "🌿 자연 & 원소": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","blizzard_queen","sandstorm_veil",
@@ -205,38 +235,29 @@ PRESET_CATEGORIES = {
         "double_exposure_ethereal","oil_slick_noir",
         # v11
         "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
-        # v16 보강
-        "dark_succubus","vampire_seduction","witch_sensual","dark_fairy_erotic","shadow_seductress",
     ],
     "⚔️ 파워 & 엣지": [
-        "valkyrie_storm","savage_leather","latex_venom","biker_glam","shadow_play","frozen_latex",
-        "chrome_vixen","chain_goddess","fencer_noir","martial_arts","boxing_glamour","power_curve",
-        "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent","oil_goddess",
+        "valkyrie_storm","biker_glam","shadow_play",
+        "fencer_noir","martial_arts","boxing_glamour","power_curve",
+        "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent",
         # v11
         "riot_goddess","punk_queen","steel_warrior","cage_fighter",
-        # v16 보강
-        "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
     ],
     "🏖️ 비치 & 리조트": [
-        "summer_beach","surfer_goddess","aqua_bikini","barely_there","golden_summer","pool_goddess",
-        "poolside_noir","infinity_pool","riviera_heat","beach_bonfire","wet_look_goddess",
+        "summer_beach","surfer_goddess","pool_goddess",
+        "poolside_noir","infinity_pool","beach_bonfire",
         "scuba_goddess","glass_floor","glass_house","ski_chalet","vineyard_harvest","spa_noir",
         "balcony_goddess",
         # v11
         "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
-        # v16 보강
-        "thong_bikini","micro_bikini_gold","sarong_goddess",
-        "wet_bikini_pool","topless_editorial","nude_beach_art",
     ],
     "🎭 퍼포먼스 & 댄스": [
-        "flamenco_queen","tango_passion","burlesque","showgirl","cabaret_star","circus_performer",
-        "pole_art","candy_rave","ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
+        "flamenco_queen","tango_passion","circus_performer",
+        "ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
         "opera_night","christmas_glamour","pop_art_glamour","ribbon_goddess","petal_storm",
-        "midnight_bath",
         # v11
         "ballet_noir","broadway_diva","street_dance","drag_glamour",
-        # v17 보강
-        "belly_dance_glam","lap_dance_glam","striptease_art","pole_dance_power",
+        # v17
         "samba_carnival","hula_goddess","jazz_dance_glam","kathak_dance",
     ],
     "👘 전통 & 문화의상": [
@@ -259,9 +280,8 @@ PRESET_CATEGORIES = {
         # v10
         "first_snow","golden_autumn","midsummer_heat","rainy_season","harvest_moon",
         "winter_solstice","cherry_blossom_night","tropical_monsoon",
-        # v17 보강
-        "halloween_glam","christmas_boudoir","new_year_glam","sakura_night_glam",
-        "summer_solstice_glam","autumn_gold_sensual","snow_queen_erotic","monsoon_goddess",
+        # v17
+        "halloween_glam","new_year_glam","sakura_night_glam","monsoon_goddess",
     ],
     "🍬 팝 & 카와이": [
         # v10
@@ -276,13 +296,7 @@ PRESET_CATEGORIES = {
         "kpop_girl_crush","hallyu_goddess","kbeauty_glass_skin",
         "kdrama_villain_queen","kdrama_chaebol_heir","gangnam_luxury_glam",
     ],
-    "💋 관능 & 에로틱 글래머": [
-        "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
-        "wet_silk_gown","oil_goddess_gold","pool_wet_glam","rain_soaked_dress","sweat_glam",
-        "micro_dress_only","barely_covered","deep_plunge_gown","backless_extreme","one_strap_gown",
-        "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
-        "pinup_classic","vargas_girl","bombshell_retro","bunny_suit","playboy_glam",
-    ],
+
     "🎌 애니 & 글래머": [
         # v13 일본 계열
         "zero_suit","battle_bikini","succubus_anime","catgirl_luxe","dark_magical_girl",
@@ -1021,7 +1035,7 @@ with tab3:
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.3 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
