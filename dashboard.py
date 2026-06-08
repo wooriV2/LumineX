@@ -354,6 +354,11 @@ PRESET_CATEGORIES = {
         "dark_sorceress_glam","jessica_rabbit_glam","webtoon_heroine","manhwa_villainess",
         "barbarella_retro","vampirella_dark","ghost_shell","android_2b","street_fighter_chun",
         "dark_elsa","sailor_moon_dark",
+        # v24 — A형 실사 컨셉 7개 (특정 IP 회피, 일반 아키타입)
+        "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden","anime_demon_slayer",
+        "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
+        # v24 — B형 2D 그림체 파일럿 2개 (실사 엔진 그림체 테스트 — 검증 필요)
+        "anime_cel_shaded","anime_webtoon_style",
     ],
 }
 
