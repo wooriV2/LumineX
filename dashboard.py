@@ -123,7 +123,7 @@ PRESET_CATEGORIES = {
         "japan_prefecture_body","ancient_map_body","star_map_body",
         "usa_county_map_body",
         # v20 — 과학/자연현상 5개
-        "thermal_scan_body","xray_body","circuit_board_body","galaxy_nebula_body",
+        "thermal_scan_body","circuit_board_body","galaxy_nebula_body",
         "crystal_geode_body",
         # v20 — 문명/문자 6개
         "hieroglyph_body","aztec_calendar_body","celtic_knot_body",
@@ -176,7 +176,7 @@ PRESET_CATEGORIES = {
     ],
     "💋 에로틱 & 페티쉬": [
         # 파워&엣지에서 이동
-        "latex_venom","frozen_latex","chrome_vixen","chain_goddess",
+        "latex_venom","chrome_vixen","chain_goddess",
         "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
         "oil_goddess","savage_leather",
         # 퍼포먼스에서 이동
@@ -202,7 +202,7 @@ PRESET_CATEGORIES = {
         "metal_bondage","lap_dance_extreme",
     ],
     "🌿 자연 & 원소": [
-        "lava_flow","ocean_surge","ice_palace","ice_refraction","blizzard_queen","sandstorm_veil",
+        "lava_flow","ocean_surge","ice_palace","ice_refraction","frozen_latex","blizzard_queen","sandstorm_veil",
         "storm_couture","heat_shimmer","water_reflection","waterfall_goddess","rain_soaked",
         "mist_goddess","mist_vanguard","winter_forest","desert_mirage","desert_oracle",
         "desert_sand_glam","cliff_edge","arctic_minimal","dawn_awakening","aurora_drape",
@@ -384,12 +384,13 @@ SS_TIER = {
     # 2026-06-07 문명/자연/동물 6개
     "celtic_knot_body","greek_mosaic_body","ocean_depth_body",
     "weather_map_body","bauhaus_body","wolf_grey",
-    # 2026-06-07 지오드+아랍 2개
-    "geode_crystal_body","arabic_calligraphy_body",
-    # 2026-06-07 v22 에로틱&페티쉬 SS — 엄격 재검토 후 확정 21개
+    # 2026-06-07 v22 에로틱&페티쉬 SS — 엄격 재검토 후 확정
     #   (강등 S: burlesque, dominatrix_glam, corset_stockings,
     #    dark_fairy_erotic, tape_bondage, metal_bondage)
     #   (제거: military_domme — 나치 상징 생성 리스크, 프리셋 수정 필요)
+    # 2026-06-08 라텍스/광택소재 재검토: 강등 pvc_transparent_full/chrome_vixen/liquid_metal_body,
+    #   승격 vampire_seduction/witch_sensual/latex_venom (±0)
+    # 2026-06-08 서큐버스 재검토: dark_succubus 강등(succubus_full과 중복) → SS 105개
     "transparent_dress","sheer_catsuit","latex_transparent",
     "chrome_bodysuit","mirror_dress","suspension_art",
     "dominatrix_full_armor","goddess_throne",
@@ -397,7 +398,7 @@ SS_TIER = {
     "pole_dance_extreme","fire_goddess",
     "succubus_full","dark_angel_fallen","alien_queen_body",
     "body_paint_nude",
-    "cabaret_star","dark_succubus",
+    "cabaret_star",
     # 2026-06-08 라텍스/광택소재 SS 재검토 — 승격 3개
     #   (강등 S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
     #   (보류: latex_catsuit_red — 컬러 라텍스 중복, 재검토 대상)

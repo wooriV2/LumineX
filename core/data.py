@@ -95,6 +95,22 @@ MODEL_TYPES = {
     "슈퍼 BBW — 극풍만 글래머": "super plus-size runway model, massive voluptuous proportions, very heavy curvy physique, broad hips, thick thighs, soft realistic body folds, abundant body volume, maximalist curvy fashion styling",
     # ── 블랙 글래머 계열 ──
     "블랙 글래머 — 극강 모래시계 흑인 체형": "Black beauty hourglass, impossibly dramatic waist-to-hip ratio, extremely wide round hips, ultra-narrow waist, very thick thighs, full heavy round buttocks, abundant voluptuous curves, African goddess proportions",
+    # ── 글로벌 글래머 극단 계열 (2026-06-08 추가) ──
+    "🇧🇷 브라질 부티 글램 — 카니발 여신 극강 힙": "Brazilian carnival goddess proportions, extremely dramatic bubble buttocks, ultra-wide round hips, tiny athletic waist, toned thick thighs, sun-bronzed glistening voluptuous curves",
+    "🇨🇴 콜롬비안 레게톤 — 조각된 극단 8자": "Colombian reggaeton goddess, surgically dramatic hourglass, tiny cinched waist with explosively wide round hips, full sculpted bust, lifted round buttocks, bronzed reggaeton glamour",
+    "🏝️ 카리브 댄스홀 — 탄력 극강 부티": "Caribbean dancehall queen proportions, explosively round firm buttocks, snatched narrow waist, powerful thick thighs, bouncy athletic curves, glistening deep brown skin",
+    "🇮🇳 볼리우드 글램 — 황금빛 풍만 곡선": "Bollywood goddess proportions, voluptuous golden curves, dramatic waist-to-hip ratio, full rounded bust and wide hips, warm glistening bronze skin, opulent Indian glamour",
+    "🌺 폴리네시안 여신 — 강건한 풍만미": "Polynesian goddess proportions, powerful voluptuous frame, broad strong shoulders, full rounded hips and thighs, statuesque island goddess curves, warm glowing tan skin",
+    "👑 누비안 하이패션 — 초장신 극세장": "Nubian high fashion goddess, towering elongated runway physique, impossibly long legs, sharp sculpted collarbones, regal elongated neck, East African editorial proportions, deep luminous skin",
+    "🏜️ 사하라 투아레그 — 위엄있는 장신 골격": "Saharan Tuareg goddess proportions, tall commanding frame, strong broad shoulders, statuesque powerful hips, regal desert nomad physique, deep matte skin",
+    "🛡️ 마사이 워리어 — 전사의 장신 우아함": "Maasai warrior goddess, towering ultra-tall physique, impossibly long sculpted legs, lean powerful muscle, proud elongated silhouette, deep skin warrior elegance",
+    "🦢 소말리 모델 — 섬세 골격 극도 슬림": "Somali fashion goddess, extremely elongated delicate frame, razor-sharp cheekbones, swan-like neck, willowy editorial physique, smooth deep complexion",
+    "❄️ 북유럽 발키리 — 차가운 거상 장신": "Nordic Valkyrie proportions, towering Amazonian stature, broad strong shoulders, long powerful legs, statuesque ice goddess frame, pale luminous skin",
+    "⚔️ 아마조네스 — 근육질 곡선 극단": "Amazon warrior goddess, powerfully muscular sculpted frame, defined abs, strong broad shoulders, yet dramatic feminine waist-to-hip curve, battle-hardened glamour, oiled skin",
+    "🔥 누비안 부티빌더 — 극강 힙+선명 복근": "Nubian fitness goddess, shredded defined abs combined with extremely wide round hips, thick muscular thighs, snatched waist, powerful African physique, oiled glistening skin",
+    "🎀 벨 에포크 코르셋 — 불가능한 잘록 허리": "Belle Epoque corset silhouette, impossibly tiny corseted waist, full rounded bust above, dramatic flared hips below, Gibson Girl extreme hourglass, porcelain skin",
+    "🐉 판타지 여제 — 군림하는 거상 곡선": "Fantasy dragon empress proportions, tall imposing regal frame, dramatic commanding curves, wide powerful hips, statuesque sovereign physique, otherworldly presence",
+    "🌹 슬라브 봄셸 — 1950s 조각 핀업 8자": "Slavic pin-up bombshell, sculpted hourglass, impossibly cinched corset waist, full high bust, wide rounded hips, retro bombshell proportions, statuesque porcelain skin",
 }
 
 # ── 보정 섹션 (MODEL_TYPES 미세조정용) ──
