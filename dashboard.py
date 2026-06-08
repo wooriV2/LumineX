@@ -136,6 +136,14 @@ PRESET_CATEGORIES = {
         "urban_decay_body","forest_stone_body",
         # 2026-06-08 카테고리 누락 복구
         "banksy_stencil","shadow_art_nude",
+        # v23 — 개방형 바디페인팅 20개 (주제 비움, 매번 다르게 생성)
+        "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto",
+        "body_paint_airbrush","body_paint_ink_splatter","body_paint_drip_free",
+        "body_paint_monochrome","body_paint_pastel_dream","body_paint_neon_glow",
+        "body_paint_earth_tones","body_paint_jewel_tones","body_paint_iridescent_free",
+        "body_paint_abstract_expressionist","body_paint_geometric_free","body_paint_organic_flow",
+        "body_paint_surreal_free","body_paint_minimalist_free",
+        "body_paint_blacklight","body_paint_glitter_free","body_paint_uv_reactive",
     ],
     "💫 럭셔리 글래머": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
