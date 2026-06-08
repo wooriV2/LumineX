@@ -134,6 +134,8 @@ PRESET_CATEGORIES = {
         "stained_glass_body","bauhaus_body",
         # v20 — 환경융합 2개
         "urban_decay_body","forest_stone_body",
+        # 2026-06-08 카테고리 누락 복구
+        "banksy_stencil","shadow_art_nude",
     ],
     "💫 럭셔리 글래머": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
@@ -173,6 +175,8 @@ PRESET_CATEGORIES = {
         "satin_slip","velvet_corset","body_chain_only","strappy_dress","cut_out_swimsuit",
         "monokini_goddess","champagne_drip","neon_bodysuit","bikini_top_only",
         "white_linen_sheer","oil_drip_body","yoga_pants_glam","micro_skirt","halter_glam",
+        # 2026-06-08 누락 복구
+        "wet_editorial",
     ],
     "💋 에로틱 & 페티쉬": [
         # 파워&엣지에서 이동
@@ -227,6 +231,8 @@ PRESET_CATEGORIES = {
         "snowflake_skin","80s_power","y2k_chrome","bohemian_paris","origami_couture",
         # v11
         "wet_glass","smoke_studio","infrared_beauty","grain_film",
+        # 2026-06-08 누락 복구
+        "dreamy_soft_focus","film_noir_glam","noir_femme_fatale",
     ],
     "🏺 문명 & 신화": [
         "cleopatra_gold","pharaoh_queen","byzantine_empress","maasai_warrior","nine_tails",
@@ -326,6 +332,8 @@ PRESET_CATEGORIES = {
         # v19 — K-컬처/뷰티
         "kpop_girl_crush","hallyu_goddess","kbeauty_glass_skin",
         "kdrama_villain_queen","kdrama_chaebol_heir","gangnam_luxury_glam",
+        # 2026-06-08 누락 복구
+        "bubble_tea","doll_house","harajuku_doll",
     ],
 
     "🎌 애니 & 글래머": [
