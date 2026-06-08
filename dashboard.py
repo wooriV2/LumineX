@@ -1,4 +1,4 @@
-"""
+﻿"""
 LumineX Dashboard v4.4
 실행: streamlit run dashboard.py
 
@@ -358,7 +358,7 @@ SS_TIER = {
     "mantis_shrimp","phoenix_rising","jellyfish_glow","panther_black",
     "octopus_ink","snow_leopard","scarab_beetle",
     "atlas_moth","eagle_wings","butterfly_monarch",
-    "arctic_fox",  # SS 경계 — 2장째 일관성 확인 필요
+    "arctic_fox",  # SS 확정 (2026-06-08 설원 페이스페인팅+모피결 2장 검증 완료)
     # 2026-06-06 명화/작가 테스트 확정
     "degas_dancer","toulouse_lautrec","waterhouse_nymph",
     "takashi_murakami","yayoi_kusama","keith_haring_body",
@@ -390,14 +390,18 @@ SS_TIER = {
     #   (강등 S: burlesque, dominatrix_glam, corset_stockings,
     #    dark_fairy_erotic, tape_bondage, metal_bondage)
     #   (제거: military_domme — 나치 상징 생성 리스크, 프리셋 수정 필요)
-    "transparent_dress","sheer_catsuit","latex_transparent","pvc_transparent_full",
-    "chrome_bodysuit","mirror_dress","liquid_metal_body","suspension_art",
+    "transparent_dress","sheer_catsuit","latex_transparent",
+    "chrome_bodysuit","mirror_dress","suspension_art",
     "dominatrix_full_armor","goddess_throne",
     "doctor_sensual","police_dominatrix",
     "pole_dance_extreme","fire_goddess",
     "succubus_full","dark_angel_fallen","alien_queen_body",
     "body_paint_nude",
-    "cabaret_star","chrome_vixen","dark_succubus",
+    "cabaret_star","dark_succubus",
+    # 2026-06-08 라텍스/광택소재 SS 재검토 — 승격 3개
+    #   (강등 S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
+    #   (보류: latex_catsuit_red — 컬러 라텍스 중복, 재검토 대상)
+    "vampire_seduction","witch_sensual","latex_venom",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
