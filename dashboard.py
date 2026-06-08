@@ -385,10 +385,13 @@ SS_TIER = {
     # 2026-06-07 v20 SS 6개
     "coral_reef_body","galaxy_nebula_body","islamic_geometric_body",
     "aztec_calendar_body","stained_glass_body","mushroom_forest_body",
-    # 2026-06-07 국기/문명/동물/부족 8개
-    "union_jack_body","usa_stars_stripes_body","hieroglyph_body",
-    "south_africa_flag_body","mexico_flag_body","brazil_flag_body",
+    # 2026-06-07 문명/동물/부족 (국기 4개는 2026-06-08 강등)
+    "hieroglyph_body","mexico_flag_body",
     "ocelot_wild","ndebele_pattern",
+    # 2026-06-08 국기 계열 SS 재검토 — 강등 S 4개
+    #   (union_jack_body, usa_stars_stripes_body, south_africa_flag_body, brazil_flag_body)
+    #   사유: 원색 면분할=피부톤 근접도 낮음, 구상 모티프 없음 → SS 회화성 미달
+    #   mexico_flag_body만 SS 유지 (중앙 국장=독수리+뱀 구상화, 명화/문명 계열에 닿음)
     # 2026-06-07 문명/자연/동물 6개
     "celtic_knot_body","greek_mosaic_body","ocean_depth_body",
     "weather_map_body","bauhaus_body","wolf_grey",
