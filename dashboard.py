@@ -468,6 +468,13 @@ SS_TIER = {
     "anime_kr_webtoon_glossy","anime_kr_action_manhwa","anime_kr_lofi_chill",
     "anime_cn_donghua_xianxia","anime_cn_palace_drama",
     "anime_eu_ligne_claire",
+    # 2026-06-09 unicorn_opal SS 확정 (2장 일관성 검증 완료)
+    "unicorn_opal",
+    # 2026-06-09 v23 개방형 바디페인팅 SS 12종 확정
+    # 타율 90% (18/20) — pastel_dream/minimalist_free 차단 삭제
+    "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto","body_paint_airbrush",
+    "body_paint_monochrome","body_paint_earth_tones","body_paint_jewel_tones","body_paint_iridescent_free",
+    "body_paint_geometric_free","body_paint_organic_flow","body_paint_surreal_free","body_paint_glitter_free",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
