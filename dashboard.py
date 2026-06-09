@@ -463,6 +463,11 @@ SS_TIER = {
     #   (강등 S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
     #   (보류: latex_catsuit_red — 컬러 라텍스 중복, 재검토 대상)
     "vampire_seduction","witch_sensual","latex_venom",
+    # 2026-06-09 애니 아트스타일 SS 10종 확정 (JP4/KR3/CN2/EU1)
+    "anime_jp_80s_citypop","anime_jp_shoujo_soft","anime_jp_seinen_gritty","anime_jp_makoto_watercolor",
+    "anime_kr_webtoon_glossy","anime_kr_action_manhwa","anime_kr_lofi_chill",
+    "anime_cn_donghua_xianxia","anime_cn_palace_drama",
+    "anime_eu_ligne_claire",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
