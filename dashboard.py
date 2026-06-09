@@ -475,6 +475,10 @@ SS_TIER = {
     "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto","body_paint_airbrush",
     "body_paint_monochrome","body_paint_earth_tones","body_paint_jewel_tones","body_paint_iridescent_free",
     "body_paint_geometric_free","body_paint_organic_flow","body_paint_surreal_free","body_paint_glitter_free",
+    # 2026-06-09 애니 A형 SS 6종 확정 (v24, 7/7 차단 0건)
+    # demon_slayer 보류 (swordmistress와 중복)
+    "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden",
+    "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
