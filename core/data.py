@@ -96,11 +96,11 @@ MODEL_TYPES = {
     # ── 블랙 글래머 계열 ──
     "블랙 글래머 — 극강 모래시계 흑인 체형": "Black beauty hourglass, impossibly dramatic waist-to-hip ratio, extremely wide round hips, ultra-narrow waist, very thick thighs, full heavy round buttocks, abundant voluptuous curves, African goddess proportions",
     # ── 글로벌 글래머 극단 계열 (2026-06-08 추가) ──
-    "🇧🇷 브라질 부티 글램 — 카니발 여신 극강 힙": "Brazilian carnival goddess proportions, extremely dramatic bubble buttocks, ultra-wide round hips, tiny athletic waist, toned thick thighs, sun-bronzed glistening voluptuous curves",
+    "🇧🇷 브라질 부티 글램 — 카니발 여신 극강 힙": "Brazilian carnival goddess, massive round bubble butt dominating silhouette, extremely wide hips with very narrow waist, powerfully thick thighs, heavy full rounded buttocks projecting dramatically, bronzed voluptuous body, samba dancer curves",
     "🇨🇴 콜롬비안 레게톤 — 조각된 극단 8자": "Colombian reggaeton goddess, surgically dramatic hourglass, tiny cinched waist with explosively wide round hips, full sculpted bust, lifted round buttocks, bronzed reggaeton glamour",
-    "🏝️ 카리브 댄스홀 — 탄력 극강 부티": "Caribbean dancehall queen proportions, explosively round firm buttocks, snatched narrow waist, powerful thick thighs, bouncy athletic curves, glistening deep brown skin",
+    "🏝️ 카리브 댄스홀 — 탄력 극강 부티": "Caribbean dancehall queen, powerfully athletic bubble butt with spring-like firmness, snatched tiny waist, explosively wide round hips, muscular thick thighs built for dancing, deeply bronzed Caribbean skin, high-energy dancehall body, tight toned voluptuous curves",
     "🇮🇳 볼리우드 글램 — 황금빛 풍만 곡선": "Bollywood goddess proportions, voluptuous golden curves, dramatic waist-to-hip ratio, full rounded bust and wide hips, warm glistening bronze skin, opulent Indian glamour",
-    "🌺 폴리네시안 여신 — 강건한 풍만미": "Polynesian goddess proportions, powerful voluptuous frame, broad strong shoulders, full rounded hips and thighs, statuesque island goddess curves, warm glowing tan skin",
+    "🌺 폴리네시안 여신 — 강건한 풍만미": "Polynesian goddess proportions, full heavy rounded hips and thighs, broad powerful shoulders framing voluptuous figure, dramatically wide lower body, thick full thighs, abundant rounded curves, statuesque large-framed island goddess, warm bronzed glowing skin, majestic full-figured Polynesian beauty",
     "👑 누비안 하이패션 — 초장신 극세장": "Nubian high fashion goddess, towering elongated runway physique, impossibly long legs, sharp sculpted collarbones, regal elongated neck, East African editorial proportions, deep luminous skin",
     "🏜️ 사하라 투아레그 — 위엄있는 장신 골격": "Saharan Tuareg goddess proportions, tall commanding frame, strong broad shoulders, statuesque powerful hips, regal desert nomad physique, deep matte skin",
     "🛡️ 마사이 워리어 — 전사의 장신 우아함": "Maasai warrior goddess, towering ultra-tall physique, impossibly long sculpted legs, lean powerful muscle, proud elongated silhouette, deep skin warrior elegance",
