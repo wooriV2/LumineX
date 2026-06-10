@@ -506,6 +506,11 @@ SS_TIER = {
     "golden_drape_goddess",
     "penthouse_glam",
     "serpentine_dress",
+    "valkyrie_storm",
+    "shadow_play",
+    "power_suit",
+    "shadow_queen",
+    "punk_queen",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
