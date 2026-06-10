@@ -479,6 +479,15 @@ SS_TIER = {
     # demon_slayer 보류 (swordmistress와 중복)
     "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden",
     "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
+    # 2026-06-10 럭셔리 글래머 그룹1 — 블랙/다크 7종
+    "black_mirror","noir_opulence","velvet_darkness","luxury_noir",
+    "lace_noir","midnight_couture","velvet_serpent",
+    # 2026-06-10 럭셔리 글래머 그룹2 — 골드/화이트 9종
+    "golden_oil","golden_nude","gold_temptress","golden_hour_editorial",
+    "platinum_elite","ivory_silk","pearl_essence","velvet_gold","diamond_couture",
+    # 2026-06-10 럭셔리 글래머 그룹3 — 레드카펫/런웨이 8종
+    "runway_power","red_carpet","red_temptress","crimson_gown",
+    "opera_glam","silver_screen","crystal_gown","baroque_glam",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
