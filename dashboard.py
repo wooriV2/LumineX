@@ -494,6 +494,18 @@ SS_TIER = {
     "petal_goddess",
     "goddess_draped",
     "sheer_overlay",
+    "champagne_mist",
+    "couture_heat",
+    "casino_royale",
+    "black_tie_gala",
+    "champagne_tower",
+    "plunge_gown",
+    "slit_maxi",
+    "cutout_bodysuit",
+    "jeweled_bikini_top",
+    "golden_drape_goddess",
+    "penthouse_glam",
+    "serpentine_dress",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
