@@ -146,8 +146,7 @@ PRESET_CATEGORIES = {
         "body_paint_blacklight","body_paint_glitter_free","body_paint_uv_reactive",
     ],
     "💫 럭셔리 글래머": [
-        "runway_power","red_carpet","editorial_glam","golden_hour_editorial","elite_motion",
-        "noir_opulence","platinum_elite","ivory_silk","ivory_tower",
+        "runway_power","red_carpet","editorial_glam","golden_hour_editorial",        "noir_opulence","platinum_elite","ivory_silk","ivory_tower",
         "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
         "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
         "feather_cascade","feather_touch","golden_oil","golden_nude","gold_temptress","red_temptress",
