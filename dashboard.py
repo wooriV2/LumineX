@@ -1,5 +1,5 @@
 ﻿"""
-LumineX Dashboard v4.4
+LumineX Dashboard v4.5
 실행: streamlit run dashboard.py
 
 v4.4 변경사항 (2026-06-07):
@@ -151,7 +151,7 @@ PRESET_CATEGORIES = {
         "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
         "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
         "feather_cascade","feather_touch","golden_oil","golden_nude","gold_temptress","red_temptress",
-        "veil_goddess","petal_goddess","cobweb_drape",
+        "petal_goddess","cobweb_drape",
         # v11
         "casino_royale","black_tie_gala","champagne_tower","fur_coat_only",
         # v16
@@ -488,6 +488,13 @@ SS_TIER = {
     # 2026-06-10 럭셔리 글래머 그룹3 — 레드카펫/런웨이 8종
     "runway_power","red_carpet","red_temptress","crimson_gown",
     "opera_glam","silver_screen","crystal_gown","baroque_glam",
+
+    "feather_cascade",
+    "feather_trim_mini",
+    "cobweb_drape",
+    "petal_goddess",
+    "goddess_draped",
+    "sheer_overlay",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
