@@ -470,6 +470,13 @@ PRESET_CATEGORIES = {
     ],
 }
 
+
+# SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
+# 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
+SSS_TIER = {
+    "body_paint_nude",
+}
+
 # SS tier
 SS_TIER = {
     # 기존 명화/예술 계열
@@ -584,6 +591,10 @@ SS_TIER = {
     "power_suit",
     "shadow_queen",
     "punk_queen",
+    "uyuni_wet_silk",
+    "aurora_bare",
+    "antelope_light_sheer",
+    "lava_field_latex",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
