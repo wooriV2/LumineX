@@ -221,6 +221,9 @@ PRESET_CATEGORIES = {
         "smoke_veil","liquid_gold_pour","liquid_mirror","prism_light","shattered_glass","zero_gravity",
         # v11
         "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
+        # v25 — 개방형 자연 배경
+        "son_doong_jungle","waitomo_glow","dead_vlei_ghost","danxia_rainbow",
+        "cenote_sacred","socotra_alien","lake_natron","namib_star_desert",
     ],
     "🌃 도시 & 나이트": [
         "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
@@ -230,6 +233,8 @@ PRESET_CATEGORIES = {
         "disco_goddess","music_festival","new_year_countdown","cyber_fire","cyber_silk","emerald_city",
         # v11
         "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
+        # v25 — 개방형 건축/도시 배경
+        "sheikh_zayed_dawn","livraria_lello_staircase","palacio_de_sal",
     ],
     "🎬 에디토리얼 & 무드": [
         "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
@@ -424,6 +429,13 @@ PRESET_CATEGORIES = {
         "weather_maker",
         "gravity_well",
         "double_exposure_self",
+        # v25 — 개방형 초현실 배경
+        "richat_eye","marble_caves_water",
+    ],
+
+    "🏛️ 유적 & 문명": [
+        "petra_rose","angkor_dawn","tikal_skyrise","bagan_balloon",
+        "ellora_rock_temple","derinkuyu_underground","tigers_nest_cliff","naoshima_art_island",
     ],
 
     "🌋 익스트림 글래머": [
@@ -703,6 +715,7 @@ with st.sidebar:
     st.markdown("### 📊 프리셋 현황")
     total = sum(len(v) for v in PRESET_CATEGORIES.values())
     st.markdown(f"**총 프리셋:** `{total}개`")
+    st.markdown(f"**SSS tier:** `{len(SSS_TIER)}개`")
     st.markdown(f"**SS tier:** `{len(SS_TIER)}개`")
     st.markdown(f"**카테고리:** `{len(PRESET_CATEGORIES)}개`")
 
