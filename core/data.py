@@ -111,6 +111,24 @@ MODEL_TYPES = {
     "🎀 벨 에포크 코르셋 — 불가능한 잘록 허리": "Belle Epoque corset silhouette, impossibly tiny corseted waist, full rounded bust above, dramatic flared hips below, Gibson Girl extreme hourglass, porcelain skin",
     "🐉 판타지 여제 — 군림하는 거상 곡선": "Fantasy dragon empress proportions, tall imposing regal frame, dramatic commanding curves, wide powerful hips, statuesque sovereign physique, otherworldly presence",
     "🌹 슬라브 봄셸 — 1950s 조각 핀업 8자": "Slavic pin-up bombshell, sculpted hourglass, impossibly cinched corset waist, full high bust, wide rounded hips, retro bombshell proportions, statuesque porcelain skin",
+    "🇰🇷 K팝 아이돌 — 슬림+작은 얼굴+긴 다리": "K-pop idol proportions, extremely slim slender figure, small delicate face, disproportionately long legs, 168-172cm idol physique, flat stomach, narrow shoulders, youthful fresh Korean pop star body",
+    "🇰🇷 K뷰티 순정 — 도자기 피부+가냘픈 체형": "Korean pure beauty, delicate porcelain fragile figure, very slender gentle frame, soft graceful curves, ethereal Korean feminine beauty, waif-like elegant proportions",
+    "🇰🇷 걸그룹 댄서 — 탄탄+슬림 댄서 체형": "Korean girl group dancer physique, slim yet toned muscular figure, defined dancer legs, narrow waist, athletic slim silhouette with feminine grace, performance-ready body",
+    "🇰🇷 울트라 코리안 슬림 — 극도로 가는 한국 체형": "ultra-slim Korean model, extremely thin delicate frame, 45-48kg editorial physique, razor-thin waist, very narrow hips, elongated fragile silhouette, high-fashion Korean editorial",
+    "🇰🇷 한국 배우 글래머 — 성숙한 한국 미인": "Korean actress glamour, sophisticated mature Korean beauty proportions, elegant slim figure with subtle feminine curves, refined graceful silhouette, dramas leading lady presence",
+    "🇰🇷 한국 재벌녀 — 세련된 상류층 체형": "Korean chaebol heiress physique, impeccably slim sophisticated figure, understated elegant curves, old money Korean glamour proportions, refined upper-class presence",
+    "🪆 미니어처 글래머 — 150cm 이하 초소형": "petite miniature model under 150cm, perfectly proportioned tiny figure, small delicate frame, compact glamour proportions, doll-like perfect miniature beauty",
+    "🦒 수퍼모델 장신 — 185cm+ 극장신": "towering supermodel physique over 185cm, impossibly long legs taking up most of height, tiny head-to-body ratio, extreme elongated runway proportions, giraffe-like editorial height",
+    "🏊 역삼각 — 어깨 넓고 허리 좁은": "inverted triangle physique, broad powerful shoulders dramatically narrowing to slim waist, athletic swimmer's build, strong defined shoulders, narrow hips, superhero body proportions",
+    "📏 바나나 체형 — 직선형 앤드로지너스": "straight androgynous figure, shoulders waist and hips same width, minimal curves, sleek linear silhouette, high fashion androgynous editorial proportions, runway gender-fluid physique",
+    "🍎 애플 체형 — 복부 중심 볼륨": "apple body shape, fuller rounded midsection, soft rounded belly as focal point, slimmer legs relative to torso, natural womanly volume centered at waist, body positive editorial",
+    "🇯🇵 야마토 나데시코 — 가냘프고 우아한 전통 일본미": "Yamato Nadeshiko Japanese traditional beauty, extremely slender graceful figure, gentle soft curves, refined delicate proportions, classical Japanese feminine elegance, willow-like graceful silhouette",
+    "🇨🇳 중국 고전미인 — 버드나무 허리": "classical Chinese beauty willow waist, impossibly slender waist like willow branch, delicate ethereal figure, Tang dynasty ideal proportions, ancient Chinese court beauty silhouette",
+    "🇮🇩 발리니즈 댄서 — 가냘프고 유연한": "Balinese dancer physique, slender flexible figure, graceful elongated limbs, dancer's natural posture, Southeast Asian traditional beauty proportions, lithe artistic body",
+    "🧝 엘프 체형 — 극세장+긴 손발": "elven fantasy physique, impossibly elongated slender frame, extraordinarily long fingers and limbs, pointed ear aesthetic, ethereal otherworldly proportions, fantasy creature elegance, supernatural tall slender",
+    "👼 치비 글래머 — 과장된 2등신 판타지": "chibi fantasy proportions, exaggerated large head to tiny body ratio, impossibly large eyes, miniature cute body, anime-inspired 2-head-height fantasy figure, adorable oversized head glamour",
+    "🌌 거인 여신 — 현실 불가능한 신화적 스케일": "mythological giant goddess scale, impossibly towering divine proportions, colossal feminine figure, deity-scale body, universe-spanning goddess physique, transcendent scale beyond human",
+
 }
 
 # ── 보정 섹션 (MODEL_TYPES 미세조정용) ──
