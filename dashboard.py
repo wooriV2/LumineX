@@ -487,6 +487,11 @@ PRESET_CATEGORIES = {
 # 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
     "body_paint_nude",
+    # 2026-06-11 배경 프리셋 SSS 확정
+    "cenote_sacred",    # 물속 수직 덩굴 + 에메랄드 반사, 4장 일관성
+    "tikal_skyrise",    # 정글 위 피라미드 + 운해 + 골든아워 역광
+    "angkor_dawn",      # 연못 반사 + 황금 일출 + 크메르 조각, 구도 교과서급
+    "waitomo_glow",     # 생물발광 은하수 천장 + 수면 반사, 독보적 비주얼
 }
 
 # SS tier
@@ -607,6 +612,10 @@ SS_TIER = {
     "aurora_bare",
     "antelope_light_sheer",
     "lava_field_latex",
+    # 2026-06-11 배경 프리셋 SS 확정
+    "son_doong_jungle", "petra_rose", "danxia_rainbow",
+    "dead_vlei_ghost", "lake_natron",
+    "angkor_dawn", "tikal_skyrise", "cenote_sacred", "waitomo_glow",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
