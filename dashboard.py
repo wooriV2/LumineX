@@ -487,11 +487,19 @@ PRESET_CATEGORIES = {
 # 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
     "body_paint_nude",
-    # 2026-06-11 배경 프리셋 SSS 확정
-    "cenote_sacred",    # 물속 수직 덩굴 + 에메랄드 반사, 4장 일관성
-    "tikal_skyrise",    # 정글 위 피라미드 + 운해 + 골든아워 역광
-    "angkor_dawn",      # 연못 반사 + 황금 일출 + 크메르 조각, 구도 교과서급
-    "waitomo_glow",     # 생물발광 은하수 천장 + 수면 반사, 독보적 비주얼
+    # 2026-06-11 배경 프리셋 SSS 확정 (1차)
+    "cenote_sacred",         # 물속 수직 덩굴 + 에메랄드 반사, 4장 일관성
+    "tikal_skyrise",         # 정글 위 피라미드 + 운해 + 골든아워 역광
+    "angkor_dawn",           # 연못 반사 + 황금 일출 + 크메르 조각, 구도 교과서급
+    "waitomo_glow",          # 생물발광 은하수 천장 + 수면 반사, 독보적 비주얼
+    # 2026-06-11 배경 프리셋 SSS 확정 (2차)
+    "marble_caves_water",    # 대리석 패턴 + 터콰이즈 수면, 의상이 배경색 흡수
+    "bagan_balloon",         # 열기구 + 황금 일출 + 불탑 평원, 4요소 완벽
+    "tigers_nest_cliff",     # 절벽 수도원 + 기도 깃발 + 히말라야 설산
+    "sheikh_zayed_dawn",     # 흰 돔 + 모자이크 바닥 + 반사 연못 + 블루아워
+    "livraria_lello_staircase", # 테라코타 드레스 + 레드 계단 + 스테인드글라스 3중 동기화
+    "namib_star_desert",     # 은하수 아치 + 사구 능선 + 백포즈 구도
+    "ellora_rock_temple",    # 힌두 조각 벽 + 테라코타 드레스 완전 동화
 }
 
 # SS tier
@@ -615,7 +623,13 @@ SS_TIER = {
     # 2026-06-11 배경 프리셋 SS 확정
     "son_doong_jungle", "petra_rose", "danxia_rainbow",
     "dead_vlei_ghost", "lake_natron",
+    "socotra_alien", "richat_eye", "derinkuyu_underground",
+    "palacio_de_sal", "naoshima_art_island",
+    # SSS도 SS에 포함 (format_preset 로직)
     "angkor_dawn", "tikal_skyrise", "cenote_sacred", "waitomo_glow",
+    "marble_caves_water", "bagan_balloon", "tigers_nest_cliff",
+    "sheikh_zayed_dawn", "livraria_lello_staircase",
+    "namib_star_desert", "ellora_rock_temple",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
