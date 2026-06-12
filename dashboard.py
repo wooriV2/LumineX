@@ -224,6 +224,10 @@ PRESET_CATEGORIES = {
         # v25 — 개방형 자연 배경
         "son_doong_jungle","waitomo_glow","dead_vlei_ghost","danxia_rainbow",
         "cenote_sacred","socotra_alien","lake_natron","namib_star_desert",
+        # v26
+        "zhangjiajie_avatar","pamukkale_white","plitvice_cascade","frozen_baikal",
+        "rainbow_mountain","wisteria_tunnel","torres_del_paine","ha_long_bay",
+        "kelimutu_crater","victoria_falls","fairy_pools","tunnel_of_love","chocolate_hills",
     ],
     "🌃 도시 & 나이트": [
         "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
@@ -235,6 +239,9 @@ PRESET_CATEGORIES = {
         "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
         # v25 — 개방형 건축/도시 배경
         "sheikh_zayed_dawn","livraria_lello_staircase","palacio_de_sal",
+        # v26
+        "santorini_sunset","cappadocia_balloons","chefchaouen_blue","hallstatt_lake",
+        "shirakawa_snow","positano_cliff","bruges_canal","cinque_terre_harbor",
     ],
     "🎬 에디토리얼 & 무드": [
         "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
@@ -436,6 +443,10 @@ PRESET_CATEGORIES = {
     "🏛️ 유적 & 문명": [
         "petra_rose","angkor_dawn","tikal_skyrise","bagan_balloon",
         "ellora_rock_temple","derinkuyu_underground","tigers_nest_cliff","naoshima_art_island",
+        # v26
+        "machu_picchu_cloud","chichen_itza_pyramid","colosseum_dusk","alhambra_palace",
+        "borobudur_dawn","karnak_temple","mont_saint_michel","sigiriya_rock",
+        "angkor_thom_faces","teotihuacan_pyramid","gobekli_tepe","palmyra_colonnade",
     ],
 
     "🌋 익스트림 글래머": [
