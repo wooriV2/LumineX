@@ -184,6 +184,24 @@ PRESET_CATEGORIES = {
         "white_linen_sheer","oil_drip_body","yoga_pants_glam","micro_skirt","halter_glam",
         # 2026-06-08 누락 복구
         "wet_editorial",
+        # v27 — 핫 & 섹시 신규 17개
+        "wet_white_shirt",
+        "rain_bodysuit",
+        "pool_edge_wet",
+        "ocean_wave_body",
+        "penthouse_bath",
+        "dressing_room_mirror",
+        "silk_sheets_morning",
+        "spa_private_steam",
+        "bar_counter_glam",
+        "vip_booth_neon",
+        "after_party_suite",
+        "professor_after_class",
+        "bartender_closing",
+        "pilot_uniform_edit",
+        "gym_mirror_pump",
+        "yoga_stretch_sheer",
+        "tennis_short_dress",
     ],
     "💋 에로틱 & 페티쉬": [
         # 파워&엣지에서 이동
