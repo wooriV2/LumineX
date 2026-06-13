@@ -185,8 +185,6 @@ PRESET_CATEGORIES = {
         # 2026-06-08 누락 복구
         "wet_editorial",
         # v27 — 핫 & 섹시 신규 17개
-        "wet_white_shirt",
-        "rain_bodysuit",
         "pool_edge_wet",
         "ocean_wave_body",
         "penthouse_bath",
@@ -196,11 +194,6 @@ PRESET_CATEGORIES = {
         "bar_counter_glam",
         "vip_booth_neon",
         "after_party_suite",
-        "professor_after_class",
-        "bartender_closing",
-        "pilot_uniform_edit",
-        "gym_mirror_pump",
-        "yoga_stretch_sheer",
         "tennis_short_dress",
     ],
     "💋 에로틱 & 페티쉬": [
@@ -539,6 +532,9 @@ SSS_TIER = {
     "angkor_thom_faces",
     "teotihuacan_pyramid",
     "palmyra_colonnade",
+    # 2026-06-13 v27 핫&섹시 SSS 확정
+    "dressing_room_mirror",
+    "vip_booth_neon",
 }
 
 # SS tier
@@ -683,6 +679,17 @@ SS_TIER = {
     "karnak_temple",
     "chichen_itza_pyramid",
     "gobekli_tepe",
+    # 2026-06-13 v27 핫&섹시 SS/SSS 확정
+    "dressing_room_mirror",
+    "vip_booth_neon",
+    "pool_edge_wet",
+    "ocean_wave_body",
+    "penthouse_bath",
+    "silk_sheets_morning",
+    "spa_private_steam",
+    "bar_counter_glam",
+    "after_party_suite",
+    "tennis_short_dress",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
