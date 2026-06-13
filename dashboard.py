@@ -535,6 +535,11 @@ SSS_TIER = {
     # 2026-06-13 v27 핫&섹시 SSS 확정
     "dressing_room_mirror",
     "vip_booth_neon",
+    # 2026-06-13 비치&리조트 SSS 확정
+    "infinity_pool",
+    "scuba_goddess",
+    "spa_noir",
+    "sunset_cruise",
 }
 
 # SS tier
@@ -660,6 +665,24 @@ SS_TIER = {
     "dead_vlei_ghost", "lake_natron",
     "socotra_alien", "richat_eye", "derinkuyu_underground",
     "palacio_de_sal", "naoshima_art_island",
+    # 2026-06-13 비치&리조트 SS/SSS 확정
+    "summer_beach",
+    "surfer_goddess",
+    "pool_goddess",
+    "poolside_noir",
+    "glass_floor",
+    "glass_house",
+    "ski_chalet",
+    "beach_bonfire",
+    "balcony_goddess",
+    "coral_diving",
+    "beach_bonfire_night",
+    "hammock_resort",
+    # SSS 비치 4종도 SS에 포함
+    "infinity_pool",
+    "scuba_goddess",
+    "spa_noir",
+    "sunset_cruise",
     # SSS도 SS에 포함 (format_preset 로직)
     "angkor_dawn", "tikal_skyrise", "cenote_sacred", "waitomo_glow",
     "marble_caves_water", "bagan_balloon", "tigers_nest_cliff",
