@@ -511,6 +511,16 @@ SSS_TIER = {
     "livraria_lello_staircase", # 테라코타 드레스 + 레드 계단 + 스테인드글라스 3중 동기화
     "namib_star_desert",     # 은하수 아치 + 사구 능선 + 백포즈 구도
     "ellora_rock_temple",    # 힌두 조각 벽 + 테라코타 드레스 완전 동화
+    # 2026-06-13 v26 월드 랜드마크 SSS 확정
+    "positano_cliff",
+    "bruges_canal",
+    "colosseum_dusk",
+    "alhambra_palace",
+    "mont_saint_michel",
+    "sigiriya_rock",
+    "angkor_thom_faces",
+    "teotihuacan_pyramid",
+    "palmyra_colonnade",
 }
 
 # SS tier
@@ -641,6 +651,20 @@ SS_TIER = {
     "marble_caves_water", "bagan_balloon", "tigers_nest_cliff",
     "sheikh_zayed_dawn", "livraria_lello_staircase",
     "namib_star_desert", "ellora_rock_temple",
+    # 2026-06-13 v26 월드 랜드마크 SS/SSS 확정
+    "positano_cliff",
+    "bruges_canal",
+    "colosseum_dusk",
+    "alhambra_palace",
+    "mont_saint_michel",
+    "sigiriya_rock",
+    "angkor_thom_faces",
+    "teotihuacan_pyramid",
+    "palmyra_colonnade",
+    "cinque_terre_harbor",
+    "karnak_temple",
+    "chichen_itza_pyramid",
+    "gobekli_tepe",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
