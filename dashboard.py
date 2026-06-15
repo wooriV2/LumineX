@@ -551,6 +551,10 @@ SSS_TIER = {
     "kdrama_villain_queen",
     "bubble_tea",
     "doll_house",
+    # 2026-06-15 harajuku_doll SSS 승격 (팝&카와이 — 다케시타 거리 싱크 4장 검증)
+    "harajuku_doll",
+    # 2026-06-15 greenhouse_eden SSS 승격 (계절&테마 — 잎사귀 드레스=온실 생태계 융합 6장 검증)
+    "greenhouse_eden",
 }
 
 # SS tier
@@ -759,6 +763,20 @@ SS_TIER = {
     "bar_counter_glam",
     "after_party_suite",
     "tennis_short_dress",
+    # 2026-06-15 계절&테마 그룹1 SS 확정 (cherry_blossom~autumn_forest)
+    "cherry_blossom",
+    "lavender_field",
+    "spring_rain",
+    "tulip_field",
+    "autumn_forest",
+    # 2026-06-15 계절&테마 그룹2 SS 확정 (sunflower_field~golden_autumn)
+    "sunflower_field",
+    "greenhouse_eden",   # SSS도 SS에 포함 (format_preset 로직)
+    "tropical_night",
+    "first_snow",
+    "golden_autumn",
+    # 2026-06-15 harajuku_doll SSS도 SS에 포함
+    "harajuku_doll",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
