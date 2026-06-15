@@ -559,6 +559,15 @@ SSS_TIER = {
     "halloween_glam",       # 의상+배경+소품 = 고딕 세계관 완전 융합, 6장 검증
     "new_year_glam",        # 드레스 시퀀 = 폭죽+컨페티 빛 흡수, 타임스퀘어 4장 검증
     "sakura_night_glam",    # 드레스 플로럴 = 벚꽃 터널 패턴 연속, 신사 등불 6장 검증
+    # 2026-06-15 에디토리얼&무드 SSS 8종 확정
+    "backlit_silk",         # 역광 투과 → 드레스=광원, waitomo_glow 논리 동일
+    "mirror_room",          # 실버수트+거울방 경계 소멸, dressing_room_mirror보다 강함
+    "eclipse_body",         # 드레스=코로나 발광, 우주현상=의상
+    "plasma_aura",          # 플라즈마=의상 완전 융합, 에너지=드레스 (이미지6 기준)
+    "molten_chrome",        # 용광로+녹는 크롬 물리적 동조, 소재=환경
+    "mercury_pool",         # 수은 인체=수면 유체 연속성, 의상=액체
+    "snowflake_skin",       # 아이스 드레스=설원 소재 동화 (이미지5 기준)
+    "noir_femme_fatale",    # 흑백+5요소 세계관 완전 구현, halloween_glam 동일 논리
 }
 
 # SS tier
@@ -793,6 +802,41 @@ SS_TIER = {
     "new_year_glam",        # SSS도 SS에 포함
     "sakura_night_glam",    # SSS도 SS에 포함
     "monsoon_goddess",
+    # 2026-06-15 에디토리얼&무드 그룹1 SS 확정
+    "silhouette_only",
+    "back_beauty",
+    "collarbone_focus",
+    "neck_elegance",
+    "long_legs_focus",
+    # 2026-06-15 에디토리얼&무드 그룹2 SS 확정 (SSS 포함)
+    "light_driven",
+    "backlit_silk",         # SSS도 SS에 포함
+    "mirror_goddess",
+    "mirror_room",          # SSS도 SS에 포함
+    "eclipse_body",         # SSS도 SS에 포함
+    # 2026-06-15 에디토리얼&무드 그룹3 SS 확정 (SSS 포함)
+    "chrome_skin",
+    "neon_body",
+    "plasma_aura",          # SSS도 SS에 포함
+    "molten_chrome",        # SSS도 SS에 포함
+    "mercury_rising",
+    # 2026-06-15 에디토리얼&무드 그룹4 SS 확정 (SSS 포함)
+    "mercury_pool",         # SSS도 SS에 포함
+    "titanium_body",
+    "snowflake_skin",       # SSS도 SS에 포함
+    "80s_power",
+    "y2k_chrome",
+    # 2026-06-15 에디토리얼&무드 그룹5 SS 확정
+    "bohemian_paris",
+    "origami_couture",
+    "wet_glass",
+    "smoke_studio",
+    "infrared_beauty",
+    # 2026-06-15 에디토리얼&무드 그룹6 SS 확정 (SSS 포함)
+    "grain_film",
+    "dreamy_soft_focus",
+    "film_noir_glam",
+    "noir_femme_fatale",    # SSS도 SS에 포함
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
