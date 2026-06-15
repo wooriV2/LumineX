@@ -555,6 +555,10 @@ SSS_TIER = {
     "harajuku_doll",
     # 2026-06-15 greenhouse_eden SSS 승격 (계절&테마 — 잎사귀 드레스=온실 생태계 융합 6장 검증)
     "greenhouse_eden",
+    # 2026-06-15 계절&테마 SSS 3종 확정
+    "halloween_glam",       # 의상+배경+소품 = 고딕 세계관 완전 융합, 6장 검증
+    "new_year_glam",        # 드레스 시퀀 = 폭죽+컨페티 빛 흡수, 타임스퀘어 4장 검증
+    "sakura_night_glam",    # 드레스 플로럴 = 벚꽃 터널 패턴 연속, 신사 등불 6장 검증
 }
 
 # SS tier
@@ -777,6 +781,18 @@ SS_TIER = {
     "golden_autumn",
     # 2026-06-15 harajuku_doll SSS도 SS에 포함
     "harajuku_doll",
+    # 2026-06-15 계절&테마 그룹3 SS 확정
+    "midsummer_heat",
+    "rainy_season",
+    "harvest_moon",
+    "winter_solstice",
+    "cherry_blossom_night",
+    # 2026-06-15 계절&테마 그룹4 SS 확정
+    "tropical_monsoon",
+    "halloween_glam",       # SSS도 SS에 포함
+    "new_year_glam",        # SSS도 SS에 포함
+    "sakura_night_glam",    # SSS도 SS에 포함
+    "monsoon_goddess",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
