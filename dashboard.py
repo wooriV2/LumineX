@@ -136,6 +136,33 @@ PRESET_CATEGORIES = {
         "urban_decay_body","forest_stone_body",
         # 2026-06-08 카테고리 누락 복구
         "banksy_stencil","shadow_art_nude",
+        # v28 — 전통&문화 바디페인팅 52종 (중복 9종 제거)
+        # 일본
+        "geisha_bodypaint","maiko_bodypaint","kimono_bodypaint","noh_bodypaint",
+        "kabuki_bodypaint","samurai_bodypaint","geisha_white_bodypaint","ninja_bodypaint",
+        # 한국
+        "hanbok_bodypaint","joseon_bodypaint","gisaeng_bodypaint",
+        "hanbok_modern_bodypaint","korean_shaman_bodypaint",
+        # 중국
+        "qipao_bodypaint","cheongsam_bodypaint","hanfu_bodypaint",
+        "tang_dynasty_bodypaint","ming_bodypaint",
+        # 남아시아/중동
+        "sari_bodypaint","belly_bodypaint","odalisque_bodypaint",
+        "harem_bodypaint","mughal_bodypaint",
+        "persian_bodypaint","moroccan_bodypaint","ottoman_bodypaint",
+        # 동남아/중앙아
+        "thai_bodypaint","balinese_bodypaint","kebaya_bodypaint",
+        "batik_bodypaint","ikat_bodypaint","ao_dai_bodypaint",
+        "tibetan_bodypaint","shaman_bodypaint","scythian_bodypaint",
+        # 아메리카/오세아니아
+        "mayan_bodypaint","hopi_bodypaint","olmec_bodypaint",
+        "maori_bodypaint","polynesian_bodypaint","haida_bodypaint",
+        # 아프리카
+        "yoruba_bodypaint","kente_bodypaint","dashiki_bodypaint",
+        "adinkra_bodypaint","zulu_bodypaint",
+        # 유럽/고대
+        "scottish_bodypaint","byzantine_bodypaint","flamenco_bodypaint","dirndl_bodypaint",
+        "sumerian_bodypaint","voodoo_bodypaint",
         # v23 — 개방형 바디페인팅 20개 (주제 비움, 매번 다르게 생성)
         "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto",
         "body_paint_airbrush","body_paint_ink_splatter","body_paint_drip_free",
