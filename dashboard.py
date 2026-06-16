@@ -595,6 +595,70 @@ SSS_TIER = {
     "mercury_pool",         # 수은 인체=수면 유체 연속성, 의상=액체
     "snowflake_skin",       # 아이스 드레스=설원 소재 동화 (이미지5 기준)
     "noir_femme_fatale",    # 흑백+5요소 세계관 완전 구현, halloween_glam 동일 논리
+
+    # v28 전통문화 바디페인팅 패치 (48종)
+    # 1차 SSS
+    "kabuki_bodypaint",
+    "joseon_bodypaint",
+    "tibetan_bodypaint",
+    "byzantine_bodypaint",
+    "mayan_bodypaint",
+    # 2차 SSS
+    "geisha_bodypaint",
+    "ming_bodypaint",
+    "thai_bodypaint",
+    "ottoman_bodypaint",
+    "flamenco_bodypaint",
+    "sumerian_bodypaint",
+    # 3차 SSS
+    "maori_bodypaint",
+    "balinese_bodypaint",
+    "persian_bodypaint",
+    "mughal_bodypaint",
+    "hopi_bodypaint",
+    "haida_bodypaint",
+    # 4차 SSS
+    "polynesian_bodypaint",
+    "korean_shaman_bodypaint",
+    "noh_bodypaint",
+    "hanbok_bodypaint",
+    "tang_dynasty_bodypaint",
+    # 5차 SSS
+    "moroccan_bodypaint",
+    "batik_bodypaint",
+    "ikat_bodypaint",
+    "dirndl_bodypaint",
+    "ninja_bodypaint",
+    "kebaya_bodypaint",
+    "scottish_bodypaint",
+    # 6차 SSS
+    "voodoo_bodypaint",
+    "scythian_bodypaint",
+    "olmec_bodypaint",
+    "odalisque_bodypaint",
+    "harem_bodypaint",
+    "shaman_bodypaint",
+    # 7차 SSS
+    "kimono_bodypaint",
+    "samurai_bodypaint",
+    "geisha_white_bodypaint",
+    "hanfu_bodypaint",
+    "qipao_bodypaint",
+    "cheongsam_bodypaint",
+    "gisaeng_bodypaint",
+    "hanbok_modern_bodypaint",
+    # 8차 SSS
+    "ao_dai_bodypaint",
+    "zulu_bodypaint",
+    "kente_bodypaint",
+    "dashiki_bodypaint",
+    "belly_bodypaint",
+
+    # v28 전통문화 바디페인팅 패치 (3종)
+    # SS 전용
+    "sari_bodypaint",
+    "yoruba_bodypaint",
+    "maiko_bodypaint",
 }
 
 # SS tier
