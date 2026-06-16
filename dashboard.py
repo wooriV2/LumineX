@@ -659,6 +659,24 @@ SSS_TIER = {
     "sari_bodypaint",
     "yoruba_bodypaint",
     "maiko_bodypaint",
+    # 2026-06-16 애니&글래머 SSS 확정 (17종)
+    "kunoichi_glam",
+    "samurai_bride",
+    "oni_warrior",
+    "cosmic_warrior_glam",
+    "dragon_princess",
+    "dark_sorceress_glam",
+    "neon_android",
+    "android_2b",
+    "vampire_seductress",
+    "vampirella_dark",
+    "manhwa_villainess",
+    "dark_elsa",
+    "anime_battle_angel",
+    "poison_ivy_vines",
+    "storm_goddess",
+    "jessica_rabbit_glam",
+    "barbarella_retro",
 }
 
 # SS tier
