@@ -487,7 +487,7 @@ PRESET_CATEGORIES = {
         "angkor_thom_faces","teotihuacan_pyramid","gobekli_tepe","palmyra_colonnade",
     ],
 
-    "🌋 익스트림 글래머": [
+    "🌋 엘리멘탈 갓데스": [
         "uyuni_wet_silk",
         "dead_sea_goddess",
         "iceland_hot_spring",
