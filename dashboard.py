@@ -568,6 +568,33 @@ PRESET_CATEGORIES = {
 # SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
 # 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
+    # 2026-06-20 직업&라이프스타일 SS전용 10종 + SSS 24종 포함
+    # SS전용
+    "cruise_hostess", "yacht_club",
+    "nurse_glamour", "sommelier", "wine_tasting", "barista_chic",
+    "golf_caddie", "fitness_power", "scuba_instructor", "archery_goddess",
+    # SSS도 SS에 포함 (규칙)
+    "flight_attendant", "pilot_glamour", "yacht_captain",
+    "private_jet", "helipad", "hotel_concierge",
+    "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
+    "golf_glam", "tennis_luxe", "tennis_referee", "tennis_champion",
+    "f1_grid_girl", "equestrian_glam", "horse_racing", "yoga_goddess",
+    "cheerleader", "ballet_prima", "gymnastics_editorial",
+    "figure_skater", "carnival_rio", "luxury_shopping",
+
+    # 2026-06-20 직업&라이프스타일 SSS 24종 확정
+    # A그룹 — 항공/해양/럭셔리
+    "flight_attendant", "pilot_glamour", "yacht_captain",
+    "private_jet", "helipad", "hotel_concierge",
+    # B그룹 — 전문직
+    "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
+    # C그룹 — 스포츠/피트니스
+    "golf_glam", "tennis_luxe", "tennis_referee", "tennis_champion",
+    "f1_grid_girl", "equestrian_glam", "horse_racing", "yoga_goddess",
+    # D그룹 — 퍼포먼스/스포츠2
+    "cheerleader", "ballet_prima", "gymnastics_editorial",
+    "figure_skater", "carnival_rio", "luxury_shopping",
+
     "body_paint_nude",
     # 2026-06-11 배경 프리셋 SSS 확정 (1차)
     "cenote_sacred",         # 물속 수직 덩굴 + 에메랄드 반사, 4장 일관성
