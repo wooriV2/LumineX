@@ -137,6 +137,17 @@ MODEL_TYPES = {
     "🏋️ 파워리프터 글램 — 강인한 근육 여신": "powerlifter goddess, extremely muscular powerful build, thick strong legs, broad powerful back, strong defined shoulders, raw physical power with feminine editorial energy, strength sport glamour",
     "🩰 짧고 글래머 — 155cm 미만 풍만 미니 글래머": "petite glamour model under 155cm, compact yet dramatically curvaceous figure, full bust and wide hips on tiny frame, miniature hourglass, doll-like proportions with maximum curves",
     "⚖️ 애슬레틱 커브 — 근육+볼륨 완벽 균형": "athletic curvy model, perfect balance of muscle definition and feminine curves, defined abs with round full hips, toned thick thighs, fit hourglass editorial, the best of both worlds physique",
+    # ── 가슴 특화 체형 (2026-06-23) ──
+    "💎 바스트 퀸 — 압도적 가슴+잘록한 허리": "bust queen goddess, impossibly large full heavy bust dramatically dominating silhouette, deep dramatic cleavage, paired with extremely narrow cinched waist, average hips, top-heavy buxom editorial, chest as ultimate focal point",
+    "🌺 소프트 바스트 — 크고 부드러운 자연 가슴": "soft buxom natural beauty, very full soft natural bust, generously rounded chest with natural weight and movement, gentle feminine curves throughout, naturally voluptuous upper body, soft buxom editorial presence",
+    "⚡ 피트니스 바스트 — 탄탄한 몸+볼륨 가슴": "fitness bust goddess, shredded defined abs combined with surprisingly full lifted perky bust, sporty yet buxom impossible combination, gym goddess proportions, toned flat stomach below full chest, athletic buxom editorial",
+    "👑 레전드 바스트 — 신화적 극강 가슴": "legendary bust goddess, mythologically enormous full bust completely dominating entire silhouette, Rubenesque upper body, maximalist buxom editorial, larger-than-life chest presence, divine feminine abundance, awe-inspiring bust scale",
+    "🎀 슬림 바스트 — 마른 몸+극강 가슴 대비": "slim bust contrast model, razor-thin slender body with shockingly large full bust creating maximum contrast, waif-like slim frame below impossibly voluptuous chest, dramatic top-heavy contrast editorial, extreme bust-to-body size ratio",
+    "🔥 탑헤비 글래머 — 상체 지배 실루엣": "top-heavy glamour goddess, powerful full bust and broad shoulders dramatically overshadowing slim lower body, inverted pyramid with maximum chest volume, buxom shoulder-dominant silhouette, top-heavy fashion editorial presence",
+    "🌙 동양 바스트 — 슬림 동양 체형+풍만 가슴": "Asian bust contrast beauty, delicate slim East Asian physique with unexpectedly very full and heavy bust, petite frame with generous chest creating stunning contrast, exotic buxom Asian editorial, refined face with voluptuous upper body",
+    "💫 핀업 바스트 — 1950s 핀업 가슴+허리": "pin-up bust glamour, 1950s Bettie Page era full lifted bust, high and round classic pin-up chest, paired with cinched corseted waist, retro buxom bombshell proportions, vintage glamour photography style bust",
+    "🏆 바스트 애슬레트 — 수영선수 체형+가슴": "swimmer bust goddess, broad powerful athletic shoulders and long torso of competitive swimmer combined with surprisingly full lifted bust, sporty buxom proportions, streamlined athletic body with generous chest, aquatic goddess editorial",
+    "🌊 커브드 바스트 — 가슴+힙 동시 극강": "curved bust full figure, simultaneously extremely full heavy bust and very wide round hips, both chest and hips maximally voluptuous without narrow waist, natural full-figured abundance, hourglass without cinching, generous curves top and bottom equally",
 
 }
 
