@@ -61,24 +61,24 @@ AGE_APPEARANCE = {
 
 MODEL_TYPES = {
     # ── 극초슬림 계열 ──
-    "울트라 슬림 — 하이패션 극세장": "ultra-slim high fashion model, very slender editorial figure, elongated silhouette, fashion week physique",
-    "슈퍼 슬림 — 마른 런웨이": "super slim runway model, thin elegant frame, elongated slender body, editorial fashion model",
-    "슬림 런웨이 — 초장신 늘씬": "tall slim runway model, long legs, slender waist, narrow hips, elongated graceful silhouette",
+    "울트라 슬림 — 하이패션 극세장": "ultra-slim high fashion model, razor-thin elongated silhouette, visible sharp collarbones, hollow cheeks, waif-like editorial physique, fashion week extreme slenderness, angular delicate frame",
+    "슈퍼 슬림 — 마른 런웨이": "super slim runway model, very thin lean frame, minimal curves, flat chest, boyish slim hips, elongated slender body, androgynous editorial fashion model, breakable delicate silhouette",
+    "슬림 런웨이 — 초장신 늘씬": "tall slim runway model over 180cm, disproportionately long legs dominating silhouette, slender waist, narrow hips, extremely elongated graceful figure, towering editorial presence",
     "슬림 엘레강스 — 날씬하고 우아한": "slender elegant model, slim narrow frame, graceful delicate figure, refined fashion presence",
     # ── 슬림톤 계열 ──
     "슬림 톤 — 날씬하고 탄탄한": "slim toned model, lean athletic build, flat stomach, slim toned silhouette, light but defined",
-    "발레리나 — 길고 가늘고 우아한": "ballerina physique, slender elongated figure, narrow hips, graceful elegant posture, dancer's perfect poise",
+    "발레리나 — 길고 가늘고 우아한": "ballerina physique, slender elongated figure, defined calf muscles, strong lean back, narrow hips, graceful elegant posture, turned-out feet, dancer's poised carriage, visible shoulder blade definition",
     "슬림 피트니스 — 날씬한 운동선수": "slim fitness model, lean defined muscles, flat abs, athletic slim silhouette, lightweight athletic",
     # ── 애슬레틱 계열 ──
     "피트니스 — 탄탄한 복근, 근육미": "athletic fitness model, defined six-pack abs, toned muscular legs, round athletic hips, powerful physique",
-    "비키니 컴페티션 — 대회용 극강 근육": "bikini competition model, extremely defined muscles, shredded competition physique, round athletic hips, competition-ready body",
+    "비키니 컴페티션 — 대회용 극강 근육": "bikini competition model, stage-ready shredded physique, extremely defined muscles with zero body fat, tight flat glutes, angular lean hips, razor-sharp muscle definition, competition-ready body, tanned oiled skin",
     "파워 피트니스 — 강한 근육미": "power fitness model, very muscular defined body, strong arms and legs, muscular powerful build",
-    "스포츠 글램 — 탄탄+볼륨": "sports glamour model, toned athletic body with curves, defined abs, round hips, fit and voluptuous",
+    "스포츠 글램 — 탄탄+볼륨": "sports glamour model, athletic toned physique with feminine curves, defined six-pack abs, round lifted hips, fit voluptuous energy, gym-to-runway body, powerful yet sensual athletic figure",
     # ── 글래머 계열 ──
-    "소프트 글램 — 부드러운 여성미": "soft glamour model, feminine gentle curves, round soft hips, elegant graceful figure, naturally beautiful",
-    "VS 앤젤 — 완벽한 VS 글래머": "Victoria's Secret Angel body, toned flat abs, long legs, curvaceous yet athletic silhouette, runway perfect",
-    "핫 글래머 — 잘록한 허리+볼륨": "hot glamour model, narrow cinched waist, wide round hips, dramatic hourglass figure",
-    "슈퍼 글래머 — 극강 모래시계": "super glamour model, tiny waist, very wide round hips, maximum hourglass silhouette, pinup glamour",
+    "소프트 글램 — 부드러운 여성미": "soft glamour model, polished feminine curves, subtle waist definition, round soft hips, gentle editorial elegance, naturally beautiful with glamour refinement, graceful sophisticated figure",
+    "VS 앤젤 — 완벽한 VS 글래머": "Victoria's Secret Angel body, toned flat abs, model-perfect 34-24-35 proportions, legs over 90cm long, subtle feminine hourglass, runway-ready athletic glamour, glowing healthy skin, wings-ready editorial presence",
+    "핫 글래머 — 잘록한 허리+볼륨": "hot glamour model, dramatically cinched narrow waist, va-va-voom wide round hips, 0.65 waist-to-hip ratio, full bust, smoldering hourglass figure, red carpet curves",
+    "슈퍼 글래머 — 극강 모래시계": "super glamour model, impossibly tiny corseted waist, 0.55 waist-to-hip ratio, extremely wide round heavy hips, maximum pinup hourglass silhouette, lush full bust, Bettie Page-level curves",
     "럭셔리 글램 — 고급스러운 볼륨": "luxury glamour model, defined waist, wide round hips, sophisticated voluptuous elegance, high-end glamour",
     # ── 커브 계열 ──
     "내추럴 커브 — 자연스러운 곡선미": "natural curvy model, round natural hips, soft gentle curves, realistic womanly figure",
@@ -87,14 +87,14 @@ MODEL_TYPES = {
     "글래머 커브 — 커브+글래머 믹스": "glamour curvy model, dramatic waist-to-hip ratio, very wide round hips, thick thighs, glamorous voluptuous",
     # ── 플러스사이즈 계열 ──
     "플러스 내추럴 — 자연스러운 플러스": "natural plus-size model, soft rounded belly, wide hips, full thighs, body positive natural figure",
-    "플러스 글램 — 플러스사이즈 글래머": "plus-size glamour model, soft belly, wide full hips, thick thighs, confident couture presence",
+    "플러스 글램 — 플러스사이즈 글래머": "plus-size glamour model, soft rounded belly, wide full hips, thick thighs, confidently plus-size bold couture presence, unapologetically curvaceous editorial energy, full-figured runway power",
     "라지 플러스 — 매우 풍만한": "large plus-size fashion model, round belly, very wide hips, heavy full thighs, body positive editorial",
     "슈퍼 플러스 — 초풍만": "super plus-size runway model, dramatic full-figure silhouette, soft belly, extremely wide hips, maximalist curvy fashion",
     # ── BBW 계열 ──
-    "BBW 글래머 — 풍만한 글래머": "BBW glamour model, extremely curvy fashion silhouette, broad hips, thick thighs, soft layered abdomen, luxurious BBW presence, confident couture",
-    "슈퍼 BBW — 극풍만 글래머": "super plus-size runway model, massive voluptuous proportions, very heavy curvy physique, broad hips, thick thighs, soft realistic body folds, abundant body volume, maximalist curvy fashion styling",
+    "BBW 글래머 — 풍만한 글래머": "BBW glamour model, extremely curvy fashion silhouette, broad wide hips, very thick thighs, soft full rounded abdomen, abundant voluptuous curves, luxurious BBW presence, confident couture editorial",
+    "슈퍼 BBW — 극풍만 글래머": "super plus-size runway model, massive voluptuous proportions, very heavy curvy physique, extremely broad wide hips, very thick full thighs, soft rounded abundant belly, maximalist curvy fashion styling, bold confident editorial presence",
     # ── 블랙 글래머 계열 ──
-    "블랙 글래머 — 극강 모래시계 흑인 체형": "Black beauty hourglass, impossibly dramatic waist-to-hip ratio, extremely wide round hips, ultra-narrow waist, very thick thighs, full heavy round buttocks, abundant voluptuous curves, African goddess proportions",
+    "블랙 글래머 — 극강 모래시계 흑인 체형": "Black beauty hourglass goddess, impossibly dramatic waist-to-hip ratio, extremely wide round hips, ultra-narrow waist, very thick powerful thighs, powerfully lifted full round buttocks projecting dramatically, abundant voluptuous curves, African goddess proportions, deep luminous rich skin, statuesque commanding presence",
     # ── 글로벌 글래머 극단 계열 (2026-06-08 추가) ──
     "🇧🇷 브라질 부티 글램 — 카니발 여신 극강 힙": "Brazilian carnival goddess, massive round bubble butt dominating silhouette, extremely wide hips with very narrow waist, powerfully thick thighs, heavy full rounded buttocks projecting dramatically, bronzed voluptuous body, samba dancer curves",
     "🇨🇴 콜롬비안 레게톤 — 조각된 극단 8자": "Colombian reggaeton goddess, extreme exaggerated hourglass figure, impossibly tiny cinched waist, explosively wide dramatic round hips, full sculpted bust, lifted prominent round buttocks, surgically perfect waist-to-hip ratio, thick powerful thighs, bronzed Latin skin glistening",
@@ -111,7 +111,7 @@ MODEL_TYPES = {
     "🎀 벨 에포크 코르셋 — 불가능한 잘록 허리": "Belle Epoque corset silhouette, impossibly tiny corseted waist, full rounded bust above, dramatic flared hips below, Gibson Girl extreme hourglass, porcelain skin",
     "🐉 판타지 여제 — 군림하는 거상 곡선": "Fantasy dragon empress proportions, tall imposing regal frame, dramatic commanding curves, wide powerful hips, statuesque sovereign physique, otherworldly presence",
     "🌹 슬라브 봄셸 — 1950s 조각 핀업 8자": "Slavic pin-up bombshell, sculpted hourglass, impossibly cinched corset waist, full high bust, wide rounded hips, retro bombshell proportions, statuesque porcelain skin",
-    "🇰🇷 K팝 아이돌 — 슬림+작은 얼굴+긴 다리": "K-pop idol proportions, extremely slim slender figure, small delicate face, disproportionately long legs, 168-172cm idol physique, flat stomach, narrow shoulders, youthful fresh Korean pop star body",
+    "🇰🇷 K팝 아이돌 — 슬림+작은 얼굴+긴 다리": "K-pop idol proportions, extremely slim slender figure, small delicate face with tiny head-to-body ratio, disproportionately long legs, 168-172cm idol physique, flat stomach, narrow shoulders, delicate wrists and ankles, youthful fresh Korean pop star body, idol-perfect refined proportions",
     "🇰🇷 K뷰티 순정 — 도자기 피부+가냘픈 체형": "Korean pure beauty, delicate porcelain fragile figure, very slender gentle frame, soft graceful curves, ethereal Korean feminine beauty, waif-like elegant proportions",
     "🇰🇷 걸그룹 댄서 — 탄탄+슬림 댄서 체형": "Korean girl group dancer physique, slim yet toned muscular figure, defined dancer legs, narrow waist, athletic slim silhouette with feminine grace, performance-ready body",
     "🇰🇷 울트라 코리안 슬림 — 극도로 가는 한국 체형": "ultra-slim Korean model, extremely thin delicate frame, 45-48kg editorial physique, razor-thin waist, very narrow hips, elongated fragile silhouette, high-fashion Korean editorial",
@@ -128,6 +128,15 @@ MODEL_TYPES = {
     "🧝 엘프 체형 — 극세장+긴 손발": "elven fantasy physique, impossibly elongated slender frame, extraordinarily long fingers and limbs, pointed ear aesthetic, ethereal otherworldly proportions, fantasy creature elegance, supernatural tall slender",
     "👼 치비 글래머 — 과장된 2등신 판타지": "chibi fantasy proportions, exaggerated large head to tiny body ratio, impossibly large eyes, miniature cute body, anime-inspired 2-head-height fantasy figure, adorable oversized head glamour",
     "🌌 거인 여신 — 현실 불가능한 신화적 스케일": "mythological giant goddess scale, impossibly towering divine proportions, colossal feminine figure, deity-scale body, universe-spanning goddess physique, transcendent scale beyond human",
+    # ── 신규 추가 (2026-06-23) ──
+    "헬시 내추럴 — 건강하고 보통인 체형": "healthy natural physique, average realistic proportions, relatable everyday womanly figure, soft natural curves, modest bust and hips, comfortable in her own skin, authentic body positive editorial",
+    "🇯🇵 J팝 글래머 — 슬림+볼륨 일본 성인 글래머": "Japanese glamour model, slim petite waist with surprisingly full bust and round hips, adult idol proportions, petite yet voluptuous Japanese figure, delicate face with lush curves, J-glamour editorial",
+    "🇨🇳 C팝 아이돌 — 중국 아이돌 체형": "Chinese C-pop idol proportions, slim elegant figure, long graceful legs, delicate refined features, subtle feminine curves, porcelain skin editorial, Douyin-era beauty standard physique",
+    "🕌 아라비안 글래머 — 중동 볼륨 미인": "Arabian glamour beauty, full curvaceous hourglass figure, warm olive skin, Middle Eastern voluptuous proportions, lush round hips, belly dancer sensual curves, exotic editorial presence",
+    "🇲🇽 멕시칸 핫 — 라틴 파이어 볼륨": "Mexican Latina hot glamour, fiery curvaceous figure, dramatic hourglass, round full hips, bronzed warm skin, Telenovela star curves, passionate voluptuous Latin editorial",
+    "🏋️ 파워리프터 글램 — 강인한 근육 여신": "powerlifter goddess, extremely muscular powerful build, thick strong legs, broad powerful back, strong defined shoulders, raw physical power with feminine editorial energy, strength sport glamour",
+    "🩰 짧고 글래머 — 155cm 미만 풍만 미니 글래머": "petite glamour model under 155cm, compact yet dramatically curvaceous figure, full bust and wide hips on tiny frame, miniature hourglass, doll-like proportions with maximum curves",
+    "⚖️ 애슬레틱 커브 — 근육+볼륨 완벽 균형": "athletic curvy model, perfect balance of muscle definition and feminine curves, defined abs with round full hips, toned thick thighs, fit hourglass editorial, the best of both worlds physique",
 
 }
 
