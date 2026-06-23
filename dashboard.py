@@ -583,6 +583,46 @@ PRESET_CATEGORIES = {
         "ice_cave_blue",
         "rainbow_falls_goddess",
     ],
+
+    "💧 웨트 & 글로스": [
+        # 수영장/풀
+        "pool_surface_break", "pool_underwater_up", "pool_edge_dripping",
+        "infinity_pool_wet", "hot_spring_steam", "jacuzzi_bubbles",
+        # 비/폭우
+        "rain_window_inside", "rain_street_soaked", "rain_studio_dramatic",
+        "monsoon_body", "rain_car_window",
+        # 오일/글로스
+        "oil_pour_studio", "oil_drip_back", "honey_drip_body",
+        "chocolate_pour_gloss", "gloss_lips_drip", "chrome_gloss_body",
+        # 땀/열기
+        "sweat_studio_light", "after_workout_glow", "heat_mirage_sweat", "sauna_steam_body",
+        # 결로/물방울
+        "condensation_skin", "ice_melt_drip", "dew_morning_body", "frost_breath_cold",
+        # 기타 웨트
+        "waterfall_direct", "wave_crash_body", "wet_silk_minimal",
+        "bubble_bath_gloss", "milk_bath_petals",
+    ],
+
+    "🌫️ 대기 & 파티클": [
+        # 스모크/연기
+        "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
+        "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
+        # 파우더/더스트
+        "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
+        "flour_dust_studio", "pigment_powder_art",
+        # 페더/페탈
+        "feather_explosion", "black_feather_dark", "petal_storm_indoor",
+        "cherry_blossom_burst", "dried_flower_cascade",
+        # 글리터/파티클
+        "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
+        "neon_particle_club", "bubble_floating_studio",
+        # 불/스파크
+        "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
+        # 자연 파티클
+        "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
+        "firefly_night_field", "seed_pod_floating",
+    ],
+
 }
 
 
