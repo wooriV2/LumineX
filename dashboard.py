@@ -917,6 +917,37 @@ SSS_TIER = {
     "waitomo_glow_body",
     "coral_reef_sheer",
     "black_sea_midnight",
+
+    # 2026-06-24 파워&엣지 SSS 16종
+    "valkyrie_storm",
+    "fencer_noir",
+    "martial_arts",
+    "boxing_glamour",
+    "cage_fighter",
+    "biker_glam",
+    "riot_goddess",
+    "punk_queen",
+    "steel_warrior",
+    "power_suit",
+    "shadow_play",
+    "power_curve",
+    "sculpted_power",
+    "shadow_queen",
+    "bioluminescence",
+    "bioluminescent",
+
+    # 2026-06-24 퍼포먼스&댄스 G1+G2 SSS 11종
+    "flamenco_queen",
+    "tango_passion",
+    "ribbon_dance",
+    "aerial_silk",
+    "kathak_dance",
+    "hula_goddess",
+    "circus_performer",
+    "fire_dancer",
+    "masquerade_ball",
+    "samba_carnival",
+    "jazz_dance_glam",
 }
 
 # SS tier
@@ -1296,6 +1327,37 @@ SS_TIER = {
     "rain_soaked",
     "mist_vanguard",
     "tropical_storm",
+
+    # 2026-06-24 파워&엣지 SSS (SS 포함)
+    "valkyrie_storm",
+    "fencer_noir",
+    "martial_arts",
+    "boxing_glamour",
+    "cage_fighter",
+    "biker_glam",
+    "riot_goddess",
+    "punk_queen",
+    "steel_warrior",
+    "power_suit",
+    "shadow_play",
+    "power_curve",
+    "sculpted_power",
+    "shadow_queen",
+    "bioluminescence",
+    "bioluminescent",
+
+    # 2026-06-24 퍼포먼스&댄스 G1+G2 SSS (SS 포함)
+    "flamenco_queen",
+    "tango_passion",
+    "ribbon_dance",
+    "aerial_silk",
+    "kathak_dance",
+    "hula_goddess",
+    "circus_performer",
+    "fire_dancer",
+    "masquerade_ball",
+    "samba_carnival",
+    "jazz_dance_glam",
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
