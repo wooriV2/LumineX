@@ -948,6 +948,25 @@ SSS_TIER = {
     "masquerade_ball",
     "samba_carnival",
     "jazz_dance_glam",
+    # 2026-06-25 대기&파티클 30종 SSS
+    "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
+    "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
+    "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
+    "flour_dust_studio", "pigment_powder_art",
+    "feather_explosion", "black_feather_dark", "petal_storm_indoor",
+    "cherry_blossom_burst", "dried_flower_cascade",
+    "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
+    "neon_particle_club", "bubble_floating_studio",
+    "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
+    "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
+    "firefly_night_field", "seed_pod_floating",
+    # 2026-06-25 에로틱&페티쉬 G1 SSS 8종
+    "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
+    "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
+    # 2026-06-25 에로틱&페티쉬 G2 SSS 7종
+    "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
+    "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
+
 
     # 2026-06-24 판타지&다크 26종 전원 SSS
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
@@ -1402,6 +1421,26 @@ SS_TIER = {
     "masquerade_ball",
     "samba_carnival",
     "jazz_dance_glam",
+    # 2026-06-25 대기&파티클 30종 (SS 포함)
+    "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
+    "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
+    "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
+    "flour_dust_studio", "pigment_powder_art",
+    "feather_explosion", "black_feather_dark", "petal_storm_indoor",
+    "cherry_blossom_burst", "dried_flower_cascade",
+    "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
+    "neon_particle_club", "bubble_floating_studio",
+    "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
+    "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
+    "firefly_night_field", "seed_pod_floating",
+    # 2026-06-25 에로틱&페티쉬 G1 (SS 포함)
+    "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
+    "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
+    "wet_latex",
+    # 2026-06-25 에로틱&페티쉬 G2 (SS 포함)
+    "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
+    "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
+
 
     # 2026-06-24 판타지&다크 26종 (SS 포함)
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
