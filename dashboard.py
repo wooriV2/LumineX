@@ -603,6 +603,44 @@ PRESET_CATEGORIES = {
         "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
         "firefly_night_field", "seed_pod_floating",
     ],
+    "👑 한국 역사 & 궁중 글래머": [
+        # 🏯 삼국/고대 왕실
+        "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
+        "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
+        "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
+        "dongye_tribal_queen",
+        # 🏰 고려 궁중
+        "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
+        "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
+        "mongol_goryeo_queen", "goryeo_haenyeo_silk",
+        # 👘 조선 왕실/궁중
+        "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
+        "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
+        "joseon_merchant_woman", "damo_warrior", "joseon_night_queen",
+        "joseon_concubine_red", "changdeok_moonlight", "gyeongbokgung_geisha",
+        # 💃 기생/예인
+        "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
+        "gisaeng_haiku_bath", "gisaeng_rain_dance", "gisaeng_black_silk",
+        "wonhyang_legend", "hwang_jini_glam", "gisaeng_fan_dance",
+        "gisaeng_pipa_night", "gisaeng_mirror_boudoir", "pyongyang_gisaeng",
+        # 🦊 신화 & 정령
+        "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
+        "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
+        "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
+        "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
+        # 🌊 민속 & 세시풍속
+        "haenyeo_wet_glam", "dano_festival_glam", "ganggangsullae_night",
+        "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
+        "jeju_shaman_sea", "korean_harvest_goddess",
+        # ⚔️ 여전사 & 무인
+        "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
+        "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
+        "goguryeo_fire_warrior", "joseon_spy_sheer",
+        # 🎭 근대 & 퓨전
+        "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
+        "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
+        "hanbok_wet_editorial", "joseon_boudoir",
+    ],
 
 }
 
@@ -1500,6 +1538,36 @@ SS_TIER = {
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
     "bubble_bath_gloss","milk_bath_petals",
+    # 2026-06-26 한국 역사 & 궁중 글래머 SS (78종 전체)
+    "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
+    "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
+    "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
+    "dongye_tribal_queen",
+    "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
+    "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
+    "mongol_goryeo_queen", "goryeo_haenyeo_silk",
+    "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
+    "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
+    "joseon_merchant_woman", "damo_warrior", "joseon_night_queen",
+    "joseon_concubine_red", "changdeok_moonlight", "gyeongbokgung_geisha",
+    "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
+    "gisaeng_haiku_bath", "gisaeng_rain_dance", "gisaeng_black_silk",
+    "wonhyang_legend", "hwang_jini_glam", "gisaeng_fan_dance",
+    "gisaeng_pipa_night", "gisaeng_mirror_boudoir", "pyongyang_gisaeng",
+    "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
+    "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
+    "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
+    "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
+    "haenyeo_wet_glam", "dano_festival_glam", "ganggangsullae_night",
+    "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
+    "jeju_shaman_sea", "korean_harvest_goddess",
+    "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
+    "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
+    "goguryeo_fire_warrior", "joseon_spy_sheer",
+    "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
+    "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
+    "hanbok_wet_editorial", "joseon_boudoir",
+
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────

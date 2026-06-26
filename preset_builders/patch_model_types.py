@@ -1,95 +1,229 @@
 """
-preset_builders/patch_model_types.py
-======================================
-core/data.py MODEL_TYPES에 신규 체형 추가
-- 한국인 특화 6종
-- 키 특화 2종
-- 체형 변형 3종
-- 문화 특화 3종
-- 판타지 극단 3종
-총 17종 추가
+LumineX core/data.py MODEL_TYPES 패치
+- 수정: 12종 (프롬프트 부정확/중복/불일치)
+- 추가: 8종 (빠진 체형)
 
-실행: python preset_builders/patch_model_types.py
+대상: C:\Dev\LumineX\core\data.py
+방식: str.replace 앵커
 """
 
-from pathlib import Path
+DATA_PATH = r"C:\Dev\LumineX\core\data.py"
 
-DATA_PATH = Path("core/data.py")
+# ══════════════════════════════════════════════════════════
+# 수정 항목 (old → new)
+# ══════════════════════════════════════════════════════════
+FIXES = [
 
-NEW_TYPES = {
-    # ── 한국인 특화 ──
-    "🇰🇷 K팝 아이돌 — 슬림+작은 얼굴+긴 다리": "K-pop idol proportions, extremely slim slender figure, small delicate face, disproportionately long legs, 168-172cm idol physique, flat stomach, narrow shoulders, youthful fresh Korean pop star body",
-    "🇰🇷 K뷰티 순정 — 도자기 피부+가냘픈 체형": "Korean pure beauty, delicate porcelain fragile figure, very slender gentle frame, soft graceful curves, ethereal Korean feminine beauty, waif-like elegant proportions",
-    "🇰🇷 걸그룹 댄서 — 탄탄+슬림 댄서 체형": "Korean girl group dancer physique, slim yet toned muscular figure, defined dancer legs, narrow waist, athletic slim silhouette with feminine grace, performance-ready body",
-    "🇰🇷 울트라 코리안 슬림 — 극도로 가는 한국 체형": "ultra-slim Korean model, extremely thin delicate frame, 45-48kg editorial physique, razor-thin waist, very narrow hips, elongated fragile silhouette, high-fashion Korean editorial",
-    "🇰🇷 한국 배우 글래머 — 성숙한 한국 미인": "Korean actress glamour, sophisticated mature Korean beauty proportions, elegant slim figure with subtle feminine curves, refined graceful silhouette, dramas leading lady presence",
-    "🇰🇷 한국 재벌녀 — 세련된 상류층 체형": "Korean chaebol heiress physique, impeccably slim sophisticated figure, understated elegant curves, old money Korean glamour proportions, refined upper-class presence",
+    # ── 🔴 심각 수정 3종 ──────────────────────────────────
 
-    # ── 키 특화 ──
-    "🪆 미니어처 글래머 — 150cm 이하 초소형": "petite miniature model under 150cm, perfectly proportioned tiny figure, small delicate frame, compact glamour proportions, doll-like perfect miniature beauty",
-    "🦒 수퍼모델 장신 — 185cm+ 극장신": "towering supermodel physique over 185cm, impossibly long legs taking up most of height, tiny head-to-body ratio, extreme elongated runway proportions, giraffe-like editorial height",
+    # 1. 비키니 컴페티션 — round athletic hips 제거, 극lean 강조
+    (
+        '"비키니 컴페티션 — 대회용 극강 근육": "bikini competition model, extremely defined muscles, shredded competition physique, round athletic hips, competition-ready body",',
+        '"비키니 컴페티션 — 대회용 극강 근육": "bikini competition model, stage-ready shredded physique, extremely defined muscles with zero body fat, tight flat glutes, angular lean hips, razor-sharp muscle definition, competition-ready body, tanned oiled skin",',
+    ),
 
-    # ── 체형 변형 ──
-    "🏊 역삼각 — 어깨 넓고 허리 좁은": "inverted triangle physique, broad powerful shoulders dramatically narrowing to slim waist, athletic swimmer's build, strong defined shoulders, narrow hips, superhero body proportions",
-    "📏 바나나 체형 — 직선형 앤드로지너스": "straight androgynous figure, shoulders waist and hips same width, minimal curves, sleek linear silhouette, high fashion androgynous editorial proportions, runway gender-fluid physique",
-    "🍎 애플 체형 — 복부 중심 볼륨": "apple body shape, fuller rounded midsection, soft rounded belly as focal point, slimmer legs relative to torso, natural womanly volume centered at waist, body positive editorial",
+    # 2. BBW 글래머 — layered 제거
+    (
+        '"BBW 글래머 — 풍만한 글래머": "BBW glamour model, extremely curvy fashion silhouette, broad hips, thick thighs, soft layered abdomen, luxurious BBW presence, confident couture",',
+        '"BBW 글래머 — 풍만한 글래머": "BBW glamour model, extremely curvy fashion silhouette, broad wide hips, very thick thighs, soft full rounded abdomen, abundant voluptuous curves, luxurious BBW presence, confident couture editorial",',
+    ),
 
-    # ── 문화 특화 ──
-    "🇯🇵 야마토 나데시코 — 가냘프고 우아한 전통 일본미": "Yamato Nadeshiko Japanese traditional beauty, extremely slender graceful figure, gentle soft curves, refined delicate proportions, classical Japanese feminine elegance, willow-like graceful silhouette",
-    "🇨🇳 중국 고전미인 — 버드나무 허리": "classical Chinese beauty willow waist, impossibly slender waist like willow branch, delicate ethereal figure, Tang dynasty ideal proportions, ancient Chinese court beauty silhouette",
-    "🇮🇩 발리니즈 댄서 — 가냘프고 유연한": "Balinese dancer physique, slender flexible figure, graceful elongated limbs, dancer's natural posture, Southeast Asian traditional beauty proportions, lithe artistic body",
+    # 3. 슈퍼 BBW — body folds 제거
+    (
+        '"슈퍼 BBW — 극풍만 글래머": "super plus-size runway model, massive voluptuous proportions, very heavy curvy physique, broad hips, thick thighs, soft realistic body folds, abundant body volume, maximalist curvy fashion styling",',
+        '"슈퍼 BBW — 극풍만 글래머": "super plus-size runway model, massive voluptuous proportions, very heavy curvy physique, extremely broad wide hips, very thick full thighs, soft rounded abundant belly, maximalist curvy fashion styling, bold confident editorial presence",',
+    ),
 
-    # ── 판타지 극단 ──
-    "🧝 엘프 체형 — 극세장+긴 손발": "elven fantasy physique, impossibly elongated slender frame, extraordinarily long fingers and limbs, pointed ear aesthetic, ethereal otherworldly proportions, fantasy creature elegance, supernatural tall slender",
-    "👼 치비 글래머 — 과장된 2등신 판타지": "chibi fantasy proportions, exaggerated large head to tiny body ratio, impossibly large eyes, miniature cute body, anime-inspired 2-head-height fantasy figure, adorable oversized head glamour",
-    "🌌 거인 여신 — 현실 불가능한 신화적 스케일": "mythological giant goddess scale, impossibly towering divine proportions, colossal feminine figure, deity-scale body, universe-spanning goddess physique, transcendent scale beyond human",
-}
+    # ── 🟡 차별화 수정 5종 ────────────────────────────────
 
-print("=" * 55)
-print("patch_model_types.py 시작")
-print(f"추가할 체형: {len(NEW_TYPES)}종")
-print("=" * 55)
+    # 4. 울트라 슬림 — 극세장+쇄골 강조
+    (
+        '"울트라 슬림 — 하이패션 극세장": "ultra-slim high fashion model, very slender editorial figure, elongated silhouette, fashion week physique",',
+        '"울트라 슬림 — 하이패션 극세장": "ultra-slim high fashion model, razor-thin elongated silhouette, visible sharp collarbones, hollow cheeks, waif-like editorial physique, fashion week extreme slenderness, angular delicate frame",',
+    ),
 
-content = DATA_PATH.read_text(encoding="utf-8")
+    # 5. 슈퍼 슬림 — 마른+미니멀 커브 강조
+    (
+        '"슈퍼 슬림 — 마른 런웨이": "super slim runway model, thin elegant frame, elongated slender body, editorial fashion model",',
+        '"슈퍼 슬림 — 마른 런웨이": "super slim runway model, very thin lean frame, minimal curves, flat chest, boyish slim hips, elongated slender body, androgynous editorial fashion model, breakable delicate silhouette",',
+    ),
 
-# MODEL_TYPES 딕셔너리 닫는 } 찾기
-# "슬라브 봄셸" 마지막 항목 뒤에 추가
-ANCHOR = '    "🌹 슬라브 봄셸 — 1950s 조각 핀업 8자": "Slavic pin-up bombshell, sculpted hourglass, impossibly cinched corset waist, full high bust, wide rounded hips, retro bombshell proportions, statuesque porcelain skin",'
+    # 6. 슬림 런웨이 — 키+다리 길이 강조
+    (
+        '"슬림 런웨이 — 초장신 늘씬": "tall slim runway model, long legs, slender waist, narrow hips, elongated graceful silhouette",',
+        '"슬림 런웨이 — 초장신 늘씬": "tall slim runway model over 180cm, disproportionately long legs dominating silhouette, slender waist, narrow hips, extremely elongated graceful figure, towering editorial presence",',
+    ),
 
-if ANCHOR not in content:
-    print("❌ 앵커 텍스트 찾기 실패 — 수동 확인 필요")
-    exit(1)
+    # 7. 핫 글래머 — 수치감 추가
+    (
+        '"핫 글래머 — 잘록한 허리+볼륨": "hot glamour model, narrow cinched waist, wide round hips, dramatic hourglass figure",',
+        '"핫 글래머 — 잘록한 허리+볼륨": "hot glamour model, dramatically cinched narrow waist, va-va-voom wide round hips, 0.65 waist-to-hip ratio, full bust, smoldering hourglass figure, red carpet curves",',
+    ),
 
-# 새 항목 생성
-new_entries = "\n"
-for key, value in NEW_TYPES.items():
-    new_entries += f'    "{key}": "{value}",\n'
+    # 8. 슈퍼 글래머 — 수치감+핀업 강조
+    (
+        '"슈퍼 글래머 — 극강 모래시계": "super glamour model, tiny waist, very wide round hips, maximum hourglass silhouette, pinup glamour",',
+        '"슈퍼 글래머 — 극강 모래시계": "super glamour model, impossibly tiny corseted waist, 0.55 waist-to-hip ratio, extremely wide round heavy hips, maximum pinup hourglass silhouette, lush full bust, Bettie Page-level curves",',
+    ),
 
-new_content = content.replace(
-    ANCHOR,
-    ANCHOR + new_entries
-)
+    # ── 🟠 이름-프롬프트 불일치 수정 4종 ─────────────────
 
-if new_content == content:
-    print("❌ 교체 실패")
-    exit(1)
+    # 9. 스포츠 글램 — sports 키워드 추가
+    (
+        '"스포츠 글램 — 탄탄+볼륨": "sports glamour model, toned athletic body with curves, defined abs, round hips, fit and voluptuous",',
+        '"스포츠 글램 — 탄탄+볼륨": "sports glamour model, athletic toned physique with feminine curves, defined six-pack abs, round lifted hips, fit voluptuous energy, gym-to-runway body, powerful yet sensual athletic figure",',
+    ),
 
-DATA_PATH.write_text(new_content, encoding="utf-8")
-print("✅ MODEL_TYPES 추가 완료")
+    # 10. 발레리나 — 발레 특유 근육 추가
+    (
+        '"발레리나 — 길고 가늘고 우아한": "ballerina physique, slender elongated figure, narrow hips, graceful elegant posture, dancer\'s perfect poise",',
+        '"발레리나 — 길고 가늘고 우아한": "ballerina physique, slender elongated figure, defined calf muscles, strong lean back, narrow hips, graceful elegant posture, turned-out feet, dancer\'s poised carriage, visible shoulder blade definition",',
+    ),
 
-# 검증
-print("\n[ 검증 ]")
-verify = DATA_PATH.read_text(encoding="utf-8")
-for key in NEW_TYPES:
-    status = "✅" if key in verify else "❌"
-    print(f"  {status} {key}")
+    # 11. VS 앤젤 — 수치+구체적 표현
+    (
+        '"VS 앤젤 — 완벽한 VS 글래머": "Victoria\'s Secret Angel body, toned flat abs, long legs, curvaceous yet athletic silhouette, runway perfect",',
+        '"VS 앤젤 — 완벽한 VS 글래머": "Victoria\'s Secret Angel body, toned flat abs, model-perfect 34-24-35 proportions, legs over 90cm long, subtle feminine hourglass, runway-ready athletic glamour, glowing healthy skin, wings-ready editorial presence",',
+    ),
 
-# 총 개수
-import re
-matches = re.findall(r'"[^"]+": "([^"]+)"', verify[verify.find("MODEL_TYPES"):verify.find("BODY_WEIGHT")])
-print(f"\n  MODEL_TYPES 총 항목 수: {len(matches)}종")
+    # 12. 블랙 글래머 — 힙+실루엣 강화
+    (
+        '"블랙 글래머 — 극강 모래시계 흑인 체형": "Black beauty hourglass, impossibly dramatic waist-to-hip ratio, extremely wide round hips, ultra-narrow waist, very thick thighs, full heavy round buttocks, abundant voluptuous curves, African goddess proportions",',
+        '"블랙 글래머 — 극강 모래시계 흑인 체형": "Black beauty hourglass goddess, impossibly dramatic waist-to-hip ratio, extremely wide round hips, ultra-narrow waist, very thick powerful thighs, powerfully lifted full round buttocks projecting dramatically, abundant voluptuous curves, African goddess proportions, deep luminous rich skin, statuesque commanding presence",',
+    ),
 
-print("\n완료! 커밋:")
-print('  git add -A')
-print('  git commit -m "feat: MODEL_TYPES 신규 체형 17종 추가 (한국/키/변형/문화/판타지)"')
-print('  git push')
+    # ── 🟢 소폭 개선 3종 ──────────────────────────────────
+
+    # 13. K팝 아이돌 — 비율 디테일 추가
+    (
+        '"🇰🇷 K팝 아이돌 — 슬림+작은 얼굴+긴 다리": "K-pop idol proportions, extremely slim slender figure, small delicate face, disproportionately long legs, 168-172cm idol physique, flat stomach, narrow shoulders, youthful fresh Korean pop star body",',
+        '"🇰🇷 K팝 아이돌 — 슬림+작은 얼굴+긴 다리": "K-pop idol proportions, extremely slim slender figure, small delicate face with tiny head-to-body ratio, disproportionately long legs, 168-172cm idol physique, flat stomach, narrow shoulders, delicate wrists and ankles, youthful fresh Korean pop star body, idol-perfect refined proportions",',
+    ),
+
+    # 14. 플러스 글램 — 자신감 표현 추가
+    (
+        '"플러스 글램 — 플러스사이즈 글래머": "plus-size glamour model, soft belly, wide full hips, thick thighs, confident couture presence",',
+        '"플러스 글램 — 플러스사이즈 글래머": "plus-size glamour model, soft rounded belly, wide full hips, thick thighs, confidently plus-size bold couture presence, unapologetically curvaceous editorial energy, full-figured runway power",',
+    ),
+
+    # 15. 소프트 글램 — 글래머 요소 강화 (내추럴 커브와 차별화)
+    (
+        '"소프트 글램 — 부드러운 여성미": "soft glamour model, feminine gentle curves, round soft hips, elegant graceful figure, naturally beautiful",',
+        '"소프트 글램 — 부드러운 여성미": "soft glamour model, polished feminine curves, subtle waist definition, round soft hips, gentle editorial elegance, naturally beautiful with glamour refinement, graceful sophisticated figure",',
+    ),
+]
+
+# ══════════════════════════════════════════════════════════
+# 추가 항목 — MODEL_TYPES 마지막 항목 뒤에 삽입
+# ══════════════════════════════════════════════════════════
+
+# 앵커: MODEL_TYPES 마지막 항목
+ADD_ANCHOR = '"🌌 거인 여신 — 현실 불가능한 신화적 스케일": "mythological giant goddess scale, impossibly towering divine proportions, colossal feminine figure, deity-scale body, universe-spanning goddess physique, transcendent scale beyond human",'
+
+NEW_ENTRIES = '''
+    # ── 신규 추가 (2026-06-23) ──
+    "헬시 내추럴 — 건강하고 보통인 체형": "healthy natural physique, average realistic proportions, relatable everyday womanly figure, soft natural curves, modest bust and hips, comfortable in her own skin, authentic body positive editorial",
+    "🇯🇵 J팝 글래머 — 슬림+볼륨 일본 성인 글래머": "Japanese glamour model, slim petite waist with surprisingly full bust and round hips, adult idol proportions, petite yet voluptuous Japanese figure, delicate face with lush curves, J-glamour editorial",
+    "🇨🇳 C팝 아이돌 — 중국 아이돌 체형": "Chinese C-pop idol proportions, slim elegant figure, long graceful legs, delicate refined features, subtle feminine curves, porcelain skin editorial, Douyin-era beauty standard physique",
+    "🕌 아라비안 글래머 — 중동 볼륨 미인": "Arabian glamour beauty, full curvaceous hourglass figure, warm olive skin, Middle Eastern voluptuous proportions, lush round hips, belly dancer sensual curves, exotic editorial presence",
+    "🇲🇽 멕시칸 핫 — 라틴 파이어 볼륨": "Mexican Latina hot glamour, fiery curvaceous figure, dramatic hourglass, round full hips, bronzed warm skin, Telenovela star curves, passionate voluptuous Latin editorial",
+    "🏋️ 파워리프터 글램 — 강인한 근육 여신": "powerlifter goddess, extremely muscular powerful build, thick strong legs, broad powerful back, strong defined shoulders, raw physical power with feminine editorial energy, strength sport glamour",
+    "🩰 짧고 글래머 — 155cm 미만 풍만 미니 글래머": "petite glamour model under 155cm, compact yet dramatically curvaceous figure, full bust and wide hips on tiny frame, miniature hourglass, doll-like proportions with maximum curves",
+    "⚖️ 애슬레틱 커브 — 근육+볼륨 완벽 균형": "athletic curvy model, perfect balance of muscle definition and feminine curves, defined abs with round full hips, toned thick thighs, fit hourglass editorial, the best of both worlds physique",'''
+
+ADD_REPLACEMENT = ADD_ANCHOR + NEW_ENTRIES
+
+
+def apply_patch(path: str) -> None:
+    with open(path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    original = content
+    fix_count = 0
+    skip_count = 0
+
+    # ── 수정 적용 ──
+    print("[수정 항목]")
+    for old, new in FIXES:
+        if old in content:
+            content = content.replace(old, new, 1)
+            label = old[:50].strip()
+            print(f"  [OK] {label}...")
+            fix_count += 1
+        else:
+            label = old[:50].strip()
+            print(f"  [SKIP] {label}...")
+            skip_count += 1
+
+    # ── 추가 적용 ──
+    print("\n[추가 항목]")
+    if "헬시 내추럴" in content:
+        print("  [SKIP] 이미 추가됨")
+    elif ADD_ANCHOR in content:
+        content = content.replace(ADD_ANCHOR, ADD_REPLACEMENT, 1)
+        print(f"  [OK] 8종 추가 완료")
+    else:
+        print("  [ERROR] 추가 앵커를 찾을 수 없습니다.")
+        print(f"  앵커: {ADD_ANCHOR[:60]}...")
+
+    # ── 저장 ──
+    if content != original:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"\n[DONE] 저장 완료 → {path}")
+        print(f"  수정: {fix_count}종 / 스킵: {skip_count}종")
+    else:
+        print("\n[INFO] 변경사항 없음")
+
+
+def verify_patch(path: str) -> None:
+    with open(path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    print("\n[VERIFY] 수정 확인:")
+    checks = [
+        ("razor-thin elongated silhouette", "울트라 슬림"),
+        ("0.65 waist-to-hip ratio", "핫 글래머"),
+        ("0.55 waist-to-hip ratio", "슈퍼 글래머"),
+        ("stage-ready shredded physique", "비키니 컴페티션"),
+        ("soft full rounded abdomen", "BBW 글래머"),
+        ("maximalist curvy fashion styling, bold confident", "슈퍼 BBW"),
+        ("gym-to-runway body", "스포츠 글램"),
+        ("defined calf muscles", "발레리나"),
+        ("34-24-35 proportions", "VS 앤젤"),
+        ("powerfully lifted full round buttocks", "블랙 글래머"),
+        ("tiny head-to-body ratio", "K팝 아이돌"),
+        ("unapologetically curvaceous", "플러스 글램"),
+        ("헬시 내추럴", "신규: 헬시 내추럴"),
+        ("J팝 글래머", "신규: J팝 글래머"),
+        ("C팝 아이돌", "신규: C팝 아이돌"),
+        ("아라비안 글래머", "신규: 아라비안 글래머"),
+        ("멕시칸 핫", "신규: 멕시칸 핫"),
+        ("파워리프터 글램", "신규: 파워리프터"),
+        ("짧고 글래머", "신규: 짧고 글래머"),
+        ("애슬레틱 커브", "신규: 애슬레틱 커브"),
+    ]
+
+    all_ok = True
+    for pattern, label in checks:
+        ok = pattern in content
+        mark = "✅" if ok else "❌"
+        if not ok:
+            all_ok = False
+        print(f"  {mark} {label}")
+
+    print("\n✅ 전체 검증 통과!" if all_ok else "\n❌ 일부 누락 — 수동 확인 필요")
+
+
+if __name__ == "__main__":
+    print("=" * 60)
+    print("MODEL_TYPES 수정 + 추가 패치")
+    print(f"대상: {DATA_PATH}")
+    print("=" * 60)
+    apply_patch(DATA_PATH)
+    verify_patch(DATA_PATH)
+    print("\n다음 단계:")
+    print("  streamlit run dashboard.py 로 체형 목록 확인")
+    print("  git add core/data.py")
+    print('  git commit -m "feat: MODEL_TYPES 수정 15종 + 신규 8종 추가"')
+    print("  git push")
