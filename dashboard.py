@@ -967,6 +967,34 @@ SSS_TIER = {
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
     "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
 
+    # 2026-06-26 에로틱&페티쉬 G3~G12 SSS 51종
+    # G3 하네스/본디지
+    "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
+    "suspension_art", "tape_bondage", "metal_bondage",
+    # G4 메쉬/시스루
+    "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
+    "sheer_catsuit", "catsuit_zipper", "pvc_transparent_full",
+    # G5 도미나트릭스
+    "dominatrix_glam", "dominatrix_full_armor", "dominatrix_red",
+    "goddess_throne", "pole_art",
+    # G6 퍼포먼스/쇼걸
+    "burlesque", "showgirl", "cabaret_star", "candy_rave",
+    "lap_dance_glam", "lap_dance_extreme", "striptease_art",
+    # G7 폴/댄스/배스
+    "pole_dance_power", "pole_dance_extreme", "midnight_bath", "belly_dance_glam",
+    # G8 판타지/다크
+    "dark_succubus", "vampire_seduction", "witch_sensual",
+    "dark_fairy_erotic", "shadow_seductress", "succubus_full",
+    # G9 다크앤젤/SF
+    "dark_angel_fallen", "alien_queen_body", "fire_goddess",
+    # G10 직업 판타지
+    "secretary_after_hours", "nurse_sensual", "maid_sensual",
+    "teacher_after_class", "doctor_sensual", "police_dominatrix", "stewardess_dark",
+    # G11 바디/미니멀
+    "oil_goddess", "micro_thong_only", "fetish_boots_only",
+    # G12 코르셋
+    "corset_stockings",
+
 
     # 2026-06-24 판타지&다크 26종 전원 SSS
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
@@ -1440,6 +1468,24 @@ SS_TIER = {
     # 2026-06-25 에로틱&페티쉬 G2 (SS 포함)
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
     "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
+
+    # 2026-06-26 에로틱&페티쉬 G3~G12 SS (SSS 포함 51종)
+    "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
+    "suspension_art", "tape_bondage", "metal_bondage",
+    "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
+    "sheer_catsuit", "catsuit_zipper", "pvc_transparent_full",
+    "dominatrix_glam", "dominatrix_full_armor", "dominatrix_red",
+    "goddess_throne", "pole_art",
+    "burlesque", "showgirl", "cabaret_star", "candy_rave",
+    "lap_dance_glam", "lap_dance_extreme", "striptease_art",
+    "pole_dance_power", "pole_dance_extreme", "midnight_bath", "belly_dance_glam",
+    "dark_succubus", "vampire_seduction", "witch_sensual",
+    "dark_fairy_erotic", "shadow_seductress", "succubus_full",
+    "dark_angel_fallen", "alien_queen_body", "fire_goddess",
+    "secretary_after_hours", "nurse_sensual", "maid_sensual",
+    "teacher_after_class", "doctor_sensual", "police_dominatrix", "stewardess_dark",
+    "oil_goddess", "micro_thong_only", "fetish_boots_only",
+    "corset_stockings",
 
 
     # 2026-06-24 판타지&다크 26종 (SS 포함)
