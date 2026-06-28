@@ -679,6 +679,67 @@ PRESET_CATEGORIES = {
         "duo_penthouse_power",
         "duo_ice_bath_contrast",
     ],
+    "🪞 거울 & 반사 글래머": [
+        # G1 클래식미러
+        "infinity_mirror_goddess",
+        "hall_of_mirrors_glam",
+        "obsidian_mirror_ritual",
+        "venetian_mirror_boudoir",
+        "cheval_mirror_reveal",
+        "broken_mirror_multiplied",
+        # G2 수면반사
+        "mercury_lake_reflection",
+        "salt_flat_sky_merge",
+        "rain_puddle_city_invert",
+        "flooded_temple_mirror",
+        "infinity_pool_edge_reflect",
+        "morning_dew_skin_reflection",
+        # G3 유리&프리즘
+        "glass_box_all_angles",
+        "prism_light_body_split",
+        "crystal_cave_skin_facets",
+        "two_way_mirror_watcher",
+        "window_rain_double",
+        "soap_bubble_dome",
+        # G4 크롬&메탈
+        "chrome_sphere_world",
+        "polished_obsidian_floor",
+        "supercar_chrome_reflect",
+        "liquid_metal_pool",
+        "foil_room_crush",
+        "mirrored_skyscraper_facade",
+    ],
+
+    "🧬 SF & 바이오펑크": [
+        # G1 크라이오&실험실
+        "cryo_emergence_wet",
+        "specimen_amber_suspended",
+        "clean_room_latex_protocol",
+        "gene_sequencer_data_skin",
+        "quarantine_protocol_breach",
+        "petri_dish_giant_macro",
+        # G2 심해&유기체
+        "abyssal_pressure_glam",
+        "mycelium_web_consumed",
+        "coral_organism_absorption",
+        "carnivorous_plant_trap",
+        "symbiote_second_skin",
+        "jellyfish_bloom_float",
+        # G3 트랜스휴먼
+        "cyborg_partial_reveal",
+        "neural_lace_crown",
+        "exoskeleton_stripped",
+        "prosthetic_art",
+        "spine_tech_implant",
+        "synthetic_skin_tear",
+        # G4 바이러스&뮤테이션
+        "mutation_bloom",
+        "toxic_spore_cloud",
+        "infection_glam",
+        "virus_pattern_body",
+        "metamorphosis_editorial",
+        "alien_host_glam",
+    ],
 
 }
 
