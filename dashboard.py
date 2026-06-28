@@ -1007,6 +1007,21 @@ SSS_TIER = {
     # G5 신화&정령 전반부 — SSS 6종
     "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
     "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
+    # G5 신화&정령 후반부 — SSS 6종
+    "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
+    "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
+    # G6 민속&세시풍속 — SSS 7종 (haenyeo_wet_glam은 SS 전용)
+    "dano_festival_glam", "ganggangsullae_night",
+    "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
+    "jeju_shaman_sea", "korean_harvest_goddess",
+    # G7 여전사&무인 — SSS 8종
+    "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
+    "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
+    "goguryeo_fire_warrior", "joseon_spy_sheer",
+    # G8 근대&퓨전 — SSS 8종
+    "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
+    "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
+    "hanbok_wet_editorial", "joseon_boudoir",
 
     # 2026-06-26 에로틱&페티쉬 G3~G12 SSS 51종
     # G3 하네스/본디지
