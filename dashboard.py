@@ -642,6 +642,45 @@ PRESET_CATEGORIES = {
         "hanbok_wet_editorial", "joseon_boudoir",
     ],
 
+    "👯 듀오 글래머": [
+        # G1 웨트 & 풀
+        "duo_infinity_pool_contrast",
+        "duo_rain_neon_soaked",
+        "duo_pool_bodypaint_micro",
+        "duo_wet_glass_divide",
+        # G2 바디페인트 대결
+        "duo_bodypaint_vs_latex",
+        "duo_ocean_bodypaint",
+        "duo_golden_desert_bodypaint",
+        "duo_aurora_bodypaint",
+        "duo_cyberpunk_bodypaint",
+        "duo_jungle_tribal_bodypaint",
+        # G3 라텍스 & 소재 대비
+        "duo_latex_color_block",
+        "duo_latex_storm_opposites",
+        "duo_dark_latex_power",
+        "duo_flamenco_latex_fusion",
+        # G4 오일 & 그림자
+        "duo_oiled_shadows",
+        "duo_smoke_noir",
+        # G5 럭셔리 씬
+        "duo_versailles_latex_gold",
+        "duo_monaco_yacht",
+        "duo_champagne_gala",
+        "duo_villa_italy",
+        "duo_casino_power",
+        # G6 엘리멘탈 대비
+        "duo_fire_and_ice",
+        "duo_angel_devil",
+        "duo_chrome_future",
+        # G7 실루엣 & 미니멀
+        "duo_sunset_silhouette",
+        "duo_desert_minimal",
+        "duo_kpop_stage",
+        "duo_penthouse_power",
+        "duo_ice_bath_contrast",
+    ],
+
 }
 
 
