@@ -255,7 +255,7 @@ PRESET_CATEGORIES = {
         "storm_couture","heat_shimmer","water_reflection","waterfall_goddess","rain_soaked",
         "mist_goddess","mist_vanguard","winter_forest","desert_mirage","desert_oracle",
         "desert_sand_glam","cliff_edge","arctic_minimal","dawn_awakening","aurora_drape",
-        "aurora_spirit","lightning_body","solar_flare","tropical_storm","santorini_lightning",
+        "aurora_spirit","lightning_body","solar_flare","tropical_storm",
         "smoke_veil","liquid_gold_pour","liquid_mirror","prism_light","shattered_glass","zero_gravity",
         # v11
         "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
@@ -446,7 +446,40 @@ PRESET_CATEGORIES = {
         'anime_noir_silhouette',
     ],
 
-    "🌌 불가능 & 초현실": [
+    "🌑 실루엣 & 섀도우": [
+        "silhouette_spotlight_smoke",
+        "silhouette_spotlight_latex",
+        "silhouette_spotlight_heels",
+        "silhouette_spotlight_hair",
+        "silhouette_spotlight_dance",
+        "silhouette_spotlight_chair",
+        "silhouette_spotlight_back",
+        "silhouette_spotlight_pole",
+        "silhouette_window_city",
+        "silhouette_window_rain",
+        "silhouette_window_sheer",
+        "silhouette_doorway_light",
+        "silhouette_window_sunset",
+        "silhouette_window_neon",
+        "silhouette_neon_pink",
+        "silhouette_neon_blue",
+        "silhouette_neon_red",
+        "silhouette_neon_purple",
+        "silhouette_neon_multicolor",
+        "silhouette_sunset_beach",
+        "silhouette_sunset_cliff",
+        "silhouette_moonlight",
+        "silhouette_aurora",
+        "silhouette_pool_underwater",
+        "silhouette_pool_edge",
+        "silhouette_bath_candle",
+        "silhouette_rain_wet",
+        "silhouette_fire_dark",
+        "silhouette_candle_boudoir",
+        "silhouette_smoke_studio",
+    ],
+
+        "🌌 불가능 & 초현실": [
         "storm_eye_editorial",
         "living_fabric",
         "macro_goddess",
@@ -487,7 +520,7 @@ PRESET_CATEGORIES = {
         "angkor_thom_faces","teotihuacan_pyramid","gobekli_tepe","palmyra_colonnade",
     ],
 
-    "🌋 익스트림 글래머": [
+    "🌋 엘리멘탈 갓데스": [
         "uyuni_wet_silk",
         "dead_sea_goddess",
         "iceland_hot_spring",
@@ -495,6 +528,8 @@ PRESET_CATEGORIES = {
         "niagara_wet_editorial",
         "monsoon_goddess",
         "black_sea_midnight",
+    # 2026-06-21 자연&원소 G1~G10 전체 tier 패치
+
         "amazon_river_goddess",
         "lava_field_latex",
         "sahara_mirage",
@@ -529,12 +564,269 @@ PRESET_CATEGORIES = {
         "ice_cave_blue",
         "rainbow_falls_goddess",
     ],
+
+    "💧 웨트 & 글로스": [
+        # 수영장/풀
+        "pool_surface_break", "pool_underwater_up", "pool_edge_dripping",
+        "infinity_pool_wet", "hot_spring_steam", "jacuzzi_bubbles",
+        # 비/폭우
+        "rain_window_inside", "rain_street_soaked", "rain_studio_dramatic",
+        "monsoon_body", "rain_car_window",
+        # 오일/글로스
+        "oil_pour_studio", "oil_drip_back", "honey_drip_body",
+        "chocolate_pour_gloss", "gloss_lips_drip", "chrome_gloss_body",
+        # 땀/열기
+        "sweat_studio_light", "after_workout_glow", "heat_mirage_sweat", "sauna_steam_body",
+        # 결로/물방울
+        "condensation_skin", "ice_melt_drip", "dew_morning_body", "frost_breath_cold",
+        # 기타 웨트
+        "waterfall_direct", "wave_crash_body", "wet_silk_minimal",
+        "bubble_bath_gloss", "milk_bath_petals",
+    ],
+
+    "🌫️ 대기 & 파티클": [
+        # 스모크/연기
+        "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
+        "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
+        # 파우더/더스트
+        "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
+        "flour_dust_studio", "pigment_powder_art",
+        # 페더/페탈
+        "feather_explosion", "black_feather_dark", "petal_storm_indoor",
+        "cherry_blossom_burst", "dried_flower_cascade",
+        # 글리터/파티클
+        "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
+        "neon_particle_club", "bubble_floating_studio",
+        # 불/스파크
+        "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
+        # 자연 파티클
+        "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
+        "firefly_night_field", "seed_pod_floating",
+    ],
+    "👑 한국 역사 & 궁중 글래머": [
+        # 🏯 삼국/고대 왕실
+        "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
+        "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
+        "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
+        "dongye_tribal_queen",
+        # 🏰 고려 궁중
+        "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
+        "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
+        "mongol_goryeo_queen", "goryeo_haenyeo_silk",
+        # 👘 조선 왕실/궁중
+        "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
+        "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
+        "joseon_merchant_woman", "damo_warrior", "joseon_night_queen",
+        "joseon_concubine_red", "changdeok_moonlight", "gyeongbokgung_geisha",
+        # 💃 기생/예인
+        "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
+        "gisaeng_haiku_bath", "gisaeng_rain_dance", "gisaeng_black_silk",
+        "wonhyang_legend", "hwang_jini_glam", "gisaeng_fan_dance",
+        "gisaeng_pipa_night", "gisaeng_mirror_boudoir", "pyongyang_gisaeng",
+        # 🦊 신화 & 정령
+        "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
+        "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
+        "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
+        "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
+        # 🌊 민속 & 세시풍속
+        "haenyeo_wet_glam", "dano_festival_glam", "ganggangsullae_night",
+        "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
+        "jeju_shaman_sea", "korean_harvest_goddess",
+        # ⚔️ 여전사 & 무인
+        "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
+        "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
+        "goguryeo_fire_warrior", "joseon_spy_sheer",
+        # 🎭 근대 & 퓨전
+        "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
+        "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
+        "hanbok_wet_editorial", "joseon_boudoir",
+    ],
+
+    "👯 듀오 글래머": [
+        # G1 웨트 & 풀
+        "duo_infinity_pool_contrast",
+        "duo_rain_neon_soaked",
+        "duo_pool_bodypaint_micro",
+        "duo_wet_glass_divide",
+        # G2 바디페인트 대결
+        "duo_bodypaint_vs_latex",
+        "duo_ocean_bodypaint",
+        "duo_golden_desert_bodypaint",
+        "duo_aurora_bodypaint",
+        "duo_cyberpunk_bodypaint",
+        "duo_jungle_tribal_bodypaint",
+        # G3 라텍스 & 소재 대비
+        "duo_latex_color_block",
+        "duo_latex_storm_opposites",
+        "duo_dark_latex_power",
+        "duo_flamenco_latex_fusion",
+        # G4 오일 & 그림자
+        "duo_smoke_noir",
+        # G5 럭셔리 씬
+        "duo_versailles_latex_gold",
+        "duo_monaco_yacht",
+        "duo_champagne_gala",
+        "duo_villa_italy",
+        "duo_casino_power",
+        # G6 엘리멘탈 대비
+        "duo_fire_and_ice",
+        "duo_angel_devil",
+        "duo_chrome_future",
+        # G7 실루엣 & 미니멀
+        "duo_sunset_silhouette",
+        "duo_desert_minimal",
+        "duo_kpop_stage",
+        "duo_penthouse_power",
+        "duo_ice_bath_contrast",
+    ],
+    "🪞 거울 & 반사 글래머": [
+        # G1 클래식미러
+        "infinity_mirror_goddess",
+        "hall_of_mirrors_glam",
+        "obsidian_mirror_ritual",
+        "venetian_mirror_boudoir",
+        "cheval_mirror_reveal",
+        "broken_mirror_multiplied",
+        # G2 수면반사
+        "mercury_lake_reflection",
+        "salt_flat_sky_merge",
+        "rain_puddle_city_invert",
+        "flooded_temple_mirror",
+        "infinity_pool_edge_reflect",
+        "morning_dew_skin_reflection",
+        # G3 유리&프리즘
+        "glass_box_all_angles",
+        "prism_light_body_split",
+        "crystal_cave_skin_facets",
+        "two_way_mirror_watcher",
+        "window_rain_double",
+        "soap_bubble_dome",
+        # G4 크롬&메탈
+        "chrome_sphere_world",
+        "polished_obsidian_floor",
+        "supercar_chrome_reflect",
+        "liquid_metal_pool",
+        "foil_room_crush",
+        "mirrored_skyscraper_facade",
+    ],
+
+    "🧬 SF & 바이오펑크": [
+        # G1 크라이오&실험실
+        "cryo_emergence_wet",
+        "specimen_amber_suspended",
+        "clean_room_latex_protocol",
+        "gene_sequencer_data_skin",
+        "quarantine_protocol_breach",
+        "petri_dish_giant_macro",
+        # G2 심해&유기체
+        "abyssal_pressure_glam",
+        "mycelium_web_consumed",
+        "coral_organism_absorption",
+        "carnivorous_plant_trap",
+        "symbiote_second_skin",
+        "jellyfish_bloom_float",
+        # G3 트랜스휴먼
+        "cyborg_partial_reveal",
+        "neural_lace_crown",
+        "exoskeleton_stripped",
+        "prosthetic_art",
+        "spine_tech_implant",
+        "synthetic_skin_tear",
+        # G4 바이러스&뮤테이션
+        "mutation_bloom",
+        "toxic_spore_cloud",
+        "infection_glam",
+        "virus_pattern_body",
+        "metamorphosis_editorial",
+        "alien_host_glam",
+    ],
+
 }
 
 
 # SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
 # 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
+    # 듀오 글래머 SS (SSS 23종 + SS전용 5종)
+    "duo_infinity_pool_contrast",
+    "duo_pool_bodypaint_micro",
+    "duo_wet_glass_divide",
+    "duo_bodypaint_vs_latex",
+    "duo_ocean_bodypaint",
+    "duo_golden_desert_bodypaint",
+    "duo_aurora_bodypaint",
+    "duo_cyberpunk_bodypaint",
+    "duo_latex_color_block",
+    "duo_latex_storm_opposites",
+    "duo_dark_latex_power",
+    "duo_flamenco_latex_fusion",
+    "duo_smoke_noir",
+    "duo_versailles_latex_gold",
+    "duo_champagne_gala",
+    "duo_casino_power",
+    "duo_fire_and_ice",
+    "duo_angel_devil",
+    "duo_chrome_future",
+    "duo_sunset_silhouette",
+    "duo_desert_minimal",
+    "duo_kpop_stage",
+    "duo_penthouse_power",
+    "duo_rain_neon_soaked",
+    "duo_jungle_tribal_bodypaint",
+    "duo_monaco_yacht",
+    "duo_villa_italy",
+    "duo_ice_bath_contrast",
+    # 듀오 글래머 SSS (23종)
+    "duo_infinity_pool_contrast",
+    "duo_pool_bodypaint_micro",
+    "duo_wet_glass_divide",
+    "duo_bodypaint_vs_latex",
+    "duo_ocean_bodypaint",
+    "duo_golden_desert_bodypaint",
+    "duo_aurora_bodypaint",
+    "duo_cyberpunk_bodypaint",
+    "duo_latex_color_block",
+    "duo_latex_storm_opposites",
+    "duo_dark_latex_power",
+    "duo_flamenco_latex_fusion",
+    "duo_smoke_noir",
+    "duo_versailles_latex_gold",
+    "duo_champagne_gala",
+    "duo_casino_power",
+    "duo_fire_and_ice",
+    "duo_angel_devil",
+    "duo_chrome_future",
+    "duo_sunset_silhouette",
+    "duo_desert_minimal",
+    "duo_kpop_stage",
+    "duo_penthouse_power",
+    # 2026-06-20 직업&라이프스타일 SS전용 10종 + SSS 24종 포함
+    # SS전용
+    "cruise_hostess", "yacht_club",
+    "nurse_glamour", "sommelier", "wine_tasting", "barista_chic",
+    "golf_caddie", "fitness_power", "scuba_instructor", "archery_goddess",
+    # SSS도 SS에 포함 (규칙)
+    "flight_attendant", "pilot_glamour", "yacht_captain",
+    "private_jet", "helipad", "hotel_concierge",
+    "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
+    "golf_glam", "tennis_luxe", "tennis_referee", "tennis_champion",
+    "f1_grid_girl", "equestrian_glam", "horse_racing", "yoga_goddess",
+    "cheerleader", "ballet_prima", "gymnastics_editorial",
+    "figure_skater", "carnival_rio", "luxury_shopping",
+
+    # 2026-06-20 직업&라이프스타일 SSS 24종 확정
+    # A그룹 — 항공/해양/럭셔리
+    "flight_attendant", "pilot_glamour", "yacht_captain",
+    "private_jet", "helipad", "hotel_concierge",
+    # B그룹 — 전문직
+    "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
+    # C그룹 — 스포츠/피트니스
+    "golf_glam", "tennis_luxe", "tennis_referee", "tennis_champion",
+    "f1_grid_girl", "equestrian_glam", "horse_racing", "yoga_goddess",
+    # D그룹 — 퍼포먼스/스포츠2
+    "cheerleader", "ballet_prima", "gymnastics_editorial",
+    "figure_skater", "carnival_rio", "luxury_shopping",
+
     "body_paint_nude",
     # 2026-06-11 배경 프리셋 SSS 확정 (1차)
     "cenote_sacred",         # 물속 수직 덩굴 + 에메랄드 반사, 4장 일관성
@@ -559,6 +851,55 @@ SSS_TIER = {
     "angkor_thom_faces",
     "teotihuacan_pyramid",
     "palmyra_colonnade",
+
+    # 2026-06-19 애니아트스타일 SSS 31종 확정
+    "anime_jp_90s_retro",
+    "anime_jp_80s_citypop",
+    "anime_jp_modern_glossy",
+    "anime_jp_shoujo_soft",
+    "anime_jp_shounen_action",
+    "anime_jp_seinen_gritty",
+    "anime_jp_makoto_watercolor",
+    "anime_jp_ghibli_soft",
+    "anime_jp_gekiga_noir",
+    "anime_jp_pinup_retro",
+    "anime_kr_webtoon_glossy",
+    "anime_kr_romance_soft",
+    "anime_kr_action_manhwa",
+    "anime_kr_lezhin_mature",
+    "anime_kr_pastel_dream",
+    "anime_kr_lofi_chill",
+    "anime_kr_noir_mature",
+    "anime_cn_donghua_xianxia",
+    "anime_cn_guofeng_ink",
+    "anime_cn_modern_donghua",
+    "anime_cn_palace_drama",
+    "anime_us_cartoon_bold",
+    "anime_us_comic_ink",
+    "anime_us_pixar_stylized",
+    "anime_us_disney_classic",
+    "anime_us_pinup_classic",
+    "anime_us_badgirl_comic",
+    "anime_eu_ligne_claire",
+    "anime_eu_graphic_novel",
+    "anime_eu_erotic_bd",
+    "anime_noir_silhouette",
+
+    # 2026-06-18 핫&섹시 SSS 확정
+    "bodycon_power", "boudoir_noir", "wet_silk_gown", "oil_goddess_gold",
+    "rain_soaked_dress", "micro_dress_only", "deep_plunge_gown", "backless_extreme",
+    "one_strap_gown", "pinup_classic", "vargas_girl", "bombshell_retro",
+    "playboy_glam", "lingerie_noir", "barely_there", "wet_look_goddess",
+    "micro_bikini_gold", "sarong_goddess", "nude_beach_art", "aqua_bikini",
+    "golden_summer", "riviera_heat", "snow_queen_erotic", "autumn_gold_sensual",
+    "christmas_boudoir", "summer_solstice_glam", "latex_queen", "pvc_goddess",
+    "leather_mistress", "crystal_mesh_goddess", "chain_mail_glam",
+    "fishnet_goddess", "lace_bodysuit", "satin_slip", "velvet_corset",
+    "body_chain_only", "strappy_dress", "cut_out_swimsuit", "monokini_goddess",
+    "champagne_drip", "neon_bodysuit", "bikini_top_only", "white_linen_sheer",
+    "oil_drip_body", "yoga_pants_glam", "halter_glam", "wet_editorial",
+    "pool_edge_wet", "ocean_wave_body", "penthouse_bath", "silk_sheets_morning",
+    "spa_private_steam", "bar_counter_glam", "after_party_suite", "tennis_short_dress",
     # 2026-06-13 v27 핫&섹시 SSS 확정
     "dressing_room_mirror",
     "vip_booth_neon",
@@ -595,6 +936,317 @@ SSS_TIER = {
     "mercury_pool",         # 수은 인체=수면 유체 연속성, 의상=액체
     "snowflake_skin",       # 아이스 드레스=설원 소재 동화 (이미지5 기준)
     "noir_femme_fatale",    # 흑백+5요소 세계관 완전 구현, halloween_glam 동일 논리
+
+    # v28 전통문화 바디페인팅 패치 (48종)
+    # 1차 SSS
+    "kabuki_bodypaint",
+    "joseon_bodypaint",
+    "tibetan_bodypaint",
+    "byzantine_bodypaint",
+    "mayan_bodypaint",
+    # 2차 SSS
+    "geisha_bodypaint",
+    "ming_bodypaint",
+    "thai_bodypaint",
+    "ottoman_bodypaint",
+    "flamenco_bodypaint",
+    "sumerian_bodypaint",
+    # 3차 SSS
+    "maori_bodypaint",
+    "balinese_bodypaint",
+    "persian_bodypaint",
+    "mughal_bodypaint",
+    "hopi_bodypaint",
+    "haida_bodypaint",
+    # 4차 SSS
+    "polynesian_bodypaint",
+    "korean_shaman_bodypaint",
+    "noh_bodypaint",
+    "hanbok_bodypaint",
+    "tang_dynasty_bodypaint",
+    # 5차 SSS
+    "moroccan_bodypaint",
+    "batik_bodypaint",
+    "ikat_bodypaint",
+    "dirndl_bodypaint",
+    "ninja_bodypaint",
+    "kebaya_bodypaint",
+    "scottish_bodypaint",
+    # 6차 SSS
+    "voodoo_bodypaint",
+    "scythian_bodypaint",
+    "olmec_bodypaint",
+    "odalisque_bodypaint",
+    "harem_bodypaint",
+    "shaman_bodypaint",
+    # 7차 SSS
+    "kimono_bodypaint",
+    "samurai_bodypaint",
+    "geisha_white_bodypaint",
+    "hanfu_bodypaint",
+    "qipao_bodypaint",
+    "cheongsam_bodypaint",
+    "gisaeng_bodypaint",
+    "hanbok_modern_bodypaint",
+    # 8차 SSS
+    "ao_dai_bodypaint",
+    "zulu_bodypaint",
+    "kente_bodypaint",
+    "dashiki_bodypaint",
+    "belly_bodypaint",
+
+    # v28 전통문화 바디페인팅 패치 (3종)
+    # SS 전용
+    "sari_bodypaint",
+    "yoruba_bodypaint",
+    "maiko_bodypaint",
+    # 2026-06-16 애니&글래머 SSS 확정 (17종)
+    "kunoichi_glam",
+    "samurai_bride",
+    "oni_warrior",
+    "cosmic_warrior_glam",
+    "dragon_princess",
+    "dark_sorceress_glam",
+    "neon_android",
+    "android_2b",
+    "vampire_seductress",
+    "vampirella_dark",
+    "manhwa_villainess",
+    "dark_elsa",
+    "anime_battle_angel",
+    "poison_ivy_vines",
+    "storm_goddess",
+    "jessica_rabbit_glam",
+    "barbarella_retro",
+    "monaco_nights",
+    "candlelight_noir",
+    "jazz_club",
+    "noir_ballet",
+    "brutalist_glam",
+    "new_year_countdown",
+    "emerald_city",
+    "tokyo_shibuya",
+    "paris_midnight",
+    "penthouse_view",
+    "palacio_de_sal",
+    "chefchaouen_blue",
+    "hallstatt_lake",
+    "shirakawa_snow",
+    "azure_nights",
+    "blue_hour_goddess",
+    "jazz_age",
+    "disco_goddess",
+    "urban_vanguard",
+    "music_festival",
+    "subway_editorial",
+    "santorini_sunset",
+    "cappadocia_balloons",
+    # 2026-06-18 엘리멘탈 갓데스 SS 확정 (SSS 포함)
+    "uyuni_wet_silk", "maldives_underwater", "bioluminescent_bay", "rainbow_falls_goddess",
+    "trolltunga_edge", "zhangjiajie_cloud", "cliff_wind_sheer", "skydive_editorial",
+    "hot_air_balloon_glam", "wave_barrel_goddess", "glacier_melt_goddess",
+    "sahara_mirage", "salt_flat_body", "salar_atacama_flamingo", "pamukkale_goddess", "red_canyon_goddess",
+    "lava_field_latex", "solar_flare_goddess",
+    "aurora_bare", "antarctica_ice_glam", "meteor_shower_glam", "ice_cave_blue",
+    "antelope_light_sheer", "waitomo_glow_body", "coral_reef_sheer", "black_sea_midnight",
+    # SS 전용
+    "niagara_wet_editorial", "thunderstorm_wet", "cave_waterfall_goddess",
+    "desert_heat_body",
+    "volcano_edge_glam", "bonfire_editorial", "eruption_silhouette", "amazon_river_goddess",
+    "iceland_hot_spring", "northern_lights_body", "dead_sea_goddess",
+    "socotra_alien_glam", "deep_jungle_goddess", "monsoon_goddess",
+    # 2026-06-18 엘리멘탈 갓데스 카테고리 SSS 확정
+    # G1 물/습기
+    "uyuni_wet_silk",        # SS→SSS 승급 (용암색 의상+우유니 소금사막 완전 합일)
+    "maldives_underwater",
+    "bioluminescent_bay",
+    "rainbow_falls_goddess",
+    # G2 극한 자연 (전종 SSS)
+    "trolltunga_edge",
+    "zhangjiajie_cloud",
+    "cliff_wind_sheer",
+    "skydive_editorial",
+    "hot_air_balloon_glam",
+    "wave_barrel_goddess",
+    "glacier_melt_goddess",
+    # G3 사막/열기
+    "sahara_mirage",
+    "salt_flat_body",
+    "salar_atacama_flamingo",
+    "pamukkale_goddess",
+    "red_canyon_goddess",
+    # G4 화산/불/태양
+    "lava_field_latex",      # SS→SSS 승급
+    "solar_flare_goddess",
+    # G5 빙하/오로라/우주
+    "aurora_bare",           # SS→SSS 승급
+    "antarctica_ice_glam",
+    "meteor_shower_glam",
+    "ice_cave_blue",
+    # G6 이국/정글/생물발광
+    "antelope_light_sheer",  # SS→SSS 승급
+    "waitomo_glow_body",
+    "coral_reef_sheer",
+    "black_sea_midnight",
+
+    # 2026-06-24 파워&엣지 SSS 16종
+    "valkyrie_storm",
+    "fencer_noir",
+    "martial_arts",
+    "boxing_glamour",
+    "cage_fighter",
+    "biker_glam",
+    "riot_goddess",
+    "punk_queen",
+    "steel_warrior",
+    "power_suit",
+    "shadow_play",
+    "power_curve",
+    "sculpted_power",
+    "shadow_queen",
+    "bioluminescence",
+    "bioluminescent",
+
+    # 2026-06-24 퍼포먼스&댄스 G1+G2 SSS 11종
+    "flamenco_queen",
+    "tango_passion",
+    "ribbon_dance",
+    "aerial_silk",
+    "kathak_dance",
+    "hula_goddess",
+    "circus_performer",
+    "fire_dancer",
+    "masquerade_ball",
+    "samba_carnival",
+    "jazz_dance_glam",
+    # 2026-06-25 대기&파티클 30종 SSS
+    "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
+    "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
+    "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
+    "flour_dust_studio", "pigment_powder_art",
+    "feather_explosion", "black_feather_dark", "petal_storm_indoor",
+    "cherry_blossom_burst", "dried_flower_cascade",
+    "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
+    "neon_particle_club", "bubble_floating_studio",
+    "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
+    "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
+    "firefly_night_field", "seed_pod_floating",
+    # 2026-06-25 에로틱&페티쉬 G1 SSS 8종
+    "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
+    "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
+    # 2026-06-25 에로틱&페티쉬 G2 SSS 7종
+    "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
+    "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
+
+    # 2026-06-28 한국 역사&궁중 글래머 G1~G4 + G5전반부 SSS
+    # G1 삼국/고대 — SSS 5종
+    "silla_queen_gold", "baekje_lotus_queen", "gojoseon_shaman_queen",
+    "gaya_iron_goddess", "ancient_mural_goddess",
+    # G2 고려 궁중 — SSS 7종
+    "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
+    "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
+    "mongol_goryeo_queen",
+    # G3 조선 왕실/궁중 — SSS 11종
+    "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
+    "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
+    "damo_warrior", "joseon_night_queen", "joseon_concubine_red",
+    "changdeok_moonlight", "gyeongbokgung_geisha",
+    # G4 기생/예인 — SSS 10종
+    "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
+    "gisaeng_rain_dance", "gisaeng_black_silk", "wonhyang_legend",
+    "hwang_jini_glam", "gisaeng_fan_dance", "gisaeng_pipa_night",
+    "pyongyang_gisaeng",
+    # G5 신화&정령 전반부 — SSS 6종
+    "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
+    "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
+    # G5 신화&정령 후반부 — SSS 6종
+    "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
+    "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
+    # G6 민속&세시풍속 — SSS 7종 (haenyeo_wet_glam은 SS 전용)
+    "dano_festival_glam", "ganggangsullae_night",
+    "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
+    "jeju_shaman_sea", "korean_harvest_goddess",
+    # G7 여전사&무인 — SSS 8종
+    "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
+    "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
+    "goguryeo_fire_warrior", "joseon_spy_sheer",
+    # G8 근대&퓨전 — SSS 8종
+    "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
+    "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
+    "hanbok_wet_editorial", "joseon_boudoir",
+
+    # 2026-06-26 에로틱&페티쉬 G3~G12 SSS 51종
+    # G3 하네스/본디지
+    "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
+    "suspension_art", "tape_bondage", "metal_bondage",
+    # G4 메쉬/시스루
+    "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
+    "sheer_catsuit", "catsuit_zipper", "pvc_transparent_full",
+    # G5 도미나트릭스
+    "dominatrix_glam", "dominatrix_full_armor", "dominatrix_red",
+    "goddess_throne", "pole_art",
+    # G6 퍼포먼스/쇼걸
+    "burlesque", "showgirl", "cabaret_star", "candy_rave",
+    "lap_dance_glam", "lap_dance_extreme", "striptease_art",
+    # G7 폴/댄스/배스
+    "pole_dance_power", "pole_dance_extreme", "midnight_bath", "belly_dance_glam",
+    # G8 판타지/다크
+    "dark_succubus", "vampire_seduction", "witch_sensual",
+    "dark_fairy_erotic", "shadow_seductress", "succubus_full",
+    # G9 다크앤젤/SF
+    "dark_angel_fallen", "alien_queen_body", "fire_goddess",
+    # G10 직업 판타지
+    "secretary_after_hours", "nurse_sensual", "maid_sensual",
+    "teacher_after_class", "doctor_sensual", "police_dominatrix", "stewardess_dark",
+    # G11 바디/미니멀
+    "oil_goddess", "micro_thong_only", "fetish_boots_only",
+    # G12 코르셋
+    "corset_stockings",
+
+
+    # 2026-06-24 판타지&다크 26종 전원 SSS
+    "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
+    "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
+    "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
+    "zombie_apocalypse","dark_academia","gothic_romance","double_exposure_dark",
+    "double_exposure_ethereal","oil_slick_noir",
+    "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
+
+    # 2026-06-24 실루엣&섀도우 30종 전원 SSS
+    # G1 스포트라이트
+    "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
+    "silhouette_spotlight_hair","silhouette_spotlight_dance","silhouette_spotlight_chair",
+    "silhouette_spotlight_back","silhouette_spotlight_pole",
+    # G2 창문/도어
+    "silhouette_window_city","silhouette_window_rain","silhouette_window_sheer",
+    "silhouette_doorway_light","silhouette_window_sunset","silhouette_window_neon",
+    # G3 네온 실루엣
+    "silhouette_neon_pink","silhouette_neon_blue","silhouette_neon_red",
+    "silhouette_neon_purple","silhouette_neon_multicolor",
+    # G4 자연광
+    "silhouette_sunset_beach","silhouette_sunset_cliff","silhouette_moonlight","silhouette_aurora",
+    # G5 수중/물
+    "silhouette_pool_underwater","silhouette_pool_edge",
+    # G6 실내/분위기
+    "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
+    "silhouette_candle_boudoir","silhouette_smoke_studio",
+
+    # 2026-06-24 웨트&글로스 SSS 29종
+    # G1 풀/수영장
+    "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
+    "hot_spring_steam","jacuzzi_bubbles",
+    # G2 비/빗속
+    "rain_window_inside","rain_street_soaked","rain_studio_dramatic","monsoon_body","rain_car_window",
+    # G3 오일/글로스 드립
+    "oil_pour_studio","oil_drip_back","honey_drip_body","chocolate_pour_gloss",
+    "gloss_lips_drip","chrome_gloss_body",
+    # G4 땀/열기
+    "sweat_studio_light","heat_mirage_sweat","sauna_steam_body",
+    # G5 결로/냉기
+    "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
+    # G6 기타 웨트
+    "waterfall_direct","wave_crash_body","wet_silk_minimal",
+    "bubble_bath_gloss","milk_bath_petals",
 }
 
 # SS tier
@@ -662,6 +1314,40 @@ SS_TIER = {
     #   (강등 S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
     #   (보류: latex_catsuit_red — 컬러 라텍스 중복, 재검토 대상)
     "vampire_seduction","witch_sensual","latex_venom",
+    # 2026-06-19 애니아트스타일 SS 전체 (SSS 31 + SS전용 1)
+    "anime_jp_90s_retro",
+    "anime_jp_80s_citypop",
+    "anime_jp_modern_glossy",
+    "anime_jp_shoujo_soft",
+    "anime_jp_shounen_action",
+    "anime_jp_seinen_gritty",
+    "anime_jp_makoto_watercolor",
+    "anime_jp_ghibli_soft",
+    "anime_jp_gekiga_noir",
+    "anime_jp_pinup_retro",
+    "anime_kr_webtoon_glossy",
+    "anime_kr_romance_soft",
+    "anime_kr_action_manhwa",
+    "anime_kr_lezhin_mature",
+    "anime_kr_pastel_dream",
+    "anime_kr_lofi_chill",
+    "anime_kr_noir_mature",
+    "anime_cn_donghua_xianxia",
+    "anime_cn_guofeng_ink",
+    "anime_cn_modern_donghua",
+    "anime_cn_palace_drama",
+    "anime_us_cartoon_bold",
+    "anime_us_comic_ink",
+    "anime_us_pixar_stylized",
+    "anime_us_disney_classic",
+    "anime_us_pinup_classic",
+    "anime_us_badgirl_comic",
+    "anime_eu_ligne_claire",
+    "anime_eu_graphic_novel",
+    "anime_eu_erotic_bd",
+    "anime_noir_silhouette",
+    "anime_jp_ecchi_glossy",
+
     # 2026-06-09 애니 아트스타일 SS 10종 확정 (JP4/KR3/CN2/EU1)
     "anime_jp_80s_citypop","anime_jp_shoujo_soft","anime_jp_seinen_gritty","anime_jp_makoto_watercolor",
     "anime_kr_webtoon_glossy","anime_kr_action_manhwa","anime_kr_lofi_chill",
@@ -792,6 +1478,26 @@ SS_TIER = {
     "karnak_temple",
     "chichen_itza_pyramid",
     "gobekli_tepe",
+
+    # 2026-06-18 핫&섹시 SS 확정 (SSS 포함 전체)
+    "bodycon_power", "boudoir_noir", "lingerie_goddess", "silk_robe_only",
+    "corset_queen", "sheer_negligee", "wet_silk_gown", "oil_goddess_gold",
+    "rain_soaked_dress", "pool_wet_glam", "sweat_glam", "micro_dress_only",
+    "deep_plunge_gown", "backless_extreme", "one_strap_gown", "barely_covered",
+    "pinup_classic", "vargas_girl", "bombshell_retro", "playboy_glam",
+    "bunny_suit", "lingerie_noir", "elite_lingerie", "barely_there",
+    "wet_look_goddess", "micro_bikini_gold", "sarong_goddess", "thong_bikini",
+    "wet_bikini_pool", "nude_beach_art", "aqua_bikini", "golden_summer",
+    "riviera_heat", "snow_queen_erotic", "autumn_gold_sensual", "christmas_boudoir",
+    "summer_solstice_glam", "latex_queen", "pvc_goddess", "leather_mistress",
+    "crystal_mesh_goddess", "chain_mail_glam", "fishnet_goddess", "see_through_gown",
+    "wet_tshirt", "string_bikini", "lace_bodysuit", "satin_slip", "velvet_corset",
+    "body_chain_only", "strappy_dress", "cut_out_swimsuit", "monokini_goddess",
+    "champagne_drip", "neon_bodysuit", "bikini_top_only", "white_linen_sheer",
+    "oil_drip_body", "yoga_pants_glam", "micro_skirt", "halter_glam",
+    "wet_editorial", "pool_edge_wet", "ocean_wave_body", "penthouse_bath",
+    "silk_sheets_morning", "spa_private_steam", "bar_counter_glam",
+    "after_party_suite", "tennis_short_dress",
     # 2026-06-13 v27 핫&섹시 SS/SSS 확정
     "dressing_room_mirror",
     "vip_booth_neon",
@@ -864,6 +1570,193 @@ SS_TIER = {
     "dreamy_soft_focus",
     "film_noir_glam",
     "noir_femme_fatale",    # SSS도 SS에 포함
+    # 2026-06-21 자연&원소 G1~G10 SS_TIER 패치
+    "lava_flow",
+    "heat_shimmer",
+    "solar_flare",
+    "desert_mirage",
+    "ocean_surge",
+    "waterfall_goddess",
+    "water_reflection",
+    "liquid_gold_pour",
+    "ice_palace",
+    "ice_refraction",
+    "frozen_latex",
+    "blizzard_queen",
+    "arctic_minimal",
+    "frozen_baikal",
+    "sandstorm_veil",
+    "desert_oracle",
+    "desert_sand_glam",
+    "smoke_veil",
+    "mist_goddess",
+    "storm_couture",
+    "storm_lightning",
+    "lightning_body",
+    "zero_gravity",
+    "winter_forest",
+    "cliff_edge",
+    "deep_cave",
+    "dawn_awakening",
+    "liquid_mirror",
+    "aurora_drape",
+    "aurora_spirit",
+    "prism_light",
+    "shattered_glass",
+    "dead_vlei_ghost",
+    "son_doong_jungle",
+    "danxia_rainbow",
+    "socotra_alien",
+    "lake_natron",
+    "zhangjiajie_avatar",
+    "pamukkale_white",
+    "plitvice_cascade",
+    "rainbow_mountain",
+    "kelimutu_crater",
+    "victoria_falls",
+    "wisteria_tunnel",
+    "torres_del_paine",
+    "ha_long_bay",
+    "fairy_pools",
+    "tunnel_of_love",
+    "chocolate_hills",
+    "volcanic_goddess",
+    "santorini_lightning",
+    "tidal_wave",
+    "rain_soaked",
+    "mist_vanguard",
+    "tropical_storm",
+
+    # 2026-06-24 파워&엣지 SSS (SS 포함)
+    "valkyrie_storm",
+    "fencer_noir",
+    "martial_arts",
+    "boxing_glamour",
+    "cage_fighter",
+    "biker_glam",
+    "riot_goddess",
+    "punk_queen",
+    "steel_warrior",
+    "power_suit",
+    "shadow_play",
+    "power_curve",
+    "sculpted_power",
+    "shadow_queen",
+    "bioluminescence",
+    "bioluminescent",
+
+    # 2026-06-24 퍼포먼스&댄스 G1+G2 SSS (SS 포함)
+    "flamenco_queen",
+    "tango_passion",
+    "ribbon_dance",
+    "aerial_silk",
+    "kathak_dance",
+    "hula_goddess",
+    "circus_performer",
+    "fire_dancer",
+    "masquerade_ball",
+    "samba_carnival",
+    "jazz_dance_glam",
+    # 2026-06-25 대기&파티클 30종 (SS 포함)
+    "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
+    "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
+    "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
+    "flour_dust_studio", "pigment_powder_art",
+    "feather_explosion", "black_feather_dark", "petal_storm_indoor",
+    "cherry_blossom_burst", "dried_flower_cascade",
+    "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
+    "neon_particle_club", "bubble_floating_studio",
+    "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
+    "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
+    "firefly_night_field", "seed_pod_floating",
+    # 2026-06-25 에로틱&페티쉬 G1 (SS 포함)
+    "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
+    "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
+    "wet_latex",
+    # 2026-06-25 에로틱&페티쉬 G2 (SS 포함)
+    "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
+    "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
+
+    # 2026-06-26 에로틱&페티쉬 G3~G12 SS (SSS 포함 51종)
+    "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
+    "suspension_art", "tape_bondage", "metal_bondage",
+    "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
+    "sheer_catsuit", "catsuit_zipper", "pvc_transparent_full",
+    "dominatrix_glam", "dominatrix_full_armor", "dominatrix_red",
+    "goddess_throne", "pole_art",
+    "burlesque", "showgirl", "cabaret_star", "candy_rave",
+    "lap_dance_glam", "lap_dance_extreme", "striptease_art",
+    "pole_dance_power", "pole_dance_extreme", "midnight_bath", "belly_dance_glam",
+    "dark_succubus", "vampire_seduction", "witch_sensual",
+    "dark_fairy_erotic", "shadow_seductress", "succubus_full",
+    "dark_angel_fallen", "alien_queen_body", "fire_goddess",
+    "secretary_after_hours", "nurse_sensual", "maid_sensual",
+    "teacher_after_class", "doctor_sensual", "police_dominatrix", "stewardess_dark",
+    "oil_goddess", "micro_thong_only", "fetish_boots_only",
+    "corset_stockings",
+
+
+    # 2026-06-24 판타지&다크 26종 (SS 포함)
+    "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
+    "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
+    "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
+    "zombie_apocalypse","dark_academia","gothic_romance","double_exposure_dark",
+    "double_exposure_ethereal","oil_slick_noir",
+    "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
+
+    # 2026-06-24 실루엣&섀도우 30종 (SS 포함)
+    "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
+    "silhouette_spotlight_hair","silhouette_spotlight_dance","silhouette_spotlight_chair",
+    "silhouette_spotlight_back","silhouette_spotlight_pole",
+    "silhouette_window_city","silhouette_window_rain","silhouette_window_sheer",
+    "silhouette_doorway_light","silhouette_window_sunset","silhouette_window_neon",
+    "silhouette_neon_pink","silhouette_neon_blue","silhouette_neon_red",
+    "silhouette_neon_purple","silhouette_neon_multicolor",
+    "silhouette_sunset_beach","silhouette_sunset_cliff","silhouette_moonlight","silhouette_aurora",
+    "silhouette_pool_underwater","silhouette_pool_edge",
+    "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
+    "silhouette_candle_boudoir","silhouette_smoke_studio",
+
+    # 2026-06-24 웨트&글로스 30종 (SS 포함, SSS 29종 + SS 전용 1종)
+    "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
+    "hot_spring_steam","jacuzzi_bubbles",
+    "rain_window_inside","rain_street_soaked","rain_studio_dramatic","monsoon_body","rain_car_window",
+    "oil_pour_studio","oil_drip_back","honey_drip_body","chocolate_pour_gloss",
+    "gloss_lips_drip","chrome_gloss_body",
+    "sweat_studio_light","after_workout_glow","heat_mirage_sweat","sauna_steam_body",
+    "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
+    "waterfall_direct","wave_crash_body","wet_silk_minimal",
+    "bubble_bath_gloss","milk_bath_petals",
+    # 2026-06-26 한국 역사 & 궁중 글래머 SS (78종 전체)
+    "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
+    "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
+    "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
+    "dongye_tribal_queen",
+    "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
+    "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
+    "mongol_goryeo_queen", "goryeo_haenyeo_silk",
+    "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
+    "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
+    "joseon_merchant_woman", "damo_warrior", "joseon_night_queen",
+    "joseon_concubine_red", "changdeok_moonlight", "gyeongbokgung_geisha",
+    "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
+    "gisaeng_haiku_bath", "gisaeng_rain_dance", "gisaeng_black_silk",
+    "wonhyang_legend", "hwang_jini_glam", "gisaeng_fan_dance",
+    "gisaeng_pipa_night", "gisaeng_mirror_boudoir", "pyongyang_gisaeng",
+    "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
+    "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
+    "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
+    "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
+    "haenyeo_wet_glam", "dano_festival_glam", "ganggangsullae_night",
+    "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
+    "jeju_shaman_sea", "korean_harvest_goddess",
+    "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
+    "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
+    "goguryeo_fire_warrior", "joseon_spy_sheer",
+    "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
+    "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
+    "hanbok_wet_editorial", "joseon_boudoir",
+
 }
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
