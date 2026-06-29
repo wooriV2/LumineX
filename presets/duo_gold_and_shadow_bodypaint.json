@@ -1,12 +1,11 @@
 {
   "name": "duo_gold_and_shadow_bodypaint",
-  "subject": "Two stunning female models, one in light, one in shadow, art history editorial",
-  "body": "Model A: baroque luminous presence. Model B: chiaroscuro shadow presence",
-  "outfit": "Model A: full body paint art — Gustav Klimt gold leaf patterns, Byzantine mosaics, ornate golden geometric shapes, intricate gold ornamentation across entire body. Model B: full body paint art — deep black ink calligraphy, dramatic shadow painting, Rembrandt-style chiaroscuro patterns, ink wash darkness across entire body. Both: painted directly on bare skin, NOT clothing, NOT fabric",
+  "subject": "Two stunning female models standing together in a dark baroque gallery",
+  "body": "Model A: luminous gold. Model B: deep shadow ink. Both in same gallery space",
+  "outfit": "Model A: full body paint art — Gustav Klimt gold leaf patterns, Byzantine mosaics, ornate golden geometric shapes, intricate gold ornamentation across entire body. Model B: full body paint art — deep black sumi ink calligraphy, Rembrandt-style chiaroscuro shadow painting, ink wash darkness across entire body. Both: body paint pigment applied directly on bare skin, NOT clothing, NOT fabric. SAME baroque gallery background",
   "material": "body paint pigment applied directly on bare skin",
-  "environment": "dark baroque gallery interior, gilt-framed paintings, candlelit opulence",
-  "lighting": "dramatic chiaroscuro: single golden spotlight on Model A, deep shadow enveloping Model B",
+  "environment": "dark baroque gallery interior, gilt-framed paintings on walls, candles, both models in same opulent space",
+  "lighting": "warm golden candlelight for both models, gold body paint glowing, shadow body paint absorbing light",
   "style": "Klimt meets Rembrandt editorial, art history duality, Numéro magazine avant-garde",
-  "quality": "ultra-sharp, 8K, professional editorial photography, hyperrealistic skin texture",
-  "extras": ""
+  "quality": "ultra-sharp, 8K, professional editorial photography, hyperrealistic skin texture"
 }

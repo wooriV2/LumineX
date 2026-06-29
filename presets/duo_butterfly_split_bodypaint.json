@@ -1,12 +1,11 @@
 {
   "name": "duo_butterfly_split_bodypaint",
-  "subject": "Two stunning female models standing close together side by side, their bodies forming one complete butterfly when viewed together",
-  "body": "Model A: left half of butterfly. Model B: right half of butterfly. Bodies touching at center to complete the image",
-  "outfit": "Model A body paint: LEFT WING of a giant monarch butterfly — orange black white wing pattern precisely covering the right side of her body (facing center), seamlessly connecting to Model B. Model B body paint: RIGHT WING of the same giant monarch butterfly — mirror image of wing pattern precisely covering the left side of her body (facing center), completing the full butterfly when viewed together. CONNECTED ART: when both models stand together their painted bodies form ONE complete butterfly. Both: body paint pigment applied directly on bare skin, NOT clothing, NOT fabric",
+  "subject": "Two stunning female models standing close together side by side, bodies touching, forming one complete butterfly",
+  "body": "Model A carries left wing, Model B carries right wing, standing touching at center",
+  "outfit": "Model A: full body paint art — LEFT WING of giant monarch butterfly, orange black white wing pattern on her right side of body facing center, seamlessly connecting to Model B. Model B: full body paint art — RIGHT WING of same giant monarch butterfly, mirror wing pattern on her left side of body facing center. CONNECTED ART: their bodies together form ONE complete butterfly. Both: body paint pigment applied directly on bare skin, NOT clothing, NOT fabric. SAME flower garden background",
   "material": "body paint pigment applied directly on bare skin",
-  "environment": "lush flower garden with natural bokeh, spring meadow, flowers at their feet",
-  "lighting": "soft natural garden light, gentle golden hour glow, warm botanical atmosphere",
+  "environment": "lush flower garden, soft bokeh flowers, both models in same garden space standing close together",
+  "lighting": "soft natural garden light, gentle golden hour glow, same warm atmosphere for both",
   "style": "connected body art editorial, nature symmetry concept, Vogue Italia botanical",
-  "quality": "ultra-sharp, 8K, professional editorial photography, hyperrealistic skin texture",
-  "extras": ""
+  "quality": "ultra-sharp, 8K, professional editorial photography, hyperrealistic skin texture"
 }
