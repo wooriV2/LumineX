@@ -655,7 +655,6 @@ PRESET_CATEGORIES = {
         "duo_macro_and_micro_bodypaint",
         "duo_ancient_and_future_bodypaint",
         "duo_poison_and_medicine_bodypaint",
-        "duo_storm_and_calm_bodypaint",
         "duo_deep_sea_bodypaint",
         # G2 대비형 트리오 (3인, 삼원 대비)
         "trio_rgb_trinity_bodypaint",
@@ -669,7 +668,6 @@ PRESET_CATEGORIES = {
         "trio_three_oceans_bodypaint",
         "trio_three_civilizations_bodypaint",
         "trio_fire_water_earth_bodypaint",
-        "trio_angel_human_demon_bodypaint",
         "trio_three_big_cats_bodypaint",
         # G3 연결형 듀오 (2인, 합치면 하나의 작품)
         "duo_butterfly_split_bodypaint",
@@ -851,14 +849,12 @@ SSS_TIER = {
     "duo_macro_and_micro_bodypaint",
     "duo_ancient_and_future_bodypaint",
     "duo_poison_and_medicine_bodypaint",
-    "duo_storm_and_calm_bodypaint",
     "duo_deep_sea_bodypaint",
     # G2 추가 (검증 예정)
     "trio_sun_moon_star_bodypaint",
     "trio_three_oceans_bodypaint",
     "trio_three_civilizations_bodypaint",
     "trio_fire_water_earth_bodypaint",
-    "trio_angel_human_demon_bodypaint",
     "trio_three_big_cats_bodypaint",
     # G3 추가 (검증 예정)
     "duo_dna_helix_bodypaint",
@@ -1876,7 +1872,6 @@ SS_TIER = {
     "duo_macro_and_micro_bodypaint",
     "duo_ancient_and_future_bodypaint",
     "duo_poison_and_medicine_bodypaint",
-    "duo_storm_and_calm_bodypaint",
     "duo_deep_sea_bodypaint",
     "trio_rgb_trinity_bodypaint",
     "trio_earth_water_sky_bodypaint",
@@ -1888,7 +1883,6 @@ SS_TIER = {
     "trio_three_oceans_bodypaint",
     "trio_three_civilizations_bodypaint",
     "trio_fire_water_earth_bodypaint",
-    "trio_angel_human_demon_bodypaint",
     "trio_three_big_cats_bodypaint",
     "duo_butterfly_split_bodypaint",
     "duo_yin_yang_merge_bodypaint",
