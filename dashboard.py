@@ -1012,6 +1012,16 @@ PRESET_CATEGORIES = {
 # SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
 # 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
+    # 2026-07-02 퍼포먼스&댄스 G3/G4 SSS (8종)
+    "opera_night",
+    "christmas_glamour",
+    "ballet_noir",
+    "broadway_diva",
+    "street_dance",
+    "drag_glamour",
+    "ribbon_goddess",
+    "petal_storm",
+
     # 2026-06-29 멀티 바디페인팅 57종 SSS (검증 완료 24종 확정 + 33종 검증 예정)
     # G1 대비형 듀오 (24종 검증 완료 SSS)
     "duo_fire_and_ice_bodypaint",
@@ -1683,6 +1693,16 @@ SSS_TIER = {
 
 # SS tier
 SS_TIER = {
+    # 2026-07-02 퍼포먼스&댄스 G3/G4 SS (9종 전체)
+    "opera_night",
+    "christmas_glamour",
+    "ballet_noir",
+    "broadway_diva",
+    "street_dance",
+    "drag_glamour",
+    "ribbon_goddess",
+    "petal_storm",
+    "pop_art_glamour",
     # 기존 명화/예술 계열
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
     "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
