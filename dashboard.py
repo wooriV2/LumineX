@@ -977,6 +977,35 @@ PRESET_CATEGORIES = {
         "alien_host_glam",
     ],
 
+    "🌀 환경 일체 바디페인팅": [
+        # G1 패턴/직물 (6종 SSS)
+        "merge_butterfly_fabric",
+        "merge_floral_wallpaper",
+        "merge_leopard_fabric",
+        "merge_mandala_carpet",
+        "merge_toile_pattern",
+        "merge_tartan_plaid",
+        # G2 자연환경 (5종 SSS/SS)
+        "merge_salt_flat_sky",
+        "merge_autumn_leaves_floor",
+        "merge_coral_reef_water",
+        "merge_sand_dunes",
+        "merge_moss_stone_ground",
+        # G3 건축/소재 (5종 SSS)
+        "merge_clockwork_gears",
+        "merge_marble_column_wall",
+        "merge_islamic_tile_wall",
+        "merge_stained_glass_window",
+        "merge_circuit_board",
+        # G4 예술/회화 (6종 SSS)
+        "merge_klimt_gold_mural",
+        "merge_vangogh_starry",
+        "merge_ukiyo_wave_print",
+        "merge_mondrian_grid",
+        "merge_pollock_splatter",
+        "merge_byzantine_mosaic",
+    ],
+
 }
 
 
@@ -2172,6 +2201,30 @@ SS_TIER = {
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
     "bubble_bath_gloss","milk_bath_petals",
+    # 2026-07-02 환경 일체 바디페인팅 SS (22종 전체)
+    "merge_butterfly_fabric",
+    "merge_floral_wallpaper",
+    "merge_leopard_fabric",
+    "merge_mandala_carpet",
+    "merge_toile_pattern",
+    "merge_tartan_plaid",
+    "merge_salt_flat_sky",
+    "merge_autumn_leaves_floor",
+    "merge_coral_reef_water",
+    "merge_sand_dunes",
+    "merge_moss_stone_ground",
+    "merge_clockwork_gears",
+    "merge_marble_column_wall",
+    "merge_islamic_tile_wall",
+    "merge_stained_glass_window",
+    "merge_circuit_board",
+    "merge_klimt_gold_mural",
+    "merge_vangogh_starry",
+    "merge_ukiyo_wave_print",
+    "merge_mondrian_grid",
+    "merge_pollock_splatter",
+    "merge_byzantine_mosaic",
+
     # 2026-06-29 멀티 바디페인팅 SS (57종 전체)
     "duo_fire_and_ice_bodypaint",
     "duo_day_and_night_bodypaint",
