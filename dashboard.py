@@ -1,20 +1,20 @@
-ï»¿"""
+"""
 LumineX Dashboard v4.5
-ì‹¤í–‰: streamlit run dashboard.py
+½ÇÇà: streamlit run dashboard.py
 
-v4.4 ë³€ê²½ì‚¬í•­ (2026-06-07):
-1. ì¹´í…Œê³ ë¦¬ ì¬í¸ (Bì•ˆ) â€” ì„¹ì‹œ/ê¸€ë˜ë¨¸ 3ë¶„ë¥˜
-   - ğŸ’« ê¸€ë˜ë¨¸ & ëŸ­ì…”ë¦¬ â†’ ğŸ’« ëŸ­ì…”ë¦¬ ê¸€ë˜ë¨¸ (41ê°œ)
-   - ğŸ’‹ ê´€ëŠ¥ & ì—ë¡œí‹± ê¸€ë˜ë¨¸ â†’ ì‚­ì œ
-   - ğŸ”¥ í•« & ì„¹ì‹œ ì‹ ì„¤ (43ê°œ)
-   - ğŸ’‹ ì—ë¡œí‹± & í˜í‹°ì‰¬ ì‹ ì„¤ (26ê°œ)
-2. ê° ì¹´í…Œê³ ë¦¬ì—ì„œ ì„¹ì‹œ ê³„ì—´ í”„ë¦¬ì…‹ ì´ë™ ì •ë¦¬
+v4.4 º¯°æ»çÇ× (2026-06-07):
+1. Ä«Å×°í¸® ÀçÆí (B¾È) ? ¼½½Ã/±Û·¡¸Ó 3ºĞ·ù
+   - ?? ±Û·¡¸Ó & ·°¼Å¸® ¡æ ?? ·°¼Å¸® ±Û·¡¸Ó (41°³)
+   - ?? °ü´É & ¿¡·ÎÆ½ ±Û·¡¸Ó ¡æ »èÁ¦
+   - ?? ÇÖ & ¼½½Ã ½Å¼³ (43°³)
+   - ?? ¿¡·ÎÆ½ & ÆäÆ¼½¬ ½Å¼³ (26°³)
+2. °¢ Ä«Å×°í¸®¿¡¼­ ¼½½Ã °è¿­ ÇÁ¸®¼Â ÀÌµ¿ Á¤¸®
 
-v4.4.1 SS tier ì—„ê²© ì¬ê²€í†  (2026-06-07):
-- SS ê°•ë“±(S): burlesque, dominatrix_glam, corset_stockings,
+v4.4.1 SS tier ¾ö°İ Àç°ËÅä (2026-06-07):
+- SS °­µî(S): burlesque, dominatrix_glam, corset_stockings,
   dark_fairy_erotic, tape_bondage, metal_bondage
-- SS ì œê±°: military_domme (ë‚˜ì¹˜ ìƒì§• ìƒì„± ë¦¬ìŠ¤í¬ â€” í”„ë¦¬ì…‹ ì •ì˜ ìˆ˜ì • í•„ìš”)
-- SS tier 128 â†’ 121ê°œ
+- SS Á¦°Å: military_domme (³ªÄ¡ »óÂ¡ »ı¼º ¸®½ºÅ© ? ÇÁ¸®¼Â Á¤ÀÇ ¼öÁ¤ ÇÊ¿ä)
+- SS tier 128 ¡æ 121°³
 """
 
 import sys
@@ -49,15 +49,15 @@ from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjo
 
 st.set_page_config(
     page_title="LumineX Dashboard",
-    page_icon="âœ¦",
+    page_icon="?",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-# â”€â”€â”€ ì¹´í…Œê³ ë¦¬ë³„ í”„ë¦¬ì…‹ ë§¤í•‘ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ¦¡¦¡¦¡ Ä«Å×°í¸®º° ÇÁ¸®¼Â ¸ÅÇÎ ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
 PRESET_CATEGORIES = {
-    "ğŸ–Œï¸ ë°”ë””í˜ì¸íŒ… & ìŠ¤í‚¨ íŠ¸ëœìŠ¤í¼": [
-        # ê¸°ì¡´
+    "??? ¹ÙµğÆäÀÎÆÃ & ½ºÅ² Æ®·£½ºÆû": [
+        # ±âÁ¸
         "bioluminescent_ink","klimt_gold_body","vangogh_body","dali_surreal","munch_scream",
         "monet_bloom","mucha_nouveau","hokusai_wave","kandinsky_abstract","pollock_splash",
         "broken_porcelain","marble_veins","henna_goddess_body","oil_slick_body","liquid_chrome_body",
@@ -73,7 +73,7 @@ PRESET_CATEGORIES = {
         "warhol_pop","lichtenstein_dot","huli_wigman","nuba_body","wodaabe_beauty","mehndi_full",
         "mayan_ritual","haida_totem","aurora_skin","crystal_mineral","tide_pool","magnetic_field",
         "cell_division",
-        # v14 â€” ê´€ëŠ¥ì  ë°”ë””í˜ì¸íŒ… 35ê°œ
+        # v14 ? °ü´ÉÀû ¹ÙµğÆäÀÎÆÃ 35°³
         "melting_chocolate","liquid_gold_drip","silver_mercury_body","ink_pour_body",
         "paint_splash_body","milk_bath_body",
         "rose_petal_body","orchid_body","vine_wrap_body","lotus_body","poison_flower",
@@ -82,20 +82,20 @@ PRESET_CATEGORIES = {
         "body_calligraphy","zentangle_body","constellation_body","circuit_erotic","tarot_body",
         "moon_tattoo_body","rune_body_art","alchemy_body","henna_erotic",
         "python_scales","jaguar_spots","mermaid_scales","raven_feathers","tiger_stripes_body",
-        # v15 â€” ëª…í™”/ì‘ê°€ í¼ë¸”ë¦­ ë„ë©”ì¸ 14ê°œ
+        # v15 ? ¸íÈ­/ÀÛ°¡ ÆÛºí¸¯ µµ¸ŞÀÎ 14°³
         "cezanne_body","gauguin_tropics","toulouse_lautrec","schiele_body","degas_dancer",
         "renoir_soft","botticelli_venus","titian_goddess","rubens_baroque","ingres_odalisque",
         "waterhouse_nymph","rossetti_dante","alma_tadema","vigee_lebrun",
-        # v15 â€” ìƒì¡´/ìµœê·¼ ì‘ê°€ 5ê°œ
+        # v15 ? »ıÁ¸/ÃÖ±Ù ÀÛ°¡ 5°³
         "keith_haring_body","yayoi_kusama","takashi_murakami",
         "jean_dubuffet","jean_cocteau",
-        # v15 â€” ë¶€ì¡±/ë¬¸í™” 10ê°œ
+        # v15 ? ºÎÁ·/¹®È­ 10°³
         "bodi_clay","ndebele_pattern","tuareg_indigo","mursi_lip",
         "surma_body","asaro_mudmen","kayapo_brasil","nuba_scarification","kayan_neck",
-        # v15 â€” ê³¼í•™/ìì—° 10ê°œ
+        # v15 ? °úÇĞ/ÀÚ¿¬ 10°³
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
         "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
-        # v18 â€” ë™ë¬¼ ë°”ë””í˜ì¸íŒ… 50ê°œ
+        # v18 ? µ¿¹° ¹ÙµğÆäÀÎÆÃ 50°³
         "panther_black","cheetah_speed","snow_leopard","ocelot_wild",
         "chameleon_skin","dragon_scales_red","komodo_dragon","gecko_pattern","crocodile_skin",
         "boa_constrictor","king_cobra_hood",
@@ -108,62 +108,62 @@ PRESET_CATEGORIES = {
         "wolf_grey","zebra_stripes","giraffe_pattern","dalmatian_spots","arctic_fox",
         "red_fox","hyena_spots",
         "koi_dragon","unicorn_opal","gryphon_feather","sphinx_cat","basilisk_scales",
-        # v19 â€” í•œêµ­ ë°”ë””ì•„íŠ¸ 10ê°œ
+        # v19 ? ÇÑ±¹ ¹Ùµğ¾ÆÆ® 10°³
         "dancheong_body","najeonchilgi_body","goryeo_celadon_body","minhwa_body",
         "korean_tiger_body","pojagi_body","taegeuk_body","silla_crown_body",
         "dansaekhwa_body","najeon_abalone",
-        # v19 â€” í•œêµ­ ë™ë¬¼/ì‹ ìˆ˜ (ë°”ë””ì•„íŠ¸)
+        # v19 ? ÇÑ±¹ µ¿¹°/½Å¼ö (¹Ùµğ¾ÆÆ®)
         "baekhak_crane","korean_dragon_body","phoenix_jujakk",
         "baekho_white_tiger","hyeonmu_turtle","cheongnyong_dragon",
-        # v19 â€” í•œêµ­ ìì—°/ì‹ë¬¼ ë°”ë””ì•„íŠ¸
+        # v19 ? ÇÑ±¹ ÀÚ¿¬/½Ä¹° ¹Ùµğ¾ÆÆ®
         "mugunghwa_body","korean_lotus_body","korean_plum_body","korean_bamboo_body",
-        # v20 â€” ì§€ë„ ê³„ì—´ 13ê°œ
+        # v20 ? Áöµµ °è¿­ 13°³
         "world_map_body","topographic_body","ocean_depth_body","thermal_map_body",
         "weather_map_body","subway_map_body","europe_political_body","africa_tribes_body",
         "japan_prefecture_body","ancient_map_body","star_map_body",
         "usa_county_map_body",
-        # v20 â€” ê³¼í•™/ìì—°í˜„ìƒ 5ê°œ
+        # v20 ? °úÇĞ/ÀÚ¿¬Çö»ó 5°³
         "thermal_scan_body","circuit_board_body","galaxy_nebula_body",
         "crystal_geode_body",
-        # v20 â€” ë¬¸ëª…/ë¬¸ì 6ê°œ
+        # v20 ? ¹®¸í/¹®ÀÚ 6°³
         "hieroglyph_body","aztec_calendar_body","celtic_knot_body",
         "arabic_calligraphy_body","islamic_geometric_body","greek_mosaic_body",
-        # v20 â€” ì‹ë¬¼/ìì—° 3ê°œ
+        # v20 ? ½Ä¹°/ÀÚ¿¬ 3°³
         "autumn_leaves_body","coral_reef_body","mushroom_forest_body",
-        # v20 â€” ê±´ì¶•/íŒ¨í„´ 2ê°œ
+        # v20 ? °ÇÃà/ÆĞÅÏ 2°³
         "stained_glass_body","bauhaus_body",
-        # v20 â€” í™˜ê²½ìœµí•© 2ê°œ
+        # v20 ? È¯°æÀ¶ÇÕ 2°³
         "urban_decay_body","forest_stone_body",
-        # 2026-06-08 ì¹´í…Œê³ ë¦¬ ëˆ„ë½ ë³µêµ¬
+        # 2026-06-08 Ä«Å×°í¸® ´©¶ô º¹±¸
         "banksy_stencil","shadow_art_nude",
-        # v28 â€” ì „í†µ&ë¬¸í™” ë°”ë””í˜ì¸íŒ… 52ì¢… (ì¤‘ë³µ 9ì¢… ì œê±°)
-        # ì¼ë³¸
+        # v28 ? ÀüÅë&¹®È­ ¹ÙµğÆäÀÎÆÃ 52Á¾ (Áßº¹ 9Á¾ Á¦°Å)
+        # ÀÏº»
         "geisha_bodypaint","maiko_bodypaint","kimono_bodypaint","noh_bodypaint",
         "kabuki_bodypaint","samurai_bodypaint","geisha_white_bodypaint","ninja_bodypaint",
-        # í•œêµ­
+        # ÇÑ±¹
         "hanbok_bodypaint","joseon_bodypaint","gisaeng_bodypaint",
         "hanbok_modern_bodypaint","korean_shaman_bodypaint",
-        # ì¤‘êµ­
+        # Áß±¹
         "qipao_bodypaint","cheongsam_bodypaint","hanfu_bodypaint",
         "tang_dynasty_bodypaint","ming_bodypaint",
-        # ë‚¨ì•„ì‹œì•„/ì¤‘ë™
+        # ³²¾Æ½Ã¾Æ/Áßµ¿
         "sari_bodypaint","belly_bodypaint","odalisque_bodypaint",
         "harem_bodypaint","mughal_bodypaint",
         "persian_bodypaint","moroccan_bodypaint","ottoman_bodypaint",
-        # ë™ë‚¨ì•„/ì¤‘ì•™ì•„
+        # µ¿³²¾Æ/Áß¾Ó¾Æ
         "thai_bodypaint","balinese_bodypaint","kebaya_bodypaint",
         "batik_bodypaint","ikat_bodypaint","ao_dai_bodypaint",
         "tibetan_bodypaint","shaman_bodypaint","scythian_bodypaint",
-        # ì•„ë©”ë¦¬ì¹´/ì˜¤ì„¸ì•„ë‹ˆì•„
+        # ¾Æ¸Ş¸®Ä«/¿À¼¼¾Æ´Ï¾Æ
         "mayan_bodypaint","hopi_bodypaint","olmec_bodypaint",
         "maori_bodypaint","polynesian_bodypaint","haida_bodypaint",
-        # ì•„í”„ë¦¬ì¹´
+        # ¾ÆÇÁ¸®Ä«
         "yoruba_bodypaint","kente_bodypaint","dashiki_bodypaint",
         "adinkra_bodypaint","zulu_bodypaint",
-        # ìœ ëŸ½/ê³ ëŒ€
+        # À¯·´/°í´ë
         "scottish_bodypaint","byzantine_bodypaint","flamenco_bodypaint","dirndl_bodypaint",
         "sumerian_bodypaint","voodoo_bodypaint",
-        # v23 â€” ê°œë°©í˜• ë°”ë””í˜ì¸íŒ… 20ê°œ (ì£¼ì œ ë¹„ì›€, ë§¤ë²ˆ ë‹¤ë¥´ê²Œ ìƒì„±)
+        # v23 ? °³¹æÇü ¹ÙµğÆäÀÎÆÃ 20°³ (ÁÖÁ¦ ºñ¿ò, ¸Å¹ø ´Ù¸£°Ô »ı¼º)
         "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto",
         "body_paint_airbrush","body_paint_ink_splatter","body_paint_drip_free",
         "body_paint_monochrome","body_paint_pastel_dream","body_paint_neon_glow",
@@ -172,7 +172,7 @@ PRESET_CATEGORIES = {
         "body_paint_surreal_free","body_paint_minimalist_free",
         "body_paint_blacklight","body_paint_glitter_free","body_paint_uv_reactive",
     ],
-    "ğŸ’« ëŸ­ì…”ë¦¬ ê¸€ë˜ë¨¸": [
+    "?? ·°¼Å¸® ±Û·¡¸Ó": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial",        "noir_opulence","platinum_elite","ivory_silk","ivory_tower",
         "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
         "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
@@ -183,11 +183,11 @@ PRESET_CATEGORIES = {
         # v16
         "plunge_gown","slit_maxi","cutout_bodysuit","sheer_overlay",
         "jeweled_bikini_top","golden_drape_goddess","crystal_gown","feather_trim_mini",
-        # v21 â€” ëŸ­ì…”ë¦¬ ê¸€ë˜ë¨¸ 13ê°œ
+        # v21 ? ·°¼Å¸® ±Û·¡¸Ó 13°³
         "luxury_noir","diamond_couture","velvet_serpent","opera_glam","silver_screen",
         "lace_noir","white_silk_goddess","crystal_bodycon","penthouse_glam",
         "midnight_couture","crimson_gown","serpentine_dress","baroque_glam",
-        # 2026-07-02 ì‹ ê·œ ì¶”ê°€
+        # 2026-07-02 ½Å±Ô Ãß°¡
         "private_pool_villa",
         "rooftop_pool_night",
         "penthouse_pool",
@@ -195,30 +195,30 @@ PRESET_CATEGORIES = {
         "casino_vip_glam",
         "limo_glam",
     ],
-    "ğŸ”¥ í•« & ì„¹ì‹œ": [
-        # ê¸°ì¡´ ê´€ëŠ¥ & ì—ë¡œí‹± ê¸€ë˜ë¨¸
+    "?? ÇÖ & ¼½½Ã": [
+        # ±âÁ¸ °ü´É & ¿¡·ÎÆ½ ±Û·¡¸Ó
         "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
         "wet_silk_gown","oil_goddess_gold","pool_wet_glam","rain_soaked_dress","sweat_glam",
         "micro_dress_only","barely_covered","deep_plunge_gown","backless_extreme","one_strap_gown",
         "pinup_classic","vargas_girl","bombshell_retro","bunny_suit","playboy_glam",
-        # ëŸ­ì…”ë¦¬ì—ì„œ ì´ë™
+        # ·°¼Å¸®¿¡¼­ ÀÌµ¿
         "elite_lingerie","lingerie_noir",
-        # ë¹„ì¹˜ì—ì„œ ì´ë™
+        # ºñÄ¡¿¡¼­ ÀÌµ¿
         "barely_there","wet_look_goddess","thong_bikini","micro_bikini_gold",
         "sarong_goddess","wet_bikini_pool","topless_editorial","nude_beach_art",
         "aqua_bikini","golden_summer","riviera_heat",
-        # ê³„ì ˆì—ì„œ ì´ë™
+        # °èÀı¿¡¼­ ÀÌµ¿
         "snow_queen_erotic","autumn_gold_sensual","christmas_boudoir","summer_solstice_glam",
-        # ë€ì œë¦¬/í˜í‹°ì‰¬ ê²½ê³„
+        # ¶õÁ¦¸®/ÆäÆ¼½¬ °æ°è
         "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
-        # v21 â€” í•« & ì„¹ì‹œ 19ê°œ
+        # v21 ? ÇÖ & ¼½½Ã 19°³
         "fishnet_goddess","see_through_gown","wet_tshirt","string_bikini","lace_bodysuit",
         "satin_slip","velvet_corset","body_chain_only","strappy_dress","cut_out_swimsuit",
         "monokini_goddess","champagne_drip","neon_bodysuit","bikini_top_only",
         "white_linen_sheer","oil_drip_body","yoga_pants_glam","micro_skirt","halter_glam",
-        # 2026-06-08 ëˆ„ë½ ë³µêµ¬
+        # 2026-06-08 ´©¶ô º¹±¸
         "wet_editorial",
-        # v27 â€” í•« & ì„¹ì‹œ ì‹ ê·œ 17ê°œ
+        # v27 ? ÇÖ & ¼½½Ã ½Å±Ô 17°³
         "pool_edge_wet",
         "ocean_wave_body",
         "penthouse_bath",
@@ -229,7 +229,7 @@ PRESET_CATEGORIES = {
         "vip_booth_neon",
         "after_party_suite",
         "tennis_short_dress",
-        # 2026-07-02 ì‹ ê·œ ì¶”ê°€
+        # 2026-07-02 ½Å±Ô Ãß°¡
         "pasties_editorial",
         "body_tape_art",
         "invisible_dress",
@@ -242,22 +242,22 @@ PRESET_CATEGORIES = {
         "steam_room_goddess",
         "volcanic_heat_body",
     ],
-    "ğŸ’‹ ì—ë¡œí‹± & í˜í‹°ì‰¬": [
-        # íŒŒì›Œ&ì—£ì§€ì—ì„œ ì´ë™
+    "?? ¿¡·ÎÆ½ & ÆäÆ¼½¬": [
+        # ÆÄ¿ö&¿§Áö¿¡¼­ ÀÌµ¿
         "latex_venom","chrome_vixen","chain_goddess",
         "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
         "oil_goddess","savage_leather",
-        # í¼í¬ë¨¼ìŠ¤ì—ì„œ ì´ë™
+        # ÆÛÆ÷¸Õ½º¿¡¼­ ÀÌµ¿
         "burlesque","showgirl","cabaret_star","pole_art","candy_rave",
         "lap_dance_glam","striptease_art","pole_dance_power","midnight_bath","belly_dance_glam",
-        # íŒíƒ€ì§€ì—ì„œ ì´ë™
+        # ÆÇÅ¸Áö¿¡¼­ ÀÌµ¿
         "dark_succubus","vampire_seduction","witch_sensual","dark_fairy_erotic","shadow_seductress",
-        # v21 â€” ì—ë¡œí‹± & í˜í‹°ì‰¬ 16ê°œ
+        # v21 ? ¿¡·ÎÆ½ & ÆäÆ¼½¬ 16°³
         "latex_catsuit_red","rubber_goddess","harness_only","rope_bondage_art",
         "vinyl_goddess","corset_stockings","catsuit_zipper","bodystocking",
         "secretary_after_hours","nurse_sensual","maid_sensual","leather_bodysuit",
         "wet_latex","fetish_boots_only","dominatrix_red","fishnet_bodysuit",
-        # v22 â€” ì—ë¡œí‹± & í˜í‹°ì‰¬ ê°•í™” 26ê°œ
+        # v22 ? ¿¡·ÎÆ½ & ÆäÆ¼½¬ °­È­ 26°³
         "transparent_dress","sheer_catsuit",
         "latex_transparent","latex_hood_full","pvc_transparent_full",
         "chrome_bodysuit","mirror_dress","liquid_metal_body",
@@ -268,7 +268,7 @@ PRESET_CATEGORIES = {
         "succubus_full","dark_angel_fallen","alien_queen_body",
         "body_paint_nude","micro_thong_only","tape_bondage",
         "metal_bondage","lap_dance_extreme",
-        # 2026-07-02 ì‹ ê·œ ì¶”ê°€
+        # 2026-07-02 ½Å±Ô Ãß°¡
         "liquid_latex_drip",
         "chrome_paint_body",
         "silver_foil_body",
@@ -276,7 +276,7 @@ PRESET_CATEGORIES = {
         "mirror_latex",
         "neon_latex",
     ],
-    "ğŸŒ¿ ìì—° & ì›ì†Œ": [
+    "?? ÀÚ¿¬ & ¿ø¼Ò": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","frozen_latex","blizzard_queen","sandstorm_veil",
         "storm_couture","heat_shimmer","water_reflection","waterfall_goddess","rain_soaked",
         "mist_goddess","mist_vanguard","winter_forest","desert_mirage","desert_oracle",
@@ -285,7 +285,7 @@ PRESET_CATEGORIES = {
         "smoke_veil","liquid_gold_pour","liquid_mirror","prism_light","shattered_glass","zero_gravity",
         # v11
         "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
-        # v25 â€” ê°œë°©í˜• ìì—° ë°°ê²½
+        # v25 ? °³¹æÇü ÀÚ¿¬ ¹è°æ
         "son_doong_jungle","waitomo_glow","dead_vlei_ghost","danxia_rainbow",
         "cenote_sacred","socotra_alien","lake_natron","namib_star_desert",
         # v26
@@ -293,7 +293,7 @@ PRESET_CATEGORIES = {
         "rainbow_mountain","wisteria_tunnel","torres_del_paine","ha_long_bay",
         "kelimutu_crater","victoria_falls","fairy_pools","tunnel_of_love","chocolate_hills",
     ],
-    "ğŸŒƒ ë„ì‹œ & ë‚˜ì´íŠ¸": [
+    "?? µµ½Ã & ³ªÀÌÆ®": [
         "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
         "rooftop_midnight","rooftop_party","midnight_goddess","midnight_monolith","nightclub_vip",
         "monaco_nights","miami_afterglow","azure_nights","blue_hour_goddess","candlelight_noir",
@@ -301,30 +301,30 @@ PRESET_CATEGORIES = {
         "disco_goddess","music_festival","new_year_countdown","cyber_fire","cyber_silk","emerald_city",
         # v11
         "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
-        # v25 â€” ê°œë°©í˜• ê±´ì¶•/ë„ì‹œ ë°°ê²½
+        # v25 ? °³¹æÇü °ÇÃà/µµ½Ã ¹è°æ
         "sheikh_zayed_dawn","livraria_lello_staircase","palacio_de_sal",
         # v26
         "santorini_sunset","cappadocia_balloons","chefchaouen_blue","hallstatt_lake",
         "shirakawa_snow","positano_cliff","bruges_canal","cinque_terre_harbor",
     ],
-    "ğŸ¬ ì—ë””í† ë¦¬ì–¼ & ë¬´ë“œ": [
+    "?? ¿¡µğÅä¸®¾ó & ¹«µå": [
         "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
         "light_driven","backlit_silk","mirror_goddess","mirror_room","eclipse_body","chrome_skin",
         "neon_body","plasma_aura","molten_chrome","mercury_rising","mercury_pool","titanium_body",
         "snowflake_skin","80s_power","y2k_chrome","bohemian_paris","origami_couture",
         # v11
         "wet_glass","smoke_studio","infrared_beauty","grain_film",
-        # 2026-07-02 ì‹ ê·œ ì¶”ê°€
+        # 2026-07-02 ½Å±Ô Ãß°¡
         "bed_editorial",
         "floor_editorial",
         "chair_editorial",
         "door_frame_glam",
         "staircase_glam",
         "elevator_glam",
-        # 2026-06-08 ëˆ„ë½ ë³µêµ¬
+        # 2026-06-08 ´©¶ô º¹±¸
         "dreamy_soft_focus","film_noir_glam","noir_femme_fatale",
     ],
-    "ğŸº ë¬¸ëª… & ì‹ í™”": [
+    "?? ¹®¸í & ½ÅÈ­": [
         "cleopatra_gold","pharaoh_queen","byzantine_empress","maasai_warrior","nine_tails",
         "moonrise_ceremony","oracle_smoke","ritual_ash","ruins_goddess","renaissance_fantasy",
         "renaissance_nude","cathedral_light","baroque_punk","art_gallery","museum_glamour",
@@ -332,17 +332,17 @@ PRESET_CATEGORIES = {
         "marble_minimal","viking_queen",
         # v11
         "sumerian_queen","ming_empress","aztec_sun_goddess","celtic_warrior_queen",
-        # v17 ë³´ê°•
+        # v17 º¸°­
         "aphrodite_glam","artemis_huntress","freya_norse","kali_goddess",
         "isis_egypt","lakshmi_goddess","oshun_yoruba","morgan_le_fay",
-        # v19 â€” í•œêµ­ ì‹ ìˆ˜/ì •ë ¹
+        # v19 ? ÇÑ±¹ ½Å¼ö/Á¤·É
         "haetae_guardian","dokkaebi_spirit","korean_tiger_spirit","gyeongbokgung_night",
-        # v20 â€” êµ­ê¸° 8ê°œ
+        # v20 ? ±¹±â 8°³
         "union_jack_body","brazil_flag_body","usa_stars_stripes_body",
         "japan_rising_sun_body","south_africa_flag_body","india_flag_body",
         "mexico_flag_body","ukraine_flag_body",
     ],
-    "âœˆï¸ ì§ì—… & ë¼ì´í”„ìŠ¤íƒ€ì¼": [
+    "?? Á÷¾÷ & ¶óÀÌÇÁ½ºÅ¸ÀÏ": [
         "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
         "cruise_hostess","yacht_captain","yacht_club","sommelier","wine_tasting","casino_dealer",
         "private_jet","helipad","luxury_shopping","golf_glam","golf_caddie","tennis_luxe",
@@ -350,11 +350,11 @@ PRESET_CATEGORIES = {
         "fitness_power","yoga_goddess",
         # v11
         "barista_chic","gallery_curator","horse_racing","scuba_instructor",
-        # v13 ìŠ¤í¬ì¸ 
+        # v13 ½ºÆ÷Ã÷
         "ballet_prima","gymnastics_editorial","figure_skater","tennis_champion",
         "archery_goddess","carnival_rio",
     ],
-    "ğŸ”® íŒíƒ€ì§€ & ë‹¤í¬": [
+    "?? ÆÇÅ¸Áö & ´ÙÅ©": [
         "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
         "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
         "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -363,7 +363,7 @@ PRESET_CATEGORIES = {
         # v11
         "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
     ],
-    "âš”ï¸ íŒŒì›Œ & ì—£ì§€": [
+    "?? ÆÄ¿ö & ¿§Áö": [
         "valkyrie_storm","biker_glam","shadow_play",
         "fencer_noir","martial_arts","boxing_glamour","power_curve",
         "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent",
@@ -412,7 +412,7 @@ PRESET_CATEGORIES = {
         # v11
         "riot_goddess","punk_queen","steel_warrior","cage_fighter",
     ],
-    "ğŸ–ï¸ ë¹„ì¹˜ & ë¦¬ì¡°íŠ¸": [
+    "??? ºñÄ¡ & ¸®Á¶Æ®": [
         "summer_beach","surfer_goddess","pool_goddess",
         "poolside_noir","infinity_pool","beach_bonfire",
         "scuba_goddess","glass_floor","glass_house","ski_chalet","vineyard_harvest","spa_noir",
@@ -420,7 +420,7 @@ PRESET_CATEGORIES = {
         # v11
         "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
     ],
-    "ğŸ­ í¼í¬ë¨¼ìŠ¤ & ëŒ„ìŠ¤": [
+    "?? ÆÛÆ÷¸Õ½º & ´í½º": [
         "flamenco_queen","tango_passion","circus_performer",
         "ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
         "opera_night","christmas_glamour","pop_art_glamour","ribbon_goddess","petal_storm",
@@ -429,21 +429,21 @@ PRESET_CATEGORIES = {
         # v17
         "samba_carnival","hula_goddess","jazz_dance_glam","kathak_dance",
     ],
-    "ğŸ‘˜ ì „í†µ & ë¬¸í™”ì˜ìƒ": [
+    "?? ÀüÅë & ¹®È­ÀÇ»ó": [
         "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
         "harem_goddess","belly_dancer","odalisque","imperial_silk",
         # v10
         "kimono_silk","ao_dai_sheer","thai_temple","indian_bridal","moroccan_kaftan",
         "persian_court","yoruba_glamour","balinese_goddess","chinese_qipao_slit","scottish_corset",
-        # v17 ë³´ê°•
+        # v17 º¸°­
         "hanfu_goddess","cheongsam_slit","kebaya_java","dashiki_glam","kaftan_sheer",
         "flamenco_dress","dirndl_glam","hanbok_modern","ao_dai_glamour","saree_draped_sensual",
-        # v19 â€” í•œêµ­ ì—­ì‚¬/ì „í†µ
+        # v19 ? ÇÑ±¹ ¿ª»ç/ÀüÅë
         "joseon_queen","joseon_consort","gisaeng_glamour","gisaeng_noir","mudang_shaman",
         "haenyeo_goddess","silla_empress","goguryeo_warrior","goryeo_empress","joseon_painter",
         "korean_shaman_fire","baekje_lotus","silla_gold_crown",
     ],
-    "ğŸŒ¸ ê³„ì ˆ & í…Œë§ˆ": [
+    "?? °èÀı & Å×¸¶": [
         "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
         "sunflower_field","greenhouse_eden","tropical_night",
         # v10
@@ -452,7 +452,7 @@ PRESET_CATEGORIES = {
         # v17
         "halloween_glam","new_year_glam","sakura_night_glam","monsoon_goddess",
     ],
-    "ğŸ¬ íŒ & ì¹´ì™€ì´": [
+    "?? ÆË & Ä«¿ÍÀÌ": [
         # v10
         "y2k_fairy","pink_champagne","cotton_candy","angel_baby","idol_stage","kitty_glam",
         "strawberry_milk","cherry_pop","neon_kawaii","fairy_kei",
@@ -461,32 +461,32 @@ PRESET_CATEGORIES = {
         "lolita_gothic","disco_barbie","space_babe","bubblegum_pop","rainbow_rave","glitter_bomb",
         "arcade_queen","virtual_idol","tokimeki_pop","kpop_idol","korean_ulzzang","kbeauty_goddess",
         "kdrama_heroine","manga_girl",
-        # v19 â€” K-ì»¬ì²˜/ë·°í‹°
+        # v19 ? K-ÄÃÃ³/ºäÆ¼
         "kpop_girl_crush","hallyu_goddess","kbeauty_glass_skin",
         "kdrama_villain_queen","kdrama_chaebol_heir","gangnam_luxury_glam",
-        # 2026-06-08 ëˆ„ë½ ë³µêµ¬
+        # 2026-06-08 ´©¶ô º¹±¸
         "bubble_tea","doll_house","harajuku_doll",
     ],
 
-    "ğŸŒ ì• ë‹ˆ & ê¸€ë˜ë¨¸": [
-        # v13 ì¼ë³¸ ê³„ì—´
+    "?? ¾Ö´Ï & ±Û·¡¸Ó": [
+        # v13 ÀÏº» °è¿­
         "zero_suit","battle_bikini","succubus_anime","catgirl_luxe","dark_magical_girl",
         "witch_apprentice","fallen_angel_anime","kunoichi_glam","oni_warrior","samurai_bride",
         "dragon_princess","android_girl","pilot_suit","neon_android","vampire_seductress",
-        # v13 ê¸€ë¡œë²Œ ê³„ì—´
+        # v13 ±Û·Î¹ú °è¿­
         "cosmic_warrior_glam","dark_jester_glam","poison_ivy_vines","storm_goddess",
         "dark_sorceress_glam","jessica_rabbit_glam","webtoon_heroine","manhwa_villainess",
         "barbarella_retro","vampirella_dark","ghost_shell","android_2b","street_fighter_chun",
         "dark_elsa","sailor_moon_dark",
-        # v24 â€” Aí˜• ì‹¤ì‚¬ ì»¨ì…‰ 7ê°œ (íŠ¹ì • IP íšŒí”¼, ì¼ë°˜ ì•„í‚¤íƒ€ì…)
+        # v24 ? AÇü ½Ç»ç ÄÁ¼Á 7°³ (Æ¯Á¤ IP È¸ÇÇ, ÀÏ¹İ ¾ÆÅ°Å¸ÀÔ)
         "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden","anime_demon_slayer",
         "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
-        # v24 â€” Bí˜• 2D ê·¸ë¦¼ì²´ íŒŒì¼ëŸ¿ 2ê°œ (ì‹¤ì‚¬ ì—”ì§„ ê·¸ë¦¼ì²´ í…ŒìŠ¤íŠ¸ â€” ê²€ì¦ í•„ìš”)
+        # v24 ? BÇü 2D ±×¸²Ã¼ ÆÄÀÏ·µ 2°³ (½Ç»ç ¿£Áø ±×¸²Ã¼ Å×½ºÆ® ? °ËÁõ ÇÊ¿ä)
         "anime_cel_shaded","anime_webtoon_style",
     ],
 
-    # â”€â”€ ğŸ¨ ì• ë‹ˆ ì•„íŠ¸ìŠ¤íƒ€ì¼ (2026-06-09 ì‹ ì„¤, ê·¸ë¦¼ì²´ 32ì¢…) â”€â”€
-    "ğŸ¨ ì• ë‹ˆ ì•„íŠ¸ìŠ¤íƒ€ì¼": [
+    # ¦¡¦¡ ?? ¾Ö´Ï ¾ÆÆ®½ºÅ¸ÀÏ (2026-06-09 ½Å¼³, ±×¸²Ã¼ 32Á¾) ¦¡¦¡
+    "?? ¾Ö´Ï ¾ÆÆ®½ºÅ¸ÀÏ": [
         'anime_jp_90s_retro',
         'anime_jp_80s_citypop',
         'anime_jp_modern_glossy',
@@ -521,7 +521,7 @@ PRESET_CATEGORIES = {
         'anime_noir_silhouette',
     ],
 
-    "ğŸŒ‘ ì‹¤ë£¨ì—£ & ì„€ë„ìš°": [
+    "?? ½Ç·ç¿§ & ¼¨µµ¿ì": [
         "silhouette_spotlight_smoke",
         "silhouette_spotlight_latex",
         "silhouette_spotlight_heels",
@@ -554,7 +554,7 @@ PRESET_CATEGORIES = {
         "silhouette_smoke_studio",
     ],
 
-        "ğŸŒŒ ë¶ˆê°€ëŠ¥ & ì´ˆí˜„ì‹¤": [
+        "?? ºÒ°¡´É & ÃÊÇö½Ç": [
         "storm_eye_editorial",
         "living_fabric",
         "macro_goddess",
@@ -582,11 +582,11 @@ PRESET_CATEGORIES = {
         "weather_maker",
         "gravity_well",
         "double_exposure_self",
-        # v25 â€” ê°œë°©í˜• ì´ˆí˜„ì‹¤ ë°°ê²½
+        # v25 ? °³¹æÇü ÃÊÇö½Ç ¹è°æ
         "richat_eye","marble_caves_water",
     ],
 
-    "ğŸ›ï¸ ìœ ì  & ë¬¸ëª…": [
+    "??? À¯Àû & ¹®¸í": [
         "petra_rose","angkor_dawn","tikal_skyrise","bagan_balloon",
         "ellora_rock_temple","derinkuyu_underground","tigers_nest_cliff","naoshima_art_island",
         # v26
@@ -595,7 +595,7 @@ PRESET_CATEGORIES = {
         "angkor_thom_faces","teotihuacan_pyramid","gobekli_tepe","palmyra_colonnade",
     ],
 
-    "ğŸŒ‹ ì—˜ë¦¬ë©˜íƒˆ ê°“ë°ìŠ¤": [
+    "?? ¿¤¸®¸àÅ» °«µ¥½º": [
         "uyuni_wet_silk",
         "dead_sea_goddess",
         "iceland_hot_spring",
@@ -603,7 +603,7 @@ PRESET_CATEGORIES = {
         "niagara_wet_editorial",
         "monsoon_goddess",
         "black_sea_midnight",
-    # 2026-06-21 ìì—°&ì›ì†Œ G1~G10 ì „ì²´ tier íŒ¨ì¹˜
+    # 2026-06-21 ÀÚ¿¬&¿ø¼Ò G1~G10 ÀüÃ¼ tier ÆĞÄ¡
 
         "amazon_river_goddess",
         "lava_field_latex",
@@ -640,11 +640,11 @@ PRESET_CATEGORIES = {
         "rainbow_falls_goddess",
     ],
 
-    "ğŸ’§ ì›¨íŠ¸ & ê¸€ë¡œìŠ¤": [
-        # ìˆ˜ì˜ì¥/í’€
+    "?? ¿şÆ® & ±Û·Î½º": [
+        # ¼ö¿µÀå/Ç®
         "pool_surface_break", "pool_underwater_up", "pool_edge_dripping",
         "infinity_pool_wet", "hot_spring_steam", "jacuzzi_bubbles",
-        # 2026-07-02 ì‹ ê·œ ì¶”ê°€
+        # 2026-07-02 ½Å±Ô Ãß°¡
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -659,134 +659,134 @@ PRESET_CATEGORIES = {
         "waterfall_nude",
         "ocean_nude_editorial",
         "steam_bath_goddess",
-        # ë¹„/í­ìš°
+        # ºñ/Æø¿ì
         "rain_window_inside", "rain_street_soaked", "rain_studio_dramatic",
         "monsoon_body", "rain_car_window",
-        # ì˜¤ì¼/ê¸€ë¡œìŠ¤
+        # ¿ÀÀÏ/±Û·Î½º
         "oil_pour_studio", "oil_drip_back", "honey_drip_body",
         "chocolate_pour_gloss", "gloss_lips_drip", "chrome_gloss_body",
-        # ë•€/ì—´ê¸°
+        # ¶¡/¿­±â
         "sweat_studio_light", "after_workout_glow", "heat_mirage_sweat", "sauna_steam_body",
-        # ê²°ë¡œ/ë¬¼ë°©ìš¸
+        # °á·Î/¹°¹æ¿ï
         "condensation_skin", "ice_melt_drip", "dew_morning_body", "frost_breath_cold",
-        # ê¸°íƒ€ ì›¨íŠ¸
+        # ±âÅ¸ ¿şÆ®
         "waterfall_direct", "wave_crash_body", "wet_silk_minimal",
         "bubble_bath_gloss", "milk_bath_petals",
     ],
 
-    "ğŸŒ«ï¸ ëŒ€ê¸° & íŒŒí‹°í´": [
-        # ìŠ¤ëª¨í¬/ì—°ê¸°
+    "??? ´ë±â & ÆÄÆ¼Å¬": [
+        # ½º¸ğÅ©/¿¬±â
         "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
         "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
-        # íŒŒìš°ë”/ë”ìŠ¤íŠ¸
+        # ÆÄ¿ì´õ/´õ½ºÆ®
         "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
         "flour_dust_studio", "pigment_powder_art",
-        # í˜ë”/í˜íƒˆ
+        # Æä´õ/ÆäÅ»
         "feather_explosion", "black_feather_dark", "petal_storm_indoor",
         "cherry_blossom_burst", "dried_flower_cascade",
-        # ê¸€ë¦¬í„°/íŒŒí‹°í´
+        # ±Û¸®ÅÍ/ÆÄÆ¼Å¬
         "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
         "neon_particle_club", "bubble_floating_studio",
-        # ë¶ˆ/ìŠ¤íŒŒí¬
+        # ºÒ/½ºÆÄÅ©
         "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
-        # ìì—° íŒŒí‹°í´
+        # ÀÚ¿¬ ÆÄÆ¼Å¬
         "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
         "firefly_night_field", "seed_pod_floating",
     ],
-    "ğŸ‘‘ í•œêµ­ ì—­ì‚¬ & ê¶ì¤‘ ê¸€ë˜ë¨¸": [
-        # ğŸ¯ ì‚¼êµ­/ê³ ëŒ€ ì™•ì‹¤
+    "?? ÇÑ±¹ ¿ª»ç & ±ÃÁß ±Û·¡¸Ó": [
+        # ?? »ï±¹/°í´ë ¿Õ½Ç
         "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
         "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
         "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
         "dongye_tribal_queen",
-        # ğŸ° ê³ ë ¤ ê¶ì¤‘
+        # ?? °í·Á ±ÃÁß
         "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
         "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
         "mongol_goryeo_queen", "goryeo_haenyeo_silk",
-        # ğŸ‘˜ ì¡°ì„  ì™•ì‹¤/ê¶ì¤‘
+        # ?? Á¶¼± ¿Õ½Ç/±ÃÁß
         "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
         "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
         "joseon_merchant_woman", "damo_warrior", "joseon_night_queen",
         "joseon_concubine_red", "changdeok_moonlight", "gyeongbokgung_geisha",
-        # ğŸ’ƒ ê¸°ìƒ/ì˜ˆì¸
+        # ?? ±â»ı/¿¹ÀÎ
         "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
         "gisaeng_haiku_bath", "gisaeng_rain_dance", "gisaeng_black_silk",
         "wonhyang_legend", "hwang_jini_glam", "gisaeng_fan_dance",
         "gisaeng_pipa_night", "gisaeng_mirror_boudoir", "pyongyang_gisaeng",
-        # ğŸ¦Š ì‹ í™” & ì •ë ¹
+        # ?? ½ÅÈ­ & Á¤·É
         "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
         "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
         "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
         "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
-        # ğŸŒŠ ë¯¼ì† & ì„¸ì‹œí’ì†
+        # ?? ¹Î¼Ó & ¼¼½ÃÇ³¼Ó
         "haenyeo_wet_glam", "dano_festival_glam", "ganggangsullae_night",
         "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
         "jeju_shaman_sea", "korean_harvest_goddess",
-        # âš”ï¸ ì—¬ì „ì‚¬ & ë¬´ì¸
+        # ?? ¿©Àü»ç & ¹«ÀÎ
         "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
         "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
         "goguryeo_fire_warrior", "joseon_spy_sheer",
-        # ğŸ­ ê·¼ëŒ€ & í“¨ì „
+        # ?? ±Ù´ë & Ç»Àü
         "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
         "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
         "hanbok_wet_editorial", "joseon_boudoir",
     ],
 
-    "ğŸ¨ ë©€í‹° ë°”ë””í˜ì¸íŒ…": [
-        # G1 ëŒ€ë¹„í˜• ë“€ì˜¤ (2ì¸, ë°˜ëŒ€ í…Œë§ˆ ì¶©ëŒ/ì¡°í™”)
+    "?? ¸ÖÆ¼ ¹ÙµğÆäÀÎÆÃ": [
+        # G1 ´ëºñÇü µà¿À (2ÀÎ, ¹İ´ë Å×¸¶ Ãæµ¹/Á¶È­)
         "duo_fire_and_ice_bodypaint",
         "duo_day_and_night_bodypaint",
         "duo_bloom_and_void_bodypaint",
         "duo_gold_and_shadow_bodypaint",
         "duo_ocean_and_desert_bodypaint",
         "duo_circuit_and_nature_bodypaint",
-        # G1 ëŒ€ë¹„í˜• ë“€ì˜¤ ì¶”ê°€ (6ì¢…)
+        # G1 ´ëºñÇü µà¿À Ãß°¡ (6Á¾)
         "duo_east_and_west_bodypaint",
         "duo_macro_and_micro_bodypaint",
         "duo_ancient_and_future_bodypaint",
         "duo_poison_and_medicine_bodypaint",
         "duo_deep_sea_bodypaint",
-        # G2 ëŒ€ë¹„í˜• íŠ¸ë¦¬ì˜¤ (3ì¸, ì‚¼ì› ëŒ€ë¹„)
+        # G2 ´ëºñÇü Æ®¸®¿À (3ÀÎ, »ï¿ø ´ëºñ)
         "trio_rgb_trinity_bodypaint",
         "trio_past_present_future_bodypaint",
         "trio_predator_prey_apex_bodypaint",
         "trio_ink_gold_chrome_bodypaint",
         "trio_season_trinity_bodypaint",
-        # G2 ëŒ€ë¹„í˜• íŠ¸ë¦¬ì˜¤ ì¶”ê°€ (6ì¢…)
+        # G2 ´ëºñÇü Æ®¸®¿À Ãß°¡ (6Á¾)
         "trio_sun_moon_star_bodypaint",
         "trio_three_oceans_bodypaint",
         "trio_three_civilizations_bodypaint",
         "trio_fire_water_earth_bodypaint",
         "trio_three_big_cats_bodypaint",
-        # G3 ì—°ê²°í˜• ë“€ì˜¤ (2ì¸, í•©ì¹˜ë©´ í•˜ë‚˜ì˜ ì‘í’ˆ)
+        # G3 ¿¬°áÇü µà¿À (2ÀÎ, ÇÕÄ¡¸é ÇÏ³ªÀÇ ÀÛÇ°)
         "duo_butterfly_split_bodypaint",
         "duo_yin_yang_merge_bodypaint",
         "duo_world_map_bodypaint",
         "duo_klimt_tree_bodypaint",
         "duo_galaxy_split_bodypaint",
         "duo_wave_hokusai_bodypaint",
-        # G3 ì—°ê²°í˜• ë“€ì˜¤ ì¶”ê°€ (6ì¢…)
+        # G3 ¿¬°áÇü µà¿À Ãß°¡ (6Á¾)
         "duo_dna_helix_bodypaint",
         "duo_solar_eclipse_bodypaint",
         "duo_human_shadow_bodypaint",
         "duo_tiger_split_bodypaint",
         "duo_starry_night_split_bodypaint",
         "duo_peacock_split_bodypaint",
-        # G4 ì—°ê²°í˜• íŠ¸ë¦¬ì˜¤ (3ì¸, í•©ì¹˜ë©´ ê±°ëŒ€í•œ ì‘í’ˆ)
+        # G4 ¿¬°áÇü Æ®¸®¿À (3ÀÎ, ÇÕÄ¡¸é °Å´ëÇÑ ÀÛÇ°)
         "trio_triptych_klimt_bodypaint",
         "trio_phoenix_rising_bodypaint",
         "trio_world_tree_bodypaint",
         "trio_ocean_depth_bodypaint",
         "trio_aurora_spectrum_bodypaint",
         "trio_cosmic_creation_bodypaint",
-        # G4 ì—°ê²°í˜• íŠ¸ë¦¬ì˜¤ ì¶”ê°€ (6ì¢…)
+        # G4 ¿¬°áÇü Æ®¸®¿À Ãß°¡ (6Á¾)
         "trio_last_supper_bodypaint",
         "trio_rainbow_arc_bodypaint",
         "trio_milky_way_panorama_bodypaint",
         "trio_coral_reef_zones_bodypaint",
         "trio_creation_of_adam_bodypaint",
         "trio_poles_and_equator_bodypaint",
-        # 2026-07-03 ì‹ ê·œ QUAD 8ì¢…
+        # 2026-07-03 ½Å±Ô QUAD 8Á¾
         "quad_four_civilizations_bodypaint",
         "quad_four_goddesses_bodypaint",
         "quad_four_ages_bodypaint",
@@ -795,7 +795,7 @@ PRESET_CATEGORIES = {
         "quad_cmyk_bodypaint",
         "quad_four_classical_elements_klimt",
         "quad_four_seasons_night_bodypaint",
-        # 2026-07-03 ì‹ ê·œ QUINT 7ì¢…
+        # 2026-07-03 ½Å±Ô QUINT 7Á¾
         "quint_five_senses_bodypaint",
         "quint_five_worlds_bodypaint",
         "quint_five_elements_wuxing_bodypaint",
@@ -803,26 +803,27 @@ PRESET_CATEGORIES = {
         "quint_five_oceans_deep_bodypaint",
         "quint_five_sacred_colors_bodypaint",
         "quint_five_dance_cultures_bodypaint",
-        # 2026-07-03 ì‹ ê·œ HEXA 2ì¢…
+        # 2026-07-03 ½Å±Ô HEXA 2Á¾
         "hexa_rainbow_spectrum_bodypaint",
+    "trio_inside_outside_bodypaint",
         "hexa_six_chakras_bodypaint",
-        # 2026-07-03 ì‹ ê·œ OCTET 1ì¢…
+        # 2026-07-03 ½Å±Ô OCTET 1Á¾
         "octet_planets_solar_bodypaint",
-        # 2026-07-03 ì‹ ê·œ ì»¨ì…‰ 4ì¢…
+        # 2026-07-03 ½Å±Ô ÄÁ¼Á 4Á¾
         "trio_inside_outside_bodypaint",        "quad_fashion_capitals_bodypaint",
-                # 4ì¸ QUAD (5ì¢…)
+                # 4ÀÎ QUAD (5Á¾)
         "quad_four_seasons_bodypaint",
         "quad_four_elements_bodypaint",
         "quad_four_directions_bodypaint",
         "quad_four_seasons_klimt_bodypaint",
         "quad_rgba_spectrum_bodypaint",
-        # 5ì¸ QUINT (4ì¢…)
+        # 5ÀÎ QUINT (4Á¾)
         "quint_five_continents_bodypaint",
         "quint_five_elements_asia_bodypaint",
         "quint_rainbow_five_bodypaint",
         "quint_five_oceans_bodypaint",
 
-    # G5 ì—°ê²°í˜• ë“€ì˜¤ 30ì¢… (ê²€ì¦ ì˜ˆì •)
+    # G5 ¿¬°áÇü µà¿À 30Á¾ (°ËÁõ ¿¹Á¤)
     "duo_earth_hemisphere_bodypaint",
     "duo_day_city_night_city_bodypaint",
     "duo_volcano_glacier_bodypaint",
@@ -848,7 +849,7 @@ PRESET_CATEGORIES = {
     "duo_crystal_lava_bodypaint",
     "duo_skeleton_bloom_bodypaint",
     "duo_ink_wash_split_bodypaint",
-    # G6 ëŒ€ë¹„í˜• íŠ¸ë¦¬ì˜¤ 35ì¢… (ê²€ì¦ ì˜ˆì •)
+    # G6 ´ëºñÇü Æ®¸®¿À 35Á¾ (°ËÁõ ¿¹Á¤)
     "trio_stone_bronze_iron_bodypaint",
     "trio_ancient_medieval_modern_bodypaint",
     "trio_birth_life_death_bodypaint",
@@ -880,8 +881,8 @@ PRESET_CATEGORIES = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-        # G5 ì—°ê²°í˜• ë“€ì˜¤ (30ì¢…) â€” ë‘ ëª¸ì´ í•©ì³ì§€ë©´ í•˜ë‚˜ì˜ ì™„ì„±ì²´
-        # ìì—°/ìš°ì£¼
+        # G5 ¿¬°áÇü µà¿À (30Á¾) ? µÎ ¸öÀÌ ÇÕÃÄÁö¸é ÇÏ³ªÀÇ ¿Ï¼ºÃ¼
+        # ÀÚ¿¬/¿ìÁÖ
         "duo_earth_hemisphere_bodypaint",
         "duo_day_city_night_city_bodypaint",
         "duo_volcano_glacier_bodypaint",
@@ -889,127 +890,127 @@ PRESET_CATEGORIES = {
         "duo_aurora_milkyway_bodypaint",
         "duo_coral_abyss_bodypaint",
         "duo_tree_root_bodypaint",
-        # ë™ë¬¼/ìƒë¬¼
+        # µ¿¹°/»ı¹°
         "duo_eagle_serpent_bodypaint",
         "duo_wolf_moon_bodypaint",
         "duo_butterfly_cocoon_bodypaint",
         "duo_dragon_phoenix_bodypaint",
         "duo_lion_zebra_bodypaint",
         "duo_spider_web_bodypaint",
-        # ëª…í™”/ë¬¸í™”
+        # ¸íÈ­/¹®È­
         "duo_mona_lisa_split_bodypaint",
         "duo_birth_venus_split_bodypaint",
         "duo_yin_yang_koi_bodypaint",
         "duo_chess_board_bodypaint",
-        # SF/íŒíƒ€ì§€
+        # SF/ÆÇÅ¸Áö
         "duo_android_human_bodypaint",
         "duo_black_hole_star_bodypaint",
         "duo_past_future_city_bodypaint",
         "duo_virus_antibody_bodypaint",
         "duo_matrix_reality_bodypaint",
         "duo_crystal_lava_bodypaint",
-        # ì¸ì²´/ì² í•™
+        # ÀÎÃ¼/Ã¶ÇĞ
         "duo_skeleton_bloom_bodypaint",
         "duo_ink_wash_split_bodypaint",
-        # G6 ëŒ€ë¹„í˜• íŠ¸ë¦¬ì˜¤ (35ì¢…) â€” 3 ê·¹ë‹¨ì˜ ì¶©ëŒ/ì¡°í™”
-        # ì‹œê°„/ì—­ì‚¬
+        # G6 ´ëºñÇü Æ®¸®¿À (35Á¾) ? 3 ±Ø´ÜÀÇ Ãæµ¹/Á¶È­
+        # ½Ã°£/¿ª»ç
         "trio_stone_bronze_iron_bodypaint",
         "trio_ancient_medieval_modern_bodypaint",
         "trio_birth_life_death_bodypaint",
         "trio_seed_tree_ash_bodypaint",
-        # ì›ì†Œ/ìì—°
+        # ¿ø¼Ò/ÀÚ¿¬
         "trio_lightning_ocean_earthquake_bodypaint",
         "trio_sand_ice_magma_bodypaint",
         "trio_sky_earth_underground_bodypaint",
         "trio_micro_human_macro_bodypaint",
         "trio_fog_rain_snow_bodypaint",
         "trio_jungle_desert_tundra_bodypaint",
-        # ìƒ‰/ë¹›
+        # »ö/ºû
         "trio_primary_colors_bodypaint",
         "trio_black_white_gray_bodypaint",
         "trio_gold_silver_bronze_bodypaint",
         "trio_sunrise_sunset_moonrise_bodypaint",
         "trio_infrared_visible_uv_bodypaint",
-        # ì‹ í™”/ì¢…êµ
+        # ½ÅÈ­/Á¾±³
         "trio_heaven_earth_hell_bodypaint",
         "trio_creator_preserver_destroyer_bodypaint",
         "trio_fate_three_bodypaint",
         "trio_medusa_sphinx_hydra_bodypaint",
         "trio_valkyrie_siren_medea_bodypaint",
-        # ë¬¸ëª…/ì§€ì—­
+        # ¹®¸í/Áö¿ª
         "trio_amazon_sahara_arctic_bodypaint",
         "trio_east_west_south_bodypaint",
         "trio_viking_samurai_spartan_bodypaint",
         "trio_nile_amazon_yangtze_bodypaint",
         "trio_rome_babylon_aztec_bodypaint",
-        # ê°ì •/ì² í•™
+        # °¨Á¤/Ã¶ÇĞ
         "trio_love_war_peace_bodypaint",
         "trio_fear_anger_joy_bodypaint",
         "trio_order_chaos_void_bodypaint",
         "trio_id_ego_superego_bodypaint",
         "trio_thesis_antithesis_synthesis_bodypaint",
     ],
-    "ğŸ‘¯ ë“€ì˜¤ ê¸€ë˜ë¨¸": [
-        # G1 ì›¨íŠ¸ & í’€
+    "?? µà¿À ±Û·¡¸Ó": [
+        # G1 ¿şÆ® & Ç®
         "duo_infinity_pool_contrast",
         "duo_rain_neon_soaked",
     "duo_ink_wash_split_bodypaint",
         "duo_pool_bodypaint_micro",
         "duo_wet_glass_divide",
-        # G2 ë°”ë””í˜ì¸íŠ¸ ëŒ€ê²°
+        # G2 ¹ÙµğÆäÀÎÆ® ´ë°á
         "duo_bodypaint_vs_latex",
         "duo_ocean_bodypaint",
         "duo_golden_desert_bodypaint",
         "duo_aurora_bodypaint",
         "duo_cyberpunk_bodypaint",
         "duo_jungle_tribal_bodypaint",
-        # G3 ë¼í…ìŠ¤ & ì†Œì¬ ëŒ€ë¹„
+        # G3 ¶óÅØ½º & ¼ÒÀç ´ëºñ
         "duo_latex_color_block",
         "duo_latex_storm_opposites",
         "duo_dark_latex_power",
         "duo_flamenco_latex_fusion",
-        # G4 ì˜¤ì¼ & ê·¸ë¦¼ì
+        # G4 ¿ÀÀÏ & ±×¸²ÀÚ
         "duo_smoke_noir",
-        # G5 ëŸ­ì…”ë¦¬ ì”¬
+        # G5 ·°¼Å¸® ¾À
         "duo_versailles_latex_gold",
         "duo_monaco_yacht",
         "duo_champagne_gala",
         "duo_villa_italy",
         "duo_casino_power",
-        # G6 ì—˜ë¦¬ë©˜íƒˆ ëŒ€ë¹„
+        # G6 ¿¤¸®¸àÅ» ´ëºñ
         "duo_fire_and_ice",
         "duo_angel_devil",
         "duo_chrome_future",
-        # G7 ì‹¤ë£¨ì—£ & ë¯¸ë‹ˆë©€
+        # G7 ½Ç·ç¿§ & ¹Ì´Ï¸Ö
         "duo_sunset_silhouette",
         "duo_desert_minimal",
         "duo_kpop_stage",
         "duo_penthouse_power",
         "duo_ice_bath_contrast",
     ],
-    "ğŸª ê±°ìš¸ & ë°˜ì‚¬ ê¸€ë˜ë¨¸": [
-        # G1 í´ë˜ì‹ë¯¸ëŸ¬
+    "?? °Å¿ï & ¹İ»ç ±Û·¡¸Ó": [
+        # G1 Å¬·¡½Ä¹Ì·¯
         "infinity_mirror_goddess",
         "hall_of_mirrors_glam",
         "obsidian_mirror_ritual",
         "venetian_mirror_boudoir",
         "cheval_mirror_reveal",
         "broken_mirror_multiplied",
-        # G2 ìˆ˜ë©´ë°˜ì‚¬
+        # G2 ¼ö¸é¹İ»ç
         "mercury_lake_reflection",
         "salt_flat_sky_merge",
         "rain_puddle_city_invert",
         "flooded_temple_mirror",
         "infinity_pool_edge_reflect",
         "morning_dew_skin_reflection",
-        # G3 ìœ ë¦¬&í”„ë¦¬ì¦˜
+        # G3 À¯¸®&ÇÁ¸®Áò
         "glass_box_all_angles",
         "prism_light_body_split",
         "crystal_cave_skin_facets",
         "two_way_mirror_watcher",
         "window_rain_double",
         "soap_bubble_dome",
-        # G4 í¬ë¡¬&ë©”íƒˆ
+        # G4 Å©·Ò&¸ŞÅ»
         "chrome_sphere_world",
         "polished_obsidian_floor",
         "supercar_chrome_reflect",
@@ -1018,29 +1019,29 @@ PRESET_CATEGORIES = {
         "mirrored_skyscraper_facade",
     ],
 
-    "ğŸ§¬ SF & ë°”ì´ì˜¤í‘í¬": [
-        # G1 í¬ë¼ì´ì˜¤&ì‹¤í—˜ì‹¤
+    "?? SF & ¹ÙÀÌ¿ÀÆãÅ©": [
+        # G1 Å©¶óÀÌ¿À&½ÇÇè½Ç
         "cryo_emergence_wet",
         "specimen_amber_suspended",
         "clean_room_latex_protocol",
         "gene_sequencer_data_skin",
         "quarantine_protocol_breach",
         "petri_dish_giant_macro",
-        # G2 ì‹¬í•´&ìœ ê¸°ì²´
+        # G2 ½ÉÇØ&À¯±âÃ¼
         "abyssal_pressure_glam",
         "mycelium_web_consumed",
         "coral_organism_absorption",
         "carnivorous_plant_trap",
         "symbiote_second_skin",
         "jellyfish_bloom_float",
-        # G3 íŠ¸ëœìŠ¤íœ´ë¨¼
+        # G3 Æ®·£½ºÈŞ¸Õ
         "cyborg_partial_reveal",
         "neural_lace_crown",
         "exoskeleton_stripped",
         "prosthetic_art",
         "spine_tech_implant",
         "synthetic_skin_tear",
-        # G4 ë°”ì´ëŸ¬ìŠ¤&ë®¤í…Œì´ì…˜
+        # G4 ¹ÙÀÌ·¯½º&¹ÂÅ×ÀÌ¼Ç
         "mutation_bloom",
         "toxic_spore_cloud",
         "infection_glam",
@@ -1049,9 +1050,9 @@ PRESET_CATEGORIES = {
         "alien_host_glam",
     ],
 
-    "ğŸŒ€ í™˜ê²½ ì¼ì²´ ë°”ë””í˜ì¸íŒ…": [
-        # G1 íŒ¨í„´/ì§ë¬¼ (6ì¢… SSS)
-        # 2026-07-02 ë°”ë””í˜ì¸íŒ…+ì˜ìƒ ë¯¹ìŠ¤ ì½œë¼ë³´
+    "?? È¯°æ ÀÏÃ¼ ¹ÙµğÆäÀÎÆÃ": [
+        # G1 ÆĞÅÏ/Á÷¹° (6Á¾ SSS)
+        # 2026-07-02 ¹ÙµğÆäÀÎÆÃ+ÀÇ»ó ¹Í½º Äİ¶óº¸
         "trio_bodypaint_latex_frame",
         "trio_bodypaint_gown_frame",
         "trio_bodypaint_leather_frame",
@@ -1071,26 +1072,26 @@ PRESET_CATEGORIES = {
         "trio_bikini_bodypaint_center",
         "trio_sheer_bodypaint_center",
         "trio_chrome_bodypaint_center",
-        # ğŸŒ€ í™˜ê²½ ì¼ì²´ ë°”ë””í˜ì¸íŒ…
+        # ?? È¯°æ ÀÏÃ¼ ¹ÙµğÆäÀÎÆÃ
         "merge_butterfly_fabric",
         "merge_floral_wallpaper",
         "merge_leopard_fabric",
         "merge_mandala_carpet",
         "merge_toile_pattern",
         "merge_tartan_plaid",
-        # G2 ìì—°í™˜ê²½ (5ì¢… SSS/SS)
+        # G2 ÀÚ¿¬È¯°æ (5Á¾ SSS/SS)
         "merge_salt_flat_sky",
         "merge_autumn_leaves_floor",
         "merge_coral_reef_water",
         "merge_sand_dunes",
         "merge_moss_stone_ground",
-        # G3 ê±´ì¶•/ì†Œì¬ (5ì¢… SSS)
+        # G3 °ÇÃà/¼ÒÀç (5Á¾ SSS)
         "merge_clockwork_gears",
         "merge_marble_column_wall",
         "merge_islamic_tile_wall",
         "merge_stained_glass_window",
         "merge_circuit_board",
-        # G4 ì˜ˆìˆ /íšŒí™” (6ì¢… SSS)
+        # G4 ¿¹¼ú/È¸È­ (6Á¾ SSS)
         "merge_klimt_gold_mural",
         "merge_vangogh_starry",
         "merge_ukiyo_wave_print",
@@ -1102,35 +1103,36 @@ PRESET_CATEGORIES = {
 }
 
 
-# HOF tier â€” Hall of Fame: ì‹¤ì œ ê²€ì¦ ì´ë¯¸ì§€ ì¤‘ ìµœê³  í€„ë¦¬í‹° ì„ ì •
-# ê¸°ì¤€: "ì™€" í•˜ëŠ” ë°˜ì‘, êµ¬ë„/ë°°ê²½/ë°”ë””í˜ì¸íŒ… ì‚¼ë°•ì ì™„ë²½, ì¦‰ì‹œ ìƒì„± ê°€ëŠ¥
+# HOF tier ? Hall of Fame: ½ÇÁ¦ °ËÁõ ÀÌ¹ÌÁö Áß ÃÖ°í Ä÷¸®Æ¼ ¼±Á¤
+# ±âÁØ: "¿Í" ÇÏ´Â ¹İÀÀ, ±¸µµ/¹è°æ/¹ÙµğÆäÀÎÆÃ »ï¹ÚÀÚ ¿Ïº®, Áï½Ã »ı¼º °¡´É
 HOF_TIER = {
-    "trio_chrome_bodypaint_center",       # í¬ë¡¬SF+ê°¤ëŸ­ì‹œ êµ¬ë„ ì™„ë²½
-    "trio_gown_bodypaint_center",         # í™©ê¸ˆë°”ë¡œí¬+ì´ë¸Œë‹ê°€ìš´ ê°¤ëŸ¬ë¦¬ê¸‰
-    "trio_sheer_bodypaint_center",        # ì‹œì–´+í”Œë¡œëŸ´ ë°”ë””í˜ì¸íŒ… ìµœìš°ìˆ˜
-    "limo_glam",                          # ëŸ­ì…”ë¦¬ ì™„ì„±ë„ ìµœìƒ
-    "yacht_sunset_glam",                  # ë°°ê²½+ì¡°ëª…+ì˜ìƒ ì‚¼ë°•ì
-    "staircase_glam",                     # ê³„ë‹¨êµ¬ë„ ì—ë””í† ë¦¬ì–¼ ì™„ì„±ë„
-    "volcanic_heat_body",                 # í™”ì‚°ë°°ê²½ ë…ë³´ì 
-    "trio_three_civilizations_bodypaint", # 3ìƒ‰ëŒ€ë¹„+ë°•ë¬¼ê´€ ë°°ê²½ ì™„ë²½
-    "trio_ancient_medieval_modern_bodypaint", # ë°°ê²½3ë¶„í• +ì‹œëŒ€ë³„ ì»¨ì…‰ ë…ì°½ì„± ìµœê³ 
-    "trio_creation_of_adam_bodypaint",    # ì‹œìŠ¤í‹°ë‚˜+ë£¨ë¸Œë¥´ ë°°ê²½ ì˜ˆìˆ ì  ì™„ì„±ë„ ë…ë³´ì 
-    "trio_black_white_gray_bodypaint",    # ì¡°ê°ê°™ì€ ì™„ì„±ë„ í‘/íšŒ/ë°± ëŒ€ë¹„ ì••ë„ì 
-    "trio_fog_rain_snow_bodypaint",       # ìƒ‰ê°+í†µì¼ê° ì••ë„ì  ì•ˆê°œ/ë¬¼/ëˆˆ ì™„ë²½í‘œí˜„
-    # 2026-07-03 ì‹ ê·œ HOF â€” QUAD/QUINT/HEXA ê²€ì¦ ì™„ë£Œ
-    "quad_four_ages_bodypaint",               # ê¸ˆ/ì€/ë™/ì²  ê·¸ë¼ë°ì´ì…˜ ë°°ê²½ ì™„ë²½
-    "quad_four_classical_elements_klimt",     # í´ë¦¼íŠ¸ ê¸ˆë¹›í™€+4ì›ì†Œ ì™„ë²½ ìœµí•©
-    "quad_four_seasons_night_bodypaint",      # 4ê³„ì ˆ ë°°ê²½ ë¶„í• +ì•¼ê°„ ì—¬ì‹  ì••ë„ì 
-    "quint_five_senses_bodypaint",            # 5ê° ë°”ë¡œí¬í™€ 5ì¸ ì„¸ë¡œ ì™„ë²½
-    "quint_five_worlds_bodypaint",            # 5ì„¸ê³„ ë°°ê²½ë¶„í• +ì—¬ì‹  ì—­ëŒ€ê¸‰
-    "quint_five_elements_wuxing_bodypaint",   # ì˜¤í–‰+ìê¸ˆì„± í™©ê¸ˆì‹œê°„ ìµœê³ 
-    "hexa_rainbow_spectrum_bodypaint",        # 6ì¸ ë¬´ì§€ê°œ ì„¸ë¡œ4:5 HOFê¸‰
+    "trio_chrome_bodypaint_center",       # Å©·ÒSF+°¶·°½Ã ±¸µµ ¿Ïº®
+    "trio_gown_bodypaint_center",         # È²±İ¹Ù·ÎÅ©+ÀÌºê´×°¡¿î °¶·¯¸®±Ş
+    "trio_sheer_bodypaint_center",        # ½Ã¾î+ÇÃ·Î·² ¹ÙµğÆäÀÎÆÃ ÃÖ¿ì¼ö
+    "limo_glam",                          # ·°¼Å¸® ¿Ï¼ºµµ ÃÖ»ó
+    "yacht_sunset_glam",                  # ¹è°æ+Á¶¸í+ÀÇ»ó »ï¹ÚÀÚ
+    "staircase_glam",                     # °è´Ü±¸µµ ¿¡µğÅä¸®¾ó ¿Ï¼ºµµ
+    "volcanic_heat_body",                 # È­»ê¹è°æ µ¶º¸Àû
+    "trio_three_civilizations_bodypaint", # 3»ö´ëºñ+¹Ú¹°°ü ¹è°æ ¿Ïº®
+    "trio_ancient_medieval_modern_bodypaint", # ¹è°æ3ºĞÇÒ+½Ã´ëº° ÄÁ¼Á µ¶Ã¢¼º ÃÖ°í
+    "trio_creation_of_adam_bodypaint",    # ½Ã½ºÆ¼³ª+·çºê¸£ ¹è°æ ¿¹¼úÀû ¿Ï¼ºµµ µ¶º¸Àû
+    "trio_black_white_gray_bodypaint",    # Á¶°¢°°Àº ¿Ï¼ºµµ Èæ/È¸/¹é ´ëºñ ¾ĞµµÀû
+    "trio_fog_rain_snow_bodypaint",       # »ö°¨+ÅëÀÏ°¨ ¾ĞµµÀû ¾È°³/¹°/´« ¿Ïº®Ç¥Çö
+    # 2026-07-03 ½Å±Ô HOF ? QUAD/QUINT/HEXA °ËÁõ ¿Ï·á
+    "quad_four_ages_bodypaint",               # ±İ/Àº/µ¿/Ã¶ ±×¶óµ¥ÀÌ¼Ç ¹è°æ ¿Ïº®
+    "quad_four_classical_elements_klimt",     # Å¬¸²Æ® ±İºûÈ¦+4¿ø¼Ò ¿Ïº® À¶ÇÕ
+    "quad_four_seasons_night_bodypaint",      # 4°èÀı ¹è°æ ºĞÇÒ+¾ß°£ ¿©½Å ¾ĞµµÀû
+    "quint_five_senses_bodypaint",            # 5°¨ ¹Ù·ÎÅ©È¦ 5ÀÎ ¼¼·Î ¿Ïº®
+    "quint_five_worlds_bodypaint",            # 5¼¼°è ¹è°æºĞÇÒ+¿©½Å ¿ª´ë±Ş
+    "quint_five_elements_wuxing_bodypaint",   # ¿ÀÇà+ÀÚ±İ¼º È²±İ½Ã°£ ÃÖ°í
+    "hexa_rainbow_spectrum_bodypaint",
+    "trio_inside_outside_bodypaint",        # 6ÀÎ ¹«Áö°³ ¼¼·Î4:5 HOF±Ş
 }
 
-# SSS tier â€” "ì´ê²Œ AIì•¼?" ìˆ˜ì¤€. ìŠ¤í¬ë¡¤ ì™„ì „ ì •ì§€. 4ë°•ì ì™„ë²½ + ì°¨ë³„ì„±
-# ê¸°ì¤€: ì²´í˜• ì˜¤ë²„ë¼ì´ë“œë§Œìœ¼ë¡œ ë¬¸í™”/íŒ¨í„´/í¬ì¦ˆ ìë™ì™„ì„±, 2ì¥ ì´ìƒ ì¼ê´€ì„±, ë…ë³´ì  ì„íŒ©íŠ¸
+# SSS tier ? "ÀÌ°Ô AI¾ß?" ¼öÁØ. ½ºÅ©·Ñ ¿ÏÀü Á¤Áö. 4¹ÚÀÚ ¿Ïº® + Â÷º°¼º
+# ±âÁØ: Ã¼Çü ¿À¹ö¶óÀÌµå¸¸À¸·Î ¹®È­/ÆĞÅÏ/Æ÷Áî ÀÚµ¿¿Ï¼º, 2Àå ÀÌ»ó ÀÏ°ü¼º, µ¶º¸Àû ÀÓÆÑÆ®
 SSS_TIER = {
-        # 2026-07-03 ì‹ ê·œ QUAD/QUINT/HEXA/OCTET + ì»¨ì…‰ SSS
+        # 2026-07-03 ½Å±Ô QUAD/QUINT/HEXA/OCTET + ÄÁ¼Á SSS
     "quad_four_ages_bodypaint",
     "quad_four_classical_elements_klimt",
     "quad_four_seasons_night_bodypaint",
@@ -1138,6 +1140,7 @@ SSS_TIER = {
     "quint_five_worlds_bodypaint",
     "quint_five_elements_wuxing_bodypaint",
     "hexa_rainbow_spectrum_bodypaint",
+    "trio_inside_outside_bodypaint",
     "quad_four_civilizations_bodypaint",
     "quad_four_gemstones_bodypaint",
     "quad_cmyk_bodypaint",
@@ -1149,7 +1152,7 @@ SSS_TIER = {
     "octet_planets_solar_bodypaint",
     "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
-        # 2026-07-03 ì‹ ê·œ SSS 52ì¢… (ì‹ ê·œ 66ì¢… ê²€ì¦ ì™„ë£Œ)
+        # 2026-07-03 ½Å±Ô SSS 52Á¾ (½Å±Ô 66Á¾ °ËÁõ ¿Ï·á)
     "champagne_pour_body",
     "wine_pour_body",
     "milk_pour_body",
@@ -1203,7 +1206,7 @@ SSS_TIER = {
     "invisible_dress",
     "neon_latex",
 
-    # 2026-07-02 í¼í¬ë¨¼ìŠ¤&ëŒ„ìŠ¤ G3/G4 SSS (8ì¢…)
+    # 2026-07-02 ÆÛÆ÷¸Õ½º&´í½º G3/G4 SSS (8Á¾)
     "opera_night",
     "christmas_glamour",
     "ballet_noir",
@@ -1213,74 +1216,74 @@ SSS_TIER = {
     "ribbon_goddess",
     "petal_storm",
 
-    # 2026-06-29 ë©€í‹° ë°”ë””í˜ì¸íŒ… 57ì¢… SSS (ê²€ì¦ ì™„ë£Œ 24ì¢… í™•ì • + 33ì¢… ê²€ì¦ ì˜ˆì •)
-    # G1 ëŒ€ë¹„í˜• ë“€ì˜¤ (24ì¢… ê²€ì¦ ì™„ë£Œ SSS)
+    # 2026-06-29 ¸ÖÆ¼ ¹ÙµğÆäÀÎÆÃ 57Á¾ SSS (°ËÁõ ¿Ï·á 24Á¾ È®Á¤ + 33Á¾ °ËÁõ ¿¹Á¤)
+    # G1 ´ëºñÇü µà¿À (24Á¾ °ËÁõ ¿Ï·á SSS)
     "duo_fire_and_ice_bodypaint",
     "duo_day_and_night_bodypaint",
     "duo_bloom_and_void_bodypaint",
     "duo_gold_and_shadow_bodypaint",
     "duo_ocean_and_desert_bodypaint",
     "duo_circuit_and_nature_bodypaint",
-    # G2 ëŒ€ë¹„í˜• íŠ¸ë¦¬ì˜¤
+    # G2 ´ëºñÇü Æ®¸®¿À
     "trio_rgb_trinity_bodypaint",
     "trio_past_present_future_bodypaint",
     "trio_predator_prey_apex_bodypaint",
     "trio_ink_gold_chrome_bodypaint",
     "trio_season_trinity_bodypaint",
-    # G3 ì—°ê²°í˜• ë“€ì˜¤
+    # G3 ¿¬°áÇü µà¿À
     "duo_butterfly_split_bodypaint",
     "duo_yin_yang_merge_bodypaint",
     "duo_world_map_bodypaint",
     "duo_galaxy_split_bodypaint",
     "duo_wave_hokusai_bodypaint",
-    # G3 SS (ì—°ê²° ì»¨ì…‰ ë¯¸ë‹¬)
-    # "duo_klimt_tree_bodypaint",  # SS ì „ìš©
-    # G4 ì—°ê²°í˜• íŠ¸ë¦¬ì˜¤
+    # G3 SS (¿¬°á ÄÁ¼Á ¹Ì´Ş)
+    # "duo_klimt_tree_bodypaint",  # SS Àü¿ë
+    # G4 ¿¬°áÇü Æ®¸®¿À
     "trio_triptych_klimt_bodypaint",
     "trio_phoenix_rising_bodypaint",
     "trio_world_tree_bodypaint",
     "trio_ocean_depth_bodypaint",
     "trio_aurora_spectrum_bodypaint",
     "trio_cosmic_creation_bodypaint",
-    # G1 ì¶”ê°€ (ê²€ì¦ ì˜ˆì •)
+    # G1 Ãß°¡ (°ËÁõ ¿¹Á¤)
     "duo_east_and_west_bodypaint",
     "duo_macro_and_micro_bodypaint",
     "duo_ancient_and_future_bodypaint",
     "duo_poison_and_medicine_bodypaint",
     "duo_deep_sea_bodypaint",
-    # G2 ì¶”ê°€ (ê²€ì¦ ì˜ˆì •)
+    # G2 Ãß°¡ (°ËÁõ ¿¹Á¤)
     "trio_sun_moon_star_bodypaint",
     "trio_three_oceans_bodypaint",
     "trio_three_civilizations_bodypaint",
     "trio_fire_water_earth_bodypaint",
     "trio_three_big_cats_bodypaint",
-    # G3 ì¶”ê°€ (ê²€ì¦ ì˜ˆì •)
+    # G3 Ãß°¡ (°ËÁõ ¿¹Á¤)
     "duo_dna_helix_bodypaint",
     "duo_solar_eclipse_bodypaint",
     "duo_human_shadow_bodypaint",
     "duo_tiger_split_bodypaint",
     "duo_starry_night_split_bodypaint",
     "duo_peacock_split_bodypaint",
-    # G4 ì¶”ê°€ (ê²€ì¦ ì˜ˆì •)
+    # G4 Ãß°¡ (°ËÁõ ¿¹Á¤)
     "trio_last_supper_bodypaint",
     "trio_rainbow_arc_bodypaint",
     "trio_milky_way_panorama_bodypaint",
     "trio_coral_reef_zones_bodypaint",
     "trio_creation_of_adam_bodypaint",
     "trio_poles_and_equator_bodypaint",
-    # QUAD 4ì¸ (ê²€ì¦ ì˜ˆì •)
+    # QUAD 4ÀÎ (°ËÁõ ¿¹Á¤)
     "quad_four_seasons_bodypaint",
     "quad_four_elements_bodypaint",
     "quad_four_directions_bodypaint",
     "quad_four_seasons_klimt_bodypaint",
     "quad_rgba_spectrum_bodypaint",
-    # QUINT 5ì¸ (ê²€ì¦ ì˜ˆì •)
+    # QUINT 5ÀÎ (°ËÁõ ¿¹Á¤)
     "quint_five_continents_bodypaint",
     "quint_five_elements_asia_bodypaint",
     "quint_rainbow_five_bodypaint",
     "quint_five_oceans_bodypaint",
 
-    # G5 ì—°ê²°í˜• ë“€ì˜¤ 30ì¢… (ê²€ì¦ ì˜ˆì •)
+    # G5 ¿¬°áÇü µà¿À 30Á¾ (°ËÁõ ¿¹Á¤)
     "duo_earth_hemisphere_bodypaint",
     "duo_day_city_night_city_bodypaint",
     "duo_volcano_glacier_bodypaint",
@@ -1306,7 +1309,7 @@ SSS_TIER = {
     "duo_crystal_lava_bodypaint",
     "duo_skeleton_bloom_bodypaint",
     "duo_ink_wash_split_bodypaint",
-    # G6 ëŒ€ë¹„í˜• íŠ¸ë¦¬ì˜¤ 35ì¢… (ê²€ì¦ ì˜ˆì •)
+    # G6 ´ëºñÇü Æ®¸®¿À 35Á¾ (°ËÁõ ¿¹Á¤)
     "trio_stone_bronze_iron_bodypaint",
     "trio_ancient_medieval_modern_bodypaint",
     "trio_birth_life_death_bodypaint",
@@ -1337,7 +1340,7 @@ SSS_TIER = {
     "trio_order_chaos_void_bodypaint",
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
-    # ë“€ì˜¤ ê¸€ë˜ë¨¸ SS (SSS 23ì¢… + SSì „ìš© 5ì¢…)
+    # µà¿À ±Û·¡¸Ó SS (SSS 23Á¾ + SSÀü¿ë 5Á¾)
     "duo_infinity_pool_contrast",
     "duo_pool_bodypaint_micro",
     "duo_wet_glass_divide",
@@ -1367,7 +1370,7 @@ SSS_TIER = {
     "duo_monaco_yacht",
     "duo_villa_italy",
     "duo_ice_bath_contrast",
-    # ë“€ì˜¤ ê¸€ë˜ë¨¸ SSS (23ì¢…)
+    # µà¿À ±Û·¡¸Ó SSS (23Á¾)
     "duo_infinity_pool_contrast",
     "duo_pool_bodypaint_micro",
     "duo_wet_glass_divide",
@@ -1391,12 +1394,12 @@ SSS_TIER = {
     "duo_desert_minimal",
     "duo_kpop_stage",
     "duo_penthouse_power",
-    # 2026-06-20 ì§ì—…&ë¼ì´í”„ìŠ¤íƒ€ì¼ SSì „ìš© 10ì¢… + SSS 24ì¢… í¬í•¨
-    # SSì „ìš©
+    # 2026-06-20 Á÷¾÷&¶óÀÌÇÁ½ºÅ¸ÀÏ SSÀü¿ë 10Á¾ + SSS 24Á¾ Æ÷ÇÔ
+    # SSÀü¿ë
     "cruise_hostess", "yacht_club",
     "nurse_glamour", "sommelier", "wine_tasting", "barista_chic",
     "golf_caddie", "fitness_power", "scuba_instructor", "archery_goddess",
-    # SSSë„ SSì— í¬í•¨ (ê·œì¹™)
+    # SSSµµ SS¿¡ Æ÷ÇÔ (±ÔÄ¢)
     "flight_attendant", "pilot_glamour", "yacht_captain",
     "private_jet", "helipad", "hotel_concierge",
     "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
@@ -1405,34 +1408,34 @@ SSS_TIER = {
     "cheerleader", "ballet_prima", "gymnastics_editorial",
     "figure_skater", "carnival_rio", "luxury_shopping",
 
-    # 2026-06-20 ì§ì—…&ë¼ì´í”„ìŠ¤íƒ€ì¼ SSS 24ì¢… í™•ì •
-    # Aê·¸ë£¹ â€” í•­ê³µ/í•´ì–‘/ëŸ­ì…”ë¦¬
+    # 2026-06-20 Á÷¾÷&¶óÀÌÇÁ½ºÅ¸ÀÏ SSS 24Á¾ È®Á¤
+    # A±×·ì ? Ç×°ø/ÇØ¾ç/·°¼Å¸®
     "flight_attendant", "pilot_glamour", "yacht_captain",
     "private_jet", "helipad", "hotel_concierge",
-    # Bê·¸ë£¹ â€” ì „ë¬¸ì§
+    # B±×·ì ? Àü¹®Á÷
     "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
-    # Cê·¸ë£¹ â€” ìŠ¤í¬ì¸ /í”¼íŠ¸ë‹ˆìŠ¤
+    # C±×·ì ? ½ºÆ÷Ã÷/ÇÇÆ®´Ï½º
     "golf_glam", "tennis_luxe", "tennis_referee", "tennis_champion",
     "f1_grid_girl", "equestrian_glam", "horse_racing", "yoga_goddess",
-    # Dê·¸ë£¹ â€” í¼í¬ë¨¼ìŠ¤/ìŠ¤í¬ì¸ 2
+    # D±×·ì ? ÆÛÆ÷¸Õ½º/½ºÆ÷Ã÷2
     "cheerleader", "ballet_prima", "gymnastics_editorial",
     "figure_skater", "carnival_rio", "luxury_shopping",
 
     "body_paint_nude",
-    # 2026-06-11 ë°°ê²½ í”„ë¦¬ì…‹ SSS í™•ì • (1ì°¨)
-    "cenote_sacred",         # ë¬¼ì† ìˆ˜ì§ ë©êµ´ + ì—ë©”ë„ë“œ ë°˜ì‚¬, 4ì¥ ì¼ê´€ì„±
-    "tikal_skyrise",         # ì •ê¸€ ìœ„ í”¼ë¼ë¯¸ë“œ + ìš´í•´ + ê³¨ë“ ì•„ì›Œ ì—­ê´‘
-    "angkor_dawn",           # ì—°ëª» ë°˜ì‚¬ + í™©ê¸ˆ ì¼ì¶œ + í¬ë©”ë¥´ ì¡°ê°, êµ¬ë„ êµê³¼ì„œê¸‰
-    "waitomo_glow",          # ìƒë¬¼ë°œê´‘ ì€í•˜ìˆ˜ ì²œì¥ + ìˆ˜ë©´ ë°˜ì‚¬, ë…ë³´ì  ë¹„ì£¼ì–¼
-    # 2026-06-11 ë°°ê²½ í”„ë¦¬ì…‹ SSS í™•ì • (2ì°¨)
-    "marble_caves_water",    # ëŒ€ë¦¬ì„ íŒ¨í„´ + í„°ì½°ì´ì¦ˆ ìˆ˜ë©´, ì˜ìƒì´ ë°°ê²½ìƒ‰ í¡ìˆ˜
-    "bagan_balloon",         # ì—´ê¸°êµ¬ + í™©ê¸ˆ ì¼ì¶œ + ë¶ˆíƒ‘ í‰ì›, 4ìš”ì†Œ ì™„ë²½
-    "tigers_nest_cliff",     # ì ˆë²½ ìˆ˜ë„ì› + ê¸°ë„ ê¹ƒë°œ + íˆë§ë¼ì•¼ ì„¤ì‚°
-    "sheikh_zayed_dawn",     # í° ë” + ëª¨ìì´í¬ ë°”ë‹¥ + ë°˜ì‚¬ ì—°ëª» + ë¸”ë£¨ì•„ì›Œ
-    "livraria_lello_staircase", # í…Œë¼ì½”íƒ€ ë“œë ˆìŠ¤ + ë ˆë“œ ê³„ë‹¨ + ìŠ¤í…Œì¸ë“œê¸€ë¼ìŠ¤ 3ì¤‘ ë™ê¸°í™”
-    "namib_star_desert",     # ì€í•˜ìˆ˜ ì•„ì¹˜ + ì‚¬êµ¬ ëŠ¥ì„  + ë°±í¬ì¦ˆ êµ¬ë„
-    "ellora_rock_temple",    # íŒë‘ ì¡°ê° ë²½ + í…Œë¼ì½”íƒ€ ë“œë ˆìŠ¤ ì™„ì „ ë™í™”
-    # 2026-06-13 v26 ì›”ë“œ ëœë“œë§ˆí¬ SSS í™•ì •
+    # 2026-06-11 ¹è°æ ÇÁ¸®¼Â SSS È®Á¤ (1Â÷)
+    "cenote_sacred",         # ¹°¼Ó ¼öÁ÷ µ¢±¼ + ¿¡¸Ş¶öµå ¹İ»ç, 4Àå ÀÏ°ü¼º
+    "tikal_skyrise",         # Á¤±Û À§ ÇÇ¶ó¹Ìµå + ¿îÇØ + °ñµç¾Æ¿ö ¿ª±¤
+    "angkor_dawn",           # ¿¬¸ø ¹İ»ç + È²±İ ÀÏÃâ + Å©¸Ş¸£ Á¶°¢, ±¸µµ ±³°ú¼­±Ş
+    "waitomo_glow",          # »ı¹°¹ß±¤ ÀºÇÏ¼ö ÃµÀå + ¼ö¸é ¹İ»ç, µ¶º¸Àû ºñÁÖ¾ó
+    # 2026-06-11 ¹è°æ ÇÁ¸®¼Â SSS È®Á¤ (2Â÷)
+    "marble_caves_water",    # ´ë¸®¼® ÆĞÅÏ + ÅÍÄâÀÌÁî ¼ö¸é, ÀÇ»óÀÌ ¹è°æ»ö Èí¼ö
+    "bagan_balloon",         # ¿­±â±¸ + È²±İ ÀÏÃâ + ºÒÅ¾ Æò¿ø, 4¿ä¼Ò ¿Ïº®
+    "tigers_nest_cliff",     # Àıº® ¼öµµ¿ø + ±âµµ ±ê¹ß + È÷¸»¶ó¾ß ¼³»ê
+    "sheikh_zayed_dawn",     # Èò µ¼ + ¸ğÀÚÀÌÅ© ¹Ù´Ú + ¹İ»ç ¿¬¸ø + ºí·ç¾Æ¿ö
+    "livraria_lello_staircase", # Å×¶óÄÚÅ¸ µå·¹½º + ·¹µå °è´Ü + ½ºÅ×ÀÎµå±Û¶ó½º 3Áß µ¿±âÈ­
+    "namib_star_desert",     # ÀºÇÏ¼ö ¾ÆÄ¡ + »ç±¸ ´É¼± + ¹éÆ÷Áî ±¸µµ
+    "ellora_rock_temple",    # ÈùµÎ Á¶°¢ º® + Å×¶óÄÚÅ¸ µå·¹½º ¿ÏÀü µ¿È­
+    # 2026-06-13 v26 ¿ùµå ·£µå¸¶Å© SSS È®Á¤
     "positano_cliff",
     "bruges_canal",
     "colosseum_dusk",
@@ -1443,7 +1446,7 @@ SSS_TIER = {
     "teotihuacan_pyramid",
     "palmyra_colonnade",
 
-    # 2026-06-19 ì• ë‹ˆì•„íŠ¸ìŠ¤íƒ€ì¼ SSS 31ì¢… í™•ì •
+    # 2026-06-19 ¾Ö´Ï¾ÆÆ®½ºÅ¸ÀÏ SSS 31Á¾ È®Á¤
     "anime_jp_90s_retro",
     "anime_jp_80s_citypop",
     "anime_jp_modern_glossy",
@@ -1476,7 +1479,7 @@ SSS_TIER = {
     "anime_eu_erotic_bd",
     "anime_noir_silhouette",
 
-    # 2026-06-18 í•«&ì„¹ì‹œ SSS í™•ì •
+    # 2026-06-18 ÇÖ&¼½½Ã SSS È®Á¤
     "bodycon_power", "boudoir_noir", "wet_silk_gown", "oil_goddess_gold",
     "rain_soaked_dress", "micro_dress_only", "deep_plunge_gown", "backless_extreme",
     "one_strap_gown", "pinup_classic", "vargas_girl", "bombshell_retro",
@@ -1491,15 +1494,15 @@ SSS_TIER = {
     "oil_drip_body", "yoga_pants_glam", "halter_glam", "wet_editorial",
     "pool_edge_wet", "ocean_wave_body", "penthouse_bath", "silk_sheets_morning",
     "spa_private_steam", "bar_counter_glam", "after_party_suite", "tennis_short_dress",
-    # 2026-06-13 v27 í•«&ì„¹ì‹œ SSS í™•ì •
+    # 2026-06-13 v27 ÇÖ&¼½½Ã SSS È®Á¤
     "dressing_room_mirror",
     "vip_booth_neon",
-    # 2026-06-13 ë¹„ì¹˜&ë¦¬ì¡°íŠ¸ SSS í™•ì •
+    # 2026-06-13 ºñÄ¡&¸®Á¶Æ® SSS È®Á¤
     "infinity_pool",
     "scuba_goddess",
     "spa_noir",
     "sunset_cruise",
-    # 2026-06-14 íŒ&ì¹´ì™€ì´ SSS í™•ì •
+    # 2026-06-14 ÆË&Ä«¿ÍÀÌ SSS È®Á¤
     "cherry_pop",
     "hime_gyaru",
     "decora_kei",
@@ -1510,52 +1513,52 @@ SSS_TIER = {
     "kdrama_villain_queen",
     "bubble_tea",
     "doll_house",
-    # 2026-06-15 harajuku_doll SSS ìŠ¹ê²© (íŒ&ì¹´ì™€ì´ â€” ë‹¤ì¼€ì‹œíƒ€ ê±°ë¦¬ ì‹±í¬ 4ì¥ ê²€ì¦)
+    # 2026-06-15 harajuku_doll SSS ½Â°İ (ÆË&Ä«¿ÍÀÌ ? ´ÙÄÉ½ÃÅ¸ °Å¸® ½ÌÅ© 4Àå °ËÁõ)
     "harajuku_doll",
-    # 2026-06-15 greenhouse_eden SSS ìŠ¹ê²© (ê³„ì ˆ&í…Œë§ˆ â€” ìì‚¬ê·€ ë“œë ˆìŠ¤=ì˜¨ì‹¤ ìƒíƒœê³„ ìœµí•© 6ì¥ ê²€ì¦)
+    # 2026-06-15 greenhouse_eden SSS ½Â°İ (°èÀı&Å×¸¶ ? ÀÙ»ç±Í µå·¹½º=¿Â½Ç »ıÅÂ°è À¶ÇÕ 6Àå °ËÁõ)
     "greenhouse_eden",
-    # 2026-06-15 ê³„ì ˆ&í…Œë§ˆ SSS 3ì¢… í™•ì •
-    "halloween_glam",       # ì˜ìƒ+ë°°ê²½+ì†Œí’ˆ = ê³ ë”• ì„¸ê³„ê´€ ì™„ì „ ìœµí•©, 6ì¥ ê²€ì¦
-    "new_year_glam",        # ë“œë ˆìŠ¤ ì‹œí€€ = í­ì£½+ì»¨í˜í‹° ë¹› í¡ìˆ˜, íƒ€ì„ìŠ¤í€˜ì–´ 4ì¥ ê²€ì¦
-    "sakura_night_glam",    # ë“œë ˆìŠ¤ í”Œë¡œëŸ´ = ë²šê½ƒ í„°ë„ íŒ¨í„´ ì—°ì†, ì‹ ì‚¬ ë“±ë¶ˆ 6ì¥ ê²€ì¦
-    # 2026-06-15 ì—ë””í† ë¦¬ì–¼&ë¬´ë“œ SSS 8ì¢… í™•ì •
-    "backlit_silk",         # ì—­ê´‘ íˆ¬ê³¼ â†’ ë“œë ˆìŠ¤=ê´‘ì›, waitomo_glow ë…¼ë¦¬ ë™ì¼
-    "mirror_room",          # ì‹¤ë²„ìˆ˜íŠ¸+ê±°ìš¸ë°© ê²½ê³„ ì†Œë©¸, dressing_room_mirrorë³´ë‹¤ ê°•í•¨
-    "eclipse_body",         # ë“œë ˆìŠ¤=ì½”ë¡œë‚˜ ë°œê´‘, ìš°ì£¼í˜„ìƒ=ì˜ìƒ
-    "plasma_aura",          # í”Œë¼ì¦ˆë§ˆ=ì˜ìƒ ì™„ì „ ìœµí•©, ì—ë„ˆì§€=ë“œë ˆìŠ¤ (ì´ë¯¸ì§€6 ê¸°ì¤€)
-    "molten_chrome",        # ìš©ê´‘ë¡œ+ë…¹ëŠ” í¬ë¡¬ ë¬¼ë¦¬ì  ë™ì¡°, ì†Œì¬=í™˜ê²½
-    "mercury_pool",         # ìˆ˜ì€ ì¸ì²´=ìˆ˜ë©´ ìœ ì²´ ì—°ì†ì„±, ì˜ìƒ=ì•¡ì²´
-    "snowflake_skin",       # ì•„ì´ìŠ¤ ë“œë ˆìŠ¤=ì„¤ì› ì†Œì¬ ë™í™” (ì´ë¯¸ì§€5 ê¸°ì¤€)
-    "noir_femme_fatale",    # í‘ë°±+5ìš”ì†Œ ì„¸ê³„ê´€ ì™„ì „ êµ¬í˜„, halloween_glam ë™ì¼ ë…¼ë¦¬
+    # 2026-06-15 °èÀı&Å×¸¶ SSS 3Á¾ È®Á¤
+    "halloween_glam",       # ÀÇ»ó+¹è°æ+¼ÒÇ° = °íµñ ¼¼°è°ü ¿ÏÀü À¶ÇÕ, 6Àå °ËÁõ
+    "new_year_glam",        # µå·¹½º ½ÃÄö = ÆøÁ×+ÄÁÆäÆ¼ ºû Èí¼ö, Å¸ÀÓ½ºÄù¾î 4Àå °ËÁõ
+    "sakura_night_glam",    # µå·¹½º ÇÃ·Î·² = º¢²É ÅÍ³Î ÆĞÅÏ ¿¬¼Ó, ½Å»ç µîºÒ 6Àå °ËÁõ
+    # 2026-06-15 ¿¡µğÅä¸®¾ó&¹«µå SSS 8Á¾ È®Á¤
+    "backlit_silk",         # ¿ª±¤ Åõ°ú ¡æ µå·¹½º=±¤¿ø, waitomo_glow ³í¸® µ¿ÀÏ
+    "mirror_room",          # ½Ç¹ö¼öÆ®+°Å¿ï¹æ °æ°è ¼Ò¸ê, dressing_room_mirrorº¸´Ù °­ÇÔ
+    "eclipse_body",         # µå·¹½º=ÄÚ·Î³ª ¹ß±¤, ¿ìÁÖÇö»ó=ÀÇ»ó
+    "plasma_aura",          # ÇÃ¶óÁî¸¶=ÀÇ»ó ¿ÏÀü À¶ÇÕ, ¿¡³ÊÁö=µå·¹½º (ÀÌ¹ÌÁö6 ±âÁØ)
+    "molten_chrome",        # ¿ë±¤·Î+³ì´Â Å©·Ò ¹°¸®Àû µ¿Á¶, ¼ÒÀç=È¯°æ
+    "mercury_pool",         # ¼öÀº ÀÎÃ¼=¼ö¸é À¯Ã¼ ¿¬¼Ó¼º, ÀÇ»ó=¾×Ã¼
+    "snowflake_skin",       # ¾ÆÀÌ½º µå·¹½º=¼³¿ø ¼ÒÀç µ¿È­ (ÀÌ¹ÌÁö5 ±âÁØ)
+    "noir_femme_fatale",    # Èæ¹é+5¿ä¼Ò ¼¼°è°ü ¿ÏÀü ±¸Çö, halloween_glam µ¿ÀÏ ³í¸®
 
-    # v28 ì „í†µë¬¸í™” ë°”ë””í˜ì¸íŒ… íŒ¨ì¹˜ (48ì¢…)
-    # 1ì°¨ SSS
+    # v28 ÀüÅë¹®È­ ¹ÙµğÆäÀÎÆÃ ÆĞÄ¡ (48Á¾)
+    # 1Â÷ SSS
     "kabuki_bodypaint",
     "joseon_bodypaint",
     "tibetan_bodypaint",
     "byzantine_bodypaint",
     "mayan_bodypaint",
-    # 2ì°¨ SSS
+    # 2Â÷ SSS
     "geisha_bodypaint",
     "ming_bodypaint",
     "thai_bodypaint",
     "ottoman_bodypaint",
     "flamenco_bodypaint",
     "sumerian_bodypaint",
-    # 3ì°¨ SSS
+    # 3Â÷ SSS
     "maori_bodypaint",
     "balinese_bodypaint",
     "persian_bodypaint",
     "mughal_bodypaint",
     "hopi_bodypaint",
     "haida_bodypaint",
-    # 4ì°¨ SSS
+    # 4Â÷ SSS
     "polynesian_bodypaint",
     "korean_shaman_bodypaint",
     "noh_bodypaint",
     "hanbok_bodypaint",
     "tang_dynasty_bodypaint",
-    # 5ì°¨ SSS
+    # 5Â÷ SSS
     "moroccan_bodypaint",
     "batik_bodypaint",
     "ikat_bodypaint",
@@ -1563,14 +1566,14 @@ SSS_TIER = {
     "ninja_bodypaint",
     "kebaya_bodypaint",
     "scottish_bodypaint",
-    # 6ì°¨ SSS
+    # 6Â÷ SSS
     "voodoo_bodypaint",
     "scythian_bodypaint",
     "olmec_bodypaint",
     "odalisque_bodypaint",
     "harem_bodypaint",
     "shaman_bodypaint",
-    # 7ì°¨ SSS
+    # 7Â÷ SSS
     "kimono_bodypaint",
     "samurai_bodypaint",
     "geisha_white_bodypaint",
@@ -1579,19 +1582,19 @@ SSS_TIER = {
     "cheongsam_bodypaint",
     "gisaeng_bodypaint",
     "hanbok_modern_bodypaint",
-    # 8ì°¨ SSS
+    # 8Â÷ SSS
     "ao_dai_bodypaint",
     "zulu_bodypaint",
     "kente_bodypaint",
     "dashiki_bodypaint",
     "belly_bodypaint",
 
-    # v28 ì „í†µë¬¸í™” ë°”ë””í˜ì¸íŒ… íŒ¨ì¹˜ (3ì¢…)
-    # SS ì „ìš©
+    # v28 ÀüÅë¹®È­ ¹ÙµğÆäÀÎÆÃ ÆĞÄ¡ (3Á¾)
+    # SS Àü¿ë
     "sari_bodypaint",
     "yoruba_bodypaint",
     "maiko_bodypaint",
-    # 2026-06-16 ì• ë‹ˆ&ê¸€ë˜ë¨¸ SSS í™•ì • (17ì¢…)
+    # 2026-06-16 ¾Ö´Ï&±Û·¡¸Ó SSS È®Á¤ (17Á¾)
     "kunoichi_glam",
     "samurai_bride",
     "oni_warrior",
@@ -1632,7 +1635,7 @@ SSS_TIER = {
     "subway_editorial",
     "santorini_sunset",
     "cappadocia_balloons",
-    # 2026-06-18 ì—˜ë¦¬ë©˜íƒˆ ê°“ë°ìŠ¤ SS í™•ì • (SSS í¬í•¨)
+    # 2026-06-18 ¿¤¸®¸àÅ» °«µ¥½º SS È®Á¤ (SSS Æ÷ÇÔ)
     "uyuni_wet_silk", "maldives_underwater", "bioluminescent_bay", "rainbow_falls_goddess",
     "trolltunga_edge", "zhangjiajie_cloud", "cliff_wind_sheer", "skydive_editorial",
     "hot_air_balloon_glam", "wave_barrel_goddess", "glacier_melt_goddess",
@@ -1640,19 +1643,19 @@ SSS_TIER = {
     "lava_field_latex", "solar_flare_goddess",
     "aurora_bare", "antarctica_ice_glam", "meteor_shower_glam", "ice_cave_blue",
     "antelope_light_sheer", "waitomo_glow_body", "coral_reef_sheer", "black_sea_midnight",
-    # SS ì „ìš©
+    # SS Àü¿ë
     "niagara_wet_editorial", "thunderstorm_wet", "cave_waterfall_goddess",
     "desert_heat_body",
     "volcano_edge_glam", "bonfire_editorial", "eruption_silhouette", "amazon_river_goddess",
     "iceland_hot_spring", "northern_lights_body", "dead_sea_goddess",
     "socotra_alien_glam", "deep_jungle_goddess", "monsoon_goddess",
-    # 2026-06-18 ì—˜ë¦¬ë©˜íƒˆ ê°“ë°ìŠ¤ ì¹´í…Œê³ ë¦¬ SSS í™•ì •
-    # G1 ë¬¼/ìŠµê¸°
-    "uyuni_wet_silk",        # SSâ†’SSS ìŠ¹ê¸‰ (ìš©ì•”ìƒ‰ ì˜ìƒ+ìš°ìœ ë‹ˆ ì†Œê¸ˆì‚¬ë§‰ ì™„ì „ í•©ì¼)
+    # 2026-06-18 ¿¤¸®¸àÅ» °«µ¥½º Ä«Å×°í¸® SSS È®Á¤
+    # G1 ¹°/½À±â
+    "uyuni_wet_silk",        # SS¡æSSS ½Â±Ş (¿ë¾Ï»ö ÀÇ»ó+¿ìÀ¯´Ï ¼Ò±İ»ç¸· ¿ÏÀü ÇÕÀÏ)
     "maldives_underwater",
     "bioluminescent_bay",
     "rainbow_falls_goddess",
-    # G2 ê·¹í•œ ìì—° (ì „ì¢… SSS)
+    # G2 ±ØÇÑ ÀÚ¿¬ (ÀüÁ¾ SSS)
     "trolltunga_edge",
     "zhangjiajie_cloud",
     "cliff_wind_sheer",
@@ -1660,27 +1663,27 @@ SSS_TIER = {
     "hot_air_balloon_glam",
     "wave_barrel_goddess",
     "glacier_melt_goddess",
-    # G3 ì‚¬ë§‰/ì—´ê¸°
+    # G3 »ç¸·/¿­±â
     "sahara_mirage",
     "salt_flat_body",
     "salar_atacama_flamingo",
     "pamukkale_goddess",
     "red_canyon_goddess",
-    # G4 í™”ì‚°/ë¶ˆ/íƒœì–‘
-    "lava_field_latex",      # SSâ†’SSS ìŠ¹ê¸‰
+    # G4 È­»ê/ºÒ/ÅÂ¾ç
+    "lava_field_latex",      # SS¡æSSS ½Â±Ş
     "solar_flare_goddess",
-    # G5 ë¹™í•˜/ì˜¤ë¡œë¼/ìš°ì£¼
-    "aurora_bare",           # SSâ†’SSS ìŠ¹ê¸‰
+    # G5 ºùÇÏ/¿À·Î¶ó/¿ìÁÖ
+    "aurora_bare",           # SS¡æSSS ½Â±Ş
     "antarctica_ice_glam",
     "meteor_shower_glam",
     "ice_cave_blue",
-    # G6 ì´êµ­/ì •ê¸€/ìƒë¬¼ë°œê´‘
-    "antelope_light_sheer",  # SSâ†’SSS ìŠ¹ê¸‰
+    # G6 ÀÌ±¹/Á¤±Û/»ı¹°¹ß±¤
+    "antelope_light_sheer",  # SS¡æSSS ½Â±Ş
     "waitomo_glow_body",
     "coral_reef_sheer",
     "black_sea_midnight",
 
-    # 2026-06-24 íŒŒì›Œ&ì—£ì§€ SSS 16ì¢…
+    # 2026-06-24 ÆÄ¿ö&¿§Áö SSS 16Á¾
     "valkyrie_storm",
     "fencer_noir",
     "martial_arts",
@@ -1740,7 +1743,7 @@ SSS_TIER = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-    # 2026-06-24 í¼í¬ë¨¼ìŠ¤&ëŒ„ìŠ¤ G1+G2 SSS 11ì¢…
+    # 2026-06-24 ÆÛÆ÷¸Õ½º&´í½º G1+G2 SSS 11Á¾
     "flamenco_queen",
     "tango_passion",
     "ribbon_dance",
@@ -1752,7 +1755,7 @@ SSS_TIER = {
     "masquerade_ball",
     "samba_carnival",
     "jazz_dance_glam",
-    # 2026-06-25 ëŒ€ê¸°&íŒŒí‹°í´ 30ì¢… SSS
+    # 2026-06-25 ´ë±â&ÆÄÆ¼Å¬ 30Á¾ SSS
     "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
     "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
     "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
@@ -1764,80 +1767,80 @@ SSS_TIER = {
     "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
     "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
     "firefly_night_field", "seed_pod_floating",
-    # 2026-06-25 ì—ë¡œí‹±&í˜í‹°ì‰¬ G1 SSS 8ì¢…
+    # 2026-06-25 ¿¡·ÎÆ½&ÆäÆ¼½¬ G1 SSS 8Á¾
     "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
     "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
-    # 2026-06-25 ì—ë¡œí‹±&í˜í‹°ì‰¬ G2 SSS 7ì¢…
+    # 2026-06-25 ¿¡·ÎÆ½&ÆäÆ¼½¬ G2 SSS 7Á¾
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
     "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
 
-    # 2026-06-28 í•œêµ­ ì—­ì‚¬&ê¶ì¤‘ ê¸€ë˜ë¨¸ G1~G4 + G5ì „ë°˜ë¶€ SSS
-    # G1 ì‚¼êµ­/ê³ ëŒ€ â€” SSS 5ì¢…
+    # 2026-06-28 ÇÑ±¹ ¿ª»ç&±ÃÁß ±Û·¡¸Ó G1~G4 + G5Àü¹İºÎ SSS
+    # G1 »ï±¹/°í´ë ? SSS 5Á¾
     "silla_queen_gold", "baekje_lotus_queen", "gojoseon_shaman_queen",
     "gaya_iron_goddess", "ancient_mural_goddess",
-    # G2 ê³ ë ¤ ê¶ì¤‘ â€” SSS 7ì¢…
+    # G2 °í·Á ±ÃÁß ? SSS 7Á¾
     "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
     "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
     "mongol_goryeo_queen",
-    # G3 ì¡°ì„  ì™•ì‹¤/ê¶ì¤‘ â€” SSS 11ì¢…
+    # G3 Á¶¼± ¿Õ½Ç/±ÃÁß ? SSS 11Á¾
     "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
     "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
     "damo_warrior", "joseon_night_queen", "joseon_concubine_red",
     "changdeok_moonlight", "gyeongbokgung_geisha",
-    # G4 ê¸°ìƒ/ì˜ˆì¸ â€” SSS 10ì¢…
+    # G4 ±â»ı/¿¹ÀÎ ? SSS 10Á¾
     "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
     "gisaeng_rain_dance", "gisaeng_black_silk", "wonhyang_legend",
     "hwang_jini_glam", "gisaeng_fan_dance", "gisaeng_pipa_night",
     "pyongyang_gisaeng",
-    # G5 ì‹ í™”&ì •ë ¹ ì „ë°˜ë¶€ â€” SSS 6ì¢…
+    # G5 ½ÅÈ­&Á¤·É Àü¹İºÎ ? SSS 6Á¾
     "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
     "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
-    # G5 ì‹ í™”&ì •ë ¹ í›„ë°˜ë¶€ â€” SSS 6ì¢…
+    # G5 ½ÅÈ­&Á¤·É ÈÄ¹İºÎ ? SSS 6Á¾
     "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
     "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
-    # G6 ë¯¼ì†&ì„¸ì‹œí’ì† â€” SSS 7ì¢… (haenyeo_wet_glamì€ SS ì „ìš©)
+    # G6 ¹Î¼Ó&¼¼½ÃÇ³¼Ó ? SSS 7Á¾ (haenyeo_wet_glamÀº SS Àü¿ë)
     "dano_festival_glam", "ganggangsullae_night",
     "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
     "jeju_shaman_sea", "korean_harvest_goddess",
-    # G7 ì—¬ì „ì‚¬&ë¬´ì¸ â€” SSS 8ì¢…
+    # G7 ¿©Àü»ç&¹«ÀÎ ? SSS 8Á¾
     "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
     "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
     "goguryeo_fire_warrior", "joseon_spy_sheer",
-    # G8 ê·¼ëŒ€&í“¨ì „ â€” SSS 8ì¢…
+    # G8 ±Ù´ë&Ç»Àü ? SSS 8Á¾
     "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
     "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
     "hanbok_wet_editorial", "joseon_boudoir",
 
-    # 2026-06-26 ì—ë¡œí‹±&í˜í‹°ì‰¬ G3~G12 SSS 51ì¢…
-    # G3 í•˜ë„¤ìŠ¤/ë³¸ë””ì§€
+    # 2026-06-26 ¿¡·ÎÆ½&ÆäÆ¼½¬ G3~G12 SSS 51Á¾
+    # G3 ÇÏ³×½º/º»µğÁö
     "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
     "suspension_art", "tape_bondage", "metal_bondage",
-    # G4 ë©”ì‰¬/ì‹œìŠ¤ë£¨
+    # G4 ¸Ş½¬/½Ã½º·ç
     "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
     "sheer_catsuit", "catsuit_zipper", "pvc_transparent_full",
-    # G5 ë„ë¯¸ë‚˜íŠ¸ë¦­ìŠ¤
+    # G5 µµ¹Ì³ªÆ®¸¯½º
     "dominatrix_glam", "dominatrix_full_armor", "dominatrix_red",
     "goddess_throne", "pole_art",
-    # G6 í¼í¬ë¨¼ìŠ¤/ì‡¼ê±¸
+    # G6 ÆÛÆ÷¸Õ½º/¼î°É
     "burlesque", "showgirl", "cabaret_star", "candy_rave",
     "lap_dance_glam", "lap_dance_extreme", "striptease_art",
-    # G7 í´/ëŒ„ìŠ¤/ë°°ìŠ¤
+    # G7 Æú/´í½º/¹è½º
     "pole_dance_power", "pole_dance_extreme", "midnight_bath", "belly_dance_glam",
-    # G8 íŒíƒ€ì§€/ë‹¤í¬
+    # G8 ÆÇÅ¸Áö/´ÙÅ©
     "dark_succubus", "vampire_seduction", "witch_sensual",
     "dark_fairy_erotic", "shadow_seductress", "succubus_full",
-    # G9 ë‹¤í¬ì•¤ì ¤/SF
+    # G9 ´ÙÅ©¾ØÁ©/SF
     "dark_angel_fallen", "alien_queen_body", "fire_goddess",
-    # G10 ì§ì—… íŒíƒ€ì§€
+    # G10 Á÷¾÷ ÆÇÅ¸Áö
     "secretary_after_hours", "nurse_sensual", "maid_sensual",
     "teacher_after_class", "doctor_sensual", "police_dominatrix", "stewardess_dark",
-    # G11 ë°”ë””/ë¯¸ë‹ˆë©€
+    # G11 ¹Ùµğ/¹Ì´Ï¸Ö
     "oil_goddess", "micro_thong_only", "fetish_boots_only",
-    # G12 ì½”ë¥´ì…‹
+    # G12 ÄÚ¸£¼Â
     "corset_stockings",
 
 
-    # 2026-06-24 íŒíƒ€ì§€&ë‹¤í¬ 26ì¢… ì „ì› SSS
+    # 2026-06-24 ÆÇÅ¸Áö&´ÙÅ© 26Á¾ Àü¿ø SSS
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
     "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
     "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -1845,30 +1848,30 @@ SSS_TIER = {
     "double_exposure_ethereal","oil_slick_noir",
     "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
 
-    # 2026-06-24 ì‹¤ë£¨ì—£&ì„€ë„ìš° 30ì¢… ì „ì› SSS
-    # G1 ìŠ¤í¬íŠ¸ë¼ì´íŠ¸
+    # 2026-06-24 ½Ç·ç¿§&¼¨µµ¿ì 30Á¾ Àü¿ø SSS
+    # G1 ½ºÆ÷Æ®¶óÀÌÆ®
     "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
     "silhouette_spotlight_hair","silhouette_spotlight_dance","silhouette_spotlight_chair",
     "silhouette_spotlight_back","silhouette_spotlight_pole",
-    # G2 ì°½ë¬¸/ë„ì–´
+    # G2 Ã¢¹®/µµ¾î
     "silhouette_window_city","silhouette_window_rain","silhouette_window_sheer",
     "silhouette_doorway_light","silhouette_window_sunset","silhouette_window_neon",
-    # G3 ë„¤ì˜¨ ì‹¤ë£¨ì—£
+    # G3 ³×¿Â ½Ç·ç¿§
     "silhouette_neon_pink","silhouette_neon_blue","silhouette_neon_red",
     "silhouette_neon_purple","silhouette_neon_multicolor",
-    # G4 ìì—°ê´‘
+    # G4 ÀÚ¿¬±¤
     "silhouette_sunset_beach","silhouette_sunset_cliff","silhouette_moonlight","silhouette_aurora",
-    # G5 ìˆ˜ì¤‘/ë¬¼
+    # G5 ¼öÁß/¹°
     "silhouette_pool_underwater","silhouette_pool_edge",
-    # G6 ì‹¤ë‚´/ë¶„ìœ„ê¸°
+    # G6 ½Ç³»/ºĞÀ§±â
     "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
     "silhouette_candle_boudoir","silhouette_smoke_studio",
 
-    # 2026-06-24 ì›¨íŠ¸&ê¸€ë¡œìŠ¤ SSS 29ì¢…
-    # G1 í’€/ìˆ˜ì˜ì¥
+    # 2026-06-24 ¿şÆ®&±Û·Î½º SSS 29Á¾
+    # G1 Ç®/¼ö¿µÀå
     "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
     "hot_spring_steam","jacuzzi_bubbles",
-        # 2026-07-02 ì‹ ê·œ ì¶”ê°€
+        # 2026-07-02 ½Å±Ô Ãß°¡
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -1883,23 +1886,23 @@ SSS_TIER = {
         "waterfall_nude",
         "ocean_nude_editorial",
         "steam_bath_goddess",
-    # G2 ë¹„/ë¹—ì†
+    # G2 ºñ/ºø¼Ó
     "rain_window_inside","rain_street_soaked","rain_studio_dramatic","monsoon_body","rain_car_window",
-    # G3 ì˜¤ì¼/ê¸€ë¡œìŠ¤ ë“œë¦½
+    # G3 ¿ÀÀÏ/±Û·Î½º µå¸³
     "oil_pour_studio","oil_drip_back","honey_drip_body","chocolate_pour_gloss",
     "gloss_lips_drip","chrome_gloss_body",
-    # G4 ë•€/ì—´ê¸°
+    # G4 ¶¡/¿­±â
     "sweat_studio_light","heat_mirage_sweat","sauna_steam_body",
-    # G5 ê²°ë¡œ/ëƒ‰ê¸°
+    # G5 °á·Î/³Ã±â
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
-    # G6 ê¸°íƒ€ ì›¨íŠ¸
+    # G6 ±âÅ¸ ¿şÆ®
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
     "bubble_bath_gloss","milk_bath_petals",
 }
 
 # SS tier
 SS_TIER = {
-        # 2026-07-03 ì‹ ê·œ QUAD/QUINT/HEXA/OCTET SS ì „ì²´
+        # 2026-07-03 ½Å±Ô QUAD/QUINT/HEXA/OCTET SS ÀüÃ¼
     "quad_four_ages_bodypaint",
     "quad_four_classical_elements_klimt",
     "quad_four_seasons_night_bodypaint",
@@ -1907,6 +1910,7 @@ SS_TIER = {
     "quint_five_worlds_bodypaint",
     "quint_five_elements_wuxing_bodypaint",
     "hexa_rainbow_spectrum_bodypaint",
+    "trio_inside_outside_bodypaint",
     "quad_four_civilizations_bodypaint",
     "quad_four_gemstones_bodypaint",
     "quad_cmyk_bodypaint",
@@ -1921,7 +1925,7 @@ SS_TIER = {
     "quint_five_dance_cultures_bodypaint",
     "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
-        # 2026-07-03 ì‹ ê·œ SS 62ì¢… ë°˜ì˜ (SSS 52 + SSì „ìš© 10)
+        # 2026-07-03 ½Å±Ô SS 62Á¾ ¹İ¿µ (SSS 52 + SSÀü¿ë 10)
     "champagne_pour_body",
     "wine_pour_body",
     "milk_pour_body",
@@ -1985,7 +1989,7 @@ SS_TIER = {
     "sauna_nude_editorial",
     "chrome_paint_body",
 
-    # 2026-07-02 í¼í¬ë¨¼ìŠ¤&ëŒ„ìŠ¤ G3/G4 SS (9ì¢… ì „ì²´)
+    # 2026-07-02 ÆÛÆ÷¸Õ½º&´í½º G3/G4 SS (9Á¾ ÀüÃ¼)
     "opera_night",
     "christmas_glamour",
     "ballet_noir",
@@ -1995,57 +1999,57 @@ SS_TIER = {
     "ribbon_goddess",
     "petal_storm",
     "pop_art_glamour",
-    # ê¸°ì¡´ ëª…í™”/ì˜ˆìˆ  ê³„ì—´
+    # ±âÁ¸ ¸íÈ­/¿¹¼ú °è¿­
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
     "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
     "ash_phoenix","lichtenstein_dot","warhol_pop","mondrian_body",
     # v14
     "lace_body_paint","jewelry_trompe_loeil",
-    # v15 ëª…í™”
+    # v15 ¸íÈ­
     "klimt_silver","botticelli_venus","liquid_gold_drip","mermaid_scales","tiger_stripes_body",
-    # v16 ê´€ëŠ¥
+    # v16 °ü´É
     "latex_queen",
-    # v18 ë™ë¬¼ 1ì°¨ í…ŒìŠ¤íŠ¸
-    # v18 ë™ë¬¼ SS â€” ì—„ê²© ì¬ê²€í†  í›„ í™•ì • (2026-06-07)
+    # v18 µ¿¹° 1Â÷ Å×½ºÆ®
+    # v18 µ¿¹° SS ? ¾ö°İ Àç°ËÅä ÈÄ È®Á¤ (2026-06-07)
     "mantis_shrimp","phoenix_rising","jellyfish_glow","panther_black",
     "octopus_ink","snow_leopard","scarab_beetle",
     "atlas_moth","eagle_wings","butterfly_monarch",
-    "arctic_fox",  # SS í™•ì • (2026-06-08 ì„¤ì› í˜ì´ìŠ¤í˜ì¸íŒ…+ëª¨í”¼ê²° 2ì¥ ê²€ì¦ ì™„ë£Œ)
-    # 2026-06-06 ëª…í™”/ì‘ê°€ í…ŒìŠ¤íŠ¸ í™•ì •
+    "arctic_fox",  # SS È®Á¤ (2026-06-08 ¼³¿ø ÆäÀÌ½ºÆäÀÎÆÃ+¸ğÇÇ°á 2Àå °ËÁõ ¿Ï·á)
+    # 2026-06-06 ¸íÈ­/ÀÛ°¡ Å×½ºÆ® È®Á¤
     "degas_dancer","toulouse_lautrec","waterhouse_nymph",
     "takashi_murakami","yayoi_kusama","keith_haring_body",
-    # 2026-06-06 í•œêµ­í…Œë§ˆ í…ŒìŠ¤íŠ¸ í™•ì •
+    # 2026-06-06 ÇÑ±¹Å×¸¶ Å×½ºÆ® È®Á¤
     "dancheong_body","najeonchilgi_body","goryeo_celadon_body",
     "minhwa_body","korean_tiger_body","silla_crown_body",
-    # 2026-06-06 ë™ë¬¼/ìì—° í…ŒìŠ¤íŠ¸ í™•ì •
+    # 2026-06-06 µ¿¹°/ÀÚ¿¬ Å×½ºÆ® È®Á¤
     "najeon_abalone","giraffe_pattern","zebra_stripes","dragon_scales_red",
-    # 2026-06-06 ì¶”ê°€ í…ŒìŠ¤íŠ¸ í™•ì •
+    # 2026-06-06 Ãß°¡ Å×½ºÆ® È®Á¤
     "alma_tadema","gauguin_tropics","melting_chocolate",
-    # 2026-06-06 ë™ë¬¼/ì¡°ë¥˜/ì¬í…ŒìŠ¤íŠ¸ í™•ì • 7ê°œ
+    # 2026-06-06 µ¿¹°/Á¶·ù/ÀçÅ×½ºÆ® È®Á¤ 7°³
     "parrot_tropical","boa_constrictor","king_cobra_hood","cheetah_speed",
     "bird_of_paradise","owl_feather","crocodile_skin",
-    # 2026-06-07 í•œêµ­ ì‹ ìˆ˜ 4ê°œ
+    # 2026-06-07 ÇÑ±¹ ½Å¼ö 4°³
     "phoenix_jujakk","cheongnyong_dragon","korean_dragon_body","haetae_guardian",
-    # 2026-06-07 v20 SS 6ê°œ
+    # 2026-06-07 v20 SS 6°³
     "coral_reef_body","galaxy_nebula_body","islamic_geometric_body",
     "aztec_calendar_body","stained_glass_body","mushroom_forest_body",
-    # 2026-06-07 ë¬¸ëª…/ë™ë¬¼/ë¶€ì¡± (êµ­ê¸° 4ê°œëŠ” 2026-06-08 ê°•ë“±)
+    # 2026-06-07 ¹®¸í/µ¿¹°/ºÎÁ· (±¹±â 4°³´Â 2026-06-08 °­µî)
     "hieroglyph_body","mexico_flag_body",
     "ocelot_wild","ndebele_pattern",
-    # 2026-06-08 êµ­ê¸° ê³„ì—´ SS ì¬ê²€í†  â€” ê°•ë“± S 4ê°œ
+    # 2026-06-08 ±¹±â °è¿­ SS Àç°ËÅä ? °­µî S 4°³
     #   (union_jack_body, usa_stars_stripes_body, south_africa_flag_body, brazil_flag_body)
-    #   ì‚¬ìœ : ì›ìƒ‰ ë©´ë¶„í• =í”¼ë¶€í†¤ ê·¼ì ‘ë„ ë‚®ìŒ, êµ¬ìƒ ëª¨í‹°í”„ ì—†ìŒ â†’ SS íšŒí™”ì„± ë¯¸ë‹¬
-    #   mexico_flag_bodyë§Œ SS ìœ ì§€ (ì¤‘ì•™ êµ­ì¥=ë…ìˆ˜ë¦¬+ë±€ êµ¬ìƒí™”, ëª…í™”/ë¬¸ëª… ê³„ì—´ì— ë‹¿ìŒ)
-    # 2026-06-07 ë¬¸ëª…/ìì—°/ë™ë¬¼ 6ê°œ
+    #   »çÀ¯: ¿ø»ö ¸éºĞÇÒ=ÇÇºÎÅæ ±ÙÁ¢µµ ³·À½, ±¸»ó ¸ğÆ¼ÇÁ ¾øÀ½ ¡æ SS È¸È­¼º ¹Ì´Ş
+    #   mexico_flag_body¸¸ SS À¯Áö (Áß¾Ó ±¹Àå=µ¶¼ö¸®+¹ì ±¸»óÈ­, ¸íÈ­/¹®¸í °è¿­¿¡ ´êÀ½)
+    # 2026-06-07 ¹®¸í/ÀÚ¿¬/µ¿¹° 6°³
     "celtic_knot_body","greek_mosaic_body","ocean_depth_body",
     "weather_map_body","bauhaus_body","wolf_grey",
-    # 2026-06-07 v22 ì—ë¡œí‹±&í˜í‹°ì‰¬ SS â€” ì—„ê²© ì¬ê²€í†  í›„ í™•ì •
-    #   (ê°•ë“± S: burlesque, dominatrix_glam, corset_stockings,
+    # 2026-06-07 v22 ¿¡·ÎÆ½&ÆäÆ¼½¬ SS ? ¾ö°İ Àç°ËÅä ÈÄ È®Á¤
+    #   (°­µî S: burlesque, dominatrix_glam, corset_stockings,
     #    dark_fairy_erotic, tape_bondage, metal_bondage)
-    #   (ì œê±°: military_domme â€” ë‚˜ì¹˜ ìƒì§• ìƒì„± ë¦¬ìŠ¤í¬, í”„ë¦¬ì…‹ ìˆ˜ì • í•„ìš”)
-    # 2026-06-08 ë¼í…ìŠ¤/ê´‘íƒì†Œì¬ ì¬ê²€í† : ê°•ë“± pvc_transparent_full/chrome_vixen/liquid_metal_body,
-    #   ìŠ¹ê²© vampire_seduction/witch_sensual/latex_venom (Â±0)
-    # 2026-06-08 ì„œíë²„ìŠ¤ ì¬ê²€í† : dark_succubus ê°•ë“±(succubus_fullê³¼ ì¤‘ë³µ) â†’ SS 105ê°œ
+    #   (Á¦°Å: military_domme ? ³ªÄ¡ »óÂ¡ »ı¼º ¸®½ºÅ©, ÇÁ¸®¼Â ¼öÁ¤ ÇÊ¿ä)
+    # 2026-06-08 ¶óÅØ½º/±¤ÅÃ¼ÒÀç Àç°ËÅä: °­µî pvc_transparent_full/chrome_vixen/liquid_metal_body,
+    #   ½Â°İ vampire_seduction/witch_sensual/latex_venom (¡¾0)
+    # 2026-06-08 ¼­Å¥¹ö½º Àç°ËÅä: dark_succubus °­µî(succubus_full°ú Áßº¹) ¡æ SS 105°³
     "transparent_dress","sheer_catsuit","latex_transparent",
     "chrome_bodysuit","mirror_dress","suspension_art",
     "dominatrix_full_armor","goddess_throne",
@@ -2054,11 +2058,11 @@ SS_TIER = {
     "succubus_full","dark_angel_fallen","alien_queen_body",
     "body_paint_nude",
     "cabaret_star",
-    # 2026-06-08 ë¼í…ìŠ¤/ê´‘íƒì†Œì¬ SS ì¬ê²€í†  â€” ìŠ¹ê²© 3ê°œ
-    #   (ê°•ë“± S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
-    #   (ë³´ë¥˜: latex_catsuit_red â€” ì»¬ëŸ¬ ë¼í…ìŠ¤ ì¤‘ë³µ, ì¬ê²€í†  ëŒ€ìƒ)
+    # 2026-06-08 ¶óÅØ½º/±¤ÅÃ¼ÒÀç SS Àç°ËÅä ? ½Â°İ 3°³
+    #   (°­µî S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
+    #   (º¸·ù: latex_catsuit_red ? ÄÃ·¯ ¶óÅØ½º Áßº¹, Àç°ËÅä ´ë»ó)
     "vampire_seduction","witch_sensual","latex_venom",
-    # 2026-06-19 ì• ë‹ˆì•„íŠ¸ìŠ¤íƒ€ì¼ SS ì „ì²´ (SSS 31 + SSì „ìš© 1)
+    # 2026-06-19 ¾Ö´Ï¾ÆÆ®½ºÅ¸ÀÏ SS ÀüÃ¼ (SSS 31 + SSÀü¿ë 1)
     "anime_jp_90s_retro",
     "anime_jp_80s_citypop",
     "anime_jp_modern_glossy",
@@ -2092,29 +2096,29 @@ SS_TIER = {
     "anime_noir_silhouette",
     "anime_jp_ecchi_glossy",
 
-    # 2026-06-09 ì• ë‹ˆ ì•„íŠ¸ìŠ¤íƒ€ì¼ SS 10ì¢… í™•ì • (JP4/KR3/CN2/EU1)
+    # 2026-06-09 ¾Ö´Ï ¾ÆÆ®½ºÅ¸ÀÏ SS 10Á¾ È®Á¤ (JP4/KR3/CN2/EU1)
     "anime_jp_80s_citypop","anime_jp_shoujo_soft","anime_jp_seinen_gritty","anime_jp_makoto_watercolor",
     "anime_kr_webtoon_glossy","anime_kr_action_manhwa","anime_kr_lofi_chill",
     "anime_cn_donghua_xianxia","anime_cn_palace_drama",
     "anime_eu_ligne_claire",
-    # 2026-06-09 unicorn_opal SS í™•ì • (2ì¥ ì¼ê´€ì„± ê²€ì¦ ì™„ë£Œ)
+    # 2026-06-09 unicorn_opal SS È®Á¤ (2Àå ÀÏ°ü¼º °ËÁõ ¿Ï·á)
     "unicorn_opal",
-    # 2026-06-09 v23 ê°œë°©í˜• ë°”ë””í˜ì¸íŒ… SS 12ì¢… í™•ì •
-    # íƒ€ìœ¨ 90% (18/20) â€” pastel_dream/minimalist_free ì°¨ë‹¨ ì‚­ì œ
+    # 2026-06-09 v23 °³¹æÇü ¹ÙµğÆäÀÎÆÃ SS 12Á¾ È®Á¤
+    # Å¸À² 90% (18/20) ? pastel_dream/minimalist_free Â÷´Ü »èÁ¦
     "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto","body_paint_airbrush",
     "body_paint_monochrome","body_paint_earth_tones","body_paint_jewel_tones","body_paint_iridescent_free",
     "body_paint_geometric_free","body_paint_organic_flow","body_paint_surreal_free","body_paint_glitter_free",
-    # 2026-06-09 ì• ë‹ˆ Aí˜• SS 6ì¢… í™•ì • (v24, 7/7 ì°¨ë‹¨ 0ê±´)
-    # demon_slayer ë³´ë¥˜ (swordmistressì™€ ì¤‘ë³µ)
+    # 2026-06-09 ¾Ö´Ï AÇü SS 6Á¾ È®Á¤ (v24, 7/7 Â÷´Ü 0°Ç)
+    # demon_slayer º¸·ù (swordmistress¿Í Áßº¹)
     "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden",
     "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
-    # 2026-06-10 ëŸ­ì…”ë¦¬ ê¸€ë˜ë¨¸ ê·¸ë£¹1 â€” ë¸”ë™/ë‹¤í¬ 7ì¢…
+    # 2026-06-10 ·°¼Å¸® ±Û·¡¸Ó ±×·ì1 ? ºí·¢/´ÙÅ© 7Á¾
     "black_mirror","noir_opulence","velvet_darkness","luxury_noir",
     "lace_noir","midnight_couture","velvet_serpent",
-    # 2026-06-10 ëŸ­ì…”ë¦¬ ê¸€ë˜ë¨¸ ê·¸ë£¹2 â€” ê³¨ë“œ/í™”ì´íŠ¸ 9ì¢…
+    # 2026-06-10 ·°¼Å¸® ±Û·¡¸Ó ±×·ì2 ? °ñµå/È­ÀÌÆ® 9Á¾
     "golden_oil","golden_nude","gold_temptress","golden_hour_editorial",
     "platinum_elite","ivory_silk","pearl_essence","velvet_gold","diamond_couture",
-    # 2026-06-10 ëŸ­ì…”ë¦¬ ê¸€ë˜ë¨¸ ê·¸ë£¹3 â€” ë ˆë“œì¹´í«/ëŸ°ì›¨ì´ 8ì¢…
+    # 2026-06-10 ·°¼Å¸® ±Û·¡¸Ó ±×·ì3 ? ·¹µåÄ«Æê/·±¿şÀÌ 8Á¾
     "runway_power","red_carpet","red_temptress","crimson_gown",
     "opera_glam","silver_screen","crystal_gown","baroque_glam",
 
@@ -2145,12 +2149,12 @@ SS_TIER = {
     "aurora_bare",
     "antelope_light_sheer",
     "lava_field_latex",
-    # 2026-06-11 ë°°ê²½ í”„ë¦¬ì…‹ SS í™•ì •
+    # 2026-06-11 ¹è°æ ÇÁ¸®¼Â SS È®Á¤
     "son_doong_jungle", "petra_rose", "danxia_rainbow",
     "dead_vlei_ghost", "lake_natron",
     "socotra_alien", "richat_eye", "derinkuyu_underground",
     "palacio_de_sal", "naoshima_art_island",
-    # 2026-06-13 ë¹„ì¹˜&ë¦¬ì¡°íŠ¸ SS/SSS í™•ì •
+    # 2026-06-13 ºñÄ¡&¸®Á¶Æ® SS/SSS È®Á¤
     "summer_beach",
     "surfer_goddess",
     "pool_goddess",
@@ -2163,12 +2167,12 @@ SS_TIER = {
     "coral_diving",
     "beach_bonfire_night",
     "hammock_resort",
-    # SSS ë¹„ì¹˜ 4ì¢…ë„ SSì— í¬í•¨
+    # SSS ºñÄ¡ 4Á¾µµ SS¿¡ Æ÷ÇÔ
     "infinity_pool",
     "scuba_goddess",
     "spa_noir",
     "sunset_cruise",
-    # 2026-06-14 íŒ&ì¹´ì™€ì´ SS í™•ì •
+    # 2026-06-14 ÆË&Ä«¿ÍÀÌ SS È®Á¤
     "y2k_fairy",
     "pink_champagne",
     "cotton_candy",
@@ -2192,7 +2196,7 @@ SS_TIER = {
     "kdrama_chaebol_heir",
     "gangnam_luxury_glam",
     "harajuku_doll",
-    # 2026-06-14 íŒ&ì¹´ì™€ì´ SSS 10ì¢…ë„ SSì— í¬í•¨
+    # 2026-06-14 ÆË&Ä«¿ÍÀÌ SSS 10Á¾µµ SS¿¡ Æ÷ÇÔ
     "cherry_pop",
     "hime_gyaru",
     "decora_kei",
@@ -2203,12 +2207,12 @@ SS_TIER = {
     "kdrama_villain_queen",
     "bubble_tea",
     "doll_house",
-    # SSSë„ SSì— í¬í•¨ (format_preset ë¡œì§)
+    # SSSµµ SS¿¡ Æ÷ÇÔ (format_preset ·ÎÁ÷)
     "angkor_dawn", "tikal_skyrise", "cenote_sacred", "waitomo_glow",
     "marble_caves_water", "bagan_balloon", "tigers_nest_cliff",
     "sheikh_zayed_dawn", "livraria_lello_staircase",
     "namib_star_desert", "ellora_rock_temple",
-    # 2026-06-13 v26 ì›”ë“œ ëœë“œë§ˆí¬ SS/SSS í™•ì •
+    # 2026-06-13 v26 ¿ùµå ·£µå¸¶Å© SS/SSS È®Á¤
     "positano_cliff",
     "bruges_canal",
     "colosseum_dusk",
@@ -2223,7 +2227,7 @@ SS_TIER = {
     "chichen_itza_pyramid",
     "gobekli_tepe",
 
-    # 2026-06-18 í•«&ì„¹ì‹œ SS í™•ì • (SSS í¬í•¨ ì „ì²´)
+    # 2026-06-18 ÇÖ&¼½½Ã SS È®Á¤ (SSS Æ÷ÇÔ ÀüÃ¼)
     "bodycon_power", "boudoir_noir", "lingerie_goddess", "silk_robe_only",
     "corset_queen", "sheer_negligee", "wet_silk_gown", "oil_goddess_gold",
     "rain_soaked_dress", "pool_wet_glam", "sweat_glam", "micro_dress_only",
@@ -2242,7 +2246,7 @@ SS_TIER = {
     "wet_editorial", "pool_edge_wet", "ocean_wave_body", "penthouse_bath",
     "silk_sheets_morning", "spa_private_steam", "bar_counter_glam",
     "after_party_suite", "tennis_short_dress",
-    # 2026-06-13 v27 í•«&ì„¹ì‹œ SS/SSS í™•ì •
+    # 2026-06-13 v27 ÇÖ&¼½½Ã SS/SSS È®Á¤
     "dressing_room_mirror",
     "vip_booth_neon",
     "pool_edge_wet",
@@ -2253,68 +2257,68 @@ SS_TIER = {
     "bar_counter_glam",
     "after_party_suite",
     "tennis_short_dress",
-    # 2026-06-15 ê³„ì ˆ&í…Œë§ˆ ê·¸ë£¹1 SS í™•ì • (cherry_blossom~autumn_forest)
+    # 2026-06-15 °èÀı&Å×¸¶ ±×·ì1 SS È®Á¤ (cherry_blossom~autumn_forest)
     "cherry_blossom",
     "lavender_field",
     "spring_rain",
     "tulip_field",
     "autumn_forest",
-    # 2026-06-15 ê³„ì ˆ&í…Œë§ˆ ê·¸ë£¹2 SS í™•ì • (sunflower_field~golden_autumn)
+    # 2026-06-15 °èÀı&Å×¸¶ ±×·ì2 SS È®Á¤ (sunflower_field~golden_autumn)
     "sunflower_field",
-    "greenhouse_eden",   # SSSë„ SSì— í¬í•¨ (format_preset ë¡œì§)
+    "greenhouse_eden",   # SSSµµ SS¿¡ Æ÷ÇÔ (format_preset ·ÎÁ÷)
     "tropical_night",
     "first_snow",
     "golden_autumn",
-    # 2026-06-15 harajuku_doll SSSë„ SSì— í¬í•¨
+    # 2026-06-15 harajuku_doll SSSµµ SS¿¡ Æ÷ÇÔ
     "harajuku_doll",
-    # 2026-06-15 ê³„ì ˆ&í…Œë§ˆ ê·¸ë£¹3 SS í™•ì •
+    # 2026-06-15 °èÀı&Å×¸¶ ±×·ì3 SS È®Á¤
     "midsummer_heat",
     "rainy_season",
     "harvest_moon",
     "winter_solstice",
     "cherry_blossom_night",
-    # 2026-06-15 ê³„ì ˆ&í…Œë§ˆ ê·¸ë£¹4 SS í™•ì •
+    # 2026-06-15 °èÀı&Å×¸¶ ±×·ì4 SS È®Á¤
     "tropical_monsoon",
-    "halloween_glam",       # SSSë„ SSì— í¬í•¨
-    "new_year_glam",        # SSSë„ SSì— í¬í•¨
-    "sakura_night_glam",    # SSSë„ SSì— í¬í•¨
+    "halloween_glam",       # SSSµµ SS¿¡ Æ÷ÇÔ
+    "new_year_glam",        # SSSµµ SS¿¡ Æ÷ÇÔ
+    "sakura_night_glam",    # SSSµµ SS¿¡ Æ÷ÇÔ
     "monsoon_goddess",
-    # 2026-06-15 ì—ë””í† ë¦¬ì–¼&ë¬´ë“œ ê·¸ë£¹1 SS í™•ì •
+    # 2026-06-15 ¿¡µğÅä¸®¾ó&¹«µå ±×·ì1 SS È®Á¤
     "silhouette_only",
     "back_beauty",
     "collarbone_focus",
     "neck_elegance",
     "long_legs_focus",
-    # 2026-06-15 ì—ë””í† ë¦¬ì–¼&ë¬´ë“œ ê·¸ë£¹2 SS í™•ì • (SSS í¬í•¨)
+    # 2026-06-15 ¿¡µğÅä¸®¾ó&¹«µå ±×·ì2 SS È®Á¤ (SSS Æ÷ÇÔ)
     "light_driven",
-    "backlit_silk",         # SSSë„ SSì— í¬í•¨
+    "backlit_silk",         # SSSµµ SS¿¡ Æ÷ÇÔ
     "mirror_goddess",
-    "mirror_room",          # SSSë„ SSì— í¬í•¨
-    "eclipse_body",         # SSSë„ SSì— í¬í•¨
-    # 2026-06-15 ì—ë””í† ë¦¬ì–¼&ë¬´ë“œ ê·¸ë£¹3 SS í™•ì • (SSS í¬í•¨)
+    "mirror_room",          # SSSµµ SS¿¡ Æ÷ÇÔ
+    "eclipse_body",         # SSSµµ SS¿¡ Æ÷ÇÔ
+    # 2026-06-15 ¿¡µğÅä¸®¾ó&¹«µå ±×·ì3 SS È®Á¤ (SSS Æ÷ÇÔ)
     "chrome_skin",
     "neon_body",
-    "plasma_aura",          # SSSë„ SSì— í¬í•¨
-    "molten_chrome",        # SSSë„ SSì— í¬í•¨
+    "plasma_aura",          # SSSµµ SS¿¡ Æ÷ÇÔ
+    "molten_chrome",        # SSSµµ SS¿¡ Æ÷ÇÔ
     "mercury_rising",
-    # 2026-06-15 ì—ë””í† ë¦¬ì–¼&ë¬´ë“œ ê·¸ë£¹4 SS í™•ì • (SSS í¬í•¨)
-    "mercury_pool",         # SSSë„ SSì— í¬í•¨
+    # 2026-06-15 ¿¡µğÅä¸®¾ó&¹«µå ±×·ì4 SS È®Á¤ (SSS Æ÷ÇÔ)
+    "mercury_pool",         # SSSµµ SS¿¡ Æ÷ÇÔ
     "titanium_body",
-    "snowflake_skin",       # SSSë„ SSì— í¬í•¨
+    "snowflake_skin",       # SSSµµ SS¿¡ Æ÷ÇÔ
     "80s_power",
     "y2k_chrome",
-    # 2026-06-15 ì—ë””í† ë¦¬ì–¼&ë¬´ë“œ ê·¸ë£¹5 SS í™•ì •
+    # 2026-06-15 ¿¡µğÅä¸®¾ó&¹«µå ±×·ì5 SS È®Á¤
     "bohemian_paris",
     "origami_couture",
     "wet_glass",
     "smoke_studio",
     "infrared_beauty",
-    # 2026-06-15 ì—ë””í† ë¦¬ì–¼&ë¬´ë“œ ê·¸ë£¹6 SS í™•ì • (SSS í¬í•¨)
+    # 2026-06-15 ¿¡µğÅä¸®¾ó&¹«µå ±×·ì6 SS È®Á¤ (SSS Æ÷ÇÔ)
     "grain_film",
     "dreamy_soft_focus",
     "film_noir_glam",
-    "noir_femme_fatale",    # SSSë„ SSì— í¬í•¨
-    # 2026-06-21 ìì—°&ì›ì†Œ G1~G10 SS_TIER íŒ¨ì¹˜
+    "noir_femme_fatale",    # SSSµµ SS¿¡ Æ÷ÇÔ
+    # 2026-06-21 ÀÚ¿¬&¿ø¼Ò G1~G10 SS_TIER ÆĞÄ¡
     "lava_flow",
     "heat_shimmer",
     "solar_flare",
@@ -2371,7 +2375,7 @@ SS_TIER = {
     "mist_vanguard",
     "tropical_storm",
 
-    # 2026-06-24 íŒŒì›Œ&ì—£ì§€ SSS (SS í¬í•¨)
+    # 2026-06-24 ÆÄ¿ö&¿§Áö SSS (SS Æ÷ÇÔ)
     "valkyrie_storm",
     "fencer_noir",
     "martial_arts",
@@ -2431,7 +2435,7 @@ SS_TIER = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-    # 2026-06-24 í¼í¬ë¨¼ìŠ¤&ëŒ„ìŠ¤ G1+G2 SSS (SS í¬í•¨)
+    # 2026-06-24 ÆÛÆ÷¸Õ½º&´í½º G1+G2 SSS (SS Æ÷ÇÔ)
     "flamenco_queen",
     "tango_passion",
     "ribbon_dance",
@@ -2443,7 +2447,7 @@ SS_TIER = {
     "masquerade_ball",
     "samba_carnival",
     "jazz_dance_glam",
-    # 2026-06-25 ëŒ€ê¸°&íŒŒí‹°í´ 30ì¢… (SS í¬í•¨)
+    # 2026-06-25 ´ë±â&ÆÄÆ¼Å¬ 30Á¾ (SS Æ÷ÇÔ)
     "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
     "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
     "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
@@ -2455,15 +2459,15 @@ SS_TIER = {
     "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
     "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
     "firefly_night_field", "seed_pod_floating",
-    # 2026-06-25 ì—ë¡œí‹±&í˜í‹°ì‰¬ G1 (SS í¬í•¨)
+    # 2026-06-25 ¿¡·ÎÆ½&ÆäÆ¼½¬ G1 (SS Æ÷ÇÔ)
     "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
     "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
     "wet_latex",
-    # 2026-06-25 ì—ë¡œí‹±&í˜í‹°ì‰¬ G2 (SS í¬í•¨)
+    # 2026-06-25 ¿¡·ÎÆ½&ÆäÆ¼½¬ G2 (SS Æ÷ÇÔ)
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
     "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
 
-    # 2026-06-26 ì—ë¡œí‹±&í˜í‹°ì‰¬ G3~G12 SS (SSS í¬í•¨ 51ì¢…)
+    # 2026-06-26 ¿¡·ÎÆ½&ÆäÆ¼½¬ G3~G12 SS (SSS Æ÷ÇÔ 51Á¾)
     "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
     "suspension_art", "tape_bondage", "metal_bondage",
     "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
@@ -2482,7 +2486,7 @@ SS_TIER = {
     "corset_stockings",
 
 
-    # 2026-06-24 íŒíƒ€ì§€&ë‹¤í¬ 26ì¢… (SS í¬í•¨)
+    # 2026-06-24 ÆÇÅ¸Áö&´ÙÅ© 26Á¾ (SS Æ÷ÇÔ)
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
     "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
     "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -2490,7 +2494,7 @@ SS_TIER = {
     "double_exposure_ethereal","oil_slick_noir",
     "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
 
-    # 2026-06-24 ì‹¤ë£¨ì—£&ì„€ë„ìš° 30ì¢… (SS í¬í•¨)
+    # 2026-06-24 ½Ç·ç¿§&¼¨µµ¿ì 30Á¾ (SS Æ÷ÇÔ)
     "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
     "silhouette_spotlight_hair","silhouette_spotlight_dance","silhouette_spotlight_chair",
     "silhouette_spotlight_back","silhouette_spotlight_pole",
@@ -2503,10 +2507,10 @@ SS_TIER = {
     "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
     "silhouette_candle_boudoir","silhouette_smoke_studio",
 
-    # 2026-06-24 ì›¨íŠ¸&ê¸€ë¡œìŠ¤ 30ì¢… (SS í¬í•¨, SSS 29ì¢… + SS ì „ìš© 1ì¢…)
+    # 2026-06-24 ¿şÆ®&±Û·Î½º 30Á¾ (SS Æ÷ÇÔ, SSS 29Á¾ + SS Àü¿ë 1Á¾)
     "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
     "hot_spring_steam","jacuzzi_bubbles",
-        # 2026-07-02 ì‹ ê·œ ì¶”ê°€
+        # 2026-07-02 ½Å±Ô Ãß°¡
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -2528,8 +2532,8 @@ SS_TIER = {
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
     "bubble_bath_gloss","milk_bath_petals",
-    # 2026-07-02 í™˜ê²½ ì¼ì²´ ë°”ë””í˜ì¸íŒ… SS (22ì¢… ì „ì²´)
-    # 2026-07-02 ë°”ë””í˜ì¸íŒ…+ì˜ìƒ ë¯¹ìŠ¤ ì½œë¼ë³´
+    # 2026-07-02 È¯°æ ÀÏÃ¼ ¹ÙµğÆäÀÎÆÃ SS (22Á¾ ÀüÃ¼)
+    # 2026-07-02 ¹ÙµğÆäÀÎÆÃ+ÀÇ»ó ¹Í½º Äİ¶óº¸
         "trio_bodypaint_latex_frame",
         "trio_bodypaint_gown_frame",
         "trio_bodypaint_leather_frame",
@@ -2549,7 +2553,7 @@ SS_TIER = {
         "trio_bikini_bodypaint_center",
         "trio_sheer_bodypaint_center",
         "trio_chrome_bodypaint_center",
-        # ğŸŒ€ í™˜ê²½ ì¼ì²´ ë°”ë””í˜ì¸íŒ…
+        # ?? È¯°æ ÀÏÃ¼ ¹ÙµğÆäÀÎÆÃ
         "merge_butterfly_fabric",
     "merge_floral_wallpaper",
     "merge_leopard_fabric",
@@ -2573,7 +2577,7 @@ SS_TIER = {
     "merge_pollock_splatter",
     "merge_byzantine_mosaic",
 
-    # 2026-06-29 ë©€í‹° ë°”ë””í˜ì¸íŒ… SS (57ì¢… ì „ì²´)
+    # 2026-06-29 ¸ÖÆ¼ ¹ÙµğÆäÀÎÆÃ SS (57Á¾ ÀüÃ¼)
     "duo_fire_and_ice_bodypaint",
     "duo_day_and_night_bodypaint",
     "duo_bloom_and_void_bodypaint",
@@ -2628,7 +2632,7 @@ SS_TIER = {
     "quint_five_elements_asia_bodypaint",
     "quint_rainbow_five_bodypaint",
     "quint_five_oceans_bodypaint",
-    # 2026-06-26 í•œêµ­ ì—­ì‚¬ & ê¶ì¤‘ ê¸€ë˜ë¨¸ SS (78ì¢… ì „ì²´)
+    # 2026-06-26 ÇÑ±¹ ¿ª»ç & ±ÃÁß ±Û·¡¸Ó SS (78Á¾ ÀüÃ¼)
     "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
     "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
     "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
@@ -2660,7 +2664,7 @@ SS_TIER = {
 
 }
 
-# â”€â”€â”€ ë‹¤í¬ í…Œë§ˆ CSS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ¦¡¦¡¦¡ ´ÙÅ© Å×¸¶ CSS ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
 BG       = "#1e1e1e"
 BG_SIDE  = "#252526"
 BG_INPUT = "#2d2d2d"
@@ -2719,57 +2723,57 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 </style>
 """, unsafe_allow_html=True)
 
-# â”€â”€â”€ í—¤ë” â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ¦¡¦¡¦¡ Çì´õ ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
 st.markdown('''
 <div style="padding:8px 0 20px;">
-  <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">âœ¦ LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine Â· v4.4</div>
+  <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">? LumineX</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine ¡¤ v4.4</div>
 </div>
 ''', unsafe_allow_html=True)
 
-# â”€â”€â”€ ì‚¬ì´ë“œë°” â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ¦¡¦¡¦¡ »çÀÌµå¹Ù ¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡
 with st.sidebar:
-    st.markdown("### âš™ï¸ ì „ì—­ ì„¤ì •")
+    st.markdown("### ?? Àü¿ª ¼³Á¤")
     st.markdown("---")
-    global_platform = st.radio("ğŸ–¥ï¸ ì¶œë ¥ í”Œë«í¼", options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"], index=0)
-    global_aspect   = st.selectbox("ğŸ“ ì´ë¯¸ì§€ ë¹„ìœ¨", options=list(ASPECT_RATIOS.keys()), index=0, help="â˜… = ê¸°ë³¸ê°’ ê¶Œì¥")
-    global_realism      = st.toggle("ğŸ“· ì‹¤ì‚¬ ëª¨ë“œ", value=True)
-    global_art_fallback = st.toggle("ğŸ¨ ìœ„í—˜ ì‹œ ì•„íŠ¸ ìŠ¤íƒ€ì¼", value=False, help="HIGH ìœ„í—˜ ê°ì§€ ì‹œ ìˆ˜ì±„í™”/í‘ë°± ìë™ ì ìš©")
+    global_platform = st.radio("??? Ãâ·Â ÇÃ·§Æû", options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"], index=0)
+    global_aspect   = st.selectbox("?? ÀÌ¹ÌÁö ºñÀ²", options=list(ASPECT_RATIOS.keys()), index=0, help="¡Ú = ±âº»°ª ±ÇÀå")
+    global_realism      = st.toggle("?? ½Ç»ç ¸ğµå", value=True)
+    global_art_fallback = st.toggle("?? À§Çè ½Ã ¾ÆÆ® ½ºÅ¸ÀÏ", value=False, help="HIGH À§Çè °¨Áö ½Ã ¼öÃ¤È­/Èæ¹é ÀÚµ¿ Àû¿ë")
     st.markdown("---")
-    st.markdown("### ğŸ¬ ì˜ìƒ í”Œë«í¼")
-    global_video_platform = st.radio("ì˜ìƒ ìƒì„± í”Œë«í¼", options=["Veo 3 (Gemini)", "Kling AI", "Runway", "Hailuo"], index=0)
+    st.markdown("### ?? ¿µ»ó ÇÃ·§Æû")
+    global_video_platform = st.radio("¿µ»ó »ı¼º ÇÃ·§Æû", options=["Veo 3 (Gemini)", "Kling AI", "Runway", "Hailuo"], index=0)
     st.markdown("---")
-    platform_colors = {"Gemini": "ğŸ”µ", "ChatGPT (DALL-E)": "ğŸŸ¢", "Midjourney": "ğŸŸ£"}
-    st.markdown(f"**í”Œë«í¼:** {platform_colors[global_platform]} `{global_platform}`")
-    st.markdown(f"**ë¹„ìœ¨:** `{global_aspect.split('â€”')[0].strip()}`")
+    platform_colors = {"Gemini": "??", "ChatGPT (DALL-E)": "??", "Midjourney": "??"}
+    st.markdown(f"**ÇÃ·§Æû:** {platform_colors[global_platform]} `{global_platform}`")
+    st.markdown(f"**ºñÀ²:** `{global_aspect.split('?')[0].strip()}`")
     if global_platform == "Gemini":
-        st.markdown(f"**ì‹¤ì‚¬:** `{'ON âœ…' if global_realism else 'OFF'}`")
+        st.markdown(f"**½Ç»ç:** `{'ON ?' if global_realism else 'OFF'}`")
     st.markdown("---")
-    st.markdown("### ğŸ“Œ ì‚¬ìš©ë²•")
-    st.markdown("1. í”Œë«í¼ ì„ íƒ\n2. íƒ­ ì„ íƒ\n3. ìš”ì†Œ ì„ íƒ\n4. **í”„ë¡¬í”„íŠ¸ ì¡°í•©** í´ë¦­\n5. ì½”ë“œë°•ìŠ¤ í´ë¦­ â†’ ë³µì‚¬\n6. í•´ë‹¹ í”Œë«í¼ì— ë¶™ì—¬ë„£ê¸°")
+    st.markdown("### ?? »ç¿ë¹ı")
+    st.markdown("1. ÇÃ·§Æû ¼±ÅÃ\n2. ÅÇ ¼±ÅÃ\n3. ¿ä¼Ò ¼±ÅÃ\n4. **ÇÁ·ÒÇÁÆ® Á¶ÇÕ** Å¬¸¯\n5. ÄÚµå¹Ú½º Å¬¸¯ ¡æ º¹»ç\n6. ÇØ´ç ÇÃ·§Æû¿¡ ºÙ¿©³Ö±â")
     st.markdown("---")
-    st.markdown("### ğŸ’¡ í”Œë«í¼ íŒ")
+    st.markdown("### ?? ÇÃ·§Æû ÆÁ")
     if global_platform == "Gemini":
-        st.info("ìì—°ì–´ ì„œìˆ í˜•. ê¸¸ê³  ìƒì„¸í• ìˆ˜ë¡ ì¢‹ì•„ìš”.")
+        st.info("ÀÚ¿¬¾î ¼­¼úÇü. ±æ°í »ó¼¼ÇÒ¼ö·Ï ÁÁ¾Æ¿ä.")
     elif global_platform == "ChatGPT (DALL-E)":
-        st.success("í‚¤ì›Œë“œ ì¤‘ì‹¬. ì§§ê³  ê°•ë ¬í•˜ê²Œ!")
+        st.success("Å°¿öµå Áß½É. Âª°í °­·ÄÇÏ°Ô!")
     else:
-        st.warning("íƒœê·¸ ë‚˜ì—´ + --íŒŒë¼ë¯¸í„° ë°©ì‹.")
+        st.warning("ÅÂ±× ³ª¿­ + --ÆÄ¶ó¹ÌÅÍ ¹æ½Ä.")
     if global_platform == "Gemini":
         st.markdown("---")
-        st.markdown("### ğŸ”„ Gemini ì„¸ì…˜")
-        if st.button("ğŸ†• Gemini ìƒˆ ì°½ ì—´ê¸°", use_container_width=True, help="ëˆ„ì  ë§¥ë½ ì´ˆê¸°í™”"):
+        st.markdown("### ?? Gemini ¼¼¼Ç")
+        if st.button("?? Gemini »õ Ã¢ ¿­±â", use_container_width=True, help="´©Àû ¸Æ¶ô ÃÊ±âÈ­"):
             import webbrowser
             webbrowser.open("https://gemini.google.com/app")
-        st.caption("ğŸ’¡ ê°™ì€ ì°½ ë°˜ë³µ ìƒì„± ì‹œ íƒ€íˆ¬/í—¤ì–´ ì˜¤ì—¼ ì£¼ì˜")
+        st.caption("?? °°Àº Ã¢ ¹İº¹ »ı¼º ½Ã Å¸Åõ/Çì¾î ¿À¿° ÁÖÀÇ")
     st.markdown("---")
-    st.markdown("### ğŸ“Š í”„ë¦¬ì…‹ í˜„í™©")
+    st.markdown("### ?? ÇÁ¸®¼Â ÇöÈ²")
     total = sum(len(v) for v in PRESET_CATEGORIES.values())
-    st.markdown(f"**ì´ í”„ë¦¬ì…‹:** `{total}ê°œ`")
-    st.markdown(f"**ğŸŒŸ HOF tier:** `{len(HOF_TIER)}ê°œ`")
-    st.markdown(f"**SSS tier:** `{len(SSS_TIER)}ê°œ`")
-    st.markdown(f"**SS tier:** `{len(SS_TIER)}ê°œ`")
-    st.markdown(f"**ì¹´í…Œê³ ë¦¬:** `{len(PRESET_CATEGORIES)}ê°œ`")
+    st.markdown(f"**ÃÑ ÇÁ¸®¼Â:** `{total}°³`")
+    st.markdown(f"**?? HOF tier:** `{len(HOF_TIER)}°³`")
+    st.markdown(f"**SSS tier:** `{len(SSS_TIER)}°³`")
+    st.markdown(f"**SS tier:** `{len(SS_TIER)}°³`")
+    st.markdown(f"**Ä«Å×°í¸®:** `{len(PRESET_CATEGORIES)}°³`")
 
 
 def get_prompt(data: dict) -> str:
@@ -2781,39 +2785,39 @@ def get_prompt(data: dict) -> str:
         return build_midjourney_prompt(data, global_aspect)
 
 
-tab1, tab2, tab3, tab4 = st.tabs(["ğŸ¨ í”„ë¦¬ì…‹ ëª¨ë“œ", "ğŸ› ï¸ ìˆ˜ë™ ì¡°í•©", "ğŸ² ëœë¤ ëª¨ë“œ", "ğŸ¬ ì˜ìƒ í”„ë¡¬í”„íŠ¸"])
+tab1, tab2, tab3, tab4 = st.tabs(["?? ÇÁ¸®¼Â ¸ğµå", "??? ¼öµ¿ Á¶ÇÕ", "?? ·£´ı ¸ğµå", "?? ¿µ»ó ÇÁ·ÒÇÁÆ®"])
 
-# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-# íƒ­ 1: í”„ë¦¬ì…‹ ëª¨ë“œ
-# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+# ??????????????????????????????????????????????????????????
+# ÅÇ 1: ÇÁ¸®¼Â ¸ğµå
+# ??????????????????????????????????????????????????????????
 with tab1:
-    st.markdown("### í”„ë¦¬ì…‹ìœ¼ë¡œ í”„ë¡¬í”„íŠ¸ ìƒì„±")
+    st.markdown("### ÇÁ¸®¼ÂÀ¸·Î ÇÁ·ÒÇÁÆ® »ı¼º")
 
     col_cat, col_tier, col_search = st.columns([2, 1, 1])
     with col_cat:
-        all_cats = ["ğŸŒŸ ì „ì²´"] + list(PRESET_CATEGORIES.keys())
-        selected_cat = st.selectbox("ğŸ“‚ ì¹´í…Œê³ ë¦¬ í•„í„°", options=all_cats, index=0, key="preset_cat_filter")
+        all_cats = ["?? ÀüÃ¼"] + list(PRESET_CATEGORIES.keys())
+        selected_cat = st.selectbox("?? Ä«Å×°í¸® ÇÊÅÍ", options=all_cats, index=0, key="preset_cat_filter")
     with col_tier:
-        tier_options = ["ì „ì²´ í‹°ì–´", "ğŸ‘‘ HOF", "â­â­â­ SSS", "â­â­ SS", "â€¢ ì¼ë°˜"]
-        selected_tier = st.selectbox("ğŸ† í‹°ì–´ í•„í„°", options=tier_options, index=0, key="preset_tier_filter")
+        tier_options = ["ÀüÃ¼ Æ¼¾î", "?? HOF", "??? SSS", "?? SS", "? ÀÏ¹İ"]
+        selected_tier = st.selectbox("?? Æ¼¾î ÇÊÅÍ", options=tier_options, index=0, key="preset_tier_filter")
     with col_search:
-        search_query = st.text_input("ğŸ” í”„ë¦¬ì…‹ ê²€ìƒ‰", placeholder="ì´ë¦„ ê²€ìƒ‰...", key="preset_search")
+        search_query = st.text_input("?? ÇÁ¸®¼Â °Ë»ö", placeholder="ÀÌ¸§ °Ë»ö...", key="preset_search")
 
     all_presets = list_presets()
-    if selected_cat == "ğŸŒŸ ì „ì²´":
+    if selected_cat == "?? ÀüÃ¼":
         filtered_presets = all_presets
     else:
         cat_list = PRESET_CATEGORIES.get(selected_cat, [])
         filtered_presets = [p for p in all_presets if p in cat_list]
 
-    # í‹°ì–´ í•„í„° ì ìš©
-    if selected_tier == "ğŸ‘‘ HOF":
+    # Æ¼¾î ÇÊÅÍ Àû¿ë
+    if selected_tier == "?? HOF":
         filtered_presets = [p for p in filtered_presets if p in HOF_TIER]
-    elif selected_tier == "â­â­â­ SSS":
+    elif selected_tier == "??? SSS":
         filtered_presets = [p for p in filtered_presets if p in SSS_TIER]
-    elif selected_tier == "â­â­ SS":
+    elif selected_tier == "?? SS":
         filtered_presets = [p for p in filtered_presets if p in SS_TIER and p not in SSS_TIER]
-    elif selected_tier == "â€¢ ì¼ë°˜":
+    elif selected_tier == "? ÀÏ¹İ":
         filtered_presets = [p for p in filtered_presets if p not in SS_TIER]
 
     if search_query:
@@ -2821,73 +2825,73 @@ with tab1:
 
     def format_preset(name):
         if name in HOF_TIER:
-            return f"ğŸ‘‘ {name} [HOF]"
+            return f"?? {name} [HOF]"
         if name in SSS_TIER:
-            return f"ğŸŒŸ {name} [SSS]"
+            return f"?? {name} [SSS]"
         if name in SS_TIER:
-            return f"â­ {name} [SS]"
-        return f"â€¢ {name}"
+            return f"? {name} [SS]"
+        return f"? {name}"
 
     col1, col2 = st.columns([2, 1])
     with col1:
         if filtered_presets:
             selected_preset = st.selectbox(
-                f"ğŸ¨ í”„ë¦¬ì…‹ ì„ íƒ ({len(filtered_presets)}ê°œ)",
+                f"?? ÇÁ¸®¼Â ¼±ÅÃ ({len(filtered_presets)}°³)",
                 options=filtered_presets,
                 format_func=format_preset
             )
         else:
-            st.warning("í•´ë‹¹ ì¹´í…Œê³ ë¦¬ì— í”„ë¦¬ì…‹ì´ ì—†ì–´ìš”.")
+            st.warning("ÇØ´ç Ä«Å×°í¸®¿¡ ÇÁ¸®¼ÂÀÌ ¾ø¾î¿ä.")
             selected_preset = None
     with col2:
-        if selected_cat != "ğŸŒŸ ì „ì²´":
+        if selected_cat != "?? ÀüÃ¼":
             ss_count = sum(1 for p in filtered_presets if p in SS_TIER and p not in SSS_TIER)
             sss_count = sum(1 for p in filtered_presets if p in SSS_TIER)
             st.markdown(f"""
 <div style="background:{BG_CARD};border:1px solid {BORDER};border-radius:8px;padding:10px 14px;margin-top:28px;">
-  <div style="font-size:0.65rem;color:{TEXT_DIM};letter-spacing:1px;">ì¹´í…Œê³ ë¦¬ í˜„í™©</div>
-  <div style="font-size:1.1rem;font-weight:700;color:{GOLD};margin-top:4px;">{len(filtered_presets)}ê°œ</div>
-  <div style="font-size:0.7rem;color:#f0c040;">ğŸŒŸ SSS tier {sss_count}ê°œ</div>
-  <div style="font-size:0.7rem;color:{TEXT_DIM};">â­ SS tier {ss_count}ê°œ</div>
+  <div style="font-size:0.65rem;color:{TEXT_DIM};letter-spacing:1px;">Ä«Å×°í¸® ÇöÈ²</div>
+  <div style="font-size:1.1rem;font-weight:700;color:{GOLD};margin-top:4px;">{len(filtered_presets)}°³</div>
+  <div style="font-size:0.7rem;color:#f0c040;">?? SSS tier {sss_count}°³</div>
+  <div style="font-size:0.7rem;color:{TEXT_DIM};">? SS tier {ss_count}°³</div>
 </div>
 """, unsafe_allow_html=True)
 
     if not selected_preset:
         st.stop()
 
-    NONE = "None â€” í”„ë¦¬ì…‹ ê¸°ë³¸ê°’ ì‚¬ìš©"
+    NONE = "None ? ÇÁ¸®¼Â ±âº»°ª »ç¿ë"
     col1, col2, col3 = st.columns(3)
     with col1:
-        preset_appearance  = st.selectbox("ğŸ‘© ì¸ì¢…/êµ­ì ",       [NONE] + list(MODEL_APPEARANCE.keys()), key="preset_appearance")
-        preset_age         = st.selectbox("ğŸ‚ ì—°ë ¹ëŒ€",          [NONE] + list(AGE_APPEARANCE.keys()),   key="preset_age")
-        preset_body        = st.selectbox("ğŸ‘¤ ì²´í˜•",            [NONE] + list(MODEL_TYPES.keys()),      key="preset_body")
-        preset_outfit      = st.selectbox("ğŸ‘— ì˜ìƒ",            [NONE] + list(OUTFIT_TYPES.keys()),     key="preset_outfit")
-        preset_material    = st.selectbox("ğŸ§µ ì†Œì¬",            [NONE] + list(MATERIALS.keys()),        key="preset_material")
-        preset_footwear    = st.selectbox("ğŸ‘  ì‹ ë°œ",            [NONE] + list(FOOTWEAR.keys()),         key="preset_footwear")
-        preset_nails       = st.selectbox("ğŸ’… ë„¤ì¼",            [NONE] + list(NAILS.keys()),            key="preset_nails")
-        preset_skin_detail = st.selectbox("ğŸŒ¿ í”¼ë¶€ ë””í…Œì¼",     [NONE] + list(SKIN_DETAILS.keys()),     key="preset_skin_detail")
-        preset_body_oil    = st.selectbox("âœ¨ ë°”ë”” ì˜¤ì¼",        [NONE] + list(BODY_OIL.keys()),         key="preset_body_oil")
+        preset_appearance  = st.selectbox("?? ÀÎÁ¾/±¹Àû",       [NONE] + list(MODEL_APPEARANCE.keys()), key="preset_appearance")
+        preset_age         = st.selectbox("?? ¿¬·É´ë",          [NONE] + list(AGE_APPEARANCE.keys()),   key="preset_age")
+        preset_body        = st.selectbox("?? Ã¼Çü",            [NONE] + list(MODEL_TYPES.keys()),      key="preset_body")
+        preset_outfit      = st.selectbox("?? ÀÇ»ó",            [NONE] + list(OUTFIT_TYPES.keys()),     key="preset_outfit")
+        preset_material    = st.selectbox("?? ¼ÒÀç",            [NONE] + list(MATERIALS.keys()),        key="preset_material")
+        preset_footwear    = st.selectbox("?? ½Å¹ß",            [NONE] + list(FOOTWEAR.keys()),         key="preset_footwear")
+        preset_nails       = st.selectbox("?? ³×ÀÏ",            [NONE] + list(NAILS.keys()),            key="preset_nails")
+        preset_skin_detail = st.selectbox("?? ÇÇºÎ µğÅ×ÀÏ",     [NONE] + list(SKIN_DETAILS.keys()),     key="preset_skin_detail")
+        preset_body_oil    = st.selectbox("? ¹Ùµğ ¿ÀÀÏ",        [NONE] + list(BODY_OIL.keys()),         key="preset_body_oil")
     with col2:
-        preset_hair_style  = st.selectbox("ğŸ’‡ í—¤ì–´ìŠ¤íƒ€ì¼",      [NONE] + list(HAIR_STYLES.keys()),      key="preset_hair_style")
-        preset_pose        = st.selectbox("ğŸ’ƒ í¬ì¦ˆ",            [NONE] + list(POSES.keys()),            key="preset_pose")
-        preset_framing     = st.selectbox("ğŸ–¼ï¸ í”„ë ˆì´ë°",        [NONE] + list(FRAMING.keys()),          key="preset_framing")
-        preset_angle       = st.selectbox("ğŸ“¸ ì¹´ë©”ë¼ ì•µê¸€",     [NONE] + list(CAMERA_ANGLES.keys()),    key="preset_angle")
-        preset_lighting    = st.selectbox("ğŸ’¡ ì¡°ëª…",            [NONE] + list(LIGHTING.keys()),         key="preset_lighting")
-        preset_color_grade = st.selectbox("ğŸ¨ ìƒ‰ê°",            [NONE] + list(COLOR_GRADES.keys()),     key="preset_color_grade")
-        preset_style       = st.selectbox("ğŸ¬ ìŠ¤íƒ€ì¼",          [NONE] + list(STYLES.keys()),           key="preset_style")
-        preset_cover_style = st.selectbox("ğŸ“° ì»¤ë²„ ìŠ¤íƒ€ì¼",     [NONE] + list(COVER_STYLES.keys()),     key="preset_cover_style")
+        preset_hair_style  = st.selectbox("?? Çì¾î½ºÅ¸ÀÏ",      [NONE] + list(HAIR_STYLES.keys()),      key="preset_hair_style")
+        preset_pose        = st.selectbox("?? Æ÷Áî",            [NONE] + list(POSES.keys()),            key="preset_pose")
+        preset_framing     = st.selectbox("??? ÇÁ·¹ÀÌ¹Ö",        [NONE] + list(FRAMING.keys()),          key="preset_framing")
+        preset_angle       = st.selectbox("?? Ä«¸Ş¶ó ¾Ş±Û",     [NONE] + list(CAMERA_ANGLES.keys()),    key="preset_angle")
+        preset_lighting    = st.selectbox("?? Á¶¸í",            [NONE] + list(LIGHTING.keys()),         key="preset_lighting")
+        preset_color_grade = st.selectbox("?? »ö°¨",            [NONE] + list(COLOR_GRADES.keys()),     key="preset_color_grade")
+        preset_style       = st.selectbox("?? ½ºÅ¸ÀÏ",          [NONE] + list(STYLES.keys()),           key="preset_style")
+        preset_cover_style = st.selectbox("?? Ä¿¹ö ½ºÅ¸ÀÏ",     [NONE] + list(COVER_STYLES.keys()),     key="preset_cover_style")
     with col3:
-        preset_environment = st.selectbox("ğŸ™ï¸ í™˜ê²½",            [NONE] + list(ENVIRONMENTS.keys()),     key="preset_environment")
-        preset_weather     = st.selectbox("ğŸŒ¦ï¸ ë‚ ì”¨",            [NONE] + list(WEATHER.keys()),          key="preset_weather")
-        preset_image_style = st.selectbox("ğŸ“ ì´ë¯¸ì§€ ìŠ¤íƒ€ì¼",   [NONE] + list(IMAGE_STYLE.keys()),      key="preset_image_style")
-        preset_special_fx  = st.selectbox("ğŸŒˆ íŠ¹ìˆ˜ íš¨ê³¼",       [NONE] + list(SPECIAL_EFFECTS.keys()),  key="preset_special_fx")
-        preset_mood        = st.selectbox("ğŸ­ ë¬´ë“œ",            [NONE] + list(MOOD.keys()),             key="preset_mood")
+        preset_environment = st.selectbox("??? È¯°æ",            [NONE] + list(ENVIRONMENTS.keys()),     key="preset_environment")
+        preset_weather     = st.selectbox("??? ³¯¾¾",            [NONE] + list(WEATHER.keys()),          key="preset_weather")
+        preset_image_style = st.selectbox("?? ÀÌ¹ÌÁö ½ºÅ¸ÀÏ",   [NONE] + list(IMAGE_STYLE.keys()),      key="preset_image_style")
+        preset_special_fx  = st.selectbox("?? Æ¯¼ö È¿°ú",       [NONE] + list(SPECIAL_EFFECTS.keys()),  key="preset_special_fx")
+        preset_mood        = st.selectbox("?? ¹«µå",            [NONE] + list(MOOD.keys()),             key="preset_mood")
 
     col_a, col_b, _ = st.columns([1, 1, 2])
     with col_a:
-        btn_ai    = st.button("ğŸ¤– AI ìƒì„±",   use_container_width=True, type="primary", key="preset_btn_ai")
+        btn_ai    = st.button("?? AI »ı¼º",   use_container_width=True, type="primary", key="preset_btn_ai")
     with col_b:
-        btn_quick = st.button("âš¡ ë¹ ë¥¸ ìƒì„±", use_container_width=True, key="preset_btn_quick")
+        btn_quick = st.button("? ºü¸¥ »ı¼º", use_container_width=True, key="preset_btn_quick")
 
     if "preset_prompt"   not in st.session_state: st.session_state.preset_prompt   = ""
     if "preset_selected" not in st.session_state: st.session_state.preset_selected = ""
@@ -2942,7 +2946,7 @@ with tab1:
 
     if btn_ai and selected_preset:
         st.session_state.preset_prompt = ""
-        with st.spinner("Claudeê°€ í”„ë¡¬í”„íŠ¸ ìƒì„± ì¤‘..."):
+        with st.spinner("Claude°¡ ÇÁ·ÒÇÁÆ® »ı¼º Áß..."):
             try:
                 raw       = generate_prompt_with_ai(selected_preset)
                 overrides = build_preset_overrides()
@@ -2954,7 +2958,7 @@ with tab1:
                 if aspect_desc: raw += f" {aspect_desc}."
                 st.session_state.preset_prompt = raw
             except Exception as e:
-                st.error(f"ì˜¤ë¥˜: {str(e)}")
+                st.error(f"¿À·ù: {str(e)}")
 
     if btn_quick and selected_preset:
         st.session_state.preset_prompt = ""
@@ -2965,26 +2969,26 @@ with tab1:
         elif global_platform == "ChatGPT (DALL-E)":
             raw += f" {aspect_desc}. Photorealistic, hyperrealistic skin texture, award-winning fashion photography."
         else:
-            ar = {"ì„¸ë¡œ 2:3 â€” ì¸ë¬¼ ê¸°ë³¸":"2:3","ì„¸ë¡œ 3:4 â€” ì „ì‹ ìƒ·":"3:4","ê°€ë¡œ 16:9 â€” ì‹œë„¤ë§ˆí‹±":"16:9","ê°€ë¡œ 4:3 â€” í™”ë³´":"4:3","ì •ë°©í˜• 1:1 â€” ì¸ìŠ¤íƒ€":"1:1"}.get(global_aspect, "2:3")
+            ar = {"¼¼·Î 2:3 ? ÀÎ¹° ±âº»":"2:3","¼¼·Î 3:4 ? Àü½Å¼¦":"3:4","°¡·Î 16:9 ? ½Ã³×¸¶Æ½":"16:9","°¡·Î 4:3 ? È­º¸":"4:3","Á¤¹æÇü 1:1 ? ÀÎ½ºÅ¸":"1:1"}.get(global_aspect, "2:3")
             raw += f" --ar {ar} --style raw --q 2"
         st.session_state.preset_prompt = raw
 
     if st.session_state.preset_prompt:
-        st.text_area("ìƒì„±ëœ í”„ë¡¬í”„íŠ¸", value=st.session_state.preset_prompt, height=160)
+        st.text_area("»ı¼ºµÈ ÇÁ·ÒÇÁÆ®", value=st.session_state.preset_prompt, height=160)
         st.code(st.session_state.preset_prompt, language=None)
-        st.caption(f"ğŸ‘† ë³µì‚¬ í›„ {global_platform}ì— ë¶™ì—¬ë„£ìœ¼ì„¸ìš”!")
+        st.caption(f"?? º¹»ç ÈÄ {global_platform}¿¡ ºÙ¿©³ÖÀ¸¼¼¿ä!")
 
-# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-# íƒ­ 2: ìˆ˜ë™ ì¡°í•©
-# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+# ??????????????????????????????????????????????????????????
+# ÅÇ 2: ¼öµ¿ Á¶ÇÕ
+# ??????????????????????????????????????????????????????????
 with tab2:
-    st.markdown("### ìš”ì†Œë³„ ìˆ˜ë™ ì¡°í•©")
-    st.caption("ğŸ’¡ í•µì‹¬ ìš”ì†Œ(ì™¸ëª¨/ì²´í˜•/ì˜ìƒ/í™˜ê²½)ë§Œ ì„ íƒí•´ë„ ì¢‹ì€ í”„ë¡¬í”„íŠ¸ê°€ ë‚˜ì™€ìš”.")
+    st.markdown("### ¿ä¼Òº° ¼öµ¿ Á¶ÇÕ")
+    st.caption("?? ÇÙ½É ¿ä¼Ò(¿Ü¸ğ/Ã¼Çü/ÀÇ»ó/È¯°æ)¸¸ ¼±ÅÃÇØµµ ÁÁÀº ÇÁ·ÒÇÁÆ®°¡ ³ª¿Í¿ä.")
 
-    if st.button("ğŸ² ì „ì²´ ëœë¤ìœ¼ë¡œ ì±„ìš°ê¸°"):
+    if st.button("?? ÀüÃ¼ ·£´ıÀ¸·Î Ã¤¿ì±â"):
         def rnd(d):
-            keys = [k for k in d.keys() if k != "ì—†ìŒ"]
-            return random.choice(keys) if keys else "ì—†ìŒ"
+            keys = [k for k in d.keys() if k != "¾øÀ½"]
+            return random.choice(keys) if keys else "¾øÀ½"
         st.session_state.r_appearance  = rnd(MODEL_APPEARANCE)
         st.session_state.r_model       = rnd(MODEL_TYPES)
         st.session_state.r_outfit      = rnd(OUTFIT_TYPES)
@@ -2994,7 +2998,7 @@ with tab2:
         st.session_state.r_framing     = rnd(FRAMING)
         st.session_state.r_angle       = rnd(CAMERA_ANGLES)
         st.session_state.r_style       = rnd(STYLES)
-        st.session_state.r_cover_style = "ì—†ìŒ"
+        st.session_state.r_cover_style = "¾øÀ½"
         st.session_state.r_camera      = rnd(CAMERAS)
         st.session_state.r_pose        = rnd(POSES)
         st.session_state.r_expression  = rnd(EXPRESSION)
@@ -3003,7 +3007,7 @@ with tab2:
         st.session_state.r_hair_color  = rnd(HAIR_COLORS)
         st.session_state.r_makeup      = rnd(MAKEUP)
         def rnd_maybe(d, prob=0.5):
-            return rnd(d) if random.random() < prob else "ì—†ìŒ"
+            return rnd(d) if random.random() < prob else "¾øÀ½"
         st.session_state.r_footwear        = rnd_maybe(FOOTWEAR,       0.50)
         st.session_state.r_color_grade     = rnd_maybe(COLOR_GRADES,   0.50)
         st.session_state.r_accessories     = rnd_maybe(ACCESSORIES,    0.40)
@@ -3022,15 +3026,15 @@ with tab2:
         st.session_state.r_skin_detail     = rnd_maybe(SKIN_DETAILS,   0.20)
         st.session_state.r_nails           = rnd_maybe(NAILS,          0.30)
         st.session_state.r_cover_style     = rnd_maybe(COVER_STYLES,   0.20)
-        st.session_state.r_age         = "ì—†ìŒ"
-        st.session_state.r_model_count = "1ëª… â€” ì‹±ê¸€ ëª¨ë¸ (ê¸°ë³¸)"
-        st.session_state.r_body_weight = "ì—†ìŒ"
-        st.session_state.r_bust_size   = "ì—†ìŒ"
-        st.session_state.r_hip_size    = "ì—†ìŒ"
+        st.session_state.r_age         = "¾øÀ½"
+        st.session_state.r_model_count = "1¸í ? ½Ì±Û ¸ğµ¨ (±âº»)"
+        st.session_state.r_body_weight = "¾øÀ½"
+        st.session_state.r_bust_size   = "¾øÀ½"
+        st.session_state.r_hip_size    = "¾øÀ½"
         st.session_state["use_separate_outfit"] = st.session_state.get("use_separate_outfit", False)
         if st.session_state.get("use_separate_outfit", False):
-            top_keys = [k for k in TOP_TYPES.keys() if k != "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)"]
-            bot_keys = [k for k in BOTTOM_TYPES.keys() if k != "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)"]
+            top_keys = [k for k in TOP_TYPES.keys() if k != "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)"]
+            bot_keys = [k for k in BOTTOM_TYPES.keys() if k != "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)"]
             if top_keys: st.session_state["r_top_type"] = random.choice(top_keys)
             if bot_keys: st.session_state["r_bottom_type"] = random.choice(bot_keys)
         st.rerun()
@@ -3042,130 +3046,130 @@ with tab2:
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown("##### ğŸ‘¤ ëª¨ë¸")
-        appearance  = st.selectbox("ğŸ‘© ì™¸ëª¨ â€” ì¸ì¢…/êµ­ì ",          list(MODEL_APPEARANCE.keys()), index=idx(MODEL_APPEARANCE, "r_appearance"))
-        age         = st.selectbox("ğŸ‚ ì—°ë ¹ëŒ€",                     list(AGE_APPEARANCE.keys()),   index=idx(AGE_APPEARANCE,   "r_age"))
-        model_type  = st.selectbox("ğŸ‘¤ ì²´í˜•ê³¼ ë¹„ìœ¨",               list(MODEL_TYPES.keys()),       index=idx(MODEL_TYPES,      "r_model"))
-        body_weight = st.selectbox("âš–ï¸ ì²´í˜• ë³´ì •",                 list(BODY_WEIGHT.keys()),       index=idx(BODY_WEIGHT,      "r_body_weight"))
-        bust_size   = st.selectbox("ğŸ‘™ ê°€ìŠ´ ë³´ì •",                  list(BUST_SIZE.keys()),         index=idx(BUST_SIZE,        "r_bust_size"))
-        hip_size    = st.selectbox("ğŸ‘ í™ ë³´ì •",                   list(HIP_SIZE.keys()),          index=idx(HIP_SIZE,         "r_hip_size"))
-        skin_tone   = st.selectbox("ğŸŒŠ í”¼ë¶€ í†¤/ì§ˆê°",              list(SKIN_TONES.keys()),        index=idx(SKIN_TONES,       "r_skin_tone"))
-        body_oil    = st.selectbox("âœ¨ ë°”ë”” ì˜¤ì¼/ê¸€ë¡œìŠ¤",           list(BODY_OIL.keys()),          index=idx(BODY_OIL,         "r_body_oil"))
-        expression  = st.selectbox("ğŸ˜ í‘œì •/ëˆˆë¹›",                 list(EXPRESSION.keys()),        index=idx(EXPRESSION,       "r_expression"))
-        tattoo      = st.selectbox("ğŸ¨ ë¬¸ì‹ /ë°”ë””ì•„íŠ¸",              list(TATTOO.keys()),            index=idx(TATTOO,           "r_tattoo"))
-        skin_detail = st.selectbox("ğŸŒ¿ í”¼ë¶€ ë””í…Œì¼",               list(SKIN_DETAILS.keys()),      index=idx(SKIN_DETAILS,     "r_skin_detail"))
-        nails       = st.selectbox("ğŸ’… ë„¤ì¼",                      list(NAILS.keys()),             index=idx(NAILS,            "r_nails"))
-        model_count = st.selectbox("ğŸ‘¥ ëª¨ë¸ ìˆ˜",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
+        st.markdown("##### ?? ¸ğµ¨")
+        appearance  = st.selectbox("?? ¿Ü¸ğ ? ÀÎÁ¾/±¹Àû",          list(MODEL_APPEARANCE.keys()), index=idx(MODEL_APPEARANCE, "r_appearance"))
+        age         = st.selectbox("?? ¿¬·É´ë",                     list(AGE_APPEARANCE.keys()),   index=idx(AGE_APPEARANCE,   "r_age"))
+        model_type  = st.selectbox("?? Ã¼Çü°ú ºñÀ²",               list(MODEL_TYPES.keys()),       index=idx(MODEL_TYPES,      "r_model"))
+        body_weight = st.selectbox("?? Ã¼Çü º¸Á¤",                 list(BODY_WEIGHT.keys()),       index=idx(BODY_WEIGHT,      "r_body_weight"))
+        bust_size   = st.selectbox("?? °¡½¿ º¸Á¤",                  list(BUST_SIZE.keys()),         index=idx(BUST_SIZE,        "r_bust_size"))
+        hip_size    = st.selectbox("?? Èü º¸Á¤",                   list(HIP_SIZE.keys()),          index=idx(HIP_SIZE,         "r_hip_size"))
+        skin_tone   = st.selectbox("?? ÇÇºÎ Åæ/Áú°¨",              list(SKIN_TONES.keys()),        index=idx(SKIN_TONES,       "r_skin_tone"))
+        body_oil    = st.selectbox("? ¹Ùµğ ¿ÀÀÏ/±Û·Î½º",           list(BODY_OIL.keys()),          index=idx(BODY_OIL,         "r_body_oil"))
+        expression  = st.selectbox("?? Ç¥Á¤/´«ºû",                 list(EXPRESSION.keys()),        index=idx(EXPRESSION,       "r_expression"))
+        tattoo      = st.selectbox("?? ¹®½Å/¹Ùµğ¾ÆÆ®",              list(TATTOO.keys()),            index=idx(TATTOO,           "r_tattoo"))
+        skin_detail = st.selectbox("?? ÇÇºÎ µğÅ×ÀÏ",               list(SKIN_DETAILS.keys()),      index=idx(SKIN_DETAILS,     "r_skin_detail"))
+        nails       = st.selectbox("?? ³×ÀÏ",                      list(NAILS.keys()),             index=idx(NAILS,            "r_nails"))
+        model_count = st.selectbox("?? ¸ğµ¨ ¼ö",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
     with col2:
-        st.markdown("##### ğŸ‘— ìŠ¤íƒ€ì¼")
-        use_separate = st.checkbox("âœ‚ï¸ ìƒí•˜ì˜ ë¶„ë¦¬ ì„ íƒ", value=False, key="use_separate_outfit", help="ìƒì˜+í•˜ì˜ë¥¼ ê°ê° ì„ íƒí•´ ì¡°í•©")
+        st.markdown("##### ?? ½ºÅ¸ÀÏ")
+        use_separate = st.checkbox("?? »óÇÏÀÇ ºĞ¸® ¼±ÅÃ", value=False, key="use_separate_outfit", help="»óÀÇ+ÇÏÀÇ¸¦ °¢°¢ ¼±ÅÃÇØ Á¶ÇÕ")
         if use_separate:
-            top_type    = st.selectbox("ğŸ‘• ìƒì˜",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
-            bottom_type = st.selectbox("ğŸ‘– í•˜ì˜",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
-            top_label    = top_type.split("â€”")[0].strip()    if top_type    != "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)" else "ì—†ìŒ"
-            bottom_label = bottom_type.split("â€”")[0].strip() if bottom_type != "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)" else "ì—†ìŒ"
+            top_type    = st.selectbox("?? »óÀÇ",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
+            bottom_type = st.selectbox("?? ÇÏÀÇ",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
+            top_label    = top_type.split("?")[0].strip()    if top_type    != "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)" else "¾øÀ½"
+            bottom_label = bottom_type.split("?")[0].strip() if bottom_type != "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)" else "¾øÀ½"
             st.markdown(f"""
 <div style="background:#2a2a2a;border:1px solid #c9a84c33;border-radius:8px;padding:8px 12px;margin:4px 0;">
-  <span style="font-size:0.7rem;color:#888;letter-spacing:1px;">ì„ íƒëœ ì¡°í•©</span><br>
-  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;margin-right:4px;">ğŸ‘• {top_label}</span>
+  <span style="font-size:0.7rem;color:#888;letter-spacing:1px;">¼±ÅÃµÈ Á¶ÇÕ</span><br>
+  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;margin-right:4px;">?? {top_label}</span>
   <span style="color:#555;margin-right:4px;">+</span>
-  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;">ğŸ‘– {bottom_label}</span>
+  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;">?? {bottom_label}</span>
 </div>
 """, unsafe_allow_html=True)
             outfit = list(OUTFIT_TYPES.keys())[0]
         else:
-            outfit      = st.selectbox("ğŸ‘— ì˜ìƒ íƒ€ì…",  list(OUTFIT_TYPES.keys()), index=idx(OUTFIT_TYPES, "r_outfit"))
-            top_type    = "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)"
-            bottom_type = "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)"
-        material    = st.selectbox("ğŸ§µ ì†Œì¬ â€” ì˜·ê° ì§ˆê°",          list(MATERIALS.keys()),         index=idx(MATERIALS,        "r_material"))
-        footwear    = st.selectbox("ğŸ‘  ì‹ ë°œ",                      list(FOOTWEAR.keys()),          index=idx(FOOTWEAR,         "r_footwear"))
-        pose        = st.selectbox("ğŸ’ƒ í¬ì¦ˆ â€” ìì„¸ì™€ ë™ì‘",        list(POSES.keys()),             index=idx(POSES,            "r_pose"))
-        hair_style  = st.selectbox("ğŸ’‡ í—¤ì–´ìŠ¤íƒ€ì¼",                list(HAIR_STYLES.keys()),       index=idx(HAIR_STYLES,      "r_hair_style"))
-        hair_color  = st.selectbox("ğŸ¨ í—¤ì–´ì»¬ëŸ¬",                 list(HAIR_COLORS.keys()),       index=idx(HAIR_COLORS,      "r_hair_color"))
-        makeup      = st.selectbox("ğŸ’„ ë©”ì´í¬ì—…",                  list(MAKEUP.keys()),            index=idx(MAKEUP,           "r_makeup"))
-        accessories = st.selectbox("ğŸ’ ì•¡ì„¸ì„œë¦¬",                  list(ACCESSORIES.keys()),       index=idx(ACCESSORIES,      "r_accessories"))
-        props       = st.selectbox("ğŸª íŠ¹ë³„ ì†Œí’ˆ",                 list(PROPS.keys()),             index=idx(PROPS,            "r_props"))
-        era         = st.selectbox("ğŸŒ ì‹œëŒ€/ì‹œê°„ëŒ€",                list(ERA.keys()),               index=idx(ERA,              "r_era"))
-        concept     = st.selectbox("ğŸ­ ì»¨ì…‰/í˜ë¥´ì†Œë‚˜",              list(CONCEPT.keys()),           index=idx(CONCEPT,          "r_concept"))
+            outfit      = st.selectbox("?? ÀÇ»ó Å¸ÀÔ",  list(OUTFIT_TYPES.keys()), index=idx(OUTFIT_TYPES, "r_outfit"))
+            top_type    = "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)"
+            bottom_type = "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)"
+        material    = st.selectbox("?? ¼ÒÀç ? ¿Ê°¨ Áú°¨",          list(MATERIALS.keys()),         index=idx(MATERIALS,        "r_material"))
+        footwear    = st.selectbox("?? ½Å¹ß",                      list(FOOTWEAR.keys()),          index=idx(FOOTWEAR,         "r_footwear"))
+        pose        = st.selectbox("?? Æ÷Áî ? ÀÚ¼¼¿Í µ¿ÀÛ",        list(POSES.keys()),             index=idx(POSES,            "r_pose"))
+        hair_style  = st.selectbox("?? Çì¾î½ºÅ¸ÀÏ",                list(HAIR_STYLES.keys()),       index=idx(HAIR_STYLES,      "r_hair_style"))
+        hair_color  = st.selectbox("?? Çì¾îÄÃ·¯",                 list(HAIR_COLORS.keys()),       index=idx(HAIR_COLORS,      "r_hair_color"))
+        makeup      = st.selectbox("?? ¸ŞÀÌÅ©¾÷",                  list(MAKEUP.keys()),            index=idx(MAKEUP,           "r_makeup"))
+        accessories = st.selectbox("?? ¾×¼¼¼­¸®",                  list(ACCESSORIES.keys()),       index=idx(ACCESSORIES,      "r_accessories"))
+        props       = st.selectbox("?? Æ¯º° ¼ÒÇ°",                 list(PROPS.keys()),             index=idx(PROPS,            "r_props"))
+        era         = st.selectbox("?? ½Ã´ë/½Ã°£´ë",                list(ERA.keys()),               index=idx(ERA,              "r_era"))
+        concept     = st.selectbox("?? ÄÁ¼Á/Æä¸£¼Ò³ª",              list(CONCEPT.keys()),           index=idx(CONCEPT,          "r_concept"))
     with col3:
-        st.markdown("##### ğŸ™ï¸ í™˜ê²½")
-        environment = st.selectbox("ğŸ™ï¸ ì´¬ì˜ ì¥ì†Œ",                list(ENVIRONMENTS.keys()),      index=idx(ENVIRONMENTS,     "r_env"))
-        weather     = st.selectbox("ğŸŒ¦ï¸ ë‚ ì”¨/ê¸°ìƒ",                 list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
-        time_of_day = st.selectbox("ğŸ• ì´¬ì˜ ì‹œê°„ëŒ€",               list(TIME_OF_DAY.keys()),       index=idx(TIME_OF_DAY,      "r_time_of_day"))
-        lighting    = st.selectbox("ğŸ’¡ ì¡°ëª… â€” ë¹›ì˜ ë¶„ìœ„ê¸°",        list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
-        framing     = st.selectbox("ğŸ–¼ï¸ í”„ë ˆì´ë° â€” êµ¬ë„/í¬ê¸°",      list(FRAMING.keys()),           index=idx(FRAMING,          "r_framing"))
-        angle       = st.selectbox("ğŸ“¸ ì¹´ë©”ë¼ ì•µê¸€",               list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
-        camera      = st.selectbox("ğŸ“· ì¹´ë©”ë¼ â€” ì¥ë¹„",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
-        lens_effect = st.selectbox("ğŸ”­ ë Œì¦ˆ/ì´ˆì  íš¨ê³¼",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
-        style       = st.selectbox("ğŸ¬ ìŠ¤íƒ€ì¼ â€” í™”ë³´ ë ˆí¼ëŸ°ìŠ¤",    list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
-        cover_style = st.selectbox("ğŸ“° ì»¤ë²„ ìŠ¤íƒ€ì¼ â€” ì¡ì§€/í™”ë³´",    list(COVER_STYLES.keys()),      index=idx(COVER_STYLES,     "r_cover_style"))
-        color_grade = st.selectbox("ğŸ–¼ï¸ ìƒ‰ê° â€” ì»¬ëŸ¬ ê·¸ë ˆì´ë”©",     list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
-        mood        = st.selectbox("ğŸ­ ë¬´ë“œ/ë¶„ìœ„ê¸°",               list(MOOD.keys()),              index=idx(MOOD,             "r_mood"))
-        special_fx  = st.selectbox("ğŸŒˆ íŠ¹ìˆ˜ íš¨ê³¼",                 list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
-        img_style   = st.selectbox("ğŸ“ ì´ë¯¸ì§€ ìŠ¤íƒ€ì¼",             list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
-        bg_crowd    = st.selectbox("ğŸ‘¥ ë°°ê²½ ì¸ë¬¼",                 list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
+        st.markdown("##### ??? È¯°æ")
+        environment = st.selectbox("??? ÃÔ¿µ Àå¼Ò",                list(ENVIRONMENTS.keys()),      index=idx(ENVIRONMENTS,     "r_env"))
+        weather     = st.selectbox("??? ³¯¾¾/±â»ó",                 list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
+        time_of_day = st.selectbox("?? ÃÔ¿µ ½Ã°£´ë",               list(TIME_OF_DAY.keys()),       index=idx(TIME_OF_DAY,      "r_time_of_day"))
+        lighting    = st.selectbox("?? Á¶¸í ? ºûÀÇ ºĞÀ§±â",        list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
+        framing     = st.selectbox("??? ÇÁ·¹ÀÌ¹Ö ? ±¸µµ/Å©±â",      list(FRAMING.keys()),           index=idx(FRAMING,          "r_framing"))
+        angle       = st.selectbox("?? Ä«¸Ş¶ó ¾Ş±Û",               list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
+        camera      = st.selectbox("?? Ä«¸Ş¶ó ? Àåºñ",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
+        lens_effect = st.selectbox("?? ·»Áî/ÃÊÁ¡ È¿°ú",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
+        style       = st.selectbox("?? ½ºÅ¸ÀÏ ? È­º¸ ·¹ÆÛ·±½º",    list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
+        cover_style = st.selectbox("?? Ä¿¹ö ½ºÅ¸ÀÏ ? ÀâÁö/È­º¸",    list(COVER_STYLES.keys()),      index=idx(COVER_STYLES,     "r_cover_style"))
+        color_grade = st.selectbox("??? »ö°¨ ? ÄÃ·¯ ±×·¹ÀÌµù",     list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
+        mood        = st.selectbox("?? ¹«µå/ºĞÀ§±â",               list(MOOD.keys()),              index=idx(MOOD,             "r_mood"))
+        special_fx  = st.selectbox("?? Æ¯¼ö È¿°ú",                 list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
+        img_style   = st.selectbox("?? ÀÌ¹ÌÁö ½ºÅ¸ÀÏ",             list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
+        bg_crowd    = st.selectbox("?? ¹è°æ ÀÎ¹°",                 list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
 
     rec = get_combo_recommendations(model_type)
     if rec:
-        with st.expander("âœ… ì´ ì²´í˜•ì— ì˜ ë§ëŠ” ì¡°í•© ì¶”ì²œ", expanded=False):
+        with st.expander("? ÀÌ Ã¼Çü¿¡ Àß ¸Â´Â Á¶ÇÕ ÃßÃµ", expanded=False):
             rc1, rc2, rc3 = st.columns(3)
             with rc1:
-                st.markdown("**ğŸ‘— ì˜ìƒ**")
-                for o in rec.get("outfit", []): st.markdown(f"{'ğŸŸ¡ ' if outfit == o else 'â€¢ '}{o.split('â€”')[0].strip()}")
-                st.markdown("**ğŸ§µ ì†Œì¬**")
-                for m in rec.get("material", []): st.markdown(f"{'ğŸŸ¡ ' if material == m else 'â€¢ '}{m.split('â€”')[0].strip()}")
+                st.markdown("**?? ÀÇ»ó**")
+                for o in rec.get("outfit", []): st.markdown(f"{'?? ' if outfit == o else '? '}{o.split('?')[0].strip()}")
+                st.markdown("**?? ¼ÒÀç**")
+                for m in rec.get("material", []): st.markdown(f"{'?? ' if material == m else '? '}{m.split('?')[0].strip()}")
             with rc2:
-                st.markdown("**ğŸ“¸ ì•µê¸€**")
-                for a in rec.get("angle", []): st.markdown(f"{'ğŸŸ¡ ' if angle == a else 'â€¢ '}{a.split('â€”')[0].strip()}")
-                st.markdown("**ğŸ’ƒ í¬ì¦ˆ**")
-                for p in rec.get("pose", []): st.markdown(f"{'ğŸŸ¡ ' if pose == p else 'â€¢ '}{p.split('â€”')[0].strip()}")
+                st.markdown("**?? ¾Ş±Û**")
+                for a in rec.get("angle", []): st.markdown(f"{'?? ' if angle == a else '? '}{a.split('?')[0].strip()}")
+                st.markdown("**?? Æ÷Áî**")
+                for p in rec.get("pose", []): st.markdown(f"{'?? ' if pose == p else '? '}{p.split('?')[0].strip()}")
             with rc3:
-                st.markdown("**ğŸ¬ ìŠ¤íƒ€ì¼**")
-                for s in rec.get("style", []): st.markdown(f"{'ğŸŸ¡ ' if style == s else 'â€¢ '}{s.split('â€”')[0].strip()}")
-                st.markdown("**ğŸ™ï¸ í™˜ê²½**")
-                for e in rec.get("env", []): st.markdown(f"{'ğŸŸ¡ ' if environment == e else 'â€¢ '}{e.split('â€”')[0].strip()}")
-            st.caption("ğŸŸ¡ = í˜„ì¬ ì„ íƒë¨  â€¢  = ì¶”ì²œ í•­ëª©")
+                st.markdown("**?? ½ºÅ¸ÀÏ**")
+                for s in rec.get("style", []): st.markdown(f"{'?? ' if style == s else '? '}{s.split('?')[0].strip()}")
+                st.markdown("**??? È¯°æ**")
+                for e in rec.get("env", []): st.markdown(f"{'?? ' if environment == e else '? '}{e.split('?')[0].strip()}")
+            st.caption("?? = ÇöÀç ¼±ÅÃµÊ  ?  = ÃßÃµ Ç×¸ñ")
 
     conflicts = check_conflicts(angle, pose, style, environment, model_type, material, weather)
     if conflicts:
-        for c in conflicts: st.warning(f"âš ï¸ {c}")
+        for c in conflicts: st.warning(f"?? {c}")
 
     col_x, col_y, col_z, _ = st.columns([1, 1, 1, 1])
-    with col_x: btn_build      = st.button("âœ¨ í”„ë¡¬í”„íŠ¸ ì¡°í•©", type="primary", use_container_width=True)
-    with col_y: btn_ai_enhance = st.button("ğŸ¤– AIë¡œ ê°•í™”", use_container_width=True)
-    with col_z: btn_ai_review  = st.button("ğŸ” AI ê²€ìˆ˜", use_container_width=True)
+    with col_x: btn_build      = st.button("? ÇÁ·ÒÇÁÆ® Á¶ÇÕ", type="primary", use_container_width=True)
+    with col_y: btn_ai_enhance = st.button("?? AI·Î °­È­", use_container_width=True)
+    with col_z: btn_ai_review  = st.button("?? AI °Ë¼ö", use_container_width=True)
 
     if "manual_prompt" not in st.session_state: st.session_state.manual_prompt = ""
     if "review_result" not in st.session_state: st.session_state.review_result = ""
 
     if btn_ai_review:
         st.session_state.review_result = ""
-        with st.spinner("Claudeê°€ ì¡°í•© ê²€ìˆ˜ + ìë™ ìˆ˜ì • ì¤‘..."):
+        with st.spinner("Claude°¡ Á¶ÇÕ °Ë¼ö + ÀÚµ¿ ¼öÁ¤ Áß..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
                 current_combo = {"model": model_type, "outfit": outfit, "material": material, "angle": angle, "pose": pose, "skin_tone": skin_tone, "body_oil": body_oil, "weather": weather, "style": style, "lighting": lighting, "expression": expression, "bg_crowd": bg_crowd, "img_style": img_style, "color_grade": color_grade}
                 safe_options = {
-                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["ì½”íŠ¸ only â€” ë¡±ì½”íŠ¸ë§Œ ì…ì€ ë¯¸ë‹ˆë©€ ê¸€ë˜ë¨¸","ë€ì œë¦¬ ì—ë””í† ë¦¬ì–¼ â€” VS ìŠ¤íƒ€ì¼, ì‹¤í¬ ë ˆì´ìŠ¤","ì‹œìŠ¤ë£¨ ë°”ë””ìˆ˜íŠ¸ â€” ë©”ì‰¬, ì•„ë°©ê°€ë¥´ë“œ","ë¸Œë¼íƒ‘+í•˜ì´ìŠ¬ë¦¿ â€” ë¸Œë¼íƒ‘, ë¡± í•˜ì´ìŠ¬ë¦¿","ë§ˆì´í¬ë¡œ ë¹„í‚¤ë‹ˆ â€” ëˆ ë¹„í‚¤ë‹ˆ, SI ìˆ˜ì˜ë³µ í™”ë³´","ëª¨ë…¸í‚¤ë‹ˆ â€” ì›í”¼ìŠ¤ ìˆ˜ì˜ë³µ ë³€í˜•, ëŒ€ë‹´í•œ ì»·ì•„ì›ƒ"]],
-                    "material":  [k for k in MATERIALS.keys() if k not in ["ë¼í…ìŠ¤ â€” í”¼ë¶€ ë°€ì°©, ì„¸ì»¨ë“œìŠ¤í‚¨","ì‹œìŠ¤ë£¨ ì˜¤ê°„ì â€” ë°˜íˆ¬ëª…, ì‚´ì´ ë¹„ì¹˜ëŠ”","PVC â€” íˆ¬ëª… ë¹„ë‹, ë¯¸ë˜ì ","ê³¨ë“œ ì²´ì¸ ë©”ì‰¬ â€” ê¸ˆì† ì²´ì¸ ë§ì‚¬"]],
-                    "angle":     [k for k in CAMERA_ANGLES.keys() if k not in ["ì˜¤ë²„í—¤ë“œ â€” ìœ„ì—ì„œ ë‚´ë ¤ë‹¤ë³´ê¸°","ë¡œìš°ì•µê¸€ â€” ë‹¤ë¦¬ ê°•ì¡°, ì•„ë˜ì„œ ìœ„ë¡œ"]],
-                    "pose":      [k for k in POSES.keys() if k not in ["ì—†ìŒ","ìˆ˜ì˜ì¥ ë¬¼ì† â€” í•˜ë°˜ì‹  ë¬¼ì— ì ê¸´","ì—ë“œë¦° í¬ì¦ˆ â€” ë°°ë¥¼ ê¹”ê³  ê´€ëŠ¥ì ","ë°±í¬ì¦ˆ â€” ë’¤ëŒì•„ ì–´ê¹¨ ë„ˆë¨¸ ì‹œì„ ","ë“± ë³´ì´ê¸° â€” ë°±ë·°, ì–´ê¹¨ ë¼ì¸"]],
-                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in ["ìŠ¤ì›¨í‹° â€” ìš´ë™ í›„ ë•€ë‚˜ëŠ” ëŠë‚Œ","ì˜¤ì¼ë“œ ìŠ¤í‚¨ â€” ìœ¤ê¸°ìˆëŠ” ê¸€ë¡œì‹œ"]],
-                    "body_oil":  ["ì—†ìŒ", "ë¼ì´íŠ¸ ê¸€ë¡œìš° â€” ìì—°ìŠ¤ëŸ¬ìš´ ìœ¤ê¸°", "ìƒˆí‹´ ê¸€ë¡œìš° â€” ìƒˆí‹´ì²˜ëŸ¼ ë¹›ë‚˜ëŠ”"],
-                    "weather":   [k for k in WEATHER.keys() if k not in ["í­ìš° â€” ê±°ì„¼ ë¹„, ê·¹ì ì¸ ë¶„ìœ„ê¸°"]],
-                    "style":     [k for k in STYLES.keys() if k not in ["ë¹…í† ë¦¬ì•„ ì‹œí¬ë¦¿ íŒ¨ì…˜ì‡¼","ìŠ¤í¬ì¸  ì¼ëŸ¬ìŠ¤íŠ¸ë ˆì´í‹°ë“œ ìˆ˜ì˜ë³µ"]],
+                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["ÄÚÆ® only ? ·ÕÄÚÆ®¸¸ ÀÔÀº ¹Ì´Ï¸Ö ±Û·¡¸Ó","¶õÁ¦¸® ¿¡µğÅä¸®¾ó ? VS ½ºÅ¸ÀÏ, ½ÇÅ© ·¹ÀÌ½º","½Ã½º·ç ¹Ùµğ¼öÆ® ? ¸Ş½¬, ¾Æ¹æ°¡¸£µå","ºê¶óÅ¾+ÇÏÀÌ½½¸´ ? ºê¶óÅ¾, ·Õ ÇÏÀÌ½½¸´","¸¶ÀÌÅ©·Î ºñÅ°´Ï ? ²ö ºñÅ°´Ï, SI ¼ö¿µº¹ È­º¸","¸ğ³ëÅ°´Ï ? ¿øÇÇ½º ¼ö¿µº¹ º¯Çü, ´ë´ãÇÑ ÄÆ¾Æ¿ô"]],
+                    "material":  [k for k in MATERIALS.keys() if k not in ["¶óÅØ½º ? ÇÇºÎ ¹ĞÂø, ¼¼ÄÁµå½ºÅ²","½Ã½º·ç ¿À°£ÀÚ ? ¹İÅõ¸í, »ìÀÌ ºñÄ¡´Â","PVC ? Åõ¸í ºñ´Ò, ¹Ì·¡Àû","°ñµå Ã¼ÀÎ ¸Ş½¬ ? ±İ¼Ó Ã¼ÀÎ ¸Á»ç"]],
+                    "angle":     [k for k in CAMERA_ANGLES.keys() if k not in ["¿À¹öÇìµå ? À§¿¡¼­ ³»·Á´Ùº¸±â","·Î¿ì¾Ş±Û ? ´Ù¸® °­Á¶, ¾Æ·¡¼­ À§·Î"]],
+                    "pose":      [k for k in POSES.keys() if k not in ["¾øÀ½","¼ö¿µÀå ¹°¼Ó ? ÇÏ¹İ½Å ¹°¿¡ Àá±ä","¾şµå¸° Æ÷Áî ? ¹è¸¦ ±ò°í °ü´ÉÀû","¹éÆ÷Áî ? µÚµ¹¾Æ ¾î±ú ³Ê¸Ó ½Ã¼±","µî º¸ÀÌ±â ? ¹éºä, ¾î±ú ¶óÀÎ"]],
+                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in ["½º¿şÆ¼ ? ¿îµ¿ ÈÄ ¶¡³ª´Â ´À³¦","¿ÀÀÏµå ½ºÅ² ? À±±âÀÖ´Â ±Û·Î½Ã"]],
+                    "body_oil":  ["¾øÀ½", "¶óÀÌÆ® ±Û·Î¿ì ? ÀÚ¿¬½º·¯¿î À±±â", "»õÆ¾ ±Û·Î¿ì ? »õÆ¾Ã³·³ ºû³ª´Â"],
+                    "weather":   [k for k in WEATHER.keys() if k not in ["Æø¿ì ? °Å¼¾ ºñ, ±ØÀûÀÎ ºĞÀ§±â"]],
+                    "style":     [k for k in STYLES.keys() if k not in ["ºòÅä¸®¾Æ ½ÃÅ©¸´ ÆĞ¼Ç¼î","½ºÆ÷Ã÷ ÀÏ·¯½ºÆ®·¹ÀÌÆ¼µå ¼ö¿µº¹"]],
                     "lighting":  list(LIGHTING.keys()),
-                    "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["ë”ë¸” ìµìŠ¤í¬ì € â€” ì´ì¤‘ ë…¸ì¶œ"]],
+                    "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["´õºí ÀÍ½ºÆ÷Àú ? ÀÌÁß ³ëÃâ"]],
                 }
                 response = client.messages.create(
                     model="claude-sonnet-4-5", max_tokens=1200,
                     messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst.
 Analyze this combination for risks:
 {chr(10).join([f"- {k}: {v}" for k, v in current_combo.items()])}
-SAFE: body paint art, cultural costume, artistic context â†’ high pass rate
+SAFE: body paint art, cultural costume, artistic context ¡æ high pass rate
 Risk: 3+ risky elements = HIGH
 Respond ONLY in JSON:
-{{"risk_level": "HIGH/MEDIUM/LOW","issues": ["issue1"],"replacements": {{"outfit": "key or null","material": "key or null","angle": "key or null","pose": "key or null","skin_tone": "key or null","body_oil": "key or null","weather": "key or null","style": "key or null","img_style": "key or null"}},"summary": "í•œêµ­ì–´ 2-3ì¤„"}}"""}]
+{{"risk_level": "HIGH/MEDIUM/LOW","issues": ["issue1"],"replacements": {{"outfit": "key or null","material": "key or null","angle": "key or null","pose": "key or null","skin_tone": "key or null","body_oil": "key or null","weather": "key or null","style": "key or null","img_style": "key or null"}},"summary": "ÇÑ±¹¾î 2-3ÁÙ"}}"""}]
                 )
                 raw = response.content[0].text.strip()
                 import json, re
@@ -3184,29 +3188,29 @@ Respond ONLY in JSON:
                             if ss_key:
                                 st.session_state[ss_key] = new_val
                                 replaced[field] = new_val
-                    risk_emoji = {"HIGH": "ğŸ”´", "MEDIUM": "ğŸŸ¡", "LOW": "ğŸŸ¢"}.get(risk, "âšª")
-                    msg = f"{risk_emoji} **ë¦¬ìŠ¤í¬: {risk}**\n\n"
-                    if issues: msg += "**âš ï¸ ê°ì§€ëœ ë¬¸ì œ:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
-                    if replaced: msg += "**ğŸ”„ ìë™ êµì²´:**\n" + "\n".join([f"- {k} â†’ `{v.split('â€”')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
-                    msg += f"**ğŸ’¬ ìš”ì•½:** {summary}"
+                    risk_emoji = {"HIGH": "??", "MEDIUM": "??", "LOW": "??"}.get(risk, "?")
+                    msg = f"{risk_emoji} **¸®½ºÅ©: {risk}**\n\n"
+                    if issues: msg += "**?? °¨ÁöµÈ ¹®Á¦:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
+                    if replaced: msg += "**?? ÀÚµ¿ ±³Ã¼:**\n" + "\n".join([f"- {k} ¡æ `{v.split('?')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
+                    msg += f"**?? ¿ä¾à:** {summary}"
                     st.session_state.review_result = msg
                     if replaced:
                         st.session_state._trigger_build = True
                         st.rerun()
             except Exception as e:
-                st.session_state.review_result = f"ì˜¤ë¥˜: {str(e)}"
+                st.session_state.review_result = f"¿À·ù: {str(e)}"
 
     if st.session_state.get("review_result"):
         st.markdown("---")
-        st.markdown("#### ğŸ” AI ê²€ìˆ˜ ê²°ê³¼")
+        st.markdown("#### ?? AI °Ë¼ö °á°ú")
         st.markdown(st.session_state.review_result)
         st.markdown("---")
 
     if btn_build:
         def smart_update(key, d, prob):
-            cur = st.session_state.get(key, "ì—†ìŒ")
-            if cur == "ì—†ìŒ":
-                keys = [k for k in d.keys() if k != "ì—†ìŒ"]
+            cur = st.session_state.get(key, "¾øÀ½")
+            if cur == "¾øÀ½":
+                keys = [k for k in d.keys() if k != "¾øÀ½"]
                 if keys and random.random() < prob:
                     st.session_state[key] = random.choice(keys)
         smart_update("r_pose",        POSES,          0.80)
@@ -3252,31 +3256,31 @@ Respond ONLY in JSON:
         if filter_result["replacements"]:
             for ss_key, new_val in filter_result["replacements"].items():
                 st.session_state[ss_key] = new_val
-            risk_emoji = {"HIGH": "ğŸ”´", "MEDIUM": "ğŸŸ¡", "LOW": "ğŸŸ¢"}.get(filter_result["risk_level"], "âšª")
-            replaced_labels = {"r_angle":"ì•µê¸€","r_pose":"í¬ì¦ˆ","r_outfit":"ì˜ìƒ","r_material":"ì†Œì¬","r_skin_tone":"í”¼ë¶€","r_body_oil":"ë°”ë””ì˜¤ì¼","r_style":"ìŠ¤íƒ€ì¼","r_expression":"í‘œì •","r_model":"ì²´í˜•","r_image_style":"ì´ë¯¸ì§€ìŠ¤íƒ€ì¼"}
-            changed = "  |  ".join([f"{replaced_labels.get(k, k)} â†’ **{v.split('â€”')[0].strip()}**" for k, v in filter_result["replacements"].items()])
-            st.session_state._auto_filter_msg = f"{risk_emoji} í•„í„° ìë™ ì¡°ì •: {changed}"
+            risk_emoji = {"HIGH": "??", "MEDIUM": "??", "LOW": "??"}.get(filter_result["risk_level"], "?")
+            replaced_labels = {"r_angle":"¾Ş±Û","r_pose":"Æ÷Áî","r_outfit":"ÀÇ»ó","r_material":"¼ÒÀç","r_skin_tone":"ÇÇºÎ","r_body_oil":"¹Ùµğ¿ÀÀÏ","r_style":"½ºÅ¸ÀÏ","r_expression":"Ç¥Á¤","r_model":"Ã¼Çü","r_image_style":"ÀÌ¹ÌÁö½ºÅ¸ÀÏ"}
+            changed = "  |  ".join([f"{replaced_labels.get(k, k)} ¡æ **{v.split('?')[0].strip()}**" for k, v in filter_result["replacements"].items()])
+            st.session_state._auto_filter_msg = f"{risk_emoji} ÇÊÅÍ ÀÚµ¿ Á¶Á¤: {changed}"
         else:
-            risk_emoji = {"HIGH": "ğŸ”´", "MEDIUM": "ğŸŸ¡", "LOW": "ğŸŸ¢"}.get(filter_result["risk_level"], "âšª")
-            st.session_state._auto_filter_msg = f"{risk_emoji} í•„í„° ê²€ìˆ˜ í†µê³¼ (ì ìˆ˜: {filter_result['total_score']})"
+            risk_emoji = {"HIGH": "??", "MEDIUM": "??", "LOW": "??"}.get(filter_result["risk_level"], "?")
+            st.session_state._auto_filter_msg = f"{risk_emoji} ÇÊÅÍ °Ë¼ö Åë°ú (Á¡¼ö: {filter_result['total_score']})"
         st.rerun()
 
     if st.session_state.get("_trigger_build", False):
         st.session_state._trigger_build = False
         def ss(key, d, default=None):
             keys = list(d.keys())
-            val = st.session_state.get(key, keys[0] if keys else "ì—†ìŒ")
-            return val if val in d else (keys[0] if keys else "ì—†ìŒ")
-        _prev = {k: st.session_state.get(f"_prev_{k}", "ì—†ìŒ") for k in ["r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color","r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil","r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props","r_image_style","r_era","r_concept"]}
-        auto_labels = {"r_pose":"ğŸ’ƒ í¬ì¦ˆ","r_expression":"ğŸ˜ í‘œì •","r_skin_tone":"ğŸŒŠ í”¼ë¶€","r_hair_style":"ğŸ’‡ í—¤ì–´","r_hair_color":"ğŸ¨ í—¤ì–´ì»¬ëŸ¬","r_makeup":"ğŸ’„ ë©”ì´í¬ì—…","r_footwear":"ğŸ‘  ì‹ ë°œ","r_color_grade":"ğŸ–¼ï¸ ìƒ‰ê°","r_accessories":"ğŸ’ ì•¡ì„¸ì„œë¦¬","r_body_oil":"âœ¨ ë°”ë””ì˜¤ì¼","r_weather":"ğŸŒ¦ï¸ ë‚ ì”¨","r_bg_crowd":"ğŸ‘¥ ë°°ê²½","r_tattoo":"ğŸ¨ ë¬¸ì‹ ","r_special_effects":"ğŸŒˆ íŠ¹ìˆ˜íš¨ê³¼","r_props":"ğŸª ì†Œí’ˆ","r_image_style":"ğŸ“ ì´ë¯¸ì§€ìŠ¤íƒ€ì¼","r_era":"ğŸŒ ì‹œëŒ€","r_concept":"ğŸ­ ì»¨ì…‰"}
+            val = st.session_state.get(key, keys[0] if keys else "¾øÀ½")
+            return val if val in d else (keys[0] if keys else "¾øÀ½")
+        _prev = {k: st.session_state.get(f"_prev_{k}", "¾øÀ½") for k in ["r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color","r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil","r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props","r_image_style","r_era","r_concept"]}
+        auto_labels = {"r_pose":"?? Æ÷Áî","r_expression":"?? Ç¥Á¤","r_skin_tone":"?? ÇÇºÎ","r_hair_style":"?? Çì¾î","r_hair_color":"?? Çì¾îÄÃ·¯","r_makeup":"?? ¸ŞÀÌÅ©¾÷","r_footwear":"?? ½Å¹ß","r_color_grade":"??? »ö°¨","r_accessories":"?? ¾×¼¼¼­¸®","r_body_oil":"? ¹Ùµğ¿ÀÀÏ","r_weather":"??? ³¯¾¾","r_bg_crowd":"?? ¹è°æ","r_tattoo":"?? ¹®½Å","r_special_effects":"?? Æ¯¼öÈ¿°ú","r_props":"?? ¼ÒÇ°","r_image_style":"?? ÀÌ¹ÌÁö½ºÅ¸ÀÏ","r_era":"?? ½Ã´ë","r_concept":"?? ÄÁ¼Á"}
         picked_items = {}
         for key, label in auto_labels.items():
-            cur = st.session_state.get(key, "ì—†ìŒ")
-            if _prev[key] == "ì—†ìŒ" and cur != "ì—†ìŒ":
-                picked_items[label] = cur.split("â€”")[0].strip()
+            cur = st.session_state.get(key, "¾øÀ½")
+            if _prev[key] == "¾øÀ½" and cur != "¾øÀ½":
+                picked_items[label] = cur.split("?")[0].strip()
             st.session_state[f"_prev_{key}"] = cur
         if picked_items:
-            st.session_state._auto_picked_msg = f"ğŸ² ìë™ ì„ íƒ: {'  |  '.join([f'{k} â†’ **{v}**' for k, v in picked_items.items()])}"
+            st.session_state._auto_picked_msg = f"?? ÀÚµ¿ ¼±ÅÃ: {'  |  '.join([f'{k} ¡æ **{v}**' for k, v in picked_items.items()])}"
         else:
             st.session_state._auto_picked_msg = ""
         data = {
@@ -3300,20 +3304,20 @@ Respond ONLY in JSON:
             "light": ss("r_light", LIGHTING), "framing": ss("r_framing", FRAMING),
             "angle": ss("r_angle", CAMERA_ANGLES), "style": ss("r_style", STYLES),
             "cover_style": ss("r_cover_style", COVER_STYLES), "camera": ss("r_camera", CAMERAS),
-            "top_type": st.session_state.get("r_top_type", "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)"),
-            "bottom_type": st.session_state.get("r_bottom_type", "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)"),
+            "top_type": st.session_state.get("r_top_type", "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)"),
+            "bottom_type": st.session_state.get("r_bottom_type", "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)"),
         }
         st.session_state.manual_prompt = get_prompt(data)
 
     if st.session_state.get("_auto_picked_msg"): st.info(st.session_state._auto_picked_msg)
     if st.session_state.get("_auto_filter_msg"):
         msg = st.session_state._auto_filter_msg
-        if "ğŸ”´" in msg: st.warning(msg)
-        elif "ğŸŸ¡" in msg: st.info(msg)
+        if "??" in msg: st.warning(msg)
+        elif "??" in msg: st.info(msg)
         else: st.success(msg)
 
     if btn_ai_enhance and st.session_state.manual_prompt:
-        with st.spinner("Claudeê°€ í”„ë¡¬í”„íŠ¸ ê°•í™” ì¤‘..."):
+        with st.spinner("Claude°¡ ÇÁ·ÒÇÁÆ® °­È­ Áß..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
@@ -3322,80 +3326,80 @@ Respond ONLY in JSON:
                     messages=[{"role": "user", "content": f"Enhance this fashion photography prompt for {global_platform}.\nRules: model fills frame, photorealistic skin.\n{platform_instruction[global_platform]}\nOutput ONLY the prompt:\n\n{st.session_state.manual_prompt}"}])
                 st.session_state.manual_prompt = response.content[0].text.strip()
             except Exception as e:
-                st.error(f"ì˜¤ë¥˜: {str(e)}")
+                st.error(f"¿À·ù: {str(e)}")
 
     if st.session_state.manual_prompt:
-        st.text_area("ì¡°í•©ëœ í”„ë¡¬í”„íŠ¸", value=st.session_state.manual_prompt, height=160)
+        st.text_area("Á¶ÇÕµÈ ÇÁ·ÒÇÁÆ®", value=st.session_state.manual_prompt, height=160)
         st.code(st.session_state.manual_prompt, language=None)
-        st.caption(f"ğŸ‘† ë³µì‚¬ í›„ {global_platform}ì— ë¶™ì—¬ë„£ìœ¼ì„¸ìš”!")
+        st.caption(f"?? º¹»ç ÈÄ {global_platform}¿¡ ºÙ¿©³ÖÀ¸¼¼¿ä!")
 
-# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-# íƒ­ 3: ëœë¤ ëª¨ë“œ
-# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+# ??????????????????????????????????????????????????????????
+# ÅÇ 3: ·£´ı ¸ğµå
+# ??????????????????????????????????????????????????????????
 with tab3:
-    st.markdown("### ì™„ì „ ëœë¤ í”„ë¡¬í”„íŠ¸ ìƒì„±")
-    st.caption("í•µì‹¬ ìš”ì†Œë§Œ ëœë¤ ì¡°í•© â€” í”„ë¡¬í”„íŠ¸ ìµœì  ê¸¸ì´ ìœ ì§€")
+    st.markdown("### ¿ÏÀü ·£´ı ÇÁ·ÒÇÁÆ® »ı¼º")
+    st.caption("ÇÙ½É ¿ä¼Ò¸¸ ·£´ı Á¶ÇÕ ? ÇÁ·ÒÇÁÆ® ÃÖÀû ±æÀÌ À¯Áö")
     col1, col2, _ = st.columns([1, 1, 2])
-    with col1: btn_rand    = st.button("ğŸ² ëœë¤ ìƒì„±", type="primary", use_container_width=True)
-    with col2: btn_rand_ai = st.button("ğŸ¤– AI ëœë¤", use_container_width=True)
+    with col1: btn_rand    = st.button("?? ·£´ı »ı¼º", type="primary", use_container_width=True)
+    with col2: btn_rand_ai = st.button("?? AI ·£´ı", use_container_width=True)
     if "random_prompt" not in st.session_state: st.session_state.random_prompt = ""
     if btn_rand:
-        data = {"appearance": random.choice(list(MODEL_APPEARANCE.keys())), "age": "ì—†ìŒ", "model": random.choice(list(MODEL_TYPES.keys())), "outfit": random.choice(list(OUTFIT_TYPES.keys())), "material": random.choice(list(MATERIALS.keys())), "footwear": "ì—†ìŒ", "pose": random.choice(list(POSES.keys())), "color_grade": "ì—†ìŒ", "hair_style": "ì—†ìŒ", "hair_color": "ì—†ìŒ", "makeup": "ì—†ìŒ", "accessories": "ì—†ìŒ", "skin_tone": "ì—†ìŒ", "model_count": "1ëª… â€” ì‹±ê¸€ ëª¨ë¸ (ê¸°ë³¸)", "era": "ì—†ìŒ", "concept": "ì—†ìŒ", "special_effects": "ì—†ìŒ", "image_style": "ì—†ìŒ", "props": "ì—†ìŒ", "body_weight": "ì—†ìŒ", "bust_size": "ì—†ìŒ", "hip_size": "ì—†ìŒ", "env": random.choice(list(ENVIRONMENTS.keys())), "light": random.choice(list(LIGHTING.keys())), "angle": random.choice(list(CAMERA_ANGLES.keys())), "style": random.choice(list(STYLES.keys())), "camera": random.choice(list(CAMERAS.keys())), "top_type": "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)", "bottom_type": "ì—†ìŒ (ì˜ìƒ íƒ€ì… ì‚¬ìš©)"}
+        data = {"appearance": random.choice(list(MODEL_APPEARANCE.keys())), "age": "¾øÀ½", "model": random.choice(list(MODEL_TYPES.keys())), "outfit": random.choice(list(OUTFIT_TYPES.keys())), "material": random.choice(list(MATERIALS.keys())), "footwear": "¾øÀ½", "pose": random.choice(list(POSES.keys())), "color_grade": "¾øÀ½", "hair_style": "¾øÀ½", "hair_color": "¾øÀ½", "makeup": "¾øÀ½", "accessories": "¾øÀ½", "skin_tone": "¾øÀ½", "model_count": "1¸í ? ½Ì±Û ¸ğµ¨ (±âº»)", "era": "¾øÀ½", "concept": "¾øÀ½", "special_effects": "¾øÀ½", "image_style": "¾øÀ½", "props": "¾øÀ½", "body_weight": "¾øÀ½", "bust_size": "¾øÀ½", "hip_size": "¾øÀ½", "env": random.choice(list(ENVIRONMENTS.keys())), "light": random.choice(list(LIGHTING.keys())), "angle": random.choice(list(CAMERA_ANGLES.keys())), "style": random.choice(list(STYLES.keys())), "camera": random.choice(list(CAMERAS.keys())), "top_type": "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)", "bottom_type": "¾øÀ½ (ÀÇ»ó Å¸ÀÔ »ç¿ë)"}
         st.session_state.random_prompt = get_prompt(data)
     if btn_rand_ai:
         preset_name = random.choice(list_presets())
-        with st.spinner(f"Claudeê°€ [{preset_name}] ê¸°ë°˜ìœ¼ë¡œ ìƒì„± ì¤‘..."):
+        with st.spinner(f"Claude°¡ [{preset_name}] ±â¹İÀ¸·Î »ı¼º Áß..."):
             try:
                 st.session_state.random_prompt = generate_prompt_with_ai(preset_name)
             except Exception as e:
-                st.error(f"ì˜¤ë¥˜: {str(e)}")
+                st.error(f"¿À·ù: {str(e)}")
     if st.session_state.random_prompt:
-        st.text_area("ëœë¤ í”„ë¡¬í”„íŠ¸", value=st.session_state.random_prompt, height=160)
+        st.text_area("·£´ı ÇÁ·ÒÇÁÆ®", value=st.session_state.random_prompt, height=160)
         st.code(st.session_state.random_prompt, language=None)
-        st.caption(f"ğŸ‘† ë³µì‚¬ í›„ {global_platform}ì— ë¶™ì—¬ë„£ìœ¼ì„¸ìš”!")
+        st.caption(f"?? º¹»ç ÈÄ {global_platform}¿¡ ºÙ¿©³ÖÀ¸¼¼¿ä!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">âœ¦ LumineX v4.4 â€” AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">? LumineX v4.4 ? AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
-# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-# íƒ­ 4: ì˜ìƒ í”„ë¡¬í”„íŠ¸
-# â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+# ??????????????????????????????????????????????????????????
+# ÅÇ 4: ¿µ»ó ÇÁ·ÒÇÁÆ®
+# ??????????????????????????????????????????????????????????
 with tab4:
-    st.markdown(f"### ğŸ¬ ì˜ìƒ í”„ë¡¬í”„íŠ¸ ìƒì„± â€” {global_video_platform}")
-    VIDEO_PLATFORM_TIPS = {"Veo 3 (Gemini)": ("ğŸ”µ", "gemini.google.com", "Gemini Advanced êµ¬ë… í•„ìš”. ì¢Œì¸¡ ë©”ë‰´ì—ì„œ Veo 3 ì„ íƒ."), "Kling AI": ("ğŸŸ¡", "klingai.com", "ë¬´ë£Œ í‹°ì–´ ì‚¬ìš© ê°€ëŠ¥. ë§¤ì¼ í¬ë ˆë”§ ì§€ê¸‰."), "Runway": ("ğŸŸ¢", "runwayml.com", "ë¬´ë£Œ í¬ë ˆë”§ ì œê³µ. Gen-3 Alpha ì‚¬ìš©."), "Hailuo": ("ğŸŸ ", "hailuoai.video", "ì™„ì „ ë¬´ë£Œ. ì¤‘êµ­ ì„œë¹„ìŠ¤.")}
+    st.markdown(f"### ?? ¿µ»ó ÇÁ·ÒÇÁÆ® »ı¼º ? {global_video_platform}")
+    VIDEO_PLATFORM_TIPS = {"Veo 3 (Gemini)": ("??", "gemini.google.com", "Gemini Advanced ±¸µ¶ ÇÊ¿ä. ÁÂÃø ¸Ş´º¿¡¼­ Veo 3 ¼±ÅÃ."), "Kling AI": ("??", "klingai.com", "¹«·á Æ¼¾î »ç¿ë °¡´É. ¸ÅÀÏ Å©·¹µ÷ Áö±Ş."), "Runway": ("??", "runwayml.com", "¹«·á Å©·¹µ÷ Á¦°ø. Gen-3 Alpha »ç¿ë."), "Hailuo": ("??", "hailuoai.video", "¿ÏÀü ¹«·á. Áß±¹ ¼­ºñ½º.")}
     color, url, tip = VIDEO_PLATFORM_TIPS[global_video_platform]
-    st.info(f"{color} **{global_video_platform}** â€” {tip} â†’ [{url}](https://{url})")
-    VIDEO_DURATIONS  = {"5ì´ˆ â€” ì§§ê³  ì„íŒ©íŠ¸ ìˆëŠ”": "5 seconds", "8ì´ˆ â€” í‘œì¤€ í´ë¦½": "8 seconds", "10ì´ˆ â€” ê¸´ í´ë¦½": "10 seconds"}
-    VIDEO_MOTIONS    = {"ì›Œí‚¹ â€” ëŸ°ì›¨ì´ ì›Œí¬, ì¹´ë©”ë¼ ì •ë©´": "walking towards camera, confident runway walk, slow motion", "í„´ â€” 360ë„ íšŒì „, ì˜ìƒ ì „ì²´ ê³µê°œ": "slow 360 degree turn, revealing full outfit", "í¬ì¦ˆ â€” ì •ì  í¬ì¦ˆ, ë°”ëŒì— ë¨¸ë¦¬ ë‚ ë¦¼": "standing pose, hair flowing in wind, subtle movement", "ëŒ„ìŠ¤ â€” ì„¹ì‹œí•œ ëŠë‚Œì˜ ë¶€ë“œëŸ¬ìš´ ì›€ì§ì„": "slow sensual dance movement, fluid motion", "ì›Œí‚¹+í„´ â€” ê±·ë‹¤ê°€ ì¹´ë©”ë¼ ë³´ë©° í„´": "walking then turning to camera, fashion editorial motion", "ë“±ì¥ â€” ì•ˆê°œ/ë¹› ì†ì—ì„œ ì²œì²œíˆ ë“±ì¥": "emerging slowly from mist and light, dramatic entrance"}
-    VIDEO_CAMERAS    = {"ì‹œë„¤ë§ˆí‹± â€” ëŠë¦° ë‹¬ë¦¬ìƒ·": "slow cinematic dolly shot, smooth camera movement", "ì˜¤ë¹— â€” ëª¨ë¸ ì£¼ìœ„ë¥¼ ë„ëŠ” ì¹´ë©”ë¼": "slow orbit around subject, 360 camera movement", "ì¤Œì¸ â€” ì „ì‹ ì—ì„œ ì–¼êµ´ë¡œ ì²œì²œíˆ ì¤Œ": "slow zoom from full body to face, intimate close-up", "ë¡œìš°ì•µê¸€ â€” ì•„ë˜ì„œ ìœ„ë¡œ ì˜¬ë ¤ë‹¤ë³´ê¸°": "low angle upward camera, powerful perspective", "í•˜ì´ì•µê¸€ â€” ìœ„ì—ì„œ ë‚´ë ¤ë‹¤ë³´ê¸°": "high angle downward camera, elegant perspective", "í•¸ë“œí—¬ë“œ â€” ì•½ê°„ì˜ í”ë“¤ë¦¼, í˜„ì¥ê°": "slight handheld camera movement, documentary feel"}
-    VIDEO_ATMOSPHERES = {"ëŸ­ì…”ë¦¬ ê¸€ë˜ë¨¸ â€” í™”ë ¤í•˜ê³  ê³ ê¸‰ìŠ¤ëŸ¬ìš´": "luxury glamour atmosphere, high-end fashion film", "ë‹¤í¬ ì‹œë„¤ë§ˆí‹± â€” ì–´ë‘¡ê³  ì˜í™”ì ì¸": "dark cinematic atmosphere, noir fashion film", "ê³¨ë“ ì•„ì›Œ â€” ë”°ëœ»í•œ í™©ê¸ˆë¹›": "golden hour warm light, dreamy fashion film", "ë„¤ì˜¨ ì‚¬ì´ë²„í‘í¬ â€” ë¯¸ë˜ì  ë„¤ì˜¨ ë¶„ìœ„ê¸°": "neon cyberpunk atmosphere, futuristic fashion film", "ë¯¸ë‹ˆë©€ í´ë¦° â€” ê¹”ë”í•˜ê³  ëª¨ë˜í•œ": "minimal clean white atmosphere, modern fashion film", "ì—ë””í† ë¦¬ì–¼ â€” ì¡ì§€ í™”ë³´ ëŠë‚Œ": "editorial fashion film, Vogue video style"}
+    st.info(f"{color} **{global_video_platform}** ? {tip} ¡æ [{url}](https://{url})")
+    VIDEO_DURATIONS  = {"5ÃÊ ? Âª°í ÀÓÆÑÆ® ÀÖ´Â": "5 seconds", "8ÃÊ ? Ç¥ÁØ Å¬¸³": "8 seconds", "10ÃÊ ? ±ä Å¬¸³": "10 seconds"}
+    VIDEO_MOTIONS    = {"¿öÅ· ? ·±¿şÀÌ ¿öÅ©, Ä«¸Ş¶ó Á¤¸é": "walking towards camera, confident runway walk, slow motion", "ÅÏ ? 360µµ È¸Àü, ÀÇ»ó ÀüÃ¼ °ø°³": "slow 360 degree turn, revealing full outfit", "Æ÷Áî ? Á¤Àû Æ÷Áî, ¹Ù¶÷¿¡ ¸Ó¸® ³¯¸²": "standing pose, hair flowing in wind, subtle movement", "´í½º ? ¼½½ÃÇÑ ´À³¦ÀÇ ºÎµå·¯¿î ¿òÁ÷ÀÓ": "slow sensual dance movement, fluid motion", "¿öÅ·+ÅÏ ? °È´Ù°¡ Ä«¸Ş¶ó º¸¸ç ÅÏ": "walking then turning to camera, fashion editorial motion", "µîÀå ? ¾È°³/ºû ¼Ó¿¡¼­ ÃµÃµÈ÷ µîÀå": "emerging slowly from mist and light, dramatic entrance"}
+    VIDEO_CAMERAS    = {"½Ã³×¸¶Æ½ ? ´À¸° ´Ş¸®¼¦": "slow cinematic dolly shot, smooth camera movement", "¿Àºø ? ¸ğµ¨ ÁÖÀ§¸¦ µµ´Â Ä«¸Ş¶ó": "slow orbit around subject, 360 camera movement", "ÁÜÀÎ ? Àü½Å¿¡¼­ ¾ó±¼·Î ÃµÃµÈ÷ ÁÜ": "slow zoom from full body to face, intimate close-up", "·Î¿ì¾Ş±Û ? ¾Æ·¡¼­ À§·Î ¿Ã·Á´Ùº¸±â": "low angle upward camera, powerful perspective", "ÇÏÀÌ¾Ş±Û ? À§¿¡¼­ ³»·Á´Ùº¸±â": "high angle downward camera, elegant perspective", "ÇÚµåÇïµå ? ¾à°£ÀÇ Èçµé¸², ÇöÀå°¨": "slight handheld camera movement, documentary feel"}
+    VIDEO_ATMOSPHERES = {"·°¼Å¸® ±Û·¡¸Ó ? È­·ÁÇÏ°í °í±Ş½º·¯¿î": "luxury glamour atmosphere, high-end fashion film", "´ÙÅ© ½Ã³×¸¶Æ½ ? ¾îµÓ°í ¿µÈ­ÀûÀÎ": "dark cinematic atmosphere, noir fashion film", "°ñµç¾Æ¿ö ? µû¶æÇÑ È²±İºû": "golden hour warm light, dreamy fashion film", "³×¿Â »çÀÌ¹öÆãÅ© ? ¹Ì·¡Àû ³×¿Â ºĞÀ§±â": "neon cyberpunk atmosphere, futuristic fashion film", "¹Ì´Ï¸Ö Å¬¸° ? ±ò²ûÇÏ°í ¸ğ´øÇÑ": "minimal clean white atmosphere, modern fashion film", "¿¡µğÅä¸®¾ó ? ÀâÁö È­º¸ ´À³¦": "editorial fashion film, Vogue video style"}
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("**ğŸ“ ê¸°ì¡´ í”„ë¡¬í”„íŠ¸ ê¸°ë°˜ìœ¼ë¡œ ë³€í™˜**")
-        source_prompt  = st.text_area("ì´ë¯¸ì§€ í”„ë¡¬í”„íŠ¸ ë¶™ì—¬ë„£ê¸° (ì„ íƒì‚¬í•­)", placeholder="ê¸°ì¡´ ì´ë¯¸ì§€ í”„ë¡¬í”„íŠ¸ë¥¼ ì—¬ê¸°ì— ë¶™ì—¬ë„£ìœ¼ë©´ ì˜ìƒìš©ìœ¼ë¡œ ë³€í™˜í•´ì¤˜ìš”...", height=120, key="video_source")
-        video_duration = st.selectbox("â±ï¸ ì˜ìƒ ê¸¸ì´", list(VIDEO_DURATIONS.keys()))
-        video_motion   = st.selectbox("ğŸƒ ëª¨ì…˜ íƒ€ì…", list(VIDEO_MOTIONS.keys()))
+        st.markdown("**?? ±âÁ¸ ÇÁ·ÒÇÁÆ® ±â¹İÀ¸·Î º¯È¯**")
+        source_prompt  = st.text_area("ÀÌ¹ÌÁö ÇÁ·ÒÇÁÆ® ºÙ¿©³Ö±â (¼±ÅÃ»çÇ×)", placeholder="±âÁ¸ ÀÌ¹ÌÁö ÇÁ·ÒÇÁÆ®¸¦ ¿©±â¿¡ ºÙ¿©³ÖÀ¸¸é ¿µ»ó¿ëÀ¸·Î º¯È¯ÇØÁà¿ä...", height=120, key="video_source")
+        video_duration = st.selectbox("?? ¿µ»ó ±æÀÌ", list(VIDEO_DURATIONS.keys()))
+        video_motion   = st.selectbox("?? ¸ğ¼Ç Å¸ÀÔ", list(VIDEO_MOTIONS.keys()))
     with col2:
-        video_camera     = st.selectbox("ğŸ“· ì¹´ë©”ë¼ ë¬´ë¸Œë¨¼íŠ¸", list(VIDEO_CAMERAS.keys()))
-        video_atmosphere = st.selectbox("ğŸŒŸ ë¶„ìœ„ê¸°", list(VIDEO_ATMOSPHERES.keys()))
-        video_appearance = st.selectbox("ğŸ‘© ëª¨ë¸ ì™¸ëª¨", ["None â€” í”„ë¡¬í”„íŠ¸ ê¸°ë°˜"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
-        video_outfit     = st.selectbox("ğŸ‘— ì˜ìƒ", ["None â€” í”„ë¡¬í”„íŠ¸ ê¸°ë°˜"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
+        video_camera     = st.selectbox("?? Ä«¸Ş¶ó ¹«ºê¸ÕÆ®", list(VIDEO_CAMERAS.keys()))
+        video_atmosphere = st.selectbox("?? ºĞÀ§±â", list(VIDEO_ATMOSPHERES.keys()))
+        video_appearance = st.selectbox("?? ¸ğµ¨ ¿Ü¸ğ", ["None ? ÇÁ·ÒÇÁÆ® ±â¹İ"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
+        video_outfit     = st.selectbox("?? ÀÇ»ó", ["None ? ÇÁ·ÒÇÁÆ® ±â¹İ"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
     st.markdown("")
     col_x, col_y, _ = st.columns([1, 1, 2])
-    with col_x: btn_video_build = st.button("ğŸ¬ ì˜ìƒ í”„ë¡¬í”„íŠ¸ ìƒì„±", type="primary", use_container_width=True)
-    with col_y: btn_video_ai    = st.button("ğŸ¤– AIë¡œ ê°•í™”", use_container_width=True, key="btn_video_ai")
+    with col_x: btn_video_build = st.button("?? ¿µ»ó ÇÁ·ÒÇÁÆ® »ı¼º", type="primary", use_container_width=True)
+    with col_y: btn_video_ai    = st.button("?? AI·Î °­È­", use_container_width=True, key="btn_video_ai")
     if "video_prompt" not in st.session_state: st.session_state.video_prompt = ""
     if btn_video_build:
         st.session_state.video_prompt = ""
-        appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None â€” í”„ë¡¬í”„íŠ¸ ê¸°ë°˜" else ""
+        appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None ? ÇÁ·ÒÇÁÆ® ±â¹İ" else ""
         outfit_str = ""
-        if video_outfit != "None â€” í”„ë¡¬í”„íŠ¸ ê¸°ë°˜":
+        if video_outfit != "None ? ÇÁ·ÒÇÁÆ® ±â¹İ":
             od = OUTFIT_TYPES[video_outfit]
             outfit_str = f"Wearing: {(od['gemini'] if isinstance(od, dict) else od).split(',')[0]}. "
         base = f"Based on: {source_prompt[:200]}. " if source_prompt else ""
         st.session_state.video_prompt = (f"Cinematic fashion video, {VIDEO_DURATIONS[video_duration]}. {base}{appearance_str}{outfit_str}Motion: {VIDEO_MOTIONS[video_motion]}. Camera: {VIDEO_CAMERAS[video_camera]}. Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}. Photorealistic, hyperrealistic, 4K cinematic quality, professional fashion film, no text, no watermark.")
     if btn_video_ai and (source_prompt or st.session_state.video_prompt):
-        with st.spinner("Claudeê°€ ì˜ìƒ í”„ë¡¬í”„íŠ¸ ê°•í™” ì¤‘..."):
+        with st.spinner("Claude°¡ ¿µ»ó ÇÁ·ÒÇÁÆ® °­È­ Áß..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
@@ -3404,18 +3408,20 @@ with tab4:
                     messages=[{"role": "user", "content": f"You are an expert video prompt engineer.\nCreate a powerful cinematic fashion video prompt based on this: {base}\nSettings: Duration: {VIDEO_DURATIONS[video_duration]}, Motion: {VIDEO_MOTIONS[video_motion]}, Camera: {VIDEO_CAMERAS[video_camera]}, Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}\nRules: Cinematic, photorealistic, 4K. No text overlays. Output ONLY the prompt, 100-150 words."}])
                 st.session_state.video_prompt = response.content[0].text.strip()
             except Exception as e:
-                st.error(f"ì˜¤ë¥˜: {str(e)}")
+                st.error(f"¿À·ù: {str(e)}")
     if st.session_state.video_prompt:
-        st.text_area("ìƒì„±ëœ ì˜ìƒ í”„ë¡¬í”„íŠ¸", value=st.session_state.video_prompt, height=180)
+        st.text_area("»ı¼ºµÈ ¿µ»ó ÇÁ·ÒÇÁÆ®", value=st.session_state.video_prompt, height=180)
         st.code(st.session_state.video_prompt, language=None)
-        st.caption("ğŸ‘† ë³µì‚¬ í›„ í•´ë‹¹ í”Œë«í¼ì— ë¶™ì—¬ë„£ìœ¼ì„¸ìš”!")
+        st.caption("?? º¹»ç ÈÄ ÇØ´ç ÇÃ·§Æû¿¡ ºÙ¿©³ÖÀ¸¼¼¿ä!")
         st.markdown("---")
-        st.markdown(f"### ğŸ’¡ {global_video_platform} ì‚¬ìš© ë°©ë²•")
+        st.markdown(f"### ?? {global_video_platform} »ç¿ë ¹æ¹ı")
         if global_video_platform == "Veo 3 (Gemini)":
-            st.markdown("1. [gemini.google.com](https://gemini.google.com) ì ‘ì†\n2. ì¢Œì¸¡ **Veo 3** ì„ íƒ\n3. ìœ„ í”„ë¡¬í”„íŠ¸ ë¶™ì—¬ë„£ê¸°\n4. ìƒì„± í´ë¦­!")
+            st.markdown("1. [gemini.google.com](https://gemini.google.com) Á¢¼Ó\n2. ÁÂÃø **Veo 3** ¼±ÅÃ\n3. À§ ÇÁ·ÒÇÁÆ® ºÙ¿©³Ö±â\n4. »ı¼º Å¬¸¯!")
         elif global_video_platform == "Kling AI":
-            st.markdown("1. [klingai.com](https://klingai.com) ì ‘ì†\n2. **Text to Video** ì„ íƒ\n3. ìœ„ í”„ë¡¬í”„íŠ¸ ë¶™ì—¬ë„£ê¸°\n4. ìƒì„± í´ë¦­!")
+            st.markdown("1. [klingai.com](https://klingai.com) Á¢¼Ó\n2. **Text to Video** ¼±ÅÃ\n3. À§ ÇÁ·ÒÇÁÆ® ºÙ¿©³Ö±â\n4. »ı¼º Å¬¸¯!")
         elif global_video_platform == "Runway":
-            st.markdown("1. [runwayml.com](https://runwayml.com) ì ‘ì†\n2. **Gen-3 Alpha** ì„ íƒ\n3. ìœ„ í”„ë¡¬í”„íŠ¸ ë¶™ì—¬ë„£ê¸°\n4. ìƒì„± í´ë¦­!")
+            st.markdown("1. [runwayml.com](https://runwayml.com) Á¢¼Ó\n2. **Gen-3 Alpha** ¼±ÅÃ\n3. À§ ÇÁ·ÒÇÁÆ® ºÙ¿©³Ö±â\n4. »ı¼º Å¬¸¯!")
         else:
-            st.markdown("1. [hailuoai.video](https://hailuoai.video) ì ‘ì†\n2. **Text to Video** ì„ íƒ\n3. ìœ„ í”„ë¡¬í”„íŠ¸ ë¶™ì—¬ë„£ê¸°\n4. ìƒì„± í´ë¦­!")
+            st.markdown("1. [hailuoai.video](https://hailuoai.video) Á¢¼Ó\n2. **Text to Video** ¼±ÅÃ\n3. À§ ÇÁ·ÒÇÁÆ® ºÙ¿©³Ö±â\n4. »ı¼º Å¬¸¯!")
+
+
