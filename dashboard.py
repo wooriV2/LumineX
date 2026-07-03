@@ -786,7 +786,34 @@ PRESET_CATEGORIES = {
         "trio_coral_reef_zones_bodypaint",
         "trio_creation_of_adam_bodypaint",
         "trio_poles_and_equator_bodypaint",
-        # 4인 QUAD (5종)
+        # 2026-07-03 신규 QUAD 8종
+        "quad_four_civilizations_bodypaint",
+        "quad_four_goddesses_bodypaint",
+        "quad_four_ages_bodypaint",
+        "quad_four_metals_bodypaint",
+        "quad_four_gemstones_bodypaint",
+        "quad_cmyk_bodypaint",
+        "quad_four_classical_elements_klimt",
+        "quad_four_seasons_night_bodypaint",
+        # 2026-07-03 신규 QUINT 7종
+        "quint_five_senses_bodypaint",
+        "quint_five_worlds_bodypaint",
+        "quint_five_elements_wuxing_bodypaint",
+        "quint_five_mythologies_bodypaint",
+        "quint_five_oceans_deep_bodypaint",
+        "quint_five_sacred_colors_bodypaint",
+        "quint_five_dance_cultures_bodypaint",
+        # 2026-07-03 신규 HEXA 2종
+        "hexa_rainbow_spectrum_bodypaint",
+        "hexa_six_chakras_bodypaint",
+        # 2026-07-03 신규 OCTET 1종
+        "octet_planets_solar_bodypaint",
+        # 2026-07-03 신규 컨셉 4종
+        "trio_inside_outside_bodypaint",
+        "quad_four_horsewomen_apocalypse",
+        "trio_human_evolution_bodypaint",
+        "quad_fashion_capitals_bodypaint",
+                # 4인 QUAD (5종)
         "quad_four_seasons_bodypaint",
         "quad_four_elements_bodypaint",
         "quad_four_directions_bodypaint",
@@ -1093,11 +1120,41 @@ HOF_TIER = {
     "trio_creation_of_adam_bodypaint",    # 시스티나+루브르 배경 예술적 완성도 독보적
     "trio_black_white_gray_bodypaint",    # 조각같은 완성도 흑/회/백 대비 압도적
     "trio_fog_rain_snow_bodypaint",       # 색감+통일감 압도적 안개/물/눈 완벽표현
+    # 2026-07-03 신규 HOF — QUAD/QUINT/HEXA 검증 완료
+    "quad_four_ages_bodypaint",               # 금/은/동/철 그라데이션 배경 완벽
+    "quad_four_classical_elements_klimt",     # 클림트 금빛홀+4원소 완벽 융합
+    "quad_four_seasons_night_bodypaint",      # 4계절 배경 분할+야간 여신 압도적
+    "quint_five_senses_bodypaint",            # 5감 바로크홀 5인 세로 완벽
+    "quint_five_worlds_bodypaint",            # 5세계 배경분할+여신 역대급
+    "quint_five_elements_wuxing_bodypaint",   # 오행+자금성 황금시간 최고
+    "hexa_rainbow_spectrum_bodypaint",        # 6인 무지개 세로4:5 HOF급
 }
 
 # SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
 # 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
+        # 2026-07-03 신규 QUAD/QUINT/HEXA/OCTET + 컨셉 SSS
+    "quad_four_ages_bodypaint",
+    "quad_four_classical_elements_klimt",
+    "quad_four_seasons_night_bodypaint",
+    "quint_five_senses_bodypaint",
+    "quint_five_worlds_bodypaint",
+    "quint_five_elements_wuxing_bodypaint",
+    "hexa_rainbow_spectrum_bodypaint",
+    "quad_four_civilizations_bodypaint",
+    "quad_four_gemstones_bodypaint",
+    "quad_cmyk_bodypaint",
+    "quad_four_metals_bodypaint",
+    "quint_five_mythologies_bodypaint",
+    "quint_five_oceans_deep_bodypaint",
+    "quint_five_sacred_colors_bodypaint",
+    "hexa_six_chakras_bodypaint",
+    "octet_planets_solar_bodypaint",
+    "trio_inside_outside_bodypaint",
+    "quad_four_horsewomen_apocalypse",
+    "trio_human_evolution_bodypaint",
+    "quad_fashion_capitals_bodypaint",
+
         # 2026-07-03 신규 SSS 52종 (신규 66종 검증 완료)
     "champagne_pour_body",
     "wine_pour_body",
@@ -1848,6 +1905,31 @@ SSS_TIER = {
 
 # SS tier
 SS_TIER = {
+        # 2026-07-03 신규 QUAD/QUINT/HEXA/OCTET SS 전체
+    "quad_four_ages_bodypaint",
+    "quad_four_classical_elements_klimt",
+    "quad_four_seasons_night_bodypaint",
+    "quint_five_senses_bodypaint",
+    "quint_five_worlds_bodypaint",
+    "quint_five_elements_wuxing_bodypaint",
+    "hexa_rainbow_spectrum_bodypaint",
+    "quad_four_civilizations_bodypaint",
+    "quad_four_gemstones_bodypaint",
+    "quad_cmyk_bodypaint",
+    "quad_four_metals_bodypaint",
+    "quint_five_mythologies_bodypaint",
+    "quint_five_oceans_deep_bodypaint",
+    "quint_five_sacred_colors_bodypaint",
+    "hexa_six_chakras_bodypaint",
+    "octet_planets_solar_bodypaint",
+    "quad_four_goddesses_bodypaint",
+    "quad_lunar_phases_bodypaint",
+    "quint_five_dance_cultures_bodypaint",
+    "trio_inside_outside_bodypaint",
+    "quad_four_horsewomen_apocalypse",
+    "trio_human_evolution_bodypaint",
+    "quad_fashion_capitals_bodypaint",
+
         # 2026-07-03 신규 SS 62종 반영 (SSS 52 + SS전용 10)
     "champagne_pour_body",
     "wine_pour_body",
