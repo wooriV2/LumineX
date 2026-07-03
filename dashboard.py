@@ -232,11 +232,9 @@ PRESET_CATEGORIES = {
         # 2026-07-02 신규 추가
         "pasties_editorial",
         "body_tape_art",
-        "shibari_silk",
         "invisible_dress",
         "painted_jeans",
         "wrap_sarong_nude",
-        "chain_only",
         "ribbon_only",
         "desert_heat_nude",
         "jungle_wet_goddess",
@@ -653,10 +651,8 @@ PRESET_CATEGORIES = {
         "honey_pour_body",
         "gold_paint_body",
         "paint_pour_goddess",
-        "glitter_pour_body",
         "neon_paint_pour",
         "shower_goddess",
-        "shower_editorial",
         "rain_soaked_nude",
         "hot_tub_goddess",
         "foam_bath_goddess",
@@ -1082,9 +1078,80 @@ PRESET_CATEGORIES = {
 }
 
 
+# HOF tier — Hall of Fame: 실제 검증 이미지 중 최고 퀄리티 선정
+# 기준: "와" 하는 반응, 구도/배경/바디페인팅 삼박자 완벽, 즉시 생성 가능
+HOF_TIER = {
+    "trio_chrome_bodypaint_center",       # 크롬SF+갤럭시 구도 완벽
+    "trio_gown_bodypaint_center",         # 황금바로크+이브닝가운 갤러리급
+    "trio_sheer_bodypaint_center",        # 시어+플로럴 바디페인팅 최우수
+    "limo_glam",                          # 럭셔리 완성도 최상
+    "yacht_sunset_glam",                  # 배경+조명+의상 삼박자
+    "staircase_glam",                     # 계단구도 에디토리얼 완성도
+    "volcanic_heat_body",                 # 화산배경 독보적
+    "trio_three_civilizations_bodypaint", # 3색대비+박물관 배경 완벽
+    "trio_ancient_medieval_modern_bodypaint", # 배경3분할+시대별 컨셉 독창성 최고
+    "trio_creation_of_adam_bodypaint",    # 시스티나+루브르 배경 예술적 완성도 독보적
+    "trio_black_white_gray_bodypaint",    # 조각같은 완성도 흑/회/백 대비 압도적
+    "trio_fog_rain_snow_bodypaint",       # 색감+통일감 압도적 안개/물/눈 완벽표현
+}
+
 # SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
 # 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
+        # 2026-07-03 신규 SSS 52종 (신규 66종 검증 완료)
+    "champagne_pour_body",
+    "wine_pour_body",
+    "milk_pour_body",
+    "honey_pour_body",
+    "gold_paint_body",
+    "hot_tub_goddess",
+    "foam_bath_goddess",
+    "pasties_editorial",
+    "body_tape_art",
+    "wrap_sarong_nude",
+    "ribbon_only",
+    "desert_heat_nude",
+    "jungle_wet_goddess",
+    "steam_room_goddess",
+    "volcanic_heat_body",
+    "liquid_latex_drip",
+    "silver_foil_body",
+    "holographic_latex",
+    "mirror_latex",
+    "private_pool_villa",
+    "rooftop_pool_night",
+    "penthouse_pool",
+    "yacht_sunset_glam",
+    "casino_vip_glam",
+    "limo_glam",
+    "bed_editorial",
+    "floor_editorial",
+    "chair_editorial",
+    "door_frame_glam",
+    "staircase_glam",
+    "elevator_glam",
+    "trio_bodypaint_latex_frame",
+    "trio_bodypaint_gown_frame",
+    "trio_bodypaint_leather_frame",
+    "trio_animal_bodypaint_latex",
+    "trio_klimt_bodypaint_gold_gown",
+    "trio_galaxy_bodypaint_chrome",
+    "duo_bodypaint_latex",
+    "duo_bodypaint_gown",
+    "duo_bodypaint_leather",
+    "duo_bodypaint_gold_dress",
+    "duo_animal_bodypaint_latex",
+    "duo_klimt_bodypaint_gown",
+    "duo_galaxy_bodypaint_chrome",
+    "trio_latex_bodypaint_center",
+    "trio_gown_bodypaint_center",
+    "trio_leather_bodypaint_center",
+    "trio_bikini_bodypaint_center",
+    "trio_sheer_bodypaint_center",
+    "trio_chrome_bodypaint_center",
+    "invisible_dress",
+    "neon_latex",
+
     # 2026-07-02 퍼포먼스&댄스 G3/G4 SSS (8종)
     "opera_night",
     "christmas_glamour",
@@ -1757,10 +1824,8 @@ SSS_TIER = {
         "honey_pour_body",
         "gold_paint_body",
         "paint_pour_goddess",
-        "glitter_pour_body",
         "neon_paint_pour",
         "shower_goddess",
-        "shower_editorial",
         "rain_soaked_nude",
         "hot_tub_goddess",
         "foam_bath_goddess",
@@ -1783,6 +1848,70 @@ SSS_TIER = {
 
 # SS tier
 SS_TIER = {
+        # 2026-07-03 신규 SS 62종 반영 (SSS 52 + SS전용 10)
+    "champagne_pour_body",
+    "wine_pour_body",
+    "milk_pour_body",
+    "honey_pour_body",
+    "gold_paint_body",
+    "hot_tub_goddess",
+    "foam_bath_goddess",
+    "pasties_editorial",
+    "body_tape_art",
+    "wrap_sarong_nude",
+    "ribbon_only",
+    "desert_heat_nude",
+    "jungle_wet_goddess",
+    "steam_room_goddess",
+    "volcanic_heat_body",
+    "liquid_latex_drip",
+    "silver_foil_body",
+    "holographic_latex",
+    "mirror_latex",
+    "private_pool_villa",
+    "rooftop_pool_night",
+    "penthouse_pool",
+    "yacht_sunset_glam",
+    "casino_vip_glam",
+    "limo_glam",
+    "bed_editorial",
+    "floor_editorial",
+    "chair_editorial",
+    "door_frame_glam",
+    "staircase_glam",
+    "elevator_glam",
+    "trio_bodypaint_latex_frame",
+    "trio_bodypaint_gown_frame",
+    "trio_bodypaint_leather_frame",
+    "trio_animal_bodypaint_latex",
+    "trio_klimt_bodypaint_gold_gown",
+    "trio_galaxy_bodypaint_chrome",
+    "duo_bodypaint_latex",
+    "duo_bodypaint_gown",
+    "duo_bodypaint_leather",
+    "duo_bodypaint_gold_dress",
+    "duo_animal_bodypaint_latex",
+    "duo_klimt_bodypaint_gown",
+    "duo_galaxy_bodypaint_chrome",
+    "trio_latex_bodypaint_center",
+    "trio_gown_bodypaint_center",
+    "trio_leather_bodypaint_center",
+    "trio_bikini_bodypaint_center",
+    "trio_sheer_bodypaint_center",
+    "trio_chrome_bodypaint_center",
+    "invisible_dress",
+    "neon_latex",
+    "paint_pour_goddess",
+    "neon_paint_pour",
+    "shower_goddess",
+    "rain_soaked_nude",
+    "waterfall_nude",
+    "ocean_nude_editorial",
+    "steam_bath_goddess",
+    "painted_jeans",
+    "sauna_nude_editorial",
+    "chrome_paint_body",
+
     # 2026-07-02 퍼포먼스&댄스 G3/G4 SS (9종 전체)
     "opera_night",
     "christmas_glamour",
@@ -2311,10 +2440,8 @@ SS_TIER = {
         "honey_pour_body",
         "gold_paint_body",
         "paint_pour_goddess",
-        "glitter_pour_body",
         "neon_paint_pour",
         "shower_goddess",
-        "shower_editorial",
         "rain_soaked_nude",
         "hot_tub_goddess",
         "foam_bath_goddess",
@@ -2566,6 +2693,7 @@ with st.sidebar:
     st.markdown("### 📊 프리셋 현황")
     total = sum(len(v) for v in PRESET_CATEGORIES.values())
     st.markdown(f"**총 프리셋:** `{total}개`")
+    st.markdown(f"**🌟 HOF tier:** `{len(HOF_TIER)}개`")
     st.markdown(f"**SSS tier:** `{len(SSS_TIER)}개`")
     st.markdown(f"**SS tier:** `{len(SS_TIER)}개`")
     st.markdown(f"**카테고리:** `{len(PRESET_CATEGORIES)}개`")
@@ -2593,7 +2721,7 @@ with tab1:
         all_cats = ["🌟 전체"] + list(PRESET_CATEGORIES.keys())
         selected_cat = st.selectbox("📂 카테고리 필터", options=all_cats, index=0, key="preset_cat_filter")
     with col_tier:
-        tier_options = ["전체 티어", "⭐⭐⭐ SSS", "⭐⭐ SS", "• 일반"]
+        tier_options = ["전체 티어", "👑 HOF", "⭐⭐⭐ SSS", "⭐⭐ SS", "• 일반"]
         selected_tier = st.selectbox("🏆 티어 필터", options=tier_options, index=0, key="preset_tier_filter")
     with col_search:
         search_query = st.text_input("🔍 프리셋 검색", placeholder="이름 검색...", key="preset_search")
@@ -2606,7 +2734,9 @@ with tab1:
         filtered_presets = [p for p in all_presets if p in cat_list]
 
     # 티어 필터 적용
-    if selected_tier == "⭐⭐⭐ SSS":
+    if selected_tier == "👑 HOF":
+        filtered_presets = [p for p in filtered_presets if p in HOF_TIER]
+    elif selected_tier == "⭐⭐⭐ SSS":
         filtered_presets = [p for p in filtered_presets if p in SSS_TIER]
     elif selected_tier == "⭐⭐ SS":
         filtered_presets = [p for p in filtered_presets if p in SS_TIER and p not in SSS_TIER]
@@ -2617,6 +2747,8 @@ with tab1:
         filtered_presets = [p for p in filtered_presets if search_query.lower() in p.lower()]
 
     def format_preset(name):
+        if name in HOF_TIER:
+            return f"👑 {name} [HOF]"
         if name in SSS_TIER:
             return f"🌟 {name} [SSS]"
         if name in SS_TIER:
