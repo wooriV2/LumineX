@@ -809,10 +809,7 @@ PRESET_CATEGORIES = {
         # 2026-07-03 신규 OCTET 1종
         "octet_planets_solar_bodypaint",
         # 2026-07-03 신규 컨셉 4종
-        "trio_inside_outside_bodypaint",
-        "quad_four_horsewomen_apocalypse",
-        "trio_human_evolution_bodypaint",
-        "quad_fashion_capitals_bodypaint",
+        "trio_inside_outside_bodypaint",        "quad_fashion_capitals_bodypaint",
                 # 4인 QUAD (5종)
         "quad_four_seasons_bodypaint",
         "quad_four_elements_bodypaint",
@@ -1150,10 +1147,7 @@ SSS_TIER = {
     "quint_five_sacred_colors_bodypaint",
     "hexa_six_chakras_bodypaint",
     "octet_planets_solar_bodypaint",
-    "trio_inside_outside_bodypaint",
-    "quad_four_horsewomen_apocalypse",
-    "trio_human_evolution_bodypaint",
-    "quad_fashion_capitals_bodypaint",
+    "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
         # 2026-07-03 신규 SSS 52종 (신규 66종 검증 완료)
     "champagne_pour_body",
@@ -1925,10 +1919,7 @@ SS_TIER = {
     "quad_four_goddesses_bodypaint",
     "quad_lunar_phases_bodypaint",
     "quint_five_dance_cultures_bodypaint",
-    "trio_inside_outside_bodypaint",
-    "quad_four_horsewomen_apocalypse",
-    "trio_human_evolution_bodypaint",
-    "quad_fashion_capitals_bodypaint",
+    "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
         # 2026-07-03 신규 SS 62종 반영 (SSS 52 + SS전용 10)
     "champagne_pour_body",
