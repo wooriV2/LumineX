@@ -1,20 +1,20 @@
 ﻿"""
 LumineX Dashboard v4.5
-����: streamlit run dashboard.py
+실행: streamlit run dashboard.py
 
-v4.4 ������� (2026-06-07):
-1. ī�װ�� ���� (B��) ? ����/�۷��� 3�з�
-   - ?? �۷��� & ���Ÿ� �� ?? ���Ÿ� �۷��� (41��)
-   - ?? ���� & ����ƽ �۷��� �� ����
-   - ?? �� & ���� �ż� (43��)
-   - ?? ����ƽ & ��Ƽ�� �ż� (26��)
-2. �� ī�װ������ ���� �迭 ������ �̵� ����
+v4.4 변경사항 (2026-06-07):
+1. 카테고리 재편 (B안) — 섹시/글래머 3분류
+   - 💫 글래머 & 럭셔리 → 💫 럭셔리 글래머 (41개)
+   - 💋 관능 & 에로틱 글래머 → 삭제
+   - 🔥 핫 & 섹시 신설 (43개)
+   - 💋 에로틱 & 페티쉬 신설 (26개)
+2. 각 카테고리에서 섹시 계열 프리셋 이동 정리
 
-v4.4.1 SS tier ���� ����� (2026-06-07):
-- SS ����(S): burlesque, dominatrix_glam, corset_stockings,
+v4.4.1 SS tier 엄격 재검토 (2026-06-07):
+- SS 강등(S): burlesque, dominatrix_glam, corset_stockings,
   dark_fairy_erotic, tape_bondage, metal_bondage
-- SS ����: military_domme (��ġ ��¡ ���� ����ũ ? ������ ���� ���� �ʿ�)
-- SS tier 128 �� 121��
+- SS 제거: military_domme (나치 상징 생성 리스크 — 프리셋 정의 수정 필요)
+- SS tier 128 → 121개
 """
 
 import sys
@@ -49,15 +49,15 @@ from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjo
 
 st.set_page_config(
     page_title="LumineX Dashboard",
-    page_icon="?",
+    page_icon="✦",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 
-# ������ ī�װ���� ������ ���� ������������������������������������������������������������������
+# ─── 카테고리별 프리셋 매핑 ─────────────────────────────────
 PRESET_CATEGORIES = {
-    "??? �ٵ������� & ��Ų Ʈ������": [
-        # ����
+    "🖌️ 바디페인팅 & 스킨 트랜스폼": [
+        # 기존
         "bioluminescent_ink","klimt_gold_body","vangogh_body","dali_surreal","munch_scream",
         "monet_bloom","mucha_nouveau","hokusai_wave","kandinsky_abstract","pollock_splash",
         "broken_porcelain","marble_veins","henna_goddess_body","oil_slick_body","liquid_chrome_body",
@@ -73,7 +73,7 @@ PRESET_CATEGORIES = {
         "warhol_pop","lichtenstein_dot","huli_wigman","nuba_body","wodaabe_beauty","mehndi_full",
         "mayan_ritual","haida_totem","aurora_skin","crystal_mineral","tide_pool","magnetic_field",
         "cell_division",
-        # v14 ? ������ �ٵ������� 35��
+        # v14 — 관능적 바디페인팅 35개
         "melting_chocolate","liquid_gold_drip","silver_mercury_body","ink_pour_body",
         "paint_splash_body","milk_bath_body",
         "rose_petal_body","orchid_body","vine_wrap_body","lotus_body","poison_flower",
@@ -82,20 +82,20 @@ PRESET_CATEGORIES = {
         "body_calligraphy","zentangle_body","constellation_body","circuit_erotic","tarot_body",
         "moon_tattoo_body","rune_body_art","alchemy_body","henna_erotic",
         "python_scales","jaguar_spots","mermaid_scales","raven_feathers","tiger_stripes_body",
-        # v15 ? ��ȭ/�۰� �ۺ�� ������ 14��
+        # v15 — 명화/작가 퍼블릭 도메인 14개
         "cezanne_body","gauguin_tropics","toulouse_lautrec","schiele_body","degas_dancer",
         "renoir_soft","botticelli_venus","titian_goddess","rubens_baroque","ingres_odalisque",
         "waterhouse_nymph","rossetti_dante","alma_tadema","vigee_lebrun",
-        # v15 ? ����/�ֱ� �۰� 5��
+        # v15 — 생존/최근 작가 5개
         "keith_haring_body","yayoi_kusama","takashi_murakami",
         "jean_dubuffet","jean_cocteau",
-        # v15 ? ����/��ȭ 10��
+        # v15 — 부족/문화 10개
         "bodi_clay","ndebele_pattern","tuareg_indigo","mursi_lip",
         "surma_body","asaro_mudmen","kayapo_brasil","nuba_scarification","kayan_neck",
-        # v15 ? ����/�ڿ� 10��
+        # v15 — 과학/자연 10개
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
         "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
-        # v18 ? ���� �ٵ������� 50��
+        # v18 — 동물 바디페인팅 50개
         "panther_black","cheetah_speed","snow_leopard","ocelot_wild",
         "chameleon_skin","dragon_scales_red","komodo_dragon","gecko_pattern","crocodile_skin",
         "boa_constrictor","king_cobra_hood",
@@ -108,62 +108,62 @@ PRESET_CATEGORIES = {
         "wolf_grey","zebra_stripes","giraffe_pattern","dalmatian_spots","arctic_fox",
         "red_fox","hyena_spots",
         "koi_dragon","unicorn_opal","gryphon_feather","sphinx_cat","basilisk_scales",
-        # v19 ? �ѱ� �ٵ��Ʈ 10��
+        # v19 — 한국 바디아트 10개
         "dancheong_body","najeonchilgi_body","goryeo_celadon_body","minhwa_body",
         "korean_tiger_body","pojagi_body","taegeuk_body","silla_crown_body",
         "dansaekhwa_body","najeon_abalone",
-        # v19 ? �ѱ� ����/�ż� (�ٵ��Ʈ)
+        # v19 — 한국 동물/신수 (바디아트)
         "baekhak_crane","korean_dragon_body","phoenix_jujakk",
         "baekho_white_tiger","hyeonmu_turtle","cheongnyong_dragon",
-        # v19 ? �ѱ� �ڿ�/�Ĺ� �ٵ��Ʈ
+        # v19 — 한국 자연/식물 바디아트
         "mugunghwa_body","korean_lotus_body","korean_plum_body","korean_bamboo_body",
-        # v20 ? ���� �迭 13��
+        # v20 — 지도 계열 13개
         "world_map_body","topographic_body","ocean_depth_body","thermal_map_body",
         "weather_map_body","subway_map_body","europe_political_body","africa_tribes_body",
         "japan_prefecture_body","ancient_map_body","star_map_body",
         "usa_county_map_body",
-        # v20 ? ����/�ڿ����� 5��
+        # v20 — 과학/자연현상 5개
         "thermal_scan_body","circuit_board_body","galaxy_nebula_body",
         "crystal_geode_body",
-        # v20 ? ����/���� 6��
+        # v20 — 문명/문자 6개
         "hieroglyph_body","aztec_calendar_body","celtic_knot_body",
         "arabic_calligraphy_body","islamic_geometric_body","greek_mosaic_body",
-        # v20 ? �Ĺ�/�ڿ� 3��
+        # v20 — 식물/자연 3개
         "autumn_leaves_body","coral_reef_body","mushroom_forest_body",
-        # v20 ? ����/���� 2��
+        # v20 — 건축/패턴 2개
         "stained_glass_body","bauhaus_body",
-        # v20 ? ȯ������ 2��
+        # v20 — 환경융합 2개
         "urban_decay_body","forest_stone_body",
-        # 2026-06-08 ī�װ�� ���� ����
+        # 2026-06-08 카테고리 누락 복구
         "banksy_stencil","shadow_art_nude",
-        # v28 ? ����&��ȭ �ٵ������� 52�� (�ߺ� 9�� ����)
-        # �Ϻ�
+        # v28 — 전통&문화 바디페인팅 52종 (중복 9종 제거)
+        # 일본
         "geisha_bodypaint","maiko_bodypaint","kimono_bodypaint","noh_bodypaint",
         "kabuki_bodypaint","samurai_bodypaint","geisha_white_bodypaint","ninja_bodypaint",
-        # �ѱ�
+        # 한국
         "hanbok_bodypaint","joseon_bodypaint","gisaeng_bodypaint",
         "hanbok_modern_bodypaint","korean_shaman_bodypaint",
-        # �߱�
+        # 중국
         "qipao_bodypaint","cheongsam_bodypaint","hanfu_bodypaint",
         "tang_dynasty_bodypaint","ming_bodypaint",
-        # ���ƽþ�/�ߵ�
+        # 남아시아/중동
         "sari_bodypaint","belly_bodypaint","odalisque_bodypaint",
         "harem_bodypaint","mughal_bodypaint",
         "persian_bodypaint","moroccan_bodypaint","ottoman_bodypaint",
-        # ������/�߾Ӿ�
+        # 동남아/중앙아
         "thai_bodypaint","balinese_bodypaint","kebaya_bodypaint",
         "batik_bodypaint","ikat_bodypaint","ao_dai_bodypaint",
         "tibetan_bodypaint","shaman_bodypaint","scythian_bodypaint",
-        # �Ƹ޸�ī/�����ƴϾ�
+        # 아메리카/오세아니아
         "mayan_bodypaint","hopi_bodypaint","olmec_bodypaint",
         "maori_bodypaint","polynesian_bodypaint","haida_bodypaint",
-        # ������ī
+        # 아프리카
         "yoruba_bodypaint","kente_bodypaint","dashiki_bodypaint",
         "adinkra_bodypaint","zulu_bodypaint",
-        # ����/���
+        # 유럽/고대
         "scottish_bodypaint","byzantine_bodypaint","flamenco_bodypaint","dirndl_bodypaint",
         "sumerian_bodypaint","voodoo_bodypaint",
-        # v23 ? ������ �ٵ������� 20�� (���� ���, �Ź� �ٸ��� ����)
+        # v23 — 개방형 바디페인팅 20개 (주제 비움, 매번 다르게 생성)
         "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto",
         "body_paint_airbrush","body_paint_ink_splatter","body_paint_drip_free",
         "body_paint_monochrome","body_paint_pastel_dream","body_paint_neon_glow",
@@ -172,7 +172,7 @@ PRESET_CATEGORIES = {
         "body_paint_surreal_free","body_paint_minimalist_free",
         "body_paint_blacklight","body_paint_glitter_free","body_paint_uv_reactive",
     ],
-    "?? ���Ÿ� �۷���": [
+    "💫 럭셔리 글래머": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial",        "noir_opulence","platinum_elite","ivory_silk","ivory_tower",
         "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
         "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
@@ -183,11 +183,11 @@ PRESET_CATEGORIES = {
         # v16
         "plunge_gown","slit_maxi","cutout_bodysuit","sheer_overlay",
         "jeweled_bikini_top","golden_drape_goddess","crystal_gown","feather_trim_mini",
-        # v21 ? ���Ÿ� �۷��� 13��
+        # v21 — 럭셔리 글래머 13개
         "luxury_noir","diamond_couture","velvet_serpent","opera_glam","silver_screen",
         "lace_noir","white_silk_goddess","crystal_bodycon","penthouse_glam",
         "midnight_couture","crimson_gown","serpentine_dress","baroque_glam",
-        # 2026-07-02 �ű� �߰�
+        # 2026-07-02 신규 추가
         "private_pool_villa",
         "rooftop_pool_night",
         "penthouse_pool",
@@ -195,30 +195,30 @@ PRESET_CATEGORIES = {
         "casino_vip_glam",
         "limo_glam",
     ],
-    "?? �� & ����": [
-        # ���� ���� & ����ƽ �۷���
+    "🔥 핫 & 섹시": [
+        # 기존 관능 & 에로틱 글래머
         "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
         "wet_silk_gown","oil_goddess_gold","pool_wet_glam","rain_soaked_dress","sweat_glam",
         "micro_dress_only","barely_covered","deep_plunge_gown","backless_extreme","one_strap_gown",
         "pinup_classic","vargas_girl","bombshell_retro","bunny_suit","playboy_glam",
-        # ���Ÿ����� �̵�
+        # 럭셔리에서 이동
         "elite_lingerie","lingerie_noir",
-        # ��ġ���� �̵�
+        # 비치에서 이동
         "barely_there","wet_look_goddess","thong_bikini","micro_bikini_gold",
         "sarong_goddess","wet_bikini_pool","topless_editorial","nude_beach_art",
         "aqua_bikini","golden_summer","riviera_heat",
-        # �������� �̵�
+        # 계절에서 이동
         "snow_queen_erotic","autumn_gold_sensual","christmas_boudoir","summer_solstice_glam",
-        # ������/��Ƽ�� ���
+        # 란제리/페티쉬 경계
         "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
-        # v21 ? �� & ���� 19��
+        # v21 — 핫 & 섹시 19개
         "fishnet_goddess","see_through_gown","wet_tshirt","string_bikini","lace_bodysuit",
         "satin_slip","velvet_corset","body_chain_only","strappy_dress","cut_out_swimsuit",
         "monokini_goddess","champagne_drip","neon_bodysuit","bikini_top_only",
         "white_linen_sheer","oil_drip_body","yoga_pants_glam","micro_skirt","halter_glam",
-        # 2026-06-08 ���� ����
+        # 2026-06-08 누락 복구
         "wet_editorial",
-        # v27 ? �� & ���� �ű� 17��
+        # v27 — 핫 & 섹시 신규 17개
         "pool_edge_wet",
         "ocean_wave_body",
         "penthouse_bath",
@@ -229,7 +229,7 @@ PRESET_CATEGORIES = {
         "vip_booth_neon",
         "after_party_suite",
         "tennis_short_dress",
-        # 2026-07-02 �ű� �߰�
+        # 2026-07-02 신규 추가
         "pasties_editorial",
         "body_tape_art",
         "invisible_dress",
@@ -242,22 +242,22 @@ PRESET_CATEGORIES = {
         "steam_room_goddess",
         "volcanic_heat_body",
     ],
-    "?? ����ƽ & ��Ƽ��": [
-        # �Ŀ�&�������� �̵�
+    "💋 에로틱 & 페티쉬": [
+        # 파워&엣지에서 이동
         "latex_venom","chrome_vixen","chain_goddess",
         "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
         "oil_goddess","savage_leather",
-        # �����ս����� �̵�
+        # 퍼포먼스에서 이동
         "burlesque","showgirl","cabaret_star","pole_art","candy_rave",
         "lap_dance_glam","striptease_art","pole_dance_power","midnight_bath","belly_dance_glam",
-        # ��Ÿ������ �̵�
+        # 판타지에서 이동
         "dark_succubus","vampire_seduction","witch_sensual","dark_fairy_erotic","shadow_seductress",
-        # v21 ? ����ƽ & ��Ƽ�� 16��
+        # v21 — 에로틱 & 페티쉬 16개
         "latex_catsuit_red","rubber_goddess","harness_only","rope_bondage_art",
         "vinyl_goddess","corset_stockings","catsuit_zipper","bodystocking",
         "secretary_after_hours","nurse_sensual","maid_sensual","leather_bodysuit",
         "wet_latex","fetish_boots_only","dominatrix_red","fishnet_bodysuit",
-        # v22 ? ����ƽ & ��Ƽ�� ��ȭ 26��
+        # v22 — 에로틱 & 페티쉬 강화 26개
         "transparent_dress","sheer_catsuit",
         "latex_transparent","latex_hood_full","pvc_transparent_full",
         "chrome_bodysuit","mirror_dress","liquid_metal_body",
@@ -268,7 +268,7 @@ PRESET_CATEGORIES = {
         "succubus_full","dark_angel_fallen","alien_queen_body",
         "body_paint_nude","micro_thong_only","tape_bondage",
         "metal_bondage","lap_dance_extreme",
-        # 2026-07-02 �ű� �߰�
+        # 2026-07-02 신규 추가
         "liquid_latex_drip",
         "chrome_paint_body",
         "silver_foil_body",
@@ -276,7 +276,7 @@ PRESET_CATEGORIES = {
         "mirror_latex",
         "neon_latex",
     ],
-    "?? �ڿ� & ����": [
+    "🌿 자연 & 원소": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","frozen_latex","blizzard_queen","sandstorm_veil",
         "storm_couture","heat_shimmer","water_reflection","waterfall_goddess","rain_soaked",
         "mist_goddess","mist_vanguard","winter_forest","desert_mirage","desert_oracle",
@@ -285,7 +285,7 @@ PRESET_CATEGORIES = {
         "smoke_veil","liquid_gold_pour","liquid_mirror","prism_light","shattered_glass","zero_gravity",
         # v11
         "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
-        # v25 ? ������ �ڿ� ���
+        # v25 — 개방형 자연 배경
         "son_doong_jungle","waitomo_glow","dead_vlei_ghost","danxia_rainbow",
         "cenote_sacred","socotra_alien","lake_natron","namib_star_desert",
         # v26
@@ -293,7 +293,7 @@ PRESET_CATEGORIES = {
         "rainbow_mountain","wisteria_tunnel","torres_del_paine","ha_long_bay",
         "kelimutu_crater","victoria_falls","fairy_pools","tunnel_of_love","chocolate_hills",
     ],
-    "?? ���� & ����Ʈ": [
+    "🌃 도시 & 나이트": [
         "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
         "rooftop_midnight","rooftop_party","midnight_goddess","midnight_monolith","nightclub_vip",
         "monaco_nights","miami_afterglow","azure_nights","blue_hour_goddess","candlelight_noir",
@@ -301,30 +301,30 @@ PRESET_CATEGORIES = {
         "disco_goddess","music_festival","new_year_countdown","cyber_fire","cyber_silk","emerald_city",
         # v11
         "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
-        # v25 ? ������ ����/���� ���
+        # v25 — 개방형 건축/도시 배경
         "sheikh_zayed_dawn","livraria_lello_staircase","palacio_de_sal",
         # v26
         "santorini_sunset","cappadocia_balloons","chefchaouen_blue","hallstatt_lake",
         "shirakawa_snow","positano_cliff","bruges_canal","cinque_terre_harbor",
     ],
-    "?? �����丮�� & ����": [
+    "🎬 에디토리얼 & 무드": [
         "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
         "light_driven","backlit_silk","mirror_goddess","mirror_room","eclipse_body","chrome_skin",
         "neon_body","plasma_aura","molten_chrome","mercury_rising","mercury_pool","titanium_body",
         "snowflake_skin","80s_power","y2k_chrome","bohemian_paris","origami_couture",
         # v11
         "wet_glass","smoke_studio","infrared_beauty","grain_film",
-        # 2026-07-02 �ű� �߰�
+        # 2026-07-02 신규 추가
         "bed_editorial",
         "floor_editorial",
         "chair_editorial",
         "door_frame_glam",
         "staircase_glam",
         "elevator_glam",
-        # 2026-06-08 ���� ����
+        # 2026-06-08 누락 복구
         "dreamy_soft_focus","film_noir_glam","noir_femme_fatale",
     ],
-    "?? ���� & ��ȭ": [
+    "🏺 문명 & 신화": [
         "cleopatra_gold","pharaoh_queen","byzantine_empress","maasai_warrior","nine_tails",
         "moonrise_ceremony","oracle_smoke","ritual_ash","ruins_goddess","renaissance_fantasy",
         "renaissance_nude","cathedral_light","baroque_punk","art_gallery","museum_glamour",
@@ -332,17 +332,17 @@ PRESET_CATEGORIES = {
         "marble_minimal","viking_queen",
         # v11
         "sumerian_queen","ming_empress","aztec_sun_goddess","celtic_warrior_queen",
-        # v17 ����
+        # v17 보강
         "aphrodite_glam","artemis_huntress","freya_norse","kali_goddess",
         "isis_egypt","lakshmi_goddess","oshun_yoruba","morgan_le_fay",
-        # v19 ? �ѱ� �ż�/����
+        # v19 — 한국 신수/정령
         "haetae_guardian","dokkaebi_spirit","korean_tiger_spirit","gyeongbokgung_night",
-        # v20 ? ���� 8��
+        # v20 — 국기 8개
         "union_jack_body","brazil_flag_body","usa_stars_stripes_body",
         "japan_rising_sun_body","south_africa_flag_body","india_flag_body",
         "mexico_flag_body","ukraine_flag_body",
     ],
-    "?? ���� & ��������Ÿ��": [
+    "✈️ 직업 & 라이프스타일": [
         "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
         "cruise_hostess","yacht_captain","yacht_club","sommelier","wine_tasting","casino_dealer",
         "private_jet","helipad","luxury_shopping","golf_glam","golf_caddie","tennis_luxe",
@@ -350,11 +350,11 @@ PRESET_CATEGORIES = {
         "fitness_power","yoga_goddess",
         # v11
         "barista_chic","gallery_curator","horse_racing","scuba_instructor",
-        # v13 ������
+        # v13 스포츠
         "ballet_prima","gymnastics_editorial","figure_skater","tennis_champion",
         "archery_goddess","carnival_rio",
     ],
-    "?? ��Ÿ�� & ��ũ": [
+    "🔮 판타지 & 다크": [
         "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
         "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
         "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -363,7 +363,7 @@ PRESET_CATEGORIES = {
         # v11
         "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
     ],
-    "?? �Ŀ� & ����": [
+    "⚔️ 파워 & 엣지": [
         "valkyrie_storm","biker_glam","shadow_play",
         "fencer_noir","martial_arts","boxing_glamour","power_curve",
         "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent",
@@ -412,7 +412,7 @@ PRESET_CATEGORIES = {
         # v11
         "riot_goddess","punk_queen","steel_warrior","cage_fighter",
     ],
-    "??? ��ġ & ����Ʈ": [
+    "🏖️ 비치 & 리조트": [
         "summer_beach","surfer_goddess","pool_goddess",
         "poolside_noir","infinity_pool","beach_bonfire",
         "scuba_goddess","glass_floor","glass_house","ski_chalet","vineyard_harvest","spa_noir",
@@ -420,7 +420,7 @@ PRESET_CATEGORIES = {
         # v11
         "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
     ],
-    "?? �����ս� & ���": [
+    "🎭 퍼포먼스 & 댄스": [
         "flamenco_queen","tango_passion","circus_performer",
         "ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
         "opera_night","christmas_glamour","pop_art_glamour","ribbon_goddess","petal_storm",
@@ -429,21 +429,21 @@ PRESET_CATEGORIES = {
         # v17
         "samba_carnival","hula_goddess","jazz_dance_glam","kathak_dance",
     ],
-    "?? ���� & ��ȭ�ǻ�": [
+    "👘 전통 & 문화의상": [
         "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
         "harem_goddess","belly_dancer","odalisque","imperial_silk",
         # v10
         "kimono_silk","ao_dai_sheer","thai_temple","indian_bridal","moroccan_kaftan",
         "persian_court","yoruba_glamour","balinese_goddess","chinese_qipao_slit","scottish_corset",
-        # v17 ����
+        # v17 보강
         "hanfu_goddess","cheongsam_slit","kebaya_java","dashiki_glam","kaftan_sheer",
         "flamenco_dress","dirndl_glam","hanbok_modern","ao_dai_glamour","saree_draped_sensual",
-        # v19 ? �ѱ� ����/����
+        # v19 — 한국 역사/전통
         "joseon_queen","joseon_consort","gisaeng_glamour","gisaeng_noir","mudang_shaman",
         "haenyeo_goddess","silla_empress","goguryeo_warrior","goryeo_empress","joseon_painter",
         "korean_shaman_fire","baekje_lotus","silla_gold_crown",
     ],
-    "?? ���� & �׸�": [
+    "🌸 계절 & 테마": [
         "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
         "sunflower_field","greenhouse_eden","tropical_night",
         # v10
@@ -452,7 +452,7 @@ PRESET_CATEGORIES = {
         # v17
         "halloween_glam","new_year_glam","sakura_night_glam","monsoon_goddess",
     ],
-    "?? �� & ī����": [
+    "🍬 팝 & 카와이": [
         # v10
         "y2k_fairy","pink_champagne","cotton_candy","angel_baby","idol_stage","kitty_glam",
         "strawberry_milk","cherry_pop","neon_kawaii","fairy_kei",
@@ -461,32 +461,32 @@ PRESET_CATEGORIES = {
         "lolita_gothic","disco_barbie","space_babe","bubblegum_pop","rainbow_rave","glitter_bomb",
         "arcade_queen","virtual_idol","tokimeki_pop","kpop_idol","korean_ulzzang","kbeauty_goddess",
         "kdrama_heroine","manga_girl",
-        # v19 ? K-��ó/��Ƽ
+        # v19 — K-컬처/뷰티
         "kpop_girl_crush","hallyu_goddess","kbeauty_glass_skin",
         "kdrama_villain_queen","kdrama_chaebol_heir","gangnam_luxury_glam",
-        # 2026-06-08 ���� ����
+        # 2026-06-08 누락 복구
         "bubble_tea","doll_house","harajuku_doll",
     ],
 
-    "?? �ִ� & �۷���": [
-        # v13 �Ϻ� �迭
+    "🎌 애니 & 글래머": [
+        # v13 일본 계열
         "zero_suit","battle_bikini","succubus_anime","catgirl_luxe","dark_magical_girl",
         "witch_apprentice","fallen_angel_anime","kunoichi_glam","oni_warrior","samurai_bride",
         "dragon_princess","android_girl","pilot_suit","neon_android","vampire_seductress",
-        # v13 �۷ι� �迭
+        # v13 글로벌 계열
         "cosmic_warrior_glam","dark_jester_glam","poison_ivy_vines","storm_goddess",
         "dark_sorceress_glam","jessica_rabbit_glam","webtoon_heroine","manhwa_villainess",
         "barbarella_retro","vampirella_dark","ghost_shell","android_2b","street_fighter_chun",
         "dark_elsa","sailor_moon_dark",
-        # v24 ? A�� �ǻ� ���� 7�� (Ư�� IP ȸ��, �Ϲ� ��ŰŸ��)
+        # v24 — A형 실사 컨셉 7개 (특정 IP 회피, 일반 아키타입)
         "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden","anime_demon_slayer",
         "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
-        # v24 ? B�� 2D �׸�ü ���Ϸ� 2�� (�ǻ� ���� �׸�ü �׽�Ʈ ? ���� �ʿ�)
+        # v24 — B형 2D 그림체 파일럿 2개 (실사 엔진 그림체 테스트 — 검증 필요)
         "anime_cel_shaded","anime_webtoon_style",
     ],
 
-    # ���� ?? �ִ� ��Ʈ��Ÿ�� (2026-06-09 �ż�, �׸�ü 32��) ����
-    "?? �ִ� ��Ʈ��Ÿ��": [
+    # ── 🎨 애니 아트스타일 (2026-06-09 신설, 그림체 32종) ──
+    "🎨 애니 아트스타일": [
         'anime_jp_90s_retro',
         'anime_jp_80s_citypop',
         'anime_jp_modern_glossy',
@@ -521,7 +521,7 @@ PRESET_CATEGORIES = {
         'anime_noir_silhouette',
     ],
 
-    "?? �Ƿ翧 & ������": [
+    "🌑 실루엣 & 섀도우": [
         "silhouette_spotlight_smoke",
         "silhouette_spotlight_latex",
         "silhouette_spotlight_heels",
@@ -554,7 +554,7 @@ PRESET_CATEGORIES = {
         "silhouette_smoke_studio",
     ],
 
-        "?? �Ұ��� & ������": [
+        "🌌 불가능 & 초현실": [
         "storm_eye_editorial",
         "living_fabric",
         "macro_goddess",
@@ -582,11 +582,11 @@ PRESET_CATEGORIES = {
         "weather_maker",
         "gravity_well",
         "double_exposure_self",
-        # v25 ? ������ ������ ���
+        # v25 — 개방형 초현실 배경
         "richat_eye","marble_caves_water",
     ],
 
-    "??? ���� & ����": [
+    "🏛️ 유적 & 문명": [
         "petra_rose","angkor_dawn","tikal_skyrise","bagan_balloon",
         "ellora_rock_temple","derinkuyu_underground","tigers_nest_cliff","naoshima_art_island",
         # v26
@@ -595,7 +595,7 @@ PRESET_CATEGORIES = {
         "angkor_thom_faces","teotihuacan_pyramid","gobekli_tepe","palmyra_colonnade",
     ],
 
-    "?? ������Ż ������": [
+    "🌋 엘리멘탈 갓데스": [
         "uyuni_wet_silk",
         "dead_sea_goddess",
         "iceland_hot_spring",
@@ -603,7 +603,7 @@ PRESET_CATEGORIES = {
         "niagara_wet_editorial",
         "monsoon_goddess",
         "black_sea_midnight",
-    # 2026-06-21 �ڿ�&���� G1~G10 ��ü tier ��ġ
+    # 2026-06-21 자연&원소 G1~G10 전체 tier 패치
 
         "amazon_river_goddess",
         "lava_field_latex",
@@ -640,11 +640,11 @@ PRESET_CATEGORIES = {
         "rainbow_falls_goddess",
     ],
 
-    "?? ��Ʈ & �۷ν�": [
-        # ������/Ǯ
+    "💧 웨트 & 글로스": [
+        # 수영장/풀
         "pool_surface_break", "pool_underwater_up", "pool_edge_dripping",
         "infinity_pool_wet", "hot_spring_steam", "jacuzzi_bubbles",
-        # 2026-07-02 �ű� �߰�
+        # 2026-07-02 신규 추가
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -659,134 +659,134 @@ PRESET_CATEGORIES = {
         "waterfall_nude",
         "ocean_nude_editorial",
         "steam_bath_goddess",
-        # ��/����
+        # 비/폭우
         "rain_window_inside", "rain_street_soaked", "rain_studio_dramatic",
         "monsoon_body", "rain_car_window",
-        # ����/�۷ν�
+        # 오일/글로스
         "oil_pour_studio", "oil_drip_back", "honey_drip_body",
         "chocolate_pour_gloss", "gloss_lips_drip", "chrome_gloss_body",
-        # ��/����
+        # 땀/열기
         "sweat_studio_light", "after_workout_glow", "heat_mirage_sweat", "sauna_steam_body",
-        # ���/�����
+        # 결로/물방울
         "condensation_skin", "ice_melt_drip", "dew_morning_body", "frost_breath_cold",
-        # ��Ÿ ��Ʈ
+        # 기타 웨트
         "waterfall_direct", "wave_crash_body", "wet_silk_minimal",
         "bubble_bath_gloss", "milk_bath_petals",
     ],
 
-    "??? ��� & ��ƼŬ": [
-        # ����ũ/����
+    "🌫️ 대기 & 파티클": [
+        # 스모크/연기
         "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
         "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
-        # �Ŀ��/����Ʈ
+        # 파우더/더스트
         "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
         "flour_dust_studio", "pigment_powder_art",
-        # ���/��Ż
+        # 페더/페탈
         "feather_explosion", "black_feather_dark", "petal_storm_indoor",
         "cherry_blossom_burst", "dried_flower_cascade",
-        # �۸���/��ƼŬ
+        # 글리터/파티클
         "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
         "neon_particle_club", "bubble_floating_studio",
-        # ��/����ũ
+        # 불/스파크
         "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
-        # �ڿ� ��ƼŬ
+        # 자연 파티클
         "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
         "firefly_night_field", "seed_pod_floating",
     ],
-    "?? �ѱ� ���� & ���� �۷���": [
-        # ?? �ﱹ/��� �ս�
+    "👑 한국 역사 & 궁중 글래머": [
+        # 🏯 삼국/고대 왕실
         "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
         "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
         "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
         "dongye_tribal_queen",
-        # ?? ��� ����
+        # 🏰 고려 궁중
         "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
         "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
         "mongol_goryeo_queen", "goryeo_haenyeo_silk",
-        # ?? ���� �ս�/����
+        # 👘 조선 왕실/궁중
         "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
         "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
         "joseon_merchant_woman", "damo_warrior", "joseon_night_queen",
         "joseon_concubine_red", "changdeok_moonlight", "gyeongbokgung_geisha",
-        # ?? ���/����
+        # 💃 기생/예인
         "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
         "gisaeng_haiku_bath", "gisaeng_rain_dance", "gisaeng_black_silk",
         "wonhyang_legend", "hwang_jini_glam", "gisaeng_fan_dance",
         "gisaeng_pipa_night", "gisaeng_mirror_boudoir", "pyongyang_gisaeng",
-        # ?? ��ȭ & ����
+        # 🦊 신화 & 정령
         "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
         "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
         "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
         "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
-        # ?? �μ� & ����ǳ��
+        # 🌊 민속 & 세시풍속
         "haenyeo_wet_glam", "dano_festival_glam", "ganggangsullae_night",
         "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
         "jeju_shaman_sea", "korean_harvest_goddess",
-        # ?? ������ & ����
+        # ⚔️ 여전사 & 무인
         "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
         "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
         "goguryeo_fire_warrior", "joseon_spy_sheer",
-        # ?? �ٴ� & ǻ��
+        # 🎭 근대 & 퓨전
         "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
         "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
         "hanbok_wet_editorial", "joseon_boudoir",
     ],
 
-    "?? ��Ƽ �ٵ�������": [
-        # G1 ����� ��� (2��, �ݴ� �׸� �浹/��ȭ)
+    "🎨 멀티 바디페인팅": [
+        # G1 대비형 듀오 (2인, 반대 테마 충돌/조화)
         "duo_fire_and_ice_bodypaint",
         "duo_day_and_night_bodypaint",
         "duo_bloom_and_void_bodypaint",
         "duo_gold_and_shadow_bodypaint",
         "duo_ocean_and_desert_bodypaint",
         "duo_circuit_and_nature_bodypaint",
-        # G1 ����� ��� �߰� (6��)
+        # G1 대비형 듀오 추가 (6종)
         "duo_east_and_west_bodypaint",
         "duo_macro_and_micro_bodypaint",
         "duo_ancient_and_future_bodypaint",
         "duo_poison_and_medicine_bodypaint",
         "duo_deep_sea_bodypaint",
-        # G2 ����� Ʈ���� (3��, ��� ���)
+        # G2 대비형 트리오 (3인, 삼원 대비)
         "trio_rgb_trinity_bodypaint",
         "trio_past_present_future_bodypaint",
         "trio_predator_prey_apex_bodypaint",
         "trio_ink_gold_chrome_bodypaint",
         "trio_season_trinity_bodypaint",
-        # G2 ����� Ʈ���� �߰� (6��)
+        # G2 대비형 트리오 추가 (6종)
         "trio_sun_moon_star_bodypaint",
         "trio_three_oceans_bodypaint",
         "trio_three_civilizations_bodypaint",
         "trio_fire_water_earth_bodypaint",
         "trio_three_big_cats_bodypaint",
-        # G3 ������ ��� (2��, ��ġ�� �ϳ��� ��ǰ)
+        # G3 연결형 듀오 (2인, 합치면 하나의 작품)
         "duo_butterfly_split_bodypaint",
         "duo_yin_yang_merge_bodypaint",
         "duo_world_map_bodypaint",
         "duo_klimt_tree_bodypaint",
         "duo_galaxy_split_bodypaint",
         "duo_wave_hokusai_bodypaint",
-        # G3 ������ ��� �߰� (6��)
+        # G3 연결형 듀오 추가 (6종)
         "duo_dna_helix_bodypaint",
         "duo_solar_eclipse_bodypaint",
         "duo_human_shadow_bodypaint",
         "duo_tiger_split_bodypaint",
         "duo_starry_night_split_bodypaint",
         "duo_peacock_split_bodypaint",
-        # G4 ������ Ʈ���� (3��, ��ġ�� �Ŵ��� ��ǰ)
+        # G4 연결형 트리오 (3인, 합치면 거대한 작품)
         "trio_triptych_klimt_bodypaint",
         "trio_phoenix_rising_bodypaint",
         "trio_world_tree_bodypaint",
         "trio_ocean_depth_bodypaint",
         "trio_aurora_spectrum_bodypaint",
         "trio_cosmic_creation_bodypaint",
-        # G4 ������ Ʈ���� �߰� (6��)
+        # G4 연결형 트리오 추가 (6종)
         "trio_last_supper_bodypaint",
         "trio_rainbow_arc_bodypaint",
         "trio_milky_way_panorama_bodypaint",
         "trio_coral_reef_zones_bodypaint",
         "trio_creation_of_adam_bodypaint",
         "trio_poles_and_equator_bodypaint",
-        # 2026-07-03 �ű� QUAD 8��
+        # 2026-07-03 신규 QUAD 8종
         "quad_four_civilizations_bodypaint",
         "quad_four_goddesses_bodypaint",
         "quad_four_ages_bodypaint",
@@ -795,7 +795,7 @@ PRESET_CATEGORIES = {
         "quad_cmyk_bodypaint",
         "quad_four_classical_elements_klimt",
         "quad_four_seasons_night_bodypaint",
-        # 2026-07-03 �ű� QUINT 7��
+        # 2026-07-03 신규 QUINT 7종
         "quint_five_senses_bodypaint",
         "quint_five_worlds_bodypaint",
         "quint_five_elements_wuxing_bodypaint",
@@ -803,27 +803,27 @@ PRESET_CATEGORIES = {
         "quint_five_oceans_deep_bodypaint",
         "quint_five_sacred_colors_bodypaint",
         "quint_five_dance_cultures_bodypaint",
-        # 2026-07-03 �ű� HEXA 2��
+        # 2026-07-03 신규 HEXA 2종
         "hexa_rainbow_spectrum_bodypaint",
-    "trio_inside_outside_bodypaint",
+    "trio_inside_outside_bodypaint",        # 해부학 3레이어(피부/근육/골격) + 박물관 배경 HOF
         "hexa_six_chakras_bodypaint",
-        # 2026-07-03 �ű� OCTET 1��
+        # 2026-07-03 신규 OCTET 1종
         "octet_planets_solar_bodypaint",
-        # 2026-07-03 �ű� ���� 4��
+        # 2026-07-03 신규 컨셉 4종
         "trio_inside_outside_bodypaint",        "quad_fashion_capitals_bodypaint",
-                # 4�� QUAD (5��)
+                # 4인 QUAD (5종)
         "quad_four_seasons_bodypaint",
         "quad_four_elements_bodypaint",
         "quad_four_directions_bodypaint",
         "quad_four_seasons_klimt_bodypaint",
         "quad_rgba_spectrum_bodypaint",
-        # 5�� QUINT (4��)
+        # 5인 QUINT (4종)
         "quint_five_continents_bodypaint",
         "quint_five_elements_asia_bodypaint",
         "quint_rainbow_five_bodypaint",
         "quint_five_oceans_bodypaint",
 
-    # G5 ������ ��� 30�� (���� ����)
+    # G5 연결형 듀오 30종 (검증 예정)
     "duo_earth_hemisphere_bodypaint",
     "duo_day_city_night_city_bodypaint",
     "duo_volcano_glacier_bodypaint",
@@ -849,7 +849,7 @@ PRESET_CATEGORIES = {
     "duo_crystal_lava_bodypaint",
     "duo_skeleton_bloom_bodypaint",
     "duo_ink_wash_split_bodypaint",
-    # G6 ����� Ʈ���� 35�� (���� ����)
+    # G6 대비형 트리오 35종 (검증 예정)
     "trio_stone_bronze_iron_bodypaint",
     "trio_ancient_medieval_modern_bodypaint",
     "trio_birth_life_death_bodypaint",
@@ -881,8 +881,8 @@ PRESET_CATEGORIES = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-        # G5 ������ ��� (30��) ? �� ���� �������� �ϳ��� �ϼ�ü
-        # �ڿ�/����
+        # G5 연결형 듀오 (30종) — 두 몸이 합쳐지면 하나의 완성체
+        # 자연/우주
         "duo_earth_hemisphere_bodypaint",
         "duo_day_city_night_city_bodypaint",
         "duo_volcano_glacier_bodypaint",
@@ -890,127 +890,127 @@ PRESET_CATEGORIES = {
         "duo_aurora_milkyway_bodypaint",
         "duo_coral_abyss_bodypaint",
         "duo_tree_root_bodypaint",
-        # ����/����
+        # 동물/생물
         "duo_eagle_serpent_bodypaint",
         "duo_wolf_moon_bodypaint",
         "duo_butterfly_cocoon_bodypaint",
         "duo_dragon_phoenix_bodypaint",
         "duo_lion_zebra_bodypaint",
         "duo_spider_web_bodypaint",
-        # ��ȭ/��ȭ
+        # 명화/문화
         "duo_mona_lisa_split_bodypaint",
         "duo_birth_venus_split_bodypaint",
         "duo_yin_yang_koi_bodypaint",
         "duo_chess_board_bodypaint",
-        # SF/��Ÿ��
+        # SF/판타지
         "duo_android_human_bodypaint",
         "duo_black_hole_star_bodypaint",
         "duo_past_future_city_bodypaint",
         "duo_virus_antibody_bodypaint",
         "duo_matrix_reality_bodypaint",
         "duo_crystal_lava_bodypaint",
-        # ��ü/ö��
+        # 인체/철학
         "duo_skeleton_bloom_bodypaint",
         "duo_ink_wash_split_bodypaint",
-        # G6 ����� Ʈ���� (35��) ? 3 �ش��� �浹/��ȭ
-        # �ð�/����
+        # G6 대비형 트리오 (35종) — 3 극단의 충돌/조화
+        # 시간/역사
         "trio_stone_bronze_iron_bodypaint",
         "trio_ancient_medieval_modern_bodypaint",
         "trio_birth_life_death_bodypaint",
         "trio_seed_tree_ash_bodypaint",
-        # ����/�ڿ�
+        # 원소/자연
         "trio_lightning_ocean_earthquake_bodypaint",
         "trio_sand_ice_magma_bodypaint",
         "trio_sky_earth_underground_bodypaint",
         "trio_micro_human_macro_bodypaint",
         "trio_fog_rain_snow_bodypaint",
         "trio_jungle_desert_tundra_bodypaint",
-        # ��/��
+        # 색/빛
         "trio_primary_colors_bodypaint",
         "trio_black_white_gray_bodypaint",
         "trio_gold_silver_bronze_bodypaint",
         "trio_sunrise_sunset_moonrise_bodypaint",
         "trio_infrared_visible_uv_bodypaint",
-        # ��ȭ/����
+        # 신화/종교
         "trio_heaven_earth_hell_bodypaint",
         "trio_creator_preserver_destroyer_bodypaint",
         "trio_fate_three_bodypaint",
         "trio_medusa_sphinx_hydra_bodypaint",
         "trio_valkyrie_siren_medea_bodypaint",
-        # ����/����
+        # 문명/지역
         "trio_amazon_sahara_arctic_bodypaint",
         "trio_east_west_south_bodypaint",
         "trio_viking_samurai_spartan_bodypaint",
         "trio_nile_amazon_yangtze_bodypaint",
         "trio_rome_babylon_aztec_bodypaint",
-        # ����/ö��
+        # 감정/철학
         "trio_love_war_peace_bodypaint",
         "trio_fear_anger_joy_bodypaint",
         "trio_order_chaos_void_bodypaint",
         "trio_id_ego_superego_bodypaint",
         "trio_thesis_antithesis_synthesis_bodypaint",
     ],
-    "?? ��� �۷���": [
-        # G1 ��Ʈ & Ǯ
+    "👯 듀오 글래머": [
+        # G1 웨트 & 풀
         "duo_infinity_pool_contrast",
         "duo_rain_neon_soaked",
     "duo_ink_wash_split_bodypaint",
         "duo_pool_bodypaint_micro",
         "duo_wet_glass_divide",
-        # G2 �ٵ�����Ʈ ���
+        # G2 바디페인트 대결
         "duo_bodypaint_vs_latex",
         "duo_ocean_bodypaint",
         "duo_golden_desert_bodypaint",
         "duo_aurora_bodypaint",
         "duo_cyberpunk_bodypaint",
         "duo_jungle_tribal_bodypaint",
-        # G3 ���ؽ� & ���� ���
+        # G3 라텍스 & 소재 대비
         "duo_latex_color_block",
         "duo_latex_storm_opposites",
         "duo_dark_latex_power",
         "duo_flamenco_latex_fusion",
-        # G4 ���� & �׸���
+        # G4 오일 & 그림자
         "duo_smoke_noir",
-        # G5 ���Ÿ� ��
+        # G5 럭셔리 씬
         "duo_versailles_latex_gold",
         "duo_monaco_yacht",
         "duo_champagne_gala",
         "duo_villa_italy",
         "duo_casino_power",
-        # G6 ������Ż ���
+        # G6 엘리멘탈 대비
         "duo_fire_and_ice",
         "duo_angel_devil",
         "duo_chrome_future",
-        # G7 �Ƿ翧 & �̴ϸ�
+        # G7 실루엣 & 미니멀
         "duo_sunset_silhouette",
         "duo_desert_minimal",
         "duo_kpop_stage",
         "duo_penthouse_power",
         "duo_ice_bath_contrast",
     ],
-    "?? �ſ� & �ݻ� �۷���": [
-        # G1 Ŭ���Ĺ̷�
+    "🪞 거울 & 반사 글래머": [
+        # G1 클래식미러
         "infinity_mirror_goddess",
         "hall_of_mirrors_glam",
         "obsidian_mirror_ritual",
         "venetian_mirror_boudoir",
         "cheval_mirror_reveal",
         "broken_mirror_multiplied",
-        # G2 ����ݻ�
+        # G2 수면반사
         "mercury_lake_reflection",
         "salt_flat_sky_merge",
         "rain_puddle_city_invert",
         "flooded_temple_mirror",
         "infinity_pool_edge_reflect",
         "morning_dew_skin_reflection",
-        # G3 ����&������
+        # G3 유리&프리즘
         "glass_box_all_angles",
         "prism_light_body_split",
         "crystal_cave_skin_facets",
         "two_way_mirror_watcher",
         "window_rain_double",
         "soap_bubble_dome",
-        # G4 ũ��&��Ż
+        # G4 크롬&메탈
         "chrome_sphere_world",
         "polished_obsidian_floor",
         "supercar_chrome_reflect",
@@ -1019,29 +1019,29 @@ PRESET_CATEGORIES = {
         "mirrored_skyscraper_facade",
     ],
 
-    "?? SF & ���̿���ũ": [
-        # G1 ũ���̿�&�����
+    "🧬 SF & 바이오펑크": [
+        # G1 크라이오&실험실
         "cryo_emergence_wet",
         "specimen_amber_suspended",
         "clean_room_latex_protocol",
         "gene_sequencer_data_skin",
         "quarantine_protocol_breach",
         "petri_dish_giant_macro",
-        # G2 ����&����ü
+        # G2 심해&유기체
         "abyssal_pressure_glam",
         "mycelium_web_consumed",
         "coral_organism_absorption",
         "carnivorous_plant_trap",
         "symbiote_second_skin",
         "jellyfish_bloom_float",
-        # G3 Ʈ�����޸�
+        # G3 트랜스휴먼
         "cyborg_partial_reveal",
         "neural_lace_crown",
         "exoskeleton_stripped",
         "prosthetic_art",
         "spine_tech_implant",
         "synthetic_skin_tear",
-        # G4 ���̷���&�����̼�
+        # G4 바이러스&뮤테이션
         "mutation_bloom",
         "toxic_spore_cloud",
         "infection_glam",
@@ -1050,9 +1050,9 @@ PRESET_CATEGORIES = {
         "alien_host_glam",
     ],
 
-    "?? ȯ�� ��ü �ٵ�������": [
-        # G1 ����/���� (6�� SSS)
-        # 2026-07-02 �ٵ�������+�ǻ� �ͽ� �ݶ�
+    "🌀 환경 일체 바디페인팅": [
+        # G1 패턴/직물 (6종 SSS)
+        # 2026-07-02 바디페인팅+의상 믹스 콜라보
         "trio_bodypaint_latex_frame",
         "trio_bodypaint_gown_frame",
         "trio_bodypaint_leather_frame",
@@ -1072,26 +1072,26 @@ PRESET_CATEGORIES = {
         "trio_bikini_bodypaint_center",
         "trio_sheer_bodypaint_center",
         "trio_chrome_bodypaint_center",
-        # ?? ȯ�� ��ü �ٵ�������
+        # 🌀 환경 일체 바디페인팅
         "merge_butterfly_fabric",
         "merge_floral_wallpaper",
         "merge_leopard_fabric",
         "merge_mandala_carpet",
         "merge_toile_pattern",
         "merge_tartan_plaid",
-        # G2 �ڿ�ȯ�� (5�� SSS/SS)
+        # G2 자연환경 (5종 SSS/SS)
         "merge_salt_flat_sky",
         "merge_autumn_leaves_floor",
         "merge_coral_reef_water",
         "merge_sand_dunes",
         "merge_moss_stone_ground",
-        # G3 ����/���� (5�� SSS)
+        # G3 건축/소재 (5종 SSS)
         "merge_clockwork_gears",
         "merge_marble_column_wall",
         "merge_islamic_tile_wall",
         "merge_stained_glass_window",
         "merge_circuit_board",
-        # G4 ����/ȸȭ (6�� SSS)
+        # G4 예술/회화 (6종 SSS)
         "merge_klimt_gold_mural",
         "merge_vangogh_starry",
         "merge_ukiyo_wave_print",
@@ -1103,36 +1103,36 @@ PRESET_CATEGORIES = {
 }
 
 
-# HOF tier ? Hall of Fame: ���� ���� �̹��� �� �ְ� ����Ƽ ����
-# ����: "��" �ϴ� ����, ����/���/�ٵ������� ����� �Ϻ�, ��� ���� ����
+# HOF tier — Hall of Fame: 실제 검증 이미지 중 최고 퀄리티 선정
+# 기준: "와" 하는 반응, 구도/배경/바디페인팅 삼박자 완벽, 즉시 생성 가능
 HOF_TIER = {
-    "trio_chrome_bodypaint_center",       # ũ��SF+������ ���� �Ϻ�
-    "trio_gown_bodypaint_center",         # Ȳ�ݹٷ�ũ+�̺�װ��� ��������
-    "trio_sheer_bodypaint_center",        # �þ�+�÷η� �ٵ������� �ֿ��
-    "limo_glam",                          # ���Ÿ� �ϼ��� �ֻ�
-    "yacht_sunset_glam",                  # ���+����+�ǻ� �����
-    "staircase_glam",                     # ��ܱ��� �����丮�� �ϼ���
-    "volcanic_heat_body",                 # ȭ���� ������
-    "trio_three_civilizations_bodypaint", # 3�����+�ڹ��� ��� �Ϻ�
-    "trio_ancient_medieval_modern_bodypaint", # ���3����+�ô뺰 ���� ��â�� �ְ�
-    "trio_creation_of_adam_bodypaint",    # �ý�Ƽ��+��긣 ��� ������ �ϼ��� ������
-    "trio_black_white_gray_bodypaint",    # �������� �ϼ��� ��/ȸ/�� ��� �е���
-    "trio_fog_rain_snow_bodypaint",       # ����+���ϰ� �е��� �Ȱ�/��/�� �Ϻ�ǥ��
-    # 2026-07-03 �ű� HOF ? QUAD/QUINT/HEXA ���� �Ϸ�
-    "quad_four_ages_bodypaint",               # ��/��/��/ö �׶��̼� ��� �Ϻ�
-    "quad_four_classical_elements_klimt",     # Ŭ��Ʈ �ݺ�Ȧ+4���� �Ϻ� ����
-    "quad_four_seasons_night_bodypaint",      # 4���� ��� ����+�߰� ���� �е���
-    "quint_five_senses_bodypaint",            # 5�� �ٷ�ũȦ 5�� ���� �Ϻ�
-    "quint_five_worlds_bodypaint",            # 5���� ������+���� �����
-    "quint_five_elements_wuxing_bodypaint",   # ����+�ڱݼ� Ȳ�ݽð� �ְ�
-    "hexa_rainbow_spectrum_bodypaint",
-    "trio_inside_outside_bodypaint",        # 해부학 3레이어 inside/outside HOF
+    "trio_chrome_bodypaint_center",       # 크롬SF+갤럭시 구도 완벽
+    "trio_gown_bodypaint_center",         # 황금바로크+이브닝가운 갤러리급
+    "trio_sheer_bodypaint_center",        # 시어+플로럴 바디페인팅 최우수
+    "limo_glam",                          # 럭셔리 완성도 최상
+    "yacht_sunset_glam",                  # 배경+조명+의상 삼박자
+    "staircase_glam",                     # 계단구도 에디토리얼 완성도
+    "volcanic_heat_body",                 # 화산배경 독보적
+    "trio_three_civilizations_bodypaint", # 3색대비+박물관 배경 완벽
+    "trio_ancient_medieval_modern_bodypaint", # 배경3분할+시대별 컨셉 독창성 최고
+    "trio_creation_of_adam_bodypaint",    # 시스티나+루브르 배경 예술적 완성도 독보적
+    "trio_black_white_gray_bodypaint",    # 조각같은 완성도 흑/회/백 대비 압도적
+    "trio_fog_rain_snow_bodypaint",       # 색감+통일감 압도적 안개/물/눈 완벽표현
+    # 2026-07-03 신규 HOF — QUAD/QUINT/HEXA 검증 완료
+    "quad_four_ages_bodypaint",               # 금/은/동/철 그라데이션 배경 완벽
+    "quad_four_classical_elements_klimt",     # 클림트 금빛홀+4원소 완벽 융합
+    "quad_four_seasons_night_bodypaint",      # 4계절 배경 분할+야간 여신 압도적
+    "quint_five_senses_bodypaint",            # 5감 바로크홀 5인 세로 완벽
+    "quint_five_worlds_bodypaint",            # 5세계 배경분할+여신 역대급
+    "quint_five_elements_wuxing_bodypaint",   # 오행+자금성 황금시간 최고
+    "hexa_rainbow_spectrum_bodypaint",        # 6인 무지개 세로4:5 HOF급
+    "trio_inside_outside_bodypaint",        # 해부학 3레이어(피부/근육/골격) + 박물관 배경 HOF
 }
 
-# SSS tier ? "�̰� AI��?" ����. ��ũ�� ���� ����. 4���� �Ϻ� + ������
-# ����: ü�� �������̵常���� ��ȭ/����/���� �ڵ��ϼ�, 2�� �̻� �ϰ���, ������ ����Ʈ
+# SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
+# 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
-        # 2026-07-03 �ű� QUAD/QUINT/HEXA/OCTET + ���� SSS
+        # 2026-07-03 신규 QUAD/QUINT/HEXA/OCTET + 컨셉 SSS
     "quad_four_ages_bodypaint",
     "quad_four_classical_elements_klimt",
     "quad_four_seasons_night_bodypaint",
@@ -1140,7 +1140,6 @@ SSS_TIER = {
     "quint_five_worlds_bodypaint",
     "quint_five_elements_wuxing_bodypaint",
     "hexa_rainbow_spectrum_bodypaint",
-    "trio_inside_outside_bodypaint",
     "quad_four_civilizations_bodypaint",
     "quad_four_gemstones_bodypaint",
     "quad_cmyk_bodypaint",
@@ -1152,7 +1151,7 @@ SSS_TIER = {
     "octet_planets_solar_bodypaint",
     "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
-        # 2026-07-03 �ű� SSS 52�� (�ű� 66�� ���� �Ϸ�)
+        # 2026-07-03 신규 SSS 52종 (신규 66종 검증 완료)
     "champagne_pour_body",
     "wine_pour_body",
     "milk_pour_body",
@@ -1206,7 +1205,7 @@ SSS_TIER = {
     "invisible_dress",
     "neon_latex",
 
-    # 2026-07-02 �����ս�&��� G3/G4 SSS (8��)
+    # 2026-07-02 퍼포먼스&댄스 G3/G4 SSS (8종)
     "opera_night",
     "christmas_glamour",
     "ballet_noir",
@@ -1216,74 +1215,74 @@ SSS_TIER = {
     "ribbon_goddess",
     "petal_storm",
 
-    # 2026-06-29 ��Ƽ �ٵ������� 57�� SSS (���� �Ϸ� 24�� Ȯ�� + 33�� ���� ����)
-    # G1 ����� ��� (24�� ���� �Ϸ� SSS)
+    # 2026-06-29 멀티 바디페인팅 57종 SSS (검증 완료 24종 확정 + 33종 검증 예정)
+    # G1 대비형 듀오 (24종 검증 완료 SSS)
     "duo_fire_and_ice_bodypaint",
     "duo_day_and_night_bodypaint",
     "duo_bloom_and_void_bodypaint",
     "duo_gold_and_shadow_bodypaint",
     "duo_ocean_and_desert_bodypaint",
     "duo_circuit_and_nature_bodypaint",
-    # G2 ����� Ʈ����
+    # G2 대비형 트리오
     "trio_rgb_trinity_bodypaint",
     "trio_past_present_future_bodypaint",
     "trio_predator_prey_apex_bodypaint",
     "trio_ink_gold_chrome_bodypaint",
     "trio_season_trinity_bodypaint",
-    # G3 ������ ���
+    # G3 연결형 듀오
     "duo_butterfly_split_bodypaint",
     "duo_yin_yang_merge_bodypaint",
     "duo_world_map_bodypaint",
     "duo_galaxy_split_bodypaint",
     "duo_wave_hokusai_bodypaint",
-    # G3 SS (���� ���� �̴�)
-    # "duo_klimt_tree_bodypaint",  # SS ����
-    # G4 ������ Ʈ����
+    # G3 SS (연결 컨셉 미달)
+    # "duo_klimt_tree_bodypaint",  # SS 전용
+    # G4 연결형 트리오
     "trio_triptych_klimt_bodypaint",
     "trio_phoenix_rising_bodypaint",
     "trio_world_tree_bodypaint",
     "trio_ocean_depth_bodypaint",
     "trio_aurora_spectrum_bodypaint",
     "trio_cosmic_creation_bodypaint",
-    # G1 �߰� (���� ����)
+    # G1 추가 (검증 예정)
     "duo_east_and_west_bodypaint",
     "duo_macro_and_micro_bodypaint",
     "duo_ancient_and_future_bodypaint",
     "duo_poison_and_medicine_bodypaint",
     "duo_deep_sea_bodypaint",
-    # G2 �߰� (���� ����)
+    # G2 추가 (검증 예정)
     "trio_sun_moon_star_bodypaint",
     "trio_three_oceans_bodypaint",
     "trio_three_civilizations_bodypaint",
     "trio_fire_water_earth_bodypaint",
     "trio_three_big_cats_bodypaint",
-    # G3 �߰� (���� ����)
+    # G3 추가 (검증 예정)
     "duo_dna_helix_bodypaint",
     "duo_solar_eclipse_bodypaint",
     "duo_human_shadow_bodypaint",
     "duo_tiger_split_bodypaint",
     "duo_starry_night_split_bodypaint",
     "duo_peacock_split_bodypaint",
-    # G4 �߰� (���� ����)
+    # G4 추가 (검증 예정)
     "trio_last_supper_bodypaint",
     "trio_rainbow_arc_bodypaint",
     "trio_milky_way_panorama_bodypaint",
     "trio_coral_reef_zones_bodypaint",
     "trio_creation_of_adam_bodypaint",
     "trio_poles_and_equator_bodypaint",
-    # QUAD 4�� (���� ����)
+    # QUAD 4인 (검증 예정)
     "quad_four_seasons_bodypaint",
     "quad_four_elements_bodypaint",
     "quad_four_directions_bodypaint",
     "quad_four_seasons_klimt_bodypaint",
     "quad_rgba_spectrum_bodypaint",
-    # QUINT 5�� (���� ����)
+    # QUINT 5인 (검증 예정)
     "quint_five_continents_bodypaint",
     "quint_five_elements_asia_bodypaint",
     "quint_rainbow_five_bodypaint",
     "quint_five_oceans_bodypaint",
 
-    # G5 ������ ��� 30�� (���� ����)
+    # G5 연결형 듀오 30종 (검증 예정)
     "duo_earth_hemisphere_bodypaint",
     "duo_day_city_night_city_bodypaint",
     "duo_volcano_glacier_bodypaint",
@@ -1309,7 +1308,7 @@ SSS_TIER = {
     "duo_crystal_lava_bodypaint",
     "duo_skeleton_bloom_bodypaint",
     "duo_ink_wash_split_bodypaint",
-    # G6 ����� Ʈ���� 35�� (���� ����)
+    # G6 대비형 트리오 35종 (검증 예정)
     "trio_stone_bronze_iron_bodypaint",
     "trio_ancient_medieval_modern_bodypaint",
     "trio_birth_life_death_bodypaint",
@@ -1340,7 +1339,7 @@ SSS_TIER = {
     "trio_order_chaos_void_bodypaint",
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
-    # ��� �۷��� SS (SSS 23�� + SS���� 5��)
+    # 듀오 글래머 SS (SSS 23종 + SS전용 5종)
     "duo_infinity_pool_contrast",
     "duo_pool_bodypaint_micro",
     "duo_wet_glass_divide",
@@ -1370,7 +1369,7 @@ SSS_TIER = {
     "duo_monaco_yacht",
     "duo_villa_italy",
     "duo_ice_bath_contrast",
-    # ��� �۷��� SSS (23��)
+    # 듀오 글래머 SSS (23종)
     "duo_infinity_pool_contrast",
     "duo_pool_bodypaint_micro",
     "duo_wet_glass_divide",
@@ -1394,12 +1393,12 @@ SSS_TIER = {
     "duo_desert_minimal",
     "duo_kpop_stage",
     "duo_penthouse_power",
-    # 2026-06-20 ����&��������Ÿ�� SS���� 10�� + SSS 24�� ����
-    # SS����
+    # 2026-06-20 직업&라이프스타일 SS전용 10종 + SSS 24종 포함
+    # SS전용
     "cruise_hostess", "yacht_club",
     "nurse_glamour", "sommelier", "wine_tasting", "barista_chic",
     "golf_caddie", "fitness_power", "scuba_instructor", "archery_goddess",
-    # SSS�� SS�� ���� (��Ģ)
+    # SSS도 SS에 포함 (규칙)
     "flight_attendant", "pilot_glamour", "yacht_captain",
     "private_jet", "helipad", "hotel_concierge",
     "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
@@ -1408,34 +1407,34 @@ SSS_TIER = {
     "cheerleader", "ballet_prima", "gymnastics_editorial",
     "figure_skater", "carnival_rio", "luxury_shopping",
 
-    # 2026-06-20 ����&��������Ÿ�� SSS 24�� Ȯ��
-    # A�׷� ? �װ�/�ؾ�/���Ÿ�
+    # 2026-06-20 직업&라이프스타일 SSS 24종 확정
+    # A그룹 — 항공/해양/럭셔리
     "flight_attendant", "pilot_glamour", "yacht_captain",
     "private_jet", "helipad", "hotel_concierge",
-    # B�׷� ? ������
+    # B그룹 — 전문직
     "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
-    # C�׷� ? ������/��Ʈ�Ͻ�
+    # C그룹 — 스포츠/피트니스
     "golf_glam", "tennis_luxe", "tennis_referee", "tennis_champion",
     "f1_grid_girl", "equestrian_glam", "horse_racing", "yoga_goddess",
-    # D�׷� ? �����ս�/������2
+    # D그룹 — 퍼포먼스/스포츠2
     "cheerleader", "ballet_prima", "gymnastics_editorial",
     "figure_skater", "carnival_rio", "luxury_shopping",
 
     "body_paint_nude",
-    # 2026-06-11 ��� ������ SSS Ȯ�� (1��)
-    "cenote_sacred",         # ���� ���� ���� + ���޶��� �ݻ�, 4�� �ϰ���
-    "tikal_skyrise",         # ���� �� �Ƕ�̵� + ���� + ���ƿ� ����
-    "angkor_dawn",           # ���� �ݻ� + Ȳ�� ���� + ũ�޸� ����, ���� ��������
-    "waitomo_glow",          # �����߱� ���ϼ� õ�� + ���� �ݻ�, ������ ���־�
-    # 2026-06-11 ��� ������ SSS Ȯ�� (2��)
-    "marble_caves_water",    # �븮�� ���� + �������� ����, �ǻ��� ���� ���
-    "bagan_balloon",         # ���ⱸ + Ȳ�� ���� + ��ž ���, 4��� �Ϻ�
-    "tigers_nest_cliff",     # ���� ������ + �⵵ ��� + ������� ����
-    "sheikh_zayed_dawn",     # �� �� + ������ũ �ٴ� + �ݻ� ���� + ���ƿ�
-    "livraria_lello_staircase", # �׶���Ÿ �巹�� + ���� ��� + �����ε�۶� 3�� ����ȭ
-    "namib_star_desert",     # ���ϼ� ��ġ + �籸 �ɼ� + ������ ����
-    "ellora_rock_temple",    # ���� ���� �� + �׶���Ÿ �巹�� ���� ��ȭ
-    # 2026-06-13 v26 ���� ���帶ũ SSS Ȯ��
+    # 2026-06-11 배경 프리셋 SSS 확정 (1차)
+    "cenote_sacred",         # 물속 수직 덩굴 + 에메랄드 반사, 4장 일관성
+    "tikal_skyrise",         # 정글 위 피라미드 + 운해 + 골든아워 역광
+    "angkor_dawn",           # 연못 반사 + 황금 일출 + 크메르 조각, 구도 교과서급
+    "waitomo_glow",          # 생물발광 은하수 천장 + 수면 반사, 독보적 비주얼
+    # 2026-06-11 배경 프리셋 SSS 확정 (2차)
+    "marble_caves_water",    # 대리석 패턴 + 터콰이즈 수면, 의상이 배경색 흡수
+    "bagan_balloon",         # 열기구 + 황금 일출 + 불탑 평원, 4요소 완벽
+    "tigers_nest_cliff",     # 절벽 수도원 + 기도 깃발 + 히말라야 설산
+    "sheikh_zayed_dawn",     # 흰 돔 + 모자이크 바닥 + 반사 연못 + 블루아워
+    "livraria_lello_staircase", # 테라코타 드레스 + 레드 계단 + 스테인드글라스 3중 동기화
+    "namib_star_desert",     # 은하수 아치 + 사구 능선 + 백포즈 구도
+    "ellora_rock_temple",    # 힌두 조각 벽 + 테라코타 드레스 완전 동화
+    # 2026-06-13 v26 월드 랜드마크 SSS 확정
     "positano_cliff",
     "bruges_canal",
     "colosseum_dusk",
@@ -1446,7 +1445,7 @@ SSS_TIER = {
     "teotihuacan_pyramid",
     "palmyra_colonnade",
 
-    # 2026-06-19 �ִϾ�Ʈ��Ÿ�� SSS 31�� Ȯ��
+    # 2026-06-19 애니아트스타일 SSS 31종 확정
     "anime_jp_90s_retro",
     "anime_jp_80s_citypop",
     "anime_jp_modern_glossy",
@@ -1479,7 +1478,7 @@ SSS_TIER = {
     "anime_eu_erotic_bd",
     "anime_noir_silhouette",
 
-    # 2026-06-18 ��&���� SSS Ȯ��
+    # 2026-06-18 핫&섹시 SSS 확정
     "bodycon_power", "boudoir_noir", "wet_silk_gown", "oil_goddess_gold",
     "rain_soaked_dress", "micro_dress_only", "deep_plunge_gown", "backless_extreme",
     "one_strap_gown", "pinup_classic", "vargas_girl", "bombshell_retro",
@@ -1494,15 +1493,15 @@ SSS_TIER = {
     "oil_drip_body", "yoga_pants_glam", "halter_glam", "wet_editorial",
     "pool_edge_wet", "ocean_wave_body", "penthouse_bath", "silk_sheets_morning",
     "spa_private_steam", "bar_counter_glam", "after_party_suite", "tennis_short_dress",
-    # 2026-06-13 v27 ��&���� SSS Ȯ��
+    # 2026-06-13 v27 핫&섹시 SSS 확정
     "dressing_room_mirror",
     "vip_booth_neon",
-    # 2026-06-13 ��ġ&����Ʈ SSS Ȯ��
+    # 2026-06-13 비치&리조트 SSS 확정
     "infinity_pool",
     "scuba_goddess",
     "spa_noir",
     "sunset_cruise",
-    # 2026-06-14 ��&ī���� SSS Ȯ��
+    # 2026-06-14 팝&카와이 SSS 확정
     "cherry_pop",
     "hime_gyaru",
     "decora_kei",
@@ -1513,52 +1512,52 @@ SSS_TIER = {
     "kdrama_villain_queen",
     "bubble_tea",
     "doll_house",
-    # 2026-06-15 harajuku_doll SSS �°� (��&ī���� ? ���ɽ�Ÿ �Ÿ� ��ũ 4�� ����)
+    # 2026-06-15 harajuku_doll SSS 승격 (팝&카와이 — 다케시타 거리 싱크 4장 검증)
     "harajuku_doll",
-    # 2026-06-15 greenhouse_eden SSS �°� (����&�׸� ? �ٻ�� �巹��=�½� ���°� ���� 6�� ����)
+    # 2026-06-15 greenhouse_eden SSS 승격 (계절&테마 — 잎사귀 드레스=온실 생태계 융합 6장 검증)
     "greenhouse_eden",
-    # 2026-06-15 ����&�׸� SSS 3�� Ȯ��
-    "halloween_glam",       # �ǻ�+���+��ǰ = ��� ����� ���� ����, 6�� ����
-    "new_year_glam",        # �巹�� ���� = ����+����Ƽ �� ���, Ÿ�ӽ����� 4�� ����
-    "sakura_night_glam",    # �巹�� �÷η� = ���� �ͳ� ���� ����, �Ż� ��� 6�� ����
-    # 2026-06-15 �����丮��&���� SSS 8�� Ȯ��
-    "backlit_silk",         # ���� ���� �� �巹��=����, waitomo_glow ��� ����
-    "mirror_room",          # �ǹ���Ʈ+�ſ�� ��� �Ҹ�, dressing_room_mirror���� ����
-    "eclipse_body",         # �巹��=�ڷγ� �߱�, ��������=�ǻ�
-    "plasma_aura",          # �ö��=�ǻ� ���� ����, ������=�巹�� (�̹���6 ����)
-    "molten_chrome",        # �뱤��+��� ũ�� ������ ����, ����=ȯ��
-    "mercury_pool",         # ���� ��ü=���� ��ü ���Ӽ�, �ǻ�=��ü
-    "snowflake_skin",       # ���̽� �巹��=���� ���� ��ȭ (�̹���5 ����)
-    "noir_femme_fatale",    # ���+5��� ����� ���� ����, halloween_glam ���� ���
+    # 2026-06-15 계절&테마 SSS 3종 확정
+    "halloween_glam",       # 의상+배경+소품 = 고딕 세계관 완전 융합, 6장 검증
+    "new_year_glam",        # 드레스 시퀀 = 폭죽+컨페티 빛 흡수, 타임스퀘어 4장 검증
+    "sakura_night_glam",    # 드레스 플로럴 = 벚꽃 터널 패턴 연속, 신사 등불 6장 검증
+    # 2026-06-15 에디토리얼&무드 SSS 8종 확정
+    "backlit_silk",         # 역광 투과 → 드레스=광원, waitomo_glow 논리 동일
+    "mirror_room",          # 실버수트+거울방 경계 소멸, dressing_room_mirror보다 강함
+    "eclipse_body",         # 드레스=코로나 발광, 우주현상=의상
+    "plasma_aura",          # 플라즈마=의상 완전 융합, 에너지=드레스 (이미지6 기준)
+    "molten_chrome",        # 용광로+녹는 크롬 물리적 동조, 소재=환경
+    "mercury_pool",         # 수은 인체=수면 유체 연속성, 의상=액체
+    "snowflake_skin",       # 아이스 드레스=설원 소재 동화 (이미지5 기준)
+    "noir_femme_fatale",    # 흑백+5요소 세계관 완전 구현, halloween_glam 동일 논리
 
-    # v28 ���빮ȭ �ٵ������� ��ġ (48��)
-    # 1�� SSS
+    # v28 전통문화 바디페인팅 패치 (48종)
+    # 1차 SSS
     "kabuki_bodypaint",
     "joseon_bodypaint",
     "tibetan_bodypaint",
     "byzantine_bodypaint",
     "mayan_bodypaint",
-    # 2�� SSS
+    # 2차 SSS
     "geisha_bodypaint",
     "ming_bodypaint",
     "thai_bodypaint",
     "ottoman_bodypaint",
     "flamenco_bodypaint",
     "sumerian_bodypaint",
-    # 3�� SSS
+    # 3차 SSS
     "maori_bodypaint",
     "balinese_bodypaint",
     "persian_bodypaint",
     "mughal_bodypaint",
     "hopi_bodypaint",
     "haida_bodypaint",
-    # 4�� SSS
+    # 4차 SSS
     "polynesian_bodypaint",
     "korean_shaman_bodypaint",
     "noh_bodypaint",
     "hanbok_bodypaint",
     "tang_dynasty_bodypaint",
-    # 5�� SSS
+    # 5차 SSS
     "moroccan_bodypaint",
     "batik_bodypaint",
     "ikat_bodypaint",
@@ -1566,14 +1565,14 @@ SSS_TIER = {
     "ninja_bodypaint",
     "kebaya_bodypaint",
     "scottish_bodypaint",
-    # 6�� SSS
+    # 6차 SSS
     "voodoo_bodypaint",
     "scythian_bodypaint",
     "olmec_bodypaint",
     "odalisque_bodypaint",
     "harem_bodypaint",
     "shaman_bodypaint",
-    # 7�� SSS
+    # 7차 SSS
     "kimono_bodypaint",
     "samurai_bodypaint",
     "geisha_white_bodypaint",
@@ -1582,19 +1581,19 @@ SSS_TIER = {
     "cheongsam_bodypaint",
     "gisaeng_bodypaint",
     "hanbok_modern_bodypaint",
-    # 8�� SSS
+    # 8차 SSS
     "ao_dai_bodypaint",
     "zulu_bodypaint",
     "kente_bodypaint",
     "dashiki_bodypaint",
     "belly_bodypaint",
 
-    # v28 ���빮ȭ �ٵ������� ��ġ (3��)
-    # SS ����
+    # v28 전통문화 바디페인팅 패치 (3종)
+    # SS 전용
     "sari_bodypaint",
     "yoruba_bodypaint",
     "maiko_bodypaint",
-    # 2026-06-16 �ִ�&�۷��� SSS Ȯ�� (17��)
+    # 2026-06-16 애니&글래머 SSS 확정 (17종)
     "kunoichi_glam",
     "samurai_bride",
     "oni_warrior",
@@ -1635,7 +1634,7 @@ SSS_TIER = {
     "subway_editorial",
     "santorini_sunset",
     "cappadocia_balloons",
-    # 2026-06-18 ������Ż ������ SS Ȯ�� (SSS ����)
+    # 2026-06-18 엘리멘탈 갓데스 SS 확정 (SSS 포함)
     "uyuni_wet_silk", "maldives_underwater", "bioluminescent_bay", "rainbow_falls_goddess",
     "trolltunga_edge", "zhangjiajie_cloud", "cliff_wind_sheer", "skydive_editorial",
     "hot_air_balloon_glam", "wave_barrel_goddess", "glacier_melt_goddess",
@@ -1643,19 +1642,19 @@ SSS_TIER = {
     "lava_field_latex", "solar_flare_goddess",
     "aurora_bare", "antarctica_ice_glam", "meteor_shower_glam", "ice_cave_blue",
     "antelope_light_sheer", "waitomo_glow_body", "coral_reef_sheer", "black_sea_midnight",
-    # SS ����
+    # SS 전용
     "niagara_wet_editorial", "thunderstorm_wet", "cave_waterfall_goddess",
     "desert_heat_body",
     "volcano_edge_glam", "bonfire_editorial", "eruption_silhouette", "amazon_river_goddess",
     "iceland_hot_spring", "northern_lights_body", "dead_sea_goddess",
     "socotra_alien_glam", "deep_jungle_goddess", "monsoon_goddess",
-    # 2026-06-18 ������Ż ������ ī�װ�� SSS Ȯ��
-    # G1 ��/����
-    "uyuni_wet_silk",        # SS��SSS �±� (��ϻ� �ǻ�+������ �ұݻ縷 ���� ����)
+    # 2026-06-18 엘리멘탈 갓데스 카테고리 SSS 확정
+    # G1 물/습기
+    "uyuni_wet_silk",        # SS→SSS 승급 (용암색 의상+우유니 소금사막 완전 합일)
     "maldives_underwater",
     "bioluminescent_bay",
     "rainbow_falls_goddess",
-    # G2 ���� �ڿ� (���� SSS)
+    # G2 극한 자연 (전종 SSS)
     "trolltunga_edge",
     "zhangjiajie_cloud",
     "cliff_wind_sheer",
@@ -1663,27 +1662,27 @@ SSS_TIER = {
     "hot_air_balloon_glam",
     "wave_barrel_goddess",
     "glacier_melt_goddess",
-    # G3 �縷/����
+    # G3 사막/열기
     "sahara_mirage",
     "salt_flat_body",
     "salar_atacama_flamingo",
     "pamukkale_goddess",
     "red_canyon_goddess",
-    # G4 ȭ��/��/�¾�
-    "lava_field_latex",      # SS��SSS �±�
+    # G4 화산/불/태양
+    "lava_field_latex",      # SS→SSS 승급
     "solar_flare_goddess",
-    # G5 ����/���ζ�/����
-    "aurora_bare",           # SS��SSS �±�
+    # G5 빙하/오로라/우주
+    "aurora_bare",           # SS→SSS 승급
     "antarctica_ice_glam",
     "meteor_shower_glam",
     "ice_cave_blue",
-    # G6 �̱�/����/�����߱�
-    "antelope_light_sheer",  # SS��SSS �±�
+    # G6 이국/정글/생물발광
+    "antelope_light_sheer",  # SS→SSS 승급
     "waitomo_glow_body",
     "coral_reef_sheer",
     "black_sea_midnight",
 
-    # 2026-06-24 �Ŀ�&���� SSS 16��
+    # 2026-06-24 파워&엣지 SSS 16종
     "valkyrie_storm",
     "fencer_noir",
     "martial_arts",
@@ -1743,7 +1742,7 @@ SSS_TIER = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-    # 2026-06-24 �����ս�&��� G1+G2 SSS 11��
+    # 2026-06-24 퍼포먼스&댄스 G1+G2 SSS 11종
     "flamenco_queen",
     "tango_passion",
     "ribbon_dance",
@@ -1755,7 +1754,7 @@ SSS_TIER = {
     "masquerade_ball",
     "samba_carnival",
     "jazz_dance_glam",
-    # 2026-06-25 ���&��ƼŬ 30�� SSS
+    # 2026-06-25 대기&파티클 30종 SSS
     "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
     "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
     "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
@@ -1767,80 +1766,80 @@ SSS_TIER = {
     "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
     "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
     "firefly_night_field", "seed_pod_floating",
-    # 2026-06-25 ����ƽ&��Ƽ�� G1 SSS 8��
+    # 2026-06-25 에로틱&페티쉬 G1 SSS 8종
     "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
     "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
-    # 2026-06-25 ����ƽ&��Ƽ�� G2 SSS 7��
+    # 2026-06-25 에로틱&페티쉬 G2 SSS 7종
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
     "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
 
-    # 2026-06-28 �ѱ� ����&���� �۷��� G1~G4 + G5���ݺ� SSS
-    # G1 �ﱹ/��� ? SSS 5��
+    # 2026-06-28 한국 역사&궁중 글래머 G1~G4 + G5전반부 SSS
+    # G1 삼국/고대 — SSS 5종
     "silla_queen_gold", "baekje_lotus_queen", "gojoseon_shaman_queen",
     "gaya_iron_goddess", "ancient_mural_goddess",
-    # G2 ��� ���� ? SSS 7��
+    # G2 고려 궁중 — SSS 7종
     "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
     "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
     "mongol_goryeo_queen",
-    # G3 ���� �ս�/���� ? SSS 11��
+    # G3 조선 왕실/궁중 — SSS 11종
     "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
     "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
     "damo_warrior", "joseon_night_queen", "joseon_concubine_red",
     "changdeok_moonlight", "gyeongbokgung_geisha",
-    # G4 ���/���� ? SSS 10��
+    # G4 기생/예인 — SSS 10종
     "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
     "gisaeng_rain_dance", "gisaeng_black_silk", "wonhyang_legend",
     "hwang_jini_glam", "gisaeng_fan_dance", "gisaeng_pipa_night",
     "pyongyang_gisaeng",
-    # G5 ��ȭ&���� ���ݺ� ? SSS 6��
+    # G5 신화&정령 전반부 — SSS 6종
     "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
     "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
-    # G5 ��ȭ&���� �Ĺݺ� ? SSS 6��
+    # G5 신화&정령 후반부 — SSS 6종
     "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
     "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
-    # G6 �μ�&����ǳ�� ? SSS 7�� (haenyeo_wet_glam�� SS ����)
+    # G6 민속&세시풍속 — SSS 7종 (haenyeo_wet_glam은 SS 전용)
     "dano_festival_glam", "ganggangsullae_night",
     "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
     "jeju_shaman_sea", "korean_harvest_goddess",
-    # G7 ������&���� ? SSS 8��
+    # G7 여전사&무인 — SSS 8종
     "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
     "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
     "goguryeo_fire_warrior", "joseon_spy_sheer",
-    # G8 �ٴ�&ǻ�� ? SSS 8��
+    # G8 근대&퓨전 — SSS 8종
     "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
     "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
     "hanbok_wet_editorial", "joseon_boudoir",
 
-    # 2026-06-26 ����ƽ&��Ƽ�� G3~G12 SSS 51��
-    # G3 �ϳ׽�/������
+    # 2026-06-26 에로틱&페티쉬 G3~G12 SSS 51종
+    # G3 하네스/본디지
     "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
     "suspension_art", "tape_bondage", "metal_bondage",
-    # G4 �޽�/�ý���
+    # G4 메쉬/시스루
     "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
     "sheer_catsuit", "catsuit_zipper", "pvc_transparent_full",
-    # G5 ���̳�Ʈ����
+    # G5 도미나트릭스
     "dominatrix_glam", "dominatrix_full_armor", "dominatrix_red",
     "goddess_throne", "pole_art",
-    # G6 �����ս�/���
+    # G6 퍼포먼스/쇼걸
     "burlesque", "showgirl", "cabaret_star", "candy_rave",
     "lap_dance_glam", "lap_dance_extreme", "striptease_art",
-    # G7 ��/���/�轺
+    # G7 폴/댄스/배스
     "pole_dance_power", "pole_dance_extreme", "midnight_bath", "belly_dance_glam",
-    # G8 ��Ÿ��/��ũ
+    # G8 판타지/다크
     "dark_succubus", "vampire_seduction", "witch_sensual",
     "dark_fairy_erotic", "shadow_seductress", "succubus_full",
-    # G9 ��ũ����/SF
+    # G9 다크앤젤/SF
     "dark_angel_fallen", "alien_queen_body", "fire_goddess",
-    # G10 ���� ��Ÿ��
+    # G10 직업 판타지
     "secretary_after_hours", "nurse_sensual", "maid_sensual",
     "teacher_after_class", "doctor_sensual", "police_dominatrix", "stewardess_dark",
-    # G11 �ٵ�/�̴ϸ�
+    # G11 바디/미니멀
     "oil_goddess", "micro_thong_only", "fetish_boots_only",
-    # G12 �ڸ���
+    # G12 코르셋
     "corset_stockings",
 
 
-    # 2026-06-24 ��Ÿ��&��ũ 26�� ���� SSS
+    # 2026-06-24 판타지&다크 26종 전원 SSS
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
     "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
     "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -1848,30 +1847,30 @@ SSS_TIER = {
     "double_exposure_ethereal","oil_slick_noir",
     "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
 
-    # 2026-06-24 �Ƿ翧&������ 30�� ���� SSS
-    # G1 ����Ʈ����Ʈ
+    # 2026-06-24 실루엣&섀도우 30종 전원 SSS
+    # G1 스포트라이트
     "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
     "silhouette_spotlight_hair","silhouette_spotlight_dance","silhouette_spotlight_chair",
     "silhouette_spotlight_back","silhouette_spotlight_pole",
-    # G2 â��/����
+    # G2 창문/도어
     "silhouette_window_city","silhouette_window_rain","silhouette_window_sheer",
     "silhouette_doorway_light","silhouette_window_sunset","silhouette_window_neon",
-    # G3 �׿� �Ƿ翧
+    # G3 네온 실루엣
     "silhouette_neon_pink","silhouette_neon_blue","silhouette_neon_red",
     "silhouette_neon_purple","silhouette_neon_multicolor",
-    # G4 �ڿ���
+    # G4 자연광
     "silhouette_sunset_beach","silhouette_sunset_cliff","silhouette_moonlight","silhouette_aurora",
-    # G5 ����/��
+    # G5 수중/물
     "silhouette_pool_underwater","silhouette_pool_edge",
-    # G6 �ǳ�/������
+    # G6 실내/분위기
     "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
     "silhouette_candle_boudoir","silhouette_smoke_studio",
 
-    # 2026-06-24 ��Ʈ&�۷ν� SSS 29��
-    # G1 Ǯ/������
+    # 2026-06-24 웨트&글로스 SSS 29종
+    # G1 풀/수영장
     "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
     "hot_spring_steam","jacuzzi_bubbles",
-        # 2026-07-02 �ű� �߰�
+        # 2026-07-02 신규 추가
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -1886,23 +1885,23 @@ SSS_TIER = {
         "waterfall_nude",
         "ocean_nude_editorial",
         "steam_bath_goddess",
-    # G2 ��/����
+    # G2 비/빗속
     "rain_window_inside","rain_street_soaked","rain_studio_dramatic","monsoon_body","rain_car_window",
-    # G3 ����/�۷ν� �帳
+    # G3 오일/글로스 드립
     "oil_pour_studio","oil_drip_back","honey_drip_body","chocolate_pour_gloss",
     "gloss_lips_drip","chrome_gloss_body",
-    # G4 ��/����
+    # G4 땀/열기
     "sweat_studio_light","heat_mirage_sweat","sauna_steam_body",
-    # G5 ���/�ñ�
+    # G5 결로/냉기
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
-    # G6 ��Ÿ ��Ʈ
+    # G6 기타 웨트
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
     "bubble_bath_gloss","milk_bath_petals",
 }
 
 # SS tier
 SS_TIER = {
-        # 2026-07-03 �ű� QUAD/QUINT/HEXA/OCTET SS ��ü
+        # 2026-07-03 신규 QUAD/QUINT/HEXA/OCTET SS 전체
     "quad_four_ages_bodypaint",
     "quad_four_classical_elements_klimt",
     "quad_four_seasons_night_bodypaint",
@@ -1910,7 +1909,6 @@ SS_TIER = {
     "quint_five_worlds_bodypaint",
     "quint_five_elements_wuxing_bodypaint",
     "hexa_rainbow_spectrum_bodypaint",
-    "trio_inside_outside_bodypaint",
     "quad_four_civilizations_bodypaint",
     "quad_four_gemstones_bodypaint",
     "quad_cmyk_bodypaint",
@@ -1925,7 +1923,7 @@ SS_TIER = {
     "quint_five_dance_cultures_bodypaint",
     "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
-        # 2026-07-03 �ű� SS 62�� �ݿ� (SSS 52 + SS���� 10)
+        # 2026-07-03 신규 SS 62종 반영 (SSS 52 + SS전용 10)
     "champagne_pour_body",
     "wine_pour_body",
     "milk_pour_body",
@@ -1989,7 +1987,7 @@ SS_TIER = {
     "sauna_nude_editorial",
     "chrome_paint_body",
 
-    # 2026-07-02 �����ս�&��� G3/G4 SS (9�� ��ü)
+    # 2026-07-02 퍼포먼스&댄스 G3/G4 SS (9종 전체)
     "opera_night",
     "christmas_glamour",
     "ballet_noir",
@@ -1999,57 +1997,57 @@ SS_TIER = {
     "ribbon_goddess",
     "petal_storm",
     "pop_art_glamour",
-    # ���� ��ȭ/���� �迭
+    # 기존 명화/예술 계열
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
     "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
     "ash_phoenix","lichtenstein_dot","warhol_pop","mondrian_body",
     # v14
     "lace_body_paint","jewelry_trompe_loeil",
-    # v15 ��ȭ
+    # v15 명화
     "klimt_silver","botticelli_venus","liquid_gold_drip","mermaid_scales","tiger_stripes_body",
-    # v16 ����
+    # v16 관능
     "latex_queen",
-    # v18 ���� 1�� �׽�Ʈ
-    # v18 ���� SS ? ���� ����� �� Ȯ�� (2026-06-07)
+    # v18 동물 1차 테스트
+    # v18 동물 SS — 엄격 재검토 후 확정 (2026-06-07)
     "mantis_shrimp","phoenix_rising","jellyfish_glow","panther_black",
     "octopus_ink","snow_leopard","scarab_beetle",
     "atlas_moth","eagle_wings","butterfly_monarch",
-    "arctic_fox",  # SS Ȯ�� (2026-06-08 ���� ���̽�������+���ǰ� 2�� ���� �Ϸ�)
-    # 2026-06-06 ��ȭ/�۰� �׽�Ʈ Ȯ��
+    "arctic_fox",  # SS 확정 (2026-06-08 설원 페이스페인팅+모피결 2장 검증 완료)
+    # 2026-06-06 명화/작가 테스트 확정
     "degas_dancer","toulouse_lautrec","waterhouse_nymph",
     "takashi_murakami","yayoi_kusama","keith_haring_body",
-    # 2026-06-06 �ѱ��׸� �׽�Ʈ Ȯ��
+    # 2026-06-06 한국테마 테스트 확정
     "dancheong_body","najeonchilgi_body","goryeo_celadon_body",
     "minhwa_body","korean_tiger_body","silla_crown_body",
-    # 2026-06-06 ����/�ڿ� �׽�Ʈ Ȯ��
+    # 2026-06-06 동물/자연 테스트 확정
     "najeon_abalone","giraffe_pattern","zebra_stripes","dragon_scales_red",
-    # 2026-06-06 �߰� �׽�Ʈ Ȯ��
+    # 2026-06-06 추가 테스트 확정
     "alma_tadema","gauguin_tropics","melting_chocolate",
-    # 2026-06-06 ����/����/���׽�Ʈ Ȯ�� 7��
+    # 2026-06-06 동물/조류/재테스트 확정 7개
     "parrot_tropical","boa_constrictor","king_cobra_hood","cheetah_speed",
     "bird_of_paradise","owl_feather","crocodile_skin",
-    # 2026-06-07 �ѱ� �ż� 4��
+    # 2026-06-07 한국 신수 4개
     "phoenix_jujakk","cheongnyong_dragon","korean_dragon_body","haetae_guardian",
-    # 2026-06-07 v20 SS 6��
+    # 2026-06-07 v20 SS 6개
     "coral_reef_body","galaxy_nebula_body","islamic_geometric_body",
     "aztec_calendar_body","stained_glass_body","mushroom_forest_body",
-    # 2026-06-07 ����/����/���� (���� 4���� 2026-06-08 ����)
+    # 2026-06-07 문명/동물/부족 (국기 4개는 2026-06-08 강등)
     "hieroglyph_body","mexico_flag_body",
     "ocelot_wild","ndebele_pattern",
-    # 2026-06-08 ���� �迭 SS ����� ? ���� S 4��
+    # 2026-06-08 국기 계열 SS 재검토 — 강등 S 4개
     #   (union_jack_body, usa_stars_stripes_body, south_africa_flag_body, brazil_flag_body)
-    #   ����: ���� �����=�Ǻ��� ������ ����, ���� ��Ƽ�� ���� �� SS ȸȭ�� �̴�
-    #   mexico_flag_body�� SS ���� (�߾� ����=������+�� ����ȭ, ��ȭ/���� �迭�� ����)
-    # 2026-06-07 ����/�ڿ�/���� 6��
+    #   사유: 원색 면분할=피부톤 근접도 낮음, 구상 모티프 없음 → SS 회화성 미달
+    #   mexico_flag_body만 SS 유지 (중앙 국장=독수리+뱀 구상화, 명화/문명 계열에 닿음)
+    # 2026-06-07 문명/자연/동물 6개
     "celtic_knot_body","greek_mosaic_body","ocean_depth_body",
     "weather_map_body","bauhaus_body","wolf_grey",
-    # 2026-06-07 v22 ����ƽ&��Ƽ�� SS ? ���� ����� �� Ȯ��
-    #   (���� S: burlesque, dominatrix_glam, corset_stockings,
+    # 2026-06-07 v22 에로틱&페티쉬 SS — 엄격 재검토 후 확정
+    #   (강등 S: burlesque, dominatrix_glam, corset_stockings,
     #    dark_fairy_erotic, tape_bondage, metal_bondage)
-    #   (����: military_domme ? ��ġ ��¡ ���� ����ũ, ������ ���� �ʿ�)
-    # 2026-06-08 ���ؽ�/���ü��� �����: ���� pvc_transparent_full/chrome_vixen/liquid_metal_body,
-    #   �°� vampire_seduction/witch_sensual/latex_venom (��0)
-    # 2026-06-08 ��ť���� �����: dark_succubus ����(succubus_full�� �ߺ�) �� SS 105��
+    #   (제거: military_domme — 나치 상징 생성 리스크, 프리셋 수정 필요)
+    # 2026-06-08 라텍스/광택소재 재검토: 강등 pvc_transparent_full/chrome_vixen/liquid_metal_body,
+    #   승격 vampire_seduction/witch_sensual/latex_venom (±0)
+    # 2026-06-08 서큐버스 재검토: dark_succubus 강등(succubus_full과 중복) → SS 105개
     "transparent_dress","sheer_catsuit","latex_transparent",
     "chrome_bodysuit","mirror_dress","suspension_art",
     "dominatrix_full_armor","goddess_throne",
@@ -2058,11 +2056,11 @@ SS_TIER = {
     "succubus_full","dark_angel_fallen","alien_queen_body",
     "body_paint_nude",
     "cabaret_star",
-    # 2026-06-08 ���ؽ�/���ü��� SS ����� ? �°� 3��
-    #   (���� S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
-    #   (����: latex_catsuit_red ? �÷� ���ؽ� �ߺ�, ����� ���)
+    # 2026-06-08 라텍스/광택소재 SS 재검토 — 승격 3개
+    #   (강등 S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
+    #   (보류: latex_catsuit_red — 컬러 라텍스 중복, 재검토 대상)
     "vampire_seduction","witch_sensual","latex_venom",
-    # 2026-06-19 �ִϾ�Ʈ��Ÿ�� SS ��ü (SSS 31 + SS���� 1)
+    # 2026-06-19 애니아트스타일 SS 전체 (SSS 31 + SS전용 1)
     "anime_jp_90s_retro",
     "anime_jp_80s_citypop",
     "anime_jp_modern_glossy",
@@ -2096,29 +2094,29 @@ SS_TIER = {
     "anime_noir_silhouette",
     "anime_jp_ecchi_glossy",
 
-    # 2026-06-09 �ִ� ��Ʈ��Ÿ�� SS 10�� Ȯ�� (JP4/KR3/CN2/EU1)
+    # 2026-06-09 애니 아트스타일 SS 10종 확정 (JP4/KR3/CN2/EU1)
     "anime_jp_80s_citypop","anime_jp_shoujo_soft","anime_jp_seinen_gritty","anime_jp_makoto_watercolor",
     "anime_kr_webtoon_glossy","anime_kr_action_manhwa","anime_kr_lofi_chill",
     "anime_cn_donghua_xianxia","anime_cn_palace_drama",
     "anime_eu_ligne_claire",
-    # 2026-06-09 unicorn_opal SS Ȯ�� (2�� �ϰ��� ���� �Ϸ�)
+    # 2026-06-09 unicorn_opal SS 확정 (2장 일관성 검증 완료)
     "unicorn_opal",
-    # 2026-06-09 v23 ������ �ٵ������� SS 12�� Ȯ��
-    # Ÿ�� 90% (18/20) ? pastel_dream/minimalist_free ���� ����
+    # 2026-06-09 v23 개방형 바디페인팅 SS 12종 확정
+    # 타율 90% (18/20) — pastel_dream/minimalist_free 차단 삭제
     "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto","body_paint_airbrush",
     "body_paint_monochrome","body_paint_earth_tones","body_paint_jewel_tones","body_paint_iridescent_free",
     "body_paint_geometric_free","body_paint_organic_flow","body_paint_surreal_free","body_paint_glitter_free",
-    # 2026-06-09 �ִ� A�� SS 6�� Ȯ�� (v24, 7/7 ���� 0��)
-    # demon_slayer ���� (swordmistress�� �ߺ�)
+    # 2026-06-09 애니 A형 SS 6종 확정 (v24, 7/7 차단 0건)
+    # demon_slayer 보류 (swordmistress와 중복)
     "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden",
     "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
-    # 2026-06-10 ���Ÿ� �۷��� �׷�1 ? ���/��ũ 7��
+    # 2026-06-10 럭셔리 글래머 그룹1 — 블랙/다크 7종
     "black_mirror","noir_opulence","velvet_darkness","luxury_noir",
     "lace_noir","midnight_couture","velvet_serpent",
-    # 2026-06-10 ���Ÿ� �۷��� �׷�2 ? ���/ȭ��Ʈ 9��
+    # 2026-06-10 럭셔리 글래머 그룹2 — 골드/화이트 9종
     "golden_oil","golden_nude","gold_temptress","golden_hour_editorial",
     "platinum_elite","ivory_silk","pearl_essence","velvet_gold","diamond_couture",
-    # 2026-06-10 ���Ÿ� �۷��� �׷�3 ? ����ī��/������ 8��
+    # 2026-06-10 럭셔리 글래머 그룹3 — 레드카펫/런웨이 8종
     "runway_power","red_carpet","red_temptress","crimson_gown",
     "opera_glam","silver_screen","crystal_gown","baroque_glam",
 
@@ -2149,12 +2147,12 @@ SS_TIER = {
     "aurora_bare",
     "antelope_light_sheer",
     "lava_field_latex",
-    # 2026-06-11 ��� ������ SS Ȯ��
+    # 2026-06-11 배경 프리셋 SS 확정
     "son_doong_jungle", "petra_rose", "danxia_rainbow",
     "dead_vlei_ghost", "lake_natron",
     "socotra_alien", "richat_eye", "derinkuyu_underground",
     "palacio_de_sal", "naoshima_art_island",
-    # 2026-06-13 ��ġ&����Ʈ SS/SSS Ȯ��
+    # 2026-06-13 비치&리조트 SS/SSS 확정
     "summer_beach",
     "surfer_goddess",
     "pool_goddess",
@@ -2167,12 +2165,12 @@ SS_TIER = {
     "coral_diving",
     "beach_bonfire_night",
     "hammock_resort",
-    # SSS ��ġ 4���� SS�� ����
+    # SSS 비치 4종도 SS에 포함
     "infinity_pool",
     "scuba_goddess",
     "spa_noir",
     "sunset_cruise",
-    # 2026-06-14 ��&ī���� SS Ȯ��
+    # 2026-06-14 팝&카와이 SS 확정
     "y2k_fairy",
     "pink_champagne",
     "cotton_candy",
@@ -2196,7 +2194,7 @@ SS_TIER = {
     "kdrama_chaebol_heir",
     "gangnam_luxury_glam",
     "harajuku_doll",
-    # 2026-06-14 ��&ī���� SSS 10���� SS�� ����
+    # 2026-06-14 팝&카와이 SSS 10종도 SS에 포함
     "cherry_pop",
     "hime_gyaru",
     "decora_kei",
@@ -2207,12 +2205,12 @@ SS_TIER = {
     "kdrama_villain_queen",
     "bubble_tea",
     "doll_house",
-    # SSS�� SS�� ���� (format_preset ����)
+    # SSS도 SS에 포함 (format_preset 로직)
     "angkor_dawn", "tikal_skyrise", "cenote_sacred", "waitomo_glow",
     "marble_caves_water", "bagan_balloon", "tigers_nest_cliff",
     "sheikh_zayed_dawn", "livraria_lello_staircase",
     "namib_star_desert", "ellora_rock_temple",
-    # 2026-06-13 v26 ���� ���帶ũ SS/SSS Ȯ��
+    # 2026-06-13 v26 월드 랜드마크 SS/SSS 확정
     "positano_cliff",
     "bruges_canal",
     "colosseum_dusk",
@@ -2227,7 +2225,7 @@ SS_TIER = {
     "chichen_itza_pyramid",
     "gobekli_tepe",
 
-    # 2026-06-18 ��&���� SS Ȯ�� (SSS ���� ��ü)
+    # 2026-06-18 핫&섹시 SS 확정 (SSS 포함 전체)
     "bodycon_power", "boudoir_noir", "lingerie_goddess", "silk_robe_only",
     "corset_queen", "sheer_negligee", "wet_silk_gown", "oil_goddess_gold",
     "rain_soaked_dress", "pool_wet_glam", "sweat_glam", "micro_dress_only",
@@ -2246,7 +2244,7 @@ SS_TIER = {
     "wet_editorial", "pool_edge_wet", "ocean_wave_body", "penthouse_bath",
     "silk_sheets_morning", "spa_private_steam", "bar_counter_glam",
     "after_party_suite", "tennis_short_dress",
-    # 2026-06-13 v27 ��&���� SS/SSS Ȯ��
+    # 2026-06-13 v27 핫&섹시 SS/SSS 확정
     "dressing_room_mirror",
     "vip_booth_neon",
     "pool_edge_wet",
@@ -2257,68 +2255,68 @@ SS_TIER = {
     "bar_counter_glam",
     "after_party_suite",
     "tennis_short_dress",
-    # 2026-06-15 ����&�׸� �׷�1 SS Ȯ�� (cherry_blossom~autumn_forest)
+    # 2026-06-15 계절&테마 그룹1 SS 확정 (cherry_blossom~autumn_forest)
     "cherry_blossom",
     "lavender_field",
     "spring_rain",
     "tulip_field",
     "autumn_forest",
-    # 2026-06-15 ����&�׸� �׷�2 SS Ȯ�� (sunflower_field~golden_autumn)
+    # 2026-06-15 계절&테마 그룹2 SS 확정 (sunflower_field~golden_autumn)
     "sunflower_field",
-    "greenhouse_eden",   # SSS�� SS�� ���� (format_preset ����)
+    "greenhouse_eden",   # SSS도 SS에 포함 (format_preset 로직)
     "tropical_night",
     "first_snow",
     "golden_autumn",
-    # 2026-06-15 harajuku_doll SSS�� SS�� ����
+    # 2026-06-15 harajuku_doll SSS도 SS에 포함
     "harajuku_doll",
-    # 2026-06-15 ����&�׸� �׷�3 SS Ȯ��
+    # 2026-06-15 계절&테마 그룹3 SS 확정
     "midsummer_heat",
     "rainy_season",
     "harvest_moon",
     "winter_solstice",
     "cherry_blossom_night",
-    # 2026-06-15 ����&�׸� �׷�4 SS Ȯ��
+    # 2026-06-15 계절&테마 그룹4 SS 확정
     "tropical_monsoon",
-    "halloween_glam",       # SSS�� SS�� ����
-    "new_year_glam",        # SSS�� SS�� ����
-    "sakura_night_glam",    # SSS�� SS�� ����
+    "halloween_glam",       # SSS도 SS에 포함
+    "new_year_glam",        # SSS도 SS에 포함
+    "sakura_night_glam",    # SSS도 SS에 포함
     "monsoon_goddess",
-    # 2026-06-15 �����丮��&���� �׷�1 SS Ȯ��
+    # 2026-06-15 에디토리얼&무드 그룹1 SS 확정
     "silhouette_only",
     "back_beauty",
     "collarbone_focus",
     "neck_elegance",
     "long_legs_focus",
-    # 2026-06-15 �����丮��&���� �׷�2 SS Ȯ�� (SSS ����)
+    # 2026-06-15 에디토리얼&무드 그룹2 SS 확정 (SSS 포함)
     "light_driven",
-    "backlit_silk",         # SSS�� SS�� ����
+    "backlit_silk",         # SSS도 SS에 포함
     "mirror_goddess",
-    "mirror_room",          # SSS�� SS�� ����
-    "eclipse_body",         # SSS�� SS�� ����
-    # 2026-06-15 �����丮��&���� �׷�3 SS Ȯ�� (SSS ����)
+    "mirror_room",          # SSS도 SS에 포함
+    "eclipse_body",         # SSS도 SS에 포함
+    # 2026-06-15 에디토리얼&무드 그룹3 SS 확정 (SSS 포함)
     "chrome_skin",
     "neon_body",
-    "plasma_aura",          # SSS�� SS�� ����
-    "molten_chrome",        # SSS�� SS�� ����
+    "plasma_aura",          # SSS도 SS에 포함
+    "molten_chrome",        # SSS도 SS에 포함
     "mercury_rising",
-    # 2026-06-15 �����丮��&���� �׷�4 SS Ȯ�� (SSS ����)
-    "mercury_pool",         # SSS�� SS�� ����
+    # 2026-06-15 에디토리얼&무드 그룹4 SS 확정 (SSS 포함)
+    "mercury_pool",         # SSS도 SS에 포함
     "titanium_body",
-    "snowflake_skin",       # SSS�� SS�� ����
+    "snowflake_skin",       # SSS도 SS에 포함
     "80s_power",
     "y2k_chrome",
-    # 2026-06-15 �����丮��&���� �׷�5 SS Ȯ��
+    # 2026-06-15 에디토리얼&무드 그룹5 SS 확정
     "bohemian_paris",
     "origami_couture",
     "wet_glass",
     "smoke_studio",
     "infrared_beauty",
-    # 2026-06-15 �����丮��&���� �׷�6 SS Ȯ�� (SSS ����)
+    # 2026-06-15 에디토리얼&무드 그룹6 SS 확정 (SSS 포함)
     "grain_film",
     "dreamy_soft_focus",
     "film_noir_glam",
-    "noir_femme_fatale",    # SSS�� SS�� ����
-    # 2026-06-21 �ڿ�&���� G1~G10 SS_TIER ��ġ
+    "noir_femme_fatale",    # SSS도 SS에 포함
+    # 2026-06-21 자연&원소 G1~G10 SS_TIER 패치
     "lava_flow",
     "heat_shimmer",
     "solar_flare",
@@ -2375,7 +2373,7 @@ SS_TIER = {
     "mist_vanguard",
     "tropical_storm",
 
-    # 2026-06-24 �Ŀ�&���� SSS (SS ����)
+    # 2026-06-24 파워&엣지 SSS (SS 포함)
     "valkyrie_storm",
     "fencer_noir",
     "martial_arts",
@@ -2435,7 +2433,7 @@ SS_TIER = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-    # 2026-06-24 �����ս�&��� G1+G2 SSS (SS ����)
+    # 2026-06-24 퍼포먼스&댄스 G1+G2 SSS (SS 포함)
     "flamenco_queen",
     "tango_passion",
     "ribbon_dance",
@@ -2447,7 +2445,7 @@ SS_TIER = {
     "masquerade_ball",
     "samba_carnival",
     "jazz_dance_glam",
-    # 2026-06-25 ���&��ƼŬ 30�� (SS ����)
+    # 2026-06-25 대기&파티클 30종 (SS 포함)
     "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
     "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
     "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
@@ -2459,15 +2457,15 @@ SS_TIER = {
     "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
     "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
     "firefly_night_field", "seed_pod_floating",
-    # 2026-06-25 ����ƽ&��Ƽ�� G1 (SS ����)
+    # 2026-06-25 에로틱&페티쉬 G1 (SS 포함)
     "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
     "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
     "wet_latex",
-    # 2026-06-25 ����ƽ&��Ƽ�� G2 (SS ����)
+    # 2026-06-25 에로틱&페티쉬 G2 (SS 포함)
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
     "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
 
-    # 2026-06-26 ����ƽ&��Ƽ�� G3~G12 SS (SSS ���� 51��)
+    # 2026-06-26 에로틱&페티쉬 G3~G12 SS (SSS 포함 51종)
     "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
     "suspension_art", "tape_bondage", "metal_bondage",
     "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
@@ -2486,7 +2484,7 @@ SS_TIER = {
     "corset_stockings",
 
 
-    # 2026-06-24 ��Ÿ��&��ũ 26�� (SS ����)
+    # 2026-06-24 판타지&다크 26종 (SS 포함)
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
     "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
     "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -2494,7 +2492,7 @@ SS_TIER = {
     "double_exposure_ethereal","oil_slick_noir",
     "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
 
-    # 2026-06-24 �Ƿ翧&������ 30�� (SS ����)
+    # 2026-06-24 실루엣&섀도우 30종 (SS 포함)
     "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
     "silhouette_spotlight_hair","silhouette_spotlight_dance","silhouette_spotlight_chair",
     "silhouette_spotlight_back","silhouette_spotlight_pole",
@@ -2507,10 +2505,10 @@ SS_TIER = {
     "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
     "silhouette_candle_boudoir","silhouette_smoke_studio",
 
-    # 2026-06-24 ��Ʈ&�۷ν� 30�� (SS ����, SSS 29�� + SS ���� 1��)
+    # 2026-06-24 웨트&글로스 30종 (SS 포함, SSS 29종 + SS 전용 1종)
     "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
     "hot_spring_steam","jacuzzi_bubbles",
-        # 2026-07-02 �ű� �߰�
+        # 2026-07-02 신규 추가
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -2532,8 +2530,8 @@ SS_TIER = {
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
     "bubble_bath_gloss","milk_bath_petals",
-    # 2026-07-02 ȯ�� ��ü �ٵ������� SS (22�� ��ü)
-    # 2026-07-02 �ٵ�������+�ǻ� �ͽ� �ݶ�
+    # 2026-07-02 환경 일체 바디페인팅 SS (22종 전체)
+    # 2026-07-02 바디페인팅+의상 믹스 콜라보
         "trio_bodypaint_latex_frame",
         "trio_bodypaint_gown_frame",
         "trio_bodypaint_leather_frame",
@@ -2553,7 +2551,7 @@ SS_TIER = {
         "trio_bikini_bodypaint_center",
         "trio_sheer_bodypaint_center",
         "trio_chrome_bodypaint_center",
-        # ?? ȯ�� ��ü �ٵ�������
+        # 🌀 환경 일체 바디페인팅
         "merge_butterfly_fabric",
     "merge_floral_wallpaper",
     "merge_leopard_fabric",
@@ -2577,7 +2575,7 @@ SS_TIER = {
     "merge_pollock_splatter",
     "merge_byzantine_mosaic",
 
-    # 2026-06-29 ��Ƽ �ٵ������� SS (57�� ��ü)
+    # 2026-06-29 멀티 바디페인팅 SS (57종 전체)
     "duo_fire_and_ice_bodypaint",
     "duo_day_and_night_bodypaint",
     "duo_bloom_and_void_bodypaint",
@@ -2632,7 +2630,7 @@ SS_TIER = {
     "quint_five_elements_asia_bodypaint",
     "quint_rainbow_five_bodypaint",
     "quint_five_oceans_bodypaint",
-    # 2026-06-26 �ѱ� ���� & ���� �۷��� SS (78�� ��ü)
+    # 2026-06-26 한국 역사 & 궁중 글래머 SS (78종 전체)
     "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
     "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
     "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
@@ -2664,7 +2662,7 @@ SS_TIER = {
 
 }
 
-# ������ ��ũ �׸� CSS ��������������������������������������������������������������������������������
+# ─── 다크 테마 CSS ────────────────────────────────────────
 BG       = "#1e1e1e"
 BG_SIDE  = "#252526"
 BG_INPUT = "#2d2d2d"
@@ -2723,57 +2721,57 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 </style>
 """, unsafe_allow_html=True)
 
-# ������ ��� ��������������������������������������������������������������������������������������������������
+# ─── 헤더 ─────────────────────────────────────────────────
 st.markdown('''
 <div style="padding:8px 0 20px;">
-  <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">? LumineX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine �� v4.4</div>
+  <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#c9a84c;">✦ LumineX</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Fashion Image Engine · v4.4</div>
 </div>
 ''', unsafe_allow_html=True)
 
-# ������ ���̵�� ������������������������������������������������������������������������������������������
+# ─── 사이드바 ─────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("### ?? ���� ����")
+    st.markdown("### ⚙️ 전역 설정")
     st.markdown("---")
-    global_platform = st.radio("??? ��� �÷���", options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"], index=0)
-    global_aspect   = st.selectbox("?? �̹��� ����", options=list(ASPECT_RATIOS.keys()), index=0, help="�� = �⺻�� ����")
-    global_realism      = st.toggle("?? �ǻ� ���", value=True)
-    global_art_fallback = st.toggle("?? ���� �� ��Ʈ ��Ÿ��", value=False, help="HIGH ���� ���� �� ��äȭ/��� �ڵ� ����")
+    global_platform = st.radio("🖥️ 출력 플랫폼", options=["Gemini", "ChatGPT (DALL-E)", "Midjourney"], index=0)
+    global_aspect   = st.selectbox("📐 이미지 비율", options=list(ASPECT_RATIOS.keys()), index=0, help="★ = 기본값 권장")
+    global_realism      = st.toggle("📷 실사 모드", value=True)
+    global_art_fallback = st.toggle("🎨 위험 시 아트 스타일", value=False, help="HIGH 위험 감지 시 수채화/흑백 자동 적용")
     st.markdown("---")
-    st.markdown("### ?? ���� �÷���")
-    global_video_platform = st.radio("���� ���� �÷���", options=["Veo 3 (Gemini)", "Kling AI", "Runway", "Hailuo"], index=0)
+    st.markdown("### 🎬 영상 플랫폼")
+    global_video_platform = st.radio("영상 생성 플랫폼", options=["Veo 3 (Gemini)", "Kling AI", "Runway", "Hailuo"], index=0)
     st.markdown("---")
-    platform_colors = {"Gemini": "??", "ChatGPT (DALL-E)": "??", "Midjourney": "??"}
-    st.markdown(f"**�÷���:** {platform_colors[global_platform]} `{global_platform}`")
-    st.markdown(f"**����:** `{global_aspect.split('?')[0].strip()}`")
+    platform_colors = {"Gemini": "🔵", "ChatGPT (DALL-E)": "🟢", "Midjourney": "🟣"}
+    st.markdown(f"**플랫폼:** {platform_colors[global_platform]} `{global_platform}`")
+    st.markdown(f"**비율:** `{global_aspect.split('—')[0].strip()}`")
     if global_platform == "Gemini":
-        st.markdown(f"**�ǻ�:** `{'ON ?' if global_realism else 'OFF'}`")
+        st.markdown(f"**실사:** `{'ON ✅' if global_realism else 'OFF'}`")
     st.markdown("---")
-    st.markdown("### ?? ����")
-    st.markdown("1. �÷��� ����\n2. �� ����\n3. ��� ����\n4. **������Ʈ ����** Ŭ��\n5. �ڵ�ڽ� Ŭ�� �� ����\n6. �ش� �÷����� �ٿ��ֱ�")
+    st.markdown("### 📌 사용법")
+    st.markdown("1. 플랫폼 선택\n2. 탭 선택\n3. 요소 선택\n4. **프롬프트 조합** 클릭\n5. 코드박스 클릭 → 복사\n6. 해당 플랫폼에 붙여넣기")
     st.markdown("---")
-    st.markdown("### ?? �÷��� ��")
+    st.markdown("### 💡 플랫폼 팁")
     if global_platform == "Gemini":
-        st.info("�ڿ��� ������. ��� ���Ҽ��� ���ƿ�.")
+        st.info("자연어 서술형. 길고 상세할수록 좋아요.")
     elif global_platform == "ChatGPT (DALL-E)":
-        st.success("Ű���� �߽�. ª�� �����ϰ�!")
+        st.success("키워드 중심. 짧고 강렬하게!")
     else:
-        st.warning("�±� ���� + --�Ķ���� ���.")
+        st.warning("태그 나열 + --파라미터 방식.")
     if global_platform == "Gemini":
         st.markdown("---")
-        st.markdown("### ?? Gemini ����")
-        if st.button("?? Gemini �� â ����", use_container_width=True, help="���� �ƶ� �ʱ�ȭ"):
+        st.markdown("### 🔄 Gemini 세션")
+        if st.button("🆕 Gemini 새 창 열기", use_container_width=True, help="누적 맥락 초기화"):
             import webbrowser
             webbrowser.open("https://gemini.google.com/app")
-        st.caption("?? ���� â �ݺ� ���� �� Ÿ��/��� ���� ����")
+        st.caption("💡 같은 창 반복 생성 시 타투/헤어 오염 주의")
     st.markdown("---")
-    st.markdown("### ?? ������ ��Ȳ")
+    st.markdown("### 📊 프리셋 현황")
     total = sum(len(v) for v in PRESET_CATEGORIES.values())
-    st.markdown(f"**�� ������:** `{total}��`")
-    st.markdown(f"**?? HOF tier:** `{len(HOF_TIER)}��`")
-    st.markdown(f"**SSS tier:** `{len(SSS_TIER)}��`")
-    st.markdown(f"**SS tier:** `{len(SS_TIER)}��`")
-    st.markdown(f"**ī�װ��:** `{len(PRESET_CATEGORIES)}��`")
+    st.markdown(f"**총 프리셋:** `{total}개`")
+    st.markdown(f"**🌟 HOF tier:** `{len(HOF_TIER)}개`")
+    st.markdown(f"**SSS tier:** `{len(SSS_TIER)}개`")
+    st.markdown(f"**SS tier:** `{len(SS_TIER)}개`")
+    st.markdown(f"**카테고리:** `{len(PRESET_CATEGORIES)}개`")
 
 
 def get_prompt(data: dict) -> str:
@@ -2785,39 +2783,39 @@ def get_prompt(data: dict) -> str:
         return build_midjourney_prompt(data, global_aspect)
 
 
-tab1, tab2, tab3, tab4 = st.tabs(["?? ������ ���", "??? ���� ����", "?? ���� ���", "?? ���� ������Ʈ"])
+tab1, tab2, tab3, tab4 = st.tabs(["🎨 프리셋 모드", "🛠️ 수동 조합", "🎲 랜덤 모드", "🎬 영상 프롬프트"])
 
-# ??????????????????????????????????????????????????????????
-# �� 1: ������ ���
-# ??????????????????????????????????????????????????????????
+# ══════════════════════════════════════════════════════════
+# 탭 1: 프리셋 모드
+# ══════════════════════════════════════════════════════════
 with tab1:
-    st.markdown("### ���������� ������Ʈ ����")
+    st.markdown("### 프리셋으로 프롬프트 생성")
 
     col_cat, col_tier, col_search = st.columns([2, 1, 1])
     with col_cat:
-        all_cats = ["?? ��ü"] + list(PRESET_CATEGORIES.keys())
-        selected_cat = st.selectbox("?? ī�װ�� ����", options=all_cats, index=0, key="preset_cat_filter")
+        all_cats = ["🌟 전체"] + list(PRESET_CATEGORIES.keys())
+        selected_cat = st.selectbox("📂 카테고리 필터", options=all_cats, index=0, key="preset_cat_filter")
     with col_tier:
-        tier_options = ["��ü Ƽ��", "?? HOF", "??? SSS", "?? SS", "? �Ϲ�"]
-        selected_tier = st.selectbox("?? Ƽ�� ����", options=tier_options, index=0, key="preset_tier_filter")
+        tier_options = ["전체 티어", "👑 HOF", "⭐⭐⭐ SSS", "⭐⭐ SS", "• 일반"]
+        selected_tier = st.selectbox("🏆 티어 필터", options=tier_options, index=0, key="preset_tier_filter")
     with col_search:
-        search_query = st.text_input("?? ������ �˻�", placeholder="�̸� �˻�...", key="preset_search")
+        search_query = st.text_input("🔍 프리셋 검색", placeholder="이름 검색...", key="preset_search")
 
     all_presets = list_presets()
-    if selected_cat == "?? ��ü":
+    if selected_cat == "🌟 전체":
         filtered_presets = all_presets
     else:
         cat_list = PRESET_CATEGORIES.get(selected_cat, [])
         filtered_presets = [p for p in all_presets if p in cat_list]
 
-    # Ƽ�� ���� ����
-    if selected_tier == "?? HOF":
+    # 티어 필터 적용
+    if selected_tier == "👑 HOF":
         filtered_presets = [p for p in filtered_presets if p in HOF_TIER]
-    elif selected_tier == "??? SSS":
+    elif selected_tier == "⭐⭐⭐ SSS":
         filtered_presets = [p for p in filtered_presets if p in SSS_TIER]
-    elif selected_tier == "?? SS":
+    elif selected_tier == "⭐⭐ SS":
         filtered_presets = [p for p in filtered_presets if p in SS_TIER and p not in SSS_TIER]
-    elif selected_tier == "? �Ϲ�":
+    elif selected_tier == "• 일반":
         filtered_presets = [p for p in filtered_presets if p not in SS_TIER]
 
     if search_query:
@@ -2825,73 +2823,73 @@ with tab1:
 
     def format_preset(name):
         if name in HOF_TIER:
-            return f"?? {name} [HOF]"
+            return f"👑 {name} [HOF]"
         if name in SSS_TIER:
-            return f"?? {name} [SSS]"
+            return f"🌟 {name} [SSS]"
         if name in SS_TIER:
-            return f"? {name} [SS]"
-        return f"? {name}"
+            return f"⭐ {name} [SS]"
+        return f"• {name}"
 
     col1, col2 = st.columns([2, 1])
     with col1:
         if filtered_presets:
             selected_preset = st.selectbox(
-                f"?? ������ ���� ({len(filtered_presets)}��)",
+                f"🎨 프리셋 선택 ({len(filtered_presets)}개)",
                 options=filtered_presets,
                 format_func=format_preset
             )
         else:
-            st.warning("�ش� ī�װ���� �������� �����.")
+            st.warning("해당 카테고리에 프리셋이 없어요.")
             selected_preset = None
     with col2:
-        if selected_cat != "?? ��ü":
+        if selected_cat != "🌟 전체":
             ss_count = sum(1 for p in filtered_presets if p in SS_TIER and p not in SSS_TIER)
             sss_count = sum(1 for p in filtered_presets if p in SSS_TIER)
             st.markdown(f"""
 <div style="background:{BG_CARD};border:1px solid {BORDER};border-radius:8px;padding:10px 14px;margin-top:28px;">
-  <div style="font-size:0.65rem;color:{TEXT_DIM};letter-spacing:1px;">ī�װ�� ��Ȳ</div>
-  <div style="font-size:1.1rem;font-weight:700;color:{GOLD};margin-top:4px;">{len(filtered_presets)}��</div>
-  <div style="font-size:0.7rem;color:#f0c040;">?? SSS tier {sss_count}��</div>
-  <div style="font-size:0.7rem;color:{TEXT_DIM};">? SS tier {ss_count}��</div>
+  <div style="font-size:0.65rem;color:{TEXT_DIM};letter-spacing:1px;">카테고리 현황</div>
+  <div style="font-size:1.1rem;font-weight:700;color:{GOLD};margin-top:4px;">{len(filtered_presets)}개</div>
+  <div style="font-size:0.7rem;color:#f0c040;">🌟 SSS tier {sss_count}개</div>
+  <div style="font-size:0.7rem;color:{TEXT_DIM};">⭐ SS tier {ss_count}개</div>
 </div>
 """, unsafe_allow_html=True)
 
     if not selected_preset:
         st.stop()
 
-    NONE = "None ? ������ �⺻�� ���"
+    NONE = "None — 프리셋 기본값 사용"
     col1, col2, col3 = st.columns(3)
     with col1:
-        preset_appearance  = st.selectbox("?? ����/����",       [NONE] + list(MODEL_APPEARANCE.keys()), key="preset_appearance")
-        preset_age         = st.selectbox("?? ���ɴ�",          [NONE] + list(AGE_APPEARANCE.keys()),   key="preset_age")
-        preset_body        = st.selectbox("?? ü��",            [NONE] + list(MODEL_TYPES.keys()),      key="preset_body")
-        preset_outfit      = st.selectbox("?? �ǻ�",            [NONE] + list(OUTFIT_TYPES.keys()),     key="preset_outfit")
-        preset_material    = st.selectbox("?? ����",            [NONE] + list(MATERIALS.keys()),        key="preset_material")
-        preset_footwear    = st.selectbox("?? �Ź�",            [NONE] + list(FOOTWEAR.keys()),         key="preset_footwear")
-        preset_nails       = st.selectbox("?? ����",            [NONE] + list(NAILS.keys()),            key="preset_nails")
-        preset_skin_detail = st.selectbox("?? �Ǻ� ������",     [NONE] + list(SKIN_DETAILS.keys()),     key="preset_skin_detail")
-        preset_body_oil    = st.selectbox("? �ٵ� ����",        [NONE] + list(BODY_OIL.keys()),         key="preset_body_oil")
+        preset_appearance  = st.selectbox("👩 인종/국적",       [NONE] + list(MODEL_APPEARANCE.keys()), key="preset_appearance")
+        preset_age         = st.selectbox("🎂 연령대",          [NONE] + list(AGE_APPEARANCE.keys()),   key="preset_age")
+        preset_body        = st.selectbox("👤 체형",            [NONE] + list(MODEL_TYPES.keys()),      key="preset_body")
+        preset_outfit      = st.selectbox("👗 의상",            [NONE] + list(OUTFIT_TYPES.keys()),     key="preset_outfit")
+        preset_material    = st.selectbox("🧵 소재",            [NONE] + list(MATERIALS.keys()),        key="preset_material")
+        preset_footwear    = st.selectbox("👠 신발",            [NONE] + list(FOOTWEAR.keys()),         key="preset_footwear")
+        preset_nails       = st.selectbox("💅 네일",            [NONE] + list(NAILS.keys()),            key="preset_nails")
+        preset_skin_detail = st.selectbox("🌿 피부 디테일",     [NONE] + list(SKIN_DETAILS.keys()),     key="preset_skin_detail")
+        preset_body_oil    = st.selectbox("✨ 바디 오일",        [NONE] + list(BODY_OIL.keys()),         key="preset_body_oil")
     with col2:
-        preset_hair_style  = st.selectbox("?? ��Ÿ��",      [NONE] + list(HAIR_STYLES.keys()),      key="preset_hair_style")
-        preset_pose        = st.selectbox("?? ����",            [NONE] + list(POSES.keys()),            key="preset_pose")
-        preset_framing     = st.selectbox("??? �����̹�",        [NONE] + list(FRAMING.keys()),          key="preset_framing")
-        preset_angle       = st.selectbox("?? ī�޶� �ޱ�",     [NONE] + list(CAMERA_ANGLES.keys()),    key="preset_angle")
-        preset_lighting    = st.selectbox("?? ����",            [NONE] + list(LIGHTING.keys()),         key="preset_lighting")
-        preset_color_grade = st.selectbox("?? ����",            [NONE] + list(COLOR_GRADES.keys()),     key="preset_color_grade")
-        preset_style       = st.selectbox("?? ��Ÿ��",          [NONE] + list(STYLES.keys()),           key="preset_style")
-        preset_cover_style = st.selectbox("?? Ŀ�� ��Ÿ��",     [NONE] + list(COVER_STYLES.keys()),     key="preset_cover_style")
+        preset_hair_style  = st.selectbox("💇 헤어스타일",      [NONE] + list(HAIR_STYLES.keys()),      key="preset_hair_style")
+        preset_pose        = st.selectbox("💃 포즈",            [NONE] + list(POSES.keys()),            key="preset_pose")
+        preset_framing     = st.selectbox("🖼️ 프레이밍",        [NONE] + list(FRAMING.keys()),          key="preset_framing")
+        preset_angle       = st.selectbox("📸 카메라 앵글",     [NONE] + list(CAMERA_ANGLES.keys()),    key="preset_angle")
+        preset_lighting    = st.selectbox("💡 조명",            [NONE] + list(LIGHTING.keys()),         key="preset_lighting")
+        preset_color_grade = st.selectbox("🎨 색감",            [NONE] + list(COLOR_GRADES.keys()),     key="preset_color_grade")
+        preset_style       = st.selectbox("🎬 스타일",          [NONE] + list(STYLES.keys()),           key="preset_style")
+        preset_cover_style = st.selectbox("📰 커버 스타일",     [NONE] + list(COVER_STYLES.keys()),     key="preset_cover_style")
     with col3:
-        preset_environment = st.selectbox("??? ȯ��",            [NONE] + list(ENVIRONMENTS.keys()),     key="preset_environment")
-        preset_weather     = st.selectbox("??? ����",            [NONE] + list(WEATHER.keys()),          key="preset_weather")
-        preset_image_style = st.selectbox("?? �̹��� ��Ÿ��",   [NONE] + list(IMAGE_STYLE.keys()),      key="preset_image_style")
-        preset_special_fx  = st.selectbox("?? Ư�� ȿ��",       [NONE] + list(SPECIAL_EFFECTS.keys()),  key="preset_special_fx")
-        preset_mood        = st.selectbox("?? ����",            [NONE] + list(MOOD.keys()),             key="preset_mood")
+        preset_environment = st.selectbox("🏙️ 환경",            [NONE] + list(ENVIRONMENTS.keys()),     key="preset_environment")
+        preset_weather     = st.selectbox("🌦️ 날씨",            [NONE] + list(WEATHER.keys()),          key="preset_weather")
+        preset_image_style = st.selectbox("📐 이미지 스타일",   [NONE] + list(IMAGE_STYLE.keys()),      key="preset_image_style")
+        preset_special_fx  = st.selectbox("🌈 특수 효과",       [NONE] + list(SPECIAL_EFFECTS.keys()),  key="preset_special_fx")
+        preset_mood        = st.selectbox("🎭 무드",            [NONE] + list(MOOD.keys()),             key="preset_mood")
 
     col_a, col_b, _ = st.columns([1, 1, 2])
     with col_a:
-        btn_ai    = st.button("?? AI ����",   use_container_width=True, type="primary", key="preset_btn_ai")
+        btn_ai    = st.button("🤖 AI 생성",   use_container_width=True, type="primary", key="preset_btn_ai")
     with col_b:
-        btn_quick = st.button("? ���� ����", use_container_width=True, key="preset_btn_quick")
+        btn_quick = st.button("⚡ 빠른 생성", use_container_width=True, key="preset_btn_quick")
 
     if "preset_prompt"   not in st.session_state: st.session_state.preset_prompt   = ""
     if "preset_selected" not in st.session_state: st.session_state.preset_selected = ""
@@ -2946,7 +2944,7 @@ with tab1:
 
     if btn_ai and selected_preset:
         st.session_state.preset_prompt = ""
-        with st.spinner("Claude�� ������Ʈ ���� ��..."):
+        with st.spinner("Claude가 프롬프트 생성 중..."):
             try:
                 raw       = generate_prompt_with_ai(selected_preset)
                 overrides = build_preset_overrides()
@@ -2958,7 +2956,7 @@ with tab1:
                 if aspect_desc: raw += f" {aspect_desc}."
                 st.session_state.preset_prompt = raw
             except Exception as e:
-                st.error(f"����: {str(e)}")
+                st.error(f"오류: {str(e)}")
 
     if btn_quick and selected_preset:
         st.session_state.preset_prompt = ""
@@ -2969,26 +2967,26 @@ with tab1:
         elif global_platform == "ChatGPT (DALL-E)":
             raw += f" {aspect_desc}. Photorealistic, hyperrealistic skin texture, award-winning fashion photography."
         else:
-            ar = {"���� 2:3 ? �ι� �⺻":"2:3","���� 3:4 ? ���ż�":"3:4","���� 16:9 ? �ó׸�ƽ":"16:9","���� 4:3 ? ȭ��":"4:3","������ 1:1 ? �ν�Ÿ":"1:1"}.get(global_aspect, "2:3")
+            ar = {"세로 2:3 — 인물 기본":"2:3","세로 3:4 — 전신샷":"3:4","가로 16:9 — 시네마틱":"16:9","가로 4:3 — 화보":"4:3","정방형 1:1 — 인스타":"1:1"}.get(global_aspect, "2:3")
             raw += f" --ar {ar} --style raw --q 2"
         st.session_state.preset_prompt = raw
 
     if st.session_state.preset_prompt:
-        st.text_area("������ ������Ʈ", value=st.session_state.preset_prompt, height=160)
+        st.text_area("생성된 프롬프트", value=st.session_state.preset_prompt, height=160)
         st.code(st.session_state.preset_prompt, language=None)
-        st.caption(f"?? ���� �� {global_platform}�� �ٿ���������!")
+        st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
-# ??????????????????????????????????????????????????????????
-# �� 2: ���� ����
-# ??????????????????????????????????????????????????????????
+# ══════════════════════════════════════════════════════════
+# 탭 2: 수동 조합
+# ══════════════════════════════════════════════════════════
 with tab2:
-    st.markdown("### ��Һ� ���� ����")
-    st.caption("?? �ٽ� ���(�ܸ�/ü��/�ǻ�/ȯ��)�� �����ص� ���� ������Ʈ�� ���Ϳ�.")
+    st.markdown("### 요소별 수동 조합")
+    st.caption("💡 핵심 요소(외모/체형/의상/환경)만 선택해도 좋은 프롬프트가 나와요.")
 
-    if st.button("?? ��ü �������� ä���"):
+    if st.button("🎲 전체 랜덤으로 채우기"):
         def rnd(d):
-            keys = [k for k in d.keys() if k != "����"]
-            return random.choice(keys) if keys else "����"
+            keys = [k for k in d.keys() if k != "없음"]
+            return random.choice(keys) if keys else "없음"
         st.session_state.r_appearance  = rnd(MODEL_APPEARANCE)
         st.session_state.r_model       = rnd(MODEL_TYPES)
         st.session_state.r_outfit      = rnd(OUTFIT_TYPES)
@@ -2998,7 +2996,7 @@ with tab2:
         st.session_state.r_framing     = rnd(FRAMING)
         st.session_state.r_angle       = rnd(CAMERA_ANGLES)
         st.session_state.r_style       = rnd(STYLES)
-        st.session_state.r_cover_style = "����"
+        st.session_state.r_cover_style = "없음"
         st.session_state.r_camera      = rnd(CAMERAS)
         st.session_state.r_pose        = rnd(POSES)
         st.session_state.r_expression  = rnd(EXPRESSION)
@@ -3007,7 +3005,7 @@ with tab2:
         st.session_state.r_hair_color  = rnd(HAIR_COLORS)
         st.session_state.r_makeup      = rnd(MAKEUP)
         def rnd_maybe(d, prob=0.5):
-            return rnd(d) if random.random() < prob else "����"
+            return rnd(d) if random.random() < prob else "없음"
         st.session_state.r_footwear        = rnd_maybe(FOOTWEAR,       0.50)
         st.session_state.r_color_grade     = rnd_maybe(COLOR_GRADES,   0.50)
         st.session_state.r_accessories     = rnd_maybe(ACCESSORIES,    0.40)
@@ -3026,15 +3024,15 @@ with tab2:
         st.session_state.r_skin_detail     = rnd_maybe(SKIN_DETAILS,   0.20)
         st.session_state.r_nails           = rnd_maybe(NAILS,          0.30)
         st.session_state.r_cover_style     = rnd_maybe(COVER_STYLES,   0.20)
-        st.session_state.r_age         = "����"
-        st.session_state.r_model_count = "1�� ? �̱� �� (�⺻)"
-        st.session_state.r_body_weight = "����"
-        st.session_state.r_bust_size   = "����"
-        st.session_state.r_hip_size    = "����"
+        st.session_state.r_age         = "없음"
+        st.session_state.r_model_count = "1명 — 싱글 모델 (기본)"
+        st.session_state.r_body_weight = "없음"
+        st.session_state.r_bust_size   = "없음"
+        st.session_state.r_hip_size    = "없음"
         st.session_state["use_separate_outfit"] = st.session_state.get("use_separate_outfit", False)
         if st.session_state.get("use_separate_outfit", False):
-            top_keys = [k for k in TOP_TYPES.keys() if k != "���� (�ǻ� Ÿ�� ���)"]
-            bot_keys = [k for k in BOTTOM_TYPES.keys() if k != "���� (�ǻ� Ÿ�� ���)"]
+            top_keys = [k for k in TOP_TYPES.keys() if k != "없음 (의상 타입 사용)"]
+            bot_keys = [k for k in BOTTOM_TYPES.keys() if k != "없음 (의상 타입 사용)"]
             if top_keys: st.session_state["r_top_type"] = random.choice(top_keys)
             if bot_keys: st.session_state["r_bottom_type"] = random.choice(bot_keys)
         st.rerun()
@@ -3046,130 +3044,130 @@ with tab2:
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown("##### ?? ��")
-        appearance  = st.selectbox("?? �ܸ� ? ����/����",          list(MODEL_APPEARANCE.keys()), index=idx(MODEL_APPEARANCE, "r_appearance"))
-        age         = st.selectbox("?? ���ɴ�",                     list(AGE_APPEARANCE.keys()),   index=idx(AGE_APPEARANCE,   "r_age"))
-        model_type  = st.selectbox("?? ü���� ����",               list(MODEL_TYPES.keys()),       index=idx(MODEL_TYPES,      "r_model"))
-        body_weight = st.selectbox("?? ü�� ����",                 list(BODY_WEIGHT.keys()),       index=idx(BODY_WEIGHT,      "r_body_weight"))
-        bust_size   = st.selectbox("?? ���� ����",                  list(BUST_SIZE.keys()),         index=idx(BUST_SIZE,        "r_bust_size"))
-        hip_size    = st.selectbox("?? �� ����",                   list(HIP_SIZE.keys()),          index=idx(HIP_SIZE,         "r_hip_size"))
-        skin_tone   = st.selectbox("?? �Ǻ� ��/����",              list(SKIN_TONES.keys()),        index=idx(SKIN_TONES,       "r_skin_tone"))
-        body_oil    = st.selectbox("? �ٵ� ����/�۷ν�",           list(BODY_OIL.keys()),          index=idx(BODY_OIL,         "r_body_oil"))
-        expression  = st.selectbox("?? ǥ��/����",                 list(EXPRESSION.keys()),        index=idx(EXPRESSION,       "r_expression"))
-        tattoo      = st.selectbox("?? ����/�ٵ��Ʈ",              list(TATTOO.keys()),            index=idx(TATTOO,           "r_tattoo"))
-        skin_detail = st.selectbox("?? �Ǻ� ������",               list(SKIN_DETAILS.keys()),      index=idx(SKIN_DETAILS,     "r_skin_detail"))
-        nails       = st.selectbox("?? ����",                      list(NAILS.keys()),             index=idx(NAILS,            "r_nails"))
-        model_count = st.selectbox("?? �� ��",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
+        st.markdown("##### 👤 모델")
+        appearance  = st.selectbox("👩 외모 — 인종/국적",          list(MODEL_APPEARANCE.keys()), index=idx(MODEL_APPEARANCE, "r_appearance"))
+        age         = st.selectbox("🎂 연령대",                     list(AGE_APPEARANCE.keys()),   index=idx(AGE_APPEARANCE,   "r_age"))
+        model_type  = st.selectbox("👤 체형과 비율",               list(MODEL_TYPES.keys()),       index=idx(MODEL_TYPES,      "r_model"))
+        body_weight = st.selectbox("⚖️ 체형 보정",                 list(BODY_WEIGHT.keys()),       index=idx(BODY_WEIGHT,      "r_body_weight"))
+        bust_size   = st.selectbox("👙 가슴 보정",                  list(BUST_SIZE.keys()),         index=idx(BUST_SIZE,        "r_bust_size"))
+        hip_size    = st.selectbox("🍑 힙 보정",                   list(HIP_SIZE.keys()),          index=idx(HIP_SIZE,         "r_hip_size"))
+        skin_tone   = st.selectbox("🌊 피부 톤/질감",              list(SKIN_TONES.keys()),        index=idx(SKIN_TONES,       "r_skin_tone"))
+        body_oil    = st.selectbox("✨ 바디 오일/글로스",           list(BODY_OIL.keys()),          index=idx(BODY_OIL,         "r_body_oil"))
+        expression  = st.selectbox("😏 표정/눈빛",                 list(EXPRESSION.keys()),        index=idx(EXPRESSION,       "r_expression"))
+        tattoo      = st.selectbox("🎨 문신/바디아트",              list(TATTOO.keys()),            index=idx(TATTOO,           "r_tattoo"))
+        skin_detail = st.selectbox("🌿 피부 디테일",               list(SKIN_DETAILS.keys()),      index=idx(SKIN_DETAILS,     "r_skin_detail"))
+        nails       = st.selectbox("💅 네일",                      list(NAILS.keys()),             index=idx(NAILS,            "r_nails"))
+        model_count = st.selectbox("👥 모델 수",                   list(MODEL_COUNT.keys()),       index=idx(MODEL_COUNT,      "r_model_count"))
     with col2:
-        st.markdown("##### ?? ��Ÿ��")
-        use_separate = st.checkbox("?? ������ �и� ����", value=False, key="use_separate_outfit", help="����+���Ǹ� ���� ������ ����")
+        st.markdown("##### 👗 스타일")
+        use_separate = st.checkbox("✂️ 상하의 분리 선택", value=False, key="use_separate_outfit", help="상의+하의를 각각 선택해 조합")
         if use_separate:
-            top_type    = st.selectbox("?? ����",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
-            bottom_type = st.selectbox("?? ����",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
-            top_label    = top_type.split("?")[0].strip()    if top_type    != "���� (�ǻ� Ÿ�� ���)" else "����"
-            bottom_label = bottom_type.split("?")[0].strip() if bottom_type != "���� (�ǻ� Ÿ�� ���)" else "����"
+            top_type    = st.selectbox("👕 상의",  list(TOP_TYPES.keys()),    index=0, key="r_top_type")
+            bottom_type = st.selectbox("👖 하의",  list(BOTTOM_TYPES.keys()), index=0, key="r_bottom_type")
+            top_label    = top_type.split("—")[0].strip()    if top_type    != "없음 (의상 타입 사용)" else "없음"
+            bottom_label = bottom_type.split("—")[0].strip() if bottom_type != "없음 (의상 타입 사용)" else "없음"
             st.markdown(f"""
 <div style="background:#2a2a2a;border:1px solid #c9a84c33;border-radius:8px;padding:8px 12px;margin:4px 0;">
-  <span style="font-size:0.7rem;color:#888;letter-spacing:1px;">���õ� ����</span><br>
-  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;margin-right:4px;">?? {top_label}</span>
+  <span style="font-size:0.7rem;color:#888;letter-spacing:1px;">선택된 조합</span><br>
+  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;margin-right:4px;">👕 {top_label}</span>
   <span style="color:#555;margin-right:4px;">+</span>
-  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;">?? {bottom_label}</span>
+  <span style="background:#c9a84c22;border:1px solid #c9a84c55;border-radius:4px;padding:2px 8px;font-size:0.78rem;color:#c9a84c;">👖 {bottom_label}</span>
 </div>
 """, unsafe_allow_html=True)
             outfit = list(OUTFIT_TYPES.keys())[0]
         else:
-            outfit      = st.selectbox("?? �ǻ� Ÿ��",  list(OUTFIT_TYPES.keys()), index=idx(OUTFIT_TYPES, "r_outfit"))
-            top_type    = "���� (�ǻ� Ÿ�� ���)"
-            bottom_type = "���� (�ǻ� Ÿ�� ���)"
-        material    = st.selectbox("?? ���� ? �ʰ� ����",          list(MATERIALS.keys()),         index=idx(MATERIALS,        "r_material"))
-        footwear    = st.selectbox("?? �Ź�",                      list(FOOTWEAR.keys()),          index=idx(FOOTWEAR,         "r_footwear"))
-        pose        = st.selectbox("?? ���� ? �ڼ��� ����",        list(POSES.keys()),             index=idx(POSES,            "r_pose"))
-        hair_style  = st.selectbox("?? ��Ÿ��",                list(HAIR_STYLES.keys()),       index=idx(HAIR_STYLES,      "r_hair_style"))
-        hair_color  = st.selectbox("?? ����÷�",                 list(HAIR_COLORS.keys()),       index=idx(HAIR_COLORS,      "r_hair_color"))
-        makeup      = st.selectbox("?? ����ũ��",                  list(MAKEUP.keys()),            index=idx(MAKEUP,           "r_makeup"))
-        accessories = st.selectbox("?? �׼�����",                  list(ACCESSORIES.keys()),       index=idx(ACCESSORIES,      "r_accessories"))
-        props       = st.selectbox("?? Ư�� ��ǰ",                 list(PROPS.keys()),             index=idx(PROPS,            "r_props"))
-        era         = st.selectbox("?? �ô�/�ð���",                list(ERA.keys()),               index=idx(ERA,              "r_era"))
-        concept     = st.selectbox("?? ����/�丣�ҳ�",              list(CONCEPT.keys()),           index=idx(CONCEPT,          "r_concept"))
+            outfit      = st.selectbox("👗 의상 타입",  list(OUTFIT_TYPES.keys()), index=idx(OUTFIT_TYPES, "r_outfit"))
+            top_type    = "없음 (의상 타입 사용)"
+            bottom_type = "없음 (의상 타입 사용)"
+        material    = st.selectbox("🧵 소재 — 옷감 질감",          list(MATERIALS.keys()),         index=idx(MATERIALS,        "r_material"))
+        footwear    = st.selectbox("👠 신발",                      list(FOOTWEAR.keys()),          index=idx(FOOTWEAR,         "r_footwear"))
+        pose        = st.selectbox("💃 포즈 — 자세와 동작",        list(POSES.keys()),             index=idx(POSES,            "r_pose"))
+        hair_style  = st.selectbox("💇 헤어스타일",                list(HAIR_STYLES.keys()),       index=idx(HAIR_STYLES,      "r_hair_style"))
+        hair_color  = st.selectbox("🎨 헤어컬러",                 list(HAIR_COLORS.keys()),       index=idx(HAIR_COLORS,      "r_hair_color"))
+        makeup      = st.selectbox("💄 메이크업",                  list(MAKEUP.keys()),            index=idx(MAKEUP,           "r_makeup"))
+        accessories = st.selectbox("💍 액세서리",                  list(ACCESSORIES.keys()),       index=idx(ACCESSORIES,      "r_accessories"))
+        props       = st.selectbox("🎪 특별 소품",                 list(PROPS.keys()),             index=idx(PROPS,            "r_props"))
+        era         = st.selectbox("🌍 시대/시간대",                list(ERA.keys()),               index=idx(ERA,              "r_era"))
+        concept     = st.selectbox("🎭 컨셉/페르소나",              list(CONCEPT.keys()),           index=idx(CONCEPT,          "r_concept"))
     with col3:
-        st.markdown("##### ??? ȯ��")
-        environment = st.selectbox("??? �Կ� ���",                list(ENVIRONMENTS.keys()),      index=idx(ENVIRONMENTS,     "r_env"))
-        weather     = st.selectbox("??? ����/���",                 list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
-        time_of_day = st.selectbox("?? �Կ� �ð���",               list(TIME_OF_DAY.keys()),       index=idx(TIME_OF_DAY,      "r_time_of_day"))
-        lighting    = st.selectbox("?? ���� ? ���� ������",        list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
-        framing     = st.selectbox("??? �����̹� ? ����/ũ��",      list(FRAMING.keys()),           index=idx(FRAMING,          "r_framing"))
-        angle       = st.selectbox("?? ī�޶� �ޱ�",               list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
-        camera      = st.selectbox("?? ī�޶� ? ���",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
-        lens_effect = st.selectbox("?? ����/���� ȿ��",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
-        style       = st.selectbox("?? ��Ÿ�� ? ȭ�� ���۷���",    list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
-        cover_style = st.selectbox("?? Ŀ�� ��Ÿ�� ? ����/ȭ��",    list(COVER_STYLES.keys()),      index=idx(COVER_STYLES,     "r_cover_style"))
-        color_grade = st.selectbox("??? ���� ? �÷� �׷��̵�",     list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
-        mood        = st.selectbox("?? ����/������",               list(MOOD.keys()),              index=idx(MOOD,             "r_mood"))
-        special_fx  = st.selectbox("?? Ư�� ȿ��",                 list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
-        img_style   = st.selectbox("?? �̹��� ��Ÿ��",             list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
-        bg_crowd    = st.selectbox("?? ��� �ι�",                 list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
+        st.markdown("##### 🏙️ 환경")
+        environment = st.selectbox("🏙️ 촬영 장소",                list(ENVIRONMENTS.keys()),      index=idx(ENVIRONMENTS,     "r_env"))
+        weather     = st.selectbox("🌦️ 날씨/기상",                 list(WEATHER.keys()),           index=idx(WEATHER,          "r_weather"))
+        time_of_day = st.selectbox("🕐 촬영 시간대",               list(TIME_OF_DAY.keys()),       index=idx(TIME_OF_DAY,      "r_time_of_day"))
+        lighting    = st.selectbox("💡 조명 — 빛의 분위기",        list(LIGHTING.keys()),          index=idx(LIGHTING,         "r_light"))
+        framing     = st.selectbox("🖼️ 프레이밍 — 구도/크기",      list(FRAMING.keys()),           index=idx(FRAMING,          "r_framing"))
+        angle       = st.selectbox("📸 카메라 앵글",               list(CAMERA_ANGLES.keys()),     index=idx(CAMERA_ANGLES,    "r_angle"))
+        camera      = st.selectbox("📷 카메라 — 장비",             list(CAMERAS.keys()),           index=idx(CAMERAS,          "r_camera"))
+        lens_effect = st.selectbox("🔭 렌즈/초점 효과",            list(LENS_EFFECT.keys()),       index=idx(LENS_EFFECT,      "r_lens_effect"))
+        style       = st.selectbox("🎬 스타일 — 화보 레퍼런스",    list(STYLES.keys()),            index=idx(STYLES,           "r_style"))
+        cover_style = st.selectbox("📰 커버 스타일 — 잡지/화보",    list(COVER_STYLES.keys()),      index=idx(COVER_STYLES,     "r_cover_style"))
+        color_grade = st.selectbox("🖼️ 색감 — 컬러 그레이딩",     list(COLOR_GRADES.keys()),      index=idx(COLOR_GRADES,     "r_color_grade"))
+        mood        = st.selectbox("🎭 무드/분위기",               list(MOOD.keys()),              index=idx(MOOD,             "r_mood"))
+        special_fx  = st.selectbox("🌈 특수 효과",                 list(SPECIAL_EFFECTS.keys()),   index=idx(SPECIAL_EFFECTS,  "r_special_effects"))
+        img_style   = st.selectbox("📐 이미지 스타일",             list(IMAGE_STYLE.keys()),       index=idx(IMAGE_STYLE,      "r_image_style"))
+        bg_crowd    = st.selectbox("👥 배경 인물",                 list(BG_CROWD.keys()),          index=idx(BG_CROWD,         "r_bg_crowd"))
 
     rec = get_combo_recommendations(model_type)
     if rec:
-        with st.expander("? �� ü���� �� �´� ���� ��õ", expanded=False):
+        with st.expander("✅ 이 체형에 잘 맞는 조합 추천", expanded=False):
             rc1, rc2, rc3 = st.columns(3)
             with rc1:
-                st.markdown("**?? �ǻ�**")
-                for o in rec.get("outfit", []): st.markdown(f"{'?? ' if outfit == o else '? '}{o.split('?')[0].strip()}")
-                st.markdown("**?? ����**")
-                for m in rec.get("material", []): st.markdown(f"{'?? ' if material == m else '? '}{m.split('?')[0].strip()}")
+                st.markdown("**👗 의상**")
+                for o in rec.get("outfit", []): st.markdown(f"{'🟡 ' if outfit == o else '• '}{o.split('—')[0].strip()}")
+                st.markdown("**🧵 소재**")
+                for m in rec.get("material", []): st.markdown(f"{'🟡 ' if material == m else '• '}{m.split('—')[0].strip()}")
             with rc2:
-                st.markdown("**?? �ޱ�**")
-                for a in rec.get("angle", []): st.markdown(f"{'?? ' if angle == a else '? '}{a.split('?')[0].strip()}")
-                st.markdown("**?? ����**")
-                for p in rec.get("pose", []): st.markdown(f"{'?? ' if pose == p else '? '}{p.split('?')[0].strip()}")
+                st.markdown("**📸 앵글**")
+                for a in rec.get("angle", []): st.markdown(f"{'🟡 ' if angle == a else '• '}{a.split('—')[0].strip()}")
+                st.markdown("**💃 포즈**")
+                for p in rec.get("pose", []): st.markdown(f"{'🟡 ' if pose == p else '• '}{p.split('—')[0].strip()}")
             with rc3:
-                st.markdown("**?? ��Ÿ��**")
-                for s in rec.get("style", []): st.markdown(f"{'?? ' if style == s else '? '}{s.split('?')[0].strip()}")
-                st.markdown("**??? ȯ��**")
-                for e in rec.get("env", []): st.markdown(f"{'?? ' if environment == e else '? '}{e.split('?')[0].strip()}")
-            st.caption("?? = ���� ���õ�  ?  = ��õ �׸�")
+                st.markdown("**🎬 스타일**")
+                for s in rec.get("style", []): st.markdown(f"{'🟡 ' if style == s else '• '}{s.split('—')[0].strip()}")
+                st.markdown("**🏙️ 환경**")
+                for e in rec.get("env", []): st.markdown(f"{'🟡 ' if environment == e else '• '}{e.split('—')[0].strip()}")
+            st.caption("🟡 = 현재 선택됨  •  = 추천 항목")
 
     conflicts = check_conflicts(angle, pose, style, environment, model_type, material, weather)
     if conflicts:
-        for c in conflicts: st.warning(f"?? {c}")
+        for c in conflicts: st.warning(f"⚠️ {c}")
 
     col_x, col_y, col_z, _ = st.columns([1, 1, 1, 1])
-    with col_x: btn_build      = st.button("? ������Ʈ ����", type="primary", use_container_width=True)
-    with col_y: btn_ai_enhance = st.button("?? AI�� ��ȭ", use_container_width=True)
-    with col_z: btn_ai_review  = st.button("?? AI �˼�", use_container_width=True)
+    with col_x: btn_build      = st.button("✨ 프롬프트 조합", type="primary", use_container_width=True)
+    with col_y: btn_ai_enhance = st.button("🤖 AI로 강화", use_container_width=True)
+    with col_z: btn_ai_review  = st.button("🔍 AI 검수", use_container_width=True)
 
     if "manual_prompt" not in st.session_state: st.session_state.manual_prompt = ""
     if "review_result" not in st.session_state: st.session_state.review_result = ""
 
     if btn_ai_review:
         st.session_state.review_result = ""
-        with st.spinner("Claude�� ���� �˼� + �ڵ� ���� ��..."):
+        with st.spinner("Claude가 조합 검수 + 자동 수정 중..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
                 current_combo = {"model": model_type, "outfit": outfit, "material": material, "angle": angle, "pose": pose, "skin_tone": skin_tone, "body_oil": body_oil, "weather": weather, "style": style, "lighting": lighting, "expression": expression, "bg_crowd": bg_crowd, "img_style": img_style, "color_grade": color_grade}
                 safe_options = {
-                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["��Ʈ only ? ����Ʈ�� ���� �̴ϸ� �۷���","������ �����丮�� ? VS ��Ÿ��, ��ũ ���̽�","�ý��� �ٵ��Ʈ ? �޽�, �ƹ氡����","���ž+���̽��� ? ���ž, �� ���̽���","����ũ�� ��Ű�� ? �� ��Ű��, SI ������ ȭ��","���Ű�� ? ���ǽ� ������ ����, ����� �ƾƿ�"]],
-                    "material":  [k for k in MATERIALS.keys() if k not in ["���ؽ� ? �Ǻ� ����, �����彺Ų","�ý��� ������ ? ������, ���� ��ġ��","PVC ? ���� ���, �̷���","��� ü�� �޽� ? �ݼ� ü�� ����"]],
-                    "angle":     [k for k in CAMERA_ANGLES.keys() if k not in ["������� ? ������ �����ٺ���","�ο�ޱ� ? �ٸ� ����, �Ʒ��� ����"]],
-                    "pose":      [k for k in POSES.keys() if k not in ["����","������ ���� ? �Ϲݽ� ���� ���","���帰 ���� ? �踦 ��� ������","������ ? �ڵ��� ��� �ʸ� �ü�","�� ���̱� ? ���, ��� ����"]],
-                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in ["����Ƽ ? � �� ������ ����","���ϵ� ��Ų ? �����ִ� �۷ν�"]],
-                    "body_oil":  ["����", "����Ʈ �۷ο� ? �ڿ������� ����", "��ƾ �۷ο� ? ��ƾó�� ������"],
-                    "weather":   [k for k in WEATHER.keys() if k not in ["���� ? �ż� ��, ������ ������"]],
-                    "style":     [k for k in STYLES.keys() if k not in ["���丮�� ��ũ�� �мǼ�","������ �Ϸ���Ʈ����Ƽ�� ������"]],
+                    "outfit":    [k for k in OUTFIT_TYPES.keys() if k not in ["코트 only — 롱코트만 입은 미니멀 글래머","란제리 에디토리얼 — VS 스타일, 실크 레이스","시스루 바디수트 — 메쉬, 아방가르드","브라탑+하이슬릿 — 브라탑, 롱 하이슬릿","마이크로 비키니 — 끈 비키니, SI 수영복 화보","모노키니 — 원피스 수영복 변형, 대담한 컷아웃"]],
+                    "material":  [k for k in MATERIALS.keys() if k not in ["라텍스 — 피부 밀착, 세컨드스킨","시스루 오간자 — 반투명, 살이 비치는","PVC — 투명 비닐, 미래적","골드 체인 메쉬 — 금속 체인 망사"]],
+                    "angle":     [k for k in CAMERA_ANGLES.keys() if k not in ["오버헤드 — 위에서 내려다보기","로우앵글 — 다리 강조, 아래서 위로"]],
+                    "pose":      [k for k in POSES.keys() if k not in ["없음","수영장 물속 — 하반신 물에 잠긴","엎드린 포즈 — 배를 깔고 관능적","백포즈 — 뒤돌아 어깨 너머 시선","등 보이기 — 백뷰, 어깨 라인"]],
+                    "skin_tone": [k for k in SKIN_TONES.keys() if k not in ["스웨티 — 운동 후 땀나는 느낌","오일드 스킨 — 윤기있는 글로시"]],
+                    "body_oil":  ["없음", "라이트 글로우 — 자연스러운 윤기", "새틴 글로우 — 새틴처럼 빛나는"],
+                    "weather":   [k for k in WEATHER.keys() if k not in ["폭우 — 거센 비, 극적인 분위기"]],
+                    "style":     [k for k in STYLES.keys() if k not in ["빅토리아 시크릿 패션쇼","스포츠 일러스트레이티드 수영복"]],
                     "lighting":  list(LIGHTING.keys()),
-                    "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["���� �ͽ����� ? ���� ����"]],
+                    "img_style": [k for k in IMAGE_STYLE.keys() if k not in ["더블 익스포저 — 이중 노출"]],
                 }
                 response = client.messages.create(
                     model="claude-sonnet-4-5", max_tokens=1200,
                     messages=[{"role": "user", "content": f"""You are an expert AI image generation filter analyst.
 Analyze this combination for risks:
 {chr(10).join([f"- {k}: {v}" for k, v in current_combo.items()])}
-SAFE: body paint art, cultural costume, artistic context �� high pass rate
+SAFE: body paint art, cultural costume, artistic context → high pass rate
 Risk: 3+ risky elements = HIGH
 Respond ONLY in JSON:
-{{"risk_level": "HIGH/MEDIUM/LOW","issues": ["issue1"],"replacements": {{"outfit": "key or null","material": "key or null","angle": "key or null","pose": "key or null","skin_tone": "key or null","body_oil": "key or null","weather": "key or null","style": "key or null","img_style": "key or null"}},"summary": "�ѱ��� 2-3��"}}"""}]
+{{"risk_level": "HIGH/MEDIUM/LOW","issues": ["issue1"],"replacements": {{"outfit": "key or null","material": "key or null","angle": "key or null","pose": "key or null","skin_tone": "key or null","body_oil": "key or null","weather": "key or null","style": "key or null","img_style": "key or null"}},"summary": "한국어 2-3줄"}}"""}]
                 )
                 raw = response.content[0].text.strip()
                 import json, re
@@ -3188,29 +3186,29 @@ Respond ONLY in JSON:
                             if ss_key:
                                 st.session_state[ss_key] = new_val
                                 replaced[field] = new_val
-                    risk_emoji = {"HIGH": "??", "MEDIUM": "??", "LOW": "??"}.get(risk, "?")
-                    msg = f"{risk_emoji} **����ũ: {risk}**\n\n"
-                    if issues: msg += "**?? ������ ����:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
-                    if replaced: msg += "**?? �ڵ� ��ü:**\n" + "\n".join([f"- {k} �� `{v.split('?')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
-                    msg += f"**?? ���:** {summary}"
+                    risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(risk, "⚪")
+                    msg = f"{risk_emoji} **리스크: {risk}**\n\n"
+                    if issues: msg += "**⚠️ 감지된 문제:**\n" + "\n".join([f"- {i}" for i in issues]) + "\n\n"
+                    if replaced: msg += "**🔄 자동 교체:**\n" + "\n".join([f"- {k} → `{v.split('—')[0].strip()}`" for k, v in replaced.items()]) + "\n\n"
+                    msg += f"**💬 요약:** {summary}"
                     st.session_state.review_result = msg
                     if replaced:
                         st.session_state._trigger_build = True
                         st.rerun()
             except Exception as e:
-                st.session_state.review_result = f"����: {str(e)}"
+                st.session_state.review_result = f"오류: {str(e)}"
 
     if st.session_state.get("review_result"):
         st.markdown("---")
-        st.markdown("#### ?? AI �˼� ���")
+        st.markdown("#### 🔍 AI 검수 결과")
         st.markdown(st.session_state.review_result)
         st.markdown("---")
 
     if btn_build:
         def smart_update(key, d, prob):
-            cur = st.session_state.get(key, "����")
-            if cur == "����":
-                keys = [k for k in d.keys() if k != "����"]
+            cur = st.session_state.get(key, "없음")
+            if cur == "없음":
+                keys = [k for k in d.keys() if k != "없음"]
                 if keys and random.random() < prob:
                     st.session_state[key] = random.choice(keys)
         smart_update("r_pose",        POSES,          0.80)
@@ -3256,31 +3254,31 @@ Respond ONLY in JSON:
         if filter_result["replacements"]:
             for ss_key, new_val in filter_result["replacements"].items():
                 st.session_state[ss_key] = new_val
-            risk_emoji = {"HIGH": "??", "MEDIUM": "??", "LOW": "??"}.get(filter_result["risk_level"], "?")
-            replaced_labels = {"r_angle":"�ޱ�","r_pose":"����","r_outfit":"�ǻ�","r_material":"����","r_skin_tone":"�Ǻ�","r_body_oil":"�ٵ����","r_style":"��Ÿ��","r_expression":"ǥ��","r_model":"ü��","r_image_style":"�̹�����Ÿ��"}
-            changed = "  |  ".join([f"{replaced_labels.get(k, k)} �� **{v.split('?')[0].strip()}**" for k, v in filter_result["replacements"].items()])
-            st.session_state._auto_filter_msg = f"{risk_emoji} ���� �ڵ� ����: {changed}"
+            risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(filter_result["risk_level"], "⚪")
+            replaced_labels = {"r_angle":"앵글","r_pose":"포즈","r_outfit":"의상","r_material":"소재","r_skin_tone":"피부","r_body_oil":"바디오일","r_style":"스타일","r_expression":"표정","r_model":"체형","r_image_style":"이미지스타일"}
+            changed = "  |  ".join([f"{replaced_labels.get(k, k)} → **{v.split('—')[0].strip()}**" for k, v in filter_result["replacements"].items()])
+            st.session_state._auto_filter_msg = f"{risk_emoji} 필터 자동 조정: {changed}"
         else:
-            risk_emoji = {"HIGH": "??", "MEDIUM": "??", "LOW": "??"}.get(filter_result["risk_level"], "?")
-            st.session_state._auto_filter_msg = f"{risk_emoji} ���� �˼� ��� (����: {filter_result['total_score']})"
+            risk_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(filter_result["risk_level"], "⚪")
+            st.session_state._auto_filter_msg = f"{risk_emoji} 필터 검수 통과 (점수: {filter_result['total_score']})"
         st.rerun()
 
     if st.session_state.get("_trigger_build", False):
         st.session_state._trigger_build = False
         def ss(key, d, default=None):
             keys = list(d.keys())
-            val = st.session_state.get(key, keys[0] if keys else "����")
-            return val if val in d else (keys[0] if keys else "����")
-        _prev = {k: st.session_state.get(f"_prev_{k}", "����") for k in ["r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color","r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil","r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props","r_image_style","r_era","r_concept"]}
-        auto_labels = {"r_pose":"?? ����","r_expression":"?? ǥ��","r_skin_tone":"?? �Ǻ�","r_hair_style":"?? ���","r_hair_color":"?? ����÷�","r_makeup":"?? ����ũ��","r_footwear":"?? �Ź�","r_color_grade":"??? ����","r_accessories":"?? �׼�����","r_body_oil":"? �ٵ����","r_weather":"??? ����","r_bg_crowd":"?? ���","r_tattoo":"?? ����","r_special_effects":"?? Ư��ȿ��","r_props":"?? ��ǰ","r_image_style":"?? �̹�����Ÿ��","r_era":"?? �ô�","r_concept":"?? ����"}
+            val = st.session_state.get(key, keys[0] if keys else "없음")
+            return val if val in d else (keys[0] if keys else "없음")
+        _prev = {k: st.session_state.get(f"_prev_{k}", "없음") for k in ["r_pose","r_expression","r_skin_tone","r_hair_style","r_hair_color","r_makeup","r_footwear","r_color_grade","r_accessories","r_body_oil","r_weather","r_bg_crowd","r_tattoo","r_special_effects","r_props","r_image_style","r_era","r_concept"]}
+        auto_labels = {"r_pose":"💃 포즈","r_expression":"😏 표정","r_skin_tone":"🌊 피부","r_hair_style":"💇 헤어","r_hair_color":"🎨 헤어컬러","r_makeup":"💄 메이크업","r_footwear":"👠 신발","r_color_grade":"🖼️ 색감","r_accessories":"💍 액세서리","r_body_oil":"✨ 바디오일","r_weather":"🌦️ 날씨","r_bg_crowd":"👥 배경","r_tattoo":"🎨 문신","r_special_effects":"🌈 특수효과","r_props":"🎪 소품","r_image_style":"📐 이미지스타일","r_era":"🌍 시대","r_concept":"🎭 컨셉"}
         picked_items = {}
         for key, label in auto_labels.items():
-            cur = st.session_state.get(key, "����")
-            if _prev[key] == "����" and cur != "����":
-                picked_items[label] = cur.split("?")[0].strip()
+            cur = st.session_state.get(key, "없음")
+            if _prev[key] == "없음" and cur != "없음":
+                picked_items[label] = cur.split("—")[0].strip()
             st.session_state[f"_prev_{key}"] = cur
         if picked_items:
-            st.session_state._auto_picked_msg = f"?? �ڵ� ����: {'  |  '.join([f'{k} �� **{v}**' for k, v in picked_items.items()])}"
+            st.session_state._auto_picked_msg = f"🎲 자동 선택: {'  |  '.join([f'{k} → **{v}**' for k, v in picked_items.items()])}"
         else:
             st.session_state._auto_picked_msg = ""
         data = {
@@ -3304,20 +3302,20 @@ Respond ONLY in JSON:
             "light": ss("r_light", LIGHTING), "framing": ss("r_framing", FRAMING),
             "angle": ss("r_angle", CAMERA_ANGLES), "style": ss("r_style", STYLES),
             "cover_style": ss("r_cover_style", COVER_STYLES), "camera": ss("r_camera", CAMERAS),
-            "top_type": st.session_state.get("r_top_type", "���� (�ǻ� Ÿ�� ���)"),
-            "bottom_type": st.session_state.get("r_bottom_type", "���� (�ǻ� Ÿ�� ���)"),
+            "top_type": st.session_state.get("r_top_type", "없음 (의상 타입 사용)"),
+            "bottom_type": st.session_state.get("r_bottom_type", "없음 (의상 타입 사용)"),
         }
         st.session_state.manual_prompt = get_prompt(data)
 
     if st.session_state.get("_auto_picked_msg"): st.info(st.session_state._auto_picked_msg)
     if st.session_state.get("_auto_filter_msg"):
         msg = st.session_state._auto_filter_msg
-        if "??" in msg: st.warning(msg)
-        elif "??" in msg: st.info(msg)
+        if "🔴" in msg: st.warning(msg)
+        elif "🟡" in msg: st.info(msg)
         else: st.success(msg)
 
     if btn_ai_enhance and st.session_state.manual_prompt:
-        with st.spinner("Claude�� ������Ʈ ��ȭ ��..."):
+        with st.spinner("Claude가 프롬프트 강화 중..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
@@ -3326,80 +3324,80 @@ Respond ONLY in JSON:
                     messages=[{"role": "user", "content": f"Enhance this fashion photography prompt for {global_platform}.\nRules: model fills frame, photorealistic skin.\n{platform_instruction[global_platform]}\nOutput ONLY the prompt:\n\n{st.session_state.manual_prompt}"}])
                 st.session_state.manual_prompt = response.content[0].text.strip()
             except Exception as e:
-                st.error(f"����: {str(e)}")
+                st.error(f"오류: {str(e)}")
 
     if st.session_state.manual_prompt:
-        st.text_area("���յ� ������Ʈ", value=st.session_state.manual_prompt, height=160)
+        st.text_area("조합된 프롬프트", value=st.session_state.manual_prompt, height=160)
         st.code(st.session_state.manual_prompt, language=None)
-        st.caption(f"?? ���� �� {global_platform}�� �ٿ���������!")
+        st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
-# ??????????????????????????????????????????????????????????
-# �� 3: ���� ���
-# ??????????????????????????????????????????????????????????
+# ══════════════════════════════════════════════════════════
+# 탭 3: 랜덤 모드
+# ══════════════════════════════════════════════════════════
 with tab3:
-    st.markdown("### ���� ���� ������Ʈ ����")
-    st.caption("�ٽ� ��Ҹ� ���� ���� ? ������Ʈ ���� ���� ����")
+    st.markdown("### 완전 랜덤 프롬프트 생성")
+    st.caption("핵심 요소만 랜덤 조합 — 프롬프트 최적 길이 유지")
     col1, col2, _ = st.columns([1, 1, 2])
-    with col1: btn_rand    = st.button("?? ���� ����", type="primary", use_container_width=True)
-    with col2: btn_rand_ai = st.button("?? AI ����", use_container_width=True)
+    with col1: btn_rand    = st.button("🎲 랜덤 생성", type="primary", use_container_width=True)
+    with col2: btn_rand_ai = st.button("🤖 AI 랜덤", use_container_width=True)
     if "random_prompt" not in st.session_state: st.session_state.random_prompt = ""
     if btn_rand:
-        data = {"appearance": random.choice(list(MODEL_APPEARANCE.keys())), "age": "����", "model": random.choice(list(MODEL_TYPES.keys())), "outfit": random.choice(list(OUTFIT_TYPES.keys())), "material": random.choice(list(MATERIALS.keys())), "footwear": "����", "pose": random.choice(list(POSES.keys())), "color_grade": "����", "hair_style": "����", "hair_color": "����", "makeup": "����", "accessories": "����", "skin_tone": "����", "model_count": "1�� ? �̱� �� (�⺻)", "era": "����", "concept": "����", "special_effects": "����", "image_style": "����", "props": "����", "body_weight": "����", "bust_size": "����", "hip_size": "����", "env": random.choice(list(ENVIRONMENTS.keys())), "light": random.choice(list(LIGHTING.keys())), "angle": random.choice(list(CAMERA_ANGLES.keys())), "style": random.choice(list(STYLES.keys())), "camera": random.choice(list(CAMERAS.keys())), "top_type": "���� (�ǻ� Ÿ�� ���)", "bottom_type": "���� (�ǻ� Ÿ�� ���)"}
+        data = {"appearance": random.choice(list(MODEL_APPEARANCE.keys())), "age": "없음", "model": random.choice(list(MODEL_TYPES.keys())), "outfit": random.choice(list(OUTFIT_TYPES.keys())), "material": random.choice(list(MATERIALS.keys())), "footwear": "없음", "pose": random.choice(list(POSES.keys())), "color_grade": "없음", "hair_style": "없음", "hair_color": "없음", "makeup": "없음", "accessories": "없음", "skin_tone": "없음", "model_count": "1명 — 싱글 모델 (기본)", "era": "없음", "concept": "없음", "special_effects": "없음", "image_style": "없음", "props": "없음", "body_weight": "없음", "bust_size": "없음", "hip_size": "없음", "env": random.choice(list(ENVIRONMENTS.keys())), "light": random.choice(list(LIGHTING.keys())), "angle": random.choice(list(CAMERA_ANGLES.keys())), "style": random.choice(list(STYLES.keys())), "camera": random.choice(list(CAMERAS.keys())), "top_type": "없음 (의상 타입 사용)", "bottom_type": "없음 (의상 타입 사용)"}
         st.session_state.random_prompt = get_prompt(data)
     if btn_rand_ai:
         preset_name = random.choice(list_presets())
-        with st.spinner(f"Claude�� [{preset_name}] ������� ���� ��..."):
+        with st.spinner(f"Claude가 [{preset_name}] 기반으로 생성 중..."):
             try:
                 st.session_state.random_prompt = generate_prompt_with_ai(preset_name)
             except Exception as e:
-                st.error(f"����: {str(e)}")
+                st.error(f"오류: {str(e)}")
     if st.session_state.random_prompt:
-        st.text_area("���� ������Ʈ", value=st.session_state.random_prompt, height=160)
+        st.text_area("랜덤 프롬프트", value=st.session_state.random_prompt, height=160)
         st.code(st.session_state.random_prompt, language=None)
-        st.caption(f"?? ���� �� {global_platform}�� �ٿ���������!")
+        st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">? LumineX v4.4 ? AI Fashion Image Engine</div>', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
-# ??????????????????????????????????????????????????????????
-# �� 4: ���� ������Ʈ
-# ??????????????????????????????????????????????????????????
+# ══════════════════════════════════════════════════════════
+# 탭 4: 영상 프롬프트
+# ══════════════════════════════════════════════════════════
 with tab4:
-    st.markdown(f"### ?? ���� ������Ʈ ���� ? {global_video_platform}")
-    VIDEO_PLATFORM_TIPS = {"Veo 3 (Gemini)": ("??", "gemini.google.com", "Gemini Advanced ���� �ʿ�. ���� �޴����� Veo 3 ����."), "Kling AI": ("??", "klingai.com", "���� Ƽ�� ��� ����. ���� ũ���� ����."), "Runway": ("??", "runwayml.com", "���� ũ���� ����. Gen-3 Alpha ���."), "Hailuo": ("??", "hailuoai.video", "���� ����. �߱� ����.")}
+    st.markdown(f"### 🎬 영상 프롬프트 생성 — {global_video_platform}")
+    VIDEO_PLATFORM_TIPS = {"Veo 3 (Gemini)": ("🔵", "gemini.google.com", "Gemini Advanced 구독 필요. 좌측 메뉴에서 Veo 3 선택."), "Kling AI": ("🟡", "klingai.com", "무료 티어 사용 가능. 매일 크레딧 지급."), "Runway": ("🟢", "runwayml.com", "무료 크레딧 제공. Gen-3 Alpha 사용."), "Hailuo": ("🟠", "hailuoai.video", "완전 무료. 중국 서비스.")}
     color, url, tip = VIDEO_PLATFORM_TIPS[global_video_platform]
-    st.info(f"{color} **{global_video_platform}** ? {tip} �� [{url}](https://{url})")
-    VIDEO_DURATIONS  = {"5�� ? ª�� ����Ʈ �ִ�": "5 seconds", "8�� ? ǥ�� Ŭ��": "8 seconds", "10�� ? �� Ŭ��": "10 seconds"}
-    VIDEO_MOTIONS    = {"��ŷ ? ������ ��ũ, ī�޶� ����": "walking towards camera, confident runway walk, slow motion", "�� ? 360�� ȸ��, �ǻ� ��ü ����": "slow 360 degree turn, revealing full outfit", "���� ? ���� ����, �ٶ��� �Ӹ� ����": "standing pose, hair flowing in wind, subtle movement", "��� ? ������ ������ �ε巯�� ������": "slow sensual dance movement, fluid motion", "��ŷ+�� ? �ȴٰ� ī�޶� ���� ��": "walking then turning to camera, fashion editorial motion", "���� ? �Ȱ�/�� �ӿ��� õõ�� ����": "emerging slowly from mist and light, dramatic entrance"}
-    VIDEO_CAMERAS    = {"�ó׸�ƽ ? ���� �޸���": "slow cinematic dolly shot, smooth camera movement", "���� ? �� ������ ���� ī�޶�": "slow orbit around subject, 360 camera movement", "���� ? ���ſ��� �󱼷� õõ�� ��": "slow zoom from full body to face, intimate close-up", "�ο�ޱ� ? �Ʒ��� ���� �÷��ٺ���": "low angle upward camera, powerful perspective", "���̾ޱ� ? ������ �����ٺ���": "high angle downward camera, elegant perspective", "�ڵ���� ? �ణ�� ��鸲, ���尨": "slight handheld camera movement, documentary feel"}
-    VIDEO_ATMOSPHERES = {"���Ÿ� �۷��� ? ȭ���ϰ� ��޽�����": "luxury glamour atmosphere, high-end fashion film", "��ũ �ó׸�ƽ ? ��Ӱ� ��ȭ����": "dark cinematic atmosphere, noir fashion film", "���ƿ� ? ������ Ȳ�ݺ�": "golden hour warm light, dreamy fashion film", "�׿� ���̹���ũ ? �̷��� �׿� ������": "neon cyberpunk atmosphere, futuristic fashion film", "�̴ϸ� Ŭ�� ? ����ϰ� �����": "minimal clean white atmosphere, modern fashion film", "�����丮�� ? ���� ȭ�� ����": "editorial fashion film, Vogue video style"}
+    st.info(f"{color} **{global_video_platform}** — {tip} → [{url}](https://{url})")
+    VIDEO_DURATIONS  = {"5초 — 짧고 임팩트 있는": "5 seconds", "8초 — 표준 클립": "8 seconds", "10초 — 긴 클립": "10 seconds"}
+    VIDEO_MOTIONS    = {"워킹 — 런웨이 워크, 카메라 정면": "walking towards camera, confident runway walk, slow motion", "턴 — 360도 회전, 의상 전체 공개": "slow 360 degree turn, revealing full outfit", "포즈 — 정적 포즈, 바람에 머리 날림": "standing pose, hair flowing in wind, subtle movement", "댄스 — 섹시한 느낌의 부드러운 움직임": "slow sensual dance movement, fluid motion", "워킹+턴 — 걷다가 카메라 보며 턴": "walking then turning to camera, fashion editorial motion", "등장 — 안개/빛 속에서 천천히 등장": "emerging slowly from mist and light, dramatic entrance"}
+    VIDEO_CAMERAS    = {"시네마틱 — 느린 달리샷": "slow cinematic dolly shot, smooth camera movement", "오빗 — 모델 주위를 도는 카메라": "slow orbit around subject, 360 camera movement", "줌인 — 전신에서 얼굴로 천천히 줌": "slow zoom from full body to face, intimate close-up", "로우앵글 — 아래서 위로 올려다보기": "low angle upward camera, powerful perspective", "하이앵글 — 위에서 내려다보기": "high angle downward camera, elegant perspective", "핸드헬드 — 약간의 흔들림, 현장감": "slight handheld camera movement, documentary feel"}
+    VIDEO_ATMOSPHERES = {"럭셔리 글래머 — 화려하고 고급스러운": "luxury glamour atmosphere, high-end fashion film", "다크 시네마틱 — 어둡고 영화적인": "dark cinematic atmosphere, noir fashion film", "골든아워 — 따뜻한 황금빛": "golden hour warm light, dreamy fashion film", "네온 사이버펑크 — 미래적 네온 분위기": "neon cyberpunk atmosphere, futuristic fashion film", "미니멀 클린 — 깔끔하고 모던한": "minimal clean white atmosphere, modern fashion film", "에디토리얼 — 잡지 화보 느낌": "editorial fashion film, Vogue video style"}
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("**?? ���� ������Ʈ ������� ��ȯ**")
-        source_prompt  = st.text_area("�̹��� ������Ʈ �ٿ��ֱ� (���û���)", placeholder="���� �̹��� ������Ʈ�� ���⿡ �ٿ������� ��������� ��ȯ�����...", height=120, key="video_source")
-        video_duration = st.selectbox("?? ���� ����", list(VIDEO_DURATIONS.keys()))
-        video_motion   = st.selectbox("?? ��� Ÿ��", list(VIDEO_MOTIONS.keys()))
+        st.markdown("**📝 기존 프롬프트 기반으로 변환**")
+        source_prompt  = st.text_area("이미지 프롬프트 붙여넣기 (선택사항)", placeholder="기존 이미지 프롬프트를 여기에 붙여넣으면 영상용으로 변환해줘요...", height=120, key="video_source")
+        video_duration = st.selectbox("⏱️ 영상 길이", list(VIDEO_DURATIONS.keys()))
+        video_motion   = st.selectbox("🏃 모션 타입", list(VIDEO_MOTIONS.keys()))
     with col2:
-        video_camera     = st.selectbox("?? ī�޶� �����Ʈ", list(VIDEO_CAMERAS.keys()))
-        video_atmosphere = st.selectbox("?? ������", list(VIDEO_ATMOSPHERES.keys()))
-        video_appearance = st.selectbox("?? �� �ܸ�", ["None ? ������Ʈ ���"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
-        video_outfit     = st.selectbox("?? �ǻ�", ["None ? ������Ʈ ���"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
+        video_camera     = st.selectbox("📷 카메라 무브먼트", list(VIDEO_CAMERAS.keys()))
+        video_atmosphere = st.selectbox("🌟 분위기", list(VIDEO_ATMOSPHERES.keys()))
+        video_appearance = st.selectbox("👩 모델 외모", ["None — 프롬프트 기반"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
+        video_outfit     = st.selectbox("👗 의상", ["None — 프롬프트 기반"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
     st.markdown("")
     col_x, col_y, _ = st.columns([1, 1, 2])
-    with col_x: btn_video_build = st.button("?? ���� ������Ʈ ����", type="primary", use_container_width=True)
-    with col_y: btn_video_ai    = st.button("?? AI�� ��ȭ", use_container_width=True, key="btn_video_ai")
+    with col_x: btn_video_build = st.button("🎬 영상 프롬프트 생성", type="primary", use_container_width=True)
+    with col_y: btn_video_ai    = st.button("🤖 AI로 강화", use_container_width=True, key="btn_video_ai")
     if "video_prompt" not in st.session_state: st.session_state.video_prompt = ""
     if btn_video_build:
         st.session_state.video_prompt = ""
-        appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None ? ������Ʈ ���" else ""
+        appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None — 프롬프트 기반" else ""
         outfit_str = ""
-        if video_outfit != "None ? ������Ʈ ���":
+        if video_outfit != "None — 프롬프트 기반":
             od = OUTFIT_TYPES[video_outfit]
             outfit_str = f"Wearing: {(od['gemini'] if isinstance(od, dict) else od).split(',')[0]}. "
         base = f"Based on: {source_prompt[:200]}. " if source_prompt else ""
         st.session_state.video_prompt = (f"Cinematic fashion video, {VIDEO_DURATIONS[video_duration]}. {base}{appearance_str}{outfit_str}Motion: {VIDEO_MOTIONS[video_motion]}. Camera: {VIDEO_CAMERAS[video_camera]}. Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}. Photorealistic, hyperrealistic, 4K cinematic quality, professional fashion film, no text, no watermark.")
     if btn_video_ai and (source_prompt or st.session_state.video_prompt):
-        with st.spinner("Claude�� ���� ������Ʈ ��ȭ ��..."):
+        with st.spinner("Claude가 영상 프롬프트 강화 중..."):
             try:
                 import anthropic
                 client = anthropic.Anthropic()
@@ -3408,21 +3406,18 @@ with tab4:
                     messages=[{"role": "user", "content": f"You are an expert video prompt engineer.\nCreate a powerful cinematic fashion video prompt based on this: {base}\nSettings: Duration: {VIDEO_DURATIONS[video_duration]}, Motion: {VIDEO_MOTIONS[video_motion]}, Camera: {VIDEO_CAMERAS[video_camera]}, Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}\nRules: Cinematic, photorealistic, 4K. No text overlays. Output ONLY the prompt, 100-150 words."}])
                 st.session_state.video_prompt = response.content[0].text.strip()
             except Exception as e:
-                st.error(f"����: {str(e)}")
+                st.error(f"오류: {str(e)}")
     if st.session_state.video_prompt:
-        st.text_area("������ ���� ������Ʈ", value=st.session_state.video_prompt, height=180)
+        st.text_area("생성된 영상 프롬프트", value=st.session_state.video_prompt, height=180)
         st.code(st.session_state.video_prompt, language=None)
-        st.caption("?? ���� �� �ش� �÷����� �ٿ���������!")
+        st.caption("👆 복사 후 해당 플랫폼에 붙여넣으세요!")
         st.markdown("---")
-        st.markdown(f"### ?? {global_video_platform} ��� ���")
+        st.markdown(f"### 💡 {global_video_platform} 사용 방법")
         if global_video_platform == "Veo 3 (Gemini)":
-            st.markdown("1. [gemini.google.com](https://gemini.google.com) ����\n2. ���� **Veo 3** ����\n3. �� ������Ʈ �ٿ��ֱ�\n4. ���� Ŭ��!")
+            st.markdown("1. [gemini.google.com](https://gemini.google.com) 접속\n2. 좌측 **Veo 3** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         elif global_video_platform == "Kling AI":
-            st.markdown("1. [klingai.com](https://klingai.com) ����\n2. **Text to Video** ����\n3. �� ������Ʈ �ٿ��ֱ�\n4. ���� Ŭ��!")
+            st.markdown("1. [klingai.com](https://klingai.com) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         elif global_video_platform == "Runway":
-            st.markdown("1. [runwayml.com](https://runwayml.com) ����\n2. **Gen-3 Alpha** ����\n3. �� ������Ʈ �ٿ��ֱ�\n4. ���� Ŭ��!")
+            st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
         else:
-            st.markdown("1. [hailuoai.video](https://hailuoai.video) ����\n2. **Text to Video** ����\n3. �� ������Ʈ �ٿ��ֱ�\n4. ���� Ŭ��!")
-
-
-
+            st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
