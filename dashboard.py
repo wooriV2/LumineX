@@ -54,6 +54,19 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# ── 히스토리/배치 세션 초기화 ──
+if "prompt_history" not in st.session_state:
+    st.session_state.prompt_history = []
+if "hof_batch_result" not in st.session_state:
+    st.session_state.hof_batch_result = ""
+
+def _add_history(preset_name: str, prompt: str, platform: str):
+    """히스토리에 추가 (최대 20개)"""
+    hist = st.session_state.prompt_history
+    hist = [h for h in hist if h["preset"] != preset_name]
+    hist.insert(0, {"preset": preset_name, "prompt": prompt, "platform": platform})
+    st.session_state.prompt_history = hist[:20]
+
 # ─── 카테고리별 프리셋 매핑 ─────────────────────────────────
 PRESET_CATEGORIES = {
     "🖌️ 바디페인팅 & 스킨 트랜스폼": [
@@ -2869,6 +2882,40 @@ with st.sidebar:
             webbrowser.open("https://gemini.google.com/app")
         st.caption("💡 같은 창 반복 생성 시 타투/헤어 오염 주의")
     st.markdown("---")
+    st.markdown("### 👑 HOF 빠른 실행")
+
+    if st.button("🎲 HOF 랜덤 1개", use_container_width=True, key="sb_hof_random"):
+        import random as _random
+        _hof_pick = _random.choice(list(HOF_TIER))
+        try:
+            _hof_preset = load_preset(_hof_pick)
+            from core.builders import build_gemini_prompt as _bgp
+            _hof_prompt = _bgp(
+                {
+                    "env":      list(ENVIRONMENTS.keys())[0],
+                    "light":    list(LIGHTING.keys())[0],
+                    "style":    list(STYLES.keys())[0],
+                    "model":    list(MODEL_TYPES.keys())[0],
+                    "outfit":   list(OUTFIT_TYPES.keys())[0],
+                    "material": list(MATERIALS.keys())[0],
+                    "camera":   list(CAMERAS.keys())[0],
+                    **_hof_preset,
+                },
+                list(ASPECT_RATIOS.keys())[0],
+                True,
+            )
+        except Exception:
+            _hof_prompt = f"프리셋 모드 탭에서 [{_hof_pick}]을 선택해 생성하세요."
+        st.session_state.preset_selected = _hof_pick
+        st.session_state.preset_prompt   = _hof_prompt
+        _add_history(_hof_pick, _hof_prompt, global_platform)
+        st.success(f"👑 {_hof_pick}")
+        st.rerun()
+
+    if st.button("📦 HOF 전체 배치 생성", use_container_width=True, key="sb_hof_batch"):
+        st.session_state.hof_batch_result = "__GENERATE__"
+        st.rerun()
+    st.markdown("---")
     st.markdown("### 📊 프리셋 현황")
     total = sum(len(v) for v in PRESET_CATEGORIES.values())
     st.markdown(f"**총 프리셋:** `{total}개`")
@@ -2887,7 +2934,7 @@ def get_prompt(data: dict) -> str:
         return build_midjourney_prompt(data, global_aspect)
 
 
-tab1, tab2, tab3, tab4 = st.tabs(["🎨 프리셋 모드", "🛠️ 수동 조합", "🎲 랜덤 모드", "🎬 영상 프롬프트"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["🎨 프리셋 모드", "🛠️ 수동 조합", "🎲 랜덤 모드", "🎬 영상 프롬프트", "📋 히스토리"])
 
 # ══════════════════════════════════════════════════════════
 # 탭 1: 프리셋 모드
@@ -3078,6 +3125,7 @@ with tab1:
     if st.session_state.preset_prompt:
         st.text_area("생성된 프롬프트", value=st.session_state.preset_prompt, height=160)
         st.code(st.session_state.preset_prompt, language=None)
+        _add_history(selected_preset, st.session_state.preset_prompt, global_platform)
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 # ══════════════════════════════════════════════════════════
@@ -3299,6 +3347,7 @@ Respond ONLY in JSON:
                     if replaced:
                         st.session_state._trigger_build = True
                         st.rerun()
+
             except Exception as e:
                 st.session_state.review_result = f"오류: {str(e)}"
 
@@ -3458,9 +3507,94 @@ with tab3:
     if st.session_state.random_prompt:
         st.text_area("랜덤 프롬프트", value=st.session_state.random_prompt, height=160)
         st.code(st.session_state.random_prompt, language=None)
+        _add_history("랜덤", st.session_state.random_prompt, global_platform)
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
 st.markdown("---")
+
+# ══════════════════════════════════════════════════════════
+# 탭 5: 히스토리 & HOF 배치 생성
+# ══════════════════════════════════════════════════════════
+with tab5:
+    st.markdown("### 📋 프롬프트 히스토리")
+    st.caption("세션 내 최근 20개. 새로고침하면 초기화됩니다.")
+
+    # HOF 배치 생성 처리
+    if st.session_state.get("hof_batch_result") == "__GENERATE__":
+        st.session_state.hof_batch_result = ""
+        from core.builders import build_gemini_prompt as _bgp2
+        _batch_lines = []
+        _failed      = []
+        _hof_list    = sorted(list(HOF_TIER))
+        _prog        = st.progress(0, text="HOF 배치 생성 중...")
+        for _i, _name in enumerate(_hof_list):
+            try:
+                _p = load_preset(_name)
+                _prompt = _bgp2(
+                    {
+                        "env":      list(ENVIRONMENTS.keys())[0],
+                        "light":    list(LIGHTING.keys())[0],
+                        "style":    list(STYLES.keys())[0],
+                        "model":    list(MODEL_TYPES.keys())[0],
+                        "outfit":   list(OUTFIT_TYPES.keys())[0],
+                        "material": list(MATERIALS.keys())[0],
+                        "camera":   list(CAMERAS.keys())[0],
+                        **_p,
+                    },
+                    list(ASPECT_RATIOS.keys())[0],
+                    True,
+                )
+                _batch_lines.append(f"### [{_i+1}/{len(_hof_list)}] 👑 {_name}\n{_prompt}\n")
+                _add_history(_name, _prompt, global_platform)
+            except Exception:
+                _failed.append(_name)
+            _prog.progress((_i + 1) / len(_hof_list), text=f"처리 중... {_name}")
+        _prog.empty()
+        st.session_state.hof_batch_result = "\n".join(_batch_lines)
+        if _failed:
+            st.warning(f"⚠️ JSON 없는 프리셋 {len(_failed)}개 건너뜀: {', '.join(_failed)}")
+        st.success(f"✅ HOF {len(_hof_list) - len(_failed)}개 배치 생성 완료 → 히스토리에 저장됨")
+
+    if st.session_state.hof_batch_result and st.session_state.hof_batch_result != "__GENERATE__":
+        st.markdown("#### 📦 HOF 배치 결과")
+        st.text_area("배치 전체", value=st.session_state.hof_batch_result, height=300)
+        st.code(st.session_state.hof_batch_result, language=None)
+        st.caption("👆 전체 복사 후 메모장/노션에 저장하세요.")
+        if st.button("🗑️ 배치 결과 초기화"):
+            st.session_state.hof_batch_result = ""
+            st.rerun()
+        st.markdown("---")
+
+    # 히스토리 목록
+    hist = st.session_state.prompt_history
+    if not hist:
+        st.info("아직 생성된 프롬프트가 없어요. 프리셋/랜덤 모드에서 생성해보세요.")
+    else:
+        col_l, col_r = st.columns([3, 1])
+        with col_l:
+            st.markdown(f"**총 {len(hist)}개** (최신순)")
+        with col_r:
+            if st.button("🗑️ 전체 삭제", key="hist_clear"):
+                st.session_state.prompt_history = []
+                st.rerun()
+        for _idx, _item in enumerate(hist):
+            _tier = (
+                "👑" if _item["preset"] in HOF_TIER else
+                "🌟" if _item["preset"] in SSS_TIER else
+                "⭐" if _item["preset"] in SS_TIER  else
+                "•"
+            )
+            _label = f"{_tier} {_item['preset']}  `{_item['platform']}`"
+            with st.expander(f"{_idx+1}. {_label}", expanded=(_idx == 0)):
+                st.text_area(
+                    "프롬프트",
+                    value=_item["prompt"],
+                    height=120,
+                    key=f"hist_ta_{_idx}",
+                )
+                st.code(_item["prompt"], language=None)
+                st.caption(f"플랫폼: {_item['platform']}")
+
 st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
