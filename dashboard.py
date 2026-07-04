@@ -1112,12 +1112,26 @@ PRESET_CATEGORIES = {
         "merge_byzantine_mosaic",
     ],
 
+    "🎀 미니멀 커버 글래머": [
+        "body_chain_only_glam",
+        "flower_body_only",
+        "rope_art_editorial",
+        "ribbon_wrap_glam",
+        "crystal_body_cover",
+        "maldives_bikini_editorial",
+        "seaweed_coral_body",
+    ],
+
 }
 
 
 # HOF tier — Hall of Fame: 실제 검증 이미지 중 최고 퀄리티 선정
 # 기준: "와" 하는 반응, 구도/배경/바디페인팅 삼박자 완벽, 즉시 생성 가능
 HOF_TIER = {
+    "body_chain_only_glam",
+    "flower_body_only",
+    "crystal_body_cover",
+    "seaweed_coral_body",
     "metamorphosis_editorial",
     "virus_pattern_body",
     "spine_tech_implant",
@@ -1161,6 +1175,14 @@ HOF_TIER = {
 # SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
 # 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
 SSS_TIER = {
+    "maldives_bikini_editorial",
+
+    "body_chain_only_glam",
+    "flower_body_only",
+    "rope_art_editorial",
+    "ribbon_wrap_glam",
+    "crystal_body_cover",
+    "seaweed_coral_body",
     "metamorphosis_editorial",
     "virus_pattern_body",
     "spine_tech_implant",
