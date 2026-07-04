@@ -1040,8 +1040,7 @@ PRESET_CATEGORIES = {
         "exoskeleton_stripped",
         "prosthetic_art",
         "spine_tech_implant",
-        "synthetic_skin_tear",
-        # G4 바이러스&뮤테이션
+            # G4 바이러스&뮤테이션
         "mutation_bloom",
         "toxic_spore_cloud",
         "infection_glam",
