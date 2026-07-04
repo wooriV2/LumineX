@@ -2887,29 +2887,15 @@ with st.sidebar:
     if st.button("🎲 HOF 랜덤 1개", use_container_width=True, key="sb_hof_random"):
         import random as _random
         _hof_pick = _random.choice(list(HOF_TIER))
-        try:
-            _hof_preset = load_preset(_hof_pick)
-            from core.builders import build_gemini_prompt as _bgp
-            _hof_prompt = _bgp(
-                {
-                    "env":      list(ENVIRONMENTS.keys())[0],
-                    "light":    list(LIGHTING.keys())[0],
-                    "style":    list(STYLES.keys())[0],
-                    "model":    list(MODEL_TYPES.keys())[0],
-                    "outfit":   list(OUTFIT_TYPES.keys())[0],
-                    "material": list(MATERIALS.keys())[0],
-                    "camera":   list(CAMERAS.keys())[0],
-                    **_hof_preset,
-                },
-                list(ASPECT_RATIOS.keys())[0],
-                True,
-            )
-        except Exception:
-            _hof_prompt = f"프리셋 모드 탭에서 [{_hof_pick}]을 선택해 생성하세요."
-        st.session_state.preset_selected = _hof_pick
-        st.session_state.preset_prompt   = _hof_prompt
-        _add_history(_hof_pick, _hof_prompt, global_platform)
-        st.success(f"👑 {_hof_pick}")
+        # preset_selected 세팅 → 탭1 드롭다운이 이 프리셋으로 맞춰짐
+        st.session_state.preset_selected  = _hof_pick
+        st.session_state.preset_prompt    = ""
+        # 티어 필터를 HOF로 세팅 → filtered_presets에 HOF 프리셋 포함되도록
+        st.session_state["preset_tier_filter"] = "👑 HOF"
+        # 카테고리 필터 전체로 세팅 → HOF 프리셋이 어느 카테고리든 포함
+        st.session_state["preset_cat_filter"]  = "🌟 전체"
+        # 빠른 생성 자동 트리거 플래그
+        st.session_state._hof_quick_fire  = True
         st.rerun()
 
     if st.button("📦 HOF 전체 배치 생성", use_container_width=True, key="sb_hof_batch"):
@@ -2984,9 +2970,15 @@ with tab1:
     col1, col2 = st.columns([2, 1])
     with col1:
         if filtered_presets:
+            # HOF 랜덤 버튼으로 세팅된 프리셋이 있으면 해당 index로 이동
+            _hof_target = st.session_state.get("preset_selected", "")
+            _preset_index = 0
+            if _hof_target and _hof_target in filtered_presets:
+                _preset_index = filtered_presets.index(_hof_target)
             selected_preset = st.selectbox(
                 f"🎨 프리셋 선택 ({len(filtered_presets)}개)",
                 options=filtered_presets,
+                index=_preset_index,
                 format_func=format_preset
             )
         else:
@@ -3109,7 +3101,11 @@ with tab1:
             except Exception as e:
                 st.error(f"오류: {str(e)}")
 
-    if btn_quick and selected_preset:
+    # ── HOF 랜덤 빠른 생성 자동 트리거 ──
+    if st.session_state.pop("_hof_quick_fire", False):
+        st.session_state["_trigger_quick"] = True
+
+    if (btn_quick or st.session_state.pop('_trigger_quick', False)) and selected_preset:
         st.session_state.preset_prompt = ""
         raw = apply_overrides_to_prompt(load_preset(selected_preset), build_preset_overrides())
         aspect_desc = ASPECT_RATIOS.get(global_aspect, "portrait 2:3 vertical")
