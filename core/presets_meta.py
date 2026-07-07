@@ -8,7 +8,7 @@ dashboard.py ?먯꽌 遺꾨━ (A??
 """
 
 PRESET_CATEGORIES = {
-    "?뼂截?諛붾뵒?섏씤??& ?ㅽ궓 ?몃옖?ㅽ뤌": [
+    "🖌️ Body Paint & Skin Transform": [
         # 湲곗〈
         "bioluminescent_ink","klimt_gold_body","vangogh_body","dali_surreal","munch_scream",
         "monet_bloom","mucha_nouveau","hokusai_wave","kandinsky_abstract","pollock_splash",
@@ -124,7 +124,7 @@ PRESET_CATEGORIES = {
         "body_paint_surreal_free","body_paint_minimalist_free",
         "body_paint_blacklight","body_paint_glitter_free","body_paint_uv_reactive",
     ],
-    "?뮟 ??뀛由?湲?섎㉧": [
+    "💫 Luxury Glamour": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial",        "noir_opulence","platinum_elite","ivory_silk","ivory_tower",
         "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
         "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
@@ -147,7 +147,7 @@ PRESET_CATEGORIES = {
         "casino_vip_glam",
         "limo_glam",
     ],
-    "?뵦 ??& ?뱀떆": [
+    "🔥 Hot & Sexy": [
         # 湲곗〈 愿??& ?먮줈??湲?섎㉧
         "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
         "wet_silk_gown","oil_goddess_gold","pool_wet_glam","rain_soaked_dress","sweat_glam",
@@ -194,7 +194,7 @@ PRESET_CATEGORIES = {
         "steam_room_goddess",
         "volcanic_heat_body",
     ],
-    "?뭼 ?먮줈??& ?섑떚??: [
+    "💋 Erotic & Fetish": [
         # ?뚯썙&?ｌ??먯꽌 ?대룞
         "latex_venom","chrome_vixen","chain_goddess",
         "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
@@ -228,7 +228,7 @@ PRESET_CATEGORIES = {
         "mirror_latex",
         "neon_latex",
     ],
-    "?뙼 ?먯뿰 & ?먯냼": [
+    "🌿 Nature & Elements": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","frozen_latex","blizzard_queen","sandstorm_veil",
         "storm_couture","heat_shimmer","water_reflection","waterfall_goddess","rain_soaked",
         "mist_goddess","mist_vanguard","winter_forest","desert_mirage","desert_oracle",
@@ -245,7 +245,7 @@ PRESET_CATEGORIES = {
         "rainbow_mountain","wisteria_tunnel","torres_del_paine","ha_long_bay",
         "kelimutu_crater","victoria_falls","fairy_pools","tunnel_of_love","chocolate_hills",
     ],
-    "?똽 ?꾩떆 & ?섏씠??: [
+    "🌃 City & Night": [
         "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
         "rooftop_midnight","rooftop_party","midnight_goddess","midnight_monolith","nightclub_vip",
         "monaco_nights","miami_afterglow","azure_nights","blue_hour_goddess","candlelight_noir",
@@ -259,7 +259,7 @@ PRESET_CATEGORIES = {
         "santorini_sunset","cappadocia_balloons","chefchaouen_blue","hallstatt_lake",
         "shirakawa_snow","positano_cliff","bruges_canal","cinque_terre_harbor",
     ],
-    "?렗 ?먮뵒?좊━??& 臾대뱶": [
+    "🎬 Editorial & Mood": [
         "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
         "light_driven","backlit_silk","mirror_goddess","mirror_room","eclipse_body","chrome_skin",
         "neon_body","plasma_aura","molten_chrome","mercury_rising","mercury_pool","titanium_body",
@@ -276,7 +276,7 @@ PRESET_CATEGORIES = {
         # 2026-06-08 ?꾨씫 蹂듦뎄
         "dreamy_soft_focus","film_noir_glam","noir_femme_fatale",
     ],
-    "?뤊 臾몃챸 & ?좏솕": [
+    "🏺 Civilization & Myth": [
         "cleopatra_gold","pharaoh_queen","byzantine_empress","maasai_warrior","nine_tails",
         "moonrise_ceremony","oracle_smoke","ritual_ash","ruins_goddess","renaissance_fantasy",
         "renaissance_nude","cathedral_light","baroque_punk","art_gallery","museum_glamour",
@@ -294,7 +294,7 @@ PRESET_CATEGORIES = {
         "japan_rising_sun_body","south_africa_flag_body","india_flag_body",
         "mexico_flag_body","ukraine_flag_body",
     ],
-    "?덌툘 吏곸뾽 & ?쇱씠?꾩뒪???: [
+    "✈️ Career & Lifestyle": [
         "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
         "cruise_hostess","yacht_captain","yacht_club","sommelier","wine_tasting","casino_dealer",
         "private_jet","helipad","luxury_shopping","golf_glam","golf_caddie","tennis_luxe",
@@ -306,7 +306,7 @@ PRESET_CATEGORIES = {
         "ballet_prima","gymnastics_editorial","figure_skater","tennis_champion",
         "archery_goddess","carnival_rio",
     ],
-    "?뵰 ?먰?吏 & ?ㅽ겕": [
+    "🔮 Fantasy & Dark": [
         "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
         "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
         "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -315,7 +315,7 @@ PRESET_CATEGORIES = {
         # v11
         "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
     ],
-    "?뷂툘 ?뚯썙 & ?ｌ?": [
+    "⚔️ Power & Edge": [
         "valkyrie_storm","biker_glam","shadow_play",
         "fencer_noir","martial_arts","boxing_glamour","power_curve",
         "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent",
@@ -364,7 +364,7 @@ PRESET_CATEGORIES = {
         # v11
         "riot_goddess","punk_queen","steel_warrior","cage_fighter",
     ],
-    "?룚截?鍮꾩튂 & 由ъ“??: [
+    "🏖️ Beach & Resort": [
         "summer_beach","surfer_goddess","pool_goddess",
         "poolside_noir","infinity_pool","beach_bonfire",
         "scuba_goddess","glass_floor","glass_house","ski_chalet","vineyard_harvest","spa_noir",
@@ -372,7 +372,7 @@ PRESET_CATEGORIES = {
         # v11
         "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
     ],
-    "?렚 ?쇳룷癒쇱뒪 & ?꾩뒪": [
+    "🎭 Performance & Dance": [
         "flamenco_queen","tango_passion","circus_performer",
         "ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
         "opera_night","christmas_glamour","pop_art_glamour","ribbon_goddess","petal_storm",
@@ -381,7 +381,7 @@ PRESET_CATEGORIES = {
         # v17
         "samba_carnival","hula_goddess","jazz_dance_glam","kathak_dance",
     ],
-    "?몮 ?꾪넻 & 臾명솕?섏긽": [
+    "👘 Traditional Costume": [
         "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
         "harem_goddess","belly_dancer","odalisque","imperial_silk",
         # v10
@@ -395,7 +395,7 @@ PRESET_CATEGORIES = {
         "haenyeo_goddess","silla_empress","goguryeo_warrior","goryeo_empress","joseon_painter",
         "korean_shaman_fire","baekje_lotus","silla_gold_crown",
     ],
-    "?뙵 怨꾩젅 & ?뚮쭏": [
+    "🌸 Season & Theme": [
         "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
         "sunflower_field","greenhouse_eden","tropical_night",
         # v10
@@ -404,7 +404,7 @@ PRESET_CATEGORIES = {
         # v17
         "halloween_glam","new_year_glam","sakura_night_glam","monsoon_goddess",
     ],
-    "?뜫 ??& 移댁???: [
+    "🍬 Pop & Kawaii": [
         # v10
         "y2k_fairy","pink_champagne","cotton_candy","angel_baby","idol_stage","kitty_glam",
         "strawberry_milk","cherry_pop","neon_kawaii","fairy_kei",
@@ -420,7 +420,7 @@ PRESET_CATEGORIES = {
         "bubble_tea","doll_house","harajuku_doll",
     ],
 
-    "?럩 ?좊땲 & 湲?섎㉧": [
+    "🎌 Anime & Glamour": [
         # v13 ?쇰낯 怨꾩뿴
         "zero_suit","battle_bikini","succubus_anime","catgirl_luxe","dark_magical_girl",
         "witch_apprentice","fallen_angel_anime","kunoichi_glam","oni_warrior","samurai_bride",
@@ -438,7 +438,7 @@ PRESET_CATEGORIES = {
     ],
 
     # ?? ?렓 ?좊땲 ?꾪듃?ㅽ???(2026-06-09 ?좎꽕, 洹몃┝泥?32醫? ??
-    "?렓 ?좊땲 ?꾪듃?ㅽ???: [
+    "🎨 Anime Art Style": [
         'anime_jp_90s_retro',
         'anime_jp_80s_citypop',
         'anime_jp_modern_glossy',
@@ -473,7 +473,7 @@ PRESET_CATEGORIES = {
         'anime_noir_silhouette',
     ],
 
-    "?뙌 ?ㅻ（??& ??꾩슦": [
+    "🌑 Silhouette & Shadow": [
         "silhouette_spotlight_smoke",
         "silhouette_spotlight_latex",
         "silhouette_spotlight_heels",
@@ -506,7 +506,7 @@ PRESET_CATEGORIES = {
         "silhouette_smoke_studio",
     ],
 
-        "?뙆 遺덇???& 珥덊쁽??: [
+        "🌌 Impossible & Surreal": [
         "storm_eye_editorial",
         "living_fabric",
         "macro_goddess",
@@ -538,7 +538,7 @@ PRESET_CATEGORIES = {
         "richat_eye","marble_caves_water",
     ],
 
-    "?룢截??좎쟻 & 臾몃챸": [
+    "🏛️ Ruins & Civilization": [
         "petra_rose","angkor_dawn","tikal_skyrise","bagan_balloon",
         "ellora_rock_temple","derinkuyu_underground","tigers_nest_cliff","naoshima_art_island",
         # v26
@@ -547,7 +547,7 @@ PRESET_CATEGORIES = {
         "angkor_thom_faces","teotihuacan_pyramid","gobekli_tepe","palmyra_colonnade",
     ],
 
-    "?뙅 ?섎━硫섑깉 媛볥뜲??: [
+    "🌋 Elemental Goddess": [
         "uyuni_wet_silk",
         "dead_sea_goddess",
         "iceland_hot_spring",
@@ -592,7 +592,7 @@ PRESET_CATEGORIES = {
         "rainbow_falls_goddess",
     ],
 
-    "?뮛 ?⑦듃 & 湲濡쒖뒪": [
+    "💧 Wet & Gloss": [
         # ?섏쁺???
         "pool_surface_break", "pool_underwater_up", "pool_edge_dripping",
         "infinity_pool_wet", "hot_spring_steam", "jacuzzi_bubbles",
@@ -626,7 +626,7 @@ PRESET_CATEGORIES = {
         "bubble_bath_gloss", "milk_bath_petals",
     ],
 
-    "?뙧截??湲?& ?뚰떚??: [
+    "🌫️ Atmosphere & Particle": [
         # ?ㅻえ???곌린
         "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
         "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
@@ -645,7 +645,7 @@ PRESET_CATEGORIES = {
         "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
         "firefly_night_field", "seed_pod_floating",
     ],
-    "?몣 ?쒓뎅 ??궗 & 沅곸쨷 湲?섎㉧": [
+    "👑 Korean History & Court": [
         # ?룾 ?쇨뎅/怨좊? ?뺤떎
         "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
         "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
@@ -684,7 +684,7 @@ PRESET_CATEGORIES = {
         "hanbok_wet_editorial", "joseon_boudoir",
     ],
 
-    "?렓 硫??諛붾뵒?섏씤??: [
+    "🎨 Multi Body Paint": [
         # G1 ?鍮꾪삎 ???(2?? 諛섎? ?뚮쭏 異⑸룎/議고솕)
         "duo_fire_and_ice_bodypaint",
         "duo_day_and_night_bodypaint",
@@ -912,7 +912,7 @@ PRESET_CATEGORIES = {
         "trio_id_ego_superego_bodypaint",
         "trio_thesis_antithesis_synthesis_bodypaint",
     ],
-    "?뫍 ???湲?섎㉧": [
+    "👯 Duo Glamour": [
         # G1 ?⑦듃 & ?
         "duo_infinity_pool_contrast",
         "duo_rain_neon_soaked",
@@ -950,7 +950,7 @@ PRESET_CATEGORIES = {
         "duo_penthouse_power",
         "duo_ice_bath_contrast",
     ],
-    "?첑 嫄곗슱 & 諛섏궗 湲?섎㉧": [
+    "🪞 Mirror & Reflection": [
         # G1 ?대옒?앸???
         "infinity_mirror_goddess",
         "hall_of_mirrors_glam",
@@ -981,7 +981,7 @@ PRESET_CATEGORIES = {
         "mirrored_skyscraper_facade",
     ],
 
-    "?㎚ SF & 諛붿씠?ㅽ럱??: [
+    "🧬 Sci-Fi & Biopunk": [
         # G1 ?щ씪?댁삤&?ㅽ뿕??
         "cryo_emergence_wet",
         "specimen_amber_suspended",
@@ -1011,7 +1011,7 @@ PRESET_CATEGORIES = {
         "alien_host_glam",
     ],
 
-    "?? ?섍꼍 ?쇱껜 諛붾뵒?섏씤??: [
+    "🌀 Environment Merge": [
         # G1 ?⑦꽩/吏곷Ъ (6醫?SSS)
         # 2026-07-02 諛붾뵒?섏씤???섏긽 誘뱀뒪 肄쒕씪蹂?
         "trio_bodypaint_latex_frame",
@@ -1061,11 +1061,11 @@ PRESET_CATEGORIES = {
         "merge_byzantine_mosaic",
     ],
 
-            "?뙔 ?섏씠??湲?섎㉧": ['club_vip_neon_goddess', 'club_rooftop_citylight', 'micro_sequin_club', 'rooftop_micro_night'],
-        "?몭 ?щ┰?쒕젅??湲?섎㉧": ['silk_slip_dawn_hotel', 'satin_slip_vanity_noir', 'satin_slip_micro'],
-        "?릤 ?좊땲硫?꾨┛??湲?섎㉧": ['leopard_power_editorial', 'leopard_micro_studio', 'snake_micro_marble', 'snakeskin_latex_glam'],
-    "?렚 洹뱀옣??湲?섎㉧": ['gyeongbokgung_night_couture', 'bukchon_rain_editorial', 'namsan_tower_dusk', 'dongdaemun_neon_rain', 'haeinsa_temple_dawn', 'jeju_volcanic_coast', 'fushimi_inari_crimson', 'arashiyama_bamboo_mist', 'osaka_dotonbori_neon', 'mount_fuji_dawn_silk', 'japanese_garden_autumn', 'kabukiza_backstage_glam', 'forbidden_city_golden_hour', 'li_river_karst_mist', 'shanghai_bund_noir', 'zhangjiajie_cloud_forest', 'west_lake_lotus_dawn', 'bali_tanah_lot_sunset', 'hoi_an_lantern_rain', 'bangkok_wat_arun_gold', 'singapore_marina_bay_night', 'luang_prabang_monk_dawn', 'rice_terrace_banaue_mist', 'opera_house_goddess', 'venetian_carnival_palazzo', 'flamenco_tablao_fire', 'broadway_red_curtain', 'scottish_castle_mist', 'sahara_dune_queen', 'ballet_stage_noir'],
-    "?뙼 誘몃땲硫 ?ㅻ툕??而ㅻ쾭": [
+            "🌙 Night Glamour": ['club_vip_neon_goddess', 'club_rooftop_citylight', 'micro_sequin_club', 'rooftop_micro_night'],
+        "👗 Slip Dress Glamour": ['silk_slip_dawn_hotel', 'satin_slip_vanity_noir', 'satin_slip_micro'],
+        "🐆 Animal Print Glamour": ['leopard_power_editorial', 'leopard_micro_studio', 'snake_micro_marble', 'snakeskin_latex_glam'],
+    "🎭 Theatrical Glamour": ['gyeongbokgung_night_couture', 'bukchon_rain_editorial', 'namsan_tower_dusk', 'dongdaemun_neon_rain', 'haeinsa_temple_dawn', 'jeju_volcanic_coast', 'fushimi_inari_crimson', 'arashiyama_bamboo_mist', 'osaka_dotonbori_neon', 'mount_fuji_dawn_silk', 'japanese_garden_autumn', 'kabukiza_backstage_glam', 'forbidden_city_golden_hour', 'li_river_karst_mist', 'shanghai_bund_noir', 'zhangjiajie_cloud_forest', 'west_lake_lotus_dawn', 'bali_tanah_lot_sunset', 'hoi_an_lantern_rain', 'bangkok_wat_arun_gold', 'singapore_marina_bay_night', 'luang_prabang_monk_dawn', 'rice_terrace_banaue_mist', 'opera_house_goddess', 'venetian_carnival_palazzo', 'flamenco_tablao_fire', 'broadway_red_curtain', 'scottish_castle_mist', 'sahara_dune_queen', 'ballet_stage_noir'],
+    "🌿 Minimal Object Cover": [
         "silk_ribbon_minimal",
         "tropical_flower_minimal",
         "silver_foil_minimal",
@@ -1076,7 +1076,7 @@ PRESET_CATEGORIES = {
         "butterfly_wings_minimal",
         "seaweed_ocean_minimal",
     ],
-    "?? 誘몃땲硫 而ㅻ쾭 湲?섎㉧": [
+    "🎀 Minimal Cover Glamour": [
     # ?뙼 誘몃땲硫 ?ㅻ툕??而ㅻ쾭
     "silk_ribbon_minimal",
     "tropical_flower_minimal",
@@ -1096,7 +1096,7 @@ PRESET_CATEGORIES = {
         "seaweed_coral_body",
     ],
 
-    "?썎 ?ㅽ뙆 & 諛붾뵒 湲?섎㉧": [
+    "🛁 Spa & Body Glamour": [
         "oil_massage_table",
         "mud_spa_clay",
         "hammam_marble_glam",
@@ -1109,7 +1109,7 @@ PRESET_CATEGORIES = {
         "salt_scrub_steam",
     ],
 
-    "?뙅 ?먯뿰 ?⑥쿇 & ?섏쨷": [
+    "🌋 Hot Spring & Underwater": [
         "yunoko_bamboo_onsen",
         "pamukkale_travertine",
         "bhutan_himalaya_pool",
@@ -1121,14 +1121,14 @@ PRESET_CATEGORIES = {
         "costa_rica_jungle_pool",
     ],
 
-    "?뮚 ? & ?대㉧?꾩뒪": [
+    "💦 Pool & Emergence": [
         "niagara_mist_goddess",
         "greek_sea_emergence",
         "morocco_riad_pool",
         "lagoon_surface_break",
     ],
 
-    "?뙢截??⑦듃 ?쒕젅??湲?섎㉧": [
+    "🌧️ Wet Dress Glamour": [
         "dubai_rooftop_storm",
     # ?뙔 ?섏씠??湲?섎㉧
     # ?몭 ?щ┰?쒕젅??湲?섎㉧
