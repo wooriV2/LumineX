@@ -1238,8 +1238,46 @@ PRESET_CATEGORIES = {
     ],
 
 
+    "💎 Figure Glamour": [
+        "super_lingerie_glamour",
+        "super_sheer_glamour",
+        "super_slit_glamour",
+        "super_corset_glamour",
+        "hot_bikini_glamour",
+        "hot_lingerie_glamour",
+        "hot_sheer_glamour",
+        "hot_slit_glamour",
+        "hot_corset_glamour",
+        "angel_bikini_glamour",
+        "angel_lingerie_glamour",
+        "angel_sheer_glamour",
+        "angel_slit_glamour",
+        "angel_corset_glamour",
+        "black_bikini_glamour",
+        "black_lingerie_glamour",
+        "black_sheer_glamour",
+        "black_slit_glamour",
+        "black_corset_glamour",
+        "brazil_bikini_glamour",
+        "brazil_lingerie_glamour",
+        "brazil_sheer_glamour",
+        "brazil_slit_glamour",
+        "brazil_corset_glamour",
+        "latina_lingerie_glamour",
+        "latina_sheer_glamour",
+        "latina_slit_glamour",
+        "latina_corset_glamour",
+        "bust_bikini_glamour",
+        "bust_slit_glamour",
+        "bust_sheer_glamour",
+        "bust_corset_glamour",
+        "amazon_bikini_glamour",
+        "amazon_lingerie_glamour",
+        "amazon_sheer_glamour",
+        "amazon_slit_glamour",
+        "amazon_corset_glamour",
+    ],
 }
-
 
 # HOF tier ??Hall of Fame: ?ㅼ젣 寃利??대?吏 以?理쒓퀬 ?꾨━???좎젙
 # 湲곗?: "?" ?섎뒗 諛섏쓳, 援щ룄/諛곌꼍/諛붾뵒?섏씤???쇰컯???꾨꼍, 利됱떆 ?앹꽦 媛??
