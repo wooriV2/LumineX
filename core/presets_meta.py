@@ -1,15 +1,15 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 LumineX Preset Metadata
-카테고리 정의 + HOF / SSS / SS 티어
+移댄뀒怨좊━ ?뺤쓽 + HOF / SSS / SS ?곗뼱
 
-dashboard.py 에서 분리 (A안)
-패치 시 이 파일만 수정하면 됩니다.
+dashboard.py ?먯꽌 遺꾨━ (A??
+?⑥튂 ?????뚯씪留??섏젙?섎㈃ ?⑸땲??
 """
 
 PRESET_CATEGORIES = {
-    "🖌️ 바디페인팅 & 스킨 트랜스폼": [
-        # 기존
+    "?뼂截?諛붾뵒?섏씤??& ?ㅽ궓 ?몃옖?ㅽ뤌": [
+        # 湲곗〈
         "bioluminescent_ink","klimt_gold_body","vangogh_body","dali_surreal","munch_scream",
         "monet_bloom","mucha_nouveau","hokusai_wave","kandinsky_abstract","pollock_splash",
         "broken_porcelain","marble_veins","henna_goddess_body","oil_slick_body","liquid_chrome_body",
@@ -25,7 +25,7 @@ PRESET_CATEGORIES = {
         "warhol_pop","lichtenstein_dot","huli_wigman","nuba_body","wodaabe_beauty","mehndi_full",
         "mayan_ritual","haida_totem","aurora_skin","crystal_mineral","tide_pool","magnetic_field",
         "cell_division",
-        # v14 — 관능적 바디페인팅 35개
+        # v14 ??愿?μ쟻 諛붾뵒?섏씤??35媛?
         "melting_chocolate","liquid_gold_drip","silver_mercury_body","ink_pour_body",
         "paint_splash_body","milk_bath_body",
         "rose_petal_body","orchid_body","vine_wrap_body","lotus_body","poison_flower",
@@ -34,20 +34,20 @@ PRESET_CATEGORIES = {
         "body_calligraphy","zentangle_body","constellation_body","circuit_erotic","tarot_body",
         "moon_tattoo_body","rune_body_art","alchemy_body","henna_erotic",
         "python_scales","jaguar_spots","mermaid_scales","raven_feathers","tiger_stripes_body",
-        # v15 — 명화/작가 퍼블릭 도메인 14개
+        # v15 ??紐낇솕/?묎? ?쇰툝由??꾨찓??14媛?
         "cezanne_body","gauguin_tropics","toulouse_lautrec","schiele_body","degas_dancer",
         "renoir_soft","botticelli_venus","titian_goddess","rubens_baroque","ingres_odalisque",
         "waterhouse_nymph","rossetti_dante","alma_tadema","vigee_lebrun",
-        # v15 — 생존/최근 작가 5개
+        # v15 ???앹〈/理쒓렐 ?묎? 5媛?
         "keith_haring_body","yayoi_kusama","takashi_murakami",
         "jean_dubuffet","jean_cocteau",
-        # v15 — 부족/문화 10개
+        # v15 ??遺議?臾명솕 10媛?
         "bodi_clay","ndebele_pattern","tuareg_indigo","mursi_lip",
         "surma_body","asaro_mudmen","kayapo_brasil","nuba_scarification","kayan_neck",
-        # v15 — 과학/자연 10개
+        # v15 ??怨쇳븰/?먯뿰 10媛?
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
         "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
-        # v18 — 동물 바디페인팅 50개
+        # v18 ???숇Ъ 諛붾뵒?섏씤??50媛?
         "panther_black","cheetah_speed","snow_leopard","ocelot_wild",
         "chameleon_skin","dragon_scales_red","komodo_dragon","gecko_pattern","crocodile_skin",
         "boa_constrictor","king_cobra_hood",
@@ -60,62 +60,62 @@ PRESET_CATEGORIES = {
         "wolf_grey","zebra_stripes","giraffe_pattern","dalmatian_spots","arctic_fox",
         "red_fox","hyena_spots",
         "koi_dragon","unicorn_opal","gryphon_feather","sphinx_cat","basilisk_scales",
-        # v19 — 한국 바디아트 10개
+        # v19 ???쒓뎅 諛붾뵒?꾪듃 10媛?
         "dancheong_body","najeonchilgi_body","goryeo_celadon_body","minhwa_body",
         "korean_tiger_body","pojagi_body","taegeuk_body","silla_crown_body",
         "dansaekhwa_body","najeon_abalone",
-        # v19 — 한국 동물/신수 (바디아트)
+        # v19 ???쒓뎅 ?숇Ъ/?좎닔 (諛붾뵒?꾪듃)
         "baekhak_crane","korean_dragon_body","phoenix_jujakk",
         "baekho_white_tiger","hyeonmu_turtle","cheongnyong_dragon",
-        # v19 — 한국 자연/식물 바디아트
+        # v19 ???쒓뎅 ?먯뿰/?앸Ъ 諛붾뵒?꾪듃
         "mugunghwa_body","korean_lotus_body","korean_plum_body","korean_bamboo_body",
-        # v20 — 지도 계열 13개
+        # v20 ??吏??怨꾩뿴 13媛?
         "world_map_body","topographic_body","ocean_depth_body","thermal_map_body",
         "weather_map_body","subway_map_body","europe_political_body","africa_tribes_body",
         "japan_prefecture_body","ancient_map_body","star_map_body",
         "usa_county_map_body",
-        # v20 — 과학/자연현상 5개
+        # v20 ??怨쇳븰/?먯뿰?꾩긽 5媛?
         "thermal_scan_body","circuit_board_body","galaxy_nebula_body",
         "crystal_geode_body",
-        # v20 — 문명/문자 6개
+        # v20 ??臾몃챸/臾몄옄 6媛?
         "hieroglyph_body","aztec_calendar_body","celtic_knot_body",
         "arabic_calligraphy_body","islamic_geometric_body","greek_mosaic_body",
-        # v20 — 식물/자연 3개
+        # v20 ???앸Ъ/?먯뿰 3媛?
         "autumn_leaves_body","coral_reef_body","mushroom_forest_body",
-        # v20 — 건축/패턴 2개
+        # v20 ??嫄댁텞/?⑦꽩 2媛?
         "stained_glass_body","bauhaus_body",
-        # v20 — 환경융합 2개
+        # v20 ???섍꼍?듯빀 2媛?
         "urban_decay_body","forest_stone_body",
-        # 2026-06-08 카테고리 누락 복구
+        # 2026-06-08 移댄뀒怨좊━ ?꾨씫 蹂듦뎄
         "banksy_stencil","shadow_art_nude",
-        # v28 — 전통&문화 바디페인팅 52종 (중복 9종 제거)
-        # 일본
+        # v28 ???꾪넻&臾명솕 諛붾뵒?섏씤??52醫?(以묐났 9醫??쒓굅)
+        # ?쇰낯
         "geisha_bodypaint","maiko_bodypaint","kimono_bodypaint","noh_bodypaint",
         "kabuki_bodypaint","samurai_bodypaint","geisha_white_bodypaint","ninja_bodypaint",
-        # 한국
+        # ?쒓뎅
         "hanbok_bodypaint","joseon_bodypaint","gisaeng_bodypaint",
         "hanbok_modern_bodypaint","korean_shaman_bodypaint",
-        # 중국
+        # 以묎뎅
         "qipao_bodypaint","cheongsam_bodypaint","hanfu_bodypaint",
         "tang_dynasty_bodypaint","ming_bodypaint",
-        # 남아시아/중동
+        # ?⑥븘?쒖븘/以묐룞
         "sari_bodypaint","belly_bodypaint","odalisque_bodypaint",
         "harem_bodypaint","mughal_bodypaint",
         "persian_bodypaint","moroccan_bodypaint","ottoman_bodypaint",
-        # 동남아/중앙아
+        # ?숇궓??以묒븰??
         "thai_bodypaint","balinese_bodypaint","kebaya_bodypaint",
         "batik_bodypaint","ikat_bodypaint","ao_dai_bodypaint",
         "tibetan_bodypaint","shaman_bodypaint","scythian_bodypaint",
-        # 아메리카/오세아니아
+        # ?꾨찓由ъ뭅/?ㅼ꽭?꾨땲??
         "mayan_bodypaint","hopi_bodypaint","olmec_bodypaint",
         "maori_bodypaint","polynesian_bodypaint","haida_bodypaint",
-        # 아프리카
+        # ?꾪봽由ъ뭅
         "yoruba_bodypaint","kente_bodypaint","dashiki_bodypaint",
         "adinkra_bodypaint","zulu_bodypaint",
-        # 유럽/고대
+        # ?좊읇/怨좊?
         "scottish_bodypaint","byzantine_bodypaint","flamenco_bodypaint","dirndl_bodypaint",
         "sumerian_bodypaint","voodoo_bodypaint",
-        # v23 — 개방형 바디페인팅 20개 (주제 비움, 매번 다르게 생성)
+        # v23 ??媛쒕갑??諛붾뵒?섏씤??20媛?(二쇱젣 鍮꾩?, 留ㅻ쾲 ?ㅻⅤ寃??앹꽦)
         "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto",
         "body_paint_airbrush","body_paint_ink_splatter","body_paint_drip_free",
         "body_paint_monochrome","body_paint_pastel_dream","body_paint_neon_glow",
@@ -124,7 +124,7 @@ PRESET_CATEGORIES = {
         "body_paint_surreal_free","body_paint_minimalist_free",
         "body_paint_blacklight","body_paint_glitter_free","body_paint_uv_reactive",
     ],
-    "💫 럭셔리 글래머": [
+    "?뮟 ??뀛由?湲?섎㉧": [
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial",        "noir_opulence","platinum_elite","ivory_silk","ivory_tower",
         "pearl_essence","velvet_gold","velvet_darkness","all_black_goddess","black_mirror",
         "onyx_tension","phantom_gloss","champagne_mist","couture_heat","silk_wrap","goddess_draped",
@@ -135,11 +135,11 @@ PRESET_CATEGORIES = {
         # v16
         "plunge_gown","slit_maxi","cutout_bodysuit","sheer_overlay",
         "jeweled_bikini_top","golden_drape_goddess","crystal_gown","feather_trim_mini",
-        # v21 — 럭셔리 글래머 13개
+        # v21 ????뀛由?湲?섎㉧ 13媛?
         "luxury_noir","diamond_couture","velvet_serpent","opera_glam","silver_screen",
         "lace_noir","white_silk_goddess","crystal_bodycon","penthouse_glam",
         "midnight_couture","crimson_gown","serpentine_dress","baroque_glam",
-        # 2026-07-02 신규 추가
+        # 2026-07-02 ?좉퇋 異붽?
         "private_pool_villa",
         "rooftop_pool_night",
         "penthouse_pool",
@@ -147,30 +147,30 @@ PRESET_CATEGORIES = {
         "casino_vip_glam",
         "limo_glam",
     ],
-    "🔥 핫 & 섹시": [
-        # 기존 관능 & 에로틱 글래머
+    "?뵦 ??& ?뱀떆": [
+        # 湲곗〈 愿??& ?먮줈??湲?섎㉧
         "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
         "wet_silk_gown","oil_goddess_gold","pool_wet_glam","rain_soaked_dress","sweat_glam",
         "micro_dress_only","barely_covered","deep_plunge_gown","backless_extreme","one_strap_gown",
         "pinup_classic","vargas_girl","bombshell_retro","bunny_suit","playboy_glam",
-        # 럭셔리에서 이동
+        # ??뀛由ъ뿉???대룞
         "elite_lingerie","lingerie_noir",
-        # 비치에서 이동
+        # 鍮꾩튂?먯꽌 ?대룞
         "barely_there","wet_look_goddess","thong_bikini","micro_bikini_gold",
         "sarong_goddess","wet_bikini_pool","topless_editorial","nude_beach_art",
         "aqua_bikini","golden_summer","riviera_heat",
-        # 계절에서 이동
+        # 怨꾩젅?먯꽌 ?대룞
         "snow_queen_erotic","autumn_gold_sensual","christmas_boudoir","summer_solstice_glam",
-        # 란제리/페티쉬 경계
+        # ??쒕━/?섑떚??寃쎄퀎
         "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
-        # v21 — 핫 & 섹시 19개
+        # v21 ????& ?뱀떆 19媛?
         "fishnet_goddess","see_through_gown","wet_tshirt","string_bikini","lace_bodysuit",
         "satin_slip","velvet_corset","body_chain_only","strappy_dress","cut_out_swimsuit",
         "monokini_goddess","champagne_drip","neon_bodysuit","bikini_top_only",
         "white_linen_sheer","oil_drip_body","yoga_pants_glam","micro_skirt","halter_glam",
-        # 2026-06-08 누락 복구
+        # 2026-06-08 ?꾨씫 蹂듦뎄
         "wet_editorial",
-        # v27 — 핫 & 섹시 신규 17개
+        # v27 ????& ?뱀떆 ?좉퇋 17媛?
         "pool_edge_wet",
         "ocean_wave_body",
         "penthouse_bath",
@@ -181,7 +181,7 @@ PRESET_CATEGORIES = {
         "vip_booth_neon",
         "after_party_suite",
         "tennis_short_dress",
-        # 2026-07-02 신규 추가
+        # 2026-07-02 ?좉퇋 異붽?
         "pasties_editorial",
         "body_tape_art",
         "invisible_dress",
@@ -194,22 +194,22 @@ PRESET_CATEGORIES = {
         "steam_room_goddess",
         "volcanic_heat_body",
     ],
-    "💋 에로틱 & 페티쉬": [
-        # 파워&엣지에서 이동
+    "?뭼 ?먮줈??& ?섑떚??: [
+        # ?뚯썙&?ｌ??먯꽌 ?대룞
         "latex_venom","chrome_vixen","chain_goddess",
         "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
         "oil_goddess","savage_leather",
-        # 퍼포먼스에서 이동
+        # ?쇳룷癒쇱뒪?먯꽌 ?대룞
         "burlesque","showgirl","cabaret_star","pole_art","candy_rave",
         "lap_dance_glam","striptease_art","pole_dance_power","midnight_bath","belly_dance_glam",
-        # 판타지에서 이동
+        # ?먰?吏?먯꽌 ?대룞
         "dark_succubus","vampire_seduction","witch_sensual","dark_fairy_erotic","shadow_seductress",
-        # v21 — 에로틱 & 페티쉬 16개
+        # v21 ???먮줈??& ?섑떚??16媛?
         "latex_catsuit_red","rubber_goddess","harness_only","rope_bondage_art",
         "vinyl_goddess","corset_stockings","catsuit_zipper","bodystocking",
         "secretary_after_hours","nurse_sensual","maid_sensual","leather_bodysuit",
         "wet_latex","fetish_boots_only","dominatrix_red","fishnet_bodysuit",
-        # v22 — 에로틱 & 페티쉬 강화 26개
+        # v22 ???먮줈??& ?섑떚??媛뺥솕 26媛?
         "transparent_dress","sheer_catsuit",
         "latex_transparent","latex_hood_full","pvc_transparent_full",
         "chrome_bodysuit","mirror_dress","liquid_metal_body",
@@ -220,7 +220,7 @@ PRESET_CATEGORIES = {
         "succubus_full","dark_angel_fallen","alien_queen_body",
         "body_paint_nude","micro_thong_only","tape_bondage",
         "metal_bondage","lap_dance_extreme",
-        # 2026-07-02 신규 추가
+        # 2026-07-02 ?좉퇋 異붽?
         "liquid_latex_drip",
         "chrome_paint_body",
         "silver_foil_body",
@@ -228,7 +228,7 @@ PRESET_CATEGORIES = {
         "mirror_latex",
         "neon_latex",
     ],
-    "🌿 자연 & 원소": [
+    "?뙼 ?먯뿰 & ?먯냼": [
         "lava_flow","ocean_surge","ice_palace","ice_refraction","frozen_latex","blizzard_queen","sandstorm_veil",
         "storm_couture","heat_shimmer","water_reflection","waterfall_goddess","rain_soaked",
         "mist_goddess","mist_vanguard","winter_forest","desert_mirage","desert_oracle",
@@ -237,7 +237,7 @@ PRESET_CATEGORIES = {
         "smoke_veil","liquid_gold_pour","liquid_mirror","prism_light","shattered_glass","zero_gravity",
         # v11
         "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
-        # v25 — 개방형 자연 배경
+        # v25 ??媛쒕갑???먯뿰 諛곌꼍
         "son_doong_jungle","waitomo_glow","dead_vlei_ghost","danxia_rainbow",
         "cenote_sacred","socotra_alien","lake_natron","namib_star_desert",
         # v26
@@ -245,7 +245,7 @@ PRESET_CATEGORIES = {
         "rainbow_mountain","wisteria_tunnel","torres_del_paine","ha_long_bay",
         "kelimutu_crater","victoria_falls","fairy_pools","tunnel_of_love","chocolate_hills",
     ],
-    "🌃 도시 & 나이트": [
+    "?똽 ?꾩떆 & ?섏씠??: [
         "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
         "rooftop_midnight","rooftop_party","midnight_goddess","midnight_monolith","nightclub_vip",
         "monaco_nights","miami_afterglow","azure_nights","blue_hour_goddess","candlelight_noir",
@@ -253,30 +253,30 @@ PRESET_CATEGORIES = {
         "disco_goddess","music_festival","new_year_countdown","cyber_fire","cyber_silk","emerald_city",
         # v11
         "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
-        # v25 — 개방형 건축/도시 배경
+        # v25 ??媛쒕갑??嫄댁텞/?꾩떆 諛곌꼍
         "sheikh_zayed_dawn","livraria_lello_staircase","palacio_de_sal",
         # v26
         "santorini_sunset","cappadocia_balloons","chefchaouen_blue","hallstatt_lake",
         "shirakawa_snow","positano_cliff","bruges_canal","cinque_terre_harbor",
     ],
-    "🎬 에디토리얼 & 무드": [
+    "?렗 ?먮뵒?좊━??& 臾대뱶": [
         "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
         "light_driven","backlit_silk","mirror_goddess","mirror_room","eclipse_body","chrome_skin",
         "neon_body","plasma_aura","molten_chrome","mercury_rising","mercury_pool","titanium_body",
         "snowflake_skin","80s_power","y2k_chrome","bohemian_paris","origami_couture",
         # v11
         "wet_glass","smoke_studio","infrared_beauty","grain_film",
-        # 2026-07-02 신규 추가
+        # 2026-07-02 ?좉퇋 異붽?
         "bed_editorial",
         "floor_editorial",
         "chair_editorial",
         "door_frame_glam",
         "staircase_glam",
         "elevator_glam",
-        # 2026-06-08 누락 복구
+        # 2026-06-08 ?꾨씫 蹂듦뎄
         "dreamy_soft_focus","film_noir_glam","noir_femme_fatale",
     ],
-    "🏺 문명 & 신화": [
+    "?뤊 臾몃챸 & ?좏솕": [
         "cleopatra_gold","pharaoh_queen","byzantine_empress","maasai_warrior","nine_tails",
         "moonrise_ceremony","oracle_smoke","ritual_ash","ruins_goddess","renaissance_fantasy",
         "renaissance_nude","cathedral_light","baroque_punk","art_gallery","museum_glamour",
@@ -284,17 +284,17 @@ PRESET_CATEGORIES = {
         "marble_minimal","viking_queen",
         # v11
         "sumerian_queen","ming_empress","aztec_sun_goddess","celtic_warrior_queen",
-        # v17 보강
+        # v17 蹂닿컯
         "aphrodite_glam","artemis_huntress","freya_norse","kali_goddess",
         "isis_egypt","lakshmi_goddess","oshun_yoruba","morgan_le_fay",
-        # v19 — 한국 신수/정령
+        # v19 ???쒓뎅 ?좎닔/?뺣졊
         "haetae_guardian","dokkaebi_spirit","korean_tiger_spirit","gyeongbokgung_night",
-        # v20 — 국기 8개
+        # v20 ??援?린 8媛?
         "union_jack_body","brazil_flag_body","usa_stars_stripes_body",
         "japan_rising_sun_body","south_africa_flag_body","india_flag_body",
         "mexico_flag_body","ukraine_flag_body",
     ],
-    "✈️ 직업 & 라이프스타일": [
+    "?덌툘 吏곸뾽 & ?쇱씠?꾩뒪???: [
         "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
         "cruise_hostess","yacht_captain","yacht_club","sommelier","wine_tasting","casino_dealer",
         "private_jet","helipad","luxury_shopping","golf_glam","golf_caddie","tennis_luxe",
@@ -302,11 +302,11 @@ PRESET_CATEGORIES = {
         "fitness_power","yoga_goddess",
         # v11
         "barista_chic","gallery_curator","horse_racing","scuba_instructor",
-        # v13 스포츠
+        # v13 ?ㅽ룷痢?
         "ballet_prima","gymnastics_editorial","figure_skater","tennis_champion",
         "archery_goddess","carnival_rio",
     ],
-    "🔮 판타지 & 다크": [
+    "?뵰 ?먰?吏 & ?ㅽ겕": [
         "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
         "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
         "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -315,7 +315,7 @@ PRESET_CATEGORIES = {
         # v11
         "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
     ],
-    "⚔️ 파워 & 엣지": [
+    "?뷂툘 ?뚯썙 & ?ｌ?": [
         "valkyrie_storm","biker_glam","shadow_play",
         "fencer_noir","martial_arts","boxing_glamour","power_curve",
         "power_suit","sculpted_power","shadow_queen","bioluminescence","bioluminescent",
@@ -364,7 +364,7 @@ PRESET_CATEGORIES = {
         # v11
         "riot_goddess","punk_queen","steel_warrior","cage_fighter",
     ],
-    "🏖️ 비치 & 리조트": [
+    "?룚截?鍮꾩튂 & 由ъ“??: [
         "summer_beach","surfer_goddess","pool_goddess",
         "poolside_noir","infinity_pool","beach_bonfire",
         "scuba_goddess","glass_floor","glass_house","ski_chalet","vineyard_harvest","spa_noir",
@@ -372,7 +372,7 @@ PRESET_CATEGORIES = {
         # v11
         "sunset_cruise","coral_diving","beach_bonfire_night","hammock_resort",
     ],
-    "🎭 퍼포먼스 & 댄스": [
+    "?렚 ?쇳룷癒쇱뒪 & ?꾩뒪": [
         "flamenco_queen","tango_passion","circus_performer",
         "ribbon_dance","aerial_silk","fire_dancer","masquerade_ball",
         "opera_night","christmas_glamour","pop_art_glamour","ribbon_goddess","petal_storm",
@@ -381,21 +381,21 @@ PRESET_CATEGORIES = {
         # v17
         "samba_carnival","hula_goddess","jazz_dance_glam","kathak_dance",
     ],
-    "👘 전통 & 문화의상": [
+    "?몮 ?꾪넻 & 臾명솕?섏긽": [
         "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
         "harem_goddess","belly_dancer","odalisque","imperial_silk",
         # v10
         "kimono_silk","ao_dai_sheer","thai_temple","indian_bridal","moroccan_kaftan",
         "persian_court","yoruba_glamour","balinese_goddess","chinese_qipao_slit","scottish_corset",
-        # v17 보강
+        # v17 蹂닿컯
         "hanfu_goddess","cheongsam_slit","kebaya_java","dashiki_glam","kaftan_sheer",
         "flamenco_dress","dirndl_glam","hanbok_modern","ao_dai_glamour","saree_draped_sensual",
-        # v19 — 한국 역사/전통
+        # v19 ???쒓뎅 ??궗/?꾪넻
         "joseon_queen","joseon_consort","gisaeng_glamour","gisaeng_noir","mudang_shaman",
         "haenyeo_goddess","silla_empress","goguryeo_warrior","goryeo_empress","joseon_painter",
         "korean_shaman_fire","baekje_lotus","silla_gold_crown",
     ],
-    "🌸 계절 & 테마": [
+    "?뙵 怨꾩젅 & ?뚮쭏": [
         "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
         "sunflower_field","greenhouse_eden","tropical_night",
         # v10
@@ -404,7 +404,7 @@ PRESET_CATEGORIES = {
         # v17
         "halloween_glam","new_year_glam","sakura_night_glam","monsoon_goddess",
     ],
-    "🍬 팝 & 카와이": [
+    "?뜫 ??& 移댁???: [
         # v10
         "y2k_fairy","pink_champagne","cotton_candy","angel_baby","idol_stage","kitty_glam",
         "strawberry_milk","cherry_pop","neon_kawaii","fairy_kei",
@@ -413,32 +413,32 @@ PRESET_CATEGORIES = {
         "lolita_gothic","disco_barbie","space_babe","bubblegum_pop","rainbow_rave","glitter_bomb",
         "arcade_queen","virtual_idol","tokimeki_pop","kpop_idol","korean_ulzzang","kbeauty_goddess",
         "kdrama_heroine","manga_girl",
-        # v19 — K-컬처/뷰티
+        # v19 ??K-而ъ쿂/酉고떚
         "kpop_girl_crush","hallyu_goddess","kbeauty_glass_skin",
         "kdrama_villain_queen","kdrama_chaebol_heir","gangnam_luxury_glam",
-        # 2026-06-08 누락 복구
+        # 2026-06-08 ?꾨씫 蹂듦뎄
         "bubble_tea","doll_house","harajuku_doll",
     ],
 
-    "🎌 애니 & 글래머": [
-        # v13 일본 계열
+    "?럩 ?좊땲 & 湲?섎㉧": [
+        # v13 ?쇰낯 怨꾩뿴
         "zero_suit","battle_bikini","succubus_anime","catgirl_luxe","dark_magical_girl",
         "witch_apprentice","fallen_angel_anime","kunoichi_glam","oni_warrior","samurai_bride",
         "dragon_princess","android_girl","pilot_suit","neon_android","vampire_seductress",
-        # v13 글로벌 계열
+        # v13 湲濡쒕쾶 怨꾩뿴
         "cosmic_warrior_glam","dark_jester_glam","poison_ivy_vines","storm_goddess",
         "dark_sorceress_glam","jessica_rabbit_glam","webtoon_heroine","manhwa_villainess",
         "barbarella_retro","vampirella_dark","ghost_shell","android_2b","street_fighter_chun",
         "dark_elsa","sailor_moon_dark",
-        # v24 — A형 실사 컨셉 7개 (특정 IP 회피, 일반 아키타입)
+        # v24 ??A???ㅼ궗 而⑥뀎 7媛?(?뱀젙 IP ?뚰뵾, ?쇰컲 ?꾪궎???
         "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden","anime_demon_slayer",
         "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
-        # v24 — B형 2D 그림체 파일럿 2개 (실사 엔진 그림체 테스트 — 검증 필요)
+        # v24 ??B??2D 洹몃┝泥??뚯씪??2媛?(?ㅼ궗 ?붿쭊 洹몃┝泥??뚯뒪????寃利??꾩슂)
         "anime_cel_shaded","anime_webtoon_style",
     ],
 
-    # ── 🎨 애니 아트스타일 (2026-06-09 신설, 그림체 32종) ──
-    "🎨 애니 아트스타일": [
+    # ?? ?렓 ?좊땲 ?꾪듃?ㅽ???(2026-06-09 ?좎꽕, 洹몃┝泥?32醫? ??
+    "?렓 ?좊땲 ?꾪듃?ㅽ???: [
         'anime_jp_90s_retro',
         'anime_jp_80s_citypop',
         'anime_jp_modern_glossy',
@@ -473,7 +473,7 @@ PRESET_CATEGORIES = {
         'anime_noir_silhouette',
     ],
 
-    "🌑 실루엣 & 섀도우": [
+    "?뙌 ?ㅻ（??& ??꾩슦": [
         "silhouette_spotlight_smoke",
         "silhouette_spotlight_latex",
         "silhouette_spotlight_heels",
@@ -506,7 +506,7 @@ PRESET_CATEGORIES = {
         "silhouette_smoke_studio",
     ],
 
-        "🌌 불가능 & 초현실": [
+        "?뙆 遺덇???& 珥덊쁽??: [
         "storm_eye_editorial",
         "living_fabric",
         "macro_goddess",
@@ -534,11 +534,11 @@ PRESET_CATEGORIES = {
         "weather_maker",
         "gravity_well",
         "double_exposure_self",
-        # v25 — 개방형 초현실 배경
+        # v25 ??媛쒕갑??珥덊쁽??諛곌꼍
         "richat_eye","marble_caves_water",
     ],
 
-    "🏛️ 유적 & 문명": [
+    "?룢截??좎쟻 & 臾몃챸": [
         "petra_rose","angkor_dawn","tikal_skyrise","bagan_balloon",
         "ellora_rock_temple","derinkuyu_underground","tigers_nest_cliff","naoshima_art_island",
         # v26
@@ -547,7 +547,7 @@ PRESET_CATEGORIES = {
         "angkor_thom_faces","teotihuacan_pyramid","gobekli_tepe","palmyra_colonnade",
     ],
 
-    "🌋 엘리멘탈 갓데스": [
+    "?뙅 ?섎━硫섑깉 媛볥뜲??: [
         "uyuni_wet_silk",
         "dead_sea_goddess",
         "iceland_hot_spring",
@@ -555,7 +555,7 @@ PRESET_CATEGORIES = {
         "niagara_wet_editorial",
         "monsoon_goddess",
         "black_sea_midnight",
-    # 2026-06-21 자연&원소 G1~G10 전체 tier 패치
+    # 2026-06-21 ?먯뿰&?먯냼 G1~G10 ?꾩껜 tier ?⑥튂
 
         "amazon_river_goddess",
         "lava_field_latex",
@@ -592,11 +592,11 @@ PRESET_CATEGORIES = {
         "rainbow_falls_goddess",
     ],
 
-    "💧 웨트 & 글로스": [
-        # 수영장/풀
+    "?뮛 ?⑦듃 & 湲濡쒖뒪": [
+        # ?섏쁺???
         "pool_surface_break", "pool_underwater_up", "pool_edge_dripping",
         "infinity_pool_wet", "hot_spring_steam", "jacuzzi_bubbles",
-        # 2026-07-02 신규 추가
+        # 2026-07-02 ?좉퇋 異붽?
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -611,136 +611,136 @@ PRESET_CATEGORIES = {
         "waterfall_nude",
         "ocean_nude_editorial",
         "steam_bath_goddess",
-        # 비/폭우
+        # 鍮???슦
         "rain_window_inside", "rain_street_soaked", "rain_studio_dramatic",
         "monsoon_body", "rain_car_window",
-        # 오일/글로스
+        # ?ㅼ씪/湲濡쒖뒪
         "oil_pour_studio", "oil_drip_back", "honey_drip_body",
         "chocolate_pour_gloss", "gloss_lips_drip", "chrome_gloss_body",
-        # 땀/열기
+        # ?/?닿린
         "sweat_studio_light", "after_workout_glow", "heat_mirage_sweat", "sauna_steam_body",
-        # 결로/물방울
+        # 寃곕줈/臾쇰갑??
         "condensation_skin", "ice_melt_drip", "dew_morning_body", "frost_breath_cold",
-        # 기타 웨트
+        # 湲고? ?⑦듃
         "waterfall_direct", "wave_crash_body", "wet_silk_minimal",
         "bubble_bath_gloss", "milk_bath_petals",
     ],
 
-    "🌫️ 대기 & 파티클": [
-        # 스모크/연기
+    "?뙧截??湲?& ?뚰떚??: [
+        # ?ㅻえ???곌린
         "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
         "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
-        # 파우더/더스트
+        # ?뚯슦???붿뒪??
         "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
         "flour_dust_studio", "pigment_powder_art",
-        # 페더/페탈
+        # ?섎뜑/?섑깉
         "feather_explosion", "black_feather_dark", "petal_storm_indoor",
         "cherry_blossom_burst", "dried_flower_cascade",
-        # 글리터/파티클
+        # 湲由ы꽣/?뚰떚??
         "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
         "neon_particle_club", "bubble_floating_studio",
-        # 불/스파크
+        # 遺??ㅽ뙆??
         "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
-        # 자연 파티클
+        # ?먯뿰 ?뚰떚??
         "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
         "firefly_night_field", "seed_pod_floating",
     ],
-    "👑 한국 역사 & 궁중 글래머": [
-        # 🏯 삼국/고대 왕실
+    "?몣 ?쒓뎅 ??궗 & 沅곸쨷 湲?섎㉧": [
+        # ?룾 ?쇨뎅/怨좊? ?뺤떎
         "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
         "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
         "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
         "dongye_tribal_queen",
-        # 🏰 고려 궁중
+        # ?룿 怨좊젮 沅곸쨷
         "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
         "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
         "mongol_goryeo_queen", "goryeo_haenyeo_silk",
-        # 👘 조선 왕실/궁중
+        # ?몮 議곗꽑 ?뺤떎/沅곸쨷
         "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
         "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
         "joseon_merchant_woman", "damo_warrior", "joseon_night_queen",
         "joseon_concubine_red", "changdeok_moonlight", "gyeongbokgung_geisha",
-        # 💃 기생/예인
+        # ?뭴 湲곗깮/?덉씤
         "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
         "gisaeng_haiku_bath", "gisaeng_rain_dance", "gisaeng_black_silk",
         "wonhyang_legend", "hwang_jini_glam", "gisaeng_fan_dance",
         "gisaeng_pipa_night", "gisaeng_mirror_boudoir", "pyongyang_gisaeng",
-        # 🦊 신화 & 정령
+        # ?쫲 ?좏솕 & ?뺣졊
         "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
         "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
         "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
         "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
-        # 🌊 민속 & 세시풍속
+        # ?뙄 誘쇱냽 & ?몄떆?띿냽
         "haenyeo_wet_glam", "dano_festival_glam", "ganggangsullae_night",
         "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
         "jeju_shaman_sea", "korean_harvest_goddess",
-        # ⚔️ 여전사 & 무인
+        # ?뷂툘 ?ъ쟾??& 臾댁씤
         "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
         "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
         "goguryeo_fire_warrior", "joseon_spy_sheer",
-        # 🎭 근대 & 퓨전
+        # ?렚 洹쇰? & ?⑥쟾
         "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
         "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
         "hanbok_wet_editorial", "joseon_boudoir",
     ],
 
-    "🎨 멀티 바디페인팅": [
-        # G1 대비형 듀오 (2인, 반대 테마 충돌/조화)
+    "?렓 硫??諛붾뵒?섏씤??: [
+        # G1 ?鍮꾪삎 ???(2?? 諛섎? ?뚮쭏 異⑸룎/議고솕)
         "duo_fire_and_ice_bodypaint",
         "duo_day_and_night_bodypaint",
         "duo_bloom_and_void_bodypaint",
         "duo_gold_and_shadow_bodypaint",
         "duo_ocean_and_desert_bodypaint",
         "duo_circuit_and_nature_bodypaint",
-        # G1 대비형 듀오 추가 (6종)
+        # G1 ?鍮꾪삎 ???異붽? (6醫?
         "duo_east_and_west_bodypaint",
         "duo_macro_and_micro_bodypaint",
         "duo_ancient_and_future_bodypaint",
         "duo_poison_and_medicine_bodypaint",
         "duo_deep_sea_bodypaint",
-        # G2 대비형 트리오 (3인, 삼원 대비)
+        # G2 ?鍮꾪삎 ?몃━??(3?? ?쇱썝 ?鍮?
         "trio_rgb_trinity_bodypaint",
         "trio_past_present_future_bodypaint",
         "trio_predator_prey_apex_bodypaint",
         "trio_ink_gold_chrome_bodypaint",
         "trio_season_trinity_bodypaint",
-        # G2 대비형 트리오 추가 (6종)
+        # G2 ?鍮꾪삎 ?몃━??異붽? (6醫?
         "trio_sun_moon_star_bodypaint",
         "trio_three_oceans_bodypaint",
         "trio_three_civilizations_bodypaint",
         "trio_fire_water_earth_bodypaint",
         "trio_three_big_cats_bodypaint",
-        # G3 연결형 듀오 (2인, 합치면 하나의 작품)
+        # G3 ?곌껐?????(2?? ?⑹튂硫??섎굹???묓뭹)
         "duo_butterfly_split_bodypaint",
         "duo_yin_yang_merge_bodypaint",
         "duo_world_map_bodypaint",
         "duo_klimt_tree_bodypaint",
         "duo_galaxy_split_bodypaint",
         "duo_wave_hokusai_bodypaint",
-        # G3 연결형 듀오 추가 (6종)
+        # G3 ?곌껐?????異붽? (6醫?
         "duo_dna_helix_bodypaint",
         "duo_solar_eclipse_bodypaint",
         "duo_human_shadow_bodypaint",
         "duo_tiger_split_bodypaint",
         "duo_starry_night_split_bodypaint",
         "duo_peacock_split_bodypaint",
-        # G4 연결형 트리오 (3인, 합치면 거대한 작품)
+        # G4 ?곌껐???몃━??(3?? ?⑹튂硫?嫄곕????묓뭹)
         "trio_triptych_klimt_bodypaint",
         "trio_phoenix_rising_bodypaint",
         "trio_world_tree_bodypaint",
         "trio_ocean_depth_bodypaint",
         "trio_aurora_spectrum_bodypaint",
         "trio_cosmic_creation_bodypaint",
-        # G4 연결형 트리오 추가 (6종)
+        # G4 ?곌껐???몃━??異붽? (6醫?
         "trio_last_supper_bodypaint",
         "trio_rainbow_arc_bodypaint",
         "trio_milky_way_panorama_bodypaint",
         "trio_coral_reef_zones_bodypaint",
         "trio_creation_of_adam_bodypaint",
         "trio_poles_and_equator_bodypaint",
-        # 2026-07-03 신규 QUAD 8종
+        # 2026-07-03 ?좉퇋 QUAD 8醫?
         "quad_four_civilizations_bodypaint",
-        # 2026-07-06 공식E 오브제 커버 전체 SS 포함 (9종)
+        # 2026-07-06 怨듭떇E ?ㅻ툕??而ㅻ쾭 ?꾩껜 SS ?ы븿 (9醫?
     "feather_body_cover",
     "mushroom_moss_cover",
     "butterfly_swarm_cover",
@@ -757,7 +757,7 @@ PRESET_CATEGORIES = {
         "quad_cmyk_bodypaint",
         "quad_four_classical_elements_klimt",
         "quad_four_seasons_night_bodypaint",
-        # 2026-07-03 신규 QUINT 7종
+        # 2026-07-03 ?좉퇋 QUINT 7醫?
         "quint_five_senses_bodypaint",
         "quint_five_worlds_bodypaint",
         "quint_five_elements_wuxing_bodypaint",
@@ -765,79 +765,27 @@ PRESET_CATEGORIES = {
         "quint_five_oceans_deep_bodypaint",
         "quint_five_sacred_colors_bodypaint",
         "quint_five_dance_cultures_bodypaint",
-        # 2026-07-03 신규 HEXA 2종
+        # 2026-07-03 ?좉퇋 HEXA 2醫?
         "hexa_rainbow_spectrum_bodypaint",
-    
-    # 2026-07-07 나이트/슬립드레스/애니멀프린트 11종 HOF
-    "club_vip_neon_goddess",
-    "club_rooftop_citylight",
-    "micro_sequin_club",
-    "rooftop_micro_night",
-    "silk_slip_dawn_hotel",
-    "satin_slip_vanity_noir",
-    "satin_slip_micro",
-    "leopard_power_editorial",
-    "leopard_micro_studio",
-    "snake_micro_marble",
-    "snakeskin_latex_glam",
-    # 2026-07-07 극장적 글래머 30종 HOF
-    "gyeongbokgung_night_couture",
-    "bukchon_rain_editorial",
-    "namsan_tower_dusk",
-    "dongdaemun_neon_rain",
-    "haeinsa_temple_dawn",
-    "jeju_volcanic_coast",
-    "fushimi_inari_crimson",
-    "arashiyama_bamboo_mist",
-    "osaka_dotonbori_neon",
-    "mount_fuji_dawn_silk",
-    "japanese_garden_autumn",
-    "kabukiza_backstage_glam",
-    "forbidden_city_golden_hour",
-    "li_river_karst_mist",
-    "shanghai_bund_noir",
-    "zhangjiajie_cloud_forest",
-    "west_lake_lotus_dawn",
-    "bali_tanah_lot_sunset",
-    "hoi_an_lantern_rain",
-    "bangkok_wat_arun_gold",
-    "singapore_marina_bay_night",
-    "luang_prabang_monk_dawn",
-    "rice_terrace_banaue_mist",
-    "opera_house_goddess",
-    "venetian_carnival_palazzo",
-    "flamenco_tablao_fire",
-    "broadway_red_curtain",
-    "scottish_castle_mist",
-    "sahara_dune_queen",
-    "ballet_stage_noir",
-    # 2026-07-06 공식E 오브제 커버 HOF 7종
-    "feather_body_cover",
-    "mushroom_moss_cover",
-    "butterfly_swarm_cover",
-    "seashell_body_cover",
-    "silver_chain_mirror_room",
-    "desert_sand_sculpture",
-    "ice_crystal_gown",
-    "trio_inside_outside_bodypaint",        # 해부학 3레이어(피부/근육/골격) + 박물관 배경 HOF
+    "trio_inside_outside_bodypaint",        # ?대???3?덉씠???쇰?/洹쇱쑁/怨④꺽) + 諛뺣Ъ愿 諛곌꼍 HOF
         "hexa_six_chakras_bodypaint",
-        # 2026-07-03 신규 OCTET 1종
+        # 2026-07-03 ?좉퇋 OCTET 1醫?
         "octet_planets_solar_bodypaint",
-        # 2026-07-03 신규 컨셉 4종
+        # 2026-07-03 ?좉퇋 而⑥뀎 4醫?
         "trio_inside_outside_bodypaint",        "quad_fashion_capitals_bodypaint",
-                # 4인 QUAD (5종)
+                # 4??QUAD (5醫?
         "quad_four_seasons_bodypaint",
         "quad_four_elements_bodypaint",
         "quad_four_directions_bodypaint",
         "quad_four_seasons_klimt_bodypaint",
         "quad_rgba_spectrum_bodypaint",
-        # 5인 QUINT (4종)
+        # 5??QUINT (4醫?
         "quint_five_continents_bodypaint",
         "quint_five_elements_asia_bodypaint",
         "quint_rainbow_five_bodypaint",
         "quint_five_oceans_bodypaint",
 
-    # G5 연결형 듀오 30종 (검증 예정)
+    # G5 ?곌껐?????30醫?(寃利??덉젙)
     "duo_earth_hemisphere_bodypaint",
     "duo_day_city_night_city_bodypaint",
     "duo_volcano_glacier_bodypaint",
@@ -863,7 +811,7 @@ PRESET_CATEGORIES = {
     "duo_crystal_lava_bodypaint",
     "duo_skeleton_bloom_bodypaint",
     "duo_ink_wash_split_bodypaint",
-    # G6 대비형 트리오 35종 (검증 예정)
+    # G6 ?鍮꾪삎 ?몃━??35醫?(寃利??덉젙)
     "trio_stone_bronze_iron_bodypaint",
     "trio_ancient_medieval_modern_bodypaint",
     "trio_birth_life_death_bodypaint",
@@ -895,8 +843,8 @@ PRESET_CATEGORIES = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-        # G5 연결형 듀오 (30종) — 두 몸이 합쳐지면 하나의 완성체
-        # 자연/우주
+        # G5 ?곌껐?????(30醫? ????紐몄씠 ?⑹퀜吏硫??섎굹???꾩꽦泥?
+        # ?먯뿰/?곗＜
         "duo_earth_hemisphere_bodypaint",
         "duo_day_city_night_city_bodypaint",
         "duo_volcano_glacier_bodypaint",
@@ -904,127 +852,127 @@ PRESET_CATEGORIES = {
         "duo_aurora_milkyway_bodypaint",
         "duo_coral_abyss_bodypaint",
         "duo_tree_root_bodypaint",
-        # 동물/생물
+        # ?숇Ъ/?앸Ъ
         "duo_eagle_serpent_bodypaint",
         "duo_wolf_moon_bodypaint",
         "duo_butterfly_cocoon_bodypaint",
         "duo_dragon_phoenix_bodypaint",
         "duo_lion_zebra_bodypaint",
         "duo_spider_web_bodypaint",
-        # 명화/문화
+        # 紐낇솕/臾명솕
         "duo_mona_lisa_split_bodypaint",
         "duo_birth_venus_split_bodypaint",
         "duo_yin_yang_koi_bodypaint",
         "duo_chess_board_bodypaint",
-        # SF/판타지
+        # SF/?먰?吏
         "duo_android_human_bodypaint",
         "duo_black_hole_star_bodypaint",
         "duo_past_future_city_bodypaint",
         "duo_virus_antibody_bodypaint",
         "duo_matrix_reality_bodypaint",
         "duo_crystal_lava_bodypaint",
-        # 인체/철학
+        # ?몄껜/泥좏븰
         "duo_skeleton_bloom_bodypaint",
         "duo_ink_wash_split_bodypaint",
-        # G6 대비형 트리오 (35종) — 3 극단의 충돌/조화
-        # 시간/역사
+        # G6 ?鍮꾪삎 ?몃━??(35醫? ??3 洹밸떒??異⑸룎/議고솕
+        # ?쒓컙/??궗
         "trio_stone_bronze_iron_bodypaint",
         "trio_ancient_medieval_modern_bodypaint",
         "trio_birth_life_death_bodypaint",
         "trio_seed_tree_ash_bodypaint",
-        # 원소/자연
+        # ?먯냼/?먯뿰
         "trio_lightning_ocean_earthquake_bodypaint",
         "trio_sand_ice_magma_bodypaint",
         "trio_sky_earth_underground_bodypaint",
         "trio_micro_human_macro_bodypaint",
         "trio_fog_rain_snow_bodypaint",
         "trio_jungle_desert_tundra_bodypaint",
-        # 색/빛
+        # ??鍮?
         "trio_primary_colors_bodypaint",
         "trio_black_white_gray_bodypaint",
         "trio_gold_silver_bronze_bodypaint",
         "trio_sunrise_sunset_moonrise_bodypaint",
         "trio_infrared_visible_uv_bodypaint",
-        # 신화/종교
+        # ?좏솕/醫낃탳
         "trio_heaven_earth_hell_bodypaint",
         "trio_creator_preserver_destroyer_bodypaint",
         "trio_fate_three_bodypaint",
         "trio_medusa_sphinx_hydra_bodypaint",
         "trio_valkyrie_siren_medea_bodypaint",
-        # 문명/지역
+        # 臾몃챸/吏??
         "trio_amazon_sahara_arctic_bodypaint",
         "trio_east_west_south_bodypaint",
         "trio_viking_samurai_spartan_bodypaint",
         "trio_nile_amazon_yangtze_bodypaint",
         "trio_rome_babylon_aztec_bodypaint",
-        # 감정/철학
+        # 媛먯젙/泥좏븰
         "trio_love_war_peace_bodypaint",
         "trio_fear_anger_joy_bodypaint",
         "trio_order_chaos_void_bodypaint",
         "trio_id_ego_superego_bodypaint",
         "trio_thesis_antithesis_synthesis_bodypaint",
     ],
-    "👯 듀오 글래머": [
-        # G1 웨트 & 풀
+    "?뫍 ???湲?섎㉧": [
+        # G1 ?⑦듃 & ?
         "duo_infinity_pool_contrast",
         "duo_rain_neon_soaked",
     "duo_ink_wash_split_bodypaint",
         "duo_pool_bodypaint_micro",
         "duo_wet_glass_divide",
-        # G2 바디페인트 대결
+        # G2 諛붾뵒?섏씤???寃?
         "duo_bodypaint_vs_latex",
         "duo_ocean_bodypaint",
         "duo_golden_desert_bodypaint",
         "duo_aurora_bodypaint",
         "duo_cyberpunk_bodypaint",
         "duo_jungle_tribal_bodypaint",
-        # G3 라텍스 & 소재 대비
+        # G3 ?쇳뀓??& ?뚯옱 ?鍮?
         "duo_latex_color_block",
         "duo_latex_storm_opposites",
         "duo_dark_latex_power",
         "duo_flamenco_latex_fusion",
-        # G4 오일 & 그림자
+        # G4 ?ㅼ씪 & 洹몃┝??
         "duo_smoke_noir",
-        # G5 럭셔리 씬
+        # G5 ??뀛由???
         "duo_versailles_latex_gold",
         "duo_monaco_yacht",
         "duo_champagne_gala",
         "duo_villa_italy",
         "duo_casino_power",
-        # G6 엘리멘탈 대비
+        # G6 ?섎━硫섑깉 ?鍮?
         "duo_fire_and_ice",
         "duo_angel_devil",
         "duo_chrome_future",
-        # G7 실루엣 & 미니멀
+        # G7 ?ㅻ（??& 誘몃땲硫
         "duo_sunset_silhouette",
         "duo_desert_minimal",
         "duo_kpop_stage",
         "duo_penthouse_power",
         "duo_ice_bath_contrast",
     ],
-    "🪞 거울 & 반사 글래머": [
-        # G1 클래식미러
+    "?첑 嫄곗슱 & 諛섏궗 湲?섎㉧": [
+        # G1 ?대옒?앸???
         "infinity_mirror_goddess",
         "hall_of_mirrors_glam",
         "obsidian_mirror_ritual",
         "venetian_mirror_boudoir",
         "cheval_mirror_reveal",
         "broken_mirror_multiplied",
-        # G2 수면반사
+        # G2 ?섎㈃諛섏궗
         "mercury_lake_reflection",
         "salt_flat_sky_merge",
         "rain_puddle_city_invert",
         "flooded_temple_mirror",
         "infinity_pool_edge_reflect",
         "morning_dew_skin_reflection",
-        # G3 유리&프리즘
+        # G3 ?좊━&?꾨━利?
         "glass_box_all_angles",
         "prism_light_body_split",
         "crystal_cave_skin_facets",
         "two_way_mirror_watcher",
         "window_rain_double",
         "soap_bubble_dome",
-        # G4 크롬&메탈
+        # G4 ?щ＼&硫뷀깉
         "chrome_sphere_world",
         "polished_obsidian_floor",
         "supercar_chrome_reflect",
@@ -1033,28 +981,28 @@ PRESET_CATEGORIES = {
         "mirrored_skyscraper_facade",
     ],
 
-    "🧬 SF & 바이오펑크": [
-        # G1 크라이오&실험실
+    "?㎚ SF & 諛붿씠?ㅽ럱??: [
+        # G1 ?щ씪?댁삤&?ㅽ뿕??
         "cryo_emergence_wet",
         "specimen_amber_suspended",
         "clean_room_latex_protocol",
         "gene_sequencer_data_skin",
         "quarantine_protocol_breach",
         "petri_dish_giant_macro",
-        # G2 심해&유기체
+        # G2 ?ы빐&?좉린泥?
         "abyssal_pressure_glam",
         "mycelium_web_consumed",
         "coral_organism_absorption",
         "carnivorous_plant_trap",
         "symbiote_second_skin",
         "jellyfish_bloom_float",
-        # G3 트랜스휴먼
+        # G3 ?몃옖?ㅽ쑕癒?
         "cyborg_partial_reveal",
         "neural_lace_crown",
         "exoskeleton_stripped",
         "prosthetic_art",
         "spine_tech_implant",
-            # G4 바이러스&뮤테이션
+            # G4 諛붿씠?ъ뒪&裕ㅽ뀒?댁뀡
         "mutation_bloom",
         "toxic_spore_cloud",
         "infection_glam",
@@ -1063,9 +1011,9 @@ PRESET_CATEGORIES = {
         "alien_host_glam",
     ],
 
-    "🌀 환경 일체 바디페인팅": [
-        # G1 패턴/직물 (6종 SSS)
-        # 2026-07-02 바디페인팅+의상 믹스 콜라보
+    "?? ?섍꼍 ?쇱껜 諛붾뵒?섏씤??: [
+        # G1 ?⑦꽩/吏곷Ъ (6醫?SSS)
+        # 2026-07-02 諛붾뵒?섏씤???섏긽 誘뱀뒪 肄쒕씪蹂?
         "trio_bodypaint_latex_frame",
         "trio_bodypaint_gown_frame",
         "trio_bodypaint_leather_frame",
@@ -1085,26 +1033,26 @@ PRESET_CATEGORIES = {
         "trio_bikini_bodypaint_center",
         "trio_sheer_bodypaint_center",
         "trio_chrome_bodypaint_center",
-        # 🌀 환경 일체 바디페인팅
+        # ?? ?섍꼍 ?쇱껜 諛붾뵒?섏씤??
         "merge_butterfly_fabric",
         "merge_floral_wallpaper",
         "merge_leopard_fabric",
         "merge_mandala_carpet",
         "merge_toile_pattern",
         "merge_tartan_plaid",
-        # G2 자연환경 (5종 SSS/SS)
+        # G2 ?먯뿰?섍꼍 (5醫?SSS/SS)
         "merge_salt_flat_sky",
         "merge_autumn_leaves_floor",
         "merge_coral_reef_water",
         "merge_sand_dunes",
         "merge_moss_stone_ground",
-        # G3 건축/소재 (5종 SSS)
+        # G3 嫄댁텞/?뚯옱 (5醫?SSS)
         "merge_clockwork_gears",
         "merge_marble_column_wall",
         "merge_islamic_tile_wall",
         "merge_stained_glass_window",
         "merge_circuit_board",
-        # G4 예술/회화 (6종 SSS)
+        # G4 ?덉닠/?뚰솕 (6醫?SSS)
         "merge_klimt_gold_mural",
         "merge_vangogh_starry",
         "merge_ukiyo_wave_print",
@@ -1113,11 +1061,11 @@ PRESET_CATEGORIES = {
         "merge_byzantine_mosaic",
     ],
 
-            "🌙 나이트 글래머": ['club_vip_neon_goddess', 'club_rooftop_citylight', 'micro_sequin_club', 'rooftop_micro_night'],
-        "👗 슬립드레스 글래머": ['silk_slip_dawn_hotel', 'satin_slip_vanity_noir', 'satin_slip_micro'],
-        "🐆 애니멀프린트 글래머": ['leopard_power_editorial', 'leopard_micro_studio', 'snake_micro_marble', 'snakeskin_latex_glam'],
-    "🎭 극장적 글래머": ['gyeongbokgung_night_couture', 'bukchon_rain_editorial', 'namsan_tower_dusk', 'dongdaemun_neon_rain', 'haeinsa_temple_dawn', 'jeju_volcanic_coast', 'fushimi_inari_crimson', 'arashiyama_bamboo_mist', 'osaka_dotonbori_neon', 'mount_fuji_dawn_silk', 'japanese_garden_autumn', 'kabukiza_backstage_glam', 'forbidden_city_golden_hour', 'li_river_karst_mist', 'shanghai_bund_noir', 'zhangjiajie_cloud_forest', 'west_lake_lotus_dawn', 'bali_tanah_lot_sunset', 'hoi_an_lantern_rain', 'bangkok_wat_arun_gold', 'singapore_marina_bay_night', 'luang_prabang_monk_dawn', 'rice_terrace_banaue_mist', 'opera_house_goddess', 'venetian_carnival_palazzo', 'flamenco_tablao_fire', 'broadway_red_curtain', 'scottish_castle_mist', 'sahara_dune_queen', 'ballet_stage_noir'],
-    "🌿 미니멀 오브제 커버": [
+            "?뙔 ?섏씠??湲?섎㉧": ['club_vip_neon_goddess', 'club_rooftop_citylight', 'micro_sequin_club', 'rooftop_micro_night'],
+        "?몭 ?щ┰?쒕젅??湲?섎㉧": ['silk_slip_dawn_hotel', 'satin_slip_vanity_noir', 'satin_slip_micro'],
+        "?릤 ?좊땲硫?꾨┛??湲?섎㉧": ['leopard_power_editorial', 'leopard_micro_studio', 'snake_micro_marble', 'snakeskin_latex_glam'],
+    "?렚 洹뱀옣??湲?섎㉧": ['gyeongbokgung_night_couture', 'bukchon_rain_editorial', 'namsan_tower_dusk', 'dongdaemun_neon_rain', 'haeinsa_temple_dawn', 'jeju_volcanic_coast', 'fushimi_inari_crimson', 'arashiyama_bamboo_mist', 'osaka_dotonbori_neon', 'mount_fuji_dawn_silk', 'japanese_garden_autumn', 'kabukiza_backstage_glam', 'forbidden_city_golden_hour', 'li_river_karst_mist', 'shanghai_bund_noir', 'zhangjiajie_cloud_forest', 'west_lake_lotus_dawn', 'bali_tanah_lot_sunset', 'hoi_an_lantern_rain', 'bangkok_wat_arun_gold', 'singapore_marina_bay_night', 'luang_prabang_monk_dawn', 'rice_terrace_banaue_mist', 'opera_house_goddess', 'venetian_carnival_palazzo', 'flamenco_tablao_fire', 'broadway_red_curtain', 'scottish_castle_mist', 'sahara_dune_queen', 'ballet_stage_noir'],
+    "?뙼 誘몃땲硫 ?ㅻ툕??而ㅻ쾭": [
         "silk_ribbon_minimal",
         "tropical_flower_minimal",
         "silver_foil_minimal",
@@ -1128,8 +1076,8 @@ PRESET_CATEGORIES = {
         "butterfly_wings_minimal",
         "seaweed_ocean_minimal",
     ],
-    "🎀 미니멀 커버 글래머": [
-    # 🌿 미니멀 오브제 커버
+    "?? 誘몃땲硫 而ㅻ쾭 湲?섎㉧": [
+    # ?뙼 誘몃땲硫 ?ㅻ툕??而ㅻ쾭
     "silk_ribbon_minimal",
     "tropical_flower_minimal",
     "silver_foil_minimal",
@@ -1148,7 +1096,7 @@ PRESET_CATEGORIES = {
         "seaweed_coral_body",
     ],
 
-    "🛁 스파 & 바디 글래머": [
+    "?썎 ?ㅽ뙆 & 諛붾뵒 湲?섎㉧": [
         "oil_massage_table",
         "mud_spa_clay",
         "hammam_marble_glam",
@@ -1161,7 +1109,7 @@ PRESET_CATEGORIES = {
         "salt_scrub_steam",
     ],
 
-    "🌋 자연 온천 & 수중": [
+    "?뙅 ?먯뿰 ?⑥쿇 & ?섏쨷": [
         "yunoko_bamboo_onsen",
         "pamukkale_travertine",
         "bhutan_himalaya_pool",
@@ -1173,60 +1121,19 @@ PRESET_CATEGORIES = {
         "costa_rica_jungle_pool",
     ],
 
-    "💦 풀 & 이머전스": [
+    "?뮚 ? & ?대㉧?꾩뒪": [
         "niagara_mist_goddess",
         "greek_sea_emergence",
         "morocco_riad_pool",
         "lagoon_surface_break",
     ],
 
-    "🌧️ 웨트 드레스 글래머": [
+    "?뙢截??⑦듃 ?쒕젅??湲?섎㉧": [
         "dubai_rooftop_storm",
-    # 🌙 나이트 글래머
-    "club_vip_neon_goddess",
-    "club_rooftop_citylight",
-    "micro_sequin_club",
-    "rooftop_micro_night",
-    # 👗 슬립드레스 글래머
-    "silk_slip_dawn_hotel",
-    "satin_slip_vanity_noir",
-    "satin_slip_micro",
-    # 🐆 애니멀프린트 글래머
-    "leopard_power_editorial",
-    "leopard_micro_studio",
-    "snake_micro_marble",
-    "snakeskin_latex_glam",
-    # 🎭 극장적 글래머
-    "gyeongbokgung_night_couture",
-    "bukchon_rain_editorial",
-    "namsan_tower_dusk",
-    "dongdaemun_neon_rain",
-    "haeinsa_temple_dawn",
-    "jeju_volcanic_coast",
-    "fushimi_inari_crimson",
-    "arashiyama_bamboo_mist",
-    "osaka_dotonbori_neon",
-    "mount_fuji_dawn_silk",
-    "japanese_garden_autumn",
-    "kabukiza_backstage_glam",
-    "forbidden_city_golden_hour",
-    "li_river_karst_mist",
-    "shanghai_bund_noir",
-    "zhangjiajie_cloud_forest",
-    "west_lake_lotus_dawn",
-    "bali_tanah_lot_sunset",
-    "hoi_an_lantern_rain",
-    "bangkok_wat_arun_gold",
-    "singapore_marina_bay_night",
-    "luang_prabang_monk_dawn",
-    "rice_terrace_banaue_mist",
-    "opera_house_goddess",
-    "venetian_carnival_palazzo",
-    "flamenco_tablao_fire",
-    "broadway_red_curtain",
-    "scottish_castle_mist",
-    "sahara_dune_queen",
-    "ballet_stage_noir",
+    # ?뙔 ?섏씠??湲?섎㉧
+    # ?몭 ?щ┰?쒕젅??湲?섎㉧
+    # ?릤 ?좊땲硫?꾨┛??湲?섎㉧
+    # ?렚 洹뱀옣??湲?섎㉧
         "amalfi_cliff_storm",
         "santorini_aegean_storm",
         "venice_acqua_alta",
@@ -1244,8 +1151,8 @@ PRESET_CATEGORIES = {
 }
 
 
-# HOF tier — Hall of Fame: 실제 검증 이미지 중 최고 퀄리티 선정
-# 기준: "와" 하는 반응, 구도/배경/바디페인팅 삼박자 완벽, 즉시 생성 가능
+# HOF tier ??Hall of Fame: ?ㅼ젣 寃利??대?吏 以?理쒓퀬 ?꾨━???좎젙
+# 湲곗?: "?" ?섎뒗 諛섏쓳, 援щ룄/諛곌꼍/諛붾뵒?섏씤???쇰컯???꾨꼍, 利됱떆 ?앹꽦 媛??
 HOF_TIER = {
     "amalfi_cliff_storm",
     "bali_rain_wet",
@@ -1296,27 +1203,27 @@ HOF_TIER = {
     "flooded_temple_mirror",
     "mercury_lake_reflection",
     "hall_of_mirrors_glam",
-    "trio_chrome_bodypaint_center",       # 크롬SF+갤럭시 구도 완벽
-    "trio_gown_bodypaint_center",         # 황금바로크+이브닝가운 갤러리급
-    "trio_sheer_bodypaint_center",        # 시어+플로럴 바디페인팅 최우수
-    "limo_glam",                          # 럭셔리 완성도 최상
-    "yacht_sunset_glam",                  # 배경+조명+의상 삼박자
-    "staircase_glam",                     # 계단구도 에디토리얼 완성도
-    "volcanic_heat_body",                 # 화산배경 독보적
-    "trio_three_civilizations_bodypaint", # 3색대비+박물관 배경 완벽
-    "trio_ancient_medieval_modern_bodypaint", # 배경3분할+시대별 컨셉 독창성 최고
-    "trio_creation_of_adam_bodypaint",    # 시스티나+루브르 배경 예술적 완성도 독보적
-    "trio_black_white_gray_bodypaint",    # 조각같은 완성도 흑/회/백 대비 압도적
-    "trio_fog_rain_snow_bodypaint",       # 색감+통일감 압도적 안개/물/눈 완벽표현
-    # 2026-07-03 신규 HOF — QUAD/QUINT/HEXA 검증 완료
-    "quad_four_ages_bodypaint",               # 금/은/동/철 그라데이션 배경 완벽
-    "quad_four_classical_elements_klimt",     # 클림트 금빛홀+4원소 완벽 융합
-    "quad_four_seasons_night_bodypaint",      # 4계절 배경 분할+야간 여신 압도적
-    "quint_five_senses_bodypaint",            # 5감 바로크홀 5인 세로 완벽
-    "quint_five_worlds_bodypaint",            # 5세계 배경분할+여신 역대급
-    "quint_five_elements_wuxing_bodypaint",   # 오행+자금성 황금시간 최고
-    "hexa_rainbow_spectrum_bodypaint",        # 6인 무지개 세로4:5 HOF급
-    # 2026-07-06 공식E 오브제 커버 HOF 7종
+    "trio_chrome_bodypaint_center",       # ?щ＼SF+媛ㅻ윮??援щ룄 ?꾨꼍
+    "trio_gown_bodypaint_center",         # ?⑷툑諛붾줈???대툕?앷???媛ㅻ윭由ш툒
+    "trio_sheer_bodypaint_center",        # ?쒖뼱+?뚮줈??諛붾뵒?섏씤??理쒖슦??
+    "limo_glam",                          # ??뀛由??꾩꽦??理쒖긽
+    "yacht_sunset_glam",                  # 諛곌꼍+議곕챸+?섏긽 ?쇰컯??
+    "staircase_glam",                     # 怨꾨떒援щ룄 ?먮뵒?좊━???꾩꽦??
+    "volcanic_heat_body",                 # ?붿궛諛곌꼍 ?낅낫??
+    "trio_three_civilizations_bodypaint", # 3?됰?鍮?諛뺣Ъ愿 諛곌꼍 ?꾨꼍
+    "trio_ancient_medieval_modern_bodypaint", # 諛곌꼍3遺꾪븷+?쒕?蹂?而⑥뀎 ?낆갹??理쒓퀬
+    "trio_creation_of_adam_bodypaint",    # ?쒖뒪?곕굹+猷⑤툕瑜?諛곌꼍 ?덉닠???꾩꽦???낅낫??
+    "trio_black_white_gray_bodypaint",    # 議곌컖媛숈? ?꾩꽦??????諛??鍮??뺣룄??
+    "trio_fog_rain_snow_bodypaint",       # ?됯컧+?듭씪媛??뺣룄???덇컻/臾????꾨꼍?쒗쁽
+    # 2026-07-03 ?좉퇋 HOF ??QUAD/QUINT/HEXA 寃利??꾨즺
+    "quad_four_ages_bodypaint",               # 湲??/??泥?洹몃씪?곗씠??諛곌꼍 ?꾨꼍
+    "quad_four_classical_elements_klimt",     # ?대┝??湲덈튆?+4?먯냼 ?꾨꼍 ?듯빀
+    "quad_four_seasons_night_bodypaint",      # 4怨꾩젅 諛곌꼍 遺꾪븷+?쇨컙 ?ъ떊 ?뺣룄??
+    "quint_five_senses_bodypaint",            # 5媛?諛붾줈?ы? 5???몃줈 ?꾨꼍
+    "quint_five_worlds_bodypaint",            # 5?멸퀎 諛곌꼍遺꾪븷+?ъ떊 ???湲?
+    "quint_five_elements_wuxing_bodypaint",   # ?ㅽ뻾+?먭툑???⑷툑?쒓컙 理쒓퀬
+    "hexa_rainbow_spectrum_bodypaint",        # 6??臾댁?媛??몃줈4:5 HOF湲?
+    # 2026-07-06 怨듭떇E ?ㅻ툕??而ㅻ쾭 HOF 7醫?
     "feather_body_cover",
     "mushroom_moss_cover",
     "butterfly_swarm_cover",
@@ -1324,11 +1231,11 @@ HOF_TIER = {
     "silver_chain_mirror_room",
     "desert_sand_sculpture",
     "ice_crystal_gown",
-    "trio_inside_outside_bodypaint",        # 해부학 3레이어(피부/근육/골격) + 박물관 배경 HOF
+    "trio_inside_outside_bodypaint",        # ?대???3?덉씠???쇰?/洹쇱쑁/怨④꺽) + 諛뺣Ъ愿 諛곌꼍 HOF
 }
 
-# SSS tier — "이게 AI야?" 수준. 스크롤 완전 정지. 4박자 완벽 + 차별성
-# 기준: 체형 오버라이드만으로 문화/패턴/포즈 자동완성, 2장 이상 일관성, 독보적 임팩트
+# SSS tier ??"?닿쾶 AI??" ?섏?. ?ㅽ겕濡??꾩쟾 ?뺤?. 4諛뺤옄 ?꾨꼍 + 李⑤퀎??
+# 湲곗?: 泥댄삎 ?ㅻ쾭?쇱씠?쒕쭔?쇰줈 臾명솕/?⑦꽩/?ъ쫰 ?먮룞?꾩꽦, 2???댁긽 ?쇨??? ?낅낫???꾪뙥??
 SSS_TIER = {
     "amalfi_cliff_storm",
     "bali_rain_wet",
@@ -1462,7 +1369,7 @@ SSS_TIER = {
     "broken_mirror_multiplied",
     "venetian_mirror_boudoir",
     "infinity_mirror_goddess",
-        # 2026-07-03 신규 QUAD/QUINT/HEXA/OCTET + 컨셉 SSS
+        # 2026-07-03 ?좉퇋 QUAD/QUINT/HEXA/OCTET + 而⑥뀎 SSS
     "quad_four_ages_bodypaint",
     "quad_four_classical_elements_klimt",
     "quad_four_seasons_night_bodypaint",
@@ -1479,7 +1386,7 @@ SSS_TIER = {
     "quint_five_sacred_colors_bodypaint",
     "hexa_six_chakras_bodypaint",
     "octet_planets_solar_bodypaint",
-    # 2026-07-07 나이트/슬립드레스/애니멀프린트 11종 SSS
+    # 2026-07-07 ?섏씠???щ┰?쒕젅???좊땲硫?꾨┛??11醫?SSS
     "club_vip_neon_goddess",
     "club_rooftop_citylight",
     "micro_sequin_club",
@@ -1491,7 +1398,7 @@ SSS_TIER = {
     "leopard_micro_studio",
     "snake_micro_marble",
     "snakeskin_latex_glam",
-    # 2026-07-07 극장적 글래머 30종 SSS
+    # 2026-07-07 洹뱀옣??湲?섎㉧ 30醫?SSS
     "gyeongbokgung_night_couture",
     "bukchon_rain_editorial",
     "namsan_tower_dusk",
@@ -1522,7 +1429,7 @@ SSS_TIER = {
     "scottish_castle_mist",
     "sahara_dune_queen",
     "ballet_stage_noir",
-        # 2026-07-06 공식E 오브제 커버 HOF→SSS 포함 (7종) + SSS 1종
+        # 2026-07-06 怨듭떇E ?ㅻ툕??而ㅻ쾭 HOF?뭆SS ?ы븿 (7醫? + SSS 1醫?
     "feather_body_cover",
     "mushroom_moss_cover",
     "butterfly_swarm_cover",
@@ -1533,7 +1440,7 @@ SSS_TIER = {
     "autumn_leaves_cover",
     "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
-        # 2026-07-03 신규 SSS 52종 (신규 66종 검증 완료)
+        # 2026-07-03 ?좉퇋 SSS 52醫?(?좉퇋 66醫?寃利??꾨즺)
     "champagne_pour_body",
     "wine_pour_body",
     "milk_pour_body",
@@ -1587,7 +1494,7 @@ SSS_TIER = {
     "invisible_dress",
     "neon_latex",
 
-    # 2026-07-02 퍼포먼스&댄스 G3/G4 SSS (8종)
+    # 2026-07-02 ?쇳룷癒쇱뒪&?꾩뒪 G3/G4 SSS (8醫?
     "opera_night",
     "christmas_glamour",
     "ballet_noir",
@@ -1597,74 +1504,74 @@ SSS_TIER = {
     "ribbon_goddess",
     "petal_storm",
 
-    # 2026-06-29 멀티 바디페인팅 57종 SSS (검증 완료 24종 확정 + 33종 검증 예정)
-    # G1 대비형 듀오 (24종 검증 완료 SSS)
+    # 2026-06-29 硫??諛붾뵒?섏씤??57醫?SSS (寃利??꾨즺 24醫??뺤젙 + 33醫?寃利??덉젙)
+    # G1 ?鍮꾪삎 ???(24醫?寃利??꾨즺 SSS)
     "duo_fire_and_ice_bodypaint",
     "duo_day_and_night_bodypaint",
     "duo_bloom_and_void_bodypaint",
     "duo_gold_and_shadow_bodypaint",
     "duo_ocean_and_desert_bodypaint",
     "duo_circuit_and_nature_bodypaint",
-    # G2 대비형 트리오
+    # G2 ?鍮꾪삎 ?몃━??
     "trio_rgb_trinity_bodypaint",
     "trio_past_present_future_bodypaint",
     "trio_predator_prey_apex_bodypaint",
     "trio_ink_gold_chrome_bodypaint",
     "trio_season_trinity_bodypaint",
-    # G3 연결형 듀오
+    # G3 ?곌껐?????
     "duo_butterfly_split_bodypaint",
     "duo_yin_yang_merge_bodypaint",
     "duo_world_map_bodypaint",
     "duo_galaxy_split_bodypaint",
     "duo_wave_hokusai_bodypaint",
-    # G3 SS (연결 컨셉 미달)
-    # "duo_klimt_tree_bodypaint",  # SS 전용
-    # G4 연결형 트리오
+    # G3 SS (?곌껐 而⑥뀎 誘몃떖)
+    # "duo_klimt_tree_bodypaint",  # SS ?꾩슜
+    # G4 ?곌껐???몃━??
     "trio_triptych_klimt_bodypaint",
     "trio_phoenix_rising_bodypaint",
     "trio_world_tree_bodypaint",
     "trio_ocean_depth_bodypaint",
     "trio_aurora_spectrum_bodypaint",
     "trio_cosmic_creation_bodypaint",
-    # G1 추가 (검증 예정)
+    # G1 異붽? (寃利??덉젙)
     "duo_east_and_west_bodypaint",
     "duo_macro_and_micro_bodypaint",
     "duo_ancient_and_future_bodypaint",
     "duo_poison_and_medicine_bodypaint",
     "duo_deep_sea_bodypaint",
-    # G2 추가 (검증 예정)
+    # G2 異붽? (寃利??덉젙)
     "trio_sun_moon_star_bodypaint",
     "trio_three_oceans_bodypaint",
     "trio_three_civilizations_bodypaint",
     "trio_fire_water_earth_bodypaint",
     "trio_three_big_cats_bodypaint",
-    # G3 추가 (검증 예정)
+    # G3 異붽? (寃利??덉젙)
     "duo_dna_helix_bodypaint",
     "duo_solar_eclipse_bodypaint",
     "duo_human_shadow_bodypaint",
     "duo_tiger_split_bodypaint",
     "duo_starry_night_split_bodypaint",
     "duo_peacock_split_bodypaint",
-    # G4 추가 (검증 예정)
+    # G4 異붽? (寃利??덉젙)
     "trio_last_supper_bodypaint",
     "trio_rainbow_arc_bodypaint",
     "trio_milky_way_panorama_bodypaint",
     "trio_coral_reef_zones_bodypaint",
     "trio_creation_of_adam_bodypaint",
     "trio_poles_and_equator_bodypaint",
-    # QUAD 4인 (검증 예정)
+    # QUAD 4??(寃利??덉젙)
     "quad_four_seasons_bodypaint",
     "quad_four_elements_bodypaint",
     "quad_four_directions_bodypaint",
     "quad_four_seasons_klimt_bodypaint",
     "quad_rgba_spectrum_bodypaint",
-    # QUINT 5인 (검증 예정)
+    # QUINT 5??(寃利??덉젙)
     "quint_five_continents_bodypaint",
     "quint_five_elements_asia_bodypaint",
     "quint_rainbow_five_bodypaint",
     "quint_five_oceans_bodypaint",
 
-    # G5 연결형 듀오 30종 (검증 예정)
+    # G5 ?곌껐?????30醫?(寃利??덉젙)
     "duo_earth_hemisphere_bodypaint",
     "duo_day_city_night_city_bodypaint",
     "duo_volcano_glacier_bodypaint",
@@ -1690,7 +1597,7 @@ SSS_TIER = {
     "duo_crystal_lava_bodypaint",
     "duo_skeleton_bloom_bodypaint",
     "duo_ink_wash_split_bodypaint",
-    # G6 대비형 트리오 35종 (검증 예정)
+    # G6 ?鍮꾪삎 ?몃━??35醫?(寃利??덉젙)
     "trio_stone_bronze_iron_bodypaint",
     "trio_ancient_medieval_modern_bodypaint",
     "trio_birth_life_death_bodypaint",
@@ -1721,7 +1628,7 @@ SSS_TIER = {
     "trio_order_chaos_void_bodypaint",
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
-    # 듀오 글래머 SS (SSS 23종 + SS전용 5종)
+    # ???湲?섎㉧ SS (SSS 23醫?+ SS?꾩슜 5醫?
     "duo_infinity_pool_contrast",
     "duo_pool_bodypaint_micro",
     "duo_wet_glass_divide",
@@ -1751,7 +1658,7 @@ SSS_TIER = {
     "duo_monaco_yacht",
     "duo_villa_italy",
     "duo_ice_bath_contrast",
-    # 듀오 글래머 SSS (23종)
+    # ???湲?섎㉧ SSS (23醫?
     "duo_infinity_pool_contrast",
     "duo_pool_bodypaint_micro",
     "duo_wet_glass_divide",
@@ -1775,12 +1682,12 @@ SSS_TIER = {
     "duo_desert_minimal",
     "duo_kpop_stage",
     "duo_penthouse_power",
-    # 2026-06-20 직업&라이프스타일 SS전용 10종 + SSS 24종 포함
-    # SS전용
+    # 2026-06-20 吏곸뾽&?쇱씠?꾩뒪???SS?꾩슜 10醫?+ SSS 24醫??ы븿
+    # SS?꾩슜
     "cruise_hostess", "yacht_club",
     "nurse_glamour", "sommelier", "wine_tasting", "barista_chic",
     "golf_caddie", "fitness_power", "scuba_instructor", "archery_goddess",
-    # SSS도 SS에 포함 (규칙)
+    # SSS??SS???ы븿 (洹쒖튃)
     "flight_attendant", "pilot_glamour", "yacht_captain",
     "private_jet", "helipad", "hotel_concierge",
     "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
@@ -1789,34 +1696,34 @@ SSS_TIER = {
     "cheerleader", "ballet_prima", "gymnastics_editorial",
     "figure_skater", "carnival_rio", "luxury_shopping",
 
-    # 2026-06-20 직업&라이프스타일 SSS 24종 확정
-    # A그룹 — 항공/해양/럭셔리
+    # 2026-06-20 吏곸뾽&?쇱씠?꾩뒪???SSS 24醫??뺤젙
+    # A洹몃９ ????났/?댁뼇/??뀛由?
     "flight_attendant", "pilot_glamour", "yacht_captain",
     "private_jet", "helipad", "hotel_concierge",
-    # B그룹 — 전문직
+    # B洹몃９ ???꾨Ц吏?
     "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
-    # C그룹 — 스포츠/피트니스
+    # C洹몃９ ???ㅽ룷痢??쇳듃?덉뒪
     "golf_glam", "tennis_luxe", "tennis_referee", "tennis_champion",
     "f1_grid_girl", "equestrian_glam", "horse_racing", "yoga_goddess",
-    # D그룹 — 퍼포먼스/스포츠2
+    # D洹몃９ ???쇳룷癒쇱뒪/?ㅽ룷痢?
     "cheerleader", "ballet_prima", "gymnastics_editorial",
     "figure_skater", "carnival_rio", "luxury_shopping",
 
     "body_paint_nude",
-    # 2026-06-11 배경 프리셋 SSS 확정 (1차)
-    "cenote_sacred",         # 물속 수직 덩굴 + 에메랄드 반사, 4장 일관성
-    "tikal_skyrise",         # 정글 위 피라미드 + 운해 + 골든아워 역광
-    "angkor_dawn",           # 연못 반사 + 황금 일출 + 크메르 조각, 구도 교과서급
-    "waitomo_glow",          # 생물발광 은하수 천장 + 수면 반사, 독보적 비주얼
-    # 2026-06-11 배경 프리셋 SSS 확정 (2차)
-    "marble_caves_water",    # 대리석 패턴 + 터콰이즈 수면, 의상이 배경색 흡수
-    "bagan_balloon",         # 열기구 + 황금 일출 + 불탑 평원, 4요소 완벽
-    "tigers_nest_cliff",     # 절벽 수도원 + 기도 깃발 + 히말라야 설산
-    "sheikh_zayed_dawn",     # 흰 돔 + 모자이크 바닥 + 반사 연못 + 블루아워
-    "livraria_lello_staircase", # 테라코타 드레스 + 레드 계단 + 스테인드글라스 3중 동기화
-    "namib_star_desert",     # 은하수 아치 + 사구 능선 + 백포즈 구도
-    "ellora_rock_temple",    # 힌두 조각 벽 + 테라코타 드레스 완전 동화
-    # 2026-06-13 v26 월드 랜드마크 SSS 확정
+    # 2026-06-11 諛곌꼍 ?꾨━??SSS ?뺤젙 (1李?
+    "cenote_sacred",         # 臾쇱냽 ?섏쭅 ?⑷뎬 + ?먮찓?꾨뱶 諛섏궗, 4???쇨???
+    "tikal_skyrise",         # ?뺢? ???쇰씪誘몃뱶 + ?댄빐 + 怨⑤뱺?꾩썙 ??킅
+    "angkor_dawn",           # ?곕せ 諛섏궗 + ?⑷툑 ?쇱텧 + ?щ찓瑜?議곌컖, 援щ룄 援먭낵?쒓툒
+    "waitomo_glow",          # ?앸Ъ諛쒓킅 ??섏닔 泥쒖옣 + ?섎㈃ 諛섏궗, ?낅낫??鍮꾩＜??
+    # 2026-06-11 諛곌꼍 ?꾨━??SSS ?뺤젙 (2李?
+    "marble_caves_water",    # ?由ъ꽍 ?⑦꽩 + ?곗쉼?댁쫰 ?섎㈃, ?섏긽??諛곌꼍???≪닔
+    "bagan_balloon",         # ?닿린援?+ ?⑷툑 ?쇱텧 + 遺덊깙 ?됱썝, 4?붿냼 ?꾨꼍
+    "tigers_nest_cliff",     # ?덈꼍 ?섎룄??+ 湲곕룄 源껊컻 + ?덈쭚?쇱빞 ?ㅼ궛
+    "sheikh_zayed_dawn",     # ????+ 紐⑥옄?댄겕 諛붾떏 + 諛섏궗 ?곕せ + 釉붾（?꾩썙
+    "livraria_lello_staircase", # ?뚮씪肄뷀? ?쒕젅??+ ?덈뱶 怨꾨떒 + ?ㅽ뀒?몃뱶湲?쇱뒪 3以??숆린??
+    "namib_star_desert",     # ??섏닔 ?꾩튂 + ?ш뎄 ?μ꽑 + 諛깊룷利?援щ룄
+    "ellora_rock_temple",    # ?뚮몢 議곌컖 踰?+ ?뚮씪肄뷀? ?쒕젅???꾩쟾 ?숉솕
+    # 2026-06-13 v26 ?붾뱶 ?쒕뱶留덊겕 SSS ?뺤젙
     "positano_cliff",
     "bruges_canal",
     "colosseum_dusk",
@@ -1827,7 +1734,7 @@ SSS_TIER = {
     "teotihuacan_pyramid",
     "palmyra_colonnade",
 
-    # 2026-06-19 애니아트스타일 SSS 31종 확정
+    # 2026-06-19 ?좊땲?꾪듃?ㅽ???SSS 31醫??뺤젙
     "anime_jp_90s_retro",
     "anime_jp_80s_citypop",
     "anime_jp_modern_glossy",
@@ -1860,7 +1767,7 @@ SSS_TIER = {
     "anime_eu_erotic_bd",
     "anime_noir_silhouette",
 
-    # 2026-06-18 핫&섹시 SSS 확정
+    # 2026-06-18 ???뱀떆 SSS ?뺤젙
     "bodycon_power", "boudoir_noir", "wet_silk_gown", "oil_goddess_gold",
     "rain_soaked_dress", "micro_dress_only", "deep_plunge_gown", "backless_extreme",
     "one_strap_gown", "pinup_classic", "vargas_girl", "bombshell_retro",
@@ -1875,15 +1782,15 @@ SSS_TIER = {
     "oil_drip_body", "yoga_pants_glam", "halter_glam", "wet_editorial",
     "pool_edge_wet", "ocean_wave_body", "penthouse_bath", "silk_sheets_morning",
     "spa_private_steam", "bar_counter_glam", "after_party_suite", "tennis_short_dress",
-    # 2026-06-13 v27 핫&섹시 SSS 확정
+    # 2026-06-13 v27 ???뱀떆 SSS ?뺤젙
     "dressing_room_mirror",
     "vip_booth_neon",
-    # 2026-06-13 비치&리조트 SSS 확정
+    # 2026-06-13 鍮꾩튂&由ъ“??SSS ?뺤젙
     "infinity_pool",
     "scuba_goddess",
     "spa_noir",
     "sunset_cruise",
-    # 2026-06-14 팝&카와이 SSS 확정
+    # 2026-06-14 ??移댁???SSS ?뺤젙
     "cherry_pop",
     "hime_gyaru",
     "decora_kei",
@@ -1894,52 +1801,52 @@ SSS_TIER = {
     "kdrama_villain_queen",
     "bubble_tea",
     "doll_house",
-    # 2026-06-15 harajuku_doll SSS 승격 (팝&카와이 — 다케시타 거리 싱크 4장 검증)
+    # 2026-06-15 harajuku_doll SSS ?밴꺽 (??移댁??????ㅼ??쒗? 嫄곕━ ?깊겕 4??寃利?
     "harajuku_doll",
-    # 2026-06-15 greenhouse_eden SSS 승격 (계절&테마 — 잎사귀 드레스=온실 생태계 융합 6장 검증)
+    # 2026-06-15 greenhouse_eden SSS ?밴꺽 (怨꾩젅&?뚮쭏 ???롮궗洹 ?쒕젅???⑥떎 ?앺깭怨??듯빀 6??寃利?
     "greenhouse_eden",
-    # 2026-06-15 계절&테마 SSS 3종 확정
-    "halloween_glam",       # 의상+배경+소품 = 고딕 세계관 완전 융합, 6장 검증
-    "new_year_glam",        # 드레스 시퀀 = 폭죽+컨페티 빛 흡수, 타임스퀘어 4장 검증
-    "sakura_night_glam",    # 드레스 플로럴 = 벚꽃 터널 패턴 연속, 신사 등불 6장 검증
-    # 2026-06-15 에디토리얼&무드 SSS 8종 확정
-    "backlit_silk",         # 역광 투과 → 드레스=광원, waitomo_glow 논리 동일
-    "mirror_room",          # 실버수트+거울방 경계 소멸, dressing_room_mirror보다 강함
-    "eclipse_body",         # 드레스=코로나 발광, 우주현상=의상
-    "plasma_aura",          # 플라즈마=의상 완전 융합, 에너지=드레스 (이미지6 기준)
-    "molten_chrome",        # 용광로+녹는 크롬 물리적 동조, 소재=환경
-    "mercury_pool",         # 수은 인체=수면 유체 연속성, 의상=액체
-    "snowflake_skin",       # 아이스 드레스=설원 소재 동화 (이미지5 기준)
-    "noir_femme_fatale",    # 흑백+5요소 세계관 완전 구현, halloween_glam 동일 논리
+    # 2026-06-15 怨꾩젅&?뚮쭏 SSS 3醫??뺤젙
+    "halloween_glam",       # ?섏긽+諛곌꼍+?뚰뭹 = 怨좊뵓 ?멸퀎愿 ?꾩쟾 ?듯빀, 6??寃利?
+    "new_year_glam",        # ?쒕젅???쒗 = ??＝+而⑦럹??鍮??≪닔, ??꾩뒪?섏뼱 4??寃利?
+    "sakura_night_glam",    # ?쒕젅???뚮줈??= 踰싰퐙 ?곕꼸 ?⑦꽩 ?곗냽, ?좎궗 ?깅텋 6??寃利?
+    # 2026-06-15 ?먮뵒?좊━??臾대뱶 SSS 8醫??뺤젙
+    "backlit_silk",         # ??킅 ?ш낵 ???쒕젅??愿묒썝, waitomo_glow ?쇰━ ?숈씪
+    "mirror_room",          # ?ㅻ쾭?섑듃+嫄곗슱諛?寃쎄퀎 ?뚮㈇, dressing_room_mirror蹂대떎 媛뺥븿
+    "eclipse_body",         # ?쒕젅??肄붾줈??諛쒓킅, ?곗＜?꾩긽=?섏긽
+    "plasma_aura",          # ?뚮씪利덈쭏=?섏긽 ?꾩쟾 ?듯빀, ?먮꼫吏=?쒕젅??(?대?吏6 湲곗?)
+    "molten_chrome",        # ?⑷킅濡??밸뒗 ?щ＼ 臾쇰━???숈“, ?뚯옱=?섍꼍
+    "mercury_pool",         # ?섏? ?몄껜=?섎㈃ ?좎껜 ?곗냽?? ?섏긽=?≪껜
+    "snowflake_skin",       # ?꾩씠???쒕젅???ㅼ썝 ?뚯옱 ?숉솕 (?대?吏5 湲곗?)
+    "noir_femme_fatale",    # ?묐갚+5?붿냼 ?멸퀎愿 ?꾩쟾 援ы쁽, halloween_glam ?숈씪 ?쇰━
 
-    # v28 전통문화 바디페인팅 패치 (48종)
-    # 1차 SSS
+    # v28 ?꾪넻臾명솕 諛붾뵒?섏씤???⑥튂 (48醫?
+    # 1李?SSS
     "kabuki_bodypaint",
     "joseon_bodypaint",
     "tibetan_bodypaint",
     "byzantine_bodypaint",
     "mayan_bodypaint",
-    # 2차 SSS
+    # 2李?SSS
     "geisha_bodypaint",
     "ming_bodypaint",
     "thai_bodypaint",
     "ottoman_bodypaint",
     "flamenco_bodypaint",
     "sumerian_bodypaint",
-    # 3차 SSS
+    # 3李?SSS
     "maori_bodypaint",
     "balinese_bodypaint",
     "persian_bodypaint",
     "mughal_bodypaint",
     "hopi_bodypaint",
     "haida_bodypaint",
-    # 4차 SSS
+    # 4李?SSS
     "polynesian_bodypaint",
     "korean_shaman_bodypaint",
     "noh_bodypaint",
     "hanbok_bodypaint",
     "tang_dynasty_bodypaint",
-    # 5차 SSS
+    # 5李?SSS
     "moroccan_bodypaint",
     "batik_bodypaint",
     "ikat_bodypaint",
@@ -1947,14 +1854,14 @@ SSS_TIER = {
     "ninja_bodypaint",
     "kebaya_bodypaint",
     "scottish_bodypaint",
-    # 6차 SSS
+    # 6李?SSS
     "voodoo_bodypaint",
     "scythian_bodypaint",
     "olmec_bodypaint",
     "odalisque_bodypaint",
     "harem_bodypaint",
     "shaman_bodypaint",
-    # 7차 SSS
+    # 7李?SSS
     "kimono_bodypaint",
     "samurai_bodypaint",
     "geisha_white_bodypaint",
@@ -1963,19 +1870,19 @@ SSS_TIER = {
     "cheongsam_bodypaint",
     "gisaeng_bodypaint",
     "hanbok_modern_bodypaint",
-    # 8차 SSS
+    # 8李?SSS
     "ao_dai_bodypaint",
     "zulu_bodypaint",
     "kente_bodypaint",
     "dashiki_bodypaint",
     "belly_bodypaint",
 
-    # v28 전통문화 바디페인팅 패치 (3종)
-    # SS 전용
+    # v28 ?꾪넻臾명솕 諛붾뵒?섏씤???⑥튂 (3醫?
+    # SS ?꾩슜
     "sari_bodypaint",
     "yoruba_bodypaint",
     "maiko_bodypaint",
-    # 2026-06-16 애니&글래머 SSS 확정 (17종)
+    # 2026-06-16 ?좊땲&湲?섎㉧ SSS ?뺤젙 (17醫?
     "kunoichi_glam",
     "samurai_bride",
     "oni_warrior",
@@ -2016,7 +1923,7 @@ SSS_TIER = {
     "subway_editorial",
     "santorini_sunset",
     "cappadocia_balloons",
-    # 2026-06-18 엘리멘탈 갓데스 SS 확정 (SSS 포함)
+    # 2026-06-18 ?섎━硫섑깉 媛볥뜲??SS ?뺤젙 (SSS ?ы븿)
     "uyuni_wet_silk", "maldives_underwater", "bioluminescent_bay", "rainbow_falls_goddess",
     "trolltunga_edge", "zhangjiajie_cloud", "cliff_wind_sheer", "skydive_editorial",
     "hot_air_balloon_glam", "wave_barrel_goddess", "glacier_melt_goddess",
@@ -2024,19 +1931,19 @@ SSS_TIER = {
     "lava_field_latex", "solar_flare_goddess",
     "aurora_bare", "antarctica_ice_glam", "meteor_shower_glam", "ice_cave_blue",
     "antelope_light_sheer", "waitomo_glow_body", "coral_reef_sheer", "black_sea_midnight",
-    # SS 전용
+    # SS ?꾩슜
     "niagara_wet_editorial", "thunderstorm_wet", "cave_waterfall_goddess",
     "desert_heat_body",
     "volcano_edge_glam", "bonfire_editorial", "eruption_silhouette", "amazon_river_goddess",
     "iceland_hot_spring", "northern_lights_body", "dead_sea_goddess",
     "socotra_alien_glam", "deep_jungle_goddess", "monsoon_goddess",
-    # 2026-06-18 엘리멘탈 갓데스 카테고리 SSS 확정
-    # G1 물/습기
-    "uyuni_wet_silk",        # SS→SSS 승급 (용암색 의상+우유니 소금사막 완전 합일)
+    # 2026-06-18 ?섎━硫섑깉 媛볥뜲??移댄뀒怨좊━ SSS ?뺤젙
+    # G1 臾??듦린
+    "uyuni_wet_silk",        # SS?뭆SS ?밴툒 (?⑹븫???섏긽+?곗쑀???뚭툑?щ쭑 ?꾩쟾 ?⑹씪)
     "maldives_underwater",
     "bioluminescent_bay",
     "rainbow_falls_goddess",
-    # G2 극한 자연 (전종 SSS)
+    # G2 洹뱁븳 ?먯뿰 (?꾩쥌 SSS)
     "trolltunga_edge",
     "zhangjiajie_cloud",
     "cliff_wind_sheer",
@@ -2044,27 +1951,27 @@ SSS_TIER = {
     "hot_air_balloon_glam",
     "wave_barrel_goddess",
     "glacier_melt_goddess",
-    # G3 사막/열기
+    # G3 ?щ쭑/?닿린
     "sahara_mirage",
     "salt_flat_body",
     "salar_atacama_flamingo",
     "pamukkale_goddess",
     "red_canyon_goddess",
-    # G4 화산/불/태양
-    "lava_field_latex",      # SS→SSS 승급
+    # G4 ?붿궛/遺??쒖뼇
+    "lava_field_latex",      # SS?뭆SS ?밴툒
     "solar_flare_goddess",
-    # G5 빙하/오로라/우주
-    "aurora_bare",           # SS→SSS 승급
+    # G5 鍮숉븯/?ㅻ줈???곗＜
+    "aurora_bare",           # SS?뭆SS ?밴툒
     "antarctica_ice_glam",
     "meteor_shower_glam",
     "ice_cave_blue",
-    # G6 이국/정글/생물발광
-    "antelope_light_sheer",  # SS→SSS 승급
+    # G6 ?닿뎅/?뺢?/?앸Ъ諛쒓킅
+    "antelope_light_sheer",  # SS?뭆SS ?밴툒
     "waitomo_glow_body",
     "coral_reef_sheer",
     "black_sea_midnight",
 
-    # 2026-06-24 파워&엣지 SSS 16종
+    # 2026-06-24 ?뚯썙&?ｌ? SSS 16醫?
     "valkyrie_storm",
     "fencer_noir",
     "martial_arts",
@@ -2124,7 +2031,7 @@ SSS_TIER = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-    # 2026-06-24 퍼포먼스&댄스 G1+G2 SSS 11종
+    # 2026-06-24 ?쇳룷癒쇱뒪&?꾩뒪 G1+G2 SSS 11醫?
     "flamenco_queen",
     "tango_passion",
     "ribbon_dance",
@@ -2136,7 +2043,7 @@ SSS_TIER = {
     "masquerade_ball",
     "samba_carnival",
     "jazz_dance_glam",
-    # 2026-06-25 대기&파티클 30종 SSS
+    # 2026-06-25 ?湲??뚰떚??30醫?SSS
     "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
     "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
     "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
@@ -2148,80 +2055,80 @@ SSS_TIER = {
     "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
     "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
     "firefly_night_field", "seed_pod_floating",
-    # 2026-06-25 에로틱&페티쉬 G1 SSS 8종
+    # 2026-06-25 ?먮줈???섑떚??G1 SSS 8醫?
     "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
     "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
-    # 2026-06-25 에로틱&페티쉬 G2 SSS 7종
+    # 2026-06-25 ?먮줈???섑떚??G2 SSS 7醫?
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
     "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
 
-    # 2026-06-28 한국 역사&궁중 글래머 G1~G4 + G5전반부 SSS
-    # G1 삼국/고대 — SSS 5종
+    # 2026-06-28 ?쒓뎅 ??궗&沅곸쨷 湲?섎㉧ G1~G4 + G5?꾨컲遺 SSS
+    # G1 ?쇨뎅/怨좊? ??SSS 5醫?
     "silla_queen_gold", "baekje_lotus_queen", "gojoseon_shaman_queen",
     "gaya_iron_goddess", "ancient_mural_goddess",
-    # G2 고려 궁중 — SSS 7종
+    # G2 怨좊젮 沅곸쨷 ??SSS 7醫?
     "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
     "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
     "mongol_goryeo_queen",
-    # G3 조선 왕실/궁중 — SSS 11종
+    # G3 議곗꽑 ?뺤떎/沅곸쨷 ??SSS 11醫?
     "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
     "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
     "damo_warrior", "joseon_night_queen", "joseon_concubine_red",
     "changdeok_moonlight", "gyeongbokgung_geisha",
-    # G4 기생/예인 — SSS 10종
+    # G4 湲곗깮/?덉씤 ??SSS 10醫?
     "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
     "gisaeng_rain_dance", "gisaeng_black_silk", "wonhyang_legend",
     "hwang_jini_glam", "gisaeng_fan_dance", "gisaeng_pipa_night",
     "pyongyang_gisaeng",
-    # G5 신화&정령 전반부 — SSS 6종
+    # G5 ?좏솕&?뺣졊 ?꾨컲遺 ??SSS 6醫?
     "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
     "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
-    # G5 신화&정령 후반부 — SSS 6종
+    # G5 ?좏솕&?뺣졊 ?꾨컲遺 ??SSS 6醫?
     "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
     "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
-    # G6 민속&세시풍속 — SSS 7종 (haenyeo_wet_glam은 SS 전용)
+    # G6 誘쇱냽&?몄떆?띿냽 ??SSS 7醫?(haenyeo_wet_glam? SS ?꾩슜)
     "dano_festival_glam", "ganggangsullae_night",
     "mudang_fire_ritual", "mudang_trance_glam", "namsadang_acrobat",
     "jeju_shaman_sea", "korean_harvest_goddess",
-    # G7 여전사&무인 — SSS 8종
+    # G7 ?ъ쟾??臾댁씤 ??SSS 8醫?
     "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
     "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
     "goguryeo_fire_warrior", "joseon_spy_sheer",
-    # G8 근대&퓨전 — SSS 8종
+    # G8 洹쇰?&?⑥쟾 ??SSS 8醫?
     "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
     "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern",
     "hanbok_wet_editorial", "joseon_boudoir",
 
-    # 2026-06-26 에로틱&페티쉬 G3~G12 SSS 51종
-    # G3 하네스/본디지
+    # 2026-06-26 ?먮줈???섑떚??G3~G12 SSS 51醫?
+    # G3 ?섎꽕??蹂몃뵒吏
     "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
     "suspension_art", "tape_bondage", "metal_bondage",
-    # G4 메쉬/시스루
+    # G4 硫붿돩/?쒖뒪猷?
     "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
     "sheer_catsuit", "catsuit_zipper", "pvc_transparent_full",
-    # G5 도미나트릭스
+    # G5 ?꾨??섑듃由?뒪
     "dominatrix_glam", "dominatrix_full_armor", "dominatrix_red",
     "goddess_throne", "pole_art",
-    # G6 퍼포먼스/쇼걸
+    # G6 ?쇳룷癒쇱뒪/?쇨구
     "burlesque", "showgirl", "cabaret_star", "candy_rave",
     "lap_dance_glam", "lap_dance_extreme", "striptease_art",
-    # G7 폴/댄스/배스
+    # G7 ???꾩뒪/諛곗뒪
     "pole_dance_power", "pole_dance_extreme", "midnight_bath", "belly_dance_glam",
-    # G8 판타지/다크
+    # G8 ?먰?吏/?ㅽ겕
     "dark_succubus", "vampire_seduction", "witch_sensual",
     "dark_fairy_erotic", "shadow_seductress", "succubus_full",
-    # G9 다크앤젤/SF
+    # G9 ?ㅽ겕?ㅼ젮/SF
     "dark_angel_fallen", "alien_queen_body", "fire_goddess",
-    # G10 직업 판타지
+    # G10 吏곸뾽 ?먰?吏
     "secretary_after_hours", "nurse_sensual", "maid_sensual",
     "teacher_after_class", "doctor_sensual", "police_dominatrix", "stewardess_dark",
-    # G11 바디/미니멀
+    # G11 諛붾뵒/誘몃땲硫
     "oil_goddess", "micro_thong_only", "fetish_boots_only",
-    # G12 코르셋
+    # G12 肄붾Ⅴ??
     "corset_stockings",
 
 
-    # 2026-06-24 판타지&다크 26종 전원 SSS
+    # 2026-06-24 ?먰?吏&?ㅽ겕 26醫??꾩썝 SSS
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
     "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
     "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -2229,30 +2136,30 @@ SSS_TIER = {
     "double_exposure_ethereal","oil_slick_noir",
     "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
 
-    # 2026-06-24 실루엣&섀도우 30종 전원 SSS
-    # G1 스포트라이트
+    # 2026-06-24 ?ㅻ（????꾩슦 30醫??꾩썝 SSS
+    # G1 ?ㅽ룷?몃씪?댄듃
     "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
     "silhouette_spotlight_hair","silhouette_spotlight_dance","silhouette_spotlight_chair",
     "silhouette_spotlight_back","silhouette_spotlight_pole",
-    # G2 창문/도어
+    # G2 李쎈Ц/?꾩뼱
     "silhouette_window_city","silhouette_window_rain","silhouette_window_sheer",
     "silhouette_doorway_light","silhouette_window_sunset","silhouette_window_neon",
-    # G3 네온 실루엣
+    # G3 ?ㅼ삩 ?ㅻ（??
     "silhouette_neon_pink","silhouette_neon_blue","silhouette_neon_red",
     "silhouette_neon_purple","silhouette_neon_multicolor",
-    # G4 자연광
+    # G4 ?먯뿰愿?
     "silhouette_sunset_beach","silhouette_sunset_cliff","silhouette_moonlight","silhouette_aurora",
-    # G5 수중/물
+    # G5 ?섏쨷/臾?
     "silhouette_pool_underwater","silhouette_pool_edge",
-    # G6 실내/분위기
+    # G6 ?ㅻ궡/遺꾩쐞湲?
     "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
     "silhouette_candle_boudoir","silhouette_smoke_studio",
 
-    # 2026-06-24 웨트&글로스 SSS 29종
-    # G1 풀/수영장
+    # 2026-06-24 ?⑦듃&湲濡쒖뒪 SSS 29醫?
+    # G1 ?/?섏쁺??
     "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
     "hot_spring_steam","jacuzzi_bubbles",
-        # 2026-07-02 신규 추가
+        # 2026-07-02 ?좉퇋 異붽?
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -2267,23 +2174,23 @@ SSS_TIER = {
         "waterfall_nude",
         "ocean_nude_editorial",
         "steam_bath_goddess",
-    # G2 비/빗속
+    # G2 鍮?鍮쀬냽
     "rain_window_inside","rain_street_soaked","rain_studio_dramatic","monsoon_body","rain_car_window",
-    # G3 오일/글로스 드립
+    # G3 ?ㅼ씪/湲濡쒖뒪 ?쒕┰
     "oil_pour_studio","oil_drip_back","honey_drip_body","chocolate_pour_gloss",
     "gloss_lips_drip","chrome_gloss_body",
-    # G4 땀/열기
+    # G4 ?/?닿린
     "sweat_studio_light","heat_mirage_sweat","sauna_steam_body",
-    # G5 결로/냉기
+    # G5 寃곕줈/?됯린
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
-    # G6 기타 웨트
+    # G6 湲고? ?⑦듃
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
     "bubble_bath_gloss","milk_bath_petals",
 }
 
 # SS tier
 SS_TIER = {
-        # 2026-07-03 신규 QUAD/QUINT/HEXA/OCTET SS 전체
+        # 2026-07-03 ?좉퇋 QUAD/QUINT/HEXA/OCTET SS ?꾩껜
     "quad_four_ages_bodypaint",
     "quad_four_classical_elements_klimt",
     "quad_four_seasons_night_bodypaint",
@@ -2305,7 +2212,7 @@ SS_TIER = {
     "quint_five_dance_cultures_bodypaint",
     "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
-        # 2026-07-03 신규 SS 62종 반영 (SSS 52 + SS전용 10)
+        # 2026-07-03 ?좉퇋 SS 62醫?諛섏쁺 (SSS 52 + SS?꾩슜 10)
     "champagne_pour_body",
     "wine_pour_body",
     "milk_pour_body",
@@ -2369,7 +2276,7 @@ SS_TIER = {
     "sauna_nude_editorial",
     "chrome_paint_body",
 
-    # 2026-07-02 퍼포먼스&댄스 G3/G4 SS (9종 전체)
+    # 2026-07-02 ?쇳룷癒쇱뒪&?꾩뒪 G3/G4 SS (9醫??꾩껜)
     "opera_night",
     "christmas_glamour",
     "ballet_noir",
@@ -2379,57 +2286,57 @@ SS_TIER = {
     "ribbon_goddess",
     "petal_storm",
     "pop_art_glamour",
-    # 기존 명화/예술 계열
+    # 湲곗〈 紐낇솕/?덉닠 怨꾩뿴
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
     "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
     "ash_phoenix","lichtenstein_dot","warhol_pop","mondrian_body",
     # v14
     "lace_body_paint","jewelry_trompe_loeil",
-    # v15 명화
+    # v15 紐낇솕
     "klimt_silver","botticelli_venus","liquid_gold_drip","mermaid_scales","tiger_stripes_body",
-    # v16 관능
+    # v16 愿??
     "latex_queen",
-    # v18 동물 1차 테스트
-    # v18 동물 SS — 엄격 재검토 후 확정 (2026-06-07)
+    # v18 ?숇Ъ 1李??뚯뒪??
+    # v18 ?숇Ъ SS ???꾧꺽 ?ш??????뺤젙 (2026-06-07)
     "mantis_shrimp","phoenix_rising","jellyfish_glow","panther_black",
     "octopus_ink","snow_leopard","scarab_beetle",
     "atlas_moth","eagle_wings","butterfly_monarch",
-    "arctic_fox",  # SS 확정 (2026-06-08 설원 페이스페인팅+모피결 2장 검증 완료)
-    # 2026-06-06 명화/작가 테스트 확정
+    "arctic_fox",  # SS ?뺤젙 (2026-06-08 ?ㅼ썝 ?섏씠?ㅽ럹?명똿+紐⑦뵾寃?2??寃利??꾨즺)
+    # 2026-06-06 紐낇솕/?묎? ?뚯뒪???뺤젙
     "degas_dancer","toulouse_lautrec","waterhouse_nymph",
     "takashi_murakami","yayoi_kusama","keith_haring_body",
-    # 2026-06-06 한국테마 테스트 확정
+    # 2026-06-06 ?쒓뎅?뚮쭏 ?뚯뒪???뺤젙
     "dancheong_body","najeonchilgi_body","goryeo_celadon_body",
     "minhwa_body","korean_tiger_body","silla_crown_body",
-    # 2026-06-06 동물/자연 테스트 확정
+    # 2026-06-06 ?숇Ъ/?먯뿰 ?뚯뒪???뺤젙
     "najeon_abalone","giraffe_pattern","zebra_stripes","dragon_scales_red",
-    # 2026-06-06 추가 테스트 확정
+    # 2026-06-06 異붽? ?뚯뒪???뺤젙
     "alma_tadema","gauguin_tropics","melting_chocolate",
-    # 2026-06-06 동물/조류/재테스트 확정 7개
+    # 2026-06-06 ?숇Ъ/議곕쪟/?ы뀒?ㅽ듃 ?뺤젙 7媛?
     "parrot_tropical","boa_constrictor","king_cobra_hood","cheetah_speed",
     "bird_of_paradise","owl_feather","crocodile_skin",
-    # 2026-06-07 한국 신수 4개
+    # 2026-06-07 ?쒓뎅 ?좎닔 4媛?
     "phoenix_jujakk","cheongnyong_dragon","korean_dragon_body","haetae_guardian",
-    # 2026-06-07 v20 SS 6개
+    # 2026-06-07 v20 SS 6媛?
     "coral_reef_body","galaxy_nebula_body","islamic_geometric_body",
     "aztec_calendar_body","stained_glass_body","mushroom_forest_body",
-    # 2026-06-07 문명/동물/부족 (국기 4개는 2026-06-08 강등)
+    # 2026-06-07 臾몃챸/?숇Ъ/遺議?(援?린 4媛쒕뒗 2026-06-08 媛뺣벑)
     "hieroglyph_body","mexico_flag_body",
     "ocelot_wild","ndebele_pattern",
-    # 2026-06-08 국기 계열 SS 재검토 — 강등 S 4개
+    # 2026-06-08 援?린 怨꾩뿴 SS ?ш?????媛뺣벑 S 4媛?
     #   (union_jack_body, usa_stars_stripes_body, south_africa_flag_body, brazil_flag_body)
-    #   사유: 원색 면분할=피부톤 근접도 낮음, 구상 모티프 없음 → SS 회화성 미달
-    #   mexico_flag_body만 SS 유지 (중앙 국장=독수리+뱀 구상화, 명화/문명 계열에 닿음)
-    # 2026-06-07 문명/자연/동물 6개
+    #   ?ъ쑀: ?먯깋 硫대텇???쇰???洹쇱젒????쓬, 援ъ긽 紐⑦떚???놁쓬 ??SS ?뚰솕??誘몃떖
+    #   mexico_flag_body留?SS ?좎? (以묒븰 援?옣=?낆닔由?諭 援ъ긽?? 紐낇솕/臾몃챸 怨꾩뿴???우쓬)
+    # 2026-06-07 臾몃챸/?먯뿰/?숇Ъ 6媛?
     "celtic_knot_body","greek_mosaic_body","ocean_depth_body",
     "weather_map_body","bauhaus_body","wolf_grey",
-    # 2026-06-07 v22 에로틱&페티쉬 SS — 엄격 재검토 후 확정
-    #   (강등 S: burlesque, dominatrix_glam, corset_stockings,
+    # 2026-06-07 v22 ?먮줈???섑떚??SS ???꾧꺽 ?ш??????뺤젙
+    #   (媛뺣벑 S: burlesque, dominatrix_glam, corset_stockings,
     #    dark_fairy_erotic, tape_bondage, metal_bondage)
-    #   (제거: military_domme — 나치 상징 생성 리스크, 프리셋 수정 필요)
-    # 2026-06-08 라텍스/광택소재 재검토: 강등 pvc_transparent_full/chrome_vixen/liquid_metal_body,
-    #   승격 vampire_seduction/witch_sensual/latex_venom (±0)
-    # 2026-06-08 서큐버스 재검토: dark_succubus 강등(succubus_full과 중복) → SS 105개
+    #   (?쒓굅: military_domme ???섏튂 ?곸쭠 ?앹꽦 由ъ뒪?? ?꾨━???섏젙 ?꾩슂)
+    # 2026-06-08 ?쇳뀓??愿묓깮?뚯옱 ?ш??? 媛뺣벑 pvc_transparent_full/chrome_vixen/liquid_metal_body,
+    #   ?밴꺽 vampire_seduction/witch_sensual/latex_venom (짹0)
+    # 2026-06-08 ?쒗걧踰꾩뒪 ?ш??? dark_succubus 媛뺣벑(succubus_full怨?以묐났) ??SS 105媛?
     "transparent_dress","sheer_catsuit","latex_transparent",
     "chrome_bodysuit","mirror_dress","suspension_art",
     "dominatrix_full_armor","goddess_throne",
@@ -2438,11 +2345,11 @@ SS_TIER = {
     "succubus_full","dark_angel_fallen","alien_queen_body",
     "body_paint_nude",
     "cabaret_star",
-    # 2026-06-08 라텍스/광택소재 SS 재검토 — 승격 3개
-    #   (강등 S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
-    #   (보류: latex_catsuit_red — 컬러 라텍스 중복, 재검토 대상)
+    # 2026-06-08 ?쇳뀓??愿묓깮?뚯옱 SS ?ш??????밴꺽 3媛?
+    #   (媛뺣벑 S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
+    #   (蹂대쪟: latex_catsuit_red ??而щ윭 ?쇳뀓??以묐났, ?ш??????
     "vampire_seduction","witch_sensual","latex_venom",
-    # 2026-06-19 애니아트스타일 SS 전체 (SSS 31 + SS전용 1)
+    # 2026-06-19 ?좊땲?꾪듃?ㅽ???SS ?꾩껜 (SSS 31 + SS?꾩슜 1)
     "anime_jp_90s_retro",
     "anime_jp_80s_citypop",
     "anime_jp_modern_glossy",
@@ -2476,29 +2383,29 @@ SS_TIER = {
     "anime_noir_silhouette",
     "anime_jp_ecchi_glossy",
 
-    # 2026-06-09 애니 아트스타일 SS 10종 확정 (JP4/KR3/CN2/EU1)
+    # 2026-06-09 ?좊땲 ?꾪듃?ㅽ???SS 10醫??뺤젙 (JP4/KR3/CN2/EU1)
     "anime_jp_80s_citypop","anime_jp_shoujo_soft","anime_jp_seinen_gritty","anime_jp_makoto_watercolor",
     "anime_kr_webtoon_glossy","anime_kr_action_manhwa","anime_kr_lofi_chill",
     "anime_cn_donghua_xianxia","anime_cn_palace_drama",
     "anime_eu_ligne_claire",
-    # 2026-06-09 unicorn_opal SS 확정 (2장 일관성 검증 완료)
+    # 2026-06-09 unicorn_opal SS ?뺤젙 (2???쇨???寃利??꾨즺)
     "unicorn_opal",
-    # 2026-06-09 v23 개방형 바디페인팅 SS 12종 확정
-    # 타율 90% (18/20) — pastel_dream/minimalist_free 차단 삭제
+    # 2026-06-09 v23 媛쒕갑??諛붾뵒?섏씤??SS 12醫??뺤젙
+    # ???90% (18/20) ??pastel_dream/minimalist_free 李⑤떒 ??젣
     "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto","body_paint_airbrush",
     "body_paint_monochrome","body_paint_earth_tones","body_paint_jewel_tones","body_paint_iridescent_free",
     "body_paint_geometric_free","body_paint_organic_flow","body_paint_surreal_free","body_paint_glitter_free",
-    # 2026-06-09 애니 A형 SS 6종 확정 (v24, 7/7 차단 0건)
-    # demon_slayer 보류 (swordmistress와 중복)
+    # 2026-06-09 ?좊땲 A??SS 6醫??뺤젙 (v24, 7/7 李⑤떒 0嫄?
+    # demon_slayer 蹂대쪟 (swordmistress? 以묐났)
     "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden",
     "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
-    # 2026-06-10 럭셔리 글래머 그룹1 — 블랙/다크 7종
+    # 2026-06-10 ??뀛由?湲?섎㉧ 洹몃９1 ??釉붾옓/?ㅽ겕 7醫?
     "black_mirror","noir_opulence","velvet_darkness","luxury_noir",
     "lace_noir","midnight_couture","velvet_serpent",
-    # 2026-06-10 럭셔리 글래머 그룹2 — 골드/화이트 9종
+    # 2026-06-10 ??뀛由?湲?섎㉧ 洹몃９2 ??怨⑤뱶/?붿씠??9醫?
     "golden_oil","golden_nude","gold_temptress","golden_hour_editorial",
     "platinum_elite","ivory_silk","pearl_essence","velvet_gold","diamond_couture",
-    # 2026-06-10 럭셔리 글래머 그룹3 — 레드카펫/런웨이 8종
+    # 2026-06-10 ??뀛由?湲?섎㉧ 洹몃９3 ???덈뱶移댄렖/?곗썾??8醫?
     "runway_power","red_carpet","red_temptress","crimson_gown",
     "opera_glam","silver_screen","crystal_gown","baroque_glam",
 
@@ -2529,12 +2436,12 @@ SS_TIER = {
     "aurora_bare",
     "antelope_light_sheer",
     "lava_field_latex",
-    # 2026-06-11 배경 프리셋 SS 확정
+    # 2026-06-11 諛곌꼍 ?꾨━??SS ?뺤젙
     "son_doong_jungle", "petra_rose", "danxia_rainbow",
     "dead_vlei_ghost", "lake_natron",
     "socotra_alien", "richat_eye", "derinkuyu_underground",
     "palacio_de_sal", "naoshima_art_island",
-    # 2026-06-13 비치&리조트 SS/SSS 확정
+    # 2026-06-13 鍮꾩튂&由ъ“??SS/SSS ?뺤젙
     "summer_beach",
     "surfer_goddess",
     "pool_goddess",
@@ -2547,12 +2454,12 @@ SS_TIER = {
     "coral_diving",
     "beach_bonfire_night",
     "hammock_resort",
-    # SSS 비치 4종도 SS에 포함
+    # SSS 鍮꾩튂 4醫낅룄 SS???ы븿
     "infinity_pool",
     "scuba_goddess",
     "spa_noir",
     "sunset_cruise",
-    # 2026-06-14 팝&카와이 SS 확정
+    # 2026-06-14 ??移댁???SS ?뺤젙
     "y2k_fairy",
     "pink_champagne",
     "cotton_candy",
@@ -2576,7 +2483,7 @@ SS_TIER = {
     "kdrama_chaebol_heir",
     "gangnam_luxury_glam",
     "harajuku_doll",
-    # 2026-06-14 팝&카와이 SSS 10종도 SS에 포함
+    # 2026-06-14 ??移댁???SSS 10醫낅룄 SS???ы븿
     "cherry_pop",
     "hime_gyaru",
     "decora_kei",
@@ -2587,12 +2494,12 @@ SS_TIER = {
     "kdrama_villain_queen",
     "bubble_tea",
     "doll_house",
-    # SSS도 SS에 포함 (format_preset 로직)
+    # SSS??SS???ы븿 (format_preset 濡쒖쭅)
     "angkor_dawn", "tikal_skyrise", "cenote_sacred", "waitomo_glow",
     "marble_caves_water", "bagan_balloon", "tigers_nest_cliff",
     "sheikh_zayed_dawn", "livraria_lello_staircase",
     "namib_star_desert", "ellora_rock_temple",
-    # 2026-06-13 v26 월드 랜드마크 SS/SSS 확정
+    # 2026-06-13 v26 ?붾뱶 ?쒕뱶留덊겕 SS/SSS ?뺤젙
     "positano_cliff",
     "bruges_canal",
     "colosseum_dusk",
@@ -2607,7 +2514,7 @@ SS_TIER = {
     "chichen_itza_pyramid",
     "gobekli_tepe",
 
-    # 2026-06-18 핫&섹시 SS 확정 (SSS 포함 전체)
+    # 2026-06-18 ???뱀떆 SS ?뺤젙 (SSS ?ы븿 ?꾩껜)
     "bodycon_power", "boudoir_noir", "lingerie_goddess", "silk_robe_only",
     "corset_queen", "sheer_negligee", "wet_silk_gown", "oil_goddess_gold",
     "rain_soaked_dress", "pool_wet_glam", "sweat_glam", "micro_dress_only",
@@ -2626,7 +2533,7 @@ SS_TIER = {
     "wet_editorial", "pool_edge_wet", "ocean_wave_body", "penthouse_bath",
     "silk_sheets_morning", "spa_private_steam", "bar_counter_glam",
     "after_party_suite", "tennis_short_dress",
-    # 2026-06-13 v27 핫&섹시 SS/SSS 확정
+    # 2026-06-13 v27 ???뱀떆 SS/SSS ?뺤젙
     "dressing_room_mirror",
     "vip_booth_neon",
     "pool_edge_wet",
@@ -2637,68 +2544,68 @@ SS_TIER = {
     "bar_counter_glam",
     "after_party_suite",
     "tennis_short_dress",
-    # 2026-06-15 계절&테마 그룹1 SS 확정 (cherry_blossom~autumn_forest)
+    # 2026-06-15 怨꾩젅&?뚮쭏 洹몃９1 SS ?뺤젙 (cherry_blossom~autumn_forest)
     "cherry_blossom",
     "lavender_field",
     "spring_rain",
     "tulip_field",
     "autumn_forest",
-    # 2026-06-15 계절&테마 그룹2 SS 확정 (sunflower_field~golden_autumn)
+    # 2026-06-15 怨꾩젅&?뚮쭏 洹몃９2 SS ?뺤젙 (sunflower_field~golden_autumn)
     "sunflower_field",
-    "greenhouse_eden",   # SSS도 SS에 포함 (format_preset 로직)
+    "greenhouse_eden",   # SSS??SS???ы븿 (format_preset 濡쒖쭅)
     "tropical_night",
     "first_snow",
     "golden_autumn",
-    # 2026-06-15 harajuku_doll SSS도 SS에 포함
+    # 2026-06-15 harajuku_doll SSS??SS???ы븿
     "harajuku_doll",
-    # 2026-06-15 계절&테마 그룹3 SS 확정
+    # 2026-06-15 怨꾩젅&?뚮쭏 洹몃９3 SS ?뺤젙
     "midsummer_heat",
     "rainy_season",
     "harvest_moon",
     "winter_solstice",
     "cherry_blossom_night",
-    # 2026-06-15 계절&테마 그룹4 SS 확정
+    # 2026-06-15 怨꾩젅&?뚮쭏 洹몃９4 SS ?뺤젙
     "tropical_monsoon",
-    "halloween_glam",       # SSS도 SS에 포함
-    "new_year_glam",        # SSS도 SS에 포함
-    "sakura_night_glam",    # SSS도 SS에 포함
+    "halloween_glam",       # SSS??SS???ы븿
+    "new_year_glam",        # SSS??SS???ы븿
+    "sakura_night_glam",    # SSS??SS???ы븿
     "monsoon_goddess",
-    # 2026-06-15 에디토리얼&무드 그룹1 SS 확정
+    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９1 SS ?뺤젙
     "silhouette_only",
     "back_beauty",
     "collarbone_focus",
     "neck_elegance",
     "long_legs_focus",
-    # 2026-06-15 에디토리얼&무드 그룹2 SS 확정 (SSS 포함)
+    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９2 SS ?뺤젙 (SSS ?ы븿)
     "light_driven",
-    "backlit_silk",         # SSS도 SS에 포함
+    "backlit_silk",         # SSS??SS???ы븿
     "mirror_goddess",
-    "mirror_room",          # SSS도 SS에 포함
-    "eclipse_body",         # SSS도 SS에 포함
-    # 2026-06-15 에디토리얼&무드 그룹3 SS 확정 (SSS 포함)
+    "mirror_room",          # SSS??SS???ы븿
+    "eclipse_body",         # SSS??SS???ы븿
+    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９3 SS ?뺤젙 (SSS ?ы븿)
     "chrome_skin",
     "neon_body",
-    "plasma_aura",          # SSS도 SS에 포함
-    "molten_chrome",        # SSS도 SS에 포함
+    "plasma_aura",          # SSS??SS???ы븿
+    "molten_chrome",        # SSS??SS???ы븿
     "mercury_rising",
-    # 2026-06-15 에디토리얼&무드 그룹4 SS 확정 (SSS 포함)
-    "mercury_pool",         # SSS도 SS에 포함
+    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９4 SS ?뺤젙 (SSS ?ы븿)
+    "mercury_pool",         # SSS??SS???ы븿
     "titanium_body",
-    "snowflake_skin",       # SSS도 SS에 포함
+    "snowflake_skin",       # SSS??SS???ы븿
     "80s_power",
     "y2k_chrome",
-    # 2026-06-15 에디토리얼&무드 그룹5 SS 확정
+    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９5 SS ?뺤젙
     "bohemian_paris",
     "origami_couture",
     "wet_glass",
     "smoke_studio",
     "infrared_beauty",
-    # 2026-06-15 에디토리얼&무드 그룹6 SS 확정 (SSS 포함)
+    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９6 SS ?뺤젙 (SSS ?ы븿)
     "grain_film",
     "dreamy_soft_focus",
     "film_noir_glam",
-    "noir_femme_fatale",    # SSS도 SS에 포함
-    # 2026-06-21 자연&원소 G1~G10 SS_TIER 패치
+    "noir_femme_fatale",    # SSS??SS???ы븿
+    # 2026-06-21 ?먯뿰&?먯냼 G1~G10 SS_TIER ?⑥튂
     "lava_flow",
     "heat_shimmer",
     "solar_flare",
@@ -2755,7 +2662,7 @@ SS_TIER = {
     "mist_vanguard",
     "tropical_storm",
 
-    # 2026-06-24 파워&엣지 SSS (SS 포함)
+    # 2026-06-24 ?뚯썙&?ｌ? SSS (SS ?ы븿)
     "valkyrie_storm",
     "fencer_noir",
     "martial_arts",
@@ -2815,7 +2722,7 @@ SS_TIER = {
     "trio_id_ego_superego_bodypaint",
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-    # 2026-06-24 퍼포먼스&댄스 G1+G2 SSS (SS 포함)
+    # 2026-06-24 ?쇳룷癒쇱뒪&?꾩뒪 G1+G2 SSS (SS ?ы븿)
     "flamenco_queen",
     "tango_passion",
     "ribbon_dance",
@@ -2827,7 +2734,7 @@ SS_TIER = {
     "masquerade_ball",
     "samba_carnival",
     "jazz_dance_glam",
-    # 2026-06-25 대기&파티클 30종 (SS 포함)
+    # 2026-06-25 ?湲??뚰떚??30醫?(SS ?ы븿)
     "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
     "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
     "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
@@ -2839,15 +2746,15 @@ SS_TIER = {
     "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
     "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
     "firefly_night_field", "seed_pod_floating",
-    # 2026-06-25 에로틱&페티쉬 G1 (SS 포함)
+    # 2026-06-25 ?먮줈???섑떚??G1 (SS ?ы븿)
     "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
     "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
     "wet_latex",
-    # 2026-06-25 에로틱&페티쉬 G2 (SS 포함)
+    # 2026-06-25 ?먮줈???섑떚??G2 (SS ?ы븿)
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
     "chrome_bodysuit", "mirror_dress", "liquid_metal_body",
 
-    # 2026-06-26 에로틱&페티쉬 G3~G12 SS (SSS 포함 51종)
+    # 2026-06-26 ?먮줈???섑떚??G3~G12 SS (SSS ?ы븿 51醫?
     "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
     "suspension_art", "tape_bondage", "metal_bondage",
     "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
@@ -2866,7 +2773,7 @@ SS_TIER = {
     "corset_stockings",
 
 
-    # 2026-06-24 판타지&다크 26종 (SS 포함)
+    # 2026-06-24 ?먰?吏&?ㅽ겕 26醫?(SS ?ы븿)
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
     "pastel_fairy","medusa_queen","halloween_queen","hologram_ghost","glitch_beauty",
     "void_emergence","void_glamour","void_secret","crystal_goddess","toxic_bloom",
@@ -2874,7 +2781,7 @@ SS_TIER = {
     "double_exposure_ethereal","oil_slick_noir",
     "witch_ritual","fae_queen","cursed_beauty","shadow_realm",
 
-    # 2026-06-24 실루엣&섀도우 30종 (SS 포함)
+    # 2026-06-24 ?ㅻ（????꾩슦 30醫?(SS ?ы븿)
     "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
     "silhouette_spotlight_hair","silhouette_spotlight_dance","silhouette_spotlight_chair",
     "silhouette_spotlight_back","silhouette_spotlight_pole",
@@ -2887,10 +2794,10 @@ SS_TIER = {
     "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
     "silhouette_candle_boudoir","silhouette_smoke_studio",
 
-    # 2026-06-24 웨트&글로스 30종 (SS 포함, SSS 29종 + SS 전용 1종)
+    # 2026-06-24 ?⑦듃&湲濡쒖뒪 30醫?(SS ?ы븿, SSS 29醫?+ SS ?꾩슜 1醫?
     "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
     "hot_spring_steam","jacuzzi_bubbles",
-        # 2026-07-02 신규 추가
+        # 2026-07-02 ?좉퇋 異붽?
         "champagne_pour_body",
         "wine_pour_body",
         "milk_pour_body",
@@ -2912,8 +2819,8 @@ SS_TIER = {
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
     "bubble_bath_gloss","milk_bath_petals",
-    # 2026-07-02 환경 일체 바디페인팅 SS (22종 전체)
-    # 2026-07-02 바디페인팅+의상 믹스 콜라보
+    # 2026-07-02 ?섍꼍 ?쇱껜 諛붾뵒?섏씤??SS (22醫??꾩껜)
+    # 2026-07-02 諛붾뵒?섏씤???섏긽 誘뱀뒪 肄쒕씪蹂?
         "trio_bodypaint_latex_frame",
         "trio_bodypaint_gown_frame",
         "trio_bodypaint_leather_frame",
@@ -2933,7 +2840,7 @@ SS_TIER = {
         "trio_bikini_bodypaint_center",
         "trio_sheer_bodypaint_center",
         "trio_chrome_bodypaint_center",
-        # 🌀 환경 일체 바디페인팅
+        # ?? ?섍꼍 ?쇱껜 諛붾뵒?섏씤??
         "merge_butterfly_fabric",
     "merge_floral_wallpaper",
     "merge_leopard_fabric",
@@ -2957,7 +2864,7 @@ SS_TIER = {
     "merge_pollock_splatter",
     "merge_byzantine_mosaic",
 
-    # 2026-06-29 멀티 바디페인팅 SS (57종 전체)
+    # 2026-06-29 硫??諛붾뵒?섏씤??SS (57醫??꾩껜)
     "duo_fire_and_ice_bodypaint",
     "duo_day_and_night_bodypaint",
     "duo_bloom_and_void_bodypaint",
@@ -3012,7 +2919,7 @@ SS_TIER = {
     "quint_five_elements_asia_bodypaint",
     "quint_rainbow_five_bodypaint",
     "quint_five_oceans_bodypaint",
-    # 2026-06-26 한국 역사 & 궁중 글래머 SS (78종 전체)
+    # 2026-06-26 ?쒓뎅 ??궗 & 沅곸쨷 湲?섎㉧ SS (78醫??꾩껜)
     "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
     "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess",
     "silla_hwarang_girl", "ancient_mural_goddess", "three_kingdoms_spy",
