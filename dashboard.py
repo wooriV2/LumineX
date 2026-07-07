@@ -327,23 +327,19 @@ with tab1:
 
     if "preset_prompt"   not in st.session_state: st.session_state.preset_prompt   = ""
     if "preset_selected" not in st.session_state: st.session_state.preset_selected = ""
-    if selected_preset != st.session_state.preset_selected:
-        st.session_state.preset_selected = selected_preset
-        st.session_state.preset_prompt   = ""
-        # 프리셋 JSON 값을 selectbox default로 로드
+    def _find_key(d, val):
+        if not val:
+            return None
+        val_lower = str(val).lower()
+        for k, v in d.items():
+            v_str = (v.get("gemini", "") if isinstance(v, dict) else str(v)).lower()
+            if val_lower in v_str or v_str in val_lower:
+                return k
+        return None
+
+    def _load_preset_defaults(preset_name):
         try:
-            _pdata = load_preset(selected_preset)
-            # 역방향 매핑 헬퍼: 값(value)으로 키(label) 찾기
-            def _find_key(d, val):
-                if not val:
-                    return None
-                val_lower = str(val).lower()
-                for k, v in d.items():
-                    v_str = (v.get("gemini", "") if isinstance(v, dict) else str(v)).lower()
-                    if val_lower in v_str or v_str in val_lower:
-                        return k
-                return None
-            # 각 필드 매핑
+            _pdata = load_preset(preset_name)
             _field_map = {
                 "preset_appearance":  (MODEL_APPEARANCE,  _pdata.get("appearance", "")),
                 "preset_hair_style":  (HAIR_STYLES,       _pdata.get("hair_style", "")),
@@ -370,7 +366,14 @@ with tab1:
                 matched = _find_key(d, raw_val)
                 st.session_state[ss_key] = matched if matched else NONE
         except Exception:
-            pass  # JSON 없는 프리셋은 기본값 유지
+            pass
+
+    # 프리셋 변경 또는 첫 로드(Cloud 호환) 시 default 로드
+    _prev_selected = st.session_state.get("preset_selected", "")
+    if selected_preset != _prev_selected:
+        st.session_state.preset_selected = selected_preset
+        st.session_state.preset_prompt   = ""
+        _load_preset_defaults(selected_preset)
 
     def build_preset_overrides() -> dict:
         overrides = {}
