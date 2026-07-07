@@ -1202,147 +1202,48 @@ PRESET_CATEGORIES = {
         "bangkok_monsoon_silk",
         "new_york_rooftop_rain",
     ],
+    "🎭 Archetype Glamour": [
+        "bond_girl_casino",
+        "spy_rooftop_latex",
+        "spy_hotel_noir",
+        "dark_queen_cliff",
+        "villain_penthouse",
+        "assassin_rain",
+        "goddess_warrior",
+        "rockstar_stage",
+    ],
+    "👯 Duo Glamour": [
+        "duo_penthouse_black",
+        "duo_pool_wet_night",
+        "duo_couture_sheer",
+        "duo_mirror_boudoir",
+        "duo_jungle_primal",
+        "duo_champagne_pour",
+        "duo_ice_bath_noir",
+        "duo_versailles_gold",
+        "duo_neon_cage",
+    ],
+    "🎭 Trio Glamour": [
+        "trio_glacier_emergence",
+        "trio_colosseum_dawn",
+        "trio_tokyo_shibuya_rain",
+        "trio_underwater_temple",
+        "trio_volcano_crater",
+        "trio_opera_house_stage",
+        "trio_desert_salt_flat",
+        "trio_cherry_blossom_storm",
+        "trio_aurora_iceland",
+        "trio_art_museum_after_hours",
+        "trio_penthouse_pool_dawn",
+    ],
+
 
 }
 
 
 # HOF tier ??Hall of Fame: ?ㅼ젣 寃利??대?吏 以?理쒓퀬 ?꾨━???좎젙
 # 湲곗?: "?" ?섎뒗 諛섏쓳, 援щ룄/諛곌꼍/諛붾뵒?섏씤???쇰컯???꾨꼍, 利됱떆 ?앹꽦 媛??
-HOF_TIER = {
-    "amalfi_cliff_storm",
-    "bali_rain_wet",
-    "bhutan_himalaya_pool",
-    "blue_lagoon_silica",
-    "cape_town_atlantic_storm",
-    "champagne_bubble_bath",
-    "chocolate_spa_drip",
-    "dubai_rooftop_storm",
-    "greek_sea_emergence",
-    "greenland_glacier_pool",
-    "hammam_marble_glam",
-    "hot_spring_nude_editorial",
-    "japan_snow_onsen",
-    "kuala_lumpur_monsoon",
-    "lisbon_rain_tiles",
-    "monaco_wet_silk",
-    "morocco_riad_pool",
-    "mud_spa_clay",
-    "mumbai_monsoon_sari",
-    "niagara_mist_goddess",
-    "oil_massage_table",
-    "pamukkale_travertine",
-    "rio_corcovado_storm",
-    "rose_petal_bath",
-    "ryokan_hinoki_bath",
-    "santorini_aegean_storm",
-    "venice_acqua_alta",
-    "yunoko_bamboo_onsen",
-    "body_chain_only_glam",
-    "flower_body_only",
-    "crystal_body_cover",
-    "seaweed_coral_body",
-    "metamorphosis_editorial",
-    "virus_pattern_body",
-    "spine_tech_implant",
-    "neural_lace_crown",
-    "jellyfish_bloom_float",
-    "carnivorous_plant_trap",
-    "coral_organism_absorption",
-    "petri_dish_giant_macro",
-    "gene_sequencer_data_skin",
-    "specimen_amber_suspended",
-    "liquid_metal_pool",
-    "chrome_sphere_world",
-    "crystal_cave_skin_facets",
-    "glass_box_all_angles",
-    "flooded_temple_mirror",
-    "mercury_lake_reflection",
-    "hall_of_mirrors_glam",
-    "trio_chrome_bodypaint_center",       # ?щ＼SF+媛ㅻ윮??援щ룄 ?꾨꼍
-    "trio_gown_bodypaint_center",         # ?⑷툑諛붾줈???대툕?앷???媛ㅻ윭由ш툒
-    "trio_sheer_bodypaint_center",        # ?쒖뼱+?뚮줈??諛붾뵒?섏씤??理쒖슦??
-    "limo_glam",                          # ??뀛由??꾩꽦??理쒖긽
-    "yacht_sunset_glam",                  # 諛곌꼍+議곕챸+?섏긽 ?쇰컯??
-    "staircase_glam",                     # 怨꾨떒援щ룄 ?먮뵒?좊━???꾩꽦??
-    "volcanic_heat_body",                 # ?붿궛諛곌꼍 ?낅낫??
-    "trio_three_civilizations_bodypaint", # 3?됰?鍮?諛뺣Ъ愿 諛곌꼍 ?꾨꼍
-    "trio_ancient_medieval_modern_bodypaint", # 諛곌꼍3遺꾪븷+?쒕?蹂?而⑥뀎 ?낆갹??理쒓퀬
-    "trio_creation_of_adam_bodypaint",    # ?쒖뒪?곕굹+猷⑤툕瑜?諛곌꼍 ?덉닠???꾩꽦???낅낫??
-    "trio_black_white_gray_bodypaint",    # 議곌컖媛숈? ?꾩꽦??????諛??鍮??뺣룄??
-    "trio_fog_rain_snow_bodypaint",       # ?됯컧+?듭씪媛??뺣룄???덇컻/臾????꾨꼍?쒗쁽
-    # 2026-07-03 ?좉퇋 HOF ??QUAD/QUINT/HEXA 寃利??꾨즺
-    "quad_four_ages_bodypaint",               # 湲??/??泥?洹몃씪?곗씠??諛곌꼍 ?꾨꼍
-    "quad_four_classical_elements_klimt",     # ?대┝??湲덈튆?+4?먯냼 ?꾨꼍 ?듯빀
-    "quad_four_seasons_night_bodypaint",      # 4怨꾩젅 諛곌꼍 遺꾪븷+?쇨컙 ?ъ떊 ?뺣룄??
-    "quint_five_senses_bodypaint",            # 5媛?諛붾줈?ы? 5???몃줈 ?꾨꼍
-    "quint_five_worlds_bodypaint",            # 5?멸퀎 諛곌꼍遺꾪븷+?ъ떊 ???湲?
-    "quint_five_elements_wuxing_bodypaint",   # ?ㅽ뻾+?먭툑???⑷툑?쒓컙 理쒓퀬
-    "hexa_rainbow_spectrum_bodypaint",        # 6??臾댁?媛??몃줈4:5 HOF湲?
-    # 2026-07-06 怨듭떇E ?ㅻ툕??而ㅻ쾭 HOF 7醫?
-    "feather_body_cover",
-    "mushroom_moss_cover",
-    "butterfly_swarm_cover",
-    "seashell_body_cover",
-    "silver_chain_mirror_room",
-    "desert_sand_sculpture",
-    "ice_crystal_gown",
-    "trio_inside_outside_bodypaint",        # ?대???3?덉씠???쇰?/洹쇱쑁/怨④꺽) + 諛뺣Ъ愿 諛곌꼍 HOF
-    # 🌙 Night Glamour
-    "club_vip_neon_goddess",
-    "club_rooftop_citylight",
-    "micro_sequin_club",
-    "rooftop_micro_night",
-    # 👗 Slip Dress Glamour
-    "silk_slip_dawn_hotel",
-    "satin_slip_vanity_noir",
-    "satin_slip_micro",
-    # 🐆 Animal Print Glamour
-    "leopard_power_editorial",
-    "leopard_micro_studio",
-    "snake_micro_marble",
-    "snakeskin_latex_glam",
-    # 🎭 Theatrical Glamour
-    "gyeongbokgung_night_couture",
-    "bukchon_rain_editorial",
-    "namsan_tower_dusk",
-    "dongdaemun_neon_rain",
-    "haeinsa_temple_dawn",
-    "jeju_volcanic_coast",
-    "fushimi_inari_crimson",
-    "arashiyama_bamboo_mist",
-    "osaka_dotonbori_neon",
-    "mount_fuji_dawn_silk",
-    "japanese_garden_autumn",
-    "kabukiza_backstage_glam",
-    "forbidden_city_golden_hour",
-    "li_river_karst_mist",
-    "shanghai_bund_noir",
-    "zhangjiajie_cloud_forest",
-    "west_lake_lotus_dawn",
-    "bali_tanah_lot_sunset",
-    "hoi_an_lantern_rain",
-    "bangkok_wat_arun_gold",
-    "singapore_marina_bay_night",
-    "luang_prabang_monk_dawn",
-    "rice_terrace_banaue_mist",
-    "opera_house_goddess",
-    "venetian_carnival_palazzo",
-    "flamenco_tablao_fire",
-    "broadway_red_curtain",
-    "scottish_castle_mist",
-    "sahara_dune_queen",
-    "ballet_stage_noir",
-    # 🌿 Minimal Object Cover
-    "silk_ribbon_minimal",
-    "tropical_flower_minimal",
-    "silver_foil_minimal",
-    "moss_stone_minimal",
-    "crystal_geode_minimal",
-    "black_feather_minimal",
-    "wet_lotus_pool_minimal",
-    "butterfly_wings_minimal",
-    "seaweed_ocean_minimal",
-}
+from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
 
 # SSS tier ??"?닿쾶 AI??" ?섏?. ?ㅽ겕濡??꾩쟾 ?뺤?. 4諛뺤옄 ?꾨꼍 + 李⑤퀎??
 # 湲곗?: 泥댄삎 ?ㅻ쾭?쇱씠?쒕쭔?쇰줈 臾명솕/?⑦꽩/?ъ쫰 ?먮룞?꾩꽦, 2???댁긽 ?쇨??? ?낅낫???꾪뙥??
