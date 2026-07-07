@@ -768,6 +768,18 @@ PRESET_CATEGORIES = {
         # 2026-07-03 신규 HEXA 2종
         "hexa_rainbow_spectrum_bodypaint",
     
+    # 2026-07-07 나이트/슬립드레스/애니멀프린트 11종 HOF
+    "club_vip_neon_goddess",
+    "club_rooftop_citylight",
+    "micro_sequin_club",
+    "rooftop_micro_night",
+    "silk_slip_dawn_hotel",
+    "satin_slip_vanity_noir",
+    "satin_slip_micro",
+    "leopard_power_editorial",
+    "leopard_micro_studio",
+    "snake_micro_marble",
+    "snakeskin_latex_glam",
     # 2026-07-07 극장적 글래머 30종 HOF
     "gyeongbokgung_night_couture",
     "bukchon_rain_editorial",
@@ -1101,7 +1113,10 @@ PRESET_CATEGORIES = {
         "merge_byzantine_mosaic",
     ],
 
-        "🎭 극장적 글래머": ['gyeongbokgung_night_couture', 'bukchon_rain_editorial', 'namsan_tower_dusk', 'dongdaemun_neon_rain', 'haeinsa_temple_dawn', 'jeju_volcanic_coast', 'fushimi_inari_crimson', 'arashiyama_bamboo_mist', 'osaka_dotonbori_neon', 'mount_fuji_dawn_silk', 'japanese_garden_autumn', 'kabukiza_backstage_glam', 'forbidden_city_golden_hour', 'li_river_karst_mist', 'shanghai_bund_noir', 'zhangjiajie_cloud_forest', 'west_lake_lotus_dawn', 'bali_tanah_lot_sunset', 'hoi_an_lantern_rain', 'bangkok_wat_arun_gold', 'singapore_marina_bay_night', 'luang_prabang_monk_dawn', 'rice_terrace_banaue_mist', 'opera_house_goddess', 'venetian_carnival_palazzo', 'flamenco_tablao_fire', 'broadway_red_curtain', 'scottish_castle_mist', 'sahara_dune_queen', 'ballet_stage_noir'],
+            "🌙 나이트 글래머": ['club_vip_neon_goddess', 'club_rooftop_citylight', 'micro_sequin_club', 'rooftop_micro_night'],
+        "👗 슬립드레스 글래머": ['silk_slip_dawn_hotel', 'satin_slip_vanity_noir', 'satin_slip_micro'],
+        "🐆 애니멀프린트 글래머": ['leopard_power_editorial', 'leopard_micro_studio', 'snake_micro_marble', 'snakeskin_latex_glam'],
+    "🎭 극장적 글래머": ['gyeongbokgung_night_couture', 'bukchon_rain_editorial', 'namsan_tower_dusk', 'dongdaemun_neon_rain', 'haeinsa_temple_dawn', 'jeju_volcanic_coast', 'fushimi_inari_crimson', 'arashiyama_bamboo_mist', 'osaka_dotonbori_neon', 'mount_fuji_dawn_silk', 'japanese_garden_autumn', 'kabukiza_backstage_glam', 'forbidden_city_golden_hour', 'li_river_karst_mist', 'shanghai_bund_noir', 'zhangjiajie_cloud_forest', 'west_lake_lotus_dawn', 'bali_tanah_lot_sunset', 'hoi_an_lantern_rain', 'bangkok_wat_arun_gold', 'singapore_marina_bay_night', 'luang_prabang_monk_dawn', 'rice_terrace_banaue_mist', 'opera_house_goddess', 'venetian_carnival_palazzo', 'flamenco_tablao_fire', 'broadway_red_curtain', 'scottish_castle_mist', 'sahara_dune_queen', 'ballet_stage_noir'],
     "🎀 미니멀 커버 글래머": [
         "body_chain_only_glam",
         "flower_body_only",
@@ -1398,6 +1413,18 @@ SSS_TIER = {
     "quint_five_sacred_colors_bodypaint",
     "hexa_six_chakras_bodypaint",
     "octet_planets_solar_bodypaint",
+    # 2026-07-07 나이트/슬립드레스/애니멀프린트 11종 SSS
+    "club_vip_neon_goddess",
+    "club_rooftop_citylight",
+    "micro_sequin_club",
+    "rooftop_micro_night",
+    "silk_slip_dawn_hotel",
+    "satin_slip_vanity_noir",
+    "satin_slip_micro",
+    "leopard_power_editorial",
+    "leopard_micro_studio",
+    "snake_micro_marble",
+    "snakeskin_latex_glam",
     # 2026-07-07 극장적 글래머 30종 SSS
     "gyeongbokgung_night_couture",
     "bukchon_rain_editorial",
