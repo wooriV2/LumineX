@@ -216,22 +216,6 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(["🎨 프리셋 모드", "🛠️ 수동
 # ══════════════════════════════════════════════════════════
 # 탭 1: 프리셋 모드
 # ══════════════════════════════════════════════════════════
-def _pval(d, raw, none_label):
-    """dict에서 raw 값과 매칭되는 key 반환, 없으면 none_label"""
-    if not raw:
-        return none_label
-    raw_lower = str(raw).lower()
-    for k, v in d.items():
-        v_str = (v.get("gemini", "") if isinstance(v, dict) else str(v)).lower()
-        if raw_lower in v_str or v_str in raw_lower:
-            return k
-    return none_label
-
-def _pidx(opts, val):
-    """options 리스트에서 val의 index 반환, 없으면 0"""
-    return opts.index(val) if val in opts else 0
-
-
 with tab1:
     st.markdown("### 프리셋으로 프롬프트 생성")
 
@@ -308,61 +292,32 @@ with tab1:
         st.stop()
 
     NONE = "None — 프리셋 기본값 사용"
-
-    # _pd: 매 렌더링마다 선택된 프리셋 JSON 로드 (selectbox index 계산용)
-    try:
-        _pd = load_preset(selected_preset)
-    except Exception:
-        _pd = {}
-
     col1, col2, col3 = st.columns(3)
     with col1:
-        _o = [NONE] + list(MODEL_APPEARANCE.keys())
-        preset_appearance  = st.selectbox("👩 인종/국적",       _o, index=_pidx(_o, _pval(MODEL_APPEARANCE, _pd.get("appearance",  ""), NONE)))
-        _o = [NONE] + list(AGE_APPEARANCE.keys())
-        preset_age         = st.selectbox("🎂 연령대",          _o, index=_pidx(_o, _pval(AGE_APPEARANCE, _pd.get("age",         ""), NONE)))
-        _o = [NONE] + list(MODEL_TYPES.keys())
-        preset_body        = st.selectbox("👤 체형",            _o, index=_pidx(_o, _pval(MODEL_TYPES, _pd.get("body",        ""), NONE)))
-        _o = [NONE] + list(OUTFIT_TYPES.keys())
-        preset_outfit      = st.selectbox("👗 의상",            _o, index=_pidx(_o, _pval(OUTFIT_TYPES, _pd.get("outfit",      ""), NONE)))
-        _o = [NONE] + list(MATERIALS.keys())
-        preset_material    = st.selectbox("🧵 소재",            _o, index=_pidx(_o, _pval(MATERIALS, _pd.get("material",    ""), NONE)))
-        _o = [NONE] + list(FOOTWEAR.keys())
-        preset_footwear    = st.selectbox("👠 신발",            _o, index=_pidx(_o, _pval(FOOTWEAR, _pd.get("footwear",    ""), NONE)))
-        _o = [NONE] + list(NAILS.keys())
-        preset_nails       = st.selectbox("💅 네일",            _o, index=_pidx(_o, _pval(NAILS, _pd.get("nails",       ""), NONE)))
-        _o = [NONE] + list(SKIN_DETAILS.keys())
-        preset_skin_detail = st.selectbox("🌿 피부 디테일",     _o, index=_pidx(_o, _pval(SKIN_DETAILS, _pd.get("skin_detail", ""), NONE)))
-        _o = [NONE] + list(BODY_OIL.keys())
-        preset_body_oil    = st.selectbox("✨ 바디 오일",        _o, index=_pidx(_o, _pval(BODY_OIL, _pd.get("body_oil",    ""), NONE)))
+        preset_appearance  = st.selectbox("👩 인종/국적",       [NONE] + list(MODEL_APPEARANCE.keys()), key="preset_appearance")
+        preset_age         = st.selectbox("🎂 연령대",          [NONE] + list(AGE_APPEARANCE.keys()),   key="preset_age")
+        preset_body        = st.selectbox("👤 체형",            [NONE] + list(MODEL_TYPES.keys()),      key="preset_body")
+        preset_outfit      = st.selectbox("👗 의상",            [NONE] + list(OUTFIT_TYPES.keys()),     key="preset_outfit")
+        preset_material    = st.selectbox("🧵 소재",            [NONE] + list(MATERIALS.keys()),        key="preset_material")
+        preset_footwear    = st.selectbox("👠 신발",            [NONE] + list(FOOTWEAR.keys()),         key="preset_footwear")
+        preset_nails       = st.selectbox("💅 네일",            [NONE] + list(NAILS.keys()),            key="preset_nails")
+        preset_skin_detail = st.selectbox("🌿 피부 디테일",     [NONE] + list(SKIN_DETAILS.keys()),     key="preset_skin_detail")
+        preset_body_oil    = st.selectbox("✨ 바디 오일",        [NONE] + list(BODY_OIL.keys()),         key="preset_body_oil")
     with col2:
-        _o = [NONE] + list(HAIR_STYLES.keys())
-        preset_hair_style  = st.selectbox("💇 헤어스타일",      _o, index=_pidx(_o, _pval(HAIR_STYLES, _pd.get("hair_style",  ""), NONE)))
-        _o = [NONE] + list(POSES.keys())
-        preset_pose        = st.selectbox("💃 포즈",            _o, index=_pidx(_o, _pval(POSES, _pd.get("pose",        ""), NONE)))
-        _o = [NONE] + list(FRAMING.keys())
-        preset_framing     = st.selectbox("🖼️ 프레이밍",        _o, index=_pidx(_o, _pval(FRAMING, _pd.get("framing",     ""), NONE)))
-        _o = [NONE] + list(CAMERA_ANGLES.keys())
-        preset_angle       = st.selectbox("📸 카메라 앵글",     _o, index=_pidx(_o, _pval(CAMERA_ANGLES, _pd.get("angle",       ""), NONE)))
-        _o = [NONE] + list(LIGHTING.keys())
-        preset_lighting    = st.selectbox("💡 조명",            _o, index=_pidx(_o, _pval(LIGHTING, _pd.get("lighting",    ""), NONE)))
-        _o = [NONE] + list(COLOR_GRADES.keys())
-        preset_color_grade = st.selectbox("🎨 색감",            _o, index=_pidx(_o, _pval(COLOR_GRADES, _pd.get("color_grade", ""), NONE)))
-        _o = [NONE] + list(STYLES.keys())
-        preset_style       = st.selectbox("🎬 스타일",          _o, index=_pidx(_o, _pval(STYLES, _pd.get("style",       ""), NONE)))
-        _o = [NONE] + list(COVER_STYLES.keys())
-        preset_cover_style = st.selectbox("📰 커버 스타일",     _o, index=_pidx(_o, _pval(COVER_STYLES, _pd.get("cover_style", ""), NONE)))
+        preset_hair_style  = st.selectbox("💇 헤어스타일",      [NONE] + list(HAIR_STYLES.keys()),      key="preset_hair_style")
+        preset_pose        = st.selectbox("💃 포즈",            [NONE] + list(POSES.keys()),            key="preset_pose")
+        preset_framing     = st.selectbox("🖼️ 프레이밍",        [NONE] + list(FRAMING.keys()),          key="preset_framing")
+        preset_angle       = st.selectbox("📸 카메라 앵글",     [NONE] + list(CAMERA_ANGLES.keys()),    key="preset_angle")
+        preset_lighting    = st.selectbox("💡 조명",            [NONE] + list(LIGHTING.keys()),         key="preset_lighting")
+        preset_color_grade = st.selectbox("🎨 색감",            [NONE] + list(COLOR_GRADES.keys()),     key="preset_color_grade")
+        preset_style       = st.selectbox("🎬 스타일",          [NONE] + list(STYLES.keys()),           key="preset_style")
+        preset_cover_style = st.selectbox("📰 커버 스타일",     [NONE] + list(COVER_STYLES.keys()),     key="preset_cover_style")
     with col3:
-        _o = [NONE] + list(ENVIRONMENTS.keys())
-        preset_environment = st.selectbox("🏙️ 환경",            _o, index=_pidx(_o, _pval(ENVIRONMENTS, _pd.get("environment", ""), NONE)))
-        _o = [NONE] + list(WEATHER.keys())
-        preset_weather     = st.selectbox("🌦️ 날씨",            _o, index=_pidx(_o, _pval(WEATHER, _pd.get("weather",     ""), NONE)))
-        _o = [NONE] + list(IMAGE_STYLE.keys())
-        preset_image_style = st.selectbox("📐 이미지 스타일",   _o, index=_pidx(_o, _pval(IMAGE_STYLE, _pd.get("image_style", ""), NONE)))
-        _o = [NONE] + list(SPECIAL_EFFECTS.keys())
-        preset_special_fx  = st.selectbox("🌈 특수 효과",       _o, index=_pidx(_o, _pval(SPECIAL_EFFECTS, _pd.get("special_fx",  ""), NONE)))
-        _o = [NONE] + list(MOOD.keys())
-        preset_mood        = st.selectbox("🎭 무드",            _o, index=_pidx(_o, _pval(MOOD, _pd.get("mood",        ""), NONE)))
+        preset_environment = st.selectbox("🏙️ 환경",            [NONE] + list(ENVIRONMENTS.keys()),     key="preset_environment")
+        preset_weather     = st.selectbox("🌦️ 날씨",            [NONE] + list(WEATHER.keys()),          key="preset_weather")
+        preset_image_style = st.selectbox("📐 이미지 스타일",   [NONE] + list(IMAGE_STYLE.keys()),      key="preset_image_style")
+        preset_special_fx  = st.selectbox("🌈 특수 효과",       [NONE] + list(SPECIAL_EFFECTS.keys()),  key="preset_special_fx")
+        preset_mood        = st.selectbox("🎭 무드",            [NONE] + list(MOOD.keys()),             key="preset_mood")
 
     col_a, col_b, _ = st.columns([1, 1, 2])
     with col_a:
@@ -372,12 +327,50 @@ with tab1:
 
     if "preset_prompt"   not in st.session_state: st.session_state.preset_prompt   = ""
     if "preset_selected" not in st.session_state: st.session_state.preset_selected = ""
-    # 프리셋 변경 감지
-    if st.session_state.get("preset_selected", "") != selected_preset:
+    if selected_preset != st.session_state.preset_selected:
         st.session_state.preset_selected = selected_preset
         st.session_state.preset_prompt   = ""
-
-
+        # 프리셋 JSON 값을 selectbox default로 로드
+        try:
+            _pdata = load_preset(selected_preset)
+            # 역방향 매핑 헬퍼: 값(value)으로 키(label) 찾기
+            def _find_key(d, val):
+                if not val:
+                    return None
+                val_lower = str(val).lower()
+                for k, v in d.items():
+                    v_str = (v.get("gemini", "") if isinstance(v, dict) else str(v)).lower()
+                    if val_lower in v_str or v_str in val_lower:
+                        return k
+                return None
+            # 각 필드 매핑
+            _field_map = {
+                "preset_appearance":  (MODEL_APPEARANCE,  _pdata.get("appearance", "")),
+                "preset_hair_style":  (HAIR_STYLES,       _pdata.get("hair_style", "")),
+                "preset_outfit":      (OUTFIT_TYPES,       _pdata.get("outfit", "")),
+                "preset_material":    (MATERIALS,          _pdata.get("material", "")),
+                "preset_environment": (ENVIRONMENTS,       _pdata.get("environment", "")),
+                "preset_lighting":    (LIGHTING,           _pdata.get("lighting", "")),
+                "preset_pose":        (POSES,              _pdata.get("pose", "")),
+                "preset_framing":     (FRAMING,            _pdata.get("framing", "")),
+                "preset_angle":       (CAMERA_ANGLES,      _pdata.get("angle", "")),
+                "preset_style":       (STYLES,             _pdata.get("style", "")),
+                "preset_image_style": (IMAGE_STYLE,        _pdata.get("image_style", "")),
+                "preset_mood":        (MOOD,               _pdata.get("mood", "")),
+                "preset_special_fx":  (SPECIAL_EFFECTS,    _pdata.get("special_fx", "")),
+                "preset_weather":     (WEATHER,            _pdata.get("weather", "")),
+                "preset_color_grade": (COLOR_GRADES,       _pdata.get("color_grade", "")),
+                "preset_cover_style": (COVER_STYLES,       _pdata.get("cover_style", "")),
+                "preset_footwear":    (FOOTWEAR,           _pdata.get("footwear", "")),
+                "preset_nails":       (NAILS,              _pdata.get("nails", "")),
+                "preset_skin_detail": (SKIN_DETAILS,       _pdata.get("skin_detail", "")),
+                "preset_body_oil":    (BODY_OIL,           _pdata.get("body_oil", "")),
+            }
+            for ss_key, (d, raw_val) in _field_map.items():
+                matched = _find_key(d, raw_val)
+                st.session_state[ss_key] = matched if matched else NONE
+        except Exception:
+            pass  # JSON 없는 프리셋은 기본값 유지
 
     def build_preset_overrides() -> dict:
         overrides = {}
@@ -845,6 +838,8 @@ with tab3:
         _add_history("랜덤", st.session_state.random_prompt, global_platform)
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
+st.markdown("---")
+
 # ══════════════════════════════════════════════════════════
 # 탭 5: 히스토리 & HOF 배치 생성
 # ══════════════════════════════════════════════════════════
@@ -927,6 +922,9 @@ with tab5:
                 )
                 st.code(_item["prompt"], language=None)
                 st.caption(f"플랫폼: {_item['platform']}")
+
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+
 
 st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
