@@ -801,17 +801,7 @@ PRESET_CATEGORIES = {
         "trio_poles_and_equator_bodypaint",
         # 2026-07-03 신규 QUAD 8종
         "quad_four_civilizations_bodypaint",
-        # 2026-07-06 공식E 오브제 커버 전체 SS 포함 (9종)
-    "feather_body_cover",
-    "mushroom_moss_cover",
-    "butterfly_swarm_cover",
-    "seashell_body_cover",
-    "silver_chain_mirror_room",
-    "desert_sand_sculpture",
-    "ice_crystal_gown",
-    "autumn_leaves_cover",
-    "leaf_draping_cover",
-    "quad_four_goddesses_bodypaint",
+        "quad_four_goddesses_bodypaint",
         "quad_four_ages_bodypaint",
         "quad_four_metals_bodypaint",
         "quad_four_gemstones_bodypaint",
@@ -828,14 +818,6 @@ PRESET_CATEGORIES = {
         "quint_five_dance_cultures_bodypaint",
         # 2026-07-03 신규 HEXA 2종
         "hexa_rainbow_spectrum_bodypaint",
-    # 2026-07-06 공식E 오브제 커버 HOF 7종
-    "feather_body_cover",
-    "mushroom_moss_cover",
-    "butterfly_swarm_cover",
-    "seashell_body_cover",
-    "silver_chain_mirror_room",
-    "desert_sand_sculpture",
-    "ice_crystal_gown",
     "trio_inside_outside_bodypaint",        # 해부학 3레이어(피부/근육/골격) + 박물관 배경 HOF
         "hexa_six_chakras_bodypaint",
         # 2026-07-03 신규 OCTET 1종
@@ -1263,14 +1245,6 @@ HOF_TIER = {
     "quint_five_worlds_bodypaint",            # 5세계 배경분할+여신 역대급
     "quint_five_elements_wuxing_bodypaint",   # 오행+자금성 황금시간 최고
     "hexa_rainbow_spectrum_bodypaint",        # 6인 무지개 세로4:5 HOF급
-    # 2026-07-06 공식E 오브제 커버 HOF 7종
-    "feather_body_cover",
-    "mushroom_moss_cover",
-    "butterfly_swarm_cover",
-    "seashell_body_cover",
-    "silver_chain_mirror_room",
-    "desert_sand_sculpture",
-    "ice_crystal_gown",
     "trio_inside_outside_bodypaint",        # 해부학 3레이어(피부/근육/골격) + 박물관 배경 HOF
 }
 
@@ -1426,15 +1400,6 @@ SSS_TIER = {
     "quint_five_sacred_colors_bodypaint",
     "hexa_six_chakras_bodypaint",
     "octet_planets_solar_bodypaint",
-    # 2026-07-06 공식E 오브제 커버 HOF→SSS 포함 (7종) + SSS 1종
-    "feather_body_cover",
-    "mushroom_moss_cover",
-    "butterfly_swarm_cover",
-    "seashell_body_cover",
-    "silver_chain_mirror_room",
-    "desert_sand_sculpture",
-    "ice_crystal_gown",
-    "autumn_leaves_cover",
     "trio_inside_outside_bodypaint",    "quad_fashion_capitals_bodypaint",
 
         # 2026-07-03 신규 SSS 52종 (신규 66종 검증 완료)
