@@ -928,6 +928,12 @@ st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ Lu
 
 st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
+
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+
+
+st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+
 # ══════════════════════════════════════════════════════════
 # 탭 4: 영상 프롬프트
 # ══════════════════════════════════════════════════════════
