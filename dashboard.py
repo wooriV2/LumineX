@@ -838,11 +838,67 @@ with tab3:
         _add_history("랜덤", st.session_state.random_prompt, global_platform)
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
-st.markdown("---")
 
-# ══════════════════════════════════════════════════════════
-# 탭 5: 히스토리 & HOF 배치 생성
-# ══════════════════════════════════════════════════════════
+with tab4:
+    st.markdown(f"### 🎬 영상 프롬프트 생성 — {global_video_platform}")
+    VIDEO_PLATFORM_TIPS = {"Veo 3 (Gemini)": ("🔵", "gemini.google.com", "Gemini Advanced 구독 필요. 좌측 메뉴에서 Veo 3 선택."), "Kling AI": ("🟡", "klingai.com", "무료 티어 사용 가능. 매일 크레딧 지급."), "Runway": ("🟢", "runwayml.com", "무료 크레딧 제공. Gen-3 Alpha 사용."), "Hailuo": ("🟠", "hailuoai.video", "완전 무료. 중국 서비스.")}
+    color, url, tip = VIDEO_PLATFORM_TIPS[global_video_platform]
+    st.info(f"{color} **{global_video_platform}** — {tip} → [{url}](https://{url})")
+    VIDEO_DURATIONS  = {"5초 — 짧고 임팩트 있는": "5 seconds", "8초 — 표준 클립": "8 seconds", "10초 — 긴 클립": "10 seconds"}
+    VIDEO_MOTIONS    = {"워킹 — 런웨이 워크, 카메라 정면": "walking towards camera, confident runway walk, slow motion", "턴 — 360도 회전, 의상 전체 공개": "slow 360 degree turn, revealing full outfit", "포즈 — 정적 포즈, 바람에 머리 날림": "standing pose, hair flowing in wind, subtle movement", "댄스 — 섹시한 느낌의 부드러운 움직임": "slow sensual dance movement, fluid motion", "워킹+턴 — 걷다가 카메라 보며 턴": "walking then turning to camera, fashion editorial motion", "등장 — 안개/빛 속에서 천천히 등장": "emerging slowly from mist and light, dramatic entrance"}
+    VIDEO_CAMERAS    = {"시네마틱 — 느린 달리샷": "slow cinematic dolly shot, smooth camera movement", "오빗 — 모델 주위를 도는 카메라": "slow orbit around subject, 360 camera movement", "줌인 — 전신에서 얼굴로 천천히 줌": "slow zoom from full body to face, intimate close-up", "로우앵글 — 아래서 위로 올려다보기": "low angle upward camera, powerful perspective", "하이앵글 — 위에서 내려다보기": "high angle downward camera, elegant perspective", "핸드헬드 — 약간의 흔들림, 현장감": "slight handheld camera movement, documentary feel"}
+    VIDEO_ATMOSPHERES = {"럭셔리 글래머 — 화려하고 고급스러운": "luxury glamour atmosphere, high-end fashion film", "다크 시네마틱 — 어둡고 영화적인": "dark cinematic atmosphere, noir fashion film", "골든아워 — 따뜻한 황금빛": "golden hour warm light, dreamy fashion film", "네온 사이버펑크 — 미래적 네온 분위기": "neon cyberpunk atmosphere, futuristic fashion film", "미니멀 클린 — 깔끔하고 모던한": "minimal clean white atmosphere, modern fashion film", "에디토리얼 — 잡지 화보 느낌": "editorial fashion film, Vogue video style"}
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("**📝 기존 프롬프트 기반으로 변환**")
+        source_prompt  = st.text_area("이미지 프롬프트 붙여넣기 (선택사항)", placeholder="기존 이미지 프롬프트를 여기에 붙여넣으면 영상용으로 변환해줘요...", height=120, key="video_source")
+        video_duration = st.selectbox("⏱️ 영상 길이", list(VIDEO_DURATIONS.keys()))
+        video_motion   = st.selectbox("🏃 모션 타입", list(VIDEO_MOTIONS.keys()))
+    with col2:
+        video_camera     = st.selectbox("📷 카메라 무브먼트", list(VIDEO_CAMERAS.keys()))
+        video_atmosphere = st.selectbox("🌟 분위기", list(VIDEO_ATMOSPHERES.keys()))
+        video_appearance = st.selectbox("👩 모델 외모", ["None — 프롬프트 기반"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
+        video_outfit     = st.selectbox("👗 의상", ["None — 프롬프트 기반"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
+    st.markdown("")
+    col_x, col_y, _ = st.columns([1, 1, 2])
+    with col_x: btn_video_build = st.button("🎬 영상 프롬프트 생성", type="primary", use_container_width=True)
+    with col_y: btn_video_ai    = st.button("🤖 AI로 강화", use_container_width=True, key="btn_video_ai")
+    if "video_prompt" not in st.session_state: st.session_state.video_prompt = ""
+    if btn_video_build:
+        st.session_state.video_prompt = ""
+        appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None — 프롬프트 기반" else ""
+        outfit_str = ""
+        if video_outfit != "None — 프롬프트 기반":
+            od = OUTFIT_TYPES[video_outfit]
+            outfit_str = f"Wearing: {(od['gemini'] if isinstance(od, dict) else od).split(',')[0]}. "
+        base = f"Based on: {source_prompt[:200]}. " if source_prompt else ""
+        st.session_state.video_prompt = (f"Cinematic fashion video, {VIDEO_DURATIONS[video_duration]}. {base}{appearance_str}{outfit_str}Motion: {VIDEO_MOTIONS[video_motion]}. Camera: {VIDEO_CAMERAS[video_camera]}. Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}. Photorealistic, hyperrealistic, 4K cinematic quality, professional fashion film, no text, no watermark.")
+    if btn_video_ai and (source_prompt or st.session_state.video_prompt):
+        with st.spinner("Claude가 영상 프롬프트 강화 중..."):
+            try:
+                import anthropic
+                client = anthropic.Anthropic()
+                base = source_prompt or st.session_state.video_prompt
+                response = client.messages.create(model="claude-sonnet-4-5", max_tokens=500,
+                    messages=[{"role": "user", "content": f"You are an expert video prompt engineer.\nCreate a powerful cinematic fashion video prompt based on this: {base}\nSettings: Duration: {VIDEO_DURATIONS[video_duration]}, Motion: {VIDEO_MOTIONS[video_motion]}, Camera: {VIDEO_CAMERAS[video_camera]}, Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}\nRules: Cinematic, photorealistic, 4K. No text overlays. Output ONLY the prompt, 100-150 words."}])
+                st.session_state.video_prompt = response.content[0].text.strip()
+            except Exception as e:
+                st.error(f"오류: {str(e)}")
+    if st.session_state.video_prompt:
+        st.text_area("생성된 영상 프롬프트", value=st.session_state.video_prompt, height=180)
+        st.code(st.session_state.video_prompt, language=None)
+        st.caption("👆 복사 후 해당 플랫폼에 붙여넣으세요!")
+        st.markdown("---")
+        st.markdown(f"### 💡 {global_video_platform} 사용 방법")
+        if global_video_platform == "Veo 3 (Gemini)":
+            st.markdown("1. [gemini.google.com](https://gemini.google.com) 접속\n2. 좌측 **Veo 3** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+        elif global_video_platform == "Kling AI":
+            st.markdown("1. [klingai.com](https://klingai.com) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+        elif global_video_platform == "Runway":
+            st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+        else:
+            st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
+
 with tab5:
     st.markdown("### 📋 프롬프트 히스토리")
     st.caption("세션 내 최근 20개. 새로고침하면 초기화됩니다.")
@@ -925,74 +981,3 @@ with tab5:
 
 st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
-
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
-
-
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
-
-
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
-
-# ══════════════════════════════════════════════════════════
-# 탭 4: 영상 프롬프트
-# ══════════════════════════════════════════════════════════
-with tab4:
-    st.markdown(f"### 🎬 영상 프롬프트 생성 — {global_video_platform}")
-    VIDEO_PLATFORM_TIPS = {"Veo 3 (Gemini)": ("🔵", "gemini.google.com", "Gemini Advanced 구독 필요. 좌측 메뉴에서 Veo 3 선택."), "Kling AI": ("🟡", "klingai.com", "무료 티어 사용 가능. 매일 크레딧 지급."), "Runway": ("🟢", "runwayml.com", "무료 크레딧 제공. Gen-3 Alpha 사용."), "Hailuo": ("🟠", "hailuoai.video", "완전 무료. 중국 서비스.")}
-    color, url, tip = VIDEO_PLATFORM_TIPS[global_video_platform]
-    st.info(f"{color} **{global_video_platform}** — {tip} → [{url}](https://{url})")
-    VIDEO_DURATIONS  = {"5초 — 짧고 임팩트 있는": "5 seconds", "8초 — 표준 클립": "8 seconds", "10초 — 긴 클립": "10 seconds"}
-    VIDEO_MOTIONS    = {"워킹 — 런웨이 워크, 카메라 정면": "walking towards camera, confident runway walk, slow motion", "턴 — 360도 회전, 의상 전체 공개": "slow 360 degree turn, revealing full outfit", "포즈 — 정적 포즈, 바람에 머리 날림": "standing pose, hair flowing in wind, subtle movement", "댄스 — 섹시한 느낌의 부드러운 움직임": "slow sensual dance movement, fluid motion", "워킹+턴 — 걷다가 카메라 보며 턴": "walking then turning to camera, fashion editorial motion", "등장 — 안개/빛 속에서 천천히 등장": "emerging slowly from mist and light, dramatic entrance"}
-    VIDEO_CAMERAS    = {"시네마틱 — 느린 달리샷": "slow cinematic dolly shot, smooth camera movement", "오빗 — 모델 주위를 도는 카메라": "slow orbit around subject, 360 camera movement", "줌인 — 전신에서 얼굴로 천천히 줌": "slow zoom from full body to face, intimate close-up", "로우앵글 — 아래서 위로 올려다보기": "low angle upward camera, powerful perspective", "하이앵글 — 위에서 내려다보기": "high angle downward camera, elegant perspective", "핸드헬드 — 약간의 흔들림, 현장감": "slight handheld camera movement, documentary feel"}
-    VIDEO_ATMOSPHERES = {"럭셔리 글래머 — 화려하고 고급스러운": "luxury glamour atmosphere, high-end fashion film", "다크 시네마틱 — 어둡고 영화적인": "dark cinematic atmosphere, noir fashion film", "골든아워 — 따뜻한 황금빛": "golden hour warm light, dreamy fashion film", "네온 사이버펑크 — 미래적 네온 분위기": "neon cyberpunk atmosphere, futuristic fashion film", "미니멀 클린 — 깔끔하고 모던한": "minimal clean white atmosphere, modern fashion film", "에디토리얼 — 잡지 화보 느낌": "editorial fashion film, Vogue video style"}
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("**📝 기존 프롬프트 기반으로 변환**")
-        source_prompt  = st.text_area("이미지 프롬프트 붙여넣기 (선택사항)", placeholder="기존 이미지 프롬프트를 여기에 붙여넣으면 영상용으로 변환해줘요...", height=120, key="video_source")
-        video_duration = st.selectbox("⏱️ 영상 길이", list(VIDEO_DURATIONS.keys()))
-        video_motion   = st.selectbox("🏃 모션 타입", list(VIDEO_MOTIONS.keys()))
-    with col2:
-        video_camera     = st.selectbox("📷 카메라 무브먼트", list(VIDEO_CAMERAS.keys()))
-        video_atmosphere = st.selectbox("🌟 분위기", list(VIDEO_ATMOSPHERES.keys()))
-        video_appearance = st.selectbox("👩 모델 외모", ["None — 프롬프트 기반"] + list(MODEL_APPEARANCE.keys()), key="video_appearance")
-        video_outfit     = st.selectbox("👗 의상", ["None — 프롬프트 기반"] + list(OUTFIT_TYPES.keys()), key="video_outfit")
-    st.markdown("")
-    col_x, col_y, _ = st.columns([1, 1, 2])
-    with col_x: btn_video_build = st.button("🎬 영상 프롬프트 생성", type="primary", use_container_width=True)
-    with col_y: btn_video_ai    = st.button("🤖 AI로 강화", use_container_width=True, key="btn_video_ai")
-    if "video_prompt" not in st.session_state: st.session_state.video_prompt = ""
-    if btn_video_build:
-        st.session_state.video_prompt = ""
-        appearance_str = f"Model: {MODEL_APPEARANCE[video_appearance].split(',')[0]}. " if video_appearance != "None — 프롬프트 기반" else ""
-        outfit_str = ""
-        if video_outfit != "None — 프롬프트 기반":
-            od = OUTFIT_TYPES[video_outfit]
-            outfit_str = f"Wearing: {(od['gemini'] if isinstance(od, dict) else od).split(',')[0]}. "
-        base = f"Based on: {source_prompt[:200]}. " if source_prompt else ""
-        st.session_state.video_prompt = (f"Cinematic fashion video, {VIDEO_DURATIONS[video_duration]}. {base}{appearance_str}{outfit_str}Motion: {VIDEO_MOTIONS[video_motion]}. Camera: {VIDEO_CAMERAS[video_camera]}. Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}. Photorealistic, hyperrealistic, 4K cinematic quality, professional fashion film, no text, no watermark.")
-    if btn_video_ai and (source_prompt or st.session_state.video_prompt):
-        with st.spinner("Claude가 영상 프롬프트 강화 중..."):
-            try:
-                import anthropic
-                client = anthropic.Anthropic()
-                base = source_prompt or st.session_state.video_prompt
-                response = client.messages.create(model="claude-sonnet-4-5", max_tokens=500,
-                    messages=[{"role": "user", "content": f"You are an expert video prompt engineer.\nCreate a powerful cinematic fashion video prompt based on this: {base}\nSettings: Duration: {VIDEO_DURATIONS[video_duration]}, Motion: {VIDEO_MOTIONS[video_motion]}, Camera: {VIDEO_CAMERAS[video_camera]}, Atmosphere: {VIDEO_ATMOSPHERES[video_atmosphere]}\nRules: Cinematic, photorealistic, 4K. No text overlays. Output ONLY the prompt, 100-150 words."}])
-                st.session_state.video_prompt = response.content[0].text.strip()
-            except Exception as e:
-                st.error(f"오류: {str(e)}")
-    if st.session_state.video_prompt:
-        st.text_area("생성된 영상 프롬프트", value=st.session_state.video_prompt, height=180)
-        st.code(st.session_state.video_prompt, language=None)
-        st.caption("👆 복사 후 해당 플랫폼에 붙여넣으세요!")
-        st.markdown("---")
-        st.markdown(f"### 💡 {global_video_platform} 사용 방법")
-        if global_video_platform == "Veo 3 (Gemini)":
-            st.markdown("1. [gemini.google.com](https://gemini.google.com) 접속\n2. 좌측 **Veo 3** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
-        elif global_video_platform == "Kling AI":
-            st.markdown("1. [klingai.com](https://klingai.com) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
-        elif global_video_platform == "Runway":
-            st.markdown("1. [runwayml.com](https://runwayml.com) 접속\n2. **Gen-3 Alpha** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
-        else:
-            st.markdown("1. [hailuoai.video](https://hailuoai.video) 접속\n2. **Text to Video** 선택\n3. 위 프롬프트 붙여넣기\n4. 생성 클릭!")
