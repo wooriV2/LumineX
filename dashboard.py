@@ -308,6 +308,13 @@ with tab1:
         st.stop()
 
     NONE = "None — 프리셋 기본값 사용"
+
+    # _pd: 매 렌더링마다 선택된 프리셋 JSON 로드 (selectbox index 계산용)
+    try:
+        _pd = load_preset(selected_preset)
+    except Exception:
+        _pd = {}
+
     col1, col2, col3 = st.columns(3)
     with col1:
         _o = [NONE] + list(MODEL_APPEARANCE.keys())
@@ -370,11 +377,7 @@ with tab1:
         st.session_state.preset_selected = selected_preset
         st.session_state.preset_prompt   = ""
 
-    # 매 렌더링마다 JSON 읽어서 default 계산
-    try:
-        _pd = load_preset(selected_preset)
-    except Exception:
-        _pd = {}
+
 
     def build_preset_overrides() -> dict:
         overrides = {}
@@ -842,8 +845,6 @@ with tab3:
         _add_history("랜덤", st.session_state.random_prompt, global_platform)
         st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
-st.markdown("---")
-
 # ══════════════════════════════════════════════════════════
 # 탭 5: 히스토리 & HOF 배치 생성
 # ══════════════════════════════════════════════════════════
@@ -926,9 +927,6 @@ with tab5:
                 )
                 st.code(_item["prompt"], language=None)
                 st.caption(f"플랫폼: {_item['platform']}")
-
-st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
-
 
 st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
 
