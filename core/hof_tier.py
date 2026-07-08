@@ -187,6 +187,29 @@ HOF_TIER = {
     "trio_art_museum_after_hours",
     "trio_penthouse_pool_dawn",
 
+    # ── 🌅 Golden Hour Glamour HOF 13종 ────────────────────────
+    "golden_hour_cliff_goddess",
+    "golden_hour_salt_flat_goddess",
+    "golden_hour_dune_goddess",
+    "golden_hour_wheat_field",
+    "golden_hour_iceland_waterfall",
+    "golden_hour_lavender_field",
+    "golden_hour_amazon_cliff",
+    "golden_hour_curvy_desert",
+    "golden_hour_latina_wheat",
+    "golden_hour_bust_salt_flat",
+    "golden_hour_pear_tulip_field",
+    "golden_hour_petite_iceland",
+    "golden_hour_hourglass_volcano",
+    # ── 🏛️ Ancient Temple Glamour HOF 7종 ─────────────────────
+    "marble_awakening_goddess",
+    "karnak_gold_fusion",
+    "angkor_relief_emergence",
+    "petra_sandstone_dissolve",
+    "ephesus_marble_split",
+    "chichen_itza_serpent_merge",
+    "nefertiti_gold_petrify",
+
     # ── 💎 Figure Glamour HOF 37종 ──────────────────────────────
     "super_lingerie_glamour",
     "super_sheer_glamour",
