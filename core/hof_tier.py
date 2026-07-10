@@ -248,6 +248,18 @@ HOF_TIER = {
     "amazon_sheer_glamour",
     "amazon_slit_glamour",
     "amazon_corset_glamour",
+
+    # 2026-07-10 Phenomenal 5 HOF 10종 (재검토 확정)
+    "ferrofluid_amazon_couture_train_goddess",
+    "ferrofluid_petite_ballgown_spikes_goddess",
+    "murmuration_petite_wedding_goddess",
+    "murmuration_amazon_sequin_gown_goddess",
+    "cymatics_plus_size_couture_gown_frequency_goddess",
+    "cymatics_athletic_sand_body_overlay_goddess",
+    "micro_petite_butterfly_scale_goddess",
+    "micro_plus_size_crystal_cave_lattice_goddess",
+    "mycelium_plus_size_haute_couture_mushroom_goddess",
+    "mycelium_petite_lace_communion_goddess",
 }
 
 
