@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 LumineX Preset Metadata
 移댄뀒怨좊━ ?뺤쓽 + HOF / SSS / SS ?곗뼱
@@ -1303,7 +1303,7 @@ PRESET_CATEGORIES = {
         "amazon_slit_glamour",
         "amazon_corset_glamour",
     ],
-}
+
 
     "🧲 Ferrofluid Glamour": [
         "ferrofluid_crown_spikes",
@@ -1375,7 +1375,7 @@ PRESET_CATEGORIES = {
         "mycelium_petite_lace_communion_goddess",
         "mycelium_athletic_neon_bodysuit_network_goddess",
     ],
-
+}
 
 
 # HOF tier ??Hall of Fame: ?ㅼ젣 寃利??대?吏 以?理쒓퀬 ?꾨━???좎젙
