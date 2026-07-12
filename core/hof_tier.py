@@ -536,6 +536,20 @@ HOF_TIER = {
     "acoustic_athletic_fire_ember_levitation",
     "acoustic_amazon_flower_petal_vortex",
     "acoustic_plus_size_ice_shard_armor",
+
+    # ── 신규 카테고리 HOF (Acoustic 확장 + Element + Luxury) ──
+    "acoustic_latina_silk_thread_web",
+    "acoustic_amazon_lightning_arc",
+    "acoustic_black_glamour_obsidian_float",
+    "acoustic_brazil_petal_carnival",
+    "element_bbw_water_goddess",
+    "element_latina_storm_goddess",
+    "element_vs_angel_ice_goddess",
+    "element_hot_glamour_plasma_goddess",
+    "luxury_super_glamour_versailles",
+    "luxury_amazon_dubai_penthouse",
+    "luxury_latina_rio_carnival",
+    "luxury_vs_angel_paris_runway",
 }
 
 
