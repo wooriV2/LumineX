@@ -401,6 +401,8 @@ with tab1:
         return overrides
 
     def apply_overrides_to_prompt(preset: dict, overrides: dict) -> str:
+    if preset.get("prompt"):
+        return preset["prompt"]
         p = {**preset, **overrides}
         outfit_text   = p.get('outfit', '')
         material_text = p.get('material', '')
@@ -980,4 +982,5 @@ with tab5:
                 st.caption(f"플랫폼: {_item['platform']}")
 
 st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+
 
