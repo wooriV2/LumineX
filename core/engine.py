@@ -32,6 +32,9 @@ def build_prompt(preset: dict, overrides: Optional[dict] = None) -> str:
     """
     p = {**preset, **(overrides or {})}
 
+    if p.get("prompt"):
+        return p["prompt"]
+
     prompt = (
         f"Professional fashion photograph of {p.get('subject', 'a female model')}. "
         f"Body: {p.get('body', '')}. "
