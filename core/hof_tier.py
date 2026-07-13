@@ -575,6 +575,7 @@ HOF_TIER = {
     "vortex_latina_petal_whirlwind",
     "vortex_petite_sand_devil",
     "vortex_vs_angel_snow_vortex",
+    "vortex_powerlifter_magma_vortex",
 }
 
 

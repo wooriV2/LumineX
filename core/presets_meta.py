@@ -3064,15 +3064,68 @@ PRESET_CATEGORIES = {
         "plasma_plus_size_solar_flare_crown",
         "plasma_curvy_solar_wind_wet",
     ],
+
+    "🌑 Dark Fantasy Glamour": [
+        "dark_super_glamour_succubus",
+        "dark_bbw_earth_witch",
+        "dark_bust_queen_vampire",
+        "dark_vs_angel_fallen_angel",
+        "dark_supermodel_ice_witch",
+        "dark_amazon_valkyrie",
+        "dark_miniature_shadow_fairy",
+        "dark_latina_blood_moon",
+        "dark_black_glamour_void_queen",
+        "dark_hot_glamour_dark_siren",
+        "dark_brazil_jungle_goddess",
+        "dark_powerlifter_war_goddess",
+    ],
+
+    "🌊 Bioluminescence Glamour": [
+        "bio_amazon_anglerfish_lure",
+        "bio_plus_size_jellyfish_bloom",
+        "bio_curvy_deep_sea_coral",
+        "bio_athletic_comb_jelly_rainbow",
+        "bio_supermodel_sea_sparkle",
+        "bio_bbw_giant_squid_ink",
+        "bio_black_glamour_viper_fish",
+        "bio_vs_angel_crystal_medusa",
+        "bio_petite_firefly_swarm",
+        "bio_latina_dinoflagellate",
+        "bio_bust_queen_abyss_glow",
+        "bio_powerlifter_hydrothermal",
+    ],
+
+    "🕸️ Spider Silk Glamour": [
+        "silk_amazon_web_cathedral",
+        "silk_petite_dew_drop_web",
+        "silk_latina_web_veil",
+        "silk_black_glamour_black_widow",
+        "silk_vs_angel_dewdrop_cathedral",
+        "silk_bbw_cocoon_emergence",
+        "silk_curvy_golden_silk_gown",
+        "silk_athletic_web_armor",
+        "silk_bbw_funnel_web_throne",
+        "silk_powerlifter_web_cage",
+        "silk_supermodel_spiral_web",
+        "silk_bust_queen_orb_web",
+    ],
+
+    "🌪️ Vortex Glamour": [
+        "vortex_amazon_fire_tornado",
+        "vortex_bbw_water_cyclone",
+        "vortex_petite_sand_devil",
+        "vortex_curvy_rose_tornado",
+        "vortex_athletic_lightning_vortex",
+        "vortex_latina_petal_whirlwind",
+        "vortex_vs_angel_snow_vortex",
+        "vortex_powerlifter_magma_vortex",
+        "vortex_bbw_cloud_column",
+        "vortex_bust_queen_aurora_vortex",
+        "vortex_supermodel_galaxy_spiral",
+        "vortex_black_glamour_void_spiral",
+    ],
 }
 
-
-
-
-
-# HOF tier ??Hall of Fame: ?ㅼ젣 寃利??대?吏 以?理쒓퀬 ?꾨━???좎젙
-
-# 湲곗?: "?" ?섎뒗 諛섏쓳, 援щ룄/諛곌꼍/諛붾뵒?섏씤???쇰컯???꾨꼍, 利됱떆 ?앹꽦 媛??
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
 
