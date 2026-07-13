@@ -401,8 +401,8 @@ with tab1:
         return overrides
 
     def apply_overrides_to_prompt(preset: dict, overrides: dict) -> str:
-    if preset.get("prompt"):
-        return preset["prompt"]
+        if preset.get("prompt"):
+            return preset["prompt"]
         p = {**preset, **overrides}
         outfit_text   = p.get('outfit', '')
         material_text = p.get('material', '')
