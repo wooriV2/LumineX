@@ -443,7 +443,7 @@ with tab1:
         st.session_state.preset_prompt = ""
         raw = apply_overrides_to_prompt(load_preset(selected_preset), build_preset_overrides())
         aspect_desc = ASPECT_RATIOS.get(global_aspect, "portrait 2:3 vertical")
-        if global_platform == "Gemini":
+        if global_platform == "Gemini" and aspect_desc not in raw:
             raw += f" {aspect_desc}."
         elif global_platform == "ChatGPT (DALL-E)":
             raw += f" {aspect_desc}. Photorealistic, hyperrealistic skin texture, award-winning fashion photography."
@@ -982,6 +982,7 @@ with tab5:
                 st.caption(f"플랫폼: {_item['platform']}")
 
 st.markdown('<div style="text-align:center;color:#444;font-size:0.75rem;">✦ LumineX v4.4 — AI Fashion Image Engine</div>', unsafe_allow_html=True)
+
 
 
 
