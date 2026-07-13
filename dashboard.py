@@ -443,8 +443,9 @@ with tab1:
         st.session_state.preset_prompt = ""
         raw = apply_overrides_to_prompt(load_preset(selected_preset), build_preset_overrides())
         aspect_desc = ASPECT_RATIOS.get(global_aspect, "portrait 2:3 vertical")
-        if global_platform == "Gemini" and aspect_desc not in raw:
-            raw += f" {aspect_desc}."
+        if global_platform == "Gemini":
+            if aspect_desc not in raw:
+                raw += f" {aspect_desc}."
         elif global_platform == "ChatGPT (DALL-E)":
             raw += f" {aspect_desc}. Photorealistic, hyperrealistic skin texture, award-winning fashion photography."
         else:
