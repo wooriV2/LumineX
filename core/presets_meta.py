@@ -4981,7 +4981,25 @@ SSS_TIER = {
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
 
     "bubble_bath_gloss","milk_bath_petals",
-
+    "bio_bust_queen_abyss_glow",
+    "bio_latina_dinoflagellate",
+    "bio_petite_firefly_swarm",
+    "bio_powerlifter_hydrothermal",
+    "dark_amazon_valkyrie",
+    "dark_black_glamour_void_queen",
+    "dark_brazil_jungle_goddess",
+    "dark_hot_glamour_dark_siren",
+    "dark_latina_blood_moon",
+    "dark_miniature_shadow_fairy",
+    "dark_powerlifter_war_goddess",
+    "silk_athletic_web_armor",
+    "silk_bbw_cocoon_emergence",
+    "silk_bbw_funnel_web_throne",
+    "silk_curvy_golden_silk_gown",
+    "silk_powerlifter_web_cage",
+    "vortex_bbw_cloud_column",
+    "vortex_bust_queen_aurora_vortex",
+    "vortex_powerlifter_magma_vortex",
 }
 
 
