@@ -13,6 +13,30 @@ add_hof("key") 함수로 개별 추가도 가능합니다.
 
 
 HOF_TIER = {
+    # 2026-07-14 신규 5개 카테고리 HOF 17종
+    # 🌙 Night Glamour HOF
+    "night_super_glamour_penthouse",
+    "night_amazon_rooftop_rain",
+    "night_latina_neon_alley",
+    "night_black_glamour_moonrise",
+    # 👗 Slip Dress HOF
+    "slip_super_glamour_marble",
+    "slip_amazon_rain_window",
+    "slip_latina_poolside_dawn",
+    # 🐆 Animal Print HOF
+    "animal_super_glamour_leopard_gown",
+    "animal_amazon_cheetah_latex",
+    "animal_black_glamour_panther_catsuit",
+    # ⚔️ Power & Edge HOF
+    "edge_super_glamour_chrome_armor",
+    "edge_amazon_warrior_ruins",
+    "edge_black_glamour_obsidian_gown",
+    # 🏖️ Beach & Resort HOF
+    "beach_amazon_bali_surf",
+    "beach_latina_rio",
+    "beach_black_glamour_bioluminescent",
+    "beach_brazil_booty_golden_hour",
+
 
     # ── 스파 & 바디 글래머 ──────────────────────────────────────
 
