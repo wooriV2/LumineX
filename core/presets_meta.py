@@ -5163,6 +5163,22 @@ SSS_TIER = {
     "vortex_bbw_cloud_column",
     "vortex_bust_queen_aurora_vortex",
     "vortex_powerlifter_magma_vortex",
+
+    "milf_korean_micro_shorts_neon_bar",
+    "milf_korean_deep_back_plunge_dinner",
+    "milf_korean_cutout_dress_night",
+    "milf_korean_colombian_beach_sunset",
+    "milf_korean_colombian_latex_club",
+    "milf_korean_bust_queen_deep_plunge_gala",
+    "milf_korean_bbw_jazz_stage",
+    "milf_korean_bbw_penthouse_velvet",
+    "milf_korean_bbw_beach_kaftan",
+    "milf_korean_bbw_latex_bodycon",
+    "milf_korean_miniature_penthouse",
+    "milf_korean_miniature_latex_studio",
+    "milf_korean_miniature_beach_sunset",
+    "milf_korean_supermodel_penthouse_window",
+    "milf_korean_thick_latex_neon",
 }
 
 

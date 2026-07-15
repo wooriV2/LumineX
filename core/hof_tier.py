@@ -648,6 +648,26 @@ HOF_TIER = {
     "vortex_petite_sand_devil",
     "vortex_vs_angel_snow_vortex",
     "vortex_powerlifter_magma_vortex",
+
+    "milf_korean_oil_body_studio",
+    "milf_korean_jeweled_micro_gala",
+    "milf_korean_micro_wrap_sunset",
+    "milf_korean_wet_silk_onsen",
+    "milf_korean_micro_swimsuit_yacht",
+    "milf_korean_micro_bikini_snow",
+    "milf_korean_colombian_neon_alley",
+    "milf_korean_amazon_rooftop_storm",
+    "milf_korean_amazon_beach_power",
+    "milf_korean_amazon_gladiator_ruins",
+    "milf_korean_bust_queen_corset_latex",
+    "milf_korean_bust_queen_micro_bandeau",
+    "milf_korean_powerlifter_titanium",
+    "milf_korean_powerlifter_beach",
+    "milf_korean_powerlifter_latex_studio",
+    "milf_korean_supermodel_runway",
+    "milf_korean_supermodel_jeju_cliff",
+    "milf_korean_thick_boudoir_lace",
+    "milf_korean_thick_micro_bikini_pool",
 }
 
 
