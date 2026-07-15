@@ -668,6 +668,11 @@ HOF_TIER = {
     "milf_korean_supermodel_jeju_cliff",
     "milf_korean_thick_boudoir_lace",
     "milf_korean_thick_micro_bikini_pool",
+
+    "animal_supermodel_python_gown",
+    "edge_supermodel_neon_warrior",
+    "edge_bbw_steampunk_corset",
+    "beach_powerlifter_seychelles",
 }
 
 

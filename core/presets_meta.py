@@ -5179,6 +5179,16 @@ SSS_TIER = {
     "milf_korean_miniature_beach_sunset",
     "milf_korean_supermodel_penthouse_window",
     "milf_korean_thick_latex_neon",
+
+    "slip_brazil_paris_apartment",
+    "slip_colombia_morocco_riad",
+    "slip_powerlifter_onsen",
+    "animal_miniature_ocelot_mini",
+    "animal_colombia_giraffe_bodycon",
+    "edge_bust_queen_cyber_armor",
+    "edge_miniature_spike_latex",
+    "beach_bust_queen_amalfi",
+    "beach_supermodel_palawan",
 }
 
 
