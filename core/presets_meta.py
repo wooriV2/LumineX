@@ -3142,6 +3142,27 @@ from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
 # 湲곗?: 泥댄삎 ?ㅻ쾭?쇱씠?쒕쭔?쇰줈 臾명솕/?⑦꽩/?ъ쫰 ?먮룞?꾩꽦, 2???댁긽 ?쇨??? ?낅낫???꾪뙥??
 
 SSS_TIER = {
+    "milf_korean_spa_white_micro",
+    "milf_korean_tennis_club",
+    "milf_korean_open_shirt_beach",
+    "milf_korean_micro_hanbok_palace",
+    "milf_korean_micro_tennis_skirt_pool",
+    "milf_korean_ribbon_only_editorial",
+    "milf_korean_micro_crop_jeju_cliff",
+    "milf_korean_vinyl_shorts_neon",
+    "milf_korean_deep_plunge_gown_casino",
+    "milf_korean_gold_chain_body",
+    "milf_korean_micro_skirt_rooftop_wind",
+    "milf_korean_sheer_lace_boudoir",
+    "milf_korean_rooftop_vinyl_mini",
+    "milf_korean_yacht_bikini_gold",
+    "milf_korean_fitness_micro_sports",
+    "milf_korean_bust_queen_pool",
+    "milf_korean_bbw_lingerie_boudoir",
+    "milf_korean_resort_deep_plunge",
+    "milf_korean_office_power",
+    "milf_korean_beach_micro_thong",
+    "milf_korean_pool_bandeau",
     "young_korean_campus_spring",
     "young_korean_gym_first_gains",
     "young_korean_tokyo_first_solo",
@@ -5149,6 +5170,8 @@ SSS_TIER = {
 # SS tier
 
 SS_TIER = {
+    "milf_korean_spa_white_micro",
+    "milf_korean_tennis_club",
     "young_korean_campus_spring",
     "young_korean_gym_first_gains",
     "young_korean_tokyo_first_solo",

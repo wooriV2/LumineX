@@ -13,6 +13,26 @@ add_hof("key") 함수로 개별 추가도 가능합니다.
 
 
 HOF_TIER = {
+    "milf_korean_chrome_bodysuit_cyber",
+    "milf_korean_bbw_wet_pool",
+    "milf_korean_strappy_harness_club",
+    "milf_korean_micro_bikini_waterfall",
+    "milf_korean_latex_catsuit_stage",
+    "milf_korean_micro_bandeau_pool_edge",
+    "milf_korean_dark_fantasy_latex",
+    "milf_korean_hanok_traditional_edge",
+    "milf_korean_neon_latex_micro",
+    "milf_korean_amazon_warrior",
+    "milf_korean_rain_wet_street",
+    "milf_korean_onsen_silk",
+    "milf_korean_club_latex_mini",
+    "milf_korean_boudoir_corset",
+    "milf_korean_penthouse_micro_bikini",
+    "fitness_korean_tattoo_full_maldives_void",
+    "fitness_korean_tattoo_sleeve_aurora",
+    "fitness_korean_glutes_ibiza_sunset",
+    "fitness_korean_tattoo_thigh_monaco",
+    "fitness_korean_tattoo_rio_carnival",
     # 2026-07-15 한국인 카테고리 신규 HOF
     "elder_korean_70s_cliff_wind",
     "elder_korean_silver_dubai_desert",
