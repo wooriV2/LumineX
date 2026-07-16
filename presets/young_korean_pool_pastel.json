@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 파스텔 풀",
-  "tier": "S",
-  "tags": [
-    "korean",
-    "young",
-    "pool",
-    "pastel"
-  ],
+  "subject": "Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, natural golden-porcelain skin in pool light",
   "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, natural golden-porcelain skin in pool light, long dark hair wet and sleek from pool, natural fresh makeup, playful joyful expression. Wearing: ultra-minimal pastel pink micro string bikini, micro thong, clear platform stiletto wedge mules 4-inch at pool edge, delicate gold chain, tiny heart stud earrings. Environment: luxury resort pool, pastel blue water, pink and white poolside furniture, tropical flowers, afternoon golden light. Lighting: afternoon sun direct + pastel blue pool reflection below, golden-porcelain 20-year skin in dual. Style: Korean young adult 20 pastel pool summer editorial. Shot on Hasselblad X2D, 8K UHD, pastel pool young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "environment": "luxury resort pool pastel",
+  "lighting": "afternoon sun + pastel blue pool reflection",
+  "style": "Korean young adult pastel pool summer editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

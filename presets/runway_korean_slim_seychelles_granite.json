@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 세이셸 화강암",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "seychelles",
-    "granite"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure towering over Seychelles granite, mid-20s, Korean features, warm golden-honey skin in Indian Ocean light, long dark hair wild in ocean wind, expression commanding. Wearing: ultra-minimal turquoise micro string bikini — tiny turquoise against golden skin and pink granite, bare feet on smooth pink granite, single turquoise drop earring, turquoise anklet. Environment: Seychelles Anse Source d'Argent, massive smooth pink granite boulders, turquoise Indian Ocean between granite gaps, palm fronds. Lighting: Seychelles golden afternoon + turquoise ocean reflection between granite, golden skin in dual light, extreme tall figure over granite. Style: Korean runway 185cm+ Seychelles pink granite editorial. Shot on Hasselblad X2D, 8K UHD, Seychelles runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim figure, mid-20s, Korean features, warm golden-honey skin in Indian Ocean light",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure towering over Seychelles granite, mid-20s, Korean features, warm golden-honey skin in Indian Ocean light, long dark hair wild in ocean wind, expression commanding. Wearing: ultra-minimal turquoise micro string bikini, tiny turquoise against golden skin and pink granite, bare feet on smooth pink granite, single turquoise drop earring, turquoise anklet. Environment: Seychelles Anse Source d'Argent, massive smooth pink granite boulders, turquoise Indian Ocean between granite gaps, palm fronds. Lighting: Seychelles golden afternoon + turquoise ocean reflection between granite, golden skin in dual light. Style: Korean runway 185cm+ Seychelles pink granite editorial. Shot on Hasselblad X2D, 8K UHD, Seychelles runway grade, portrait 2:3 vertical.",
+  "environment": "Seychelles Anse Source d'Argent",
+  "lighting": "Seychelles golden afternoon + ocean reflection",
+  "style": "Korean runway Seychelles pink granite editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

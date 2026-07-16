@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 발목타투 제주",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "young",
-    "tattoo",
-    "ankle"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, slim perfect figure, Korean features, warm golden porcelain skin kissed by Jeju sun, long dark hair in ocean wind, expression free and joyful, delicate ankle tattoo — tiny wave pattern wrapping right ankle. Wearing: ultra-minimal white micro string bikini, bare feet on Jeju black volcanic rock — ankle tattoo prominently visible, single gold chain on tattooed ankle, tiny gold hoops. Environment: Jeju Island volcanic coastline, black basalt columns, turquoise East Sea crashing below. Lighting: Jeju midday coastal + ocean reflection upward, golden-porcelain 21-year skin in coastal dual, ankle wave tattoo visible in full detail. Style: Korean young adult 21 ankle tattoo Jeju volcanic coast editorial. Shot on Hasselblad X2D, 8K UHD, Jeju ankle tattoo young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 21 years old, slim perfect figure, Korean features, warm golden porcelain skin, ankle tattoo tiny wave pattern",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, slim perfect figure, Korean features, warm golden porcelain skin kissed by Jeju sun, long dark hair in ocean wind, delicate ankle tattoo — tiny wave pattern wrapping right ankle. Wearing: ultra-minimal white micro string bikini, bare feet on Jeju black volcanic rock, single gold chain on tattooed ankle, tiny gold hoops. Environment: Jeju Island volcanic coastline, black basalt columns, turquoise East Sea crashing below. Lighting: Jeju midday coastal + ocean reflection upward, golden-porcelain 21-year skin in coastal dual. Style: Korean young adult 21 ankle tattoo Jeju volcanic coast editorial. Shot on Hasselblad X2D, 8K UHD, Jeju ankle tattoo young grade, portrait 2:3 vertical.",
+  "environment": "Jeju Island volcanic coastline basalt",
+  "lighting": "Jeju midday coastal + ocean reflection",
+  "style": "Korean young adult ankle tattoo Jeju volcanic editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

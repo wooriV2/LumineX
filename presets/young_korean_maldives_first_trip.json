@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 몰디브 첫 여행",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "young",
-    "maldives",
-    "first"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, warm golden-porcelain skin glowing in Maldives sun — first real tan of young life, long straight dark hair in ocean breeze, smile wide and genuine, expression of pure 20-year joy at paradise. Wearing: ultra-minimal sky blue micro string bikini, micro thong, bare feet on overwater bungalow deck, single gold anklet, tiny gold studs. Environment: Maldives overwater bungalow, turquoise Indian Ocean surrounding, coral visible through crystal water, blue sky and sea. Lighting: Maldives midday direct from above + turquoise ocean reflection upward, golden-porcelain young skin in tropical dual, first-tan golden warmth. Style: Korean young adult 20 Maldives first trip editorial. Shot on Phase One XF IQ4, 8K UHD, Maldives young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, warm golden-porcelain skin glowing in Maldives sun",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, warm golden-porcelain skin glowing in Maldives sun, long straight dark hair in ocean breeze, smile wide and genuine, expression of pure 20-year joy at paradise. Wearing: ultra-minimal sky blue micro string bikini, micro thong, bare feet on overwater bungalow deck, single gold anklet, tiny gold studs. Environment: Maldives overwater bungalow, turquoise Indian Ocean surrounding, coral visible through crystal water. Lighting: Maldives midday direct from above + turquoise ocean reflection upward, golden-porcelain young skin in tropical dual. Style: Korean young adult 20 Maldives first trip editorial. Shot on Phase One XF IQ4, 8K UHD, Maldives young grade, portrait 2:3 vertical.",
+  "environment": "Maldives overwater bungalow",
+  "lighting": "Maldives midday + turquoise ocean reflection",
+  "style": "Korean young adult Maldives first trip editorial",
+  "quality": "Shot on Phase One XF IQ4, 8K UHD"
 }

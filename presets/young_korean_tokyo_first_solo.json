@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 도쿄 하라주쿠",
-  "tier": "S",
-  "tags": [
-    "korean",
-    "young",
-    "tokyo",
-    "harajuku"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, slim perfect figure, Korean features, luminous porcelain skin, long dark hair with colorful hair clip accessories — Harajuku youth aesthetic, expression excited and fierce first-adult solo travel. Wearing: ultra-minimal white micro string bikini, micro thong, white platform sneaker boots 5-inch on Harajuku street, colorful micro shoulder bag, stacked bracelets on both wrists, tiny star earrings. Environment: Harajuku Takeshita Street, colorful fashion shops, youth crowd, crepe shops, full Japanese youth culture. Lighting: Harajuku afternoon dappled through street + colorful shop sign ambient, porcelain 21-year skin in Harajuku color wash. Style: Korean young adult 21 Tokyo Harajuku first solo editorial. Shot on Hasselblad X2D, 8K UHD, Harajuku young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 21 years old, slim perfect figure, Korean features, luminous porcelain skin, Harajuku youth aesthetic",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, slim perfect figure, Korean features, luminous porcelain skin, long dark hair with colorful hair clip accessories — Harajuku youth aesthetic, expression excited and fierce first-adult solo travel. Wearing: ultra-minimal white micro string bikini, micro thong, white platform sneaker boots 5-inch on Harajuku street, colorful micro shoulder bag, stacked bracelets on both wrists, tiny star earrings. Environment: Harajuku Takeshita Street, colorful fashion shops, youth crowd, crepe shops. Lighting: Harajuku afternoon dappled through street + colorful shop sign ambient, porcelain 21-year skin in Harajuku color wash. Style: Korean young adult 21 Tokyo Harajuku first solo editorial. Shot on Hasselblad X2D, 8K UHD, Harajuku young grade, portrait 2:3 vertical.",
+  "environment": "Harajuku Takeshita Street Tokyo",
+  "lighting": "Harajuku afternoon + colorful shop signs",
+  "style": "Korean young adult Tokyo Harajuku first solo editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

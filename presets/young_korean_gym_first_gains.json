@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 홈짐 첫 근육",
-  "tier": "S",
-  "tags": [
-    "korean",
-    "young",
-    "gym",
-    "gains"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, figure beginning to show first real gym results — slim with just-emerging ab definition and slight muscle tone, the fresh beginning of a fitness journey, Korean features, warm honey-porcelain skin, dark hair in gym ponytail, expression proud and confident — first gains. Wearing: ultra-minimal black micro sports bikini — athletic micro top and micro thong, black chrome platform stiletto boots 6-inch on gym floor, single silver arm band. Environment: home gym with full-length mirror, dumbbells visible, motivational vibe, natural afternoon light through window. Lighting: natural afternoon from window + mirror reflection, honey-porcelain 21-year skin in natural light, first ab definition visible. Style: Korean young adult 21 first gym gains mirror editorial. Shot on Hasselblad X2D, 8K UHD, gym young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 21 years old, figure beginning to show first real gym results, slim with just-emerging ab definition",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, figure beginning to show first real gym results — slim with just-emerging ab definition, Korean features, warm honey-porcelain skin, dark hair in gym ponytail, expression proud and confident. Wearing: ultra-minimal black micro sports bikini, black chrome platform stiletto boots 6-inch on gym floor, single silver arm band. Environment: home gym with full-length mirror, dumbbells visible, natural afternoon light through window. Lighting: natural afternoon from window + mirror reflection, honey-porcelain 21-year skin in natural light. Style: Korean young adult 21 first gym gains mirror editorial. Shot on Hasselblad X2D, 8K UHD, gym young grade, portrait 2:3 vertical.",
+  "environment": "home gym full-length mirror",
+  "lighting": "natural afternoon window + mirror reflection",
+  "style": "Korean young adult first gym gains editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

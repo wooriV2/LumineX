@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 밀라노 캣워크",
-  "tier": "SSS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "milan",
-    "catwalk"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, legs that never end, mid-20s, Korean features, porcelain skin, severe sleek center-part black hair razor-cut to jawline, razor cheekbones, cold catwalk expression. Wearing: ultra-minimal black micro corset-structured runway top barely covering slim chest, black micro shorts high-cut maximum leg exposure on extreme long legs, black patent thigh-high platform stiletto boots 6-inch on Milan runway, single massive architectural chrome ear sculpture, no other accessories. Environment: Milan Fashion Week runway, white runway, fashion crowd both sides blur, designer backdrop, runway overhead spots. Lighting: runway overhead spots hard from above, porcelain skin in hard fashion light, extreme long legs endless on white runway. Style: Korean runway 185cm+ Milan catwalk micro editorial. Shot on Hasselblad X2D, 8K UHD, Milan runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim figure, legs that never end, mid-20s, Korean features, porcelain skin, severe sleek center-part black hair razor-cut to jawline",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, legs that never end, mid-20s, Korean features, porcelain skin, severe sleek center-part black hair razor-cut to jawline, razor cheekbones, cold catwalk expression. Wearing: ultra-minimal black micro corset-structured runway top barely covering slim chest, black micro shorts high-cut maximum leg exposure on extreme long legs, black patent thigh-high platform stiletto boots 6-inch on Milan runway, single massive architectural chrome ear sculpture. Environment: Milan Fashion Week runway, white runway, fashion crowd both sides blur, designer backdrop, runway overhead spots. Lighting: runway overhead spots hard from above, porcelain skin in hard fashion light, extreme long legs endless on white runway. Style: Korean runway 185cm+ Milan catwalk micro editorial. Shot on Hasselblad X2D, 8K UHD, Milan runway grade, portrait 2:3 vertical.",
+  "environment": "Milan Fashion Week runway",
+  "lighting": "runway overhead spots hard from above",
+  "style": "Korean runway Milan catwalk editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

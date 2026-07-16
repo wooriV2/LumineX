@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 서울 첫눈",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "young",
-    "seoul",
-    "snow"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect figure, Korean features, luminous porcelain skin in Seoul first snow, long dark hair with snowflakes caught in it, expression of pure childlike wonder — first snow of the year at 20. Wearing: ultra-minimal white micro string bikini — pure white matching snowflakes, white platform stiletto boots 5-inch in Seoul snow, white fluffy ear muffs only, snowflakes on skin. Environment: Seoul street in first winter snow, Gyeongbok Palace gate visible through snowfall, traditional lanterns lit warm amber through snow, snow falling. Lighting: Seoul overcast snow-diffused cold white + palace lantern warm amber, porcelain 20-year skin in cold-warm contrast, snowflakes catching on skin and hair. Style: Korean young adult 20 Seoul first snow palace editorial. Shot on Hasselblad X2D, 8K UHD, Seoul snow young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 20 years old, slim perfect figure, Korean features, luminous porcelain skin in Seoul first snow",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect figure, Korean features, luminous porcelain skin in Seoul first snow, long dark hair with snowflakes caught in it, expression of pure childlike wonder. Wearing: ultra-minimal white micro string bikini, white platform stiletto boots 5-inch in Seoul snow, white fluffy ear muffs only. Environment: Seoul street in first winter snow, Gyeongbok Palace gate visible through snowfall, traditional lanterns lit warm amber through snow. Lighting: Seoul overcast snow-diffused cold white + palace lantern warm amber, porcelain 20-year skin in cold-warm contrast. Style: Korean young adult 20 Seoul first snow palace editorial. Shot on Hasselblad X2D, 8K UHD, Seoul snow young grade, portrait 2:3 vertical.",
+  "environment": "Seoul Gyeongbok Palace first snow",
+  "lighting": "snow-diffused cold white + palace lantern amber",
+  "style": "Korean young adult Seoul first snow palace editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

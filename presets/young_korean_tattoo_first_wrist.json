@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 손목타투 서울카페",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "young",
-    "tattoo",
-    "wrist"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, slim perfect figure, Korean features, warm honey-porcelain skin, long dark hair loose and free, natural fresh makeup, expression confident and proud — just got her first tattoo. First tattoo: delicate fine-line moon and stars on right wrist, small but meaningful. Wearing: ultra-minimal beige micro string bikini, micro thong, beige platform sandal mules 4-inch on Seoul café street, wrist tattoo prominently displayed, tiny gold studs, delicate gold necklace. Environment: Seoul Bukchon or Insadong café street, hanok wall behind, autumn leaves, warm café amber glow. Lighting: Seoul café street warm afternoon + café amber, honey-porcelain 21-year skin in warm glow, wrist tattoo visible in detail. Style: Korean young adult 21 first wrist tattoo Seoul café editorial. Shot on Hasselblad X2D, 8K UHD, Seoul café young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 21 years old, slim perfect figure, Korean features, warm honey-porcelain skin, first tattoo delicate fine-line moon and stars on right wrist",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, slim perfect figure, Korean features, warm honey-porcelain skin, long dark hair loose and free, natural fresh makeup, expression confident and proud — just got her first tattoo. First tattoo: delicate fine-line moon and stars on right wrist. Wearing: ultra-minimal beige micro string bikini, micro thong, beige platform sandal mules 4-inch on Seoul café street, wrist tattoo prominently displayed, tiny gold studs. Environment: Seoul Bukchon or Insadong café street, hanok wall behind, autumn leaves, warm café amber glow. Lighting: Seoul café street warm afternoon + café amber, honey-porcelain 21-year skin in warm glow. Style: Korean young adult 21 first wrist tattoo Seoul café editorial. Shot on Hasselblad X2D, 8K UHD, Seoul café young grade, portrait 2:3 vertical.",
+  "environment": "Seoul Bukchon café street hanok",
+  "lighting": "Seoul café street warm afternoon + amber",
+  "style": "Korean young adult first wrist tattoo Seoul editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

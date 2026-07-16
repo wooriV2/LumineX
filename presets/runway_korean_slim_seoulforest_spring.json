@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 서울숲 봄",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "seoul",
-    "spring"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, early-20s, Korean features, natural luminous porcelain skin in spring dappled light, severe sleek center-part dark hair, expression cool and distant in spring forest. Wearing: ultra-minimal white sheer micro dress — completely see-through fabric barely covering slim tall frame, visible micro white bikini underneath through sheer, clear platform stiletto mules 6-inch on forest path, single cherry blossom pin in hair. Environment: Seoul Forest in full spring bloom, cherry and forsythia in bloom, dappled spring light through young leaves, forest path. Lighting: spring forest dappled from above through canopy, porcelain skin in green-gold spring dapple, white sheer dress catching spring light as luminous veil. Style: Korean runway 185cm+ Seoul spring forest sheer editorial. Shot on Hasselblad X2D, 8K UHD, Seoul spring runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim figure, early-20s, Korean features, natural luminous porcelain skin in spring dappled light",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, early-20s, Korean features, natural luminous porcelain skin in spring dappled light, severe sleek center-part dark hair, expression cool and distant in spring forest. Wearing: ultra-minimal white sheer micro dress, completely see-through fabric barely covering slim tall frame, visible micro white bikini underneath through sheer, clear platform stiletto mules 6-inch on forest path, single cherry blossom pin in hair. Environment: Seoul Forest in full spring bloom, cherry and forsythia in bloom, dappled spring light through young leaves, forest path. Lighting: spring forest dappled from above through canopy, porcelain skin in green-gold spring dapple. Style: Korean runway 185cm+ Seoul spring forest sheer editorial. Shot on Hasselblad X2D, 8K UHD, Seoul spring runway grade, portrait 2:3 vertical.",
+  "environment": "Seoul Forest spring bloom",
+  "lighting": "spring forest dappled light",
+  "style": "Korean runway Seoul spring forest sheer editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

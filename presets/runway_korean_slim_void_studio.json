@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 보이드 스튜디오",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "void",
-    "studio"
-  ],
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim runway figure, impossibly long legs and neck, mid-20s, Korean features, luminous porcelain skin, severe sleek center-part jet-black hair to mid-back, sharp editorial cheekbones, cold high fashion expression",
   "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim runway figure, impossibly long legs and neck, mid-20s, Korean features, luminous porcelain skin, severe sleek center-part jet-black hair to mid-back, sharp editorial cheekbones, cold high fashion expression. Wearing: ultra-minimal white micro structured bodysuit, architectural panel construction barely covering slim extreme tall frame, white patent thigh-high platform stiletto boots 6-inch heel, single massive sculptural silver ear piece only. Environment: black infinity studio, single hard overhead spot, pure editorial void. Lighting: single hard overhead spot, extreme tall slim silhouette as white architectural form against void. Style: Korean runway 185cm+ void studio high fashion editorial. Shot on Hasselblad X2D, 8K UHD, void runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "environment": "black infinity studio",
+  "lighting": "single hard overhead spot",
+  "style": "Korean runway void studio editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD, void runway grade"
 }

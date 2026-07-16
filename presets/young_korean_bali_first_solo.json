@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 발리 첫 배낭",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "young",
-    "bali",
-    "sunset"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect figure, Korean features, warm honey skin golden from first week in Bali sun, long dark hair with flower tucked in from Bali morning market, expression of pure free-spirited 20-year happiness. Wearing: ultra-minimal gold micro string bikini, micro thong, bare feet on Bali beach sand, handmade Bali woven anklet, small lotus stud earrings. Environment: Bali beach at sunset, temple silhouette on cliff in background, golden sand, palm trees, Bali sunset orange-pink sky. Lighting: Bali golden sunset from horizon, honey-golden young skin in warm Bali gold — first real tan glowing. Style: Korean young adult 20 Bali first solo trip golden editorial. Shot on Phase One XF IQ4, 8K UHD, Bali young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 20 years old, slim perfect figure, Korean features, warm honey skin golden from first week in Bali sun",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect figure, Korean features, warm honey skin golden from first week in Bali sun, long dark hair with flower tucked in, expression of pure free-spirited 20-year happiness. Wearing: ultra-minimal gold micro string bikini, micro thong, bare feet on Bali beach sand, handmade Bali woven anklet, small lotus stud earrings. Environment: Bali beach at sunset, temple silhouette on cliff in background, golden sand, palm trees, Bali sunset orange-pink sky. Lighting: Bali golden sunset from horizon, honey-golden young skin in warm Bali gold. Style: Korean young adult 20 Bali first solo trip golden editorial. Shot on Phase One XF IQ4, 8K UHD, Bali young grade, portrait 2:3 vertical.",
+  "environment": "Bali beach sunset temple silhouette",
+  "lighting": "Bali golden sunset",
+  "style": "Korean young adult Bali first solo golden editorial",
+  "quality": "Shot on Phase One XF IQ4, 8K UHD"
 }

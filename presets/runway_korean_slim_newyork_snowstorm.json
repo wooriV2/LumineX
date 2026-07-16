@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 NYC 눈보라",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "nyc",
-    "blizzard"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure in NYC snowstorm, mid-20s, Korean features, porcelain skin cold in snowstorm, severe slicked-back platinum hair, fierce cold expression — immune to blizzard. Wearing: ultra-minimal black micro string bikini — absolute minimum against snowstorm, black patent thigh-high platform stiletto boots 6-inch in snow-wet NYC sidewalk, single crystal drop earring. Environment: NYC winter blizzard, snow falling heavy, 5th Avenue storefronts in snow behind, yellow taxi blurred, streetlamps in snow haze. Lighting: NYC snowstorm diffused cold from overcast + streetlamp warm from street, porcelain skin in cold-warm contrast, snowflakes visible falling around extreme tall figure. Style: Korean runway 185cm+ NYC blizzard cold editorial. Shot on Hasselblad X2D, 8K UHD, NYC blizzard runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim figure in NYC snowstorm, mid-20s, Korean features, porcelain skin cold in snowstorm",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure in NYC snowstorm, mid-20s, Korean features, porcelain skin cold in snowstorm, severe slicked-back platinum hair, fierce cold expression — immune to blizzard. Wearing: ultra-minimal black micro string bikini, absolute minimum against snowstorm, black patent thigh-high platform stiletto boots 6-inch in snow-wet NYC sidewalk, single crystal drop earring. Environment: NYC winter blizzard, snow falling heavy, 5th Avenue storefronts in snow behind, yellow taxi blurred, streetlamps in snow haze. Lighting: NYC snowstorm diffused cold from overcast + streetlamp warm from street, porcelain skin in cold-warm contrast. Style: Korean runway 185cm+ NYC blizzard cold editorial. Shot on Hasselblad X2D, 8K UHD, NYC blizzard runway grade, portrait 2:3 vertical.",
+  "environment": "NYC winter blizzard 5th Avenue",
+  "lighting": "snowstorm diffused cold + streetlamp warm",
+  "style": "Korean runway NYC blizzard editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

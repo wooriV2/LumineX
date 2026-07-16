@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 홍대 네온",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "young",
-    "hongdae",
-    "neon"
-  ],
+  "subject": "Korean young adult goddess, 21 years old, slim perfect figure, Korean features, warm honey-porcelain skin in Hongdae neon",
   "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 21 years old, slim perfect figure, Korean features, warm honey-porcelain skin in Hongdae neon, long straight dark hair with neon-dyed pink tips, sharp liner, glossy pink lip, excited fierce young expression. Wearing: ultra-minimal neon pink micro string bikini, micro thong, clear holographic thigh-high platform stiletto boots 5-inch on Hongdae street, neon pink mini crossbody bag, silver small hoops. Environment: Hongdae at midnight, indie club street, neon and LED art, street art murals, young crowd blur, puddles reflecting neon. Lighting: Hongdae neon pink-purple + puddle reflection below, honey-porcelain 21-year skin in neon wash. Style: Korean young adult 21 Hongdae first night editorial. Shot on Hasselblad X2D, 8K UHD, Hongdae neon young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "environment": "Hongdae midnight neon street",
+  "lighting": "Hongdae neon pink-purple + puddle reflection",
+  "style": "Korean young adult Hongdae first night editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

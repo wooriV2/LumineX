@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 발리 사원 골드",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "bali",
-    "temple"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, 22 years old — first season runway youth, Korean features, warm golden skin in Bali temple amber, long straight dark hair with frangipani flower, expression serene and commanding. Wearing: ultra-minimal gold micro string bikini — tiny gold triangles on slim young frame, gold platform stiletto sandal 5-inch on Bali stone path, layered gold chains, gold coin drop earrings. Environment: Bali Hindu temple, intricate stone carved walls with moss, temple lanterns warm amber, incense smoke, tropical flowers. Lighting: temple lantern warm amber, golden-honey young skin in Bali amber, gold bikini on temple gold total palette. Style: Korean runway 185cm+ 22 Bali temple gold editorial. Shot on Phase One XF IQ4, 8K UHD, Bali runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim figure, 22 years old, Korean features, warm golden skin in Bali temple amber",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, 22 years old, Korean features, warm golden skin in Bali temple amber, long straight dark hair with frangipani flower, expression serene and commanding. Wearing: ultra-minimal gold micro string bikini, tiny gold triangles on slim young frame, gold platform stiletto sandal 5-inch on Bali stone path, layered gold chains, gold coin drop earrings. Environment: Bali Hindu temple, intricate stone carved walls with moss, temple lanterns warm amber, incense smoke, tropical flowers. Lighting: temple lantern warm amber, golden-honey young skin in Bali amber, gold bikini on temple gold total palette. Style: Korean runway 185cm+ 22 Bali temple gold editorial. Shot on Phase One XF IQ4, 8K UHD, Bali runway grade, portrait 2:3 vertical.",
+  "environment": "Bali Hindu temple",
+  "lighting": "temple lantern warm amber",
+  "style": "Korean runway Bali temple gold editorial",
+  "quality": "Shot on Phase One XF IQ4, 8K UHD"
 }

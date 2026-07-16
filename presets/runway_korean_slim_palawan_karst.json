@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 팔라완 카르스트",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "palawan",
-    "karst"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, mid-20s, Filipino-Korean mixed features, warm golden-honey skin, long straight dark hair in sea wind, expression coastal commanding. Wearing: ultra-minimal white micro string bikini, micro thong, clear platform stiletto wedge mules 5-inch on white Palawan sand, single delicate gold anklet, tiny gold studs. Environment: El Nido Palawan, dramatic limestone karst cliffs towering above and behind extreme tall figure, turquoise lagoon water, hidden beach total. Lighting: Palawan tropical noon direct from above + turquoise lagoon reflection upward, golden-honey skin in tropical dual, massive karst cliffs scale backdrop. Style: Korean runway 185cm+ Palawan karst beach editorial. Shot on Phase One XF IQ4, 8K UHD, Palawan runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim figure, mid-20s, Filipino-Korean mixed features, warm golden-honey skin",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, mid-20s, Filipino-Korean mixed features, warm golden-honey skin, long straight dark hair in sea wind, expression coastal commanding. Wearing: ultra-minimal white micro string bikini, micro thong, clear platform stiletto wedge mules 5-inch on white Palawan sand, single delicate gold anklet, tiny gold studs. Environment: El Nido Palawan, dramatic limestone karst cliffs towering above and behind extreme tall figure, turquoise lagoon water, hidden beach total. Lighting: Palawan tropical noon direct from above + turquoise lagoon reflection upward, golden-honey skin in tropical dual. Style: Korean runway 185cm+ Palawan karst beach editorial. Shot on Phase One XF IQ4, 8K UHD, Palawan runway grade, portrait 2:3 vertical.",
+  "environment": "El Nido Palawan limestone karst",
+  "lighting": "tropical noon + turquoise lagoon reflection",
+  "style": "Korean runway Palawan karst beach editorial",
+  "quality": "Shot on Phase One XF IQ4, 8K UHD"
 }

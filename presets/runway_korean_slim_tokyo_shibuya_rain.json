@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 시부야 빗속",
-  "tier": "SSS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "tokyo",
-    "rain"
-  ],
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim figure, impossibly long legs in Tokyo neon rain, mid-20s, Korean features, luminous porcelain skin in neon light, sleek silver-dyed center-part hair",
   "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, impossibly long legs in Tokyo neon rain, mid-20s, Korean features, luminous porcelain skin in neon light, sleek silver-dyed center-part hair, sharp cold editorial expression. Wearing: ultra-minimal holographic iridescent micro bodysuit, cut to maximum leg exposure on extreme long thighs, clear holographic thigh-high platform stiletto boots 6-inch in Shibuya puddles, single holographic ear cuff. Environment: Shibuya crossing midnight, full neon saturation, rain puddles reflecting rainbow below extreme long boots, crowds with umbrellas blurred. Lighting: full Shibuya neon rainbow + puddle reflection from below, porcelain skin in neon color wash, holographic bodysuit exploding every neon. Style: Korean runway 185cm+ Shibuya rain holographic editorial. Shot on Phase One XF IQ4, 8K UHD, Shibuya runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "environment": "Shibuya crossing midnight",
+  "lighting": "full Shibuya neon rainbow + puddle reflection",
+  "style": "Korean runway Shibuya rain holographic editorial",
+  "quality": "Shot on Phase One XF IQ4, 8K UHD"
 }

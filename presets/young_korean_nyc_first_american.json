@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 NYC 타임스퀘어",
-  "tier": "SSS",
-  "tags": [
-    "korean",
-    "young",
-    "nyc",
-    "times_square"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, luminous porcelain skin in NYC neon, long dark hair in NYC wind, expression overwhelmed and fierce and alive — first time in New York at 20. Wearing: ultra-minimal white micro string bikini — pure white against NYC neon chaos, white platform stiletto boots 5-inch in Times Square, tiny American flag pin, silver small studs. Environment: Times Square full neon explosion, massive LED billboards in all directions, yellow taxis, NYC crowd energy. Lighting: Times Square full LED neon from all billboard directions, porcelain 20-year skin in neon color saturation, white bikini catching every Times Square LED as white prism. Style: Korean young adult 20 NYC Times Square first America editorial. Shot on Hasselblad X2D, 8K UHD, NYC young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, luminous porcelain skin in NYC neon",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, luminous porcelain skin in NYC neon, long dark hair in NYC wind, expression overwhelmed and fierce and alive — first time in New York at 20. Wearing: ultra-minimal white micro string bikini, white platform stiletto boots 5-inch in Times Square, tiny American flag pin, silver small studs. Environment: Times Square full neon explosion, massive LED billboards in all directions, yellow taxis, NYC crowd energy. Lighting: Times Square full LED neon from all billboard directions, porcelain 20-year skin in neon color saturation. Style: Korean young adult 20 NYC Times Square first America editorial. Shot on Hasselblad X2D, 8K UHD, NYC young grade, portrait 2:3 vertical.",
+  "environment": "Times Square NYC LED billboards",
+  "lighting": "Times Square full LED neon all directions",
+  "style": "Korean young adult NYC Times Square first America editorial",
+  "quality": "Shot on Hasselblad X2D, 8K UHD"
 }

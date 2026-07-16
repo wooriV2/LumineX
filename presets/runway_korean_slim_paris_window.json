@@ -1,13 +1,8 @@
 {
-  "label": "런웨이 슬림 파리 창가",
-  "tier": "SS",
-  "tags": [
-    "korean",
-    "runway",
-    "slim",
-    "paris",
-    "window"
-  ],
+  "subject": "Korean runway goddess, 185cm+ extreme tall slim figure, mid-20s, Korean features, luminous porcelain skin in Paris morning light, severe sleek center-part platinum-dyed hair",
   "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, 185cm+ extreme tall slim figure, impossibly long legs, mid-20s, Korean features, luminous porcelain skin in Paris morning light, severe sleek center-part platinum-dyed hair, sharp cheekbones, cold distant haute couture expression. Wearing: ultra-minimal ivory silk micro slip, spaghetti straps barely visible on slim frame, slip micro-length on extreme long legs, clear platform stiletto mules 6-inch on Paris parquet floor, single architectural pearl drop earring only. Environment: Haussmann Paris apartment, floor-to-ceiling tall French windows, zinc rooftops view, morning gold. Lighting: Paris morning gold from windows side-lighting extreme tall figure, ivory silk catching morning gold. Style: Korean runway 185cm+ Paris window haute couture editorial. Shot on Phase One XF IQ4, 8K UHD, Paris runway grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "environment": "Haussmann Paris apartment",
+  "lighting": "Paris morning gold from windows",
+  "style": "Korean runway Paris window haute couture editorial",
+  "quality": "Shot on Phase One XF IQ4, 8K UHD"
 }

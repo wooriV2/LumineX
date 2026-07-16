@@ -1,12 +1,8 @@
 {
-  "label": "영어덜트 파리 에펠탑",
-  "tier": "SSS",
-  "tags": [
-    "korean",
-    "young",
-    "paris",
-    "eiffel"
-  ],
-  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, luminous porcelain skin in Paris morning light, long dark waves loose in morning Paris air, expression of pure wonder and joy — first time in Europe at 20. Wearing: ultra-minimal cream micro slip dress, thin straps, dress barely covering slim young figure, cream platform stiletto mules 4-inch on Paris stone path, small pearl studs, delicate gold necklace, tiny Paris map print micro crossbody. Environment: Champ de Mars Paris, Eiffel Tower directly behind at golden morning, Parisian couples in background, French morning golden light. Lighting: Paris morning golden from side, porcelain 20-year skin in Paris golden warmth, cream dress in Paris gold total palette. Style: Korean young adult 20 Paris Eiffel first Europe editorial. Shot on Phase One XF IQ4, 8K UHD, Paris young grade, portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "subject": "Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, luminous porcelain skin in Paris morning light",
+  "prompt": "Professional fashion photograph, full body shot. Model: Korean young adult goddess, 20 years old, slim perfect youthful figure, Korean features, luminous porcelain skin in Paris morning light, long dark waves loose in morning Paris air, expression of pure wonder and joy — first time in Europe at 20. Wearing: ultra-minimal cream micro slip dress, thin straps, dress barely covering slim young figure, cream platform stiletto mules 4-inch on Paris stone path, small pearl studs, delicate gold necklace. Environment: Champ de Mars Paris, Eiffel Tower directly behind at golden morning, Parisian couples in background. Lighting: Paris morning golden from side, porcelain 20-year skin in Paris golden warmth. Style: Korean young adult 20 Paris Eiffel first Europe editorial. Shot on Phase One XF IQ4, 8K UHD, Paris young grade, portrait 2:3 vertical.",
+  "environment": "Champ de Mars Paris Eiffel Tower",
+  "lighting": "Paris morning golden side light",
+  "style": "Korean young adult Paris Eiffel first Europe editorial",
+  "quality": "Shot on Phase One XF IQ4, 8K UHD"
 }
