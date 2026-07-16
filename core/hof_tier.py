@@ -673,13 +673,6 @@ HOF_TIER = {
     "edge_supermodel_neon_warrior",
     "edge_bbw_steampunk_corset",
     "beach_powerlifter_seychelles",
-}
-
-
-
-
-
-    # 2026-07-16 Runway Slim + Young Adult HOF
     "runway_korean_slim_milan_catwalk",
     "runway_korean_slim_tokyo_shibuya_rain",
     "runway_korean_slim_amalfi_cliff",
@@ -690,6 +683,7 @@ HOF_TIER = {
     "runway_korean_slim_crystal_gala",
     "young_korean_midnight_rooftop_seoul",
     "young_korean_debut_red_carpet",
+}
 
 def add_hof(*keys):
 
