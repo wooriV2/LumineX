@@ -3142,13 +3142,54 @@ from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
 # 湲곗?: 泥댄삎 ?ㅻ쾭?쇱씠?쒕쭔?쇰줈 臾명솕/?⑦꽩/?ъ쫰 ?먮룞?꾩꽦, 2???댁긽 ?쇨??? ?낅낫???꾪뙥??
 
 SSS_TIER = {
-    # 2026-07-15 한국인 카테고리 신규 SS
+        # 2026-07-16 Runway Slim + Young Adult SS
+    "runway_korean_slim_seoulforest_spring",
+    "young_korean_pool_pastel",
+    "young_korean_neon_first_night",
+    "young_korean_tokyo_first_solo",
+    "young_korean_tattoo_first_wrist",
+    "young_korean_gym_first_gains",
+    "young_korean_campus_spring",
+
+# 2026-07-15 한국인 카테고리 신규 SS
     "korean_idol_bukchon_morning",
     "korean_idol_jeju_ocean",
     "mature_korean_silver_kyoto_bamboo",
     "mature_korean_silver_onsen",
 
-    # 2026-07-15 한국인 카테고리 신규 SSS
+        # 2026-07-16 Runway Slim + Young Adult SSS
+    "runway_korean_slim_void_studio",
+    "runway_korean_slim_paris_window",
+    "runway_korean_slim_dubai_penthouse",
+    "runway_korean_slim_nyc_rooftop",
+    "runway_korean_slim_icelandic_glacier",
+    "runway_korean_slim_berlin_underground",
+    "runway_korean_slim_palawan_karst",
+    "runway_korean_slim_seychelles_granite",
+    "runway_korean_slim_tattoo_collarbone_void",
+    "runway_korean_slim_newyork_snowstorm",
+    "young_korean_jeju_sunrise",
+    "young_korean_studio_black_minimal",
+    "young_korean_maldives_first_trip",
+    "young_korean_paris_first_europe",
+    "young_korean_summer_busan",
+    "young_korean_tattoo_ankle_jeju",
+    "young_korean_nyc_first_american",
+    "young_korean_tattoo_shoulder_okinawa",
+    "young_korean_cherry_blossom",
+    "young_korean_bali_first_solo",
+    "young_korean_21_birthday_gold",
+
+    # 2026-07-16 Runway Slim + Young Adult SS
+    "runway_korean_slim_seoulforest_spring",
+    "young_korean_pool_pastel",
+    "young_korean_neon_first_night",
+    "young_korean_tokyo_first_solo",
+    "young_korean_tattoo_first_wrist",
+    "young_korean_gym_first_gains",
+    "young_korean_campus_spring",
+
+# 2026-07-15 한국인 카테고리 신규 SSS
     "elder_korean_silver_hanok_dawn",
     "elder_korean_silver_paris_cafe",
     "elder_korean_silver_rio_beach",
@@ -5099,7 +5140,16 @@ SSS_TIER = {
 # SS tier
 
 SS_TIER = {
-    # 2026-07-15 한국인 카테고리 신규 SS
+        # 2026-07-16 Runway Slim + Young Adult SS
+    "runway_korean_slim_seoulforest_spring",
+    "young_korean_pool_pastel",
+    "young_korean_neon_first_night",
+    "young_korean_tokyo_first_solo",
+    "young_korean_tattoo_first_wrist",
+    "young_korean_gym_first_gains",
+    "young_korean_campus_spring",
+
+# 2026-07-15 한국인 카테고리 신규 SS
     "korean_idol_bukchon_morning",
     "korean_idol_jeju_ocean",
     "mature_korean_silver_kyoto_bamboo",

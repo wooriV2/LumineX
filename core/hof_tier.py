@@ -679,6 +679,18 @@ HOF_TIER = {
 
 
 
+    # 2026-07-16 Runway Slim + Young Adult HOF
+    "runway_korean_slim_milan_catwalk",
+    "runway_korean_slim_tokyo_shibuya_rain",
+    "runway_korean_slim_amalfi_cliff",
+    "runway_korean_slim_bali_temple_gold",
+    "runway_korean_slim_kyoto_autumn",
+    "runway_korean_slim_aurora_finland",
+    "runway_korean_slim_sahara_wind",
+    "runway_korean_slim_crystal_gala",
+    "young_korean_midnight_rooftop_seoul",
+    "young_korean_debut_red_carpet",
+
 def add_hof(*keys):
 
     """HOF_TIER에 키를 동적으로 추가합니다."""
