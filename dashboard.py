@@ -68,7 +68,9 @@ def _add_history(preset_name: str, prompt: str, platform: str):
     st.session_state.prompt_history = hist[:20]
 
 # ─── 카테고리별 프리셋 매핑 ─────────────────────────────────
-from core.presets_meta import PRESET_CATEGORIES, HOF_TIER, SSS_TIER, SS_TIER
+from core.presets_meta import PRESET_CATEGORIES, PRESETS_IREZUMI_GLITTER
+from core.hof_tier import HOF_TIER
+from core.sss_tier import SSS_TIER, SS_TIER
 
 # ─── 다크 테마 CSS ────────────────────────────────────────
 BG       = "#1e1e1e"
