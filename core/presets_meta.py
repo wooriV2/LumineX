@@ -4,13 +4,13 @@
 
 LumineX Preset Metadata
 
-移댄뀒怨좊━ ?뺤쓽 + HOF / SSS / SS ?곗뼱
+燁삳똾?믤⑥쥓???類ㅼ벥 + HOF / SSS / SS ?怨쀫선
 
 
 
-dashboard.py ?먯꽌 遺꾨━ (A??
+dashboard.py ?癒?퐣 ?브쑬??(A??
 
-?⑥튂 ?????뚯씪留??섏젙?섎㈃ ?⑸땲??
+??ν뒄 ???????뵬筌???륁젟??롢늺 ??몃빍??
 
 """
 
@@ -18,10 +18,9 @@ dashboard.py ?먯꽌 遺꾨━ (A??
 
 PRESET_CATEGORIES = {
 
-    "🖌️ Body Paint & Skin Transform": [
+    "?뼂截?Body Paint & Skin Transform": [
 
-        # 湲곗〈
-
+        # 疫꿸퀣??
         "bioluminescent_ink","klimt_gold_body","vangogh_body","dali_surreal","munch_scream",
 
         "monet_bloom","mucha_nouveau","hokusai_wave","kandinsky_abstract","pollock_splash",
@@ -52,7 +51,7 @@ PRESET_CATEGORIES = {
 
         "cell_division",
 
-        # v14 ??愿?μ쟻 諛붾뵒?섏씤??35媛?
+        # v14 ???온?關??獄쏅뗀逾??륁뵥??35揶?
 
         "melting_chocolate","liquid_gold_drip","silver_mercury_body","ink_pour_body",
 
@@ -70,7 +69,7 @@ PRESET_CATEGORIES = {
 
         "python_scales","jaguar_spots","mermaid_scales","raven_feathers","tiger_stripes_body",
 
-        # v15 ??紐낇솕/?묎? ?쇰툝由??꾨찓??14媛?
+        # v15 ??筌뤿굟???臾? ??고닜???袁⑥컭??14揶?
 
         "cezanne_body","gauguin_tropics","toulouse_lautrec","schiele_body","degas_dancer",
 
@@ -78,25 +77,25 @@ PRESET_CATEGORIES = {
 
         "waterhouse_nymph","rossetti_dante","alma_tadema","vigee_lebrun",
 
-        # v15 ???앹〈/理쒓렐 ?묎? 5媛?
+        # v15 ????밤?筌ㅼ뮄???臾? 5揶?
 
         "keith_haring_body","yayoi_kusama","takashi_murakami",
 
         "jean_dubuffet","jean_cocteau",
 
-        # v15 ??遺議?臾명솕 10媛?
+        # v15 ???봔鈺??얜챸??10揶?
 
         "bodi_clay","ndebele_pattern","tuareg_indigo","mursi_lip",
 
         "surma_body","asaro_mudmen","kayapo_brasil","nuba_scarification","kayan_neck",
 
-        # v15 ??怨쇳븰/?먯뿰 10媛?
+        # v15 ???⑥눛釉??癒?염 10揶?
 
         "thermal_scan","bioluminescent_deep","microscope_pollen","xray_body","mri_scan_body",
 
         "neural_map","geologic_strata","crystal_lattice","solar_system_body","dna_double_helix",
 
-        # v18 ???숇Ъ 諛붾뵒?섏씤??50媛?
+        # v18 ????눺?獄쏅뗀逾??륁뵥??50揶?
 
         "panther_black","cheetah_speed","snow_leopard","ocelot_wild",
 
@@ -122,7 +121,7 @@ PRESET_CATEGORIES = {
 
         "koi_dragon","unicorn_opal","gryphon_feather","sphinx_cat","basilisk_scales",
 
-        # v19 ???쒓뎅 諛붾뵒?꾪듃 10媛?
+        # v19 ????볥럢 獄쏅뗀逾?袁る뱜 10揶?
 
         "dancheong_body","najeonchilgi_body","goryeo_celadon_body","minhwa_body",
 
@@ -130,17 +129,17 @@ PRESET_CATEGORIES = {
 
         "dansaekhwa_body","najeon_abalone",
 
-        # v19 ???쒓뎅 ?숇Ъ/?좎닔 (諛붾뵒?꾪듃)
+        # v19 ????볥럢 ??눺??醫롫땾 (獄쏅뗀逾?袁る뱜)
 
         "baekhak_crane","korean_dragon_body","phoenix_jujakk",
 
         "baekho_white_tiger","hyeonmu_turtle","cheongnyong_dragon",
 
-        # v19 ???쒓뎅 ?먯뿰/?앸Ъ 諛붾뵒?꾪듃
+        # v19 ????볥럢 ?癒?염/??먁?獄쏅뗀逾?袁る뱜
 
         "mugunghwa_body","korean_lotus_body","korean_plum_body","korean_bamboo_body",
 
-        # v20 ??吏??怨꾩뿴 13媛?
+        # v20 ??筌왖???④쑴肉?13揶?
 
         "world_map_body","topographic_body","ocean_depth_body","thermal_map_body",
 
@@ -150,63 +149,60 @@ PRESET_CATEGORIES = {
 
         "usa_county_map_body",
 
-        # v20 ??怨쇳븰/?먯뿰?꾩긽 5媛?
+        # v20 ???⑥눛釉??癒?염?袁⑷맒 5揶?
 
         "thermal_scan_body","circuit_board_body","galaxy_nebula_body",
 
         "crystal_geode_body",
 
-        # v20 ??臾몃챸/臾몄옄 6媛?
+        # v20 ???얜챶梨??얜챷??6揶?
 
         "hieroglyph_body","aztec_calendar_body","celtic_knot_body",
 
         "arabic_calligraphy_body","islamic_geometric_body","greek_mosaic_body",
 
-        # v20 ???앸Ъ/?먯뿰 3媛?
+        # v20 ????먁??癒?염 3揶?
 
         "autumn_leaves_body","coral_reef_body","mushroom_forest_body",
 
-        # v20 ??嫄댁텞/?⑦꽩 2媛?
+        # v20 ??椰꾨똻?????쉘 2揶?
 
         "stained_glass_body","bauhaus_body",
 
-        # v20 ???섍꼍?듯빀 2媛?
+        # v20 ????띻펾???? 2揶?
 
         "urban_decay_body","forest_stone_body",
 
-        # 2026-06-08 移댄뀒怨좊━ ?꾨씫 蹂듦뎄
-
+        # 2026-06-08 燁삳똾?믤⑥쥓???袁⑥뵭 癰귣벀??
         "banksy_stencil","shadow_art_nude",
 
-        # v28 ???꾪넻&臾명솕 諛붾뵒?섏씤??52醫?(以묐났 9醫??쒓굅)
+        # v28 ???袁る꽰&?얜챸??獄쏅뗀逾??륁뵥??52??(餓λ쵎??9????볤탢)
 
-        # ?쇰낯
+        # ??곕궚
 
         "geisha_bodypaint","maiko_bodypaint","kimono_bodypaint","noh_bodypaint",
 
         "kabuki_bodypaint","samurai_bodypaint","geisha_white_bodypaint","ninja_bodypaint",
 
-        # ?쒓뎅
+        # ??볥럢
 
         "hanbok_bodypaint","joseon_bodypaint","gisaeng_bodypaint",
 
         "hanbok_modern_bodypaint","korean_shaman_bodypaint",
 
-        # 以묎뎅
-
+        # 餓λ쵌??
         "qipao_bodypaint","cheongsam_bodypaint","hanfu_bodypaint",
 
         "tang_dynasty_bodypaint","ming_bodypaint",
 
-        # ?⑥븘?쒖븘/以묐룞
-
+        # ??λ툡??뽯툡/餓λ쵎猷?
         "sari_bodypaint","belly_bodypaint","odalisque_bodypaint",
 
         "harem_bodypaint","mughal_bodypaint",
 
         "persian_bodypaint","moroccan_bodypaint","ottoman_bodypaint",
 
-        # ?숇궓??以묒븰??
+        # ??뉕텚??餓λ쵐釉??
 
         "thai_bodypaint","balinese_bodypaint","kebaya_bodypaint",
 
@@ -214,25 +210,25 @@ PRESET_CATEGORIES = {
 
         "tibetan_bodypaint","shaman_bodypaint","scythian_bodypaint",
 
-        # ?꾨찓由ъ뭅/?ㅼ꽭?꾨땲??
+        # ?袁⑥컭?귐딅춦/??쇨쉭?袁⑤빍??
 
         "mayan_bodypaint","hopi_bodypaint","olmec_bodypaint",
 
         "maori_bodypaint","polynesian_bodypaint","haida_bodypaint",
 
-        # ?꾪봽由ъ뭅
+        # ?袁る늄?귐딅춦
 
         "yoruba_bodypaint","kente_bodypaint","dashiki_bodypaint",
 
         "adinkra_bodypaint","zulu_bodypaint",
 
-        # ?좊읇/怨좊?
+        # ?醫딆쓦/?⑥쥓?
 
         "scottish_bodypaint","byzantine_bodypaint","flamenco_bodypaint","dirndl_bodypaint",
 
         "sumerian_bodypaint","voodoo_bodypaint",
 
-        # v23 ??媛쒕갑??諛붾뵒?섏씤??20媛?(二쇱젣 鍮꾩?, 留ㅻ쾲 ?ㅻⅤ寃??앹꽦)
+        # v23 ??揶쏆뮆媛??獄쏅뗀逾??륁뵥??20揶?(雅뚯눘????쑴?, 筌띲끇苡???삘뀮野???밴쉐)
 
         "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto",
 
@@ -250,7 +246,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "💫 Luxury Glamour": [
+    "?뮟 Luxury Glamour": [
 
         "runway_power","red_carpet","editorial_glam","golden_hour_editorial",        "noir_opulence","platinum_elite","ivory_silk","ivory_tower",
 
@@ -272,7 +268,7 @@ PRESET_CATEGORIES = {
 
         "jeweled_bikini_top","golden_drape_goddess","crystal_gown","feather_trim_mini",
 
-        # v21 ????뀛由?湲?섎㉧ 13媛?
+        # v21 ?????쏁뵳?疫꼲??롢돢 13揶?
 
         "luxury_noir","diamond_couture","velvet_serpent","opera_glam","silver_screen",
 
@@ -280,7 +276,7 @@ PRESET_CATEGORIES = {
 
         "midnight_couture","crimson_gown","serpentine_dress","baroque_glam",
 
-        # 2026-07-02 ?좉퇋 異붽?
+        # 2026-07-02 ?醫됲뇣 ?곕떽?
 
         "private_pool_villa",
 
@@ -296,9 +292,9 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🔥 Hot & Sexy": [
+    "?뵦 Hot & Sexy": [
 
-        # 湲곗〈 愿??& ?먮줈??湲?섎㉧
+        # 疫꿸퀣???온??& ?癒?쨮??疫꼲??롢돢
 
         "lingerie_goddess","silk_robe_only","corset_queen","bodycon_power","sheer_negligee","boudoir_noir",
 
@@ -308,27 +304,23 @@ PRESET_CATEGORIES = {
 
         "pinup_classic","vargas_girl","bombshell_retro","bunny_suit","playboy_glam",
 
-        # ??뀛由ъ뿉???대룞
-
+        # ???쏁뵳?肉????猷?
         "elite_lingerie","lingerie_noir",
 
-        # 鍮꾩튂?먯꽌 ?대룞
-
+        # ??쑴??癒?퐣 ??猷?
         "barely_there","wet_look_goddess","thong_bikini","micro_bikini_gold",
 
         "sarong_goddess","wet_bikini_pool","topless_editorial","nude_beach_art",
 
         "aqua_bikini","golden_summer","riviera_heat",
 
-        # 怨꾩젅?먯꽌 ?대룞
-
+        # ?④쑴??癒?퐣 ??猷?
         "snow_queen_erotic","autumn_gold_sensual","christmas_boudoir","summer_solstice_glam",
 
-        # ??쒕━/?섑떚??寃쎄퀎
-
+        # ????뺚봺/??묐뼒??野껋럡??
         "latex_queen","pvc_goddess","leather_mistress","crystal_mesh_goddess","chain_mail_glam",
 
-        # v21 ????& ?뱀떆 19媛?
+        # v21 ????& ?諭??19揶?
 
         "fishnet_goddess","see_through_gown","wet_tshirt","string_bikini","lace_bodysuit",
 
@@ -338,11 +330,10 @@ PRESET_CATEGORIES = {
 
         "white_linen_sheer","oil_drip_body","yoga_pants_glam","micro_skirt","halter_glam",
 
-        # 2026-06-08 ?꾨씫 蹂듦뎄
-
+        # 2026-06-08 ?袁⑥뵭 癰귣벀??
         "wet_editorial",
 
-        # v27 ????& ?뱀떆 ?좉퇋 17媛?
+        # v27 ????& ?諭???醫됲뇣 17揶?
 
         "pool_edge_wet",
 
@@ -364,7 +355,7 @@ PRESET_CATEGORIES = {
 
         "tennis_short_dress",
 
-        # 2026-07-02 ?좉퇋 異붽?
+        # 2026-07-02 ?醫됲뇣 ?곕떽?
 
         "pasties_editorial",
 
@@ -390,27 +381,24 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "💋 Erotic & Fetish": [
+    "?뭼 Erotic & Fetish": [
 
-        # ?뚯썙&?ｌ??먯꽌 ?대룞
-
+        # ???뜖&?節??癒?퐣 ??猷?
         "latex_venom","chrome_vixen","chain_goddess",
 
         "dominatrix_glam","bondage_fashion","strappy_harness","mesh_bodysuit","latex_catsuit",
 
         "oil_goddess","savage_leather",
 
-        # ?쇳룷癒쇱뒪?먯꽌 ?대룞
-
+        # ??노７?믪눘??癒?퐣 ??猷?
         "burlesque","showgirl","cabaret_star","pole_art","candy_rave",
 
         "lap_dance_glam","striptease_art","pole_dance_power","midnight_bath","belly_dance_glam",
 
-        # ?먰?吏?먯꽌 ?대룞
-
+        # ?癒?筌왖?癒?퐣 ??猷?
         "dark_succubus","vampire_seduction","witch_sensual","dark_fairy_erotic","shadow_seductress",
 
-        # v21 ???먮줈??& ?섑떚??16媛?
+        # v21 ???癒?쨮??& ??묐뼒??16揶?
 
         "latex_catsuit_red","rubber_goddess","harness_only","rope_bondage_art",
 
@@ -420,7 +408,7 @@ PRESET_CATEGORIES = {
 
         "wet_latex","fetish_boots_only","dominatrix_red","fishnet_bodysuit",
 
-        # v22 ???먮줈??& ?섑떚??媛뺥솕 26媛?
+        # v22 ???癒?쨮??& ??묐뼒??揶쏅벤??26揶?
 
         "transparent_dress","sheer_catsuit",
 
@@ -442,7 +430,7 @@ PRESET_CATEGORIES = {
 
         "metal_bondage","lap_dance_extreme",
 
-        # 2026-07-02 ?좉퇋 異붽?
+        # 2026-07-02 ?醫됲뇣 ?곕떽?
 
         "liquid_latex_drip",
 
@@ -458,7 +446,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🌿 Nature & Elements": [
+    "?뙼 Nature & Elements": [
 
         "lava_flow","ocean_surge","ice_palace","ice_refraction","frozen_latex","blizzard_queen","sandstorm_veil",
 
@@ -476,8 +464,7 @@ PRESET_CATEGORIES = {
 
         "volcanic_goddess","storm_lightning","deep_cave","tidal_wave",
 
-        # v25 ??媛쒕갑???먯뿰 諛곌꼍
-
+        # v25 ??揶쏆뮆媛???癒?염 獄쏄퀗瑗?
         "son_doong_jungle","waitomo_glow","dead_vlei_ghost","danxia_rainbow",
 
         "cenote_sacred","socotra_alien","lake_natron","namib_star_desert",
@@ -492,7 +479,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🌃 City & Night": [
+    "?똽 City & Night": [
 
         "neon_noir","neon_dystopia","neon_rain_goddess","holographic_city","vaporwave_dream",
 
@@ -508,8 +495,7 @@ PRESET_CATEGORIES = {
 
         "tokyo_shibuya","paris_midnight","subway_editorial","penthouse_view",
 
-        # v25 ??媛쒕갑??嫄댁텞/?꾩떆 諛곌꼍
-
+        # v25 ??揶쏆뮆媛??椰꾨똻???袁⑸뻻 獄쏄퀗瑗?
         "sheikh_zayed_dawn","livraria_lello_staircase","palacio_de_sal",
 
         # v26
@@ -520,7 +506,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🎬 Editorial & Mood": [
+    "?렗 Editorial & Mood": [
 
         "silhouette_only","back_beauty","collarbone_focus","neck_elegance","long_legs_focus",
 
@@ -534,7 +520,7 @@ PRESET_CATEGORIES = {
 
         "wet_glass","smoke_studio","infrared_beauty","grain_film",
 
-        # 2026-07-02 ?좉퇋 異붽?
+        # 2026-07-02 ?醫됲뇣 ?곕떽?
 
         "bed_editorial",
 
@@ -548,13 +534,12 @@ PRESET_CATEGORIES = {
 
         "elevator_glam",
 
-        # 2026-06-08 ?꾨씫 蹂듦뎄
-
+        # 2026-06-08 ?袁⑥뵭 癰귣벀??
         "dreamy_soft_focus","film_noir_glam","noir_femme_fatale",
 
     ],
 
-    "🏺 Civilization & Myth": [
+    "?뤊 Civilization & Myth": [
 
         "cleopatra_gold","pharaoh_queen","byzantine_empress","maasai_warrior","nine_tails",
 
@@ -570,17 +555,16 @@ PRESET_CATEGORIES = {
 
         "sumerian_queen","ming_empress","aztec_sun_goddess","celtic_warrior_queen",
 
-        # v17 蹂닿컯
-
+        # v17 癰귣떯而?
         "aphrodite_glam","artemis_huntress","freya_norse","kali_goddess",
 
         "isis_egypt","lakshmi_goddess","oshun_yoruba","morgan_le_fay",
 
-        # v19 ???쒓뎅 ?좎닔/?뺣졊
+        # v19 ????볥럢 ?醫롫땾/?類ｌ죯
 
         "haetae_guardian","dokkaebi_spirit","korean_tiger_spirit","gyeongbokgung_night",
 
-        # v20 ??援?린 8媛?
+        # v20 ????由?8揶?
 
         "union_jack_body","brazil_flag_body","usa_stars_stripes_body",
 
@@ -590,7 +574,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "✈️ Career & Lifestyle": [
+    "?덌툘 Career & Lifestyle": [
 
         "flight_attendant","pilot_glamour","nurse_glamour","lawyer_power","hotel_concierge",
 
@@ -606,7 +590,7 @@ PRESET_CATEGORIES = {
 
         "barista_chic","gallery_curator","horse_racing","scuba_instructor",
 
-        # v13 ?ㅽ룷痢?
+        # v13 ??쎈７筌?
 
         "ballet_prima","gymnastics_editorial","figure_skater","tennis_champion",
 
@@ -614,7 +598,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🔮 Fantasy & Dark": [
+    "?뵰 Fantasy & Dark": [
 
         "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
 
@@ -632,7 +616,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "⚔️ Power & Edge": [
+    "?뷂툘 Power & Edge": [
 
         "valkyrie_storm","biker_glam","shadow_play",
 
@@ -730,7 +714,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🏖️ Beach & Resort": [
+    "?룚截?Beach & Resort": [
 
         "summer_beach","surfer_goddess","pool_goddess",
 
@@ -746,7 +730,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🎭 Performance & Dance": [
+    "?렚 Performance & Dance": [
 
         "flamenco_queen","tango_passion","circus_performer",
 
@@ -764,7 +748,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "👘 Traditional Costume": [
+    "?몮 Traditional Costume": [
 
         "geisha_noir","geisha_red","maiko_glamour","hanbok_glamour","qipao_noir","sari_goddess",
 
@@ -776,13 +760,12 @@ PRESET_CATEGORIES = {
 
         "persian_court","yoruba_glamour","balinese_goddess","chinese_qipao_slit","scottish_corset",
 
-        # v17 蹂닿컯
-
+        # v17 癰귣떯而?
         "hanfu_goddess","cheongsam_slit","kebaya_java","dashiki_glam","kaftan_sheer",
 
         "flamenco_dress","dirndl_glam","hanbok_modern","ao_dai_glamour","saree_draped_sensual",
 
-        # v19 ???쒓뎅 ??궗/?꾪넻
+        # v19 ????볥럢 ??沅??袁る꽰
 
         "joseon_queen","joseon_consort","gisaeng_glamour","gisaeng_noir","mudang_shaman",
 
@@ -792,7 +775,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🌸 Season & Theme": [
+    "?뙵 Season & Theme": [
 
         "cherry_blossom","lavender_field","spring_rain","tulip_field","autumn_forest",
 
@@ -810,7 +793,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🍬 Pop & Kawaii": [
+    "?뜫 Pop & Kawaii": [
 
         # v10
 
@@ -828,32 +811,28 @@ PRESET_CATEGORIES = {
 
         "kdrama_heroine","manga_girl",
 
-        # v19 ??K-而ъ쿂/酉고떚
-
+        # v19 ??K-?뚎딆퓗/?됯퀬??
         "kpop_girl_crush","hallyu_goddess","kbeauty_glass_skin",
 
         "kdrama_villain_queen","kdrama_chaebol_heir","gangnam_luxury_glam",
 
-        # 2026-06-08 ?꾨씫 蹂듦뎄
-
+        # 2026-06-08 ?袁⑥뵭 癰귣벀??
         "bubble_tea","doll_house","harajuku_doll",
 
     ],
 
 
 
-    "🎌 Anime & Glamour": [
+    "?럩 Anime & Glamour": [
 
-        # v13 ?쇰낯 怨꾩뿴
-
+        # v13 ??곕궚 ?④쑴肉?
         "zero_suit","battle_bikini","succubus_anime","catgirl_luxe","dark_magical_girl",
 
         "witch_apprentice","fallen_angel_anime","kunoichi_glam","oni_warrior","samurai_bride",
 
         "dragon_princess","android_girl","pilot_suit","neon_android","vampire_seductress",
 
-        # v13 湲濡쒕쾶 怨꾩뿴
-
+        # v13 疫꼲嚥≪뮆苡??④쑴肉?
         "cosmic_warrior_glam","dark_jester_glam","poison_ivy_vines","storm_goddess",
 
         "dark_sorceress_glam","jessica_rabbit_glam","webtoon_heroine","manhwa_villainess",
@@ -862,13 +841,13 @@ PRESET_CATEGORIES = {
 
         "dark_elsa","sailor_moon_dark",
 
-        # v24 ??A???ㅼ궗 而⑥뀎 7媛?(?뱀젙 IP ?뚰뵾, ?쇰컲 ?꾪궎???
+        # v24 ??A????쇨텢 ?뚢뫁??7揶?(?諭??IP ??곕돗, ??곗뺘 ?袁り텕????
 
         "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden","anime_demon_slayer",
 
         "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
 
-        # v24 ??B??2D 洹몃┝泥??뚯씪??2媛?(?ㅼ궗 ?붿쭊 洹몃┝泥??뚯뒪????寃利??꾩슂)
+        # v24 ??B??2D 域밸챶?앾㎗????뵬??2揶?(??쇨텢 ?遺우춭 域밸챶?앾㎗????뮞????野꺜筌??袁⑹뒄)
 
         "anime_cel_shaded","anime_webtoon_style",
 
@@ -876,9 +855,9 @@ PRESET_CATEGORIES = {
 
 
 
-    # ?? ?렓 ?좊땲 ?꾪듃?ㅽ???(2026-06-09 ?좎꽕, 洹몃┝泥?32醫? ??
+    # ???? ????醫딅빍 ?袁る뱜?????(2026-06-09 ?醫롪퐬, 域밸챶?앾㎗?32?? ????
 
-    "🎨 Anime Art Style": [
+    "?렓 Anime Art Style": [
 
         'anime_jp_90s_retro',
 
@@ -948,7 +927,7 @@ PRESET_CATEGORIES = {
 
 
 
-    "🌑 Silhouette & Shadow": [
+    "?뙌 Silhouette & Shadow": [
 
         "silhouette_spotlight_smoke",
 
@@ -1014,7 +993,7 @@ PRESET_CATEGORIES = {
 
 
 
-        "🌌 Impossible & Surreal": [
+        "?뙆 Impossible & Surreal": [
 
         "storm_eye_editorial",
 
@@ -1070,15 +1049,14 @@ PRESET_CATEGORIES = {
 
         "double_exposure_self",
 
-        # v25 ??媛쒕갑??珥덊쁽??諛곌꼍
-
+        # v25 ??揶쏆뮆媛???λ뜇???獄쏄퀗瑗?
         "richat_eye","marble_caves_water",
 
     ],
 
 
 
-    "🏛️ Ruins & Civilization": [
+    "?룢截?Ruins & Civilization": [
 
         "petra_rose","angkor_dawn","tikal_skyrise","bagan_balloon",
 
@@ -1096,7 +1074,7 @@ PRESET_CATEGORIES = {
 
 
 
-    "🌋 Elemental Goddess": [
+    "?뙅 Elemental Goddess": [
 
         "uyuni_wet_silk",
 
@@ -1112,7 +1090,7 @@ PRESET_CATEGORIES = {
 
         "black_sea_midnight",
 
-    # 2026-06-21 ?먯뿰&?먯냼 G1~G10 ?꾩껜 tier ?⑥튂
+    # 2026-06-21 ?癒?염&?癒?꺖 G1~G10 ?袁⑷퍥 tier ??ν뒄
 
 
 
@@ -1186,15 +1164,15 @@ PRESET_CATEGORIES = {
 
 
 
-    "💧 Wet & Gloss": [
+    "?뮛 Wet & Gloss": [
 
-        # ?섏쁺???
+        # ??륁겫????
 
         "pool_surface_break", "pool_underwater_up", "pool_edge_dripping",
 
         "infinity_pool_wet", "hot_spring_steam", "jacuzzi_bubbles",
 
-        # 2026-07-02 ?좉퇋 異붽?
+        # 2026-07-02 ?醫됲뇣 ?곕떽?
 
         "champagne_pour_body",
 
@@ -1224,27 +1202,25 @@ PRESET_CATEGORIES = {
 
         "steam_bath_goddess",
 
-        # 鍮???슦
-
+        # ??????
         "rain_window_inside", "rain_street_soaked", "rain_studio_dramatic",
 
         "monsoon_body", "rain_car_window",
 
-        # ?ㅼ씪/湲濡쒖뒪
-
+        # ??쇱뵬/疫꼲嚥≪뮇??
         "oil_pour_studio", "oil_drip_back", "honey_drip_body",
 
         "chocolate_pour_gloss", "gloss_lips_drip", "chrome_gloss_body",
 
-        # ?/?닿린
+        # ??/??용┛
 
         "sweat_studio_light", "after_workout_glow", "heat_mirage_sweat", "sauna_steam_body",
 
-        # 寃곕줈/臾쇰갑??
+        # 野껉퀡以??얠눖媛??
 
         "condensation_skin", "ice_melt_drip", "dew_morning_body", "frost_breath_cold",
 
-        # 湲고? ?⑦듃
+        # 疫꿸퀬? ???뱜
 
         "waterfall_direct", "wave_crash_body", "wet_silk_minimal",
 
@@ -1254,37 +1230,37 @@ PRESET_CATEGORIES = {
 
 
 
-    "🌫️ Atmosphere & Particle": [
+    "?뙧截?Atmosphere & Particle": [
 
-        # ?ㅻえ???곌린
+        # ??삠걟???怨뚮┛
 
         "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
 
         "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery",
 
-        # ?뚯슦???붿뒪??
+        # ???뒭???遺용뮞??
 
         "gold_dust_pour", "holi_powder_explosion", "chalk_dust_sport",
 
         "flour_dust_studio", "pigment_powder_art",
 
-        # ?섎뜑/?섑깉
+        # ??롫쐭/??묎퉱
 
         "feather_explosion", "black_feather_dark", "petal_storm_indoor",
 
         "cherry_blossom_burst", "dried_flower_cascade",
 
-        # 湲由ы꽣/?뚰떚??
+        # 疫꼲?귐뗪숲/??곕뼒??
 
         "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body",
 
         "neon_particle_club", "bubble_floating_studio",
 
-        # 遺??ㅽ뙆??
+        # ????쎈솁??
 
         "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark", "firework_silhouette",
 
-        # ?먯뿰 ?뚰떚??
+        # ?癒?염 ??곕뼒??
 
         "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow",
 
@@ -1292,9 +1268,9 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "👑 Korean History & Court": [
+    "?몣 Korean History & Court": [
 
-        # ?룾 ?쇨뎅/怨좊? ?뺤떎
+        # ?猷???⑤럢/?⑥쥓? ?類ㅻ뼄
 
         "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
 
@@ -1304,16 +1280,14 @@ PRESET_CATEGORIES = {
 
         "dongye_tribal_queen",
 
-        # ?룿 怨좊젮 沅곸쨷
-
+        # ?猷??⑥쥓??亦낃낯夷?
         "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
 
         "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
 
         "mongol_goryeo_queen", "goryeo_haenyeo_silk",
 
-        # ?몮 議곗꽑 ?뺤떎/沅곸쨷
-
+        # ?紐?鈺곌퀣苑??類ㅻ뼄/亦낃낯夷?
         "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
 
         "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
@@ -1322,7 +1296,7 @@ PRESET_CATEGORIES = {
 
         "joseon_concubine_red", "changdeok_moonlight", "gyeongbokgung_geisha",
 
-        # ?뭴 湲곗깮/?덉씤
+        # ?萸?疫꿸퀣源???됱뵥
 
         "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
 
@@ -1332,7 +1306,7 @@ PRESET_CATEGORIES = {
 
         "gisaeng_pipa_night", "gisaeng_mirror_boudoir", "pyongyang_gisaeng",
 
-        # ?쫲 ?좏솕 & ?뺣졊
+        # ?已??醫륁넅 & ?類ｌ죯
 
         "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
 
@@ -1342,7 +1316,7 @@ PRESET_CATEGORIES = {
 
         "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
 
-        # ?뙄 誘쇱냽 & ?몄떆?띿냽
+        # ???沃섏눘??& ?紐꾨뻻??용꺗
 
         "haenyeo_wet_glam", "dano_festival_glam", "ganggangsullae_night",
 
@@ -1350,15 +1324,14 @@ PRESET_CATEGORIES = {
 
         "jeju_shaman_sea", "korean_harvest_goddess",
 
-        # ?뷂툘 ?ъ쟾??& 臾댁씤
-
+        # ?酉귦닔 ?????& ?얜똻??
         "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
 
         "joseon_damo_noir", "tiger_huntress_korea", "wonhyang_warrior",
 
         "goguryeo_fire_warrior", "joseon_spy_sheer",
 
-        # ?렚 洹쇰? & ?⑥쟾
+        # ???域뱀눖? & ??μ읈
 
         "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
 
@@ -1370,9 +1343,9 @@ PRESET_CATEGORIES = {
 
 
 
-    "🎨 Multi Body Paint": [
+    "?렓 Multi Body Paint": [
 
-        # G1 ?鍮꾪삎 ???(2?? 諛섎? ?뚮쭏 異⑸룎/議고솕)
+        # G1 ????쑵??????(2?? 獄쏆꼶? ???춳 ?겸뫖猷?鈺곌퀬??
 
         "duo_fire_and_ice_bodypaint",
 
@@ -1386,7 +1359,7 @@ PRESET_CATEGORIES = {
 
         "duo_circuit_and_nature_bodypaint",
 
-        # G1 ?鍮꾪삎 ???異붽? (6醫?
+        # G1 ????쑵???????곕떽? (6??
 
         "duo_east_and_west_bodypaint",
 
@@ -1398,7 +1371,7 @@ PRESET_CATEGORIES = {
 
         "duo_deep_sea_bodypaint",
 
-        # G2 ?鍮꾪삎 ?몃━??(3?? ?쇱썝 ?鍮?
+        # G2 ????쑵???紐꺿봺??(3?? ??깆뜚 ????
 
         "trio_rgb_trinity_bodypaint",
 
@@ -1410,7 +1383,7 @@ PRESET_CATEGORIES = {
 
         "trio_season_trinity_bodypaint",
 
-        # G2 ?鍮꾪삎 ?몃━??異붽? (6醫?
+        # G2 ????쑵???紐꺿봺???곕떽? (6??
 
         "trio_sun_moon_star_bodypaint",
 
@@ -1422,7 +1395,7 @@ PRESET_CATEGORIES = {
 
         "trio_three_big_cats_bodypaint",
 
-        # G3 ?곌껐?????(2?? ?⑹튂硫??섎굹???묓뭹)
+        # G3 ?怨뚭퍙??????(2?? ??뱁뒄筌???롪돌???臾볥?)
 
         "duo_butterfly_split_bodypaint",
 
@@ -1436,7 +1409,7 @@ PRESET_CATEGORIES = {
 
         "duo_wave_hokusai_bodypaint",
 
-        # G3 ?곌껐?????異붽? (6醫?
+        # G3 ?怨뚭퍙???????곕떽? (6??
 
         "duo_dna_helix_bodypaint",
 
@@ -1450,7 +1423,7 @@ PRESET_CATEGORIES = {
 
         "duo_peacock_split_bodypaint",
 
-        # G4 ?곌껐???몃━??(3?? ?⑹튂硫?嫄곕????묓뭹)
+        # G4 ?怨뚭퍙???紐꺿봺??(3?? ??뱁뒄筌?椰꾧퀡????臾볥?)
 
         "trio_triptych_klimt_bodypaint",
 
@@ -1464,7 +1437,7 @@ PRESET_CATEGORIES = {
 
         "trio_cosmic_creation_bodypaint",
 
-        # G4 ?곌껐???몃━??異붽? (6醫?
+        # G4 ?怨뚭퍙???紐꺿봺???곕떽? (6??
 
         "trio_last_supper_bodypaint",
 
@@ -1478,11 +1451,11 @@ PRESET_CATEGORIES = {
 
         "trio_poles_and_equator_bodypaint",
 
-        # 2026-07-03 ?좉퇋 QUAD 8醫?
+        # 2026-07-03 ?醫됲뇣 QUAD 8??
 
         "quad_four_civilizations_bodypaint",
 
-        # 2026-07-06 怨듭떇E ?ㅻ툕??而ㅻ쾭 ?꾩껜 SS ?ы븿 (9醫?
+        # 2026-07-06 ?⑤벊?놢 ??삵닏???뚣끇苡??袁⑷퍥 SS ??釉?(9??
 
     "feather_body_cover",
 
@@ -1516,7 +1489,7 @@ PRESET_CATEGORIES = {
 
         "quad_four_seasons_night_bodypaint",
 
-        # 2026-07-03 ?좉퇋 QUINT 7醫?
+        # 2026-07-03 ?醫됲뇣 QUINT 7??
 
         "quint_five_senses_bodypaint",
 
@@ -1532,11 +1505,11 @@ PRESET_CATEGORIES = {
 
         "quint_five_dance_cultures_bodypaint",
 
-        # 2026-07-03 ?좉퇋 HEXA 2醫?
+        # 2026-07-03 ?醫됲뇣 HEXA 2??
 
         "hexa_rainbow_spectrum_bodypaint",
 
-    # 🌙 Night Glamour
+    # ?뙔 Night Glamour
 
     "club_vip_neon_goddess",
 
@@ -1545,14 +1518,13 @@ PRESET_CATEGORIES = {
     "micro_sequin_club",
 
     "rooftop_micro_night",
-    # 2026-07-15 신규 나이트 4종
-    "night_bust_queen_dubai",
+    # 2026-07-15 ?좉퇋 ?섏씠??4醫?    "night_bust_queen_dubai",
     "night_brazil_tokyo_neon",
     "night_supermodel_paris_rooftop",
     "night_powerlifter_lasvegas",
 
 
-    # 👗 Slip Dress Glamour
+    # ?몭 Slip Dress Glamour
 
     "silk_slip_dawn_hotel",
 
@@ -1560,7 +1532,7 @@ PRESET_CATEGORIES = {
 
     "satin_slip_micro",
 
-    # 🐆 Animal Print Glamour
+    # ?릤 Animal Print Glamour
 
     "leopard_power_editorial",
 
@@ -1570,7 +1542,7 @@ PRESET_CATEGORIES = {
 
     "snakeskin_latex_glam",
 
-    # 🎭 Theatrical Glamour
+    # ?렚 Theatrical Glamour
 
     "gyeongbokgung_night_couture",
 
@@ -1632,7 +1604,7 @@ PRESET_CATEGORIES = {
 
     "ballet_stage_noir",
 
-    # 🌿 Minimal Object Cover
+    # ?뙼 Minimal Object Cover
 
     "silk_ribbon_minimal",
 
@@ -1652,19 +1624,19 @@ PRESET_CATEGORIES = {
 
     "seaweed_ocean_minimal",
 
-    "trio_inside_outside_bodypaint",        # ?대???3?덉씠???쇰?/洹쇱쑁/怨④꺽) + 諛뺣Ъ愿 諛곌꼍 HOF
+    "trio_inside_outside_bodypaint",        # ?????3??됱뵠?????/域뱀눘???ⓥ몿爰? + 獄쏅베窺?온 獄쏄퀗瑗?HOF
 
         "hexa_six_chakras_bodypaint",
 
-        # 2026-07-03 ?좉퇋 OCTET 1醫?
+        # 2026-07-03 ?醫됲뇣 OCTET 1??
 
         "octet_planets_solar_bodypaint",
 
-        # 2026-07-03 ?좉퇋 而⑥뀎 4醫?
+        # 2026-07-03 ?醫됲뇣 ?뚢뫁??4??
 
         "trio_inside_outside_bodypaint",        "quad_fashion_capitals_bodypaint",
 
-                # 4??QUAD (5醫?
+                # 4??QUAD (5??
 
         "quad_four_seasons_bodypaint",
 
@@ -1676,7 +1648,7 @@ PRESET_CATEGORIES = {
 
         "quad_rgba_spectrum_bodypaint",
 
-        # 5??QUINT (4醫?
+        # 5??QUINT (4??
 
         "quint_five_continents_bodypaint",
 
@@ -1688,7 +1660,7 @@ PRESET_CATEGORIES = {
 
 
 
-    # G5 ?곌껐?????30醫?(寃利??덉젙)
+    # G5 ?怨뚭퍙??????30??(野꺜筌???됱젟)
 
     "duo_earth_hemisphere_bodypaint",
 
@@ -1740,7 +1712,7 @@ PRESET_CATEGORIES = {
 
     "duo_ink_wash_split_bodypaint",
 
-    # G6 ?鍮꾪삎 ?몃━??35醫?(寃利??덉젙)
+    # G6 ????쑵???紐꺿봺??35??(野꺜筌???됱젟)
 
     "trio_stone_bronze_iron_bodypaint",
 
@@ -1804,9 +1776,9 @@ PRESET_CATEGORIES = {
 
 
 
-        # G5 ?곌껐?????(30醫? ????紐몄씠 ?⑹퀜吏硫??섎굹???꾩꽦泥?
+        # G5 ?怨뚭퍙??????(30?? ????筌뤿챷????뱁쒙쭪?筌???롪돌???袁⑷쉐筌?
 
-        # ?먯뿰/?곗＜
+        # ?癒?염/?怨쀯폒
 
         "duo_earth_hemisphere_bodypaint",
 
@@ -1822,8 +1794,7 @@ PRESET_CATEGORIES = {
 
         "duo_tree_root_bodypaint",
 
-        # ?숇Ъ/?앸Ъ
-
+        # ??눺???먁?
         "duo_eagle_serpent_bodypaint",
 
         "duo_wolf_moon_bodypaint",
@@ -1836,8 +1807,7 @@ PRESET_CATEGORIES = {
 
         "duo_spider_web_bodypaint",
 
-        # 紐낇솕/臾명솕
-
+        # 筌뤿굟???얜챸??
         "duo_mona_lisa_split_bodypaint",
 
         "duo_birth_venus_split_bodypaint",
@@ -1846,7 +1816,7 @@ PRESET_CATEGORIES = {
 
         "duo_chess_board_bodypaint",
 
-        # SF/?먰?吏
+        # SF/?癒?筌왖
 
         "duo_android_human_bodypaint",
 
@@ -1860,16 +1830,13 @@ PRESET_CATEGORIES = {
 
         "duo_crystal_lava_bodypaint",
 
-        # ?몄껜/泥좏븰
-
+        # ?紐꾧퍥/筌ｌ쥚釉?
         "duo_skeleton_bloom_bodypaint",
 
         "duo_ink_wash_split_bodypaint",
 
-        # G6 ?鍮꾪삎 ?몃━??(35醫? ??3 洹밸떒??異⑸룎/議고솕
-
-        # ?쒓컙/??궗
-
+        # G6 ????쑵???紐꺿봺??(35?? ??3 域밸갭????겸뫖猷?鈺곌퀬??
+        # ??볦퍢/??沅?
         "trio_stone_bronze_iron_bodypaint",
 
         "trio_ancient_medieval_modern_bodypaint",
@@ -1878,7 +1845,7 @@ PRESET_CATEGORIES = {
 
         "trio_seed_tree_ash_bodypaint",
 
-        # ?먯냼/?먯뿰
+        # ?癒?꺖/?癒?염
 
         "trio_lightning_ocean_earthquake_bodypaint",
 
@@ -1892,7 +1859,7 @@ PRESET_CATEGORIES = {
 
         "trio_jungle_desert_tundra_bodypaint",
 
-        # ??鍮?
+        # ????
 
         "trio_primary_colors_bodypaint",
 
@@ -1904,8 +1871,7 @@ PRESET_CATEGORIES = {
 
         "trio_infrared_visible_uv_bodypaint",
 
-        # ?좏솕/醫낃탳
-
+        # ?醫륁넅/?ル굛??
         "trio_heaven_earth_hell_bodypaint",
 
         "trio_creator_preserver_destroyer_bodypaint",
@@ -1916,7 +1882,7 @@ PRESET_CATEGORIES = {
 
         "trio_valkyrie_siren_medea_bodypaint",
 
-        # 臾몃챸/吏??
+        # ?얜챶梨?筌왖??
 
         "trio_amazon_sahara_arctic_bodypaint",
 
@@ -1928,8 +1894,7 @@ PRESET_CATEGORIES = {
 
         "trio_rome_babylon_aztec_bodypaint",
 
-        # 媛먯젙/泥좏븰
-
+        # 揶쏅Ŋ??筌ｌ쥚釉?
         "trio_love_war_peace_bodypaint",
 
         "trio_fear_anger_joy_bodypaint",
@@ -1942,9 +1907,9 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "👯 Duo Glamour": [
+    "?뫍 Duo Glamour": [
 
-        # G1 ?⑦듃 & ?
+        # G1 ???뱜 & ??
 
         "duo_infinity_pool_contrast",
 
@@ -1956,7 +1921,7 @@ PRESET_CATEGORIES = {
 
         "duo_wet_glass_divide",
 
-        # G2 諛붾뵒?섏씤???寃?
+        # G2 獄쏅뗀逾??륁뵥????野?
 
         "duo_bodypaint_vs_latex",
 
@@ -1970,7 +1935,7 @@ PRESET_CATEGORIES = {
 
         "duo_jungle_tribal_bodypaint",
 
-        # G3 ?쇳뀓??& ?뚯옱 ?鍮?
+        # G3 ??노??& ???삺 ????
 
         "duo_latex_color_block",
 
@@ -1980,11 +1945,11 @@ PRESET_CATEGORIES = {
 
         "duo_flamenco_latex_fusion",
 
-        # G4 ?ㅼ씪 & 洹몃┝??
+        # G4 ??쇱뵬 & 域밸챶???
 
         "duo_smoke_noir",
 
-        # G5 ??뀛由???
+        # G5 ???쏁뵳???
 
         "duo_versailles_latex_gold",
 
@@ -1996,7 +1961,7 @@ PRESET_CATEGORIES = {
 
         "duo_casino_power",
 
-        # G6 ?섎━硫섑깉 ?鍮?
+        # G6 ??롡봺筌롮꼹源?????
 
         "duo_fire_and_ice",
 
@@ -2004,7 +1969,7 @@ PRESET_CATEGORIES = {
 
         "duo_chrome_future",
 
-        # G7 ?ㅻ（??& 誘몃땲硫
+        # G7 ??삼펷??& 沃섎챶?뀐쭖?
 
         "duo_sunset_silhouette",
 
@@ -2018,9 +1983,9 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🪞 Mirror & Reflection": [
+    "?첑 Mirror & Reflection": [
 
-        # G1 ?대옒?앸???
+        # G1 ????????
 
         "infinity_mirror_goddess",
 
@@ -2034,8 +1999,7 @@ PRESET_CATEGORIES = {
 
         "broken_mirror_multiplied",
 
-        # G2 ?섎㈃諛섏궗
-
+        # G2 ??롢늺獄쏆꼷沅?
         "mercury_lake_reflection",
 
         "salt_flat_sky_merge",
@@ -2048,7 +2012,7 @@ PRESET_CATEGORIES = {
 
         "morning_dew_skin_reflection",
 
-        # G3 ?좊━&?꾨━利?
+        # G3 ?醫듼봺&?袁ⓥ봺筌?
 
         "glass_box_all_angles",
 
@@ -2062,8 +2026,7 @@ PRESET_CATEGORIES = {
 
         "soap_bubble_dome",
 
-        # G4 ?щ＼&硫뷀깉
-
+        # G4 ??竊?筌롫?源?
         "chrome_sphere_world",
 
         "polished_obsidian_floor",
@@ -2080,9 +2043,9 @@ PRESET_CATEGORIES = {
 
 
 
-    "🧬 Sci-Fi & Biopunk": [
+    "?㎚ Sci-Fi & Biopunk": [
 
-        # G1 ?щ씪?댁삤&?ㅽ뿕??
+        # G1 ?????곸궎&??쎈퓮??
 
         "cryo_emergence_wet",
 
@@ -2096,7 +2059,7 @@ PRESET_CATEGORIES = {
 
         "petri_dish_giant_macro",
 
-        # G2 ?ы빐&?좉린泥?
+        # G2 ??鍮??醫됰┛筌?
 
         "abyssal_pressure_glam",
 
@@ -2110,7 +2073,7 @@ PRESET_CATEGORIES = {
 
         "jellyfish_bloom_float",
 
-        # G3 ?몃옖?ㅽ쑕癒?
+        # G3 ?紐껋삏??쎌몧??
 
         "cyborg_partial_reveal",
 
@@ -2122,8 +2085,7 @@ PRESET_CATEGORIES = {
 
         "spine_tech_implant",
 
-            # G4 諛붿씠?ъ뒪&裕ㅽ뀒?댁뀡
-
+            # G4 獄쏅뗄?????獒뺛끋???곷?
         "mutation_bloom",
 
         "toxic_spore_cloud",
@@ -2140,11 +2102,11 @@ PRESET_CATEGORIES = {
 
 
 
-    "🌀 Environment Merge": [
+    "?? Environment Merge": [
 
-        # G1 ?⑦꽩/吏곷Ъ (6醫?SSS)
+        # G1 ???쉘/筌욊낮窺 (6??SSS)
 
-        # 2026-07-02 諛붾뵒?섏씤???섏긽 誘뱀뒪 肄쒕씪蹂?
+        # 2026-07-02 獄쏅뗀逾??륁뵥????뤾맒 沃섎????꾩뮆?よ퉪?
 
         "trio_bodypaint_latex_frame",
 
@@ -2184,7 +2146,7 @@ PRESET_CATEGORIES = {
 
         "trio_chrome_bodypaint_center",
 
-        # ?? ?섍꼍 ?쇱껜 諛붾뵒?섏씤??
+        # ?? ??띻펾 ??깃퍥 獄쏅뗀逾??륁뵥??
 
         "merge_butterfly_fabric",
 
@@ -2198,7 +2160,7 @@ PRESET_CATEGORIES = {
 
         "merge_tartan_plaid",
 
-        # G2 ?먯뿰?섍꼍 (5醫?SSS/SS)
+        # G2 ?癒?염??띻펾 (5??SSS/SS)
 
         "merge_salt_flat_sky",
 
@@ -2210,7 +2172,7 @@ PRESET_CATEGORIES = {
 
         "merge_moss_stone_ground",
 
-        # G3 嫄댁텞/?뚯옱 (5醫?SSS)
+        # G3 椰꾨똻?????삺 (5??SSS)
 
         "merge_clockwork_gears",
 
@@ -2222,7 +2184,7 @@ PRESET_CATEGORIES = {
 
         "merge_circuit_board",
 
-        # G4 ?덉닠/?뚰솕 (6醫?SSS)
+        # G4 ??됰떊/??곗넅 (6??SSS)
 
         "merge_klimt_gold_mural",
 
@@ -2240,15 +2202,15 @@ PRESET_CATEGORIES = {
 
 
 
-            "🌙 Night Glamour": ['club_vip_neon_goddess', 'club_rooftop_citylight', 'micro_sequin_club', 'rooftop_micro_night'],
+            "?뙔 Night Glamour": ['club_vip_neon_goddess', 'club_rooftop_citylight', 'micro_sequin_club', 'rooftop_micro_night'],
 
-        "👗 Slip Dress Glamour": ['silk_slip_dawn_hotel', 'satin_slip_vanity_noir', 'satin_slip_micro'],
+        "?몭 Slip Dress Glamour": ['silk_slip_dawn_hotel', 'satin_slip_vanity_noir', 'satin_slip_micro'],
 
-        "🐆 Animal Print Glamour": ['leopard_power_editorial', 'leopard_micro_studio', 'snake_micro_marble', 'snakeskin_latex_glam'],
+        "?릤 Animal Print Glamour": ['leopard_power_editorial', 'leopard_micro_studio', 'snake_micro_marble', 'snakeskin_latex_glam'],
 
-    "🎭 Theatrical Glamour": ['gyeongbokgung_night_couture', 'bukchon_rain_editorial', 'namsan_tower_dusk', 'dongdaemun_neon_rain', 'haeinsa_temple_dawn', 'jeju_volcanic_coast', 'fushimi_inari_crimson', 'arashiyama_bamboo_mist', 'osaka_dotonbori_neon', 'mount_fuji_dawn_silk', 'japanese_garden_autumn', 'kabukiza_backstage_glam', 'forbidden_city_golden_hour', 'li_river_karst_mist', 'shanghai_bund_noir', 'zhangjiajie_cloud_forest', 'west_lake_lotus_dawn', 'bali_tanah_lot_sunset', 'hoi_an_lantern_rain', 'bangkok_wat_arun_gold', 'singapore_marina_bay_night', 'luang_prabang_monk_dawn', 'rice_terrace_banaue_mist', 'opera_house_goddess', 'venetian_carnival_palazzo', 'flamenco_tablao_fire', 'broadway_red_curtain', 'scottish_castle_mist', 'sahara_dune_queen', 'ballet_stage_noir'],
+    "?렚 Theatrical Glamour": ['gyeongbokgung_night_couture', 'bukchon_rain_editorial', 'namsan_tower_dusk', 'dongdaemun_neon_rain', 'haeinsa_temple_dawn', 'jeju_volcanic_coast', 'fushimi_inari_crimson', 'arashiyama_bamboo_mist', 'osaka_dotonbori_neon', 'mount_fuji_dawn_silk', 'japanese_garden_autumn', 'kabukiza_backstage_glam', 'forbidden_city_golden_hour', 'li_river_karst_mist', 'shanghai_bund_noir', 'zhangjiajie_cloud_forest', 'west_lake_lotus_dawn', 'bali_tanah_lot_sunset', 'hoi_an_lantern_rain', 'bangkok_wat_arun_gold', 'singapore_marina_bay_night', 'luang_prabang_monk_dawn', 'rice_terrace_banaue_mist', 'opera_house_goddess', 'venetian_carnival_palazzo', 'flamenco_tablao_fire', 'broadway_red_curtain', 'scottish_castle_mist', 'sahara_dune_queen', 'ballet_stage_noir'],
 
-    "🌿 Minimal Object Cover": [
+    "?뙼 Minimal Object Cover": [
 
         "silk_ribbon_minimal",
 
@@ -2270,10 +2232,9 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🎀 Minimal Cover Glamour": [
+    "?? Minimal Cover Glamour": [
 
-    # ?뙼 誘몃땲硫 ?ㅻ툕??而ㅻ쾭
-
+    # ???沃섎챶?뀐쭖? ??삵닏???뚣끇苡?
     "silk_ribbon_minimal",
 
     "tropical_flower_minimal",
@@ -2310,7 +2271,7 @@ PRESET_CATEGORIES = {
 
 
 
-    "🛁 Spa & Body Glamour": [
+    "?썎 Spa & Body Glamour": [
 
         "oil_massage_table",
 
@@ -2336,7 +2297,7 @@ PRESET_CATEGORIES = {
 
 
 
-    "🌋 Hot Spring & Underwater": [
+    "?뙅 Hot Spring & Underwater": [
 
         "yunoko_bamboo_onsen",
 
@@ -2360,7 +2321,7 @@ PRESET_CATEGORIES = {
 
 
 
-    "💦 Pool & Emergence": [
+    "?뮚 Pool & Emergence": [
 
         "niagara_mist_goddess",
 
@@ -2374,17 +2335,17 @@ PRESET_CATEGORIES = {
 
 
 
-    "🌧️ Wet Dress Glamour": [
+    "?뙢截?Wet Dress Glamour": [
 
         "dubai_rooftop_storm",
 
-    # ?뙔 ?섏씠??湲?섎㉧
+    # ?????륁뵠??疫꼲??롢돢
 
-    # ?몭 ?щ┰?쒕젅??湲?섎㉧
+    # ?紐??????뺤쟿??疫꼲??롢돢
 
-    # ?릤 ?좊땲硫?꾨┛??湲?섎㉧
+    # ?由??醫딅빍筌렺?袁ⓥ뵛??疫꼲??롢돢
 
-    # ?렚 洹뱀옣??湲?섎㉧
+    # ???域밸????疫꼲??롢돢
 
         "amalfi_cliff_storm",
 
@@ -2412,7 +2373,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🎭 Archetype Glamour": [
+    "?렚 Archetype Glamour": [
 
         "bond_girl_casino",
 
@@ -2432,7 +2393,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "👯 Duo Glamour": [
+    "?뫍 Duo Glamour": [
 
         "duo_penthouse_black",
 
@@ -2454,7 +2415,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🎭 Trio Glamour": [
+    "?렚 Trio Glamour": [
 
         "trio_glacier_emergence",
 
@@ -2484,7 +2445,7 @@ PRESET_CATEGORIES = {
 
 
 
-        "🌅 Golden Hour Glamour": [
+        "?똿 Golden Hour Glamour": [
 
         "golden_hour_cliff_goddess",
 
@@ -2516,7 +2477,7 @@ PRESET_CATEGORIES = {
 
 
 
-    "🏛️ Ancient Temple Glamour": [
+    "?룢截?Ancient Temple Glamour": [
 
         "marble_awakening_goddess",
 
@@ -2536,7 +2497,7 @@ PRESET_CATEGORIES = {
 
 
 
-    "💎 Figure Glamour": [
+    "?뭿 Figure Glamour": [
 
         "super_lingerie_glamour",
 
@@ -2618,7 +2579,7 @@ PRESET_CATEGORIES = {
 
 
 
-    "🧲 Ferrofluid Glamour": [
+    "?㎠ Ferrofluid Glamour": [
 
         "ferrofluid_crown_spikes",
 
@@ -2646,7 +2607,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🐦 Murmuration Glamour": [
+    "?맔 Murmuration Glamour": [
 
         "murmuration_silk_gown",
 
@@ -2674,7 +2635,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🎵 Cymatics Glamour": [
+    "?렦 Cymatics Glamour": [
 
         "cymatics_water_column",
 
@@ -2702,7 +2663,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🔬 Micro Scale Glamour": [
+    "?뵮 Micro Scale Glamour": [
 
         "micro_spiderweb_dew_goddess",
 
@@ -2730,7 +2691,7 @@ PRESET_CATEGORIES = {
 
     ],
 
-    "🫧 Mycelium Glamour": [
+    "?ェ Mycelium Glamour": [
 
         "mycelium_forest_goddess",
 
@@ -2757,305 +2718,305 @@ PRESET_CATEGORIES = {
         "mycelium_athletic_neon_bodysuit_network_goddess",
 
     ],
-    "🔊 Acoustic Levitation Glamour": [
+    "?뵄 Acoustic Levitation Glamour": [
         {
             "id": "acoustic_amazon_glass_shard_levitation",
             "name": "Glass Shard Levitation",
-            "prompt": "Professional fashion photograph, full body shot. Model: towering amazon goddess, hundreds of razor-sharp glass shards levitating in acoustic nodes around her powerful figure — glass suspended mid-air in precise sound field architecture. Body: 183cm powerful physique, copper skin, natural afro halo, fierce warrior expression. Wearing: minimal silver metallic micro bikini — glass shards of varying sizes suspended 2-30cm from skin creating living glass armor without touching her, clear platform stiletto thigh-high boots 6-inch heel visible through glass constellation, silver cuff bracelets. Environment: dark industrial studio, glass shards catching studio lights as scattered crystal prisms, acoustic transducer array visible at frame edges. Lighting: hard directional silver light, each glass shard creating prismatic rainbow, copper skin reflecting glass light. Style: amazon acoustic glass editorial, sound as weapon. Shot on Phase One XF IQ4, acoustic glass grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: towering amazon goddess, hundreds of razor-sharp glass shards levitating in acoustic nodes around her powerful figure ??glass suspended mid-air in precise sound field architecture. Body: 183cm powerful physique, copper skin, natural afro halo, fierce warrior expression. Wearing: minimal silver metallic micro bikini ??glass shards of varying sizes suspended 2-30cm from skin creating living glass armor without touching her, clear platform stiletto thigh-high boots 6-inch heel visible through glass constellation, silver cuff bracelets. Environment: dark industrial studio, glass shards catching studio lights as scattered crystal prisms, acoustic transducer array visible at frame edges. Lighting: hard directional silver light, each glass shard creating prismatic rainbow, copper skin reflecting glass light. Style: amazon acoustic glass editorial, sound as weapon. Shot on Phase One XF IQ4, acoustic glass grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_plus_size_water_sphere_cloud",
             "name": "Water Sphere Cloud",
-            "prompt": "Professional fashion photograph, full body shot. Model: magnificent plus-size goddess surrounded by acoustic water sphere cloud — thousands of perfect water spheres 1-5cm diameter levitating in acoustic nodes creating total water atmosphere. Body: full magnificent curves, deep ebony skin, voluminous natural locs, serene expression commanding the water. Wearing: ultra-minimal black micro bodysuit — water spheres surrounding every curve highlighting silhouette, spheres refracting body into thousands of tiny reflections, black patent thigh-high platform boots 5-inch heel with water spheres orbiting at ankle and knee nodes, no jewelry — water is everything. Environment: dark studio, water spheres filling entire frame as living cloud, figure at center of sphere density, light refracting through water creating rainbow halos. Lighting: single overhead white beam, water spheres acting as lenses creating caustic patterns on skin and floor. Style: plus-size acoustic water sphere editorial, sound holding water in air. Shot on Hasselblad X2D, acoustic water grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: magnificent plus-size goddess surrounded by acoustic water sphere cloud ??thousands of perfect water spheres 1-5cm diameter levitating in acoustic nodes creating total water atmosphere. Body: full magnificent curves, deep ebony skin, voluminous natural locs, serene expression commanding the water. Wearing: ultra-minimal black micro bodysuit ??water spheres surrounding every curve highlighting silhouette, spheres refracting body into thousands of tiny reflections, black patent thigh-high platform boots 5-inch heel with water spheres orbiting at ankle and knee nodes, no jewelry ??water is everything. Environment: dark studio, water spheres filling entire frame as living cloud, figure at center of sphere density, light refracting through water creating rainbow halos. Lighting: single overhead white beam, water spheres acting as lenses creating caustic patterns on skin and floor. Style: plus-size acoustic water sphere editorial, sound holding water in air. Shot on Hasselblad X2D, acoustic water grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_petite_salt_crystal_formation",
             "name": "Salt Crystal Formation",
-            "prompt": "Professional fashion photograph, full body shot. Model: petite goddess at center of acoustic salt crystal formation — salt crystals growing and levitating in acoustic nodes around tiny figure, white cubic crystals in perfect geometric formation. Body: 151cm compact figure, golden-olive skin creating warmth contrast with white salt crystals, dark hair in sleek low bun away from crystal field. Wearing: white micro bikini — salt crystals suspended in acoustic nodes 1-20cm from skin forming geometric white armor, white patent platform stiletto ankle boots 4-inch heel with salt crystal clusters at acoustic boot nodes, silver crystal drop earrings matching levitating crystals. Environment: stark white studio, salt crystal formation extending full frame, petite figure as dark warm center of white crystal universe, cubic crystals catching directional light in geometric sparkle. Lighting: hard side lighting, salt crystals creating geometric specular patterns, golden skin warm against cold white crystal field. Style: petite acoustic salt crystal editorial, sound growing crystals. Shot on Hasselblad X2D, acoustic crystal grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: petite goddess at center of acoustic salt crystal formation ??salt crystals growing and levitating in acoustic nodes around tiny figure, white cubic crystals in perfect geometric formation. Body: 151cm compact figure, golden-olive skin creating warmth contrast with white salt crystals, dark hair in sleek low bun away from crystal field. Wearing: white micro bikini ??salt crystals suspended in acoustic nodes 1-20cm from skin forming geometric white armor, white patent platform stiletto ankle boots 4-inch heel with salt crystal clusters at acoustic boot nodes, silver crystal drop earrings matching levitating crystals. Environment: stark white studio, salt crystal formation extending full frame, petite figure as dark warm center of white crystal universe, cubic crystals catching directional light in geometric sparkle. Lighting: hard side lighting, salt crystals creating geometric specular patterns, golden skin warm against cold white crystal field. Style: petite acoustic salt crystal editorial, sound growing crystals. Shot on Hasselblad X2D, acoustic crystal grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_curvy_rose_petal_orbit",
             "name": "Rose Petal Orbit",
-            "prompt": "Professional fashion photograph, full body shot. Model: voluptuous curvy goddess, thousands of red rose petals levitating in acoustic orbital paths around her full figure — petals tracing figure-8 orbital loops in 3D sound field. Body: spectacular full hourglass figure, warm caramel oiled skin, loose waves catching petal-wind, lips red matching petals. Wearing: deep red ultra-sheer silk slip dress soaked in acoustic petal-wind — fabric barely there, rose petals landing and sliding off curves, red stiletto thigh-high platform boots 5-inch heel, petals orbiting boot heels like tiny satellites. Environment: dark romantic studio, rose petals tracing luminous orbital paths in long-exposure light trails, remaining petals suspended at acoustic nodes. Lighting: warm amber key, rose petals backlit catching golden edges, skin warm in amber between petal orbits. Style: curvy acoustic rose petal orbit editorial, sound as romance. Shot on Hasselblad X2D, acoustic rose grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: voluptuous curvy goddess, thousands of red rose petals levitating in acoustic orbital paths around her full figure ??petals tracing figure-8 orbital loops in 3D sound field. Body: spectacular full hourglass figure, warm caramel oiled skin, loose waves catching petal-wind, lips red matching petals. Wearing: deep red ultra-sheer silk slip dress soaked in acoustic petal-wind ??fabric barely there, rose petals landing and sliding off curves, red stiletto thigh-high platform boots 5-inch heel, petals orbiting boot heels like tiny satellites. Environment: dark romantic studio, rose petals tracing luminous orbital paths in long-exposure light trails, remaining petals suspended at acoustic nodes. Lighting: warm amber key, rose petals backlit catching golden edges, skin warm in amber between petal orbits. Style: curvy acoustic rose petal orbit editorial, sound as romance. Shot on Hasselblad X2D, acoustic rose grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_athletic_steel_ball_precision",
             "name": "Steel Ball Precision",
-            "prompt": "Professional fashion photograph, full body shot. Model: elite athletic goddess, hundreds of chrome steel balls levitating in perfect military-precision acoustic grid around her athletic figure — geometric perfection mirroring body discipline. Body: competition-level athletic physique, every muscle defined, bronze oiled skin, severe high bun, expression fierce-focused. Wearing: minimal black latex micro sports bra and micro shorts — athletic minimal, chrome steel balls 2cm diameter suspended in perfect cubic acoustic lattice surrounding figure from floor to crown, matte black thigh-high platform stiletto boots 5-inch heel, steel balls reflecting distorted black figure in each sphere. Environment: dark precision studio, steel ball grid creating perfect geometric architecture around figure, acoustic transducer array visible at corners. Lighting: hard directional light, steel balls creating perfect specular highlights, figure in dramatic chiaroscuro between ball grid. Style: athletic acoustic steel precision editorial, discipline made visible. Shot on Phase One XF IQ4, acoustic steel grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: elite athletic goddess, hundreds of chrome steel balls levitating in perfect military-precision acoustic grid around her athletic figure ??geometric perfection mirroring body discipline. Body: competition-level athletic physique, every muscle defined, bronze oiled skin, severe high bun, expression fierce-focused. Wearing: minimal black latex micro sports bra and micro shorts ??athletic minimal, chrome steel balls 2cm diameter suspended in perfect cubic acoustic lattice surrounding figure from floor to crown, matte black thigh-high platform stiletto boots 5-inch heel, steel balls reflecting distorted black figure in each sphere. Environment: dark precision studio, steel ball grid creating perfect geometric architecture around figure, acoustic transducer array visible at corners. Lighting: hard directional light, steel balls creating perfect specular highlights, figure in dramatic chiaroscuro between ball grid. Style: athletic acoustic steel precision editorial, discipline made visible. Shot on Phase One XF IQ4, acoustic steel grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_amazon_mercury_drop_curtain",
             "name": "Mercury Drop Curtain",
-            "prompt": "Professional fashion photograph, full body shot. Model: 183cm amazon goddess standing behind acoustic mercury drop curtain — liquid mercury suspended in vertical acoustic plane creates mirror curtain she emerges through, legs visible below. Body: tall powerful physique, long legs fully visible below mercury curtain, copper skin, natural afro halo above curtain edge. Wearing: mercury itself draping torso — liquid metal suspended in acoustic field conforming to curves as living mercury bodysuit, deep plunge, thigh-high silver chrome platform stiletto boots 6-inch heel below mercury plane, silver torque collar. Environment: dark studio, mercury drop curtain spanning full frame width, figure emerging through it, drops suspended in perfect acoustic node positions. Lighting: silver side lighting, mercury drops acting as infinite tiny mirrors, figure multiply reflected in mercury curtain. Style: amazon acoustic mercury curtain editorial, liquid metal as couture veil. Shot on Hasselblad X2D, acoustic mercury grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: 183cm amazon goddess standing behind acoustic mercury drop curtain ??liquid mercury suspended in vertical acoustic plane creates mirror curtain she emerges through, legs visible below. Body: tall powerful physique, long legs fully visible below mercury curtain, copper skin, natural afro halo above curtain edge. Wearing: mercury itself draping torso ??liquid metal suspended in acoustic field conforming to curves as living mercury bodysuit, deep plunge, thigh-high silver chrome platform stiletto boots 6-inch heel below mercury plane, silver torque collar. Environment: dark studio, mercury drop curtain spanning full frame width, figure emerging through it, drops suspended in perfect acoustic node positions. Lighting: silver side lighting, mercury drops acting as infinite tiny mirrors, figure multiply reflected in mercury curtain. Style: amazon acoustic mercury curtain editorial, liquid metal as couture veil. Shot on Hasselblad X2D, acoustic mercury grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "acoustic_plus_size_golden_dust_suspension",
             "name": "Golden Dust Suspension",
-            "prompt": "Professional fashion photograph, full body shot. Model: magnificent plus-size goddess at center of acoustic gold dust suspension — millions of 24k gold particles levitating in acoustic field creating total gold atmosphere, figure the dark goddess at golden universe center. Body: full magnificent figure, deep ebony skin creating maximum contrast with gold particle cloud, voluminous natural locs adorned with gold dust caught in hair. Wearing: minimal black micro dress — pure black against gold particle cloud for maximum contrast, gold particles settling on skin as living gold paint, thigh-high black patent platform boots 5-inch heel catching gold reflections, single black choker. Environment: gold particle suspension filling entire studio atmosphere, figure at density center where particles thickest, cloud thinning toward edges. Lighting: single overhead gold-filtered beam, gold particles creating total warm luminous atmosphere, figure silhouetted against own gold cloud. Style: plus-size acoustic gold dust goddess editorial, sound making gold float. Shot on Phase One XF IQ4, acoustic gold grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: magnificent plus-size goddess at center of acoustic gold dust suspension ??millions of 24k gold particles levitating in acoustic field creating total gold atmosphere, figure the dark goddess at golden universe center. Body: full magnificent figure, deep ebony skin creating maximum contrast with gold particle cloud, voluminous natural locs adorned with gold dust caught in hair. Wearing: minimal black micro dress ??pure black against gold particle cloud for maximum contrast, gold particles settling on skin as living gold paint, thigh-high black patent platform boots 5-inch heel catching gold reflections, single black choker. Environment: gold particle suspension filling entire studio atmosphere, figure at density center where particles thickest, cloud thinning toward edges. Lighting: single overhead gold-filtered beam, gold particles creating total warm luminous atmosphere, figure silhouetted against own gold cloud. Style: plus-size acoustic gold dust goddess editorial, sound making gold float. Shot on Phase One XF IQ4, acoustic gold grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_petite_ink_drop_suspension",
             "name": "Ink Drop Suspension",
-            "prompt": "Professional fashion photograph, full body shot. Model: petite goddess at moment of acoustic ink drop suspension — dozens of ink drops caught mid-fall in acoustic nodes, black ink suspended as frozen explosion around tiny figure. Body: 151cm compact figure, ivory skin creating stark contrast with black ink drops, platinum hair in tight bun away from ink. Wearing: pure white micro bikini — white canvas for ink drop shadow play, black ink drops suspended 1-30cm from skin in acoustic nodes creating ink corona around white figure, white platform stiletto ankle boots 4-inch, no jewelry — just ink and white. Environment: white infinity studio, ink drops suspended in perfect acoustic positions creating complex black constellation around figure, ink trails showing acoustic node paths. Lighting: flat white studio, ink drops casting tiny shadows on white floor, figure as white goddess in black ink cosmos. Style: petite acoustic ink suspension editorial, sound freezing chaos. Shot on Hasselblad X2D, acoustic ink grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: petite goddess at moment of acoustic ink drop suspension ??dozens of ink drops caught mid-fall in acoustic nodes, black ink suspended as frozen explosion around tiny figure. Body: 151cm compact figure, ivory skin creating stark contrast with black ink drops, platinum hair in tight bun away from ink. Wearing: pure white micro bikini ??white canvas for ink drop shadow play, black ink drops suspended 1-30cm from skin in acoustic nodes creating ink corona around white figure, white platform stiletto ankle boots 4-inch, no jewelry ??just ink and white. Environment: white infinity studio, ink drops suspended in perfect acoustic positions creating complex black constellation around figure, ink trails showing acoustic node paths. Lighting: flat white studio, ink drops casting tiny shadows on white floor, figure as white goddess in black ink cosmos. Style: petite acoustic ink suspension editorial, sound freezing chaos. Shot on Hasselblad X2D, acoustic ink grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_curvy_champagne_bubble_levitation",
             "name": "Champagne Bubble Levitation",
-            "prompt": "Professional fashion photograph, full body shot. Model: curvy goddess surrounded by acoustic champagne bubble levitation — thousands of champagne bubbles suspended in acoustic nodes rather than rising, creating permanent effervescent cloud around full figure. Body: voluptuous full hourglass figure, warm honey skin catching bubble light, waist-length blonde waves catching bubbles. Wearing: ultra-sheer champagne silk slip dress — fabric colour-matched to champagne bubbles making dress and bubbles merge visually, bubbles suspended at every curve highlighting silhouette, champagne gold stiletto thigh-high platform boots 5-inch heel with bubbles orbiting heels, gold pearl drop earrings. Environment: luxury penthouse setting, champagne flutes on surfaces, bubble cloud dense around figure, thinning to reveal penthouse view. Lighting: warm champagne gold ambient, bubbles catching light as thousands of tiny golden spheres, skin warm in bubble-diffused light. Style: curvy acoustic champagne bubble goddess editorial, celebration suspended in time. Shot on Phase One XF IQ4, acoustic champagne grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: curvy goddess surrounded by acoustic champagne bubble levitation ??thousands of champagne bubbles suspended in acoustic nodes rather than rising, creating permanent effervescent cloud around full figure. Body: voluptuous full hourglass figure, warm honey skin catching bubble light, waist-length blonde waves catching bubbles. Wearing: ultra-sheer champagne silk slip dress ??fabric colour-matched to champagne bubbles making dress and bubbles merge visually, bubbles suspended at every curve highlighting silhouette, champagne gold stiletto thigh-high platform boots 5-inch heel with bubbles orbiting heels, gold pearl drop earrings. Environment: luxury penthouse setting, champagne flutes on surfaces, bubble cloud dense around figure, thinning to reveal penthouse view. Lighting: warm champagne gold ambient, bubbles catching light as thousands of tiny golden spheres, skin warm in bubble-diffused light. Style: curvy acoustic champagne bubble goddess editorial, celebration suspended in time. Shot on Phase One XF IQ4, acoustic champagne grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_athletic_fire_ember_levitation",
             "name": "Fire Ember Levitation",
-            "prompt": "Professional fashion photograph, full body shot. Model: athletic goddess at center of acoustic fire ember levitation — hundreds of glowing fire embers suspended in acoustic nodes around athletic figure, embers frozen mid-flight in 3D sound grid. Body: elite athletic physique, bronze oiled skin glowing in ember light, fierce expression, tight warrior braid. Wearing: minimal black micro sports bra and micro shorts — dark base to contrast ember glow, embers suspended around body at acoustic nodes ranging from ankle to crown creating living fire constellation, thigh-high matte black platform combat boots 4-inch with embers orbiting at boot tops, no jewelry — fire is the accessory. Environment: dark forge-like space, embers suspended in perfect acoustic architecture around figure, smoke wisps below ember nodes. Lighting: ember warm amber-orange from all acoustic node positions, figure lit entirely by own ember constellation, bronze skin catching every ember. Style: athletic acoustic ember levitation editorial, sound taming fire. Shot on Hasselblad X2D, acoustic ember grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: athletic goddess at center of acoustic fire ember levitation ??hundreds of glowing fire embers suspended in acoustic nodes around athletic figure, embers frozen mid-flight in 3D sound grid. Body: elite athletic physique, bronze oiled skin glowing in ember light, fierce expression, tight warrior braid. Wearing: minimal black micro sports bra and micro shorts ??dark base to contrast ember glow, embers suspended around body at acoustic nodes ranging from ankle to crown creating living fire constellation, thigh-high matte black platform combat boots 4-inch with embers orbiting at boot tops, no jewelry ??fire is the accessory. Environment: dark forge-like space, embers suspended in perfect acoustic architecture around figure, smoke wisps below ember nodes. Lighting: ember warm amber-orange from all acoustic node positions, figure lit entirely by own ember constellation, bronze skin catching every ember. Style: athletic acoustic ember levitation editorial, sound taming fire. Shot on Hasselblad X2D, acoustic ember grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "acoustic_amazon_flower_petal_vortex",
             "name": "Flower Petal Vortex",
-            "prompt": "Professional fashion photograph, full body shot. Model: towering amazon goddess at axis of acoustic petal vortex — thousands of white magnolia petals levitating in upward spiral acoustic field around her tall figure, petals forming tornado-goddess architecture. Body: 183cm powerful physique, deep brown skin, severe geometric updo with single magnolia, long legs visible through petal vortex gaps. Wearing: white micro bandeau and white micro thong — white petals and white fabric creating seamless skin-reveal throughout vortex, petal vortex forming natural strapless gown silhouette in air, white platform stiletto mules 6-inch heel at vortex base, single gold armband. Environment: dark studio, petal vortex rising full frame height around figure, long-exposure showing spiral petal trails as luminous white lines. Lighting: single overhead white beam, petals catching edge light in white arcs, skin visible through petal architecture. Style: amazon acoustic petal vortex editorial, sound building a gown from flowers. Shot on Phase One XF IQ4, acoustic petal grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: towering amazon goddess at axis of acoustic petal vortex ??thousands of white magnolia petals levitating in upward spiral acoustic field around her tall figure, petals forming tornado-goddess architecture. Body: 183cm powerful physique, deep brown skin, severe geometric updo with single magnolia, long legs visible through petal vortex gaps. Wearing: white micro bandeau and white micro thong ??white petals and white fabric creating seamless skin-reveal throughout vortex, petal vortex forming natural strapless gown silhouette in air, white platform stiletto mules 6-inch heel at vortex base, single gold armband. Environment: dark studio, petal vortex rising full frame height around figure, long-exposure showing spiral petal trails as luminous white lines. Lighting: single overhead white beam, petals catching edge light in white arcs, skin visible through petal architecture. Style: amazon acoustic petal vortex editorial, sound building a gown from flowers. Shot on Phase One XF IQ4, acoustic petal grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "acoustic_plus_size_ice_shard_armor",
             "name": "Ice Shard Armor",
-            "prompt": "Professional fashion photograph, full body shot. Model: supreme plus-size goddess armored in acoustic ice shard levitation — large ice crystal shards suspended in precise acoustic nodes forming fitted ice armor around full magnificent figure. Body: 5XL commanding figure, deep brown skin dramatically contrasting with translucent ice armor panels, natural locs with ice crystal accessories. Wearing: ultra-minimal skin-tone bodysuit beneath ice armor — ice shards 5-30cm suspended in acoustic nodes forming chest plate, shoulder guards, hip panels, shin shields as living ice armor, transparent ice heels 5-inch platform showing bare foot above, diamond choker the only non-ice element. Environment: arctic dark, ice armor glowing blue-white from within, acoustic transducer array creating the field, breath visible in cold air. Lighting: cold blue from ice shard interior luminescence, no external source — armor is the light, deep ebony skin edge-lit by own ice armor. Style: plus-size acoustic ice armor goddess editorial, sound as protection. Shot on Hasselblad X2D, acoustic ice grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: supreme plus-size goddess armored in acoustic ice shard levitation ??large ice crystal shards suspended in precise acoustic nodes forming fitted ice armor around full magnificent figure. Body: 5XL commanding figure, deep brown skin dramatically contrasting with translucent ice armor panels, natural locs with ice crystal accessories. Wearing: ultra-minimal skin-tone bodysuit beneath ice armor ??ice shards 5-30cm suspended in acoustic nodes forming chest plate, shoulder guards, hip panels, shin shields as living ice armor, transparent ice heels 5-inch platform showing bare foot above, diamond choker the only non-ice element. Environment: arctic dark, ice armor glowing blue-white from within, acoustic transducer array creating the field, breath visible in cold air. Lighting: cold blue from ice shard interior luminescence, no external source ??armor is the light, deep ebony skin edge-lit by own ice armor. Style: plus-size acoustic ice armor goddess editorial, sound as protection. Shot on Hasselblad X2D, acoustic ice grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
     ],
-    "🔊 Acoustic Levitation Glamour 2": [
+    "?뵄 Acoustic Levitation Glamour 2": [
         {
             "id": "acoustic_super_glamour_diamond_dust",
             "name": "Diamond Dust",
-            "prompt": "Professional fashion photograph, full body shot. Model: supreme hourglass goddess, impossibly cinched waist, maximum curves, millions of diamond dust particles levitating in acoustic nodes creating total diamond atmosphere around her perfect figure — 24k diamond particles suspended in sound field. Body: spectacular extreme hourglass figure, warm golden skin, voluminous platinum waves catching diamond light, expression commanding. Wearing: ultra-minimal black micro string bikini — diamond dust settling on curves as living diamond skin, black stiletto thigh-high platform boots 6-inch heel catching diamond fire, diamond choker + matching earrings. Environment: dark luxury studio, diamond particle cloud filling entire frame, figure at maximum density center. Lighting: single hard diamond-white spot, particles creating total prismatic fire, golden skin blazing through diamond cloud. Style: super glamour acoustic diamond editorial, sound making diamonds float. Shot on Hasselblad X2D, acoustic diamond grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: supreme hourglass goddess, impossibly cinched waist, maximum curves, millions of diamond dust particles levitating in acoustic nodes creating total diamond atmosphere around her perfect figure ??24k diamond particles suspended in sound field. Body: spectacular extreme hourglass figure, warm golden skin, voluminous platinum waves catching diamond light, expression commanding. Wearing: ultra-minimal black micro string bikini ??diamond dust settling on curves as living diamond skin, black stiletto thigh-high platform boots 6-inch heel catching diamond fire, diamond choker + matching earrings. Environment: dark luxury studio, diamond particle cloud filling entire frame, figure at maximum density center. Lighting: single hard diamond-white spot, particles creating total prismatic fire, golden skin blazing through diamond cloud. Style: super glamour acoustic diamond editorial, sound making diamonds float. Shot on Hasselblad X2D, acoustic diamond grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_bbw_soap_bubble_galaxy",
             "name": "Soap Bubble Galaxy",
-            "prompt": "Professional fashion photograph, full body shot. Model: magnificent super BBW goddess, full voluminous curves commanding entire frame, thousands of giant soap bubbles levitating in acoustic nodes creating galaxy of iridescent spheres — bubbles 5-30cm diameter suspended at precise sound field positions. Body: supremely full magnificent figure, deep mahogany skin, massive voluminous natural afro, serene commanding expression. Wearing: minimal deep purple micro dress — soap bubbles surrounding every magnificent curve, each bubble reflecting full-body rainbow spectrum, purple patent thigh-high platform boots 5-inch heel with bubble clusters orbiting, no jewelry — bubble galaxy is the crown. Environment: black infinity studio, bubble galaxy filling full frame around figure, each bubble a miniature universe. Lighting: rainbow-spectrum studio, each bubble acting as prism creating full rainbow interior, mahogany skin warm in bubble light. Style: super BBW acoustic soap bubble galaxy editorial, sound suspending universe. Shot on Phase One XF IQ4, acoustic bubble grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: magnificent super BBW goddess, full voluminous curves commanding entire frame, thousands of giant soap bubbles levitating in acoustic nodes creating galaxy of iridescent spheres ??bubbles 5-30cm diameter suspended at precise sound field positions. Body: supremely full magnificent figure, deep mahogany skin, massive voluminous natural afro, serene commanding expression. Wearing: minimal deep purple micro dress ??soap bubbles surrounding every magnificent curve, each bubble reflecting full-body rainbow spectrum, purple patent thigh-high platform boots 5-inch heel with bubble clusters orbiting, no jewelry ??bubble galaxy is the crown. Environment: black infinity studio, bubble galaxy filling full frame around figure, each bubble a miniature universe. Lighting: rainbow-spectrum studio, each bubble acting as prism creating full rainbow interior, mahogany skin warm in bubble light. Style: super BBW acoustic soap bubble galaxy editorial, sound suspending universe. Shot on Phase One XF IQ4, acoustic bubble grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_latina_silk_thread_web",
             "name": "Silk Thread Web",
-            "prompt": "Professional fashion photograph, full body shot. Model: Colombian extreme hourglass goddess, sculpted maximum curves, hundreds of gold silk threads levitating in acoustic nodes weaving living web structure around her dramatic figure — threads suspended in complex 3D acoustic architecture. Body: extreme hourglass physique, olive-bronze skin, long dark waves threaded with gold silk caught in acoustic field. Wearing: gold micro string bikini — silk threads suspended in acoustic nodes forming elaborate golden web gown around curves, gold stiletto thigh-high platform boots 6-inch heel with thread spirals at boots, gold ear cuffs. Environment: dark opulent studio, silk thread web architecture filling frame, threads catching light as golden lines, figure at web center. Lighting: warm gold key, silk threads catching light as liquid gold lines, bronze skin glowing through thread architecture. Style: Colombian acoustic silk thread editorial, sound weaving gold. Shot on Hasselblad X2D, acoustic silk grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: Colombian extreme hourglass goddess, sculpted maximum curves, hundreds of gold silk threads levitating in acoustic nodes weaving living web structure around her dramatic figure ??threads suspended in complex 3D acoustic architecture. Body: extreme hourglass physique, olive-bronze skin, long dark waves threaded with gold silk caught in acoustic field. Wearing: gold micro string bikini ??silk threads suspended in acoustic nodes forming elaborate golden web gown around curves, gold stiletto thigh-high platform boots 6-inch heel with thread spirals at boots, gold ear cuffs. Environment: dark opulent studio, silk thread web architecture filling frame, threads catching light as golden lines, figure at web center. Lighting: warm gold key, silk threads catching light as liquid gold lines, bronze skin glowing through thread architecture. Style: Colombian acoustic silk thread editorial, sound weaving gold. Shot on Hasselblad X2D, acoustic silk grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "acoustic_bust_queen_crystal_shard",
             "name": "Crystal Shard",
-            "prompt": "Professional fashion photograph, full body shot. Model: legendary bust goddess, impossibly full bust with perfect cinched waist, hundreds of rose quartz crystal shards levitating in acoustic nodes forming living crystal armor — crystals 3-25cm suspended precisely around her figure. Body: legendary bust physique, cream skin, long auburn waves, expression fierce-regal. Wearing: minimal deep rose micro corset barely containing legendary curves — rose quartz crystals suspended in acoustic nodes forming shoulder armor, bust framework, hip panels as living crystal couture, rose gold stiletto thigh-high platform boots 5-inch heel, crystal choker with rose quartz drops. Environment: dark rose-tinted studio, rose quartz crystals filling frame with pink prismatic light, crystal architecture defining curves. Lighting: rose-pink side lighting, crystals creating total warm rose prismatic fire, cream skin luminous in rose crystal light. Style: bust queen acoustic crystal editorial, sound building rose armor. Shot on Phase One XF IQ4, acoustic crystal grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: legendary bust goddess, impossibly full bust with perfect cinched waist, hundreds of rose quartz crystal shards levitating in acoustic nodes forming living crystal armor ??crystals 3-25cm suspended precisely around her figure. Body: legendary bust physique, cream skin, long auburn waves, expression fierce-regal. Wearing: minimal deep rose micro corset barely containing legendary curves ??rose quartz crystals suspended in acoustic nodes forming shoulder armor, bust framework, hip panels as living crystal couture, rose gold stiletto thigh-high platform boots 5-inch heel, crystal choker with rose quartz drops. Environment: dark rose-tinted studio, rose quartz crystals filling frame with pink prismatic light, crystal architecture defining curves. Lighting: rose-pink side lighting, crystals creating total warm rose prismatic fire, cream skin luminous in rose crystal light. Style: bust queen acoustic crystal editorial, sound building rose armor. Shot on Phase One XF IQ4, acoustic crystal grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_amazon_lightning_arc",
             "name": "Lightning Arc",
-            "prompt": "Professional fashion photograph, full body shot. Model: 185cm amazon goddess, towering powerful physique, dozens of plasma lightning arcs levitating in acoustic nodes around her tall frame — electric arcs 10-60cm suspended in sound field creating living lightning architecture. Body: extreme tall powerful physique, bronze-copper skin, natural afro with electric edges, expression storm-commanding. Wearing: minimal silver metallic micro sports bra + micro thong — lightning arcs suspended at acoustic nodes from crown to boots creating full-body electric armor, silver chrome thigh-high platform stiletto boots 6-inch heel with arc discharge at boot tops, silver arm cuffs. Environment: dark storm studio, lightning arcs creating blue-white electric architecture around towering figure, ozone effect visible. Lighting: plasma blue-white from lightning arc positions only, figure lit by own electric constellation, bronze skin edge-lit by arc discharge. Style: amazon acoustic lightning editorial, sound commanding electricity. Shot on Hasselblad X2D, acoustic lightning grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: 185cm amazon goddess, towering powerful physique, dozens of plasma lightning arcs levitating in acoustic nodes around her tall frame ??electric arcs 10-60cm suspended in sound field creating living lightning architecture. Body: extreme tall powerful physique, bronze-copper skin, natural afro with electric edges, expression storm-commanding. Wearing: minimal silver metallic micro sports bra + micro thong ??lightning arcs suspended at acoustic nodes from crown to boots creating full-body electric armor, silver chrome thigh-high platform stiletto boots 6-inch heel with arc discharge at boot tops, silver arm cuffs. Environment: dark storm studio, lightning arcs creating blue-white electric architecture around towering figure, ozone effect visible. Lighting: plasma blue-white from lightning arc positions only, figure lit by own electric constellation, bronze skin edge-lit by arc discharge. Style: amazon acoustic lightning editorial, sound commanding electricity. Shot on Hasselblad X2D, acoustic lightning grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "acoustic_vs_angel_feather_vortex",
             "name": "Feather Vortex",
-            "prompt": "Professional fashion photograph, full body shot. Model: Victoria's Secret perfect angel physique, flawless proportions, thousands of white swan feathers levitating in acoustic upward vortex around her perfect figure — feathers tracing luminous spiral acoustic paths. Body: VS perfect hourglass physique, sun-kissed golden skin, waist-length beach waves catching feather wind, expression angelic-fierce. Wearing: white micro lace triangle bikini — feather vortex forming natural angel-wing silhouette in air around figure, individual feathers landing and lifting off perfect curves, white patent platform stiletto boots 5-inch heel with feather spirals at base, pearl drop earrings. Environment: dark ethereal studio, feather vortex rising full frame, long-exposure feather trails as white luminous spiral lines. Lighting: single overhead heavenly white beam, feathers edge-lit in white arcs, golden skin warm through feather architecture. Style: VS angel acoustic feather vortex editorial, sound building wings. Shot on Phase One XF IQ4, acoustic feather grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: Victoria's Secret perfect angel physique, flawless proportions, thousands of white swan feathers levitating in acoustic upward vortex around her perfect figure ??feathers tracing luminous spiral acoustic paths. Body: VS perfect hourglass physique, sun-kissed golden skin, waist-length beach waves catching feather wind, expression angelic-fierce. Wearing: white micro lace triangle bikini ??feather vortex forming natural angel-wing silhouette in air around figure, individual feathers landing and lifting off perfect curves, white patent platform stiletto boots 5-inch heel with feather spirals at base, pearl drop earrings. Environment: dark ethereal studio, feather vortex rising full frame, long-exposure feather trails as white luminous spiral lines. Lighting: single overhead heavenly white beam, feathers edge-lit in white arcs, golden skin warm through feather architecture. Style: VS angel acoustic feather vortex editorial, sound building wings. Shot on Phase One XF IQ4, acoustic feather grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_black_glamour_obsidian_float",
             "name": "Obsidian Float",
-            "prompt": "Professional fashion photograph, full body shot. Model: extreme black glamour goddess, maximum mocha-ebony hourglass, hundreds of polished obsidian fragments levitating in acoustic nodes creating living black mirror armor — obsidian shards 2-20cm suspended in sound field. Body: spectacular ebony hourglass physique, jet-black skin, voluminous natural coils, expression dark-regal. Wearing: minimal gold micro string bikini — obsidian fragments suspended in acoustic nodes forming dark mirror armor panels, each shard reflecting distorted gold figure multiplied, gold stiletto thigh-high platform boots 6-inch heel with obsidian clusters, gold serpent armband. Environment: deep black studio, obsidian fragments floating in constellation around figure, each shard a dark mirror, gold catching obsidian reflections. Lighting: single gold key spot, obsidian shards creating black mirror reflections of gold light, jet skin edge-lit in gold obsidian reflections. Style: black glamour acoustic obsidian editorial, sound floating darkness. Shot on Hasselblad X2D, acoustic obsidian grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: extreme black glamour goddess, maximum mocha-ebony hourglass, hundreds of polished obsidian fragments levitating in acoustic nodes creating living black mirror armor ??obsidian shards 2-20cm suspended in sound field. Body: spectacular ebony hourglass physique, jet-black skin, voluminous natural coils, expression dark-regal. Wearing: minimal gold micro string bikini ??obsidian fragments suspended in acoustic nodes forming dark mirror armor panels, each shard reflecting distorted gold figure multiplied, gold stiletto thigh-high platform boots 6-inch heel with obsidian clusters, gold serpent armband. Environment: deep black studio, obsidian fragments floating in constellation around figure, each shard a dark mirror, gold catching obsidian reflections. Lighting: single gold key spot, obsidian shards creating black mirror reflections of gold light, jet skin edge-lit in gold obsidian reflections. Style: black glamour acoustic obsidian editorial, sound floating darkness. Shot on Hasselblad X2D, acoustic obsidian grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "acoustic_hot_glamour_ember_silk",
             "name": "Ember Silk",
-            "prompt": "Professional fashion photograph, full body shot. Model: hot glamour cinched-waist goddess, perfect dramatic curves, glowing fire embers AND shredded silk threads simultaneously levitating in acoustic nodes — dual-material suspension, embers and silk interweaving around figure. Body: dramatic hot glamour hourglass, warm caramel skin, loose dark waves catching ember-wind and silk threads. Wearing: deep crimson ultra-sheer micro silk slip dress — embers suspended at acoustic nodes creating warm constellation, silk threads also suspended creating living veil between ember points, crimson stiletto thigh-high platform boots 5-inch heel, ruby drop earrings. Environment: dark romantic studio, ember+silk dual suspension filling frame, embers glowing through silk thread veil. Lighting: ember amber-warm from node positions, silk threads catching edge light as luminous lines, caramel skin warm in dual ember-silk light. Style: hot glamour acoustic ember-silk editorial, sound weaving fire and silk. Shot on Phase One XF IQ4, acoustic ember-silk grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: hot glamour cinched-waist goddess, perfect dramatic curves, glowing fire embers AND shredded silk threads simultaneously levitating in acoustic nodes ??dual-material suspension, embers and silk interweaving around figure. Body: dramatic hot glamour hourglass, warm caramel skin, loose dark waves catching ember-wind and silk threads. Wearing: deep crimson ultra-sheer micro silk slip dress ??embers suspended at acoustic nodes creating warm constellation, silk threads also suspended creating living veil between ember points, crimson stiletto thigh-high platform boots 5-inch heel, ruby drop earrings. Environment: dark romantic studio, ember+silk dual suspension filling frame, embers glowing through silk thread veil. Lighting: ember amber-warm from node positions, silk threads catching edge light as luminous lines, caramel skin warm in dual ember-silk light. Style: hot glamour acoustic ember-silk editorial, sound weaving fire and silk. Shot on Phase One XF IQ4, acoustic ember-silk grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_brazil_petal_carnival",
             "name": "Petal Carnival",
-            "prompt": "Professional fashion photograph, full body shot. Model: Brazilian carnival booty goddess, maximum dramatic hip-to-waist ratio, extreme full hips, thousands of tropical carnival feathers AND petals simultaneously levitating in acoustic nodes — carnival atmosphere suspended in sound field. Body: extreme Brazilian carnival physique, rich terra-cotta skin, voluminous dark carnival waves adorned with suspended petals. Wearing: minimal carnival micro samba bikini in gold and tropical colors — feathers and petals suspended at acoustic nodes forming full carnival costume silhouette in air, gold platform carnival boots 5-inch heel with feather clusters, carnival gold headdress elements levitating in formation. Environment: dark carnival studio, feather-petal suspension filling frame as living carnival costume, figure at celebration center. Lighting: warm carnival gold-amber, feathers and petals catching light as carnival fire, terra-cotta skin golden in carnival light. Style: Brazilian acoustic carnival editorial, sound building carnival costume. Shot on Hasselblad X2D, acoustic carnival grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: Brazilian carnival booty goddess, maximum dramatic hip-to-waist ratio, extreme full hips, thousands of tropical carnival feathers AND petals simultaneously levitating in acoustic nodes ??carnival atmosphere suspended in sound field. Body: extreme Brazilian carnival physique, rich terra-cotta skin, voluminous dark carnival waves adorned with suspended petals. Wearing: minimal carnival micro samba bikini in gold and tropical colors ??feathers and petals suspended at acoustic nodes forming full carnival costume silhouette in air, gold platform carnival boots 5-inch heel with feather clusters, carnival gold headdress elements levitating in formation. Environment: dark carnival studio, feather-petal suspension filling frame as living carnival costume, figure at celebration center. Lighting: warm carnival gold-amber, feathers and petals catching light as carnival fire, terra-cotta skin golden in carnival light. Style: Brazilian acoustic carnival editorial, sound building carnival costume. Shot on Hasselblad X2D, acoustic carnival grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "acoustic_supermodel_glass_bead_curtain",
             "name": "Glass Bead Curtain",
-            "prompt": "Professional fashion photograph, full body shot. Model: 185cm+ supermodel extreme tall goddess, impossibly long legs, thousands of crystal glass beads levitating in acoustic nodes forming full-length bead curtain wall she stands within — beads 1-3cm diameter at precise sound positions. Body: extreme tall supermodel physique, alabaster skin, severe sleek high ponytail, cheekbones cutting, expression high-fashion-cold. Wearing: minimal white micro bandeau + micro thong — glass bead curtain surrounding tall figure, beads at multiple acoustic layers creating transparent crystal room around her, clear platform stiletto mules 6-inch heel at bead curtain base, single geometric crystal ear cuff. Environment: white studio, full-length crystal bead curtain filling frame floor to ceiling around tall figure, each bead prismatic point of light. Lighting: overhead white spot, beads creating prismatic crystal fire ceiling to floor, alabaster skin through crystal architecture. Style: supermodel acoustic glass bead editorial, sound making crystal room. Shot on Phase One XF IQ4, acoustic bead grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: 185cm+ supermodel extreme tall goddess, impossibly long legs, thousands of crystal glass beads levitating in acoustic nodes forming full-length bead curtain wall she stands within ??beads 1-3cm diameter at precise sound positions. Body: extreme tall supermodel physique, alabaster skin, severe sleek high ponytail, cheekbones cutting, expression high-fashion-cold. Wearing: minimal white micro bandeau + micro thong ??glass bead curtain surrounding tall figure, beads at multiple acoustic layers creating transparent crystal room around her, clear platform stiletto mules 6-inch heel at bead curtain base, single geometric crystal ear cuff. Environment: white studio, full-length crystal bead curtain filling frame floor to ceiling around tall figure, each bead prismatic point of light. Lighting: overhead white spot, beads creating prismatic crystal fire ceiling to floor, alabaster skin through crystal architecture. Style: supermodel acoustic glass bead editorial, sound making crystal room. Shot on Phase One XF IQ4, acoustic bead grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_powerlifter_steel_chain",
             "name": "Steel Chain",
-            "prompt": "Professional fashion photograph, full body shot. Model: powerlifter muscle goddess, extreme defined musculature with feminine curves, dozens of heavy steel chains levitating in acoustic nodes around powerful figure — chains 1-3cm link, 30-80cm lengths, suspended in sound field. Body: extreme powerlifter physique, defined everywhere, bronze-iron skin, severe warrior braid, expression iron-fierce. Wearing: minimal matte black micro sports bra + micro shorts — steel chains suspended at acoustic nodes from crown to boots forming chain armor, each chain link catching hard light as metal lightning, matte black platform combat boots 5-inch with chain clusters orbiting, iron cuff bracelets. Environment: dark industrial forge, chains hanging from acoustic nodes in perfect geometry around figure, steam visible. Lighting: forge-hard directional industrial, chain links creating metal specular grid, bronze skin in chiaroscuro between chain armor. Style: powerlifter acoustic steel chain editorial, sound suspending iron. Shot on Hasselblad X2D, acoustic steel grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: powerlifter muscle goddess, extreme defined musculature with feminine curves, dozens of heavy steel chains levitating in acoustic nodes around powerful figure ??chains 1-3cm link, 30-80cm lengths, suspended in sound field. Body: extreme powerlifter physique, defined everywhere, bronze-iron skin, severe warrior braid, expression iron-fierce. Wearing: minimal matte black micro sports bra + micro shorts ??steel chains suspended at acoustic nodes from crown to boots forming chain armor, each chain link catching hard light as metal lightning, matte black platform combat boots 5-inch with chain clusters orbiting, iron cuff bracelets. Environment: dark industrial forge, chains hanging from acoustic nodes in perfect geometry around figure, steam visible. Lighting: forge-hard directional industrial, chain links creating metal specular grid, bronze skin in chiaroscuro between chain armor. Style: powerlifter acoustic steel chain editorial, sound suspending iron. Shot on Hasselblad X2D, acoustic steel grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "acoustic_miniature_snow_globe",
             "name": "Snow Globe",
-            "prompt": "Professional fashion photograph, full body shot. Model: petite miniature goddess, 148cm ultra-compact perfect figure, inside acoustic snow globe effect — thousands of tiny snowflakes and glitter suspended in acoustic nodes creating snow globe atmosphere around tiny figure. Body: ultra-petite compact figure, porcelain skin, platinum hair in perfect ballerina bun, expression wide-eyed ethereal. Wearing: ultra-minimal white micro ballet leotard — snowflakes and silver glitter suspended at every acoustic node position surrounding tiny figure creating living snow globe, transparent platform crystal heels 4-inch, snowflake crystal hair pins in bun. Environment: dark studio, snowflake-glitter suspension surrounding entire tiny figure creating perfect snow globe effect, figure as snow globe figurine. Lighting: cool blue-white overhead, snowflakes creating crystalline light scatter, porcelain skin luminous in snow globe atmosphere. Style: miniature acoustic snow globe editorial, sound making winter. Shot on Phase One XF IQ4, acoustic snow grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: petite miniature goddess, 148cm ultra-compact perfect figure, inside acoustic snow globe effect ??thousands of tiny snowflakes and glitter suspended in acoustic nodes creating snow globe atmosphere around tiny figure. Body: ultra-petite compact figure, porcelain skin, platinum hair in perfect ballerina bun, expression wide-eyed ethereal. Wearing: ultra-minimal white micro ballet leotard ??snowflakes and silver glitter suspended at every acoustic node position surrounding tiny figure creating living snow globe, transparent platform crystal heels 4-inch, snowflake crystal hair pins in bun. Environment: dark studio, snowflake-glitter suspension surrounding entire tiny figure creating perfect snow globe effect, figure as snow globe figurine. Lighting: cool blue-white overhead, snowflakes creating crystalline light scatter, porcelain skin luminous in snow globe atmosphere. Style: miniature acoustic snow globe editorial, sound making winter. Shot on Phase One XF IQ4, acoustic snow grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
     ],
-    "🔥 Body × Element Glamour": [
+    "?뵦 Body 횞 Element Glamour": [
         {
             "id": "element_super_glamour_fire_goddess",
             "name": "Fire Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: supreme hourglass fire goddess, impossibly cinched waist, maximum curves, standing at center of active volcanic fire field — real fire elements responding to her body. Body: spectacular extreme hourglass, deep copper skin glowing in fire light, voluminous dark waves with fire-touched edges. Wearing: minimal deep red metallic micro string bikini — fire licking at curves from below, heat distortion visible around perfect silhouette, red patent thigh-high platform stiletto boots 6-inch heel, ruby fire crystal choker. Environment: active volcano edge, lava pools below, fire pillars rising around figure, volcanic atmosphere. Lighting: volcanic amber-red from all fire positions, molten glow on copper skin from below and sides, dramatic volcanic chiaroscuro. Style: super glamour elemental fire goddess editorial. Shot on Phase One XF IQ4, volcanic fire grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: supreme hourglass fire goddess, impossibly cinched waist, maximum curves, standing at center of active volcanic fire field ??real fire elements responding to her body. Body: spectacular extreme hourglass, deep copper skin glowing in fire light, voluminous dark waves with fire-touched edges. Wearing: minimal deep red metallic micro string bikini ??fire licking at curves from below, heat distortion visible around perfect silhouette, red patent thigh-high platform stiletto boots 6-inch heel, ruby fire crystal choker. Environment: active volcano edge, lava pools below, fire pillars rising around figure, volcanic atmosphere. Lighting: volcanic amber-red from all fire positions, molten glow on copper skin from below and sides, dramatic volcanic chiaroscuro. Style: super glamour elemental fire goddess editorial. Shot on Phase One XF IQ4, volcanic fire grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "element_bbw_water_goddess",
             "name": "Water Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: supreme BBW water goddess, magnificent full figure commanding ocean waves — water elements responding and conforming to her body. Body: supremely full magnificent figure, deep ebony skin, voluminous natural locs with water droplets, serene commanding expression. Wearing: minimal deep blue micro string bikini — ocean waves rising and wrapping around full magnificent figure, water conforming to every curve as living water dress, blue patent thigh-high platform stiletto boots 5-inch heel in surf, no jewelry — ocean is the crown. Environment: dramatic ocean shore, storm waves rising and bowing to figure, seafoam at her command. Lighting: stormy silver-blue ocean light, white water catching light against ebony skin, dramatic sky behind. Style: super BBW elemental water goddess editorial. Shot on Hasselblad X2D, ocean storm grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: supreme BBW water goddess, magnificent full figure commanding ocean waves ??water elements responding and conforming to her body. Body: supremely full magnificent figure, deep ebony skin, voluminous natural locs with water droplets, serene commanding expression. Wearing: minimal deep blue micro string bikini ??ocean waves rising and wrapping around full magnificent figure, water conforming to every curve as living water dress, blue patent thigh-high platform stiletto boots 5-inch heel in surf, no jewelry ??ocean is the crown. Environment: dramatic ocean shore, storm waves rising and bowing to figure, seafoam at her command. Lighting: stormy silver-blue ocean light, white water catching light against ebony skin, dramatic sky behind. Style: super BBW elemental water goddess editorial. Shot on Hasselblad X2D, ocean storm grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "element_amazon_lightning_goddess",
             "name": "Lightning Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: 185cm amazon lightning goddess, towering powerful physique commanding storm — lightning responding to her raised hand. Body: extreme tall powerful physique, bronze-copper skin, natural afro with electric corona, storm-commanding expression. Wearing: minimal silver metallic micro sports bra + micro thong — lightning bolts arcing to and from her body from multiple directions, silver chrome thigh-high platform stiletto boots 6-inch heel, silver armband and ankle cuffs. Environment: open storm field, multiple lightning strikes around figure, purple-charged atmosphere, dark storm sky. Lighting: lightning-flash electric blue-white from multiple arc positions, bronze skin in electric strobe, storm atmosphere. Style: amazon elemental lightning goddess editorial. Shot on Phase One XF IQ4, electric storm grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: 185cm amazon lightning goddess, towering powerful physique commanding storm ??lightning responding to her raised hand. Body: extreme tall powerful physique, bronze-copper skin, natural afro with electric corona, storm-commanding expression. Wearing: minimal silver metallic micro sports bra + micro thong ??lightning bolts arcing to and from her body from multiple directions, silver chrome thigh-high platform stiletto boots 6-inch heel, silver armband and ankle cuffs. Environment: open storm field, multiple lightning strikes around figure, purple-charged atmosphere, dark storm sky. Lighting: lightning-flash electric blue-white from multiple arc positions, bronze skin in electric strobe, storm atmosphere. Style: amazon elemental lightning goddess editorial. Shot on Phase One XF IQ4, electric storm grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "element_petite_wind_goddess",
             "name": "Wind Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: petite miniature wind goddess, ultra-compact tiny figure commanding massive wind currents — wind elements creating scale contrast with small figure. Body: ultra-petite compact figure, ivory skin, platinum hair exploding in wind vortex dramatically larger than tiny body. Wearing: ultra-minimal white micro silk slip dress — fabric caught in wind vortex creating massive white flag behind tiny figure, white platform stiletto boots 4-inch heel standing in wind center, no jewelry — wind is everything. Environment: open cliff edge, massive wind current visible through fabric and hair movement, dramatic sky scale-contrasting tiny figure. Lighting: dramatic natural side light, wind-caught fabric creating massive luminous white shape against dark sky, tiny figure as wind goddess axis. Style: petite elemental wind goddess editorial, small figure commanding vast forces. Shot on Hasselblad X2D, wind cliff grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: petite miniature wind goddess, ultra-compact tiny figure commanding massive wind currents ??wind elements creating scale contrast with small figure. Body: ultra-petite compact figure, ivory skin, platinum hair exploding in wind vortex dramatically larger than tiny body. Wearing: ultra-minimal white micro silk slip dress ??fabric caught in wind vortex creating massive white flag behind tiny figure, white platform stiletto boots 4-inch heel standing in wind center, no jewelry ??wind is everything. Environment: open cliff edge, massive wind current visible through fabric and hair movement, dramatic sky scale-contrasting tiny figure. Lighting: dramatic natural side light, wind-caught fabric creating massive luminous white shape against dark sky, tiny figure as wind goddess axis. Style: petite elemental wind goddess editorial, small figure commanding vast forces. Shot on Hasselblad X2D, wind cliff grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "element_bust_queen_lava_goddess",
             "name": "Lava Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: legendary bust goddess commanding lava flows — molten rock elements parting and conforming around her legendary figure. Body: legendary bust physique, cream-golden skin lit from below by lava, auburn waves with heat-shimmer edges. Wearing: minimal black metallic micro corset — lava flows parting around her boots, heat distortion creating shimmering aura around legendary curves, black patent thigh-high platform boots 5-inch heel on cooled lava rock, obsidian choker. Environment: active lava field, molten lava flows parting around her like sea, volcanic steam rising, red sky. Lighting: lava red-orange from below and sides, molten glow on cream skin from rising lava light, volcanic atmospheric depth. Style: bust queen elemental lava goddess editorial. Shot on Phase One XF IQ4, volcanic lava grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: legendary bust goddess commanding lava flows ??molten rock elements parting and conforming around her legendary figure. Body: legendary bust physique, cream-golden skin lit from below by lava, auburn waves with heat-shimmer edges. Wearing: minimal black metallic micro corset ??lava flows parting around her boots, heat distortion creating shimmering aura around legendary curves, black patent thigh-high platform boots 5-inch heel on cooled lava rock, obsidian choker. Environment: active lava field, molten lava flows parting around her like sea, volcanic steam rising, red sky. Lighting: lava red-orange from below and sides, molten glow on cream skin from rising lava light, volcanic atmospheric depth. Style: bust queen elemental lava goddess editorial. Shot on Phase One XF IQ4, volcanic lava grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "element_latina_storm_goddess",
             "name": "Storm Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: Colombian storm goddess, extreme hourglass commanding tropical storm — wind, rain, and lightning responding to her dramatic figure. Body: extreme Colombian hourglass, olive-copper skin soaked in storm rain, dark waves plastered in perfect storm-goddess formation. Wearing: minimal gold micro string bikini — soaked gold fabric clinging to every extreme curve, rain cascading off dramatic silhouette, storm lightning behind, gold stiletto thigh-high platform boots 6-inch heel in storm water, gold ear studs. Environment: tropical storm epicenter, horizontal rain, lightning behind, palm trees bending, storm surge around boots. Lighting: storm lightning flash + warm amber from below, wet bronze skin in electric storm light, dramatic storm atmosphere. Style: Colombian elemental storm goddess editorial, Formula D wet variant. Shot on Hasselblad X2D, tropical storm grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: Colombian storm goddess, extreme hourglass commanding tropical storm ??wind, rain, and lightning responding to her dramatic figure. Body: extreme Colombian hourglass, olive-copper skin soaked in storm rain, dark waves plastered in perfect storm-goddess formation. Wearing: minimal gold micro string bikini ??soaked gold fabric clinging to every extreme curve, rain cascading off dramatic silhouette, storm lightning behind, gold stiletto thigh-high platform boots 6-inch heel in storm water, gold ear studs. Environment: tropical storm epicenter, horizontal rain, lightning behind, palm trees bending, storm surge around boots. Lighting: storm lightning flash + warm amber from below, wet bronze skin in electric storm light, dramatic storm atmosphere. Style: Colombian elemental storm goddess editorial, Formula D wet variant. Shot on Hasselblad X2D, tropical storm grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "element_vs_angel_ice_goddess",
             "name": "Ice Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: VS perfect angel ice goddess, flawless proportions commanding arctic ice — ice elements forming around her perfect body. Body: VS perfect hourglass, snow-pale skin, ice-white waves, expression cold-angelic. Wearing: minimal white micro lace bikini — ice crystals forming on skin and fabric creating ice angel wings behind, frost patterns on perfect curves, white platform crystal heel boots 5-inch with ice formations, diamond ice choker. Environment: arctic glacier, ice formations rising around her, aurora borealis above, frozen breath visible. Lighting: aurora blue-green + ice crystal white reflection, pale skin luminous in arctic light, ice formations catching aurora. Style: VS angel elemental ice goddess editorial. Shot on Phase One XF IQ4, arctic ice grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: VS perfect angel ice goddess, flawless proportions commanding arctic ice ??ice elements forming around her perfect body. Body: VS perfect hourglass, snow-pale skin, ice-white waves, expression cold-angelic. Wearing: minimal white micro lace bikini ??ice crystals forming on skin and fabric creating ice angel wings behind, frost patterns on perfect curves, white platform crystal heel boots 5-inch with ice formations, diamond ice choker. Environment: arctic glacier, ice formations rising around her, aurora borealis above, frozen breath visible. Lighting: aurora blue-green + ice crystal white reflection, pale skin luminous in arctic light, ice formations catching aurora. Style: VS angel elemental ice goddess editorial. Shot on Phase One XF IQ4, arctic ice grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "element_black_glamour_void_goddess",
             "name": "Void Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: extreme black glamour void goddess, maximum ebony hourglass commanding cosmic void — darkness and stars responding to her figure. Body: spectacular jet-black hourglass, deep ebony skin absorbing light, voluminous natural coils with star-dust edges, expression cosmic-commanding. Wearing: minimal galaxy-pattern micro string bikini — cosmic void opening around her figure, stars and nebula swirling, darkness responding to curve, gold thigh-high platform stiletto boots 6-inch heel in starfield, constellation choker. Environment: cosmic void backdrop, galaxies and nebulae swirling around figure, stars orbiting her silhouette, infinite dark space. Lighting: cosmic starlight from all galaxy positions, pure ebony skin as void center, stars edge-lighting black curves. Style: black glamour elemental void goddess editorial. Shot on Hasselblad X2D, cosmic void grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: extreme black glamour void goddess, maximum ebony hourglass commanding cosmic void ??darkness and stars responding to her figure. Body: spectacular jet-black hourglass, deep ebony skin absorbing light, voluminous natural coils with star-dust edges, expression cosmic-commanding. Wearing: minimal galaxy-pattern micro string bikini ??cosmic void opening around her figure, stars and nebula swirling, darkness responding to curve, gold thigh-high platform stiletto boots 6-inch heel in starfield, constellation choker. Environment: cosmic void backdrop, galaxies and nebulae swirling around figure, stars orbiting her silhouette, infinite dark space. Lighting: cosmic starlight from all galaxy positions, pure ebony skin as void center, stars edge-lighting black curves. Style: black glamour elemental void goddess editorial. Shot on Hasselblad X2D, cosmic void grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "element_hot_glamour_plasma_goddess",
             "name": "Plasma Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: hot glamour plasma goddess, dramatic cinched-waist curves commanding plasma energy — solar plasma elements conforming to her dramatic figure. Body: dramatic hot glamour hourglass, warm caramel skin with plasma glow, loose dark waves with plasma-energy edges. Wearing: minimal solar-gold micro string bikini — plasma energy tendrils rising from skin surface, solar flare elements conforming to dramatic curves, gold stiletto thigh-high platform boots 5-inch heel with plasma orbiting, solar gold choker. Environment: solar atmosphere, plasma loops rising around figure, solar flare backdrop, intense solar energy. Lighting: solar plasma orange-gold from all plasma positions, warm caramel skin blazing in solar energy, plasma creating atmospheric depth. Style: hot glamour elemental plasma goddess editorial. Shot on Phase One XF IQ4, solar plasma grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: hot glamour plasma goddess, dramatic cinched-waist curves commanding plasma energy ??solar plasma elements conforming to her dramatic figure. Body: dramatic hot glamour hourglass, warm caramel skin with plasma glow, loose dark waves with plasma-energy edges. Wearing: minimal solar-gold micro string bikini ??plasma energy tendrils rising from skin surface, solar flare elements conforming to dramatic curves, gold stiletto thigh-high platform boots 5-inch heel with plasma orbiting, solar gold choker. Environment: solar atmosphere, plasma loops rising around figure, solar flare backdrop, intense solar energy. Lighting: solar plasma orange-gold from all plasma positions, warm caramel skin blazing in solar energy, plasma creating atmospheric depth. Style: hot glamour elemental plasma goddess editorial. Shot on Phase One XF IQ4, solar plasma grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "element_brazil_earth_goddess",
             "name": "Earth Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: Brazilian earth goddess, maximum dramatic hip ratio commanding earth elements — soil, roots, flowers responding to her generous curves. Body: extreme Brazilian hip physique, rich terra-cotta earth skin, voluminous dark waves entwined with living vines and flowers. Wearing: minimal tropical flower micro bikini — earth vines rising and wrapping around generous curves, tropical flowers blooming at hip line, terra-cotta platform wedge boots 5-inch heel in rich earth, flower crown forming naturally. Environment: lush tropical jungle floor, earth responding to her presence, roots parting, flowers blooming, green canopy above. Lighting: dappled jungle light, warm earth-gold filtering through canopy, terra-cotta skin warm in earth-filtered light. Style: Brazilian elemental earth goddess editorial. Shot on Hasselblad X2D, earth goddess grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: Brazilian earth goddess, maximum dramatic hip ratio commanding earth elements ??soil, roots, flowers responding to her generous curves. Body: extreme Brazilian hip physique, rich terra-cotta earth skin, voluminous dark waves entwined with living vines and flowers. Wearing: minimal tropical flower micro bikini ??earth vines rising and wrapping around generous curves, tropical flowers blooming at hip line, terra-cotta platform wedge boots 5-inch heel in rich earth, flower crown forming naturally. Environment: lush tropical jungle floor, earth responding to her presence, roots parting, flowers blooming, green canopy above. Lighting: dappled jungle light, warm earth-gold filtering through canopy, terra-cotta skin warm in earth-filtered light. Style: Brazilian elemental earth goddess editorial. Shot on Hasselblad X2D, earth goddess grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "element_supermodel_aurora_goddess",
             "name": "Aurora Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: 185cm+ supermodel aurora goddess, extreme tall commanding northern lights — aurora elements responding and bending toward her tall figure. Body: extreme tall supermodel physique, alabaster skin, sleek dark hair absorbing aurora colors, expression ethereal-commanding. Wearing: minimal iridescent micro string bikini shifting aurora colors — aurora curtains bending toward and around extreme tall figure, aurora conforming to long silhouette, clear platform stiletto mules 6-inch heel, aurora crystal ear cuff. Environment: iceland aurora field, full aurora display bending toward figure, reflected in snow below, infinite arctic sky. Lighting: full aurora spectrum green-purple-blue from multiple sky positions, alabaster skin catching aurora color shifts, aurora responding to tall goddess presence. Style: supermodel elemental aurora goddess editorial. Shot on Phase One XF IQ4, aurora grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: 185cm+ supermodel aurora goddess, extreme tall commanding northern lights ??aurora elements responding and bending toward her tall figure. Body: extreme tall supermodel physique, alabaster skin, sleek dark hair absorbing aurora colors, expression ethereal-commanding. Wearing: minimal iridescent micro string bikini shifting aurora colors ??aurora curtains bending toward and around extreme tall figure, aurora conforming to long silhouette, clear platform stiletto mules 6-inch heel, aurora crystal ear cuff. Environment: iceland aurora field, full aurora display bending toward figure, reflected in snow below, infinite arctic sky. Lighting: full aurora spectrum green-purple-blue from multiple sky positions, alabaster skin catching aurora color shifts, aurora responding to tall goddess presence. Style: supermodel elemental aurora goddess editorial. Shot on Phase One XF IQ4, aurora grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "element_powerlifter_volcano_goddess",
             "name": "Volcano Goddess",
-            "prompt": "Professional fashion photograph, full body shot. Model: powerlifter muscle volcano goddess, extreme defined musculature with feminine power commanding volcanic eruption — volcanic elements responding to her iron strength. Body: extreme powerlifter physique, defined everywhere, bronze-iron skin glowing in volcanic light, severe warrior braid with volcanic ash. Wearing: minimal matte black micro sports bra + micro shorts — volcanic ash and embers orbiting powerful figure, volcanic energy rising from boot positions, matte black combat platform boots 5-inch heel on volcanic rock, iron cuff bracelets. Environment: active volcano crater rim, eruption behind her, volcanic ash cloud, lava below, power stance at eruption axis. Lighting: volcanic orange-red from eruption behind + lava below, iron skin in volcanic chiaroscuro, eruption creating dramatic silhouette edge-lighting. Style: powerlifter elemental volcano goddess editorial. Shot on Hasselblad X2D, volcanic eruption grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: powerlifter muscle volcano goddess, extreme defined musculature with feminine power commanding volcanic eruption ??volcanic elements responding to her iron strength. Body: extreme powerlifter physique, defined everywhere, bronze-iron skin glowing in volcanic light, severe warrior braid with volcanic ash. Wearing: minimal matte black micro sports bra + micro shorts ??volcanic ash and embers orbiting powerful figure, volcanic energy rising from boot positions, matte black combat platform boots 5-inch heel on volcanic rock, iron cuff bracelets. Environment: active volcano crater rim, eruption behind her, volcanic ash cloud, lava below, power stance at eruption axis. Lighting: volcanic orange-red from eruption behind + lava below, iron skin in volcanic chiaroscuro, eruption creating dramatic silhouette edge-lighting. Style: powerlifter elemental volcano goddess editorial. Shot on Hasselblad X2D, volcanic eruption grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
     ],
-    "💃 Body × Luxury Setting Glamour": [
+    "?뭴 Body 횞 Luxury Setting Glamour": [
         {
             "id": "luxury_super_glamour_versailles",
             "name": "Versailles",
-            "prompt": "Professional fashion photograph, full body shot. Model: supreme hourglass goddess commanding Hall of Mirrors Versailles — perfect figure as living sculpture among gold and glass. Body: spectacular extreme hourglass, golden skin, voluminous champagne waves, expression regal-commanding. Wearing: ultra-minimal gold micro string bikini — barely there against Hall of Mirrors grandeur, gold stiletto thigh-high platform boots 6-inch heel on marble floor, diamond choker, long white opera gloves. Environment: Hall of Mirrors Versailles, gold and crystal chandeliers, infinite mirror reflections, perfect parquet floor, golden afternoon light through arched windows. Lighting: warm Versailles gold through arched windows + chandelier crystal diffusion, golden skin luminous in palace light, infinite mirror reflections of perfect figure. Style: super glamour luxury Versailles editorial. Shot on Hasselblad X2D, Versailles gold grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: supreme hourglass goddess commanding Hall of Mirrors Versailles ??perfect figure as living sculpture among gold and glass. Body: spectacular extreme hourglass, golden skin, voluminous champagne waves, expression regal-commanding. Wearing: ultra-minimal gold micro string bikini ??barely there against Hall of Mirrors grandeur, gold stiletto thigh-high platform boots 6-inch heel on marble floor, diamond choker, long white opera gloves. Environment: Hall of Mirrors Versailles, gold and crystal chandeliers, infinite mirror reflections, perfect parquet floor, golden afternoon light through arched windows. Lighting: warm Versailles gold through arched windows + chandelier crystal diffusion, golden skin luminous in palace light, infinite mirror reflections of perfect figure. Style: super glamour luxury Versailles editorial. Shot on Hasselblad X2D, Versailles gold grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "luxury_bbw_monaco_yacht",
             "name": "Monaco Yacht",
-            "prompt": "Professional fashion photograph, full body shot. Model: magnificent BBW goddess commanding Monaco superyacht deck — full magnificent figure owning the Mediterranean. Body: supremely full magnificent figure, deep mahogany skin, voluminous locs, expression owning-everything. Wearing: minimal deep navy micro string bikini — full figure against Monaco coastline backdrop, navy patent thigh-high platform boots 5-inch heel on teak deck, gold yacht anchor choker. Environment: Monaco superyacht deck, Monte Carlo visible behind, Mediterranean blue, other yachts, luxury deck furniture, champagne visible. Lighting: golden Mediterranean afternoon, warm mahogany skin in Mediterranean gold light, Monaco sparkle behind. Style: BBW luxury Monaco yacht editorial. Shot on Phase One XF IQ4, Mediterranean gold grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: magnificent BBW goddess commanding Monaco superyacht deck ??full magnificent figure owning the Mediterranean. Body: supremely full magnificent figure, deep mahogany skin, voluminous locs, expression owning-everything. Wearing: minimal deep navy micro string bikini ??full figure against Monaco coastline backdrop, navy patent thigh-high platform boots 5-inch heel on teak deck, gold yacht anchor choker. Environment: Monaco superyacht deck, Monte Carlo visible behind, Mediterranean blue, other yachts, luxury deck furniture, champagne visible. Lighting: golden Mediterranean afternoon, warm mahogany skin in Mediterranean gold light, Monaco sparkle behind. Style: BBW luxury Monaco yacht editorial. Shot on Phase One XF IQ4, Mediterranean gold grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "luxury_amazon_dubai_penthouse",
             "name": "Dubai Penthouse",
-            "prompt": "Professional fashion photograph, full body shot. Model: 185cm amazon goddess commanding Dubai penthouse — towering figure against Burj Khalifa skyline. Body: extreme tall powerful physique, copper skin, natural afro, expression commanding city below. Wearing: minimal gold metallic micro sports bra + micro thong — tall figure against full Dubai skyline, gold chrome thigh-high platform stiletto boots 6-inch heel on penthouse edge, gold cuff. Environment: Dubai penthouse top floor, floor-to-ceiling glass, Burj Khalifa visible, city lights below, infinity pool reflecting skyline. Lighting: golden Dubai sunset on copper skin, city lights beginning below, penthouse luxury atmosphere. Style: amazon luxury Dubai penthouse editorial. Shot on Hasselblad X2D, Dubai gold grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: 185cm amazon goddess commanding Dubai penthouse ??towering figure against Burj Khalifa skyline. Body: extreme tall powerful physique, copper skin, natural afro, expression commanding city below. Wearing: minimal gold metallic micro sports bra + micro thong ??tall figure against full Dubai skyline, gold chrome thigh-high platform stiletto boots 6-inch heel on penthouse edge, gold cuff. Environment: Dubai penthouse top floor, floor-to-ceiling glass, Burj Khalifa visible, city lights below, infinity pool reflecting skyline. Lighting: golden Dubai sunset on copper skin, city lights beginning below, penthouse luxury atmosphere. Style: amazon luxury Dubai penthouse editorial. Shot on Hasselblad X2D, Dubai gold grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "luxury_latina_rio_carnival",
             "name": "Rio Carnival",
-            "prompt": "Professional fashion photograph, full body shot. Model: Colombian extreme hourglass at Rio Carnival sambadrome — dramatic curves commanding carnival grandeur. Body: extreme Colombian hourglass, warm olive-bronze skin, massive carnival waves adorned with feathers. Wearing: minimal carnival gold micro samba bikini — dramatic curves in ultimate carnival setting, gold carnival platform boots 5-inch, full carnival feather headdress, carnival body jewels at waist. Environment: Rio Carnival sambadrome, parade floats, carnival performers, massive crowd, exploding carnival energy, fireworks above. Lighting: carnival flood lights + fireworks in sky, warm bronze skin in carnival gold light, carnival spectacle. Style: Colombian luxury Rio Carnival editorial. Shot on Phase One XF IQ4, carnival gold grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: Colombian extreme hourglass at Rio Carnival sambadrome ??dramatic curves commanding carnival grandeur. Body: extreme Colombian hourglass, warm olive-bronze skin, massive carnival waves adorned with feathers. Wearing: minimal carnival gold micro samba bikini ??dramatic curves in ultimate carnival setting, gold carnival platform boots 5-inch, full carnival feather headdress, carnival body jewels at waist. Environment: Rio Carnival sambadrome, parade floats, carnival performers, massive crowd, exploding carnival energy, fireworks above. Lighting: carnival flood lights + fireworks in sky, warm bronze skin in carnival gold light, carnival spectacle. Style: Colombian luxury Rio Carnival editorial. Shot on Phase One XF IQ4, carnival gold grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "luxury_bust_queen_milan_couture",
             "name": "Milan Couture",
-            "prompt": "Professional fashion photograph, full body shot. Model: legendary bust goddess commanding Milan couture runway — legendary figure redefining haute couture. Body: legendary bust physique, cream skin, auburn waves, expression haute couture regal. Wearing: minimal deep cream micro corset — legendary figure on Milan white runway, cream patent thigh-high platform boots 5-inch heel, crystal choker, white runway atmosphere. Environment: Milan Fashion Week runway, front row visible, flashes, white runway lights, fashion world elite. Lighting: runway hard white overhead + fashion photography flash, cream skin luminous in couture light, fashion week grandeur. Style: bust queen luxury Milan couture editorial. Shot on Hasselblad X2D, couture white grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: legendary bust goddess commanding Milan couture runway ??legendary figure redefining haute couture. Body: legendary bust physique, cream skin, auburn waves, expression haute couture regal. Wearing: minimal deep cream micro corset ??legendary figure on Milan white runway, cream patent thigh-high platform boots 5-inch heel, crystal choker, white runway atmosphere. Environment: Milan Fashion Week runway, front row visible, flashes, white runway lights, fashion world elite. Lighting: runway hard white overhead + fashion photography flash, cream skin luminous in couture light, fashion week grandeur. Style: bust queen luxury Milan couture editorial. Shot on Hasselblad X2D, couture white grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "luxury_vs_angel_paris_runway",
             "name": "Paris VS Runway",
-            "prompt": "Professional fashion photograph, full body shot. Model: VS perfect angel on Paris runway — flawless proportions commanding fashion world attention. Body: VS perfect hourglass, golden skin, beach waves, expression angel-fierce. Wearing: minimal white micro lace VS Fantasy Bra — full VS angel runway look, white platform stiletto boots 5-inch heel, fantasy diamond bra statement piece, VS angel wings deployed. Environment: Paris runway, Eiffel Tower visible through venue windows, French fashion elite front row, explosion of flashbulbs, Paris runway energy. Lighting: Paris runway spot + flashbulb explosion, golden skin in runway light, Eiffel Tower Paris backdrop. Style: VS angel luxury Paris runway editorial. Shot on Phase One XF IQ4, Paris runway grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: VS perfect angel on Paris runway ??flawless proportions commanding fashion world attention. Body: VS perfect hourglass, golden skin, beach waves, expression angel-fierce. Wearing: minimal white micro lace VS Fantasy Bra ??full VS angel runway look, white platform stiletto boots 5-inch heel, fantasy diamond bra statement piece, VS angel wings deployed. Environment: Paris runway, Eiffel Tower visible through venue windows, French fashion elite front row, explosion of flashbulbs, Paris runway energy. Lighting: Paris runway spot + flashbulb explosion, golden skin in runway light, Eiffel Tower Paris backdrop. Style: VS angel luxury Paris runway editorial. Shot on Phase One XF IQ4, Paris runway grade, portrait 2:3 vertical.",
             "tier": "HOF"
         },
         {
             "id": "luxury_black_glamour_nyc_rooftop",
             "name": "NYC Rooftop",
-            "prompt": "Professional fashion photograph, full body shot. Model: extreme black glamour goddess commanding NYC rooftop — maximum ebony figure owning Manhattan skyline. Body: spectacular jet-black hourglass, deep ebony skin, voluminous natural coils, expression owning the night. Wearing: minimal all-black micro string bikini — jet figure against Manhattan night skyline, black patent thigh-high platform boots 6-inch heel on rooftop edge, diamond constellation choker. Environment: Manhattan rooftop, Empire State Building lit behind, Times Square glow below, helicopter lights, NYC night energy. Lighting: NYC ambient night light, diamond choker catching city light, ebony skin in Manhattan night atmosphere. Style: black glamour luxury NYC rooftop editorial. Shot on Hasselblad X2D, NYC night grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: extreme black glamour goddess commanding NYC rooftop ??maximum ebony figure owning Manhattan skyline. Body: spectacular jet-black hourglass, deep ebony skin, voluminous natural coils, expression owning the night. Wearing: minimal all-black micro string bikini ??jet figure against Manhattan night skyline, black patent thigh-high platform boots 6-inch heel on rooftop edge, diamond constellation choker. Environment: Manhattan rooftop, Empire State Building lit behind, Times Square glow below, helicopter lights, NYC night energy. Lighting: NYC ambient night light, diamond choker catching city light, ebony skin in Manhattan night atmosphere. Style: black glamour luxury NYC rooftop editorial. Shot on Hasselblad X2D, NYC night grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "luxury_hot_glamour_tokyo_penthouse",
             "name": "Tokyo Penthouse",
-            "prompt": "Professional fashion photograph, full body shot. Model: hot glamour cinched-waist goddess commanding Tokyo penthouse — dramatic curves against neon Tokyo. Body: dramatic hot glamour hourglass, warm caramel skin, dark waves, expression sophisticated-commanding. Wearing: minimal black silk micro slip dress — dramatic figure against Tokyo neon backdrop, black stiletto thigh-high platform boots 5-inch heel, Tokyo neon colors catching on silk fabric, minimal gold jewelry. Environment: Tokyo penthouse, floor-to-ceiling glass, Shibuya crossing below, Tokyo Tower visible, neon city lights, Japanese luxury interior. Lighting: Tokyo neon ambient from cityscape, warm caramel skin in neon color shifts, luxury penthouse atmosphere. Style: hot glamour luxury Tokyo penthouse editorial. Shot on Phase One XF IQ4, Tokyo neon grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: hot glamour cinched-waist goddess commanding Tokyo penthouse ??dramatic curves against neon Tokyo. Body: dramatic hot glamour hourglass, warm caramel skin, dark waves, expression sophisticated-commanding. Wearing: minimal black silk micro slip dress ??dramatic figure against Tokyo neon backdrop, black stiletto thigh-high platform boots 5-inch heel, Tokyo neon colors catching on silk fabric, minimal gold jewelry. Environment: Tokyo penthouse, floor-to-ceiling glass, Shibuya crossing below, Tokyo Tower visible, neon city lights, Japanese luxury interior. Lighting: Tokyo neon ambient from cityscape, warm caramel skin in neon color shifts, luxury penthouse atmosphere. Style: hot glamour luxury Tokyo penthouse editorial. Shot on Phase One XF IQ4, Tokyo neon grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "luxury_brazil_maldives_overwater",
             "name": "Maldives Overwater",
-            "prompt": "Professional fashion photograph, full body shot. Model: Brazilian booty goddess commanding Maldives overwater villa — maximum hip ratio against tropical paradise. Body: extreme Brazilian hip physique, rich warm skin, voluminous dark tropical waves. Wearing: minimal tropical micro string bikini — generous curves against infinite Indian Ocean, clear platform wedge boots 4-inch on overwater deck, tropical flower ear jewelry. Environment: Maldives overwater bungalow, crystal turquoise water below deck, tropical horizon, overwater villa luxury, tropical paradise. Lighting: golden Maldives tropical afternoon, warm skin in pure tropical paradise light, turquoise water reflection. Style: Brazilian luxury Maldives overwater editorial. Shot on Hasselblad X2D, tropical paradise grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: Brazilian booty goddess commanding Maldives overwater villa ??maximum hip ratio against tropical paradise. Body: extreme Brazilian hip physique, rich warm skin, voluminous dark tropical waves. Wearing: minimal tropical micro string bikini ??generous curves against infinite Indian Ocean, clear platform wedge boots 4-inch on overwater deck, tropical flower ear jewelry. Environment: Maldives overwater bungalow, crystal turquoise water below deck, tropical horizon, overwater villa luxury, tropical paradise. Lighting: golden Maldives tropical afternoon, warm skin in pure tropical paradise light, turquoise water reflection. Style: Brazilian luxury Maldives overwater editorial. Shot on Hasselblad X2D, tropical paradise grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "luxury_supermodel_london_couture",
             "name": "London Couture",
-            "prompt": "Professional fashion photograph, full body shot. Model: 185cm+ supermodel goddess commanding London couture event — extreme tall figure in British high fashion. Body: extreme tall supermodel physique, alabaster skin, severe fashion updo, cheekbones, expression editorial-cold. Wearing: minimal white structured micro bandeau + micro skirt — tall figure at British Fashion Council event, white platform stiletto mules 6-inch heel, single architectural pearl ear cuff. Environment: London Royal Academy of Arts, grand British architecture, fashion elite, chandelier light, London couture grandeur. Lighting: British museum chandelier gold + architectural side light, alabaster skin in London couture light, grand architectural space. Style: supermodel luxury London couture editorial. Shot on Phase One XF IQ4, London couture grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: 185cm+ supermodel goddess commanding London couture event ??extreme tall figure in British high fashion. Body: extreme tall supermodel physique, alabaster skin, severe fashion updo, cheekbones, expression editorial-cold. Wearing: minimal white structured micro bandeau + micro skirt ??tall figure at British Fashion Council event, white platform stiletto mules 6-inch heel, single architectural pearl ear cuff. Environment: London Royal Academy of Arts, grand British architecture, fashion elite, chandelier light, London couture grandeur. Lighting: British museum chandelier gold + architectural side light, alabaster skin in London couture light, grand architectural space. Style: supermodel luxury London couture editorial. Shot on Phase One XF IQ4, London couture grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "luxury_miniature_shanghai_skyline",
             "name": "Shanghai Skyline",
-            "prompt": "Professional fashion photograph, full body shot. Model: petite miniature goddess commanding Shanghai Pudong skyline — ultra-tiny figure against massive modern Chinese architecture creating maximum scale contrast. Body: ultra-petite compact figure, porcelain skin, sleek black hair, expression confident-tiny-against-giant. Wearing: minimal red micro qipao-inspired string bikini — tiny figure against towering Pudong skyline, red platform stiletto ankle boots 4-inch heel, jade drop earrings. Environment: Shanghai Bund promenade, Pudong skyline across river, Oriental Pearl Tower, Shanghai Tower, gold hour, river reflections. Lighting: Shanghai golden hour on porcelain skin, Pudong towers glowing behind tiny figure, river reflection light below. Style: miniature luxury Shanghai skyline editorial, scale contrast goddess. Shot on Hasselblad X2D, Shanghai gold grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: petite miniature goddess commanding Shanghai Pudong skyline ??ultra-tiny figure against massive modern Chinese architecture creating maximum scale contrast. Body: ultra-petite compact figure, porcelain skin, sleek black hair, expression confident-tiny-against-giant. Wearing: minimal red micro qipao-inspired string bikini ??tiny figure against towering Pudong skyline, red platform stiletto ankle boots 4-inch heel, jade drop earrings. Environment: Shanghai Bund promenade, Pudong skyline across river, Oriental Pearl Tower, Shanghai Tower, gold hour, river reflections. Lighting: Shanghai golden hour on porcelain skin, Pudong towers glowing behind tiny figure, river reflection light below. Style: miniature luxury Shanghai skyline editorial, scale contrast goddess. Shot on Hasselblad X2D, Shanghai gold grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
         {
             "id": "luxury_powerlifter_greek_colosseum",
             "name": "Greek Colosseum",
-            "prompt": "Professional fashion photograph, full body shot. Model: powerlifter muscle goddess commanding ancient Greek Colosseum ruins — iron physique against ancient stone power. Body: extreme powerlifter physique, defined everywhere, bronze-iron skin, severe warrior braid, expression warrior-commanding. Wearing: minimal dark battle-worn micro armor breastplate + micro shorts — iron physique at Colosseum ruin scale, matte black platform combat boots 5-inch heel on ancient stone, iron armband cuffs, minimal iron choker. Environment: Greek ancient Colosseum at golden dawn, ancient columns, Mediterranean morning light, ancient stone textures, warrior-goddess scale. Lighting: Greek golden dawn side light on iron skin, ancient stone warm gold, warrior goddess in ancient athlete domain. Style: powerlifter luxury Greek Colosseum editorial. Shot on Phase One XF IQ4, ancient dawn grade, portrait 2:3 vertical.",
+            "prompt": "Professional fashion photograph, full body shot. Model: powerlifter muscle goddess commanding ancient Greek Colosseum ruins ??iron physique against ancient stone power. Body: extreme powerlifter physique, defined everywhere, bronze-iron skin, severe warrior braid, expression warrior-commanding. Wearing: minimal dark battle-worn micro armor breastplate + micro shorts ??iron physique at Colosseum ruin scale, matte black platform combat boots 5-inch heel on ancient stone, iron armband cuffs, minimal iron choker. Environment: Greek ancient Colosseum at golden dawn, ancient columns, Mediterranean morning light, ancient stone textures, warrior-goddess scale. Lighting: Greek golden dawn side light on iron skin, ancient stone warm gold, warrior goddess in ancient athlete domain. Style: powerlifter luxury Greek Colosseum editorial. Shot on Phase One XF IQ4, ancient dawn grade, portrait 2:3 vertical.",
             "tier": "SSS"
         },
     ],
 
 
-    "☀️ Plasma & Solar Flare Glamour": [
+    "?截?Plasma & Solar Flare Glamour": [
         "plasma_amazon_solar_wind_train",
         "plasma_plus_size_corona_loop_goddess",
         "plasma_petite_prominence_pillar",
@@ -3071,7 +3032,7 @@ PRESET_CATEGORIES = {
         "plasma_curvy_solar_wind_wet",
     ],
 
-    "🌑 Dark Fantasy Glamour": [
+    "?뙌 Dark Fantasy Glamour": [
         "dark_super_glamour_succubus",
         "dark_bbw_earth_witch",
         "dark_bust_queen_vampire",
@@ -3086,7 +3047,7 @@ PRESET_CATEGORIES = {
         "dark_powerlifter_war_goddess",
     ],
 
-    "🌊 Bioluminescence Glamour": [
+    "?뙄 Bioluminescence Glamour": [
         "bio_amazon_anglerfish_lure",
         "bio_plus_size_jellyfish_bloom",
         "bio_curvy_deep_sea_coral",
@@ -3101,7 +3062,7 @@ PRESET_CATEGORIES = {
         "bio_powerlifter_hydrothermal",
     ],
 
-    "🕸️ Spider Silk Glamour": [
+    "?빖截?Spider Silk Glamour": [
         "silk_amazon_web_cathedral",
         "silk_petite_dew_drop_web",
         "silk_latina_web_veil",
@@ -3116,7 +3077,7 @@ PRESET_CATEGORIES = {
         "silk_bust_queen_orb_web",
     ],
 
-    "🌪️ Vortex Glamour": [
+    "?뙦截?Vortex Glamour": [
         "vortex_amazon_fire_tornado",
         "vortex_bbw_water_cyclone",
         "vortex_petite_sand_devil",
@@ -3133,1038 +3094,22 @@ PRESET_CATEGORIES = {
 }
 
 
-from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
+from core.hof_tier import HOF_TIER  # HOF 異붽???core/hof_tier.py?먯꽌
 
 
 
-# SSS tier ??"?닿쾶 AI??" ?섏?. ?ㅽ겕濡??꾩쟾 ?뺤?. 4諛뺤옄 ?꾨꼍 + 李⑤퀎??
+# SSS tier ??"??우쓺 AI??" ???. ??쎄쾿嚥??袁⑹읈 ?類?. 4獄쏅벡???袁④펾 + 筌△뫀???
 
-# 湲곗?: 泥댄삎 ?ㅻ쾭?쇱씠?쒕쭔?쇰줈 臾명솕/?⑦꽩/?ъ쫰 ?먮룞?꾩꽦, 2???댁긽 ?쇨??? ?낅낫???꾪뙥??
+# 疫꿸퀣?: 筌ｋ똾????살쒔??깆뵠??뺤춸??곗쨮 ?얜챸?????쉘/??已??癒?짗?袁⑷쉐, 2????곴맒 ????? ??낅궖???袁る솯??
 
 SSS_TIER = {
-        
-    # ── 이레즈미 전신 타투 (2026-07-17 추가) ──
-    # A그룹: 용+파도
-    "irezumi_dragon_wave_black_glam_void": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: massive dragon coiling up from ankles with scales rendered in obsessive detail, crashing ocean waves filling every gap between dragon coils from thigh to shoulder, tattoos as the only covering — jet black afro voluminous and commanding, expression fierce and untouchable. Wearing: tattoos only, black stiletto heels elongating inked powerful legs, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight, deep shadows carving hourglass definition, high gloss body oil making dragon scales and wave crests electric against deep skin, tattoo colors blazing in contrast. Style: Black goddess irezumi dragon void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, obsidian dragon grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_sports_glam_onsen": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, sports glamour physique — toned athletic curves, round lifted hips, flat defined abs — body fully covered in Japanese irezumi tattoos: twin dragons spiraling up both legs meeting at the spine, powerful ocean waves crashing across flat abs and chest, tattoos blanketing every inch of athletic skin — wet-slicked dark hair pulled severely back, expression commanding and sensual. Wearing: tattoos only, barefoot on wet marble, classic red long almond nails. Environment: Budapest thermal bath, marble columns, steam rising from glowing pool surface, warm amber lantern light. Lighting: volumetric steam fog warm amber, extreme wet-look thermal water streaming down dragon tattoos making colors saturated and vivid, steam swirling around athletic inked figure. Style: Japanese sports goddess irezumi thermal steam editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, thermal dragon grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_super_glam_dubai": {
-        "tier": "SSS",
-        "subject": "Middle Eastern beauty, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern beauty, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — body fully covered in Japanese irezumi tattoos: enormous dragon wrapping entire hourglass figure — tail at ankle, body coiling around dramatic hips and cinched waist, head resting at collarbone — deep ocean waves filling every gap in rich color, tattoos mapping every dramatic curve — long jet black wavy hair cascading, expression half-lidded and devastating. Wearing: tattoos only, gold metallic stiletto heels, gold long almond nails. Environment: Dubai luxury penthouse rooftop, city skyline at night, Burj Khalifa glowing in distance. Lighting: strong rim backlight from Dubai city glow, high gloss body oil making dragon and wave tattoos gleam, gold heels catching distant city lights. Style: Dubai super glamour irezumi dragon night editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, Dubai dragon grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_power_fitness_strobe": {
-        "tier": "HOF",
-        "subject": "European fitness goddess, mid-20s, power fitness physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: European fitness goddess, mid-20s, power fitness physique — very muscular defined body, strong arms and legs, powerful commanding frame — body fully covered in Japanese irezumi tattoos: fierce dragon with open jaw mapped across powerful back and shoulders, ocean waves crashing between muscular arms and legs, tattoos following every muscle contour — slick-back severe hair tight and architectural, expression dominant and fierce. Wearing: tattoos only, black platform boots, black long stiletto nails. Environment: pure black void. Lighting: harsh direct strobe from above, high-contrast shadows carving muscle definition under dragon tattoos, high gloss body oil making every muscle and scale catch strobe light. Style: power fitness irezumi dragon strobe editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, strobe dragon grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "harsh direct strobe",
-        "style": "Balmain power glamour",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_vs_angel_santorini": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — toned flat abs, model-perfect proportions, legs over 90cm — body fully covered in Japanese irezumi tattoos: golden dragon ascending from bare feet up impossibly long legs, ocean waves in deep indigo and teal filling the space between dragon coils, tattoos burning in Aegean sunset light — windswept dark hair streaming dramatically in sea breeze, expression goddess-like and confident. Wearing: tattoos only, gladiator sandals lacing up inked calves, gold long almond nails. Environment: Santorini cliff edge at golden hour, white architecture and blue dome church, Aegean sea glittering amber and gold. Lighting: golden hour warm backlight from Aegean sunset — dragon gold scales burning amber — tanning oil sheen on sun-kissed inked skin. Style: Santorini VS Angel irezumi dragon sunset editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Santorini dragon grade, portrait 2:3 vertical.",
-        "environment": "Santorini cliff edge at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_slim_runway_neon": {
-        "tier": "HOF",
-        "subject": "Korean runway goddess, early 20s, slim runway physique 185cm+",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, early 20s, slim runway physique 185cm+ — disproportionately long legs dominating silhouette, slender waist, narrow hips, towering editorial presence — body fully covered in Japanese irezumi tattoos: slender dragon winding elegantly up impossibly long legs, delicate ocean waves mapping the elongated torso, tattoos emphasizing extreme height and length — wet look severe slick-back hair, expression cold and untouchable. Wearing: tattoos only, extreme stiletto heels, black long stiletto nails. Environment: Shinjuku neon-lit rainy alley, Tokyo cyberpunk night, rain-soaked pavement reflections. Lighting: multi-colored neon edge glow — pink neon left, blue neon right — extreme wet-look rain making dragon tattoos electric on pale tall figure. Style: Korean runway irezumi dragon neon Tokyo editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, neon dragon grade, portrait 2:3 vertical.",
-        "environment": "Shinjuku neon-lit rainy alley",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    # B그룹: 봉황+국화
-    "irezumi_phoenix_chrysanthemum_vs_angel_versailles": {
-        "tier": "SSS",
-        "subject": "Japanese beauty, late 20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, late 20s, Victoria's Secret Angel body — model-perfect proportions, runway-ready athletic glamour, glowing healthy skin — body fully covered in Japanese irezumi tattoos: magnificent phoenix with wings fully spread across entire back visible through frontal pose, chrysanthemum blooms in rich crimson and gold filling chest and shoulders, phoenix tail feathers cascading down long legs — elegant geisha updo with gold ornament, expression serene and powerful. Wearing: tattoos only, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting inked figure infinitely, marble floors. Lighting: dramatic chiaroscuro candlelight, Versailles gold reflections warming phoenix colors, satin skin glow. Style: Versailles VS Angel irezumi phoenix editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Versailles phoenix grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "dramatic chiaroscuro candlelight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_ballerina_steam": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, early 20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, early 20s, ballerina physique — slender elongated figure, visible shoulder blade definition, graceful dancer's carriage — body fully covered in Japanese irezumi tattoos: phoenix rising from feet with wings spreading across slender back, chrysanthemums in soft pink and white blooming delicately across pale elongated torso and arms, tattoos following every graceful line — loose romantic updo with hair ornaments, expression melancholic and dreamy. Wearing: tattoos only, barefoot in steam, classic red short square nails. Environment: Budapest thermal bath, steam rising, marble columns, warm amber water reflections. Lighting: volumetric steam fog warm amber, extreme wet-look thermal mist on pale inked ballerina skin, steam swirling around elongated inked figure. Style: ballerina irezumi phoenix steam thermal editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, thermal phoenix grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_hot_glam_riad": {
-        "tier": "HOF",
-        "subject": "Middle Eastern beauty, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern beauty, mid-20s, hot glamour physique — dramatically cinched narrow waist, explosively wide round hips, smoldering hourglass — body fully covered in Japanese irezumi tattoos: phoenix in full flight mapped across dramatic curves — wings spanning wide hips, tail feathers wrapping narrow waist, chrysanthemum gardens blooming across chest — warm olive skin making crimson and gold tattoos luminous — ornate geisha updo with gold pins, expression exotic and commanding. Wearing: tattoos only, gold metallic stiletto heels, gold long stiletto nails. Environment: Moroccan luxury riad, intricate zellige tile walls, carved plaster archways, candles and lanterns warm amber, central fountain. Lighting: Moroccan lantern warm amber from multiple positions, olive skin in amber light, phoenix crimson and gold tattoos blazing. Style: Moroccan riad hot glamour irezumi phoenix editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Moroccan phoenix grade, portrait 2:3 vertical.",
-        "environment": "Moroccan luxury riad",
-        "lighting": "Moroccan lantern warm amber",
-        "style": "Gucci eclectic maximalism",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_latina_miami": {
-        "tier": "SSS",
-        "subject": "Colombian Latina goddess, mid-20s, Colombian reggaeton physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina goddess, mid-20s, Colombian reggaeton physique — extreme hourglass, explosively wide dramatic hips, impossibly tiny waist, thick powerful thighs — body fully covered in Japanese irezumi tattoos: phoenix rising dramatically up from powerful legs, wings spreading across explosive hips, chrysanthemums blooming in vivid color across bronzed torso — long dark wavy hair windswept in ocean breeze, expression Latin fire and confidence. Wearing: tattoos only, strappy high heel sandals on Miami sand, red long stiletto nails. Environment: Miami Beach at sunset, Ocean Drive, warm pink and orange sky blazing. Lighting: golden hour amber, tanning oil bronzing Latin skin. Style: Miami Latina irezumi phoenix sunset editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, Miami phoenix grade, portrait 2:3 vertical.",
-        "environment": "Miami Beach at sunset",
-        "lighting": "golden hour warm amber",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_nordic_aurora": {
-        "tier": "SSS",
-        "subject": "Scandinavian beauty, mid-20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Scandinavian beauty, mid-20s, ballerina physique — slender elongated figure, pale porcelain skin — body fully covered in Japanese irezumi tattoos: phoenix rising against aurora colors — wings in deep indigo and violet matching northern lights above, chrysanthemums in icy blue and silver across pale slender torso — platinum blonde hair windswept in arctic wind, expression cold and otherworldly. Wearing: tattoos only, barefoot in arctic snow, deep blue long stiletto nails. Environment: Iceland glacier at midnight, northern lights aurora borealis dancing overhead. Lighting: aurora borealis curtain of light washing over pale inked figure. Style: Iceland aurora irezumi phoenix nordic editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, aurora phoenix grade, portrait 2:3 vertical.",
-        "environment": "Iceland glacier, northern lights",
-        "lighting": "aurora borealis curtain of light",
-        "style": "Alexander McQueen dramatic fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_black_glam_desert": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: magnificent phoenix with wings fully spread across powerful back, chrysanthemum blooms in rich crimson and gold filling chest and shoulders, phoenix tail feathers cascading down thick powerful thighs — natural afro hair enormous and windswept against desert sky, expression ancient and untouchable, warrior queen energy. Wearing: tattoos only, barefoot in hot red sand, gold long stiletto nails. Environment: Namib desert red dunes at golden hour, dramatic African landscape, surreal orange sky. Lighting: golden hour warm backlight creating blazing halo around afro, strong rim backlight on deep skin making phoenix and chrysanthemum tattoos electric, tanning oil making deep skin and phoenix colors burn. Style: Black goddess irezumi phoenix desert editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Namib phoenix grade, portrait 2:3 vertical.",
-        "environment": "Namib desert red dunes at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    # C그룹: 잉어+벚꽃
-    "irezumi_koi_sakura_korean_void": {
-        "tier": "SSS",
-        "subject": "Korean beauty, mid-20s, slim runway physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, slim runway physique — disproportionately long legs, slender elegant frame, small delicate face — body fully covered in Japanese irezumi tattoos: crimson and gold koi fish leaping up impossibly long legs, pink cherry blossoms scattered across pale slender torso like falling snow, koi and sakura filling every inch of porcelain skin — elegant geisha updo with gold hairpin, expression cold runway steel. Wearing: tattoos only, extreme black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop. Lighting: dramatic chiaroscuro single spotlight, high gloss body oil making koi scales and cherry blossoms electric on pale porcelain skin. Style: Korean runway irezumi koi sakura void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, koi sakura void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_koi_sakura_vs_angel_kyoto_rain": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, legs over 90cm — body fully covered in Japanese irezumi tattoos: massive red and white koi fish leaping up from ankles, cherry blossoms falling across chest and shoulders in pink and white, rain-soaked skin making colors saturated and vivid — loose romantic updo with hair ornaments slipping in downpour, expression melancholic and breathtaking. Wearing: tattoos only, traditional wooden geta sandals in rain puddles, classic red short square nails. Environment: rain-soaked traditional Japanese street at night, Kyoto alley, paper lanterns glowing warm amber through downpour, wet cobblestones reflecting orange light. Lighting: volumetric rain fog, warm paper lantern amber, extreme wet-look rain streaming down koi and sakura tattoos. Style: Kyoto rain VS Angel irezumi koi sakura editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, Kyoto koi rain grade, portrait 2:3 vertical.",
-        "environment": "rain-soaked Kyoto alley at night",
-        "lighting": "volumetric rain fog warm amber lantern",
-        "style": "Dolce and Gabbana Italian glamour",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    "irezumi_koi_sakura_colombian_monaco": {
-        "tier": "HOF",
-        "subject": "Colombian Latina beauty, early 30s, luxury glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina beauty, early 30s, luxury glamour physique — defined waist, wide round hips, sophisticated voluptuous elegance — body fully covered in Japanese irezumi tattoos: golden koi fish leaping dramatically across voluptuous curves, cherry blossoms in pale pink and white scattered across sophisticated torso — side-swept old Hollywood hair dramatically draped, expression enigmatic and impossibly chic. Wearing: tattoos only, diamond necklace and earrings as only additions, gold metallic stiletto heels, black and gold nail art. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts in harbor, city of Monaco illuminated. Lighting: strong rim backlight halo from Monaco nightscape, diamond jewelry catching lights and sparkling, satin skin glow on koi and sakura inked curves. Style: Monaco luxury irezumi koi sakura diamond night editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Monaco koi grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    # D그룹: 학+모란
-    "irezumi_crane_peony_slim_elegance_white": {
-        "tier": "SSS",
-        "subject": "Korean beauty, mid-20s, slender elegant physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, slender elegant physique — slim narrow frame, graceful delicate figure, refined fashion presence — body fully covered in Japanese irezumi tattoos: elegant cranes in flight mapping slender arms and long neck, lush peonies in deep crimson and blush blooming across delicate torso, crane wings spanning across pale back — long straight silky black hair sleek and smooth, expression fresh and pure. Wearing: tattoos only, nude stiletto heels, nude long almond nails. Environment: pure white minimalist studio, seamless white backdrop. Lighting: soft beauty dish even flattering illumination, light natural skin glow making crane and peony tattoos delicate and precise. Style: white studio slender elegance irezumi crane peony editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, white studio crane grade, portrait 2:3 vertical.",
-        "environment": "pure white minimalist studio",
-        "lighting": "soft beauty dish",
-        "style": "Chanel classic luxury elegance",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_super_glam_versailles": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny waist, extremely wide round heavy hips, maximum pinup hourglass — body fully covered in Japanese irezumi tattoos: cranes soaring across dramatic wide hips with wings spread, deep crimson peonies blooming across cinched waist and full chest, golden crane feathers cascading down heavy thighs — long jet black wavy hair cascading, expression half-lidded and devastating. Wearing: tattoos only, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting curves infinitely. Lighting: Versailles candlelight chiaroscuro, deep shadows and sharp highlights on dramatic tattooed hourglass, satin skin glow, peony crimson blazing in baroque gold atmosphere. Style: Versailles super glamour irezumi crane peony editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Versailles crane grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "Versailles candlelight chiaroscuro",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_southeast_asian_beach": {
-        "tier": "SSS",
-        "subject": "Southeast Asian beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Southeast Asian beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, golden tan glowing skin — body fully covered in Japanese irezumi tattoos: white cranes soaring up golden tan legs, lush pink peonies blooming across glowing chest, crane feathers delicate against warm tropical skin — windswept long wavy hair sea-salted and free, expression paradise goddess alluring. Wearing: tattoos only, strappy high heel sandals, gold long almond nails. Environment: French Riviera cliff at golden hour, azure Mediterranean sea below, golden sunlight. Lighting: golden hour warm backlight, tanning oil on golden skin making white crane and pink peony tattoos vivid. Style: Riviera Southeast Asian irezumi crane peony golden editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, Riviera crane grade, portrait 2:3 vertical.",
-        "environment": "French Riviera cliff at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_mature_luxury_monaco": {
-        "tier": "SSS",
-        "subject": "French European beauty, early 30s, luxury glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: French European beauty, early 30s, luxury glamour physique — defined waist, wide round hips, sophisticated mature elegance — body fully covered in Japanese irezumi tattoos: cranes in elegant flight across sophisticated curves, deep crimson peonies blooming with painterly detail across refined torso and hips — side-swept old Hollywood hair, expression sophisticated and enigmatic. Wearing: tattoos only, diamond jewelry as sole addition, gold metallic stiletto heels, black and gold nail art. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts in harbor. Lighting: Monaco nightscape rim backlight, diamond jewelry sparkling, satin skin glow. Style: Monaco mature luxury irezumi crane peony editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, Monaco crane grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    # E그룹: 호랑이+대나무
-    "irezumi_tiger_bamboo_sports_glam_void": {
-        "tier": "HOF",
-        "subject": "Korean beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, sports glamour physique — athletic toned curves, round lifted hips, defined abs, powerful yet feminine — body fully covered in Japanese irezumi tattoos: fierce tiger prowling up athletic legs with burning amber eyes, bamboo forest rising along torso, tiger stripes flowing with muscle definition, snarling tiger face across powerful back — elegant geisha updo with gold pin, expression fierce and commanding. Wearing: tattoos only, black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro, deep shadows carving athletic definition, high gloss body oil making tiger stripes and bamboo electric on toned skin, amber tiger eyes glowing in darkness. Style: sports glamour irezumi tiger bamboo void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, tiger void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_vs_angel_dubai": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, legs over 90cm, runway-ready glamour — body fully covered in Japanese irezumi tattoos: powerful tiger ascending impossibly long legs, bamboo reaching up elongated torso, tiger tail wrapping narrow waist, fierce face emerging at shoulder — high sleek ponytail severe and polished, expression smoldering and powerful. Wearing: tattoos only, gold metallic stiletto heels, gold long stiletto nails. Environment: Dubai luxury penthouse rooftop at night, Burj Khalifa glowing in distance, city skyline electric. Lighting: strong rim backlight from Dubai city glow, high gloss body oil on VS Angel inked body gleaming in city light. Style: Dubai VS Angel irezumi tiger bamboo night editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, Dubai tiger grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop at night",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_hot_glam_neon": {
-        "tier": "SSS",
-        "subject": "Japanese beauty, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, hot glamour physique — dramatically cinched waist, explosively wide round hips, smoldering hourglass — body fully covered in Japanese irezumi tattoos: roaring tiger mapped across dramatic curves — stripes following the cinched waist and wide hips — bamboo rising along torso, tiger face fierce across chest — wet look slick-back hair severe, expression smoldering intensity. Wearing: tattoos only, black stiletto heels, red long stiletto nails. Environment: Shinjuku neon-lit rainy street, Tokyo night, rain-soaked pavement. Lighting: pink neon from left, blue neon from right, multi-colored neon edge glow slicing across tiger stripe tattoos, extreme wet-look rain on inked curves. Style: Tokyo neon hot glamour irezumi tiger editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, neon tiger grade, portrait 2:3 vertical.",
-        "environment": "Shinjuku neon-lit rainy street",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_african_desert": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — extremely wide round hips, ultra-narrow waist, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: massive tiger in full prowl mapped across powerful body — amber and black tiger stripes following dramatic curves, bamboo forest rising from powerful thighs to shoulders, tiger face fierce across upper back — natural afro enormous and windswept, expression ancient warrior power. Wearing: tattoos only, barefoot in hot red sand, gold long stiletto nails. Environment: Namib desert red dunes at golden hour, surreal orange sky, elemental African landscape. Lighting: golden hour warm backlight blazing halo around afro, strong rim light making deep skin and amber tiger stripes electric, tanning oil making tiger and bamboo burn in desert light. Style: Namib Black goddess irezumi tiger bamboo desert editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Namib tiger grade, portrait 2:3 vertical.",
-        "environment": "Namib desert red dunes at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_brazilian_pool": {
-        "tier": "SSS",
-        "subject": "Brazilian goddess, mid-20s, Brazilian carnival physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Brazilian goddess, mid-20s, Brazilian carnival physique — massive round hips dominating silhouette, extremely wide hips, powerfully thick thighs, bronzed tropical skin — body fully covered in Japanese irezumi tattoos: powerful tiger mapped across massive curves — stripes following enormous round hips and thick powerful thighs, bamboo rising up bronzed torso, tiger roaring across powerful chest — big dark voluminous hair wild and alive, expression carnival queen fierce. Wearing: tattoos only, barefoot on wet pool edge, gold long almond nails. Environment: luxury infinity pool edge, tropical resort at golden hour, turquoise water. Lighting: golden hour warm backlight, extreme wet-look pool water streaming down tiger tattoos, tanning oil making tiger stripes vivid on tropical skin. Style: tropical Brazilian irezumi tiger bamboo pool editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, tropical tiger grade, portrait 2:3 vertical.",
-        "environment": "luxury infinity pool edge",
-        "lighting": "golden hour warm backlight",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-
-    # ── 바디글리터 (2026-07-17 추가) ──
-    "bodyglitter_silver_neon_cyberpunk": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic runway goddess, early 20s, slim runway physique 185cm+",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic runway goddess, early 20s, slim runway physique 185cm+ — disproportionately long legs, slender waist, elongated graceful frame — entire body covered in dense silver holographic glitter from neck to toe, skin transformed into galaxy surface, silver and holographic glitter densely packed from collarbone to toe, body catching neon light from every microscopic facet — wet look slicked back hair severe, expression cold and cybernetic. Wearing: dense silver holographic glitter covering entire body as sole garment — glitter so densely applied it creates second skin effect, iridescent color shifts from silver to pink to blue — crystal PVC platform boots, holographic long stiletto nails. Environment: cyberpunk neon city street at night, rain-soaked alley, neon signs reflecting in wet pavement. Lighting: multi-colored neon edge glow — pink neon left, blue neon right — holographic glitter refracting neon into thousands of rainbow points across entire body, rain drops on glitter surface catching additional light. Style: holographic glitter cyberpunk goddess editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, holographic glitter cyberpunk grade, portrait 2:3 vertical.",
-        "environment": "cyberpunk neon city street at night",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_gold_void_black_glam": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — entire body covered in dense gold holographic glitter from neck to toe, deep skin beneath gold glitter creating warm amber bronze tones, glitter so densely packed skin becomes living gold sculpture, natural afro hair voluminous and commanding with gold glitter dust at edges, expression fierce and untouchable. Wearing: dense gold holographic glitter covering entire body as sole garment, gold glitter second skin from collarbone to ankle, black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight, gold glitter blazing in single beam against total darkness, every glitter facet catching light creating thousands of gold sparks across deep skin, deep shadows carving hourglass into dramatic relief. Style: gold glitter Black goddess void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, gold glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_rose_gold_versailles": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — entire body covered in dense rose gold iridescent glitter from neck to toe, porcelain pale skin beneath rose gold glitter creating warm peach tones, glitter shifting from pink to gold to copper as body moves, long jet black wavy hair cascading dramatically, expression half-lidded and devastating. Wearing: dense rose gold holographic glitter covering entire body as sole garment, glitter second skin maximum coverage, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting glitter infinitely, marble floors. Lighting: Versailles chandelier light catching every rose gold glitter facet — thousands of pink and gold light refractions dancing — gilded mirrors multiplying glitter sparkle infinitely. Style: rose gold glitter Versailles bombshell editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, rose gold glitter Versailles grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "Versailles chandelier light",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_blue_holographic_pool": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — toned flat abs, model-perfect proportions, legs over 90cm — entire body covered in dense blue holographic glitter from neck to toe, golden tan skin beneath blue glitter creating electric teal tones, glitter shifting from deep blue to aqua to violet as light catches, windswept long wavy dark hair, expression goddess-like and confident. Wearing: dense blue holographic glitter covering entire body as sole garment, glitter so packed it creates iridescent second skin, barefoot on wet pool edge, nude long almond nails dusted in matching blue glitter. Environment: luxury infinity pool edge at golden hour, turquoise water below, tropical resort, palm trees. Lighting: golden hour warm backlight from horizon, pool water reflections casting aqua light upward on glitter-covered body, blue holographic glitter refracting both golden and aqua light simultaneously. Style: blue holographic glitter infinity pool VS Angel editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, blue glitter pool grade, portrait 2:3 vertical.",
-        "environment": "luxury infinity pool edge at golden hour",
-        "lighting": "golden hour backlight with pool water reflections",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_silver_onsen_steam": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, sports glamour physique — toned athletic curves, round lifted hips, flat defined abs — entire body covered in dense silver platinum glitter from neck to toe, warm ivory skin beneath silver glitter creating pearl luminous tones, steam making glitter glisten and sparkle with every breath, wet look slicked back dark hair severe and sleek, expression commanding and sensual. Wearing: dense silver platinum holographic glitter covering entire body as sole garment, glitter second skin steaming and glistening, barefoot on wet marble, classic red long almond nails dusted in silver glitter. Environment: Budapest thermal bath, marble columns, steam rising from glowing pool surface, warm amber lantern light reflecting in water. Lighting: volumetric steam fog warm amber, steam catching silver glitter and making it glow from within, amber lantern light turning silver glitter warm gold at edges, extreme wet-look steam condensation on glitter surface. Style: silver glitter thermal steam Japanese goddess editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, silver glitter onsen grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_rainbow_aurora_nordic": {
-        "tier": "HOF",
-        "subject": "Scandinavian beauty, mid-20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Scandinavian beauty, mid-20s, ballerina physique — slender elongated figure, graceful elegant posture, pale porcelain skin — entire body covered in dense rainbow holographic glitter from neck to toe, pale skin beneath rainbow glitter creating ethereal iridescent tones, glitter shifting through every color of aurora spectrum — green violet pink blue — matching the sky above, platinum blonde windswept hair with rainbow glitter dust, expression cold and otherworldly. Wearing: dense rainbow holographic glitter covering entire body as sole garment, glitter matching aurora colors above, barefoot in arctic snow, deep blue long stiletto nails dusted in matching glitter. Environment: Iceland glacier at midnight, northern lights aurora borealis dancing overhead in green and violet ribbons, ancient ice formations, mystical arctic landscape. Lighting: aurora borealis curtain of light washing over glitter-covered pale figure — green and violet aurora light refracting through rainbow glitter creating supernatural color explosion — glitter and aurora colors perfectly synchronized. Style: rainbow glitter aurora Nordic goddess editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, rainbow glitter aurora grade, portrait 2:3 vertical.",
-        "environment": "Iceland glacier, northern lights aurora",
-        "lighting": "aurora borealis curtain of light",
-        "style": "Alexander McQueen dramatic fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_emerald_dubai_rooftop": {
-        "tier": "HOF",
-        "subject": "Middle Eastern goddess, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern goddess, mid-20s, hot glamour physique — dramatically cinched narrow waist, explosively wide round hips, smoldering hourglass — entire body covered in dense emerald green holographic glitter from neck to toe, warm olive skin beneath emerald glitter creating rich jewel-tone depth, glitter shifting from deep forest green to electric lime to gold as light catches, high sleek ponytail severe and polished with emerald glitter dust, expression smoldering and powerful. Wearing: dense emerald holographic glitter covering entire body as sole garment, glitter second skin maximum coverage, gold metallic stiletto heels, gold long stiletto nails. Environment: Dubai luxury penthouse rooftop at night, city skyline blazing below, Burj Khalifa glowing in distance. Lighting: strong rim backlight from Dubai city glow, emerald glitter refracting gold and amber city lights creating electric green-gold color explosion across olive skin. Style: emerald glitter Dubai rooftop goddess editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, emerald glitter Dubai grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop at night",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_copper_santorini_sunset": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, VS Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, VS Angel body — toned flat abs, model-perfect proportions, legs over 90cm — entire body covered in dense copper bronze holographic glitter from neck to toe, sun-kissed golden skin beneath copper glitter creating warm molten metal tones, glitter shifting from deep copper to bright bronze to warm gold in sunset light, windswept long dark wavy hair catching sunset, expression goddess-like and confident. Wearing: dense copper holographic glitter covering entire body as sole garment, glitter burning like liquid sunset metal, gladiator sandals lacing up glitter-dusted calves, gold long almond nails. Environment: Santorini cliff edge at golden hour, white architecture and iconic blue dome church behind, Aegean sea glittering amber below. Lighting: golden hour warm backlight from setting Aegean sun — copper glitter igniting into liquid fire in sunset — every glitter facet burning amber and gold, windswept hair backlit and glowing. Style: copper glitter Santorini sunset goddess editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, copper glitter Santorini grade, portrait 2:3 vertical.",
-        "environment": "Santorini cliff edge at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_purple_monaco_night": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — entire body covered in dense deep violet purple holographic glitter from neck to toe, porcelain pale skin beneath purple glitter creating ethereal amethyst tones, glitter shifting from deep violet to electric purple to pink as light catches, long jet black wavy hair cascading dramatically, expression half-lidded and devastating. Wearing: dense purple holographic glitter covering entire body as sole garment, glitter creating amethyst goddess effect, gold metallic stiletto heels, deep red long almond nails. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts illuminated in harbor, Monaco city lights purple and gold in distance. Lighting: strong rim backlight from Monaco nightscape, purple holographic glitter refracting city lights into violet and gold explosions across dramatic hourglass curves. Style: purple glitter Monaco night bombshell editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, purple glitter Monaco grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_red_void_colombian": {
-        "tier": "HOF",
-        "subject": "Colombian Latina goddess, mid-20s, Colombian reggaeton physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina goddess, mid-20s, Colombian reggaeton physique — extreme hourglass, explosively wide dramatic round hips, impossibly tiny waist, thick powerful thighs — entire body covered in dense crimson red holographic glitter from neck to toe, bronzed Latin skin beneath red glitter creating smoldering fire tones, glitter shifting from deep blood red to electric crimson to burning orange as light catches, long dark wavy hair wild and dramatic, expression Latin fire and fierce dominance. Wearing: dense crimson red holographic glitter covering entire body as sole garment, red glitter on dramatic hourglass creating maximum impact, extreme black stiletto heels, red long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight from above, crimson red glitter blazing in single beam against total darkness — body like living flame against black void — deep shadows carving extreme hourglass. Style: crimson glitter Colombian fire goddess void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, red glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_ice_blue_void_ballerina": {
-        "tier": "HOF",
-        "subject": "Korean beauty, early 20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, early 20s, ballerina physique — slender elongated figure, graceful elegant posture, visible shoulder blade definition, dancer's poised carriage — entire body covered in dense ice blue and white holographic glitter from neck to toe, porcelain pale skin beneath ice glitter creating ethereal frozen goddess tones, glitter shifting from icy white to electric blue to pale violet, elegant updo with gold hairpin dusted in matching ice glitter, expression serene and ethereal. Wearing: dense ice blue holographic glitter covering entire body as sole garment, glitter creating frozen crystal goddess effect on slender ballerina frame, extreme nude stiletto heels elongating legs, nude long almond nails dusted in ice glitter. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: soft beauty dish even flattering illumination from front, cool blue edge light from sides — ice glitter refracting into white and blue crystal explosions across slender figure — pale skin and ice glitter creating self-luminous ethereal glow against darkness. Style: ice blue glitter Korean ballerina void editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, ice glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "soft beauty dish with cool blue edge light",
-        "style": "Chanel classic luxury elegance",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-
-    # 2026-07-16 Runway Slim + Young Adult SS
-    "runway_korean_slim_seoulforest_spring",
-    "young_korean_pool_pastel",
-    "young_korean_neon_first_night",
-    "young_korean_tokyo_first_solo",
-    "young_korean_tattoo_first_wrist",
-    "young_korean_gym_first_gains",
-    "young_korean_campus_spring",
-
-# 2026-07-15 한국인 카테고리 신규 SS
+    # 2026-07-15 ?쒓뎅??移댄뀒怨좊━ ?좉퇋 SS
     "korean_idol_bukchon_morning",
     "korean_idol_jeju_ocean",
     "mature_korean_silver_kyoto_bamboo",
     "mature_korean_silver_onsen",
 
-        
-    # ── 이레즈미 전신 타투 (2026-07-17 추가) ──
-    # A그룹: 용+파도
-    "irezumi_dragon_wave_black_glam_void": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: massive dragon coiling up from ankles with scales rendered in obsessive detail, crashing ocean waves filling every gap between dragon coils from thigh to shoulder, tattoos as the only covering — jet black afro voluminous and commanding, expression fierce and untouchable. Wearing: tattoos only, black stiletto heels elongating inked powerful legs, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight, deep shadows carving hourglass definition, high gloss body oil making dragon scales and wave crests electric against deep skin, tattoo colors blazing in contrast. Style: Black goddess irezumi dragon void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, obsidian dragon grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_sports_glam_onsen": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, sports glamour physique — toned athletic curves, round lifted hips, flat defined abs — body fully covered in Japanese irezumi tattoos: twin dragons spiraling up both legs meeting at the spine, powerful ocean waves crashing across flat abs and chest, tattoos blanketing every inch of athletic skin — wet-slicked dark hair pulled severely back, expression commanding and sensual. Wearing: tattoos only, barefoot on wet marble, classic red long almond nails. Environment: Budapest thermal bath, marble columns, steam rising from glowing pool surface, warm amber lantern light. Lighting: volumetric steam fog warm amber, extreme wet-look thermal water streaming down dragon tattoos making colors saturated and vivid, steam swirling around athletic inked figure. Style: Japanese sports goddess irezumi thermal steam editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, thermal dragon grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_super_glam_dubai": {
-        "tier": "SSS",
-        "subject": "Middle Eastern beauty, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern beauty, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — body fully covered in Japanese irezumi tattoos: enormous dragon wrapping entire hourglass figure — tail at ankle, body coiling around dramatic hips and cinched waist, head resting at collarbone — deep ocean waves filling every gap in rich color, tattoos mapping every dramatic curve — long jet black wavy hair cascading, expression half-lidded and devastating. Wearing: tattoos only, gold metallic stiletto heels, gold long almond nails. Environment: Dubai luxury penthouse rooftop, city skyline at night, Burj Khalifa glowing in distance. Lighting: strong rim backlight from Dubai city glow, high gloss body oil making dragon and wave tattoos gleam, gold heels catching distant city lights. Style: Dubai super glamour irezumi dragon night editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, Dubai dragon grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_power_fitness_strobe": {
-        "tier": "HOF",
-        "subject": "European fitness goddess, mid-20s, power fitness physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: European fitness goddess, mid-20s, power fitness physique — very muscular defined body, strong arms and legs, powerful commanding frame — body fully covered in Japanese irezumi tattoos: fierce dragon with open jaw mapped across powerful back and shoulders, ocean waves crashing between muscular arms and legs, tattoos following every muscle contour — slick-back severe hair tight and architectural, expression dominant and fierce. Wearing: tattoos only, black platform boots, black long stiletto nails. Environment: pure black void. Lighting: harsh direct strobe from above, high-contrast shadows carving muscle definition under dragon tattoos, high gloss body oil making every muscle and scale catch strobe light. Style: power fitness irezumi dragon strobe editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, strobe dragon grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "harsh direct strobe",
-        "style": "Balmain power glamour",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_vs_angel_santorini": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — toned flat abs, model-perfect proportions, legs over 90cm — body fully covered in Japanese irezumi tattoos: golden dragon ascending from bare feet up impossibly long legs, ocean waves in deep indigo and teal filling the space between dragon coils, tattoos burning in Aegean sunset light — windswept dark hair streaming dramatically in sea breeze, expression goddess-like and confident. Wearing: tattoos only, gladiator sandals lacing up inked calves, gold long almond nails. Environment: Santorini cliff edge at golden hour, white architecture and blue dome church, Aegean sea glittering amber and gold. Lighting: golden hour warm backlight from Aegean sunset — dragon gold scales burning amber — tanning oil sheen on sun-kissed inked skin. Style: Santorini VS Angel irezumi dragon sunset editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Santorini dragon grade, portrait 2:3 vertical.",
-        "environment": "Santorini cliff edge at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_slim_runway_neon": {
-        "tier": "HOF",
-        "subject": "Korean runway goddess, early 20s, slim runway physique 185cm+",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, early 20s, slim runway physique 185cm+ — disproportionately long legs dominating silhouette, slender waist, narrow hips, towering editorial presence — body fully covered in Japanese irezumi tattoos: slender dragon winding elegantly up impossibly long legs, delicate ocean waves mapping the elongated torso, tattoos emphasizing extreme height and length — wet look severe slick-back hair, expression cold and untouchable. Wearing: tattoos only, extreme stiletto heels, black long stiletto nails. Environment: Shinjuku neon-lit rainy alley, Tokyo cyberpunk night, rain-soaked pavement reflections. Lighting: multi-colored neon edge glow — pink neon left, blue neon right — extreme wet-look rain making dragon tattoos electric on pale tall figure. Style: Korean runway irezumi dragon neon Tokyo editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, neon dragon grade, portrait 2:3 vertical.",
-        "environment": "Shinjuku neon-lit rainy alley",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    # B그룹: 봉황+국화
-    "irezumi_phoenix_chrysanthemum_vs_angel_versailles": {
-        "tier": "SSS",
-        "subject": "Japanese beauty, late 20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, late 20s, Victoria's Secret Angel body — model-perfect proportions, runway-ready athletic glamour, glowing healthy skin — body fully covered in Japanese irezumi tattoos: magnificent phoenix with wings fully spread across entire back visible through frontal pose, chrysanthemum blooms in rich crimson and gold filling chest and shoulders, phoenix tail feathers cascading down long legs — elegant geisha updo with gold ornament, expression serene and powerful. Wearing: tattoos only, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting inked figure infinitely, marble floors. Lighting: dramatic chiaroscuro candlelight, Versailles gold reflections warming phoenix colors, satin skin glow. Style: Versailles VS Angel irezumi phoenix editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Versailles phoenix grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "dramatic chiaroscuro candlelight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_ballerina_steam": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, early 20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, early 20s, ballerina physique — slender elongated figure, visible shoulder blade definition, graceful dancer's carriage — body fully covered in Japanese irezumi tattoos: phoenix rising from feet with wings spreading across slender back, chrysanthemums in soft pink and white blooming delicately across pale elongated torso and arms, tattoos following every graceful line — loose romantic updo with hair ornaments, expression melancholic and dreamy. Wearing: tattoos only, barefoot in steam, classic red short square nails. Environment: Budapest thermal bath, steam rising, marble columns, warm amber water reflections. Lighting: volumetric steam fog warm amber, extreme wet-look thermal mist on pale inked ballerina skin, steam swirling around elongated inked figure. Style: ballerina irezumi phoenix steam thermal editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, thermal phoenix grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_hot_glam_riad": {
-        "tier": "HOF",
-        "subject": "Middle Eastern beauty, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern beauty, mid-20s, hot glamour physique — dramatically cinched narrow waist, explosively wide round hips, smoldering hourglass — body fully covered in Japanese irezumi tattoos: phoenix in full flight mapped across dramatic curves — wings spanning wide hips, tail feathers wrapping narrow waist, chrysanthemum gardens blooming across chest — warm olive skin making crimson and gold tattoos luminous — ornate geisha updo with gold pins, expression exotic and commanding. Wearing: tattoos only, gold metallic stiletto heels, gold long stiletto nails. Environment: Moroccan luxury riad, intricate zellige tile walls, carved plaster archways, candles and lanterns warm amber, central fountain. Lighting: Moroccan lantern warm amber from multiple positions, olive skin in amber light, phoenix crimson and gold tattoos blazing. Style: Moroccan riad hot glamour irezumi phoenix editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Moroccan phoenix grade, portrait 2:3 vertical.",
-        "environment": "Moroccan luxury riad",
-        "lighting": "Moroccan lantern warm amber",
-        "style": "Gucci eclectic maximalism",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_latina_miami": {
-        "tier": "SSS",
-        "subject": "Colombian Latina goddess, mid-20s, Colombian reggaeton physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina goddess, mid-20s, Colombian reggaeton physique — extreme hourglass, explosively wide dramatic hips, impossibly tiny waist, thick powerful thighs — body fully covered in Japanese irezumi tattoos: phoenix rising dramatically up from powerful legs, wings spreading across explosive hips, chrysanthemums blooming in vivid color across bronzed torso — long dark wavy hair windswept in ocean breeze, expression Latin fire and confidence. Wearing: tattoos only, strappy high heel sandals on Miami sand, red long stiletto nails. Environment: Miami Beach at sunset, Ocean Drive, warm pink and orange sky blazing. Lighting: golden hour amber, tanning oil bronzing Latin skin. Style: Miami Latina irezumi phoenix sunset editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, Miami phoenix grade, portrait 2:3 vertical.",
-        "environment": "Miami Beach at sunset",
-        "lighting": "golden hour warm amber",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_nordic_aurora": {
-        "tier": "SSS",
-        "subject": "Scandinavian beauty, mid-20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Scandinavian beauty, mid-20s, ballerina physique — slender elongated figure, pale porcelain skin — body fully covered in Japanese irezumi tattoos: phoenix rising against aurora colors — wings in deep indigo and violet matching northern lights above, chrysanthemums in icy blue and silver across pale slender torso — platinum blonde hair windswept in arctic wind, expression cold and otherworldly. Wearing: tattoos only, barefoot in arctic snow, deep blue long stiletto nails. Environment: Iceland glacier at midnight, northern lights aurora borealis dancing overhead. Lighting: aurora borealis curtain of light washing over pale inked figure. Style: Iceland aurora irezumi phoenix nordic editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, aurora phoenix grade, portrait 2:3 vertical.",
-        "environment": "Iceland glacier, northern lights",
-        "lighting": "aurora borealis curtain of light",
-        "style": "Alexander McQueen dramatic fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_black_glam_desert": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: magnificent phoenix with wings fully spread across powerful back, chrysanthemum blooms in rich crimson and gold filling chest and shoulders, phoenix tail feathers cascading down thick powerful thighs — natural afro hair enormous and windswept against desert sky, expression ancient and untouchable, warrior queen energy. Wearing: tattoos only, barefoot in hot red sand, gold long stiletto nails. Environment: Namib desert red dunes at golden hour, dramatic African landscape, surreal orange sky. Lighting: golden hour warm backlight creating blazing halo around afro, strong rim backlight on deep skin making phoenix and chrysanthemum tattoos electric, tanning oil making deep skin and phoenix colors burn. Style: Black goddess irezumi phoenix desert editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Namib phoenix grade, portrait 2:3 vertical.",
-        "environment": "Namib desert red dunes at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    # C그룹: 잉어+벚꽃
-    "irezumi_koi_sakura_korean_void": {
-        "tier": "SSS",
-        "subject": "Korean beauty, mid-20s, slim runway physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, slim runway physique — disproportionately long legs, slender elegant frame, small delicate face — body fully covered in Japanese irezumi tattoos: crimson and gold koi fish leaping up impossibly long legs, pink cherry blossoms scattered across pale slender torso like falling snow, koi and sakura filling every inch of porcelain skin — elegant geisha updo with gold hairpin, expression cold runway steel. Wearing: tattoos only, extreme black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop. Lighting: dramatic chiaroscuro single spotlight, high gloss body oil making koi scales and cherry blossoms electric on pale porcelain skin. Style: Korean runway irezumi koi sakura void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, koi sakura void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_koi_sakura_vs_angel_kyoto_rain": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, legs over 90cm — body fully covered in Japanese irezumi tattoos: massive red and white koi fish leaping up from ankles, cherry blossoms falling across chest and shoulders in pink and white, rain-soaked skin making colors saturated and vivid — loose romantic updo with hair ornaments slipping in downpour, expression melancholic and breathtaking. Wearing: tattoos only, traditional wooden geta sandals in rain puddles, classic red short square nails. Environment: rain-soaked traditional Japanese street at night, Kyoto alley, paper lanterns glowing warm amber through downpour, wet cobblestones reflecting orange light. Lighting: volumetric rain fog, warm paper lantern amber, extreme wet-look rain streaming down koi and sakura tattoos. Style: Kyoto rain VS Angel irezumi koi sakura editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, Kyoto koi rain grade, portrait 2:3 vertical.",
-        "environment": "rain-soaked Kyoto alley at night",
-        "lighting": "volumetric rain fog warm amber lantern",
-        "style": "Dolce and Gabbana Italian glamour",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    "irezumi_koi_sakura_colombian_monaco": {
-        "tier": "HOF",
-        "subject": "Colombian Latina beauty, early 30s, luxury glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina beauty, early 30s, luxury glamour physique — defined waist, wide round hips, sophisticated voluptuous elegance — body fully covered in Japanese irezumi tattoos: golden koi fish leaping dramatically across voluptuous curves, cherry blossoms in pale pink and white scattered across sophisticated torso — side-swept old Hollywood hair dramatically draped, expression enigmatic and impossibly chic. Wearing: tattoos only, diamond necklace and earrings as only additions, gold metallic stiletto heels, black and gold nail art. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts in harbor, city of Monaco illuminated. Lighting: strong rim backlight halo from Monaco nightscape, diamond jewelry catching lights and sparkling, satin skin glow on koi and sakura inked curves. Style: Monaco luxury irezumi koi sakura diamond night editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Monaco koi grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    # D그룹: 학+모란
-    "irezumi_crane_peony_slim_elegance_white": {
-        "tier": "SSS",
-        "subject": "Korean beauty, mid-20s, slender elegant physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, slender elegant physique — slim narrow frame, graceful delicate figure, refined fashion presence — body fully covered in Japanese irezumi tattoos: elegant cranes in flight mapping slender arms and long neck, lush peonies in deep crimson and blush blooming across delicate torso, crane wings spanning across pale back — long straight silky black hair sleek and smooth, expression fresh and pure. Wearing: tattoos only, nude stiletto heels, nude long almond nails. Environment: pure white minimalist studio, seamless white backdrop. Lighting: soft beauty dish even flattering illumination, light natural skin glow making crane and peony tattoos delicate and precise. Style: white studio slender elegance irezumi crane peony editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, white studio crane grade, portrait 2:3 vertical.",
-        "environment": "pure white minimalist studio",
-        "lighting": "soft beauty dish",
-        "style": "Chanel classic luxury elegance",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_super_glam_versailles": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny waist, extremely wide round heavy hips, maximum pinup hourglass — body fully covered in Japanese irezumi tattoos: cranes soaring across dramatic wide hips with wings spread, deep crimson peonies blooming across cinched waist and full chest, golden crane feathers cascading down heavy thighs — long jet black wavy hair cascading, expression half-lidded and devastating. Wearing: tattoos only, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting curves infinitely. Lighting: Versailles candlelight chiaroscuro, deep shadows and sharp highlights on dramatic tattooed hourglass, satin skin glow, peony crimson blazing in baroque gold atmosphere. Style: Versailles super glamour irezumi crane peony editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Versailles crane grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "Versailles candlelight chiaroscuro",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_southeast_asian_beach": {
-        "tier": "SSS",
-        "subject": "Southeast Asian beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Southeast Asian beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, golden tan glowing skin — body fully covered in Japanese irezumi tattoos: white cranes soaring up golden tan legs, lush pink peonies blooming across glowing chest, crane feathers delicate against warm tropical skin — windswept long wavy hair sea-salted and free, expression paradise goddess alluring. Wearing: tattoos only, strappy high heel sandals, gold long almond nails. Environment: French Riviera cliff at golden hour, azure Mediterranean sea below, golden sunlight. Lighting: golden hour warm backlight, tanning oil on golden skin making white crane and pink peony tattoos vivid. Style: Riviera Southeast Asian irezumi crane peony golden editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, Riviera crane grade, portrait 2:3 vertical.",
-        "environment": "French Riviera cliff at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_mature_luxury_monaco": {
-        "tier": "SSS",
-        "subject": "French European beauty, early 30s, luxury glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: French European beauty, early 30s, luxury glamour physique — defined waist, wide round hips, sophisticated mature elegance — body fully covered in Japanese irezumi tattoos: cranes in elegant flight across sophisticated curves, deep crimson peonies blooming with painterly detail across refined torso and hips — side-swept old Hollywood hair, expression sophisticated and enigmatic. Wearing: tattoos only, diamond jewelry as sole addition, gold metallic stiletto heels, black and gold nail art. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts in harbor. Lighting: Monaco nightscape rim backlight, diamond jewelry sparkling, satin skin glow. Style: Monaco mature luxury irezumi crane peony editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, Monaco crane grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    # E그룹: 호랑이+대나무
-    "irezumi_tiger_bamboo_sports_glam_void": {
-        "tier": "HOF",
-        "subject": "Korean beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, sports glamour physique — athletic toned curves, round lifted hips, defined abs, powerful yet feminine — body fully covered in Japanese irezumi tattoos: fierce tiger prowling up athletic legs with burning amber eyes, bamboo forest rising along torso, tiger stripes flowing with muscle definition, snarling tiger face across powerful back — elegant geisha updo with gold pin, expression fierce and commanding. Wearing: tattoos only, black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro, deep shadows carving athletic definition, high gloss body oil making tiger stripes and bamboo electric on toned skin, amber tiger eyes glowing in darkness. Style: sports glamour irezumi tiger bamboo void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, tiger void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_vs_angel_dubai": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, legs over 90cm, runway-ready glamour — body fully covered in Japanese irezumi tattoos: powerful tiger ascending impossibly long legs, bamboo reaching up elongated torso, tiger tail wrapping narrow waist, fierce face emerging at shoulder — high sleek ponytail severe and polished, expression smoldering and powerful. Wearing: tattoos only, gold metallic stiletto heels, gold long stiletto nails. Environment: Dubai luxury penthouse rooftop at night, Burj Khalifa glowing in distance, city skyline electric. Lighting: strong rim backlight from Dubai city glow, high gloss body oil on VS Angel inked body gleaming in city light. Style: Dubai VS Angel irezumi tiger bamboo night editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, Dubai tiger grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop at night",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_hot_glam_neon": {
-        "tier": "SSS",
-        "subject": "Japanese beauty, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, hot glamour physique — dramatically cinched waist, explosively wide round hips, smoldering hourglass — body fully covered in Japanese irezumi tattoos: roaring tiger mapped across dramatic curves — stripes following the cinched waist and wide hips — bamboo rising along torso, tiger face fierce across chest — wet look slick-back hair severe, expression smoldering intensity. Wearing: tattoos only, black stiletto heels, red long stiletto nails. Environment: Shinjuku neon-lit rainy street, Tokyo night, rain-soaked pavement. Lighting: pink neon from left, blue neon from right, multi-colored neon edge glow slicing across tiger stripe tattoos, extreme wet-look rain on inked curves. Style: Tokyo neon hot glamour irezumi tiger editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, neon tiger grade, portrait 2:3 vertical.",
-        "environment": "Shinjuku neon-lit rainy street",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_african_desert": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — extremely wide round hips, ultra-narrow waist, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: massive tiger in full prowl mapped across powerful body — amber and black tiger stripes following dramatic curves, bamboo forest rising from powerful thighs to shoulders, tiger face fierce across upper back — natural afro enormous and windswept, expression ancient warrior power. Wearing: tattoos only, barefoot in hot red sand, gold long stiletto nails. Environment: Namib desert red dunes at golden hour, surreal orange sky, elemental African landscape. Lighting: golden hour warm backlight blazing halo around afro, strong rim light making deep skin and amber tiger stripes electric, tanning oil making tiger and bamboo burn in desert light. Style: Namib Black goddess irezumi tiger bamboo desert editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Namib tiger grade, portrait 2:3 vertical.",
-        "environment": "Namib desert red dunes at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_brazilian_pool": {
-        "tier": "SSS",
-        "subject": "Brazilian goddess, mid-20s, Brazilian carnival physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Brazilian goddess, mid-20s, Brazilian carnival physique — massive round hips dominating silhouette, extremely wide hips, powerfully thick thighs, bronzed tropical skin — body fully covered in Japanese irezumi tattoos: powerful tiger mapped across massive curves — stripes following enormous round hips and thick powerful thighs, bamboo rising up bronzed torso, tiger roaring across powerful chest — big dark voluminous hair wild and alive, expression carnival queen fierce. Wearing: tattoos only, barefoot on wet pool edge, gold long almond nails. Environment: luxury infinity pool edge, tropical resort at golden hour, turquoise water. Lighting: golden hour warm backlight, extreme wet-look pool water streaming down tiger tattoos, tanning oil making tiger stripes vivid on tropical skin. Style: tropical Brazilian irezumi tiger bamboo pool editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, tropical tiger grade, portrait 2:3 vertical.",
-        "environment": "luxury infinity pool edge",
-        "lighting": "golden hour warm backlight",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-
-    # ── 바디글리터 (2026-07-17 추가) ──
-    "bodyglitter_silver_neon_cyberpunk": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic runway goddess, early 20s, slim runway physique 185cm+",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic runway goddess, early 20s, slim runway physique 185cm+ — disproportionately long legs, slender waist, elongated graceful frame — entire body covered in dense silver holographic glitter from neck to toe, skin transformed into galaxy surface, silver and holographic glitter densely packed from collarbone to toe, body catching neon light from every microscopic facet — wet look slicked back hair severe, expression cold and cybernetic. Wearing: dense silver holographic glitter covering entire body as sole garment — glitter so densely applied it creates second skin effect, iridescent color shifts from silver to pink to blue — crystal PVC platform boots, holographic long stiletto nails. Environment: cyberpunk neon city street at night, rain-soaked alley, neon signs reflecting in wet pavement. Lighting: multi-colored neon edge glow — pink neon left, blue neon right — holographic glitter refracting neon into thousands of rainbow points across entire body, rain drops on glitter surface catching additional light. Style: holographic glitter cyberpunk goddess editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, holographic glitter cyberpunk grade, portrait 2:3 vertical.",
-        "environment": "cyberpunk neon city street at night",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_gold_void_black_glam": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — entire body covered in dense gold holographic glitter from neck to toe, deep skin beneath gold glitter creating warm amber bronze tones, glitter so densely packed skin becomes living gold sculpture, natural afro hair voluminous and commanding with gold glitter dust at edges, expression fierce and untouchable. Wearing: dense gold holographic glitter covering entire body as sole garment, gold glitter second skin from collarbone to ankle, black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight, gold glitter blazing in single beam against total darkness, every glitter facet catching light creating thousands of gold sparks across deep skin, deep shadows carving hourglass into dramatic relief. Style: gold glitter Black goddess void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, gold glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_rose_gold_versailles": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — entire body covered in dense rose gold iridescent glitter from neck to toe, porcelain pale skin beneath rose gold glitter creating warm peach tones, glitter shifting from pink to gold to copper as body moves, long jet black wavy hair cascading dramatically, expression half-lidded and devastating. Wearing: dense rose gold holographic glitter covering entire body as sole garment, glitter second skin maximum coverage, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting glitter infinitely, marble floors. Lighting: Versailles chandelier light catching every rose gold glitter facet — thousands of pink and gold light refractions dancing — gilded mirrors multiplying glitter sparkle infinitely. Style: rose gold glitter Versailles bombshell editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, rose gold glitter Versailles grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "Versailles chandelier light",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_blue_holographic_pool": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — toned flat abs, model-perfect proportions, legs over 90cm — entire body covered in dense blue holographic glitter from neck to toe, golden tan skin beneath blue glitter creating electric teal tones, glitter shifting from deep blue to aqua to violet as light catches, windswept long wavy dark hair, expression goddess-like and confident. Wearing: dense blue holographic glitter covering entire body as sole garment, glitter so packed it creates iridescent second skin, barefoot on wet pool edge, nude long almond nails dusted in matching blue glitter. Environment: luxury infinity pool edge at golden hour, turquoise water below, tropical resort, palm trees. Lighting: golden hour warm backlight from horizon, pool water reflections casting aqua light upward on glitter-covered body, blue holographic glitter refracting both golden and aqua light simultaneously. Style: blue holographic glitter infinity pool VS Angel editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, blue glitter pool grade, portrait 2:3 vertical.",
-        "environment": "luxury infinity pool edge at golden hour",
-        "lighting": "golden hour backlight with pool water reflections",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_silver_onsen_steam": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, sports glamour physique — toned athletic curves, round lifted hips, flat defined abs — entire body covered in dense silver platinum glitter from neck to toe, warm ivory skin beneath silver glitter creating pearl luminous tones, steam making glitter glisten and sparkle with every breath, wet look slicked back dark hair severe and sleek, expression commanding and sensual. Wearing: dense silver platinum holographic glitter covering entire body as sole garment, glitter second skin steaming and glistening, barefoot on wet marble, classic red long almond nails dusted in silver glitter. Environment: Budapest thermal bath, marble columns, steam rising from glowing pool surface, warm amber lantern light reflecting in water. Lighting: volumetric steam fog warm amber, steam catching silver glitter and making it glow from within, amber lantern light turning silver glitter warm gold at edges, extreme wet-look steam condensation on glitter surface. Style: silver glitter thermal steam Japanese goddess editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, silver glitter onsen grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_rainbow_aurora_nordic": {
-        "tier": "HOF",
-        "subject": "Scandinavian beauty, mid-20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Scandinavian beauty, mid-20s, ballerina physique — slender elongated figure, graceful elegant posture, pale porcelain skin — entire body covered in dense rainbow holographic glitter from neck to toe, pale skin beneath rainbow glitter creating ethereal iridescent tones, glitter shifting through every color of aurora spectrum — green violet pink blue — matching the sky above, platinum blonde windswept hair with rainbow glitter dust, expression cold and otherworldly. Wearing: dense rainbow holographic glitter covering entire body as sole garment, glitter matching aurora colors above, barefoot in arctic snow, deep blue long stiletto nails dusted in matching glitter. Environment: Iceland glacier at midnight, northern lights aurora borealis dancing overhead in green and violet ribbons, ancient ice formations, mystical arctic landscape. Lighting: aurora borealis curtain of light washing over glitter-covered pale figure — green and violet aurora light refracting through rainbow glitter creating supernatural color explosion — glitter and aurora colors perfectly synchronized. Style: rainbow glitter aurora Nordic goddess editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, rainbow glitter aurora grade, portrait 2:3 vertical.",
-        "environment": "Iceland glacier, northern lights aurora",
-        "lighting": "aurora borealis curtain of light",
-        "style": "Alexander McQueen dramatic fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_emerald_dubai_rooftop": {
-        "tier": "HOF",
-        "subject": "Middle Eastern goddess, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern goddess, mid-20s, hot glamour physique — dramatically cinched narrow waist, explosively wide round hips, smoldering hourglass — entire body covered in dense emerald green holographic glitter from neck to toe, warm olive skin beneath emerald glitter creating rich jewel-tone depth, glitter shifting from deep forest green to electric lime to gold as light catches, high sleek ponytail severe and polished with emerald glitter dust, expression smoldering and powerful. Wearing: dense emerald holographic glitter covering entire body as sole garment, glitter second skin maximum coverage, gold metallic stiletto heels, gold long stiletto nails. Environment: Dubai luxury penthouse rooftop at night, city skyline blazing below, Burj Khalifa glowing in distance. Lighting: strong rim backlight from Dubai city glow, emerald glitter refracting gold and amber city lights creating electric green-gold color explosion across olive skin. Style: emerald glitter Dubai rooftop goddess editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, emerald glitter Dubai grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop at night",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_copper_santorini_sunset": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, VS Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, VS Angel body — toned flat abs, model-perfect proportions, legs over 90cm — entire body covered in dense copper bronze holographic glitter from neck to toe, sun-kissed golden skin beneath copper glitter creating warm molten metal tones, glitter shifting from deep copper to bright bronze to warm gold in sunset light, windswept long dark wavy hair catching sunset, expression goddess-like and confident. Wearing: dense copper holographic glitter covering entire body as sole garment, glitter burning like liquid sunset metal, gladiator sandals lacing up glitter-dusted calves, gold long almond nails. Environment: Santorini cliff edge at golden hour, white architecture and iconic blue dome church behind, Aegean sea glittering amber below. Lighting: golden hour warm backlight from setting Aegean sun — copper glitter igniting into liquid fire in sunset — every glitter facet burning amber and gold, windswept hair backlit and glowing. Style: copper glitter Santorini sunset goddess editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, copper glitter Santorini grade, portrait 2:3 vertical.",
-        "environment": "Santorini cliff edge at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_purple_monaco_night": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — entire body covered in dense deep violet purple holographic glitter from neck to toe, porcelain pale skin beneath purple glitter creating ethereal amethyst tones, glitter shifting from deep violet to electric purple to pink as light catches, long jet black wavy hair cascading dramatically, expression half-lidded and devastating. Wearing: dense purple holographic glitter covering entire body as sole garment, glitter creating amethyst goddess effect, gold metallic stiletto heels, deep red long almond nails. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts illuminated in harbor, Monaco city lights purple and gold in distance. Lighting: strong rim backlight from Monaco nightscape, purple holographic glitter refracting city lights into violet and gold explosions across dramatic hourglass curves. Style: purple glitter Monaco night bombshell editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, purple glitter Monaco grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_red_void_colombian": {
-        "tier": "HOF",
-        "subject": "Colombian Latina goddess, mid-20s, Colombian reggaeton physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina goddess, mid-20s, Colombian reggaeton physique — extreme hourglass, explosively wide dramatic round hips, impossibly tiny waist, thick powerful thighs — entire body covered in dense crimson red holographic glitter from neck to toe, bronzed Latin skin beneath red glitter creating smoldering fire tones, glitter shifting from deep blood red to electric crimson to burning orange as light catches, long dark wavy hair wild and dramatic, expression Latin fire and fierce dominance. Wearing: dense crimson red holographic glitter covering entire body as sole garment, red glitter on dramatic hourglass creating maximum impact, extreme black stiletto heels, red long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight from above, crimson red glitter blazing in single beam against total darkness — body like living flame against black void — deep shadows carving extreme hourglass. Style: crimson glitter Colombian fire goddess void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, red glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_ice_blue_void_ballerina": {
-        "tier": "HOF",
-        "subject": "Korean beauty, early 20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, early 20s, ballerina physique — slender elongated figure, graceful elegant posture, visible shoulder blade definition, dancer's poised carriage — entire body covered in dense ice blue and white holographic glitter from neck to toe, porcelain pale skin beneath ice glitter creating ethereal frozen goddess tones, glitter shifting from icy white to electric blue to pale violet, elegant updo with gold hairpin dusted in matching ice glitter, expression serene and ethereal. Wearing: dense ice blue holographic glitter covering entire body as sole garment, glitter creating frozen crystal goddess effect on slender ballerina frame, extreme nude stiletto heels elongating legs, nude long almond nails dusted in ice glitter. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: soft beauty dish even flattering illumination from front, cool blue edge light from sides — ice glitter refracting into white and blue crystal explosions across slender figure — pale skin and ice glitter creating self-luminous ethereal glow against darkness. Style: ice blue glitter Korean ballerina void editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, ice glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "soft beauty dish with cool blue edge light",
-        "style": "Chanel classic luxury elegance",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-
-    # 2026-07-16 Runway Slim + Young Adult SSS
-    "runway_korean_slim_void_studio",
-    "runway_korean_slim_paris_window",
-    "runway_korean_slim_dubai_penthouse",
-    "runway_korean_slim_nyc_rooftop",
-    "runway_korean_slim_icelandic_glacier",
-    "runway_korean_slim_berlin_underground",
-    "runway_korean_slim_palawan_karst",
-    "runway_korean_slim_seychelles_granite",
-    "runway_korean_slim_tattoo_collarbone_void",
-    "runway_korean_slim_newyork_snowstorm",
-    "young_korean_jeju_sunrise",
-    "young_korean_studio_black_minimal",
-    "young_korean_maldives_first_trip",
-    "young_korean_paris_first_europe",
-    "young_korean_summer_busan",
-    "young_korean_tattoo_ankle_jeju",
-    "young_korean_nyc_first_american",
-    "young_korean_tattoo_shoulder_okinawa",
-    "young_korean_cherry_blossom",
-    "young_korean_bali_first_solo",
-    "young_korean_21_birthday_gold",
-
-    
-    # ── 이레즈미 전신 타투 (2026-07-17 추가) ──
-    # A그룹: 용+파도
-    "irezumi_dragon_wave_black_glam_void": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: massive dragon coiling up from ankles with scales rendered in obsessive detail, crashing ocean waves filling every gap between dragon coils from thigh to shoulder, tattoos as the only covering — jet black afro voluminous and commanding, expression fierce and untouchable. Wearing: tattoos only, black stiletto heels elongating inked powerful legs, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight, deep shadows carving hourglass definition, high gloss body oil making dragon scales and wave crests electric against deep skin, tattoo colors blazing in contrast. Style: Black goddess irezumi dragon void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, obsidian dragon grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_sports_glam_onsen": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, sports glamour physique — toned athletic curves, round lifted hips, flat defined abs — body fully covered in Japanese irezumi tattoos: twin dragons spiraling up both legs meeting at the spine, powerful ocean waves crashing across flat abs and chest, tattoos blanketing every inch of athletic skin — wet-slicked dark hair pulled severely back, expression commanding and sensual. Wearing: tattoos only, barefoot on wet marble, classic red long almond nails. Environment: Budapest thermal bath, marble columns, steam rising from glowing pool surface, warm amber lantern light. Lighting: volumetric steam fog warm amber, extreme wet-look thermal water streaming down dragon tattoos making colors saturated and vivid, steam swirling around athletic inked figure. Style: Japanese sports goddess irezumi thermal steam editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, thermal dragon grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_super_glam_dubai": {
-        "tier": "SSS",
-        "subject": "Middle Eastern beauty, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern beauty, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — body fully covered in Japanese irezumi tattoos: enormous dragon wrapping entire hourglass figure — tail at ankle, body coiling around dramatic hips and cinched waist, head resting at collarbone — deep ocean waves filling every gap in rich color, tattoos mapping every dramatic curve — long jet black wavy hair cascading, expression half-lidded and devastating. Wearing: tattoos only, gold metallic stiletto heels, gold long almond nails. Environment: Dubai luxury penthouse rooftop, city skyline at night, Burj Khalifa glowing in distance. Lighting: strong rim backlight from Dubai city glow, high gloss body oil making dragon and wave tattoos gleam, gold heels catching distant city lights. Style: Dubai super glamour irezumi dragon night editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, Dubai dragon grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_power_fitness_strobe": {
-        "tier": "HOF",
-        "subject": "European fitness goddess, mid-20s, power fitness physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: European fitness goddess, mid-20s, power fitness physique — very muscular defined body, strong arms and legs, powerful commanding frame — body fully covered in Japanese irezumi tattoos: fierce dragon with open jaw mapped across powerful back and shoulders, ocean waves crashing between muscular arms and legs, tattoos following every muscle contour — slick-back severe hair tight and architectural, expression dominant and fierce. Wearing: tattoos only, black platform boots, black long stiletto nails. Environment: pure black void. Lighting: harsh direct strobe from above, high-contrast shadows carving muscle definition under dragon tattoos, high gloss body oil making every muscle and scale catch strobe light. Style: power fitness irezumi dragon strobe editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, strobe dragon grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "harsh direct strobe",
-        "style": "Balmain power glamour",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_vs_angel_santorini": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — toned flat abs, model-perfect proportions, legs over 90cm — body fully covered in Japanese irezumi tattoos: golden dragon ascending from bare feet up impossibly long legs, ocean waves in deep indigo and teal filling the space between dragon coils, tattoos burning in Aegean sunset light — windswept dark hair streaming dramatically in sea breeze, expression goddess-like and confident. Wearing: tattoos only, gladiator sandals lacing up inked calves, gold long almond nails. Environment: Santorini cliff edge at golden hour, white architecture and blue dome church, Aegean sea glittering amber and gold. Lighting: golden hour warm backlight from Aegean sunset — dragon gold scales burning amber — tanning oil sheen on sun-kissed inked skin. Style: Santorini VS Angel irezumi dragon sunset editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Santorini dragon grade, portrait 2:3 vertical.",
-        "environment": "Santorini cliff edge at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_slim_runway_neon": {
-        "tier": "HOF",
-        "subject": "Korean runway goddess, early 20s, slim runway physique 185cm+",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, early 20s, slim runway physique 185cm+ — disproportionately long legs dominating silhouette, slender waist, narrow hips, towering editorial presence — body fully covered in Japanese irezumi tattoos: slender dragon winding elegantly up impossibly long legs, delicate ocean waves mapping the elongated torso, tattoos emphasizing extreme height and length — wet look severe slick-back hair, expression cold and untouchable. Wearing: tattoos only, extreme stiletto heels, black long stiletto nails. Environment: Shinjuku neon-lit rainy alley, Tokyo cyberpunk night, rain-soaked pavement reflections. Lighting: multi-colored neon edge glow — pink neon left, blue neon right — extreme wet-look rain making dragon tattoos electric on pale tall figure. Style: Korean runway irezumi dragon neon Tokyo editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, neon dragon grade, portrait 2:3 vertical.",
-        "environment": "Shinjuku neon-lit rainy alley",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    # B그룹: 봉황+국화
-    "irezumi_phoenix_chrysanthemum_vs_angel_versailles": {
-        "tier": "SSS",
-        "subject": "Japanese beauty, late 20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, late 20s, Victoria's Secret Angel body — model-perfect proportions, runway-ready athletic glamour, glowing healthy skin — body fully covered in Japanese irezumi tattoos: magnificent phoenix with wings fully spread across entire back visible through frontal pose, chrysanthemum blooms in rich crimson and gold filling chest and shoulders, phoenix tail feathers cascading down long legs — elegant geisha updo with gold ornament, expression serene and powerful. Wearing: tattoos only, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting inked figure infinitely, marble floors. Lighting: dramatic chiaroscuro candlelight, Versailles gold reflections warming phoenix colors, satin skin glow. Style: Versailles VS Angel irezumi phoenix editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Versailles phoenix grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "dramatic chiaroscuro candlelight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_ballerina_steam": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, early 20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, early 20s, ballerina physique — slender elongated figure, visible shoulder blade definition, graceful dancer's carriage — body fully covered in Japanese irezumi tattoos: phoenix rising from feet with wings spreading across slender back, chrysanthemums in soft pink and white blooming delicately across pale elongated torso and arms, tattoos following every graceful line — loose romantic updo with hair ornaments, expression melancholic and dreamy. Wearing: tattoos only, barefoot in steam, classic red short square nails. Environment: Budapest thermal bath, steam rising, marble columns, warm amber water reflections. Lighting: volumetric steam fog warm amber, extreme wet-look thermal mist on pale inked ballerina skin, steam swirling around elongated inked figure. Style: ballerina irezumi phoenix steam thermal editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, thermal phoenix grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_hot_glam_riad": {
-        "tier": "HOF",
-        "subject": "Middle Eastern beauty, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern beauty, mid-20s, hot glamour physique — dramatically cinched narrow waist, explosively wide round hips, smoldering hourglass — body fully covered in Japanese irezumi tattoos: phoenix in full flight mapped across dramatic curves — wings spanning wide hips, tail feathers wrapping narrow waist, chrysanthemum gardens blooming across chest — warm olive skin making crimson and gold tattoos luminous — ornate geisha updo with gold pins, expression exotic and commanding. Wearing: tattoos only, gold metallic stiletto heels, gold long stiletto nails. Environment: Moroccan luxury riad, intricate zellige tile walls, carved plaster archways, candles and lanterns warm amber, central fountain. Lighting: Moroccan lantern warm amber from multiple positions, olive skin in amber light, phoenix crimson and gold tattoos blazing. Style: Moroccan riad hot glamour irezumi phoenix editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Moroccan phoenix grade, portrait 2:3 vertical.",
-        "environment": "Moroccan luxury riad",
-        "lighting": "Moroccan lantern warm amber",
-        "style": "Gucci eclectic maximalism",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_latina_miami": {
-        "tier": "SSS",
-        "subject": "Colombian Latina goddess, mid-20s, Colombian reggaeton physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina goddess, mid-20s, Colombian reggaeton physique — extreme hourglass, explosively wide dramatic hips, impossibly tiny waist, thick powerful thighs — body fully covered in Japanese irezumi tattoos: phoenix rising dramatically up from powerful legs, wings spreading across explosive hips, chrysanthemums blooming in vivid color across bronzed torso — long dark wavy hair windswept in ocean breeze, expression Latin fire and confidence. Wearing: tattoos only, strappy high heel sandals on Miami sand, red long stiletto nails. Environment: Miami Beach at sunset, Ocean Drive, warm pink and orange sky blazing. Lighting: golden hour amber, tanning oil bronzing Latin skin. Style: Miami Latina irezumi phoenix sunset editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, Miami phoenix grade, portrait 2:3 vertical.",
-        "environment": "Miami Beach at sunset",
-        "lighting": "golden hour warm amber",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_nordic_aurora": {
-        "tier": "SSS",
-        "subject": "Scandinavian beauty, mid-20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Scandinavian beauty, mid-20s, ballerina physique — slender elongated figure, pale porcelain skin — body fully covered in Japanese irezumi tattoos: phoenix rising against aurora colors — wings in deep indigo and violet matching northern lights above, chrysanthemums in icy blue and silver across pale slender torso — platinum blonde hair windswept in arctic wind, expression cold and otherworldly. Wearing: tattoos only, barefoot in arctic snow, deep blue long stiletto nails. Environment: Iceland glacier at midnight, northern lights aurora borealis dancing overhead. Lighting: aurora borealis curtain of light washing over pale inked figure. Style: Iceland aurora irezumi phoenix nordic editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, aurora phoenix grade, portrait 2:3 vertical.",
-        "environment": "Iceland glacier, northern lights",
-        "lighting": "aurora borealis curtain of light",
-        "style": "Alexander McQueen dramatic fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_black_glam_desert": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: magnificent phoenix with wings fully spread across powerful back, chrysanthemum blooms in rich crimson and gold filling chest and shoulders, phoenix tail feathers cascading down thick powerful thighs — natural afro hair enormous and windswept against desert sky, expression ancient and untouchable, warrior queen energy. Wearing: tattoos only, barefoot in hot red sand, gold long stiletto nails. Environment: Namib desert red dunes at golden hour, dramatic African landscape, surreal orange sky. Lighting: golden hour warm backlight creating blazing halo around afro, strong rim backlight on deep skin making phoenix and chrysanthemum tattoos electric, tanning oil making deep skin and phoenix colors burn. Style: Black goddess irezumi phoenix desert editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Namib phoenix grade, portrait 2:3 vertical.",
-        "environment": "Namib desert red dunes at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    # C그룹: 잉어+벚꽃
-    "irezumi_koi_sakura_korean_void": {
-        "tier": "SSS",
-        "subject": "Korean beauty, mid-20s, slim runway physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, slim runway physique — disproportionately long legs, slender elegant frame, small delicate face — body fully covered in Japanese irezumi tattoos: crimson and gold koi fish leaping up impossibly long legs, pink cherry blossoms scattered across pale slender torso like falling snow, koi and sakura filling every inch of porcelain skin — elegant geisha updo with gold hairpin, expression cold runway steel. Wearing: tattoos only, extreme black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop. Lighting: dramatic chiaroscuro single spotlight, high gloss body oil making koi scales and cherry blossoms electric on pale porcelain skin. Style: Korean runway irezumi koi sakura void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, koi sakura void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_koi_sakura_vs_angel_kyoto_rain": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, legs over 90cm — body fully covered in Japanese irezumi tattoos: massive red and white koi fish leaping up from ankles, cherry blossoms falling across chest and shoulders in pink and white, rain-soaked skin making colors saturated and vivid — loose romantic updo with hair ornaments slipping in downpour, expression melancholic and breathtaking. Wearing: tattoos only, traditional wooden geta sandals in rain puddles, classic red short square nails. Environment: rain-soaked traditional Japanese street at night, Kyoto alley, paper lanterns glowing warm amber through downpour, wet cobblestones reflecting orange light. Lighting: volumetric rain fog, warm paper lantern amber, extreme wet-look rain streaming down koi and sakura tattoos. Style: Kyoto rain VS Angel irezumi koi sakura editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, Kyoto koi rain grade, portrait 2:3 vertical.",
-        "environment": "rain-soaked Kyoto alley at night",
-        "lighting": "volumetric rain fog warm amber lantern",
-        "style": "Dolce and Gabbana Italian glamour",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    "irezumi_koi_sakura_colombian_monaco": {
-        "tier": "HOF",
-        "subject": "Colombian Latina beauty, early 30s, luxury glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina beauty, early 30s, luxury glamour physique — defined waist, wide round hips, sophisticated voluptuous elegance — body fully covered in Japanese irezumi tattoos: golden koi fish leaping dramatically across voluptuous curves, cherry blossoms in pale pink and white scattered across sophisticated torso — side-swept old Hollywood hair dramatically draped, expression enigmatic and impossibly chic. Wearing: tattoos only, diamond necklace and earrings as only additions, gold metallic stiletto heels, black and gold nail art. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts in harbor, city of Monaco illuminated. Lighting: strong rim backlight halo from Monaco nightscape, diamond jewelry catching lights and sparkling, satin skin glow on koi and sakura inked curves. Style: Monaco luxury irezumi koi sakura diamond night editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Monaco koi grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    # D그룹: 학+모란
-    "irezumi_crane_peony_slim_elegance_white": {
-        "tier": "SSS",
-        "subject": "Korean beauty, mid-20s, slender elegant physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, slender elegant physique — slim narrow frame, graceful delicate figure, refined fashion presence — body fully covered in Japanese irezumi tattoos: elegant cranes in flight mapping slender arms and long neck, lush peonies in deep crimson and blush blooming across delicate torso, crane wings spanning across pale back — long straight silky black hair sleek and smooth, expression fresh and pure. Wearing: tattoos only, nude stiletto heels, nude long almond nails. Environment: pure white minimalist studio, seamless white backdrop. Lighting: soft beauty dish even flattering illumination, light natural skin glow making crane and peony tattoos delicate and precise. Style: white studio slender elegance irezumi crane peony editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, white studio crane grade, portrait 2:3 vertical.",
-        "environment": "pure white minimalist studio",
-        "lighting": "soft beauty dish",
-        "style": "Chanel classic luxury elegance",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_super_glam_versailles": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny waist, extremely wide round heavy hips, maximum pinup hourglass — body fully covered in Japanese irezumi tattoos: cranes soaring across dramatic wide hips with wings spread, deep crimson peonies blooming across cinched waist and full chest, golden crane feathers cascading down heavy thighs — long jet black wavy hair cascading, expression half-lidded and devastating. Wearing: tattoos only, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting curves infinitely. Lighting: Versailles candlelight chiaroscuro, deep shadows and sharp highlights on dramatic tattooed hourglass, satin skin glow, peony crimson blazing in baroque gold atmosphere. Style: Versailles super glamour irezumi crane peony editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Versailles crane grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "Versailles candlelight chiaroscuro",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_southeast_asian_beach": {
-        "tier": "SSS",
-        "subject": "Southeast Asian beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Southeast Asian beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, golden tan glowing skin — body fully covered in Japanese irezumi tattoos: white cranes soaring up golden tan legs, lush pink peonies blooming across glowing chest, crane feathers delicate against warm tropical skin — windswept long wavy hair sea-salted and free, expression paradise goddess alluring. Wearing: tattoos only, strappy high heel sandals, gold long almond nails. Environment: French Riviera cliff at golden hour, azure Mediterranean sea below, golden sunlight. Lighting: golden hour warm backlight, tanning oil on golden skin making white crane and pink peony tattoos vivid. Style: Riviera Southeast Asian irezumi crane peony golden editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, Riviera crane grade, portrait 2:3 vertical.",
-        "environment": "French Riviera cliff at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_mature_luxury_monaco": {
-        "tier": "SSS",
-        "subject": "French European beauty, early 30s, luxury glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: French European beauty, early 30s, luxury glamour physique — defined waist, wide round hips, sophisticated mature elegance — body fully covered in Japanese irezumi tattoos: cranes in elegant flight across sophisticated curves, deep crimson peonies blooming with painterly detail across refined torso and hips — side-swept old Hollywood hair, expression sophisticated and enigmatic. Wearing: tattoos only, diamond jewelry as sole addition, gold metallic stiletto heels, black and gold nail art. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts in harbor. Lighting: Monaco nightscape rim backlight, diamond jewelry sparkling, satin skin glow. Style: Monaco mature luxury irezumi crane peony editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, Monaco crane grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    # E그룹: 호랑이+대나무
-    "irezumi_tiger_bamboo_sports_glam_void": {
-        "tier": "HOF",
-        "subject": "Korean beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, sports glamour physique — athletic toned curves, round lifted hips, defined abs, powerful yet feminine — body fully covered in Japanese irezumi tattoos: fierce tiger prowling up athletic legs with burning amber eyes, bamboo forest rising along torso, tiger stripes flowing with muscle definition, snarling tiger face across powerful back — elegant geisha updo with gold pin, expression fierce and commanding. Wearing: tattoos only, black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro, deep shadows carving athletic definition, high gloss body oil making tiger stripes and bamboo electric on toned skin, amber tiger eyes glowing in darkness. Style: sports glamour irezumi tiger bamboo void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, tiger void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_vs_angel_dubai": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, legs over 90cm, runway-ready glamour — body fully covered in Japanese irezumi tattoos: powerful tiger ascending impossibly long legs, bamboo reaching up elongated torso, tiger tail wrapping narrow waist, fierce face emerging at shoulder — high sleek ponytail severe and polished, expression smoldering and powerful. Wearing: tattoos only, gold metallic stiletto heels, gold long stiletto nails. Environment: Dubai luxury penthouse rooftop at night, Burj Khalifa glowing in distance, city skyline electric. Lighting: strong rim backlight from Dubai city glow, high gloss body oil on VS Angel inked body gleaming in city light. Style: Dubai VS Angel irezumi tiger bamboo night editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, Dubai tiger grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop at night",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_hot_glam_neon": {
-        "tier": "SSS",
-        "subject": "Japanese beauty, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, hot glamour physique — dramatically cinched waist, explosively wide round hips, smoldering hourglass — body fully covered in Japanese irezumi tattoos: roaring tiger mapped across dramatic curves — stripes following the cinched waist and wide hips — bamboo rising along torso, tiger face fierce across chest — wet look slick-back hair severe, expression smoldering intensity. Wearing: tattoos only, black stiletto heels, red long stiletto nails. Environment: Shinjuku neon-lit rainy street, Tokyo night, rain-soaked pavement. Lighting: pink neon from left, blue neon from right, multi-colored neon edge glow slicing across tiger stripe tattoos, extreme wet-look rain on inked curves. Style: Tokyo neon hot glamour irezumi tiger editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, neon tiger grade, portrait 2:3 vertical.",
-        "environment": "Shinjuku neon-lit rainy street",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_african_desert": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — extremely wide round hips, ultra-narrow waist, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: massive tiger in full prowl mapped across powerful body — amber and black tiger stripes following dramatic curves, bamboo forest rising from powerful thighs to shoulders, tiger face fierce across upper back — natural afro enormous and windswept, expression ancient warrior power. Wearing: tattoos only, barefoot in hot red sand, gold long stiletto nails. Environment: Namib desert red dunes at golden hour, surreal orange sky, elemental African landscape. Lighting: golden hour warm backlight blazing halo around afro, strong rim light making deep skin and amber tiger stripes electric, tanning oil making tiger and bamboo burn in desert light. Style: Namib Black goddess irezumi tiger bamboo desert editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Namib tiger grade, portrait 2:3 vertical.",
-        "environment": "Namib desert red dunes at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_brazilian_pool": {
-        "tier": "SSS",
-        "subject": "Brazilian goddess, mid-20s, Brazilian carnival physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Brazilian goddess, mid-20s, Brazilian carnival physique — massive round hips dominating silhouette, extremely wide hips, powerfully thick thighs, bronzed tropical skin — body fully covered in Japanese irezumi tattoos: powerful tiger mapped across massive curves — stripes following enormous round hips and thick powerful thighs, bamboo rising up bronzed torso, tiger roaring across powerful chest — big dark voluminous hair wild and alive, expression carnival queen fierce. Wearing: tattoos only, barefoot on wet pool edge, gold long almond nails. Environment: luxury infinity pool edge, tropical resort at golden hour, turquoise water. Lighting: golden hour warm backlight, extreme wet-look pool water streaming down tiger tattoos, tanning oil making tiger stripes vivid on tropical skin. Style: tropical Brazilian irezumi tiger bamboo pool editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, tropical tiger grade, portrait 2:3 vertical.",
-        "environment": "luxury infinity pool edge",
-        "lighting": "golden hour warm backlight",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-
-    # ── 바디글리터 (2026-07-17 추가) ──
-    "bodyglitter_silver_neon_cyberpunk": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic runway goddess, early 20s, slim runway physique 185cm+",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic runway goddess, early 20s, slim runway physique 185cm+ — disproportionately long legs, slender waist, elongated graceful frame — entire body covered in dense silver holographic glitter from neck to toe, skin transformed into galaxy surface, silver and holographic glitter densely packed from collarbone to toe, body catching neon light from every microscopic facet — wet look slicked back hair severe, expression cold and cybernetic. Wearing: dense silver holographic glitter covering entire body as sole garment — glitter so densely applied it creates second skin effect, iridescent color shifts from silver to pink to blue — crystal PVC platform boots, holographic long stiletto nails. Environment: cyberpunk neon city street at night, rain-soaked alley, neon signs reflecting in wet pavement. Lighting: multi-colored neon edge glow — pink neon left, blue neon right — holographic glitter refracting neon into thousands of rainbow points across entire body, rain drops on glitter surface catching additional light. Style: holographic glitter cyberpunk goddess editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, holographic glitter cyberpunk grade, portrait 2:3 vertical.",
-        "environment": "cyberpunk neon city street at night",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_gold_void_black_glam": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — entire body covered in dense gold holographic glitter from neck to toe, deep skin beneath gold glitter creating warm amber bronze tones, glitter so densely packed skin becomes living gold sculpture, natural afro hair voluminous and commanding with gold glitter dust at edges, expression fierce and untouchable. Wearing: dense gold holographic glitter covering entire body as sole garment, gold glitter second skin from collarbone to ankle, black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight, gold glitter blazing in single beam against total darkness, every glitter facet catching light creating thousands of gold sparks across deep skin, deep shadows carving hourglass into dramatic relief. Style: gold glitter Black goddess void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, gold glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_rose_gold_versailles": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — entire body covered in dense rose gold iridescent glitter from neck to toe, porcelain pale skin beneath rose gold glitter creating warm peach tones, glitter shifting from pink to gold to copper as body moves, long jet black wavy hair cascading dramatically, expression half-lidded and devastating. Wearing: dense rose gold holographic glitter covering entire body as sole garment, glitter second skin maximum coverage, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting glitter infinitely, marble floors. Lighting: Versailles chandelier light catching every rose gold glitter facet — thousands of pink and gold light refractions dancing — gilded mirrors multiplying glitter sparkle infinitely. Style: rose gold glitter Versailles bombshell editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, rose gold glitter Versailles grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "Versailles chandelier light",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_blue_holographic_pool": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — toned flat abs, model-perfect proportions, legs over 90cm — entire body covered in dense blue holographic glitter from neck to toe, golden tan skin beneath blue glitter creating electric teal tones, glitter shifting from deep blue to aqua to violet as light catches, windswept long wavy dark hair, expression goddess-like and confident. Wearing: dense blue holographic glitter covering entire body as sole garment, glitter so packed it creates iridescent second skin, barefoot on wet pool edge, nude long almond nails dusted in matching blue glitter. Environment: luxury infinity pool edge at golden hour, turquoise water below, tropical resort, palm trees. Lighting: golden hour warm backlight from horizon, pool water reflections casting aqua light upward on glitter-covered body, blue holographic glitter refracting both golden and aqua light simultaneously. Style: blue holographic glitter infinity pool VS Angel editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, blue glitter pool grade, portrait 2:3 vertical.",
-        "environment": "luxury infinity pool edge at golden hour",
-        "lighting": "golden hour backlight with pool water reflections",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_silver_onsen_steam": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, sports glamour physique — toned athletic curves, round lifted hips, flat defined abs — entire body covered in dense silver platinum glitter from neck to toe, warm ivory skin beneath silver glitter creating pearl luminous tones, steam making glitter glisten and sparkle with every breath, wet look slicked back dark hair severe and sleek, expression commanding and sensual. Wearing: dense silver platinum holographic glitter covering entire body as sole garment, glitter second skin steaming and glistening, barefoot on wet marble, classic red long almond nails dusted in silver glitter. Environment: Budapest thermal bath, marble columns, steam rising from glowing pool surface, warm amber lantern light reflecting in water. Lighting: volumetric steam fog warm amber, steam catching silver glitter and making it glow from within, amber lantern light turning silver glitter warm gold at edges, extreme wet-look steam condensation on glitter surface. Style: silver glitter thermal steam Japanese goddess editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, silver glitter onsen grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_rainbow_aurora_nordic": {
-        "tier": "HOF",
-        "subject": "Scandinavian beauty, mid-20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Scandinavian beauty, mid-20s, ballerina physique — slender elongated figure, graceful elegant posture, pale porcelain skin — entire body covered in dense rainbow holographic glitter from neck to toe, pale skin beneath rainbow glitter creating ethereal iridescent tones, glitter shifting through every color of aurora spectrum — green violet pink blue — matching the sky above, platinum blonde windswept hair with rainbow glitter dust, expression cold and otherworldly. Wearing: dense rainbow holographic glitter covering entire body as sole garment, glitter matching aurora colors above, barefoot in arctic snow, deep blue long stiletto nails dusted in matching glitter. Environment: Iceland glacier at midnight, northern lights aurora borealis dancing overhead in green and violet ribbons, ancient ice formations, mystical arctic landscape. Lighting: aurora borealis curtain of light washing over glitter-covered pale figure — green and violet aurora light refracting through rainbow glitter creating supernatural color explosion — glitter and aurora colors perfectly synchronized. Style: rainbow glitter aurora Nordic goddess editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, rainbow glitter aurora grade, portrait 2:3 vertical.",
-        "environment": "Iceland glacier, northern lights aurora",
-        "lighting": "aurora borealis curtain of light",
-        "style": "Alexander McQueen dramatic fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_emerald_dubai_rooftop": {
-        "tier": "HOF",
-        "subject": "Middle Eastern goddess, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern goddess, mid-20s, hot glamour physique — dramatically cinched narrow waist, explosively wide round hips, smoldering hourglass — entire body covered in dense emerald green holographic glitter from neck to toe, warm olive skin beneath emerald glitter creating rich jewel-tone depth, glitter shifting from deep forest green to electric lime to gold as light catches, high sleek ponytail severe and polished with emerald glitter dust, expression smoldering and powerful. Wearing: dense emerald holographic glitter covering entire body as sole garment, glitter second skin maximum coverage, gold metallic stiletto heels, gold long stiletto nails. Environment: Dubai luxury penthouse rooftop at night, city skyline blazing below, Burj Khalifa glowing in distance. Lighting: strong rim backlight from Dubai city glow, emerald glitter refracting gold and amber city lights creating electric green-gold color explosion across olive skin. Style: emerald glitter Dubai rooftop goddess editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, emerald glitter Dubai grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop at night",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_copper_santorini_sunset": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, VS Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, VS Angel body — toned flat abs, model-perfect proportions, legs over 90cm — entire body covered in dense copper bronze holographic glitter from neck to toe, sun-kissed golden skin beneath copper glitter creating warm molten metal tones, glitter shifting from deep copper to bright bronze to warm gold in sunset light, windswept long dark wavy hair catching sunset, expression goddess-like and confident. Wearing: dense copper holographic glitter covering entire body as sole garment, glitter burning like liquid sunset metal, gladiator sandals lacing up glitter-dusted calves, gold long almond nails. Environment: Santorini cliff edge at golden hour, white architecture and iconic blue dome church behind, Aegean sea glittering amber below. Lighting: golden hour warm backlight from setting Aegean sun — copper glitter igniting into liquid fire in sunset — every glitter facet burning amber and gold, windswept hair backlit and glowing. Style: copper glitter Santorini sunset goddess editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, copper glitter Santorini grade, portrait 2:3 vertical.",
-        "environment": "Santorini cliff edge at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_purple_monaco_night": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — entire body covered in dense deep violet purple holographic glitter from neck to toe, porcelain pale skin beneath purple glitter creating ethereal amethyst tones, glitter shifting from deep violet to electric purple to pink as light catches, long jet black wavy hair cascading dramatically, expression half-lidded and devastating. Wearing: dense purple holographic glitter covering entire body as sole garment, glitter creating amethyst goddess effect, gold metallic stiletto heels, deep red long almond nails. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts illuminated in harbor, Monaco city lights purple and gold in distance. Lighting: strong rim backlight from Monaco nightscape, purple holographic glitter refracting city lights into violet and gold explosions across dramatic hourglass curves. Style: purple glitter Monaco night bombshell editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, purple glitter Monaco grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_red_void_colombian": {
-        "tier": "HOF",
-        "subject": "Colombian Latina goddess, mid-20s, Colombian reggaeton physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina goddess, mid-20s, Colombian reggaeton physique — extreme hourglass, explosively wide dramatic round hips, impossibly tiny waist, thick powerful thighs — entire body covered in dense crimson red holographic glitter from neck to toe, bronzed Latin skin beneath red glitter creating smoldering fire tones, glitter shifting from deep blood red to electric crimson to burning orange as light catches, long dark wavy hair wild and dramatic, expression Latin fire and fierce dominance. Wearing: dense crimson red holographic glitter covering entire body as sole garment, red glitter on dramatic hourglass creating maximum impact, extreme black stiletto heels, red long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight from above, crimson red glitter blazing in single beam against total darkness — body like living flame against black void — deep shadows carving extreme hourglass. Style: crimson glitter Colombian fire goddess void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, red glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_ice_blue_void_ballerina": {
-        "tier": "HOF",
-        "subject": "Korean beauty, early 20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, early 20s, ballerina physique — slender elongated figure, graceful elegant posture, visible shoulder blade definition, dancer's poised carriage — entire body covered in dense ice blue and white holographic glitter from neck to toe, porcelain pale skin beneath ice glitter creating ethereal frozen goddess tones, glitter shifting from icy white to electric blue to pale violet, elegant updo with gold hairpin dusted in matching ice glitter, expression serene and ethereal. Wearing: dense ice blue holographic glitter covering entire body as sole garment, glitter creating frozen crystal goddess effect on slender ballerina frame, extreme nude stiletto heels elongating legs, nude long almond nails dusted in ice glitter. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: soft beauty dish even flattering illumination from front, cool blue edge light from sides — ice glitter refracting into white and blue crystal explosions across slender figure — pale skin and ice glitter creating self-luminous ethereal glow against darkness. Style: ice blue glitter Korean ballerina void editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, ice glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "soft beauty dish with cool blue edge light",
-        "style": "Chanel classic luxury elegance",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-
-    # 2026-07-16 Runway Slim + Young Adult SS
-    "runway_korean_slim_seoulforest_spring",
-    "young_korean_pool_pastel",
-    "young_korean_neon_first_night",
-    "young_korean_tokyo_first_solo",
-    "young_korean_tattoo_first_wrist",
-    "young_korean_gym_first_gains",
-    "young_korean_campus_spring",
-
-# 2026-07-15 한국인 카테고리 신규 SSS
+    # 2026-07-15 ?쒓뎅??移댄뀒怨좊━ ?좉퇋 SSS
     "elder_korean_silver_hanok_dawn",
     "elder_korean_silver_paris_cafe",
     "elder_korean_silver_rio_beach",
@@ -4450,7 +3395,7 @@ SSS_TIER = {
 
     "infinity_mirror_goddess",
 
-        # 2026-07-03 ?좉퇋 QUAD/QUINT/HEXA/OCTET + 而⑥뀎 SSS
+        # 2026-07-03 ?醫됲뇣 QUAD/QUINT/HEXA/OCTET + ?뚢뫁??SSS
 
     "quad_four_ages_bodypaint",
 
@@ -4484,7 +3429,7 @@ SSS_TIER = {
 
     "octet_planets_solar_bodypaint",
 
-    # 2026-07-07 ?섏씠???щ┰?쒕젅???좊땲硫?꾨┛??11醫?SSS
+    # 2026-07-07 ??륁뵠???????뺤쟿???醫딅빍筌렺?袁ⓥ뵛??11??SSS
 
     "club_vip_neon_goddess",
 
@@ -4493,8 +3438,7 @@ SSS_TIER = {
     "micro_sequin_club",
 
     "rooftop_micro_night",
-    # 2026-07-15 신규 나이트 4종
-    "night_bust_queen_dubai",
+    # 2026-07-15 ?좉퇋 ?섏씠??4醫?    "night_bust_queen_dubai",
     "night_brazil_tokyo_neon",
     "night_supermodel_paris_rooftop",
     "night_powerlifter_lasvegas",
@@ -4514,7 +3458,7 @@ SSS_TIER = {
 
     "snakeskin_latex_glam",
 
-    # 2026-07-07 洹뱀옣??湲?섎㉧ 30醫?SSS
+    # 2026-07-07 域밸????疫꼲??롢돢 30??SSS
 
     "gyeongbokgung_night_couture",
 
@@ -4576,7 +3520,7 @@ SSS_TIER = {
 
     "ballet_stage_noir",
 
-        # 2026-07-06 怨듭떇E ?ㅻ툕??而ㅻ쾭 HOF?뭆SS ?ы븿 (7醫? + SSS 1醫?
+        # 2026-07-06 ?⑤벊?놢 ??삵닏???뚣끇苡?HOF?萸냆S ??釉?(7?? + SSS 1??
 
     "feather_body_cover",
 
@@ -4598,7 +3542,7 @@ SSS_TIER = {
 
 
 
-        # 2026-07-03 ?좉퇋 SSS 52醫?(?좉퇋 66醫?寃利??꾨즺)
+        # 2026-07-03 ?醫됲뇣 SSS 52??(?醫됲뇣 66??野꺜筌??袁⑥┷)
 
     "champagne_pour_body",
 
@@ -4706,7 +3650,7 @@ SSS_TIER = {
 
 
 
-    # 2026-07-02 ?쇳룷癒쇱뒪&?꾩뒪 G3/G4 SSS (8醫?
+    # 2026-07-02 ??노７?믪눘???袁⑸뮞 G3/G4 SSS (8??
 
     "opera_night",
 
@@ -4726,9 +3670,9 @@ SSS_TIER = {
 
 
 
-    # 2026-06-29 硫??諛붾뵒?섏씤??57醫?SSS (寃利??꾨즺 24醫??뺤젙 + 33醫?寃利??덉젙)
+    # 2026-06-29 筌렺??獄쏅뗀逾??륁뵥??57??SSS (野꺜筌??袁⑥┷ 24???類ㅼ젟 + 33??野꺜筌???됱젟)
 
-    # G1 ?鍮꾪삎 ???(24醫?寃利??꾨즺 SSS)
+    # G1 ????쑵??????(24??野꺜筌??袁⑥┷ SSS)
 
     "duo_fire_and_ice_bodypaint",
 
@@ -4742,7 +3686,7 @@ SSS_TIER = {
 
     "duo_circuit_and_nature_bodypaint",
 
-    # G2 ?鍮꾪삎 ?몃━??
+    # G2 ????쑵???紐꺿봺??
 
     "trio_rgb_trinity_bodypaint",
 
@@ -4754,7 +3698,7 @@ SSS_TIER = {
 
     "trio_season_trinity_bodypaint",
 
-    # G3 ?곌껐?????
+    # G3 ?怨뚭퍙??????
 
     "duo_butterfly_split_bodypaint",
 
@@ -4766,11 +3710,11 @@ SSS_TIER = {
 
     "duo_wave_hokusai_bodypaint",
 
-    # G3 SS (?곌껐 而⑥뀎 誘몃떖)
+    # G3 SS (?怨뚭퍙 ?뚢뫁??沃섎챶??
 
-    # "duo_klimt_tree_bodypaint",  # SS ?꾩슜
+    # "duo_klimt_tree_bodypaint",  # SS ?袁⑹뒠
 
-    # G4 ?곌껐???몃━??
+    # G4 ?怨뚭퍙???紐꺿봺??
 
     "trio_triptych_klimt_bodypaint",
 
@@ -4784,7 +3728,7 @@ SSS_TIER = {
 
     "trio_cosmic_creation_bodypaint",
 
-    # G1 異붽? (寃利??덉젙)
+    # G1 ?곕떽? (野꺜筌???됱젟)
 
     "duo_east_and_west_bodypaint",
 
@@ -4796,7 +3740,7 @@ SSS_TIER = {
 
     "duo_deep_sea_bodypaint",
 
-    # G2 異붽? (寃利??덉젙)
+    # G2 ?곕떽? (野꺜筌???됱젟)
 
     "trio_sun_moon_star_bodypaint",
 
@@ -4808,7 +3752,7 @@ SSS_TIER = {
 
     "trio_three_big_cats_bodypaint",
 
-    # G3 異붽? (寃利??덉젙)
+    # G3 ?곕떽? (野꺜筌???됱젟)
 
     "duo_dna_helix_bodypaint",
 
@@ -4822,7 +3766,7 @@ SSS_TIER = {
 
     "duo_peacock_split_bodypaint",
 
-    # G4 異붽? (寃利??덉젙)
+    # G4 ?곕떽? (野꺜筌???됱젟)
 
     "trio_last_supper_bodypaint",
 
@@ -4836,7 +3780,7 @@ SSS_TIER = {
 
     "trio_poles_and_equator_bodypaint",
 
-    # QUAD 4??(寃利??덉젙)
+    # QUAD 4??(野꺜筌???됱젟)
 
     "quad_four_seasons_bodypaint",
 
@@ -4848,7 +3792,7 @@ SSS_TIER = {
 
     "quad_rgba_spectrum_bodypaint",
 
-    # QUINT 5??(寃利??덉젙)
+    # QUINT 5??(野꺜筌???됱젟)
 
     "quint_five_continents_bodypaint",
 
@@ -4860,7 +3804,7 @@ SSS_TIER = {
 
 
 
-    # G5 ?곌껐?????30醫?(寃利??덉젙)
+    # G5 ?怨뚭퍙??????30??(野꺜筌???됱젟)
 
     "duo_earth_hemisphere_bodypaint",
 
@@ -4912,7 +3856,7 @@ SSS_TIER = {
 
     "duo_ink_wash_split_bodypaint",
 
-    # G6 ?鍮꾪삎 ?몃━??35醫?(寃利??덉젙)
+    # G6 ????쑵???紐꺿봺??35??(野꺜筌???됱젟)
 
     "trio_stone_bronze_iron_bodypaint",
 
@@ -4974,7 +3918,7 @@ SSS_TIER = {
 
     "trio_thesis_antithesis_synthesis_bodypaint",
 
-    # ???湲?섎㉧ SS (SSS 23醫?+ SS?꾩슜 5醫?
+    # ????疫꼲??롢돢 SS (SSS 23??+ SS?袁⑹뒠 5??
 
     "duo_infinity_pool_contrast",
 
@@ -5034,7 +3978,7 @@ SSS_TIER = {
 
     "duo_ice_bath_contrast",
 
-    # ???湲?섎㉧ SSS (23醫?
+    # ????疫꼲??롢돢 SSS (23??
 
     "duo_infinity_pool_contrast",
 
@@ -5082,9 +4026,8 @@ SSS_TIER = {
 
     "duo_penthouse_power",
 
-    # 2026-06-20 吏곸뾽&?쇱씠?꾩뒪???SS?꾩슜 10醫?+ SSS 24醫??ы븿
-
-    # SS?꾩슜
+    # 2026-06-20 筌욊낯毓???깆뵠?袁⑸뮞????SS?袁⑹뒠 10??+ SSS 24????釉?
+    # SS?袁⑹뒠
 
     "cruise_hostess", "yacht_club",
 
@@ -5092,7 +4035,7 @@ SSS_TIER = {
 
     "golf_caddie", "fitness_power", "scuba_instructor", "archery_goddess",
 
-    # SSS??SS???ы븿 (洹쒖튃)
+    # SSS??SS????釉?(域뱀뮇??
 
     "flight_attendant", "pilot_glamour", "yacht_captain",
 
@@ -5110,25 +4053,25 @@ SSS_TIER = {
 
 
 
-    # 2026-06-20 吏곸뾽&?쇱씠?꾩뒪???SSS 24醫??뺤젙
+    # 2026-06-20 筌욊낯毓???깆뵠?袁⑸뮞????SSS 24???類ㅼ젟
 
-    # A洹몃９ ????났/?댁뼇/??뀛由?
+    # A域밸챶竊?????????곷펶/???쏁뵳?
 
     "flight_attendant", "pilot_glamour", "yacht_captain",
 
     "private_jet", "helipad", "hotel_concierge",
 
-    # B洹몃９ ???꾨Ц吏?
+    # B域밸챶竊????袁ⓓ?쭪?
 
     "lawyer_power", "architect_chic", "casino_dealer", "gallery_curator",
 
-    # C洹몃９ ???ㅽ룷痢??쇳듃?덉뒪
+    # C域밸챶竊?????쎈７筌???노뱜??됰뮞
 
     "golf_glam", "tennis_luxe", "tennis_referee", "tennis_champion",
 
     "f1_grid_girl", "equestrian_glam", "horse_racing", "yoga_goddess",
 
-    # D洹몃９ ???쇳룷癒쇱뒪/?ㅽ룷痢?
+    # D域밸챶竊?????노７?믪눘????쎈７筌?
 
     "cheerleader", "ballet_prima", "gymnastics_editorial",
 
@@ -5138,33 +4081,32 @@ SSS_TIER = {
 
     "body_paint_nude",
 
-    # 2026-06-11 諛곌꼍 ?꾨━??SSS ?뺤젙 (1李?
+    # 2026-06-11 獄쏄퀗瑗??袁ⓥ봺??SSS ?類ㅼ젟 (1筌?
 
-    "cenote_sacred",         # 臾쇱냽 ?섏쭅 ?⑷뎬 + ?먮찓?꾨뱶 諛섏궗, 4???쇨???
+    "cenote_sacred",         # ?얠눘????륁춦 ??룸렗 + ?癒?컭?袁⑤굡 獄쏆꼷沅? 4???????
 
-    "tikal_skyrise",         # ?뺢? ???쇰씪誘몃뱶 + ?댄빐 + 怨⑤뱺?꾩썙 ??킅
+    "tikal_skyrise",         # ?類? ????곗뵬沃섎챶諭?+ ??꾨퉸 + ?ⓥ뫀諭?袁⑹뜖 ????
+    "angkor_dawn",           # ?怨뺛걵 獄쏆꼷沅?+ ??룻닊 ??깊뀱 + ??李볡몴?鈺곌퀗而? ?닌됰즲 ?대Þ???볧닋
 
-    "angkor_dawn",           # ?곕せ 諛섏궗 + ?⑷툑 ?쇱텧 + ?щ찓瑜?議곌컖, 援щ룄 援먭낵?쒓툒
+    "waitomo_glow",          # ??먁よ쳸?볧굝 ????뤿땾 筌ｌ뮇??+ ??롢늺 獄쏆꼷沅? ??낅궖????쑴竊??
 
-    "waitomo_glow",          # ?앸Ъ諛쒓킅 ??섏닔 泥쒖옣 + ?섎㈃ 諛섏궗, ?낅낫??鍮꾩＜??
+    # 2026-06-11 獄쏄퀗瑗??袁ⓥ봺??SSS ?類ㅼ젟 (2筌?
 
-    # 2026-06-11 諛곌꼍 ?꾨━??SSS ?뺤젙 (2李?
+    "marble_caves_water",    # ???귐딄퐤 ???쉘 + ?怨쀬돹??곸グ ??롢늺, ??뤾맒??獄쏄퀗瑗????る땾
 
-    "marble_caves_water",    # ?由ъ꽍 ?⑦꽩 + ?곗쉼?댁쫰 ?섎㈃, ?섏긽??諛곌꼍???≪닔
+    "bagan_balloon",         # ??용┛??+ ??룻닊 ??깊뀱 + ?븍뜇源???깆뜚, 4?遺용꺖 ?袁④펾
 
-    "bagan_balloon",         # ?닿린援?+ ?⑷툑 ?쇱텧 + 遺덊깙 ?됱썝, 4?붿냼 ?꾨꼍
+    "tigers_nest_cliff",     # ??덇펾 ??롫즲??+ 疫꿸퀡猷?繹먭퍓而?+ ??덉춾??깅튊 ??쇨텦
 
-    "tigers_nest_cliff",     # ?덈꼍 ?섎룄??+ 湲곕룄 源껊컻 + ?덈쭚?쇱빞 ?ㅼ궛
+    "sheikh_zayed_dawn",     # ????+ 筌뤴뫁???꾧쾿 獄쏅뗀??+ 獄쏆꼷沅??怨뺛걵 + ?됰뗀竊?袁⑹뜖
 
-    "sheikh_zayed_dawn",     # ????+ 紐⑥옄?댄겕 諛붾떏 + 諛섏궗 ?곕せ + 釉붾（?꾩썙
+    "livraria_lello_staircase", # ???뵬?꾨?? ??뺤쟿??+ ??덈굡 ?④쑬??+ ??쎈?紐껊굡疫꼲??깅뮞 3餓???녿┛??
 
-    "livraria_lello_staircase", # ?뚮씪肄뷀? ?쒕젅??+ ?덈뱶 怨꾨떒 + ?ㅽ뀒?몃뱶湲?쇱뒪 3以??숆린??
+    "namib_star_desert",     # ????뤿땾 ?袁⑺뒄 + ?????關苑?+ 獄쏄퉲猷뤄쭩??닌됰즲
 
-    "namib_star_desert",     # ??섏닔 ?꾩튂 + ?ш뎄 ?μ꽑 + 諛깊룷利?援щ룄
+    "ellora_rock_temple",    # ???あ 鈺곌퀗而?甕?+ ???뵬?꾨?? ??뺤쟿???袁⑹읈 ??됱넅
 
-    "ellora_rock_temple",    # ?뚮몢 議곌컖 踰?+ ?뚮씪肄뷀? ?쒕젅???꾩쟾 ?숉솕
-
-    # 2026-06-13 v26 ?붾뱶 ?쒕뱶留덊겕 SSS ?뺤젙
+    # 2026-06-13 v26 ?遺얜굡 ??뺣굡筌띾뜇寃?SSS ?類ㅼ젟
 
     "positano_cliff",
 
@@ -5186,7 +4128,7 @@ SSS_TIER = {
 
 
 
-    # 2026-06-19 ?좊땲?꾪듃?ㅽ???SSS 31醫??뺤젙
+    # 2026-06-19 ?醫딅빍?袁る뱜?????SSS 31???類ㅼ젟
 
     "anime_jp_90s_retro",
 
@@ -5252,7 +4194,7 @@ SSS_TIER = {
 
 
 
-    # 2026-06-18 ???뱀떆 SSS ?뺤젙
+    # 2026-06-18 ???諭??SSS ?類ㅼ젟
 
     "bodycon_power", "boudoir_noir", "wet_silk_gown", "oil_goddess_gold",
 
@@ -5282,13 +4224,13 @@ SSS_TIER = {
 
     "spa_private_steam", "bar_counter_glam", "after_party_suite", "tennis_short_dress",
 
-    # 2026-06-13 v27 ???뱀떆 SSS ?뺤젙
+    # 2026-06-13 v27 ???諭??SSS ?類ㅼ젟
 
     "dressing_room_mirror",
 
     "vip_booth_neon",
 
-    # 2026-06-13 鍮꾩튂&由ъ“??SSS ?뺤젙
+    # 2026-06-13 ??쑴???귐듼??SSS ?類ㅼ젟
 
     "infinity_pool",
 
@@ -5298,7 +4240,7 @@ SSS_TIER = {
 
     "sunset_cruise",
 
-    # 2026-06-14 ??移댁???SSS ?뺤젙
+    # 2026-06-14 ??燁삳똻???SSS ?類ㅼ젟
 
     "cherry_pop",
 
@@ -5320,45 +4262,44 @@ SSS_TIER = {
 
     "doll_house",
 
-    # 2026-06-15 harajuku_doll SSS ?밴꺽 (??移댁??????ㅼ??쒗? 嫄곕━ ?깊겕 4??寃利?
+    # 2026-06-15 harajuku_doll SSS ?諛닿봄 (??燁삳똻??????????? 椰꾧퀡???源딄쾿 4??野꺜筌?
 
     "harajuku_doll",
 
-    # 2026-06-15 greenhouse_eden SSS ?밴꺽 (怨꾩젅&?뚮쭏 ???롮궗洹 ?쒕젅???⑥떎 ?앺깭怨??듯빀 6??寃利?
+    # 2026-06-15 greenhouse_eden SSS ?諛닿봄 (?④쑴?????춳 ???濡?텢域뮤 ??뺤쟿????λ뼄 ??브묶?????? 6??野꺜筌?
 
     "greenhouse_eden",
 
-    # 2026-06-15 怨꾩젅&?뚮쭏 SSS 3醫??뺤젙
+    # 2026-06-15 ?④쑴?????춳 SSS 3???類ㅼ젟
 
-    "halloween_glam",       # ?섏긽+諛곌꼍+?뚰뭹 = 怨좊뵓 ?멸퀎愿 ?꾩쟾 ?듯빀, 6??寃利?
+    "halloween_glam",       # ??뤾맒+獄쏄퀗瑗???곕? = ?⑥쥓逾??硫명롦꽴? ?袁⑹읈 ????, 6??野꺜筌?
 
-    "new_year_glam",        # ?쒕젅???쒗 = ??＝+而⑦럹??鍮??≪닔, ??꾩뒪?섏뼱 4??寃利?
+    "new_year_glam",        # ??뺤쟿????쀂? = ??竊??뚢뫂???????る땾, ???袁⑸뮞??뤿선 4??野꺜筌?
 
-    "sakura_night_glam",    # ?쒕젅???뚮줈??= 踰싰퐙 ?곕꼸 ?⑦꽩 ?곗냽, ?좎궗 ?깅텋 6??寃利?
+    "sakura_night_glam",    # ??뺤쟿?????쨮??= 甕곗떚???怨뺢섯 ???쉘 ?怨쀫꺗, ?醫롪텢 ?源낇뀑 6??野꺜筌?
 
-    # 2026-06-15 ?먮뵒?좊━??臾대뱶 SSS 8醫??뺤젙
+    # 2026-06-15 ?癒?탵?醫듼봺???얜?諭?SSS 8???類ㅼ젟
 
-    "backlit_silk",         # ??킅 ?ш낵 ???쒕젅??愿묒썝, waitomo_glow ?쇰━ ?숈씪
+    "backlit_silk",         # ????????????뺤쟿???용쵐?? waitomo_glow ??겸봺 ??덉뵬
 
-    "mirror_room",          # ?ㅻ쾭?섑듃+嫄곗슱諛?寃쎄퀎 ?뚮㈇, dressing_room_mirror蹂대떎 媛뺥븿
+    "mirror_room",          # ??살쒔??묐뱜+椰꾧퀣?김쳸?野껋럡?????늾, dressing_room_mirror癰귣???揶쏅벤釉?
+    "eclipse_body",         # ??뺤쟿???꾨뗀以??獄쏆뮄?? ?怨쀯폒?袁⑷맒=??뤾맒
 
-    "eclipse_body",         # ?쒕젅??肄붾줈??諛쒓킅, ?곗＜?꾩긽=?섏긽
+    "plasma_aura",          # ???뵬筌앸뜄彛???뤾맒 ?袁⑹읈 ????, ?癒?섐筌왖=??뺤쟿??(???筌왖6 疫꿸퀣?)
 
-    "plasma_aura",          # ?뚮씪利덈쭏=?섏긽 ?꾩쟾 ?듯빀, ?먮꼫吏=?쒕젅??(?대?吏6 湲곗?)
+    "molten_chrome",        # ??룻굝嚥??諛몃뮉 ??竊??얠눖?????댿? ???삺=??띻펾
 
-    "molten_chrome",        # ?⑷킅濡??밸뒗 ?щ＼ 臾쇰━???숈“, ?뚯옱=?섍꼍
+    "mercury_pool",         # ??? ?紐꾧퍥=??롢늺 ?醫롪퍥 ?怨쀫꺗?? ??뤾맒=??り퍥
 
-    "mercury_pool",         # ?섏? ?몄껜=?섎㈃ ?좎껜 ?곗냽?? ?섏긽=?≪껜
+    "snowflake_skin",       # ?袁⑹뵠????뺤쟿????쇱뜚 ???삺 ??됱넅 (???筌왖5 疫꿸퀣?)
 
-    "snowflake_skin",       # ?꾩씠???쒕젅???ㅼ썝 ?뚯옱 ?숉솕 (?대?吏5 湲곗?)
-
-    "noir_femme_fatale",    # ?묐갚+5?붿냼 ?멸퀎愿 ?꾩쟾 援ы쁽, halloween_glam ?숈씪 ?쇰━
-
+    "noir_femme_fatale",    # ?臾먭컶+5?遺용꺖 ?硫명롦꽴? ?袁⑹읈 ?닌뗭겱, halloween_glam ??덉뵬 ??겸봺
 
 
-    # v28 ?꾪넻臾명솕 諛붾뵒?섏씤???⑥튂 (48醫?
 
-    # 1李?SSS
+    # v28 ?袁る꽰?얜챸??獄쏅뗀逾??륁뵥????ν뒄 (48??
+
+    # 1筌?SSS
 
     "kabuki_bodypaint",
 
@@ -5370,7 +4311,7 @@ SSS_TIER = {
 
     "mayan_bodypaint",
 
-    # 2李?SSS
+    # 2筌?SSS
 
     "geisha_bodypaint",
 
@@ -5384,7 +4325,7 @@ SSS_TIER = {
 
     "sumerian_bodypaint",
 
-    # 3李?SSS
+    # 3筌?SSS
 
     "maori_bodypaint",
 
@@ -5398,7 +4339,7 @@ SSS_TIER = {
 
     "haida_bodypaint",
 
-    # 4李?SSS
+    # 4筌?SSS
 
     "polynesian_bodypaint",
 
@@ -5410,7 +4351,7 @@ SSS_TIER = {
 
     "tang_dynasty_bodypaint",
 
-    # 5李?SSS
+    # 5筌?SSS
 
     "moroccan_bodypaint",
 
@@ -5426,7 +4367,7 @@ SSS_TIER = {
 
     "scottish_bodypaint",
 
-    # 6李?SSS
+    # 6筌?SSS
 
     "voodoo_bodypaint",
 
@@ -5440,7 +4381,7 @@ SSS_TIER = {
 
     "shaman_bodypaint",
 
-    # 7李?SSS
+    # 7筌?SSS
 
     "kimono_bodypaint",
 
@@ -5458,7 +4399,7 @@ SSS_TIER = {
 
     "hanbok_modern_bodypaint",
 
-    # 8李?SSS
+    # 8筌?SSS
 
     "ao_dai_bodypaint",
 
@@ -5472,9 +4413,9 @@ SSS_TIER = {
 
 
 
-    # v28 ?꾪넻臾명솕 諛붾뵒?섏씤???⑥튂 (3醫?
+    # v28 ?袁る꽰?얜챸??獄쏅뗀逾??륁뵥????ν뒄 (3??
 
-    # SS ?꾩슜
+    # SS ?袁⑹뒠
 
     "sari_bodypaint",
 
@@ -5482,7 +4423,7 @@ SSS_TIER = {
 
     "maiko_bodypaint",
 
-    # 2026-06-16 ?좊땲&湲?섎㉧ SSS ?뺤젙 (17醫?
+    # 2026-06-16 ?醫딅빍&疫꼲??롢돢 SSS ?類ㅼ젟 (17??
 
     "kunoichi_glam",
 
@@ -5564,7 +4505,7 @@ SSS_TIER = {
 
     "cappadocia_balloons",
 
-    # 2026-06-18 ?섎━硫섑깉 媛볥뜲??SS ?뺤젙 (SSS ?ы븿)
+    # 2026-06-18 ??롡봺筌롮꼹源?揶쏅낄???SS ?類ㅼ젟 (SSS ??釉?
 
     "uyuni_wet_silk", "maldives_underwater", "bioluminescent_bay", "rainbow_falls_goddess",
 
@@ -5580,7 +4521,7 @@ SSS_TIER = {
 
     "antelope_light_sheer", "waitomo_glow_body", "coral_reef_sheer", "black_sea_midnight",
 
-    # SS ?꾩슜
+    # SS ?袁⑹뒠
 
     "niagara_wet_editorial", "thunderstorm_wet", "cave_waterfall_goddess",
 
@@ -5592,11 +4533,11 @@ SSS_TIER = {
 
     "socotra_alien_glam", "deep_jungle_goddess", "monsoon_goddess",
 
-    # 2026-06-18 ?섎━硫섑깉 媛볥뜲??移댄뀒怨좊━ SSS ?뺤젙
+    # 2026-06-18 ??롡봺筌롮꼹源?揶쏅낄???燁삳똾?믤⑥쥓??SSS ?類ㅼ젟
 
-    # G1 臾??듦린
+    # G1 ?????┛
 
-    "uyuni_wet_silk",        # SS?뭆SS ?밴툒 (?⑹븫???섏긽+?곗쑀???뚭툑?щ쭑 ?꾩쟾 ?⑹씪)
+    "uyuni_wet_silk",        # SS?萸냆S ?諛댄닋 (??밸릊????뤾맒+?怨쀬??????닊??彛??袁⑹읈 ??뱀뵬)
 
     "maldives_underwater",
 
@@ -5604,7 +4545,7 @@ SSS_TIER = {
 
     "rainbow_falls_goddess",
 
-    # G2 洹뱁븳 ?먯뿰 (?꾩쥌 SSS)
+    # G2 域밸콅釉??癒?염 (?袁⑹쪒 SSS)
 
     "trolltunga_edge",
 
@@ -5620,7 +4561,7 @@ SSS_TIER = {
 
     "glacier_melt_goddess",
 
-    # G3 ?щ쭑/?닿린
+    # G3 ??彛???용┛
 
     "sahara_mirage",
 
@@ -5632,15 +4573,15 @@ SSS_TIER = {
 
     "red_canyon_goddess",
 
-    # G4 ?붿궛/遺??쒖뼇
+    # G4 ?遺욧텦/????뽯펶
 
-    "lava_field_latex",      # SS?뭆SS ?밴툒
+    "lava_field_latex",      # SS?萸냆S ?諛댄닋
 
     "solar_flare_goddess",
 
-    # G5 鍮숉븯/?ㅻ줈???곗＜
+    # G5 ??닀釉???살쨮???怨쀯폒
 
-    "aurora_bare",           # SS?뭆SS ?밴툒
+    "aurora_bare",           # SS?萸냆S ?諛댄닋
 
     "antarctica_ice_glam",
 
@@ -5648,9 +4589,9 @@ SSS_TIER = {
 
     "ice_cave_blue",
 
-    # G6 ?닿뎅/?뺢?/?앸Ъ諛쒓킅
+    # G6 ??용럢/?類?/??먁よ쳸?볧굝
 
-    "antelope_light_sheer",  # SS?뭆SS ?밴툒
+    "antelope_light_sheer",  # SS?萸냆S ?諛댄닋
 
     "waitomo_glow_body",
 
@@ -5660,7 +4601,7 @@ SSS_TIER = {
 
 
 
-    # 2026-06-24 ?뚯썙&?ｌ? SSS 16醫?
+    # 2026-06-24 ???뜖&?節? SSS 16??
 
     "valkyrie_storm",
 
@@ -5780,7 +4721,7 @@ SSS_TIER = {
 
 
 
-    # 2026-06-24 ?쇳룷癒쇱뒪&?꾩뒪 G1+G2 SSS 11醫?
+    # 2026-06-24 ??노７?믪눘???袁⑸뮞 G1+G2 SSS 11??
 
     "flamenco_queen",
 
@@ -5804,7 +4745,7 @@ SSS_TIER = {
 
     "jazz_dance_glam",
 
-    # 2026-06-25 ?湲??뚰떚??30醫?SSS
+    # 2026-06-25 ??疫???곕뼒??30??SSS
 
     "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
 
@@ -5828,13 +4769,13 @@ SSS_TIER = {
 
     "firefly_night_field", "seed_pod_floating",
 
-    # 2026-06-25 ?먮줈???섑떚??G1 SSS 8醫?
+    # 2026-06-25 ?癒?쨮????묐뼒??G1 SSS 8??
 
     "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
 
     "latex_hood_full", "latex_transparent", "vinyl_goddess", "rubber_goddess",
 
-    # 2026-06-25 ?먮줈???섑떚??G2 SSS 7醫?
+    # 2026-06-25 ?癒?쨮????묐뼒??G2 SSS 7??
 
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
 
@@ -5842,15 +4783,15 @@ SSS_TIER = {
 
 
 
-    # 2026-06-28 ?쒓뎅 ??궗&沅곸쨷 湲?섎㉧ G1~G4 + G5?꾨컲遺 SSS
+    # 2026-06-28 ??볥럢 ??沅?亦낃낯夷?疫꼲??롢돢 G1~G4 + G5?袁⑥뺘?봔 SSS
 
-    # G1 ?쇨뎅/怨좊? ??SSS 5醫?
+    # G1 ??⑤럢/?⑥쥓? ??SSS 5??
 
     "silla_queen_gold", "baekje_lotus_queen", "gojoseon_shaman_queen",
 
     "gaya_iron_goddess", "ancient_mural_goddess",
 
-    # G2 怨좊젮 沅곸쨷 ??SSS 7醫?
+    # G2 ?⑥쥓??亦낃낯夷???SSS 7??
 
     "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess",
 
@@ -5858,7 +4799,7 @@ SSS_TIER = {
 
     "mongol_goryeo_queen",
 
-    # G3 議곗꽑 ?뺤떎/沅곸쨷 ??SSS 11醫?
+    # G3 鈺곌퀣苑??類ㅻ뼄/亦낃낯夷???SSS 11??
 
     "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex",
 
@@ -5868,7 +4809,7 @@ SSS_TIER = {
 
     "changdeok_moonlight", "gyeongbokgung_geisha",
 
-    # G4 湲곗깮/?덉씤 ??SSS 10醫?
+    # G4 疫꿸퀣源???됱뵥 ??SSS 10??
 
     "gisaeng_joseon_sheer", "gisaeng_red_lantern", "gisaeng_sword_dance",
 
@@ -5878,19 +4819,19 @@ SSS_TIER = {
 
     "pyongyang_gisaeng",
 
-    # G5 ?좏솕&?뺣졊 ?꾨컲遺 ??SSS 6醫?
+    # G5 ?醫륁넅&?類ｌ죯 ?袁⑥뺘?봔 ??SSS 6??
 
     "gumiho_latex", "gumiho_red_moon", "samshin_goddess_glam",
 
     "dragon_daughter_sea", "imoogi_seduction", "dokkaebi_girl",
 
-    # G5 ?좏솕&?뺣졊 ?꾨컲遺 ??SSS 6醫?
+    # G5 ?醫륁넅&?類ｌ죯 ?袁⑥뺘?봔 ??SSS 6??
 
     "seonnyeo_descent", "haenyeo_mermaid", "baeksa_serpent",
 
     "chamsuri_ghost", "taoist_fairy_korea", "nine_tail_dominatrix",
 
-    # G6 誘쇱냽&?몄떆?띿냽 ??SSS 7醫?(haenyeo_wet_glam? SS ?꾩슜)
+    # G6 沃섏눘???紐꾨뻻??용꺗 ??SSS 7??(haenyeo_wet_glam?? SS ?袁⑹뒠)
 
     "dano_festival_glam", "ganggangsullae_night",
 
@@ -5898,7 +4839,7 @@ SSS_TIER = {
 
     "jeju_shaman_sea", "korean_harvest_goddess",
 
-    # G7 ?ъ쟾??臾댁씤 ??SSS 8醫?
+    # G7 ??????얜똻????SSS 8??
 
     "joseon_female_assassin", "goryeo_archer_queen", "silla_female_hwarang",
 
@@ -5906,7 +4847,7 @@ SSS_TIER = {
 
     "goguryeo_fire_warrior", "joseon_spy_sheer",
 
-    # G8 洹쇰?&?⑥쟾 ??SSS 8醫?
+    # G8 域뱀눖?&??μ읈 ??SSS 8??
 
     "joseon_modern_fusion", "gisaeng_cyberpunk", "hanbok_latex_queen",
 
@@ -5916,57 +4857,55 @@ SSS_TIER = {
 
 
 
-    # 2026-06-26 ?먮줈???섑떚??G3~G12 SSS 51醫?
+    # 2026-06-26 ?癒?쨮????묐뼒??G3~G12 SSS 51??
 
-    # G3 ?섎꽕??蹂몃뵒吏
+    # G3 ??롪퐬??癰귣챶逾믭쭪?
 
     "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
 
     "suspension_art", "tape_bondage", "metal_bondage",
 
-    # G4 硫붿돩/?쒖뒪猷?
+    # G4 筌롫뗄????뽯뮞??
 
     "mesh_bodysuit", "bodystocking", "fishnet_bodysuit", "transparent_dress",
 
     "sheer_catsuit", "catsuit_zipper", "pvc_transparent_full",
 
-    # G5 ?꾨??섑듃由?뒪
-
+    # G5 ?袁???묐뱜????
     "dominatrix_glam", "dominatrix_full_armor", "dominatrix_red",
 
     "goddess_throne", "pole_art",
 
-    # G6 ?쇳룷癒쇱뒪/?쇨구
+    # G6 ??노７?믪눘????④뎄
 
     "burlesque", "showgirl", "cabaret_star", "candy_rave",
 
     "lap_dance_glam", "lap_dance_extreme", "striptease_art",
 
-    # G7 ???꾩뒪/諛곗뒪
-
+    # G7 ???袁⑸뮞/獄쏄퀣??
     "pole_dance_power", "pole_dance_extreme", "midnight_bath", "belly_dance_glam",
 
-    # G8 ?먰?吏/?ㅽ겕
+    # G8 ?癒?筌왖/??쎄쾿
 
     "dark_succubus", "vampire_seduction", "witch_sensual",
 
     "dark_fairy_erotic", "shadow_seductress", "succubus_full",
 
-    # G9 ?ㅽ겕?ㅼ젮/SF
+    # G9 ??쎄쾿??쇱젻/SF
 
     "dark_angel_fallen", "alien_queen_body", "fire_goddess",
 
-    # G10 吏곸뾽 ?먰?吏
+    # G10 筌욊낯毓??癒?筌왖
 
     "secretary_after_hours", "nurse_sensual", "maid_sensual",
 
     "teacher_after_class", "doctor_sensual", "police_dominatrix", "stewardess_dark",
 
-    # G11 諛붾뵒/誘몃땲硫
+    # G11 獄쏅뗀逾?沃섎챶?뀐쭖?
 
     "oil_goddess", "micro_thong_only", "fetish_boots_only",
 
-    # G12 肄붾Ⅴ??
+    # G12 ?꾨뗀???
 
     "corset_stockings",
 
@@ -5974,7 +4913,7 @@ SSS_TIER = {
 
 
 
-    # 2026-06-24 ?먰?吏&?ㅽ겕 26醫??꾩썝 SSS
+    # 2026-06-24 ?癒?筌왖&??쎄쾿 26???袁⑹뜚 SSS
 
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
 
@@ -5990,9 +4929,9 @@ SSS_TIER = {
 
 
 
-    # 2026-06-24 ?ㅻ（????꾩슦 30醫??꾩썝 SSS
+    # 2026-06-24 ??삼펷?????袁⑹뒭 30???袁⑹뜚 SSS
 
-    # G1 ?ㅽ룷?몃씪?댄듃
+    # G1 ??쎈７?紐껋뵬??꾨뱜
 
     "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
 
@@ -6000,27 +4939,27 @@ SSS_TIER = {
 
     "silhouette_spotlight_back","silhouette_spotlight_pole",
 
-    # G2 李쎈Ц/?꾩뼱
+    # G2 筌≪럥揆/?袁⑸선
 
     "silhouette_window_city","silhouette_window_rain","silhouette_window_sheer",
 
     "silhouette_doorway_light","silhouette_window_sunset","silhouette_window_neon",
 
-    # G3 ?ㅼ삩 ?ㅻ（??
+    # G3 ??쇱궔 ??삼펷??
 
     "silhouette_neon_pink","silhouette_neon_blue","silhouette_neon_red",
 
     "silhouette_neon_purple","silhouette_neon_multicolor",
 
-    # G4 ?먯뿰愿?
+    # G4 ?癒?염??
 
     "silhouette_sunset_beach","silhouette_sunset_cliff","silhouette_moonlight","silhouette_aurora",
 
-    # G5 ?섏쨷/臾?
+    # G5 ??륁㉦/??
 
     "silhouette_pool_underwater","silhouette_pool_edge",
 
-    # G6 ?ㅻ궡/遺꾩쐞湲?
+    # G6 ??산땀/?브쑴?욄묾?
 
     "silhouette_bath_candle","silhouette_rain_wet","silhouette_fire_dark",
 
@@ -6028,15 +4967,15 @@ SSS_TIER = {
 
 
 
-    # 2026-06-24 ?⑦듃&湲濡쒖뒪 SSS 29醫?
+    # 2026-06-24 ???뱜&疫꼲嚥≪뮇??SSS 29??
 
-    # G1 ?/?섏쁺??
+    # G1 ??/??륁겫??
 
     "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
 
     "hot_spring_steam","jacuzzi_bubbles",
 
-        # 2026-07-02 ?좉퇋 異붽?
+        # 2026-07-02 ?醫됲뇣 ?곕떽?
 
         "champagne_pour_body",
 
@@ -6066,25 +5005,25 @@ SSS_TIER = {
 
         "steam_bath_goddess",
 
-    # G2 鍮?鍮쀬냽
+    # G2 ????щ꺗
 
     "rain_window_inside","rain_street_soaked","rain_studio_dramatic","monsoon_body","rain_car_window",
 
-    # G3 ?ㅼ씪/湲濡쒖뒪 ?쒕┰
+    # G3 ??쇱뵬/疫꼲嚥≪뮇????뺚뵲
 
     "oil_pour_studio","oil_drip_back","honey_drip_body","chocolate_pour_gloss",
 
     "gloss_lips_drip","chrome_gloss_body",
 
-    # G4 ?/?닿린
+    # G4 ??/??용┛
 
     "sweat_studio_light","heat_mirage_sweat","sauna_steam_body",
 
-    # G5 寃곕줈/?됯린
+    # G5 野껉퀡以????┛
 
     "condensation_skin","ice_melt_drip","dew_morning_body","frost_breath_cold",
 
-    # G6 湲고? ?⑦듃
+    # G6 疫꿸퀬? ???뱜
 
     "waterfall_direct","wave_crash_body","wet_silk_minimal",
 
@@ -6115,348 +5054,14 @@ SSS_TIER = {
 # SS tier
 
 SS_TIER = {
-        
-    # ── 이레즈미 전신 타투 (2026-07-17 추가) ──
-    # A그룹: 용+파도
-    "irezumi_dragon_wave_black_glam_void": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: massive dragon coiling up from ankles with scales rendered in obsessive detail, crashing ocean waves filling every gap between dragon coils from thigh to shoulder, tattoos as the only covering — jet black afro voluminous and commanding, expression fierce and untouchable. Wearing: tattoos only, black stiletto heels elongating inked powerful legs, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight, deep shadows carving hourglass definition, high gloss body oil making dragon scales and wave crests electric against deep skin, tattoo colors blazing in contrast. Style: Black goddess irezumi dragon void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, obsidian dragon grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_sports_glam_onsen": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, sports glamour physique — toned athletic curves, round lifted hips, flat defined abs — body fully covered in Japanese irezumi tattoos: twin dragons spiraling up both legs meeting at the spine, powerful ocean waves crashing across flat abs and chest, tattoos blanketing every inch of athletic skin — wet-slicked dark hair pulled severely back, expression commanding and sensual. Wearing: tattoos only, barefoot on wet marble, classic red long almond nails. Environment: Budapest thermal bath, marble columns, steam rising from glowing pool surface, warm amber lantern light. Lighting: volumetric steam fog warm amber, extreme wet-look thermal water streaming down dragon tattoos making colors saturated and vivid, steam swirling around athletic inked figure. Style: Japanese sports goddess irezumi thermal steam editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, thermal dragon grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_super_glam_dubai": {
-        "tier": "SSS",
-        "subject": "Middle Eastern beauty, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern beauty, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — body fully covered in Japanese irezumi tattoos: enormous dragon wrapping entire hourglass figure — tail at ankle, body coiling around dramatic hips and cinched waist, head resting at collarbone — deep ocean waves filling every gap in rich color, tattoos mapping every dramatic curve — long jet black wavy hair cascading, expression half-lidded and devastating. Wearing: tattoos only, gold metallic stiletto heels, gold long almond nails. Environment: Dubai luxury penthouse rooftop, city skyline at night, Burj Khalifa glowing in distance. Lighting: strong rim backlight from Dubai city glow, high gloss body oil making dragon and wave tattoos gleam, gold heels catching distant city lights. Style: Dubai super glamour irezumi dragon night editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, Dubai dragon grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_power_fitness_strobe": {
-        "tier": "HOF",
-        "subject": "European fitness goddess, mid-20s, power fitness physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: European fitness goddess, mid-20s, power fitness physique — very muscular defined body, strong arms and legs, powerful commanding frame — body fully covered in Japanese irezumi tattoos: fierce dragon with open jaw mapped across powerful back and shoulders, ocean waves crashing between muscular arms and legs, tattoos following every muscle contour — slick-back severe hair tight and architectural, expression dominant and fierce. Wearing: tattoos only, black platform boots, black long stiletto nails. Environment: pure black void. Lighting: harsh direct strobe from above, high-contrast shadows carving muscle definition under dragon tattoos, high gloss body oil making every muscle and scale catch strobe light. Style: power fitness irezumi dragon strobe editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, strobe dragon grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "harsh direct strobe",
-        "style": "Balmain power glamour",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_vs_angel_santorini": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — toned flat abs, model-perfect proportions, legs over 90cm — body fully covered in Japanese irezumi tattoos: golden dragon ascending from bare feet up impossibly long legs, ocean waves in deep indigo and teal filling the space between dragon coils, tattoos burning in Aegean sunset light — windswept dark hair streaming dramatically in sea breeze, expression goddess-like and confident. Wearing: tattoos only, gladiator sandals lacing up inked calves, gold long almond nails. Environment: Santorini cliff edge at golden hour, white architecture and blue dome church, Aegean sea glittering amber and gold. Lighting: golden hour warm backlight from Aegean sunset — dragon gold scales burning amber — tanning oil sheen on sun-kissed inked skin. Style: Santorini VS Angel irezumi dragon sunset editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Santorini dragon grade, portrait 2:3 vertical.",
-        "environment": "Santorini cliff edge at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_dragon_wave_slim_runway_neon": {
-        "tier": "HOF",
-        "subject": "Korean runway goddess, early 20s, slim runway physique 185cm+",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean runway goddess, early 20s, slim runway physique 185cm+ — disproportionately long legs dominating silhouette, slender waist, narrow hips, towering editorial presence — body fully covered in Japanese irezumi tattoos: slender dragon winding elegantly up impossibly long legs, delicate ocean waves mapping the elongated torso, tattoos emphasizing extreme height and length — wet look severe slick-back hair, expression cold and untouchable. Wearing: tattoos only, extreme stiletto heels, black long stiletto nails. Environment: Shinjuku neon-lit rainy alley, Tokyo cyberpunk night, rain-soaked pavement reflections. Lighting: multi-colored neon edge glow — pink neon left, blue neon right — extreme wet-look rain making dragon tattoos electric on pale tall figure. Style: Korean runway irezumi dragon neon Tokyo editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, neon dragon grade, portrait 2:3 vertical.",
-        "environment": "Shinjuku neon-lit rainy alley",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    # B그룹: 봉황+국화
-    "irezumi_phoenix_chrysanthemum_vs_angel_versailles": {
-        "tier": "SSS",
-        "subject": "Japanese beauty, late 20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, late 20s, Victoria's Secret Angel body — model-perfect proportions, runway-ready athletic glamour, glowing healthy skin — body fully covered in Japanese irezumi tattoos: magnificent phoenix with wings fully spread across entire back visible through frontal pose, chrysanthemum blooms in rich crimson and gold filling chest and shoulders, phoenix tail feathers cascading down long legs — elegant geisha updo with gold ornament, expression serene and powerful. Wearing: tattoos only, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting inked figure infinitely, marble floors. Lighting: dramatic chiaroscuro candlelight, Versailles gold reflections warming phoenix colors, satin skin glow. Style: Versailles VS Angel irezumi phoenix editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Versailles phoenix grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "dramatic chiaroscuro candlelight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_ballerina_steam": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, early 20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, early 20s, ballerina physique — slender elongated figure, visible shoulder blade definition, graceful dancer's carriage — body fully covered in Japanese irezumi tattoos: phoenix rising from feet with wings spreading across slender back, chrysanthemums in soft pink and white blooming delicately across pale elongated torso and arms, tattoos following every graceful line — loose romantic updo with hair ornaments, expression melancholic and dreamy. Wearing: tattoos only, barefoot in steam, classic red short square nails. Environment: Budapest thermal bath, steam rising, marble columns, warm amber water reflections. Lighting: volumetric steam fog warm amber, extreme wet-look thermal mist on pale inked ballerina skin, steam swirling around elongated inked figure. Style: ballerina irezumi phoenix steam thermal editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, thermal phoenix grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_hot_glam_riad": {
-        "tier": "HOF",
-        "subject": "Middle Eastern beauty, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern beauty, mid-20s, hot glamour physique — dramatically cinched narrow waist, explosively wide round hips, smoldering hourglass — body fully covered in Japanese irezumi tattoos: phoenix in full flight mapped across dramatic curves — wings spanning wide hips, tail feathers wrapping narrow waist, chrysanthemum gardens blooming across chest — warm olive skin making crimson and gold tattoos luminous — ornate geisha updo with gold pins, expression exotic and commanding. Wearing: tattoos only, gold metallic stiletto heels, gold long stiletto nails. Environment: Moroccan luxury riad, intricate zellige tile walls, carved plaster archways, candles and lanterns warm amber, central fountain. Lighting: Moroccan lantern warm amber from multiple positions, olive skin in amber light, phoenix crimson and gold tattoos blazing. Style: Moroccan riad hot glamour irezumi phoenix editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Moroccan phoenix grade, portrait 2:3 vertical.",
-        "environment": "Moroccan luxury riad",
-        "lighting": "Moroccan lantern warm amber",
-        "style": "Gucci eclectic maximalism",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_latina_miami": {
-        "tier": "SSS",
-        "subject": "Colombian Latina goddess, mid-20s, Colombian reggaeton physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina goddess, mid-20s, Colombian reggaeton physique — extreme hourglass, explosively wide dramatic hips, impossibly tiny waist, thick powerful thighs — body fully covered in Japanese irezumi tattoos: phoenix rising dramatically up from powerful legs, wings spreading across explosive hips, chrysanthemums blooming in vivid color across bronzed torso — long dark wavy hair windswept in ocean breeze, expression Latin fire and confidence. Wearing: tattoos only, strappy high heel sandals on Miami sand, red long stiletto nails. Environment: Miami Beach at sunset, Ocean Drive, warm pink and orange sky blazing. Lighting: golden hour amber, tanning oil bronzing Latin skin. Style: Miami Latina irezumi phoenix sunset editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, Miami phoenix grade, portrait 2:3 vertical.",
-        "environment": "Miami Beach at sunset",
-        "lighting": "golden hour warm amber",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_nordic_aurora": {
-        "tier": "SSS",
-        "subject": "Scandinavian beauty, mid-20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Scandinavian beauty, mid-20s, ballerina physique — slender elongated figure, pale porcelain skin — body fully covered in Japanese irezumi tattoos: phoenix rising against aurora colors — wings in deep indigo and violet matching northern lights above, chrysanthemums in icy blue and silver across pale slender torso — platinum blonde hair windswept in arctic wind, expression cold and otherworldly. Wearing: tattoos only, barefoot in arctic snow, deep blue long stiletto nails. Environment: Iceland glacier at midnight, northern lights aurora borealis dancing overhead. Lighting: aurora borealis curtain of light washing over pale inked figure. Style: Iceland aurora irezumi phoenix nordic editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, aurora phoenix grade, portrait 2:3 vertical.",
-        "environment": "Iceland glacier, northern lights",
-        "lighting": "aurora borealis curtain of light",
-        "style": "Alexander McQueen dramatic fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_phoenix_chrysanthemum_black_glam_desert": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: magnificent phoenix with wings fully spread across powerful back, chrysanthemum blooms in rich crimson and gold filling chest and shoulders, phoenix tail feathers cascading down thick powerful thighs — natural afro hair enormous and windswept against desert sky, expression ancient and untouchable, warrior queen energy. Wearing: tattoos only, barefoot in hot red sand, gold long stiletto nails. Environment: Namib desert red dunes at golden hour, dramatic African landscape, surreal orange sky. Lighting: golden hour warm backlight creating blazing halo around afro, strong rim backlight on deep skin making phoenix and chrysanthemum tattoos electric, tanning oil making deep skin and phoenix colors burn. Style: Black goddess irezumi phoenix desert editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Namib phoenix grade, portrait 2:3 vertical.",
-        "environment": "Namib desert red dunes at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    # C그룹: 잉어+벚꽃
-    "irezumi_koi_sakura_korean_void": {
-        "tier": "SSS",
-        "subject": "Korean beauty, mid-20s, slim runway physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, slim runway physique — disproportionately long legs, slender elegant frame, small delicate face — body fully covered in Japanese irezumi tattoos: crimson and gold koi fish leaping up impossibly long legs, pink cherry blossoms scattered across pale slender torso like falling snow, koi and sakura filling every inch of porcelain skin — elegant geisha updo with gold hairpin, expression cold runway steel. Wearing: tattoos only, extreme black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop. Lighting: dramatic chiaroscuro single spotlight, high gloss body oil making koi scales and cherry blossoms electric on pale porcelain skin. Style: Korean runway irezumi koi sakura void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, koi sakura void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_koi_sakura_vs_angel_kyoto_rain": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, legs over 90cm — body fully covered in Japanese irezumi tattoos: massive red and white koi fish leaping up from ankles, cherry blossoms falling across chest and shoulders in pink and white, rain-soaked skin making colors saturated and vivid — loose romantic updo with hair ornaments slipping in downpour, expression melancholic and breathtaking. Wearing: tattoos only, traditional wooden geta sandals in rain puddles, classic red short square nails. Environment: rain-soaked traditional Japanese street at night, Kyoto alley, paper lanterns glowing warm amber through downpour, wet cobblestones reflecting orange light. Lighting: volumetric rain fog, warm paper lantern amber, extreme wet-look rain streaming down koi and sakura tattoos. Style: Kyoto rain VS Angel irezumi koi sakura editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, Kyoto koi rain grade, portrait 2:3 vertical.",
-        "environment": "rain-soaked Kyoto alley at night",
-        "lighting": "volumetric rain fog warm amber lantern",
-        "style": "Dolce and Gabbana Italian glamour",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    "irezumi_koi_sakura_colombian_monaco": {
-        "tier": "HOF",
-        "subject": "Colombian Latina beauty, early 30s, luxury glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina beauty, early 30s, luxury glamour physique — defined waist, wide round hips, sophisticated voluptuous elegance — body fully covered in Japanese irezumi tattoos: golden koi fish leaping dramatically across voluptuous curves, cherry blossoms in pale pink and white scattered across sophisticated torso — side-swept old Hollywood hair dramatically draped, expression enigmatic and impossibly chic. Wearing: tattoos only, diamond necklace and earrings as only additions, gold metallic stiletto heels, black and gold nail art. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts in harbor, city of Monaco illuminated. Lighting: strong rim backlight halo from Monaco nightscape, diamond jewelry catching lights and sparkling, satin skin glow on koi and sakura inked curves. Style: Monaco luxury irezumi koi sakura diamond night editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Monaco koi grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    # D그룹: 학+모란
-    "irezumi_crane_peony_slim_elegance_white": {
-        "tier": "SSS",
-        "subject": "Korean beauty, mid-20s, slender elegant physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, slender elegant physique — slim narrow frame, graceful delicate figure, refined fashion presence — body fully covered in Japanese irezumi tattoos: elegant cranes in flight mapping slender arms and long neck, lush peonies in deep crimson and blush blooming across delicate torso, crane wings spanning across pale back — long straight silky black hair sleek and smooth, expression fresh and pure. Wearing: tattoos only, nude stiletto heels, nude long almond nails. Environment: pure white minimalist studio, seamless white backdrop. Lighting: soft beauty dish even flattering illumination, light natural skin glow making crane and peony tattoos delicate and precise. Style: white studio slender elegance irezumi crane peony editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, white studio crane grade, portrait 2:3 vertical.",
-        "environment": "pure white minimalist studio",
-        "lighting": "soft beauty dish",
-        "style": "Chanel classic luxury elegance",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_super_glam_versailles": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny waist, extremely wide round heavy hips, maximum pinup hourglass — body fully covered in Japanese irezumi tattoos: cranes soaring across dramatic wide hips with wings spread, deep crimson peonies blooming across cinched waist and full chest, golden crane feathers cascading down heavy thighs — long jet black wavy hair cascading, expression half-lidded and devastating. Wearing: tattoos only, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting curves infinitely. Lighting: Versailles candlelight chiaroscuro, deep shadows and sharp highlights on dramatic tattooed hourglass, satin skin glow, peony crimson blazing in baroque gold atmosphere. Style: Versailles super glamour irezumi crane peony editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, Versailles crane grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "Versailles candlelight chiaroscuro",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_southeast_asian_beach": {
-        "tier": "SSS",
-        "subject": "Southeast Asian beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Southeast Asian beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, golden tan glowing skin — body fully covered in Japanese irezumi tattoos: white cranes soaring up golden tan legs, lush pink peonies blooming across glowing chest, crane feathers delicate against warm tropical skin — windswept long wavy hair sea-salted and free, expression paradise goddess alluring. Wearing: tattoos only, strappy high heel sandals, gold long almond nails. Environment: French Riviera cliff at golden hour, azure Mediterranean sea below, golden sunlight. Lighting: golden hour warm backlight, tanning oil on golden skin making white crane and pink peony tattoos vivid. Style: Riviera Southeast Asian irezumi crane peony golden editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, Riviera crane grade, portrait 2:3 vertical.",
-        "environment": "French Riviera cliff at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_crane_peony_mature_luxury_monaco": {
-        "tier": "SSS",
-        "subject": "French European beauty, early 30s, luxury glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: French European beauty, early 30s, luxury glamour physique — defined waist, wide round hips, sophisticated mature elegance — body fully covered in Japanese irezumi tattoos: cranes in elegant flight across sophisticated curves, deep crimson peonies blooming with painterly detail across refined torso and hips — side-swept old Hollywood hair, expression sophisticated and enigmatic. Wearing: tattoos only, diamond jewelry as sole addition, gold metallic stiletto heels, black and gold nail art. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts in harbor. Lighting: Monaco nightscape rim backlight, diamond jewelry sparkling, satin skin glow. Style: Monaco mature luxury irezumi crane peony editorial. Shot on Leica SL2 50mm f/1.4 Summilux, 8K UHD, Monaco crane grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Leica SL2 50mm f/1.4 Summilux, hyperrealistic photography, 8K",
-    },
-    # E그룹: 호랑이+대나무
-    "irezumi_tiger_bamboo_sports_glam_void": {
-        "tier": "HOF",
-        "subject": "Korean beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, mid-20s, sports glamour physique — athletic toned curves, round lifted hips, defined abs, powerful yet feminine — body fully covered in Japanese irezumi tattoos: fierce tiger prowling up athletic legs with burning amber eyes, bamboo forest rising along torso, tiger stripes flowing with muscle definition, snarling tiger face across powerful back — elegant geisha updo with gold pin, expression fierce and commanding. Wearing: tattoos only, black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro, deep shadows carving athletic definition, high gloss body oil making tiger stripes and bamboo electric on toned skin, amber tiger eyes glowing in darkness. Style: sports glamour irezumi tiger bamboo void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, tiger void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_vs_angel_dubai": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — model-perfect proportions, legs over 90cm, runway-ready glamour — body fully covered in Japanese irezumi tattoos: powerful tiger ascending impossibly long legs, bamboo reaching up elongated torso, tiger tail wrapping narrow waist, fierce face emerging at shoulder — high sleek ponytail severe and polished, expression smoldering and powerful. Wearing: tattoos only, gold metallic stiletto heels, gold long stiletto nails. Environment: Dubai luxury penthouse rooftop at night, Burj Khalifa glowing in distance, city skyline electric. Lighting: strong rim backlight from Dubai city glow, high gloss body oil on VS Angel inked body gleaming in city light. Style: Dubai VS Angel irezumi tiger bamboo night editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, Dubai tiger grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop at night",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_hot_glam_neon": {
-        "tier": "SSS",
-        "subject": "Japanese beauty, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, hot glamour physique — dramatically cinched waist, explosively wide round hips, smoldering hourglass — body fully covered in Japanese irezumi tattoos: roaring tiger mapped across dramatic curves — stripes following the cinched waist and wide hips — bamboo rising along torso, tiger face fierce across chest — wet look slick-back hair severe, expression smoldering intensity. Wearing: tattoos only, black stiletto heels, red long stiletto nails. Environment: Shinjuku neon-lit rainy street, Tokyo night, rain-soaked pavement. Lighting: pink neon from left, blue neon from right, multi-colored neon edge glow slicing across tiger stripe tattoos, extreme wet-look rain on inked curves. Style: Tokyo neon hot glamour irezumi tiger editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, neon tiger grade, portrait 2:3 vertical.",
-        "environment": "Shinjuku neon-lit rainy street",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_african_desert": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — extremely wide round hips, ultra-narrow waist, deep luminous rich skin — body fully covered in Japanese irezumi tattoos: massive tiger in full prowl mapped across powerful body — amber and black tiger stripes following dramatic curves, bamboo forest rising from powerful thighs to shoulders, tiger face fierce across upper back — natural afro enormous and windswept, expression ancient warrior power. Wearing: tattoos only, barefoot in hot red sand, gold long stiletto nails. Environment: Namib desert red dunes at golden hour, surreal orange sky, elemental African landscape. Lighting: golden hour warm backlight blazing halo around afro, strong rim light making deep skin and amber tiger stripes electric, tanning oil making tiger and bamboo burn in desert light. Style: Namib Black goddess irezumi tiger bamboo desert editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, Namib tiger grade, portrait 2:3 vertical.",
-        "environment": "Namib desert red dunes at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "irezumi_tiger_bamboo_brazilian_pool": {
-        "tier": "SSS",
-        "subject": "Brazilian goddess, mid-20s, Brazilian carnival physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Brazilian goddess, mid-20s, Brazilian carnival physique — massive round hips dominating silhouette, extremely wide hips, powerfully thick thighs, bronzed tropical skin — body fully covered in Japanese irezumi tattoos: powerful tiger mapped across massive curves — stripes following enormous round hips and thick powerful thighs, bamboo rising up bronzed torso, tiger roaring across powerful chest — big dark voluminous hair wild and alive, expression carnival queen fierce. Wearing: tattoos only, barefoot on wet pool edge, gold long almond nails. Environment: luxury infinity pool edge, tropical resort at golden hour, turquoise water. Lighting: golden hour warm backlight, extreme wet-look pool water streaming down tiger tattoos, tanning oil making tiger stripes vivid on tropical skin. Style: tropical Brazilian irezumi tiger bamboo pool editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, tropical tiger grade, portrait 2:3 vertical.",
-        "environment": "luxury infinity pool edge",
-        "lighting": "golden hour warm backlight",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-
-    # ── 바디글리터 (2026-07-17 추가) ──
-    "bodyglitter_silver_neon_cyberpunk": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic runway goddess, early 20s, slim runway physique 185cm+",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic runway goddess, early 20s, slim runway physique 185cm+ — disproportionately long legs, slender waist, elongated graceful frame — entire body covered in dense silver holographic glitter from neck to toe, skin transformed into galaxy surface, silver and holographic glitter densely packed from collarbone to toe, body catching neon light from every microscopic facet — wet look slicked back hair severe, expression cold and cybernetic. Wearing: dense silver holographic glitter covering entire body as sole garment — glitter so densely applied it creates second skin effect, iridescent color shifts from silver to pink to blue — crystal PVC platform boots, holographic long stiletto nails. Environment: cyberpunk neon city street at night, rain-soaked alley, neon signs reflecting in wet pavement. Lighting: multi-colored neon edge glow — pink neon left, blue neon right — holographic glitter refracting neon into thousands of rainbow points across entire body, rain drops on glitter surface catching additional light. Style: holographic glitter cyberpunk goddess editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, holographic glitter cyberpunk grade, portrait 2:3 vertical.",
-        "environment": "cyberpunk neon city street at night",
-        "lighting": "multi-colored neon edge glow",
-        "style": "Balenciaga avant-garde futuristic editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_gold_void_black_glam": {
-        "tier": "HOF",
-        "subject": "Black African goddess, mid-20s, Black glamour hourglass physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Black African goddess, mid-20s, Black glamour hourglass physique — impossibly wide round hips, ultra-narrow waist, powerfully thick thighs, deep luminous rich skin — entire body covered in dense gold holographic glitter from neck to toe, deep skin beneath gold glitter creating warm amber bronze tones, glitter so densely packed skin becomes living gold sculpture, natural afro hair voluminous and commanding with gold glitter dust at edges, expression fierce and untouchable. Wearing: dense gold holographic glitter covering entire body as sole garment, gold glitter second skin from collarbone to ankle, black stiletto heels, black long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight, gold glitter blazing in single beam against total darkness, every glitter facet catching light creating thousands of gold sparks across deep skin, deep shadows carving hourglass into dramatic relief. Style: gold glitter Black goddess void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, gold glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_rose_gold_versailles": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — entire body covered in dense rose gold iridescent glitter from neck to toe, porcelain pale skin beneath rose gold glitter creating warm peach tones, glitter shifting from pink to gold to copper as body moves, long jet black wavy hair cascading dramatically, expression half-lidded and devastating. Wearing: dense rose gold holographic glitter covering entire body as sole garment, glitter second skin maximum coverage, gold metallic stiletto heels, deep red long almond nails. Environment: Palace of Versailles golden hall, ornate chandeliers, gilded mirrors reflecting glitter infinitely, marble floors. Lighting: Versailles chandelier light catching every rose gold glitter facet — thousands of pink and gold light refractions dancing — gilded mirrors multiplying glitter sparkle infinitely. Style: rose gold glitter Versailles bombshell editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, rose gold glitter Versailles grade, portrait 2:3 vertical.",
-        "environment": "Palace of Versailles golden hall",
-        "lighting": "Versailles chandelier light",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_blue_holographic_pool": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, Victoria's Secret Angel body — toned flat abs, model-perfect proportions, legs over 90cm — entire body covered in dense blue holographic glitter from neck to toe, golden tan skin beneath blue glitter creating electric teal tones, glitter shifting from deep blue to aqua to violet as light catches, windswept long wavy dark hair, expression goddess-like and confident. Wearing: dense blue holographic glitter covering entire body as sole garment, glitter so packed it creates iridescent second skin, barefoot on wet pool edge, nude long almond nails dusted in matching blue glitter. Environment: luxury infinity pool edge at golden hour, turquoise water below, tropical resort, palm trees. Lighting: golden hour warm backlight from horizon, pool water reflections casting aqua light upward on glitter-covered body, blue holographic glitter refracting both golden and aqua light simultaneously. Style: blue holographic glitter infinity pool VS Angel editorial. Shot on Canon EOS R5 85mm f/1.2, 8K UHD, blue glitter pool grade, portrait 2:3 vertical.",
-        "environment": "luxury infinity pool edge at golden hour",
-        "lighting": "golden hour backlight with pool water reflections",
-        "style": "Sports Illustrated swimsuit editorial",
-        "quality": "Canon EOS R5 85mm f/1.2 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_silver_onsen_steam": {
-        "tier": "HOF",
-        "subject": "Japanese beauty, mid-20s, sports glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Japanese beauty, mid-20s, sports glamour physique — toned athletic curves, round lifted hips, flat defined abs — entire body covered in dense silver platinum glitter from neck to toe, warm ivory skin beneath silver glitter creating pearl luminous tones, steam making glitter glisten and sparkle with every breath, wet look slicked back dark hair severe and sleek, expression commanding and sensual. Wearing: dense silver platinum holographic glitter covering entire body as sole garment, glitter second skin steaming and glistening, barefoot on wet marble, classic red long almond nails dusted in silver glitter. Environment: Budapest thermal bath, marble columns, steam rising from glowing pool surface, warm amber lantern light reflecting in water. Lighting: volumetric steam fog warm amber, steam catching silver glitter and making it glow from within, amber lantern light turning silver glitter warm gold at edges, extreme wet-look steam condensation on glitter surface. Style: silver glitter thermal steam Japanese goddess editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, silver glitter onsen grade, portrait 2:3 vertical.",
-        "environment": "Budapest thermal bath",
-        "lighting": "volumetric steam fog warm amber",
-        "style": "Harper's Bazaar sensual fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_rainbow_aurora_nordic": {
-        "tier": "HOF",
-        "subject": "Scandinavian beauty, mid-20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Scandinavian beauty, mid-20s, ballerina physique — slender elongated figure, graceful elegant posture, pale porcelain skin — entire body covered in dense rainbow holographic glitter from neck to toe, pale skin beneath rainbow glitter creating ethereal iridescent tones, glitter shifting through every color of aurora spectrum — green violet pink blue — matching the sky above, platinum blonde windswept hair with rainbow glitter dust, expression cold and otherworldly. Wearing: dense rainbow holographic glitter covering entire body as sole garment, glitter matching aurora colors above, barefoot in arctic snow, deep blue long stiletto nails dusted in matching glitter. Environment: Iceland glacier at midnight, northern lights aurora borealis dancing overhead in green and violet ribbons, ancient ice formations, mystical arctic landscape. Lighting: aurora borealis curtain of light washing over glitter-covered pale figure — green and violet aurora light refracting through rainbow glitter creating supernatural color explosion — glitter and aurora colors perfectly synchronized. Style: rainbow glitter aurora Nordic goddess editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, rainbow glitter aurora grade, portrait 2:3 vertical.",
-        "environment": "Iceland glacier, northern lights aurora",
-        "lighting": "aurora borealis curtain of light",
-        "style": "Alexander McQueen dramatic fashion editorial",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_emerald_dubai_rooftop": {
-        "tier": "HOF",
-        "subject": "Middle Eastern goddess, mid-20s, hot glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Middle Eastern goddess, mid-20s, hot glamour physique — dramatically cinched narrow waist, explosively wide round hips, smoldering hourglass — entire body covered in dense emerald green holographic glitter from neck to toe, warm olive skin beneath emerald glitter creating rich jewel-tone depth, glitter shifting from deep forest green to electric lime to gold as light catches, high sleek ponytail severe and polished with emerald glitter dust, expression smoldering and powerful. Wearing: dense emerald holographic glitter covering entire body as sole garment, glitter second skin maximum coverage, gold metallic stiletto heels, gold long stiletto nails. Environment: Dubai luxury penthouse rooftop at night, city skyline blazing below, Burj Khalifa glowing in distance. Lighting: strong rim backlight from Dubai city glow, emerald glitter refracting gold and amber city lights creating electric green-gold color explosion across olive skin. Style: emerald glitter Dubai rooftop goddess editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, emerald glitter Dubai grade, portrait 2:3 vertical.",
-        "environment": "Dubai luxury penthouse rooftop at night",
-        "lighting": "strong rim backlight from Dubai city glow",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_copper_santorini_sunset": {
-        "tier": "HOF",
-        "subject": "Mixed race exotic beauty, mid-20s, VS Angel body",
-        "prompt": "Professional fashion photograph, full body shot. Model: Mixed race exotic beauty, mid-20s, VS Angel body — toned flat abs, model-perfect proportions, legs over 90cm — entire body covered in dense copper bronze holographic glitter from neck to toe, sun-kissed golden skin beneath copper glitter creating warm molten metal tones, glitter shifting from deep copper to bright bronze to warm gold in sunset light, windswept long dark wavy hair catching sunset, expression goddess-like and confident. Wearing: dense copper holographic glitter covering entire body as sole garment, glitter burning like liquid sunset metal, gladiator sandals lacing up glitter-dusted calves, gold long almond nails. Environment: Santorini cliff edge at golden hour, white architecture and iconic blue dome church behind, Aegean sea glittering amber below. Lighting: golden hour warm backlight from setting Aegean sun — copper glitter igniting into liquid fire in sunset — every glitter facet burning amber and gold, windswept hair backlit and glowing. Style: copper glitter Santorini sunset goddess editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, copper glitter Santorini grade, portrait 2:3 vertical.",
-        "environment": "Santorini cliff edge at golden hour",
-        "lighting": "golden hour warm backlight",
-        "style": "Vogue Italia high-fashion editorial",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_purple_monaco_night": {
-        "tier": "HOF",
-        "subject": "Eastern European bombshell, mid-20s, super glamour physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Eastern European bombshell, mid-20s, super glamour physique — impossibly tiny corseted waist, extremely wide round heavy hips, maximum pinup hourglass — entire body covered in dense deep violet purple holographic glitter from neck to toe, porcelain pale skin beneath purple glitter creating ethereal amethyst tones, glitter shifting from deep violet to electric purple to pink as light catches, long jet black wavy hair cascading dramatically, expression half-lidded and devastating. Wearing: dense purple holographic glitter covering entire body as sole garment, glitter creating amethyst goddess effect, gold metallic stiletto heels, deep red long almond nails. Environment: Monaco luxury terrace at night, Mediterranean sea glittering below, superyachts illuminated in harbor, Monaco city lights purple and gold in distance. Lighting: strong rim backlight from Monaco nightscape, purple holographic glitter refracting city lights into violet and gold explosions across dramatic hourglass curves. Style: purple glitter Monaco night bombshell editorial. Shot on Sony A7R V 50mm f/1.4, 8K UHD, purple glitter Monaco grade, portrait 2:3 vertical.",
-        "environment": "Monaco luxury terrace at night",
-        "lighting": "Monaco nightscape rim backlight",
-        "style": "Valentino red carpet luxury editorial",
-        "quality": "Sony A7R V 50mm f/1.4 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_red_void_colombian": {
-        "tier": "HOF",
-        "subject": "Colombian Latina goddess, mid-20s, Colombian reggaeton physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Colombian Latina goddess, mid-20s, Colombian reggaeton physique — extreme hourglass, explosively wide dramatic round hips, impossibly tiny waist, thick powerful thighs — entire body covered in dense crimson red holographic glitter from neck to toe, bronzed Latin skin beneath red glitter creating smoldering fire tones, glitter shifting from deep blood red to electric crimson to burning orange as light catches, long dark wavy hair wild and dramatic, expression Latin fire and fierce dominance. Wearing: dense crimson red holographic glitter covering entire body as sole garment, red glitter on dramatic hourglass creating maximum impact, extreme black stiletto heels, red long stiletto nails. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: dramatic chiaroscuro single spotlight from above, crimson red glitter blazing in single beam against total darkness — body like living flame against black void — deep shadows carving extreme hourglass. Style: crimson glitter Colombian fire goddess void editorial. Shot on Hasselblad H6D 80mm f/2.8, 8K UHD, red glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "dramatic chiaroscuro single spotlight",
-        "style": "Versace campaign bold luxury glamour",
-        "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
-    },
-    "bodyglitter_ice_blue_void_ballerina": {
-        "tier": "HOF",
-        "subject": "Korean beauty, early 20s, ballerina physique",
-        "prompt": "Professional fashion photograph, full body shot. Model: Korean beauty, early 20s, ballerina physique — slender elongated figure, graceful elegant posture, visible shoulder blade definition, dancer's poised carriage — entire body covered in dense ice blue and white holographic glitter from neck to toe, porcelain pale skin beneath ice glitter creating ethereal frozen goddess tones, glitter shifting from icy white to electric blue to pale violet, elegant updo with gold hairpin dusted in matching ice glitter, expression serene and ethereal. Wearing: dense ice blue holographic glitter covering entire body as sole garment, glitter creating frozen crystal goddess effect on slender ballerina frame, extreme nude stiletto heels elongating legs, nude long almond nails dusted in ice glitter. Environment: pure black void, seamless obsidian backdrop, infinite darkness. Lighting: soft beauty dish even flattering illumination from front, cool blue edge light from sides — ice glitter refracting into white and blue crystal explosions across slender figure — pale skin and ice glitter creating self-luminous ethereal glow against darkness. Style: ice blue glitter Korean ballerina void editorial. Shot on Phase One XF IQ4 110mm f/2.8, 8K UHD, ice glitter void grade, portrait 2:3 vertical.",
-        "environment": "pure black void",
-        "lighting": "soft beauty dish with cool blue edge light",
-        "style": "Chanel classic luxury elegance",
-        "quality": "Phase One XF IQ4 110mm f/2.8 ISO 50, hyperrealistic photography, 8K",
-    },
-
-    # 2026-07-16 Runway Slim + Young Adult SS
-    "runway_korean_slim_seoulforest_spring",
-    "young_korean_pool_pastel",
-    "young_korean_neon_first_night",
-    "young_korean_tokyo_first_solo",
-    "young_korean_tattoo_first_wrist",
-    "young_korean_gym_first_gains",
-    "young_korean_campus_spring",
-
-# 2026-07-15 한국인 카테고리 신규 SS
+    # 2026-07-15 ?쒓뎅??移댄뀒怨좊━ ?좉퇋 SS
     "korean_idol_bukchon_morning",
     "korean_idol_jeju_ocean",
     "mature_korean_silver_kyoto_bamboo",
     "mature_korean_silver_onsen",
 
 
-        # 2026-07-03 ?좉퇋 QUAD/QUINT/HEXA/OCTET SS ?꾩껜
+        # 2026-07-03 ?醫됲뇣 QUAD/QUINT/HEXA/OCTET SS ?袁⑷퍥
 
     "quad_four_ages_bodypaint",
 
@@ -6500,7 +5105,7 @@ SS_TIER = {
 
 
 
-        # 2026-07-03 ?좉퇋 SS 62醫?諛섏쁺 (SSS 52 + SS?꾩슜 10)
+        # 2026-07-03 ?醫됲뇣 SS 62??獄쏆꼷??(SSS 52 + SS?袁⑹뒠 10)
 
     "champagne_pour_body",
 
@@ -6628,7 +5233,7 @@ SS_TIER = {
 
 
 
-    # 2026-07-02 ?쇳룷癒쇱뒪&?꾩뒪 G3/G4 SS (9醫??꾩껜)
+    # 2026-07-02 ??노７?믪눘???袁⑸뮞 G3/G4 SS (9???袁⑷퍥)
 
     "opera_night",
 
@@ -6648,8 +5253,7 @@ SS_TIER = {
 
     "pop_art_glamour",
 
-    # 湲곗〈 紐낇솕/?덉닠 怨꾩뿴
-
+    # 疫꿸퀣??筌뤿굟????됰떊 ?④쑴肉?
     "bioluminescent_ink","galaxy_skin","klimt_gold_body","half_statue","vangogh_body",
 
     "dali_surreal","munch_scream","cherry_blossom_night","kitty_glam","yoruba_glamour",
@@ -6660,17 +5264,16 @@ SS_TIER = {
 
     "lace_body_paint","jewelry_trompe_loeil",
 
-    # v15 紐낇솕
-
+    # v15 筌뤿굟??
     "klimt_silver","botticelli_venus","liquid_gold_drip","mermaid_scales","tiger_stripes_body",
 
-    # v16 愿??
+    # v16 ?온??
 
     "latex_queen",
 
-    # v18 ?숇Ъ 1李??뚯뒪??
+    # v18 ??눺?1筌????뮞??
 
-    # v18 ?숇Ъ SS ???꾧꺽 ?ш??????뺤젙 (2026-06-07)
+    # v18 ??눺?SS ???袁㏐봄 ????????類ㅼ젟 (2026-06-07)
 
     "mantis_shrimp","phoenix_rising","jellyfish_glow","panther_black",
 
@@ -6678,77 +5281,76 @@ SS_TIER = {
 
     "atlas_moth","eagle_wings","butterfly_monarch",
 
-    "arctic_fox",  # SS ?뺤젙 (2026-06-08 ?ㅼ썝 ?섏씠?ㅽ럹?명똿+紐⑦뵾寃?2??寃利??꾨즺)
+    "arctic_fox",  # SS ?類ㅼ젟 (2026-06-08 ??쇱뜚 ??륁뵠??쎈읂?紐낅샒+筌뤴뫂逾얍칰?2??野꺜筌??袁⑥┷)
 
-    # 2026-06-06 紐낇솕/?묎? ?뚯뒪???뺤젙
+    # 2026-06-06 筌뤿굟???臾? ???뮞???類ㅼ젟
 
     "degas_dancer","toulouse_lautrec","waterhouse_nymph",
 
     "takashi_murakami","yayoi_kusama","keith_haring_body",
 
-    # 2026-06-06 ?쒓뎅?뚮쭏 ?뚯뒪???뺤젙
+    # 2026-06-06 ??볥럢???춳 ???뮞???類ㅼ젟
 
     "dancheong_body","najeonchilgi_body","goryeo_celadon_body",
 
     "minhwa_body","korean_tiger_body","silla_crown_body",
 
-    # 2026-06-06 ?숇Ъ/?먯뿰 ?뚯뒪???뺤젙
+    # 2026-06-06 ??눺??癒?염 ???뮞???類ㅼ젟
 
     "najeon_abalone","giraffe_pattern","zebra_stripes","dragon_scales_red",
 
-    # 2026-06-06 異붽? ?뚯뒪???뺤젙
+    # 2026-06-06 ?곕떽? ???뮞???類ㅼ젟
 
     "alma_tadema","gauguin_tropics","melting_chocolate",
 
-    # 2026-06-06 ?숇Ъ/議곕쪟/?ы뀒?ㅽ듃 ?뺤젙 7媛?
+    # 2026-06-06 ??눺?鈺곌퀡履??????쎈뱜 ?類ㅼ젟 7揶?
 
     "parrot_tropical","boa_constrictor","king_cobra_hood","cheetah_speed",
 
     "bird_of_paradise","owl_feather","crocodile_skin",
 
-    # 2026-06-07 ?쒓뎅 ?좎닔 4媛?
+    # 2026-06-07 ??볥럢 ?醫롫땾 4揶?
 
     "phoenix_jujakk","cheongnyong_dragon","korean_dragon_body","haetae_guardian",
 
-    # 2026-06-07 v20 SS 6媛?
+    # 2026-06-07 v20 SS 6揶?
 
     "coral_reef_body","galaxy_nebula_body","islamic_geometric_body",
 
     "aztec_calendar_body","stained_glass_body","mushroom_forest_body",
 
-    # 2026-06-07 臾몃챸/?숇Ъ/遺議?(援?린 4媛쒕뒗 2026-06-08 媛뺣벑)
+    # 2026-06-07 ?얜챶梨???눺??봔鈺?(??由?4揶쏆뮆??2026-06-08 揶쏅베踰?
 
     "hieroglyph_body","mexico_flag_body",
 
     "ocelot_wild","ndebele_pattern",
 
-    # 2026-06-08 援?린 怨꾩뿴 SS ?ш?????媛뺣벑 S 4媛?
+    # 2026-06-08 ??由??④쑴肉?SS ???????揶쏅베踰?S 4揶?
 
     #   (union_jack_body, usa_stars_stripes_body, south_africa_flag_body, brazil_flag_body)
 
-    #   ?ъ쑀: ?먯깋 硫대텇???쇰???洹쇱젒????쓬, 援ъ긽 紐⑦떚???놁쓬 ??SS ?뚰솕??誘몃떖
+    #   ???: ?癒?퉳 筌롫?????????域뱀눘??????? ?닌딄맒 筌뤴뫂?????곸벉 ??SS ??곗넅??沃섎챶??
+    #   mexico_flag_body筌?SS ?醫? (餓λ쵐釉???????녿땾??獄? ?닌딄맒?? 筌뤿굟???얜챶梨??④쑴肉????곗벉)
 
-    #   mexico_flag_body留?SS ?좎? (以묒븰 援?옣=?낆닔由?諭 援ъ긽?? 紐낇솕/臾몃챸 怨꾩뿴???우쓬)
-
-    # 2026-06-07 臾몃챸/?먯뿰/?숇Ъ 6媛?
+    # 2026-06-07 ?얜챶梨??癒?염/??눺?6揶?
 
     "celtic_knot_body","greek_mosaic_body","ocean_depth_body",
 
     "weather_map_body","bauhaus_body","wolf_grey",
 
-    # 2026-06-07 v22 ?먮줈???섑떚??SS ???꾧꺽 ?ш??????뺤젙
+    # 2026-06-07 v22 ?癒?쨮????묐뼒??SS ???袁㏐봄 ????????類ㅼ젟
 
-    #   (媛뺣벑 S: burlesque, dominatrix_glam, corset_stockings,
+    #   (揶쏅베踰?S: burlesque, dominatrix_glam, corset_stockings,
 
     #    dark_fairy_erotic, tape_bondage, metal_bondage)
 
-    #   (?쒓굅: military_domme ???섏튂 ?곸쭠 ?앹꽦 由ъ뒪?? ?꾨━???섏젙 ?꾩슂)
+    #   (??볤탢: military_domme ????륂뒄 ?怨몄췅 ??밴쉐 ?귐딅뮞?? ?袁ⓥ봺????륁젟 ?袁⑹뒄)
 
-    # 2026-06-08 ?쇳뀓??愿묓깮?뚯옱 ?ш??? 媛뺣벑 pvc_transparent_full/chrome_vixen/liquid_metal_body,
+    # 2026-06-08 ??노???용쵑源???삺 ????? 揶쏅베踰?pvc_transparent_full/chrome_vixen/liquid_metal_body,
 
-    #   ?밴꺽 vampire_seduction/witch_sensual/latex_venom (짹0)
+    #   ?諛닿봄 vampire_seduction/witch_sensual/latex_venom (吏?)
 
-    # 2026-06-08 ?쒗걧踰꾩뒪 ?ш??? dark_succubus 媛뺣벑(succubus_full怨?以묐났) ??SS 105媛?
+    # 2026-06-08 ??쀪괠甕곌쑴??????? dark_succubus 揶쏅베踰?succubus_full??餓λ쵎?? ??SS 105揶?
 
     "transparent_dress","sheer_catsuit","latex_transparent",
 
@@ -6766,15 +5368,15 @@ SS_TIER = {
 
     "cabaret_star",
 
-    # 2026-06-08 ?쇳뀓??愿묓깮?뚯옱 SS ?ш??????밴꺽 3媛?
+    # 2026-06-08 ??노???용쵑源???삺 SS ????????諛닿봄 3揶?
 
-    #   (媛뺣벑 S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
+    #   (揶쏅베踰?S: pvc_transparent_full, chrome_vixen, liquid_metal_body)
 
-    #   (蹂대쪟: latex_catsuit_red ??而щ윭 ?쇳뀓??以묐났, ?ш??????
+    #   (癰귣?履? latex_catsuit_red ???뚎됱쑎 ??노??餓λ쵎?? ?????????
 
     "vampire_seduction","witch_sensual","latex_venom",
 
-    # 2026-06-19 ?좊땲?꾪듃?ㅽ???SS ?꾩껜 (SSS 31 + SS?꾩슜 1)
+    # 2026-06-19 ?醫딅빍?袁る뱜?????SS ?袁⑷퍥 (SSS 31 + SS?袁⑹뒠 1)
 
     "anime_jp_90s_retro",
 
@@ -6842,7 +5444,7 @@ SS_TIER = {
 
 
 
-    # 2026-06-09 ?좊땲 ?꾪듃?ㅽ???SS 10醫??뺤젙 (JP4/KR3/CN2/EU1)
+    # 2026-06-09 ?醫딅빍 ?袁る뱜?????SS 10???類ㅼ젟 (JP4/KR3/CN2/EU1)
 
     "anime_jp_80s_citypop","anime_jp_shoujo_soft","anime_jp_seinen_gritty","anime_jp_makoto_watercolor",
 
@@ -6852,41 +5454,40 @@ SS_TIER = {
 
     "anime_eu_ligne_claire",
 
-    # 2026-06-09 unicorn_opal SS ?뺤젙 (2???쇨???寃利??꾨즺)
+    # 2026-06-09 unicorn_opal SS ?類ㅼ젟 (2???????野꺜筌??袁⑥┷)
 
     "unicorn_opal",
 
-    # 2026-06-09 v23 媛쒕갑??諛붾뵒?섏씤??SS 12醫??뺤젙
+    # 2026-06-09 v23 揶쏆뮆媛??獄쏅뗀逾??륁뵥??SS 12???類ㅼ젟
 
-    # ???90% (18/20) ??pastel_dream/minimalist_free 李⑤떒 ??젣
-
+    # ????90% (18/20) ??pastel_dream/minimalist_free 筌△뫀??????
     "body_paint_watercolor_free","body_paint_metallic_free","body_paint_impasto","body_paint_airbrush",
 
     "body_paint_monochrome","body_paint_earth_tones","body_paint_jewel_tones","body_paint_iridescent_free",
 
     "body_paint_geometric_free","body_paint_organic_flow","body_paint_surreal_free","body_paint_glitter_free",
 
-    # 2026-06-09 ?좊땲 A??SS 6醫??뺤젙 (v24, 7/7 李⑤떒 0嫄?
+    # 2026-06-09 ?醫딅빍 A??SS 6???類ㅼ젟 (v24, 7/7 筌△뫀??0椰?
 
-    # demon_slayer 蹂대쪟 (swordmistress? 以묐났)
+    # demon_slayer 癰귣?履?(swordmistress?? 餓λ쵎??
 
     "anime_swordmistress","anime_mecha_pilot","anime_shrine_maiden",
 
     "anime_galaxy_idol","anime_battle_angel","anime_cyber_ninja",
 
-    # 2026-06-10 ??뀛由?湲?섎㉧ 洹몃９1 ??釉붾옓/?ㅽ겕 7醫?
+    # 2026-06-10 ???쏁뵳?疫꼲??롢돢 域밸챶竊? ???됰뗀????쎄쾿 7??
 
     "black_mirror","noir_opulence","velvet_darkness","luxury_noir",
 
     "lace_noir","midnight_couture","velvet_serpent",
 
-    # 2026-06-10 ??뀛由?湲?섎㉧ 洹몃９2 ??怨⑤뱶/?붿씠??9醫?
+    # 2026-06-10 ???쏁뵳?疫꼲??롢돢 域밸챶竊? ???ⓥ뫀諭??遺우뵠??9??
 
     "golden_oil","golden_nude","gold_temptress","golden_hour_editorial",
 
     "platinum_elite","ivory_silk","pearl_essence","velvet_gold","diamond_couture",
 
-    # 2026-06-10 ??뀛由?湲?섎㉧ 洹몃９3 ???덈뱶移댄렖/?곗썾??8醫?
+    # 2026-06-10 ???쏁뵳?疫꼲??롢돢 域밸챶竊? ????덈굡燁삳똾???怨쀬띃??8??
 
     "runway_power","red_carpet","red_temptress","crimson_gown",
 
@@ -6948,7 +5549,7 @@ SS_TIER = {
 
     "lava_field_latex",
 
-    # 2026-06-11 諛곌꼍 ?꾨━??SS ?뺤젙
+    # 2026-06-11 獄쏄퀗瑗??袁ⓥ봺??SS ?類ㅼ젟
 
     "son_doong_jungle", "petra_rose", "danxia_rainbow",
 
@@ -6958,7 +5559,7 @@ SS_TIER = {
 
     "palacio_de_sal", "naoshima_art_island",
 
-    # 2026-06-13 鍮꾩튂&由ъ“??SS/SSS ?뺤젙
+    # 2026-06-13 ??쑴???귐듼??SS/SSS ?類ㅼ젟
 
     "summer_beach",
 
@@ -6984,8 +5585,7 @@ SS_TIER = {
 
     "hammock_resort",
 
-    # SSS 鍮꾩튂 4醫낅룄 SS???ы븿
-
+    # SSS ??쑴??4?ル굝猷?SS????釉?
     "infinity_pool",
 
     "scuba_goddess",
@@ -6994,7 +5594,7 @@ SS_TIER = {
 
     "sunset_cruise",
 
-    # 2026-06-14 ??移댁???SS ?뺤젙
+    # 2026-06-14 ??燁삳똻???SS ?類ㅼ젟
 
     "y2k_fairy",
 
@@ -7042,8 +5642,7 @@ SS_TIER = {
 
     "harajuku_doll",
 
-    # 2026-06-14 ??移댁???SSS 10醫낅룄 SS???ы븿
-
+    # 2026-06-14 ??燁삳똻???SSS 10?ル굝猷?SS????釉?
     "cherry_pop",
 
     "hime_gyaru",
@@ -7064,7 +5663,7 @@ SS_TIER = {
 
     "doll_house",
 
-    # SSS??SS???ы븿 (format_preset 濡쒖쭅)
+    # SSS??SS????釉?(format_preset 嚥≪뮇彛?
 
     "angkor_dawn", "tikal_skyrise", "cenote_sacred", "waitomo_glow",
 
@@ -7074,7 +5673,7 @@ SS_TIER = {
 
     "namib_star_desert", "ellora_rock_temple",
 
-    # 2026-06-13 v26 ?붾뱶 ?쒕뱶留덊겕 SS/SSS ?뺤젙
+    # 2026-06-13 v26 ?遺얜굡 ??뺣굡筌띾뜇寃?SS/SSS ?類ㅼ젟
 
     "positano_cliff",
 
@@ -7104,7 +5703,7 @@ SS_TIER = {
 
 
 
-    # 2026-06-18 ???뱀떆 SS ?뺤젙 (SSS ?ы븿 ?꾩껜)
+    # 2026-06-18 ???諭??SS ?類ㅼ젟 (SSS ??釉??袁⑷퍥)
 
     "bodycon_power", "boudoir_noir", "lingerie_goddess", "silk_robe_only",
 
@@ -7142,7 +5741,7 @@ SS_TIER = {
 
     "after_party_suite", "tennis_short_dress",
 
-    # 2026-06-13 v27 ???뱀떆 SS/SSS ?뺤젙
+    # 2026-06-13 v27 ???諭??SS/SSS ?類ㅼ젟
 
     "dressing_room_mirror",
 
@@ -7164,7 +5763,7 @@ SS_TIER = {
 
     "tennis_short_dress",
 
-    # 2026-06-15 怨꾩젅&?뚮쭏 洹몃９1 SS ?뺤젙 (cherry_blossom~autumn_forest)
+    # 2026-06-15 ?④쑴?????춳 域밸챶竊? SS ?類ㅼ젟 (cherry_blossom~autumn_forest)
 
     "cherry_blossom",
 
@@ -7176,11 +5775,11 @@ SS_TIER = {
 
     "autumn_forest",
 
-    # 2026-06-15 怨꾩젅&?뚮쭏 洹몃９2 SS ?뺤젙 (sunflower_field~golden_autumn)
+    # 2026-06-15 ?④쑴?????춳 域밸챶竊? SS ?類ㅼ젟 (sunflower_field~golden_autumn)
 
     "sunflower_field",
 
-    "greenhouse_eden",   # SSS??SS???ы븿 (format_preset 濡쒖쭅)
+    "greenhouse_eden",   # SSS??SS????釉?(format_preset 嚥≪뮇彛?
 
     "tropical_night",
 
@@ -7188,11 +5787,10 @@ SS_TIER = {
 
     "golden_autumn",
 
-    # 2026-06-15 harajuku_doll SSS??SS???ы븿
-
+    # 2026-06-15 harajuku_doll SSS??SS????釉?
     "harajuku_doll",
 
-    # 2026-06-15 怨꾩젅&?뚮쭏 洹몃９3 SS ?뺤젙
+    # 2026-06-15 ?④쑴?????춳 域밸챶竊? SS ?類ㅼ젟
 
     "midsummer_heat",
 
@@ -7204,19 +5802,16 @@ SS_TIER = {
 
     "cherry_blossom_night",
 
-    # 2026-06-15 怨꾩젅&?뚮쭏 洹몃９4 SS ?뺤젙
+    # 2026-06-15 ?④쑴?????춳 域밸챶竊? SS ?類ㅼ젟
 
     "tropical_monsoon",
 
-    "halloween_glam",       # SSS??SS???ы븿
-
-    "new_year_glam",        # SSS??SS???ы븿
-
-    "sakura_night_glam",    # SSS??SS???ы븿
-
+    "halloween_glam",       # SSS??SS????釉?
+    "new_year_glam",        # SSS??SS????釉?
+    "sakura_night_glam",    # SSS??SS????釉?
     "monsoon_goddess",
 
-    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９1 SS ?뺤젙
+    # 2026-06-15 ?癒?탵?醫듼봺???얜?諭?域밸챶竊? SS ?類ㅼ젟
 
     "silhouette_only",
 
@@ -7228,43 +5823,36 @@ SS_TIER = {
 
     "long_legs_focus",
 
-    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９2 SS ?뺤젙 (SSS ?ы븿)
+    # 2026-06-15 ?癒?탵?醫듼봺???얜?諭?域밸챶竊? SS ?類ㅼ젟 (SSS ??釉?
 
     "light_driven",
 
-    "backlit_silk",         # SSS??SS???ы븿
-
+    "backlit_silk",         # SSS??SS????釉?
     "mirror_goddess",
 
-    "mirror_room",          # SSS??SS???ы븿
-
-    "eclipse_body",         # SSS??SS???ы븿
-
-    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９3 SS ?뺤젙 (SSS ?ы븿)
+    "mirror_room",          # SSS??SS????釉?
+    "eclipse_body",         # SSS??SS????釉?
+    # 2026-06-15 ?癒?탵?醫듼봺???얜?諭?域밸챶竊? SS ?類ㅼ젟 (SSS ??釉?
 
     "chrome_skin",
 
     "neon_body",
 
-    "plasma_aura",          # SSS??SS???ы븿
-
-    "molten_chrome",        # SSS??SS???ы븿
-
+    "plasma_aura",          # SSS??SS????釉?
+    "molten_chrome",        # SSS??SS????釉?
     "mercury_rising",
 
-    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９4 SS ?뺤젙 (SSS ?ы븿)
+    # 2026-06-15 ?癒?탵?醫듼봺???얜?諭?域밸챶竊? SS ?類ㅼ젟 (SSS ??釉?
 
-    "mercury_pool",         # SSS??SS???ы븿
-
+    "mercury_pool",         # SSS??SS????釉?
     "titanium_body",
 
-    "snowflake_skin",       # SSS??SS???ы븿
-
+    "snowflake_skin",       # SSS??SS????釉?
     "80s_power",
 
     "y2k_chrome",
 
-    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９5 SS ?뺤젙
+    # 2026-06-15 ?癒?탵?醫듼봺???얜?諭?域밸챶竊? SS ?類ㅼ젟
 
     "bohemian_paris",
 
@@ -7276,7 +5864,7 @@ SS_TIER = {
 
     "infrared_beauty",
 
-    # 2026-06-15 ?먮뵒?좊━??臾대뱶 洹몃９6 SS ?뺤젙 (SSS ?ы븿)
+    # 2026-06-15 ?癒?탵?醫듼봺???얜?諭?域밸챶竊? SS ?類ㅼ젟 (SSS ??釉?
 
     "grain_film",
 
@@ -7284,9 +5872,8 @@ SS_TIER = {
 
     "film_noir_glam",
 
-    "noir_femme_fatale",    # SSS??SS???ы븿
-
-    # 2026-06-21 ?먯뿰&?먯냼 G1~G10 SS_TIER ?⑥튂
+    "noir_femme_fatale",    # SSS??SS????釉?
+    # 2026-06-21 ?癒?염&?癒?꺖 G1~G10 SS_TIER ??ν뒄
 
     "lava_flow",
 
@@ -7400,7 +5987,7 @@ SS_TIER = {
 
 
 
-    # 2026-06-24 ?뚯썙&?ｌ? SSS (SS ?ы븿)
+    # 2026-06-24 ???뜖&?節? SSS (SS ??釉?
 
     "valkyrie_storm",
 
@@ -7520,7 +6107,7 @@ SS_TIER = {
 
 
 
-    # 2026-06-24 ?쇳룷癒쇱뒪&?꾩뒪 G1+G2 SSS (SS ?ы븿)
+    # 2026-06-24 ??노７?믪눘???袁⑸뮞 G1+G2 SSS (SS ??釉?
 
     "flamenco_queen",
 
@@ -7544,7 +6131,7 @@ SS_TIER = {
 
     "jazz_dance_glam",
 
-    # 2026-06-25 ?湲??뚰떚??30醫?(SS ?ы븿)
+    # 2026-06-25 ??疫???곕뼒??30??(SS ??釉?
 
     "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir",
 
@@ -7568,7 +6155,7 @@ SS_TIER = {
 
     "firefly_night_field", "seed_pod_floating",
 
-    # 2026-06-25 ?먮줈???섑떚??G1 (SS ?ы븿)
+    # 2026-06-25 ?癒?쨮????묐뼒??G1 (SS ??釉?
 
     "latex_venom", "latex_catsuit", "latex_catsuit_red", "pvc_transparent_full",
 
@@ -7576,7 +6163,7 @@ SS_TIER = {
 
     "wet_latex",
 
-    # 2026-06-25 ?먮줈???섑떚??G2 (SS ?ы븿)
+    # 2026-06-25 ?癒?쨮????묐뼒??G2 (SS ??釉?
 
     "chrome_vixen", "chain_goddess", "savage_leather", "leather_bodysuit",
 
@@ -7584,7 +6171,7 @@ SS_TIER = {
 
 
 
-    # 2026-06-26 ?먮줈???섑떚??G3~G12 SS (SSS ?ы븿 51醫?
+    # 2026-06-26 ?癒?쨮????묐뼒??G3~G12 SS (SSS ??釉?51??
 
     "bondage_fashion", "strappy_harness", "harness_only", "rope_bondage_art",
 
@@ -7622,7 +6209,7 @@ SS_TIER = {
 
 
 
-    # 2026-06-24 ?먰?吏&?ㅽ겕 26醫?(SS ?ы븿)
+    # 2026-06-24 ?癒?筌왖&??쎄쾿 26??(SS ??釉?
 
     "dark_mermaid","vampire_queen","angel_fallen","moon_goddess","demon_goddess","forest_witch",
 
@@ -7638,7 +6225,7 @@ SS_TIER = {
 
 
 
-    # 2026-06-24 ?ㅻ（????꾩슦 30醫?(SS ?ы븿)
+    # 2026-06-24 ??삼펷?????袁⑹뒭 30??(SS ??釉?
 
     "silhouette_spotlight_smoke","silhouette_spotlight_latex","silhouette_spotlight_heels",
 
@@ -7664,13 +6251,13 @@ SS_TIER = {
 
 
 
-    # 2026-06-24 ?⑦듃&湲濡쒖뒪 30醫?(SS ?ы븿, SSS 29醫?+ SS ?꾩슜 1醫?
+    # 2026-06-24 ???뱜&疫꼲嚥≪뮇??30??(SS ??釉? SSS 29??+ SS ?袁⑹뒠 1??
 
     "pool_surface_break","pool_underwater_up","pool_edge_dripping","infinity_pool_wet",
 
     "hot_spring_steam","jacuzzi_bubbles",
 
-        # 2026-07-02 ?좉퇋 異붽?
+        # 2026-07-02 ?醫됲뇣 ?곕떽?
 
         "champagne_pour_body",
 
@@ -7714,9 +6301,9 @@ SS_TIER = {
 
     "bubble_bath_gloss","milk_bath_petals",
 
-    # 2026-07-02 ?섍꼍 ?쇱껜 諛붾뵒?섏씤??SS (22醫??꾩껜)
+    # 2026-07-02 ??띻펾 ??깃퍥 獄쏅뗀逾??륁뵥??SS (22???袁⑷퍥)
 
-    # 2026-07-02 諛붾뵒?섏씤???섏긽 誘뱀뒪 肄쒕씪蹂?
+    # 2026-07-02 獄쏅뗀逾??륁뵥????뤾맒 沃섎????꾩뮆?よ퉪?
 
         "trio_bodypaint_latex_frame",
 
@@ -7756,7 +6343,7 @@ SS_TIER = {
 
         "trio_chrome_bodypaint_center",
 
-        # ?? ?섍꼍 ?쇱껜 諛붾뵒?섏씤??
+        # ?? ??띻펾 ??깃퍥 獄쏅뗀逾??륁뵥??
 
         "merge_butterfly_fabric",
 
@@ -7804,7 +6391,7 @@ SS_TIER = {
 
 
 
-    # 2026-06-29 硫??諛붾뵒?섏씤??SS (57醫??꾩껜)
+    # 2026-06-29 筌렺??獄쏅뗀逾??륁뵥??SS (57???袁⑷퍥)
 
     "duo_fire_and_ice_bodypaint",
 
@@ -7914,7 +6501,7 @@ SS_TIER = {
 
     "quint_five_oceans_bodypaint",
 
-    # 2026-06-26 ?쒓뎅 ??궗 & 沅곸쨷 湲?섎㉧ SS (78醫??꾩껜)
+    # 2026-06-26 ??볥럢 ??沅?& 亦낃낯夷?疫꼲??롢돢 SS (78???袁⑷퍥)
 
     "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen",
 
