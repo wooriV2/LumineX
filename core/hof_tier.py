@@ -708,6 +708,18 @@ HOF_TIER = {
     "bodyglitter_purple_monaco_night",
     "bodyglitter_red_void_colombian",
     "bodyglitter_ice_blue_void_ballerina",
+    # ── 바디글리터 신규 HOF (2026-07-17 추가) ──
+    "bodyglitter_platinum_paris_rooftop",
+    "bodyglitter_black_void_fitness",
+    "bodyglitter_coral_rio_carnival",
+    "bodyglitter_cobalt_cape_town",
+    "bodyglitter_platinum_void_black_glam",
+    "bodyglitter_purple_aurora_nordic",
+    "bodyglitter_gold_rio_carnival",
+    "bodyglitter_gold_cape_town_black_glam",
+    "bodyglitter_red_dubai_black_glam",
+    "bodyglitter_gold_maldives_vs_angel",
+
 }
 
 def add_hof(*keys):
