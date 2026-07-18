@@ -899,8 +899,17 @@ SSS_TIER = {
     "zhangjiajie_cloud_forest",
     "zombie_apocalypse",
     "zulu_bodypaint",
+    "trio_bae1_samurai_emerald_kandinsky_kyoto",
+    "trio_bae1_snake_fire_dali_shibuya",
+    "trio_bae2_wave_peacock_silver_versailles",
+    "trio_bae2_dragon_phoenix_crimson_shibuya",
+    "trio_bae2_skull_samurai_vangogh_kyoto",
+    "trio_bae2_gold_violet_klimt_dali_aurora",
+    "trio_bae3_phoenix_skull_violet_void",
+    "trio_bae3_teal_violet_obsidian_kyoto",
+    "trio_bae3_dragon_koi_pollock_aurora",
+    "trio_bae3_wave_phoenix_vangogh_versailles",
 }
-
 SS_TIER = {
     "80s_power",
     "alma_tadema",
@@ -1264,13 +1273,3 @@ SS_TIER = {
     "zero_gravity",
     "zhangjiajie_avatar",
 }
-    "trio_bae1_samurai_emerald_kandinsky_kyoto",
-    "trio_bae1_snake_fire_dali_shibuya",
-    "trio_bae2_wave_peacock_silver_versailles",
-    "trio_bae2_dragon_phoenix_crimson_shibuya",
-    "trio_bae2_skull_samurai_vangogh_kyoto",
-    "trio_bae2_gold_violet_klimt_dali_aurora",
-    "trio_bae3_phoenix_skull_violet_void",
-    "trio_bae3_teal_violet_obsidian_kyoto",
-    "trio_bae3_dragon_koi_pollock_aurora",
-    "trio_bae3_wave_phoenix_vangogh_versailles",
