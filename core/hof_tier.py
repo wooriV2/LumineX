@@ -13,6 +13,18 @@ add_hof("key") 함수로 개별 추가도 가능합니다.
 
 
 HOF_TIER = {
+    # 2026-07-18 이레즈미 F/G HOF
+    "irezumi_snake_lotus_ballerina_paris",
+    "irezumi_snake_lotus_black_glam_void",
+    "irezumi_snake_lotus_runway_tokyo",
+    "irezumi_snake_lotus_vs_angel_aurora",
+    "irezumi_wave_fuji_ballerina_aurora",
+    "irezumi_wave_fuji_black_glam_void",
+    "irezumi_wave_fuji_colombian_versailles",
+    "irezumi_wave_fuji_fitness_strobe",
+    "irezumi_wave_fuji_runway_neon",
+    "irezumi_wave_fuji_vs_angel_santorini",
+
     "milf_korean_chrome_bodysuit_cyber",
     "milf_korean_bbw_wet_pool",
     "milf_korean_strappy_harness_club",

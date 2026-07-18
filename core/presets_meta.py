@@ -1198,3 +1198,53 @@ PRESETS_IREZUMI_GLITTER = {
         "quality": "Hasselblad H6D 80mm f/2.8 ISO 100, hyperrealistic photography, 8K",
     },
 }
+
+
+# 2026-07-18 이레즈미 F. 뱀+연꽃 / G. 파도+후지산 신규 추가
+PRESETS_IREZUMI_SNAKE_LOTUS = {
+    k: {"tier": "HOF" if k in (
+        "irezumi_snake_lotus_black_glam_void",
+        "irezumi_snake_lotus_ballerina_paris",
+        "irezumi_snake_lotus_runway_tokyo",
+        "irezumi_snake_lotus_vs_angel_aurora",
+    ) else "SS" if k in (
+        "irezumi_snake_lotus_vs_angel_bali",
+        "irezumi_snake_lotus_colombian_rio",
+        "irezumi_snake_lotus_sports_cape_town",
+    ) else "S"}
+    for k in [
+        "irezumi_snake_lotus_black_glam_void",
+        "irezumi_snake_lotus_vs_angel_bali",
+        "irezumi_snake_lotus_colombian_rio",
+        "irezumi_snake_lotus_ballerina_paris",
+        "irezumi_snake_lotus_fitness_strobe",
+        "irezumi_snake_lotus_runway_tokyo",
+        "irezumi_snake_lotus_milf_monaco",
+        "irezumi_snake_lotus_mature_onsen",
+        "irezumi_snake_lotus_sports_cape_town",
+        "irezumi_snake_lotus_vs_angel_aurora",
+    ]
+}
+
+PRESETS_IREZUMI_WAVE_FUJI = {
+    k: {"tier": "HOF" if k in (
+        "irezumi_wave_fuji_black_glam_void",
+        "irezumi_wave_fuji_vs_angel_santorini",
+        "irezumi_wave_fuji_runway_neon",
+        "irezumi_wave_fuji_colombian_versailles",
+        "irezumi_wave_fuji_fitness_strobe",
+        "irezumi_wave_fuji_ballerina_aurora",
+    ) else "SS" if k in (
+        "irezumi_wave_fuji_sports_onsen",
+    ) else "S"}
+    for k in [
+        "irezumi_wave_fuji_black_glam_void",
+        "irezumi_wave_fuji_vs_angel_santorini",
+        "irezumi_wave_fuji_runway_neon",
+        "irezumi_wave_fuji_sports_onsen",
+        "irezumi_wave_fuji_colombian_versailles",
+        "irezumi_wave_fuji_fitness_strobe",
+        "irezumi_wave_fuji_mature_kyoto",
+        "irezumi_wave_fuji_ballerina_aurora",
+    ]
+}
