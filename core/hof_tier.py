@@ -13,6 +13,28 @@ add_hof("key") 함수로 개별 추가도 가능합니다.
 
 
 HOF_TIER = {
+    # 2026-07-18 Bare Art Ensemble 듀오 HOF
+    "duo_glitter_crimson_vangogh_aurora",
+    "duo_glitter_emerald_vangogh_budapest",
+    "duo_glitter_fire_ice_cape_town",
+    "duo_glitter_gold_klimt_void",
+    "duo_glitter_gold_obsidian_void",
+    "duo_glitter_obsidian_dali_versailles",
+    "duo_glitter_teal_mucha_maldives",
+    "duo_glitter_violet_kandinsky_kyoto",
+    "duo_irezumi_dragon_glitter_gold_void",
+    "duo_irezumi_glitter_aurora",
+    "duo_irezumi_koi_klimt_silver_budapest",
+    "duo_irezumi_phoenix_vangogh_aurora",
+    "duo_irezumi_skull_dali_kyoto",
+    "duo_irezumi_skull_glitter_obsidian_kyoto",
+    "duo_irezumi_snake_dragon_monaco",
+    "duo_irezumi_snake_glitter_emerald_versailles",
+    "duo_irezumi_snake_mucha_paris",
+    "duo_irezumi_wave_glitter_indigo_santorini",
+    "duo_irezumi_wave_phoenix_shibuya",
+    "duo_irezumi_wave_pollock_void",
+
     # 2026-07-18 이레즈미 F/G HOF
     "irezumi_snake_lotus_ballerina_paris",
     "irezumi_snake_lotus_black_glam_void",
