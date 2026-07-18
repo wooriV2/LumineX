@@ -1313,3 +1313,21 @@ BARE_ART_TRIO_BAE3 = {
     "trio_bae3_dragon_koi_pollock_aurora": {"name": "trio_bae3_dragon_koi_pollock_aurora", "tier": "SS"},
     "trio_bae3_wave_phoenix_vangogh_versailles": {"name": "trio_bae3_wave_phoenix_vangogh_versailles", "tier": "SS"},
 }
+
+
+# ── Bare Art Ensemble: Quad bae1 ──────────────────────────────────────
+BARE_ART_QUAD_BAE1 = {
+    "quad_bae1_dragon_gold_klimt_obsidian_void": {"name": "quad_bae1_dragon_gold_klimt_obsidian_void", "tier": "HOF"},
+    "quad_bae1_koi_violet_dali_emerald_monaco": {"name": "quad_bae1_koi_violet_dali_emerald_monaco", "tier": "HOF"},
+    "quad_bae1_snake_peacock_gold_silver_void": {"name": "quad_bae1_snake_peacock_gold_silver_void", "tier": "HOF"},
+    "quad_bae1_gold_silver_crimson_emerald_versailles": {"name": "quad_bae1_gold_silver_crimson_emerald_versailles", "tier": "HOF"},
+    "quad_bae1_dragon_wave_gold_obsidian_shibuya": {"name": "quad_bae1_dragon_wave_gold_obsidian_shibuya", "tier": "HOF"},
+    "quad_bae1_phoenix_teal_vangogh_silver_aurora": {"name": "quad_bae1_phoenix_teal_vangogh_silver_aurora", "tier": "SS"},
+    "quad_bae1_wave_skull_crimson_pollock_versailles": {"name": "quad_bae1_wave_skull_crimson_pollock_versailles", "tier": "SS"},
+    "quad_bae1_samurai_gold_teal_vangogh_kyoto": {"name": "quad_bae1_samurai_gold_teal_vangogh_kyoto", "tier": "SS"},
+    "quad_bae1_dragon_phoenix_crimson_violet_shibuya": {"name": "quad_bae1_dragon_phoenix_crimson_violet_shibuya", "tier": "SS"},
+    "quad_bae1_koi_samurai_teal_pollock_aurora": {"name": "quad_bae1_koi_samurai_teal_pollock_aurora", "tier": "SS"},
+    "quad_bae1_snake_gold_violet_vangogh_monaco": {"name": "quad_bae1_snake_gold_violet_vangogh_monaco", "tier": "SS"},
+    "quad_bae1_phoenix_skull_emerald_silver_kyoto": {"name": "quad_bae1_phoenix_skull_emerald_silver_kyoto", "tier": "SS"},
+    "quad_bae1_wave_peacock_crimson_klimt_versailles": {"name": "quad_bae1_wave_peacock_crimson_klimt_versailles", "tier": "SS"},
+}

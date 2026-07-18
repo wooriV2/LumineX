@@ -1272,4 +1272,12 @@ SS_TIER = {
     "zebra_stripes",
     "zero_gravity",
     "zhangjiajie_avatar",
+    "quad_bae1_phoenix_teal_vangogh_silver_aurora",
+    "quad_bae1_wave_skull_crimson_pollock_versailles",
+    "quad_bae1_samurai_gold_teal_vangogh_kyoto",
+    "quad_bae1_dragon_phoenix_crimson_violet_shibuya",
+    "quad_bae1_koi_samurai_teal_pollock_aurora",
+    "quad_bae1_snake_gold_violet_vangogh_monaco",
+    "quad_bae1_phoenix_skull_emerald_silver_kyoto",
+    "quad_bae1_wave_peacock_crimson_klimt_versailles",
 }

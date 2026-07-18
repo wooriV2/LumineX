@@ -773,3 +773,8 @@ def add_hof(*keys):
     "trio_bae3_koi_samurai_emerald_aurora",
     "trio_bae3_snake_peacock_crimson_versailles",
     "trio_bae3_gold_silver_crimson_shibuya",
+    "quad_bae1_dragon_gold_klimt_obsidian_void",
+    "quad_bae1_koi_violet_dali_emerald_monaco",
+    "quad_bae1_snake_peacock_gold_silver_void",
+    "quad_bae1_gold_silver_crimson_emerald_versailles",
+    "quad_bae1_dragon_wave_gold_obsidian_shibuya",
