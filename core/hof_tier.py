@@ -763,5 +763,13 @@ def add_hof(*keys):
     for k in keys:
 
         HOF_TIER.add(k)
-
-
+    "trio_bae1_dragon_gold_klimt_versailles",
+    "trio_bae1_phoenix_teal_vangogh_aurora",
+    "trio_bae1_wave_obsidian_pollock_void",
+    "trio_bae1_skull_violet_dali_monaco",
+    "trio_bae2_phoenix_snake_violet_aurora",
+    "trio_bae2_gold_teal_obsidian_monaco",
+    "trio_bae2_crimson_emerald_silver_void",
+    "trio_bae3_koi_samurai_emerald_aurora",
+    "trio_bae3_snake_peacock_crimson_versailles",
+    "trio_bae3_gold_silver_crimson_shibuya",

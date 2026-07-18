@@ -1280,3 +1280,36 @@ PRESETS_BARE_ART_ENSEMBLE_DUO = {
     "duo_glitter_gold_obsidian_void": {},
     "duo_glitter_fire_ice_cape_town": {},
 }
+
+
+# ── Bare Art Ensemble: Trio bae1 ──────────────────────────────────────
+BARE_ART_TRIO_BAE1 = {
+    "trio_bae1_dragon_gold_klimt_versailles": {"name": "trio_bae1_dragon_gold_klimt_versailles", "tier": "HOF"},
+    "trio_bae1_phoenix_teal_vangogh_aurora": {"name": "trio_bae1_phoenix_teal_vangogh_aurora", "tier": "HOF"},
+    "trio_bae1_wave_obsidian_pollock_void": {"name": "trio_bae1_wave_obsidian_pollock_void", "tier": "HOF"},
+    "trio_bae1_skull_violet_dali_monaco": {"name": "trio_bae1_skull_violet_dali_monaco", "tier": "HOF"},
+    "trio_bae1_samurai_emerald_kandinsky_kyoto": {"name": "trio_bae1_samurai_emerald_kandinsky_kyoto", "tier": "SS"},
+    "trio_bae1_snake_fire_dali_shibuya": {"name": "trio_bae1_snake_fire_dali_shibuya", "tier": "SS"},
+}
+
+# ── Bare Art Ensemble: Trio bae2 ──────────────────────────────────────
+BARE_ART_TRIO_BAE2 = {
+    "trio_bae2_phoenix_snake_violet_aurora": {"name": "trio_bae2_phoenix_snake_violet_aurora", "tier": "HOF"},
+    "trio_bae2_gold_teal_obsidian_monaco": {"name": "trio_bae2_gold_teal_obsidian_monaco", "tier": "HOF"},
+    "trio_bae2_crimson_emerald_silver_void": {"name": "trio_bae2_crimson_emerald_silver_void", "tier": "HOF"},
+    "trio_bae2_wave_peacock_silver_versailles": {"name": "trio_bae2_wave_peacock_silver_versailles", "tier": "SS"},
+    "trio_bae2_dragon_phoenix_crimson_shibuya": {"name": "trio_bae2_dragon_phoenix_crimson_shibuya", "tier": "SS"},
+    "trio_bae2_skull_samurai_vangogh_kyoto": {"name": "trio_bae2_skull_samurai_vangogh_kyoto", "tier": "SS"},
+    "trio_bae2_gold_violet_klimt_dali_aurora": {"name": "trio_bae2_gold_violet_klimt_dali_aurora", "tier": "SS"},
+}
+
+# ── Bare Art Ensemble: Trio bae3 ──────────────────────────────────────
+BARE_ART_TRIO_BAE3 = {
+    "trio_bae3_koi_samurai_emerald_aurora": {"name": "trio_bae3_koi_samurai_emerald_aurora", "tier": "HOF"},
+    "trio_bae3_snake_peacock_crimson_versailles": {"name": "trio_bae3_snake_peacock_crimson_versailles", "tier": "HOF"},
+    "trio_bae3_gold_silver_crimson_shibuya": {"name": "trio_bae3_gold_silver_crimson_shibuya", "tier": "HOF"},
+    "trio_bae3_phoenix_skull_violet_void": {"name": "trio_bae3_phoenix_skull_violet_void", "tier": "SS"},
+    "trio_bae3_teal_violet_obsidian_kyoto": {"name": "trio_bae3_teal_violet_obsidian_kyoto", "tier": "SS"},
+    "trio_bae3_dragon_koi_pollock_aurora": {"name": "trio_bae3_dragon_koi_pollock_aurora", "tier": "SS"},
+    "trio_bae3_wave_phoenix_vangogh_versailles": {"name": "trio_bae3_wave_phoenix_vangogh_versailles", "tier": "SS"},
+}
