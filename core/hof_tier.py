@@ -754,65 +754,22 @@ HOF_TIER = {
     "bodyglitter_red_dubai_black_glam",
     "bodyglitter_gold_maldives_vs_angel",
 
+
+    # DeepBlack Trio HOF
+    "deepblack_trio_dragon_phoenix_tiger_void": {
+        "prompt": "Professional fashion photograph, full body shot. THREE women standing side by side. LEFT: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, early 20s, BBW bombshell physique — massive full-figure curves, extremely wide heavy hips, enormous full bust, long floor-length silver box braids gold serpent cuffs — full body irezumi dragon and wisteria covering EVERY inch neck to ankle WITHOUT EXCEPTION both legs fully tattooed to ankles NO bare skin visible below neck, 24k gold dragon violet wisteria cascading. CENTER: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, early 30s MILF glamour physique — mature voluptuous curves, extremely wide heavy hips, enormous full bust, voluminous silver afro gold diadem crown — full body irezumi phoenix and flame covering EVERY inch neck to ankle WITHOUT EXCEPTION both legs fully tattooed to ankles NO bare skin visible below neck, crimson gold phoenix orange inferno. RIGHT: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, 50s silver fox glamour physique — ageless bombshell curves, impossibly thick powerful thighs, wide commanding hips, full bust, silver micro locs sculptural updo obsidian pins — full body irezumi tiger and maple covering EVERY inch neck to ankle WITHOUT EXCEPTION both legs fully tattooed to ankles NO bare skin visible below neck, blazing orange tiger crimson maple. LEFT: gold crystal rhinestone platform thigh-high boots 8 inch, extra long stiletto nails black gold dragon tips. CENTER: crimson extreme platform heels 8 inch, extra long coffin nails crimson gold flame ombre. RIGHT: black spike platform boots 8 inch, extra long stiletto nails orange black tiger stripe. All: extreme high-gloss oil. Pure black void backdrop. Triple chiaroscuro — dragon gold-violet left, phoenix crimson-gold center, tiger orange-black right. 8K portrait 3:4 vertical.",
+        "aspect_ratio": "3:4",
+        "num_images": 2,
+    },
+    "deepblack_trio_koi_dragon_phoenix_aurora": {
+        "prompt": "Professional fashion photograph, full body shot. THREE women standing side by side. LEFT: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, 50s silver fox glamour physique — ageless bombshell curves, massive round bubble butt commanding every inch, snatched waist, full high bust, floor-length silver goddess locs jade gold ornaments — full body irezumi koi and maple covering EVERY inch neck to ankle WITHOUT EXCEPTION both legs fully tattooed to ankles NO bare skin visible below neck, blazing orange koi crimson maple. CENTER: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, early 20s, hourglass queen physique — impossibly tiny waist, explosively wide round hips, full high bust, wild silver-tipped natural afro supreme — full body irezumi dragon and peony covering EVERY inch neck to ankle WITHOUT EXCEPTION both legs fully tattooed to ankles NO bare skin visible below neck, 24k gold dragon scarlet peony. RIGHT: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, early 30s MILF glamour physique — mature voluptuous curves, extremely wide heavy hips, enormous full bust, sleek silver-streaked long waves diamond pins — full body irezumi phoenix and wisteria covering EVERY inch neck to ankle WITHOUT EXCEPTION both legs fully tattooed to ankles NO bare skin visible below neck, crimson gold phoenix violet wisteria. LEFT: jade extreme platform thigh-high boots 8 inch, extra long stiletto nails orange black koi tips. CENTER: black crystal platform heels 8 inch, extra long coffin nails black 24k gold tips. RIGHT: crimson extreme thigh-high boots 8 inch, extra long almond nails crimson violet phoenix ombre. All: extreme high-gloss oil. Iceland glacier aurora borealis green violet purple, massive ice formations perfect dark water reflection. Triple irezumi aurora — koi orange left, dragon gold center, phoenix crimson right. 8K portrait 3:4 vertical.",
+        "aspect_ratio": "3:4",
+        "num_images": 2,
+    },
+    "deepblack_trio_uvneon_dragon_phoenix_tiger_void": {
+        "prompt": "Professional fashion photograph, full body shot. THREE women standing side by side. LEFT: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, early 20s, BBW bombshell physique — massive full-figure curves, extremely wide heavy hips, enormous full bust, wild voluminous silver-tipped afro — body fully covered in UV reactive neon bodypaint from neck to ankle, electric magenta and gold sacred geometry mandala patterns covering entire body, black light UV glow making neon patterns float above dark skin void, skin disappearing into darkness while magenta-gold geometry hovers in space. CENTER: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, early 30s MILF glamour physique — mature voluptuous curves, extremely wide heavy hips, enormous full bust, sleek silver-streaked updo diamond pins — body fully covered in UV reactive neon bodypaint from neck to ankle, electric cyan and green serpent dragon spiral patterns covering entire body, black light UV making cyan-green dragon float above void skin, intricate scales and coils glowing electric against disappearing black skin. RIGHT: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion, 50s silver fox glamour physique — ageless bombshell curves, massive round bubble butt commanding every inch, snatched waist, full high bust, floor-length silver goddess locs — body fully covered in UV reactive neon bodypaint from neck to ankle, electric crimson and orange phoenix flame patterns covering entire body, black light UV making crimson-orange phoenix float above void skin, blazing wings and feathers glowing electric against disappearing black canvas. LEFT: UV glowing magenta platform thigh-high boots 8 inch, extra long stiletto nails UV reactive neon hot pink glowing same family as magenta body seamless extension. CENTER: UV glowing cyan extreme platform heels 8 inch, extra long coffin nails UV reactive ice mint glowing same family as cyan body seamless extension. RIGHT: UV glowing crimson extreme platform boots 8 inch, extra long almond nails UV reactive neon orange glowing same family as crimson body seamless extension. All: extreme high-gloss oil, UV blacklight environment. Pure black void backdrop UV blacklight. Triple UV — magenta mandala left, cyan dragon center, crimson phoenix right. 8K portrait 3:4 vertical.",
+        "aspect_ratio": "3:4",
+        "num_images": 2,
+    },
 }
-
-def add_hof(*keys):
-
-    """HOF_TIER에 키를 동적으로 추가합니다."""
-
-    for k in keys:
-
-        HOF_TIER.add(k)
-    "trio_bae1_dragon_gold_klimt_versailles",
-    "trio_bae1_phoenix_teal_vangogh_aurora",
-    "trio_bae1_wave_obsidian_pollock_void",
-    "trio_bae1_skull_violet_dali_monaco",
-    "trio_bae2_phoenix_snake_violet_aurora",
-    "trio_bae2_gold_teal_obsidian_monaco",
-    "trio_bae2_crimson_emerald_silver_void",
-    "trio_bae3_koi_samurai_emerald_aurora",
-    "trio_bae3_snake_peacock_crimson_versailles",
-    "trio_bae3_gold_silver_crimson_shibuya",
-    "quad_bae1_dragon_gold_klimt_obsidian_void",
-    "quad_bae1_koi_violet_dali_emerald_monaco",
-    "quad_bae1_snake_peacock_gold_silver_void",
-    "quad_bae1_gold_silver_crimson_emerald_versailles",
-    "quad_bae1_dragon_wave_gold_obsidian_shibuya",
-    "irezumi_skull_chrysanthemum_vs_angel_aurora",
-    "irezumi_skull_chrysanthemum_hot_glam_versailles",
-    "irezumi_skull_chrysanthemum_sports_glam_void",
-    "irezumi_skull_chrysanthemum_slim_runway_monaco",
-    "irezumi_koi_maple_black_glam_void",
-    "irezumi_koi_maple_vs_angel_aurora",
-    "irezumi_koi_maple_ballerina_kyoto",
-    "korean_milf_duo_dokkaebi_gold_dongdaemun",
-    "korean_milf_duo_dancheong_crimson_aurora",
-    "korean_milf_duo_gwisin_obsidian_jeonju",
-    "korean_milf_trio_dragon_minhwa_violet_void",
-    "korean_milf_trio_silla_dancheong_obsidian_aurora",
-    "korean_milf_trio_mudang_celadon_crimson_jongmyo",
-    "korean_milf_trio_dragon_phoenix_gold_namsan",
-    "korean_milf_trio_irezumi_celadon_crimson_busan",
-    "korean_milf_trio_phoenix_minhwa_obsidian_gwanghwamun",
-    "korean_milf_trio_dragon_gumiho_violet_dongdaemun",
-    "korean_milf_trio_minhwa_pojagi_obsidian_bukhansan",
-    "korean_milf_trio_tiger_phoenix_crimson_gyeongju",
-    "korean_milf_trio_gumiho_dancheong_violet_gyeongbokgung",
-    "korean_silverfox_duo_dancheong_gold_void",
-    "korean_silverfox_duo_irezumi_obsidian_deoksugung",
-    "korean_silverfox_duo_minhwa_violet_aurora",
-    "korean_silverfox_duo_irezumi_crimson_void",
-    "korean_silverfox_duo_minhwa_obsidian_deoksugung",
-    "korean_silverfox_duo_lotus_gold_versailles",
-    "korean_silverfox_duo_phoenix_crimson_gyeongju",
-    "korean_silverfox_duo_koi_maple_gold_suncheon",
-    "korean_silverfox_duo_minhwa_crimson_dongdaemun",
-    "korean_silverfox_duo_haetae_gold_aurora",
-    "korean_silverfox_duo_lotus_obsidian_bukchon",
-    "korean_silverfox_duo_irezumi_crimson_jeonju",
-    "korean_silverfox_duo_minhwa_obsidian_aurora",
-    "korean_silverfox_duo_dragon_crimson_namsan",
-    "korean_silverfox_duo_dancheong_crimson_busan",
-    "korean_silverfox_duo_lotus_crimson_aurora",
-    "korean_silverfox_trio_dancheong_crimson_void",
-    "korean_silverfox_trio_minhwa_celadon_crimson_gyeongju",
+}
