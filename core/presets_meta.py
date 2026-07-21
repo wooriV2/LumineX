@@ -727,4 +727,13 @@ BARE_ART_QUAD_BAE1 = {
     "quad_bae1_snake_gold_violet_vangogh_monaco": {"name": "quad_bae1_snake_gold_violet_vangogh_monaco", "tier": "SS"},
     "quad_bae1_phoenix_skull_emerald_silver_kyoto": {"name": "quad_bae1_phoenix_skull_emerald_silver_kyoto", "tier": "SS"},
     "quad_bae1_wave_peacock_crimson_klimt_versailles": {"name": "quad_bae1_wave_peacock_crimson_klimt_versailles", "tier": "SS"},
+    "🖤 DeepBlack Trio": [
+        "deepblack_trio_dragon_phoenix_tiger_void",
+        "deepblack_trio_koi_dragon_phoenix_aurora",
+        "deepblack_trio_dragon_celadon_phoenix_void",
+        "deepblack_trio_koi_crane_phoenix_aurora",
+        "deepblack_trio_dragon_goldleaf_phoenix_void",
+        "deepblack_trio_tiger_uvneon_koi_void",
+        "deepblack_trio_uvneon_dragon_phoenix_tiger_void",
+    ],
 }

@@ -772,4 +772,3 @@ HOF_TIER = {
         "num_images": 2,
     },
 }
-}
