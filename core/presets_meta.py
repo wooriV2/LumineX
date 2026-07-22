@@ -766,4 +766,22 @@ BARE_ART_QUAD_BAE1 = {
         "deepblack_trio_crossover_tiger_lotus_irezumi_mycelium_uvneon_voidbl",
         "deepblack_trio_crossover_crane_peony_irezumi_micro_scale_uvneon_voidbl",
 ],
+
+    "🦊 Silver Fox TRIO": [
+        "silverfox_trio_black_koi_lotus_gold_void",
+        "silverfox_trio_black_haetae_dragon_crimson_capetown",
+        "silverfox_trio_black_koi_lotus_gold_bali",
+        "silverfox_trio_black_haetae_phoenix_crimson_cairo",
+        "silverfox_trio_black_dragon_dancheong_gold_shanghai",
+        "silverfox_trio_black_tiger_crane_crimson_aurora",
+        "silverfox_trio_black_phoenix_haetae_gold_angkor",
+        "silverfox_trio_black_dragon_minhwa_crimson_istanbul",
+        "silverfox_trio_black_phoenix_crane_gold_machu_picchu",
+        "silverfox_trio_black_tiger_minhwa_crimson_void",
+        "silverfox_trio_black_dragon_lotus_gold_petra",
+        "silverfox_trio_black_haetae_phoenix_crimson_paris",
+        "silverfox_trio_black_tiger_celadon_gold_kyoto",
+        "silverfox_trio_black_dragon_haetae_crimson_rio",
+        "silverfox_trio_black_phoenix_lotus_gold_void",
+    ],
 }

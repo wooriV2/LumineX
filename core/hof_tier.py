@@ -809,4 +809,6 @@ HOF_TIER = {
     "deepblack_trio_crossover_phoenix_maple_irezumi_murmuration_uvneon_voidbl",
     "deepblack_trio_crossover_koi_plum_irezumi_cymatics_uvneon_voidbl",
     "deepblack_trio_crossover_tiger_lotus_irezumi_mycelium_uvneon_voidbl",
+    "silverfox_trio_black_koi_lotus_gold_void",
+    "silverfox_trio_black_haetae_dragon_crimson_capetown",
 }
