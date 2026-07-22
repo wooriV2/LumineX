@@ -801,4 +801,12 @@ HOF_TIER = {
     "deepblack_trio_celtic_thangka_artdeco_voidbl",
     "deepblack_trio_mughal_gauguin_schiele_voidbl",
     "deepblack_trio_rivera_aztec_klimt_voidbl",
+    "deepblack_trio_crossover_plum_chrysanthemum_bamboo_irezumi_biopunk_uvneon_voidbl",
+    "deepblack_trio_crossover_chrysanthemum_plum_crane_irezumi_crystal_uvneon_voidbl",
+    "deepblack_trio_crossover_tiger_wisteria_irezumi_plasma_uvneon_voidbl",
+    "deepblack_trio_crossover_snake_crane_irezumi_bioluminescent_uvneon_voidbl",
+    "deepblack_trio_crossover_peony_bamboo_irezumi_aurora_crystal_uvneon_voidbl",
+    "deepblack_trio_crossover_phoenix_maple_irezumi_murmuration_uvneon_voidbl",
+    "deepblack_trio_crossover_koi_plum_irezumi_cymatics_uvneon_voidbl",
+    "deepblack_trio_crossover_tiger_lotus_irezumi_mycelium_uvneon_voidbl",
 }
