@@ -1402,4 +1402,14 @@ SS_TIER = {
     "silverfox_trio_korean_holographic_snake_chrysanthemum_gold_cymatics_void",
     "silverfox_trio_violet_nebula_crane_wave_ferrofluid_void",
     "silverfox_trio_ferrofluid_koi_maple_orange_solar_void",
+
+    # 🦁 Silver Fox DUO SSS
+    "sf_duo_cobra_empress",
+    "sf_duo_geisha_moon",
+    "sf_duo_mughal_empress",
+    "sf_duo_northern_star",
+    "sf_duo_nile_goddess",
+    "sf_duo_yoruba_goddess",
+    "sf_duo_georgian_vine",
+    "sf_duo_zulu_lion",
 }
