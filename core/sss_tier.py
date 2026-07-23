@@ -1397,4 +1397,9 @@ SS_TIER = {
     "silverfox_trio_black_tiger_celadon_gold_kyoto",
     "silverfox_trio_black_dragon_haetae_crimson_rio",
     "silverfox_trio_black_phoenix_lotus_gold_void",
+    "silverfox_trio_korean_crimson_lightning_dragon_peony_bioluminescent_void",
+    "silverfox_trio_korean_gold_cymatics_crane_wave_mycelium_void",
+    "silverfox_trio_korean_holographic_snake_chrysanthemum_gold_cymatics_void",
+    "silverfox_trio_violet_nebula_crane_wave_ferrofluid_void",
+    "silverfox_trio_ferrofluid_koi_maple_orange_solar_void",
 }
