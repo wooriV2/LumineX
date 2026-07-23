@@ -1412,4 +1412,16 @@ SS_TIER = {
     "sf_duo_yoruba_goddess",
     "sf_duo_georgian_vine",
     "sf_duo_zulu_lion",
+
+    "sf_duo_dragon_lotus",
+    "sf_duo_nabataean_rose",
+    "sf_duo_arabian_nights",
+    "sf_duo_bohemian_crystal",
+    "sf_duo_dalmatian_queen",
+    "sf_duo_finnish_aurora",
+    "sf_duo_scottish_highland",
+    "sf_duo_polynesian_storm",
+    "sf_duo_byzantine_queen",
+    "sf_duo_anatolian_goddess",
+    "sf_duo_roman_goddess",
 }
