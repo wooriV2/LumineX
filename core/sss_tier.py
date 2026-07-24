@@ -1424,4 +1424,13 @@ SS_TIER = {
     "sf_duo_byzantine_queen",
     "sf_duo_anatolian_goddess",
     "sf_duo_roman_goddess",
+
+    "sf_single_magyar_ottoman",
+    "sf_single_ishtar_persian",
+    "sf_single_persian_petite",
+    "sf_single_mongolian_warrior",
+    "sf_single_corset_empress",
+    "sf_single_ukrainian_bbw_young",
+    "sf_single_nubian_water_reflection",
+    "sf_single_russian_marble_reflection",
 }
