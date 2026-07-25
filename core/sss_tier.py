@@ -1457,4 +1457,15 @@ SS_TIER = {
     "maternity_bodypaint_korean_lava_frontal",
     "maternity_neon_bubblebutt_uv_rear",
     "maternity_glitter_bubblebutt_rose_kneeling",
+
+    "fs_006",
+    "fs_010",
+    "fs_013",
+    "fs_016",
+    "fs_025",
+    "fs_027",
+    "fs_036",
+    "fs_040",
+    "fs_043",
+    "fs_049",
 }
