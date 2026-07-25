@@ -1476,4 +1476,12 @@ SS_TIER = {
     "cb_012",
     "cb_014",
     "cb_020",
+
+    "irezumi_dragon_wisteria_sports_glam_void",
+    "irezumi_dragon_wisteria_petite_aurora",
+    "irezumi_dragon_wisteria_muscular_void",
+    "irezumi_dragon_wisteria_superbbw_bali",
+    "irezumi_dragon_wisteria_slim_santorini",
+    "irezumi_dragon_wisteria_hourglass_rio",
+    "irezumi_dragon_wisteria_milf_budapest",
 }

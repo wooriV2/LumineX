@@ -1091,4 +1091,14 @@ HOF_TIER = {
     "cb_017",
     "cb_018",
     "cb_019",
+
+    "irezumi_dragon_wisteria_vs_angel_kyoto",
+    "irezumi_dragon_wisteria_mature_onsen",
+    "irezumi_dragon_wisteria_runway_neon",
+    "irezumi_dragon_wisteria_colombian_versailles",
+    "irezumi_dragon_wisteria_bbw_monaco",
+    "irezumi_dragon_wisteria_hourglass_dubai",
+    "irezumi_dragon_wisteria_fitness_strobe",
+    "irezumi_dragon_wisteria_mature_paris",
+    "irezumi_dragon_wisteria_ballerina_void",
 }
