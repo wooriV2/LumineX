@@ -1514,4 +1514,8 @@ SS_TIER = {
     "irezumi_skull_chrysanthemum_copper_marrakech",
     "irezumi_skull_chrysanthemum_folds_void_side",
     "irezumi_skull_chrysanthemum_folds_istanbul",
+
+    "ancient_gods_hathor_egypt_void",
+    "ancient_gods_aphrodite_greece_ivory_void",
+    "ancient_gods_tiamat_babylon_superbbw_void",
 }
