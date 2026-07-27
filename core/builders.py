@@ -37,7 +37,25 @@ def _is_bodypaint(outfit_text: str, material_text: str = "") -> bool:
     return any(kw.lower() in combined for kw in BODYPAINT_KEYWORDS)
 
 
-def _build_wearing_line(outfit_wearing: str, material_text: str, footwear: str) -> str:
+# environment 텍스트에 신발이 명시돼 있는지 판별
+# 'platform'은 전시 대좌("a low platform")와 혼동되므로 의도적으로 제외
+FOOTWEAR_IN_ENV_KEYWORDS = [
+    "sandal", "heel", "shoe", "boot", "pump", "stiletto",
+    "loafer", "mule", "sneaker", "moccasin", "slipper",
+    "geta", "zori", "espadrille", "clog",
+]
+
+
+def _env_has_footwear(env_text: str) -> bool:
+    """environment에 신발이 명시돼 있으면 True -> barefoot 강제를 생략"""
+    if not env_text:
+        return False
+    low = env_text.lower()
+    return any(kw in low for kw in FOOTWEAR_IN_ENV_KEYWORDS)
+
+
+def _build_wearing_line(outfit_wearing: str, material_text: str, footwear: str,
+                        env_text: str = "") -> str:
     """
     바디페인팅이면 'Body fully painted with:' + 맨발 강제,
     일반 의상이면 기존 'Wearing:' 포맷 반환
@@ -46,19 +64,22 @@ def _build_wearing_line(outfit_wearing: str, material_text: str, footwear: str) 
         return (
             f"Body fully painted with: {outfit_wearing}. "
             f"The entire design is body paint pigment applied directly on bare skin, "
-            f"NOT clothing, NOT fabric, painted with {material_text}. Barefoot."
+            f"NOT clothing, NOT fabric, painted with {material_text}."
+            f"{'' if _env_has_footwear(env_text) else ' Barefoot.'}"
         )
     else:
         return f"Wearing: {outfit_wearing}, made of {material_text}{', ' + footwear if footwear else ''}."
 
 
-def _build_wearing_phrase_chatgpt(outfit_wearing: str, material_text: str, footwear: str) -> str:
+def _build_wearing_phrase_chatgpt(outfit_wearing: str, material_text: str, footwear: str,
+                                  env_text: str = "") -> str:
     """ChatGPT 빌더용 wearing 구문 (문장 중간 삽입형)"""
     if _is_bodypaint(outfit_wearing, material_text):
         return (
             f"Body fully painted with {outfit_wearing}, "
             f"the entire design is body paint pigment on bare skin, NOT clothing, NOT fabric, "
-            f"painted with {material_text}, barefoot. "
+            f"painted with {material_text}"
+            f"{'' if _env_has_footwear(env_text) else ', barefoot'}. "
         )
     else:
         return f"Wearing {outfit_wearing}, crafted from {material_text}{', ' + footwear if footwear else ''}. "
@@ -149,7 +170,7 @@ def build_gemini_prompt(data: dict, aspect: str, realism: bool) -> str:
 
     # ── 바디페인팅이면 "Wearing:" 대신 "Body painted:" + 맨발 강제 ──
     material_text = MATERIALS[data['material']]
-    wearing_line = _build_wearing_line(outfit_wearing, material_text, footwear)
+    wearing_line = _build_wearing_line(outfit_wearing, material_text, footwear, ENVIRONMENTS[data['env']])
 
     framing_prefix = f"{framing_val}, " if framing_val else ""
     angle_prefix   = f"{angle_val}, " if angle_val else ""
@@ -273,7 +294,7 @@ def build_chatgpt_prompt(data: dict, aspect: str) -> str:
         outfit_wearing = outfit
 
     # ── 바디페인팅이면 "Wearing" 대신 "Body painted" + 맨발 강제 ──
-    wearing_phrase = _build_wearing_phrase_chatgpt(outfit_wearing, material, footwear)
+    wearing_phrase = _build_wearing_phrase_chatgpt(outfit_wearing, material, footwear, ENVIRONMENTS[data['env']])
 
     # ── 2번: 아트 스타일이면 실사 suffix 제거 ──
     if is_art:
@@ -347,7 +368,8 @@ def build_midjourney_prompt(data: dict, aspect: str) -> str:
     # ── 바디페인팅이면 의상 태그를 body paint로 치환 + footwear 제거 ──
     if _is_bodypaint(outfit_full, MATERIALS[data['material']]):
         outfit_short = f"full body paint, {outfit_short}, painted on bare skin not clothing"
-        footwear_short = "barefoot"
+        if not _env_has_footwear(ENVIRONMENTS[data['env']]):
+            footwear_short = "barefoot"
 
     tags = [t for t in [
         appearance, model_short, outfit_short, material_short, footwear_short,
