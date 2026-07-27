@@ -1,7 +1,11 @@
 {
-  "key": "bp_solo_katazome_crane_pine_mature",
-  "label": "🕊️ 카타조메 학과 솔 — 40대 염색장",
-  "category": "🎨 Bodypaint",
-  "prompt": "Professional fashion photograph, full body shot.\nModel: one woman in her forties, athletic build, defined shoulders, black hair cropped short.\nPose: standing squarely, arms held slightly out from the body, chin level, looking directly at the camera.\n\nBody fully painted with: katazome stencil dyeing — crisp repeating motifs cut in paper stencil style, deep indigo ground with white reserved shapes: flying cranes across the chest, pine needle clusters over the shoulders, tortoiseshell hexagons down the arms, karakusa vine scrolls covering the legs. Every motif hard-edged and precisely repeated, tiled edge to edge with no blank ground anywhere.\n\nPigment applied directly on bare skin, matte, pores and skin texture visible.\nThe paint ends at the wrist and ankle in a crisp deliberate border; hands and feet bare.\nHands fully visible, five separated fingers each.\n\nBarefoot on wet stone.\nEnvironment: a dyeing workshop, long indigo vats sunk in the floor, lengths of dyed cloth hanging to dry.\nLighting: high diffuse daylight from a roof skylight directly above, soft downward modeling, gentle shadow under the brow and chin.\nStyle: documentary photography of textile craft. ultra-sharp 8K. portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "tag": "Katazome Crane and Pine Body Paint",
+  "subject": "a fine art female model in her forties with Japanese katazome stencil body paint",
+  "body": "athletic build with defined shoulders, black hair cropped short, standing squarely with arms held slightly out from the body, chin level, direct gaze",
+  "outfit": "body fully painted with: katazome paper-stencil dyeing — deep indigo ground with white reserved shapes, flying cranes across the chest, pine needle clusters over the shoulders, tortoiseshell hexagons down the arms, karakusa vine scrolls covering the legs, every motif hard-edged and precisely repeated tiled edge to edge with no blank ground, painted on bare skin NO clothing NO fabric",
+  "material": "fine art body paint — bone-dry chalky matte pigment on bare skin, no wet sheen no gloss, skin pores and texture visible through the pigment, paint ends at wrist and ankle in one thin crisp border with hands and feet bare, NO clothing NO fabric NO garment shape",
+  "environment": "a dyeing workshop, long indigo vats sunk in the floor, lengths of dyed cloth hanging to dry, barefoot on wet stone",
+  "lighting": "high diffuse daylight from a roof skylight directly above, soft downward modeling, gentle shadow under the brow and chin",
+  "style": "documentary photography of traditional textile craft",
+  "quality": "shot on Canon EOS R5, ultra-sharp 8K, fine art body painting photography, portrait 2:3 vertical"
 }

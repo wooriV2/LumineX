@@ -1,7 +1,11 @@
 {
-  "key": "bp_solo_adire_eleko_indigo_mature",
-  "label": "🌑 아디레 엘레코 — 40대 마당",
-  "category": "🎨 Bodypaint",
-  "prompt": "Professional fashion photograph, full body shot.\nModel: one woman in her forties, full curvy figure, broad hips and defined waist, strong shoulders, hair in tight cornrows gathered back.\nPose: standing with weight on one leg, one hand resting on the outward hip, the other arm hanging, torso turned three-quarter, chin lifted.\n\nBody fully painted with: Yoruba adire eleko — deep indigo ground with pale cassava-paste resist patterns. Olokun concentric ring motifs across the torso, ibadandun grid squares filled with tiny hand-drawn symbols over the hips and thighs, fine comb-drawn line bands down the arms. Every square of the grid filled with a different small motif, no blank ground. Soft irregular bleed at the edges where the resist lifted.\n\nPigment applied directly on bare skin, matte, pores and skin texture visible.\nThe paint ends at the wrist and ankle in a thin crisp border; hands and feet bare.\nHands fully visible, five separated fingers each.\n\nBarefoot on packed earth.\nEnvironment: a compound courtyard, indigo dye pots, cloth drying on a line.\nLighting: late afternoon sun from the side at a low angle, raking hard across the body to model the hip and waist, warm bounce off the earth on the shadow side.\nStyle: documentary photography of textile craft. ultra-sharp 8K. portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "tag": "Adire Eleko Indigo Body Paint",
+  "subject": "a fine art female model in her forties with Yoruba adire eleko body paint",
+  "body": "full curvy figure with broad hips and defined waist, strong shoulders, hair in tight cornrows gathered back, standing with weight on one leg and one hand resting on the outward hip, torso turned three-quarter, chin lifted",
+  "outfit": "body fully painted with: Yoruba adire eleko cassava-paste resist on deep indigo — olokun concentric ring motifs across the torso, ibadandun grid squares each filled with a different tiny hand-drawn symbol over hips and thighs, fine comb-drawn line bands down the arms, soft irregular bleed where the resist lifted, no blank ground, painted on bare skin NO clothing NO fabric",
+  "material": "fine art body paint — bone-dry chalky matte pigment on bare skin, no wet sheen no gloss, skin pores and texture visible through the pigment, paint ends at wrist and ankle in one thin crisp border with hands and feet bare, NO clothing NO fabric NO garment shape",
+  "environment": "a compound courtyard, indigo dye pots, cloth drying on a line, barefoot on packed earth",
+  "lighting": "late afternoon sun from the side at a low angle raking hard across the body to model hip and waist, warm bounce off the earth on the shadow side",
+  "style": "documentary photography of traditional textile craft",
+  "quality": "shot on Canon EOS R5, ultra-sharp 8K, fine art body painting photography, portrait 2:3 vertical"
 }

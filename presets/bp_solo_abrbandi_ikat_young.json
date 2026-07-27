@@ -1,7 +1,11 @@
 {
-  "key": "bp_solo_abrbandi_ikat_young",
-  "label": "🔶 아브르반디 이카트 — 20대 실크공방",
-  "category": "🎨 Bodypaint",
-  "prompt": "Professional fashion photograph, full body shot.\nModel: one woman in her twenties, athletic hourglass build, defined waist and shoulders, long dark hair in a single thick braid over one shoulder.\nPose: mid-turn, one foot crossing behind the other, torso twisting toward the camera while the hips stay angled away, one arm lifted holding a hanging silk skein.\n\nBody fully painted with: Uzbek abr-bandi ikat — bold cloud-blurred shapes in crimson, saffron, emerald and white on black. Large flame and pomegranate forms across the torso, ram's-horn hooks down the legs, narrow rainbow warp stripes along the arms. Every edge feathered and bleeding in the characteristic ikat blur. Density high everywhere, colors packed with no black ground left exposed.\n\nPigment applied directly on bare skin, matte, pores and skin texture visible.\nThe paint ends at the wrist and ankle in a thin crisp border; hands and feet bare.\nHands fully visible, five separated fingers each.\n\nBarefoot on a woven rug.\nEnvironment: a silk workshop, skeins of dyed thread hanging in rows.\nLighting: hard daylight from a high side window raking down across the twist of the torso, strong shadow in the small of the back, weak fill opposite.\nStyle: documentary photography of textile craft. ultra-sharp 8K. portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "tag": "Abr-bandi Ikat Body Paint",
+  "subject": "a fine art female model in her twenties with Uzbek abr-bandi ikat body paint",
+  "body": "athletic hourglass build with defined waist and shoulders, long dark hair in a single thick braid over one shoulder, mid-turn with one foot crossing behind the other, torso twisting toward the camera while hips stay angled away, one arm lifted holding a hanging silk skein",
+  "outfit": "body fully painted with: Uzbek abr-bandi ikat — bold cloud-blurred flame and pomegranate forms across the torso, ram's-horn hooks down the legs, narrow rainbow warp stripes along the arms, crimson saffron emerald and white on black, every edge feathered and bleeding in the characteristic ikat blur, colors packed with no black ground exposed, painted on bare skin NO clothing NO fabric",
+  "material": "fine art body paint — bone-dry chalky matte pigment on bare skin, no wet sheen no gloss, skin pores and texture visible through the pigment, paint ends at wrist and ankle in one thin crisp border with hands and feet bare, NO clothing NO fabric NO garment shape",
+  "environment": "a silk workshop, skeins of dyed thread hanging in rows, barefoot on a woven rug",
+  "lighting": "hard daylight from a high side window raking down across the twist of the torso, strong shadow in the small of the back, weak fill opposite",
+  "style": "documentary photography of traditional textile craft",
+  "quality": "shot on Canon EOS R5, ultra-sharp 8K, fine art body painting photography, portrait 2:3 vertical"
 }

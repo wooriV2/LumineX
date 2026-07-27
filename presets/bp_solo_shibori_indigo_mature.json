@@ -1,7 +1,11 @@
 {
-  "key": "bp_solo_shibori_indigo_mature",
-  "label": "🌀 시보리 인디고 — 다다미 좌식",
-  "category": "🎨 Bodypaint",
-  "prompt": "Professional fashion photograph, full body shot.\nModel: one woman, petite build, compact proportions, dark brown hair in a high tight bun.\nPose: seated on the floor, legs folded to one side, one hand on the mat, torso turned in three-quarter view.\n\nBody fully painted with: Japanese shibori indigo — dense resist-dye patterns in deep indigo and undyed white, tight kumo spiderweb rings over the shoulders, itajime folded triangles down the torso, fine kanoko dots covering the arms and legs, every surface filled.\n\nPigment applied directly on bare skin, pores and skin texture visible, matte.\nThe paint ends at the wrist and ankle in a crisp deliberate border; hands and feet bare.\nHands fully visible, five separated fingers each.\n\nBarefoot on tatami.\nEnvironment: a quiet tatami room, shoji screen partly open to a garden.\nLighting: broad soft daylight through the shoji from the left at a low raking angle, so the pattern reads clearly on the lit side and falls into natural shadow on the right.\nStyle: quiet documentary fine art photography. ultra-sharp 8K. portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "tag": "Shibori Indigo Body Paint",
+  "subject": "a fine art female model with Japanese shibori indigo body paint",
+  "body": "petite compact build, dark brown hair in a high tight bun, seated on the floor with legs folded to one side, one hand on the mat, torso turned in three-quarter view",
+  "outfit": "body fully painted with: Japanese shibori indigo resist-dye — tight kumo spiderweb rings over the shoulders, itajime folded triangles down the torso, fine kanoko dots covering arms and legs, deep indigo and undyed white, every surface filled with no blank ground, painted on bare skin NO clothing NO fabric",
+  "material": "fine art body paint — bone-dry chalky matte pigment on bare skin, no wet sheen no gloss, skin pores and texture visible through the pigment, paint ends at wrist and ankle in one thin crisp border with hands and feet bare, NO clothing NO fabric NO garment shape",
+  "environment": "a quiet tatami room, shoji screen partly open to a garden, barefoot on tatami",
+  "lighting": "broad soft daylight through the shoji from the left at a low raking angle, pattern reading clearly on the lit side, natural falloff into shadow on the right",
+  "style": "quiet documentary fine art photography, Japanese textile craft sensibility",
+  "quality": "shot on Canon EOS R5, ultra-sharp 8K, fine art body painting photography, portrait 2:3 vertical"
 }

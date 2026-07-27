@@ -1,7 +1,11 @@
 {
-  "key": "bp_solo_kente_adweneasa_mature",
-  "label": "👑 켄테 아드웨네아사 — 30대 현대 힐",
-  "category": "🎨 Bodypaint",
-  "prompt": "Professional fashion photograph, full body shot.\nModel: one woman in her thirties, curvy hourglass build, narrow waist and broad hips, hair in a high sculpted updo.\nPose: standing frontally, chest and shoulders square to the camera, one leg crossed slightly in front of the other, both hands relaxed away from the waist, head level, gazing at the lens.\n\nBody fully painted with: Ashanti kente strip-weaving — a tight grid of woven blocks in saffron gold, emerald green, crimson and black. Alternating warp-stripe blocks and solid weft-float blocks in checkerboard rotation across the entire body, each block filled with its own small motif — adinkra symbols, zigzag combs, double-headed lozenges. The strip seams read as fine vertical lines every few inches. No empty ground.\n\nPigment applied directly on bare skin, matte, pores and skin texture visible.\nThe paint ends at the wrist and ankle in ONE thin crisp border; hands and feet bare.\nHands fully visible, five separated fingers each.\n\nFootwear: modern polished gold metallic stiletto sandals, thin ankle strap, open toe, deliberately contemporary against the traditional pattern.\nEnvironment: a bright courtyard, folded kente cloth stacked on a low bench.\nLighting: hard equatorial sun from the front right at 45 degrees, crisp shadow under the jaw and bust, white wall bouncing light back onto the shadow side.\nStyle: high fashion editorial meeting textile craft. ultra-sharp 8K. portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "tag": "Kente Adweneasa Body Paint",
+  "subject": "a fine art female model in her thirties with Ashanti kente strip-weave body paint",
+  "body": "curvy hourglass build with narrow waist and broad hips, hair in a high sculpted updo, standing frontally with chest and shoulders square to the camera, one leg crossed slightly in front of the other, hands relaxed away from the waist",
+  "outfit": "body fully painted with: Ashanti kente strip-weaving — a tight grid of woven blocks in saffron gold emerald crimson and black, alternating warp-stripe and weft-float blocks in checkerboard rotation, each block filled with its own adinkra symbol or zigzag comb or double-headed lozenge, strip seams reading as fine vertical lines, no empty ground, painted on bare skin NO clothing NO fabric",
+  "material": "fine art body paint — bone-dry chalky matte pigment on bare skin, no wet sheen no gloss, skin pores and texture visible through the pigment, paint ends at wrist and ankle in one thin crisp border with hands and feet bare, NO clothing NO fabric NO garment shape",
+  "environment": "a bright courtyard, folded kente cloth stacked on a low bench, modern polished gold metallic stiletto sandals with thin ankle strap and open toe",
+  "lighting": "hard equatorial sun from the front right at 45 degrees, crisp shadow under the jaw and bust, white wall bouncing light back onto the shadow side",
+  "style": "high fashion editorial meeting traditional textile craft",
+  "quality": "shot on Canon EOS R5, ultra-sharp 8K, fine art body painting photography, portrait 2:3 vertical"
 }

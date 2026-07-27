@@ -1,7 +1,11 @@
 {
-  "key": "bp_solo_andean_pallay_mature",
-  "label": "⛰️ 안데스 파야이 — 30대 고원 후면",
-  "category": "🎨 Bodypaint",
-  "prompt": "Professional fashion photograph, full body shot.\nModel: one woman in her thirties, curvy strong build, full hips and thighs, defined waist, black hair in two long braids.\nPose: photographed from behind at three-quarter angle, weight on one leg with the hip pushed out, head turned back over the shoulder toward the camera, one hand resting at the waist.\n\nBody fully painted with: Andean pallay weaving — dense pickup-weave bands in crimson, ochre, black and white running horizontally across the body. Rows of inti sun figures, ch'unchu zigzag mountains, kinsa cruz stepped crosses, and tiny stylized llamas and birds, each band tightly packed against the next with narrow striped dividers between. No undyed ground anywhere.\n\nPigment applied directly on bare skin, matte, pores and skin texture visible.\nThe paint ends at the wrist and ankle in a thin crisp border; hands and feet bare.\nHands fully visible, five separated fingers each.\n\nBarefoot on dry grass.\nEnvironment: a high altiplano slope, stone wall, distant peaks.\nLighting: hard low-angle mountain sun from the side, carving the curve of the back and hip, deep shadow on the far side, thin cold sky fill.\nStyle: documentary photography of textile craft. ultra-sharp 8K. portrait 2:3 vertical.",
-  "aspect_ratio": "2:3"
+  "tag": "Andean Pallay Weaving Body Paint",
+  "subject": "a fine art female model in her thirties with Andean pallay weaving body paint",
+  "body": "curvy strong build with full hips and thighs and defined waist, black hair in two long braids, photographed from behind at three-quarter angle with weight on one leg and hip pushed out, head turned back over the shoulder toward the camera, one hand at the waist",
+  "outfit": "body fully painted with: Andean pallay pickup-weave bands running horizontally across the body — rows of inti sun figures, ch'unchu zigzag mountains, kinsa cruz stepped crosses, tiny stylized llamas and birds, crimson ochre black and white, each band tightly packed with narrow striped dividers between and no undyed ground anywhere, painted on bare skin NO clothing NO fabric",
+  "material": "fine art body paint — bone-dry chalky matte pigment on bare skin, no wet sheen no gloss, skin pores and texture visible through the pigment, paint ends at wrist and ankle in one thin crisp border with hands and feet bare, NO clothing NO fabric NO garment shape",
+  "environment": "a high altiplano slope, stone wall, distant peaks, barefoot on dry grass",
+  "lighting": "hard low-angle mountain sun from the side carving the curve of the back and hip, deep shadow on the far side, thin cold sky fill",
+  "style": "documentary photography of traditional textile craft",
+  "quality": "shot on Canon EOS R5, ultra-sharp 8K, fine art body painting photography, portrait 2:3 vertical"
 }
