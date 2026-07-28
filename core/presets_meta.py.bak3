@@ -8,7 +8,7 @@ dashboard.py 에서 임포트 (A형)
 """
 
 PRESET_CATEGORIES = {
-    "🖌️ Body Paint & Skin Transform": [
+    "?뼂截?Body Paint & Skin Transform": [
         "bioluminescent_ink", "klimt_gold_body", "vangogh_body", "dali_surreal", "munch_scream", "monet_bloom", "mucha_nouveau", "hokusai_wave",
         "kandinsky_abstract", "pollock_splash", "broken_porcelain", "marble_veins", "henna_goddess_body", "oil_slick_body", "liquid_chrome_body", "ink_wash_body",
         "body_paint_art", "watercolor_goddess", "fresco_goddess", "fresco_awakening", "tableau_vivant", "coral_reef", "leopard_dissolve", "peacock_feather",
@@ -50,7 +50,7 @@ PRESET_CATEGORIES = {
         "body_paint_surreal_free", "body_paint_minimalist_free", "body_paint_blacklight", "body_paint_glitter_free", "body_paint_uv_reactive",
     ],
 
-    "💫 Luxury Glamour": [
+    "?뮟 Luxury Glamour": [
         "runway_power", "red_carpet", "editorial_glam", "golden_hour_editorial", "noir_opulence", "platinum_elite", "ivory_silk", "ivory_tower",
         "pearl_essence", "velvet_gold", "velvet_darkness", "all_black_goddess", "black_mirror", "onyx_tension", "phantom_gloss", "champagne_mist",
         "couture_heat", "silk_wrap", "goddess_draped", "feather_cascade", "feather_touch", "golden_oil", "golden_nude", "gold_temptress",
@@ -61,7 +61,7 @@ PRESET_CATEGORIES = {
         "casino_vip_glam", "limo_glam",
     ],
 
-    "🔥 Hot & Sexy": [
+    "?뵦 Hot & Sexy": [
         "lingerie_goddess", "silk_robe_only", "corset_queen", "bodycon_power", "sheer_negligee", "boudoir_noir", "wet_silk_gown", "oil_goddess_gold",
         "pool_wet_glam", "rain_soaked_dress", "sweat_glam", "micro_dress_only", "barely_covered", "deep_plunge_gown", "backless_extreme", "one_strap_gown",
         "pinup_classic", "vargas_girl", "bombshell_retro", "bunny_suit", "playboy_glam", "elite_lingerie", "lingerie_noir", "barely_there",
@@ -75,7 +75,7 @@ PRESET_CATEGORIES = {
         "jungle_wet_goddess", "sauna_nude_editorial", "steam_room_goddess", "volcanic_heat_body",
     ],
 
-    "💋 Erotic & Fetish": [
+    "?뭼 Erotic & Fetish": [
         "latex_venom", "chrome_vixen", "chain_goddess", "dominatrix_glam", "bondage_fashion", "strappy_harness", "mesh_bodysuit", "latex_catsuit",
         "oil_goddess", "savage_leather", "burlesque", "showgirl", "cabaret_star", "pole_art", "candy_rave", "lap_dance_glam",
         "striptease_art", "pole_dance_power", "midnight_bath", "belly_dance_glam", "dark_succubus", "vampire_seduction", "witch_sensual", "dark_fairy_erotic",
@@ -87,7 +87,7 @@ PRESET_CATEGORIES = {
         "metal_bondage", "lap_dance_extreme", "liquid_latex_drip", "chrome_paint_body", "silver_foil_body", "holographic_latex", "mirror_latex", "neon_latex",
     ],
 
-    "🌿 Nature & Elements": [
+    "?뙼 Nature & Elements": [
         "lava_flow", "ocean_surge", "ice_palace", "ice_refraction", "frozen_latex", "blizzard_queen", "sandstorm_veil", "storm_couture",
         "heat_shimmer", "water_reflection", "waterfall_goddess", "rain_soaked", "mist_goddess", "mist_vanguard", "winter_forest", "desert_mirage",
         "desert_oracle", "desert_sand_glam", "cliff_edge", "arctic_minimal", "dawn_awakening", "aurora_drape", "aurora_spirit", "lightning_body",
@@ -98,7 +98,7 @@ PRESET_CATEGORIES = {
         "chocolate_hills",
     ],
 
-    "🌃 City & Night": [
+    "?똽 City & Night": [
         "neon_noir", "neon_dystopia", "neon_rain_goddess", "holographic_city", "vaporwave_dream", "rooftop_midnight", "rooftop_party", "midnight_goddess",
         "midnight_monolith", "nightclub_vip", "monaco_nights", "miami_afterglow", "azure_nights", "blue_hour_goddess", "candlelight_noir", "jazz_club",
         "jazz_age", "noir_ballet", "urban_vanguard", "brutalist_glam", "after_dark_minimal", "disco_goddess", "music_festival", "new_year_countdown",
@@ -107,7 +107,7 @@ PRESET_CATEGORIES = {
         "bruges_canal", "cinque_terre_harbor",
     ],
 
-    "🎬 Editorial & Mood": [
+    "?렗 Editorial & Mood": [
         "silhouette_only", "back_beauty", "collarbone_focus", "neck_elegance", "long_legs_focus", "light_driven", "backlit_silk", "mirror_goddess",
         "mirror_room", "eclipse_body", "chrome_skin", "neon_body", "plasma_aura", "molten_chrome", "mercury_rising", "mercury_pool",
         "titanium_body", "snowflake_skin", "80s_power", "y2k_chrome", "bohemian_paris", "origami_couture", "wet_glass", "smoke_studio",
@@ -115,7 +115,7 @@ PRESET_CATEGORIES = {
         "dreamy_soft_focus", "film_noir_glam", "noir_femme_fatale",
     ],
 
-    "🏺 Civilization & Myth": [
+    "?뤊 Civilization & Myth": [
         "cleopatra_gold", "pharaoh_queen", "byzantine_empress", "maasai_warrior", "nine_tails", "moonrise_ceremony", "oracle_smoke", "ritual_ash",
         "ruins_goddess", "renaissance_fantasy", "renaissance_nude", "cathedral_light", "baroque_punk", "art_gallery", "museum_glamour", "library_secret",
         "living_sculpture", "living_statue", "sculpture_goddess", "marble_goddess", "marble_minimal", "viking_queen", "sumerian_queen", "ming_empress",
@@ -124,7 +124,7 @@ PRESET_CATEGORIES = {
         "usa_stars_stripes_body", "japan_rising_sun_body", "south_africa_flag_body", "india_flag_body", "mexico_flag_body", "ukraine_flag_body",
     ],
 
-    "✈️ Career & Lifestyle": [
+    "?덌툘 Career & Lifestyle": [
         "flight_attendant", "pilot_glamour", "nurse_glamour", "lawyer_power", "hotel_concierge", "cruise_hostess", "yacht_captain", "yacht_club",
         "sommelier", "wine_tasting", "casino_dealer", "private_jet", "helipad", "luxury_shopping", "golf_glam", "golf_caddie",
         "tennis_luxe", "tennis_referee", "f1_grid_girl", "equestrian_glam", "cheerleader", "architect_chic", "fitness_power", "yoga_goddess",
@@ -132,14 +132,14 @@ PRESET_CATEGORIES = {
         "archery_goddess", "carnival_rio",
     ],
 
-    "🔮 Fantasy & Dark": [
+    "?뵰 Fantasy & Dark": [
         "dark_mermaid", "vampire_queen", "angel_fallen", "moon_goddess", "demon_goddess", "forest_witch", "pastel_fairy", "medusa_queen",
         "halloween_queen", "hologram_ghost", "glitch_beauty", "void_emergence", "void_glamour", "void_secret", "crystal_goddess", "toxic_bloom",
         "zombie_apocalypse", "dark_academia", "gothic_romance", "double_exposure_dark", "double_exposure_ethereal", "oil_slick_noir", "witch_ritual", "fae_queen",
         "cursed_beauty", "shadow_realm",
     ],
 
-    "⚔️ Power & Edge": [
+    "?뷂툘 Power & Edge": [
         "valkyrie_storm", "biker_glam", "shadow_play", "fencer_noir", "martial_arts", "boxing_glamour", "power_curve", "power_suit",
         "sculpted_power", "shadow_queen", "bioluminescence", "bioluminescent", "duo_aurora_bodypaint", "duo_ocean_bodypaint", "duo_golden_desert_bodypaint", "duo_cyberpunk_bodypaint",
         "duo_jungle_tribal_bodypaint", "duo_latex_color_block", "duo_latex_storm_opposites", "duo_dark_latex_power", "duo_flamenco_latex_fusion", "duo_smoke_noir", "duo_infinity_pool_contrast", "duo_pool_bodypaint_micro",
@@ -150,19 +150,19 @@ PRESET_CATEGORIES = {
         "steel_warrior", "cage_fighter",
     ],
 
-    "🏖️ Beach & Resort": [
+    "?룚截?Beach & Resort": [
         "summer_beach", "surfer_goddess", "pool_goddess", "poolside_noir", "infinity_pool", "beach_bonfire", "scuba_goddess", "glass_floor",
         "glass_house", "ski_chalet", "vineyard_harvest", "spa_noir", "balcony_goddess", "sunset_cruise", "coral_diving", "beach_bonfire_night",
         "hammock_resort",
     ],
 
-    "🎭 Performance & Dance": [
+    "?렚 Performance & Dance": [
         "flamenco_queen", "tango_passion", "circus_performer", "ribbon_dance", "aerial_silk", "fire_dancer", "masquerade_ball", "opera_night",
         "christmas_glamour", "pop_art_glamour", "ribbon_goddess", "petal_storm", "ballet_noir", "broadway_diva", "street_dance", "drag_glamour",
         "samba_carnival", "hula_goddess", "jazz_dance_glam", "kathak_dance",
     ],
 
-    "👘 Traditional Costume": [
+    "?몮 Traditional Costume": [
         "geisha_noir", "geisha_red", "maiko_glamour", "hanbok_glamour", "qipao_noir", "sari_goddess", "harem_goddess", "belly_dancer",
         "odalisque", "imperial_silk", "kimono_silk", "ao_dai_sheer", "thai_temple", "indian_bridal", "moroccan_kaftan", "persian_court",
         "yoruba_glamour", "balinese_goddess", "chinese_qipao_slit", "scottish_corset", "hanfu_goddess", "cheongsam_slit", "kebaya_java", "dashiki_glam",
@@ -171,13 +171,13 @@ PRESET_CATEGORIES = {
         "korean_shaman_fire", "baekje_lotus", "silla_gold_crown",
     ],
 
-    "🌸 Season & Theme": [
+    "?뙵 Season & Theme": [
         "cherry_blossom", "lavender_field", "spring_rain", "tulip_field", "autumn_forest", "sunflower_field", "greenhouse_eden", "tropical_night",
         "first_snow", "golden_autumn", "midsummer_heat", "rainy_season", "harvest_moon", "winter_solstice", "cherry_blossom_night", "tropical_monsoon",
         "halloween_glam", "new_year_glam", "sakura_night_glam", "monsoon_goddess",
     ],
 
-    "🍬 Pop & Kawaii": [
+    "?뜫 Pop & Kawaii": [
         "y2k_fairy", "pink_champagne", "cotton_candy", "angel_baby", "idol_stage", "kitty_glam", "strawberry_milk", "cherry_pop",
         "neon_kawaii", "fairy_kei", "gyaru_glam", "kogal_style", "hime_gyaru", "decora_kei", "maid_glamour", "visual_kei",
         "lolita_gothic", "disco_barbie", "space_babe", "bubblegum_pop", "rainbow_rave", "glitter_bomb", "arcade_queen", "virtual_idol",
@@ -185,7 +185,7 @@ PRESET_CATEGORIES = {
         "kbeauty_glass_skin", "kdrama_villain_queen", "kdrama_chaebol_heir", "gangnam_luxury_glam", "bubble_tea", "doll_house", "harajuku_doll",
     ],
 
-    "🎌 Anime & Glamour": [
+    "?럩 Anime & Glamour": [
         "zero_suit", "battle_bikini", "succubus_anime", "catgirl_luxe", "dark_magical_girl", "witch_apprentice", "fallen_angel_anime", "kunoichi_glam",
         "oni_warrior", "samurai_bride", "dragon_princess", "android_girl", "pilot_suit", "neon_android", "vampire_seductress", "cosmic_warrior_glam",
         "dark_jester_glam", "poison_ivy_vines", "storm_goddess", "dark_sorceress_glam", "jessica_rabbit_glam", "webtoon_heroine", "manhwa_villainess", "barbarella_retro",
@@ -193,34 +193,34 @@ PRESET_CATEGORIES = {
         "anime_shrine_maiden", "anime_demon_slayer", "anime_galaxy_idol", "anime_battle_angel", "anime_cyber_ninja", "anime_cel_shaded", "anime_webtoon_style",
     ],
 
-    "🎨 Anime Art Style": [
+    "?렓 Anime Art Style": [
         "anime_jp_90s_retro", "anime_jp_80s_citypop", "anime_jp_modern_glossy", "anime_jp_shoujo_soft", "anime_jp_shounen_action", "anime_jp_seinen_gritty", "anime_jp_makoto_watercolor", "anime_jp_ghibli_soft",
         "anime_jp_ecchi_glossy", "anime_jp_gekiga_noir", "anime_jp_pinup_retro", "anime_kr_webtoon_glossy", "anime_kr_romance_soft", "anime_kr_action_manhwa", "anime_kr_lezhin_mature", "anime_kr_pastel_dream",
         "anime_kr_lofi_chill", "anime_kr_noir_mature", "anime_cn_donghua_xianxia", "anime_cn_guofeng_ink", "anime_cn_modern_donghua", "anime_cn_palace_drama", "anime_us_cartoon_bold", "anime_us_comic_ink",
         "anime_us_pixar_stylized", "anime_us_disney_classic", "anime_us_pinup_classic", "anime_us_badgirl_comic", "anime_eu_ligne_claire", "anime_eu_graphic_novel", "anime_eu_erotic_bd", "anime_noir_silhouette",
     ],
 
-    "🌑 Silhouette & Shadow": [
+    "?뙌 Silhouette & Shadow": [
         "silhouette_spotlight_smoke", "silhouette_spotlight_latex", "silhouette_spotlight_heels", "silhouette_spotlight_hair", "silhouette_spotlight_dance", "silhouette_spotlight_chair", "silhouette_spotlight_back", "silhouette_spotlight_pole",
         "silhouette_window_city", "silhouette_window_rain", "silhouette_window_sheer", "silhouette_doorway_light", "silhouette_window_sunset", "silhouette_window_neon", "silhouette_neon_pink", "silhouette_neon_blue",
         "silhouette_neon_red", "silhouette_neon_purple", "silhouette_neon_multicolor", "silhouette_sunset_beach", "silhouette_sunset_cliff", "silhouette_moonlight", "silhouette_aurora", "silhouette_pool_underwater",
         "silhouette_pool_edge", "silhouette_bath_candle", "silhouette_rain_wet", "silhouette_fire_dark", "silhouette_candle_boudoir", "silhouette_smoke_studio",
     ],
 
-    "🌌 Impossible & Surreal": [
+    "?뙆 Impossible & Surreal": [
         "storm_eye_editorial", "living_fabric", "macro_goddess", "time_freeze_editorial", "gravity_defiance", "magnetic_field_goddess", "micro_world", "mirror_shatter_dress",
         "dissolution", "crystallization", "giant_flora", "supernova_burst", "portal_threshold", "escher_staircase", "aurora_embodied", "nebula_goddess",
         "shadow_independent", "negative_space", "flame_dress", "reflection_rebel", "time_lapse_body", "invisible_outline", "waterfall_gown", "cloud_couture",
         "weather_maker", "gravity_well", "double_exposure_self", "richat_eye", "marble_caves_water",
     ],
 
-    "🏛️ Ruins & Civilization": [
+    "?룢截?Ruins & Civilization": [
         "petra_rose", "angkor_dawn", "tikal_skyrise", "bagan_balloon", "ellora_rock_temple", "derinkuyu_underground", "tigers_nest_cliff", "naoshima_art_island",
         "machu_picchu_cloud", "chichen_itza_pyramid", "colosseum_dusk", "alhambra_palace", "borobudur_dawn", "karnak_temple", "mont_saint_michel", "sigiriya_rock",
         "angkor_thom_faces", "teotihuacan_pyramid", "gobekli_tepe", "palmyra_colonnade",
     ],
 
-    "🌋 Elemental Goddess": [
+    "?뙅 Elemental Goddess": [
         "uyuni_wet_silk", "dead_sea_goddess", "iceland_hot_spring", "maldives_underwater", "niagara_wet_editorial", "monsoon_goddess", "black_sea_midnight", "amazon_river_goddess",
         "lava_field_latex", "sahara_mirage", "volcano_edge_glam", "desert_heat_body", "bonfire_editorial", "solar_flare_goddess", "trolltunga_edge", "zhangjiajie_cloud",
         "aurora_bare", "skydive_editorial", "cliff_wind_sheer", "hot_air_balloon_glam", "antelope_light_sheer", "waitomo_glow_body", "socotra_alien_glam", "antarctica_ice_glam",
@@ -228,7 +228,7 @@ PRESET_CATEGORIES = {
         "bioluminescent_bay", "cave_waterfall_goddess", "red_canyon_goddess", "glacier_melt_goddess", "wave_barrel_goddess", "eruption_silhouette", "ice_cave_blue", "rainbow_falls_goddess",
     ],
 
-    "💧 Wet & Gloss": [
+    "?뮛 Wet & Gloss": [
         "pool_surface_break", "pool_underwater_up", "pool_edge_dripping", "infinity_pool_wet", "hot_spring_steam", "jacuzzi_bubbles", "champagne_pour_body", "wine_pour_body",
         "milk_pour_body", "honey_pour_body", "gold_paint_body", "paint_pour_goddess", "neon_paint_pour", "shower_goddess", "rain_soaked_nude", "hot_tub_goddess",
         "foam_bath_goddess", "waterfall_nude", "ocean_nude_editorial", "steam_bath_goddess", "rain_window_inside", "rain_street_soaked", "rain_studio_dramatic", "monsoon_body",
@@ -237,14 +237,14 @@ PRESET_CATEGORIES = {
         "wave_crash_body", "wet_silk_minimal", "bubble_bath_gloss", "milk_bath_petals",
     ],
 
-    "🌫️ Atmosphere & Particle": [
+    "?뙧截?Atmosphere & Particle": [
         "smoke_machine_club", "dry_ice_floor", "cigarette_smoke_noir", "incense_smoke_ritual", "smoke_color_holi", "fog_forest_mystery", "gold_dust_pour", "holi_powder_explosion",
         "chalk_dust_sport", "flour_dust_studio", "pigment_powder_art", "feather_explosion", "black_feather_dark", "petal_storm_indoor", "cherry_blossom_burst", "dried_flower_cascade",
         "glitter_rain_studio", "gold_confetti_burst", "silver_glitter_body", "neon_particle_club", "bubble_floating_studio", "sparkler_night_glam", "fire_poi_dance", "ember_glow_dark",
         "firework_silhouette", "autumn_leaves_burst", "snow_indoor_studio", "dandelion_blow", "firefly_night_field", "seed_pod_floating",
     ],
 
-    "👑 Korean History & Court": [
+    "?몣 Korean History & Court": [
         "silla_queen_gold", "silla_dancing_girl", "baekje_lotus_queen", "goguryeo_warrior_queen", "gojoseon_shaman_queen", "gaya_iron_goddess", "silla_hwarang_girl", "ancient_mural_goddess",
         "three_kingdoms_spy", "dongye_tribal_queen", "goryeo_empress_silk", "goryeo_gisaeng_glam", "goryeo_celadon_goddess", "goryeo_buddhist_temptress", "goryeo_court_dancer", "goryeo_night_gisaeng",
         "mongol_goryeo_queen", "goryeo_haenyeo_silk", "joseon_queen_slit", "joseon_consort_sheer", "crown_princess_latex", "joseon_court_dancer", "joseon_painter_nude", "hwajeon_court_lady",
@@ -257,7 +257,7 @@ PRESET_CATEGORIES = {
         "hanbok_latex_queen", "joseon_noir", "gisaeng_opium_den", "korean_vamp_modern", "hanbok_wet_editorial", "joseon_boudoir",
     ],
 
-    "🎨 Multi Body Paint": [
+    "?렓 Multi Body Paint": [
         "duo_fire_and_ice_bodypaint", "duo_day_and_night_bodypaint", "duo_bloom_and_void_bodypaint", "duo_gold_and_shadow_bodypaint", "duo_ocean_and_desert_bodypaint", "duo_circuit_and_nature_bodypaint", "duo_east_and_west_bodypaint", "duo_macro_and_micro_bodypaint",
         "duo_ancient_and_future_bodypaint", "duo_poison_and_medicine_bodypaint", "duo_deep_sea_bodypaint", "trio_rgb_trinity_bodypaint", "trio_past_present_future_bodypaint", "trio_predator_prey_apex_bodypaint", "trio_ink_gold_chrome_bodypaint", "trio_season_trinity_bodypaint",
         "trio_sun_moon_star_bodypaint", "trio_three_oceans_bodypaint", "trio_three_civilizations_bodypaint", "trio_fire_water_earth_bodypaint", "trio_three_big_cats_bodypaint", "duo_butterfly_split_bodypaint", "duo_yin_yang_merge_bodypaint", "duo_world_map_bodypaint",
@@ -284,7 +284,7 @@ PRESET_CATEGORIES = {
         "trio_nile_amazon_yangtze_bodypaint", "trio_rome_babylon_aztec_bodypaint", "trio_love_war_peace_bodypaint", "trio_fear_anger_joy_bodypaint", "trio_order_chaos_void_bodypaint", "trio_id_ego_superego_bodypaint", "trio_thesis_antithesis_synthesis_bodypaint",
     ],
 
-    "👯 Duo Glamour": [
+    "?뫍 Duo Glamour": [
         "duo_infinity_pool_contrast", "duo_rain_neon_soaked", "duo_ink_wash_split_bodypaint", "duo_pool_bodypaint_micro", "duo_wet_glass_divide", "duo_bodypaint_vs_latex", "duo_ocean_bodypaint", "duo_golden_desert_bodypaint",
         "duo_aurora_bodypaint", "duo_cyberpunk_bodypaint", "duo_jungle_tribal_bodypaint", "duo_latex_color_block", "duo_latex_storm_opposites", "duo_dark_latex_power", "duo_flamenco_latex_fusion", "duo_smoke_noir",
         "duo_versailles_latex_gold", "duo_monaco_yacht", "duo_champagne_gala", "duo_villa_italy", "duo_casino_power", "duo_fire_and_ice", "duo_angel_devil", "duo_chrome_future",
@@ -335,19 +335,19 @@ PRESET_CATEGORIES = {
         "duo_mirror_boudoir", "duo_jungle_primal", "duo_champagne_pour", "duo_ice_bath_noir", "duo_versailles_gold", "duo_neon_cage",
     ],
 
-    "🪞 Mirror & Reflection": [
+    "?첑 Mirror & Reflection": [
         "infinity_mirror_goddess", "hall_of_mirrors_glam", "obsidian_mirror_ritual", "venetian_mirror_boudoir", "cheval_mirror_reveal", "broken_mirror_multiplied", "mercury_lake_reflection", "salt_flat_sky_merge",
         "rain_puddle_city_invert", "flooded_temple_mirror", "infinity_pool_edge_reflect", "morning_dew_skin_reflection", "glass_box_all_angles", "prism_light_body_split", "crystal_cave_skin_facets", "two_way_mirror_watcher",
         "window_rain_double", "soap_bubble_dome", "chrome_sphere_world", "polished_obsidian_floor", "supercar_chrome_reflect", "liquid_metal_pool", "foil_room_crush", "mirrored_skyscraper_facade",
     ],
 
-    "🧬 Sci-Fi & Biopunk": [
+    "?㎚ Sci-Fi & Biopunk": [
         "cryo_emergence_wet", "specimen_amber_suspended", "clean_room_latex_protocol", "gene_sequencer_data_skin", "quarantine_protocol_breach", "petri_dish_giant_macro", "abyssal_pressure_glam", "mycelium_web_consumed",
         "coral_organism_absorption", "carnivorous_plant_trap", "symbiote_second_skin", "jellyfish_bloom_float", "cyborg_partial_reveal", "neural_lace_crown", "exoskeleton_stripped", "prosthetic_art",
         "spine_tech_implant", "mutation_bloom", "toxic_spore_cloud", "infection_glam", "virus_pattern_body", "metamorphosis_editorial", "alien_host_glam",
     ],
 
-    "🌀 Environment Merge": [
+    "?? Environment Merge": [
         "trio_bodypaint_latex_frame", "trio_bodypaint_gown_frame", "trio_bodypaint_leather_frame", "trio_animal_bodypaint_latex", "trio_klimt_bodypaint_gold_gown", "trio_galaxy_bodypaint_chrome", "duo_bodypaint_latex", "duo_bodypaint_gown",
         "duo_bodypaint_leather", "duo_bodypaint_gold_dress", "duo_animal_bodypaint_latex", "duo_klimt_bodypaint_gown", "duo_galaxy_bodypaint_chrome", "trio_latex_bodypaint_center", "trio_gown_bodypaint_center", "trio_leather_bodypaint_center",
         "trio_bikini_bodypaint_center", "trio_sheer_bodypaint_center", "trio_chrome_bodypaint_center", "merge_butterfly_fabric", "merge_floral_wallpaper", "merge_leopard_fabric", "merge_mandala_carpet", "merge_toile_pattern",
@@ -356,54 +356,54 @@ PRESET_CATEGORIES = {
         "merge_byzantine_mosaic",
     ],
 
-    "🌙 Night Glamour": [
+    "?뙔 Night Glamour": [
         "club_vip_neon_goddess", "club_rooftop_citylight", "micro_sequin_club", "rooftop_micro_night",
     ],
 
-    "👗 Slip Dress Glamour": [
+    "?몭 Slip Dress Glamour": [
         "silk_slip_dawn_hotel", "satin_slip_vanity_noir", "satin_slip_micro",
     ],
 
-    "🐆 Animal Print Glamour": [
+    "?릤 Animal Print Glamour": [
         "leopard_power_editorial", "leopard_micro_studio", "snake_micro_marble", "snakeskin_latex_glam",
     ],
 
-    "🎭 Theatrical Glamour": [
+    "?렚 Theatrical Glamour": [
         "gyeongbokgung_night_couture", "bukchon_rain_editorial", "namsan_tower_dusk", "dongdaemun_neon_rain", "haeinsa_temple_dawn", "jeju_volcanic_coast", "fushimi_inari_crimson", "arashiyama_bamboo_mist",
         "osaka_dotonbori_neon", "mount_fuji_dawn_silk", "japanese_garden_autumn", "kabukiza_backstage_glam", "forbidden_city_golden_hour", "li_river_karst_mist", "shanghai_bund_noir", "zhangjiajie_cloud_forest",
         "west_lake_lotus_dawn", "bali_tanah_lot_sunset", "hoi_an_lantern_rain", "bangkok_wat_arun_gold", "singapore_marina_bay_night", "luang_prabang_monk_dawn", "rice_terrace_banaue_mist", "opera_house_goddess",
         "venetian_carnival_palazzo", "flamenco_tablao_fire", "broadway_red_curtain", "scottish_castle_mist", "sahara_dune_queen", "ballet_stage_noir",
     ],
 
-    "🌿 Minimal Object Cover": [
+    "?뙼 Minimal Object Cover": [
         "silk_ribbon_minimal", "tropical_flower_minimal", "silver_foil_minimal", "moss_stone_minimal", "crystal_geode_minimal", "black_feather_minimal", "wet_lotus_pool_minimal", "butterfly_wings_minimal",
         "seaweed_ocean_minimal", "body_chain_only_glam", "flower_body_only", "rope_art_editorial", "ribbon_wrap_glam", "crystal_body_cover", "maldives_bikini_editorial", "seaweed_coral_body",
     ],
 
-    "🛁 Spa & Body Glamour": [
+    "?썎 Spa & Body Glamour": [
         "oil_massage_table", "mud_spa_clay", "hammam_marble_glam", "ryokan_hinoki_bath", "chocolate_spa_drip", "champagne_bubble_bath", "rose_petal_bath", "honey_drip_spa",
         "gold_leaf_spa", "salt_scrub_steam",
     ],
 
-    "🌋 Hot Spring & Underwater": [
+    "?뙅 Hot Spring & Underwater": [
         "yunoko_bamboo_onsen", "pamukkale_travertine", "bhutan_himalaya_pool", "blue_lagoon_silica", "greenland_glacier_pool", "japan_snow_onsen", "hot_spring_nude_editorial", "new_zealand_geyser",
         "costa_rica_jungle_pool",
     ],
 
-    "💦 Pool & Emergence": [
+    "?뮚 Pool & Emergence": [
         "niagara_mist_goddess", "greek_sea_emergence", "morocco_riad_pool", "lagoon_surface_break",
     ],
 
-    "🌧️ Wet Dress Glamour": [
+    "?뙢截?Wet Dress Glamour": [
         "dubai_rooftop_storm", "amalfi_cliff_storm", "santorini_aegean_storm", "venice_acqua_alta", "lisbon_rain_tiles", "kuala_lumpur_monsoon", "cape_town_atlantic_storm", "rio_corcovado_storm",
         "mumbai_monsoon_sari", "monaco_wet_silk", "bali_rain_wet", "bangkok_monsoon_silk", "new_york_rooftop_rain",
     ],
 
-    "🎭 Archetype Glamour": [
+    "?렚 Archetype Glamour": [
         "bond_girl_casino", "spy_rooftop_latex", "spy_hotel_noir", "dark_queen_cliff", "villain_penthouse", "assassin_rain", "goddess_warrior", "rockstar_stage",
     ],
 
-    "🎭 Trio Glamour": [
+    "?렚 Trio Glamour": [
         "trio_glacier_emergence", "trio_colosseum_dawn", "trio_tokyo_shibuya_rain", "trio_underwater_temple", "trio_volcano_crater", "trio_opera_house_stage", "trio_desert_salt_flat", "trio_cherry_blossom_storm",
         "trio_aurora_iceland", "trio_art_museum_after_hours", "trio_penthouse_pool_dawn",
         "korean_silverfox_trio_dragon_celadon_crimson_void",
@@ -419,16 +419,16 @@ PRESET_CATEGORIES = {
         "korean_silverfox_trio_haetae_dragon_violet_aurora",
     ],
 
-    "🌅 Golden Hour Glamour": [
+    "?똿 Golden Hour Glamour": [
         "golden_hour_cliff_goddess", "golden_hour_salt_flat_goddess", "golden_hour_dune_goddess", "golden_hour_wheat_field", "golden_hour_iceland_waterfall", "golden_hour_lavender_field", "golden_hour_amazon_cliff", "golden_hour_curvy_desert",
         "golden_hour_latina_wheat", "golden_hour_bust_salt_flat", "golden_hour_pear_tulip_field", "golden_hour_petite_iceland", "golden_hour_hourglass_volcano",
     ],
 
-    "🏛️ Ancient Temple Glamour": [
+    "?룢截?Ancient Temple Glamour": [
         "marble_awakening_goddess", "karnak_gold_fusion", "angkor_relief_emergence", "petra_sandstone_dissolve", "ephesus_marble_split", "chichen_itza_serpent_merge", "nefertiti_gold_petrify",
     ],
 
-    "💎 Figure Glamour": [
+    "?뭿 Figure Glamour": [
         "super_lingerie_glamour", "super_sheer_glamour", "super_slit_glamour", "super_corset_glamour", "hot_bikini_glamour", "hot_lingerie_glamour", "hot_sheer_glamour", "hot_slit_glamour",
         "hot_corset_glamour", "angel_bikini_glamour", "angel_lingerie_glamour", "angel_sheer_glamour", "angel_slit_glamour", "angel_corset_glamour", "black_bikini_glamour", "black_lingerie_glamour",
         "black_sheer_glamour", "black_slit_glamour", "black_corset_glamour", "brazil_bikini_glamour", "brazil_lingerie_glamour", "brazil_sheer_glamour", "brazil_slit_glamour", "brazil_corset_glamour",
@@ -436,72 +436,72 @@ PRESET_CATEGORIES = {
         "amazon_bikini_glamour", "amazon_lingerie_glamour", "amazon_sheer_glamour", "amazon_slit_glamour", "amazon_corset_glamour",
     ],
 
-    "🧲 Ferrofluid Glamour": [
+    "?㎠ Ferrofluid Glamour": [
         "ferrofluid_crown_spikes", "ferrofluid_latex_emergence", "ferrofluid_gown_river", "ferrofluid_spiderweb_silk", "ferrofluid_sheer_column", "ferrofluid_couture_armor", "ferrofluid_mirror_pool", "ferrofluid_plus_size_latex_column_goddess",
         "ferrofluid_amazon_couture_train_goddess", "ferrofluid_athletic_full_armor_goddess", "ferrofluid_petite_ballgown_spikes_goddess", "ferrofluid_curvy_wet_look_emergence_goddess",
     ],
 
-    "🐦 Murmuration Glamour": [
+    "?맔 Murmuration Glamour": [
         "murmuration_silk_gown", "murmuration_latex_cliff", "murmuration_sheer_field", "murmuration_couture_atrium", "murmuration_bodypaint_goddess", "murmuration_ruins_editorial", "murmuration_desert_goddess", "murmuration_plus_size_fur_coat_goddess",
         "murmuration_athletic_latex_goddess", "murmuration_amazon_sequin_gown_goddess", "murmuration_petite_wedding_goddess", "murmuration_curvy_trench_boots_goddess",
     ],
 
-    "🎵 Cymatics Glamour": [
+    "?렦 Cymatics Glamour": [
         "cymatics_water_column", "cymatics_sand_goddess", "cymatics_silk_frequency", "cymatics_latex_resonance", "cymatics_couture_wave", "cymatics_neon_pool", "cymatics_crystal_chamber", "cymatics_amazon_metallic_bodysuit_goddess",
         "cymatics_plus_size_couture_gown_frequency_goddess", "cymatics_petite_wetsuit_deep_frequency_goddess", "cymatics_curvy_mirror_dress_goddess", "cymatics_athletic_sand_body_overlay_goddess",
     ],
 
-    "🔬 Micro Scale Glamour": [
+    "?뵮 Micro Scale Glamour": [
         "micro_spiderweb_dew_goddess", "micro_pollen_goddess", "micro_salt_crystal_goddess", "micro_feather_barb_goddess", "micro_snowflake_goddess", "micro_sand_grain_goddess", "micro_silk_fiber_goddess", "micro_amazon_space_suit_vessel_goddess",
         "micro_plus_size_crystal_cave_lattice_goddess", "micro_petite_butterfly_scale_goddess", "micro_curvy_soap_film_goddess", "micro_athletic_tardigrade_goddess",
     ],
 
-    "🫧 Mycelium Glamour": [
+    "?ェ Mycelium Glamour": [
         "mycelium_forest_goddess", "mycelium_silk_network", "mycelium_latex_roots", "mycelium_couture_spores", "mycelium_bodypaint_threads", "mycelium_ruins_colonized", "mycelium_glow_editorial", "mycelium_amazon_leather_armor_goddess",
         "mycelium_plus_size_haute_couture_mushroom_goddess", "mycelium_curvy_velvet_coat_goddess", "mycelium_petite_lace_communion_goddess", "mycelium_athletic_neon_bodysuit_network_goddess",
     ],
 
-    "🔊 Acoustic Levitation Glamour": [
+    "?뵄 Acoustic Levitation Glamour": [
         "acoustic_amazon_glass_shard_levitation", "acoustic_plus_size_water_sphere_cloud", "acoustic_petite_salt_crystal_formation", "acoustic_curvy_rose_petal_orbit", "acoustic_athletic_steel_ball_precision", "acoustic_amazon_mercury_drop_curtain", "acoustic_plus_size_golden_dust_suspension", "acoustic_petite_ink_drop_suspension",
         "acoustic_curvy_champagne_bubble_levitation", "acoustic_athletic_fire_ember_levitation", "acoustic_amazon_flower_petal_vortex", "acoustic_plus_size_ice_shard_armor",
     ],
 
-    "🔊 Acoustic Levitation Glamour 2": [
+    "?뵄 Acoustic Levitation Glamour 2": [
         "acoustic_super_glamour_diamond_dust", "acoustic_bbw_soap_bubble_galaxy", "acoustic_latina_silk_thread_web", "acoustic_bust_queen_crystal_shard", "acoustic_amazon_lightning_arc", "acoustic_vs_angel_feather_vortex", "acoustic_black_glamour_obsidian_float", "acoustic_hot_glamour_ember_silk",
         "acoustic_brazil_petal_carnival", "acoustic_supermodel_glass_bead_curtain", "acoustic_powerlifter_steel_chain", "acoustic_miniature_snow_globe",
     ],
 
-    "🔥 Body × Element Glamour": [
+    "?뵦 Body 횞 Element Glamour": [
         "element_super_glamour_fire_goddess", "element_bbw_water_goddess", "element_amazon_lightning_goddess", "element_petite_wind_goddess", "element_bust_queen_lava_goddess", "element_latina_storm_goddess", "element_vs_angel_ice_goddess", "element_black_glamour_void_goddess",
         "element_hot_glamour_plasma_goddess", "element_brazil_earth_goddess", "element_supermodel_aurora_goddess", "element_powerlifter_volcano_goddess",
     ],
 
-    "💃 Body × Luxury Setting Glamour": [
+    "?뭴 Body 횞 Luxury Setting Glamour": [
         "luxury_super_glamour_versailles", "luxury_bbw_monaco_yacht", "luxury_amazon_dubai_penthouse", "luxury_latina_rio_carnival", "luxury_bust_queen_milan_couture", "luxury_vs_angel_paris_runway", "luxury_black_glamour_nyc_rooftop", "luxury_hot_glamour_tokyo_penthouse",
         "luxury_brazil_maldives_overwater", "luxury_supermodel_london_couture", "luxury_miniature_shanghai_skyline", "luxury_powerlifter_greek_colosseum",
     ],
 
-    "☀️ Plasma & Solar Flare Glamour": [
+    "?截?Plasma & Solar Flare Glamour": [
         "plasma_amazon_solar_wind_train", "plasma_plus_size_corona_loop_goddess", "plasma_petite_prominence_pillar", "plasma_curvy_granulation_skin", "plasma_athletic_flare_eruption", "plasma_amazon_chromosphere_gown", "plasma_plus_size_sunspot_vortex", "plasma_petite_heliosphere_emergence",
         "plasma_curvy_magnetic_reconnection", "plasma_athletic_solar_minimum", "plasma_amazon_magnetosphere_armor", "plasma_plus_size_solar_flare_crown", "plasma_curvy_solar_wind_wet",
     ],
 
-    "🌑 Dark Fantasy Glamour": [
+    "?뙌 Dark Fantasy Glamour": [
         "dark_super_glamour_succubus", "dark_bbw_earth_witch", "dark_bust_queen_vampire", "dark_vs_angel_fallen_angel", "dark_supermodel_ice_witch", "dark_amazon_valkyrie", "dark_miniature_shadow_fairy", "dark_latina_blood_moon",
         "dark_black_glamour_void_queen", "dark_hot_glamour_dark_siren", "dark_brazil_jungle_goddess", "dark_powerlifter_war_goddess",
     ],
 
-    "🌊 Bioluminescence Glamour": [
+    "?뙄 Bioluminescence Glamour": [
         "bio_amazon_anglerfish_lure", "bio_plus_size_jellyfish_bloom", "bio_curvy_deep_sea_coral", "bio_athletic_comb_jelly_rainbow", "bio_supermodel_sea_sparkle", "bio_bbw_giant_squid_ink", "bio_black_glamour_viper_fish", "bio_vs_angel_crystal_medusa",
         "bio_petite_firefly_swarm", "bio_latina_dinoflagellate", "bio_bust_queen_abyss_glow", "bio_powerlifter_hydrothermal",
     ],
 
-    "🕸️ Spider Silk Glamour": [
+    "?빖截?Spider Silk Glamour": [
         "silk_amazon_web_cathedral", "silk_petite_dew_drop_web", "silk_latina_web_veil", "silk_black_glamour_black_widow", "silk_vs_angel_dewdrop_cathedral", "silk_bbw_cocoon_emergence", "silk_curvy_golden_silk_gown", "silk_athletic_web_armor",
         "silk_bbw_funnel_web_throne", "silk_powerlifter_web_cage", "silk_supermodel_spiral_web", "silk_bust_queen_orb_web",
     ],
 
-    "🌪️ Vortex Glamour": [
+    "?뙦截?Vortex Glamour": [
         "vortex_amazon_fire_tornado", "vortex_bbw_water_cyclone", "vortex_petite_sand_devil", "vortex_curvy_rose_tornado", "vortex_athletic_lightning_vortex", "vortex_latina_petal_whirlwind", "vortex_vs_angel_snow_vortex", "vortex_powerlifter_magma_vortex",
         "vortex_bbw_cloud_column", "vortex_bust_queen_aurora_vortex", "vortex_supermodel_galaxy_spiral", "vortex_black_glamour_void_spiral",
     ],

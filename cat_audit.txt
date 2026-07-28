@@ -1,0 +1,103 @@
+총 키 443  정상 385  손상 58
+
+── 손상 ──
+  [PRESET_CATEGORIES] '?뼂截?Body Paint & Skin Transform'
+  [PRESET_CATEGORIES] '?뮟 Luxury Glamour'
+  [PRESET_CATEGORIES] '?뵦 Hot & Sexy'
+  [PRESET_CATEGORIES] '?뭼 Erotic & Fetish'
+  [PRESET_CATEGORIES] '?뙼 Nature & Elements'
+  [PRESET_CATEGORIES] '?똽 City & Night'
+  [PRESET_CATEGORIES] '?렗 Editorial & Mood'
+  [PRESET_CATEGORIES] '?뤊 Civilization & Myth'
+  [PRESET_CATEGORIES] '?덌툘 Career & Lifestyle'
+  [PRESET_CATEGORIES] '?뵰 Fantasy & Dark'
+  [PRESET_CATEGORIES] '?뷂툘 Power & Edge'
+  [PRESET_CATEGORIES] '?룚截?Beach & Resort'
+  [PRESET_CATEGORIES] '?렚 Performance & Dance'
+  [PRESET_CATEGORIES] '?몮 Traditional Costume'
+  [PRESET_CATEGORIES] '?뙵 Season & Theme'
+  [PRESET_CATEGORIES] '?뜫 Pop & Kawaii'
+  [PRESET_CATEGORIES] '?럩 Anime & Glamour'
+  [PRESET_CATEGORIES] '?렓 Anime Art Style'
+  [PRESET_CATEGORIES] '?뙌 Silhouette & Shadow'
+  [PRESET_CATEGORIES] '?뙆 Impossible & Surreal'
+  [PRESET_CATEGORIES] '?룢截?Ruins & Civilization'
+  [PRESET_CATEGORIES] '?뙅 Elemental Goddess'
+  [PRESET_CATEGORIES] '?뮛 Wet & Gloss'
+  [PRESET_CATEGORIES] '?뙧截?Atmosphere & Particle'
+  [PRESET_CATEGORIES] '?몣 Korean History & Court'
+  [PRESET_CATEGORIES] '?렓 Multi Body Paint'
+  [PRESET_CATEGORIES] '?뫍 Duo Glamour'
+  [PRESET_CATEGORIES] '?첑 Mirror & Reflection'
+  [PRESET_CATEGORIES] '?㎚ Sci-Fi & Biopunk'
+  [PRESET_CATEGORIES] '?? Environment Merge'
+  [PRESET_CATEGORIES] '?뙔 Night Glamour'
+  [PRESET_CATEGORIES] '?몭 Slip Dress Glamour'
+  [PRESET_CATEGORIES] '?릤 Animal Print Glamour'
+  [PRESET_CATEGORIES] '?렚 Theatrical Glamour'
+  [PRESET_CATEGORIES] '?뙼 Minimal Object Cover'
+  [PRESET_CATEGORIES] '?썎 Spa & Body Glamour'
+  [PRESET_CATEGORIES] '?뙅 Hot Spring & Underwater'
+  [PRESET_CATEGORIES] '?뮚 Pool & Emergence'
+  [PRESET_CATEGORIES] '?뙢截?Wet Dress Glamour'
+  [PRESET_CATEGORIES] '?렚 Archetype Glamour'
+  [PRESET_CATEGORIES] '?렚 Trio Glamour'
+  [PRESET_CATEGORIES] '?똿 Golden Hour Glamour'
+  [PRESET_CATEGORIES] '?룢截?Ancient Temple Glamour'
+  [PRESET_CATEGORIES] '?뭿 Figure Glamour'
+  [PRESET_CATEGORIES] '?㎠ Ferrofluid Glamour'
+  [PRESET_CATEGORIES] '?맔 Murmuration Glamour'
+  [PRESET_CATEGORIES] '?렦 Cymatics Glamour'
+  [PRESET_CATEGORIES] '?뵮 Micro Scale Glamour'
+  [PRESET_CATEGORIES] '?ェ Mycelium Glamour'
+  [PRESET_CATEGORIES] '?뵄 Acoustic Levitation Glamour'
+  [PRESET_CATEGORIES] '?뵄 Acoustic Levitation Glamour 2'
+  [PRESET_CATEGORIES] '?뵦 Body 횞 Element Glamour'
+  [PRESET_CATEGORIES] '?뭴 Body 횞 Luxury Setting Glamour'
+  [PRESET_CATEGORIES] '?\x80截?Plasma & Solar Flare Glamour'
+  [PRESET_CATEGORIES] '?뙌 Dark Fantasy Glamour'
+  [PRESET_CATEGORIES] '?뙄 Bioluminescence Glamour'
+  [PRESET_CATEGORIES] '?빖截?Spider Silk Glamour'
+  [PRESET_CATEGORIES] '?뙦截?Vortex Glamour'
+
+── 정상 ──
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_black_glam_void
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_vs_angel_bali
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_colombian_rio
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_ballerina_paris
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_fitness_strobe
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_runway_tokyo
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_milf_monaco
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_mature_onsen
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_sports_cape_town
+  [PRESETS_IREZUMI_SNAKE_LOTUS] irezumi_snake_lotus_vs_angel_aurora
+  [PRESETS_IREZUMI_WAVE_FUJI] irezumi_wave_fuji_black_glam_void
+  [PRESETS_IREZUMI_WAVE_FUJI] irezumi_wave_fuji_vs_angel_santorini
+  [PRESETS_IREZUMI_WAVE_FUJI] irezumi_wave_fuji_runway_neon
+  [PRESETS_IREZUMI_WAVE_FUJI] irezumi_wave_fuji_sports_onsen
+  [PRESETS_IREZUMI_WAVE_FUJI] irezumi_wave_fuji_colombian_versailles
+  [PRESETS_IREZUMI_WAVE_FUJI] irezumi_wave_fuji_fitness_strobe
+  [PRESETS_IREZUMI_WAVE_FUJI] irezumi_wave_fuji_mature_kyoto
+  [PRESETS_IREZUMI_WAVE_FUJI] irezumi_wave_fuji_ballerina_aurora
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_dragon_glitter_gold_void
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_wave_glitter_indigo_santorini
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_phoenix_glitter_crimson_shibuya
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_koi_glitter_coral_maldives
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_snake_glitter_emerald_versailles
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_peacock_glitter_teal_monaco
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_skull_glitter_obsidian_kyoto
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_samurai_glitter_silver_tokyo
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_dragon_klimt_versailles
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_phoenix_vangogh_aurora
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_wave_pollock_void
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_koi_klimt_silver_budapest
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_snake_mucha_paris
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_peacock_kandinsky_monaco
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_irezumi_skull_dali_kyoto
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_glitter_gold_klimt_void
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_glitter_crimson_vangogh_aurora
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_glitter_silver_pollock_shibuya
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_glitter_teal_mucha_maldives
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_glitter_obsidian_dali_versailles
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_glitter_violet_kandinsky_kyoto
+  [PRESETS_BARE_ART_ENSEMBLE_DUO] duo_glitter_emerald_vangogh_budapest
