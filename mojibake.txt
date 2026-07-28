@@ -1,0 +1,10 @@
+core/presets_meta.py L11: "?뼂截?Body Paint & Skin Transform": [
+core/presets_meta.py L153: "?룚截?Beach & Resort": [
+core/presets_meta.py L217: "?룢截?Ruins & Civilization": [
+core/presets_meta.py L240: "?뙧截?Atmosphere & Particle": [
+core/presets_meta.py L397: "?뙢截?Wet Dress Glamour": [
+core/presets_meta.py L427: "?룢截?Ancient Temple Glamour": [
+core/presets_meta.py L484: "?截?Plasma & Solar Flare Glamour": [
+core/presets_meta.py L499: "?빖截?Spider Silk Glamour": [
+core/presets_meta.py L504: "?뙦截?Vortex Glamour": [
+core/data.py L968: "전신 커버 타투 — 머리부터 발끝 빽빽한 타투": "full body tattoo coverage, head-to-toe intricate tattoo artwork, densely tattooed skin, tattoo collector aesthetic, heav
