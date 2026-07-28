@@ -5,3 +5,9 @@ dashboard_backup*.py
 core/*.bak*.bak
 *.bak2
 diag_report*.txt
+*.bak*
+cat_*.txt
+old_*.txt
+mojibake.txt
+ksf_dump*.txt
+bp_review.txt
