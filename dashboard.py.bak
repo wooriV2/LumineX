@@ -409,7 +409,7 @@ with tab1:
         outfit_text   = p.get('outfit', '')
         material_text = p.get('material', '')
         footwear_text = overrides.get('footwear', '')
-        wearing_line  = _build_wearing_line(outfit_text, material_text, footwear_text, p.get('environment', ''))
+        wearing_line  = _build_wearing_line(outfit_text, material_text, footwear_text)
         return (
             f"Professional fashion photograph, {overrides.get('framing', 'full body shot')}. "
             f"{'Model appearance: ' + overrides['appearance'] + '. ' if 'appearance' in overrides else ''}"
