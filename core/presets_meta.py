@@ -520,6 +520,13 @@ PRESET_CATEGORIES = {
         "la_craft_fusion_minakari_kintsugi_seat", "la_craft_fusion_minakari_kintsugi_stand", "la_craft_fusion_najeon_makie_seat",
         "la_craft_fusion_najeon_makie_stand", "la_craft_fusion_ru_guan_kintsugi_seat", "la_craft_fusion_ru_guan_kintsugi_stand",
     ],
+
+    "🏺 Living Artifact · Ceramic Collection": [
+        "la_ceramic_duo_celadon_kintsugi_celadon", "la_ceramic_duo_celadon_moonjar_kintsugi", "la_ceramic_duo_kintsugi_black_famille_rose",
+        "la_ceramic_duo_kintsugi_black_ru_guan", "la_ceramic_duo_ru_guan_qinghua", "la_ceramic_duo_same_celadon",
+        "la_ceramic_duo_same_kintsugi_black", "la_ceramic_duo_same_qinghua", "la_ceramic_duo_same_ru_guan",
+        "la_ceramic_duo_tenmoku_celadon",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
