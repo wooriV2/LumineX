@@ -605,6 +605,14 @@ PRESET_CATEGORIES = {
         "la_deepblack_057_trio_mehndi_aztec_uvglitch", "la_deepblack_058_trio_celtic_artnouveau_uvconstellation", "la_deepblack_059_trio_stainedglass_nebula_uvlaser",
         "la_deepblack_060_trio_sugarskull_petrykivka_uvsynthwave", "la_deepblack_061_trio_biomech_raven_uvdna", "la_deepblack_062_trio_peony_polynesian_uvequalizer",
         "la_deepblack_063_trio_mermaid_lion_uvchrome",
+    
+        "la_deepblack_064_duo_eagle_rose_uvneonrain", "la_deepblack_065_duo_swallow_anchor_kente", "la_deepblack_066_duo_panther_jasmine_uvplasma",
+        "la_deepblack_067_duo_heron_reeds_adinkra", "la_deepblack_068_duo_owl_oak_uvfiberoptic", "la_deepblack_069_duo_bamboo_sparrow_ndebele",
+        "la_deepblack_070_duo_camellia_rain_uvwireframe", "la_deepblack_071_duo_moth_moon_bogolan", "la_deepblack_072_duo_scorpion_desertrose_uvlava",
+        "la_deepblack_073_duo_peacock_artdeco", "la_deepblack_074_duo_hummingbird_hibiscus_uveel", "la_deepblack_075_duo_seahorse_anemone_seigaiha",
+        "la_deepblack_076_duo_jaguar_monstera_uvfractal", "la_deepblack_077_duo_elephant_jasmine_iznik", "la_deepblack_078_duo_stag_fern_uvcymatics",
+        "la_deepblack_079_duo_bee_honeycomb_memphis", "la_deepblack_080_duo_swan_lilypad_uvorigami", "la_deepblack_081_duo_manta_tide_batik",
+        "la_deepblack_082_duo_whale_starsea_uvgeode", "la_deepblack_083_duo_flamingo_palm_opart",
     ],
 }
 
