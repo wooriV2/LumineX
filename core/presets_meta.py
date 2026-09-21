@@ -589,6 +589,15 @@ PRESET_CATEGORIES = {
         "la_craft_solo_palekh_stand", "la_craft_solo_ru_guan_seat", "la_craft_solo_ru_guan_stand",
         "la_craft_solo_sonmai_seat", "la_craft_solo_sonmai_stand", "la_craft_solo_zhostovo_seat",
         "la_craft_solo_zhostovo_stand",
+    
+        "la_craft_solo_kashmiri", "la_craft_solo_olinala", "la_craft_solo_palekh_studio",
+        "la_craft_solo_rishtan", "la_craft_solo_zhostovo_palace",
+    ],
+
+    "🏺 Living Artifact · Craft Outdoor": [
+        "la_craft_outdoor_celadon_bamboo", "la_craft_outdoor_cloisonne_huangshan", "la_craft_outdoor_khokhloma_birch",
+        "la_craft_outdoor_lairodnam_waterfall", "la_craft_outdoor_makie_snow", "la_craft_outdoor_minakari_dunes",
+        "la_craft_outdoor_najeon_black_beach", "la_craft_outdoor_sonmai_terraces",
     ],
 }
 
