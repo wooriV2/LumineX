@@ -527,6 +527,15 @@ PRESET_CATEGORIES = {
         "la_ceramic_duo_same_kintsugi_black", "la_ceramic_duo_same_qinghua", "la_ceramic_duo_same_ru_guan",
         "la_ceramic_duo_tenmoku_celadon",
     ],
+
+    "🏺 Living Artifact · Muscle": [
+        "la_muscle_solo_bodybuilder_celadon", "la_muscle_solo_bodybuilder_gamji", "la_muscle_solo_bodybuilder_kintsugi",
+        "la_muscle_solo_bodybuilder_najeon_black", "la_muscle_solo_bodybuilder_palekh", "la_muscle_solo_extreme_bodybuilder_kintsugi",
+        "la_muscle_solo_extreme_musclebbw_khokhloma", "la_muscle_solo_massmonster_kintsugi", "la_muscle_solo_musclebbw_minakari",
+        "la_muscle_solo_musclebbw_najeon_vermilion", "la_muscle_solo_musclebbw_sonmai", "la_muscle_solo_musclebbw_zhostovo",
+        "la_muscle_solo_strongwoman_cloisonne", "la_muscle_solo_strongwoman_khokhloma", "la_muscle_solo_strongwoman_lairodnam",
+        "la_muscle_solo_strongwoman_makie", "la_muscle_solo_strongwoman_ru_guan",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
