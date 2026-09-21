@@ -660,6 +660,14 @@ PRESET_CATEGORIES = {
         "la_hgussbbw_duo_04_celadon_sanggam_palekh", "la_hgussbbw_duo_05_minakari_kintsugi_obsidian", "la_hgussbbw_duo_06_cloisonne_makie",
         "la_hgussbbw_duo_07_zhostovo_khokhloma", "la_hgussbbw_duo_08_lairodnam_sonmai", "la_hgussbbw_duo_09_irezumi_koi_gamji",
         "la_hgussbbw_duo_10_kintsugi_celadon_irezumi_dragon",
+    
+        "la_hgussbbw_duo_11_najeonvermilion_kintsugiobsidian", "la_hgussbbw_duo_12_ireztiger_zhostovo", "la_hgussbbw_duo_13_ruguan_lairodnam",
+        "la_hgussbbw_duo_14_gamji_kintsugiivory", "la_hgussbbw_duo_15_makie_celadon", "la_hgussbbw_duo_16_khokhloma_minakari",
+        "la_hgussbbw_duo_17_sonmai_cloisonne", "la_hgussbbw_duo_18_irezcraneplum_palekh", "la_hgussbbw_duo_19_kintsugiivory_irezkoi",
+        "la_hgussbbw_duo_20_zhostovo_ruguan", "la_hgussbbw_duo_21_minakari_najeonblackchrys", "la_hgussbbw_duo_22_celadon_irezphoenix",
+        "la_hgussbbw_duo_23_palekh_cloisonne", "la_hgussbbw_duo_24_lairodnam_kintsugiceladon", "la_hgussbbw_duo_25_irezchryswater_gamji",
+        "la_hgussbbw_duo_26_cloisonne_khokhloma", "la_hgussbbw_duo_27_najeonblackpeony_minakari", "la_hgussbbw_duo_28_kintsugiceladon_sonmai",
+        "la_hgussbbw_duo_29_irezhannya_ruguan", "la_hgussbbw_duo_30_makie_cloisonne",
     ],
 }
 
