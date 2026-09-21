@@ -535,6 +535,11 @@ PRESET_CATEGORIES = {
         "la_muscle_solo_musclebbw_najeon_vermilion", "la_muscle_solo_musclebbw_sonmai", "la_muscle_solo_musclebbw_zhostovo",
         "la_muscle_solo_strongwoman_cloisonne", "la_muscle_solo_strongwoman_khokhloma", "la_muscle_solo_strongwoman_lairodnam",
         "la_muscle_solo_strongwoman_makie", "la_muscle_solo_strongwoman_ru_guan",
+    
+        "la_muscle_duo_amazon_minakari_x_zhostovo", "la_muscle_duo_bodybuilder_najeon_x_celadon", "la_muscle_duo_crossfit_celadon_x_gamji",
+        "la_muscle_duo_massmonster_kintsugi_x_makie", "la_muscle_duo_massmonster_makie_x_kintsugi_celadon", "la_muscle_duo_massmonster_palekh_x_zhostovo",
+        "la_muscle_duo_musclebbw_lairodnam_x_sonmai", "la_muscle_duo_physique_gamji_x_najeon_vermilion", "la_muscle_duo_powerlifter_cloisonne_x_ru_guan",
+        "la_muscle_duo_strongwoman_khokhloma_x_palekh", "la_muscle_duo_sumo_kintsugi_x_najeon", "la_muscle_duo_thrower_ru_guan_x_cloisonne",
     ],
 }
 
