@@ -621,6 +621,17 @@ PRESET_CATEGORIES = {
         "la_deepblack_096_solo_botanical_mushroom", "la_deepblack_097_solo_uvsonar", "la_deepblack_098_solo_uvorchid",
         "la_deepblack_099_solo_uvfirefly", "la_deepblack_100_solo_uvfrost", "la_deepblack_101_solo_uvbrushstroke",
         "la_deepblack_102_solo_uvwormhole", "la_deepblack_103_solo_uvcaustics",
+    
+        "la_deepblack_104_trio_shishi_namazu_uvsacredgeo", "la_deepblack_105_trio_qilin_ume_uvmycelium", "la_deepblack_106_trio_iris_barong_uvspirograph",
+        "la_deepblack_107_trio_morningglory_wayang_uvlissajous", "la_deepblack_108_trio_ginkgo_scarab_uvneural", "la_deepblack_109_trio_oni_maasai_uvsplatter",
+        "la_deepblack_110_trio_fuji_mosaic_uvstringart", "la_deepblack_111_trio_lantern_azulejo_uvtesseract", "la_deepblack_112_trio_kozane_urnes_uvquasar",
+        "la_deepblack_113_trio_goldfish_greekmeander_uvplankton", "la_deepblack_114_duo_qinghua_uvbutterfly", "la_deepblack_115_duo_dancheong_kuba",
+        "la_deepblack_116_duo_bojagi_uvpulsar", "la_deepblack_117_duo_hwajodo_amazigh", "la_deepblack_118_duo_rangoli_uvpaisley",
+        "la_deepblack_119_duo_madhubani_shweshwe", "la_deepblack_120_duo_kalamkari_uvmushroom", "la_deepblack_121_duo_girih_tuareg",
+        "la_deepblack_122_duo_uli_uvrosethorn", "la_deepblack_123_duo_delft_gzhel", "la_deepblack_124_duo_victoriantextile_acanthus",
+        "la_deepblack_125_duo_rococo_uvlaserharp", "la_deepblack_126_duo_heraldic_tudorrose", "la_deepblack_127_duo_matyo_otomi",
+        "la_deepblack_128_duo_huichol_mola", "la_deepblack_129_duo_andean_uvlighttrail", "la_deepblack_130_duo_flytrap_reeffish",
+        "la_deepblack_131_duo_cactusbloom_poppy", "la_deepblack_132_duo_sunflower_lavenderolive", "la_deepblack_133_duo_redwood_orca",
     ],
 }
 
