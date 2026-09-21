@@ -557,6 +557,15 @@ PRESET_CATEGORIES = {
         "la_colossal_minakari_04", "la_colossal_minakari_05", "la_colossal_minakari_06",
         "la_colossal_sonmai_01", "la_colossal_sonmai_02", "la_colossal_sonmai_03",
         "la_colossal_sonmai_04", "la_colossal_sonmai_05", "la_colossal_sonmai_06",
+    
+        "la_colossal_celadon_01", "la_colossal_celadon_02", "la_colossal_celadon_03",
+        "la_colossal_celadon_04", "la_colossal_celadon_05", "la_colossal_celadon_06",
+        "la_colossal_gamji_01", "la_colossal_gamji_02", "la_colossal_gamji_03",
+        "la_colossal_gamji_04", "la_colossal_gamji_05", "la_colossal_gamji_06",
+        "la_colossal_najeon_black_01", "la_colossal_najeon_black_02", "la_colossal_najeon_black_03",
+        "la_colossal_najeon_black_04", "la_colossal_najeon_black_05", "la_colossal_najeon_black_06",
+        "la_colossal_najeon_vermilion_01", "la_colossal_najeon_vermilion_02", "la_colossal_najeon_vermilion_03",
+        "la_colossal_najeon_vermilion_04", "la_colossal_najeon_vermilion_05", "la_colossal_najeon_vermilion_06",
     ],
 }
 
