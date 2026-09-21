@@ -613,6 +613,14 @@ PRESET_CATEGORIES = {
         "la_deepblack_076_duo_jaguar_monstera_uvfractal", "la_deepblack_077_duo_elephant_jasmine_iznik", "la_deepblack_078_duo_stag_fern_uvcymatics",
         "la_deepblack_079_duo_bee_honeycomb_memphis", "la_deepblack_080_duo_swan_lilypad_uvorigami", "la_deepblack_081_duo_manta_tide_batik",
         "la_deepblack_082_duo_whale_starsea_uvgeode", "la_deepblack_083_duo_flamingo_palm_opart",
+    
+        "la_deepblack_084_solo_hawk_cherry", "la_deepblack_085_solo_fortunebat_moon", "la_deepblack_086_solo_horse_wildflower",
+        "la_deepblack_087_solo_cheetah_savanna", "la_deepblack_088_solo_hydrangea_rain", "la_deepblack_089_solo_thistle_songbird",
+        "la_deepblack_090_solo_ikat", "la_deepblack_091_solo_hmong_embroidery", "la_deepblack_092_solo_zellige_star",
+        "la_deepblack_093_solo_bauhaus", "la_deepblack_094_solo_kaleidoscope", "la_deepblack_095_solo_celestial_sunmoon",
+        "la_deepblack_096_solo_botanical_mushroom", "la_deepblack_097_solo_uvsonar", "la_deepblack_098_solo_uvorchid",
+        "la_deepblack_099_solo_uvfirefly", "la_deepblack_100_solo_uvfrost", "la_deepblack_101_solo_uvbrushstroke",
+        "la_deepblack_102_solo_uvwormhole", "la_deepblack_103_solo_uvcaustics",
     ],
 }
 
