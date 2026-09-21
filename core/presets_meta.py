@@ -576,6 +576,13 @@ PRESET_CATEGORIES = {
         "la_colossal_ru_guan_01", "la_colossal_ru_guan_02", "la_colossal_ru_guan_03",
         "la_colossal_ru_guan_04", "la_colossal_ru_guan_05", "la_colossal_ru_guan_06",
     ],
+
+    "🏺 Living Artifact · Craft Solo": [
+        "la_craft_solo_celadon_seat", "la_craft_solo_celadon_stand", "la_craft_solo_gamji_seat",
+        "la_craft_solo_gamji_stand", "la_craft_solo_kintsugi_seat", "la_craft_solo_kintsugi_stand",
+        "la_craft_solo_makie_seat", "la_craft_solo_makie_stand", "la_craft_solo_najeon_black_seat",
+        "la_craft_solo_najeon_black_stand", "la_craft_solo_najeon_vermilion_seat", "la_craft_solo_najeon_vermilion_stand",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
