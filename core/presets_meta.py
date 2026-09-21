@@ -541,6 +541,14 @@ PRESET_CATEGORIES = {
         "la_muscle_duo_musclebbw_lairodnam_x_sonmai", "la_muscle_duo_physique_gamji_x_najeon_vermilion", "la_muscle_duo_powerlifter_cloisonne_x_ru_guan",
         "la_muscle_duo_strongwoman_khokhloma_x_palekh", "la_muscle_duo_sumo_kintsugi_x_najeon", "la_muscle_duo_thrower_ru_guan_x_cloisonne",
     ],
+
+    "🏺 Living Artifact · Colossal": [
+        "la_colossal_600_celadon", "la_colossal_600_cloisonne", "la_colossal_600_gamji",
+        "la_colossal_600_khokhloma", "la_colossal_600_kintsugi", "la_colossal_600_lairodnam",
+        "la_colossal_600_makie", "la_colossal_600_minakari", "la_colossal_600_najeon_black",
+        "la_colossal_600_najeon_vermilion", "la_colossal_600_palekh", "la_colossal_600_ru_guan",
+        "la_colossal_600_sonmai", "la_colossal_600_zhostovo",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
