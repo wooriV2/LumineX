@@ -644,6 +644,16 @@ PRESET_CATEGORIES = {
         "la_deepblack_158_solo_destijl", "la_deepblack_159_solo_circusposter", "la_deepblack_160_solo_uvneontube",
         "la_deepblack_161_solo_uvanglerfish", "la_deepblack_162_solo_uvhypnospiral", "la_deepblack_163_solo_uvjunglevine",
     ],
+
+    "🏺 Living Artifact · USSBBW": [
+        "la_ussbbw_01_najeon_black_peony", "la_ussbbw_02_najeon_black_chrysanthemum", "la_ussbbw_03_najeon_vermilion",
+        "la_ussbbw_04_kintsugi_celadon", "la_ussbbw_05_kintsugi_obsidian", "la_ussbbw_06_kintsugi_ivory",
+        "la_ussbbw_07_palekh", "la_ussbbw_08_zhostovo", "la_ussbbw_09_khokhloma",
+        "la_ussbbw_10_celadon_sanggam", "la_ussbbw_11_gamji_geumni", "la_ussbbw_12_makie",
+        "la_ussbbw_13_cloisonne", "la_ussbbw_14_ru_guan", "la_ussbbw_15_minakari",
+        "la_ussbbw_16_sonmai", "la_ussbbw_17_lairodnam", "la_ussbbw_18_irezumi_phoenix_peony",
+        "la_ussbbw_19_irezumi_koi_waves", "la_ussbbw_20_irezumi_dragon_clouds",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
