@@ -548,6 +548,15 @@ PRESET_CATEGORIES = {
         "la_colossal_600_makie", "la_colossal_600_minakari", "la_colossal_600_najeon_black",
         "la_colossal_600_najeon_vermilion", "la_colossal_600_palekh", "la_colossal_600_ru_guan",
         "la_colossal_600_sonmai", "la_colossal_600_zhostovo",
+    
+        "la_colossal_khokhloma_01", "la_colossal_khokhloma_02", "la_colossal_khokhloma_03",
+        "la_colossal_khokhloma_04", "la_colossal_khokhloma_05", "la_colossal_khokhloma_06",
+        "la_colossal_lairodnam_01", "la_colossal_lairodnam_02", "la_colossal_lairodnam_03",
+        "la_colossal_lairodnam_04", "la_colossal_lairodnam_05", "la_colossal_lairodnam_06",
+        "la_colossal_minakari_01", "la_colossal_minakari_02", "la_colossal_minakari_03",
+        "la_colossal_minakari_04", "la_colossal_minakari_05", "la_colossal_minakari_06",
+        "la_colossal_sonmai_01", "la_colossal_sonmai_02", "la_colossal_sonmai_03",
+        "la_colossal_sonmai_04", "la_colossal_sonmai_05", "la_colossal_sonmai_06",
     ],
 }
 
