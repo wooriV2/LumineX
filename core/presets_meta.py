@@ -654,6 +654,13 @@ PRESET_CATEGORIES = {
         "la_ussbbw_16_sonmai", "la_ussbbw_17_lairodnam", "la_ussbbw_18_irezumi_phoenix_peony",
         "la_ussbbw_19_irezumi_koi_waves", "la_ussbbw_20_irezumi_dragon_clouds",
     ],
+
+    "🏺 Living Artifact · Hourglass × USSBBW Duo": [
+        "la_hgussbbw_duo_01_palekh_kintsugi_celadon", "la_hgussbbw_duo_02_najeon_chrysanthemum_kintsugi_ivory", "la_hgussbbw_duo_03_irezumi_phoenix_najeon_peony",
+        "la_hgussbbw_duo_04_celadon_sanggam_palekh", "la_hgussbbw_duo_05_minakari_kintsugi_obsidian", "la_hgussbbw_duo_06_cloisonne_makie",
+        "la_hgussbbw_duo_07_zhostovo_khokhloma", "la_hgussbbw_duo_08_lairodnam_sonmai", "la_hgussbbw_duo_09_irezumi_koi_gamji",
+        "la_hgussbbw_duo_10_kintsugi_celadon_irezumi_dragon",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
