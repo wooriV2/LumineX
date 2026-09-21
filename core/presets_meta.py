@@ -506,6 +506,13 @@ PRESET_CATEGORIES = {
         "vortex_bbw_cloud_column", "vortex_bust_queen_aurora_vortex", "vortex_supermodel_galaxy_spiral", "vortex_black_glamour_void_spiral",
     ],
 
+
+    "🏺 Living Artifact · Craft Duo": [
+        "la_craft_duo_celadon_palekh", "la_craft_duo_cloisonne_ru_guan", "la_craft_duo_gamji_makie",
+        "la_craft_duo_gamji_najeon_vermilion", "la_craft_duo_lairodnam_sonmai", "la_craft_duo_makie_kintsugi_celadon",
+        "la_craft_duo_minakari_zhostovo", "la_craft_duo_najeon_black_celadon", "la_craft_duo_najeon_vermilion_cloisonne",
+        "la_craft_duo_palekh_zhostovo", "la_craft_duo_ru_guan_khokhloma", "la_craft_duo_sonmai_kintsugi",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
