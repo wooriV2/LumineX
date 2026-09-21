@@ -582,6 +582,13 @@ PRESET_CATEGORIES = {
         "la_craft_solo_gamji_stand", "la_craft_solo_kintsugi_seat", "la_craft_solo_kintsugi_stand",
         "la_craft_solo_makie_seat", "la_craft_solo_makie_stand", "la_craft_solo_najeon_black_seat",
         "la_craft_solo_najeon_black_stand", "la_craft_solo_najeon_vermilion_seat", "la_craft_solo_najeon_vermilion_stand",
+    
+        "la_craft_solo_cloisonne_seat", "la_craft_solo_cloisonne_stand", "la_craft_solo_khokhloma_seat",
+        "la_craft_solo_khokhloma_stand", "la_craft_solo_lairodnam_seat", "la_craft_solo_lairodnam_stand",
+        "la_craft_solo_minakari_seat", "la_craft_solo_minakari_stand", "la_craft_solo_palekh_seat",
+        "la_craft_solo_palekh_stand", "la_craft_solo_ru_guan_seat", "la_craft_solo_ru_guan_stand",
+        "la_craft_solo_sonmai_seat", "la_craft_solo_sonmai_stand", "la_craft_solo_zhostovo_seat",
+        "la_craft_solo_zhostovo_stand",
     ],
 }
 
