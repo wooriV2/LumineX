@@ -599,6 +599,13 @@ PRESET_CATEGORIES = {
         "la_craft_outdoor_lairodnam_waterfall", "la_craft_outdoor_makie_snow", "la_craft_outdoor_minakari_dunes",
         "la_craft_outdoor_najeon_black_beach", "la_craft_outdoor_sonmai_terraces",
     ],
+
+    "🏺 Living Artifact · DeepBlack Ink": [
+        "la_deepblack_054_trio_hannya_crane_holoprism", "la_deepblack_055_trio_kitsune_octopus_uvjellyfish", "la_deepblack_056_trio_chrysanthemum_tortoise_uvaurora",
+        "la_deepblack_057_trio_mehndi_aztec_uvglitch", "la_deepblack_058_trio_celtic_artnouveau_uvconstellation", "la_deepblack_059_trio_stainedglass_nebula_uvlaser",
+        "la_deepblack_060_trio_sugarskull_petrykivka_uvsynthwave", "la_deepblack_061_trio_biomech_raven_uvdna", "la_deepblack_062_trio_peony_polynesian_uvequalizer",
+        "la_deepblack_063_trio_mermaid_lion_uvchrome",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
