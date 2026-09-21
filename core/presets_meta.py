@@ -632,6 +632,17 @@ PRESET_CATEGORIES = {
         "la_deepblack_125_duo_rococo_uvlaserharp", "la_deepblack_126_duo_heraldic_tudorrose", "la_deepblack_127_duo_matyo_otomi",
         "la_deepblack_128_duo_huichol_mola", "la_deepblack_129_duo_andean_uvlighttrail", "la_deepblack_130_duo_flytrap_reeffish",
         "la_deepblack_131_duo_cactusbloom_poppy", "la_deepblack_132_duo_sunflower_lavenderolive", "la_deepblack_133_duo_redwood_orca",
+    
+        "la_deepblack_134_solo_bear_salmon", "la_deepblack_135_solo_lynx_snowpine", "la_deepblack_136_solo_chameleon_jungle",
+        "la_deepblack_137_solo_macaw_rainforest", "la_deepblack_138_solo_toucan_bromeliad", "la_deepblack_139_solo_treefrog_heliconia",
+        "la_deepblack_140_solo_zebra", "la_deepblack_141_solo_giraffe", "la_deepblack_142_solo_snowleopard",
+        "la_deepblack_143_solo_rooster_cockscomb", "la_deepblack_144_solo_nautilus", "la_deepblack_145_solo_ammonite",
+        "la_deepblack_146_solo_gothicfiligree", "la_deepblack_147_solo_clockwork", "la_deepblack_148_solo_alchemy",
+        "la_deepblack_149_solo_zodiacanimals", "la_deepblack_150_solo_cardsuits", "la_deepblack_151_solo_carnivalmask",
+        "la_deepblack_152_solo_popart", "la_deepblack_153_solo_streetart", "la_deepblack_154_solo_goldmosaicspiral",
+        "la_deepblack_155_solo_impastonight", "la_deepblack_156_solo_pointillism", "la_deepblack_157_solo_cubist",
+        "la_deepblack_158_solo_destijl", "la_deepblack_159_solo_circusposter", "la_deepblack_160_solo_uvneontube",
+        "la_deepblack_161_solo_uvanglerfish", "la_deepblack_162_solo_uvhypnospiral", "la_deepblack_163_solo_uvjunglevine",
     ],
 }
 
