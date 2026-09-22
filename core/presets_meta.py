@@ -729,6 +729,26 @@ PRESET_CATEGORIES = {
         "la_anime_13_hgssbbw_jajuyo_34", "la_anime_14_heavymuscle_laironam_34", "la_anime_15_massmonster_eunipsa_front",
         "la_anime_16_muscleussbbw_eunipsa_front", "la_anime_17_sumo_jajuyo_lowstance", "la_anime_18_sumo_najeon_upright",
     ],
+
+    "🏺 Living Artifact · Anime Duo": [
+        "la_anime_duo_01_ussbbw-hgssbbw_kintsugi-jajuyo", "la_anime_duo_02_heavymuscle-glamour_laironam-sonmai", "la_anime_duo_03_muscleussbbw-massmonster_eunipsa-laironam",
+        "la_anime_duo_04_sumo-glamour_najeon-alebrije", "la_anime_duo_05_ussbbw-musclehg_fordite-palekh", "la_anime_duo_06_ussbbw-hgssbbw_najeon-makie",
+        "la_anime_duo_07_ussbbw-glamour_malachite-sonmai", "la_anime_duo_08_ussbbw-musclehg_jajuyo-palekh", "la_anime_duo_09_ussbbw-massmonster_fordite-eunipsa",
+        "la_anime_duo_10_ussbbw-muscleussbbw_makie-laironam", "la_anime_duo_11_ussbbw-sumo_alebrije-najeon", "la_anime_duo_12_hgssbbw-glamour_kintsugi-alebrije",
+        "la_anime_duo_13_hgssbbw-musclehg_malachite-laironam", "la_anime_duo_14_hgssbbw-massmonster_najeon-eunipsa", "la_anime_duo_15_hgssbbw-muscleussbbw_sonmai-fordite",
+        "la_anime_duo_16_hgssbbw-sumo_makie-kintsugi", "la_anime_duo_17_glamour-musclehg_fordite-jajuyo", "la_anime_duo_18_glamour-massmonster_najeon-laironam",
+        "la_anime_duo_19_glamour-muscleussbbw_alebrije-eunipsa", "la_anime_duo_20_glamour-sumo_sonmai-malachite", "la_anime_duo_21_glamour-heavymuscle_kintsugi-makie",
+        "la_anime_duo_22_musclehg-massmonster_palekh-laironam", "la_anime_duo_23_musclehg-muscleussbbw_alebrije-makie", "la_anime_duo_24_musclehg-sumo_jajuyo-fordite",
+        "la_anime_duo_25_massmonster-muscleussbbw_eunipsa-malachite", "la_anime_duo_26_massmonster-sumo_laironam-najeon", "la_anime_duo_27_muscleussbbw-sumo_kintsugi-jajuyo",
+        "la_anime_duo_28_hgssbbw-ussbbw_laironam-kintsugi", "la_anime_duo_29_glamour-ussbbw_palekh-jajuyo", "la_anime_duo_30_musclehg-ussbbw_makie-malachite",
+        "la_anime_duo_31_massmonster-ussbbw_najeon-alebrije", "la_anime_duo_32_muscleussbbw-ussbbw_jajuyo-sonmai", "la_anime_duo_33_sumo-ussbbw_malachite-makie",
+        "la_anime_duo_34_glamour-hgssbbw_laironam-fordite", "la_anime_duo_35_musclehg-hgssbbw_eunipsa-alebrije", "la_anime_duo_36_massmonster-hgssbbw_makie-malachite",
+        "la_anime_duo_37_muscleussbbw-hgssbbw_najeon-kintsugi", "la_anime_duo_38_sumo-hgssbbw_fordite-sonmai", "la_anime_duo_39_musclehg-glamour_najeon-kintsugi",
+        "la_anime_duo_40_massmonster-glamour_eunipsa-fordite", "la_anime_duo_41_muscleussbbw-glamour_laironam-malachite", "la_anime_duo_42_sumo-glamour_jajuyo-makie",
+        "la_anime_duo_43_heavymuscle-glamour_eunipsa-fordite", "la_anime_duo_44_massmonster-musclehg_malachite-sonmai", "la_anime_duo_45_muscleussbbw-musclehg_fordite-palekh",
+        "la_anime_duo_46_sumo-musclehg_najeon-eunipsa", "la_anime_duo_47_muscleussbbw-massmonster_sonmai-kintsugi", "la_anime_duo_48_sumo-massmonster_kintsugi-makie",
+        "la_anime_duo_49_sumo-muscleussbbw_makie-alebrije", "la_anime_duo_50_heavymuscle-glamour_laironam-najeon",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
