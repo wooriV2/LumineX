@@ -740,6 +740,14 @@ PRESET_CATEGORIES = {
         "la_anime_43_muscleussbbw_laironam_front", "la_anime_44_muscleussbbw_jajuyo_front", "la_anime_45_muscleussbbw_najeon_front",
         "la_anime_46_muscleussbbw_fordite_front", "la_anime_47_sumo_kintsugi_low", "la_anime_48_sumo_cloisonne_upright",
         "la_anime_49_sumo_malachite_low", "la_anime_50_sumo_makie_upright",
+    
+        "la_anime_51_ussbbw_celadoninlay_front", "la_anime_52_ussbbw_eunipsa_front", "la_anime_53_ussbbw_alebrije_34",
+        "la_anime_54_ussbbw_cloisonne_front", "la_anime_55_hgssbbw_sonmai_34", "la_anime_56_hgssbbw_makie_34",
+        "la_anime_57_hgssbbw_palekh_34", "la_anime_58_hgssbbw_malachite_34", "la_anime_59_heavymuscle_najeon_front",
+        "la_anime_60_heavymuscle_sonmai_34", "la_anime_61_heavymuscle_fordite_front", "la_anime_62_musclehg_najeon_34",
+        "la_anime_63_musclehg_kintsugi_front", "la_anime_64_musclehg_sonmai_front", "la_anime_65_massmonster_jajuyo_front",
+        "la_anime_66_massmonster_kintsugi_front", "la_anime_67_massmonster_palekh_front", "la_anime_68_muscleussbbw_makie_front",
+        "la_anime_69_muscleussbbw_malachite_front", "la_anime_70_muscleussbbw_alebrije_front",
     ],
 
     "🏺 Living Artifact · Anime Duo": [
