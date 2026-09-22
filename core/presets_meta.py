@@ -711,6 +711,24 @@ PRESET_CATEGORIES = {
         "la_sig_duo_46_musclehg-musclehg_kintsugi-sonmai_stone", "la_sig_duo_47_glamour-glamour_najeon-irezumi_waves_cream", "la_sig_duo_48_glamour-glamour_jingtailan-palekh_atrium",
         "la_sig_duo_49_hgssbbw-hgssbbw_dancheong-sanggam_palace", "la_sig_duo_50_hgssbbw-hgssbbw_minakari-kintsugi_cream",
     ],
+
+    "🏺 Living Artifact · Photo Convert": [
+        "la_convert_addon_muscle", "la_convert_alebrije", "la_convert_celadoninlay",
+        "la_convert_cloisonne", "la_convert_eunipsa", "la_convert_fordite",
+        "la_convert_jajuyo", "la_convert_kintsugi", "la_convert_laironam",
+        "la_convert_makie", "la_convert_malachite", "la_convert_najeon",
+        "la_convert_sonmai", "la_fill_lower", "la_fill_upper",
+        "la_fix_photoreal",
+    ],
+
+    "🏺 Living Artifact · Anime Blueprint": [
+        "la_anime_01_ussbbw_malachite_34", "la_anime_02_ussbbw_celadoninlay_34", "la_anime_03_ussbbw_cloisonne_34",
+        "la_anime_04_ussbbw_najeon_34", "la_anime_05_ussbbw_fordite_34", "la_anime_06_ussbbw_makie_34",
+        "la_anime_07_ussbbw_eunipsa_34", "la_anime_08_ussbbw_jajuyo_34", "la_anime_09_ussbbw_sonmai_front",
+        "la_anime_10_ussbbw_alebrije_front", "la_anime_11_ussbbw_kintsugi_front_flesh", "la_anime_12_ussbbw_jajuyo_front_flesh",
+        "la_anime_13_hgssbbw_jajuyo_34", "la_anime_14_heavymuscle_laironam_34", "la_anime_15_massmonster_eunipsa_front",
+        "la_anime_16_muscleussbbw_eunipsa_front", "la_anime_17_sumo_jajuyo_lowstance", "la_anime_18_sumo_najeon_upright",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
