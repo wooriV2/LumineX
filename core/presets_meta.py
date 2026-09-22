@@ -748,6 +748,16 @@ PRESET_CATEGORIES = {
         "la_anime_63_musclehg_kintsugi_front", "la_anime_64_musclehg_sonmai_front", "la_anime_65_massmonster_jajuyo_front",
         "la_anime_66_massmonster_kintsugi_front", "la_anime_67_massmonster_palekh_front", "la_anime_68_muscleussbbw_makie_front",
         "la_anime_69_muscleussbbw_malachite_front", "la_anime_70_muscleussbbw_alebrije_front",
+    
+        "la_anime_71_ussbbw_najeon_34_max", "la_anime_72_ussbbw_jajuyo_front_max", "la_anime_73_ussbbw_kintsugi_34_max",
+        "la_anime_74_ussbbw_malachite_front_max", "la_anime_75_ussbbw_fordite_34_max", "la_anime_76_hgssbbw_jajuyo_34_max",
+        "la_anime_77_hgssbbw_najeon_front_max", "la_anime_78_hgssbbw_alebrije_34_max", "la_anime_79_hgssbbw_kintsugi_front_max",
+        "la_anime_80_hgssbbw_cloisonne_34_max", "la_anime_81_heavymuscle_laironam_34_max", "la_anime_82_heavymuscle_eunipsa_front_max",
+        "la_anime_83_heavymuscle_jajuyo_front_max", "la_anime_84_heavymuscle_makie_34_max", "la_anime_85_heavymuscle_najeon_34_max",
+        "la_anime_86_muscleussbbw_eunipsa_front_max", "la_anime_87_muscleussbbw_laironam_34_max", "la_anime_88_muscleussbbw_jajuyo_front_max",
+        "la_anime_89_muscleussbbw_najeon_34_max", "la_anime_90_muscleussbbw_fordite_front_max", "la_anime_91_sumo_jajuyo_low_max",
+        "la_anime_92_sumo_najeon_upright_max", "la_anime_93_sumo_kintsugi_low_max", "la_anime_94_sumo_malachite_upright_max",
+        "la_anime_95_sumo_cloisonne_low_max",
     ],
 
     "🏺 Living Artifact · Anime Duo": [
