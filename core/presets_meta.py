@@ -1031,6 +1031,19 @@ PRESET_CATEGORIES = {
         "la_idolduo_46_hgussbbw-athletic_najeon-imari_stand", "la_idolduo_47_athletic-hgussbbw_cheonghwa-fordite_recline", "la_idolduo_48_musclehg-athletic_cheonghwa-celadon_stand",
         "la_idolduo_49_bustqueen-topheavy_imari-khokhloma_stand_mixed", "la_idolduo_50_bustqueen-hgussbbw_imari-cheonghwa_stand",
     ],
+
+    "🏺 Living Artifact · Mountain Mass": [
+        "la_mountain_duo_01_tentpole-ussbbw_jajuyo-dancheong", "la_mountain_duo_02_tentpole-ussbbw_jajuyo-palekh", "la_mountain_duo_03_topheavy-tentpole_cloisonne-jajuyo",
+        "la_mountain_duo_04_hgussbbw-tentpole_eunipsa-cheonghwa", "la_mountain_duo_05_bustqueen-athletic_jasperware-fordite", "la_mountain_duo_06_hgssbbw-tentpole_laironam-cheonghwa",
+        "la_mountain_duo_07_hgssbbw-colossal_makie-fordite", "la_mountain_duo_08_topheavy-ussbbw_jajuyo-cheonghwa", "la_mountain_duo_09_tentpole-musclehg_cheonghwa-jajuyo",
+        "la_mountain_duo_10_hgussbbw-hgssbbw_najeon-laironam", "la_mountain_solo_01_ussbbw_eunipsa_lie", "la_mountain_solo_02_colossal_jasperware_standfront",
+        "la_mountain_solo_03_athletic_cheonghwa_kneel", "la_mountain_solo_04_ussbbw_jasperware_stand34", "la_mountain_solo_05_ussbbw_dancheong_stand34",
+        "la_mountain_solo_06_athletic_cloisonne_bench", "la_mountain_solo_07_colossal_jasperware_standfront", "la_mountain_solo_08_bustqueen_makie_standfront",
+        "la_mountain_solo_09_colossal_khokhloma_lie", "la_mountain_solo_10_ussbbw_dancheong_standfront", "la_mountain_solo_11_ussbbw_khokhloma_bench",
+        "la_mountain_solo_12_ussbbw_khokhloma_kneel", "la_mountain_solo_13_bustqueen_palekh_bench", "la_mountain_solo_14_bustqueen_eunipsa_stand34",
+        "la_mountain_solo_15_bustqueen_najeon_bench", "la_mountain_solo_16_bustqueen_fordite_stand34", "la_mountain_solo_17_colossal_dancheong_standfront",
+        "la_mountain_solo_18_athletic_cheonghwa_stand34", "la_mountain_solo_19_colossal_khokhloma_stand34", "la_mountain_solo_20_colossal_najeon_stand34",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
