@@ -1068,6 +1068,10 @@ PRESET_CATEGORIES = {
         "la_realface_korean_p50c1", "la_realface_korean_p8", "la_realface_mouth_p100_hime",
         "la_realface_mouth_p100_kogal", "la_realface_mouth_p100_yamanba", "la_realface_mouth_p25_girlcrush",
         "la_realface_mouth_p25_hime", "la_realface_mouth_p25_kogal",
+    
+        "la_realface_hip_100", "la_realface_hip_150", "la_realface_hip_25",
+        "la_realface_hip_50", "la_realface_hip_8", "la_realface_hip_k1",
+        "la_realface_hip_k2",
     ],
 
     "🏺 Living Artifact · Glass Face 3-Split": [
@@ -1097,6 +1101,12 @@ PRESET_CATEGORIES = {
         "la_glassface_waist_10", "la_glassface_waistp_100", "la_glassface_waistp_150",
         "la_glassface_waistp_25", "la_glassface_waistp_50", "la_glassface_waistp_8",
         "la_glassface_waistp_k1", "la_glassface_waistp_k2",
+    
+        "la_glassface_hipp_100", "la_glassface_hipp_150", "la_glassface_hipp_25",
+        "la_glassface_hipp_50", "la_glassface_hipp_8", "la_glassface_hipp_k1",
+        "la_glassface_hipp_k2", "la_glassface_hipreg_p100", "la_glassface_hipreg_p100c1",
+        "la_glassface_hipreg_p150", "la_glassface_hipreg_p200", "la_glassface_waistnew_p150c2",
+        "la_glassface_waistnew_p25", "la_glassface_waistnew_p50", "la_glassface_waistnew_p8",
     ],
 
     "🏺 Living Artifact · Duo Statue": [
