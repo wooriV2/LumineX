@@ -1044,6 +1044,65 @@ PRESET_CATEGORIES = {
         "la_mountain_solo_15_bustqueen_najeon_bench", "la_mountain_solo_16_bustqueen_fordite_stand34", "la_mountain_solo_17_colossal_dancheong_standfront",
         "la_mountain_solo_18_athletic_cheonghwa_stand34", "la_mountain_solo_19_colossal_khokhloma_stand34", "la_mountain_solo_20_colossal_najeon_stand34",
     ],
+
+    "🏺 Living Artifact · Vessel Body": [
+        "la_vessel_bust_01", "la_vessel_full_01", "la_vessel_full_02",
+    ],
+
+    "🏺 Living Artifact · Glass Face Scene": [
+        "la_scene_b1_full_01", "la_scene_b1_full_02", "la_scene_b2_full_01",
+        "la_scene_b3_full_01", "la_scene_b4_full_01", "la_scene_b4ga2_full_01",
+        "la_scene_b5_full_01", "la_scene_b5gp4_full_01", "la_scene_b6_full_01",
+        "la_scene_b6gp1_full_01", "la_scene_ga1_waist_01", "la_scene_ga2_waist_01",
+        "la_scene_ga3_bust_01", "la_scene_ga4_waist_01", "la_scene_gp1_waist_01",
+        "la_scene_gp2_bust_01", "la_scene_gp3_waist_01", "la_scene_gp4_bust_01",
+        "la_scene_gp5_waist_01", "la_scene_gp6_waist_01", "la_scene_gp7_waist_01",
+    ],
+
+    "🏺 Living Artifact · Real Face Piercing": [
+        "la_realface_bust_p100c1", "la_realface_bust_p150c2", "la_realface_bust_p200",
+        "la_realface_gyaru_pp100", "la_realface_gyaru_pp150", "la_realface_gyaru_pp18",
+        "la_realface_gyaru_pp3", "la_realface_gyaru_pp5", "la_realface_gyaru_pp50",
+        "la_realface_gyaru_pp9", "la_realface_korean_p100", "la_realface_korean_p100c2",
+        "la_realface_korean_p150", "la_realface_korean_p25", "la_realface_korean_p50",
+        "la_realface_korean_p50c1", "la_realface_korean_p8", "la_realface_mouth_p100_hime",
+        "la_realface_mouth_p100_kogal", "la_realface_mouth_p100_yamanba", "la_realface_mouth_p25_girlcrush",
+        "la_realface_mouth_p25_hime", "la_realface_mouth_p25_kogal",
+    ],
+
+    "🏺 Living Artifact · Glass Face 3-Split": [
+        "la_glassface_bust_01", "la_glassface_bust_02", "la_glassface_bust_03",
+        "la_glassface_bust_04", "la_glassface_bust_05", "la_glassface_bust_06",
+        "la_glassface_bust_07", "la_glassface_bust_08", "la_glassface_bust_09",
+        "la_glassface_bust_10", "la_glassface_bust_11", "la_glassface_bust_12",
+        "la_glassface_bust_13", "la_glassface_bust_14", "la_glassface_bust_15",
+        "la_glassface_bust_16", "la_glassface_bust_17", "la_glassface_bust_18",
+        "la_glassface_bust_19", "la_glassface_bust_20", "la_glassface_bust_21",
+        "la_glassface_bust_22", "la_glassface_bust_23", "la_glassface_bust_24",
+        "la_glassface_bust_25", "la_glassface_bust_26", "la_glassface_bust_27",
+        "la_glassface_bust_28", "la_glassface_bust_29", "la_glassface_bust_30",
+        "la_glassface_bust_31", "la_glassface_bust_32", "la_glassface_bust_33",
+        "la_glassface_bust_34", "la_glassface_bust_35", "la_glassface_bust_36",
+        "la_glassface_bust_37", "la_glassface_bustp_100", "la_glassface_bustp_150",
+        "la_glassface_bustp_25", "la_glassface_bustp_50", "la_glassface_bustp_8",
+        "la_glassface_bustp_k1", "la_glassface_bustp_k2", "la_glassface_full_01",
+        "la_glassface_full_02", "la_glassface_full_03", "la_glassface_full_04",
+        "la_glassface_full_05", "la_glassface_full_06", "la_glassface_hip_01",
+        "la_glassface_hip_02", "la_glassface_hip_03", "la_glassface_hip_04",
+        "la_glassface_hip_05", "la_glassface_hip_06", "la_glassface_hip_07",
+        "la_glassface_hip_08", "la_glassface_hip_09", "la_glassface_hip_10",
+        "la_glassface_waist_01", "la_glassface_waist_02", "la_glassface_waist_03",
+        "la_glassface_waist_04", "la_glassface_waist_05", "la_glassface_waist_06",
+        "la_glassface_waist_07", "la_glassface_waist_08", "la_glassface_waist_09",
+        "la_glassface_waist_10", "la_glassface_waistp_100", "la_glassface_waistp_150",
+        "la_glassface_waistp_25", "la_glassface_waistp_50", "la_glassface_waistp_8",
+        "la_glassface_waistp_k1", "la_glassface_waistp_k2",
+    ],
+
+    "🏺 Living Artifact · Duo Statue": [
+        "la_duostatue_full_01", "la_duostatue_full_02", "la_duostatue_hip_01",
+        "la_duostatue_hip_02",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서

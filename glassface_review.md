@@ -1,0 +1,2385 @@
+# Living Artifact · Glass Face 계열 검토
+
+## Glass Face 가슴 01. 코갸루 · 바스트 퀸 BBW · 호박 × 빙하 얼음
+`la_glassface_bust_01` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ko-gyaru makeup — deeply sun-tanned bronze makeup over real skin, bold white eyeshadow across the lids, white glossy lips, a bright turquoise liner accent at the outer corners, long lashes, large eyes with bright real catchlights, long bleached blonde hair with sun-streaked highlights, a bright cheeky grin. A thick silver septum ring hangs below the nose; on each ear a big silver hoop and one turquoise-enamel ring. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Right half: solid glacial ice, with deep cyan where thickest, white streaks of compressed layers and trapped air bubbles, frost in every groove. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 02. 히메갸루 · 톱헤비 아워글래스 · 자수정 × 시트린
+`la_glassface_bust_02` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in hime-gyaru makeup — fair porcelain skin, soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips, huge voluminous light-brown curls with a big pink satin bow, a sweet princess-like smile. On each ear a big gold hoop with a small pearl drop. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, curving forward as one enormous rounded mass, soft heavy shoulders, thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Right half: solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 03. 아게하 · 아워글래스 USSBBW · 루비색 유리 × 비취
+`la_glassface_bust_03` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in age-gyaru makeup — luminous glossy skin with a bright highlighter, thick black eyeliner, extremely long dramatic false lashes top and bottom, large eyes with bright real catchlights, glossy peach-pink lips, towering teased bleached-blonde hair, a confident sparkling expression. On each ear a large gold chandelier-shaped hoop; a small gold stud in the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, broad soft shoulders, thick heavy arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Right half: solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 04. 오네에갸루 · 텐트폴 USSBBW · 스모키 블랙 유리 × 설화석고
+`la_glassface_bust_04` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in onee-gyaru makeup — smooth healthy skin, defined brown-mauve eyeshadow, a precise winged liner, full natural lashes, large eyes with bright real catchlights, softly contoured cheeks, glossy rose-nude lips, long sleek chestnut waves, a poised, mature, confident expression. A thick gold hoop on each ear with one small pearl stud above it. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giant frame flaring at the shoulders — lats spreading to shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the line of the shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Right half: solid translucent alabaster, with soft banded veining and a gentle inner glow, brightest where thinnest. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 05. 로리타 갸루 · 콜로설 · 에메랄드 × 장미석영
+`la_glassface_bust_05` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in lolita-gyaru makeup — pale rosy skin, large round doll-like eyes enlarged by circle lenses with bright real catchlights, thick curled lashes with drawn-on lower lashes, soft pink and lilac eyeshadow, round pink blush, glossy cherry-pink lips, long honey-brown ringlets with a white lace headdress and satin bow on top, a sweet, playful smile. A thick silver septum ring; on each ear a big silver hoop and one stretched gold-rimmed ear plug. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giantess on an even scale — massive rounded shoulders spanning more than four head-widths, huge thick arms, a colossal full chest, no single part standing out.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Right half: solid soft pink rose quartz, with a soft milky haze and a faint star-like inner sheen, the pink deepest where thickest and nearly clear at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 06. 아마갸루 · 아워글래스 SSBBW · 로즈핑크 유리 × 아쿠아마린
+`la_glassface_bust_06` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ama-gyaru makeup — fair skin, pastel pink and lilac eyeshadow, large round eyes enlarged by circle lenses with bright real catchlights, soft round blush, dewy pink lips, long light-brown hair in twin tails tied with pastel ribbons, a sweet, shy smile. A big pastel-enamel hoop on each ear (pink on the left, lilac on the right) and a small silver heart stud in each upper ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest, soft round shoulders, very thick soft arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid pale rose-pink cast glass, with soft internal swirls and tiny bubbles, deepest rose where thickest and nearly clear at every thin edge. Right half: solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 07. 야마바 · 바스트 퀸 BBW · 얼음 × 카넬리안
+`la_glassface_bust_07` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in yamanba makeup — a deep bronze tan foundation over real skin, wide stark-white paint bands above and below both eyes lying on the lids and never across the eyeballs, neon pink and turquoise eyeshadow, long false lashes, large eyes with bright real catchlights, glossy white lips, small star and heart rhinestone stickers on the cheeks only, long teased neon pink and lime hair, a bold cheeky grin. A big neon-acrylic hoop and a small silver star stud on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid clear cast ice, with internal fracture planes and a deep blue-white glow, frost gathering in every groove. Right half: solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 08. 만바 · 톱헤비 아워글래스 · 호박 × 코발트 블루 유리
+`la_glassface_bust_08` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in manba makeup — a deep bronze tan foundation over real skin, thick white paint bands above and below both eyes lying on the lids and never across the eyeballs, silver glitter lines across the lids, heavy black liner, very long false lashes, large eyes with bright real catchlights, glossy white lips, small rhinestone stickers on the cheeks only, long bleached platinum hair with a neon streak, a fierce, playful expression. A big silver hoop and a white-enamel ring on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, curving forward as one enormous rounded mass, soft heavy shoulders, thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Right half: solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 09. 반바 · 아워글래스 USSBBW · 오팔 × 에메랄드 그린 유리
+`la_glassface_bust_09` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in banba makeup — a deep bronze tan foundation over real skin, thick white paint bands above and below both eyes lying on the lids and never across the eyeballs, neon pink and lime paint strokes across the cheekbones, rhinestone and star stickers clustered on the cheeks and forehead only, long false lashes, large eyes with bright real catchlights, glossy white lips, long teased neon-pink and lime hair, a fierce, playful expression. Two big multicolour acrylic hoops on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, broad soft shoulders, thick heavy arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid milky precious opal, with a cloudy milky-white body with flashes of green, blue, magenta and orange deep inside, shifting with the light. Right half: solid clear emerald-green cast glass, with slow internal swirls and tiny bubbles, deep bottle-green where thickest and pale lime at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 10. 비주얼계 · 아워글래스 SSBBW · 설화석고 × 루비색 유리
+`la_glassface_bust_10` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in visual-kei makeup — pale porcelain skin, deep smoky black eyeshadow blended far out beyond the eyes, a sharp black winged liner, long dramatic lashes, large eyes with bright real catchlights, glossy black lips, sharply contoured cheekbones, long teased jet-black hair with silver streaks, a cold, poised expression. A thick black-steel bar through the outer end of the left eyebrow, clear of the eye; on each ear a big black-steel hoop. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest, soft round shoulders, very thick soft arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid translucent alabaster, with soft banded veining and a gentle inner glow, brightest where thinnest. Right half: solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 11. 지뢰계 · 텐트폴 USSBBW · 장미석영 × 스모키 블랙 유리
+`la_glassface_bust_11` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in jirai-kei makeup — pale porcelain skin, pink-red eyeshadow smudged softly beneath both eyes, a delicate tear-track blush across the cheeks, large dark circle lenses with bright real catchlights, long lashes, glossy pink-red lips, long black hair in twin tails tied with pink and black ribbons under a blunt fringe, a hollow, dreamy expression. A small silver ring at the corner of the lower lip; on each ear a big pink-and-black enamel heart hoop. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giant frame flaring at the shoulders — lats spreading to shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the line of the shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid soft pink rose quartz, with a soft milky haze and a faint star-like inner sheen, the pink deepest where thickest and nearly clear at every thin edge. Right half: solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 12. 야미카와 · 콜로설 · 월장석 × 사파이어
+`la_glassface_bust_12` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in yamikawa makeup — pale, almost translucent skin, heavy pink-red eyeshadow smudged wide beneath both eyes like crying, faint tear-track blush running down the cheeks, large dark circle lenses with bright real catchlights, long lashes, glossy dark-cherry lips, long black hair in twin tails with pink and black ribbons under a blunt fringe, a hollow, half-lidded expression. A thick black-steel ring through the left nostril; on each ear a thick black hoop with a fine silver chain drop. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giantess on an even scale — massive rounded shoulders spanning more than four head-widths, huge thick arms, a colossal full chest, no single part standing out.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid milky moonstone, with a milky opalescent haze with a pale blue sheen floating under the surface and shifting as the light moves. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 13. 데코라 · 바스트 퀸 BBW · 무라노 유리 × 자수정
+`la_glassface_bust_13` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in decora makeup — fair skin, bright pastel pink and yellow eyeshadow, thick lashes, large eyes with bright real catchlights, small star and heart stickers on the cheeks only, glossy candy-pink lips, long pastel rainbow hair in twin tails crowded with colourful plastic clips, ribbons and tiny toys kept on the hair, a bright, giddy grin. On each ear a large primary-colour acrylic ring; a small star-shaped acrylic stud in the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid Murano glass, with twisted ribbons of cobalt, red, yellow and white swirling through it with tiny gold flecks suspended between them. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 14. 글래머러스 파티 · 톱헤비 아워글래스 · 아쿠아마린 × 카넬리안
+`la_glassface_bust_14` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in glamorous party makeup — fair ivory skin, smoky eyes in champagne-gold glitter shadow, a sharp winged liner, full lashes, softly contoured cheekbones with a glowing highlight, large eyes with bright real catchlights, plump glossy gradient lips in deep rose, long sleek black waves, a confident, luminous expression. On each ear a big gold hoop with a champagne-gold ball; a small gold stud in the right nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, curving forward as one enormous rounded mass, soft heavy shoulders, thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Right half: solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 15. 걸크러시 · 아워글래스 USSBBW · 스모키 블랙 유리 × 시트린
+`la_glassface_bust_15` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in girl-crush makeup — fair ivory skin, sharply angled thin brows, a razor-sharp winged cat-eye liner extending far past the outer corner, deep brown-black eyeshadow, long lashes, large eyes with bright real catchlights, strongly sculpted contour, a deep wine-red matte lip, long sleek black hair, a cold, commanding gaze. A thick silver septum ring; on each ear a big silver hoop and a thick silver bar. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, broad soft shoulders, thick heavy arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Right half: solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 16. 뱀파이어 다크 · 아워글래스 SSBBW · 서리 유리 × 루비색 유리
+`la_glassface_bust_16` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in dark vampire makeup — pale porcelain skin, deep burgundy-black shadow smudged heavily beneath both eyes, sharp black liner, long dramatic lashes, large eyes with bright real catchlights, a glossy near-black wine lip, sharply contoured cheekbones, long straight jet-black hair, a cold, poised expression. A small black-steel ring at the left corner of the lower lip; on each ear a thick black-steel bar and a pointed silver spike stud. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest, soft round shoulders, very thick soft arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid milky frosted glass, with light scattering softly through the whole thickness, a satin surface with no sharp reflection, glowing evenly from within. Right half: solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 17. 강남언니 · 텐트폴 USSBBW · 비취 × 로즈핑크 유리
+`la_glassface_bust_17` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in Gangnam-eonni makeup — glowing dewy skin, a precise winged liner, softly defined brown eyeshadow, full natural lashes, large eyes with bright real catchlights, sculpted contour with a satin highlight, plump glossy rose-coral lips, long sleek chestnut waves, a poised, refined, confident expression. A big gold hoop on each ear with one small pearl stud above it. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giant frame flaring at the shoulders — lats spreading to shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the line of the shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Right half: solid pale rose-pink cast glass, with soft internal swirls and tiny bubbles, deepest rose where thickest and nearly clear at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 18. 인형 메이크업 · 바스트 퀸 BBW · 장미석영 × 코발트 블루 유리
+`la_glassface_bust_18` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in doll makeup — flawless porcelain skin, very large round eyes enlarged by pale circle lenses with bright real catchlights, soft brown eyeshadow with a shimmer under the eyes, long curled lashes, round pink blush on the apples of the cheeks, small gradient rose-pink lips, long straight light-brown hair with a see-through fringe, a calm, doll-like expression. A large pearl ball earring and a small ribbon-shaped silver stud on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid soft pink rose quartz, with a soft milky haze and a faint star-like inner sheen, the pink deepest where thickest and nearly clear at every thin edge. Right half: solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 19. 한복 화보(연지곤지) · 톱헤비 아워글래스 · 에메랄드 × 호박
+`la_glassface_bust_19` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in hanbok-editorial makeup — fair porcelain skin, two round red yeonji blush circles painted on the cheeks and a small round red gonji dot at the centre of the forehead, clearly defined dark brows, softly lined eyes with bright real catchlights, small vivid red lips, glossy black hair braided and pinned into a low chignon with a red ribbon, a serene, dignified expression. A gold knot-shaped drop earring with a red-enamel bead on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, curving forward as one enormous rounded mass, soft heavy shoulders, thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 20. 구풍 · 아워글래스 USSBBW · 사파이어 × 카넬리안
+`la_glassface_bust_20` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in guofeng makeup — porcelain-pale skin, slender upswept willow-leaf brows, a fine red floral huadian mark painted on the forehead, softly flushed rosy cheeks, an upswept eyeliner tail, large eyes with bright real catchlights, a small vivid red lip, black hair in a high coiled updo with gold hairpins, a serene expression. A big gold hoop on each ear with a small gold square knot and a red-enamel bead. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, broad soft shoulders, thick heavy arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Right half: solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 21. 웨이쉰 · 콜로설 · 바다 유리 × 자수정
+`la_glassface_bust_21` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in weixun makeup — clear fair skin, a warm rose-red wash blended across the outer corners of both eyes and drifting up toward the temples, the same flush spreading softly across the cheekbones and the bridge of the nose, slightly smudged, dewy highlights, soft brown-pink eyeshadow, large moist eyes with bright real catchlights and a faint glassy shine, moist rose-tinted lips, long black hair loosely tousled with a few strands across the face, a dreamy, half-lidded expression. A big rose-gold hoop on each ear; a small rose-gold stud in the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giantess on an even scale — massive rounded shoulders spanning more than four head-widths, huge thick arms, a colossal full chest, no single part standing out.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid weathered sea glass, with pale aqua-green frosted glass, softly pitted and tumbled with every edge rounded, a soft glow from within. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 22. 홍콩풍 · 아워글래스 SSBBW · 코발트 블루 유리 × 설화석고
+`la_glassface_bust_22` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in Hong Kong-style makeup — fair matte skin with a soft powdery finish, thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge, hair set in glossy voluminous old-film waves, a poised, glamorous expression. A large vintage pearl clip-style earring on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest, soft round shoulders, very thick soft arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Right half: solid translucent alabaster, with soft banded veining and a gentle inner glow, brightest where thinnest. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 23. 락혼 글램(태국) · 바스트 퀸 BBW · 에메랄드 그린 유리 × 시트린
+`la_glassface_bust_23` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Thai woman in lakorn-drama glam makeup — flawless pale-golden skin, sharply defined dark brows, a precise black winged liner with a strong flick, warm brown-bronze eyeshadow, long dramatic lashes, large eyes with bright real catchlights, strong contour under the cheekbones, deep red glossy lips with a crisp edge, long glossy black waves, a poised, dramatic expression. A thin gold ring through the left nostril; on each ear a big gold hoop with a chased-gold drop. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid clear emerald-green cast glass, with slow internal swirls and tiny bubbles, deep bottle-green where thickest and pale lime at every thin edge. Right half: solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 24. 파케앙트 글램(필리핀) · 톱헤비 아워글래스 · 투명 레진 × 사파이어
+`la_glassface_bust_24` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Filipina woman in pageant glam makeup — warm tan skin, heavy sculpted contour and a glowing highlighter on the cheekbones, smoky bronze and gold glitter eyeshadow, dramatic long lashes, defined dark brows, large eyes with bright real catchlights, glossy coral-red lips, long voluminous chestnut waves, a bright, confident pageant smile. A big gold hoop with a pearl on each ear; a small gold stud in the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, curving forward as one enormous rounded mass, soft heavy shoulders, thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid water-clear casting resin, with perfectly clear with a hard glossy surface, tiny gold flakes and slow-rising air bubbles suspended deep inside. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 25. 텔레노벨라 글램(멕시코·콜롬비아) · 아워글래스 USSBBW · 비취 × 카넬리안
+`la_glassface_bust_25` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Latina woman in telenovela glam makeup — warm golden-bronze skin, a sharp black winged liner, warm terracotta eyeshadow, heavy lashes, strong sculpted contour, large dark eyes with bright real catchlights, a deep berry lip, long voluminous dark-brown waves swept over one shoulder, a fiery, passionate expression. A large gold hoop on each ear and a thin gold ring through the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, broad soft shoulders, thick heavy arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Right half: solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 26. 프렌치 레드립(프랑스) · 텐트폴 USSBBW · 오팔 × 비취
+`la_glassface_bust_26` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult French woman in French red-lip makeup — fair natural skin with a light dewy finish, softly brushed natural brows, a barely-there brown liner and fluttering lashes, no eyeshadow, soft natural colour on the cheeks, large eyes with bright real catchlights, a single bold classic red lip with a soft matte finish, long dark-brown hair in an effortless tousled updo, an unbothered, effortless expression. A single thick gold hoop on each ear, nothing else. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giant frame flaring at the shoulders — lats spreading to shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the line of the shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid milky precious opal, with a cloudy milky-white body with flashes of green, blue, magenta and orange deep inside, shifting with the light. Right half: solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 27. 슬라브 글램(러시아·동유럽) · 바스트 퀸 BBW · 월장석 × 에메랄드
+`la_glassface_bust_27` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Russian woman in Slavic glam makeup — very fair, cool skin, sculpted feathered dark brows, a precise winged liner, soft taupe eyeshadow, long lashes, large pale eyes with bright real catchlights, strong contour and a bright highlighter along the cheekbones and nose bridge, glossy nude-pink lips, long straight platinum-blonde hair, a cold, striking expression. A big silver hoop with a filigree silver drop on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid milky moonstone, with a milky opalescent haze with a pale blue sheen floating under the surface and shifting as the light moves. Right half: solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 28. 인스타 글램(미국·영국) · 톱헤비 아워글래스 · 호박 × 스모키 블랙 유리
+`la_glassface_bust_28` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult American woman in Instagram glam makeup — sun-kissed skin, heavily sculpted contour and a strong highlighter on the cheekbones, bold defined brows, long fluffy false lashes, shimmery bronze eyeshadow, large eyes with bright real catchlights, plump glossy nude lips with a defined lip-liner outline, long voluminous honey-blonde waves, a confident, camera-ready smile. Two big gold hoops stacked on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, curving forward as one enormous rounded mass, soft heavy shoulders, thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Right half: solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 29. 서아프리카 파티·웨딩 글램 · 아워글래스 USSBBW · 무라노 유리 × 아쿠아마린
+`la_glassface_bust_29` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Nigerian woman in West African party-glam makeup — rich deep brown skin with a golden highlighter glowing on the cheekbones, bold shimmering gold and emerald eyeshadow blended out toward the temples, dramatic long lashes, sharply defined brows, large eyes with bright real catchlights, a strong glossy fuchsia-pink lip, long braids piled into a high sculpted crown, a bright, joyful smile. A big gold hoop with gold beads on each ear; a thin gold ring through the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, broad soft shoulders, thick heavy arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid Murano glass, with twisted ribbons of cobalt, red, yellow and white swirling through it with tiny gold flecks suspended between them. Right half: solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 30. 하베샤 화장(에티오피아·에리트레아) · 아워글래스 SSBBW · 설화석고 × 에메랄드
+`la_glassface_bust_30` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Ethiopian woman in Habesha makeup — smooth warm-brown skin, a bold thick black liner drawn around the whole eye and winged slightly at the outer corner, warm gold and brown eyeshadow, strongly defined softly arched brows, long lashes, large dark eyes with bright real catchlights, a natural warm rose-brown lip with a soft gloss, long black hair in fine neat braids swept back from the face, a serene, dignified expression. A big silver filigree hoop on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest, soft round shoulders, very thick soft arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid translucent alabaster, with soft banded veining and a gentle inner glow, brightest where thinnest. Right half: solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 31. 요루바 신부 화장(나이지리아) · 텐트폴 USSBBW · 빙하 얼음 × 루비색 유리
+`la_glassface_bust_31` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Yoruba Nigerian woman in Yoruba bridal makeup — rich deep brown skin with a golden highlighter on the cheekbones, warm gold and bronze eyeshadow blended up to the brow bone, sharply defined arched brows, a precise winged liner, long dramatic lashes, large eyes with bright real catchlights, a deep wine-red glossy lip, a large sculpted gele head-wrap of stiff gold-and-cream fabric folded high above her head, a poised, joyful, radiant expression. A big gold hoop with a red-enamel bead on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giant frame flaring at the shoulders — lats spreading to shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the line of the shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid glacial ice, with deep cyan where thickest, white streaks of compressed layers and trapped air bubbles, frost in every groove. Right half: solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 32. 소피아 로렌풍(이탈리아) · 바스트 퀸 BBW · 서리 유리 × 사파이어
+`la_glassface_bust_32` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Italian woman in 1960s Italian film-star makeup — warm olive skin, thick strongly arched dark brows, a long black liner winging up and out at the outer corner of each eye, soft brown eyeshadow, long lashes, large dark eyes with bright real catchlights, a deep red lip with a defined edge, thick glossy dark-brown hair set in a high backcombed style, a smouldering, confident expression. A large pearl drop and a gold clip on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid milky frosted glass, with light scattering softly through the whole thickness, a satin surface with no sharp reflection, glowing evenly from within. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 33. 화환 화장(우크라이나) · 톱헤비 아워글래스 · 아쿠아마린 × 로즈핑크 유리
+`la_glassface_bust_33` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Ukrainian woman in folk-portrait makeup — fair, luminous skin, round warm red blush high on the cheeks, dark strongly defined straight brows, soft brown eyeshadow, long lashes, large blue-grey eyes with bright real catchlights, a natural deep rose lip, long light-brown hair in a thick braid over one shoulder, and a wreath of real red poppies, blue cornflowers and wheat ears sitting on top of the head, a warm, calm expression. A big silver hoop with a red-enamel bead on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal chest far wider than her shoulders, curving forward as one enormous rounded mass, soft heavy shoulders, thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Right half: solid pale rose-pink cast glass, with soft internal swirls and tiny bubbles, deepest rose where thickest and nearly clear at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 34. 스칸디 프로스트(스웨덴) · 아워글래스 USSBBW · 바다 유리 × 무라노 유리
+`la_glassface_bust_34` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Swedish woman in Scandi frost makeup — very pale, cool skin, a soft white-silver highlighter along the cheekbones, nose bridge and brow bones, pale icy-blue eyeshadow with a fine silver shimmer, pale softly brushed blonde brows, curled light-brown-tipped lashes, large pale-blue eyes with bright real catchlights, a sheer frosted pale-pink lip, long straight platinum-blonde hair, a cool, calm, faraway expression. A big smooth silver hoop on each ear; a small silver ring through the outer end of the left eyebrow. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, broad soft shoulders, thick heavy arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid weathered sea glass, with pale aqua-green frosted glass, softly pitted and tumbled with every edge rounded, a soft glow from within. Right half: solid Murano glass, with twisted ribbons of cobalt, red, yellow and white swirling through it with tiny gold flecks suspended between them. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 35. 브리티시 모드(영국) · 아워글래스 SSBBW · 투명 레진 × 자수정
+`la_glassface_bust_35` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult British woman in 1960s mod makeup — pale, matte, porcelain skin, a bold black graphic crease line drawn high above each eyelid, very thick false lashes on the top lids, small painted lash strokes beneath each lower lid, pale lilac-white eyeshadow, large eyes with bright real catchlights, natural brows, a pale peachy-white lip, a sleek black bob with a blunt fringe, a cool, wide-eyed, doll-like expression. A large flat geometric silver disc earring on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest, soft round shoulders, very thick soft arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid water-clear casting resin, with perfectly clear with a hard glossy surface, tiny gold flakes and slow-rising air bubbles suspended deep inside. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 36. 발칸 글램(루마니아·불가리아) · 콜로설 · 시트린 × 코발트 블루 유리
+`la_glassface_bust_36` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Romanian woman in Balkan glam makeup — warm fair-olive skin, thick dark straight-edged brows, a heavy black liner smoked out at the outer corners, deep brown shadow blended up to the crease, long dense lashes, large dark eyes with bright real catchlights, sculpted contour, a deep red matte lip with a crisp edge, long dark-brown hair in glossy voluminous waves, an intense, proud expression. A thick gold hoop with a gold coin drop on each ear; a thin gold ring through the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giantess on an even scale — massive rounded shoulders spanning more than four head-widths, huge thick arms, a colossal full chest, no single part standing out.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Right half: solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 37. 노르딕 발키리(노르웨이) · 텐트폴 USSBBW · 얼음 × 에메랄드 그린 유리
+`la_glassface_bust_37` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Norwegian woman in Nordic valkyrie makeup — fair skin with a light scatter of freckles, strong straight defined dark-blonde brows, warm bronze shadow across the lids, a fine brown liner, long lashes, large pale-blue eyes with bright real catchlights, soft contour, a muted red-brown lip, long pale-blonde hair in two thick braids and a braided crown, a fierce, steady, commanding expression. A thick silver knotted hoop on each ear; a small silver bar through the outer end of the left eyebrow. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giant frame flaring at the shoulders — lats spreading to shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the line of the shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid clear cast ice, with internal fracture planes and a deep blue-white glow, frost gathering in every groove. Right half: solid clear emerald-green cast glass, with slow internal swirls and tiny bubbles, deep bottle-green where thickest and pale lime at every thin edge. Each is carved as one sculpted mass like a statue, solid all the way through and never hollow, the chest two great rounded masses with the groove between them cut into the material. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every broken edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within with visible depth; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 01. 로리타 갸루 · 아워글래스 USSBBW · 사파이어 × 장미석영
+`la_glassface_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in lolita-gyaru makeup — pale rosy skin, large round doll-like eyes enlarged by circle lenses with bright real catchlights, thick curled lashes with drawn-on lower lashes, soft pink and lilac eyeshadow, round pink blush, glossy cherry-pink lips, long honey-brown ringlets with a white lace headdress and satin bow on top, a sweet, playful smile. Real jewelry: A thick silver septum ring hangs below the nose; a big silver hoop passes through the lower lip's edge; on each ear a big silver hoop and one stretched gold-rimmed ear plug. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, directly below it a waistline that still pulls in sharply even at this size, then an enormous soft belly of massive rounded folds spilling out beneath it, her upper body filling the frame edge to edge.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Right half: solid soft pink rose quartz, with a soft milky haze and a faint star-like inner sheen, the pink deepest where thickest and nearly clear at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 02. 아마갸루 · 아워글래스 SSBBW · 로즈핑크 유리 × 아쿠아마린
+`la_glassface_waist_02` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ama-gyaru makeup — fair skin, pastel pink and lilac eyeshadow, large round eyes enlarged by circle lenses with bright real catchlights, soft round blush, dewy pink lips, long light-brown hair in twin tails tied with pastel ribbons, a sweet, shy smile. Real jewelry: A small silver heart stud sits in the left nostril; on each ear a big pastel-enamel hoop (pink on the left, lilac on the right) and a small silver heart stud in the upper ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest, a still-visible cinched waist, a big soft rounded belly below the waistline hanging heavily, very thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid pale rose-pink cast glass, with soft internal swirls and tiny bubbles, deepest rose where thickest and nearly clear at every thin edge. Right half: solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 03. 걸크러시 · 머슬 아워글래스 BBW · 스모키 블랙 유리 × 호박
+`la_glassface_waist_03` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in girl-crush makeup — fair ivory skin, sharply angled thin brows, a razor-sharp winged cat-eye liner extending far past the outer corner, deep brown-black eyeshadow, long lashes, large eyes with bright real catchlights, strongly sculpted contour, a deep wine-red matte lip, long sleek black hair, a cold, commanding gaze. Real jewelry: A thick silver septum ring hangs below the nose; two thick silver bars run through the outer end of the left eyebrow, well clear of the eye; on each ear a big silver hoop and a thick silver bar. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A thick soft layer over huge muscle, broad powerful shoulders, thick heavy arms with rounded biceps, a colossal soft chest, a cinched waist above a soft rounded belly, more soft than hard.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 04. 뱀파이어 다크 · USSBBW · 루비색 유리 × 설화석고
+`la_glassface_waist_04` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in dark vampire makeup — pale porcelain skin, deep burgundy-black shadow smudged heavily beneath both eyes, sharp black liner, long dramatic lashes, large eyes with bright real catchlights, a glossy near-black wine lip, sharply contoured cheekbones, long straight jet-black hair, a cold, poised expression. Real jewelry: A thick black-steel bar runs through the outer end of the left eyebrow, clear of the eye; a small black-steel ring sits at the left corner of the lower lip; on each ear a thick black-steel bar and a pointed silver spike stud. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal rounded chest spilling wide past the shoulders, an enormous belly of massive rounded folds hanging low and heavy, no waist at all, upper arms so thick they are pushed out almost horizontally from her sides.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Right half: solid translucent alabaster, with soft banded veining and a gentle inner glow, brightest where thinnest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 05. 홍콩풍 · 아워글래스 USSBBW · 코발트 블루 유리 × 시트린
+`la_glassface_waist_05` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in Hong Kong-style makeup — fair matte skin with a soft powdery finish, thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge, hair set in glossy voluminous old-film waves, a poised, glamorous expression. Real jewelry: A small gold stud sits in the left nostril; a large vintage pearl clip-style earring on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, directly below it a waistline that still pulls in sharply even at this size, then an enormous soft belly of massive rounded folds spilling out beneath it, her upper body filling the frame edge to edge.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Right half: solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 06. 락혼 글램(태국) · 콜로설 · 에메랄드 × 카넬리안
+`la_glassface_waist_06` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Thai woman in lakorn-drama glam makeup — flawless pale-golden skin, sharply defined dark brows, a precise black winged liner with a strong flick, warm brown-bronze eyeshadow, long dramatic lashes, large eyes with bright real catchlights, strong contour under the cheekbones, deep red glossy lips with a crisp edge, long glossy black waves, a poised, dramatic expression. Real jewelry: A thin gold ring passes through the left nostril; a small gold labret stud sits beneath the lower lip; on each ear a big gold hoop with a chased-gold drop. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giantess on an even scale — massive rounded shoulders spanning more than four head-widths, huge thick arms, a colossal full chest, a broad heavy torso with a large smooth rounded belly, no single part standing out.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Right half: solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 07. 파케앙트 글램(필리핀) · 아워글래스 USSBBW 임산부 · 자수정 × 호박
+`la_glassface_waist_07` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Filipina woman in pageant glam makeup — warm tan skin, heavy sculpted contour and a glowing highlighter on the cheekbones, smoky bronze and gold glitter eyeshadow, dramatic long lashes, defined dark brows, large eyes with bright real catchlights, glossy coral-red lips, long voluminous chestnut waves, a bright, confident pageant smile. Real jewelry: A small gold stud sits in the left nostril; a thin gold ring runs through the outer end of the left eyebrow; on each ear a big gold hoop with a pearl. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, a waistline that pulls in sharply beneath it, then a vast, perfectly round pregnant belly dome swelling far out in front of her with heavy folds hanging beneath the dome. She is in the last weeks of pregnancy.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 08. 하베샤 화장(에티오피아·에리트레아) · 아워글래스 SSBBW · 비취 × 무라노 유리
+`la_glassface_waist_08` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Ethiopian woman in Habesha makeup — smooth warm-brown skin, a bold thick black liner drawn around the whole eye and winged slightly at the outer corner, warm gold and brown eyeshadow, strongly defined softly arched brows, long lashes, large dark eyes with bright real catchlights, a natural warm rose-brown lip with a soft gloss, long black hair in fine neat braids swept back from the face, a serene, dignified expression. Real jewelry: A silver ring passes through the left nostril; on each ear a big silver filigree hoop and a small silver stud in the upper ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest, a still-visible cinched waist, a big soft rounded belly below the waistline hanging heavily, very thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Right half: solid Murano glass, with twisted ribbons of cobalt, red, yellow and white swirling through it with tiny gold flecks suspended between them. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 09. 슬라브 글램(러시아·동유럽) · USSBBW 임산부 · 빙하 얼음 × 에메랄드 그린 유리
+`la_glassface_waist_09` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Russian woman in Slavic glam makeup — very fair, cool skin, sculpted feathered dark brows, a precise winged liner, soft taupe eyeshadow, long lashes, large pale eyes with bright real catchlights, strong contour and a bright highlighter along the cheekbones and nose bridge, glossy nude-pink lips, long straight platinum-blonde hair, a cold, striking expression. Real jewelry: A thin silver ring passes through the left nostril; a small silver bar runs through the outer end of the left eyebrow; on each ear a big silver hoop with a filigree silver drop. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal rounded chest spilling wide past the shoulders and resting on a vast, perfectly round pregnant belly dome, several massive folds of heavy flesh hanging beneath the dome, no waist at all. She is in the last weeks of pregnancy.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid glacial ice, with deep cyan where thickest, white streaks of compressed layers and trapped air bubbles, frost in every groove. Right half: solid clear emerald-green cast glass, with slow internal swirls and tiny bubbles, deep bottle-green where thickest and pale lime at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 10. 프렌치 레드립(프랑스) · 콜로설 임산부 · 투명 레진 × 사파이어
+`la_glassface_waist_10` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult French woman in French red-lip makeup — fair natural skin with a light dewy finish, softly brushed natural brows, a barely-there brown liner and fluttering lashes, no eyeshadow, soft natural colour on the cheeks, large eyes with bright real catchlights, a single bold classic red lip with a soft matte finish, long dark-brown hair in an effortless tousled updo, an unbothered, effortless expression. Real jewelry: A single thick gold hoop on each ear, nothing else. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giantess on an even scale in the last weeks of pregnancy — massive rounded shoulders, a colossal full chest, a vast, perfectly smooth pregnant belly dome swollen to the same immense scale as everything else.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid water-clear casting resin, with perfectly clear with a hard glossy surface, tiny gold flakes and slow-rising air bubbles suspended deep inside. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 01. 야마바 · 힙 퀸 · 얼음 × 자수정
+`la_glassface_hip_01` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in yamanba makeup — a deep bronze tan foundation over real skin, wide stark-white paint bands above and below both eyes lying on the lids and never across the eyeballs, neon pink and turquoise eyeshadow, long false lashes, large eyes with bright real catchlights, glossy white lips, small star and heart rhinestone stickers on the cheeks only, long teased neon pink and lime hair, a bold cheeky grin. Real jewelry: A big neon-acrylic hoop and a small silver star stud on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: Her waist cinched to an impossible minimum, making the contrast with the enormous rear utterly extreme: the rear and hips flare to more than four times the width of that narrow waist, an enormous rounded rear projecting far out behind her and merging into the lower back and thighs as one continuous mass, a moderate chest, slim shoulders, the thighs disappearing out of the bottom of the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid clear cast ice, with internal fracture planes and a deep blue-white glow, frost gathering in every groove. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand. In the carved hollow of her navel hangs a real jewel — a neon-acrylic star dangling from a silver barbell — through a clean drilled opening in the material, staying bright real opaque metal and never turning transparent; the centre line passes beside it.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 02. 반바 · USSBBW · 오팔 × 에메랄드
+`la_glassface_hip_02` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in banba makeup — a deep bronze tan foundation over real skin, thick white paint bands above and below both eyes lying on the lids and never across the eyeballs, neon pink and lime paint strokes across the cheekbones, rhinestone and star stickers clustered on the cheeks and forehead only, long false lashes, large eyes with bright real catchlights, glossy white lips, long teased neon-pink and lime hair, a fierce, playful expression. Real jewelry: Two big multicolour acrylic hoops on each ear. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal rounded chest, an enormous belly of massive rounded folds hanging low and heavy, no waist at all, colossal wide hips flaring beyond the chest and massive thick thighs disappearing out of the bottom of the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid milky precious opal, with a cloudy milky-white body with flashes of green, blue, magenta and orange deep inside, shifting with the light. Right half: solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand. In the carved hollow of her navel hangs a real jewel — a multicolour acrylic ring hanging from a silver barbell — through a clean drilled opening in the material, staying bright real opaque metal and never turning transparent; the centre line passes beside it.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 03. 데코라 · 아워글래스 USSBBW · 무라노 유리 × 코발트 블루 유리
+`la_glassface_hip_03` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in decora makeup — fair skin, bright pastel pink and yellow eyeshadow, thick lashes, large eyes with bright real catchlights, small star and heart stickers on the cheeks only, glossy candy-pink lips, long pastel rainbow hair in twin tails crowded with colourful plastic clips, ribbons and tiny toys kept on the hair, a bright, giddy grin. Real jewelry: On each ear a large primary-colour acrylic ring; a small star-shaped acrylic stud sits in the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, a waistline that still pulls in sharply, then an enormous belly and colossal wide hips flaring out again, thick thighs disappearing out of the bottom of the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid Murano glass, with twisted ribbons of cobalt, red, yellow and white swirling through it with tiny gold flecks suspended between them. Right half: solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand. In the carved hollow of her navel hangs a real jewel — a primary-colour acrylic star drop on a silver barbell — through a clean drilled opening in the material, staying bright real opaque metal and never turning transparent; the centre line passes beside it.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 04. 히메갸루 · 텐트폴 USSBBW · 장미석영 × 에메랄드 그린 유리
+`la_glassface_hip_04` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in hime-gyaru makeup — fair porcelain skin, soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips, huge voluminous light-brown curls with a big pink satin bow, a sweet princess-like smile. Real jewelry: On each ear a big gold hoop with a small pearl drop and a small gold ribbon-shaped stud in the upper ear; a thin gold ring passes through the left nostril. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giant hourglass frame flaring at both ends — shoulders more than four times a normal woman's width, a colossal chest projecting past them, a big round belly, no waist at all, hips as broad as the shoulders, thick thighs disappearing out of the bottom of the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid soft pink rose quartz, with a soft milky haze and a faint star-like inner sheen, the pink deepest where thickest and nearly clear at every thin edge. Right half: solid clear emerald-green cast glass, with slow internal swirls and tiny bubbles, deep bottle-green where thickest and pale lime at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand. In the carved hollow of her navel hangs a real jewel — a pearl drop on a gold barbell — through a clean drilled opening in the material, staying bright real opaque metal and never turning transparent; the centre line passes beside it.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 05. 아게하 · 힙 퀸 · 카넬리안 × 아쿠아마린
+`la_glassface_hip_05` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in age-gyaru makeup — luminous glossy skin with a bright highlighter, thick black eyeliner, extremely long dramatic false lashes top and bottom, large eyes with bright real catchlights, glossy peach-pink lips, towering teased bleached-blonde hair, a confident sparkling expression. Real jewelry: On each ear a large gold chandelier-shaped hoop; a small gold stud sits in the left nostril; a gold hoop passes through the lower lip's edge. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: Her waist cinched to an impossible minimum, making the contrast with the enormous rear utterly extreme: the rear and hips flare to more than four times the width of that narrow waist, an enormous rounded rear projecting far out behind her and merging into the lower back and thighs as one continuous mass, a moderate chest, slim shoulders, the thighs disappearing out of the bottom of the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Right half: solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand. In the carved hollow of her navel hangs a real jewel — a gold chain ending in a small gold ball — through a clean drilled opening in the material, staying bright real opaque metal and never turning transparent; the centre line passes beside it.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 06. 코갸루 · USSBBW 임산부 · 호박 × 빙하 얼음
+`la_glassface_hip_06` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ko-gyaru makeup — deeply sun-tanned bronze makeup over real skin, bold white eyeshadow across the lids, white glossy lips, a bright turquoise liner accent at the outer corners, long lashes, large eyes with bright real catchlights, long bleached blonde hair with sun-streaked highlights, a bright cheeky grin. Real jewelry: A thick silver septum ring hangs below the nose; a big silver hoop passes through the lower lip's edge; on each ear a big silver hoop and one turquoise-enamel ring. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal rounded chest resting on a vast, perfectly round pregnant belly dome, several massive folds of heavy flesh beneath it, no waist at all, colossal wide hips, thick thighs disappearing out of the bottom of the frame. She is in the last weeks of pregnancy.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Right half: solid glacial ice, with deep cyan where thickest, white streaks of compressed layers and trapped air bubbles, frost in every groove. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 07. 비주얼계 · 아워글래스 USSBBW · 설화석고 × 루비색 유리
+`la_glassface_hip_07` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in visual-kei makeup — pale porcelain skin, deep smoky black eyeshadow blended far out beyond the eyes, a sharp black winged liner, long dramatic lashes, large eyes with bright real catchlights, glossy black lips, sharply contoured cheekbones, long teased jet-black hair with silver streaks, a cold, poised expression. Real jewelry: A thick black-steel septum ring hangs below the nose; a thick black-steel bar runs through the outer end of the left eyebrow, clear of the eye; on each ear a big black-steel hoop. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, a waistline that still pulls in sharply, then an enormous belly and colossal wide hips flaring out again, thick thighs disappearing out of the bottom of the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid translucent alabaster, with soft banded veining and a gentle inner glow, brightest where thinnest. Right half: solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand. In the carved hollow of her navel hangs a real jewel — a black-steel barbell with a small silver spike hanging from it — through a clean drilled opening in the material, staying bright real opaque metal and never turning transparent; the centre line passes beside it.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 08. 요루바 신부 화장(나이지리아) · 아워글래스 USSBBW 임산부 · 스모키 블랙 유리 × 시트린
+`la_glassface_hip_08` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Yoruba Nigerian woman in Yoruba bridal makeup — rich deep brown skin with a golden highlighter on the cheekbones, warm gold and bronze eyeshadow blended up to the brow bone, sharply defined arched brows, a precise winged liner, long dramatic lashes, large eyes with bright real catchlights, a deep wine-red glossy lip, a large sculpted gele head-wrap of stiff gold-and-cream fabric folded high above her head, a poised, joyful, radiant expression. Real jewelry: A thin gold ring passes through the left nostril; on each ear a big gold hoop with a red-enamel bead. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A colossal heavy chest wider than her shoulders, a waistline that pulls in sharply beneath it, then a vast, perfectly round pregnant belly dome, colossal wide hips, thick thighs disappearing out of the bottom of the frame. She is in the last weeks of pregnancy.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Right half: solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 09. 화환 화장(우크라이나) · 텐트폴 USSBBW 임산부 · 에메랄드 × 로즈핑크 유리
+`la_glassface_hip_09` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Ukrainian woman in folk-portrait makeup — fair, luminous skin, round warm red blush high on the cheeks, dark strongly defined straight brows, soft brown eyeshadow, long lashes, large blue-grey eyes with bright real catchlights, a natural deep rose lip, long light-brown hair in a thick braid over one shoulder, and a wreath of real red poppies, blue cornflowers and wheat ears sitting on top of the head, a warm, calm expression. Real jewelry: A small silver bar runs through the outer end of the left eyebrow, clear of the eye; on each ear a big silver hoop with a red-enamel bead. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A giant hourglass frame flaring at the shoulders, a colossal chest projecting past them, a vast, perfectly round pregnant belly dome, hips as broad as the shoulders, thick thighs disappearing out of the bottom of the frame. She is in the last weeks of pregnancy.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Right half: solid pale rose-pink cast glass, with soft internal swirls and tiny bubbles, deepest rose where thickest and nearly clear at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 힙 10. 소피아 로렌풍(이탈리아) · 힙 퀸 · 루비색 유리 × 비취
+`la_glassface_hip_10` · 2:3
+
+```
+Professional fashion photograph, three-quarter body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down through the hips, the frame cutting off across the upper thighs so no knees, lower legs or feet are visible. Her face sits large and sharp in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Italian woman in 1960s Italian film-star makeup — warm olive skin, thick strongly arched dark brows, a long black liner winging up and out at the outer corner of each eye, soft brown eyeshadow, long lashes, large dark eyes with bright real catchlights, a deep red lip with a defined edge, thick glossy dark-brown hair set in a high backcombed style, a smouldering, confident expression. Real jewelry: A small gold stud sits in the left nostril; on each ear a large pearl drop and a gold clip. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: Her waist cinched to an impossible minimum, making the contrast with the enormous rear utterly extreme: the rear and hips flare to more than four times the width of that narrow waist, an enormous rounded rear projecting far out behind her and merging into the lower back and thighs as one continuous mass, a moderate chest, slim shoulders, the thighs disappearing out of the bottom of the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, hip and upper thigh): solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Right half: solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and hip creases cut into the material itself as grooves. The arms flow into the torso and the torso into the thighs with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand. In the carved hollow of her navel hangs a real jewel — a pearl drop on a gold barbell — through a clean drilled opening in the material, staying bright real opaque metal and never turning transparent; the centre line passes beside it.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest, belly and between the hips and thighs and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) resting on her flared hip, her right hand (solid material) held clear of her body at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 전신 01 · 야마바 · 콜로설 · 빙하 얼음 × 자수정
+`la_glassface_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in yamanba makeup — a deep bronze tan foundation over real skin, wide stark-white paint bands above and below both eyes lying on the lids and never across the eyeballs, neon pink and turquoise eyeshadow, long false lashes, large eyes with bright real catchlights, glossy white lips, small star and heart rhinestone stickers on the cheeks only, long teased neon pink and lime hair, a bold cheeky grin. Real jewelry: A big neon-acrylic hoop and a small silver star stud on each ear. In the carved hollow of her navel hangs a neon-acrylic star dangling from a silver barbell. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A towering giantess on an even scale at full head-to-toe height — massive rounded shoulders, huge thick arms, a colossal full chest, a broad heavy torso with a large smooth rounded belly, wide solid hips, enormous columnar thighs running long into thick calves and long legs to the floor. No single part stands out more than another.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid glacial ice, with deep cyan where thickest, white streaks of compressed layers and trapped air bubbles, frost in every groove. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and creases cut into the material itself as grooves. The arms flow into the torso and the torso into the legs with no seam. Every wrist, palm, finger and knuckle is the same material as its arm, and every toe and the sole of each foot is the same material as its leg, with no skin texture on any hand or foot.
+
+Footwear: extreme platform stiletto boots carved from the same material as the leg each one sits under, the material running unbroken through the ankle, the instep and every toe, nothing painted on the foot.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. The navel jewel stays bright real opaque metal and never turns transparent. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 전신 02 · 히메갸루 · 바스트 퀸 BBW · 로즈핑크 유리 × 사파이어
+`la_glassface_full_02` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in hime-gyaru makeup — fair porcelain skin, soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips, huge voluminous light-brown curls with a big pink satin bow, a sweet princess-like smile. Real jewelry: On each ear a big gold hoop with a small pearl drop; a thin gold ring passes through the left nostril. In the carved hollow of her navel hangs a pearl drop on a gold barbell. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A towering woman standing full height on long legs, never short or squat. A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms and resting on a big rounded belly, broad soft shoulders, thick heavy arms, soft wide hips and colossal soft thighs running long into thick calves.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid pale rose-pink cast glass, with soft internal swirls and tiny bubbles, deepest rose where thickest and nearly clear at every thin edge. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and creases cut into the material itself as grooves. The arms flow into the torso and the torso into the legs with no seam. Every wrist, palm, finger and knuckle is the same material as its arm, and every toe and the sole of each foot is the same material as its leg, with no skin texture on any hand or foot.
+
+Footwear: extreme platform stiletto sandals carved from the same material as the leg each one sits under, the material running unbroken through the ankle, the instep and every toe, nothing painted on the foot.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. The navel jewel stays bright real opaque metal and never turns transparent. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 전신 03 · 요루바 신부 화장(나이지리아) · 아워글래스 USSBBW · 에메랄드 × 호박
+`la_glassface_full_03` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Yoruba Nigerian woman in Yoruba bridal makeup — rich deep brown skin with a golden highlighter on the cheekbones, warm gold and bronze eyeshadow blended up to the brow bone, sharply defined arched brows, a precise winged liner, long dramatic lashes, large eyes with bright real catchlights, a deep wine-red glossy lip, a large sculpted gele head-wrap of stiff gold-and-cream fabric folded high above her head, a poised, joyful, radiant expression. Real jewelry: A thin gold ring passes through the left nostril; on each ear a big gold hoop with a red-enamel bead. In the carved hollow of her navel hangs a gold barbell with a small red-enamel bead. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A towering hourglass woman of extraordinary volume standing tall on long legs, never short or squat. A colossal heavy chest wider than her shoulders, a waistline that still pulls in sharply even at this size, then an enormous belly of massive rounded folds and colossal wide hips flaring out again, massive thick thighs pressing together and running long to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and creases cut into the material itself as grooves. The arms flow into the torso and the torso into the legs with no seam. Every wrist, palm, finger and knuckle is the same material as its arm, and every toe and the sole of each foot is the same material as its leg, with no skin texture on any hand or foot.
+
+Footwear: extreme platform stiletto sandals carved from the same material as the leg each one sits under, the material running unbroken through the ankle, the instep and every toe, nothing painted on the foot.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. The navel jewel stays bright real opaque metal and never turns transparent. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 전신 04 · 화환 화장(우크라이나) · 텐트폴 USSBBW · 시트린 × 코발트 블루 유리
+`la_glassface_full_04` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Ukrainian woman in folk-portrait makeup — fair, luminous skin, round warm red blush high on the cheeks, dark strongly defined straight brows, soft brown eyeshadow, long lashes, large blue-grey eyes with bright real catchlights, a natural deep rose lip, long light-brown hair in a thick braid over one shoulder, and a wreath of real red poppies, blue cornflowers and wheat ears sitting on top of the head, a warm, calm expression. Real jewelry: A small silver bar runs through the outer end of the left eyebrow, clear of the eye; on each ear a big silver hoop with a red-enamel bead. In the carved hollow of her navel hangs a silver barbell with a small red-enamel bead. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A towering tentpole USSBBW woman standing tall on long legs, never short or squat. Shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the shoulders, a broad heavy torso with a big round belly, no waist at all, hips as broad as the shoulders, thighs running long into thick calves and long legs to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Right half: solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and creases cut into the material itself as grooves. The arms flow into the torso and the torso into the legs with no seam. Every wrist, palm, finger and knuckle is the same material as its arm, and every toe and the sole of each foot is the same material as its leg, with no skin texture on any hand or foot.
+
+Footwear: extreme platform stiletto sandals carved from the same material as the leg each one sits under, the material running unbroken through the ankle, the instep and every toe, nothing painted on the foot.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. The navel jewel stays bright real opaque metal and never turns transparent. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 전신 05 · 비주얼계 · 톱헤비 아워글래스 · 설화석고 × 루비색 유리
+`la_glassface_full_05` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in visual-kei makeup — pale porcelain skin, deep smoky black eyeshadow blended far out beyond the eyes, a sharp black winged liner, long dramatic lashes, large eyes with bright real catchlights, glossy black lips, sharply contoured cheekbones, long teased jet-black hair with silver streaks, a cold, poised expression. Real jewelry: A thick black-steel septum ring hangs below the nose; a thick black-steel bar runs through the outer end of the left eyebrow, clear of the eye; on each ear a big black-steel hoop. In the carved hollow of her navel hangs a black-steel barbell with a small silver spike hanging from it. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A towering top-heavy hourglass woman standing tall on long legs, never short or squat. A colossal chest far wider than her shoulders curving forward as one enormous rounded mass, a waist that pulls in sharply below it, enormous round hips flaring out to more than twice the width of her shoulders, colossal thick thighs pressing together down to the knees and thick calves running long to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid translucent alabaster, with soft banded veining and a gentle inner glow, brightest where thinnest. Right half: solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and creases cut into the material itself as grooves. The arms flow into the torso and the torso into the legs with no seam. Every wrist, palm, finger and knuckle is the same material as its arm, and every toe and the sole of each foot is the same material as its leg, with no skin texture on any hand or foot.
+
+Footwear: extreme platform stiletto boots carved from the same material as the leg each one sits under, the material running unbroken through the ankle, the instep and every toe, nothing painted on the foot.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. The navel jewel stays bright real opaque metal and never turns transparent. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 전신 06 · 아게하 · 애슬리트 USSBBW · 무라노 유리 × 아쿠아마린
+`la_glassface_full_06` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in age-gyaru makeup — luminous glossy skin with a bright highlighter, thick black eyeliner, extremely long dramatic false lashes top and bottom, large eyes with bright real catchlights, glossy peach-pink lips, towering teased bleached-blonde hair, a confident sparkling expression. Real jewelry: On each ear a large gold chandelier-shaped hoop; a small gold stud sits in the left nostril; a gold hoop passes through the lower lip's edge. In the carved hollow of her navel hangs a gold chain ending in a small gold ball. All jewelry is opaque metal, pearl, enamel or acrylic. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Physique: A towering, immensely powerful woman standing full height on long legs, never short or squat, the body of a world's strongest woman under a thick layer of soft fat — enormously broad thick shoulders, massive arms, a colossal chest, a huge barrel torso with a big round belly, no waist at all, colossal wide hips and tree-trunk thighs running long to the floor. The muscle is huge but rounded and buried.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid Murano glass, with twisted ribbons of cobalt, red, yellow and white swirling through it with tiny gold flecks suspended between them. Right half: solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest, belly folds and creases cut into the material itself as grooves. The arms flow into the torso and the torso into the legs with no seam. Every wrist, palm, finger and knuckle is the same material as its arm, and every toe and the sole of each foot is the same material as its leg, with no skin texture on any hand or foot.
+
+Footwear: extreme platform stiletto sandals carved from the same material as the leg each one sits under, the material running unbroken through the ankle, the instep and every toe, nothing painted on the foot.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. The navel jewel stays bright real opaque metal and never turns transparent. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face only; a strong backlight through each half so both sides glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 피어싱 8 · 프렌치 레드립(프랑스) · 바스트 퀸 BBW · 코발트 블루 유리 × 호박
+`la_glassface_bustp_8` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult French woman in French red-lip makeup — fair natural skin with a light dewy finish, softly brushed natural brows, a barely-there brown liner and fluttering lashes, no eyeshadow, soft natural colour on the cheeks, large eyes with bright real catchlights, a single bold classic red lip with a soft matte finish, long dark-brown hair in an effortless tousled updo, an unbothered, effortless expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: On each ear a huge thick gold hoop hanging clear of the neck down to the shoulder, a wide gold ear cuff, a large gold stud and a small helix ring. All jewelry is real yellow gold, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 피어싱 25 · 홍콩풍 · 톱헤비 아워글래스 · 비취 × 루비색 유리
+`la_glassface_bustp_25` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in Hong Kong-style makeup — fair matte skin with a soft powdery finish, thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge, hair set in glossy voluminous old-film waves, a poised, glamorous expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: A thin gold septum ring hangs below the nose with a smaller ring above it, and a gold ring passes through each nostril; two thin gold bars pass through the outer end of each eyebrow; a gold Medusa stud sits above the lips; a gold hoop passes through the lower lip's edge with a snake-bite ring on each side and one small ring beside it; a gold labret stud and one ring pass through the chin; one small gold stud sits on each jaw; on each ear four oversized pieces — a huge gold hoop hanging clear of the neck down to the shoulder, a wide ear cuff, a large pearl drop and a helix ring. All jewelry is real gold with a few pearl drops, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal chest far wider than her shoulders, curving forward as one enormous rounded mass, soft heavy shoulders, thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Right half: solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 피어싱 50 · 락혼 글램(태국) · 아워글래스 USSBBW · 자수정 × 카넬리안
+`la_glassface_bustp_50` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Thai woman in lakorn-drama glam makeup — flawless pale-golden skin, sharply defined dark brows, a precise black winged liner with a strong flick, warm brown-bronze eyeshadow, long dramatic lashes, large eyes with bright real catchlights, strong contour under the cheekbones, deep red glossy lips with a crisp edge, long glossy black waves, a poised, dramatic expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, dense array of large real metal piercings: a thick gold septum ring with a smaller gold ring above it and two gold rings through each nostril; a straight gold bar across the bridge of the nose between the brows; three thick gold bars stacked through the outer half of each eyebrow; a gold Medusa stud above the lips; a big gold hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and a row of small hoops through the upper lip's edge; a gold labret stud and two rings through the chin; a row of small gold studs along each jaw; a curved row of small gold studs along each cheekbone; on each ear a full dense row from lobe to top of oversized gold hoops, thick bars and stretched plugs, the biggest hoops hanging clear of the neck down to the shoulders; and two fine gold chains looping from the ear hoops to the nostril rings. All jewelry is real gold, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal heavy chest wider than her shoulders, broad soft shoulders, thick heavy arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Right half: solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 피어싱 100 · 발칸 글램(루마니아·불가리아) · 텐트폴 USSBBW · 스모키 블랙 유리 × 시트린
+`la_glassface_bustp_100` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Romanian woman in Balkan glam makeup — warm fair-olive skin, thick dark straight-edged brows, a heavy black liner smoked out at the outer corners, deep brown shadow blended up to the crease, long dense lashes, large dark eyes with bright real catchlights, sculpted contour, a deep red matte lip with a crisp edge, long dark-brown hair in glossy voluminous waves, an intense, proud expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, dense armour of about one hundred real gold piercings with a few gold coin drops among them covering the face: a thick gold septum ring with a smaller ring above it and two gold rings through each nostril; a straight gold bar across the bridge of the nose between the brows; five thick gold bars stacked through the outer half of each eyebrow; two rows of four small gold studs across the forehead above the brows; four small studs up each temple on the bone, well clear of the eyes; a row of six small studs along each cheekbone; a gold Medusa stud above the lips; a big gold hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and five small hoops along the upper lip's edge; a gold labret stud and four rings through the chin; five small studs along each jaw; on each ear a full dense row of ten oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; and eight fine gold chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real gold with a few gold coin drops, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A giant frame flaring at the shoulders — lats spreading to shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the line of the shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Right half: solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 피어싱 150 · 텔레노벨라 글램(멕시코·콜롬비아) · 콜로설 · 에메랄드 × 로즈핑크 유리
+`la_glassface_bustp_150` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Latina woman in telenovela glam makeup — warm golden-bronze skin, a sharp black winged liner, warm terracotta eyeshadow, heavy lashes, strong sculpted contour, large dark eyes with bright real catchlights, a deep berry lip, long voluminous dark-brown waves swept over one shoulder, a fiery, passionate expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, overwhelming armour of about one hundred and fifty real gold piercings with a few red-enamel beads among them covering the face and neck: a thick gold septum ring with a smaller ring above it, three gold rings through each nostril and a small stud at the tip of the nose; two straight gold bars across the bridge of the nose between the brows; six thick gold bars stacked through the outer half of each eyebrow; three rows of five small gold studs across the forehead above the brows; six small studs up each temple on the bone, well clear of the eyes; two rows of six small studs along each cheekbone; a gold Medusa stud above the lips with a small stud on each side of it; a big gold hoop, four smaller rings and a snake-bite ring on each side through the lower lip's edge, and six small hoops along the upper lip's edge; a gold labret stud and five rings through the chin; six small studs along each jaw; a column of five small studs down each side of the neck; on each ear a full dense row of twelve oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; and ten fine gold chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real gold with a few red-enamel beads, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A giantess on an even scale — massive rounded shoulders spanning more than four head-widths, huge thick arms, a colossal full chest, no single part standing out.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Right half: solid pale rose-pink cast glass, with soft internal swirls and tiny bubbles, deepest rose where thickest and nearly clear at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 피어싱 K1 · 파케앙트 글램(필리핀) · 아워글래스 SSBBW · 에메랄드 그린 유리 × 장미석영
+`la_glassface_bustp_k1` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Filipina woman in pageant glam makeup — warm tan skin, heavy sculpted contour and a glowing highlighter on the cheekbones, smoky bronze and gold glitter eyeshadow, dramatic long lashes, defined dark brows, large eyes with bright real catchlights, glossy coral-red lips, long voluminous chestnut waves, a bright, confident pageant smile. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, dense array of large real metal piercings: a thick silver septum ring with a smaller silver ring above it and two silver rings through each nostril; a straight silver bar across the bridge of the nose between the brows; three thick silver bars stacked through the outer half of each eyebrow; a silver Medusa stud above the lips; a big silver hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and a row of small hoops through the upper lip's edge; a silver labret stud and two rings through the chin; a row of small silver studs along each jaw; a curved row of small silver studs along each cheekbone; on each ear a full dense row from lobe to top of oversized silver hoops, thick bars and stretched plugs, the biggest hoops hanging clear of the neck down to the shoulders; and two fine silver chains looping from the ear hoops to the nostril rings. From the ear hoops (three on each ear), from the big lower-lip hoop, from the nose ring and from the chin ring hang about ten small light charms on short fine chains — a tiny star, a heart, a ribbon bow, a small teddy-bear charm, a short bead string, a small acrylic letter tag and a rhinestone bottle in pastel enamel and acrylic — each swinging clear of the face. All charms are light, small and generic (no branded or licensed characters), hanging from the rings on short fine chains, never pulling the skin, none near the eyes or brows, and none hanging lower than the collarbones. All jewelry is real silver with pastel enamel and acrylic charms, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal heavy chest, soft round shoulders, very thick soft arms, her upper body filling the frame.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid clear emerald-green cast glass, with slow internal swirls and tiny bubbles, deep bottle-green where thickest and pale lime at every thin edge. Right half: solid soft pink rose quartz, with a soft milky haze and a faint star-like inner sheen, the pink deepest where thickest and nearly clear at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 가슴 피어싱 K2 · 서아프리카 파티·웨딩 글램 · 바스트 퀸 BBW · 무라노 유리 × 사파이어
+`la_glassface_bustp_k2` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Nigerian woman in West African party-glam makeup — rich deep brown skin with a golden highlighter glowing on the cheekbones, bold shimmering gold and emerald eyeshadow blended out toward the temples, dramatic long lashes, sharply defined brows, large eyes with bright real catchlights, a strong glossy fuchsia-pink lip, long braids piled into a high sculpted crown, a bright, joyful smile. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, dense armour of about one hundred real gold piercings with a few gold beads among them covering the face: a thick gold septum ring with a smaller ring above it and two gold rings through each nostril; a straight gold bar across the bridge of the nose between the brows; five thick gold bars stacked through the outer half of each eyebrow; two rows of four small gold studs across the forehead above the brows; four small studs up each temple on the bone, well clear of the eyes; a row of six small studs along each cheekbone; a gold Medusa stud above the lips; a big gold hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and five small hoops along the upper lip's edge; a gold labret stud and four rings through the chin; five small studs along each jaw; on each ear a full dense row of ten oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; and eight fine gold chains looping from the ear hoops to the nostril rings and the septum ring. From the ear hoops (three on each ear), from the big lower-lip hoop, from the nose ring and from the chin ring hang about twenty small light charms on short fine chains — tiny stars, hearts, ribbon bows, small teddy-bear charms, bead strings, pearl strings, small bells, safety pins, feathers, tassels, acrylic letter tags and rhinestone bottles in pastel enamel, acrylic and pearl — each swinging clear of the face. A fine chain curtain hangs in loops from the ear hoops along the jawline, never across the cheeks or eyes, and a thin chain is draped over the hair from ear to ear. All charms are light, small and generic (no branded or licensed characters), hanging from the rings on short fine chains, never pulling the skin, none near the eyes or brows, and none hanging lower than the collarbones. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real gold with gold beads and many small charms, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid Murano glass, with twisted ribbons of cobalt, red, yellow and white swirling through it with tiny gold flecks suspended between them. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the chest with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 피어싱 8 · 프렌치 레드립(프랑스) · 아워글래스 SSBBW · 사파이어 × 시트린
+`la_glassface_waistp_8` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult French woman in French red-lip makeup — fair natural skin with a light dewy finish, softly brushed natural brows, a barely-there brown liner and fluttering lashes, no eyeshadow, soft natural colour on the cheeks, large eyes with bright real catchlights, a single bold classic red lip with a soft matte finish, long dark-brown hair in an effortless tousled updo, an unbothered, effortless expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: On each ear a huge thick gold hoop hanging clear of the neck down to the shoulder, a wide gold ear cuff, a large gold stud and a small helix ring. All jewelry is real yellow gold, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal heavy chest, a still-visible cinched waist, a big soft rounded belly below the waistline hanging heavily, very thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Right half: solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses, and the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 피어싱 25 · 홍콩풍 · 아워글래스 USSBBW · 에메랄드 × 카넬리안
+`la_glassface_waistp_25` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in Hong Kong-style makeup — fair matte skin with a soft powdery finish, thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge, hair set in glossy voluminous old-film waves, a poised, glamorous expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: A thin gold septum ring hangs below the nose with a smaller ring above it, and a gold ring passes through each nostril; two thin gold bars pass through the outer end of each eyebrow; a gold Medusa stud sits above the lips; a gold hoop passes through the lower lip's edge with a snake-bite ring on each side and one small ring beside it; a gold labret stud and one ring pass through the chin; one small gold stud sits on each jaw; on each ear four oversized pieces — a huge gold hoop hanging clear of the neck down to the shoulder, a wide ear cuff, a large pearl drop and a helix ring. All jewelry is real gold with a few pearl drops, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal heavy chest wider than her shoulders, directly below it a waistline that still pulls in sharply even at this size, then an enormous soft belly of massive rounded folds spilling out beneath it, her upper body filling the frame edge to edge.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Right half: solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses, and the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 피어싱 50 · 락혼 글램(태국) · 머슬 아워글래스 BBW · 루비색 유리 × 아쿠아마린
+`la_glassface_waistp_50` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Thai woman in lakorn-drama glam makeup — flawless pale-golden skin, sharply defined dark brows, a precise black winged liner with a strong flick, warm brown-bronze eyeshadow, long dramatic lashes, large eyes with bright real catchlights, strong contour under the cheekbones, deep red glossy lips with a crisp edge, long glossy black waves, a poised, dramatic expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, dense array of large real metal piercings: a thick gold septum ring with a smaller gold ring above it and two gold rings through each nostril; a straight gold bar across the bridge of the nose between the brows; three thick gold bars stacked through the outer half of each eyebrow; a gold Medusa stud above the lips; a big gold hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and a row of small hoops through the upper lip's edge; a gold labret stud and two rings through the chin; a row of small gold studs along each jaw; a curved row of small gold studs along each cheekbone; on each ear a full dense row from lobe to top of oversized gold hoops, thick bars and stretched plugs, the biggest hoops hanging clear of the neck down to the shoulders; and two fine gold chains looping from the ear hoops to the nostril rings. All jewelry is real gold, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A thick soft layer over huge muscle, broad powerful shoulders, thick heavy arms with rounded biceps, a colossal soft chest, a cinched waist above a soft rounded belly, more soft than hard.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Right half: solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses, and the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 피어싱 100 · 발칸 글램(루마니아·불가리아) · USSBBW · 코발트 블루 유리 × 호박
+`la_glassface_waistp_100` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Romanian woman in Balkan glam makeup — warm fair-olive skin, thick dark straight-edged brows, a heavy black liner smoked out at the outer corners, deep brown shadow blended up to the crease, long dense lashes, large dark eyes with bright real catchlights, sculpted contour, a deep red matte lip with a crisp edge, long dark-brown hair in glossy voluminous waves, an intense, proud expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, dense armour of about one hundred real gold piercings with a few gold coin drops among them covering the face: a thick gold septum ring with a smaller ring above it and two gold rings through each nostril; a straight gold bar across the bridge of the nose between the brows; five thick gold bars stacked through the outer half of each eyebrow; two rows of four small gold studs across the forehead above the brows; four small studs up each temple on the bone, well clear of the eyes; a row of six small studs along each cheekbone; a gold Medusa stud above the lips; a big gold hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and five small hoops along the upper lip's edge; a gold labret stud and four rings through the chin; five small studs along each jaw; on each ear a full dense row of ten oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; and eight fine gold chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real gold with a few gold coin drops, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal rounded chest spilling wide past the shoulders, an enormous belly of massive rounded folds hanging low and heavy, no waist at all, upper arms so thick they are pushed out almost horizontally from her sides.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses, and the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 피어싱 150 · 텔레노벨라 글램(멕시코·콜롬비아) · 콜로설 · 비취 × 자수정
+`la_glassface_waistp_150` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Latina woman in telenovela glam makeup — warm golden-bronze skin, a sharp black winged liner, warm terracotta eyeshadow, heavy lashes, strong sculpted contour, large dark eyes with bright real catchlights, a deep berry lip, long voluminous dark-brown waves swept over one shoulder, a fiery, passionate expression. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, overwhelming armour of about one hundred and fifty real gold piercings with a few red-enamel beads among them covering the face and neck: a thick gold septum ring with a smaller ring above it, three gold rings through each nostril and a small stud at the tip of the nose; two straight gold bars across the bridge of the nose between the brows; six thick gold bars stacked through the outer half of each eyebrow; three rows of five small gold studs across the forehead above the brows; six small studs up each temple on the bone, well clear of the eyes; two rows of six small studs along each cheekbone; a gold Medusa stud above the lips with a small stud on each side of it; a big gold hoop, four smaller rings and a snake-bite ring on each side through the lower lip's edge, and six small hoops along the upper lip's edge; a gold labret stud and five rings through the chin; six small studs along each jaw; a column of five small studs down each side of the neck; on each ear a full dense row of twelve oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; and ten fine gold chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real gold with a few red-enamel beads, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A giantess on an even scale — massive rounded shoulders spanning more than four head-widths, huge thick arms, a colossal full chest, a broad heavy torso with a large smooth rounded belly, no single part standing out.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses, and the grooves and belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 피어싱 K1 · 파케앙트 글램(필리핀) · 아워글래스 USSBBW 임산부 · 스모키 블랙 유리 × 장미석영
+`la_glassface_waistp_k1` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Filipina woman in pageant glam makeup — warm tan skin, heavy sculpted contour and a glowing highlighter on the cheekbones, smoky bronze and gold glitter eyeshadow, dramatic long lashes, defined dark brows, large eyes with bright real catchlights, glossy coral-red lips, long voluminous chestnut waves, a bright, confident pageant smile. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, dense array of large real metal piercings: a thick silver septum ring with a smaller silver ring above it and two silver rings through each nostril; a straight silver bar across the bridge of the nose between the brows; three thick silver bars stacked through the outer half of each eyebrow; a silver Medusa stud above the lips; a big silver hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and a row of small hoops through the upper lip's edge; a silver labret stud and two rings through the chin; a row of small silver studs along each jaw; a curved row of small silver studs along each cheekbone; on each ear a full dense row from lobe to top of oversized silver hoops, thick bars and stretched plugs, the biggest hoops hanging clear of the neck down to the shoulders; and two fine silver chains looping from the ear hoops to the nostril rings. From the ear hoops (three on each ear), from the big lower-lip hoop, from the nose ring and from the chin ring hang about ten small light charms on short fine chains — a tiny star, a heart, a ribbon bow, a small teddy-bear charm, a short bead string, a small acrylic letter tag and a rhinestone bottle in pastel enamel and acrylic — each swinging clear of the face. All charms are light, small and generic (no branded or licensed characters), hanging from the rings on short fine chains, never pulling the skin, none near the eyes or brows, and none hanging lower than the collarbones. All jewelry is real silver with pastel enamel and acrylic charms, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal heavy chest wider than her shoulders, a waistline that pulls in sharply beneath it, then a vast, perfectly round pregnant belly dome swelling far out in front of her with heavy folds hanging beneath the dome. She is in the last weeks of pregnancy.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Right half: solid soft pink rose quartz, with a soft milky haze and a faint star-like inner sheen, the pink deepest where thickest and nearly clear at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses, and the grooves and belly folds cut into the material itself. The pregnant belly is one smooth swelling of the material, its surface the material's own polished curve. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Glass Face 허리 피어싱 K2 · 서아프리카 파티·웨딩 글램 · USSBBW 임산부 · 투명 레진 × 사파이어
+`la_glassface_waistp_k2` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame, and her ear pieces are oversized so they read clearly at this distance. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Nigerian woman in West African party-glam makeup — rich deep brown skin with a golden highlighter glowing on the cheekbones, bold shimmering gold and emerald eyeshadow blended out toward the temples, dramatic long lashes, sharply defined brows, large eyes with bright real catchlights, a strong glossy fuchsia-pink lip, long braids piled into a high sculpted crown, a bright, joyful smile. Her whole face, ears and neck are real living flesh with real pores and fine skin grain — a photograph of a real face, not an illustration.
+
+Piercings: An extreme, dense armour of about one hundred real gold piercings with a few gold beads among them covering the face: a thick gold septum ring with a smaller ring above it and two gold rings through each nostril; a straight gold bar across the bridge of the nose between the brows; five thick gold bars stacked through the outer half of each eyebrow; two rows of four small gold studs across the forehead above the brows; four small studs up each temple on the bone, well clear of the eyes; a row of six small studs along each cheekbone; a gold Medusa stud above the lips; a big gold hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and five small hoops along the upper lip's edge; a gold labret stud and four rings through the chin; five small studs along each jaw; on each ear a full dense row of ten oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; and eight fine gold chains looping from the ear hoops to the nostril rings and the septum ring. From the ear hoops (three on each ear), from the big lower-lip hoop, from the nose ring and from the chin ring hang about twenty small light charms on short fine chains — tiny stars, hearts, ribbon bows, small teddy-bear charms, bead strings, pearl strings, small bells, safety pins, feathers, tassels, acrylic letter tags and rhinestone bottles in pastel enamel, acrylic and pearl — each swinging clear of the face. A fine chain curtain hangs in loops from the ear hoops along the jawline, never across the cheeks or eyes, and a thin chain is draped over the hair from ear to ear. All charms are light, small and generic (no branded or licensed characters), hanging from the rings on short fine chains, never pulling the skin, none near the eyes or brows, and none hanging lower than the collarbones. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real gold with gold beads and many small charms, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Physique: A colossal rounded chest spilling wide past the shoulders and resting on a vast, perfectly round pregnant belly dome, several massive folds of heavy flesh hanging beneath the dome, no waist at all. She is in the last weeks of pregnancy.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid water-clear casting resin, with perfectly clear with a hard glossy surface, tiny gold flakes and slow-rising air bubbles suspended deep inside. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses, and the grooves and belly folds cut into the material itself. The pregnant belly is one smooth swelling of the material, its surface the material's own polished curve. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm, with no skin texture on any hand.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears only, so the makeup and the glints on every piece of metal read clearly; a strong backlight through each half so both sides of the body glow from within; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Real Face 갸루 PP3 · 오네에갸루 · 금
+`la_realface_gyaru_pp3` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in onee-gyaru makeup — smooth healthy skin, defined brown-mauve eyeshadow, a precise winged liner, full natural lashes, large eyes with bright real catchlights, softly contoured cheeks, glossy rose-nude lips, long sleek chestnut waves, a poised, mature, confident expression. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: A thick polished yellow-gold hoop on each ear and one small gold stud above it. All jewelry is real yellow gold, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 갸루 PP5 · 아마갸루 · 로즈골드
+`la_realface_gyaru_pp5` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ama-gyaru makeup — fair skin, pastel pink and lilac eyeshadow, large round eyes enlarged by circle lenses with bright real catchlights, soft round blush, dewy pink lips, long light-brown hair in twin tails tied with pastel ribbons, a sweet, shy smile. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: A big rose-gold hoop on each ear with a small rose-gold stud above it on the left; a small rose-gold ring passes through the left nostril; a thin rose-gold bar passes through the outer end of the left eyebrow. All jewelry is real rose gold, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 갸루 PP9 · 히메갸루 · 동(구리)
+`la_realface_gyaru_pp9` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in hime-gyaru makeup — fair porcelain skin, soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips, huge voluminous light-brown curls with a big pink satin bow, a sweet princess-like smile. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: A thick polished copper septum ring hangs below the nose; two thick copper bars pass through the outer end of the left eyebrow; a copper hoop passes through the lower lip's edge; a copper labret stud sits beneath the lower lip; on each ear a big copper hoop and a thick copper bar. All jewelry is real polished copper, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 갸루 PP18 · 야마바 · 황동 + 네온 아크릴
+`la_realface_gyaru_pp18` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in yamanba makeup — a deep bronze tan foundation over real skin, wide stark-white paint bands above and below both eyes lying on the lids and never across the eyeballs, neon pink and turquoise eyeshadow, long false lashes, large eyes with bright real catchlights, glossy white lips, small star and heart rhinestone stickers on the cheeks only, long teased neon pink and lime hair, a bold cheeky grin. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: A thick antique-brass septum ring hangs below the nose, with a brass ring through each nostril; two thick brass bars pass through the outer half of each eyebrow; a brass Medusa stud sits above the lips; a big brass hoop passes through the lower lip's edge with a snake-bite ring on each side; a brass labret stud sits beneath the lower lip; on each ear a big brass hoop, a thick brass bar and a stretched brass plug ringed in neon acrylic. All jewelry is real antique brass with a few neon-acrylic accents, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 갸루 PP50 · 아게하 · 은
+`la_realface_gyaru_pp50` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in age-gyaru makeup — luminous glossy skin with a bright highlighter, thick black eyeliner, extremely long dramatic false lashes top and bottom, large eyes with bright real catchlights, glossy peach-pink lips, towering teased bleached-blonde hair, a confident sparkling expression. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense array of large real metal piercings: a thick silver septum ring with a smaller silver ring above it and two silver rings through each nostril; a straight silver bar across the bridge of the nose between the brows; three thick silver bars stacked through the outer half of each eyebrow; a silver Medusa stud above the lips; a big silver hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and a row of small hoops through the upper lip's edge; a silver labret stud and two rings through the chin; a row of small silver studs along each jaw; a curved row of small silver studs along each cheekbone; on each ear a full dense row from lobe to top of big silver hoops, thick bars and stretched plugs; and two fine silver chains looping from the ear hoops to the nostril rings. All jewelry is real silver, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 갸루 PP100 · 코갸루 · 청동 + 터키석색 에나멜
+`la_realface_gyaru_pp100` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ko-gyaru makeup — deeply sun-tanned bronze makeup over real skin, bold white eyeshadow across the lids, white glossy lips, a bright turquoise liner accent at the outer corners, long lashes, large eyes with bright real catchlights, long bleached blonde hair with sun-streaked highlights, a bright cheeky grin. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense armour of about one hundred real bronze piercings with a few turquoise-enamel rings among them covering the face: a thick bronze septum ring with a smaller ring above it and two bronze rings through each nostril; a straight bronze bar across the bridge of the nose between the brows; five thick bronze bars stacked through the outer half of each eyebrow; two rows of four small bronze studs across the forehead above the brows; four small studs up each temple on the bone, well clear of the eyes; a row of six small studs along each cheekbone; a bronze Medusa stud above the lips; a big bronze hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and five small hoops along the upper lip's edge; a bronze labret stud and four rings through the chin; five small studs along each jaw; on each ear a full dense row of ten big hoops, thick bars, stretched plugs, helix rings and studs from lobe to top; and eight fine bronze chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real bronze with a few turquoise-enamel rings, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 갸루 PP150 · 로리타 갸루 · 혼합 금속 + 진주
+`la_realface_gyaru_pp150` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in lolita-gyaru makeup — pale rosy skin, large round doll-like eyes enlarged by circle lenses with bright real catchlights, thick curled lashes with drawn-on lower lashes, soft pink and lilac eyeshadow, round pink blush, glossy cherry-pink lips, long honey-brown ringlets with a white lace headdress and satin bow on top, a sweet, playful smile. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, overwhelming armour of about one hundred and fifty real piercings in mixed metals — yellow gold, silver, copper, rose gold and black steel, alternating piece by piece, with a few pearl studs among them — covering the face and neck: a thick septum ring with a smaller ring above it, three rings through each nostril and a small stud at the tip of the nose; two straight bars across the bridge of the nose between the brows; six thick bars stacked through the outer half of each eyebrow; three rows of five small studs across the forehead above the brows; six small studs up each temple on the bone, well clear of the eyes; two rows of six small studs along each cheekbone; a Medusa stud above the lips with a small stud on each side of it; a big hoop, four smaller rings and a snake-bite ring on each side through the lower lip's edge, and six small hoops along the upper lip's edge; a labret stud and five rings through the chin; six small studs along each jaw; a column of five small studs down each side of the neck; on each ear a full dense row of twelve big hoops, thick bars, stretched plugs, helix rings and studs from lobe to top; and ten fine chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real mixed metal (yellow gold, silver, copper, rose gold and black steel, alternating piece by piece) with a few pearl studs, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 한국 P8 · 한복 화보(연지곤지) · 금 + 진주 + 붉은 에나멜
+`la_realface_korean_p8` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in hanbok-editorial makeup — fair porcelain skin, two round red yeonji blush circles painted on the cheeks and a small round red gonji dot at the centre of the forehead, clearly defined dark brows, softly lined eyes with bright real catchlights, small vivid red lips, glossy black hair braided and pinned into a low chignon with a red ribbon, a serene, dignified expression. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: On each ear a gold knot-shaped drop with a red-enamel bead, a small gold hoop, a small pearl stud and a tiny gold stud. All jewelry is real gold with pearl and red enamel, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 한국 P25 · 강남언니 · 로즈골드
+`la_realface_korean_p25` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in Gangnam-eonni makeup — glowing dewy skin, a precise winged liner, softly defined brown eyeshadow, full natural lashes, large eyes with bright real catchlights, sculpted contour with a satin highlight, plump glossy rose-coral lips, long sleek chestnut waves, a poised, refined, confident expression. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: A thin rose-gold septum ring hangs below the nose with a smaller ring above it, and a rose-gold ring passes through each nostril; two thin rose-gold bars pass through the outer end of each eyebrow; a rose-gold Medusa stud sits above the lips; a rose-gold hoop passes through the lower lip's edge with a snake-bite ring on each side and one small ring beside it; a rose-gold labret stud and one ring pass through the chin; one small rose-gold stud sits on each jaw; on each ear a big rose-gold hoop, a thick bar, a helix ring and a small stud. All jewelry is real rose gold, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 한국 P50 · 글래머러스 파티 · 옐로 골드
+`la_realface_korean_p50` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in glamorous party makeup — fair ivory skin, smoky eyes in champagne-gold glitter shadow, a sharp winged liner, full lashes, softly contoured cheekbones with a glowing highlight, large eyes with bright real catchlights, plump glossy gradient lips in deep rose, long sleek black waves, a confident, luminous expression. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense array of large real metal piercings: a thick yellow-gold septum ring with a smaller yellow-gold ring above it and two yellow-gold rings through each nostril; a straight yellow-gold bar across the bridge of the nose between the brows; three thick yellow-gold bars stacked through the outer half of each eyebrow; a yellow-gold Medusa stud above the lips; a big yellow-gold hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and a row of small hoops through the upper lip's edge; a yellow-gold labret stud and two rings through the chin; a row of small yellow-gold studs along each jaw; a curved row of small yellow-gold studs along each cheekbone; on each ear a full dense row from lobe to top of big yellow-gold hoops, thick bars and stretched plugs; and two fine yellow-gold chains looping from the ear hoops to the nostril rings. All jewelry is real yellow gold, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 한국 P100 · 걸크러시 · 은
+`la_realface_korean_p100` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in girl-crush makeup — fair ivory skin, sharply angled thin brows, a razor-sharp winged cat-eye liner extending far past the outer corner, deep brown-black eyeshadow, long lashes, large eyes with bright real catchlights, strongly sculpted contour, a deep wine-red matte lip, long sleek black hair, a cold, commanding gaze. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense armour of about one hundred real metal piercings covering the face: a thick silver septum ring with a smaller ring above it and two silver rings through each nostril; a straight silver bar across the bridge of the nose between the brows; five thick silver bars stacked through the outer half of each eyebrow; two rows of four small silver studs across the forehead above the brows; four small studs up each temple on the bone, well clear of the eyes; a row of six small studs along each cheekbone; a silver Medusa stud above the lips; a big silver hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and five small hoops along the upper lip's edge; a silver labret stud and four rings through the chin; five small studs along each jaw; on each ear a full dense row of ten big hoops, thick bars, stretched plugs, helix rings and studs from lobe to top; and eight fine silver chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real silver, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 한국 P150 · 뱀파이어 다크 · 검은 스틸 + 은
+`la_realface_korean_p150` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in dark vampire makeup — pale porcelain skin, deep burgundy-black shadow smudged heavily beneath both eyes, sharp black liner, long dramatic lashes, large eyes with bright real catchlights, a glossy near-black wine lip, sharply contoured cheekbones, long straight jet-black hair, a cold, poised expression. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, overwhelming armour of about one hundred and fifty real piercings in black steel and silver, alternating piece by piece, covering the face and neck: a thick septum ring with a smaller ring above it, three rings through each nostril and a small stud at the tip of the nose; two straight bars across the bridge of the nose between the brows; six thick bars stacked through the outer half of each eyebrow; three rows of five small studs across the forehead above the brows; six small studs up each temple on the bone, well clear of the eyes; two rows of six small studs along each cheekbone; a Medusa stud above the lips with a small stud on each side of it; a big hoop, four smaller rings and a snake-bite ring on each side through the lower lip's edge, and six small hoops along the upper lip's edge; a labret stud and five rings through the chin; six small studs along each jaw; a column of five small studs down each side of the neck; on each ear a full dense row of twelve big hoops, thick bars, stretched plugs, helix rings and studs from lobe to top; and ten fine chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real black steel and silver, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 한국 P50C1 · Y2K 레트로 · 은 + 파스텔 참
+`la_realface_korean_p50c1` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in Y2K retro makeup — fair ivory skin, bright baby-blue and lavender eyeshadow spread across the whole lid up to the brow bone, silver pearl glitter on the lids, very thin high-arched brows, long lashes, large eyes with bright real catchlights, glossy frosted-pink lips, a small glitter highlight on the cheekbones, long straight silver-lilac hair with two thin front strands, a playful pout. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense array of large real metal piercings: a thick silver septum ring with a smaller silver ring above it and two silver rings through each nostril; a straight silver bar across the bridge of the nose between the brows; three thick silver bars stacked through the outer half of each eyebrow; a silver Medusa stud above the lips; a big silver hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and a row of small hoops through the upper lip's edge; a silver labret stud and two rings through the chin; a row of small silver studs along each jaw; a curved row of small silver studs along each cheekbone; on each ear a full dense row from lobe to top of big silver hoops, thick bars and stretched plugs; and two fine silver chains looping from the ear hoops to the nostril rings. From the ear hoops (three on each ear), from the big lower-lip hoop, from the nose ring and from the chin ring hang about ten small light charms on short fine chains — a tiny star, a heart, a ribbon bow, a small teddy-bear charm, a short bead string, a small acrylic letter tag and a rhinestone bottle in pastel enamel and acrylic — each swinging clear of the face. All charms are light, small and generic (no branded or licensed characters), hanging from the rings on short fine chains, never pulling the skin, none near the eyes or brows, and none hanging lower than the collarbones. All jewelry is real silver with pastel enamel and acrylic charms, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 한국 P100C2 · 인형 메이크업 · 금·은 + 진주 + 참 다수
+`la_realface_korean_p100c2` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in doll makeup — flawless porcelain skin, very large round eyes enlarged by pale circle lenses with bright real catchlights, soft brown eyeshadow with a shimmer under the eyes, long curled lashes, round pink blush on the apples of the cheeks, small gradient rose-pink lips, long straight light-brown hair with a see-through fringe, a calm, doll-like expression. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense armour of about one hundred real piercings in gold and silver, alternating piece by piece, with a few pearl studs among them, covering the face: a thick septum ring with a smaller ring above it and two rings through each nostril; a straight bar across the bridge of the nose between the brows; five thick bars stacked through the outer half of each eyebrow; two rows of four small studs across the forehead above the brows; four small studs up each temple on the bone, well clear of the eyes; a row of six small studs along each cheekbone; a Medusa stud above the lips; a big hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and five small hoops along the upper lip's edge; a labret stud and four rings through the chin; five small studs along each jaw; on each ear a full dense row of ten big hoops, thick bars, stretched plugs, helix rings and studs from lobe to top; and eight fine chains looping from the ear hoops to the nostril rings and the septum ring. From the ear hoops (three on each ear), from the big lower-lip hoop, from the nose ring and from the chin ring hang about twenty small light charms on short fine chains — tiny stars, hearts, ribbon bows, small teddy-bear charms, bead strings, pearl strings, small bells, safety pins, feathers, tassels, acrylic letter tags and rhinestone bottles in pastel enamel, acrylic and pearl — each swinging clear of the face. A fine chain curtain hangs in loops from the ear hoops along the jawline, never across the cheeks or eyes, and a thin chain is draped over the hair from ear to ear. All charms are light, small and generic (no branded or licensed characters), hanging from the rings on short fine chains, never pulling the skin, none near the eyes or brows, and none hanging lower than the collarbones. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real gold, silver and pearl with many small charms, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 입 안 축 P25 · 코갸루 · 치아 젬 + 혀 피어싱 · 은 + 터키석색 에나멜
+`la_realface_mouth_p25_kogal` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ko-gyaru makeup — deeply sun-tanned bronze makeup over real skin, bold white eyeshadow across the lids, white glossy lips, a bright turquoise liner accent at the outer corners, long lashes, large eyes with bright real catchlights, long bleached blonde hair with sun-streaked highlights, a bright cheeky grin, the lips parted in a bright grin so the upper front teeth and the tip of the tongue show. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: A thin silver septum ring hangs below the nose with a smaller ring above it, and a silver ring passes through each nostril; two thin silver bars pass through the outer end of each eyebrow; a silver Medusa stud sits above the lips; a silver hoop passes through the lower lip's edge with a snake-bite ring on each side and one small ring beside it; a silver labret stud and one ring pass through the chin; one small silver stud sits on each jaw; on each ear a big silver hoop, a thick bar, a helix ring and a small stud. All jewelry is real silver with a few turquoise-enamel rings, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Mouth: two small clear crystals set in silver are bonded to the surface of two upper front teeth, tiny and bright, catching the light. A silver barbell with two small turquoise round ends passes through the middle of the tongue, the tongue tip raised playfully behind the upper teeth so both round ends of the barbell show and catch the light. The teeth are natural, white and clean, and the tongue is a healthy pink, calm and healed, with no blood and no swelling.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 입 안 축 P25 · 히메갸루 · 치아 젬 + 혀 피어싱 · 로즈골드 + 진주
+`la_realface_mouth_p25_hime` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in hime-gyaru makeup — fair porcelain skin, soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips, huge voluminous light-brown curls with a big pink satin bow, a sweet princess-like smile, the lips parted in a sweet smile so the upper front teeth and the tip of the tongue show. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: A thin rose-gold septum ring hangs below the nose with a smaller ring above it, and a rose-gold ring passes through each nostril; two thin rose-gold bars pass through the outer end of each eyebrow; a rose-gold Medusa stud sits above the lips; a rose-gold hoop passes through the lower lip's edge with a snake-bite ring on each side and one small ring beside it; a rose-gold labret stud and one ring pass through the chin; one small rose-gold stud sits on each jaw; on each ear a big rose-gold hoop, a thick bar, a helix ring and a small stud. All jewelry is real rose gold with a few small pearl studs, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Mouth: two small pale-pink crystals set in rose gold are bonded to the surface of two upper front teeth, tiny and bright, catching the light. A rose-gold barbell with two small pearl round ends passes through the middle of the tongue, the tongue tip raised playfully behind the upper teeth so both round ends of the barbell show and catch the light. The teeth are natural, white and clean, and the tongue is a healthy pink, calm and healed, with no blood and no swelling.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 입 안 축 P25 · 걸크러시 · 치아 젬 + 혀 피어싱 · 검은 스틸 + 은
+`la_realface_mouth_p25_girlcrush` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Korean woman in girl-crush makeup — fair ivory skin, sharply angled thin brows, a razor-sharp winged cat-eye liner extending far past the outer corner, deep brown-black eyeshadow, long lashes, large eyes with bright real catchlights, strongly sculpted contour, a deep wine-red matte lip, long sleek black hair, a cold, commanding gaze, the lips slightly parted in a cool, confident smirk so the upper front teeth and the tip of the tongue show. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: A thin black-steel septum ring hangs below the nose with a smaller ring above it, and a black-steel ring passes through each nostril; two thin black-steel bars pass through the outer end of each eyebrow; a black-steel Medusa stud sits above the lips; a black-steel hoop passes through the lower lip's edge with a snake-bite ring on each side and one small ring beside it; a black-steel labret stud and one ring pass through the chin; one small black-steel stud sits on each jaw; on each ear a big black-steel hoop, a thick bar, a helix ring and a small stud. All jewelry is real black steel and silver, alternating piece by piece, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Mouth: two small clear crystals set in silver are bonded to the surface of two upper front teeth, tiny and bright, catching the light. A black-steel barbell with two small silver round ends passes through the middle of the tongue, the tongue tip raised playfully behind the upper teeth so both round ends of the barbell show and catch the light. The teeth are natural, white and clean, and the tongue is a healthy pink, calm and healed, with no blood and no swelling.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 입 안 축 P100 · 코갸루 · 치아 젬 + 혀 피어싱 · 청동
+`la_realface_mouth_p100_kogal` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ko-gyaru makeup — deeply sun-tanned bronze makeup over real skin, bold white eyeshadow across the lids, white glossy lips, a bright turquoise liner accent at the outer corners, long lashes, large eyes with bright real catchlights, long bleached blonde hair with sun-streaked highlights, a bright cheeky grin, the lips parted in a bright grin so the upper front teeth and the tip of the tongue show. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense armour of about one hundred real bronze piercings with a few turquoise-enamel rings among them covering the face: a thick bronze septum ring with a smaller ring above it and two bronze rings through each nostril; a straight bronze bar across the bridge of the nose between the brows; six thick bronze bars stacked through the outer half of each eyebrow; two rows of four small bronze studs across the forehead above the brows; five small studs up each temple on the bone, well clear of the eyes; a row of seven small studs along each cheekbone; a bronze Medusa stud above the lips; a big bronze hoop through the lower lip's edge with a snake-bite ring on each side, the upper lip and the front of the mouth kept clear; a bronze labret stud and four rings through the chin; six small studs along each jaw; on each ear a full dense row of ten big hoops, thick bars, stretched plugs, helix rings and studs from lobe to top; and eight fine bronze chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real bronze with a few turquoise-enamel rings, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Mouth: two small clear crystals set in bronze are bonded to the surface of two upper front teeth, tiny and bright, catching the light. A bronze barbell with two small turquoise round ends passes through the middle of the tongue, the tongue tip raised playfully behind the upper teeth so both round ends of the barbell show and catch the light. The teeth are natural, white and clean, and the tongue is a healthy pink, calm and healed, with no blood and no swelling.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 입 안 축 P100 · 히메갸루 · 치아 젬 + 혀 피어싱 · 로즈골드
+`la_realface_mouth_p100_hime` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in hime-gyaru makeup — fair porcelain skin, soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips, huge voluminous light-brown curls with a big pink satin bow, a sweet princess-like smile, the lips parted in a sweet smile so the upper front teeth and the tip of the tongue show. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense armour of about one hundred real rose-gold piercings with a few small pearl studs among them covering the face: a thick rose-gold septum ring with a smaller ring above it and two rose-gold rings through each nostril; a straight rose-gold bar across the bridge of the nose between the brows; six thick rose-gold bars stacked through the outer half of each eyebrow; two rows of four small rose-gold studs across the forehead above the brows; five small studs up each temple on the bone, well clear of the eyes; a row of seven small studs along each cheekbone; a rose-gold Medusa stud above the lips; a big rose-gold hoop through the lower lip's edge with a snake-bite ring on each side, the upper lip and the front of the mouth kept clear; a rose-gold labret stud and four rings through the chin; six small studs along each jaw; on each ear a full dense row of ten big hoops, thick bars, stretched plugs, helix rings and studs from lobe to top; and eight fine rose-gold chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real rose gold with a few small pearl studs, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Mouth: two small pale-pink crystals set in rose gold are bonded to the surface of two upper front teeth, tiny and bright, catching the light. A rose-gold barbell with two small pearl round ends passes through the middle of the tongue, the tongue tip raised playfully behind the upper teeth so both round ends of the barbell show and catch the light. The teeth are natural, white and clean, and the tongue is a healthy pink, calm and healed, with no blood and no swelling.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 입 안 축 P100 · 야마바 · 치아 젬 + 혀 피어싱 · 은
+`la_realface_mouth_p100_yamanba` · 2:3
+
+```
+Professional fashion photograph, close-up beauty portrait. ONE woman, her face turned about 30 degrees toward the camera, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in yamanba makeup — a deep bronze tan foundation over real skin, wide stark-white paint bands above and below both eyes lying on the lids and never across the eyeballs, neon pink and turquoise eyeshadow, long false lashes, large eyes with bright real catchlights, glossy white lips, small star and heart rhinestone stickers on the cheeks only, long teased neon pink and lime hair, a bold cheeky grin, the lips parted in a bold cheeky grin so the upper front teeth and the tip of the tongue show. Real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded.
+
+Piercings: An extreme, dense armour of about one hundred real silver piercings with a few neon-acrylic rings among them covering the face and neck, with the cheeks kept clear for the stickers and the paint bands: a thick silver septum ring with a smaller ring above it and two silver rings through each nostril; a straight silver bar across the bridge of the nose between the brows; six thick silver bars stacked through the outer half of each eyebrow; two rows of four small silver studs across the forehead above the brows; five small studs up each temple on the bone, well clear of the eyes; a silver Medusa stud above the lips; a big silver hoop through the lower lip's edge with a snake-bite ring on each side, the upper lip and the front of the mouth kept clear; a silver labret stud and four rings through the chin; seven small studs along each jaw; a column of four small studs down each side of the neck; on each ear a full dense row of twelve big hoops, thick bars, stretched plugs, helix rings and studs from lobe to top; and eight fine silver chains looping from the ear hoops to the nostril rings and the septum ring. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real silver with a few neon-acrylic rings, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Mouth: two small clear crystals set in silver are bonded to the surface of two upper front teeth, tiny and bright, catching the light. A silver barbell with two small neon-pink acrylic round ends passes through the middle of the tongue, the tongue tip raised playfully behind the upper teeth so both round ends of the barbell show and catch the light. The teeth are natural, white and clean, and the tongue is a healthy pink, calm and healed, with no blood and no swelling.
+
+Lighting: a soft frontal beauty light on the face with a thin cool rim light along the hair, pure pitch black void background, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 가슴 P100 + C1(참 약 10개) · 코갸루
+`la_realface_bust_p100c1` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ko-gyaru makeup — deeply sun-tanned bronze makeup over real skin, bold white eyeshadow across the lids, white glossy lips, a bright turquoise liner accent at the outer corners, long lashes, large eyes with bright real catchlights, long bleached blonde hair with sun-streaked highlights, a bright cheeky grin. She is a real living woman: real pores and fine skin grain on her face, neck, shoulders, arms and hands, real living eyes with bright catchlights, individual hair strands catching the light — a photograph of a real person, not an illustration, not a render.
+
+Clothing: she wears a plain black matte stretch tank top with thin straps that covers her chest, leaving her collarbones, shoulders, arms and hands bare.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Piercings: An extreme, dense armour of about one hundred real silver piercings with a few turquoise-enamel rings among them covering the face: a thick silver septum ring with a smaller ring above it and two silver rings through each nostril; a straight silver bar across the bridge of the nose between the brows; five thick silver bars stacked through the outer half of each eyebrow; two rows of four small silver studs across the forehead above the brows; four small studs up each temple on the bone, well clear of the eyes; a row of six small studs along each cheekbone; a silver Medusa stud above the lips; a big silver hoop, two smaller rings and a snake-bite ring on each side through the lower lip's edge, and five small hoops along the upper lip's edge; a silver labret stud and four rings through the chin; five small studs along each jaw; on each ear a full dense row of ten oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; and eight fine silver chains looping from the ear hoops to the nostril rings and the septum ring. From the ear hoops (three on each ear), from the big lower-lip hoop, from the nose ring and from the chin ring hang about ten small light charms on short fine chains — a tiny star, a heart, a ribbon bow, a small teddy-bear charm, a short bead string, a small acrylic letter tag and a rhinestone bottle in pastel enamel and acrylic — each swinging clear of the face. All charms are light, small and generic (no branded or licensed characters), hanging from the rings on short fine chains, never pulling the skin, none near the eyes or brows, and none hanging lower than the collarbones. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real silver with a few turquoise-enamel rings, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound, the skin around each piece smooth and unbroken — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Piercing depth: every bar and surface bar is embedded in the skin — its middle runs beneath the skin so only its two end studs show on the surface, the skin between them faintly raised over the hidden bar, with a small warm shadow at each end and nothing lying on top of the skin like a sticker. Every ring passes through a small healed opening in the skin, the skin visible through the loop, and every stud sits through the skin with its back hidden. Where a bar, ring or stud goes through the ear, the lip, the nostril or the brow, it passes through the real tissue with the skin wrapping snugly around it.
+
+Pose: body angled 45 degrees, her left hand low at the frame edge beside her chest, her right hand held at chest height clear of her body, both hands well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal beauty light on her face, shoulders and arms, so the glints on every piece of metal and every charm read clearly, with a thin cool rim light along her hair and shoulders, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 가슴 P150 + C2(참 약 20개) · 코갸루
+`la_realface_bust_p150c2` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame, and her ear pieces are oversized so they read clearly. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in ko-gyaru makeup — deeply sun-tanned bronze makeup over real skin, bold white eyeshadow across the lids, white glossy lips, a bright turquoise liner accent at the outer corners, long lashes, large eyes with bright real catchlights, long bleached blonde hair with sun-streaked highlights, a bright cheeky grin. She is a real living woman: real pores and fine skin grain on her face, neck, shoulders, arms and hands, real living eyes with bright catchlights, individual hair strands catching the light — a photograph of a real person, not an illustration, not a render.
+
+Clothing: she wears a plain black matte stretch tank top with thin straps that covers her chest, leaving her collarbones, shoulders, arms and hands bare.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Piercings: An extreme, overwhelming armour of about one hundred and fifty real silver piercings with a few turquoise-enamel rings among them covering the face and neck: a thick silver septum ring with a smaller ring above it, three silver rings through each nostril and a small stud at the tip of the nose; two straight silver bars across the bridge of the nose between the brows; six thick silver bars stacked through the outer half of each eyebrow; three rows of five small silver studs across the forehead above the brows; six small studs up each temple on the bone, well clear of the eyes; two rows of six small studs along each cheekbone; a silver Medusa stud above the lips with a small stud on each side of it; a big silver hoop, four smaller rings and a snake-bite ring on each side through the lower lip's edge, and six small hoops along the upper lip's edge; a silver labret stud and five rings through the chin; six small studs along each jaw; a column of five small studs down each side of the neck; on each ear a full dense row of twelve oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; and ten fine silver chains looping from the ear hoops to the nostril rings and the septum ring. From the ear hoops (three on each ear), from the big lower-lip hoop, from the nose ring and from the chin ring hang about twenty small light charms on short fine chains — tiny stars, hearts, ribbon bows, small teddy-bear charms, bead strings, pearl strings, small bells, safety pins, feathers, tassels, acrylic letter tags and rhinestone bottles in pastel enamel, acrylic and pearl — each swinging clear of the face. A fine chain curtain hangs in loops from the ear hoops along the jawline, never across the cheeks or eyes, and a thin chain is draped over the hair from ear to ear. All charms are light, small and generic (no branded or licensed characters), hanging from the rings on short fine chains, never pulling the skin, none near the eyes or brows, and none hanging lower than the collarbones. The piercings are packed so densely that the rows touch and overlap, leaving only hairline gaps of bare skin between them, until the face reads as a single armour of metal; the eyes and eyelids stay clear. All jewelry is real silver with a few turquoise-enamel rings, sitting in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound, the skin around each piece smooth and unbroken — with a small natural warm shadow under each piece. Every piece stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Piercing depth: every bar and surface bar is embedded in the skin — its middle runs beneath the skin so only its two end studs show on the surface, the skin between them faintly raised over the hidden bar, with a small warm shadow at each end and nothing lying on top of the skin like a sticker. Every ring passes through a small healed opening in the skin, the skin visible through the loop, and every stud sits through the skin with its back hidden. Where a bar, ring or stud goes through the ear, the lip, the nostril or the brow, it passes through the real tissue with the skin wrapping snugly around it.
+
+Pose: body angled 45 degrees, her left hand low at the frame edge beside her chest, her right hand held at chest height clear of her body, both hands well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal beauty light on her face, shoulders and arms, so the glints on every piece of metal and every charm read clearly, with a thin cool rim light along her hair and shoulders, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Real Face 가슴 P200 · 비주얼계 · 바스트 퀸(실사 몸)
+`la_realface_bust_p200` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in visual-kei makeup — pale porcelain skin, deep smoky black eyeshadow blended far out beyond the eyes, a sharp black winged liner, long dramatic lashes, large eyes with bright real catchlights, glossy black lips, sharply contoured cheekbones, long teased jet-black hair with silver streaks, a cold, poised expression. She is a real living woman: real pores and fine skin grain on her face, neck, shoulders, arms and hands, real living eyes with bright catchlights, individual hair strands catching the light — a photograph of a real person, not an illustration, not a render.
+
+Clothing: she wears a plain black matte stretch tank top with thin straps that covers her chest, leaving her collarbones, shoulders, arms and hands bare.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Piercings: An overwhelming armour of about two hundred real piercings in black steel and silver, alternating piece by piece, covering the face, neck, shoulders and arms: a thick septum ring with a smaller ring above it, three rings through each nostril and a small stud at the tip of the nose; two straight bars across the bridge of the nose between the brows; six thick bars stacked through the outer half of each eyebrow; three rows of five small studs across the forehead above the brows; six small studs up each temple on the bone, well clear of the eyes; two rows of six small studs along each cheekbone; a Medusa stud above the lips with a small stud on each side of it; a big hoop, four smaller rings and a snake-bite ring on each side through the lower lip's edge, and six small hoops along the upper lip's edge; a labret stud and five rings through the chin; six small studs along each jaw; a column of five small studs down each side of the neck; on each ear a full dense row of twelve oversized hoops, thick bars, stretched plugs, helix rings and studs from lobe to top, the biggest hoops hanging clear of the neck down to the shoulders; ten fine chains looping from the ear hoops to the nostril rings and the septum ring; and on the body, a row of six small domed jewels on anchored posts along each shoulder cap, four thick surface bars across each upper arm, real rings on every finger of both hands, six surface bars across the bare skin just below the collarbones above the neckline of her top, and eight fine chains looping from the ear hoops down to the shoulder jewels. The piercings are packed so densely that the rows touch and overlap, leaving almost no bare surface, until the face, neck, shoulders and arms read as a single sculpted armour of metal; only the eyeballs and eyelids stay clear. All jewelry is real opaque metal in real skin that is healed, clean and calm — no blood, no redness, no swelling, no wound, the skin around each piece smooth and unbroken — with a small natural warm shadow under each piece. Brow bars stay on the brow bone and every stud stays at least a finger's width from the eyeballs, and no chain or bar crosses the eyes.
+
+Piercing depth: every bar and surface bar is embedded in the skin — its middle runs beneath the skin so only its two end studs show on the surface, the skin between them faintly raised over the hidden bar, with a small warm shadow at each end and nothing lying on top of the skin like a sticker. Every microdermal is an anchored post sunk into the skin with only its small domed top showing and the skin sitting smoothly around its base. Every ring passes through a small healed opening in the skin, the skin visible through the loop, and every stud sits through the skin with its back hidden. Where a bar, ring or stud goes through the ear, the lip, the nostril or the brow, it passes through the real tissue with the skin wrapping snugly around it.
+
+Pose: body angled 45 degrees, her left hand low at the frame edge beside her chest, her right hand held at chest height clear of her body, both hands well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal beauty light on her face, shoulders and arms, so the glints on every piece of metal read clearly, with a thin cool rim light along her hair and shoulders, shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+## Vessel Body 가슴 01 · 스칸디 프로스트 · 아쿠아리움 × 테라리움
+`la_vessel_bust_01` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Swedish woman in Scandi frost makeup — very pale, cool skin, a soft white-silver highlighter along the cheekbones, nose bridge and brow bones, pale icy-blue eyeshadow with a fine silver shimmer, pale softly brushed blonde brows, curled light-brown-tipped lashes, large pale-blue eyes with bright real catchlights, a sheer frosted pale-pink lip, long straight platinum-blonde hair, a cool, calm, faraway expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big smooth silver hoop hangs clear of the neck down to the shoulder, real silver on real skin, healed, clean and calm.
+
+Vessel body: from the collarbones down, her body is not skin — it is a sculpted vessel of thick clear glass in the exact shape of her chest, shoulder, arm and hand, filled to the brim so nothing is hollow and there is no air gap. The glass walls are thick and polished, with crisp glints along every edge. The left half (left shoulder, whole arm and hand, half the chest) is an aquarium: deep blue water filling the whole shape, with five or six glowing jellyfish of different sizes drifting inside the chest and the arm, trailing pale tentacles, tiny air bubbles rising and fine specks of light suspended in the water. The right half is a terrarium: a miniature forest filling the whole shape, with dense green moss, small ferns, tiny mushrooms, a few small white flowers and a scatter of fireflies glowing among them. The hands are solid clear glass with tiny bubbles inside, the fingers and knuckles the same glass as the arms.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, the glass vessel immediately below. A second jagged line runs down the centre of the chest where the aquarium and the terrarium meet, out of the bottom of the frame, never horizontal. A few small shards of glass interlock along the lines and cast real shadows.
+
+Pose: body angled 45 degrees, her left hand (solid glass) held low at the frame edge beside her chest, her right hand (solid glass) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft cool frontal light on her face and ears; a strong blue backlight through the aquarium half so the jellyfish glow, and a soft green backlight through the terrarium half so the fireflies and moss glow; a thin cool rim light along the centre line. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Vessel Body 전신 01 · 웨이쉰 · 콜로설 · 밤하늘 × 심해
+`la_vessel_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in weixun makeup — clear fair skin, a warm rose-red wash blended across the outer corners of both eyes and drifting up toward the temples, the same flush spreading softly across the cheekbones and the bridge of the nose, slightly smudged, dewy highlights, soft brown-pink eyeshadow, large moist eyes with bright real catchlights and a faint glassy shine, moist rose-tinted lips, long black hair loosely tousled with a few strands across the face, a dreamy, half-lidded expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big rose-gold hoop hangs clear of the neck down to the shoulder. All jewelry is real metal on real skin, healed, clean and calm.
+
+Physique: A towering giantess on an even scale at full head-to-toe height — massive rounded shoulders, huge thick arms, a colossal full chest, a broad heavy torso with a large smooth rounded belly, wide solid hips, enormous columnar thighs running long into thick calves and long legs to the floor. No single part stands out more than another.
+
+Vessel body: from the collarbones down, her body is not skin — it is a sculpted vessel of thick clear glass in the exact shape of her chest, belly, hips, arms, legs and hands, filled to the brim so nothing is hollow and there is no air gap. The glass walls are thick and polished, with crisp glints along every edge. The left half (left shoulder, the whole arm, half the chest and belly, the left hip and the whole left leg) is a night sky: the glass is filled with deep indigo, with soft nebula clouds in violet and rose, thousands of tiny stars, a few shooting meteors streaking through the arm and the leg, a pale crescent moon drifting inside the chest, and fine gold lines joining some of the stars into constellations. The right half is the deep sea: the glass is filled with dark teal water, with glowing jellyfish of different sizes drifting in the chest and the belly, small schools of luminous fish, slow kelp swaying up the leg, tiny bubbles rising and fine specks of plankton light suspended in the water. The hands and feet are solid clear glass with tiny bubbles inside, every finger, knuckle and toe the same glass as its arm or leg.
+
+Footwear: extreme platform stiletto sandals carved from solid clear glass, the glass running unbroken through the ankle, the instep and every toe, nothing painted on the foot.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, the glass vessel immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two worlds meet, never horizontal. A few small shards of glass interlock along the lines and cast real shadows.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid glass) resting on her flared hip, her right arm held clear of her body with the hand (solid glass) relaxed at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong violet-blue backlight from behind-left through the night-sky half so the stars and nebula glow from within; a strong teal backlight from behind-right through the deep-sea half so the jellyfish and fish glow; a thin cool rim light along the centre line. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Vessel Body 전신 02 · 히메갸루 · 아워글래스 USSBBW · 온실 × 겨울 숲
+`la_vessel_full_02` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Japanese woman in hime-gyaru makeup — fair porcelain skin, soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips, huge voluminous light-brown curls with a big pink satin bow, a sweet princess-like smile. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big gold hoop with a small pearl drop hangs clear of the neck down to the shoulder. All jewelry is real metal on real skin, healed, clean and calm.
+
+Physique: A towering hourglass woman of extraordinary volume standing tall on long legs, never short or squat. A colossal heavy chest wider than her shoulders, a waistline that still pulls in sharply even at this size, then an enormous belly of massive rounded folds and colossal wide hips flaring out again, massive thick thighs pressing together and running long to the floor.
+
+Vessel body: from the collarbones down, her body is not skin — it is a sculpted vessel of thick clear glass in the exact shape of her chest, belly, hips, arms, legs and hands, filled to the brim so nothing is hollow and there is no air gap. The glass walls are thick and polished, with crisp glints along every edge. The left half (left shoulder, the whole arm, half the chest and belly, the left hip and the whole left leg) is a greenhouse: the glass is filled with lush tropical plants, pink and white orchids, ferns, climbing vines with small hanging blossoms, dewdrops on the leaves, and a dozen butterflies fluttering among the flowers in the chest, the arm and the leg. The right half is a winter forest: the glass is filled with snow-covered fir trees standing in deep snow, fine snow drifting through the air, frost on the branches, and a few tiny warm lights glowing far among the trees. The hands and feet are solid clear glass with tiny bubbles inside, every finger, knuckle and toe the same glass as its arm or leg.
+
+Footwear: extreme platform stiletto sandals carved from solid clear glass, the glass running unbroken through the ankle, the instep and every toe, nothing painted on the foot.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, the glass vessel immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two worlds meet, never horizontal. A few small shards of glass interlock along the lines and cast real shadows.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid glass) resting on her flared hip, her right arm held clear of her body with the hand (solid glass) relaxed at hip height, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a soft warm pink-green backlight from behind-left through the greenhouse half so the flowers and butterflies glow; a cold blue-white backlight from behind-right through the winter-forest half so the snow glows; a thin cool rim light along the centre line. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Duo Statue 힙 01 · 홍콩풍 · 나전칠기 바디페인팅 × 비취 조각상
+`la_duostatue_hip_01` · 3:4
+
+```
+Professional fashion photograph, double portrait, three-quarter body shot. TWO figures standing side by side, shoulder to shoulder, both angled 45 degrees toward the camera, framed from the very top of their heads down through the hips, the frame cutting off across the upper thighs. Both faces are large and sharp in the upper part of the frame.
+
+The left figure is a real living woman: a strikingly beautiful adult Chinese woman in Hong Kong-style makeup — fair matte skin with a soft powdery finish, thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge, hair set in glossy voluminous old-film waves, a poised, glamorous expression. Her face is left clear and is entirely real living skin with real pores and fine grain, real living eyes and real lips. On each ear she wears a large real vintage pearl clip earring. The rest of her is a real body covered in full-body najeon mother-of-pearl body painting: a glossy black lacquer ground with shimmering iridescent arabesque vines, peonies and cranes glowing pink, aqua and silver, the pigment lying directly on her real skin, the real curves of her body clearly visible beneath it. The design runs continuously over every surface with no bands and no borders anywhere, dense shell scrollwork fills every gap so no plain lacquer is left, and it reaches every part of her below the jaw — the shoulders, the upper arms, the forearms, the backs of the hands, the chest, the belly, the sides, the hips and the tops of the thighs — as densely as everywhere else. The painting softens away at the neck, and her face stays clear.
+
+The right figure is her exact twin as a sculpture: the same face, the same expression, the same body and the same waved hairstyle, the same pose mirrored, carved as one solid statue of deep green jade with nothing beneath and no skin anywhere — deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. The statue is sculpted with the fine detail of a master portrait sculptor, with polished clear-green gem irises for eyes, the makeup as colour inside the stone (thin arched brows as raised lines, a deep red glow in the carved lips, a warm tone in the cheeks), and the same pearl clip earrings — real pearls and metal on drilled openings in the stone. The pattern of the painting appears on the statue only as fine engraved lines cut into the surface, catching the light, so the statue is carved and never painted.
+
+The statue is unmistakably a solid three-dimensional carved object, and the real woman is unmistakably alive — warm skin, moist eyes, individual hair strands. Their shoulders touch, their outer hands rest on their flared hips and their inner arms hang relaxed at their sides. Both figures are equally sharp.
+
+Lighting: pure pitch black background. A soft warm frontal light on the real woman's face and the pearl shimmer of her body painting; a strong soft green backlight through the jade so the statue glows from within; a thin cool rim light along the statue's edge. 3:4 vertical 8K portrait.
+```
+
+## Duo Statue 전신 01 · 화환 화장 · 청화백자 바디페인팅 × 호박 조각상
+`la_duostatue_full_01` · 3:4
+
+```
+Professional fashion photograph, double portrait, full body shot, head to toe. TWO figures standing side by side with a small gap between them, both angled 45 degrees toward the camera, the camera set back so both whole bodies fit in the frame from the top of their heads to their feet. Both faces stay sharp.
+
+The left figure is a real living woman: a towering, strikingly beautiful adult Ukrainian woman in folk-portrait makeup — fair, luminous skin, round warm red blush high on the cheeks, dark strongly defined straight brows, soft brown eyeshadow, long lashes, large blue-grey eyes with bright real catchlights, a natural deep rose lip, long light-brown hair in a thick braid over one shoulder, and a wreath of real red poppies, blue cornflowers and wheat ears sitting on top of the head, a warm, calm expression. Her face is left clear and is entirely real living skin with real pores and fine grain, real living eyes and real lips. On each ear she wears a big real silver hoop with a small red-enamel bead. The rest of her is a real body covered in full-body blue-and-white porcelain body painting: a brilliant white ground with cobalt peony scrolls, lotus, vines and cranes, the pigment lying directly on her real skin, the real shape of her body clearly visible beneath it. The design runs continuously over every surface with no bands and no borders anywhere, dense scrollwork fills every gap so no plain white is left, and it reaches every part of her below the jaw — the shoulders, the upper arms, the forearms, the backs of the hands, the chest, the belly, the sides, the hips, the thighs, the knees, the calves and the tops of the feet — as densely as everywhere else. The painting softens away at the neck, and her face stays clear. She stands tall on long legs, never short or squat, in real extreme platform stiletto sandals of glossy black leather.
+
+The right figure is her exact twin as a sculpture: the same face, the same expression, the same body and height, the same braid and flower wreath, the same pose mirrored, carved as one solid statue of deep honey-gold amber with nothing beneath and no skin anywhere — deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. The statue is sculpted with the fine detail of a master portrait sculptor, with polished amber-clear gem irises for eyes, the makeup as colour inside the amber, and the same silver hoops as real metal on drilled openings in the amber. Her wreath is carved of the same amber, its poppies, cornflowers and wheat ears each a chiselled shape of solid amber. Her platform stiletto sandals are carved from the same amber as her legs, the material running unbroken through the ankle, the instep and every toe. The pattern of the painting appears on the statue only as fine engraved lines cut into the surface, catching the light, so the statue is carved and never painted.
+
+The statue is unmistakably a solid three-dimensional carved object, and the real woman is unmistakably alive — warm skin, moist eyes, individual hair strands, and a wreath of real red poppies, blue cornflowers and wheat ears. Both stand with feet planted apart, their outer hands resting on their flared hips and their inner arms hanging relaxed at their sides, their hands well away from their faces. Both figures are equally sharp.
+
+Lighting: pure pitch black background. A soft warm frontal light on the real woman; a strong warm backlight through the amber so the statue glows honey-gold from within; a thin cool rim light along the statue's edge. 3:4 vertical 8K portrait.
+```
+
+## Duo Statue 힙 02 · 락혼 글램 · USSBBW · 라이롯남 × 루비색 유리 조각상
+`la_duostatue_hip_02` · 3:4
+
+```
+Professional fashion photograph, double portrait, three-quarter body shot. TWO figures standing close side by side, both angled 45 degrees toward the camera, framed from the very top of their heads down through the hips, the frame cutting off across the upper thighs. Where their bodies press together the flesh and the glass bulge against each other, each figure's own outline still clear. Both faces are large and sharp in the upper part of the frame.
+
+The left figure is a real living woman: a strikingly beautiful adult Thai woman in lakorn-drama glam makeup — flawless pale-golden skin, sharply defined dark brows, a precise black winged liner with a strong flick, warm brown-bronze eyeshadow, long dramatic lashes, large eyes with bright real catchlights, strong contour under the cheekbones, deep red glossy lips with a crisp edge, long glossy black waves, a poised, dramatic expression. Her body: A colossal rounded chest, an enormous belly of massive rounded folds hanging low and heavy, no waist at all, colossal wide hips flaring beyond the chest and massive thick thighs disappearing out of the bottom of the frame. Her face is left clear and is entirely real living skin with real pores and fine grain, real living eyes and real lips. On each ear she wears a big real gold hoop with a chased-gold drop. The rest of her is a real body covered in full-body Thai lai rot nam body painting: brilliant gold-leaf kranok flame scrolls over glossy black lacquer, the pigment lying directly on her real skin, the real volume of her body clearly visible beneath it. The design runs continuously over every surface with no bands and no borders anywhere, dense gold scrollwork fills every gap so no plain lacquer is left, and it follows every belly roll and every crease — the shoulders, the arms, the backs of the hands, the chest, the belly, the sides, the hips and the tops of the thighs — as densely as everywhere else. The painting softens away at the neck, and her face stays clear.
+
+The right figure is her exact twin as a sculpture: the same face, the same expression, the same body and the same long waved hair, the same pose mirrored, carved as one solid statue of deep ruby-red cast glass with nothing beneath and no skin anywhere, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. The statue is sculpted with the fine detail of a master portrait sculptor: a colossal chest and an enormous belly of massive rounded rolls carved into the glass itself, polished ruby-clear gem irises for eyes, a strong black winged liner as a fine dark line at each outer corner, a deep red glow in the carved lips, and the same gold hoops with chased-gold drops as real metal on drilled openings in the glass. The gold scroll pattern of the painting appears on the statue only as fine engraved lines cut into the surface, catching the light, so the statue is carved and never painted.
+
+The statue is unmistakably a solid three-dimensional carved object, and the real woman is unmistakably alive — warm skin, moist eyes, individual hair strands. Their outer hands rest on their flared hips and their inner arms hang relaxed at their sides. Both figures are equally sharp.
+
+Lighting: pure pitch black background. A soft warm frontal light on the real woman's face and the gold of her body painting; a strong deep-red backlight through the ruby glass so the statue glows crimson from within; a thin cool rim light along the statue's edge. 3:4 vertical 8K portrait.
+```
+
+## Duo Statue 전신 02 · 텔레노벨라 · 콜로설 · 이마리 × 에메랄드 조각상
+`la_duostatue_full_02` · 3:4
+
+```
+Professional fashion photograph, double portrait, full body shot, head to toe. TWO figures standing side by side with a small gap between them, both angled 45 degrees toward the camera, the camera set back so both whole bodies fit in the frame from the top of their heads to their feet. Both faces stay sharp.
+
+The left figure is a real living woman: a strikingly beautiful adult Latina woman in telenovela glam makeup — warm golden-bronze skin, a sharp black winged liner, warm terracotta eyeshadow, heavy lashes, strong sculpted contour, large dark eyes with bright real catchlights, a deep berry lip, long voluminous dark-brown waves swept over one shoulder, a fiery, passionate expression. Her body: A towering giantess on an even scale at full head-to-toe height — massive rounded shoulders, huge thick arms, a colossal full chest, a broad heavy torso with a large smooth rounded belly, wide solid hips, enormous columnar thighs running long into thick calves and long legs to the floor. No single part stands out more than another. Her face is left clear and is entirely real living skin with real pores and fine grain, real living eyes and real lips. On each ear she wears a large real gold hoop. The rest of her is a real body covered in full-body Imari porcelain body painting: cobalt blue underglaze scrolls, lotus and cranes joined by iron-red overglaze enamel and raised gilt accents over a brilliant white ground, the pigment lying directly on her real skin, the real shape of her body clearly visible beneath it. The design runs continuously over every surface with no bands and no borders anywhere, dense scrollwork fills every gap so no plain white is left, and it reaches every part of her below the jaw — the shoulders, the arms, the backs of the hands, the chest, the belly, the sides, the hips, the thighs, the knees, the calves and the tops of the feet — as densely as everywhere else. The painting softens away at the neck, and her face stays clear. She wears real extreme platform stiletto sandals of glossy black leather.
+
+The right figure is her exact twin as a sculpture: the same face, the same expression, the same body and height, the same long voluminous waves, the same pose mirrored, carved as one solid statue of deep green emerald crystal with nothing beneath and no skin anywhere, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. The statue is sculpted with the fine detail of a master portrait sculptor, with polished deep-green gem irises for eyes, a sharp black winged liner as a fine dark line at each outer corner, warm terracotta tones and a berry glow in the carved lips as colour inside the crystal, and the same gold hoops as real metal on drilled openings in the crystal. Her platform stiletto sandals are carved from the same emerald as her legs, the material running unbroken through the ankle, the instep and every toe. The pattern of the painting appears on the statue only as fine engraved lines cut into the surface, catching the light, so the statue is carved and never painted.
+
+The statue is unmistakably a solid three-dimensional carved object, and the real woman is unmistakably alive — warm skin, moist eyes, individual hair strands. Both stand with feet planted apart, their outer hands resting on their flared hips and their inner arms hanging relaxed at their sides, their hands well away from their faces. Both figures are equally sharp.
+
+Lighting: pure pitch black background. A soft warm frontal light on the real woman; a strong green backlight through the emerald so the statue glows deep green from within; a thin cool rim light along the statue's edge. 3:4 vertical 8K portrait.
+```
+
+## Scene 전신 B1 회색 스튜디오 카우스틱 · 서아프리카 · 자수정 × 호박
+`la_scene_b1_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Nigerian woman in West African party-glam makeup — rich deep brown skin with a golden highlighter glowing on the cheekbones, bold shimmering gold and emerald eyeshadow blended out toward the temples, dramatic long lashes, sharply defined brows, large eyes with bright real catchlights, a strong glossy fuchsia-pink lip, long braids piled into a high sculpted crown, a bright, joyful smile. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big gold hoop with gold beads hangs clear of the neck down to the shoulder, real gold on real skin, healed, clean and calm.
+
+Physique: A towering hourglass woman of extraordinary volume standing tall on long legs, never short or squat. A colossal heavy chest wider than her shoulders, a waistline that still pulls in sharply even at this size, then an enormous belly of massive rounded folds and colossal wide hips flaring out again, massive thick thighs pressing together and running long to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a matte pale-grey studio floor in front of a plain pale-grey wall, lit by one strong hard warm light from the upper left behind her. The light passes through her transparent body and throws long, sharply coloured caustic shadows across the floor and the wall — deep violet patches from the amethyst side and warm orange-gold patches from the amber side, each with bright bending edges of concentrated light — while her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 허리 GP7 재스민·양귀비 · 노르딕 발키리 · 비취 × 호박
+`la_scene_gp7_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Norwegian woman in Nordic valkyrie makeup — fair skin with a light scatter of freckles, strong straight defined dark-blonde brows, warm bronze shadow across the lids, a fine brown liner, long lashes, large pale-blue eyes with bright real catchlights, soft contour, a muted red-brown lip, long pale-blonde hair in two thick braids and a braided crown, a fierce, steady, commanding expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a thick silver knotted hoop hangs clear of the neck down to the shoulder, real silver on real skin, healed, clean and calm.
+
+Physique: A colossal heavy chest, a still-visible cinched waist, a big soft rounded belly below the waistline hanging heavily, very thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses and the belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Growth: real small plants grow out of the material below the collarbones, rooted in fine cracks inside the stone, their pale roots visible as threads through the translucent material. On the left jade, a climbing vine of white jasmine with green leaves and small white star flowers winds down from the shoulder along the arm and across the chest. On the right amber, a few red poppies with slender stems and buds rise from the shoulder and the upper arm. The leaves and petals are real and soft, and the material around each root is cracked just enough to hold it. The plants grow only from the shoulders, arms and chest — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid jade) held low at the frame edge beside her belly, her right hand (solid amber) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera.
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong warm backlight through the amber half and a soft green backlight through the jade half so both glow from within and the plants are lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B1 회색 스튜디오 카우스틱 · 텔레노벨라 · 코발트 유리 × 시트린
+`la_scene_b1_full_02` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Latina woman in telenovela glam makeup — warm golden-bronze skin, a sharp black winged liner, warm terracotta eyeshadow, heavy lashes, strong sculpted contour, large dark eyes with bright real catchlights, a deep berry lip, long voluminous dark-brown waves swept over one shoulder, a fiery, passionate expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a large gold hoop. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering giantess on an even scale at full head-to-toe height — massive rounded shoulders, huge thick arms, a colossal full chest, a broad heavy torso with a large smooth rounded belly, wide solid hips, enormous columnar thighs running long into thick calves and long legs to the floor. No single part stands out more than another.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Right half: solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a matte pale-grey studio floor in front of a plain pale-grey wall, lit by one strong hard cool-white light from the upper right behind her. The light passes through her transparent body and throws long, sharply coloured caustic shadows across the floor and the wall — deep blue patches from the cobalt glass side and warm yellow patches from the citrine side, each with bright bending edges of concentrated light. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B2 크림색 벽 카우스틱 · 홍콩풍 · 루비색 유리 × 아쿠아마린
+`la_scene_b2_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in Hong Kong-style makeup — fair matte skin with a soft powdery finish, thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge, hair set in glossy voluminous old-film waves, a poised, glamorous expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a large vintage pearl clip earring. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering tentpole USSBBW woman standing tall on long legs, never short or squat. Shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the shoulders, a broad heavy torso with a big round belly, no waist at all, hips as broad as the shoulders, thighs running long into thick calves and long legs to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Right half: solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a warm cream plaster floor in front of a warm cream plaster wall, lit by one strong hard low golden light from the right behind her. The light passes through her transparent body and throws long, sharply coloured caustic shadows across the floor and the wall — deep crimson patches from the ruby glass side and cool teal patches from the aquamarine side, with bright bending edges of concentrated light, and where the two colours overlap they mix into soft violet. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B3 프리즘 무지개 · 락혼 · 투명 레진 × 무라노 유리
+`la_scene_b3_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Thai woman in lakorn-drama glam makeup — flawless pale-golden skin, sharply defined dark brows, a precise black winged liner with a strong flick, warm brown-bronze eyeshadow, long dramatic lashes, large eyes with bright real catchlights, strong contour under the cheekbones, deep red glossy lips with a crisp edge, long glossy black waves, a poised, dramatic expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big gold hoop with a chased-gold drop. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering top-heavy hourglass woman standing tall on long legs, never short or squat. A colossal chest far wider than her shoulders curving forward as one enormous rounded mass, a waist that pulls in sharply below it, enormous round hips flaring out to more than twice the width of her shoulders, colossal thick thighs pressing together down to the knees and thick calves running long to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid water-clear casting resin, with perfectly clear with a hard glossy surface, tiny gold flakes and slow-rising air bubbles suspended deep inside. Right half: solid Murano glass, with twisted ribbons of cobalt, red, yellow and white swirling through it with tiny gold flecks suspended between them. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a pure white studio floor in front of a pure white wall, lit by one strong hard white light from the upper left behind her. The light splits into full rainbow spectral bands as it passes through the clear resin and the Murano glass, casting bands of red, orange, yellow, green, blue and violet across the floor and the wall, with bright bending edges of concentrated light. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 허리 GP1 벚꽃·매화 · 웨이쉰 · 스모키 유리 × 에메랄드
+`la_scene_gp1_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Chinese woman in weixun makeup — clear fair skin, a warm rose-red wash blended across the outer corners of both eyes and drifting up toward the temples, the same flush spreading softly across the cheekbones and the bridge of the nose, slightly smudged, dewy highlights, soft brown-pink eyeshadow, large moist eyes with bright real catchlights and a faint glassy shine, moist rose-tinted lips, long black hair loosely tousled with a few strands across the face, a dreamy, half-lidded expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big rose-gold hoop hangs clear of the neck down to the shoulder. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A colossal heavy chest wider than her shoulders, directly below it a waistline that still pulls in sharply even at this size, then an enormous soft belly of massive rounded folds spilling out beneath it, her upper body filling the frame edge to edge.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Right half: solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses and the belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Growth: real plants grow out of the material below the collarbones, rooted in fine cracks inside the material, their pale roots visible as threads through it. On the left smoky glass, a branch of cherry blossom with pale pink blossoms, buds and bronze-green leaves grows out of the shoulder and arches over the upper arm, with a few petals drifting down beside the chest. On the right emerald, a shorter branch of white plum blossom rises from the shoulder. The leaves and petals are real and soft. The plants grow only from the shoulders, arms and chest — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 가슴 GP2 장미 · 프렌치 레드립 · 빙하 얼음 × 자수정
+`la_scene_gp2_bust_01` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult French woman in French red-lip makeup — fair natural skin with a light dewy finish, softly brushed natural brows, a barely-there brown liner and fluttering lashes, no eyeshadow, soft natural colour on the cheeks, large eyes with bright real catchlights, a single bold classic red lip with a soft matte finish, long dark-brown hair in an effortless tousled updo, an unbothered, effortless expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. A single thick gold hoop hangs on each ear. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A colossal chest far wider than her shoulders, each rounded half reaching past the outer line of her arms, broad soft shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid glacial ice, with deep cyan where thickest, white streaks of compressed layers and trapped air bubbles, frost in every groove. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Growth: real roses grow out of the material below the collarbones, rooted in fine cracks inside the material, their pale roots visible as threads through it. On the left glacial ice, a cane of white roses with dark green leaves and thin stems winds around the shoulder and the upper arm. On the right amethyst, a cane of deep red roses winds around the shoulder and the edge of the chest. The stems coil around the material with small thorns pointing outward, and the flowers are real and soft. The roses grow only from the shoulders, arms and chest — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 허리 GP3 고사리·라벤더 · 하베샤 · 아쿠아마린 × 호박
+`la_scene_gp3_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Ethiopian woman in Habesha makeup — smooth warm-brown skin, a bold thick black liner drawn around the whole eye and winged slightly at the outer corner, warm gold and brown eyeshadow, strongly defined softly arched brows, long lashes, large dark eyes with bright real catchlights, a natural warm rose-brown lip with a soft gloss, long black hair in fine neat braids swept back from the face, a serene, dignified expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big silver filigree hoop hangs clear of the neck down to the shoulder. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A colossal heavy chest, a still-visible cinched waist, a big soft rounded belly below the waistline hanging heavily, very thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses and the belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Growth: real plants grow out of the material below the collarbones, rooted in fine cracks inside the material, their pale roots visible as threads through it. On the left aquamarine, tall fresh ferns unfurl from the shoulder and the upper arm in soft green fronds. On the right amber, stems of lavender with purple flower spikes rise from the shoulder and the edge of the chest. The leaves and flowers are real and soft. The plants grow only from the shoulders, arms and chest — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 허리 GA1 새·나비 · 화환 화장 · 호박 × 아쿠아마린
+`la_scene_ga1_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Ukrainian woman in folk-portrait makeup — fair, luminous skin, round warm red blush high on the cheeks, dark strongly defined straight brows, soft brown eyeshadow, long lashes, large blue-grey eyes with bright real catchlights, a natural deep rose lip, long light-brown hair in a thick braid over one shoulder, and a wreath of real red poppies, blue cornflowers and wheat ears sitting on top of the head, a warm, calm expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big silver hoop with a small red-enamel bead hangs clear of the neck down to the shoulder. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A thick soft layer over huge muscle, broad powerful shoulders, thick heavy arms with rounded biceps, a colossal soft chest, a cinched waist above a soft rounded belly, more soft than hard.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Right half: solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses and the belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Perched creatures: small living creatures rest on the material as if it were a garden statue, real, alive and still. On the left amber, a small blue songbird with a bright yellow chest perches on the shoulder cap, its tiny claws resting on the material and its head turned toward the camera. On the right aquamarine, three orange-and-black butterflies rest with wings half open, two on the upper arm and one on the back of the raised right hand. The creatures are small, sit only on the shoulders, arms and hands, stay well away from her face and neck, and never cover the boundary line or the piercings.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B4 반사 바닥 · 파케앙트 · 사파이어 × 카넬리안
+`la_scene_b4_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Filipina woman in pageant glam makeup — warm tan skin, heavy sculpted contour and a glowing highlighter on the cheekbones, smoky bronze and gold glitter eyeshadow, dramatic long lashes, defined dark brows, large eyes with bright real catchlights, glossy coral-red lips, long voluminous chestnut waves, a bright, confident pageant smile. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big gold hoop with a pearl. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering hourglass woman of extraordinary volume standing tall on long legs, never short or squat. A colossal heavy chest wider than her shoulders, a waistline that still pulls in sharply even at this size, then an enormous belly of massive rounded folds and colossal wide hips flaring out again, massive thick thighs pressing together and running long to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Right half: solid orange-red carnelian, with warm banded stripes of orange and red with a waxy luster, glowing brightest orange at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a polished, wet black stone floor in front of a dark charcoal wall, lit by one hard cool light from the upper right behind her. The light passes through her transparent body and throws deep blue and warm orange patches of caustic light onto the wet floor around her feet, and her whole glowing body is mirrored in a soft reflection in the wet floor, the coloured light rippling in it. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B5 창문 빛줄기 · 슬라브 · 비취 × 자수정
+`la_scene_b5_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Russian woman in Slavic glam makeup — very fair, cool skin, sculpted feathered dark brows, a precise winged liner, soft taupe eyeshadow, long lashes, large pale eyes with bright real catchlights, strong contour and a bright highlighter along the cheekbones and nose bridge, glossy nude-pink lips, long straight platinum-blonde hair, a cold, striking expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big silver hoop with a filigree silver drop. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering top-heavy hourglass woman standing tall on long legs, never short or squat. A colossal chest far wider than her shoulders curving forward as one enormous rounded mass, a waist that pulls in sharply below it, enormous round hips flaring out to more than twice the width of her shoulders, colossal thick thighs pressing together down to the knees and thick calves running long to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a worn pale stone floor in front of a bare stone wall in an old hall. Through a tall arched window behind her left a strong hard beam of golden sunlight falls across the room, with fine dust drifting in it. The beam passes through her transparent body and throws long caustic shadows — green patches from the jade side and violet patches from the amethyst side — across the floor and the wall, each with bright bending edges of concentrated light. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B6 청록 벽 그림자 · 요루바 · 루비색 유리 × 호박
+`la_scene_b6_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Yoruba Nigerian woman in Yoruba bridal makeup — rich deep brown skin with a golden highlighter on the cheekbones, warm gold and bronze eyeshadow blended up to the brow bone, sharply defined arched brows, a precise winged liner, long dramatic lashes, large eyes with bright real catchlights, a deep wine-red glossy lip, a large sculpted gele head-wrap of stiff gold-and-cream fabric folded high above her head, a poised, joyful, radiant expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big gold hoop with a red-enamel bead. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering, immensely powerful woman standing full height on long legs, never short or squat, the body of a world's strongest woman under a thick layer of soft fat — enormously broad thick shoulders, massive arms, a colossal chest, a huge barrel torso with a big round belly, no waist at all, colossal wide hips and tree-trunk thighs running long to the floor. The muscle is huge but rounded and buried.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a deep teal painted floor in front of a deep teal painted wall, lit by one hard warm light from the left behind her. The light passes through her transparent body and throws long caustic shadows across the floor and the wall — warm coral-red patches from the ruby glass side and golden-orange patches from the amber side glowing against the teal, and where they overlap they blend into bright orange, each with bright bending edges of concentrated light. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 가슴 GP4 아이비·등나무 · 발칸 · 시트린 × 코발트 유리
+`la_scene_gp4_bust_01` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Romanian woman in Balkan glam makeup — warm fair-olive skin, thick dark straight-edged brows, a heavy black liner smoked out at the outer corners, deep brown shadow blended up to the crease, long dense lashes, large dark eyes with bright real catchlights, sculpted contour, a deep red matte lip with a crisp edge, long dark-brown hair in glossy voluminous waves, an intense, proud expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a thick gold hoop with a gold coin drop hangs clear of the neck down to the shoulder. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A giant frame flaring at the shoulders — lats spreading to shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the line of the shoulders, thick heavy arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Right half: solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Growth: real plants grow out of the material below the collarbones, rooted in fine cracks inside the material, their pale roots visible as threads through it. On the left citrine, dark green ivy with pale veins climbs from the shoulder and winds down the upper arm, a few tendrils curling. On the right cobalt glass, long hanging clusters of white-and-lilac wisteria cascade from the shoulder and drape down over the arm and the edge of the chest. The leaves and flowers are real and soft. The plants grow only from the shoulders, arms and chest — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 허리 GP5 해바라기·데이지 · 인스타 · 자수정 × 비취
+`la_scene_gp5_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult American woman in Instagram glam makeup — sun-kissed skin, heavily sculpted contour and a strong highlighter on the cheekbones, bold defined brows, long fluffy false lashes, shimmery bronze eyeshadow, large eyes with bright real catchlights, plump glossy nude lips with a defined lip-liner outline, long voluminous honey-blonde waves, a confident, camera-ready smile. Her whole face, ears and neck are real living flesh with real pores and fine grain. Two big gold hoops stacked on each ear hang clear of the neck. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A colossal rounded chest spilling wide past the shoulders, an enormous belly of massive rounded folds hanging low and heavy, no waist at all, upper arms so thick they are pushed out almost horizontally from her sides.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Right half: solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses and the belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Growth: real plants grow out of the material below the collarbones, rooted in fine cracks inside the material, their pale roots visible as threads through it. On the left amethyst, three tall sunflowers with bright yellow petals and dark centres rise on green stems from the shoulder and the upper arm. On the right jade, a small cluster of white daisies with yellow centres rises from the shoulder and the edge of the chest. The leaves and petals are real and soft. The plants grow only from the shoulders, arms and chest — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 허리 GP6 연꽃·수련 · 소피아 · 아쿠아마린 × 스모키 유리
+`la_scene_gp6_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Italian woman in 1960s Italian film-star makeup — warm olive skin, thick strongly arched dark brows, a long black liner winging up and out at the outer corner of each eye, soft brown eyeshadow, long lashes, large dark eyes with bright real catchlights, a deep red lip with a defined edge, thick glossy dark-brown hair set in a high backcombed style, a smouldering, confident expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a large pearl drop with a gold clip. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A colossal heavy chest wider than her shoulders, directly below it a waistline that still pulls in sharply even at this size, then an enormous soft belly of massive rounded folds spilling out beneath it, her upper body filling the frame edge to edge.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid clear sea-blue aquamarine crystal, with long fine needle-like tubes at depth and clean facets, deep teal where thickest and pale sea-blue at every thin edge. Right half: solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses and the belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Growth: real water plants grow out of the material below the collarbones, rooted in fine cracks inside the material, their pale roots visible as threads through it. On the left aquamarine, two pink lotus flowers, one open and one in bud, rise on tall green stems with round lotus leaves from the shoulder and the upper arm. On the right smoky glass, white water lilies rest on the shoulder and the edge of the chest with flat green lily pads and a few water droplets on the petals. The leaves and petals are real and soft. The plants grow only from the shoulders, arms and chest — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 허리 GA2 잠자리·반딧불이 · 스칸디 · 에메랄드 그린 유리 × 사파이어
+`la_scene_ga2_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Swedish woman in Scandi frost makeup — very pale, cool skin, a soft white-silver highlighter along the cheekbones, nose bridge and brow bones, pale icy-blue eyeshadow with a fine silver shimmer, pale softly brushed blonde brows, curled light-brown-tipped lashes, large pale-blue eyes with bright real catchlights, a sheer frosted pale-pink lip, long straight platinum-blonde hair, a cool, calm, faraway expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big smooth silver hoop hangs clear of the neck down to the shoulder. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A colossal heavy chest, a still-visible cinched waist, a big soft rounded belly below the waistline hanging heavily, very thick soft arms.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid clear emerald-green cast glass, with slow internal swirls and tiny bubbles, deep bottle-green where thickest and pale lime at every thin edge. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses and the belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Perched creatures: small living creatures rest and drift around the material as if it were a garden statue at dusk, real, alive and still. On the left emerald glass, two iridescent blue-green dragonflies with transparent wings perch on the shoulder cap and the upper arm. On the right sapphire, a dozen fireflies drift and rest along the arm and the shoulder, each a soft warm glowing point of light whose glow reflects in the crystal. The creatures stay well away from her face and neck and never cover the boundary line or the piercings.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 가슴 GA3 벌새·나비 · 텔레노벨라 · 시트린 × 자수정
+`la_scene_ga3_bust_01` · 2:3
+
+```
+Professional fashion photograph, bust shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head to just below her chest, the frame cutting off beneath the chest. Her face sits large and sharp in the upper half of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Latina woman in telenovela glam makeup — warm golden-bronze skin, a sharp black winged liner, warm terracotta eyeshadow, heavy lashes, strong sculpted contour, large dark eyes with bright real catchlights, a deep berry lip, long voluminous dark-brown waves swept over one shoulder, a fiery, passionate expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a large gold hoop hangs clear of the neck down to the shoulder. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A giantess on an even scale — massive rounded shoulders spanning more than four head-widths, huge thick arms, a colossal full chest, no single part standing out.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest): solid golden-yellow citrine crystal, with faint feathery inclusions and colour zoning, deep honey-gold where thickest and pale lemon at every thin edge. Right half: solid amethyst crystal, with internal facets and colour zoning, deep violet where thickest and pale lilac at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses with the groove between them cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Perched creatures: living creatures and flowers share the material, real, alive and still. On the left citrine, a real climbing vine with small red trumpet flowers grows from the shoulder and winds down the upper arm, rooted in fine cracks inside the material, and a small green-and-ruby hummingbird hovers in mid-air beside the shoulder with its wings blurred and its long beak dipped into one of the flowers. On the right amethyst, two small blue butterflies rest on the shoulder and one on the back of the raised right hand. The creatures and flowers stay well away from her face and neck, never cover the hands and never cover the boundary line.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her chest, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 허리 GA4 청개구리·무당벌레 · 서아프리카 · 루비색 유리 × 비취
+`la_scene_ga4_waist_01` · 2:3
+
+```
+Professional fashion photograph, upper-body shot. ONE woman, angled 45 degrees toward the camera, framed from the very top of her head down to the middle of her belly, the frame cutting off across the belly so no hips, legs or feet are visible. Her face sits in the upper part of the frame. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Nigerian woman in West African party-glam makeup — rich deep brown skin with a golden highlighter glowing on the cheekbones, bold shimmering gold and emerald eyeshadow blended out toward the temples, dramatic long lashes, sharply defined brows, large eyes with bright real catchlights, a strong glossy fuchsia-pink lip, long braids piled into a high sculpted crown, a bright, joyful smile. Her whole face, ears and neck are real living flesh with real pores and fine grain. On each ear a big gold hoop with gold beads hangs clear of the neck down to the shoulder. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A thick soft layer over huge muscle, broad powerful shoulders, thick heavy arms with rounded biceps, a colossal soft chest, a cinched waist above a soft rounded belly, more soft than hard.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid translucent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest and belly): solid deep ruby-red cast glass, with slow internal swirls and a few tiny air bubbles, deepest crimson where thickest and pale rose at every thin edge. Right half: solid deep green jade, with a waxy inner luster and fine cloudy inclusions, a soft green glow at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow, the chest two great rounded masses and the belly folds cut into the material itself. The arms flow into the torso with no seam, and every wrist, palm, finger and knuckle is the same material as its arm.
+
+Perched creatures: small living creatures rest on the material as if it were a garden statue, real, alive and still. On the left ruby glass, two small bright-green tree frogs sit on the shoulder cap and the upper arm, their tiny toes resting on the material and their bright eyes open. On the right jade, five red ladybugs with black spots crawl along the arm and the shoulder, and a small snail with a spiral shell rests on the back of the raised right hand. The creatures are small, stay well away from her face and neck, and never cover the boundary line or the piercings.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the chest and belly and out of the bottom of the frame where the two materials meet, never horizontal. Shards interlock along the lines only.
+
+Pose: body angled 45 degrees, her left hand (solid material) held low at the frame edge beside her belly, her right hand (solid material) held at chest height clear of her body, well away from her face, head tilted slightly toward the camera. 
+
+Lighting: pure pitch black background. A soft frontal light on her face and ears; a strong backlight through each half so both glow from within and whatever grows or rests on the material is lit from behind; a thin cool rim light along the centre line. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B5×GP4 창문 빛줄기 × 아이비·등나무 · 프렌치 레드립
+`la_scene_b5gp4_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult French woman in French red-lip makeup — fair natural skin with a light dewy finish, softly brushed natural brows, a barely-there brown liner and fluttering lashes, no eyeshadow, soft natural colour on the cheeks, large eyes with bright real catchlights, a single bold classic red lip with a soft matte finish, long dark-brown hair in an effortless tousled updo, an unbothered, effortless expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. A single thick gold hoop on each ear. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering top-heavy hourglass woman standing tall on long legs, never short or squat. A colossal chest far wider than her shoulders curving forward as one enormous rounded mass, a waist that pulls in sharply below it, enormous round hips flaring out to more than twice the width of her shoulders, colossal thick thighs pressing together down to the knees and thick calves running long to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid deep green emerald crystal, with a fine web of internal fractures and cloudy inclusions, deep forest green where thickest and pale spring green at every thin edge. Right half: solid deep blue sapphire crystal, with fine silky needle inclusions forming a soft star-like shimmer, near-midnight navy where thickest and pale cornflower at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Growth: real plants grow out of the material below the collarbones, rooted in fine cracks inside the material, their pale roots visible as threads through it. On the left emerald, dark green ivy with pale veins climbs from the shoulder and winds down the arm to the hip, its tendrils curling. On the right sapphire, long hanging clusters of white-and-lilac wisteria cascade from the shoulder and drape down over the arm and the side of the chest, a few petals dropping toward the floor. The leaves and petals are real and soft. The plants grow only from the shoulders, arms, chest and hips — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a worn pale stone floor in front of a bare stone wall in an old hall. Through a tall arched window behind her left a strong hard beam of golden sunlight falls across the room, with fine dust drifting in it. The beam passes through her transparent body and the plants, throwing long caustic shadows — green patches from the emerald side and blue patches from the sapphire side — across the floor and the wall, each with bright bending edges of concentrated light. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B4×GA2 반사 바닥 × 잠자리·반딧불이 · 브리티시 모드
+`la_scene_b4ga2_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult British woman in 1960s mod makeup — pale, matte, porcelain skin, a bold black graphic crease line drawn high above each eyelid, very thick false lashes on the top lids, small painted lash strokes beneath each lower lid, pale lilac-white eyeshadow, large eyes with bright real catchlights, natural brows, a pale peachy-white lip, a sleek black bob with a blunt fringe, a cool, wide-eyed, doll-like expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. A large flat geometric silver disc earring on each ear. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering hourglass woman of extraordinary volume standing tall on long legs, never short or squat. A colossal heavy chest wider than her shoulders, a waistline that still pulls in sharply even at this size, then an enormous belly of massive rounded folds and colossal wide hips flaring out again, massive thick thighs pressing together and running long to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid clear emerald-green cast glass, with slow internal swirls and tiny bubbles, deep bottle-green where thickest and pale lime at every thin edge. Right half: solid deep cobalt-blue cast glass, with slow internal swirls and tiny bubbles, near-navy where thickest and bright cobalt at every thin edge. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Perched creatures: small living creatures rest and drift around the material as if it were a garden statue at dusk, real, alive and still. On the left emerald-green glass, three iridescent blue-green dragonflies with transparent wings perch on the shoulder cap, the upper arm and the hip. On the right cobalt glass, a couple of dozen fireflies drift and rest along the arm, the ribs and the hip, each a soft warm glowing point of light whose glow reflects in the crystal and in the wet floor. The creatures stay well away from her face and neck and never cover the boundary line or the piercings.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: it is dusk. She stands on a polished, wet black stone floor in front of a dark blue-grey wall, lit by one soft cool light from the upper right behind her. Her transparent body glows from within and throws faint green and blue patches of caustic light onto the wet floor, and her whole glowing body, the dragonflies and every firefly are mirrored in a soft reflection in the wet floor, the warm points of light rippling in it. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
+
+## Scene 전신 B6×GP1 청록 벽 × 벚꽃·매화 · 노르딕 발키리
+`la_scene_b6gp1_full_01` · 2:3
+
+```
+Professional fashion photograph, full body shot, head to toe. ONE woman standing, angled 45 degrees toward the camera, the camera set back so her whole body fits in the frame from the top of her head to her feet and the floor and wall around her are visible, her face still sharp. Mid 20s.
+
+Subject: A real photograph of a strikingly beautiful adult Norwegian woman in Nordic valkyrie makeup — fair skin with a light scatter of freckles, strong straight defined dark-blonde brows, warm bronze shadow across the lids, a fine brown liner, long lashes, large pale-blue eyes with bright real catchlights, soft contour, a muted red-brown lip, long pale-blonde hair in two thick braids and a braided crown, a fierce, steady, commanding expression. Her whole face, ears and neck are real living flesh with real pores and fine grain. A thick silver knotted hoop on each ear. Real jewelry on real skin, healed, clean and calm.
+
+Physique: A towering tentpole USSBBW woman standing tall on long legs, never short or squat. Shoulders more than four times a normal woman's width, massive rounded deltoids, a colossal chest projecting past the shoulders, a broad heavy torso with a big round belly, no waist at all, hips as broad as the shoulders, thighs running long into thick calves and long legs to the floor.
+
+Below the neck: from the collarbones down her body is not painted, covered or clothed — it is physically made of two solid transparent materials split down the centre, with nothing beneath and no skin anywhere. Left half (left shoulder, the whole arm and hand, half the chest, belly, left hip and the whole left leg down through the foot): solid smoky black cast glass, with smoky depth with slow swirls and faint bubbles, hard mirror highlights, darkest where thickest. Right half: solid deep honey-gold amber, with tiny trapped air bubbles and organic inclusions, glowing darkest gold where thickest. Each is carved as one solid sculpted mass like a statue, never hollow. The arms flow into the torso and the torso into the legs with no seam, and every wrist, palm, finger, knuckle and toe is the same material as its limb. Her extreme platform stiletto sandals are carved from the same material as the leg each one sits under, running unbroken through the ankle and every toe.
+
+Growth: real plants grow out of the material below the collarbones, rooted in fine cracks inside the material, their pale roots visible as threads through it. On the left smoky glass, a branch of cherry blossom with pale pink blossoms, buds and bronze-green leaves grows out of the shoulder and arches over the upper arm and along the side of the chest, petals drifting down toward the floor. On the right amber, a shorter branch of white plum blossom rises from the shoulder and the upper arm. The leaves and petals are real and soft. The plants grow only from the shoulders, arms, chest and hips — never on the neck, the face or the hair, and never covering the hands.
+
+Boundary: a sharp jagged line runs around the base of the neck and across both collarbones — real skin above, material immediately below. A second jagged line runs down the centre of the body, between the hips and legs and down to the floor, where the two materials meet, never horizontal. Shards interlock along the lines only, every edge solid all the way through.
+
+Setting and light: she stands on a deep teal painted floor in front of a deep teal painted wall, lit by one hard warm light from the left behind her. The light passes through her transparent body and the blossoms and throws long caustic shadows across the floor and the wall — dark smoky grey patches from the smoky glass side and golden-orange patches from the amber side glowing against the teal, each with bright bending edges of concentrated light, and pale pink petals scattered on the floor. Her real face stays softly lit from the front.
+
+Pose: body angled 45 degrees, feet planted apart, her left hand (solid material) resting on her flared hip, her right arm held clear of her body with the hand (solid material) relaxed at hip height, well away from her face, head tilted slightly toward the camera. Only her face, ears and neck read as real skin. 2:3 vertical 8K portrait.
+```
