@@ -1154,6 +1154,21 @@ PRESET_CATEGORIES = {
     "🏺 Living Artifact · Five-Material Patchwork": [
         "la_5mat_01_halflength", "la_5mat_01_hipcut", "la_5mat_02_demistatue",
         "la_5mat_02_threequarter", "la_5mat_03_anklecut",
+    
+        "la_5mat_r0_anklecut_asymmetric", "la_5mat_r0_anklecut_symmetric", "la_5mat_r0_demistatue_asymmetric",
+        "la_5mat_r0_demistatue_symmetric", "la_5mat_r0_fullbody_asymmetric", "la_5mat_r0_fullbody_symmetric",
+        "la_5mat_r0_hipcut_asymmetric", "la_5mat_r0_hipcut_symmetric", "la_5mat_r0_threequarter_asymmetric",
+        "la_5mat_r0_threequarter_symmetric", "la_5mat_r1_anklecut_asymmetric", "la_5mat_r1_anklecut_symmetric",
+        "la_5mat_r1_demistatue_asymmetric", "la_5mat_r1_demistatue_symmetric", "la_5mat_r1_fullbody_asymmetric",
+        "la_5mat_r1_fullbody_symmetric", "la_5mat_r1_hipcut_asymmetric", "la_5mat_r1_hipcut_symmetric",
+        "la_5mat_r1_threequarter_asymmetric", "la_5mat_r1_threequarter_symmetric", "la_5mat_r2_anklecut_asymmetric",
+        "la_5mat_r2_anklecut_symmetric", "la_5mat_r2_demistatue_asymmetric", "la_5mat_r2_demistatue_symmetric",
+        "la_5mat_r2_fullbody_asymmetric", "la_5mat_r2_fullbody_symmetric", "la_5mat_r2_hipcut_asymmetric",
+        "la_5mat_r2_hipcut_symmetric", "la_5mat_r2_threequarter_asymmetric", "la_5mat_r2_threequarter_symmetric",
+        "la_5mat_r3_anklecut_asymmetric", "la_5mat_r3_anklecut_symmetric", "la_5mat_r3_demistatue_asymmetric",
+        "la_5mat_r3_demistatue_symmetric", "la_5mat_r3_fullbody_asymmetric", "la_5mat_r3_fullbody_symmetric",
+        "la_5mat_r3_hipcut_asymmetric", "la_5mat_r3_hipcut_symmetric", "la_5mat_r3_threequarter_asymmetric",
+        "la_5mat_r3_threequarter_symmetric",
     ],
 }
 
