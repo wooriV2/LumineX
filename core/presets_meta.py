@@ -1113,6 +1113,32 @@ PRESET_CATEGORIES = {
         "la_duostatue_full_01", "la_duostatue_full_02", "la_duostatue_hip_01",
         "la_duostatue_hip_02",
     ],
+
+    "🏺 Living Artifact · Opaque Wood 6-Tier": [
+        "la_wood6_01_half-length", "la_wood6_02_hip-cut", "la_wood6_03_demi-statue",
+        "la_wood6_04_three-quarter-length", "la_wood6_05_ankle-cut", "la_wood6_06_fullbody",
+    ],
+
+    "🏺 Living Artifact · Vessel Piercing 8": [
+        "la_vesselpierce8_01_P8", "la_vesselpierce8_02_P25", "la_vesselpierce8_03_P50",
+        "la_vesselpierce8_04_P100", "la_vesselpierce8_05_P150", "la_vesselpierce8_06_P200",
+        "la_vesselpierce8_07_P100plusC1", "la_vesselpierce8_08_P150plusC2",
+    ],
+
+    "🏺 Living Artifact · Opaque Stone 5-Tier": [
+        "la_stone5_01_half-length", "la_stone5_02_hip-cut", "la_stone5_03_demi-statue",
+        "la_stone5_04_three-quarter-length", "la_stone5_05_ankle-cut",
+    ],
+
+    "🏺 Living Artifact · Piercing Mixed-Material 8": [
+        "la_pierce8mix_01_P25", "la_pierce8mix_02_P50", "la_pierce8mix_03_P100",
+        "la_pierce8mix_04_P150", "la_pierce8mix_05_P200", "la_pierce8mix_06_P100plusC1",
+    ],
+
+    "🏺 Living Artifact · Dual Body": [
+        "la_dualbody_01_L2", "la_dualbody_02_L1", "la_dualbody_03_L3",
+        "la_dualbody_04_L4",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
