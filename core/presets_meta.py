@@ -1179,6 +1179,22 @@ PRESET_CATEGORIES = {
         "la_grid_hipcut_hv_3", "la_grid_hipcut_hv_6", "la_grid_hipcut_hv_9",
         "la_grid_threequarter_h_3", "la_grid_threequarter_h_6", "la_grid_threequarter_h_9",
         "la_grid_threequarter_hv_3", "la_grid_threequarter_hv_6", "la_grid_threequarter_hv_9",
+    
+        "la_grid_contentonly_10rows", "la_grid_contentonly_2rows", "la_grid_contentonly_3rows",
+        "la_grid_contentonly_4rows", "la_grid_contentonly_5rows", "la_grid_contentonly_6rows",
+        "la_grid_contentonly_7rows", "la_grid_contentonly_8rows", "la_grid_contentonly_9rows",
+        "la_grid_crystalonly_10rows", "la_grid_crystalonly_2rows", "la_grid_crystalonly_3rows",
+        "la_grid_crystalonly_4rows", "la_grid_crystalonly_5rows", "la_grid_crystalonly_6rows",
+        "la_grid_crystalonly_7rows", "la_grid_crystalonly_8rows", "la_grid_crystalonly_9rows",
+        "la_grid_plainvesselonly_10rows", "la_grid_plainvesselonly_2rows", "la_grid_plainvesselonly_3rows",
+        "la_grid_plainvesselonly_4rows", "la_grid_plainvesselonly_5rows", "la_grid_plainvesselonly_6rows",
+        "la_grid_plainvesselonly_7rows", "la_grid_plainvesselonly_8rows", "la_grid_plainvesselonly_9rows",
+        "la_grid_stoneonly_10rows", "la_grid_stoneonly_2rows", "la_grid_stoneonly_3rows",
+        "la_grid_stoneonly_4rows", "la_grid_stoneonly_5rows", "la_grid_stoneonly_6rows",
+        "la_grid_stoneonly_7rows", "la_grid_stoneonly_8rows", "la_grid_stoneonly_9rows",
+        "la_grid_woodonly_10rows", "la_grid_woodonly_2rows", "la_grid_woodonly_3rows",
+        "la_grid_woodonly_4rows", "la_grid_woodonly_5rows", "la_grid_woodonly_6rows",
+        "la_grid_woodonly_7rows", "la_grid_woodonly_8rows", "la_grid_woodonly_9rows",
     ],
 
     "🏺 Living Artifact · Five-Material Patchwork": [
