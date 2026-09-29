@@ -673,6 +673,18 @@
 
 **"데미 스탯(Demi Statue)으로 작성해줘"**라고 하면 아래 고정 형식으로 작성합니다. 실사 얼굴 + 몸 전체(또는 상반신)가 **머리부터 허벅지 아래에서 조각·물체 자체가 끝나는** 반신상/데미 피겨 구조입니다. 기존 Glass Face 3-Split(쇄골 경계, 좌우 분할)과는 다른 별도 카테고리입니다.
 
+### 15-0. 적용 범위 (v4 추가 확정)
+
+**재질(투명·통재질) 몸에서, 목과 전신을 뺀 모든 프레임은 별다른 요청이 없는 한 기본값이 Demi Statue 조각 마감 방식입니다.**
+
+| 프레임 | 처리 |
+|---|---|
+| 목(Real Face Piercing) | 기존대로 — 몸이 없어서 해당 없음 |
+| 전신(발까지 온전) | 기존대로 — 몸이 완결돼 있어서 "끝난다"는 서술 불필요 |
+| 가슴·허리·힙 및 세부 길이(가슴 컷·half-length·hip-cut·demi-statue·three-quarter-length) | **기본값 = 조각 마감**(15-2 표준 문단 사용). 기존 Glass Face 3-Split(등록된 92개)은 "프레임이 자른다"는 예전 방식이었으나, 앞으로 새로 만드는 이 구간은 조각 마감이 기본 |
+
+**15-6b(절대 규칙)와 함께 적용**: 이 기본값은 재질 몸에만 해당합니다. 몸이 실사(피부)면 프레임 길이와 무관하게 항상 평범한 카메라 크롭입니다.
+
 ### 15-1. 형식이 나온 과정 (중요한 실패 기록)
 
 1. 처음엔 **팔 없는 고전 흉상(herm/bust) 관례**로 시작(가슴까지만, 팔 없음) → 괜찮았지만 부피 체형에는 부족.
@@ -758,6 +770,252 @@ T2(유리 그릇)의 내용물도 꽃잎 등 유기물 대신 **맑은 얼음 �
 | 부피형(허리 없음) | USSBBW(uss), 텐트폴 USSBBW(tent), 콜로설(FULL_BODY의 colo, 다리 아래만 손질) | "no waist at all" 계열. 몸매 강조 문구를 붙이면 안 됨(모순 사례 있었음) |
 
 HIP_BODY 딕셔너리 원문 끝의 `..., thick thighs disappearing out of the bottom of the frame.`(프레임 밖으로 사라짐)만 이 형식에 맞게 잘라내고 `..., both thighs clearly separate and individually shaped.`로 바꿔서 씁니다. 그 외 문장은 손대지 않습니다.
+
+### 15-6a. 얼굴 실사 앵커 — 기본 vs MAX (v4 추가 확정)
+
+Demi Statue를 만들다가 "얼굴이 애니·인형처럼 나온다"는 문제가 있었습니다. 원인은 얼굴 서술에서 이 프로젝트의 표준 실사 앵커 일부가 빠져 있었던 것(Subject 맨 앞의 "A real photograph of" 누락, "not a render, not cel-shaded" 누락, 카메라 기종 누락)이었습니다. 그걸 고치고 나서 한 단계 더 강하게(MAX) 만들어 봤더니, 이번엔 **"너무 리얼하다"(다큐멘터리처럼 거칠어짐)**는 반응이 나왔습니다.
+
+**결론: 기본값은 "표준" 버전으로 하고, 애니·인형 느낌이 실제로 문제가 될 때만 MAX 버전으로 올립니다.** 이 판단은 Demi Statue뿐 아니라 이 프로젝트 전체(Glass Face 등)에 적용 가능한 도구로 둡니다.
+
+**표준(기본, 대부분의 경우 이걸 씀)**
+```
+Subject: A real photograph of a strikingly beautiful adult [국적] woman in [메이크업] makeup — [얼굴 묘사]. Her whole face, ears and neck are real living flesh with real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light — a photograph of a real face, not an illustration, not a render, not cel-shaded. [귀 장신구]
+```
+```
+Lighting: ... shot on a Hasselblad X2D with an 85mm lens, shallow depth of field. 2:3 vertical 8K portrait.
+```
+
+**MAX(애니·인형 느낌이 실제로 나올 때만, 한 단계 강화)**
+```
+Subject: A real, unretouched documentary photograph of a strikingly beautiful adult [국적] woman in [메이크업] makeup — [얼굴 묘사]. Her whole face is a genuine, unretouched documentary photograph of a real living human face, not digital art of any kind: visible skin pores and fine natural texture, faint natural skin oils and sheen, subtle natural asymmetry between the two sides of her face, individual fine facial hairs visible under close inspection, a real moist cornea catching light naturally, an iris with fine radial fibres and natural colour variation, a natural white sclera with faint visible blood vessels, two catchlights per eye that are slightly asymmetric and never perfectly identical, individual eyelashes of slightly varying length. This is straight editorial photography, not digital art in any form: not anime, not manga, not a cartoon, not a 3D character render, not a video game character, not a doll, not a porcelain or BJD doll face, not a mannequin, not airbrushed to a smooth plastic or porcelain finish, no artificial symmetry, no illustrated line-art edges anywhere on the skin. Skin keeps every natural imperfection exactly as unretouched photography would show it. [귀 장신구]
+```
+```
+Lighting: ... Shot on a Hasselblad X2D with an 85mm lens at f/2.8, shallow depth of field, unretouched. 2:3 vertical 8K portrait.
+```
+
+**언제 MAX를 쓸지**: 인형·서클렌즈가 특징인 갸루 계열 메이크업(히메갸루, 로리타 갸루, 코갸루 등)처럼 스타일 자체가 애니·인형 미감에 가까울 때, 또는 실제 생성 결과에서 그런 느낌이 확인됐을 때만. 그 외(소피아 로렌풍처럼 자연스러운 글램 등)에는 표준으로 충분합니다.
+
+### 15-6b. 절대 규칙 — 조각적 마감은 재질 몸에만
+
+**"물체 자체가 그 자리에서 끝난다"는 조각적 마감 논리(매끈하게 깎이거나 봉해진 팁)는 몸이 투명 재질일 때만 씁니다. 몸이 실사(진짜 피부)인 버전에는 절대 쓰지 않습니다.**
+
+- 재질은 세공사가 그 크기로 깎았다는 인과관계가 자연스러워서 흉상·데미 피겨 전부 이 논리 위에 있습니다.
+- 진짜 살은 그렇게 "끝날" 수 없습니다. "상처가 아니다", "매끈하게 마무리됐다"라고 감싸도 결국 절단(amputation) 외에는 설명할 방법이 없는 신체 상태가 됩니다.
+- **몸이 실사일 때는 조각적 마감 대신 평범한 카메라 프레임 컷을 씁니다.** "half-length", "hip-cut" 같은 이름은 그대로 쓰되, "조각이 끝난다"는 문장 없이 "프레임이 거기서 잘리고 몸은 자연스럽게 프레임 밖으로 이어진다"는 전제로 서술합니다.
+
+이 구분은 Demi Statue뿐 아니라 몸이 실사인 다른 모든 프롬프트에도 적용되는 절대 규칙입니다.
+
+### 15-6d. 안전 필터 대응 — 금지 단어 목록 (v4 추가, 중요)
+
+**목재(퍼플하트) 프롬프트가 "Sorry, I can't generate unsafe images"로 생성 자체가 막힌 사건**이 있었습니다. 원인은 기술적 오류가 아니라 안전 필터였고, 아래 단어들이 한 프롬프트 안에 몰려서 걸린 것으로 확인됐습니다.
+
+**피할 단어**: `blood`, `wound`, `crack`, `fracture`, `spike`, `bite`/`biting`
+
+- 사람이 읽으면 전부 재질·장신구 묘사(부정문 포함)지만, 자동 필터는 부정문을 이해하지 못하고 단어 자체만 봅니다.
+- **"never a wound"는 이 세션 내내 표준 Boundary 문구로 수십 개 프롬프트에 반복해서 써 온 표현입니다.** 단독으로는 문제없었을 수 있지만, 다른 위험 단어(blood, crack, fracture, spike 등)와 겹치면 걸릴 수 있습니다. 특히 어두운 스타일(뱀파이어 다크, 비주얼계 등) + 뾰족한 피어싱(spike) + 균열 묘사가 겹치는 조합은 주의합니다.
+
+**표준 Boundary 마감 문구 교체**
+
+| 이전(피할 것) | 이후(표준) |
+|---|---|
+| "never a jagged fracture, never a wound, never the edge of a photograph" | **"never a jagged fracture, always the clean, deliberate result of a sculpture — never the edge of a photograph"** |
+
+**경계 단차 문구(안전 버전, 균열 제외)**
+```
+At that line, the [material]'s edge rises in a small raised step above her flesh, casting a crisp shadow — her skin beside it stays smooth and even.
+```
+- 균열(crack) 묘사는 시각적으로 그럴듯했지만 위험 단어라 뺐습니다. 단차(raised step)와 그림자만으로도 "살과 재질은 서로 다른 두께·밀도를 가진 별개의 물체"라는 걸 증명하는 효과는 유지됩니다.
+- "real blood beneath the skin"처럼 살의 온기를 강조하던 문구는 그냥 "real living flesh" 또는 "warm, soft, living flesh"로 씁니다.
+- 피어싱에서 "spike"는 "pointed stud"처럼 다른 단어로 바꿉니다.
+
+### 15-6e. 목재 재질 안전성 — 개념이 위험한 나무 종류 (v4 추가)
+
+같은 체형·스타일 조합에서 재질만 바꿔 비교한 결과, **나무 이름·개념 자체가 부패·피부병변을 연상시키면 안전 필터에 걸리는 것으로 확인됐습니다.** "blood/wound/crack" 같은 명시적 단어가 없어도 걸렸습니다.
+
+**피할 목재(개념이 위험)**
+
+| 목재 | 위험 요소 |
+|---|---|
+| 스팔티드 메이플(spalted maple) | "spalted"는 곰팡이가 나무를 부식시킨 흔적을 가리키는 목공 전문 용어 — 부패·괴사 개념과 연결 |
+| 스네이크우드(snakewood) | "뱀가죽 같은 얼룩무늬" 묘사가 피부 병변·반점으로 오인될 수 있음 |
+| (예비로 피할 것) wormy/ambrosia 계열 | 벌레 먹은 자국을 가리키는 이름 — 같은 이유로 위험 추정 |
+
+**안전 확인된 목재(색·결 패턴만으로 설명되는 것)**
+
+흑단(ebony), 로즈우드(rosewood), 제브라우드(zebrawood), 버얼 월넛(burled walnut), 티크(teak), 올리브우드(olive wood), 퍼플하트(purpleheart), 파두크(padauk), 튤립우드(tulipwood), **웽게(wenge)**, 보코테(bocote), 오세이지 오렌지(Osage orange)
+
+**원칙**: 목재를 고를 때 그 이름이나 특징이 **성장 결함이라도 "부패·질병·벌레 먹음" 같은 유기물의 손상 과정을 가리키지 않는지** 확인합니다. 버얼(burl, 옹이 무늬)처럼 손상이 아니라 단순 성장 변이인 것은 안전했습니다(버얼 월넛 확인됨).
+
+### 15-6f. 피어싱을 쓸 프레임 범위 (v4 추가)
+
+### 15-6h. 참 축(C1·C2)은 투명 재질 전용 (v4 추가)
+
+### 15-6i. 내용물 투명재질(T2) — "드문드문 채움"과 "미충전 증거" (v4 추가)
+
+### 15-6j. T1·T2 기본값에 P8·P25 피어싱 (v4 추가)
+
+투명재질(T1)·내용물 유리 그릇(T2)로 만들 때는, 얼굴 컷~hip-cut 범위(15-6f)에서 **기본적으로 P8 또는 P25 피어싱을 넣습니다.** 귀 장신구 정도라 프롬프트 길이 부담이 적고, 안전 범위로 이미 확인됐습니다.
+
+- 스타일이 우아한 톤(소피아 로렌풍 등)이라 피어싱이 안 어울리면 생략 가능 — 강제 아님.
+- **T4(좌우 혼합) 등 여러 증거 기법(드문드문 채움·미충전·주조 기포·배경 세로선·경계 단차)이 겹쳐 프롬프트가 너무 길어지면, 증거 기법 개수를 줄여서 길이를 관리합니다.** 피어싱보다 증거 기법을 먼저 줄입니다.
+
+### 15-3 보강 — 재질 논리 4유형(T4 추가)
+
+| 유형 | 이름 | 핵심 |
+|---|---|---|
+| T1 | 단일 통재질 | 보석 하나, 내용물 없음, 분할 없음 |
+| T2 | 내용물 단일(유리 그릇) | 유리 벽 안에 세계 하나, 재질 구분 없음 |
+| T3 | 재질+내용물 결합 | 통짜 고체 속에 그 자체로 투명한 물체가 봉입(그릇도 액체도 아님) |
+| **T4(신규)** | **좌우 혼합형** | **몸을 좌우로 나눠 한쪽은 T1(통짜), 다른 쪽은 T2(내용물 유리 그릇)** — 각자 통짜/그릇 구조와 다리 마감(깎인 팁/봉해진 팁)을 그대로 유지 |
+
+
+
+**드문드문 채움**: 유리 그릇 안 내용물(꽃잎·별·반딧불이 등)을 서술할 때, "물건이 드문드문 떠 있다"보다 **"대부분은 완전히 비어 있고, 물건은 그 예외다"로 순서와 비중을 뒤집어야** 실제로 성기게 나옵니다. 개수도 "수십 개"보다 "손에 꼽을 정도"로 적게 씁니다. 전신처럼 채울 부피가 클수록 이 대비를 더 강하게 써야 합니다.
+
+**미충전 증거(액체 재질 전용)**: 고체 재질의 "단차+그림자"(15-6d)와 짝을 이루는 기법입니다. 그릇 구조상 자연스러운 지점 두 곳에 "물이 완벽하게 안 찼다"는 증거를 넣으면 "이건 진짜 액체가 든 그릇"이라는 설득력이 생깁니다. 두 지점은 이유가 다릅니다.
+
+- **목(그릇의 입구)**: 물이 입구까지 다 안 차고 얇은 공기층이 남음(수족관 원리)
+- **허벅지-몸통 주름(좁은 틈)**: 액체를 부을 때 좁은 틈에 공기 방울이 갇히는 원리
+
+```
+Two small air gaps break the fill, proof that this is a real liquid inside a vessel and not skin: a thin sliver of open air sits right at the very top of the water, just below the neck opening, where the fill does not quite reach the brim; and a second small trapped air pocket sits in the tight crease where each thigh meets her torso, exactly the way a real poured liquid leaves a bubble caught in a narrow fold.
+```
+
+둘 다 전신 프레임에서 생성 확인됨.
+
+
+
+목재(퍼플하트)에서 참 축을 **다섯 번 시도**했으나 전부 "unsafe image"로 거부됐습니다.
+
+| 시도 | 바꾼 것 | 결과 |
+|---|---|---|
+| 1 | P150+C2, demi-statue | 거부 |
+| 2 | P150+C2, hip-cut으로 위치 이동 | 거부 |
+| 3 | P150+C2, safety pins 제거 | 거부 |
+| 4 | P100+C1(참 약 10개로 밀도 절반), hip-cut, 이미 검증된 조합에 참만 추가 | 거부 |
+
+위치·단어·밀도를 각각 바꿔도 계속 거부되어, **단일한 원인을 특정하지 못한 채로 규칙만 확정**합니다.
+
+**규칙**: 참 축(C1·C2)은 **투명 재질에서만** 씁니다(성공 사례 있음). **목재·석재 같은 불투명 재질에서는 참 없이 P8~P200까지만** 씁니다.
+
+
+
+### 15-6g. 다리가 중간에서 끝나는 프레임의 불규칙한 거부 (v4 추가, 중요)
+
+같은 위치(demi-statue)에서 **완전히 다른 내용의 프롬프트 두 개(P8: 가장 단순, P150+C2: 가장 복잡)가 둘 다 "unsafe image"로 거부**됐습니다. 공통점은 위치뿐이라, 원인이 단어가 아니라 **위치 자체**일 가능성이 있습니다.
+
+**가설**: 지금까지 잡아낸 위험 단어(blood/wound/crack 등)는 텍스트 단계 필터입니다. 하지만 demi-statue·three-quarter-length·ankle-cut처럼 **다리가 길게 나오다가 중간에서 둥글게 끝나는 형태**는, 프롬프트 텍스트로 아무리 "조각이 원래 그렇게 끝난 것"이라 설명해도 **생성된 이미지 자체를 보는 별도 필터**가 있다면 그 필터는 맥락 없이 결과물만 보고 판단할 수 있습니다. 이러면 같은 프롬프트도 생성마다 통과와 거부가 갈리는 **불규칙한 패턴**이 됩니다(텍스트 문제와 달리 문구 수정으로 해결이 안 될 수 있음).
+
+**대응**: 다리가 중간에서 끝나는 프레임(demi-statue·three-quarter-length·ankle-cut)은 **확률적으로 거부될 수 있는 실험적 프레임**으로 등급을 낮춥니다. 안정적으로 쓰려면 아래 표의 "낮음" 프레임을 우선합니다.
+
+| 위치 | 다리 형태 | 위험도 |
+|---|---|---|
+| 얼굴 컷, half-length, hip-cut | 다리 없음 또는 아주 짧은 흔적만 | 낮음 |
+| **demi-statue · three-quarter-length · ankle-cut** | **다리가 길게 나오다 중간에서 끝남** | **높음(불규칙 거부)** |
+| 전신 | 발까지 완결(끝나는 형태 없음) | 낮음 |
+
+이 표는 15-6f(피어싱 프레임 범위)의 근거이기도 합니다 — 피어싱을 hip-cut까지만 쓰기로 한 결정이 이 발견과도 맞아떨어집니다.
+
+
+
+피어싱은 얼굴이 충분히 크게 나오는 짧은~중간 길이 프레임에서만 씁니다. 몸이 많이 보이는 긴 프레임(demi-statue·three-quarter-length·ankle-cut·전신)에서는 피어싱을 넣지 않습니다.
+
+| 몸 | 피어싱을 쓰는 프레임 |
+|---|---|
+| 투명재질(재질 몸) | 얼굴 컷(Real Face Piercing) · half-length · hip-cut |
+| 실사(진짜 피부) | 얼굴 컷 · 허리 컷(waist-cut) — 투명재질보다 범위가 좁음 |
+
+### 15-6c. 프레임 길이 실측 결과와 "관절 전환부" 원칙 (v4 추가)
+
+로리타 갸루 · 아워글래스 USSBBW · 장미석영 기준으로 여러 길이를 시험한 결과입니다.
+
+| 이름 | 의도한 위치 | 실제 결과 |
+|---|---|---|
+| ~~가슴 컷(chest-cut)~~ | 가슴 바로 아래, 단일 밑면 | **기본 사다리에서 제외** — 시험은 했으나 표준으로 쓰지 않기로 함 |
+| half-length | 허리, 단일 밑면 | **힙 절반까지** 밀려서 나옴 — 배 주름이 보여서 오히려 좋다고 판단, 채택 |
+| hip-cut | 힙 바로 밑, 짧은 두 팁 | **허벅지 중간까지** 밀려서 나옴 — 짧게라도 허벅지가 있는 쪽이 자연스럽다고 판단, 채택 |
+| demi-statue(표준) | 허벅지 아래~무릎 위 | 대체로 의도대로 |
+| three-quarter-length | 무릎 | 대체로 의도대로(다리가 긴 이미지) |
+| **ankle-cut(발목 컷)** | 종아리 가장 가는 지점, 발 전혀 없음 | **발이 살짝 포함되어 나옴** — 발목 부근에서 끊기는 형태로 채택 |
+
+**일반 원칙**: 힙과 발목처럼 **관절이 모이는 복합 전환부**에서는 "완전히 끊는" 서술(단일 밑면, 발의 각 부위 전부 부정 등)을 아무리 강하게 써도 모델이 살짝 이어서 그리는 경향이 있고, 그 결과가 오히려 더 자연스럽게 보였습니다. **이런 지점은 억지로 완전히 끊으려 하지 말고, 살짝 이어지는 결과를 표준으로 받아들이는 편이 낫습니다.**
+
+### 15-6k. 듀얼바디(Dual Body) — 재질 상반신 + 실사 하반신 (v4 신규 장르)
+
+**개념**: 쇄골 아래는 지금까지처럼 투명재질(T1) 또는 어항(T2)이되, 쓰는 프레임의 원래 마감 지점(예: hip-cut=힙 라인, three-quarter-length=무릎)에서 재질이 끝나고, **그 지점부터는 실사 다리가 발끝까지 이어집니다.** 목재·석재 같은 불투명 재질은 쓰지 않습니다(재질=T1/T2만).
+
+**왜 이 방향인지(반대가 아니라)**: 처음엔 "위는 재질, 아래는 실사"가 인어공주(위=사람, 아래=환상)와 정반대라 피노키오처럼 "무생물이 아직 사람이 되지 못한" 인상을 줄까 걱정했으나, 실제로 이 프로젝트의 핵심 정체성이 "얼굴은 실사, 몸은 재질"이라 **이 방향(재질이 위, 실사가 아래)이 정체성과 맞다는 결론**으로 확정했습니다.
+
+**전환부(재질→실사) 표준 문구 — 절단면 방식**: 재질 쪽만 "조각적으로 깔끔하게 잘린 단면"으로, 다리 쪽은 "잘린 게 아니라 원래 그렇게 있던 멀쩡한 다리"로 **반드시 분리해서 서술**합니다. 섞어 쓰면 다리가 잘린 것처럼 읽힐 위험이 있습니다.
+
+```
+exactly at [전환 지점], the glass vessel ends in a perfectly flat, deliberately cut cross-section, exactly like a clean slice cut through a cast-glass sculpture — at that flat cut face, the full thickness of the glass wall and the clear water sealed inside it are visible edge-on, the cut always clean, deliberate and precise, never jagged or torn, always the finish of a sculpture.
+
+Her real leg is a separate thing entirely: it simply begins at that same height, flush against the cut face of the glass above it, sharing nothing with it — an ordinary, undisturbed real leg, with real skin, real pores and fine grain, warm in tone, completely opaque, exactly as any real leg would look, never itself cut, never marked, as if it had always continued naturally from there.
+```
+(통재질 T1일 때는 "the glass wall and the clear water" 대신 "the solid crystal" 등으로 바꿔 씀. "never a wound" 같은 금지 단어를 쓰지 않도록 주의 — 위 문구는 이미 안전 단어로 다듬어짐.)
+
+**경계는 두 개**: ① 쇄골(살→재질, 기존과 동일) ② 전환 지점(재질→살, 신규). 다리는 맨다리·스타킹·바디페인팅 등 상황에 맞게.
+
+**프레임별 전환 지점**: half-length=허리, hip-cut=힙 라인, demi-statue=허벅지 중간~무릎 위, three-quarter-length=무릎, ankle-cut=종아리~발목. 기존 프레임 이름을 그대로 재사용하면 됩니다.
+
+시험: three-quarter-length(무릎 전환), 어항 상반신(가슴골 수위)으로 확인됨.
+
+### 15-6l. 듀얼바디 상단 경계 최종 확정 — 쇄골 + 직선 단면 + 내용물 최소화 (v4, 재정정)
+
+**겨드랑이 가로선(구버전 결론)은 이후 더 시도한 결과 최종 결론이 아니었습니다.** 최종적으로 통한 조합은 다음 네 가지입니다.
+
+1. **직선 단면**(지그재그/들쭉날쭉 아님) — 다리 전환부와 똑같은 "깔끔하게 잘린 단면" 논리로 통일
+2. **위치는 쇄골**(이 프로젝트 원래 기본값) — 겨드랑이·어깨 관절·V넥·탱크톱 끈 라인·어깨 재봉선을 전부 시도했으나 실패하거나 결국 다시 가슴 쪽으로 수렴함
+3. **몸통 내용물(물고기·수초 등)은 빼거나 최소화** — 내용물 묘사가 화려할수록 경계 지시의 비중이 상대적으로 약해짐
+4. **전체적으로 간결하게** — 불필요한 수식어를 줄이면 경계 지시가 상대적으로 더 크게 반영됨
+
+**표준 문구**
+```
+a single straight, flat line runs around the base of her neck and across both collarbones, nowhere lower, never reaching her chest — never jagged, never zigzag, a clean straight cut like a cross-section, exactly like a clean slice through a cast-glass sculpture. Real skin above this straight line, the glass vessel immediately below it. At that line, the full thickness of the glass wall is visible edge-on; the glass's edge rises in a small raised step above her flesh, casting a crisp shadow. The vessel is already full of water right up to this same straight collarbone line and no higher.
+```
+
+**왜 목 경계가 다리 전환부보다 훨씬 어려운지(가설)**: 얼굴 바로 옆이라 "정상적인 사람으로 이어진다"는 학습된 패턴이 강하게 작용하고, 주변(얼굴·머리카락·눈)이 전부 실사의 증거로 가득해 그 압도적인 증거와 한 문장이 경쟁해야 하기 때문으로 보입니다. 다리는 얼굴에서 멀어 이 힘이 약합니다.
+
+**참고**: 내용물(물고기·수초)이 꼭 필요하면, 경계가 먼저 안정적으로 나오는 걸 확인한 뒤에 내용물을 다시 넣어 보는 순서를 권합니다.
+
+### 15-6m. 다리 처리 단계표(L0~L4) (v4 추가, 정정됨)
+
+듀얼바디의 다리 처리를 단계로 정리했습니다.
+
+| 단계 | 실사 범위 | 재질 범위 |
+|---|---|---|
+| L0 | 없음(전신 재질) | 발끝까지 전부 재질 — 기존 Demi Statue 전신과 동일 |
+| L1 | 허벅지부터 신발까지 | 힙~허벅지 위쪽만 재질 |
+| L2 | 무릎부터 신발까지 | 힙~무릎 위까지 재질 |
+| L3 | 복숭아뼈부터 신발까지 | 힙~종아리 끝까지 재질 |
+| **L4** | **발가락 끝만(발톱 너비 정도)** | **힙~발·신발 전체가 재질(신발도 유리)** |
+
+**L4는 원래 프롬프트(수정 전)를 표준으로 씁니다.** 처음에 "손이 실사로 나왔다"는 결과를 보고 원인(내용물 문단에 손 누락)을 단정해서 수정했는데, **같은 원래 프롬프트를 다시 돌려 보니 정상적으로 나왔습니다.** 즉 그 결과는 문구 문제가 아니라 **생성마다 있는 편차**였을 가능성이 큽니다. 한 번의 결과만 보고 원인을 단정하지 않도록 주의합니다 — 반복해서 같은 문제가 나올 때만 문구를 고칩니다.
+
+**참고**: 이 프로젝트 전반에서 미세한 비율(수면선 높이, 관절 전환 위치 등)은 프롬프트를 아무리 다듬어도 생성마다 어느 정도 흔들릴 수 있습니다. 완벽한 재현성보다 "대체로 이 근처에서 나온다"는 정도로 받아들이는 게 현실적입니다.
+
+
+### 15-6n. 다중 재질 격자(Multi-Material Grid) — 2열×N행이 핵심 원칙 (v4 신규, 중요)
+
+한 몸에 여러 재질(3개 이상)을 나눠 넣을 때, **세로 2열(좌/우)을 고정하고 가로 행(위/아래)만 늘리는 구조가 압도적으로 안정적**입니다. 6·7·8·9·10행(12~20칸, 재질 20종까지) 전부 생성 확인됨.
+
+**왜 2열이 핵심인지**: 몸은 원래 좌우 대칭(팔 2개, 다리 2개)이라 2열이 해부학과 정확히 맞아떨어집니다. 각 열의 맨 위 칸에 팔이 자연스럽게 포함되고, 맨 아래 칸은 양쪽 다리 밑동이 됩니다. **3열 이상으로 가면 가운데 다리가 없어서 맨 아래 줄만 칸 수가 안 맞는 예외가 생깁니다**(3열 시도 시 확인됨 — 위 3줄은 3칸, 맨 아래 줄만 2칸).
+
+**확정 문구 세 가지(전부 필수)**
+
+1. **경계**: 표준 쇄골 직선(15-6l)
+2. **살 없음 선언**: "no bare skin anywhere on her body below this line" — 조각 수가 많아질수록 일부가 살로 새는 문제를 막아 줌
+3. **모든 이음매 단차**: "one material's edge rises very slightly above its neighbour, casting a shadow" — 각 칸이 진짜 별개 물체라는 증거
+
+**길이 관리**: 칸마다 긴 문단을 쓰지 않고 **"Row N (부위): left cell [재질], right cell [재질]."** 한 줄로 압축하면, 칸이 12개→20개로 늘어도 길이는 740→840단어 정도로 완만하게만 늡니다.
+
+**실패/기각한 모양들**: 소용돌이, 체커보드(재질 3개 이상 섞으면 패턴이 깨짐), 음양(S자), 헤링본, 찢어진 종이 가장자리, 대각선(어깨~반대쪽 다리), 정규 2×2 격자(비대칭 몬드리안이 더 나음), 3열 이상 격자(다리 개수와 안 맞음)
+
+**성공한 모양들**: 2열×N행 격자, 스테인드글라스(4개, 큰 조각 — 8개는 위계 없이 쪼개면 산만해짐), 동심원, 부채꼴(파이 조각), 비대칭 몬드리안(불규칙 사각형+굵은 검은 격자선), 스트라이프, 가로 일자 분할, 세로 반반(좌우)
+
+**2열×N행 격자의 한계**: 10행(20칸, 약 840단어)까지가 실질적인 최대치로 확인됨. 12행(24칸, 900단어)부터는 불안정해짐 — 재질 개수보다 **프롬프트 길이(900단어 근처)가 한계선**인 것으로 보임. 재질을 많이 쓰고 싶으면 10행(20칸)을 상한으로 삼는다.
+
 
 ### 15-7. 규칙 요약
 

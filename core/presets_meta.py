@@ -1139,6 +1139,22 @@ PRESET_CATEGORIES = {
         "la_dualbody_01_L2", "la_dualbody_02_L1", "la_dualbody_03_L3",
         "la_dualbody_04_L4",
     ],
+
+    "🏺 Living Artifact · Multi-Material Shapes": [
+        "la_shape_01_concentric", "la_shape_02_pieslice", "la_shape_03_mondrian",
+        "la_shape_04_stripes", "la_shape_05_horizontal", "la_shape_06_vertical",
+        "la_shape_07_stainedglass4",
+    ],
+
+    "🏺 Living Artifact · Multi-Material Grid": [
+        "la_grid_10rows", "la_grid_6rows", "la_grid_7rows",
+        "la_grid_8rows", "la_grid_9rows",
+    ],
+
+    "🏺 Living Artifact · Five-Material Patchwork": [
+        "la_5mat_01_halflength", "la_5mat_01_hipcut", "la_5mat_02_demistatue",
+        "la_5mat_02_threequarter", "la_5mat_03_anklecut",
+    ],
 }
 
 from core.hof_tier import HOF_TIER  # HOF 추가는 core/hof_tier.py에서
