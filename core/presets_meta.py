@@ -1149,6 +1149,13 @@ PRESET_CATEGORIES = {
     "🏺 Living Artifact · Multi-Material Grid": [
         "la_grid_10rows", "la_grid_6rows", "la_grid_7rows",
         "la_grid_8rows", "la_grid_9rows",
+    
+        "la_grid_demistatue_h_3", "la_grid_demistatue_h_6", "la_grid_demistatue_h_9",
+        "la_grid_demistatue_hv_3", "la_grid_demistatue_hv_6", "la_grid_demistatue_hv_9",
+        "la_grid_hipcut_h_3", "la_grid_hipcut_h_6", "la_grid_hipcut_h_9",
+        "la_grid_hipcut_hv_3", "la_grid_hipcut_hv_6", "la_grid_hipcut_hv_9",
+        "la_grid_threequarter_h_3", "la_grid_threequarter_h_6", "la_grid_threequarter_h_9",
+        "la_grid_threequarter_hv_3", "la_grid_threequarter_hv_6", "la_grid_threequarter_hv_9",
     ],
 
     "🏺 Living Artifact · Five-Material Patchwork": [
