@@ -1138,6 +1138,18 @@ PRESET_CATEGORIES = {
     "🏺 Living Artifact · Dual Body": [
         "la_dualbody_01_L2", "la_dualbody_02_L1", "la_dualbody_03_L3",
         "la_dualbody_04_L4",
+    
+        "la_dualbody2_new_r0_L0L0", "la_dualbody2_new_r0_L0L1", "la_dualbody2_new_r0_L1L1",
+        "la_dualbody2_new_r0_L1L2", "la_dualbody2_new_r0_L2L2", "la_dualbody2_new_r0_L2L3",
+        "la_dualbody2_new_r0_L3L3", "la_dualbody2_new_r0_L3L4", "la_dualbody2_new_r0_L4L0",
+        "la_dualbody2_new_r0_L4L4", "la_dualbody2_new_r1_L0L0", "la_dualbody2_new_r1_L0L1",
+        "la_dualbody2_new_r1_L1L1", "la_dualbody2_new_r1_L1L2", "la_dualbody2_new_r1_L2L2",
+        "la_dualbody2_new_r1_L2L3", "la_dualbody2_new_r1_L3L3", "la_dualbody2_new_r1_L3L4",
+        "la_dualbody2_new_r1_L4L0", "la_dualbody2_new_r1_L4L4", "la_dualbody2_old_combo01",
+        "la_dualbody2_old_combo02", "la_dualbody2_old_combo03", "la_dualbody2_old_combo04",
+        "la_dualbody2_old_combo05", "la_dualbody2_old_combo06", "la_dualbody2_old_combo07",
+        "la_dualbody2_old_combo08", "la_dualbody2_old_sym_L0", "la_dualbody2_old_sym_L1",
+        "la_dualbody2_old_sym_L2", "la_dualbody2_old_sym_L3", "la_dualbody2_old_sym_L4",
     ],
 
     "🏺 Living Artifact · Multi-Material Shapes": [
