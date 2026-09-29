@@ -1156,6 +1156,17 @@ PRESET_CATEGORIES = {
         "la_shape_01_concentric", "la_shape_02_pieslice", "la_shape_03_mondrian",
         "la_shape_04_stripes", "la_shape_05_horizontal", "la_shape_06_vertical",
         "la_shape_07_stainedglass4",
+    
+        "la_shape_anklecut_concentric", "la_shape_anklecut_horizontal", "la_shape_anklecut_mondrian",
+        "la_shape_anklecut_pieslice", "la_shape_anklecut_stainedglass4", "la_shape_anklecut_stripes",
+        "la_shape_anklecut_vertical", "la_shape_demistatue_concentric", "la_shape_demistatue_horizontal",
+        "la_shape_demistatue_mondrian", "la_shape_demistatue_pieslice", "la_shape_demistatue_stainedglass4",
+        "la_shape_demistatue_stripes", "la_shape_demistatue_vertical", "la_shape_fullbody_concentric",
+        "la_shape_fullbody_horizontal", "la_shape_fullbody_mondrian", "la_shape_fullbody_pieslice",
+        "la_shape_fullbody_stainedglass4", "la_shape_fullbody_stripes", "la_shape_fullbody_vertical",
+        "la_shape_threequarter_concentric", "la_shape_threequarter_horizontal", "la_shape_threequarter_mondrian",
+        "la_shape_threequarter_pieslice", "la_shape_threequarter_stainedglass4", "la_shape_threequarter_stripes",
+        "la_shape_threequarter_vertical",
     ],
 
     "🏺 Living Artifact · Multi-Material Grid": [
