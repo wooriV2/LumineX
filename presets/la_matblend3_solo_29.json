@@ -1,0 +1,22 @@
+{
+  "key": "la_matblend3_solo_29",
+  "category": "🏺 Living Artifact · Material Blend Formula",
+  "title": "Material Blend 3-Mix Solo #29 (금박+인어비늘+이레즈미)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, mid 40s goddess, wide hip narrow physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — hips so impossibly wide extending beyond frame creating the most extreme hip-to-waist ratio ever, waist cinched to absolute impossible minimum, upper body slim emphasizing the dramatic hip explosion, loose beach waves mid-length tousled — her body carries 3 different materials at once, each claiming roughly an equal irregular organic share of her body rather than any straight line, zones arranged diagonally and asymmetrically. applied ELECTRIC EMERALD leaf, thin irregular metallic sheets laid onto the contour of her body with fine natural creases and overlapping seams, VIVID GOLD undertone glinting through the thinnest points dominates zone 1. mermaid scales (fine delicate scales, small and closely overlapping with a soft iridescent sheen), BLAZING ELECTRIC CYAN scale formations, VIVID GOLD scale-edge detail, every scale catching its own glint and casting its own small shadow dominates zone 2. traditional irezumi tattoo ink, bold black ink outlines, wisteria formations in ELECTRIC VIOLET and STARK WHITE, extreme high-gloss oil finish dominates zone 3. Wherever any two zones meet, the boundary is soft, diagonal or curving rather than a straight line, the materials interweaving and overlapping gradually across an irregular blended border a few inches wide, elements of each scattered into the neighbouring zone, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: full frontal wide stance, both fists pressing outer hips outward to absolute maximum — most extreme wide hip narrow silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever zone that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "material-blend",
+    "mix_count": 3,
+    "styles": [
+      "zones"
+    ],
+    "materials": [
+      [
+        "goldleaf",
+        "scale_mermaid",
+        "irezumi"
+      ]
+    ]
+  }
+}

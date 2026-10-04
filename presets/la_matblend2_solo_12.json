@@ -1,0 +1,21 @@
+{
+  "key": "la_matblend2_solo_12",
+  "category": "🏺 Living Artifact · Material Blend Formula",
+  "title": "Material Blend 2-Mix Solo #12 (보태니컬+인어비늘)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, early 30s goddess, BBW bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most massive full-figure BBW body ever at absolute maximum in every dimension, hips so wide beyond proportion dominating the entire frame, bust so enormous overwhelming gravity, waist deeply snatched despite impossible volume, high ponytail swept sleek — her entire body, from neck to ankle, is a random intermingled mix of two materials with no spatial division at all — not left versus right, not top versus bottom, but irregular patches of each scattered all over her body in a marbled, organic distribution, exactly like natural mineral veining. living peony blooms growing directly from her own skin, every stem rooted in her living skin and every petal standing in three-dimensional relief casting its own small shadow, BLAZING CRIMSON blossoms, VIVID EMERALD leaves and tendrils and mermaid scales (fine delicate scales, small and closely overlapping with a soft iridescent sheen), BLAZING ELECTRIC TEAL scale formations, VIVID SILVER scale-edge detail, every scale catching its own glint and casting its own small shadow are woven through each other everywhere: a patch of one material on one shoulder, immediately beside it a patch of the other, then the first again across the ribs, the second at the hip, the first down one thigh, the second across the opposite calf — the two materials never separating into a clean zone anywhere on her body, every square inch densely interlocking, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: three-quarter angle, one hand on the outer hip, the other raised overhead — most extreme BBW bombshell silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever zone that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "material-blend",
+    "mix_count": 2,
+    "styles": [
+      "marbled"
+    ],
+    "materials": [
+      [
+        "botanical",
+        "scale_mermaid"
+      ]
+    ]
+  }
+}

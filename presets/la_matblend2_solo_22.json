@@ -1,0 +1,21 @@
+{
+  "key": "la_matblend2_solo_22",
+  "category": "🏺 Living Artifact · Material Blend Formula",
+  "title": "Material Blend 2-Mix Solo #22 (공작눈무늬+석재)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 30s goddess, hourglass bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum, thighs pressing together, every curve maximized at once, silver-white locs cascading to her waist — her LEFT side is dominated by peacock feather-eye markings (overlapping feather-barb ridges each converging into a round eye-marking with a raised rim), BLAZING ELECTRIC TEAL eye-marking centres, VIVID GOLD radiating barb-ridge detail, every marking standing in true relief. Her RIGHT side is dominated by solid polished rose-quartz stone fused directly into her own form, soft natural veining flowing to follow every curve, BLAZING soft pink stone surface with VIVID white vein striations. Rather than a sharp boundary, the two materials interweave and overlap gradually across a soft irregular zone a few inches wide down the centre of her body, elements of each scattered into the other's territory, density fading rather than stopping abruptly, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: standing full height, both arms slightly spread commanding the frame, both halves of her body clearly visible — most extreme hourglass bombshell silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever zone that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "material-blend",
+    "mix_count": 2,
+    "styles": [
+      "lr"
+    ],
+    "materials": [
+      [
+        "scale_peacock",
+        "stone"
+      ]
+    ]
+  }
+}

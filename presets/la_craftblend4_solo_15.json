@@ -1,0 +1,18 @@
+{
+  "key": "la_craftblend4_solo_15",
+  "category": "🏺 Living Artifact · Craft Blend Formula",
+  "title": "Craft Blend 4-Mix Solo #15 (RussianPalekh+KoreanEunipsa+HungarianKalocsa+PortugueseAzulejo)",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph with a plain seamless deep-charcoal backdrop, shot on a medium format camera with an 85mm lens at f/8, a single hard key light raking in from one side, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Japanese woman in her mid 50s, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, luminous glossy skin with a bright highlighter, thick black eyeliner, extremely long dramatic false lashes top and bottom, large eyes with bright real catchlights, glossy peach-pink lips, a confident sparkling expression, demure and soft, icy platinum-blonde hair styled in elegant updo, real living eyes. Long round nails, glittery finish.\n\nPhysique: An extraordinarily tall and enormous woman, far beyond any real person, towering and broad. A commanding, statuesque frame with huge broad shoulders, powerful thick arms with hard defined muscle, a strong deep chest, and a long, dense, muscular torso with only a slight inward taper at the waist. Enormous powerful hips and colossal long thighs with hard muscle visible through a soft layer, thick strong calves. Not slim, not delicate, powerful, statuesque and imposing. Her arms, hands, legs and feet stay in correct proportion to each other.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBody Art: Her bare skin carries 4 different painted patterns at once, together covering every inch of her body below the jaw with no bare skin anywhere, each pattern claiming roughly an equal irregular share of her body rather than any straight line, zones arranged diagonally and asymmetrically. Russian Palekh miniature lacquer (a deep black ground with fine gold linework and firebirds, wide gold bands, dense jewel-toned scenework) dominates one zone. Korean eunipsa silver inlay (a deep black ground with thick bright silver linework, wide bold silver bands, dense lattice fills) dominates the second zone. Hungarian Kalocsa folk painted motif (a deep black ground with bright red, pink and gold folk-art florals, wide gold bands, dense folk-art floral motifs) dominates the third zone. Portuguese azulejo tile (a brilliant white ground with deep cobalt-blue floral borders, wide cobalt bands, dense repeating panel scrollwork) dominates the fourth zone. Wherever any two zones meet, the boundary is soft and diagonal rather than a straight line, motifs blending gradually across an irregular border a few inches wide, pigment on living skin throughout, face unpainted.\n\nPose: both hands framing her own face.\n\nFootwear: extreme thigh-high stiletto boots, painted with the blended patterns following the same soft transitions as her skin.\n\nBackground & Lighting: the blended painted patterns reading crisp against her skin, the hard raking light carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "craft-blend",
+    "mix_count": 4,
+    "styles": [
+      "zones"
+    ],
+    "crafts": [
+      "RussianPalekh+KoreanEunipsa+HungarianKalocsa+PortugueseAzulejo"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "key": "la_matblend2_solo_17",
+  "category": "🏺 Living Artifact · Material Blend Formula",
+  "title": "Material Blend 2-Mix Solo #17 (뱀비늘+드래곤비늘)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, mid 30s goddess, curvy petite physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — smallest most compact frame possible yet curves exploding at absolute maximum in every direction, bubble butt projecting dramatically backward from the tiny frame, thighs so thick they dwarf the petite frame, loose beach waves mid-length tousled — her entire body, from neck to ankle, is a random intermingled mix of two materials with no spatial division at all — not left versus right, not top versus bottom, but irregular patches of each scattered all over her body in a marbled, organic distribution, exactly like natural mineral veining. snake scales (diamond-shaped angular scales aligned in neat overlapping rows), BLAZING PALE GOLD scale formations, VIVID IVORY WHITE scale-edge detail, every scale catching its own glint and casting its own small shadow and dragon scales (large thick armor-plate scales, each one substantial and sharply faceted), BLAZING METALLIC GOLD scale formations, VIVID AMBER scale-edge detail, every scale catching its own glint and casting its own small shadow are woven through each other everywhere: a patch of one material on one shoulder, immediately beside it a patch of the other, then the first again across the ribs, the second at the hip, the first down one thigh, the second across the opposite calf — the two materials never separating into a clean zone anywhere on her body, every square inch densely interlocking, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: standing full height, both arms slightly spread commanding the frame — most extreme curvy petite silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever zone that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "material-blend",
+    "mix_count": 2,
+    "styles": [
+      "marbled"
+    ],
+    "materials": [
+      [
+        "scale_snake",
+        "scale_dragon"
+      ]
+    ]
+  }
+}

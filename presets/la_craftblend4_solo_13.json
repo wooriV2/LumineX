@@ -1,0 +1,18 @@
+{
+  "key": "la_craftblend4_solo_13",
+  "category": "🏺 Living Artifact · Craft Blend Formula",
+  "title": "Craft Blend 4-Mix Solo #13 (FrenchLimoges+IslamicGeometric+AmericanArtDeco+KlimtMosaic)",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph with a plain seamless deep-charcoal backdrop, shot on a medium format camera with an 85mm lens at f/8, a single hard key light raking in from one side, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Turkish woman in her early 20s, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, warm olive skin, smoky bronze eyes, a deep rose-nude lip, demure and soft, deep burgundy wine-red hair styled in an intricate fishtail braid, real living eyes. Long round nails, glossy finish.\n\nPhysique: An extraordinarily large woman, far beyond any real person. Every part of her is dramatically oversized at once: a colossal heavy bust far wider than her shoulders, and below it a waistline that still draws in sharply even at this size. Below that waistline, enormous round hips flare out more than three times the width of the waistline, gigantic soft thighs pressed together, very thick soft arms, a full round face. Her head looks small on top of her massive body. Not a plus-size model, an overwhelming maximalist hourglass. Her arms, hands, legs and feet stay in correct proportion to each other.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBody Art: Her bare skin carries 4 different painted patterns at once, together covering every inch of her body below the jaw with no bare skin anywhere, each pattern claiming roughly an equal irregular share of her body rather than any straight line, zones arranged diagonally and asymmetrically. French Limoges enamel (a deep cobalt-blue ground with fine white and gold grisaille scrollwork, wide gold bands, dense grisaille scrollwork) dominates one zone. Islamic geometric star-tile pattern (a dense precise pattern of interlocking eight-pointed stars, wide gold bands, dense geometric star-and-polygon tile) dominates the second zone. American Art Deco chrome-and-lacquer (a deep black lacquer ground with bold silver chrome sunburst, wide silver chrome bands, dense zigzag linework) dominates the third zone. Klimt-inspired organic mosaic (an organic mosaic of small irregular tesserae with gold-leaf borders, wide gold bands, dense organic curved mosaic) dominates the fourth zone. Wherever any two zones meet, the boundary is soft and diagonal rather than a straight line, motifs blending gradually across an irregular border a few inches wide, pigment on living skin throughout, face unpainted.\n\nPose: both hands on her hips, elbows out.\n\nFootwear: extreme needle heels, painted with the blended patterns following the same soft transitions as her skin.\n\nBackground & Lighting: the blended painted patterns reading crisp against her skin, the hard raking light carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "craft-blend",
+    "mix_count": 4,
+    "styles": [
+      "zones"
+    ],
+    "crafts": [
+      "FrenchLimoges+IslamicGeometric+AmericanArtDeco+KlimtMosaic"
+    ]
+  }
+}

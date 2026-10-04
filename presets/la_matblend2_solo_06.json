@@ -1,0 +1,21 @@
+{
+  "key": "la_matblend2_solo_06",
+  "category": "🏺 Living Artifact · Material Blend Formula",
+  "title": "Material Blend 2-Mix Solo #06 (왁스+금박)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 20s goddess, wide hip narrow physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — hips so impossibly wide extending beyond frame creating the most extreme hip-to-waist ratio ever, waist cinched to absolute impossible minimum, upper body slim emphasizing the dramatic hip explosion, blunt collarbone-length bob thick heavy — her LEFT side is dominated by molten wax flowing and set directly over her own skin, BLAZING DEEP CRIMSON wax streams pooling and hardening, VIVID AMBER translucent drip-ridges catching the light. Her RIGHT side is dominated by applied ELECTRIC CRIMSON leaf, thin irregular metallic sheets laid onto the contour of her body with fine natural creases and overlapping seams, VIVID GOLD undertone glinting through the thinnest points. Rather than a sharp boundary, the two materials interweave and overlap gradually across a soft irregular zone a few inches wide down the centre of her body, elements of each scattered into the other's territory, density fading rather than stopping abruptly, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: strong hip pop right, both hands pressing sides of hips outward simultaneously arching back to extreme, both halves of her body clearly visible — most extreme wide hip narrow silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever zone that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "material-blend",
+    "mix_count": 2,
+    "styles": [
+      "lr"
+    ],
+    "materials": [
+      [
+        "wax",
+        "goldleaf"
+      ]
+    ]
+  }
+}

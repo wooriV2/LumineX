@@ -1,0 +1,18 @@
+{
+  "key": "la_craftblend4_solo_18",
+  "category": "🏺 Living Artifact · Craft Blend Formula",
+  "title": "Craft Blend 4-Mix Solo #18 (HungarianKalocsa+TurkishIznik+ChineseCizhou+PortugueseAzulejo)",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph with a plain seamless deep-charcoal backdrop, shot on a medium format camera with an 85mm lens at f/8, a single hard key light raking in from one side, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Pakistani woman in her early 20s, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, gold-dust eyeshadow, a deep maroon lip, richly detailed bridal makeup, warm brown skin, sultry, bold vivid magenta-pink hair styled in a low chignon knot at the nape, real living eyes. Long coffin nails, matte finish.\n\nPhysique: An extraordinarily large woman, far beyond any real person. A dramatically impossible waist-to-hip ratio dominates her silhouette: a colossal heavy bust, an extremely sharply cinched waist pulled in far tighter than the waistline of any of her other curves, and then enormous round hips flaring out to a width many times greater than that narrow waist. Gigantic soft thighs pressed together, very thick soft arms, a gigantic rounded rear. Her head looks small on top of her massive body. Not a plus-size model, not evenly proportioned. Her arms, hands, legs and feet stay in correct proportion to each other.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBody Art: Her bare skin carries 4 different painted patterns at once, together covering every inch of her body below the jaw with no bare skin anywhere, each pattern claiming roughly an equal irregular share of her body rather than any straight line, zones arranged diagonally and asymmetrically. Hungarian Kalocsa folk painted motif (a deep black ground with bright red, pink and gold folk-art florals, wide gold bands, dense folk-art floral motifs) dominates one zone. Turkish İznik tile (a brilliant white ground with cobalt-blue tulips and curling stems, wide cobalt-and-coral bands, dense floral scrollwork) dominates the second zone. Chinese Cizhou sgraffito ceramic (a glossy jet-black glaze carved to cream-white peony scrolls, wide carved cream bands, dense leaf scrolls) dominates the third zone. Portuguese azulejo tile (a brilliant white ground with deep cobalt-blue floral borders, wide cobalt bands, dense repeating panel scrollwork) dominates the fourth zone. Wherever any two zones meet, the boundary is soft and diagonal rather than a straight line, motifs blending gradually across an irregular border a few inches wide, pigment on living skin throughout, face unpainted.\n\nPose: back three-quarters to camera, head turned back.\n\nFootwear: extreme extreme platform lace-up sandals, painted with the blended patterns following the same soft transitions as her skin.\n\nBackground & Lighting: the blended painted patterns reading crisp against her skin, the hard raking light carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "craft-blend",
+    "mix_count": 4,
+    "styles": [
+      "zones"
+    ],
+    "crafts": [
+      "HungarianKalocsa+TurkishIznik+ChineseCizhou+PortugueseAzulejo"
+    ]
+  }
+}

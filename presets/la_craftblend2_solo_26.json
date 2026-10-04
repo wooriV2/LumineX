@@ -1,0 +1,18 @@
+{
+  "key": "la_craftblend2_solo_26",
+  "category": "🏺 Living Artifact · Craft Blend Formula",
+  "title": "Craft Blend 2-Mix Solo #26 (EscherTessellation+GeorgianMinonkari)",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph with a plain seamless deep-charcoal backdrop, shot on a medium format camera with an 85mm lens at f/8, a single hard key light raking in from one side, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Korean woman in her late 30s, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, glowing dewy skin, a precise winged liner, softly defined brown eyeshadow, full natural lashes, large eyes with bright real catchlights, sculpted contour with a satin highlight, plump glossy rose-coral lips, a poised, refined, confident expression, sultry, deep burgundy wine-red hair styled in two small space buns on top of the head, real living eyes. Long round nails, holographic finish.\n\nPhysique: An enormous, overwhelmingly muscular woman. Massive thick arms with heavy defined muscle, a broad powerful muscular back, a huge powerful chest, a heavy dense muscular torso and legs, only a soft hint of a waistline. Enormous round hips and colossal thick thighs with muscle visible through a soft layer, thick heavy calves. Not slim, not lean. Her arms, hands, legs and feet stay in correct proportion to each other.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBody Art: Her bare skin is painted in two different patterns covering every inch of her body below the jaw with no bare skin anywhere. Her upper body, from her collarbones down to her waistline, is painted in Escher-inspired tessellation (a tessellating pattern of interlocking shapes that morph as they repeat), wide gold bands following every deep crease, dense morphing tessellation filling the space between bands, pigment on living skin. Her lower body, from her waistline down to her ankles, is painted in Georgian minonkari cloisonné enamel (a deep black ground with fine gold cloisonné wirework), wide gold bands following every crease, dense cloisonné floral wirework filling the space between bands, pigment on living skin. Rather than a sharp boundary, the two painted patterns blend gradually into each other across a soft irregular zone a few inches wide, motifs from each pattern scattered into the other's territory, density fading rather than stopping abruptly, face unpainted.\n\nPose: square to camera, feet wide, arms clear of her body.\n\nFootwear: extreme platform stiletto peep-toe heels, painted with the blended patterns following the same soft transitions as her skin.\n\nBackground & Lighting: the blended painted patterns reading crisp against her skin, the hard raking light carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "craft-blend",
+    "mix_count": 2,
+    "styles": [
+      "horizontal"
+    ],
+    "crafts": [
+      "EscherTessellation+GeorgianMinonkari"
+    ]
+  }
+}
