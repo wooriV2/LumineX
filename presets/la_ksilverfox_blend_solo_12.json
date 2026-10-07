@@ -1,0 +1,26 @@
+{
+  "key": "la_ksilverfox_blend_solo_12",
+  "category": "🏺 Living Artifact · K-Silverfox Material Blend Formula",
+  "title": "K-Silverfox Material Blend 3-Mix Solo #26 (한국 · 부채꼴·물결 | 스테인드글라스+목재+UV네온)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nKorean silver fox goddess luminous milky ivory-fair complexion with a cool-neutral undertone and smooth dewy skin elegant silver-era maturity, mid 40s, wide hip narrow physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — hips so impossibly wide extending beyond frame creating the most extreme hip-to-waist ratio ever, waist cinched to absolute impossible minimum, upper body slim emphasizing the dramatic hip explosion, silver-white loose waves cascading to her waist — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 wedge-shaped regions radiating from a single centre point located about 43% of the way down her figure from the top on the centre line of her figure. 3 hazy ray-shaped transition zones leave that centre pointing toward 2 o'clock, 7 o'clock and 12 o'clock as seen by the camera, where 12 o'clock points straight up. Region 1 is the wedge between the 2 o'clock ray and the 7 o'clock ray, sweeping clockwise: it carries solid thick stained glass fused to her form, hundreds of small individual panes each no larger than a coin, BLAZING ELECTRIC EMERALD and VIVID GOLD panes alternating in a dense irregular mosaic, dark lead-line seams webbing between every pane. Region 2 is the wedge between the 7 o'clock ray and the 12 o'clock ray, sweeping clockwise: it carries rich dark walnut wood fused directly into her own form, natural grain lines flowing to follow every curve, BLAZING deep warm-brown grain with VIVID honey-gold highlight streaks. Region 3 is the wedge between the 12 o'clock ray and the 2 o'clock ray, sweeping clockwise: it carries UV-reactive neon bodypaint, invisible under standard light but dragon formations in ELECTRIC MAGENTA and NEON GREEN glowing at full intensity under her own dedicated UV blacklight. Where two regions meet, the materials interlock naturally: elements of one reach into the other and the two materials simply touch, so the boundary is made only of the two neighbouring materials, each in its own colours, with no gap between them. Each transition zone follows a gently undulating wave, rising and falling softly, rather than a straight course, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Face: a real photograph of a real woman's face, not an illustration and not a CG render — visible pores and fine skin grain, the fine natural expression lines of her age around the eyes and mouth, faint peach-fuzz hairs catching the light, natural tonal variation with a soft flush on the cheeks, a few small natural beauty marks, slight natural asymmetry, eyes with real wet catchlights and individual lashes, lips with real vertical texture — never airbrushed, never smooth like plastic. Pose: full frontal, both hands framing the face, chin raised, every region clearly visible to the camera — most extreme wide hip narrow silhouette ever displayed. A standard hard key light illuminates most of her body; a separate dedicated UV blacklight illuminates the UV-reactive region specifically, making it glow at full intensity while the rest reads under normal light.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "silverfox-blend",
+    "mix_count": 3,
+    "layout": "geometry-hazy-v1",
+    "structures": [
+      "부채꼴·물결"
+    ],
+    "materials": [
+      [
+        "glass",
+        "wood",
+        "uvneon"
+      ]
+    ],
+    "kind": "K",
+    "source": "la_matblend3_solo_26",
+    "boundary": "interlock-v1"
+  }
+}

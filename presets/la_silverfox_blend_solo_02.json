@@ -1,0 +1,26 @@
+{
+  "key": "la_silverfox_blend_solo_02",
+  "category": "🏺 Living Artifact · Silverfox Material Blend Formula",
+  "title": "Silverfox Material Blend 3-Mix Solo #03 (국제 · 세로 띠·물결 | 공작눈무늬+나비날개비늘+뱀비늘)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 40s silver fox goddess, powerlifter bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — immense powerful thighs and shoulders built with real strength, a thick solid waist, overwhelming muscular bulk layered with soft curves everywhere, silver-white hair in a sleek high ponytail — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 vertical bands by 2 hazy transition zones centred about 26% of the way across her figure from her left edge and about 46% of the way across her figure from her left edge. Region 1 is everything to her left of the first transition zone: it carries peacock feather-eye markings (overlapping feather-barb ridges each converging into a round eye-marking with a raised rim), BLAZING ELECTRIC EMERALD eye-marking centres, VIVID DEEP BLUE radiating barb-ridge detail, every marking standing in true relief. Region 2 is the strip between transition zone 1 and transition zone 2: it carries butterfly scales (thousands of microscopic powder-fine scales layered like overlapping roof tiles, each scale individually distinct catching its own glint), BLAZING ELECTRIC VIOLET scale formations, VIVID MAGENTA scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 3 is everything to her right of the last transition zone: it carries snake scales (diamond-shaped angular scales aligned in neat overlapping rows), BLAZING DEEP EMERALD scale formations, VIVID JADE scale-edge detail, every scale catching its own glint and casting its own small shadow. Where two regions meet, the materials interlock naturally: elements of one reach into the other and the two materials simply touch, so the boundary is made only of the two neighbouring materials, each in its own colours, with no gap between them. Each transition zone follows a gently undulating wave, rising and falling softly, rather than a straight course, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: strong hip pop left, both hands pressing outer hips outward arching back to extreme, every region clearly visible to the camera — most extreme powerlifter bombshell silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "silverfox-blend",
+    "mix_count": 3,
+    "layout": "geometry-hazy-v1",
+    "structures": [
+      "세로 띠·물결"
+    ],
+    "materials": [
+      [
+        "scale_peacock",
+        "scale_butterfly",
+        "scale_snake"
+      ]
+    ],
+    "kind": "I",
+    "source": "la_matblend3_solo_03",
+    "boundary": "interlock-v1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "key": "la_silverfox_blend_duo_14",
+  "category": "🏺 Living Artifact · Silverfox Material Blend Formula",
+  "title": "Silverfox Material Blend 3-Mix Duo #27 (국제 · 가로 띠·물결 / 동심원·매끈 | 흑요암금+뱀비늘+드래곤비늘 / 뱀비늘+목재+이레즈미)",
+  "prompt": "Professional fashion photograph, full body shot. TWO women standing side by side, each with her own multi-material blended body.\n\n#1: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, mid 40s silver fox goddess, powerlifter bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — immense powerful thighs and shoulders built with real strength, a thick solid waist, overwhelming muscular bulk layered with soft curves everywhere, silver-white loose waves cascading to her waist — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 horizontal bands by 2 hazy transition zones centred about 22% of the way down her figure from the top and about 55% of the way down her figure from the top. Region 1 is everything above the first transition zone: it carries polished obsidian stone fused directly to her own form, solid glossy black stone curving to follow her body's true shape, with molten gold seams running between fitted stone sections. Region 2 is the band between transition zone 1 and transition zone 2: it carries snake scales (diamond-shaped angular scales aligned in neat overlapping rows), BLAZING DEEP EMERALD scale formations, VIVID JADE scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 3 is everything below the last transition zone: it carries dragon scales (large thick armor-plate scales, each one substantial and sharply faceted), BLAZING CRIMSON scale formations, VIVID DEEP EMBER scale-edge detail, every scale catching its own glint and casting its own small shadow. Where two regions meet, the materials interlock naturally: elements of one reach into the other and the two materials simply touch, so the boundary is made only of the two neighbouring materials, each in its own colours, with no gap between them. Each transition zone follows a gently undulating wave, rising and falling softly, rather than a straight course, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: standing full height, both arms slightly spread commanding the frame, every region clearly visible to the camera — most extreme powerlifter bombshell silhouette ever displayed.\n#1: extreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\n#2: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 40s silver fox goddess, wide hip narrow physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — hips so impossibly wide extending beyond frame creating the most extreme hip-to-waist ratio ever, waist cinched to absolute impossible minimum, upper body slim emphasizing the dramatic hip explosion, silver-white crown braid wrapping around the head — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 concentric regions around a single centre point located about 47% of the way down her figure from the top on the centre line of her figure, separated by 2 hazy ring-shaped transition zones at about 33% and 48% of the way out from that centre point to the farthest edge of her figure. Region 1 is the innermost core around the centre point: it carries snake scales (diamond-shaped angular scales aligned in neat overlapping rows), BLAZING PALE GOLD scale formations, VIVID IVORY WHITE scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 2 is the ring between transition zone 1 and transition zone 2: it carries rich reddish mahogany wood fused directly into her own form, natural fine grain lines flowing to follow every curve, BLAZING deep red-brown grain with VIVID copper highlight streaks. Region 3 is the outermost region beyond the last ring: it carries traditional irezumi tattoo ink, bold black ink outlines, chrysanthemum formations in DEEP GOLD and EMERALD, extreme high-gloss oil finish. Where two regions meet, the materials interlock naturally: elements of one reach into the other and the two materials simply touch, so the boundary is made only of the two neighbouring materials, each in its own colours, with no gap between them. Each transition zone follows a smooth, even, perfectly circular course, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: standing full height, both arms slightly spread commanding the frame, every region clearly visible to the camera — most extreme wide hip narrow silhouette ever displayed.\n#2: extreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nEnvironment: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient.\nAll: Extreme macro detail on every material and every blended transition. CRITICAL: all 2 women's legs must show FULL BODY ART coverage from hip to ankle to toe with NO bare untattooed skin visible anywhere. TWO completely different extreme physiques must CONTRAST and DOMINATE every inch of frame. 8K portrait 3:4 aspect ratio.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "3:4",
+    "format": "silverfox-blend",
+    "mix_count": 3,
+    "layout": "geometry-hazy-v2",
+    "structures": [
+      "가로 띠·물결",
+      "동심원·매끈"
+    ],
+    "materials": [
+      [
+        "obsidian",
+        "scale_snake",
+        "scale_dragon"
+      ],
+      [
+        "scale_snake",
+        "wood",
+        "irezumi"
+      ]
+    ],
+    "kind": "I",
+    "source": "la_matblend3_duo_27",
+    "boundary": "interlock-v1"
+  }
+}

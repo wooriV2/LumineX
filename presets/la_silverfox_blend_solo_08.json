@@ -1,0 +1,26 @@
+{
+  "key": "la_silverfox_blend_solo_08",
+  "category": "🏺 Living Artifact · Silverfox Material Blend Formula",
+  "title": "Silverfox Material Blend 3-Mix Solo #17 (국제 · 가로 띠·물결 | 공작눈무늬+이레즈미+드래곤비늘)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 40s silver fox goddess, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, silver-white crown braid wrapping around the head — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 horizontal bands by 2 hazy transition zones centred about 60% of the way down her figure from the top and about 80% of the way down her figure from the top. Region 1 is everything above the first transition zone: it carries peacock feather-eye markings (overlapping feather-barb ridges each converging into a round eye-marking with a raised rim), BLAZING ELECTRIC TEAL eye-marking centres, VIVID GOLD radiating barb-ridge detail, every marking standing in true relief. Region 2 is the band between transition zone 1 and transition zone 2: it carries traditional irezumi tattoo ink, bold black ink outlines, tiger formations in VIVID ORANGE and STARK BLACK, extreme high-gloss oil finish. Region 3 is everything below the last transition zone: it carries dragon scales (large thick armor-plate scales, each one substantial and sharply faceted), BLAZING DEEP EMERALD scale formations, VIVID JADE scale-edge detail, every scale catching its own glint and casting its own small shadow. Where two regions meet, the materials interlock naturally: elements of one reach into the other and the two materials simply touch, so the boundary is made only of the two neighbouring materials, each in its own colours, with no gap between them. Each transition zone follows a gently undulating wave, rising and falling softly, rather than a straight course, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: strong hip pop right, both hands pressing sides of hips outward simultaneously arching back to extreme, every region clearly visible to the camera — most extreme super hourglass silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "silverfox-blend",
+    "mix_count": 3,
+    "layout": "geometry-hazy-v2",
+    "structures": [
+      "가로 띠·물결"
+    ],
+    "materials": [
+      [
+        "scale_peacock",
+        "irezumi",
+        "scale_dragon"
+      ]
+    ],
+    "kind": "I",
+    "source": "la_matblend3_solo_17",
+    "boundary": "interlock-v1"
+  }
+}

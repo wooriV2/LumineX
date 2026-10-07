@@ -1,0 +1,26 @@
+{
+  "key": "la_ksilverfox_blend_solo_02",
+  "category": "🏺 Living Artifact · K-Silverfox Material Blend Formula",
+  "title": "K-Silverfox Material Blend 3-Mix Solo #04 (한국 · 부채꼴·매끈 | 나비날개비늘+이레즈미+뱀비늘)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nKorean silver fox goddess luminous milky ivory-fair complexion with a cool-neutral undertone and smooth dewy skin elegant silver-era maturity, mid 40s, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, silver-white layered wolf cut with curtain bangs — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 wedge-shaped regions radiating from a single centre point located about 58% of the way down her figure from the top on the centre line of her figure. 3 hazy ray-shaped transition zones leave that centre pointing toward 6 o'clock, 10 o'clock and 2 o'clock as seen by the camera, where 12 o'clock points straight up. Region 1 is the wedge between the 6 o'clock ray and the 10 o'clock ray, sweeping clockwise: it carries butterfly scales (thousands of microscopic powder-fine scales layered like overlapping roof tiles, each scale individually distinct catching its own glint), BLAZING ELECTRIC EMERALD scale formations, VIVID GOLD scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 2 is the wedge between the 10 o'clock ray and the 2 o'clock ray, sweeping clockwise: it carries traditional irezumi tattoo ink, bold black ink outlines, orchid formations in DEEP VIOLET and EMERALD, extreme high-gloss oil finish. Region 3 is the wedge between the 2 o'clock ray and the 6 o'clock ray, sweeping clockwise: it carries snake scales (diamond-shaped angular scales aligned in neat overlapping rows), BLAZING PALE GOLD scale formations, VIVID IVORY WHITE scale-edge detail, every scale catching its own glint and casting its own small shadow. Where two regions meet, the materials interlock naturally: elements of one reach into the other and the two materials simply touch, so the boundary is made only of the two neighbouring materials, each in its own colours, with no gap between them. Each transition zone follows a smooth, even, straight course, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Face: a real photograph of a real woman's face, not an illustration and not a CG render — visible pores and fine skin grain, the fine natural expression lines of her age around the eyes and mouth, faint peach-fuzz hairs catching the light, natural tonal variation with a soft flush on the cheeks, a few small natural beauty marks, slight natural asymmetry, eyes with real wet catchlights and individual lashes, lips with real vertical texture — never airbrushed, never smooth like plastic. Pose: three-quarter angle, one hand on the outer hip, the other raised overhead, every region clearly visible to the camera — most extreme super hourglass silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "silverfox-blend",
+    "mix_count": 3,
+    "layout": "geometry-hazy-v1",
+    "structures": [
+      "부채꼴·매끈"
+    ],
+    "materials": [
+      [
+        "scale_butterfly",
+        "irezumi",
+        "scale_snake"
+      ]
+    ],
+    "kind": "K",
+    "source": "la_matblend3_solo_04",
+    "boundary": "interlock-v1"
+  }
+}

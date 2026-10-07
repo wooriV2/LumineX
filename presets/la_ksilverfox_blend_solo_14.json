@@ -1,0 +1,26 @@
+{
+  "key": "la_ksilverfox_blend_solo_14",
+  "category": "🏺 Living Artifact · K-Silverfox Material Blend Formula",
+  "title": "K-Silverfox Material Blend 3-Mix Solo #28 (한국 · 세로 띠·물결 | 금박+공작눈무늬+코이비늘)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nKorean silver fox goddess luminous light-neutral complexion with a soft peach-beige undertone elegant silver-era maturity, late 40s, curvy petite physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — smallest most compact frame possible yet curves exploding at absolute maximum in every direction, bubble butt projecting dramatically backward from the tiny frame, thighs so thick they dwarf the petite frame, silver-white chin-length bob — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 vertical bands by 2 hazy transition zones centred about 34% of the way across her figure from her left edge and about 62% of the way across her figure from her left edge. Region 1 is everything to her left of the first transition zone: it carries applied ELECTRIC CRIMSON leaf, thin irregular metallic sheets laid onto the contour of her body with fine natural creases and overlapping seams, VIVID GOLD undertone glinting through the thinnest points. Region 2 is the strip between transition zone 1 and transition zone 2: it carries peacock feather-eye markings (overlapping feather-barb ridges each converging into a round eye-marking with a raised rim), BLAZING ELECTRIC TEAL-GOLD eye-marking centres, VIVID DEEP VIOLET radiating barb-ridge detail, every marking standing in true relief. Region 3 is everything to her right of the last transition zone: it carries koi scales (rounded smooth scales with fine visible growth rings, each scale glossy and slightly domed), BLAZING ELECTRIC CRIMSON scale formations, VIVID PEARL WHITE scale-edge detail, every scale catching its own glint and casting its own small shadow. Where two regions meet, the materials interlock naturally: elements of one reach into the other and the two materials simply touch, so the boundary is made only of the two neighbouring materials, each in its own colours, with no gap between them. Each transition zone follows a gently undulating wave, rising and falling softly, rather than a straight course, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Face: a real photograph of a real woman's face, not an illustration and not a CG render — visible pores and fine skin grain, the fine natural expression lines of her age around the eyes and mouth, faint peach-fuzz hairs catching the light, natural tonal variation with a soft flush on the cheeks, a few small natural beauty marks, slight natural asymmetry, eyes with real wet catchlights and individual lashes, lips with real vertical texture — never airbrushed, never smooth like plastic. Pose: strong hip pop right, both hands pressing sides of hips outward simultaneously arching back to extreme, every region clearly visible to the camera — most extreme curvy petite silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "silverfox-blend",
+    "mix_count": 3,
+    "layout": "geometry-hazy-v2",
+    "structures": [
+      "세로 띠·물결"
+    ],
+    "materials": [
+      [
+        "goldleaf",
+        "scale_peacock",
+        "scale_koi"
+      ]
+    ],
+    "kind": "K",
+    "source": "la_matblend3_solo_28",
+    "boundary": "interlock-v1"
+  }
+}

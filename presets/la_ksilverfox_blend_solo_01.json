@@ -1,0 +1,26 @@
+{
+  "key": "la_ksilverfox_blend_solo_01",
+  "category": "🏺 Living Artifact · K-Silverfox Material Blend Formula",
+  "title": "K-Silverfox Material Blend 3-Mix Solo #02 (한국 · 동심원·물결 | 나비날개비늘+드래곤비늘+뱀비늘)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nKorean silver fox goddess luminous fair porcelain complexion with a neutral-rose undertone and clear glass-skin glow elegant silver-era maturity, mid 40s, powerlifter bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — immense powerful thighs and shoulders built with real strength, a thick solid waist, overwhelming muscular bulk layered with soft curves everywhere, silver-white loose waves cascading to her waist — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 concentric regions around a single centre point located about 50% of the way down her figure from the top on the centre line of her figure, separated by 2 hazy ring-shaped transition zones at about 44% and 63% of the way out from that centre point to the farthest edge of her figure. Region 1 is the innermost core around the centre point: it carries butterfly scales (thousands of microscopic powder-fine scales layered like overlapping roof tiles, each scale individually distinct catching its own glint), BLAZING ELECTRIC EMERALD scale formations, VIVID GOLD scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 2 is the ring between transition zone 1 and transition zone 2: it carries dragon scales (large thick armor-plate scales, each one substantial and sharply faceted), BLAZING METALLIC SILVER scale formations, VIVID PALE BLUE scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 3 is the outermost region beyond the last ring: it carries snake scales (diamond-shaped angular scales aligned in neat overlapping rows), BLAZING PALE GOLD scale formations, VIVID IVORY WHITE scale-edge detail, every scale catching its own glint and casting its own small shadow. Where two regions meet, the materials interlock naturally: elements of one reach into the other and the two materials simply touch, so the boundary is made only of the two neighbouring materials, each in its own colours, with no gap between them. Each transition zone follows a gently undulating wave, rising and falling softly, rather than a perfectly circular course, no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Face: a real photograph of a real woman's face, not an illustration and not a CG render — visible pores and fine skin grain, the fine natural expression lines of her age around the eyes and mouth, faint peach-fuzz hairs catching the light, natural tonal variation with a soft flush on the cheeks, a few small natural beauty marks, slight natural asymmetry, eyes with real wet catchlights and individual lashes, lips with real vertical texture — never airbrushed, never smooth like plastic. Pose: strong hip pop left, both hands pressing outer hips outward arching back to extreme, every region clearly visible to the camera — most extreme powerlifter bombshell silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material and every blended transition. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "silverfox-blend",
+    "mix_count": 3,
+    "layout": "geometry-hazy-v1",
+    "structures": [
+      "동심원·물결"
+    ],
+    "materials": [
+      [
+        "scale_butterfly",
+        "scale_dragon",
+        "scale_snake"
+      ]
+    ],
+    "kind": "K",
+    "source": "la_matblend3_solo_02",
+    "boundary": "interlock-v1"
+  }
+}
