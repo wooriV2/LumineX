@@ -1,0 +1,27 @@
+{
+  "key": "la_cjkface_kr_solo_25",
+  "category": "🏺 Living Artifact · Korean Face Formula",
+  "title": "Korean Face Solo #25 (한국 · 아이돌 · 눈물 글썽한 · 메이크업 지뢰계(포인트) · 마이크로더멀 루비 네잎클로버 · 스티커 이마 눈 · 각도 3/4 회전(왼쪽) · 점 눈물점+입술점)",
+  "prompt": "Professional fashion photograph, close-up beauty portrait. ONE woman, her head turned about forty-five degrees to her left in a three-quarter view, her eyes still looking straight into the camera, one ear and the turned cheek clearly visible, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Early 20s.\n\nSubject: A real photograph of a striking adult Korean woman — Korean pop idol visual luminous light-neutral complexion with a soft peach-beige undertone, early 20s, hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum, soft chestnut-brown long waves with curtain bangs. Real pores and fine skin grain on her skin, a soft sheen of natural oils, large eyes with bright real catchlights, full lips, a small dark beauty mark just below the outer corner of her left eye like a tear mole, a second tiny beauty mark above the right corner of her upper lip, each one a clearly visible dot of real skin pigment, pink-red eyeshadow smudged softly beneath both eyes, a delicate tear-track blush across the cheeks, large dark circle lenses with bright real catchlights, long lashes, glossy pink-red lips, microdermal ruby-red four-leaf clover-shaped gems pressed deep into the skin: a cluster of three small gems at each temple, each gem sitting on a tiny hidden metal base implanted beneath the skin and pressing firmly down so the skin around every gem is visibly pushed in, forming a clear small dimple with a soft raised ring of flesh bulging around its edge, a small natural warm shadow in each dimple, calm healthy skin with no redness or swelling, all gems well clear of the eyes, a single small evil-eye sticker at the center of the forehead, well above the brows, all stickers flat on the skin, clear of the eyes and lids, glistening eyes brimming with unshed tears, a pleading upward gaze at the camera, lips trembling slightly, a teary-eyed, vulnerable, pleading expression — a photograph of a real Korean woman's face (East Asian Korean features: a slim V-line face with a small tapered chin and smooth forehead, large double-lidded eyes with soft fullness under them, a straight narrow nose bridge with a small rounded tip, softly full lips, gently straight eyebrows), not an illustration, not a render. Her whole face, ears and neck are real living flesh with real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light \n\nLighting: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. A soft key light from the front and slightly to the side on her face, so the gems catch the light; a thin cool rim light along the hair and shoulders. 2:3 vertical 8K portrait.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "cjk-face",
+    "nat": "kr",
+    "age_group": "아이돌",
+    "expression": "눈물 글썽한",
+    "piercing": "P0",
+    "jewelry": false,
+    "makeup": "지뢰계",
+    "makeup_label": "지뢰계(포인트)",
+    "tan": false,
+    "microdermal": "루비 네잎클로버",
+    "sticker": "이마 눈",
+    "henna": null,
+    "lens": null,
+    "tongue": null,
+    "angle": "3/4 회전(왼쪽)",
+    "mole": "눈물점+입술점",
+    "accent_count": 2
+  }
+}

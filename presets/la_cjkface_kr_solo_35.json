@@ -1,0 +1,27 @@
+{
+  "key": "la_cjkface_kr_solo_35",
+  "category": "🏺 Living Artifact · Korean Face Formula",
+  "title": "Korean Face Solo #35 (한국 · 30대 · 카리스마 있는 · 메이크업 지뢰계(강화) · 포인트 없음 · 각도 3/4 회전(오른쪽))",
+  "prompt": "Professional fashion photograph, close-up beauty portrait. ONE woman, her head turned about forty-five degrees to her right in a three-quarter view, her eyes still looking straight into the camera, one ear and the turned cheek clearly visible, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 30s.\n\nSubject: A real photograph of a striking adult Korean woman — Korean poised refined beauty luminous fair porcelain complexion with a neutral-rose undertone and clear glass-skin glow, mid 30s, hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum, long glossy dark-brown waves swept to one side. Real pores and fine skin grain on her skin, a soft sheen of natural oils, large eyes with bright real catchlights, full lips, extremely heavy, fully saturated and bold, never subtle, faded or blended away: pink-red eyeshadow smudged softly beneath both eyes, a delicate tear-track blush across the cheeks, large dark circle lenses with bright real catchlights, long lashes, glossy pink-red lips, a piercing direct stare, jaw set, lips firmly closed, a bold, commanding, fierce expression — a photograph of a real Korean woman's face (East Asian Korean features: a slim V-line face with a small tapered chin and smooth forehead, large double-lidded eyes with soft fullness under them, a straight narrow nose bridge with a small rounded tip, softly full lips, gently straight eyebrows), not an illustration, not a render. Her whole face, ears and neck are real living flesh with real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light \n\nLighting: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. A soft key light from the front and slightly to the side on her face; a thin cool rim light along the hair and shoulders. 2:3 vertical 8K portrait.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "cjk-face",
+    "nat": "kr",
+    "age_group": "30대",
+    "expression": "카리스마 있는",
+    "piercing": "P0",
+    "jewelry": false,
+    "makeup": "지뢰계",
+    "makeup_label": "지뢰계(강화)",
+    "tan": false,
+    "microdermal": null,
+    "sticker": null,
+    "henna": null,
+    "lens": null,
+    "tongue": null,
+    "angle": "3/4 회전(오른쪽)",
+    "mole": null,
+    "accent_count": 0
+  }
+}

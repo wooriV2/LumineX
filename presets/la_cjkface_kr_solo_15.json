@@ -1,0 +1,27 @@
+{
+  "key": "la_cjkface_kr_solo_15",
+  "category": "🏺 Living Artifact · Korean Face Formula",
+  "title": "Korean Face Solo #15 (한국 · 30대 · 카리스마 있는 · 메이크업 코랄 립 강함 · 스티커 이마 눈 · 렌즈 오렌지 파이어(고양이눈))",
+  "prompt": "Professional fashion photograph, close-up beauty portrait. ONE woman, facing the camera straight on in a perfectly frontal portrait, her head level, both ears clearly visible on either side of her face, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Mid 30s.\n\nSubject: A real photograph of a striking adult Korean woman — Korean poised refined beauty luminous fair porcelain complexion with a neutral-rose undertone and clear glass-skin glow, mid 30s, hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum, a polished low bun with a few loose strands. Real pores and fine skin grain on her skin, a soft sheen of natural oils, large eyes with bright real catchlights, full lips, opaque satin vivid orange-coral red lips, peach-gold eyeshadow, defined lashes, a warm blush, vivid fiery orange coloured contact lenses with a vertical slit cat-eye pupil, both eyes the same, fully opaque and solidly saturated across the whole iris with no natural brown showing through, the colour bright and unmistakable, with a darker limbal ring, sitting naturally on the irises and clear of the eyelids, a single small evil-eye sticker at the center of the forehead, well above the brows, all stickers flat on the skin, clear of the eyes and lids, a piercing direct stare, jaw set, lips firmly closed, a bold, commanding, fierce expression — a photograph of a real Korean woman's face (East Asian Korean features: a slim V-line face with a small tapered chin and smooth forehead, large double-lidded eyes with soft fullness under them, a straight narrow nose bridge with a small rounded tip, softly full lips, gently straight eyebrows), not an illustration, not a render. Her whole face, ears and neck are real living flesh with real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light \n\nLighting: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. A soft frontal light on her face and ears; a thin cool rim light along the hair and shoulders. 2:3 vertical 8K portrait.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "cjk-face",
+    "nat": "kr",
+    "age_group": "30대",
+    "expression": "카리스마 있는",
+    "piercing": "P0",
+    "jewelry": false,
+    "makeup": "코랄 립",
+    "makeup_label": "코랄 립 강함",
+    "tan": false,
+    "microdermal": null,
+    "sticker": "이마 눈",
+    "henna": null,
+    "lens": "오렌지 파이어(고양이눈)",
+    "tongue": null,
+    "angle": null,
+    "mole": null,
+    "accent_count": 2
+  }
+}

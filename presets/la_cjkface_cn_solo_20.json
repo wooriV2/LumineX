@@ -1,0 +1,27 @@
+{
+  "key": "la_cjkface_cn_solo_20",
+  "category": "🏺 Living Artifact · Chinese Face Formula",
+  "title": "Chinese Face Solo #20 (중국 · 아이돌 · 눈물 글썽한 · 메이크업 없음 · 포인트 없음 · 점 눈물점+입술점+광대점)",
+  "prompt": "Professional fashion photograph, close-up beauty portrait. ONE woman, facing the camera straight on in a perfectly frontal portrait, her head level, both ears clearly visible on either side of her face, framed tightly from the very top of her head down to the base of her neck and the tops of her collarbones, the frame cutting off there. Her face is large and sharp. Early 20s.\n\nSubject: A real photograph of a striking adult Chinese woman — Chinese pop idol visual luminous fair porcelain complexion with a neutral-rose undertone and clear glass-skin glow, early 20s, hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum, soft chestnut-brown long waves with curtain bangs. Real pores and fine skin grain on her skin, a soft sheen of natural oils, large eyes with bright real catchlights, full lips, a small dark beauty mark just below the outer corner of her left eye like a tear mole, a second tiny beauty mark above the right corner of her upper lip, and a third on her left cheekbone, each one a clearly visible dot of real skin pigment, glistening eyes brimming with unshed tears, a pleading upward gaze at the camera, lips trembling slightly, a teary-eyed, vulnerable, pleading expression — a photograph of a real Chinese woman's face (East Asian Chinese features: a longer oval face with prominent high cheekbones and a defined jawline, long upturned phoenix-shaped eyes with sharp inner folds, a high strong nose bridge, thin arched eyebrows with a slight rise, balanced lips), not an illustration, not a render. Her whole face, ears and neck are real living flesh with real pores and fine skin grain, real living eyes with bright catchlights and genuine depth, individual hair strands catching the light \n\nLighting: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. A soft frontal light on her face and ears; a thin cool rim light along the hair and shoulders. 2:3 vertical 8K portrait.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "cjk-face",
+    "nat": "cn",
+    "age_group": "아이돌",
+    "expression": "눈물 글썽한",
+    "piercing": "P0",
+    "jewelry": false,
+    "makeup": null,
+    "makeup_label": null,
+    "tan": false,
+    "microdermal": null,
+    "sticker": null,
+    "henna": null,
+    "lens": null,
+    "tongue": null,
+    "angle": null,
+    "mole": "눈물점+입술점+광대점",
+    "accent_count": 0
+  }
+}
