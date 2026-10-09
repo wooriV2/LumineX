@@ -1,0 +1,24 @@
+{
+  "key": "la_wood2_solo_32",
+  "category": "🏺 Living Artifact · Wood Formula v2",
+  "title": "Wood2 Solo #32 (목재 솔로 · African blackwood · 체형 super hourglass · 인종 Polynesian · 메이크업 비주얼계 블랙립 3단계 · 강함 · 배경 하얀 안뜰 · 힐 숫자 없음 · 몸 주얼리)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm bronze-brown complexion, late 30s goddess, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, long wavy chocolate brown hair — full body jet-black African blackwood carved directly over her own form covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE — this is not a garment, not a printed pattern, this is solid carved wood curving to follow her body's true three-dimensional shape, divided into dozens of fitted carved sections whose grain changes direction from one section to the next, each joint standing in a thin raised ridge catching its own soft glint and casting its own small shadow, nothing lying flat. Dense fitted sections — BLAZING deep jet-black African blackwood grain across the full torso both legs neck to ankle, VIVID faint dark-brown lines running between the carved sections, with carved relief of waves across the surface of every section, polished to a warm satin sheen, completely opaque, NO airbrush NO gradient wash, NO flat printed surface anywhere. Pose: three-quarter angle, one hand on the outer hip, the other raised overhead — most extreme super hourglass silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, strappy platform stiletto sandals carved from the same African blackwood, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, ballerina nails each a full hand-length past her fingertips, carved from the same African blackwood with a high polish.\nJewelry: a fine gold chain looped around her thigh above the knee, sculpted gold armbands high on both upper arms, and a delicate silver body chain draped across her collarbones and down her torso. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face and ears are NOT carved — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Polynesian woman with a broad face, full lips and large dark eyes, an unmistakably feminine face with a calm, composed expression, makeup: deep smoky black eyeshadow blended far out beyond the eyes, a sharp black winged liner, long dramatic lashes, glossy black lips, sharply contoured cheekbones.\n\nBackground: a sunlit white-washed courtyard with a pale tiled floor, an arched doorway at normal height, low stone steps and a tall olive tree, bright midday light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on every surface texture and shadow. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "woodstone2",
+    "material": "wood",
+    "species": [
+      "African blackwood"
+    ],
+    "physiques": [
+      "super hourglass"
+    ],
+    "ethnicity": [
+      "Polynesian"
+    ],
+    "background": "하얀 안뜰",
+    "heel_mode": "relative",
+    "jewelry": true
+  }
+}
