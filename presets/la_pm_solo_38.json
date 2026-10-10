@@ -1,0 +1,31 @@
+{
+  "key": "la_pm_solo_38",
+  "category": "🏺 Living Artifact · Persona Mix Formula",
+  "title": "PersonaMix Solo #38 (솔로 · 도자기=낙신 · 도자기 홍유 · 앵글 기본(허리 높이) · 체형 super hourglass · 인종 Chinese · 메이크업 홍콩풍(강화) · 배경 얼음 동굴 · 힐 숫자 없음 · 몸 주얼리)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na luminous warm-ivory complexion, early 20s, Luoshen, the river goddess of classical Chinese legend, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, blunt bob teal hair — full body glazed ox-blood red porcelain fused directly to her own form covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE — this is not a garment, not jewelry, not a printed pattern, this is solid glazed porcelain curving to follow her body's true three-dimensional shape, divided into dozens of fitted porcelain sections, each joint standing in a thin raised ridge catching its own bright glint and casting its own small shadow, nothing lying flat. Dense fitted sections — BLAZING deep ox-blood copper-red glaze across the full torso both legs neck to ankle, VIVID pale streaks and fine golden crackle lines running between the sections, with thin brass inlay lines running along the grain of every section, high-gloss glazed, completely opaque, NO airbrush NO gradient wash, NO flat printed surface anywhere. Pose: leaning against a pillar with one arm resting on it, one knee bent — most extreme super hourglass silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, knee-high lace-up platform stiletto boots made of the same porcelain, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, ballerina nails each as long as her forearm is wide, made of the same porcelain with a high polish.\nJewelry: a fine gold chain looped around her thigh above the knee, a pearl choker and a long strand of pearls hanging low on her chest, and a gold belly chain with a small pendant at her navel. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face and ears are NOT porcelain — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Chinese woman (East Asian Chinese features: a longer oval face with prominent high cheekbones and a defined jawline, long upturned phoenix-shaped eyes with sharp inner folds, a high strong nose bridge, thin arched eyebrows with a slight rise, balanced lips), an unmistakably feminine face with a calm, composed expression, makeup: extremely heavy, fully saturated and bold, never subtle, faded or blended away: thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge.\n\nBackground: a bright blue-white glacier ice cave lit by daylight through the ice, a flat frozen floor and a standard-height wooden walkway rail, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her. ONE woman only. Extreme macro detail on every surface texture and shadow. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "personamix",
+    "kinds": [
+      "porcelain"
+    ],
+    "concepts": [
+      "낙신"
+    ],
+    "angle": "base",
+    "poses": [
+      "leaning against a pillar with one arm resting on it, one knee bent"
+    ],
+    "physiques": [
+      "super hourglass"
+    ],
+    "ethnicity": [
+      "Chinese"
+    ],
+    "background": "ice_cave",
+    "weather": null,
+    "heel_mode": "relative",
+    "jewelry": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "key": "la_xheel_bodypaint_solo_08",
+  "category": "🏺 Living Artifact · Extreme Heels Body-Art",
+  "title": "Body Paint Heel Solo #08 (바디페인팅 솔로 · 구성 Indian/슈퍼글래머/Ukrainian Petrykivka floral painting · 힐 40인치 · 신발 색 원문 유지)",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph with a plain seamless deep-charcoal backdrop, shot on a medium format camera with an 85mm lens at f/8, a single hard key light raking in from one side, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Indian woman in her late 40s, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, kohl-lined almond eyes, a small gold bindi, a deep maroon-red lip, warm golden-brown skin, cheerful, elegant updo hair, real living eyes. Long stiletto nails, holographic finish.\n\nPhysique: An extraordinarily large woman, far beyond any real person. Every part of her is dramatically oversized at once: a colossal heavy bust far wider than her shoulders, and below it a waistline that still draws in sharply even at this size. Below that waistline, enormous round hips flare out more than three times the width of the waistline, gigantic soft thighs pressed together, very thick soft arms, a full round face. Her head looks small on top of her massive body. Not a plus-size model, an overwhelming maximalist hourglass. Her arms, hands, legs and feet stay in correct proportion to each other.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds, faint stretch marks where the great curves have expanded. No smooth illustration finish, no plastic CG sheen.\n\nBody Art: Her bare skin is painted in Ukrainian Petrykivka floral painting — a black ground with bright red, orange and gold folk-art flowers, wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense folk-art florals filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\n\nPose: full side profile, one arm reaching forward.\n\nFootwear: the most absurdly extreme heels imaginable — gold platform stiletto pumps, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\n\nBackground & Lighting: the painted pattern catching the light in sharp glints, the hard raking light carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical. Very low camera angle with the full length of every boot visible down to the floor, the towering heel height dominating the silhouette and lifting her far above the floor.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "composition": [
+      "Indian/슈퍼글래머/Ukrainian Petrykivka floral painting"
+    ],
+    "format": "extremeheel",
+    "track": "bodypaint",
+    "heel_mode": "forty",
+    "shoe": "original",
+    "source": "la_core_solo_30"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "key": "la_mm_solo_23",
+  "category": "🏺 Living Artifact · Material Mix Formula",
+  "title": "MatMix Solo #23 (새 재질 솔로 · 호박 꿀색 · 체형 super hourglass · 인종 Latina · 메이크업 클래식 레드립 강함 · 배경 미술관 · 힐 숫자 없음 · 몸 주얼리)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm caramel complexion, late 30s goddess, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, shaggy layered dark brown hair — full body polished honey amber resin fused directly to her own form covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE — this is not a garment, not jewelry, not a printed pattern, this is solid amber resin curving to follow her body's true three-dimensional shape, divided into dozens of fitted amber sections, each joint standing in a thin raised ridge catching its own bright glint and casting its own small shadow, nothing lying flat. Dense fitted sections — BLAZING warm honey-orange amber surface across the full torso both legs neck to ankle, VIVID deeper red-brown swirls and tiny golden bubbles flowing through every section, with fine gold inlay lines tracing every joint between the sections, high-gloss polished, completely opaque, NO airbrush NO gradient wash, NO flat printed surface anywhere. Pose: one hand on her waist, the other lifted to her chin, weight on one leg — most extreme super hourglass silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, platform stiletto ballet boots made of the same amber, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, almond nails each as long as her forearm is wide, made of the same amber with a high polish.\nJewelry: a fine gold chain looped around her thigh above the knee, sculpted gold armbands high on both upper arms, and a gold belly chain with a small pendant at her navel. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face and ears are NOT amber — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Latina woman with high cheekbones, large dark eyes and full lips, an unmistakably feminine face with a calm, composed expression, makeup: opaque matte classic red lips with a precise edge, a sharp black winged liner, defined lashes, a clean complexion.\n\nBackground: a bright art museum atrium with a pale stone floor, tall blank white walls, a wide staircase of standard steps and a normal-height doorway, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her. ONE woman only. Extreme macro detail on every surface texture and shadow. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "materialmix",
+    "kinds": [
+      "amber"
+    ],
+    "physiques": [
+      "super hourglass"
+    ],
+    "ethnicity": [
+      "Latina"
+    ],
+    "background": "art_museum",
+    "weather": null,
+    "heel_mode": "relative",
+    "jewelry": true
+  }
+}
