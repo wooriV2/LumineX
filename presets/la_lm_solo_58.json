@@ -1,0 +1,34 @@
+{
+  "key": "la_lm_solo_58",
+  "category": "🏺 Living Artifact · Light Mix Formula",
+  "title": "LightMix Solo #58 (솔로 · UV네온 · UV네온 · 앵글 기본(허리 높이) · 조명 pink · 시간대 없음 · 분위기 high fashion editorial · 체형 hourglass bombshell · 인종 Indian · 메이크업 잉크 블랙립(강화) · 배경 아이스 링크 · 힐 40인치 · 몸 주얼리)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm golden-brown complexion, late 30s goddess, hourglass bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum, thighs pressing together, every curve maximized at once, top bun jet-black hair — full body UV neon cosmic nebula bodypaint covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE. Bold formations — BLAZING ELECTRIC MAGENTA nebula cloud formations swirling across the chest and upper body, VIVID NEON CYAN plasma stream formations flowing down both legs entirely, BLAZING NEON GOLD star cluster formations scattered densely filling every gap, NO airbrush NO gradient wash, lit by her own dedicated UV blacklight spot with zero white light reaching her specifically, every formation glowing at maximum intensity. Pose: back to the camera, shoulder blades emphasized, face turned in profile — most extreme hourglass bombshell silhouette ever displayed.\nFootwear: thigh-high platform stiletto boots entirely in the exact same colours as her own body art — blazing electric magenta, vivid neon cyan and blazing neon gold — NOT black, NOT dark, NOT plain — the footwear must be a bright, saturated, glossy colour taken straight from her own body art, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, curved talon nails each as long as her whole hand, painted in the same colours as her body art with UV reactive tips.\nJewelry: a long layered gold necklace falling between her breasts, a delicate silver body chain draped across her collarbones and down her torso, and a pearl choker and a long strand of pearls hanging low on her chest. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face and ears are NOT painted — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Indian woman with large almond eyes, strong brows and a defined nose, an unmistakably feminine face with a calm, composed expression, makeup: extremely heavy, fully saturated and bold, never subtle, faded or blended away: a blurred ink-black gradient across the lids like soft smoke, a fine black liner, natural full lashes, a glass-skin highlight on the cheekbones, ink-black glossy lips with a softly blurred gradient edge.\n\nBackground: a bright empty ice rink with a clean white ice surface, a waist-high boards edge and standard-height gates, pink neon accent light, rose-toned atmospheric glow, fashion editorial lighting, high fashion editorial mood, cold sophisticated atmosphere, sharp luxury, every person's whole figure from the boots to the top of her head clearly lit and fully visible with every material detail sharp, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her. ONE woman only. Extreme macro detail on every surface texture and shadow. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "lightmix",
+    "kinds": [
+      "uvneon"
+    ],
+    "concepts": [
+      null
+    ],
+    "angle": "base",
+    "poses": [
+      "back to the camera, shoulder blades emphasized, face turned in profile"
+    ],
+    "lighting": "pink",
+    "time_of_day": null,
+    "mood": "high fashion editorial",
+    "physiques": [
+      "hourglass bombshell"
+    ],
+    "ethnicity": [
+      "Indian"
+    ],
+    "background": "ice_rink",
+    "weather": null,
+    "heel_mode": "forty",
+    "jewelry": true
+  }
+}

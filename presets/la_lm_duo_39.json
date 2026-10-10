@@ -1,0 +1,39 @@
+{
+  "key": "la_lm_duo_39",
+  "category": "🏺 Living Artifact · Light Mix Formula",
+  "title": "LightMix Duo #39 (듀오 · UV네온·thick twist-out curls / 바디페인팅 · UV네온 / 바디페인팅 · 앵글 극단 3/4 앵글 · 조명 pink · 시간대 없음 · 분위기 retro pin-up · 체형 hourglass bombshell, amazon bombshell · 인종 ebony, Latina · 메이크업 클래식 레드립 강함 ‖ 메이크업 글래스 스킨 3단계 · 강함 · 배경 미술관 · 힐 40인치 · 몸 주얼리)",
+  "prompt": "Professional fashion photograph, full body shot. TWO women standing side by side.\n\n#1: a deep ebony-brown complexion, late 20s goddess, hourglass bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum, thighs pressing together, every curve maximized at once, thick twist-out curls in chestnut brown — full body UV neon crystal lattice bodypaint covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE. Bold formations — BLAZING ELECTRIC VIOLET geometric lattice facets full torso both legs to ankle, prismatic crystal faces refracting CYAN light, STARK WHITE crystal node bursts filling every gap, NO airbrush NO gradient wash, lit by her own dedicated UV blacklight spot with zero white light reaching her specifically, every formation glowing at maximum intensity. Pose: S-curve stance, one knee bent, hip tilted out, one hand resting on her thigh — most extreme hourglass bombshell silhouette ever displayed.\n#1: Footwear: thigh-high platform stiletto boots entirely in the exact same colours as her own body art — blazing electric violet, cyan and stark white — NOT black, NOT dark, NOT plain — the footwear must be a bright, saturated, glossy colour taken straight from her own body art, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\n#1: Nails: the longest nails physically imaginable, ballerina nails each longer than her middle finger, painted in the same colours as her body art with UV reactive tips.\n#1: Jewelry: a delicate silver body chain draped across her collarbones and down her torso, a gold belly chain with a small pendant at her navel, and heavy gold rings on every finger. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\n#1: Face: her face and ears are NOT painted — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Black woman with strong, striking features, a broad nose and full lips, an unmistakably feminine face with a calm, composed expression, makeup: opaque matte classic red lips with a precise edge, a sharp black winged liner, defined lashes, a clean complexion.\n\n#2: a warm caramel complexion, early 50s goddess, amazon bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — impossibly tall commanding frame with simultaneously the most massive full-figure curves, enormous powerful presence dominating the entire frame top to bottom, legs endlessly long massively thick and powerful, waist-length braids balayage hair — painted in Islamic geometric star-tile pattern — a dense precise pattern of interlocking eight-pointed stars, wide gold bands following every deep crease, dense geometric star-and-polygon tile filling the space between bands, pigment on living skin, covering her whole body below the jaw with no bare skin anywhere, face unpainted, pattern fading at the neck. Pose: hands pressed together raised above her head in a devotional pose, eyes lifted — most extreme amazon bombshell silhouette ever displayed.\n#2: Footwear: the most absurdly extreme heels imaginable — gold platform stiletto slingbacks, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\n#2: Nails: the longest nails physically imaginable, stiletto nails each a full hand-length past her fingertips, painted in the same colours as her body art.\n#2: Jewelry: a gold belly chain with a small pendant at her navel, a pearl choker and a long strand of pearls hanging low on her chest, and a wide gold waist chain resting over the carved curve of her hips. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\n#2: Face: her face and ears are NOT painted — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Latina woman with high cheekbones, large dark eyes and full lips, an unmistakably feminine face with a calm, composed expression, makeup: very dewy glass skin with a strong luminous highlight on the cheekbones, nose bridge and forehead, a rosy blush, glossy coral lips.\n\nEnvironment: a bright art museum atrium with a pale stone floor, tall blank white walls, a wide staircase of standard steps and a normal-height doorway, pink neon accent light, rose-toned atmospheric glow, fashion editorial lighting, retro pin-up mood, vintage glamour atmosphere, classic playful editorial, every person's whole figure from the boots to the top of her head clearly lit and fully visible with every material detail sharp, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as any of them.\nAll: Extreme macro detail on every surface texture and shadow. CRITICAL: all 2 women's legs must show FULL BODY ART coverage from hip to ankle to toe with NO bare untattooed skin visible anywhere, every element standing in true relief, nothing flat. TWO completely different extreme physiques must CONTRAST and DOMINATE every inch of frame. Full-length EXTREME three-quarter view from the far front-left, her whole body turned a full sixty degrees away from the camera with her shoulders and hips twisted, the camera at waist height and pushed close for strong foreshortening, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 3:4 aspect ratio.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "3:4",
+    "format": "lightmix",
+    "kinds": [
+      "uvneon",
+      "bodypaint"
+    ],
+    "concepts": [
+      null,
+      null
+    ],
+    "angle": "tq",
+    "poses": [
+      "S-curve stance, one knee bent, hip tilted out, one hand resting on her thigh",
+      "hands pressed together raised above her head in a devotional pose, eyes lifted"
+    ],
+    "lighting": "pink",
+    "time_of_day": null,
+    "mood": "retro pin-up",
+    "physiques": [
+      "hourglass bombshell",
+      "amazon bombshell"
+    ],
+    "ethnicity": [
+      "ebony",
+      "Latina"
+    ],
+    "background": "art_museum",
+    "weather": null,
+    "heel_mode": "forty",
+    "jewelry": true
+  }
+}

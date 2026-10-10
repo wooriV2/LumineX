@@ -1,0 +1,34 @@
+{
+  "key": "la_lm_solo_25",
+  "category": "🏺 Living Artifact · Light Mix Formula",
+  "title": "LightMix Solo #25 (솔로 · UV네온 · UV네온 · 앵글 측면 · 조명 chiaro · 시간대 없음 · 분위기 bohemian free-spirited · 체형 latina curves · 인종 Slavic · 메이크업 코랄 립 강함 · 배경 천문대 · 힐 40인치 · 몸 주얼리)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na fair porcelain complexion with a cool undertone, mid 50s goddess, latina curves physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum, long straight ash brown hair — full body UV neon crystal lattice bodypaint covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE. Bold formations — BLAZING ELECTRIC VIOLET geometric lattice facets full torso both legs to ankle, prismatic crystal faces refracting CYAN light, STARK WHITE crystal node bursts filling every gap, NO airbrush NO gradient wash, lit by her own dedicated UV blacklight spot with zero white light reaching her specifically, every formation glowing at maximum intensity. Pose: hands pressed together raised above her head in a devotional pose, eyes lifted — most extreme latina curves silhouette ever displayed.\nFootwear: thigh-high platform stiletto boots entirely in the exact same colours as her own body art — blazing electric violet, cyan and stark white — NOT black, NOT dark, NOT plain — the footwear must be a bright, saturated, glossy colour taken straight from her own body art, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, curved talon nails each a full hand-length past her fingertips, painted in the same colours as her body art with UV reactive tips.\nJewelry: a wide gold waist chain resting over the carved curve of her hips, a gold belly chain with a small pendant at her navel, and heavy gold rings on every finger. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face and ears are NOT painted — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Russian woman with high cheekbones, light eyes and a defined jaw, an unmistakably feminine face with a calm, composed expression, makeup: opaque satin vivid orange-coral red lips, peach-gold eyeshadow, defined lashes, a warm blush.\n\nBackground: a bright observatory hall with a pale floor, a large white telescope dome behind her, a standard-height door and a short steel stair, dramatic chiaroscuro, deep shadows and sharp highlights, bohemian free-spirited mood, natural earthy atmosphere, artistic editorial, every person's whole figure from the boots to the top of her head clearly lit and fully visible with every material detail sharp, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her. ONE woman only. Extreme macro detail on every surface texture and shadow. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. Full-length side view with the camera at waist height, her body in clean profile, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "lightmix",
+    "kinds": [
+      "uvneon"
+    ],
+    "concepts": [
+      null
+    ],
+    "angle": "side",
+    "poses": [
+      "hands pressed together raised above her head in a devotional pose, eyes lifted"
+    ],
+    "lighting": "chiaro",
+    "time_of_day": null,
+    "mood": "bohemian free-spirited",
+    "physiques": [
+      "latina curves"
+    ],
+    "ethnicity": [
+      "Slavic"
+    ],
+    "background": "observatory",
+    "weather": null,
+    "heel_mode": "forty",
+    "jewelry": true
+  }
+}
