@@ -5496,6 +5496,17 @@ PRESET_CATEGORIES = {
         "la_dolljoint_052", "la_dolljoint_053", "la_dolljoint_054",
         "la_dolljoint_055", "la_dolljoint_056", "la_dolljoint_057",
         "la_dolljoint_058", "la_dolljoint_059", "la_dolljoint_060",
+    
+        "la_dolljoint_duo_001", "la_dolljoint_duo_002", "la_dolljoint_duo_003",
+        "la_dolljoint_duo_004", "la_dolljoint_duo_005", "la_dolljoint_duo_006",
+        "la_dolljoint_duo_007", "la_dolljoint_duo_008", "la_dolljoint_duo_009",
+        "la_dolljoint_duo_010", "la_dolljoint_duo_011", "la_dolljoint_duo_012",
+        "la_dolljoint_duo_013", "la_dolljoint_duo_014", "la_dolljoint_duo_015",
+        "la_dolljoint_duo_016", "la_dolljoint_duo_017", "la_dolljoint_duo_018",
+        "la_dolljoint_duo_019", "la_dolljoint_duo_020", "la_dolljoint_duo_021",
+        "la_dolljoint_duo_022", "la_dolljoint_duo_023", "la_dolljoint_duo_024",
+        "la_dolljoint_duo_025", "la_dolljoint_duo_026", "la_dolljoint_duo_027",
+        "la_dolljoint_duo_028", "la_dolljoint_duo_029", "la_dolljoint_duo_030",
     ],
 
     "🏺 Living Artifact · Automaton Formula": [
