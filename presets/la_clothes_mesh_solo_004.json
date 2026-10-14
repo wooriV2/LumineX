@@ -1,0 +1,26 @@
+{
+  "key": "la_clothes_mesh_solo_004",
+  "category": "🏺 Living Artifact · Latex & Mesh Formula",
+  "title": "Mesh 솔로 #004 · black glamour · 시어 메시 보디수트 블랙 · 손 허리 · 가을 공원 · 히메갸루",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 30s goddess, black glamour physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large woman, far beyond any real person; a dramatically impossible waist-to-hip ratio dominates her silhouette: a colossal heavy bust, an extremely sharply cinched waist pulled in far tighter than the waistline of any of her other curves, and then enormous round hips flaring out to a width many times greater than that narrow waist; gigantic soft thighs pressed together, very thick soft arms, a gigantic rounded rear; her head looks small on top of her massive body; not a plus-size model, not evenly proportioned; her arms, hands, legs and feet stay in correct proportion to each other, long curly auburn hair — wearing a long-sleeved jet-black sheer mesh bodysuit with opaque embroidered lace appliqué panels covering the bust, hips and seams, a high lace collar and high-cut legs, fitted to every curve. Pose: one hand on her waist, the other lifted to her chin, weight on one leg — most extreme black glamour silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, pointed platform stiletto pumps made of glossy jet-black, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, ballerina nails each longer than her middle finger, in glossy jet-black with a high polish.\nJewelry: a fine gold chain looped around her thigh above the knee, a wide gold waist chain resting over the carved curve of her hips, and sculpted gold armbands high on both upper arms. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Black woman with strong, striking features, a broad nose and full lips, an unmistakably feminine face with a calm, composed expression, makeup: soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips.\n\nBackground: a sunlit autumn park with orange trees, a stone bridge with a waist-high parapet and a standard bench on a leaf-strewn path, in clear sunny daylight, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "outfit",
+    "family": "Mesh",
+    "outfit": "시어 메시 보디수트 블랙",
+    "physiques": [
+      "black glamour"
+    ],
+    "ethnicity": [
+      "blue-black"
+    ],
+    "poses": [
+      "one hand on her waist, the other lifted to her chin, weight on one leg"
+    ],
+    "background": "autumn_park",
+    "weather": "화창한 낮",
+    "heel_mode": "forty",
+    "jewelry": true
+  }
+}
