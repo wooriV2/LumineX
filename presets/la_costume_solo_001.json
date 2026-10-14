@@ -1,0 +1,26 @@
+{
+  "key": "la_costume_solo_001",
+  "category": "🏺 Living Artifact · Costume Formula",
+  "title": "Costume 솔로 #001 · super hourglass · 악마 · 손 허리 · 중국 정원 · 오네에갸루",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm golden-brown complexion, late 30s goddess, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, long straight copper red hair — wearing a minimal black latex devil costume of a tiny top of two small opaque triangle cups on thin straps, a tiny low-rise opaque black latex bottom, small red devil horns on a headband and a thin spade-tipped tail, fully opaque and covering only what it must, her stomach bare. Pose: one hand on her waist, the other lifted to her chin, weight on one leg — most extreme super hourglass silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, platform stiletto ballet boots made of glossy black latex, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, ballerina nails each as long as her whole hand, in glossy black latex with a high polish.\nJewelry: thick polished gold bangles stacked on both wrists, heavy gold rings on every finger, and a wide gold waist chain resting over the carved curve of her hips. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Indian woman with large almond eyes, strong brows and a defined nose, an unmistakably feminine face with a calm, composed expression, makeup: defined brown-mauve eyeshadow, a precise winged liner, full natural lashes, large eyes with bright real catchlights, softly contoured cheeks, glossy rose-nude lips.\n\nBackground: a classical Chinese garden with a stone path, a zigzag bridge with a waist-high rail, a moon gate of standard height and a pavilion, under a soft overcast sky with gentle diffused light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "costume",
+    "family": "Costume",
+    "outfit": "악마",
+    "physiques": [
+      "super hourglass"
+    ],
+    "ethnicity": [
+      "Indian"
+    ],
+    "poses": [
+      "one hand on her waist, the other lifted to her chin, weight on one leg"
+    ],
+    "background": "chinese_garden",
+    "weather": "흐린 낮",
+    "heel_mode": "forty",
+    "jewelry": true
+  }
+}

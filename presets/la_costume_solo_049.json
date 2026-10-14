@@ -1,0 +1,26 @@
+{
+  "key": "la_costume_solo_049",
+  "category": "🏺 Living Artifact · Costume Formula",
+  "title": "Costume 솔로 #049 · powerlifter bombshell · 닌자 · 머리 넘기기 · 자금성 마당 · 야미카와",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm bronze-brown complexion, late 20s goddess, powerlifter bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — immense powerful thighs and shoulders built with real strength, a thick solid waist, overwhelming muscular bulk layered with soft curves everywhere, sculpted updo lavender hair — wearing a minimal black ninja costume of a tiny black wrap top of two small opaque cups crossed over her bust, a black micro-mini skirt with its hem at the very top of her thighs, a black cloth headband and a black sash tied at her waist, fully opaque and covering only what it must, her stomach bare. Pose: one hand sweeping her hair back, the other resting on her hip, one leg crossed in front to show the boot — most extreme powerlifter bombshell silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, strappy platform stiletto sandals made of glossy black cotton, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, almond nails each as long as her whole hand, in glossy black cotton with a high polish.\nJewelry: a wide gold waist chain resting over the carved curve of her hips, a pearl choker and a long strand of pearls hanging low on her chest, and a delicate silver body chain draped across her collarbones and down her torso. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Polynesian woman with a broad face, full lips and large dark eyes, an unmistakably feminine face with a calm, composed expression, makeup: heavy pink-red eyeshadow smudged wide beneath both eyes like crying, faint tear-track blush running down the cheeks, large eyes with bright real catchlights, long lashes, glossy dark-cherry lips.\n\nBackground: a vast stone courtyard of the Forbidden City with a standard-height palace gate, marble steps with waist-high balustrades, empty of visitors, in clear sunny daylight, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "costume",
+    "family": "Costume",
+    "outfit": "닌자",
+    "physiques": [
+      "powerlifter bombshell"
+    ],
+    "ethnicity": [
+      "Polynesian"
+    ],
+    "poses": [
+      "one hand sweeping her hair back, the other resting on her hip, one leg crossed in front to show the boot"
+    ],
+    "background": "forbidden",
+    "weather": "화창한 낮",
+    "heel_mode": "relative",
+    "jewelry": true
+  }
+}

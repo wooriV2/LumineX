@@ -1,0 +1,26 @@
+{
+  "key": "la_costume_solo_098",
+  "category": "🏺 Living Artifact · Costume Formula",
+  "title": "Costume 솔로 #098 · super glamour · 해적 · 걷기 · 겨울 눈 광장 · 구풍",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na luminous warm-ivory complexion, mid 30s goddess, super glamour physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large woman, far beyond any real person; every part of her is dramatically oversized at once: a colossal heavy bust far wider than her shoulders, and below it a waistline that still draws in sharply even at this size; below that waistline, enormous round hips flare out more than three times the width of the waistline, gigantic soft thighs pressed together, very thick soft arms, a full round face; her head looks small on top of her massive body; not a plus-size model, an overwhelming maximalist hourglass; her arms, hands, legs and feet stay in correct proportion to each other, top bun golden blonde hair — wearing a minimal brown leather pirate costume of a tiny lace-up bustier of two small opaque molded cups, a brown leather micro-mini skirt with its hem at the very top of her thighs, a wide belt with a gold buckle and a black tricorn pirate hat, fully opaque and covering only what it must, her stomach bare. Pose: walking confidently toward the camera, shoulders back, chin lifted — most extreme super glamour silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, pointed platform stiletto pumps made of glossy brown leather, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, curved talon nails each a full hand-length past her fingertips, in glossy brown leather with a high polish.\nJewelry: a pearl choker and a long strand of pearls hanging low on her chest, heavy gold rings on every finger, and thick polished gold bangles stacked on both wrists. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Chinese woman (East Asian Chinese features: a longer oval face with prominent high cheekbones and a defined jawline, long upturned phoenix-shaped eyes with sharp inner folds, a high strong nose bridge, thin arched eyebrows with a slight rise, balanced lips), an unmistakably feminine face with a calm, composed expression, makeup: slender upswept willow-leaf brows, a fine red floral huadian mark painted on the forehead, softly flushed rosy cheeks, an upswept eyeliner tail, large eyes with bright real catchlights, a small vivid red lip.\n\nBackground: a snow-covered stone plaza in soft daylight with light snow lying only on the ground, a fountain edge under snow, standard lamp posts and a waist-high railing, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "costume",
+    "family": "Costume",
+    "outfit": "해적",
+    "physiques": [
+      "super glamour"
+    ],
+    "ethnicity": [
+      "Chinese"
+    ],
+    "poses": [
+      "walking confidently toward the camera, shoulders back, chin lifted"
+    ],
+    "background": "winter_plaza",
+    "weather": null,
+    "heel_mode": "forty",
+    "jewelry": true
+  }
+}

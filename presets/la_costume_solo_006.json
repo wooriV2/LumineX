@@ -1,0 +1,26 @@
+{
+  "key": "la_costume_solo_006",
+  "category": "🏺 Living Artifact · Costume Formula",
+  "title": "Costume 솔로 #006 · powerlifter bombshell · 인어 · 서 있기 · 갤러리 · 구풍",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm bronze-brown complexion, mid 50s goddess, powerlifter bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — immense powerful thighs and shoulders built with real strength, a thick solid waist, overwhelming muscular bulk layered with soft curves everywhere, high ponytail jet-black hair — wearing a minimal mermaid costume of a tiny top of two small opaque iridescent teal seashell cups on thin straps, a low-rise opaque iridescent teal sequin scale micro-mini skirt with a ruffled fin-like hem at the very top of her thighs and a small starfish hair clip, fully opaque and covering only what it must, her stomach bare. Pose: standing full height, both arms slightly spread commanding the frame — most extreme powerlifter bombshell silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, strappy platform stiletto sandals made of iridescent teal sequin, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, coffin nails each a full hand-length past her fingertips, in iridescent teal sequin with a high polish.\nJewelry: sculpted gold armbands high on both upper arms, thick polished gold bangles stacked on both wrists, and a fine gold chain looped around her thigh above the knee. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Polynesian woman with a broad face, full lips and large dark eyes, an unmistakably feminine face with a calm, composed expression, makeup: slender upswept willow-leaf brows, a fine red floral huadian mark painted on the forehead, softly flushed rosy cheeks, an upswept eyeliner tail, large eyes with bright real catchlights, a small vivid red lip.\n\nBackground: a bright white-walled modern gallery hall with a polished pale floor and a full-height doorway standing open behind her, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "costume",
+    "family": "Costume",
+    "outfit": "인어",
+    "physiques": [
+      "powerlifter bombshell"
+    ],
+    "ethnicity": [
+      "Polynesian"
+    ],
+    "poses": [
+      "standing full height, both arms slightly spread commanding the frame"
+    ],
+    "background": "gallery",
+    "weather": null,
+    "heel_mode": "relative",
+    "jewelry": true
+  }
+}

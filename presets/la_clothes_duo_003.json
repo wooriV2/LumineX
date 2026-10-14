@@ -1,0 +1,32 @@
+{
+  "key": "la_clothes_duo_003",
+  "category": "🏺 Living Artifact · Outfit Group Formula",
+  "title": "OutfitGroup 듀오 #003 · latina curves / super hourglass · 메시 보디수트 / 딥 플런지 · 열대 정글 보드워크 · 브리티시 모드 / 데코라",
+  "prompt": "Professional fashion photograph, full body shot. TWO women standing side by side.\n\n#1: a warm caramel complexion, late 30s goddess, latina curves physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum, long wavy dark brown hair — wearing a long-sleeved deep red sheer mesh bodysuit with opaque embroidered lace appliqué panels covering the bust, hips and seams, a high lace collar and high-cut legs, fitted to every curve. Pose: standing full height, both arms slightly spread commanding the frame — most extreme latina curves silhouette ever displayed.\n#1: Footwear: heels of the most absurdly extreme height imaginable, strappy platform stiletto sandals made of glossy deep red, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\n#1: Nails: the longest nails physically imaginable, almond nails each as long as her forearm is wide, in glossy deep red with a high polish.\n#1: Jewelry: sculpted gold armbands high on both upper arms, a delicate silver body chain draped across her collarbones and down her torso, and a long layered gold necklace falling between her breasts. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\n#1: Face: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Latina woman with high cheekbones, large dark eyes and full lips, an unmistakably feminine face with a calm, composed expression, makeup: extremely heavy, fully saturated and bold, never subtle, faded or blended away: a bold black graphic crease line drawn high above each eyelid, very thick false lashes on the top lids, small painted lash strokes beneath each lower lid, soft lilac-white eyeshadow, large eyes with bright real catchlights, natural brows, a soft peachy-white lip.\n\n#2: a warm olive complexion, early 50s goddess, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, half-up half-down deep burgundy hair — wearing a sleek black jersey mini dress ending at mid-thigh with a deep plunging V neckline cut down to her belly button, the fabric edges hugging the sides of her bust, narrow straps over the shoulders, hugging every curve. Pose: three-quarter angle, one hand on the outer hip, the other raised overhead — most extreme super hourglass silhouette ever displayed.\n#2: Footwear: heels of the most absurdly extreme height imaginable, knee-high lace-up platform stiletto boots made of glossy black, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\n#2: Nails: the longest nails physically imaginable, coffin nails each a full hand-length past her fingertips, in glossy black with a high polish.\n#2: Jewelry: a pearl choker and a long strand of pearls hanging low on her chest, heavy gold rings on every finger, and a wide gold waist chain resting over the carved curve of her hips. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\n#2: Face: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Middle Eastern woman with large dark eyes, strong arched brows and a straight nose, an unmistakably feminine face with a calm, composed expression, makeup: bright pastel pink and yellow eyeshadow, thick lashes, large eyes with bright real catchlights, small star and heart shapes painted on the cheeks only, glossy candy-pink lips.\n\nEnvironment: a bright tropical jungle boardwalk of wooden planks with a waist-high rope rail, large green leaves and standard-height steps, in warm golden late-afternoon light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void.\nAll: Extreme macro detail on every surface texture and shadow. CRITICAL: all 2 women's legs must show FULL BODY ART coverage from hip to ankle to toe with NO bare untattooed skin visible anywhere, every element standing in true relief, nothing flat. TWO completely different extreme physiques must CONTRAST and DOMINATE every inch of frame. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 3:4 aspect ratio.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "3:4",
+    "format": "outfit-group",
+    "family": "OutfitGroup",
+    "outfit": [
+      "시어 메시 보디수트 딥 레드",
+      "딥 플런지 미니 블랙"
+    ],
+    "physiques": [
+      "latina curves",
+      "super hourglass"
+    ],
+    "ethnicity": [
+      "Latina",
+      "Middle Eastern"
+    ],
+    "poses": [
+      "standing full height, both arms slightly spread commanding the frame",
+      "three-quarter angle, one hand on the outer hip, the other raised overhead"
+    ],
+    "background": "jungle",
+    "weather": "황금빛 오후",
+    "heel_mode": "forty",
+    "jewelry": true
+  }
+}

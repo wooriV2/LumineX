@@ -1,0 +1,26 @@
+{
+  "key": "la_costume_solo_025",
+  "category": "🏺 Living Artifact · Costume Formula",
+  "title": "Costume 솔로 #025 · Brazilian booty glam · 여전사 · 걷기 · 오페라 하우스 계단 · 걸크러시",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm caramel complexion, early 50s goddess, Brazilian booty glam physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large woman, far beyond any real person, her hips and rear so wide; a dramatically narrow, sharply cinched waist sits above hips and a rear so massively rounded and projecting that they dominate her entire silhouette from every angle, the rear itself curving outward and upward in a high, rounded, gravity-defying shape; a full round bust above the cinched waist, gigantic thick thighs meeting the rear's curve, thick soft arms; her head looks small on top of her body; not a plus-size model, not evenly proportioned; her arms, hands, legs and feet stay in correct proportion to each other, half-up half-down dark brown hair — wearing a minimal bronze warrior costume of a tiny bronze breastplate of two small opaque molded cups on thin leather straps, a pleated leather micro-mini skirt with its hem at the very top of her thighs, bronze arm guards and a thin golden laurel crown, fully opaque and covering only what it must, her stomach bare. Pose: walking confidently toward the camera, shoulders back, chin lifted — most extreme Brazilian booty glam silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, strappy platform stiletto sandals made of polished bronze, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, stiletto nails each as long as her whole hand, in polished bronze with a high polish.\nJewelry: a pearl choker and a long strand of pearls hanging low on her chest, a fine gold chain looped around her thigh above the knee, and a wide gold waist chain resting over the carved curve of her hips. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Latina woman with high cheekbones, large dark eyes and full lips, an unmistakably feminine face with a calm, composed expression, makeup: sharply angled thin brows, a razor-sharp winged cat-eye liner extending far past the outer corner, deep brown-black eyeshadow, long lashes, large eyes with bright real catchlights, strongly sculpted contour, a deep wine-red matte lip.\n\nBackground: the grand marble staircase of an opera house with standard-height steps, a waist-high carved balustrade, chandeliers and warm daylight from tall windows, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "costume",
+    "family": "Costume",
+    "outfit": "여전사",
+    "physiques": [
+      "Brazilian booty glam"
+    ],
+    "ethnicity": [
+      "Latina"
+    ],
+    "poses": [
+      "walking confidently toward the camera, shoulders back, chin lifted"
+    ],
+    "background": "opera_stairs",
+    "weather": null,
+    "heel_mode": "relative",
+    "jewelry": true
+  }
+}
