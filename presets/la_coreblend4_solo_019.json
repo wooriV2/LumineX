@@ -1,0 +1,28 @@
+{
+  "key": "la_coreblend4_solo_019",
+  "category": "🏺 Living Artifact · Core Blend 4-Mix Solo Formula",
+  "title": "Core Blend 4-Mix Solo #019 · latina curves · 뱀비늘+스테인드글라스+곤충 날개+진주층",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 30s goddess, latina curves physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum, silver-white locs cascading to her waist — her body carries 4 different materials at once, each claiming its own region of her figure. Her figure is divided into 4 wedge-shaped regions radiating from a single centre point located about 40% of the way down her figure from the top on the centre line of her figure. 4 gently curving dividing rays leave that centre pointing toward 10 o'clock, 1 o'clock, 4 o'clock and 8 o'clock as seen by the camera, where 12 o'clock points straight up. Region 1 is the wedge between the 10 o'clock ray and the 1 o'clock ray, sweeping clockwise: it carries snake scales (diamond-shaped angular scales aligned in neat overlapping rows), BLAZING PALE GOLD scale formations, VIVID IVORY WHITE scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 2 is the wedge between the 1 o'clock ray and the 4 o'clock ray, sweeping clockwise: it carries solid thick stained glass fused to her form, hundreds of small individual panes each no larger than a coin, BLAZING ELECTRIC CRIMSON and VIVID GOLD panes alternating in a dense irregular mosaic, dark lead-line seams webbing between every pane. Region 3 is the wedge between the 4 o'clock ray and the 8 o'clock ray, sweeping clockwise: it carries thin translucent insect-wing membranes layered over her skin like overlapping dragonfly and butterfly wings, a network of fine dark veins and cells running through each wing, wing edges fringed with tiny scales, BLAZING iridescent electric-blue morpho butterfly-wing membranes, VIVID dark vein networks and tiny scale-dust shimmer along the wing edges. Region 4 is the wedge between the 8 o'clock ray and the 10 o'clock ray, sweeping clockwise: it carries overlapping mother-of-pearl nacre tiles set edge to edge over her skin, each tile with a fine edge and a soft milky lustre that shifts through rainbow colours across every curve, BLAZING black Tahitian-pearl nacre with green and violet lustre, VIVID soft peacock-green and violet sheen sliding across each tile., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: standing full height, both arms slightly spread commanding the frame, every region clearly visible to the camera — most extreme latina curves silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "core-blend",
+    "mix_count": 4,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "부채꼴·물결"
+    ],
+    "materials": [
+      [
+        "scale_snake",
+        "glass",
+        "wing",
+        "nacre"
+      ]
+    ],
+    "physiques": [
+      "latina curves"
+    ],
+    "boundary": "curve-v1"
+  }
+}

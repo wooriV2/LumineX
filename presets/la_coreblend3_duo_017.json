@@ -1,0 +1,34 @@
+{
+  "key": "la_coreblend3_duo_017",
+  "category": "🏺 Living Artifact · Core Blend 3-Mix Duo Formula",
+  "title": "Core Blend 3-Mix Duo #017 · USSBBW / black glamour · 흑요암금+석재+코이비늘 / 흑요암금+코이비늘+금박",
+  "prompt": "Professional fashion photograph, full body shot. TWO women standing side by side, each with her own multi-material blended body.\n\n#1: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, mid 50s goddess, USSBBW physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large woman, far beyond any real person; an immense mass of soft heavy fat sits on her middle, sagging down toward her knees under its own weight, gathering into three or four heavy rounded folds stacked one above the other, deep shadowed creases between them, never taut, never smooth, never round like a drum, not pregnant; a gigantic bust resting on the top fold, no waist at all, colossal hips more than three times the width of her shoulders, each thigh thicker than a normal woman's waist, thick heavy calves; her head looks small on top of her massive body; her arms, hands, legs and feet stay in correct proportion to each other, silver-white locs cascading to her waist — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 horizontal bands split along gently undulating curves at about 35% of the way down her figure from the top and about 80% of the way down her figure from the top. Region 1 is everything above the first dividing curve: it carries polished obsidian stone fused directly to her own form, solid glossy black stone curving to follow her body's true shape, with molten gold seams running between fitted stone sections. Region 2 is the band between dividing curve 1 and dividing curve 2: it carries solid polished rose-quartz stone fused directly into her own form, soft natural veining flowing to follow every curve, BLAZING soft pink stone surface with VIVID white vein striations. Region 3 is everything below the last dividing curve: it carries koi scales (rounded smooth scales with fine visible growth rings, each scale glossy and slightly domed), BLAZING METALLIC GOLD scale formations, VIVID PLATINUM scale-edge detail, every scale catching its own glint and casting its own small shadow., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: full frontal wide stance, both fists pressing outer hips outward to absolute maximum, every region clearly visible to the camera — most extreme USSBBW silhouette ever displayed.\n#1: extreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\n#2: THE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 30s goddess, black glamour physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large woman, far beyond any real person; a dramatically impossible waist-to-hip ratio dominates her silhouette: a colossal heavy bust, an extremely sharply cinched waist pulled in far tighter than the waistline of any of her other curves, and then enormous round hips flaring out to a width many times greater than that narrow waist; gigantic soft thighs pressed together, very thick soft arms, a gigantic rounded rear; her head looks small on top of her massive body; not a plus-size model, not evenly proportioned; her arms, hands, legs and feet stay in correct proportion to each other, loose beach waves mid-length tousled — her body carries 3 different materials at once, each claiming its own region of her figure. Her figure is divided into 3 wedge-shaped regions radiating from a single centre point located about 50% of the way down her figure from the top on the centre line of her figure. 3 gently curving dividing rays leave that centre pointing toward 3 o'clock, 8 o'clock and 10 o'clock as seen by the camera, where 12 o'clock points straight up. Region 1 is the wedge between the 3 o'clock ray and the 8 o'clock ray, sweeping clockwise: it carries polished obsidian stone fused directly to her own form, solid glossy black stone curving to follow her body's true shape, with molten gold seams running between fitted stone sections. Region 2 is the wedge between the 8 o'clock ray and the 10 o'clock ray, sweeping clockwise: it carries koi scales (rounded smooth scales with fine visible growth rings, each scale glossy and slightly domed), BLAZING ELECTRIC BLUE scale formations, VIVID ORANGE scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 3 is the wedge between the 10 o'clock ray and the 3 o'clock ray, sweeping clockwise: it carries applied ELECTRIC CRIMSON leaf, thin irregular metallic sheets laid onto the contour of her body with fine natural creases and overlapping seams, VIVID GOLD undertone glinting through the thinnest points., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: strong hip pop left, both hands pressing outer hips outward arching back to extreme, every region clearly visible to the camera — most extreme black glamour silhouette ever displayed.\n#2: extreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nEnvironment: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient.\nAll: Extreme macro detail on every material. CRITICAL: all 2 women's legs must show FULL BODY ART coverage from hip to ankle to toe with NO bare untattooed skin visible anywhere. TWO completely different extreme physiques must CONTRAST and DOMINATE every inch of frame. 8K portrait 3:4 aspect ratio.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "3:4",
+    "format": "core-blend",
+    "mix_count": 3,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "가로 띠·매끈",
+      "부채꼴·매끈"
+    ],
+    "materials": [
+      [
+        "obsidian",
+        "stone",
+        "scale_koi"
+      ],
+      [
+        "obsidian",
+        "scale_koi",
+        "goldleaf"
+      ]
+    ],
+    "physiques": [
+      "USSBBW",
+      "black glamour"
+    ],
+    "boundary": "curve-v1"
+  }
+}

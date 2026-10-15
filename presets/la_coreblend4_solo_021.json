@@ -1,0 +1,28 @@
+{
+  "key": "la_coreblend4_solo_021",
+  "category": "🏺 Living Artifact · Core Blend 4-Mix Solo Formula",
+  "title": "Core Blend 4-Mix Solo #021 · apex siren · 깃털+흑요암금+왁스+회로·사이버",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, early 50s goddess, apex siren physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily tall and curvaceous woman, far beyond any real person; everything about her is at its extreme at once: a towering frame with endless legs, a colossal heavy bust wider than her shoulders, a waist cinched to an impossible minimum, enormous round hips and a high rounded rear, gigantic thick thighs pressed together, smooth glowing skin over soft full curves; her silhouette is an exaggerated hourglass that dominates the whole frame from head to toe; not thin, not boyish, not evenly proportioned; her head looks small above her body; her arms, hands, legs and feet stay in correct proportion to each other, blunt collarbone-length bob thick heavy — her body carries 4 different materials at once, each claiming its own region of her figure. Her figure is divided into 4 diagonal bands split along 3 parallel gently undulating curves running from the upper left to the lower right as seen by the camera, crossing the centre line of her figure about 25% of the way down her figure from the top, about 60% of the way down her figure from the top and about 75% of the way down her figure from the top. Region 1 is everything on the upper side of the first diagonal dividing curve: it carries layers of real feathers overlapping like plumage, every feather with its own shaft and fine barbs ruffling at the edges and casting small shadows on the feathers below, BLAZING snow-white plumage with blush-pink tips, VIVID long sweeping quill feathers and loose down floating around her. Region 2 is the diagonal band between dividing curve 1 and dividing curve 2: it carries polished obsidian stone fused directly to her own form, solid glossy black stone curving to follow her body's true shape, with molten gold seams running between fitted stone sections. Region 3 is the diagonal band between dividing curve 2 and dividing curve 3: it carries molten wax flowing and set directly over her own skin, BLAZING DEEP CRIMSON wax streams pooling and hardening, VIVID AMBER translucent drip-ridges catching the light. Region 4 is everything on the lower side of the last diagonal dividing curve: it carries a dense printed-circuit surface grown over her skin, raised copper traces and solder pads running in tidy right-angled lines over every curve, tiny rectangles of black silicon chips set into the surface, BLAZING matte black circuit-board surface with gold copper traces, VIVID electric cyan light pulses racing along the traces and small glowing LED points., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: standing full height, both arms slightly spread commanding the frame, every region clearly visible to the camera — most extreme apex siren silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "core-blend",
+    "mix_count": 4,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "대각 띠·물결"
+    ],
+    "materials": [
+      [
+        "feather",
+        "obsidian",
+        "wax",
+        "circuit"
+      ]
+    ],
+    "physiques": [
+      "apex siren"
+    ],
+    "boundary": "curve-v1"
+  }
+}

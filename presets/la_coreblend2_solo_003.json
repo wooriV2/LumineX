@@ -1,0 +1,26 @@
+{
+  "key": "la_coreblend2_solo_003",
+  "category": "🏺 Living Artifact · Core Blend 2-Mix Solo Formula",
+  "title": "Core Blend 2-Mix Solo #003 · apex siren · 이레즈미+왁스",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 30s goddess, apex siren physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily tall and curvaceous woman, far beyond any real person; everything about her is at its extreme at once: a towering frame with endless legs, a colossal heavy bust wider than her shoulders, a waist cinched to an impossible minimum, enormous round hips and a high rounded rear, gigantic thick thighs pressed together, smooth glowing skin over soft full curves; her silhouette is an exaggerated hourglass that dominates the whole frame from head to toe; not thin, not boyish, not evenly proportioned; her head looks small above her body; her arms, hands, legs and feet stay in correct proportion to each other, two thick goddess braids — her body carries 2 different materials at once, each claiming its own region of her figure. Her figure is divided into 2 wedge-shaped regions radiating from a single centre point located about 60% of the way down her figure from the top on the centre line of her figure. 2 gently curving dividing rays leave that centre pointing toward 1 o'clock and 8 o'clock as seen by the camera, where 12 o'clock points straight up. Region 1 is the wedge between the 1 o'clock ray and the 8 o'clock ray, sweeping clockwise: it carries traditional irezumi tattoo ink, bold black ink outlines, great wave formations in DEEP COBALT and STARK WHITE, extreme high-gloss oil finish. Region 2 is the wedge between the 8 o'clock ray and the 1 o'clock ray, sweeping clockwise: it carries molten wax flowing and set directly over her own skin, BLAZING DEEP VIOLET wax streams pooling and hardening, VIVID ROSE translucent drip-ridges catching the light., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: strong hip pop right, both hands pressing sides of hips outward simultaneously arching back to extreme, every region clearly visible to the camera — most extreme apex siren silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "core-blend",
+    "mix_count": 2,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "부채꼴·물결"
+    ],
+    "materials": [
+      [
+        "irezumi",
+        "wax"
+      ]
+    ],
+    "physiques": [
+      "apex siren"
+    ],
+    "boundary": "curve-v1"
+  }
+}

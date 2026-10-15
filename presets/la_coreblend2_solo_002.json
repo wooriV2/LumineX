@@ -1,0 +1,26 @@
+{
+  "key": "la_coreblend2_solo_002",
+  "category": "🏺 Living Artifact · Core Blend 2-Mix Solo Formula",
+  "title": "Core Blend 2-Mix Solo #002 · apex siren · 드래곤비늘+회로·사이버",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, early 50s goddess, apex siren physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily tall and curvaceous woman, far beyond any real person; everything about her is at its extreme at once: a towering frame with endless legs, a colossal heavy bust wider than her shoulders, a waist cinched to an impossible minimum, enormous round hips and a high rounded rear, gigantic thick thighs pressed together, smooth glowing skin over soft full curves; her silhouette is an exaggerated hourglass that dominates the whole frame from head to toe; not thin, not boyish, not evenly proportioned; her head looks small above her body; her arms, hands, legs and feet stay in correct proportion to each other, two thick goddess braids — her body carries 2 different materials at once, each claiming its own region of her figure. Her figure is divided into 2 horizontal bands split along a gently undulating curve at about 35% of the way down her figure from the top. Region 1 is everything above the first dividing curve: it carries dragon scales (large thick armor-plate scales, each one substantial and sharply faceted), BLAZING CRIMSON scale formations, VIVID DEEP EMBER scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 2 is everything below the first dividing curve: it carries a dense printed-circuit surface grown over her skin, raised copper traces and solder pads running in tidy right-angled lines over every curve, tiny rectangles of black silicon chips set into the surface, BLAZING glossy white ceramic circuit-board surface with silver traces, VIVID magenta light pulses racing along the traces and small glowing LED points., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: strong hip pop left, both hands pressing outer hips outward arching back to extreme, every region clearly visible to the camera — most extreme apex siren silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "core-blend",
+    "mix_count": 2,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "가로 띠·매끈"
+    ],
+    "materials": [
+      [
+        "scale_dragon",
+        "circuit"
+      ]
+    ],
+    "physiques": [
+      "apex siren"
+    ],
+    "boundary": "curve-v1"
+  }
+}

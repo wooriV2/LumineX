@@ -1,0 +1,28 @@
+{
+  "key": "la_coreblend4_solo_008",
+  "category": "🏺 Living Artifact · Core Blend 4-Mix Solo Formula",
+  "title": "Core Blend 4-Mix Solo #008 · latina curves · 코이비늘+금박+곤충 날개+회로·사이버",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, early 20s goddess, latina curves physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum, high ponytail swept sleek — her body carries 4 different materials at once, each claiming its own region of her figure. Her figure is divided into 4 concentric regions around a single centre point located about 40% of the way down her figure from the top on the centre line of her figure, split along gently undulating curves at about 30%, 65% and 80% of the way out from that centre point to the farthest edge of her figure. Region 1 is the innermost core around the centre point: it carries koi scales (rounded smooth scales with fine visible growth rings, each scale glossy and slightly domed), BLAZING ELECTRIC BLUE scale formations, VIVID ORANGE scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 2 is the ring between dividing curve 1 and dividing curve 2: it carries applied ELECTRIC EMERALD leaf, thin irregular metallic sheets laid onto the contour of her body with fine natural creases and overlapping seams, VIVID GOLD undertone glinting through the thinnest points. Region 3 is the ring between dividing curve 2 and dividing curve 3: it carries thin translucent insect-wing membranes layered over her skin like overlapping dragonfly and butterfly wings, a network of fine dark veins and cells running through each wing, wing edges fringed with tiny scales, BLAZING iridescent electric-blue morpho butterfly-wing membranes, VIVID dark vein networks and tiny scale-dust shimmer along the wing edges. Region 4 is the outermost region beyond the last ring: it carries a dense printed-circuit surface grown over her skin, raised copper traces and solder pads running in tidy right-angled lines over every curve, tiny rectangles of black silicon chips set into the surface, BLAZING glossy white ceramic circuit-board surface with silver traces, VIVID magenta light pulses racing along the traces and small glowing LED points., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: standing full height, both arms slightly spread commanding the frame, every region clearly visible to the camera — most extreme latina curves silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "core-blend",
+    "mix_count": 4,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "동심원·물결"
+    ],
+    "materials": [
+      [
+        "scale_koi",
+        "goldleaf",
+        "wing",
+        "circuit"
+      ]
+    ],
+    "physiques": [
+      "latina curves"
+    ],
+    "boundary": "curve-v1"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "key": "la_coreblend2_solo_007",
+  "category": "🏺 Living Artifact · Core Blend 2-Mix Solo Formula",
+  "title": "Core Blend 2-Mix Solo #007 · towering hourglass · 코이비늘+목재",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, early 30s goddess, towering hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily tall and curvaceous woman, far beyond any real person; a towering frame with legs that seem endless, thick smooth thighs and calves, hips wide and rounded, a sharply cinched narrow waist pulled in far tighter than her bust and hips, and a full heavy bust high on her chest; her height and long legs make every curve look longer and more dramatic; not stocky, not thin, not boyish; her arms, hands, legs and feet stay in correct proportion to each other, curtain bangs long straight hair sweeping past the shoulders — her body carries 2 different materials at once, each claiming its own region of her figure. Her figure is divided into 2 vertical bands split along a gently undulating curve at about 35% of the way across her figure from her left edge. Region 1 is everything to her left of the first dividing curve: it carries koi scales (rounded smooth scales with fine visible growth rings, each scale glossy and slightly domed), BLAZING METALLIC GOLD scale formations, VIVID PLATINUM scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 2 is everything to her right of the first dividing curve: it carries deep black ebony wood fused directly into her own form, natural fine grain lines flowing to follow every curve, BLAZING glossy jet-black grain with VIVID dark-brown highlight streaks., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: three-quarter angle, one hand on the outer hip, the other raised overhead, every region clearly visible to the camera — most extreme towering hourglass silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "core-blend",
+    "mix_count": 2,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "세로 띠·물결"
+    ],
+    "materials": [
+      [
+        "scale_koi",
+        "wood"
+      ]
+    ],
+    "physiques": [
+      "towering hourglass"
+    ],
+    "boundary": "curve-v1"
+  }
+}

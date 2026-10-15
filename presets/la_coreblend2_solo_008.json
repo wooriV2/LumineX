@@ -1,0 +1,26 @@
+{
+  "key": "la_coreblend2_solo_008",
+  "category": "🏺 Living Artifact · Core Blend 2-Mix Solo Formula",
+  "title": "Core Blend 2-Mix Solo #008 · siren bust hourglass · 뱀비늘+스테인드글라스",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, late 20s goddess, siren bust hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily curvaceous woman, far beyond any real person; a colossal heavy bust projecting far forward and wider than her shoulders is the first thing the eye lands on, and directly below it her waist pulls in to an impossibly narrow, sharply defined line with a deep shadowed groove, then full round hips and soft thick thighs flare out beneath as a strong second curve; the drop from bust to waist is the most dramatic part of her silhouette; not thin, not boyish, not a straight figure; her head looks small above her bust; her arms, hands, legs and feet stay in correct proportion to each other, high ponytail swept sleek — her body carries 2 different materials at once, each claiming its own region of her figure. Her figure is divided into 2 diagonal bands split along 1 gently undulating curve running from the upper left to the lower right as seen by the camera, crossing the centre line of her figure about 40% of the way down her figure from the top. Region 1 is everything on the upper side of the first diagonal dividing curve: it carries snake scales (diamond-shaped angular scales aligned in neat overlapping rows), BLAZING WARM BRONZE scale formations, VIVID BLACK scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 2 is everything on the lower side of the first diagonal dividing curve: it carries solid thick stained glass fused to her form, hundreds of small individual panes each no larger than a coin, BLAZING ELECTRIC VIOLET and VIVID CYAN panes alternating in a dense irregular mosaic, dark lead-line seams webbing between every pane., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: three-quarter angle, one hand on the outer hip, the other raised overhead, every region clearly visible to the camera — most extreme siren bust hourglass silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "core-blend",
+    "mix_count": 2,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "대각 띠·물결"
+    ],
+    "materials": [
+      [
+        "scale_snake",
+        "glass"
+      ]
+    ],
+    "physiques": [
+      "siren bust hourglass"
+    ],
+    "boundary": "curve-v1"
+  }
+}

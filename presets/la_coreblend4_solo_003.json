@@ -1,0 +1,28 @@
+{
+  "key": "la_coreblend4_solo_003",
+  "category": "🏺 Living Artifact · Core Blend 4-Mix Solo Formula",
+  "title": "Core Blend 4-Mix Solo #003 · hourglass SSBBW · 흑요암금+드래곤비늘+금박+깃털",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, early 20s goddess, hourglass SSBBW physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large woman, far beyond any real person; a colossal heavy bust far wider than her shoulders, and below it a waistline that still draws in clearly even at this size; below that waistline a great mass of soft heavy fat sits on her middle and drops down under its own weight, projecting forward past the line of her own knees, gathering into two or three heavy rounded folds, not pregnant; enormous round hips more than three times the width of that waistline, gigantic soft thighs pressed together, very thick soft arms; her head looks small on top of her massive body; her arms, hands, legs and feet stay in correct proportion to each other, two thick goddess braids — her body carries 4 different materials at once, each claiming its own region of her figure. Her figure is divided into 4 horizontal bands split along gently undulating curves at about 30% of the way down her figure from the top, about 45% of the way down her figure from the top and about 65% of the way down her figure from the top. Region 1 is everything above the first dividing curve: it carries polished obsidian stone fused directly to her own form, solid glossy black stone curving to follow her body's true shape, with molten gold seams running between fitted stone sections. Region 2 is the band between dividing curve 1 and dividing curve 2: it carries dragon scales (large thick armor-plate scales, each one substantial and sharply faceted), BLAZING METALLIC SILVER scale formations, VIVID PALE BLUE scale-edge detail, every scale catching its own glint and casting its own small shadow. Region 3 is the band between dividing curve 2 and dividing curve 3: it carries applied ELECTRIC MAGENTA leaf, thin irregular metallic sheets laid onto the contour of her body with fine natural creases and overlapping seams, VIVID SILVER undertone glinting through the thinnest points. Region 4 is everything below the last dividing curve: it carries layers of real feathers overlapping like plumage, every feather with its own shaft and fine barbs ruffling at the edges and casting small shadows on the feathers below, BLAZING glossy raven-black plumage with an oil-slick purple and green sheen, VIVID long sweeping quill feathers and loose down floating around her., no fabric no seam no garment anywhere, every material fused to or erupting from her own living skin, covering her completely with no bare skin anywhere from neck to ankle. Pose: full frontal wide stance, both fists pressing outer hips outward to absolute maximum, every region clearly visible to the camera — most extreme hourglass SSBBW silhouette ever displayed.\nextreme platform heels/boots blending the relevant materials at her feet, extra long nails each matching whichever region that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every material. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "core-blend",
+    "mix_count": 4,
+    "layout": "geometry-curve-v1",
+    "structures": [
+      "가로 띠·매끈"
+    ],
+    "materials": [
+      [
+        "obsidian",
+        "scale_dragon",
+        "goldleaf",
+        "feather"
+      ]
+    ],
+    "physiques": [
+      "hourglass SSBBW"
+    ],
+    "boundary": "curve-v1"
+  }
+}
