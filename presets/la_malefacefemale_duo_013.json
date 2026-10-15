@@ -1,0 +1,42 @@
+{
+  "key": "la_malefacefemale_duo_013",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Duo #013 · 사이렌 바스트 아워글래스 / 커브드 바스트",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright blue-white glacier ice cave lit by daylight through the ice, a flat frozen floor and a standard-height wooden walkway rail, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Korean person with a handsome man's face on a full, curvaceous female body — a man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, luminous porcelain skin, warm chestnut-brown hair styled in high ponytail, real living eyes, wearing an extreme maximalist stack of well over ten mixed-metal rings. Long oval nails, matte finish.\nLEFT Physique: an extraordinarily curvaceous woman, far beyond any real person; a colossal heavy bust projecting far forward and wider than her shoulders is the first thing the eye lands on, and directly below it her waist pulls in to an impossibly narrow, sharply defined line with a deep shadowed groove, then full round hips and soft thick thighs flare out beneath as a strong second curve; the drop from bust to waist is the most dramatic part of her silhouette; not thin, not boyish, not a straight figure; her head looks small above her bust; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: Her bare skin is painted in Norwegian rosemaling folk painting (a deep forest-green ground with bold cream and gold acanthus scrollwork), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense acanthus scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: both hands on her hips, elbows out.\nLEFT Footwear: Extreme hot-pink platform stiletto slingbacks, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Chinese person with a handsome man's face on a full, curvaceous female body — a man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a fresh-faced boy-group idol face with clear glowing skin, bright eyes and a gentle smile line, clean-shaven, smooth fair skin with a neutral undertone, deep dark brown hair styled in a low chignon knot at the nape, real living eyes, wearing an extreme maximalist stack of well over ten platinum anklets. Long almond nails, glossy finish.\nRIGHT Physique: an extraordinarily large woman, far beyond any real person; both her bust and her hips are simultaneously, dramatically enormous, a colossal heavy bust resting full and wide, and enormous round hips flaring just as dramatically wide below, but unlike a sharply cinched hourglass, her waistline stays soft and only gently defined between them, a full, natural figure rather than a snatched one; gigantic soft thighs pressed together, very thick soft arms, a full round face; her head looks small on top of her massive body; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: Her bare skin is painted in Indian Mughal miniature gold-work (a deep midnight-blue ground with fine gold linework and medallions), wide gold-and-crimson bands following every deep crease and curving around the hips and thighs like contour lines, dense jewel-toned scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: mid-stride walking toward camera.\nRIGHT Footwear: Extreme cobalt-blue platform lace-up sandals, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-face-female-body",
+    "background": "얼음 동굴",
+    "persons": [
+      {
+        "body": "siren bust hourglass",
+        "craft": "Norwegian rosemaling folk painting",
+        "makeup": "",
+        "hair": "HSPT포니테일",
+        "haircolor": "HCCB체스트넛브라운",
+        "pose": "허리손",
+        "shoe": "플랫폼스틸레토슬링백",
+        "jewelry": [
+          "JQ5",
+          "mixed-metal",
+          "JR"
+        ]
+      },
+      {
+        "body": "curved bust",
+        "craft": "Indian Mughal miniature gold-work",
+        "makeup": "",
+        "hair": "HSCH쉬농",
+        "haircolor": "HCDB다크브라운",
+        "pose": "걷는동작",
+        "shoe": "익스트림플랫폼레이스업샌들",
+        "jewelry": [
+          "JQ5",
+          "platinum",
+          "JA"
+        ]
+      }
+    ]
+  }
+}

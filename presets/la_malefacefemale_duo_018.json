@@ -1,0 +1,42 @@
+{
+  "key": "la_malefacefemale_duo_018",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Duo #018 · 글래머 아워글래스 / 바이올린 힙 아워글래스",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in the long reflecting pool path in front of the Taj Mahal with pale marble paving, a waist-high ornamental rail and low steps, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Korean person with a handsome man's face on a full, curvaceous female body — a man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a striking young male model face with sharp straight brows, a strong chin and a visible Adam's apple, a very faint trace of stubble, luminous porcelain skin, bold vivid magenta-pink hair styled in countless fine micro braids, real living eyes, wearing seven to ten heavily stacked mixed-metal bracelets. Long round nails, matte finish.\nLEFT Physique: a stunning hourglass figure, far more dramatically curved than any ordinary woman; a full, rounded bust, a dramatically narrow, sharply cinched waist with a deep shadowed groove running around her middle, and wide, curvaceous hips flaring well beyond her shoulders, soft rounded thighs, toned but soft arms; not thin, not androgynous, not boyish, not a straight figure; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: Her bare skin is painted in French Limoges enamel (a deep cobalt-blue ground with fine white and gold grisaille scrollwork), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense grisaille scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: three-quarter angle, one hand on her hip.\nLEFT Footwear: Extreme red platform stiletto peep-toe heels, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Korean person with a handsome man's face on a full, curvaceous female body — a man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a clean-cut young male model face with defined cheekbones, a firm jaw and strong straight brows, a very faint trace of stubble, smooth fair skin with a warm undertone, natural soft black hair styled in a short pixie cut, real living eyes, wearing seven to ten heavily stacked mixed-metal anklets. Long stiletto nails, chrome finish.\nRIGHT Physique: an extraordinarily curvaceous woman, far beyond any real person; a sharply cinched waist rises out of hips that sweep outward in a single smooth violin-shaped curve, the hips and thick rounded thighs flaring many times wider than the waist and dominating her silhouette from the front and side, a firm high rounded rear, a full round bust balancing the curve above; the line from waist to hip to thigh is one long unbroken curve; not thin, not boyish, not a straight figure; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: Her bare skin is painted in Nigerian Adire indigo resist-dye (a deep indigo-blue ground with bold white resist-dyed motifs), wide white bands following every deep crease and curving around the hips and thighs like contour lines, dense spiral resist motifs filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: back three-quarters to camera, head turned back.\nRIGHT Footwear: Extreme red platform high-heel mules, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-face-female-body",
+    "background": "타지마할 정원",
+    "persons": [
+      {
+        "body": "glamour hourglass",
+        "craft": "French Limoges enamel",
+        "makeup": "",
+        "hair": "HSMB마이크로브레이드",
+        "haircolor": "HCVM비비드마젠타",
+        "pose": "3/4각도",
+        "shoe": "플랫폼스틸레토페탈토힐",
+        "jewelry": [
+          "JQ4",
+          "mixed-metal",
+          "JB"
+        ]
+      },
+      {
+        "body": "violin hip hourglass",
+        "craft": "Nigerian Adire indigo resist-dye",
+        "makeup": "",
+        "hair": "HSPX픽시컷",
+        "haircolor": "HCNB내추럴블랙",
+        "pose": "뒷모습3/4",
+        "shoe": "플랫폼하이힐뮬",
+        "jewelry": [
+          "JQ4",
+          "mixed-metal",
+          "JA"
+        ]
+      }
+    ]
+  }
+}

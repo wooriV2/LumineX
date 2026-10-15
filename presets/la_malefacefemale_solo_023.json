@@ -1,0 +1,28 @@
+{
+  "key": "la_malefacefemale_solo_023",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Solo #023 · 에이펙스 사이렌 · American Art Deco chrome-and-lacquer",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in the sandstone canyon floor in front of the rose-red Treasury at Petra, a smooth sandy path and standard-height rock-cut doorways, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Korean person with a handsome man's face on a full, curvaceous female body — a man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a handsome young man's idol face with a clean sharp jawline, straight thick brows and long defined eyes, a very faint trace of stubble, smooth fair skin with a warm undertone, metallic gold glitter eyeshadow with defined lashes, warm honey-blonde hair styled in sleek straight, real living eyes, wearing four to six layered mixed-metal rings. Long coffin nails, glittery finish.\nPhysique: an extraordinarily tall and curvaceous woman, far beyond any real person; everything about her is at its extreme at once: a towering frame with endless legs, a colossal heavy bust wider than her shoulders, a waist cinched to an impossible minimum, enormous round hips and a high rounded rear, gigantic thick thighs pressed together, smooth glowing skin over soft full curves; her silhouette is an exaggerated hourglass that dominates the whole frame from head to toe; not thin, not boyish, not evenly proportioned; her head looks small above her body; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: Her bare skin is painted in American Art Deco chrome-and-lacquer (a deep black lacquer ground with bold silver chrome sunburst), wide silver chrome bands following every deep crease and curving around the hips and thighs like contour lines, dense zigzag linework filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: caught mid-jump, feet off the ground.\nFootwear: Extreme cobalt-blue platform high-heel mules, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: the painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "male-face-female-body",
+    "background": "페트라",
+    "persons": [
+      {
+        "body": "apex siren",
+        "craft": "American Art Deco chrome-and-lacquer",
+        "makeup": "골드 글리터 아이",
+        "hair": "HSS스트레이트",
+        "haircolor": "HCHB허니블론드",
+        "pose": "점프동작",
+        "shoe": "플랫폼하이힐뮬",
+        "jewelry": [
+          "JQ3",
+          "mixed-metal",
+          "JR"
+        ]
+      }
+    ]
+  }
+}

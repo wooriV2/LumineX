@@ -1,0 +1,28 @@
+{
+  "key": "la_malefacefemale_solo_019",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Solo #019 · 바이올린 힙 아워글래스 · Norwegian rosemaling folk painting",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright bamboo grove with a smooth stone path, tall green bamboo on both sides, a waist-high bamboo fence and a standard gate, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Korean person with a handsome man's face on a full, curvaceous female body — a man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a handsome male model face with high cheekbones, a straight nose, a firm jaw and straight dark brows, clean-shaven, smooth fair skin with a warm undertone, bold vivid magenta-pink hair styled in natural curls gathered into a high rounded puff, real living eyes, wearing a single rose-gold necklace. Long oval nails, matte finish.\nPhysique: an extraordinarily curvaceous woman, far beyond any real person; a sharply cinched waist rises out of hips that sweep outward in a single smooth violin-shaped curve, the hips and thick rounded thighs flaring many times wider than the waist and dominating her silhouette from the front and side, a firm high rounded rear, a full round bust balancing the curve above; the line from waist to hip to thigh is one long unbroken curve; not thin, not boyish, not a straight figure; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: Her bare skin is painted in Norwegian rosemaling folk painting (a deep forest-green ground with bold cream and gold acanthus scrollwork), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense acanthus scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: seated across two steps.\nFootwear: Extreme gold platform stiletto knee-high boots, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: the painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "male-face-female-body",
+    "background": "대나무 숲",
+    "persons": [
+      {
+        "body": "violin hip hourglass",
+        "craft": "Norwegian rosemaling folk painting",
+        "makeup": "",
+        "hair": "HSHP하이퍼프",
+        "haircolor": "HCVM비비드마젠타",
+        "pose": "계단에앉기",
+        "shoe": "플랫폼스틸레토니하이부츠",
+        "jewelry": [
+          "JQ1",
+          "rose-gold",
+          "JN"
+        ]
+      }
+    ]
+  }
+}

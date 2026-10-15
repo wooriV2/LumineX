@@ -1,0 +1,28 @@
+{
+  "key": "la_malefacefemale_solo_039",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Solo #039 · 에이펙스 사이렌 · Polish Bolesławiec pottery",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in green stepped rice terraces with a stone path, a waist-high stone wall and a standard-height farm hut door at her side, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Japanese person with a handsome man's face on a full, curvaceous female body — a man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a handsome male model face with high cheekbones, a straight nose, a firm jaw and straight dark brows, a very faint trace of stubble, smooth pale skin with a cool undertone, deep plum smoky eyes with dark lashes, soft rose-gold hair styled in tight zigzag crimped waves, real living eyes, wearing a single mixed-metal ring. Long square nails, glittery finish.\nPhysique: an extraordinarily tall and curvaceous woman, far beyond any real person; everything about her is at its extreme at once: a towering frame with endless legs, a colossal heavy bust wider than her shoulders, a waist cinched to an impossible minimum, enormous round hips and a high rounded rear, gigantic thick thighs pressed together, smooth glowing skin over soft full curves; her silhouette is an exaggerated hourglass that dominates the whole frame from head to toe; not thin, not boyish, not evenly proportioned; her head looks small above her body; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: Her bare skin is painted in Polish Bolesławiec pottery (a deep cobalt ground with bold white peacock-eye dot motifs), wide white bands following every deep crease and curving around the hips and thighs like contour lines, dense peacock-eye dot motifs filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: seated on a low stool, hands on knees.\nFootwear: Extreme silver platform high-heel mules, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: the painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "male-face-female-body",
+    "background": "계단식 논",
+    "persons": [
+      {
+        "body": "apex siren",
+        "craft": "Polish Bolesławiec pottery",
+        "makeup": "플럼 스모키",
+        "hair": "HSCP크림프",
+        "haircolor": "HCRG로즈골드",
+        "pose": "의자앉기",
+        "shoe": "플랫폼하이힐뮬",
+        "jewelry": [
+          "JQ1",
+          "mixed-metal",
+          "JR"
+        ]
+      }
+    ]
+  }
+}

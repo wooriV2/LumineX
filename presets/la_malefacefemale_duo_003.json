@@ -1,0 +1,42 @@
+{
+  "key": "la_malefacefemale_duo_003",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Duo #003 · 에이펙스 사이렌 / 블랙 글래머",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunlit hanok courtyard with a pale earth floor, a standard-height wooden door, a low stone step and a waist-high clay wall, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Chinese person with a handsome man's face on a full, curvaceous female body — a man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a sleek K-pop male idol face with a straight nose, a sharp jawline, thick brows and cool narrow eyes, a very faint trace of stubble, light skin with a warm golden undertone, soft pastel-pink hair styled in a sleek wet-look slicked straight back, real living eyes, wearing two to three rose-gold anklets. Long coffin nails, chrome finish.\nLEFT Physique: an extraordinarily tall and curvaceous woman, far beyond any real person; everything about her is at its extreme at once: a towering frame with endless legs, a colossal heavy bust wider than her shoulders, a waist cinched to an impossible minimum, enormous round hips and a high rounded rear, gigantic thick thighs pressed together, smooth glowing skin over soft full curves; her silhouette is an exaggerated hourglass that dominates the whole frame from head to toe; not thin, not boyish, not evenly proportioned; her head looks small above her body; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: Her bare skin is painted in Vasarely-inspired optical-illusion pattern (a repeating grid of squares bulging in a 3D illusion), wide silver bands following every deep crease and curving around the hips and thighs like contour lines, dense optical illusion grid filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: mid-stride walking toward camera.\nLEFT Footwear: Extreme black ballet heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nRIGHT: ONE real adult Korean person with a handsome man's face on a full, curvaceous female body — a man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty-boy idol face with flawless smooth skin, large clear eyes, a slim jaw and soft full lips, clean-shaven, smooth fair skin with a warm undertone, natural soft black hair styled in tight zigzag crimped waves, real living eyes, wearing a single silver ring. Long stiletto nails, glossy finish.\nRIGHT Physique: an extraordinarily large woman, far beyond any real person; a dramatically impossible waist-to-hip ratio dominates her silhouette: a colossal heavy bust, an extremely sharply cinched waist pulled in far tighter than the waistline of any of her other curves, and then enormous round hips flaring out to a width many times greater than that narrow waist; gigantic soft thighs pressed together, very thick soft arms, a gigantic rounded rear; her head looks small on top of her massive body; not a plus-size model, not evenly proportioned; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: Her bare skin is painted in Ukrainian Petrykivka floral painting (a black ground with bright red, orange and gold folk-art flowers), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense folk-art florals filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: mid-stride walking toward camera.\nRIGHT Footwear: Extreme black platform stiletto slingbacks, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-face-female-body",
+    "background": "한옥 마당",
+    "persons": [
+      {
+        "body": "apex siren",
+        "craft": "Vasarely-inspired optical-illusion pattern",
+        "makeup": "",
+        "hair": "HSSK슬릭백",
+        "haircolor": "HCPP파스텔핑크",
+        "pose": "걷는동작",
+        "shoe": "발레힐",
+        "jewelry": [
+          "JQ2",
+          "rose-gold",
+          "JA"
+        ]
+      },
+      {
+        "body": "black glamour",
+        "craft": "Ukrainian Petrykivka floral painting",
+        "makeup": "",
+        "hair": "HSCP크림프",
+        "haircolor": "HCNB내추럴블랙",
+        "pose": "걷는동작",
+        "shoe": "플랫폼스틸레토슬링백",
+        "jewelry": [
+          "JQ1",
+          "silver",
+          "JR"
+        ]
+      }
+    ]
+  }
+}

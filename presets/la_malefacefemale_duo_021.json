@@ -1,0 +1,42 @@
+{
+  "key": "la_malefacefemale_duo_021",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Duo #021 · 에이펙스 사이렌 / 라티나 커브스",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in the carved stone galleries of Angkor Wat with sunlit sandstone paving, standard-height doorways and low stone steps, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Japanese person with a handsome man's face on a full, curvaceous female body — a man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty-boy idol face with flawless smooth skin, large clear eyes, a slim jaw and soft full lips, clean-shaven, smooth fair skin with a neutral undertone, soft pastel-lavender hair styled in countless fine micro braids, real living eyes, wearing an extreme maximalist stack of well over ten mixed-metal earrings. Long oval nails, chrome finish.\nLEFT Physique: an extraordinarily tall and curvaceous woman, far beyond any real person; everything about her is at its extreme at once: a towering frame with endless legs, a colossal heavy bust wider than her shoulders, a waist cinched to an impossible minimum, enormous round hips and a high rounded rear, gigantic thick thighs pressed together, smooth glowing skin over soft full curves; her silhouette is an exaggerated hourglass that dominates the whole frame from head to toe; not thin, not boyish, not evenly proportioned; her head looks small above her body; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: Her bare skin is painted in Escher-inspired tessellation (a tessellating pattern of interlocking shapes that morph as they repeat), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense morphing tessellation filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: square to camera, feet wide, arms clear of her body.\nLEFT Footwear: Extreme gold platform stiletto cross-strap sandals, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Japanese person with a handsome man's face on a full, curvaceous female body — a man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a delicate beautiful-boy face with long lashes, a slim straight nose and a clean jawline, clean-shaven, smooth fair skin with a neutral undertone, cool ash-brown hair styled in curly, real living eyes, wearing a single platinum anklet. Long stiletto nails, chrome finish.\nRIGHT Physique: most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: Her bare skin is painted in Ethiopian cross-and-lattice gold pattern (a deep wine-red ground with fine gold lattice linework), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense lattice linework filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: both hands on her hips, elbows out.\nRIGHT Footwear: Extreme gold ankle-strap stilettos with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-face-female-body",
+    "background": "앙코르와트 회랑",
+    "persons": [
+      {
+        "body": "apex siren",
+        "craft": "Escher-inspired tessellation",
+        "makeup": "",
+        "hair": "HSMB마이크로브레이드",
+        "haircolor": "HCPL파스텔라벤더",
+        "pose": "정면와이드스탠스",
+        "shoe": "플랫폼스틸레토크로스스트랩샌들",
+        "jewelry": [
+          "JQ5",
+          "mixed-metal",
+          "JE"
+        ]
+      },
+      {
+        "body": "latina curves",
+        "craft": "Ethiopian cross-and-lattice gold pattern",
+        "makeup": "",
+        "hair": "HSC컬",
+        "haircolor": "HCAB애쉬브라운",
+        "pose": "허리손",
+        "shoe": "앵클스트랩스틸레토",
+        "jewelry": [
+          "JQ1",
+          "platinum",
+          "JA"
+        ]
+      }
+    ]
+  }
+}

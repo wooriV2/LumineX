@@ -1,0 +1,28 @@
+{
+  "key": "la_malefacefemale_solo_014",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Solo #014 · 글래머 아워글래스 · Portuguese azulejo tile",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright white-sand beach at midday with calm turquoise water, a wooden boardwalk with a waist-high rail and a row of closed striped cabanas of normal door height, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Japanese person with a handsome man's face on a full, curvaceous female body — a man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a handsome male model face with high cheekbones, a straight nose, a firm jaw and straight dark brows, a very faint trace of stubble, smooth pale skin with a cool undertone, metallic gold glitter eyeshadow with defined lashes, warm auburn red-brown hair styled in half-up, top section lifted with the length flowing loose below, real living eyes, wearing a single platinum bracelet. Long oval nails, matte finish.\nPhysique: a stunning hourglass figure, far more dramatically curved than any ordinary woman; a full, rounded bust, a dramatically narrow, sharply cinched waist with a deep shadowed groove running around her middle, and wide, curvaceous hips flaring well beyond her shoulders, soft rounded thighs, toned but soft arms; not thin, not androgynous, not boyish, not a straight figure; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: Her bare skin is painted in Portuguese azulejo tile (a brilliant white ground with deep cobalt-blue floral borders), wide cobalt bands following every deep crease and curving around the hips and thighs like contour lines, dense repeating panel scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: seated across two steps.\nFootwear: Extreme white platform wedges, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: the painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "male-face-female-body",
+    "background": "여름 해변",
+    "persons": [
+      {
+        "body": "glamour hourglass",
+        "craft": "Portuguese azulejo tile",
+        "makeup": "골드 글리터 아이",
+        "hair": "HSHU하프업",
+        "haircolor": "HCAU오번",
+        "pose": "계단에앉기",
+        "shoe": "익스트림플랫폼웨지",
+        "jewelry": [
+          "JQ1",
+          "platinum",
+          "JB"
+        ]
+      }
+    ]
+  }
+}

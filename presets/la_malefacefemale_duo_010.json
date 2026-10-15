@@ -1,0 +1,42 @@
+{
+  "key": "la_malefacefemale_duo_010",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Duo #010 · 아워글래스 밤쉘 / 라티나 커브스",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in the carved stone galleries of Angkor Wat with sunlit sandstone paving, standard-height doorways and low stone steps, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Japanese person with a handsome man's face on a full, curvaceous female body — a man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a striking young male model face with sharp straight brows, a strong chin and a visible Adam's apple, a very faint trace of stubble, smooth fair skin with a neutral undertone, deep jet-black with a glossy sheen hair styled in wavy, real living eyes, wearing an extreme maximalist stack of well over ten rose-gold necklaces. Long stiletto nails, matte finish.\nLEFT Physique: waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum, thighs pressing together, every curve maximized at once Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: Her bare skin is painted in Hungarian Kalocsa folk painted motif (a deep black ground with bright red, pink and gold folk-art florals), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense folk-art floral motifs filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: both hands sweeping her hair back.\nLEFT Footwear: Extreme silver platform stiletto heels, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Korean person with a handsome man's face on a full, curvaceous female body — a man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a handsome male model face with high cheekbones, a straight nose, a firm jaw and straight dark brows, a very faint trace of stubble, luminous porcelain skin, sleek silver-grey hair styled in a chin-length bob, real living eyes, wearing four to six layered mixed-metal anklets. Long stiletto nails, matte finish.\nRIGHT Physique: most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: Her bare skin is painted in Ethiopian cross-and-lattice gold pattern (a deep wine-red ground with fine gold lattice linework), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense lattice linework filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: both hands sweeping her hair back.\nRIGHT Footwear: Extreme silver platform buckled boots, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-face-female-body",
+    "background": "앙코르와트 회랑",
+    "persons": [
+      {
+        "body": "hourglass bombshell",
+        "craft": "Hungarian Kalocsa folk painted motif",
+        "makeup": "",
+        "hair": "HSW웨이브",
+        "haircolor": "HCJB제트블랙",
+        "pose": "머리넘기기",
+        "shoe": "플랫폼스틸레토힐",
+        "jewelry": [
+          "JQ5",
+          "rose-gold",
+          "JN"
+        ]
+      },
+      {
+        "body": "latina curves",
+        "craft": "Ethiopian cross-and-lattice gold pattern",
+        "makeup": "",
+        "hair": "HSBC보브컷",
+        "haircolor": "HCSG실버그레이",
+        "pose": "머리넘기기",
+        "shoe": "익스트림플랫폼버클부츠",
+        "jewelry": [
+          "JQ3",
+          "mixed-metal",
+          "JA"
+        ]
+      }
+    ]
+  }
+}

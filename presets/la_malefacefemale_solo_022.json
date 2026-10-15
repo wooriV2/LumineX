@@ -1,0 +1,28 @@
+{
+  "key": "la_malefacefemale_solo_022",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Solo #022 · 커브드 바스트 · Mexican Talavera ceramic",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a vast stone courtyard of the Forbidden City with a standard-height palace gate, marble steps with waist-high balustrades, empty of visitors, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Chinese person with a handsome man's face on a full, curvaceous female body — a man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a handsome young man's idol face with a clean sharp jawline, straight thick brows and long defined eyes, clean-shaven, light skin with a warm golden undertone, deep plum smoky eyes with dark lashes, soft pastel-pink hair styled in many small bantu knots covering the scalp, real living eyes, wearing two to three silver bracelets. Long square nails, chrome finish.\nPhysique: an extraordinarily large woman, far beyond any real person; both her bust and her hips are simultaneously, dramatically enormous, a colossal heavy bust resting full and wide, and enormous round hips flaring just as dramatically wide below, but unlike a sharply cinched hourglass, her waistline stays soft and only gently defined between them, a full, natural figure rather than a snatched one; gigantic soft thighs pressed together, very thick soft arms, a full round face; her head looks small on top of her massive body; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: Her bare skin is painted in Mexican Talavera ceramic (a glossy white tin glaze with cobalt blue and marigold medallions), wide cobalt bands following every deep crease and curving around the hips and thighs like contour lines, dense medallion scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: seated across two steps.\nFootwear: Extreme hot-pink sculptural heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nSkin: Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: the painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "male-face-female-body",
+    "background": "자금성 마당",
+    "persons": [
+      {
+        "body": "curved bust",
+        "craft": "Mexican Talavera ceramic",
+        "makeup": "플럼 스모키",
+        "hair": "HSBK반투노트",
+        "haircolor": "HCPP파스텔핑크",
+        "pose": "계단에앉기",
+        "shoe": "스컬프처럴힐",
+        "jewelry": [
+          "JQ2",
+          "silver",
+          "JB"
+        ]
+      }
+    ]
+  }
+}

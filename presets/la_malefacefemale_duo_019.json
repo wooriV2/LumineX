@@ -1,0 +1,42 @@
+{
+  "key": "la_malefacefemale_duo_019",
+  "category": "🏺 Living Artifact · Male Face Female Body Formula",
+  "title": "Male Face Female Body Duo #019 · 아워글래스 밤쉘 / 라티나 커브스",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright snowfield with bare trees under a pale sky, a wooden fence of normal height and a cabin with a standard-size door in the distance, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Chinese person with a handsome man's face on a full, curvaceous female body — a man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a handsome young man's idol face with a clean sharp jawline, straight thick brows and long defined eyes, a very faint trace of stubble, smooth fair skin with a neutral undertone, bold vivid tangerine-orange hair styled in natural curls gathered into a high rounded puff, real living eyes, wearing a single platinum necklace. Long coffin nails, glossy finish.\nLEFT Physique: waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum, thighs pressing together, every curve maximized at once Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: Her bare skin is painted in Turkish İznik tile (a brilliant white ground with cobalt-blue tulips and curling stems), wide cobalt-and-coral bands following every deep crease and curving around the hips and thighs like contour lines, dense floral scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: both hands sweeping her hair back.\nLEFT Footwear: Extreme white platform stiletto cross-strap sandals, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Japanese person with a handsome man's face on a full, curvaceous female body — a man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a fresh-faced boy-group idol face with clear glowing skin, bright eyes and a gentle smile line, clean-shaven, smooth fair skin with a neutral undertone, soft pastel-mint-green hair styled in low bun, real living eyes, wearing four to six layered gold earrings. Long square nails, glossy finish.\nRIGHT Physique: most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: Her bare skin is painted in Filipino Yakan painted pattern (a black ground densely patterned with bright geometric diamond bands), wide magenta-and-gold bands following every deep crease and curving around the hips and thighs like contour lines, dense geometric diamond work filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers her whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of her hands, sides, back, rear, lower belly, knees, calves and the tops of her feet. Her face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: mid-stride walking toward camera.\nRIGHT Footwear: Extreme white platform stiletto corset-lace boots, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a smooth taut surface with natural creases and shadow only where the flesh folds. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold and curve. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-face-female-body",
+    "background": "겨울 설원",
+    "persons": [
+      {
+        "body": "hourglass bombshell",
+        "craft": "Turkish İznik tile",
+        "makeup": "",
+        "hair": "HSHP하이퍼프",
+        "haircolor": "HCVO비비드오렌지",
+        "pose": "머리넘기기",
+        "shoe": "플랫폼스틸레토크로스스트랩샌들",
+        "jewelry": [
+          "JQ1",
+          "platinum",
+          "JN"
+        ]
+      },
+      {
+        "body": "latina curves",
+        "craft": "Filipino Yakan painted pattern",
+        "makeup": "",
+        "hair": "HSBN번",
+        "haircolor": "HCPM파스텔민트",
+        "pose": "걷는동작",
+        "shoe": "플랫폼스틸레토코르셋레이스부츠",
+        "jewelry": [
+          "JQ3",
+          "gold",
+          "JE"
+        ]
+      }
+    ]
+  }
+}
