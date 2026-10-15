@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_010",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #010 · 클래식 머슬 / 스트롱맨",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in the ancient Parthenon terrace on the Acropolis in Athens, pale weathered marble paving, fluted columns and standard-height stone steps, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Japanese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, deep plum smoky eyes with dark lashes, smooth fair skin with a neutral undertone, composed and elegant, cool ash-brown hair styled in an intricate fishtail braid, real living eyes, wearing an extreme maximalist stack of well over ten silver bracelets. Long almond nails, glossy finish.\nLEFT Physique: A classically muscular athletic man in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful but not exaggerated. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in Georgian minonkari cloisonné enamel (a deep black ground with fine gold cloisonné wirework), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense cloisonné floral wirework filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: three-quarter angle, one hand on his hip.\nLEFT Footwear: Extreme silver platform stiletto heels, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Japanese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful K-pop idol face with a small V-line jaw, bright double-lidded eyes and a straight nose, clean-shaven, silver foil-lined eyes with a cool shimmer, smooth pale skin with a cool undertone, calm and cool, bright golden-blonde hair styled in countless fine micro braids, real living eyes, wearing four to six layered mixed-metal hair ornaments. Long round nails, chrome finish.\nRIGHT Physique: A massive, stocky strongman. A thick short neck, huge round shoulders, an enormously deep chest, a thick powerful midsection with a solid belly, tree-trunk arms, and huge thick legs planted wide. Heavy, dense and immovable, every part solid. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in Spanish Andalusian filigree (a deep black ground with fine silver filigree in geometric star patterns), wide silver bands following every deep crease and curving around the hips and thighs like contour lines, dense geometric star filigree filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: back three-quarters to camera, head turned back.\nRIGHT Footwear: Extreme nude ballet heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "아테네 파르테논",
+    "persons": [
+      {
+        "body": "클래식 머슬",
+        "craft": "Georgian minonkari cloisonné enamel",
+        "makeup": "플럼 스모키",
+        "hair": "HSFB피쉬테일브레이드",
+        "haircolor": "HCAB애쉬브라운",
+        "pose": "3/4각도"
+      },
+      {
+        "body": "스트롱맨",
+        "craft": "Spanish Andalusian filigree",
+        "makeup": "실버 포일 아이",
+        "hair": "HSMB마이크로브레이드",
+        "haircolor": "HCGB골든블론드",
+        "pose": "뒷모습3/4"
+      }
+    ]
+  }
+}

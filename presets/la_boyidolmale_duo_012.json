@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_012",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #012 · 린 애슬레틱 / 파워리프터",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright spring garden terrace of pale stone with blooming tulip beds, a low trimmed hedge, a standard-height garden gate and a bench, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Chinese man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, metallic gold glitter eyeshadow with defined lashes, smooth fair skin with a neutral undertone, intense and focused, bold vivid magenta-pink hair styled in sleek straight, real living eyes, wearing four to six layered silver bracelets. Long almond nails, matte finish.\nLEFT Physique: A tall, lean, athletic man built like a swimmer. Broad shoulders tapering cleanly to a narrow waist, a defined chest, a visible eight-pack abdomen with sharp obliques, long strong arms with clear vein definition, and long lean muscular legs with defined calves. Nothing bulky, everything taut and sculpted. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in Peruvian Nazca painted pattern (a deep terracotta ground densely painted with stylised gold figures), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense stepped geometric borders filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: back three-quarters to camera, head turned back.\nLEFT Footwear: Extreme white platform stiletto pumps, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Chinese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, silver foil-lined eyes with a cool shimmer, smooth fair skin with a neutral undertone, relaxed with a faint half-smile, deep dark brown hair styled in long locs gathered loosely, real living eyes, wearing seven to ten heavily stacked mixed-metal hair ornaments. Long almond nails, matte finish.\nRIGHT Physique: A thick, heavy, extremely strong man built like a powerlifter. A huge barrel chest, enormously wide shoulders and back, a thick solid waist with a firm rounded belly over strong abs, massive arms, and enormous thick thighs and calves. Every part is large, dense and continuous rather than sharply cut. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in American Art Deco chrome-and-lacquer (a deep black lacquer ground with bold silver chrome sunburst), wide silver chrome bands following every deep crease and curving around the hips and thighs like contour lines, dense zigzag linework filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: both hands on his hips, elbows out.\nRIGHT Footwear: Extreme gold platform thigh-skimming boots, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "봄 정원 테라스",
+    "persons": [
+      {
+        "body": "린 애슬레틱",
+        "craft": "Peruvian Nazca painted pattern",
+        "makeup": "골드 글리터 아이",
+        "hair": "HSS스트레이트",
+        "haircolor": "HCVM비비드마젠타",
+        "pose": "뒷모습3/4"
+      },
+      {
+        "body": "파워리프터",
+        "craft": "American Art Deco chrome-and-lacquer",
+        "makeup": "실버 포일 아이",
+        "hair": "HSLC락스",
+        "haircolor": "HCDB다크브라운",
+        "pose": "허리손"
+      }
+    ]
+  }
+}

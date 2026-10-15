@@ -1,0 +1,22 @@
+{
+  "key": "la_boyidolmale_solo_028",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Solo #028 · V자 보디빌더 · Filipino Yakan painted pattern",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in golden sand dunes under a clear sky with a smooth flat sand foreground and a standard-height wooden gate frame standing at his side, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as him, NO dark background NO black void, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Japanese man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful K-pop idol face with a small V-line jaw, bright double-lidded eyes and a straight nose, clean-shaven, silver foil-lined eyes with a cool shimmer, smooth fair skin with a neutral undertone, fierce and charismatic, soft pastel-mint-green hair styled in a low chignon knot at the nape, real living eyes, wearing an extreme maximalist stack of well over ten gold anklets. Long stiletto nails, glittery finish.\nPhysique: An extraordinarily large and powerful man, far beyond any real person. A massive V-shaped torso: enormously broad shoulders with capped, rounded deltoids, a thick heavy chest, a deeply carved six-pack abdomen narrowing to a comparatively small waist, huge thick arms with split biceps and horseshoe triceps, wide flaring lats, and powerful thick quads and diamond calves. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: His bare skin is painted in Filipino Yakan painted pattern (a black ground densely patterned with bright geometric diamond bands), wide magenta-and-gold bands following every deep crease and curving around the hips and thighs like contour lines, dense geometric diamond work filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: seated on a low stool, hands on knees.\nFootwear: Extreme cobalt-blue platform clear heels, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: the painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "boyidol-male-body",
+    "background": "사막 모래언덕",
+    "persons": [
+      {
+        "body": "V자 보디빌더",
+        "craft": "Filipino Yakan painted pattern",
+        "makeup": "실버 포일 아이",
+        "hair": "HSCH쉬농",
+        "haircolor": "HCPM파스텔민트",
+        "pose": "의자앉기"
+      }
+    ]
+  }
+}

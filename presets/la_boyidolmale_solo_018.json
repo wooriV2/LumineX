@@ -1,0 +1,22 @@
+{
+  "key": "la_boyidolmale_solo_018",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Solo #018 · 클래식 머슬 · Moroccan zellige tile mosaic",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunlit white-washed courtyard with a pale tiled floor, an arched doorway at normal height, low stone steps and a waist-high wall, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as him, NO dark background NO black void, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Japanese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty androgynous idol face with large doe eyes, a small chin and a soft jaw, clean-shaven, deep plum smoky eyes with dark lashes, smooth pale skin with a cool undertone, intense and focused, natural soft black hair styled in long thick box braids, real living eyes, wearing an extreme maximalist stack of well over ten mixed-metal earrings. Long oval nails, holographic finish.\nPhysique: A classically muscular athletic man in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful but not exaggerated. His arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: His bare skin is painted in Moroccan zellige tile mosaic (a deep cobalt ground with interlocking white, terracotta and gold motifs), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense interlocking star-and-cross motifs filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: leaning one arm on a window frame.\nFootwear: Extreme white platform stiletto peep-toe heels, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: the painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "boyidol-male-body",
+    "background": "하얀 안뜰",
+    "persons": [
+      {
+        "body": "클래식 머슬",
+        "craft": "Moroccan zellige tile mosaic",
+        "makeup": "플럼 스모키",
+        "hair": "HSBX박스브레이드",
+        "haircolor": "HCNB내추럴블랙",
+        "pose": "창가기대기"
+      }
+    ]
+  }
+}

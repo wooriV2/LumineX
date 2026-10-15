@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_024",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #024 · 대형 헤비 / 키 큰 슬렌더",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in golden sand dunes under a clear sky with a smooth flat sand foreground and a standard-height wooden gate frame standing at his side, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Korean man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, deep plum smoky eyes with dark lashes, luminous porcelain skin, composed and elegant, soft champagne-blonde hair styled in many small bantu knots covering the scalp, real living eyes, wearing four to six layered rose-gold anklets. Long square nails, matte finish.\nLEFT Physique: A giant, big-bellied man with great natural size throughout. Broad powerful shoulders, a wide heavy chest, a large round soft belly hanging over a thick waist, thick strong arms, and wide heavy thighs beneath. Every curve is large, solid and continuous, with a warm, imposing bearing. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in Ethiopian cross-and-lattice gold pattern (a deep wine-red ground with fine gold lattice linework), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense lattice linework filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: back three-quarters to camera, head turned back.\nLEFT Footwear: Extreme cobalt-blue platform stiletto pumps, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Chinese man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty androgynous idol face with large doe eyes, a small chin and a soft jaw, clean-shaven, dramatic black smoky eyeshadow with sharp winged eyeliner, smooth fair skin with a neutral undertone, intense and focused, soft strawberry-blonde hair styled in curly, real living eyes, wearing a single mixed-metal necklace. Long stiletto nails, glittery finish.\nRIGHT Physique: A very tall, slim, long-limbed man with a runway build. Straight shoulders, a flat lean chest, a flat defined stomach, slender strong arms and very long legs, lightly muscled and elegant, with visible collarbones and a narrow waist. His head stays in correct proportion to his long frame. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in Italian Deruta majolica (a warm ivory ground with cobalt-blue and ochre-yellow floral medallions), wide cobalt-and-ochre bands following every deep crease and curving around the hips and thighs like contour lines, dense repeating floral border filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: both hands sweeping his hair back.\nRIGHT Footwear: Extreme white platform stiletto heels, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "사막 모래언덕",
+    "persons": [
+      {
+        "body": "대형 헤비",
+        "craft": "Ethiopian cross-and-lattice gold pattern",
+        "makeup": "플럼 스모키",
+        "hair": "HSBK반투노트",
+        "haircolor": "HCCM샴페인블론드",
+        "pose": "뒷모습3/4"
+      },
+      {
+        "body": "키 큰 슬렌더",
+        "craft": "Italian Deruta majolica",
+        "makeup": "블랙 스모키 윙",
+        "hair": "HSC컬",
+        "haircolor": "HCSB스트로베리블론드",
+        "pose": "머리넘기기"
+      }
+    ]
+  }
+}

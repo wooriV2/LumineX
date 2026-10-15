@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_017",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #017 · 린 애슬레틱 / 파워리프터",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in the Court of the Lions at the Alhambra with a pale marble floor, slender arcade columns, standard-height arched doorways and a low fountain, empty of visitors, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Korean man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty androgynous idol face with large doe eyes, a small chin and a soft jaw, clean-shaven, metallic gold glitter eyeshadow with defined lashes, smooth fair skin with a warm undertone, intense and focused, soft pastel-mint-green hair styled in a high top-knot bun, real living eyes, wearing two to three rose-gold bracelets. Long stiletto nails, glossy finish.\nLEFT Physique: A tall, lean, athletic man built like a swimmer. Broad shoulders tapering cleanly to a narrow waist, a defined chest, a visible eight-pack abdomen with sharp obliques, long strong arms with clear vein definition, and long lean muscular legs with defined calves. Nothing bulky, everything taut and sculpted. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in American Art Deco chrome-and-lacquer (a deep black lacquer ground with bold silver chrome sunburst), wide silver chrome bands following every deep crease and curving around the hips and thighs like contour lines, dense zigzag linework filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: both hands sweeping his hair back.\nLEFT Footwear: Extreme cobalt-blue platform stiletto ankle boots, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Chinese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty androgynous idol face with large doe eyes, a small chin and a soft jaw, clean-shaven, deep plum smoky eyes with dark lashes, smooth fair skin with a neutral undertone, calm and cool, natural soft black hair styled in a short pixie cut, real living eyes, wearing four to six layered platinum bracelets. Long stiletto nails, glittery finish.\nRIGHT Physique: A thick, heavy, extremely strong man built like a powerlifter. A huge barrel chest, enormously wide shoulders and back, a thick solid waist with a firm rounded belly over strong abs, massive arms, and enormous thick thighs and calves. Every part is large, dense and continuous rather than sharply cut. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in French Limoges enamel (a deep cobalt-blue ground with fine white and gold grisaille scrollwork), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense grisaille scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: square to camera, feet wide, arms clear of his body.\nRIGHT Footwear: Extreme silver platform buckled boots, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "알람브라 사자의 정원",
+    "persons": [
+      {
+        "body": "린 애슬레틱",
+        "craft": "American Art Deco chrome-and-lacquer",
+        "makeup": "골드 글리터 아이",
+        "hair": "HSTN탑노트",
+        "haircolor": "HCPM파스텔민트",
+        "pose": "머리넘기기"
+      },
+      {
+        "body": "파워리프터",
+        "craft": "French Limoges enamel",
+        "makeup": "플럼 스모키",
+        "hair": "HSPX픽시컷",
+        "haircolor": "HCNB내추럴블랙",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

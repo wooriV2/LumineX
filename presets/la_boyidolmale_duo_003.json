@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_003",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #003 · 키 큰 슬렌더 / 파워리프터",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in the green stone terraces of Machu Picchu with stone steps of normal height and low terrace walls, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Chinese man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a delicate beautiful-boy face with long lashes, a slim straight nose and a clean jawline, clean-shaven, silver foil-lined eyes with a cool shimmer, light skin with a warm golden undertone, calm and cool, sleek silver-grey hair styled in low bun, real living eyes, wearing seven to ten heavily stacked gold rings. Long coffin nails, holographic finish.\nLEFT Physique: A very tall, slim, long-limbed man with a runway build. Straight shoulders, a flat lean chest, a flat defined stomach, slender strong arms and very long legs, lightly muscled and elegant, with visible collarbones and a narrow waist. His head stays in correct proportion to his long frame. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in Romanian Horezu ceramic (a cream ground with green, brown and ochre spiral floral motifs), wide ochre bands following every deep crease and curving around the hips and thighs like contour lines, dense spiral floral bands filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: mid-stride walking toward camera.\nLEFT Footwear: Extreme nude platform high-heel mules, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Korean man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, graphic electric-blue eyeliner extended into bold wings, smooth fair skin with a warm undertone, fierce and charismatic, bold vivid tangerine-orange hair styled in many small bantu knots covering the scalp, real living eyes, wearing four to six layered gold rings. Long oval nails, chrome finish.\nRIGHT Physique: A thick, heavy, extremely strong man built like a powerlifter. A huge barrel chest, enormously wide shoulders and back, a thick solid waist with a firm rounded belly over strong abs, massive arms, and enormous thick thighs and calves. Every part is large, dense and continuous rather than sharply cut. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in Spanish Talavera de la Reina ceramic (a warm ivory ground with cobalt-blue and ochre floral medallions), wide cobalt bands following every deep crease and curving around the hips and thighs like contour lines, dense floral medallion border filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: both hands sweeping his hair back.\nRIGHT Footwear: Extreme red platform stiletto cross-strap sandals, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "마추픽추 계단식 터",
+    "persons": [
+      {
+        "body": "키 큰 슬렌더",
+        "craft": "Romanian Horezu ceramic",
+        "makeup": "실버 포일 아이",
+        "hair": "HSBN번",
+        "haircolor": "HCSG실버그레이",
+        "pose": "걷는동작"
+      },
+      {
+        "body": "파워리프터",
+        "craft": "Spanish Talavera de la Reina ceramic",
+        "makeup": "그래픽 블루 라인",
+        "hair": "HSBK반투노트",
+        "haircolor": "HCVO비비드오렌지",
+        "pose": "머리넘기기"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_006",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #006 · V자 보디빌더 / 대형 헤비 · Polish Bolesławiec pottery / Romanian Horezu ceramic",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a vast white salt flat reflecting the sky with a smooth flat floor and a standard-height wooden doorway frame standing at his side, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Korean man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a delicate beautiful-boy face with long lashes, a slim straight nose and a clean jawline, clean-shaven, silver foil-lined eyes with a cool shimmer, smooth fair skin with a warm undertone, fierce and charismatic, soft rose-gold hair styled in cornrows braided tight against the scalp, real living eyes, wearing two to three platinum anklets. Long oval nails, holographic finish.\nLEFT Physique: An extraordinarily large and powerful man, far beyond any real person. A massive V-shaped torso: enormously broad shoulders with capped, rounded deltoids, a thick heavy chest, a deeply carved six-pack abdomen narrowing to a comparatively small waist, huge thick arms with split biceps and horseshoe triceps, wide flaring lats, and powerful thick quads and diamond calves. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in Polish Bolesławiec pottery (a deep cobalt ground with bold white peacock-eye dot motifs), wide white bands following every deep crease and curving around the hips and thighs like contour lines, dense peacock-eye dot motifs filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: both hands on his hips, elbows out.\nLEFT Footwear: Extreme hot-pink platform stiletto peep-toe heels, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Japanese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful K-pop idol face with a small V-line jaw, bright double-lidded eyes and a straight nose, clean-shaven, metallic gold glitter eyeshadow with defined lashes, smooth pale skin with a cool undertone, calm and cool, soft pastel-peach hair styled in flat glossy finger waves styled close to the scalp, real living eyes, wearing seven to ten heavily stacked platinum earrings. Long oval nails, matte finish.\nRIGHT Physique: A giant, big-bellied man with great natural size throughout. Broad powerful shoulders, a wide heavy chest, a large round soft belly hanging over a thick waist, thick strong arms, and wide heavy thighs beneath. Every curve is large, solid and continuous, with a warm, imposing bearing. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in Romanian Horezu ceramic (a cream ground with green, brown and ochre spiral floral motifs), wide ochre bands following every deep crease and curving around the hips and thighs like contour lines, dense spiral floral bands filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: both hands sweeping his hair back.\nRIGHT Footwear: Extreme nude platform stiletto cross-strap sandals, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "소금 사막",
+    "persons": [
+      {
+        "body": "V자 보디빌더",
+        "craft": "Polish Bolesławiec pottery",
+        "makeup": "실버 포일 아이",
+        "hair": "HSCR콘로우",
+        "haircolor": "HCRG로즈골드",
+        "pose": "허리손"
+      },
+      {
+        "body": "대형 헤비",
+        "craft": "Romanian Horezu ceramic",
+        "makeup": "골드 글리터 아이",
+        "hair": "HSFW핑거웨이브",
+        "haircolor": "HCPC파스텔피치",
+        "pose": "머리넘기기"
+      }
+    ]
+  }
+}

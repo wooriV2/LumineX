@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_019",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #019 · 파워리프터 / 스트롱맨",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright bamboo grove with a smooth stone path, tall green bamboo on both sides, a waist-high bamboo fence and a standard gate, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Chinese man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty-boy idol face with flawless smooth skin, large clear eyes, a slim jaw and soft full lips, clean-shaven, dramatic black smoky eyeshadow with sharp winged eyeliner, light skin with a warm golden undertone, composed and elegant, deep dark brown hair styled in braided, real living eyes, wearing four to six layered gold hair ornaments. Long coffin nails, glittery finish.\nLEFT Physique: A thick, heavy, extremely strong man built like a powerlifter. A huge barrel chest, enormously wide shoulders and back, a thick solid waist with a firm rounded belly over strong abs, massive arms, and enormous thick thighs and calves. Every part is large, dense and continuous rather than sharply cut. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in Romanian Horezu ceramic (a cream ground with green, brown and ochre spiral floral motifs), wide ochre bands following every deep crease and curving around the hips and thighs like contour lines, dense spiral floral bands filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: mid-stride walking toward camera.\nLEFT Footwear: Extreme nude ballet heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nRIGHT: ONE real adult Korean man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a fresh-faced boy-group idol face with clear glowing skin, bright eyes and a gentle smile line, clean-shaven, deep plum smoky eyes with dark lashes, smooth fair skin with a warm undertone, composed and elegant, bold vivid magenta-pink hair styled in high ponytail, real living eyes, wearing an extreme maximalist stack of well over ten silver earrings. Long oval nails, matte finish.\nRIGHT Physique: A massive, stocky strongman. A thick short neck, huge round shoulders, an enormously deep chest, a thick powerful midsection with a solid belly, tree-trunk arms, and huge thick legs planted wide. Heavy, dense and immovable, every part solid. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in Hungarian Kalocsa folk painted motif (a deep black ground with bright red, pink and gold folk-art florals), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense folk-art floral motifs filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: both hands on his hips, elbows out.\nRIGHT Footwear: Extreme silver platform wedges, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "대나무 숲",
+    "persons": [
+      {
+        "body": "파워리프터",
+        "craft": "Romanian Horezu ceramic",
+        "makeup": "블랙 스모키 윙",
+        "hair": "HSB브레이드",
+        "haircolor": "HCDB다크브라운",
+        "pose": "걷는동작"
+      },
+      {
+        "body": "스트롱맨",
+        "craft": "Hungarian Kalocsa folk painted motif",
+        "makeup": "플럼 스모키",
+        "hair": "HSPT포니테일",
+        "haircolor": "HCVM비비드마젠타",
+        "pose": "허리손"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_004",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #004 · 스트롱맨 / 파워리프터",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a vast stone courtyard of the Forbidden City with a standard-height palace gate, marble steps with waist-high balustrades, empty of visitors, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Chinese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful K-pop idol face with a small V-line jaw, bright double-lidded eyes and a straight nose, clean-shaven, silver foil-lined eyes with a cool shimmer, light skin with a warm golden undertone, composed and elegant, bold vivid tangerine-orange hair styled in a mohawk with volume along the centre of the scalp, real living eyes, wearing a single rose-gold hair ornament. Long stiletto nails, glossy finish.\nLEFT Physique: A massive, stocky strongman. A thick short neck, huge round shoulders, an enormously deep chest, a thick powerful midsection with a solid belly, tree-trunk arms, and huge thick legs planted wide. Heavy, dense and immovable, every part solid. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in Russian Palekh miniature lacquer (a deep black ground with fine gold linework and firebirds), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense jewel-toned scenework filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: back three-quarters to camera, head turned back.\nLEFT Footwear: Extreme white sculptural heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nRIGHT: ONE real adult Chinese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty-boy idol face with flawless smooth skin, large clear eyes, a slim jaw and soft full lips, clean-shaven, deep plum smoky eyes with dark lashes, smooth fair skin with a neutral undertone, composed and elegant, soft pastel-lavender hair styled in a low chignon knot at the nape, real living eyes, wearing seven to ten heavily stacked gold hair ornaments. Long oval nails, matte finish.\nRIGHT Physique: A thick, heavy, extremely strong man built like a powerlifter. A huge barrel chest, enormously wide shoulders and back, a thick solid waist with a firm rounded belly over strong abs, massive arms, and enormous thick thighs and calves. Every part is large, dense and continuous rather than sharply cut. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in Egyptian Mamluk brass-and-enamel inlay (a deep black ground with fine gold and silver geometric star inlay), wide gold-and-silver bands following every deep crease and curving around the hips and thighs like contour lines, dense geometric star inlay filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: three-quarter angle, one hand on his hip.\nRIGHT Footwear: Extreme hot-pink platform stiletto slingbacks, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "자금성 마당",
+    "persons": [
+      {
+        "body": "스트롱맨",
+        "craft": "Russian Palekh miniature lacquer",
+        "makeup": "실버 포일 아이",
+        "hair": "HSMH모호크",
+        "haircolor": "HCVO비비드오렌지",
+        "pose": "뒷모습3/4"
+      },
+      {
+        "body": "파워리프터",
+        "craft": "Egyptian Mamluk brass-and-enamel inlay",
+        "makeup": "플럼 스모키",
+        "hair": "HSCH쉬농",
+        "haircolor": "HCPL파스텔라벤더",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

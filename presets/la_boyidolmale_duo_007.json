@@ -1,0 +1,30 @@
+{
+  "key": "la_boyidolmale_duo_007",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Duo #007 · 린 애슬레틱 / 대형 헤비",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a vast white salt flat reflecting the sky with a smooth flat floor and a standard-height wooden doorway frame standing at his side, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Korean man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty androgynous idol face with large doe eyes, a small chin and a soft jaw, clean-shaven, metallic gold glitter eyeshadow with defined lashes, luminous porcelain skin, calm and cool, bold vivid magenta-pink hair styled in half-up, top section lifted with the length flowing loose below, real living eyes, wearing four to six layered rose-gold bracelets. Long oval nails, matte finish.\nLEFT Physique: A tall, lean, athletic man built like a swimmer. Broad shoulders tapering cleanly to a narrow waist, a defined chest, a visible eight-pack abdomen with sharp obliques, long strong arms with clear vein definition, and long lean muscular legs with defined calves. Nothing bulky, everything taut and sculpted. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Body Art: His bare skin is painted in Ukrainian Petrykivka floral painting (a black ground with bright red, orange and gold folk-art flowers), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense folk-art florals filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nLEFT Pose: square to camera, feet wide, arms clear of his body.\nLEFT Footwear: Extreme cobalt-blue platform wedges, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Japanese man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, metallic gold glitter eyeshadow with defined lashes, smooth fair skin with a neutral undertone, composed and elegant, dark roots fading smoothly into sun-kissed lighter ends (balayage) hair styled in a natural afro in a full rounded silhouette, real living eyes, wearing a single mixed-metal bracelet. Long almond nails, glittery finish.\nRIGHT Physique: A giant, big-bellied man with great natural size throughout. Broad powerful shoulders, a wide heavy chest, a large round soft belly hanging over a thick waist, thick strong arms, and wide heavy thighs beneath. Every curve is large, solid and continuous, with a warm, imposing bearing. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Body Art: His bare skin is painted in Klimt-inspired organic mosaic (an organic mosaic of small irregular tesserae with gold-leaf borders), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense organic curved mosaic filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nRIGHT Pose: mid-stride walking toward camera.\nRIGHT Footwear: Extreme cobalt-blue platform stiletto knee-high boots, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "boyidol-male-body",
+    "background": "소금 사막",
+    "persons": [
+      {
+        "body": "린 애슬레틱",
+        "craft": "Ukrainian Petrykivka floral painting",
+        "makeup": "골드 글리터 아이",
+        "hair": "HSHU하프업",
+        "haircolor": "HCVM비비드마젠타",
+        "pose": "정면와이드스탠스"
+      },
+      {
+        "body": "대형 헤비",
+        "craft": "Klimt-inspired organic mosaic",
+        "makeup": "골드 글리터 아이",
+        "hair": "HSAF아프로",
+        "haircolor": "HCBL발레아쥬",
+        "pose": "걷는동작"
+      }
+    ]
+  }
+}

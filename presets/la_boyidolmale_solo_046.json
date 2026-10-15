@@ -1,0 +1,22 @@
+{
+  "key": "la_boyidolmale_solo_046",
+  "category": "🏺 Living Artifact · Boy Idol Male Body Formula",
+  "title": "Boy Idol Male Body Solo #046 · 대형 헤비 · Escher-inspired tessellation",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in the sandy Giza plateau with the great pyramids behind his, a smooth flat sand path and a standard-height stone doorway block at his side, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as him, NO dark background NO black void, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus from head to toe, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSubject: ONE real adult Japanese man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful K-pop idol face with a small V-line jaw, bright double-lidded eyes and a straight nose, clean-shaven, metallic gold glitter eyeshadow with defined lashes, smooth pale skin with a cool undertone, relaxed with a faint half-smile, soft champagne-blonde hair styled in an intricate fishtail braid, real living eyes, wearing seven to ten heavily stacked mixed-metal earrings. Long round nails, glittery finish.\nPhysique: A giant, big-bellied man with great natural size throughout. Broad powerful shoulders, a wide heavy chest, a large round soft belly hanging over a thick waist, thick strong arms, and wide heavy thighs beneath. Every curve is large, solid and continuous, with a warm, imposing bearing. His arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: His bare skin is painted in Escher-inspired tessellation (a tessellating pattern of interlocking shapes that morph as they repeat), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense morphing tessellation filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every muscle and bulge. The paint covers his whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of his hands, sides, back, rear, lower belly, knees, calves and the tops of his feet. His face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: leaning one arm on a window frame.\nFootwear: Extreme cobalt-blue platform stiletto pumps, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the muscle and flesh fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: the painted pattern catching the sunlight in sharp glints, the sunlight carving every muscle and fold.\n\nVertical 2:3 portrait-orientation full-body photograph, taller than it is wide. portrait 2:3 vertical.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "boyidol-male-body",
+    "background": "기자 피라미드",
+    "persons": [
+      {
+        "body": "대형 헤비",
+        "craft": "Escher-inspired tessellation",
+        "makeup": "골드 글리터 아이",
+        "hair": "HSFB피쉬테일브레이드",
+        "haircolor": "HCCM샴페인블론드",
+        "pose": "창가기대기"
+      }
+    ]
+  }
+}
