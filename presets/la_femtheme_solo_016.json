@@ -1,0 +1,26 @@
+{
+  "key": "la_femtheme_solo_016",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Solo #016 · 여 브라질리언 부티 글램·서아프리카글램·뱀파이어 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright white-sand beach at midday with calm turquoise water, a wooden boardwalk with a waist-high rail and a row of closed striped cabanas of normal door height, bright and backlit, shadows falling toward the camera, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, backlit by the low sun, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Nigerian woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, rich deep brown skin with a golden highlighter glowing on the cheekbones, bold shimmering gold and emerald eyeshadow blended out toward the temples, dramatic long lashes, sharply defined brows, large eyes with bright real catchlights, a strong glossy fuchsia-pink lip, a bright, joyful smile, deep dark brown hair styled in half-up, top section lifted with the length flowing loose below, real living eyes, wearing a different earring on each ear: on one ear a single long gold chain ending in one large faceted emerald drop, and on the other ear a large gold hoop carrying five heavy rough hammered matte metal weights on gold chains of different lengths (a gold small flared temple bell, a bronze teardrop-shaped sinker, a bronze barrel-shaped weight, a gold miniature anvil, a bronze cube-shaped block), all hanging clear of the body and none below the collarbone, and two to three silver rings. Extremely long oval nails, glitter finish studded with crystals.\nSUBJECT Physique: an extraordinarily large woman, far beyond any real person, her hips and rear so wide; a dramatically narrow, sharply cinched waist sits above hips and a rear so massively rounded and projecting that they dominate her entire silhouette from every angle, the rear itself curving outward and upward in a high, rounded, gravity-defying shape; a full round bust above the cinched waist, gigantic thick thighs meeting the rear's curve, thick soft arms; her head looks small on top of her body; not a plus-size model, not evenly proportioned; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: Her skin is bare and unpainted, wearing a long black cape lined in red silk, fastened at her neck and hanging open down her back, leaving the front of her body bare, a tiny black satin micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal black satin micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nSUBJECT Pose: three-quarter angle, one hand on her hip.\nSUBJECT Footwear: Extreme red needle heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: a bright rim of sunlight outlining every figure, each material catching the backlight in glints, the light carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "역광 림라이트",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-theme",
+    "background": "여름 해변",
+    "themes": [
+      "뱀파이어"
+    ],
+    "kinds": [
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "Brazilian booty glam",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

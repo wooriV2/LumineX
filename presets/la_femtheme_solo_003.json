@@ -1,0 +1,26 @@
+{
+  "key": "la_femtheme_solo_003",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Solo #003 · 여 V자 피지크·프렌치레드립·마녀 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright snowfield with bare trees under a pale sky, a wooden fence of normal height and a cabin with a standard-size door in the distance, bright and evenly lit with crisp defined shadows, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, under hard direct flash lighting, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult French woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, fair natural skin with a light dewy finish, softly brushed natural brows, a barely-there brown liner and fluttering lashes, no eyeshadow, soft natural colour on the cheeks, large eyes with bright real catchlights, a single bold classic red lip with a soft matte finish, an unbothered, effortless expression, pure icy-white hair styled in braided, real living eyes, wearing matching-style earrings on both ears, each ear a large brass hoop carrying three heavy rough hammered matte metal weights on brass chains of different lengths (a tin teardrop-shaped sinker, an iron cube-shaped block, a silver miniature anvil), all hanging clear of the body and none below the collarbone, and two to three platinum hair ornaments. Extremely long stiletto nails, glitter finish studded with crystals.\nSUBJECT Physique: an extraordinarily tall and powerful athletic woman, far beyond any real person; wide capped boulder-like shoulders, a broad flaring back and lats forming a dramatic V-taper, defined muscular arms, a firm chest, a deeply defined six-pack abdomen on a very narrow waist, round firm hips and strong muscular thighs with a visible quad sweep and defined calves; hard clean muscle under glowing skin, not bulky like a bodybuilder, not thin; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: Her skin is bare and unpainted, wearing a tall pointed black witch hat with a deep purple band and a thin purple ribbon choker, a tiny deep purple satin micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal deep purple satin micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nSUBJECT Pose: three-quarter angle, one hand on her hip.\nSUBJECT Footwear: Extreme silver platform buckled boots, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material reflecting the flash in sharp specular glints, the hard light carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "하드 플래시",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-theme",
+    "background": "겨울 설원",
+    "themes": [
+      "마녀"
+    ],
+    "kinds": [
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "V-taper physique",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

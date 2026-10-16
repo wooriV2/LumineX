@@ -1,0 +1,26 @@
+{
+  "key": "la_femtheme_solo_014",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Solo #014 · 여 블랙 글래머·구풍·경찰관 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright waterfall viewpoint with a wooden deck, a waist-high wooden railing, stone steps of normal height and lush green cliffs behind her, evenly lit by soft overcast light, shadows very soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, in soft overcast daylight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Chinese woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, porcelain-pale skin, slender upswept willow-leaf brows, a fine red floral huadian mark painted on the forehead, softly flushed rosy cheeks, an upswept eyeliner tail, large eyes with bright real catchlights, a small vivid red lip, a serene expression, soft rose-gold hair styled in long locs gathered loosely, real living eyes, wearing a different earring on each ear: on one ear a large gold hoop carrying three heavy rough hammered matte metal weights on gold chains of different lengths (an iron miniature anvil, a gold cube-shaped block, a copper small flared temple bell), all hanging clear of the body and none below the collarbone, and on the other ear a large platinum hoop carrying five heavy rough hammered matte metal weights on platinum chains of different lengths (a silver small flared temple bell, a copper pyramid-shaped lump, a gold teardrop-shaped sinker, a silver square-sided cowbell, a gold miniature anvil), all hanging clear of the body and none below the collarbone, and an extreme maximalist stack of well over ten silver hair ornaments. Extremely long square nails, holographic finish studded with crystals.\nSUBJECT Physique: an extraordinarily large woman, far beyond any real person; a dramatically impossible waist-to-hip ratio dominates her silhouette: a colossal heavy bust, an extremely sharply cinched waist pulled in far tighter than the waistline of any of her other curves, and then enormous round hips flaring out to a width many times greater than that narrow waist; gigantic soft thighs pressed together, very thick soft arms, a gigantic rounded rear; her head looks small on top of her massive body; not a plus-size model, not evenly proportioned; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: Her skin is bare and unpainted, wearing a black police cap with a silver badge and steel handcuffs hanging from one hip string, a tiny black leather micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal black leather micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nSUBJECT Pose: square to camera, feet wide, arms clear of her body.\nSUBJECT Footwear: Extreme black platform high-heel mules, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material glowing softly under the diffused light, the gentle light modelling every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "흐린 낮 확산광",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-theme",
+    "background": "폭포 전망대",
+    "themes": [
+      "경찰관"
+    ],
+    "kinds": [
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "black glamour",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

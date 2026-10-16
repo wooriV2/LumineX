@@ -1,0 +1,26 @@
+{
+  "key": "la_femtheme_solo_008",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Solo #008 · 여 토운드 밤쉘·슬라브글램·소방관 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a serene Japanese garden with raked pale gravel, a stone path, a low wooden bridge with a waist-high rail and a standard-height wooden gate, softly lit by blue-hour twilight and warm lamps, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, in blue-hour twilight with warm lamps glowing, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Russian woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, very fair, cool skin, sculpted feathered dark brows, a precise winged liner, soft taupe eyeshadow, long lashes, large pale eyes with bright real catchlights, strong contour and a bright highlighter along the cheekbones and nose bridge, glossy nude-pink lips, a cold, striking expression, soft strawberry-blonde hair styled in sleek straight, real living eyes, wearing a different earring on each ear: on one ear a large silver hoop carrying two heavy rough hammered matte metal weights on silver chains of different lengths (a copper square-sided cowbell, a silver cube-shaped block), all hanging clear of the body and none below the collarbone, and on the other ear a large copper hoop carrying five heavy rough hammered matte metal weights on copper chains of different lengths (a bronze ship's anchor, an iron round bell, a gold pyramid-shaped lump, a silver hammer head, an iron teardrop-shaped sinker), all hanging clear of the body and none below the collarbone, and seven to ten heavily stacked mixed-metal bracelets. Extremely long coffin nails, chrome finish studded with crystals.\nSUBJECT Physique: an extraordinarily curvaceous but athletic woman, far beyond any real person; a flat, firmly defined stomach with faint abdominal muscle lines, a very narrow waist, strong rounded shoulders and toned arms, powerful toned thighs and a high firm rounded rear, yet a colossal full bust and wide round hips that keep the dramatic hourglass shape; hard fit muscle under glowing skin, not bulky, not thin, not boyish; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: Her skin is bare and unpainted, wearing a red-and-yellow firefighter helmet with a clear visor pushed up and yellow reflective-striped cuffs on both wrists, a tiny glossy red micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal glossy red micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nSUBJECT Pose: three-quarter angle, one hand on her hip.\nSUBJECT Footwear: Extreme white platform stiletto Mary Janes, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the twilight and the warm lamp light in soft glints, the light carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "푸른 시간대 황혼",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-theme",
+    "background": "일본 정원",
+    "themes": [
+      "소방관"
+    ],
+    "kinds": [
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "toned bombshell",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

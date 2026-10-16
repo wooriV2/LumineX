@@ -1,0 +1,26 @@
+{
+  "key": "la_femtheme_solo_006",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Solo #006 · 여 라티나 커브스·TurkishGlam·산타 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright waterfall viewpoint with a wooden deck, a waist-high wooden railing, stone steps of normal height and lush green cliffs behind her, warmly lit by the low golden sun, long soft shadows, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, in warm golden-hour sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Turkish woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, warm olive skin, smoky bronze eyes, a deep rose-nude lip, soft champagne-blonde hair styled in low bun, real living eyes, wearing a different earring on each ear: on one ear a single long gold chain ending in one large faceted aquamarine drop, and on the other ear a large bronze hoop carrying five heavy rough hammered matte metal weights on bronze chains of different lengths (a gold pyramid-shaped lump, a lead small flared temple bell, a silver round bell, a silver teardrop-shaped sinker, a copper hammer head), all hanging clear of the body and none below the collarbone, and two to three platinum hair ornaments. Extremely long round nails, holographic finish studded with crystals.\nSUBJECT Physique: most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum Her arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: Her skin is bare and unpainted, wearing a red velvet Santa hat with a white fur trim and pom-pom and white fur cuffs on both wrists, a tiny red velvet micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal red velvet micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nSUBJECT Pose: square to camera, feet wide, arms clear of her body.\nSUBJECT Footwear: Extreme red platform high heels, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the warm low sun in glowing glints, the golden light carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "골든아워",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-theme",
+    "background": "폭포 전망대",
+    "themes": [
+      "산타"
+    ],
+    "kinds": [
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "latina curves",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

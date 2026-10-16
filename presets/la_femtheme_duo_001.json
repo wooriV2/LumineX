@@ -1,0 +1,33 @@
+{
+  "key": "la_femtheme_duo_001",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Duo #001 · 여 사이렌 바스트 아워글래스·지뢰계·천사 테마 / 여 V자 피지크·페르시안글램·간호사 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunny green meadow full of wildflowers with a dirt path, a wooden fence and gate of normal height, bright and evenly lit with crisp defined shadows, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, under hard direct flash lighting, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Japanese woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, pale porcelain skin, pink-red eyeshadow smudged softly beneath both eyes, a delicate tear-track blush across the cheeks, large dark circle lenses with bright real catchlights, long lashes, glossy pink-red lips, a hollow, dreamy expression, deep dark brown hair styled in a high top-knot bun, real living eyes, wearing a different earring on each ear: on one ear a large platinum hoop carrying four heavy rough hammered matte metal weights on platinum chains of different lengths (a gold hammer head, a copper ship's anchor, a gold miniature anvil, a silver barrel-shaped weight), all hanging clear of the body and none below the collarbone, and on the other ear a single long gold chain ending in one large faceted ruby drop with a heavy rough gold a square-sided cowbell hanging at its end, and seven to ten heavily stacked mixed-metal hair ornaments. Extremely long oval nails, chrome finish studded with crystals.\nLEFT Physique: an extraordinarily curvaceous woman, far beyond any real person; a colossal heavy bust projecting far forward and wider than her shoulders is the first thing the eye lands on, and directly below it her waist pulls in to an impossibly narrow, sharply defined line with a deep shadowed groove, then full round hips and soft thick thighs flare out beneath as a strong second curve; the drop from bust to waist is the most dramatic part of her silhouette; not thin, not boyish, not a straight figure; her head looks small above her bust; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: Her skin is bare and unpainted, wearing a thin golden halo floating above her head and a pair of large white feathered angel wings attached at her back, a tiny white satin micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal white satin micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nLEFT Pose: square to camera, feet wide, arms clear of her body.\nLEFT Footwear: Extreme red platform high-heel mules, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Iranian woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, richly kohl-lined almond eyes, a deep berry-red lip, thick dark brows, warm olive skin, bold vivid electric-blue hair styled in a sleek wet-look slicked straight back, real living eyes, wearing a different earring on each ear: on one ear a single long platinum chain ending in one large faceted amethyst drop, and on the other ear a large brass hoop carrying two heavy rough hammered matte metal weights on brass chains of different lengths (a silver teardrop-shaped sinker, a tin barrel-shaped weight), all hanging clear of the body and none below the collarbone, and two to three silver necklaces. Extremely long almond nails, glitter finish studded with crystals.\nRIGHT Physique: an extraordinarily tall and powerful athletic woman, far beyond any real person; wide capped boulder-like shoulders, a broad flaring back and lats forming a dramatic V-taper, defined muscular arms, a firm chest, a deeply defined six-pack abdomen on a very narrow waist, round firm hips and strong muscular thighs with a visible quad sweep and defined calves; hard clean muscle under glowing skin, not bulky like a bodybuilder, not thin; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: Her skin is bare and unpainted, wearing a white nurse cap with a small red cross and a stethoscope draped around her neck, a tiny white glossy vinyl micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal white glossy vinyl micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nRIGHT Pose: three-quarter angle, one hand on her hip.\nRIGHT Footwear: Extreme red platform thigh-skimming boots, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material reflecting the flash in sharp specular glints, the hard light carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "lighting": "하드 플래시",
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "female-theme",
+    "background": "여름 들판",
+    "themes": [
+      "천사",
+      "간호사"
+    ],
+    "kinds": [
+      "F",
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "siren bust hourglass",
+        "pose": "정면와이드스탠스"
+      },
+      {
+        "kind": "F",
+        "body": "V-taper physique",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

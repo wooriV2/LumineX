@@ -1,0 +1,26 @@
+{
+  "key": "la_femtheme_solo_012",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Solo #012 · 여 라티나 커브스·텔레노벨라글램·복서 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright blue-white glacier ice cave lit by daylight through the ice, a flat frozen floor and a standard-height wooden walkway rail, evenly lit by soft overcast light, shadows very soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, in soft overcast daylight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Latina woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, warm golden-bronze skin, a sharp black winged liner, warm terracotta eyeshadow, heavy lashes, strong sculpted contour, large dark eyes with bright real catchlights, a deep berry lip, a fiery, passionate expression, rich chocolate-brown hair styled in a low chignon knot at the nape, real living eyes, wearing a different earring on each ear: on one ear a large copper hoop carrying one heavy rough hammered matte metal weight on copper chain (a gold barrel-shaped weight), all hanging clear of the body and none below the collarbone, and on the other ear a large silver hoop carrying three heavy rough hammered matte metal weights on silver chains of different lengths (a bronze ship's anchor, a gold cube-shaped block, a gold teardrop-shaped sinker), all hanging clear of the body and none below the collarbone, and two to three gold necklaces. Extremely long square nails, glitter finish studded with crystals.\nSUBJECT Physique: most dramatic hourglass ratio ever, simultaneously maximum enormous bust AND maximum enormous hips both flaring to absolute impossible extremes while the waist is cinched to impossible minimum Her arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: Her skin is bare and unpainted, wearing glossy red boxing gloves and a gold-edged white waistband strap across her hips, a tiny red satin micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal red satin micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nSUBJECT Pose: square to camera, feet wide, arms clear of her body.\nSUBJECT Footwear: Extreme gold plain stiletto pumps with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material glowing softly under the diffused light, the gentle light modelling every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "흐린 낮 확산광",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-theme",
+    "background": "얼음 동굴",
+    "themes": [
+      "복서"
+    ],
+    "kinds": [
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "latina curves",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

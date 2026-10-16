@@ -1,0 +1,33 @@
+{
+  "key": "la_femtheme_duo_036",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Duo #036 · 여 바이올린 힙 아워글래스·EgyptianGlam·메이드 테마 / 여 토운드 밤쉘·스페인플라멩코글램·경찰관 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in the carved stone galleries of Angkor Wat with sunlit sandstone paving, standard-height doorways and low stone steps, empty of tourists, bright and evenly lit with crisp defined shadows, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, under hard direct flash lighting, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Egyptian woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, warm golden-bronze skin, sharp winged kohl liner, a deep terracotta-red lip, a distinct two-tone ombre with dark roots and a sharp transition to light ends hair styled in countless fine micro braids, real living eyes, wearing matching-style earrings on both ears, each ear a large brass hoop carrying two heavy rough hammered matte metal weights on brass chains of different lengths (a gold round bell, an iron square-sided cowbell), all hanging clear of the body and none below the collarbone, and seven to ten heavily stacked platinum necklaces. Extremely long almond nails, chrome finish studded with crystals.\nLEFT Physique: an extraordinarily curvaceous woman, far beyond any real person; a sharply cinched waist rises out of hips that sweep outward in a single smooth violin-shaped curve, the hips and thick rounded thighs flaring many times wider than the waist and dominating her silhouette from the front and side, a firm high rounded rear, a full round bust balancing the curve above; the line from waist to hip to thigh is one long unbroken curve; not thin, not boyish, not a straight figure; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: Her skin is bare and unpainted, wearing a white ruffled lace maid headband, a black lace choker with a small bow and white lace wrist cuffs, a tiny black satin micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal black satin micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nLEFT Pose: square to camera, feet wide, arms clear of her body.\nLEFT Footwear: Extreme hot-pink platform stiletto cross-strap sandals, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Spanish woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, dramatic winged liner, a deep red lip, a passionate expression, warm olive skin, dark roots fading smoothly into sun-kissed lighter ends (balayage) hair styled in a high top-knot bun, real living eyes, wearing matching-style earrings on both ears, each ear a large rose-gold hoop carrying three heavy rough hammered matte metal weights on rose-gold chains of different lengths (a silver cube-shaped block, a bronze small flared temple bell, a copper round bell), all hanging clear of the body and none below the collarbone, and seven to ten heavily stacked platinum necklaces. Extremely long almond nails, chrome finish studded with crystals.\nRIGHT Physique: an extraordinarily curvaceous but athletic woman, far beyond any real person; a flat, firmly defined stomach with faint abdominal muscle lines, a very narrow waist, strong rounded shoulders and toned arms, powerful toned thighs and a high firm rounded rear, yet a colossal full bust and wide round hips that keep the dramatic hourglass shape; hard fit muscle under glowing skin, not bulky, not thin, not boyish; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: Her skin is bare and unpainted, wearing a black police cap with a silver badge and steel handcuffs hanging from one hip string, a tiny black leather micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal black leather micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nRIGHT Pose: three-quarter angle, one hand on her hip.\nRIGHT Footwear: Extreme silver platform stiletto Mary Janes, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material reflecting the flash in sharp specular glints, the hard light carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "lighting": "하드 플래시",
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "female-theme",
+    "background": "앙코르와트 회랑",
+    "themes": [
+      "메이드",
+      "경찰관"
+    ],
+    "kinds": [
+      "F",
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "violin hip hourglass",
+        "pose": "정면와이드스탠스"
+      },
+      {
+        "kind": "F",
+        "body": "toned bombshell",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

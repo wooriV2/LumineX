@@ -1,0 +1,33 @@
+{
+  "key": "la_femtheme_duo_005",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Duo #005 · 여 아워글래스 밤쉘·하와이안훌라·카우보이 테마 / 여 브라질리언 부티 글램·하와이안훌라·해적 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunlit white-washed courtyard with a pale tiled floor, an arched doorway at normal height, low stone steps and a waist-high wall, softly lit by blue-hour twilight and warm lamps, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in blue-hour twilight with warm lamps glowing, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Hawaiian woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, a natural glowing complexion, a flower tucked behind one ear, warm golden-tan skin, cool ash-brown hair styled in elegant updo, real living eyes, wearing matching-style earrings on both ears, each ear a large copper hoop carrying three heavy rough hammered matte metal weights on copper chains of different lengths (a gold chunky hexagonal nut-shaped weight with a round hole through the centre, a tin teardrop-shaped sinker, a gold ship's anchor), all hanging clear of the body and none below the collarbone, and an extreme maximalist stack of well over ten gold rings. Extremely long coffin nails, chrome finish studded with crystals.\nLEFT Physique: waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum, thighs pressing together, every curve maximized at once Her arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: Her skin is bare and unpainted, wearing a brown leather cowboy hat, a red bandana knotted at her neck and a silver sheriff star pinned on a thin leather neck strap, a tiny brown leather micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal brown leather micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nLEFT Pose: square to camera, feet wide, arms clear of her body.\nLEFT Footwear: Extreme black platform lace-up sandals, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Hawaiian woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, a natural glowing complexion, a flower tucked behind one ear, warm golden-tan skin, icy platinum-blonde hair styled in a classic French braid from the crown, real living eyes, wearing a different earring on each ear: on one ear a large rose-gold hoop carrying three heavy rough hammered matte metal weights on rose-gold chains of different lengths (a tin small flared temple bell, a bronze miniature anvil, a silver pyramid-shaped lump), all hanging clear of the body and none below the collarbone, and on the other ear a single long rose-gold chain ending in one large faceted emerald drop with a heavy rough tin a barrel-shaped weight hanging at its end, and four to six layered platinum necklaces. Extremely long almond nails, glitter finish studded with crystals.\nRIGHT Physique: an extraordinarily large woman, far beyond any real person, her hips and rear so wide; a dramatically narrow, sharply cinched waist sits above hips and a rear so massively rounded and projecting that they dominate her entire silhouette from every angle, the rear itself curving outward and upward in a high, rounded, gravity-defying shape; a full round bust above the cinched waist, gigantic thick thighs meeting the rear's curve, thick soft arms; her head looks small on top of her body; not a plus-size model, not evenly proportioned; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: Her skin is bare and unpainted, wearing a black tricorn pirate hat with a white skull emblem, a red bandana knotted at her neck and black leather wrist cuffs with gold studs, a tiny black leather micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal black leather micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nRIGHT Pose: three-quarter angle, one hand on her hip.\nRIGHT Footwear: Extreme gold platform wedges, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the twilight and the warm lamp light in soft glints, the light carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "lighting": "푸른 시간대 황혼",
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "female-theme",
+    "background": "하얀 안뜰",
+    "themes": [
+      "카우보이",
+      "해적"
+    ],
+    "kinds": [
+      "F",
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "hourglass bombshell",
+        "pose": "정면와이드스탠스"
+      },
+      {
+        "kind": "F",
+        "body": "Brazilian booty glam",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

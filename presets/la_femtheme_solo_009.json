@@ -1,0 +1,26 @@
+{
+  "key": "la_femtheme_solo_009",
+  "category": "🏺 Living Artifact · Female Costume Theme",
+  "title": "FemTheme Solo #009 · 여 커브드 바스트·BollywoodGlam·악마 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a vast white salt flat reflecting the sky with a smooth flat floor and a standard-height wooden doorway frame standing at her side, softly lit by blue-hour twilight and warm lamps, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as her, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, in blue-hour twilight with warm lamps glowing, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Indian woman, her face exactly the same tone as her body, real skin texture with visible pores and fine grain, kohl-lined almond eyes, a small gold bindi, a deep maroon-red lip, warm golden-brown skin, bold vivid emerald-green hair styled in long locs gathered loosely, real living eyes, wearing a different earring on each ear: on one ear a single long brass chain ending in one large faceted ruby drop, and on the other ear a large rose-gold hoop carrying five heavy rough hammered matte metal weights on rose-gold chains of different lengths (a silver pyramid-shaped lump, an iron ship's anchor, a gold hammer head, a silver teardrop-shaped sinker, a lead square-sided cowbell), all hanging clear of the body and none below the collarbone, and two to three platinum necklaces. Extremely long oval nails, holographic finish studded with crystals.\nSUBJECT Physique: an extraordinarily large woman, far beyond any real person; both her bust and her hips are simultaneously, dramatically enormous, a colossal heavy bust resting full and wide, and enormous round hips flaring just as dramatically wide below, but unlike a sharply cinched hourglass, her waistline stays soft and only gently defined between them, a full, natural figure rather than a snatched one; gigantic soft thighs pressed together, very thick soft arms, a full round face; her head looks small on top of her massive body; her arms, hands, legs and feet stay in correct proportion to each other Her arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: Her skin is bare and unpainted, wearing a pair of small curved black horns on her head, a thin pointed devil tail and a black leather collar, a tiny glossy black leather micro-bikini top of two small opaque triangle cups on thin strings tied at the neck and back, fully covering her bust, and a minimal glossy black leather micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering her, her stomach fully visible.\nSUBJECT Pose: three-quarter angle, one hand on her hip.\nSUBJECT Footwear: Extreme red platform stiletto corset-lace boots, the platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the twilight and the warm lamp light in soft glints, the light carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "푸른 시간대 황혼",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-theme",
+    "background": "소금 사막",
+    "themes": [
+      "악마"
+    ],
+    "kinds": [
+      "F"
+    ],
+    "persons": [
+      {
+        "kind": "F",
+        "body": "curved bust",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}
