@@ -1,0 +1,25 @@
+{
+  "key": "la_maletheme_solo_016",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Solo #016 · 남 피트니스 모델·펄 화이트 글로시·복서 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunny green meadow full of wildflowers with a dirt path, a wooden fence and gate of normal height, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as him, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Russian man in his early 30s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, pearly white eyeshadow with a clear gloss lip and soft blush, pale smooth skin with a cool undertone, a shy sweet smile, icy platinum-blonde hair styled in a natural afro in a full rounded silhouette, real living eyes, wearing a different earring on each ear: on one ear a large brass hoop carrying five heavy rough hammered matte metal weights on brass chains of different lengths (a tin cube-shaped block, an iron small flared temple bell, an iron hammer head, an iron ship's anchor, a gold barrel-shaped weight), all hanging clear of the body and none below the collarbone, and on the other ear a large copper hoop carrying three heavy rough hammered matte metal weights on copper chains of different lengths (a silver hammer head, a copper round bell, a tin square-sided cowbell), all hanging clear of the body and none below the collarbone, and an extreme maximalist stack of well over ten gold anklets. Extremely long round nails, chrome finish studded with crystals.\nSUBJECT Physique: A tall, extraordinarily well-built athletic man, far beyond any real person in size, built like a fitness model. Broad shoulders, a full athletic chest, a lean defined abdomen with a clear eight-pack, strong toned arms, a narrow waist, and long strong toned legs with defined calves. Large and powerful in frame, yet taut, lean and elegant rather than bulky. His head stays in correct proportion to his frame. His arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: His skin is bare and unpainted, wearing glossy red boxing gloves and a minimal red satin T-back thong with one tiny opaque front panel and a thin gold-edged white waistband strap, on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his whole chest and stomach bare.\nSUBJECT Pose: square to camera, feet wide, arms clear of his body.\nSUBJECT Footwear: Extreme white platform wedges, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "male-theme",
+    "background": "여름 들판",
+    "themes": [
+      "복서"
+    ],
+    "kinds": [
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "피트니스 모델",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

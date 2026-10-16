@@ -1,0 +1,32 @@
+{
+  "key": "la_maletheme_duo_010",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Duo #010 · 남 피트니스 모델·펄 화이트 글로시·악마 테마 / 남 V자 보디빌더·골드 글리터·뱀파이어 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunny green meadow full of wildflowers with a dirt path, a wooden fence and gate of normal height, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Russian man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, pearly white eyeshadow with a clear gloss lip and soft blush, pale smooth skin with a cool undertone, a relaxed easygoing look with a faint smile, soft pastel-lavender hair styled in an intricate fishtail braid, real living eyes, wearing a different earring on each ear: on one ear a large brass hoop carrying five heavy rough hammered matte metal weights on brass chains of different lengths (a gold ship's anchor, a lead barrel-shaped weight, a bronze teardrop-shaped sinker, a lead cube-shaped block, a gold round bell), all hanging clear of the body and none below the collarbone, and on the other ear a large silver hoop carrying three heavy rough hammered matte metal weights on silver chains of different lengths (an iron teardrop-shaped sinker, a gold round bell, a copper barrel-shaped weight), all hanging clear of the body and none below the collarbone, and two to three silver bracelets. Extremely long square nails, chrome finish studded with crystals.\nLEFT Physique: A tall, extraordinarily well-built athletic man, far beyond any real person in size, built like a fitness model. Broad shoulders, a full athletic chest, a lean defined abdomen with a clear eight-pack, strong toned arms, a narrow waist, and long strong toned legs with defined calves. Large and powerful in frame, yet taut, lean and elegant rather than bulky. His head stays in correct proportion to his frame. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: His skin is bare and unpainted, wearing a pair of small curved black horns on his head, a thin pointed devil tail, a black leather collar, and a minimal glossy black leather T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nLEFT Pose: square to camera, feet wide, arms clear of his body.\nLEFT Footwear: Extreme cobalt-blue cowboy boots with thick platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary sole.\n\nRIGHT: ONE real adult Uzbek man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a delicate beautiful-boy face with long lashes, a slim straight nose and a clean jawline, clean-shaven, metallic gold glitter eyeshadow with defined lashes, fair olive skin with a warm undertone, a playful half-grin, soft champagne-blonde hair styled in low bun, real living eyes, wearing matching-style earrings on both ears, each ear a large silver hoop carrying three heavy rough hammered matte metal weights on silver chains of different lengths (a copper miniature anvil, a copper ship's anchor, a gold round bell), all hanging clear of the body and none below the collarbone, and seven to ten heavily stacked mixed-metal rings. Extremely long stiletto nails, holographic finish studded with crystals.\nRIGHT Physique: An extraordinarily large and powerful man, far beyond any real person. A massive V-shaped torso: enormously broad shoulders with capped, rounded deltoids, a thick heavy chest, a deeply carved six-pack abdomen narrowing to a comparatively small waist, huge thick arms with split biceps and horseshoe triceps, wide flaring lats, and powerful thick quads and diamond calves. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: His skin is bare and unpainted, wearing a long black cape lined in red silk, fastened at his neck and hanging open down his back, leaving the front of his body bare, and a minimal black satin T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nRIGHT Pose: square to camera, feet wide, arms clear of his body.\nRIGHT Footwear: Extreme red work boots with thick platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary sole.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-theme",
+    "background": "여름 들판",
+    "themes": [
+      "악마",
+      "뱀파이어"
+    ],
+    "kinds": [
+      "M",
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "피트니스 모델",
+        "pose": "정면와이드스탠스"
+      },
+      {
+        "kind": "M",
+        "body": "V자 보디빌더",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

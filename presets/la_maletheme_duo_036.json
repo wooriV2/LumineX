@@ -1,0 +1,32 @@
+{
+  "key": "la_maletheme_duo_036",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Duo #036 · 남 머슬 모델·펄 화이트 글로시·뱀파이어 테마 / 남 클래식 머슬·코퍼 브론즈·경찰관 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in the ancient Parthenon terrace on the Acropolis in Athens, pale weathered marble paving, fluted columns and standard-height stone steps, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Iranian man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, pearly white eyeshadow with a clear gloss lip and soft blush, olive skin with a warm undertone, a relaxed easygoing look with a faint smile, cool ash-brown hair styled in countless fine micro braids, real living eyes, wearing a different earring on each ear: on one ear a single long gold chain ending in one large faceted emerald drop, and on the other ear a large brass hoop carrying five heavy rough hammered matte metal weights on brass chains of different lengths (a lead barrel-shaped weight, a silver small flared temple bell, an iron ship's anchor, a gold square-sided cowbell, a silver pyramid-shaped lump), all hanging clear of the body and none below the collarbone, and four to six layered platinum anklets. Extremely long stiletto nails, holographic finish studded with crystals.\nLEFT Physique: An extraordinarily large and muscular man, far beyond any real person, built like a muscle model. Wide broad shoulders, a full thick defined chest, large rounded arms with clear biceps and triceps, a hard defined abdomen on a trim waist, wide flaring lats, and strong muscular thighs and calves in balance with the upper body. Powerful and imposing, yet lean and polished. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: His skin is bare and unpainted, wearing a long black cape lined in red silk, fastened at his neck and hanging open down his back, leaving the front of his body bare, and a minimal black satin T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nLEFT Pose: square to camera, feet wide, arms clear of his body.\nLEFT Footwear: Extreme olive-green chelsea boots with thick platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary sole.\n\nRIGHT: ONE real adult Turkish man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty androgynous idol face with large doe eyes, a small chin and a soft jaw, clean-shaven, copper-bronze smoky eyes with a golden highlight, fair olive skin with a warm undertone, a warm natural smile, pure icy-white hair styled in long locs gathered loosely, real living eyes, wearing a different earring on each ear: on one ear a large brass hoop carrying four heavy rough hammered matte metal weights on brass chains of different lengths (a gold chunky hexagonal nut-shaped weight with a round hole through the centre, a gold hammer head, a bronze ship's anchor, a copper square-sided cowbell), all hanging clear of the body and none below the collarbone, and on the other ear a single long silver chain ending in one large faceted sapphire drop with a heavy rough copper a ship's anchor hanging at its end, and a single rose-gold ring. Extremely long square nails, chrome finish studded with crystals.\nRIGHT Physique: An extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: His skin is bare and unpainted, wearing a black police cap with a silver badge, a thin black leather chest harness carrying a silver badge, steel handcuffs hanging from one hip string, and a minimal black leather T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nRIGHT Pose: three-quarter angle, one hand on his hip.\nRIGHT Footwear: Extreme white platform lace-up sandals, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-theme",
+    "background": "아테네 파르테논",
+    "themes": [
+      "뱀파이어",
+      "경찰관"
+    ],
+    "kinds": [
+      "M",
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "머슬 모델",
+        "pose": "정면와이드스탠스"
+      },
+      {
+        "kind": "M",
+        "body": "클래식 머슬",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "key": "la_maletheme_duo_016",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Duo #016 · 남 피트니스 모델·블루 라인·해적 테마 / 남 머슬 모델·플럼 스모키·닌자 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright modern rooftop terrace with a pale deck floor, a waist-high glass railing, a standard door and a city skyline in the daylight haze, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Colombian man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, graphic electric-blue eyeliner extended into bold wings, smooth golden-tan skin, a shy sweet smile, warm auburn red-brown hair styled in a layered tousled shag cut, real living eyes, wearing a different earring on each ear: on one ear a large silver hoop carrying five heavy rough hammered matte metal weights on silver chains of different lengths (a silver ship's anchor, a silver hammer head, an iron round bell, a gold barrel-shaped weight, an iron pyramid-shaped lump), all hanging clear of the body and none below the collarbone, and on the other ear a single long copper chain ending in one large faceted diamond drop with a heavy rough copper a small flared temple bell hanging at its end, and four to six layered gold anklets. Extremely long square nails, glitter finish studded with crystals.\nLEFT Physique: A tall, extraordinarily well-built athletic man, far beyond any real person in size, built like a fitness model. Broad shoulders, a full athletic chest, a lean defined abdomen with a clear eight-pack, strong toned arms, a narrow waist, and long strong toned legs with defined calves. Large and powerful in frame, yet taut, lean and elegant rather than bulky. His head stays in correct proportion to his frame. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: His skin is bare and unpainted, wearing a black tricorn pirate hat with a white skull emblem, a red bandana knotted at his neck, black leather wrist cuffs with gold studs, and a minimal black leather with gold buckles T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nLEFT Pose: three-quarter angle, one hand on his hip.\nLEFT Footwear: Extreme gold platform stiletto corset-lace boots, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Iranian man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty androgynous idol face with large doe eyes, a small chin and a soft jaw, clean-shaven, deep plum smoky eyes with dark lashes, olive skin with a warm undertone, a shy sweet smile, deep dark brown hair styled in many small bantu knots covering the scalp, real living eyes, wearing matching-style earrings on both ears, each ear a large bronze hoop carrying two heavy rough hammered matte metal weights on bronze chains of different lengths (a lead teardrop-shaped sinker, a gold square-sided cowbell), all hanging clear of the body and none below the collarbone, and four to six layered silver hair ornaments. Extremely long stiletto nails, holographic finish studded with crystals.\nRIGHT Physique: An extraordinarily large and muscular man, far beyond any real person, built like a muscle model. Wide broad shoulders, a full thick defined chest, large rounded arms with clear biceps and triceps, a hard defined abdomen on a trim waist, wide flaring lats, and strong muscular thighs and calves in balance with the upper body. Powerful and imposing, yet lean and polished. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: His skin is bare and unpainted, wearing a black ninja headband with a polished steel plate across his forehead, black fingerless wrist wraps, and a minimal black T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him tied with a red sash at the hip, his chest and stomach bare.\nRIGHT Pose: three-quarter angle, one hand on his hip.\nRIGHT Footwear: Extreme red work boots with thick platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary sole.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-theme",
+    "background": "옥상 테라스",
+    "themes": [
+      "해적",
+      "닌자"
+    ],
+    "kinds": [
+      "M",
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "피트니스 모델",
+        "pose": "3/4각도"
+      },
+      {
+        "kind": "M",
+        "body": "머슬 모델",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "key": "la_maletheme_solo_009",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Solo #009 · 남 클래식 머슬·실버 포일·천사 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a wide pedestrian walkway on a large suspension bridge with a waist-high railing, standard lamp posts and the city skyline in daylight, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as him, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Chinese man in his early 30s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a pretty-boy idol face with flawless smooth skin, large clear eyes, a slim jaw and soft full lips, clean-shaven, silver foil-lined eyes with a cool shimmer, smooth light skin with a warm golden undertone, a relaxed easygoing look with a faint smile, bold vivid electric-blue hair styled in vintage victory rolls framing the face, real living eyes, wearing a different earring on each ear: on one ear a single long brass chain ending in one large faceted sapphire drop, and on the other ear a large bronze hoop carrying five heavy rough hammered matte metal weights on bronze chains of different lengths (a tin teardrop-shaped sinker, a silver cube-shaped block, a copper round bell, a silver pyramid-shaped lump, a gold ship's anchor), all hanging clear of the body and none below the collarbone, and four to six layered silver anklets. Extremely long oval nails, glitter finish studded with crystals.\nSUBJECT Physique: An extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous. His arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: His skin is bare and unpainted, wearing a thin golden halo floating above his head, a pair of large white feathered angel wings attached at his back, and a minimal white satin with gold trim T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nSUBJECT Pose: square to camera, feet wide, arms clear of his body.\nSUBJECT Footwear: Extreme red platform stiletto studded boots, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "male-theme",
+    "background": "대교 보행로",
+    "themes": [
+      "천사"
+    ],
+    "kinds": [
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "클래식 머슬",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

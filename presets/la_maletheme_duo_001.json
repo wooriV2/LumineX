@@ -1,0 +1,32 @@
+{
+  "key": "la_maletheme_duo_001",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Duo #001 · 남 클래식 머슬·골드 글리터·산타 테마 / 남 클래식 머슬·그래픽 블랙·군인 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunlit castle courtyard with a worn cobblestone floor, a standard-height arched gate, low stone steps and a waist-high well edge, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Colombian man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, metallic gold glitter eyeshadow with defined lashes, smooth golden-tan skin, a confident smirk, soft pastel-lavender hair styled in cornrows braided tight against the scalp, real living eyes, wearing a different earring on each ear: on one ear a single long gold chain ending in one large faceted ruby drop, and on the other ear a large rose-gold hoop carrying two heavy rough hammered matte metal weights on rose-gold chains of different lengths (a copper ship's anchor, a silver small flared temple bell), all hanging clear of the body and none below the collarbone, and four to six layered mixed-metal anklets. Extremely long square nails, glitter finish studded with crystals.\nLEFT Physique: An extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: His skin is bare and unpainted, wearing a red velvet Santa hat with a white fur trim and pom-pom, white fur cuffs on both wrists, and a minimal red velvet with white fur trim T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nLEFT Pose: three-quarter angle, one hand on his hip.\nLEFT Footwear: Extreme gold ballet heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nRIGHT: ONE real adult Senegalese man in his early 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a fresh-faced boy-group idol face with clear glowing skin, bright eyes and a gentle smile line, clean-shaven, sharp black graphic eyeliner with matte nude lips and defined contour, deep blue-black skin with a smooth sheen, a playful half-grin, icy platinum-blonde hair styled in natural curls gathered into a high rounded puff, real living eyes, wearing a different earring on each ear: on one ear a single long platinum chain ending in one large faceted emerald drop, and on the other ear a large rose-gold hoop carrying four heavy rough hammered matte metal weights on rose-gold chains of different lengths (a bronze barrel-shaped weight, a silver square-sided cowbell, a gold hammer head, a silver round bell), all hanging clear of the body and none below the collarbone, and two to three rose-gold hair ornaments. Extremely long oval nails, holographic finish studded with crystals.\nRIGHT Physique: An extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: His skin is bare and unpainted, wearing a tilted olive-green military beret with a brass badge, two silver dog-tag chains hanging on his bare chest, and a minimal camouflage-pattern T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nRIGHT Pose: square to camera, feet wide, arms clear of his body.\nRIGHT Footwear: Extreme hot-pink sculptural heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-theme",
+    "background": "고성 안뜰",
+    "themes": [
+      "산타",
+      "군인"
+    ],
+    "kinds": [
+      "M",
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "클래식 머슬",
+        "pose": "3/4각도"
+      },
+      {
+        "kind": "M",
+        "body": "클래식 머슬",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

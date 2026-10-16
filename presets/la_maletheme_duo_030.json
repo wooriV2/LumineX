@@ -1,0 +1,32 @@
+{
+  "key": "la_maletheme_duo_030",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Duo #030 · 남 맨즈 피지크·플럼 스모키·경찰관 테마 / 남 맨즈 피지크·글래스 스킨·소방관 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunlit white-washed courtyard with a pale tiled floor, an arched doorway at normal height, low stone steps and a waist-high wall, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Samoan man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a delicate beautiful-boy face with long lashes, a slim straight nose and a clean jawline, clean-shaven, deep plum smoky eyes with dark lashes, smooth warm brown skin, a playful half-grin, deep reddish mahogany-brown hair styled in many small bantu knots covering the scalp, real living eyes, wearing a different earring on each ear: on one ear a single long copper chain ending in one large faceted pearl-cluster drop, and on the other ear a large bronze hoop carrying two heavy rough hammered matte metal weights on bronze chains of different lengths (a silver round bell, a gold ship's anchor), all hanging clear of the body and none below the collarbone, and a single platinum anklet. Extremely long coffin nails, holographic finish studded with crystals.\nLEFT Physique: An extraordinarily tall and large man, far beyond any real person, with a men's physique build. Enormously broad shoulders with round capped deltoids, a wide upper chest tapering sharply to a very narrow waist in a dramatic V-taper, a lean sharply defined six-pack abdomen with visible obliques, thick strong arms, and long lean athletic legs that are muscular but not bulky. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: His skin is bare and unpainted, wearing a black police cap with a silver badge, a thin black leather chest harness carrying a silver badge, steel handcuffs hanging from one hip string, and a minimal black leather T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nLEFT Pose: square to camera, feet wide, arms clear of his body.\nLEFT Footwear: Extreme cobalt-blue platform stiletto cross-strap sandals, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nRIGHT: ONE real adult Kenyan man in his mid 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a delicate beautiful-boy face with long lashes, a slim straight nose and a clean jawline, clean-shaven, glass-skin makeup with a faint shimmer on the cheekbones, deep ebony skin with a soft glow, a soft amused smile, deep jet-black with a glossy sheen hair styled in a sleek wet-look slicked straight back, real living eyes, wearing matching-style earrings on both ears, each ear a large platinum hoop carrying three heavy rough hammered matte metal weights on platinum chains of different lengths (a silver chunky hexagonal nut-shaped weight with a round hole through the centre, a tin round bell, a copper cube-shaped block), all hanging clear of the body and none below the collarbone, and seven to ten heavily stacked gold bracelets. Extremely long stiletto nails, glitter finish studded with crystals.\nRIGHT Physique: An extraordinarily tall and large man, far beyond any real person, with a men's physique build. Enormously broad shoulders with round capped deltoids, a wide upper chest tapering sharply to a very narrow waist in a dramatic V-taper, a lean sharply defined six-pack abdomen with visible obliques, thick strong arms, and long lean athletic legs that are muscular but not bulky. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: His skin is bare and unpainted, wearing a red-and-yellow firefighter helmet with a clear visor pushed up, yellow reflective-striped suspenders running over his bare shoulders and chest, and a minimal glossy red T-back thong with one tiny opaque front panel and a yellow reflective stripe, on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him.\nRIGHT Pose: square to camera, feet wide, arms clear of his body.\nRIGHT Footwear: Extreme silver platform high heels, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-theme",
+    "background": "하얀 안뜰",
+    "themes": [
+      "경찰관",
+      "소방관"
+    ],
+    "kinds": [
+      "M",
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "맨즈 피지크",
+        "pose": "정면와이드스탠스"
+      },
+      {
+        "kind": "M",
+        "body": "맨즈 피지크",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

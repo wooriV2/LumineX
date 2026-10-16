@@ -1,0 +1,32 @@
+{
+  "key": "la_maletheme_duo_009",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Duo #009 · 남 맨즈 피지크·골드 글리터·뱀파이어 테마 / 남 맨즈 피지크·블랙 스모키 윙·해적 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright modern rooftop terrace with a pale deck floor, a waist-high glass railing, a standard door and a city skyline in the daylight haze, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult Ethiopian man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, metallic gold glitter eyeshadow with defined lashes, smooth medium-brown skin with a warm red undertone, a confident smirk, soft pastel-pink hair styled in tight zigzag crimped waves, real living eyes, wearing matching-style earrings on both ears, each ear a large platinum hoop carrying four heavy rough hammered matte metal weights on platinum chains of different lengths (a silver square-sided cowbell, a copper small flared temple bell, a tin teardrop-shaped sinker, a silver barrel-shaped weight), all hanging clear of the body and none below the collarbone, and a single gold ring. Extremely long coffin nails, glitter finish studded with crystals.\nLEFT Physique: An extraordinarily tall and large man, far beyond any real person, with a men's physique build. Enormously broad shoulders with round capped deltoids, a wide upper chest tapering sharply to a very narrow waist in a dramatic V-taper, a lean sharply defined six-pack abdomen with visible obliques, thick strong arms, and long lean athletic legs that are muscular but not bulky. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: His skin is bare and unpainted, wearing a long black cape lined in red silk, fastened at his neck and hanging open down his back, leaving the front of his body bare, and a minimal black satin T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nLEFT Pose: three-quarter angle, one hand on his hip.\nLEFT Footwear: Extreme cobalt-blue ankle-strap stilettos with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nRIGHT: ONE real adult Mexican man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful idol face with a small V-line jaw, bright expressive eyes and a straight nose, clean-shaven, dramatic black smoky eyeshadow with sharp winged eyeliner, smooth warm light-brown skin, a bright open smile showing his teeth, soft rose-gold hair styled in braided, real living eyes, wearing a different earring on each ear: on one ear a large brass hoop carrying two heavy rough hammered matte metal weights on brass chains of different lengths (a copper teardrop-shaped sinker, a silver pyramid-shaped lump), all hanging clear of the body and none below the collarbone, and on the other ear a large bronze hoop carrying three heavy rough hammered matte metal weights on bronze chains of different lengths (an iron hammer head, a lead pyramid-shaped lump, a silver miniature anvil), all hanging clear of the body and none below the collarbone, and two to three platinum hair ornaments. Extremely long round nails, chrome finish studded with crystals.\nRIGHT Physique: An extraordinarily tall and large man, far beyond any real person, with a men's physique build. Enormously broad shoulders with round capped deltoids, a wide upper chest tapering sharply to a very narrow waist in a dramatic V-taper, a lean sharply defined six-pack abdomen with visible obliques, thick strong arms, and long lean athletic legs that are muscular but not bulky. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: His skin is bare and unpainted, wearing a black tricorn pirate hat with a white skull emblem, a red bandana knotted at his neck, black leather wrist cuffs with gold studs, and a minimal black leather with gold buckles T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nRIGHT Pose: square to camera, feet wide, arms clear of his body.\nRIGHT Footwear: Extreme gold platform high-heel mules, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-theme",
+    "background": "옥상 테라스",
+    "themes": [
+      "뱀파이어",
+      "해적"
+    ],
+    "kinds": [
+      "M",
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "맨즈 피지크",
+        "pose": "3/4각도"
+      },
+      {
+        "kind": "M",
+        "body": "맨즈 피지크",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

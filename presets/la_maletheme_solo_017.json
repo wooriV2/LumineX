@@ -1,0 +1,25 @@
+{
+  "key": "la_maletheme_solo_017",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Solo #017 · 남 클래식 머슬·코퍼 브론즈·카우보이 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunlit red-rock canyon floor with a smooth sandy path, low boulders of knee height and a waist-high wooden trail rail, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, completely empty of other people, no readable signs or text anywhere, no props or statues made of the same material as him, NO dark background NO black void, ONE person standing, sharp focus from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nSUBJECT: ONE real adult Ethiopian man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a delicate beautiful-boy face with long lashes, a slim straight nose and a clean jawline, clean-shaven, copper-bronze smoky eyes with a golden highlight, smooth medium-brown skin with a warm red undertone, a confident smirk, deep burgundy wine-red hair styled in elegant updo, real living eyes, wearing a different earring on each ear: on one ear a large gold hoop carrying five heavy rough hammered matte metal weights on gold chains of different lengths (a silver chunky hexagonal nut-shaped weight with a round hole through the centre, a copper barrel-shaped weight, a silver ship's anchor, a silver cube-shaped block, a silver teardrop-shaped sinker), all hanging clear of the body and none below the collarbone, and on the other ear a single long brass chain ending in one large faceted pearl-cluster drop with a heavy rough copper a round bell hanging at its end, and a single gold hair ornament. Extremely long coffin nails, chrome finish studded with crystals.\nSUBJECT Physique: An extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous. His arms, hands, legs and feet stay in correct proportion to each other.\nSUBJECT Outfit: His skin is bare and unpainted, wearing a brown leather cowboy hat, a red bandana knotted at his neck, a silver sheriff star pinned on a thin leather chest strap, and a minimal brown leather with silver studs T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his stomach bare.\nSUBJECT Pose: square to camera, feet wide, arms clear of his body.\nSUBJECT Footwear: Extreme cobalt-blue platform stiletto knee-high boots, the platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "male-theme",
+    "background": "협곡",
+    "themes": [
+      "카우보이"
+    ],
+    "kinds": [
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "클래식 머슬",
+        "pose": "정면와이드스탠스"
+      }
+    ]
+  }
+}

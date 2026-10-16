@@ -1,0 +1,32 @@
+{
+  "key": "la_maletheme_duo_005",
+  "category": "🏺 Living Artifact · Male Costume Theme",
+  "title": "MaleTheme Duo #005 · 남 클래식 머슬·글래스 스킨·서퍼 테마 / 남 머슬 모델·그래픽 블랙·군인 테마",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 4:5 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunlit Indian palace courtyard of pale sandstone with carved arches of standard height, low steps and a waist-high jali screen, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as them, NO dark background NO black void, TWO people standing side by side with generous spacing so every figure reads clearly and nobody's arms cross a neighbour, the camera set back so both are visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on every figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nLEFT: ONE real adult French man in his late 20s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful boy-group center idol face with neat sharp brows, a slim nose and glossy full lips, clean-shaven, glass-skin makeup with a faint shimmer on the cheekbones, fair skin with a faint rosy undertone, a gentle soft smile, natural soft black hair styled in long locs gathered loosely, real living eyes, wearing a different earring on each ear: on one ear a single long copper chain ending in one large faceted diamond drop, and on the other ear a large bronze hoop carrying five heavy rough hammered matte metal weights on bronze chains of different lengths (a bronze miniature anvil, a bronze ship's anchor, a tin chunky hexagonal nut-shaped weight with a round hole through the centre, a silver teardrop-shaped sinker, a lead square-sided cowbell), all hanging clear of the body and none below the collarbone, and an extreme maximalist stack of well over ten rose-gold necklaces. Extremely long oval nails, glitter finish studded with crystals.\nLEFT Physique: An extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous. His arms, hands, legs and feet stay in correct proportion to each other.\nLEFT Outfit: His skin is bare and unpainted, wearing a shark-tooth necklace and a minimal neon-orange T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, soaked and clinging, water streaming down his whole body in glistening rivulets with countless droplets clinging to his skin, his hair soaking wet and slicked.\nLEFT Pose: square to camera, feet wide, arms clear of his body.\nLEFT Footwear: Extreme red ballet heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nRIGHT: ONE real adult Kenyan man in his early 30s, his face exactly the same tone as his body, real skin texture with visible pores and fine grain, a youthful idol face with a small V-line jaw, bright expressive eyes and a straight nose, clean-shaven, sharp black graphic eyeliner with matte nude lips and defined contour, deep ebony skin with a soft glow, a soft amused smile, pure icy-white hair styled in curly, real living eyes, wearing a different earring on each ear: on one ear a large bronze hoop carrying three heavy rough hammered matte metal weights on bronze chains of different lengths (an iron ship's anchor, a silver chunky hexagonal nut-shaped weight with a round hole through the centre, a lead small flared temple bell), all hanging clear of the body and none below the collarbone, and on the other ear a large silver hoop carrying four heavy rough hammered matte metal weights on silver chains of different lengths (a lead miniature anvil, a bronze hammer head, a lead teardrop-shaped sinker, a gold barrel-shaped weight), all hanging clear of the body and none below the collarbone, and a single mixed-metal ring. Extremely long coffin nails, chrome finish studded with crystals.\nRIGHT Physique: An extraordinarily large and muscular man, far beyond any real person, built like a muscle model. Wide broad shoulders, a full thick defined chest, large rounded arms with clear biceps and triceps, a hard defined abdomen on a trim waist, wide flaring lats, and strong muscular thighs and calves in balance with the upper body. Powerful and imposing, yet lean and polished. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other.\nRIGHT Outfit: His skin is bare and unpainted, wearing a tilted olive-green military beret with a brass badge, two silver dog-tag chains hanging on his bare chest, and a minimal camouflage-pattern T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his chest and stomach bare.\nRIGHT Pose: three-quarter angle, one hand on his hip.\nRIGHT Footwear: Extreme silver chunky platform boots with thick platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary sole.\n\nSkin (everyone): Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each material catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 4:5 portrait-orientation full-body photograph, taller than it is wide, all faces toward the camera.",
+  "meta": {
+    "group_size": 2,
+    "aspect_ratio": "4:5",
+    "format": "male-theme",
+    "background": "인도 궁전 안뜰",
+    "themes": [
+      "서퍼",
+      "군인"
+    ],
+    "kinds": [
+      "M",
+      "M"
+    ],
+    "persons": [
+      {
+        "kind": "M",
+        "body": "클래식 머슬",
+        "pose": "정면와이드스탠스"
+      },
+      {
+        "kind": "M",
+        "body": "머슬 모델",
+        "pose": "3/4각도"
+      }
+    ]
+  }
+}
