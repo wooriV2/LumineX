@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 r"""
-Face Sculpt Era Icon Formula 65개(기존 메이크업과 겹치지 않는 13종 x 5개) -> presets/la_facesculpt_era_NNN.json
+Face Sculpt Era Icon Formula 70개(기존 메이크업과 겹치지 않는 14종 x 5개) -> presets/la_facesculpt_era_NNN.json
 
-  la_facesculpt_era_065_bundle.json  (신규 카테고리: 🏺 Living Artifact · Face Sculpt Era Icon Formula)
-  구성: 서양 60s 모드·90s 그런지, 흑인 90s R&B 시크, 동유럽 아이스, 중동·남아시아 글램, 크롬 메탈릭, 비비드 컬러 팝, 초콜릿 모노크롬, 화이트 포인트 골드, 노르딕 쉴드메이든, 파리 오트쿠튀르 그래픽, 아이스 퀸 서리 균열, 포슬린 조각상 (13종 x 5개)
+  la_facesculpt_era_070_bundle.json  (신규 카테고리: 🏺 Living Artifact · Face Sculpt Era Icon Formula)
+  구성: 서양 60s 모드·90s 그런지, 흑인 90s R&B 시크, 동유럽 아이스, 중동·남아시아 글램, 크롬 메탈릭, 비비드 컬러 팝, 초콜릿 모노크롬, 화이트 포인트 골드, 노르딕 쉴드메이든, 파리 오트쿠튀르 그래픽, 아이스 퀸 서리 균열, 포슬린 조각상, 칼라베라(망자의 날) (14종 x 5개)
 
 사용법 (PowerShell, 레포 루트에서):
   $env:PYTHONUTF8="1"
   python preset_builders\patch_la_facesculpt_era_1_json.py
   python preset_builders\patch_livingartifact_2_meta.py     (신규 카테고리라 메타 등록 필요)
-사전 준비: la_facesculpt_era_065_bundle.json 을 preset_builders\ 폴더에 두세요.
+사전 준비: la_facesculpt_era_070_bundle.json 을 preset_builders\ 폴더에 두세요.
 """
 import json
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PRESETS_DIR = os.path.join(HERE, "..", "presets")
-BUNDLES = ["la_facesculpt_era_065_bundle.json"]
+BUNDLES = ["la_facesculpt_era_070_bundle.json"]
 
 def main():
     os.makedirs(PRESETS_DIR, exist_ok=True)
