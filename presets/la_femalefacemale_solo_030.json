@@ -1,0 +1,23 @@
+{
+  "key": "la_femalefacemale_solo_030",
+  "category": "🏺 Living Artifact · Female Face Male Body Formula",
+  "title": "Female Face Male Body Solo #030 · 여얼굴+남체형 클래식 머슬·레바논웨딩글램",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunny green meadow full of wildflowers with a dirt path, a wooden fence and gate of normal height, bright and backlit, shadows falling toward the camera, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as the figure, NO dark background NO black void, ONE person standing, the camera set back far enough that the whole figure is visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, backlit by the low sun, sharp focus on the figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nONE real adult Lebanese person with the face of a beautiful woman, the face exactly the same tone as the body, real skin texture with visible pores and fine grain, radiant glowing bridal makeup, dramatic long lashes, a soft rose lip, warm fair skin, a distinct two-tone ombre with dark roots and a sharp transition to light ends hair styled in long thick box braids, real living eyes, wearing a different earring on each ear: on one ear a large brass hoop carrying four heavy rough hammered matte metal weights on brass chains of different lengths (a silver chunky hexagonal nut-shaped weight with a round hole through the centre, a lead hammer head, a lead miniature anvil, a tin teardrop-shaped sinker), all hanging clear of the body and none below the collarbone, and on the other ear a single long rose-gold chain ending in one large faceted amethyst drop with a heavy rough lead a barrel-shaped weight hanging at its end, and a single gold bracelet. Extremely long coffin nails, chrome finish studded with crystals.\nPhysique: the body of an extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous; the arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: The bare skin is painted in Mexican Talavera ceramic (a glossy white tin glaze with cobalt blue and marigold medallions), wide cobalt bands following every deep crease and curving around the hips and thighs like contour lines, dense medallion scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers the whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of the hands, sides, back, rear, lower belly, knees, calves and the tops of the feet. The face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: seated on a low stool, hands on knees.\nFootwear: Extreme red thigh-high stiletto boots with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: a bright rim of sunlight outlining the figure, each painted pattern catching the backlight in glints, the light carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "역광 림라이트",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-face-male-body",
+    "background": "여름 들판",
+    "kinds": [
+      "FM"
+    ],
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "클래식 머슬",
+        "pose": "의자앉기"
+      }
+    ]
+  }
+}

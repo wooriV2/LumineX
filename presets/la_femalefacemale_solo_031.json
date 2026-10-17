@@ -1,0 +1,23 @@
+{
+  "key": "la_femalefacemale_solo_031",
+  "category": "🏺 Living Artifact · Female Face Male Body Formula",
+  "title": "Female Face Male Body Solo #031 · 여얼굴+남체형 머슬 모델·파키스탄브라이덜글램",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a sunlit white-washed courtyard with a pale tiled floor, an arched doorway at normal height, low stone steps and a waist-high wall, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as the figure, NO dark background NO black void, ONE person standing, the camera set back far enough that the whole figure is visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on the figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nONE real adult Pakistani person with the face of a beautiful woman, the face exactly the same tone as the body, real skin texture with visible pores and fine grain, gold-dust eyeshadow, a deep maroon lip, richly detailed bridal makeup, warm brown skin, cool ash-grey hair styled in cornrows braided tight against the scalp, real living eyes, wearing a different earring on each ear: on one ear a large rose-gold hoop carrying one heavy rough hammered matte metal weight on rose-gold chain (a gold pyramid-shaped lump), all hanging clear of the body and none below the collarbone, and on the other ear a large platinum hoop carrying two heavy rough hammered matte metal weights on platinum chains of different lengths (a silver barrel-shaped weight, a gold pyramid-shaped lump), all hanging clear of the body and none below the collarbone, and seven to ten heavily stacked rose-gold necklaces. Extremely long stiletto nails, glitter finish studded with crystals.\nPhysique: the body of an extraordinarily large and muscular man, far beyond any real person, built like a muscle model. Wide broad shoulders, a full thick defined chest, large rounded arms with clear biceps and triceps, a hard defined abdomen on a trim waist, wide flaring lats, and strong muscular thighs and calves in balance with the upper body. Powerful and imposing, yet lean and polished. The head stays in correct proportion to the broad frame; the arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: The bare skin is painted in Filipino Yakan painted pattern (a black ground densely patterned with bright geometric diamond bands), wide magenta-and-gold bands following every deep crease and curving around the hips and thighs like contour lines, dense geometric diamond work filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers the whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of the hands, sides, back, rear, lower belly, knees, calves and the tops of the feet. The face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: leaning one arm on a window frame.\nFootwear: Extreme black platform stiletto ankle boots, the platform soles rising far higher than the ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "기본 햇빛",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-face-male-body",
+    "background": "하얀 안뜰",
+    "kinds": [
+      "FM"
+    ],
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "머슬 모델",
+        "pose": "창가기대기"
+      }
+    ]
+  }
+}

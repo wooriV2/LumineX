@@ -1,0 +1,23 @@
+{
+  "key": "la_femalefacemale_solo_032",
+  "category": "🏺 Living Artifact · Female Face Male Body Formula",
+  "title": "Female Face Male Body Solo #032 · 여얼굴+남체형 클래식 머슬·스페인플라멩코글램",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a vast stone courtyard of the Forbidden City with a standard-height palace gate, marble steps with waist-high balustrades, empty of visitors, warmly lit by the low golden sun, long soft shadows, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as the figure, NO dark background NO black void, ONE person standing, the camera set back far enough that the whole figure is visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in warm golden-hour sunlight, sharp focus on the figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nONE real adult Spanish person with the face of a beautiful woman, the face exactly the same tone as the body, real skin texture with visible pores and fine grain, dramatic winged liner, a deep red lip, a passionate expression, warm olive skin, dark roots fading smoothly into sun-kissed lighter ends (balayage) hair styled in a low chignon knot at the nape, real living eyes, wearing a different earring on each ear: on one ear a large brass hoop carrying three heavy rough hammered matte metal weights on brass chains of different lengths (a silver barrel-shaped weight, a lead round bell, a gold ship's anchor), all hanging clear of the body and none below the collarbone, and on the other ear a single long copper chain ending in one large faceted emerald drop with a heavy rough tin a round bell hanging at its end, and an extreme maximalist stack of well over ten platinum bracelets. Extremely long square nails, chrome finish studded with crystals.\nPhysique: the body of an extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous; the arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: The bare skin is painted in Swedish Dalarna kurbits folk painting (a deep barn-red ground with bold cream and gold curling scrollwork), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense curling floral scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers the whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of the hands, sides, back, rear, lower belly, knees, calves and the tops of the feet. The face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: reclining on the side, propped on one elbow.\nFootwear: Extreme cobalt-blue sculptural heels with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the warm low sun in glowing glints, the golden light carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "골든아워",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-face-male-body",
+    "background": "자금성 마당",
+    "kinds": [
+      "FM"
+    ],
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "클래식 머슬",
+        "pose": "바닥옆으로기대기"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "key": "la_femalefacemale_solo_045",
+  "category": "🏺 Living Artifact · Female Face Male Body Formula",
+  "title": "Female Face Male Body Solo #045 · 여얼굴+남체형 맨즈 피지크·페르시안글램",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in green stepped rice terraces with a stone path, a waist-high stone wall and a standard-height farm hut door at the figure's side, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as the figure, NO dark background NO black void, ONE person standing, the camera set back far enough that the whole figure is visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on the figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nONE real adult Iranian person with the face of a beautiful woman, the face exactly the same tone as the body, real skin texture with visible pores and fine grain, richly kohl-lined almond eyes, a deep berry-red lip, thick dark brows, warm olive skin, a distinct two-tone ombre with dark roots and a sharp transition to light ends hair styled in elegant updo, real living eyes, wearing a different earring on each ear: on one ear a large bronze hoop carrying one heavy rough hammered matte metal weight on bronze chain (a gold ship's anchor), all hanging clear of the body and none below the collarbone, and on the other ear a large platinum hoop carrying three heavy rough hammered matte metal weights on platinum chains of different lengths (a gold chunky hexagonal nut-shaped weight with a round hole through the centre, a silver barrel-shaped weight, a copper square-sided cowbell), all hanging clear of the body and none below the collarbone, and two to three platinum bracelets. Extremely long round nails, holographic finish studded with crystals.\nPhysique: the body of an extraordinarily tall and large man, far beyond any real person, with a men's physique build. Enormously broad shoulders with round capped deltoids, a wide upper chest tapering sharply to a very narrow waist in a dramatic V-taper, a lean sharply defined six-pack abdomen with visible obliques, thick strong arms, and long lean athletic legs that are muscular but not bulky. The head stays in correct proportion to the broad frame; the arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: The bare skin is painted in Czech Bohemian crystal-engraving motif (a deep black ground with fine engraved silver linework), wide silver bands following every deep crease and curving around the hips and thighs like contour lines, dense engraved floral facets filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers the whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of the hands, sides, back, rear, lower belly, knees, calves and the tops of the feet. The face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: leaning against a wall just out of frame.\nFootwear: Extreme silver platform stiletto peep-toe heels, the platform soles rising far higher than the ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "기본 햇빛",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-face-male-body",
+    "background": "계단식 논",
+    "kinds": [
+      "FM"
+    ],
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "맨즈 피지크",
+        "pose": "벽에기대기"
+      }
+    ]
+  }
+}

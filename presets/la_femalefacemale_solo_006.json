@@ -1,0 +1,23 @@
+{
+  "key": "la_femalefacemale_solo_006",
+  "category": "🏺 Living Artifact · Female Face Male Body Formula",
+  "title": "Female Face Male Body Solo #006 · 여얼굴+남체형 클래식 머슬·인스타글램",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in the sunlit arches of the Roman Colosseum with worn stone paving, standard-height arched doorways and low stone steps, empty of tourists, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as the figure, NO dark background NO black void, ONE person standing, the camera set back far enough that the whole figure is visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, in natural sunlight, sharp focus on the figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nONE real adult American person with the face of a beautiful woman, the face exactly the same tone as the body, real skin texture with visible pores and fine grain, sun-kissed skin, heavily sculpted contour and a strong highlighter on the cheekbones, bold defined brows, long fluffy false lashes, shimmery bronze eyeshadow, large eyes with bright real catchlights, plump glossy nude lips with a defined lip-liner outline, a confident, camera-ready smile, rich chocolate-brown hair styled in flat glossy finger waves styled close to the scalp, real living eyes, wearing a different earring on each ear: on one ear a large rose-gold hoop carrying four heavy rough hammered matte metal weights on rose-gold chains of different lengths (a lead miniature anvil, a tin square-sided cowbell, a bronze ship's anchor, a silver small flared temple bell), all hanging clear of the body and none below the collarbone, and on the other ear a single long platinum chain ending in one large faceted ruby drop with a heavy rough copper a hammer head hanging at its end, and seven to ten heavily stacked silver hair ornaments. Extremely long square nails, holographic finish studded with crystals.\nPhysique: the body of an extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous; the arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: The bare skin is painted in French Limoges enamel (a deep cobalt-blue ground with fine white and gold grisaille scrollwork), wide gold bands following every deep crease and curving around the hips and thighs like contour lines, dense grisaille scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers the whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of the hands, sides, back, rear, lower belly, knees, calves and the tops of the feet. The face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: leaning against a wall just out of frame.\nFootwear: Extreme hot-pink platform stiletto peep-toe heels, the platform soles rising far higher than the ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: each painted pattern catching the sunlight in sharp glints, the sunlight carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "기본 햇빛",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-face-male-body",
+    "background": "로마 콜로세움",
+    "kinds": [
+      "FM"
+    ],
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "클래식 머슬",
+        "pose": "벽에기대기"
+      }
+    ]
+  }
+}

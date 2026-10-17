@@ -1,0 +1,23 @@
+{
+  "key": "la_femalefacemale_solo_040",
+  "category": "🏺 Living Artifact · Female Face Male Body Formula",
+  "title": "Female Face Male Body Solo #040 · 여얼굴+남체형 V자 보디빌더·텔레노벨라글램",
+  "prompt": "Image format: a vertical portrait-orientation photograph, 2:3 aspect ratio, taller than it is wide.\n\nA full-body photograph in a bright white-sand beach at midday with calm turquoise water, a wooden boardwalk with a waist-high rail and a row of closed striped cabanas of normal door height, bright and backlit, shadows falling toward the camera, the whole floor and surroundings clearly visible and in focus, empty of any people other than the subjects, no readable signs or text anywhere, no props or statues made of the same material as the figure, NO dark background NO black void, ONE person standing, the camera set back far enough that the whole figure is visible from head to toe, shot on a medium format camera with an 85mm lens at f/8, backlit by the low sun, sharp focus on the figure, realistic photographic grain — a real photograph, not an illustration, not CGI, not a render.\n\nONE real adult Latina person with the face of a beautiful woman, the face exactly the same tone as the body, real skin texture with visible pores and fine grain, warm golden-bronze skin, a sharp black winged liner, warm terracotta eyeshadow, heavy lashes, strong sculpted contour, large dark eyes with bright real catchlights, a deep berry lip, a fiery, passionate expression, deep burgundy wine-red hair styled in flat glossy finger waves styled close to the scalp, real living eyes, wearing a different earring on each ear: on one ear a large silver hoop carrying one heavy rough hammered matte metal weight on silver chain (a silver square-sided cowbell), all hanging clear of the body and none below the collarbone, and on the other ear a large platinum hoop carrying two heavy rough hammered matte metal weights on platinum chains of different lengths (a gold pyramid-shaped lump, a lead hammer head), all hanging clear of the body and none below the collarbone, and a single gold bracelet. Extremely long square nails, glitter finish studded with crystals.\nPhysique: the body of an extraordinarily large and powerful man, far beyond any real person. A massive V-shaped torso: enormously broad shoulders with capped, rounded deltoids, a thick heavy chest, a deeply carved six-pack abdomen narrowing to a comparatively small waist, huge thick arms with split biceps and horseshoe triceps, wide flaring lats, and powerful thick quads and diamond calves. The head stays in correct proportion to the broad frame; the arms, hands, legs and feet stay in correct proportion to each other.\nBody Art: The bare skin is painted in Indian Mughal miniature gold-work (a deep midnight-blue ground with fine gold linework and medallions), wide gold-and-crimson bands following every deep crease and curving around the hips and thighs like contour lines, dense jewel-toned scrollwork filling the space between every band. The paint is pigment sitting on living skin, so it distorts slightly over every bulge. The paint covers the whole body with no bare skin left anywhere below the jaw: shoulders, upper arms, forearms, backs of the hands, sides, back, rear, lower belly, knees, calves and the tops of the feet. The face is left unpainted and the pattern fades out at the neck with no hard line.\nPose: seated across two steps.\nFootwear: Extreme red platform lace-up sandals, the platform soles rising far higher than the ankle bone, at least three times the thickness of an ordinary heel.\n\nSkin: Real photographic skin — visible pores and fine grain, a taut surface with natural creases and shadow only where the flesh and muscle fold. No smooth illustration finish, no plastic CG sheen.\n\nBackground & Lighting: a bright rim of sunlight outlining the figure, each painted pattern catching the backlight in glints, the light carving every fold, curve and muscle. Vertical 2:3 portrait-orientation full-body photograph, taller than it is wide, the face toward the camera.",
+  "meta": {
+    "lighting": "역광 림라이트",
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "female-face-male-body",
+    "background": "여름 해변",
+    "kinds": [
+      "FM"
+    ],
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "V자 보디빌더",
+        "pose": "계단에앉기"
+      }
+    ]
+  }
+}
