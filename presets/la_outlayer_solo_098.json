@@ -1,0 +1,29 @@
+{
+  "key": "la_outlayer_solo_098",
+  "category": "🏺 Living Artifact · Outfit Layer Formula",
+  "title": "OutLayer 솔로 #098 · super hourglass · 화이트 레더 끈 레이스업 브라렛 · 허리 가죽 하네스 · 걷기 · 여름 들판",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, early 50s goddess, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, high ponytail chestnut brown hair — wearing a glossy white leather micro bralette of two small opaque cups with thin glossy white leather string lacing crossing between them, and a minimal low-rise glossy white leather bottom of one tiny opaque triangle on thin side strings tied at the hips, the small opaque pieces fully covering her, her stomach bare. Her waist wears a black leather waist harness of one narrow belt around her waist and a second narrow belt around her hips, joined by four thin vertical straps over her stomach with a small silver ring at every junction, framing her navel. Pose: walking confidently toward the camera, shoulders back, chin lifted — most extreme super hourglass silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, thigh-high platform stiletto boots made of glossy white leather, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, stiletto nails each a full hand-length past her fingertips, in glossy white lacquer with a high polish.\nJewelry: a long layered gold necklace falling between her breasts, a fine gold chain looped around her thigh above the knee, and large drop earrings of mixed metals, a long silver chain ending in a heavy gold anvil-shaped weight on each ear, hanging above her collarbones. Jewelry is metal and pearl only.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Black woman with strong, striking features, a broad nose and full lips, an unmistakably feminine face with a calm, composed expression, makeup: extremely heavy, fully saturated and bold, never subtle, faded or blended away: thick black eyeliner, extremely long dramatic false lashes top and bottom, large eyes with bright real catchlights, glossy peach-pink lips.\n\nBackground: a sunny green meadow full of wildflowers with a dirt path, a wooden fence and gate of normal height, under a soft overcast sky with gentle diffused light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "outfit",
+    "family": "OutLayer",
+    "outfit": "화이트 레더 끈 레이스업 브라렛",
+    "physiques": [
+      "super hourglass"
+    ],
+    "ethnicity": [
+      "blue-black"
+    ],
+    "poses": [
+      "walking confidently toward the camera, shoulders back, chin lifted"
+    ],
+    "background": "summer_meadow",
+    "weather": "흐린 낮",
+    "heel_mode": "forty",
+    "jewelry": true,
+    "layers": [
+      "허리 가죽 하네스"
+    ]
+  }
+}

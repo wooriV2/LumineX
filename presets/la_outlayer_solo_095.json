@@ -1,0 +1,30 @@
+{
+  "key": "la_outlayer_solo_095",
+  "category": "🏺 Living Artifact · Outfit Layer Formula",
+  "title": "OutLayer 솔로 #095 · wide hip narrow · 골드 라메 스트링 트라이앵글 · 바디 라인스톤 · 칼라+체인 · 머리 넘기기 · 대형 도서관",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm golden-brown complexion, mid 50s goddess, wide hip narrow physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — hips so impossibly wide extending beyond frame creating the most extreme hip-to-waist ratio ever, waist cinched to absolute impossible minimum, upper body slim emphasizing the dramatic hip explosion, top bun deep burgundy hair — wearing a liquid gold metallic lamé string micro bikini top of two small opaque triangle cups tied with thin liquid gold metallic lamé strings at her neck and back, and a minimal low-rise liquid gold metallic lamé bottom of one tiny opaque triangle on thin side strings tied at the hips, the small opaque pieces fully covering her, her stomach bare. Pose: one hand sweeping her hair back, the other resting on her hip, one leg crossed in front to show the boot — most extreme wide hip narrow silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, knee-high lace-up platform stiletto boots made of liquid gold metallic lamé, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, ballerina nails each as long as her whole hand, in gold metallic lacquer with a high polish.\nBody gems: a delicate line of small clear rhinestone crystals stuck directly on the bare skin along both collarbones, and a second ring of the same crystals around her navel, resting on the skin.\nJewelry: sculpted gold armbands high on both upper arms, a black leather collar with a small silver ring at the front, snug around her neck, from which a long fine silver chain falls diagonally across her torso and swings down to her left hip, ending in a small silver tassel that hangs at her hip, and large drop earrings, a polished silver chain ending in a heavy gold bell on each ear, hanging above her collarbones. Jewelry is metal and pearl only.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Indian woman with large almond eyes, strong brows and a defined nose, an unmistakably feminine face with a calm, composed expression, makeup: heavily sculpted contour and a strong highlighter on the cheekbones, bold defined brows, long fluffy false lashes, large eyes with bright real catchlights, plump glossy nude lips with a defined lip-liner outline.\n\nBackground: a grand old library hall with a pale marble floor, tall bookshelves, a spiral stair with a waist-high rail and a standard-height doorway, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "outfit",
+    "family": "OutLayer",
+    "outfit": "골드 라메 스트링 트라이앵글",
+    "physiques": [
+      "wide hip narrow"
+    ],
+    "ethnicity": [
+      "Indian"
+    ],
+    "poses": [
+      "one hand sweeping her hair back, the other resting on her hip, one leg crossed in front to show the boot"
+    ],
+    "background": "library",
+    "weather": null,
+    "heel_mode": "relative",
+    "jewelry": true,
+    "layers": [
+      "바디 라인스톤",
+      "칼라+체인"
+    ]
+  }
+}

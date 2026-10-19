@@ -1,0 +1,30 @@
+{
+  "key": "la_outlayer_solo_157",
+  "category": "🏺 Living Artifact · Outfit Layer Formula",
+  "title": "OutLayer 솔로 #157 · legendary bust · 레드 새틴 랩 타이 탑 · 허리 체인 하네스 · 바디 글리터 · 걷기 · 여름 해변",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm caramel complexion, early 30s goddess, legendary bust physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large woman, far beyond any real person, her upper body so wide; a mythologically, legendarily enormous bust dominates her entire silhouette, resting heavy and full, far wider than her own shoulders and projecting well forward of the rest of her body, the single defining feature of her frame, every other curve secondary to it; below it a waistline still draws in with a visible inward pull, round hips and soft thighs continue her curves; her head looks small in comparison to her massive bust; the bust is unmistakably, overwhelmingly the dominant feature; her arms, hands, legs and feet stay in correct proportion to each other, waist-length braids golden blonde hair — wearing a glossy red satin micro wrap-tie top, a narrow opaque strip crossing over both breasts and tied in a knot at the back, and a minimal low-rise glossy red satin bottom of one tiny opaque triangle on thin side strings tied at the hips, the small opaque pieces fully covering her, her stomach bare. Her waist wears a silver chain waist harness of a fine chain around her waist and another around her hips, joined by several fine chains draped in a diagonal lattice over her stomach, a small silver chain tassel resting at her navel. Pose: walking confidently toward the camera, shoulders back, chin lifted — most extreme legendary bust silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, thigh-high platform stiletto boots made of glossy red satin, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, curved talon nails each a full hand-length past her fingertips, in glossy red lacquer with a high polish.\nBody glitter: fine gold shimmer dusted over her shoulders, collarbones and thighs, sparkling on the skin.\nJewelry: a delicate silver body chain draped across her collarbones and down her torso, a long layered gold necklace falling between her breasts, and large drop earrings, a gold chain ending in a heavy black iron bell on one ear and a silver chain ending in a heavy gold pendant on the other, hanging above her collarbones. Jewelry is metal and pearl only.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Latina woman with high cheekbones, large dark eyes and full lips, an unmistakably feminine face with a calm, composed expression, makeup: a precise winged liner, softly defined brown eyeshadow, full natural lashes, large eyes with bright real catchlights, sculpted contour with a satin highlight, plump glossy rose-coral lips.\n\nBackground: a bright white-sand beach at midday with calm turquoise water, a wooden boardwalk with a waist-high rail and a row of closed striped cabanas of normal door height, just after the rain, with wet surfaces shining softly, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "outfit",
+    "family": "OutLayer",
+    "outfit": "레드 새틴 랩 타이 탑",
+    "physiques": [
+      "legendary bust"
+    ],
+    "ethnicity": [
+      "Latina"
+    ],
+    "poses": [
+      "walking confidently toward the camera, shoulders back, chin lifted"
+    ],
+    "background": "summer_beach",
+    "weather": "비 갠 뒤",
+    "heel_mode": "forty",
+    "jewelry": true,
+    "layers": [
+      "허리 체인 하네스",
+      "바디 글리터"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "la_outlayer_solo_150",
+  "category": "🏺 Living Artifact · Outfit Layer Formula",
+  "title": "OutLayer 솔로 #150 · powerlifter · 화이트 레더 스트링 트라이앵글 · 레그워머/오버니삭스 · 힙 팝 · 로마 콜로세움",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na luminous light-neutral complexion with a soft peach-beige undertone, mid 50s goddess, powerlifter physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an enormous, overwhelmingly powerful woman; colossal thick trapezius muscle rising high around her neck, massive round boulder shoulders, enormous thick arms with dense hard muscle, a broad powerful back, a deeply carved abdomen, colossal glutes and hips extending far beyond the shoulders, gigantic quadriceps with a deep sweep; her head looks small on top of her massive frame; not slim, not a fitness body, powerful and heavy at once; her arms, hands, legs and feet stay in correct proportion to each other, long curly golden blonde hair — wearing a glossy white leather string micro bikini top of two small opaque triangle cups tied with thin glossy white leather strings at her neck and back, and a minimal low-rise glossy white leather bottom of one tiny opaque triangle on thin side strings tied at the hips, the small opaque pieces fully covering her, her stomach bare. Her right leg wears a pastel pink chunky ribbed knit leg warmer slouched in soft folds around her right calf from just above the ankle to just below the knee, her right knee, thigh and the top of her foot bare, the warmer resting above her heel. Her left leg wears a black ribbed over-the-knee sock with two thin white stripes around the top band, hugging her left calf and knee and ending high on her left thigh, running down into her heel. Pose: strong hip pop left, both hands pressing outer hips outward arching back to extreme — most extreme powerlifter silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, platform stiletto ballet boots made of glossy white leather, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, almond nails each longer than her middle finger, in glossy white lacquer with a high polish.\nPiercing: a large gold navel ring with a teardrop-shaped green emerald fixed to it, resting directly on her skin at her navel.\nJewelry: a long layered gold necklace falling between her breasts, sculpted gold armbands high on both upper arms, and large drop earrings, a gold chain ending in a heavy black iron bell on one ear and a silver chain ending in a heavy gold pendant on the other, hanging above her collarbones. Jewelry is metal and pearl only.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Korean woman (East Asian Korean features: a slim V-line face with a small tapered chin and smooth forehead, large double-lidded eyes with soft fullness under them, a straight narrow nose bridge with a small rounded tip, softly full lips, gently straight eyebrows), an unmistakably feminine face with a calm, composed expression, makeup: slender upswept willow-leaf brows, a fine red floral huadian mark painted on the forehead, softly flushed rosy cheeks, an upswept eyeliner tail, large eyes with bright real catchlights, a small vivid red lip.\n\nBackground: the sunlit arches of the Roman Colosseum with worn stone paving, standard-height arched doorways and low stone steps, empty of tourists, in warm golden late-afternoon light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "outfit",
+    "family": "OutLayer",
+    "outfit": "화이트 레더 스트링 트라이앵글",
+    "physiques": [
+      "powerlifter"
+    ],
+    "ethnicity": [
+      "Korean"
+    ],
+    "poses": [
+      "strong hip pop left, both hands pressing outer hips outward arching back to extreme"
+    ],
+    "background": "colosseum",
+    "weather": "황금빛 오후",
+    "heel_mode": "forty",
+    "jewelry": true,
+    "layers": [
+      "레그워머/오버니삭스",
+      "배꼽 피어싱"
+    ]
+  }
+}
