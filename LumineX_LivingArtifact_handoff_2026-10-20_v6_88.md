@@ -1,5 +1,10 @@
 # LumineX · Living Artifact — 인수인계 메모 v6.67 (2026-10-16)
 
+> **v6.88 수정 사항**: 82~85장 신규 — **소재 마이크로비키니 200·Fetish Bondage 100 등록 기록**(commit `b03b529d`·`e25ad50c`), 구속 확장 시험(레이어·발목선·손목선·조합), **전체 후드 캣슈트 구속 시험 전 과정과 확정 문법**, **Fetish Bondage Hood Formula 550 등록**(`la_bondagehood_*`, commit `7b6a9d95`), 4축 분류 확정, 파츠·살아있는 조각상·카무플라주 보류/폐기 기록.
+
+> **v6.87 수정 사항**: 81장 신규 — **Outfit Layer Formula 200 등록**(`la_outlayer_solo_001~200`, 새 카테고리 1개, commit `b4fec91d`, 이전 `982c06e5`), 레이어 문구 전체(허리·다리·팔·머리 장식·장식 요소·슬링샷), 배꼽 피어싱·귀걸이 필수 기본값, **구속(페티쉬) 축 시험 결과 전 기록**(번들 미제작).
+
+> **v6.86 수정 사항**: 80장 신규 — **소재 마이크로비키니 시험 전 과정**(소재 23종 확정, 상의 5방식, 금속 8종, 신발·타투·실제 피부, 다인 확인), 페이스 스왑 쌍·보류 시험(반신·상하 분할·중성 얼굴) 기록. 번들은 아직 만들지 않음.
 
 > **v6.67 수정 사항**: 64-5 추가 — **남성 체형 보강을 이미 등록된 5개 번들에 적용 완료**(`la_mixedgender_`·`la_mixedmat_`·`la_mixedstone_`·`la_mixedwood_`·`la_boyidolmale_` 각 100, 같은 키 덮어쓰기, 커밋 `0b717b23`, 497개 파일 변경, 실측 `(Get-ChildItem presets\la_*.json).Count` = **16920** 불변). 샘플 5/5(1차 4·3차 1). 이제 남성 포함 등록 번들은 전부 남성 체형 5종·규모 표현 기준.
 > **v6.66 수정 사항**: 64장 신규 — **Mixed Gender 5종 500개 등록 완료**(`la_mixedgender_`·`la_mixedmat_`·`la_mixedstone_`·`la_mixedwood_`·`la_mixedaxis_` 각 100, 새 카테고리 5개, commit `a2875cad`, 실측 `(Get-ChildItem presets\la_*.json).Count` = **16920**), **남성 체형 보강**(린 애슬레틱·키 큰 슬렌더 제외, 대형 헤비 복귀, 규모 표현 통일) = 축 혼합 **v5가 최종 등록본**.
@@ -4114,3 +4119,513 @@ Master Mix 300 중 약 20개: 배경 문법(`beach at with` 8, `a open-air` 3, `
   - 2차: 부정 표현("no straps… top of any kind")을 빼고 V1 버레스크 패스티(삼각, 피부에 붙임)·V2 술 달린 패스티·V3 접착 패치로 표현 3가지 비교 → 사용자 결과 "니플 패치는 안되는가 보다" → **끈 없는 유두 패치는 포기**.
 - 결론: 유두를 가리는 상의는 **끈으로 이어진 삼각 컵("유두만 삼각 탑", 블랙·화이트·딥 퍼플 레더)만 통과**. 원형·네모 컵, 최소화 문구, 끈 없는 패치·패스티는 모두 불채택. 체인 할터/하네스 변형은 제안만 했고 시험하지 않음.
 - 열린 과제: 앱에서 새 카테고리 6개 표시 확인, 4·5인 혼합 번들 여부, UV 변형 6번 결과 미보고(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, 철근 전신, 네온 튜브, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭). 이전 핸드오프·백업은 삭제하지 않았다.
+
+## 67. 체인 탑 시험 · 여성 체형 풀 정비 (v6.71, 2026-10-16)
+
+### 67-1. 체인 탑 시험(접음)
+- 니플 패치 포기 후 제안한 체인 할터 탑(삼각 컵 + 목·등 금속 체인)·체인 하네스 탑(컵 사이 체인 + 목 체인 + 몸통 체인 하네스)을 `bk/mk_chaintest1.py`(다인)·`mk_solotest1.py`(솔로 6: 니플 패치 2·할터 2·하네스 2)로 시험. 사용자: "이것도 접자, 특별하지 않아" → **체인 탑·니플 패치 모두 불채택**. 상의는 끈으로 이어진 삼각 컵 "유두만 삼각 탑"만 유지.
+- **새 요소 시험은 1인(솔로)만** — 사용자 확정(다인은 실패 가능성이 더 큼).
+
+### 67-2. 여성 체형 풀 정비
+- 발단: 혼합 번들의 여성 체형(`FEMBODY`)이 가슴·엉덩이 큰 곡선형 10종뿐 → 운동선수 계열 부재(POOL은 43종 정의, 미사용 다수).
+- 시험(솔로 8, 의상·소재 각): **비키니 피트니스**(신규 문구) — 생성 성공했으나 "부피가 너무 작다" → **제외**. **V자 피지크**(신규 `V-taper physique`: 넓은 어깨·좁은 허리·선명한 복근) 1차 성공 → 채택. 기존 정의 **아마조네스(`amazoness`)**·**토운드 밤쉘(`toned bombshell`)** 의상·소재 4/4 1차 성공 → 채택.
+- 새 `FEMBODY` = 곡선형 10종 ×3 + 운동선수 3종(V자 피지크·아마조네스·토운드 밤쉘) ×7 → 여성 인물의 약 40~42%가 운동선수 계열. 근육 큰 체형(`heavy muscle`·`powerlifter`·`Nubian bust builder`)은 이 형식에서 미시험이라 이번에는 제외.
+- 재생성: `mk_mixedgender_bundle11.py`·`mk_mixedmat_bundle4.py`·`mk_mixedstone_bundle3.py`·`mk_mixedwood_bundle3.py`·`mk_mixedaxis_bundle8.py`(= 색 변형 v7 포함). 이전 JSON은 `outputs/prev_femphys/`. 검증: 키 100개씩 고유, 제목 ≤103자, 한글·중복어 0. 남성 테마·Boy Idol Male·Male Face Female Body는 해당 없음(또는 별도 체형 목록).
+- 등록: `patch_la_malepool_all_json.py` 재실행 → **700개 덮어쓰기**(메타 불필요), 개수 17,020 불변.
+- 열린 과제: 앱에서 새 카테고리 6개 표시 확인, 4·5인 혼합 번들 여부, 조명 축(골든아워·역광·야경 등)·상호작용 포즈·새 소재 몸(청자·용암·호박·청동·얼음) 후보, 여성 코스튬 테마 번들, 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, 철근 전신, 네온 튜브, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭). 이전 핸드오프·백업은 삭제하지 않았다.
+
+### 67-3. push (v6.72)
+- 67장 작업 push: `8fc7b80f..ddd611f1` (여성 체형 풀 정비). 등록 `la_` 17,020 + 레거시 576 불변.
+
+## 68. 조명 축 (v6.72, 2026-10-16)
+
+### 68-1. 시험과 채택
+- 시험 `bk/mk_lighttest1.py`(6종): 골든아워·흐린 낮 확산광·역광 림라이트·하드 플래시·푸른 시간대 황혼 = **1차 성공 → 채택**. 석양은 2차 성공 → **제외**.
+- 방식: 프롬프트를 늘리지 않고 **세 구절 제자리 교체** — 배경(`bright and evenly lit, shadows soft`), 카메라(`in natural sunlight`), 마무리(`{pre} catching the sunlight in sharp glints, the sunlight carving every {X}`).
+- 가중치: 기본 햇빛 30, 나머지 5종 각 14. `meta.lighting`에 선택 기록.
+
+### 68-2. 적용과 등록
+- 재생성(헬퍼 `light(p)` 추가, `/tmp/claude-0/patch_light.py`로 패치): `mk_mixedgender_bundle12.py`·`mk_mixedmat_bundle5.py`·`mk_mixedstone_bundle4.py`·`mk_mixedwood_bundle4.py`·`mk_mixedaxis_bundle9.py`·`mk_maletheme_bundle3.py`·`mk_boyidolmale_bundle3.py`. 이전 JSON은 `outputs/prev_light/`.
+- 검증: 7종 모두 100개·키/제목 중복 없음·제목 ≤103자·프롬프트 한글 없음. 조명 분포 기본 23~42, 나머지 9~22.
+- 등록: `patch_la_malepool_all_json.py` 재실행 → **700개 덮어쓰기**(메타 불필요), 개수 17,020 불변.
+- 열린 과제: 앱에서 새 카테고리 6개 표시 확인, 4·5인 혼합 번들 여부, 여성 의상 테마 번들, 상호작용 포즈, 새 소재 몸(청자·용암·호박·청동 녹청·서리 얼음), UV 변형(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, 철근 전신, 네온 튜브, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭), 여성 근육 큰 체형 혼합 형식 미시험.
+
+### 68-3. push (v6.73)
+- 68장 작업 push: `ddd611f1..1da6a4e1` (조명 축 7개 번들). 등록 `la_` 17,020 + 레거시 576 불변.
+- 주의: JSON·패치 스크립트는 `presets\`가 아니라 **`preset_builders\`에 둔다**(스크립트가 거기서 읽고 `presets\`에 개별 파일을 씀).
+
+## 69. 여성 의상 테마 (v6.73, 2026-10-16)
+
+### 69-1. 설계
+- 남성 테마 구조 복제. 테마 = 소품(모자·목·손목) + **삼각 컵 비키니 상의(끈으로 연결) + 마이크로 비키니 하의** 고정(상의·하의 색 동일, 색 변형 미적용). 정의 `bk/femtheme_defs.py`(16종), 체형 풀 `bk/fembody_pool.py`(곡선형 ×3 + 운동선수 ×7).
+- 상의는 삼각 컵만 사용(54장: 끈 연결 삼각 컵·끊김 없는 불투명 띠만 통과). 띠 상의(밴도·벨트·스카프·퍼) 테마 변형은 **미시험**.
+
+### 69-2. 솔로 시험과 채택 (새 요소는 솔로로만)
+- 시험 1 `mk_femtheme_test1.py`: 간호사·마녀·메이드·군인·소방관·경찰관·악마 **1차 성공 → 채택**, 바니걸 3차 성공 → **제외**.
+- 시험 2 `mk_femtheme_test2.py`: 해적·카우보이·복서·닌자·산타·천사·뱀파이어 **1차 성공 → 채택**, 서퍼 2차 성공 → **제외**.
+- 채택 14종: 군인·소방관·해적·카우보이·복서·닌자·산타·악마·천사·뱀파이어·경찰관·간호사·마녀·메이드.
+
+### 69-3. 번들과 등록
+- 생성기 `bk/mk_femtheme_bundle1.py` → `la_femtheme_100_bundle.json`: 솔로 20·듀오 40·트리오 40, 키 `la_femtheme_{solo|duo|trio}_NNN`, 새 카테고리 `🏺 Living Artifact · Female Costume Theme`, 제목 `FemTheme {Solo|Duo|Trio} #NNN · …`(≤103자). 조명 축 포함. 테마는 그룹 내 중복 없음, 테마당 15~16회.
+- 등록: `patch_la_femtheme_1_json.py` + `patch_livingartifact_2_meta.py`(새 카테고리 1개). 등록 후 `la_` 17,120 예상.
+- push: `1da6a4e1..61682c4a`.
+- 열린 과제: 앱에서 새 카테고리 7개(남성 6 + 여성 테마) 표시 확인, 띠 상의 테마 변형, 바니걸·서퍼 제외분 재시험 여부, 4·5인 혼합 번들, 상호작용 포즈, 새 소재 몸(청자·용암·호박·청동 녹청·서리 얼음), UV 변형(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, 철근 전신, 네온 튜브, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭), 여성 근육 큰 체형 혼합 형식 미시험.
+
+### 69-4. 띠 상의 변형 · 자유 혼합 (v6.74)
+- push: `1da6a4e1..61682c4a`(여성 테마 v1, 새 카테고리 등록 완료). 이후 v3 push는 첫 시도에서 HTTP 408(백업 zip 업로드 시간 초과)로 실패 → `git fetch`·`git status -sb`로 `[ahead 1]` 확인 후 재 push 성공: `61682c4a..aa51fa16`. 408이 반복되면 `git config http.postBuffer 524288000`.
+- 띠 상의 문구(54장 통과): 밴도 `a micro strapless {c} bandeau reduced to the narrowest possible strip only two fingers tall, stretched tightly across the middle of her bust and covering only what it must` / 스카프 랩(옆 매듭, 한쪽 끝 길게) / 퍼 밴도 / 가슴 벨트. 정의 `bk/femtheme_band_defs.py`(`_BND`·`_FUR`·`_BELT`·`_SCARF`·`_TB`).
+- 시험 3(`mk_femtheme_test3.py`, 테마별 띠): 복서 벨트·군인 밴도·닌자 스카프·산타 퍼·카우보이 밴도·경찰관 밴도·뱀파이어 스카프 **1차 성공**, 해적 벨트(검정 가죽·금 버클) 실패.
+- 시험 4(`test4`, 교차): 해적·소방관·악마·간호사·메이드 밴도, 천사·마녀·카우보이 스카프 **8개 전부 1차 성공 → 밴도·스카프는 14개 테마 모두에 자유 혼합**.
+- 시험 5b(`test5b`, 벨트 교차): 해적(갈색 가죽·금 버클) 1차 성공, 경찰관 2차, 군인 3차 → **벨트는 복서·해적(갈색)만**. 퍼는 산타만.
+- 번들 v3 `mk_femtheme_bundle3.py`: 인물마다 상의 가중치 삼각 4·밴도 3·스카프 3(+복서·해적 벨트 1, 산타 퍼 1), `meta.tops`에 기록. 색은 테마색(`BC` 표) — 밴도 색/스카프는 "{색} silk" 하의. 같은 키 100개 덮어쓰기(메타 불필요), 등록 `la_` 17,120. 이전 JSON `outputs/prev_light/la_femtheme_100_bundle_v1·v2.json`.
+- 열린 과제: 앱에서 새 카테고리 7개 표시 확인, 바니걸·서퍼 제외분 재시험 여부, 4·5인 혼합 번들, 상호작용 포즈, 새 소재 몸(청자·용암·호박·청동 녹청·서리 얼음), UV 변형(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, 철근 전신, 네온 튜브, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭), 여성 근육 큰 체형 혼합 형식 미시험.
+
+### 69-5. 바니걸·서퍼 재시험 · 벨트 추가 시험 · 번들 v4 (v6.75)
+- push: `61682c4a..aa51fa16`(v3). 이후 v4 push `aa51fa16..87ab539d`. 이번 push부터 백업 zip은 `git rm --cached`로 추적 해제하고 `.gitignore`에 `*.zip` 추가(408 방지; 이미 올라간 zip은 기록에 남음).
+- 재시험 6(`mk_femtheme_test6.py`): 바니걸(삼각·밴도·스카프)·서퍼(삼각·밴도·스카프) **6개 모두 1차 성공 → 두 테마 복귀, 총 16종**. 서퍼는 젖은 몸 문구(`soaked and clinging…`)를 하의 뒤에 붙인 형태.
+- 벨트 교차: 시험 5b — 해적(갈색 가죽·금 버클) 1차 성공, 경찰관 2차, 군인 3차. 시험 7 — 소방관(노란 반사 줄무늬 레드·은 버클)·악마(광택 블랙 가죽·은 버클) 1차 성공, 카우보이·닌자·뱀파이어 실패. **벨트 채택: 복서·해적(갈색)·소방관·악마**, 퍼 밴도는 산타.
+- 번들 v4 `mk_femtheme_bundle4.py`: 16종 테마(테마당 13~14회), 상의 가중치 삼각 4·밴도 3·스카프 3(+벨트·퍼 1), 같은 키 100개 덮어쓰기(메타 불필요). 이전 JSON `outputs/prev_light/la_femtheme_100_bundle_v1~v3.json`. 백업 zip k까지 보관.
+- 열린 과제: 앱에서 새 카테고리 7개 표시 확인, 4·5인 혼합 번들, 상호작용 포즈, 새 소재 몸(청자·용암·호박·청동 녹청·서리 얼음), UV 변형(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, 철근 전신, 네온 튜브, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭), 여성 근육 큰 체형 혼합 형식 미시험.
+
+## 70. 새 소재 몸 5종 (v6.76, 2026-10-16)
+
+### 70-1. 정의와 시험
+- push: `aa51fa16..87ab539d`(여성 테마 v4). 이번 작업 push `87ab539d..47608b48`.
+- 새 소재 5종(`bk/newmat_defs.py`의 `NEWMAT`): 청자(celadon porcelain, "high-gloss glazed")·용암(lava rock, "rough volcanic-textured")·호박(amber, "glass-smooth polished")·청동 녹청(verdigris bronze, "weathered satin-patina")·서리 얼음(frost ice, "glossy frosted"). 기존 석재 몸 문구(`matmat` 석재 템플릿)의 `solid stone`·`fitted stone sections`·`high-gloss polished`만 명사·마감으로 **제자리 교체**(길이 불변), 몸·부츠(`carved from the same {nm}`)·손톱·목 경계(`the {noun} ends cleanly`)까지 같은 소재. 종류명 `신소재`, 제목 라벨 `신소재 청자` 등.
+- 솔로 시험 `mk_newmat_test1.py`: 첫 파일은 생성기의 1인 분기 누락으로 3인 문구가 나와 **무효**, 수정본(`ONE person standing`, 다인 표현 0)으로 재시험 → 청자(여)·용암(남)·호박(여)·청동 녹청(남)·서리 얼음(여) **5개 모두 1차 성공 → 채택**.
+- 교훈: 생성기를 복제해 솔로로 바꿀 때 `build`와 `build2` 두 곳 모두 `n == 1` 분기와 `labs`를 고쳤는지 확인(첫 매치만 바꾸는 `replace(..., 1)` 주의).
+
+### 70-2. 번들 반영
+- `mk_mixedstone_bundle5.py`: 석재 풀 = 석재 6 + 신소재 5(`pick_scene_mats` 재정의) → 새 소재 포함 프롬프트 66개.
+- `mk_mixedaxis_bundle10.py`: S축 풀(`WSP`)에 신소재 5종 추가 → 17개. 두 번들 모두 같은 키 100개 덮어쓰기(메타 불필요), `patch_la_malepool_all_json.py`로 700개 덮어쓰기, `la_` 17,120 불변. 이전 JSON `outputs/prev_light/la_mixedstone_100_bundle_v4.json`·`la_mixedaxis_100_bundle_v9.json`.
+- 발견(미조치): 여성 체형 문구 끝의 `her arms, hands, legs and feet stay in correct proportion to each other`가 생성기에서 한 번 더 붙어 **같은 문장이 두 번** 나옴(등록된 여성 번들의 거의 전부, 이 작업과 무관·기존). 시험이 계속 통과해 그대로 둠. 필요 시 별도 작업으로 중복 제거(프롬프트가 짧아지는 방향).
+- 열린 과제: 앱에서 새 카테고리 7개 표시 확인, 여성 체형 문구 중복 제거 여부, 4·5인 혼합 번들, 상호작용 포즈, UV 변형(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, 철근 전신, 네온 튜브, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭), 여성 근육 큰 체형 혼합 형식 미시험.
+
+## 71. 혼합 4·5인 Axis Mix 번들 (v6.77, 2026-10-16)
+
+### 71-1. 설계와 생성
+- push: `87ab539d..47608b48`(새 소재 5종). 이번 작업 push `47608b48..dea0b1e4`.
+- 생성기 `bk/mk_mixedaxis45_bundle1.py` = `mk_mixedaxis_bundle10.py`(새 소재·색 변형·조명 축·여성 풀 포함)에 63-1의 4·5인 분기를 이식: `pick_axes` 4·5인 가중치(4인 `CCPS 4,CPSS 2,CPPS 2,CCPP 1,PPSS 1,CCSS 1` / 5인 `CCPSS 3,CCCPS 2,CPPSS 2,CCPPS 3`), 라벨(4인 FAR LEFT/CENTER LEFT/CENTER RIGHT/FAR RIGHT, 5인 FAR LEFT/LEFT/CENTER/RIGHT/FAR RIGHT), 비율(4인 1:1·3:4 / 5인 1:1·5:4 번갈아).
+- 구성: `la_mixedaxis45_{quad|quint}_NNN` 4인 50 + 5인 50 = 100개, 새 카테고리 `🏺 Living Artifact · Mixed Gender Axis Mix Large Group Formula`. 성별은 남성 ≥1, 여성 얼굴 또는 남성 얼굴+여성 체형 ≥1, 남성 얼굴+여성 체형(MF)은 n-2명 이하(의상 축 금지 규칙은 `pick_axes`가 유지). 프롬프트 평균 4인 약 1,950단어·5인 약 2,320단어(최대 2,540).
+- 제목: `MixedAxis {Quad|Quint} #NNN · …`, `short()` 단계를 낮춰 103자 이하(5인은 체형·소재 위주).
+- 검증: 100개, 키·제목 중복 없음, 인원·라벨 수 일치, 한글 없음, 남성만 있는 경우 없음.
+- 버그 기록: 생성기 복제 시 `labs` 치환이 구 `build`에 먼저 적용돼 4·5인이 3명만 나옴 → `build2` 구간에서만 치환하도록 수정(70-1 교훈과 같은 종류).
+
+### 71-2. 시험과 등록
+- 번들에서 직접 4개를 추출해 시험(`LumineX_Mixed45_Bundle_Samples1.md`): 4인 1:1·3:4(새 소재+하드 플래시 포함), 5인 1:1·5:4 **4개 모두 1차 성공**.
+- 등록: `patch_la_mixedaxis45_1_json.py` + `patch_livingartifact_2_meta.py`(새 카테고리 1개). 등록 후 `la_` 17,220 예상.
+- 열린 과제: 앱에서 새 카테고리 8개(남성 6 + 여성 테마 + 4·5인) 표시 확인, 여성 체형 문구 중복 제거 여부, 상호작용 포즈, UV 변형(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, 철근 전신, 네온 튜브, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭), 여성 근육 큰 체형 혼합 형식 미시험.
+
+## 72. 격자(줄·선) 전신 소재 시험 · 철근 전신 채택 (v6.78, 2026-10-16)
+
+### 72-1. 시험 결과 (59장의 보류 항목 중 격자 소재, 모두 솔로·전신)
+- push: `47608b48..dea0b1e4`(혼합 4·5인 번들). 이번 작업 push `dea0b1e4..490a4448`.
+- 현재 번들 형식으로 이식한 문구 `bk/lattice_defs.py`(`LAT`·`lattice_body`): `From the collarbones down, her whole body … is not painted, covered or clothed but physically made of ONE {sculpture} …`, 살 없음 문구(`no solid surface and no real limb, chest or skin anywhere`, `no real body, no skin and no flesh anywhere inside or beneath`), 두 다리 분리·바닥 접지, 열린 격자 투과, 목 경계. 신발은 (a) 없음(발까지 격자) (b) 같은 소재 40인치 힐 부츠 두 가지.
+- 시험 1 `mk_lattice_test1.py`(여성 6): 철근·네온 튜브·철사 × 신발 없음/부츠 → **철근+부츠(라티나 커브스)만 성공**. 철근 신발 없음은 팔·가슴·발가락 살, 네온 튜브는 상체 내부 살, 철사는 상체·양다리 살, 네온 튜브+부츠는 전신 살, 철사+부츠는 거의 전체 살 → 네온 튜브·철사 **폐기**.
+- 시험 2 `test2`: 철근+부츠 3개 — 브라질리언 부티 글램(여) 가슴 위·양다리 살 **실패**, 아마조네스(여)·피트니스 모델(남) **성공** → 철근+부츠 **4번 중 3번 성공(75%)**.
+- 시험 3 `test3`(부츠 고정): 굵은 밧줄(여)·쇠사슬(여)·대나무(여)·진주 줄(여)·땋은 가죽끈(남) **실패**, 강관 파이프(남)는 1차 성공(손 제외)했으나 재시험에서 가슴 위 맨살 → **보류**. 정리: 가는 선·틈 큰 소재는 살이 비치고, 굵고 단단한 막대(철근)만 통과. 문구에 살 없음 표현이 이미 있어도 소재와 부츠 유무가 성패를 좌우.
+
+### 72-2. 철근 전신 번들 반영
+- 사용자 선택: 소재 풀에 한 종류로 추가(비중 작게). `mk_mixedstone_bundle6.py`: 석재 풀에 철근 포함(철근 프롬프트 10개), `mk_mixedaxis_bundle11.py`: S축 풀에 포함(1개). 철근 인물은 `Footwear: Extreme thigh-high platform stiletto boots made of the same rebar lattice …`(남성도 동일), 손톱은 `Hands and nails are part of the lattice.`, 제목 라벨 `격자 철근`. 새 소재 5종도 함께 포함(석재 53개·Axis Mix 15개).
+- 같은 키 100개씩 덮어쓰기(메타 불필요), `patch_la_malepool_all_json.py`로 700개 덮어쓰기, `la_` 17,220. 이전 JSON `outputs/prev_light/la_mixedstone_100_bundle_v5.json`·`la_mixedaxis_100_bundle_v10.json`.
+- 4·5인 번들(`la_mixedaxis45`)에는 철근을 넣지 않음(다인 철근 미시험).
+- 교훈: 설명할 때 파일 이름이 이전과 같으면 "어느 설명과 함께 보낸 파일인지"와 확인 명령을 함께 안내(사용자 혼동 발생).
+- 열린 과제: 앱에서 새 카테고리 8개 표시 확인, 철근 곡선형 체형 실패 사례 추적, 강관 파이프 재시험 여부, 여성 체형 문구 중복 제거 여부, 상호작용 포즈, UV 변형(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭), 여성 근육 큰 체형 혼합 형식 미시험.
+
+## 73. 여성 체형 문구 중복 문장 제거 (v6.79, 2026-10-16)
+
+### 73-1. 원인과 조치
+- push: `47608b48..dea0b1e4`(4·5인)·`dea0b1e4..490a4448`(철근) 이후 이번 작업 push `490a4448..633dfd95`.
+- 원인: 여성 체형 `POOL` 문구가 이미 `…her arms, hands, legs and feet stay in correct proportion to each other`로 끝나는데, 생성기가 `Her arms, hands, legs and feet stay in correct proportion to each other.`를 한 번 더 붙여 같은 문장이 두 번 나왔다(기존부터, 여성·남성얼굴+여성체형 인물 대부분). 남성 체형은 해당 없음.
+- 조치: JSON에서 뒤쪽 중복만 정규식으로 제거(`(stay in correct proportion to each other) (Her|His|Their) arms, hands, legs and feet stay in correct proportion to each other` → `\1`). 인물·체형·소재·조명 등 나머지는 불변(재생성 없이 후처리), 프롬프트 평균 약 18~30단어 감소.
+- 대상 8개 번들: 혼합 성별·혼합 재질·혼합 석재·혼합 목재·Axis Mix·여성 테마·4·5인 Axis Mix·Male Face Female Body. 이전 JSON은 `outputs/prev_dedup/`. 생성기는 `p = dd(p)` 뒤에 같은 정규식을 넣은 `*_dd.py` 사본(7개: mixedgender12·mixedmat5·mixedstone6·mixedwood4·mixedaxis11·mixedaxis45_1·femtheme4)을 만들어 둠 — **앞으로 재생성할 때는 `_dd` 사본(또는 같은 후처리)을 쓸 것**.
+- 확인 샘플 3개(`LumineX_Dedup_Samples1.md`): 여성 테마 솔로(바니걸)는 2차 성공, Axis Mix 듀오·혼합 석재 트리오는 1차 성공. 바니걸 테마는 원래 결과가 들쭉날쭉(처음 3차 성공)이라 문장 제거의 영향인지 구분 불가 → 사용자 판단으로 등록 진행.
+- 등록: `patch_la_malepool_all_json.py`(700) + `patch_la_femtheme_1_json.py` + `patch_la_mixedaxis45_1_json.py` + `patch_la_malefacefemale_1_json.py`(각 100), 합계 1,000개 덮어쓰기(메타 불필요), `la_` 17,220 불변.
+- 열린 과제: 앱에서 새 카테고리 8개 표시 확인, 바니걸 테마 안정성 추적(필요 시 제외), 철근 곡선형 체형 실패 사례 추적, 강관 파이프 재시험 여부, 상호작용 포즈, UV 변형(보류), 보류 항목(Core × 소재 프레임 컷, 실버폭스 확장, Face Sculpt 축 위치, 티어 HOF/SSS, 앉기 앵클컷, 피어싱용 얼굴 크롭), 여성 근육 큰 체형 혼합 형식 미시험.
+
+## 74장. Face Sculpt 시대 아이콘·글램·컨셉·흑인 얼굴 170개 (v6.80)
+- 배경: 바비 인형 같은 얼굴 유형에 "과거 유명 배우·모델"을 추가하자는 요청. 실명·특정인 얼굴은 쓰지 않고 시대·지역 스타일(머리·눈 메이크업·눈썹·입술·피부톤을 유형마다 고정)로 정의. "doll/airbrushed/poreless" 단어는 쓰지 않고 모공·잔털이 보이는 실제 피부 문장을 넣음.
+- 샘플 형식: `barbie3.py` 패턴(HEAD + 유형별 Subject + `G.make(...P5)`의 Piercings/Piercing depth/Lighting 3문단). 샘플 생성기: `bk/mk_eraface_west1.py`(서양 9), `mk_eraface_cjk1.py`(한중일 15), `mk_eraface_jp1.py`(일본 4), `mk_glamface1.py`·`mk_glamface2.py`(지역 글램 7·강화판), `mk_makeupconcept1.py`(컨셉 7), `mk_blackface1.py`(흑인 7).
+- 채택(34종): 시대 아이콘 24 = 서양 9(1920s 플래퍼·30s 사이렌·50s 플래티넘 글래머·50s 캣아이 핀업·60s 모드·60s 비하이브·70s 디스코·80s 슈퍼모델·90s 그런지) + 한국 5(60s 황금기·70s 하이틴·80s 볼륨 파마·90s 청순·2000s Y2K) + 중국 2(30s 상하이 월분패·90s 홍콩 매력) + 일본 4(2000s 모테·70s 스케반·2010s 투명감·히메컷) + 흑인 4(60s 내추럴 모델·70s 아프로 디스코·80s 볼륨 팝·90s R&B 시크). 지역 글램 3(동유럽 아이스·서유럽 쿨 시크·중동·남아시아 글램). 컨셉 메이크업 7 = 크롬 메탈릭·모노크롬 핫레드·라스베이거스 쇼걸·딥스킨 골드 글램 + 흑인 3(비비드 컬러 팝·초콜릿 모노크롬·화이트 포인트 골드).
+- 제외·사유: 한중일 중 한국과 비슷한 중국 60s/70s/80s, 일본 쇼와·70s 아이돌·80s 아이돌(별로)·90s 갸루(기존 갸루 다수)·버블기 원렝. 글램 강화판 중 미국 밤쉘·라틴(기존 "인스타글램"과 중복)·한국 섹시(강남언니·걸크러시와 중복)·일본 그라비아(아마갸루·아게하와 근접). 컨셉 중 네온 UV·페스티벌 글리터 젬·컬러 스모키는 사용자 판단으로 제외. 서양 9는 시험 없이 채택, 나머지는 사용자가 생성 확인.
+- 규칙: 새 메이크업·얼굴 유형은 기존 메이크업(`gen_cjk_v2.MK`, 29종)과 중복되지 않는지 확인하고 중복은 등록 안 함. 번들은 사용자가 만들라고 할 때만 만듦(요청 없이 만들어 보내 지적받음).
+- 번들: `bk/mk_facesculpt_era3.py`(= `gen_facesculpt.py`의 arch 경로 복사: 유형 Subject 교체, 나이 20대·유형 국적 표기 고정, 시대 머리 모양이 살도록 "머리를 귀 뒤로 넘김" Hair 문단 생략, 귀 무게추·피어싱(귀만 약 56% / P25)·헨나·스티커 랜덤). 34종 × 5 = 170개, 키 `la_facesculpt_era_001~170`, 카테고리 `🏺 Living Artifact · Face Sculpt Era Icon Formula`(신규), `meta.format="face-sculpt-era"`, 프롬프트 1,097~1,362단어. 흑인 유형 40개(약 24%).
+- 등록: `patch_la_facesculpt_era_1_json.py` + `patch_livingartifact_2_meta.py`(신규 카테고리), push `633dfd95..93ba4958`. `la_` 총 17,220 → 17,390 예정(앱 확인 필요). 이전 100·115개 번들은 구버전(미등록).
+- 열린 과제: 앱에서 신규 카테고리 표시 확인, 한국 다른 시대/유형 추가 여부, 남성 버전(시대 아이콘) 여부, 위 8번 장의 열린 과제 그대로 유지.
+
+## 75장. Face Sculpt Era 번들 정리 — 최종 13종 65개 (v6.81, 74장 정정)
+- 74장의 "34종 170개"는 폐기됨. 기존 메이크업(`gen_cjk_v2.MK` 29종 + 단계별 `ladder_pool.POOL`)과 눈+입술 조합을 비교해 중복·경계를 정리. 사용자 기준: 겹치는 건 등록하지 않음(경계 포함 시 "안 겹침만" 선택 — 지난 9종 결정과 같은 엄격 기준).
+- 최종 등록(13종 × 5 = 65, 키 `la_facesculpt_era_001~065`, 카테고리 `🏺 Living Artifact · Face Sculpt Era Icon Formula`, `meta.format="face-sculpt-era"`): 서양 60s 모드·서양 90s 그런지·흑인 90s R&B 시크·동유럽 아이스·중동·남아시아 글램·크롬 메탈릭·비비드 컬러 팝(딥스킨)·초콜릿 모노크롬·화이트 포인트 골드·노르딕 쉴드메이든(유럽 8번)·파리 오트쿠튀르 그래픽(유럽 11번)·아이스 퀸 서리 균열·포슬린 조각상. push `93ba4958..c7db32aa`. 등록 과정: 키 066~170 삭제 + 패치 + 메타 재실행(스크립트 `patch_la_facesculpt_era_1_json.py`는 065 번들 기준).
+- 제외 근거(요약): 50s 핀업·80s 계열·한국 시대 5종·중국 90s 홍콩·일본 모테/스케반/히메컷·서유럽 쿨 시크·라틴 60s/90s/플라멩코 = 클래식 레드립/푸시아/코랄/와인 레드립/걸크러시/홍콩풍/아게하/내추럴 계열과 중복. 경계(20s 플래퍼·30s 사이렌·50s 글래머·60s 비하이브·70s 디스코·Y2K·30s 상하이·투명감·흑인 60s·핫레드·쇼걸·딥스킨 골드 등)도 제외. 유럽 11종 중 채택은 8·11만 등록, 1·2·4·5·10(노르딕 프로스트·켈틱 레드헤드·르네상스·로코코·슬라브)은 경계로 보류. 엘리자베스 백분·헤이안 히키마유는 성공했지만 마이코·혼례 틀과 비슷해 경계로 미등록.
+- 시험 결과: 페이스페인팅 8(이집트·카타칼리·홀리·나비·비늘·사이버펑크·할리퀸·꽃) 전원 탈락 — 새로 지어낸 무늬는 정형이 없어 실패. 전통 분장 8 중 엘리자베스·헤이안만 성공, 강렬한 컨셉 8 중 아이스 퀸만 성공, 컨셉 4 중 포슬린만 성공. 칼라베라 변형 5·주얼리 슈거 스컬 3은 결과 미수신. 라틴 칼라베라(5번)는 채택됐으나 번들에 미반영.
+- 새 규칙(사용자): 번들은 만들라고 할 때만 만듦. 새 메이크업·얼굴 유형은 기존 메이크업과 중복 확인 후 중복은 등록 안 함. 새 유형 샘플은 솔로.
+- 열린 과제: 칼라베라 변형·주얼리 슈거 스컬 결과 대기, 라틴 칼라베라 등록 여부, 남성 시대 아이콘, 인도·중동·동남아 시대 아이콘, 앱에서 신규 카테고리 표시 확인(65개), 8번 장의 열린 과제 유지. 번들에 henna/sticker가 페이스페인팅 유형(포슬린·아이스 퀸)에도 랜덤으로 붙는 점은 필요하면 유형별 제외.
+
+## 76장. Face Sculpt Era 번들 — 칼라베라 추가, 최종 14종 70개 (v6.82, 75장 갱신)
+- 라틴 칼라베라(망자의 날)를 추가해 최종 14종 × 5 = 70개(키 `la_facesculpt_era_001~070`). 번들 파일 `la_facesculpt_era_070_bundle.json`, 키 071~170 삭제 후 패치·메타 재실행, push `c7db32aa..f8f80b64`. 생성기 `bk/mk_facesculpt_era7.py`.
+- 칼라베라 변형 5종(플로럴·골드 필리그리·카트리나·블랙앤화이트·주얼리 슈거 스컬 1)과 주얼리 슈거 스컬 3종(진주·금속·로즈골드)은 모두 같은 해골 눈구멍 틀의 변형이라 중복으로 보고 등록하지 않음(기본 칼라베라 1개만). 문구 안정성 순위: 기본 > 블랙앤화이트 > 진주·크리스털 주얼리 > 나머지. 금속 장식형은 피어싱 문단과 혼동 위험.
+- 열린 과제: 앱에서 신규 카테고리 70개 확인, 남성 시대 아이콘, 인도·중동·동남아 시대 아이콘, 75장 열린 과제 유지.
+
+## 77장. 이레즈미 문양 풀 확대 · 얼굴형 8종 · Irezumi Pool Formula 300 등록 (v6.83, 2026-10-17)
+
+### 77-1. 문양 후보 시험과 채택 17종 (이레즈미 풀 26 → 43종)
+- 시험 방식: 후보 문양마다 솔로 샘플(Master Mix 기본 랜덤 전 축)을 만들어 번호별 성공/실패만 받았다. **1회차 성공만 채택**. 처음 화가 화풍 문양을 바디페인팅 트랙으로 만들었다가 사용자가 "이레즈미가 아닌데?"라고 짚어 이레즈미 틀(`full body {문양} irezumi ... Bold black ink outlines — BLAZING <색> <문양> formations ..., NO airbrush NO gradient wash`)로 다시 만들었다(스크립트 `mk_paintmotif2.py`·`mk_irezumi_new9.py`·`mk_irezumi_area9.py`·`mk_irezumi_retry2.py`·`mk_irezumi_latinindia8.py`).
+- **채택 17종**: 화가 화풍 2(금 나선 모자이크 `gold spiral mosaic`, 아르누보 붓꽃 `art nouveau iris whiplash`) · 일본/동아시아 7(여우 `kitsune fox`, 뱀과 모란 `snake and peony`, 세이가이하 `seigaiha wave`, 갓파 `kappa river imp`, 한국 보상화문, 중국 길상문 `Chinese auspicious cloud and bat` — 6종 + 위 화풍 외) · 유럽 민속 5(페트리키우카, 그젤, 호흘로마, 노르웨이 로즈말링, 올드스쿨 독수리) · 중남미/인도 4(알레브리헤, 탈라베라, 메리골드, 마두바니 공작).
+- **탈락**: 달토끼, 가라쿠사, 쥬스토보(2차 시도 포함), 표범·장미와 단검(일반 체형 재시험에서도), 네코마타, 누에, 오토미, 마두바니 물고기, 이즈니크, 무굴 상감, 소용돌이 붓질, 깨진 타일 모자이크. 교훈: 털 달린 동물과 여러 동물이 섞인 키메라는 약하고, 반복 덩굴형 문양도 약하다.
+- 풀 위치: `glassface/gen_fix_ire_uv_6to10.py`의 `IREZUMI_FULL`(26 → 43). 생성기 쪽 풀만 갱신했고 **이미 등록된 `la_irezumi_` 300개는 바꾸지 않았다**. 신규 17종 원문은 outputs의 `irezumi_new17.json`.
+
+### 77-2. 얼굴형 8종 (Master Mix 인종 축 10 → 18종)
+- 사용자 방침: 흑인은 블루블랙 같은 찐 흑인 피부, 백인은 기본적으로 하얀 피부이고, 인종 차이는 메이크업 분위기가 아니라 **얼굴형 자체**(한·중·일처럼). 새 유형은 실제 지역 특징을 따르고 기존 확정 얼굴과 겹치면 등록하지 않는다(임의로 만들지 않음).
+- 블루블랙 4종: 길고 좁은 타원(South Sudanese) · 둥글고 풍성한 볼(Ghanaian) · 하트형(Senegalese) · 각진 사각(Congolese). 시험 8개 중 2번(Ghanaian, 극한 고스 블랙립)만 제외했고 같은 얼굴형 6번이 통과해 4종 모두 등록. 피부 문구는 기존 블루블랙(`THE ABSOLUTE DARKEST BLACK SKIN ON EARTH ...`)을 그대로 쓴다.
+- 백인 4종: 북유럽 부드러운 얼굴(Scandinavian) · 영국·아일랜드(Irish, 주근깨) · 동유럽(Polish, 넓은 얼굴·각진 턱) · 남유럽(Italian, 강한 코·깊은 눈). 기존 Era 백인 얼굴은 모두 "높은 광대+가는 직선 코+또렷한 턱"이라 이와 겹치지 않는 형태만 골랐다. 사용자 채택: 동유럽(Polish)·남유럽(Italian) 및 눈처럼 하얀 피부 시험(PaleWhiteFace_6)에서 2·3·4번(켈트 2·북유럽 1·코갸루/강남언니/홍콩풍). 1·5·6번(뱀파이어 다크·비주얼계 블랙립)은 시험하지 않음.
+- 정의 파일: `master/defs_faceshape.json`(이름·피부·얼굴 특징·로컬 스타일), `mdefs.py`에 `ETHS += ...`·`BLACK` 집합 추가, `mrecipes.py`의 흑인 헤어·밝은 메이크업 제외 조건을 `D.BLACK` 기준으로 변경.
+- **표정 "멍한 순수"** 등록: `둥글게 뜬 눈, 초점이 약간 풀린 시선, 살짝 벌린 입, 갸웃한 고개`(영문 `round eyes opened wide and a little unfocused, brows softly raised, lips slightly parted, head tilted slightly to one side, an innocent, blank, wide-eyed expression`). `cjk_face_lib.py`의 EXPR와 `gen_facesculpt.py`의 EX(아이돌·20대)에 추가. 몽환적인(시선이 카메라 옆으로 흐름)·놀란(O자 입, 흰자 노출)과 달라 별도로 둠. **Master Mix 얼굴 문장은 "calm, composed expression" 고정이라 이 표정은 Irezumi Pool 번들에 들어가지 않는다.**
+
+### 77-3. 이레즈미 틀 시험 결과 (등록 전)
+- Master Mix 틀(환경 배경 랜덤, 솔로~퀸텟 10개): 1회차 성공 3개, 3차 안에 8개 안팎(3번 판정 모호, 6·10번 실패). 환경 배경이 원인으로 추정(핸드오프 18장의 검정 배경 79% vs 환경 20% 기록과 일치).
+- 같은 틀에 **순수 검정 배경 고정**(`MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient.`)을 넣은 시험: Core 19 체형 5개(1차 3·3차 1·실패 1[쿼르텟]), 전체 체형 5개(1차 3·2차 1·실패 1[쿼르텟]) → **1차 6/10**. 쿼르텟을 "성공한 문양 18종"으로 제한한 4개는 4/4가 3차 안에 성공.
+- 이 틀은 전원 이레즈미 장면을 만들 때 `pick_kinds`를 `["irezumi"]*n`으로 바꿔야 한다(기본은 인물마다 트랙이 달라야 해서 무한 루프).
+
+### 77-4. 번들 Irezumi Pool Formula 300 (등록 완료)
+- 카테고리 `🏺 Living Artifact · Irezumi Pool Formula`, 키 `la_irezumi2_{solo|duo|trio|quartet|quintet}_NNN`. 솔로 70·듀오 60·트리오 60·쿼르텟 60·퀸텟 50 = 300(6~10인 제외). 솔로~트리오는 문양 43종 전체, 쿼르텟·퀸텟은 검증된 18종(`Talavera, peony, orchid, lotus pond, pine and crane, kitsune fox, Petrykivka, seigaiha wave, Madhubani peacock, great wave, snake and peony, shishi lion-dog, alebrije, bamboo forest, koi waterfall climb, dragon phoenix, gold spiral mosaic, hannya mask`). 체형은 Core Body 19(58-3), 인종 18종, 나머지 축 전부 기본 랜덤, 한 장면 안 문양 중복 없음. 제목은 `이레즈미 풀 {인원} #번호 · 체형 · 문양 · (솔로만 포즈) · 검정 배경 · 메이크업` 형식(최대 101자, 긴 것은 "외 N").
+- **번들 개정 이력**(백업 `la_irezumi2_300_bundle.v1~v4.json`): v1 원본 → v2 같은 계열 문양 겹침 13개 교체 → v3 **팔 가림 포즈 85개 교체**(아래 교훈) → v4 듀오 나이 차이 10살 초과 29개 교체 → 최종 **쿼르텟 037을 시험에서 3차 성공한 v1 원본으로 복원**(시험에서 성공한 프롬프트 14개 중 13개는 이미 최종본과 동일). 최종 파일 `la_irezumi2_300_bundle.json`.
+- 확인 샘플 결과: 처음 6개(1차 4·3차 1·실패 1[듀오 015]) → 교체분 4개(1·2번 실패[듀오 015, 쿼르텟 037·얼굴 감싸기 포즈 포함]·3번 1차·4번 2차) → 포즈 교체분 5개(듀오 1개 실패, 트리오·쿼르텟 2·퀸텟 4개 1차) → 듀오 4개(2/4 1차) → 나이 차이 교체 듀오 4개(실패 1·2차 2·3차 1). **듀오는 이 틀에서 케바케**(11번 시험 1차 3, 3차 안 약 70%)이고 나이 차이 가설은 입증되지 않았지만 해롭지 않아 유지. 트리오 이상은 안정적(교체 후 쿼르텟 2/2 1차, 퀸텟 3/3 성공).
+- 등록: `patch_la_irezumi2_1_json.py` → 메타 `categories added=1, keys added=300` → commit `26fc61d4`(push `f8f80b64..26fc61d4`). 레포 루트의 핸드오프 v6.82도 같은 커밋에 포함됐다. 합계는 이전 합계 + 300(실측 `(Get-ChildItem presets\la_*.json).Count`로 확인).
+
+### 77-5. 교훈
+- **Core Body 19를 놓쳤다**: 한글 "코어 19"로만 핸드오프를 검색해 58-3의 영문 "Core Body 19" 확정 기록을 못 찾고 "그런 묶음 없다"고 잘못 답했다. 용어는 영문·한글 둘 다 검색한다.
+- **포즈 필터 누락**: 새 생성기(`gen_irezumi2_bundle.py`)에 팔이 가슴·얼굴을 가리는 포즈(`arms crossed under her bust`, `framing the face/her own face`) 제외를 넣지 않았다(코어 블렌드 생성기에는 있었음). 번들 300개 중 105개 항목에 해당 포즈가 있어 85개를 교체했다. 새 번들 생성기를 만들 때 이 필터를 첫 단계에 넣는다.
+- **시험에서 성공한 프롬프트는 시험하지 않은 수정본보다 우선**(사용자 지적): 수정할 때 이미 검증된 항목이 바뀌는지 먼저 대조한다.
+- 같은 계열 문양(용·용봉황, 모란·뱀과 모란, 큰 물결·세이가이하)이 한 장면에 겹치는 것을 피하는 검사를 추가했으나, 실제로는 겹친 장면도 성공하는 경우가 있어(쿼르텟 037 원본) 원인으로 단정하지 않는다.
+
+### 77-6. 열린 과제
+- 앱에서 신규 카테고리 1개·프리셋 300개 표시 확인, 이레즈미 풀 번들 티어 미부여.
+- 새 문양 17종의 6~10인 시험 미실시(번들은 1~5인만), 듀오 약세 후속 개선 여부.
+- 신규 얼굴형 8종은 Master Mix 인종 축에만 반영(기존 번들·Face Sculpt에는 미반영), "멍한 순수" 표정 번들 반영은 미정. 블루블랙 컬러팝/화이트 골드 × 얼굴형 4종(8개) 샘플과 `LumineX_BlueBlackFace_4.md`에 대한 사용자 의견("메이크업은 괜찮은 것 같은데....")은 미해결.
+- 이전 열린 과제 유지: Era 앱 확인 70개, 남성 시대 아이콘, 인도·중동·동남아 시대 아이콘, 76장 열린 과제.
+- 새 문양 조사는 보류(후보 43개 중 17개 채택, 통과율 약 40%, 실패 유형 확인됨).
+
+### 77-7. 파일 (outputs)
+- `la_irezumi2_300_bundle.json`·`.v1~v4.json`, `patch_la_irezumi2_1_json.py`, 생성기 `gen_irezumi2_bundle.py`(+ 교체 스크립트 `gen_irezumi2_fix.py`·`fix2`·`fix3`), 샘플 생성기 `mk_irezumi_reg_1to5.py`·`mk_irezumi_studio5.py`·`mk_irezumi_studio_allbody5.py`·`mk_irezumi_quartet4.py`, 수정한 정의 파일 `mdefs.py`·`mrecipes.py`·`defs_faceshape.json`·`gen_fix_ire_uv_6to10.py`·`irezumi_new17.json`, 샘플 md(`LumineX_IrezumiReg_1to5_10.md`·`IrezumiStudio_5`·`IrezumiStudio_AllBody_5`·`IrezumiStudio_Quartet_4`·`IrezumiPool_Sample_6`·`Fix_4`·`PoseFix_5`·`Duo_4`·`DuoAge_4`).
+
+## 78장. 성별 교차(MF · FM) 시험 — 이레즈미와 바디페인팅 (v6.84, 2026-10-17)
+
+> 이 장은 **시험 기록**이다. 등록·번들은 만들지 않았다(합계는 77장 등록 이후 그대로).
+
+### 78-1. 용어
+- **F** 여성 얼굴+여성 체형 / **MF** 남성 얼굴+여성 체형 / **FM** 여성 얼굴+남성 체형 / **M** 남성 얼굴+남성 체형. FM은 이번에 처음 시험했다(이전 혼합 성별 작업은 F·MF·M만).
+- 사용자 기준: 성별 읽힘을 보는 **테스트 샘플은 정면 포즈·정면 앵글로** 준다("몸을 틀면 남성 몸인지 여성 몸인지 알 수 없다"). 실제 번들은 포즈가 랜덤이라 감수한다.
+
+### 78-2. 이레즈미 틀 시험 (MF · M · FM)
+- 검정 배경, 솔로~트리오 8개(`LumineX_IrezumiMixGender_8.md`): MF 솔로 3개 = 1차 1·여성 얼굴로 나옴 1·실패 1 / M 솔로 2개 = 모두 2차 / 혼합 트리오(F+MF+M) 3개 = 실패 1·1차 1·2차 1.
+- 블루블랙 제외 MF 솔로 5개(검정 배경): 2회차·3회차(여성 얼굴)·실패·1회차·3회차 → 피부색은 원인이 아님.
+- 환경 배경 MF 솔로 5개: 1차 2·2차 1·생성 실패 2 → 검정 배경보다 낫지만 바디페인팅(야외 5/5)보다 약함.
+- FM 이레즈미(환경 배경, 정면 포즈·정면 앵글 5개, 체형 클래식 머슬 3·대형 헤비 1·파워리프터 1): **성공 2(클래식 머슬 2) · 실패 3**. 부피 큰 체형 2개 모두 실패했으나 표본이 적다.
+- 결론: **이레즈미 틀에서는 성별 교차(MF·FM)가 약하다**(굵은 외곽선과 전신 문양이 성별 단서를 흐리는 것으로 추정, 미확정). 이레즈미는 F·M까지만 쓰는 쪽이 안전. M 솔로는 2개뿐이라 판정 보류.
+
+### 78-3. FM 바디페인팅 솔로 (정면 5개씩)
+- 첫 판(포즈·체형·신발을 내가 지정한 야외 5개): 4/5 1차, 1번은 여성 체형으로 나옴. **내가 샘플의 포즈·체형·신발을 직접 지정한 실수**(샘플도 기본 랜덤이라는 기준 위반) → 정면 포즈 4종 + 체형·신발 랜덤으로 다시 뽑음 → **5/5 1차**.
+- 강화판: 체형 문장을 "남성의 몸"(`the body of ...`)으로 시작하고 얼굴만 "아름다운 여성의 얼굴"로 말하며, 체형·페인팅·포즈 문장의 `her/woman`을 `the`로 중립화(문장 추가 없음) → **5/5 1차**(피트니스 모델 3·맨즈 피지크·V자 보디빌더). 원 문장은 `a woman with a beautiful feminine face on an entirely male-proportioned body`였다.
+- 생성기: `mk_fm_paint5.py`·`mk_fm_paint_front5.py`·`mk_fm_paint_front5b.py`. 샘플 md `LumineX_FM_BodyPaint_Outdoor5_40in.md`·`Front5.md`·`Front5b.md`.
+- **성기 표현에 관한 문구는 프롬프트에 넣지 않았고 그 부위를 판정 기준으로 삼거나 그에 맞춰 문구를 조정하지 않는다.** 판정은 얼굴이 여성으로 읽히는지, 체형이 남성 체형으로 읽히는지.
+
+### 78-4. 혼합 장면 시험 (바디페인팅, 야외, 중립 FM 문장)
+| 조합 | 샘플 | 결과 |
+|---|---|---|
+| 혼합 6개(F+FM, MF+FM, FM+M, F+MF+FM, MF+FM+M, FM+M+F) | 포즈 랜덤 | 1차 5·실패 1(F+FM 듀오), FM 체형이 뚜렷한 것 2, 애매 3 |
+| MF+FM 듀오 5 (FM 체형 근육형 3종) | 포즈 랜덤 | 4/5 맞음, 1번 FM이 여성 체형, 3번 3차(맨살 많음) |
+| F+FM 듀오 5 (정면 포즈) | 정면 | **5/5** |
+| FM+M 듀오 5 (정면 포즈) | 정면 | **2/5** (1·2·4번 FM이 여성 체형) |
+| FM+FM 듀오 2 | 정면 | 생성은 2~3회차에 나왔으나 2장이 FM+FF, 4회차에 FM+FM 1장 |
+| FM+MF+FM 트리오 2 / MF+FM+MF 트리오 2 | 정면 | 4/4 의도대로(생성 회차 1·4·2·1) |
+- 해석(추정, 표본 작음): **FM은 같은 장면에 "여성 얼굴+여성 체형(F·MF)"이 있으면 남성 체형이 유지**되고, **남성(M)이나 다른 FM과 함께면 여성 체형으로 돌아가는 경향**이 있다. 얼굴 성별 기준으로 몸 성별이 정해지는 쪽으로 기우는 것으로 보인다. FM+남성·FM+FM 듀오는 번들에서 빼는 것이 안전.
+- 이전 혼합 성별 작업(59장, MF+MF 듀오·MF+MF+MF 트리오, 야외 40인치 부츠 틀)은 4/4 성공(1차 3·2차 1)이었다.
+- 조명 푸른 황혼이 5개 중 4개로 나온 판이 있었으나 그 판은 5/5 성공이라 조명 영향은 확인되지 않았다.
+
+### 78-5. 코드 문제와 정정
+- **신발 종류 표 문제**: `build(n, 43)`의 `CLS[(n, 43)]`가 한 번 실행에서 솔로 5개에 같은 값 하나만 쓰였다. 앞선 이레즈미 MF·FM 샘플(검정·환경 배경)이 전부 스틸레토였던 것은 우연이 아니라 이 때문(내가 "우연"이라고 잘못 말함). 이후 샘플부터 샘플마다 `qr.choices(["stil","ballet","flat"],[33,9,18])`로 따로 뽑는다. **발레 클래스는 포즈가 고정**되므로(발끝 직립) 포즈를 고정하는 시험에서는 이 클래스가 걸리면 안 된다.
+- 이레즈미 환경 배경 FM 샘플 중간판(`LumineX_IrezumiFM_Env_5.md`·`_5b.md`)은 정면 고정 전이라 판정 불가여서 폐기하고 `LumineX_IrezumiFM_Env_Front5.md`로 대체.
+- 정면 앵글 고정: `D.ANGLE_W["small"] = (["base"], [100])`로 옆모습·3/4·로우·하이를 뺀다. 정면 포즈 6종은 `square to camera ...`, `full frontal wide stance ...`, `standing full height, both arms slightly spread ...`, `both hands on her hips, elbows out`, `hands on her hips in a powerful stance ...`, `both arms raised overhead`.
+- 혼합 장면 생성기: `mk_mixed_fm6.py`(FM 분기 추가), `mk_mf_fm_duo5.py`·`mk_f_fm_duo5.py`·`mk_fm_m_duo5.py`·`mk_fm_repeat6.py`. 샘플 md `LumineX_BodyPaint_MixedFM_6.md`·`MF_FM_Duo5`·`F_FM_Duo5`·`FM_M_Duo5`·`FMRepeat_6`. 이레즈미 쪽 생성기 `mk_irezumi_mixgender8.py`·`mk_irezumi_mf5.py`·`mk_irezumi_mf_env5.py`·`mk_irezumi_fm_front5.py`.
+
+### 78-6. 열린 과제
+- 성별 교차(FM 포함) 번들 여부 미정 — 등록 안은 사용자 지시 후. 쓸 수 있는 조합: 솔로 FM, F+FM, MF+FM 듀오, MF가 섞인 트리오. 뺄 조합: FM+남성, FM+FM.
+- 부피 큰 남성 체형(파워리프터·대형 헤비·스트롱맨) FM의 바디페인팅 정면 솔로 시험 미실시.
+- 이레즈미 M 솔로 표본 2개뿐. 이레즈미 틀에서 교차 조합이 약한 원인(굵은 외곽선 vs 전신 문양) 구분 미실시.
+- 이전 열린 과제 유지(77-6): 이레즈미 풀 앱 표시 확인·티어 미부여, 6~10인, 얼굴형 8종·"멍한 순수" 번들 반영 등.
+
+## 79장. Female Face Male Body Formula 100 (FM 바디페인팅) 시험·번들·등록 (v6.85, 2026-10-18)
+
+> 78장의 열린 과제(FM 번들 여부)를 이어서, 사용자가 "너가 제안해봐"로 맡긴 등록 안을 시험하고 **등록까지 완료**했다.
+
+### 79-1. 등록 안과 1차 샘플 6개 (`LumineX_FMBundle_Sample_6.md`)
+- 제안: `Female Face Male Body Formula 100` = 솔로 50·듀오 25(F+FM 13, MF+FM 12)·트리오 25(FM+MF+FM 9, MF+FM+MF 8, F+MF+FM 8), FM+남성·FM+FM 제외, 중립 FM 문장, 남성 체형 7종 풀(근육형 5종×3 + 파워리프터 + 대형 헤비), 나머지 축 전부 랜덤. 샘플은 정면 포즈 4종(`정면와이드스탠스`·`허리손`·`머리넘기기`·`걷는동작`)만 썼다.
+- 샘플 구성: 솔로 3(피트니스 모델·맨즈 피지크·머슬 모델), 듀오 F+FM(파워리프터), 듀오 MF+FM(피트니스 모델), 트리오 MF+FM+MF(대형 헤비).
+- 결과: 솔로 3개 모두 성공(1차 2·2차 1). **듀오 F+FM(파워리프터)은 3차에 F+FF로, 트리오(대형 헤비)는 MF+FF+MF로 FM이 여성 체형으로 뒤집힘**. 듀오 MF+FM(피트니스 모델)은 1차 성공.
+- 이 판에서 솔로 프레임(문장 길이 약 600단어)을 새로 구성했다: 혼합 장면과 같은 틀에 귀걸이 무게추·주얼리·네일 포함, `LEFT/RIGHT/CENTER` 라벨 제거.
+
+### 79-2. 확인 샘플 5개 (`LumineX_FMBundle_Check_5.md`)와 결론
+- 솔로 파워리프터(3차에 FF)·솔로 대형 헤비(1차에 FF) → **부피 큰 체형은 솔로에서도 FM이 안 된다**(이전 혼합 6장면의 파워리프터 장면도 애매였음 → 부피 큰 체형 FM은 총 5건 모두 약하거나 실패).
+- 듀오 F+FM(일반 체형)·트리오 FM+MF+FM(일반 체형) 성공. **트리오 MF+FM+MF는 MF+FM+MM**: FM은 유지됐으나 오른쪽 MF가 남성 체형으로 바뀜. 그 자리의 체형이 **아마조네스(운동형)**였으므로 원인으로 추정.
+- 결정(번들 한정): **FM 체형은 일반 5종**(V자 보디빌더·클래식 머슬·머슬 모델·맨즈 피지크·피트니스 모델)만, **MF 자리는 글래머형 10종**(`legendary bust`·`curved bust`·`siren bust hourglass`·`glamour hourglass`·`hourglass bombshell`·`black glamour`·`apex siren`·`violin hip hourglass`·`latina curves`·`Brazilian booty glam`)만. 파워리프터·대형 헤비·FM+M·FM+FM·F+MF+FM(혼합 세트에서 "가운데가 애매")은 제외. 이 제외는 이 번들에 한한 것이고 일반 규칙이 아니다.
+- 트리오 구성 비율 조정: FM+MF+FM 15·MF+FM+MF 10(어긋남이 있었던 MF+FM+MF 비중 축소).
+
+### 79-3. 번들 `la_femalefacemale_100_bundle.json` (등록 완료)
+- 카테고리 `🏺 Living Artifact · Female Face Male Body Formula`, 키 `la_femalefacemale_{solo 001~050, duo 001~025, trio 001~025}`, `meta.format="female-face-male-body"`, `meta.kinds`·`meta.persons[].{kind,body,pose}`·`meta.lighting`·`meta.background` 기록. 제목: `Female Face Male Body {Solo|Duo|Trio} #NNN · 여얼굴+남체형 {체형}·{메이크업} / ...`(103자 초과 시 메이크업→체형 표기→번호만으로 축소).
+- 구성: 솔로 FM 50 / 듀오 F+FM 13·MF+FM 12(번호별 구성은 섞었고, 한 장면 안에서는 F·MF가 왼쪽·FM이 오른쪽으로 고정) / 트리오 FM+MF+FM 15·MF+FM+MF 10. 프롬프트 평균 솔로 628·듀오 1,063·트리오 1,500단어.
+- 축: FM 체형 일반 5종 정확히 23명씩, MF 체형 글래머 10종 4~5명씩, 포즈 — 솔로는 `POSE_ALL` 18종(얼굴 감싸기 제외, 팔 가림 포즈 없음), 듀오·트리오는 그룹용 6종, 조명 6종(기본 햇빛 30·나머지 각 14), 배경 야외, 귀걸이 무게추·주얼리·네일·신발·메이크업·인종 모두 랜덤. 시드 20261744.
+- **중립화**: FM 블록의 `her` → `the`, 배경 문장의 `behind her`·`at her side`를 솔로는 `behind the figure`·`at the figure's side`, 다인은 `behind them`·`beside them`으로 교체. 최종 검사 `her/she/his/him/he/herself` 누출 0, 한글 혼입 0, 프롬프트 100개 모두 다름.
+- 생성기 `bk/mk_fmbundle_100.py`(= `mk_fmbundle_check5.py` + 번들 꼬리, `build2`와 `pickbody` 덱 사용), 샘플 생성기 `mk_fmbundle_samples6.py`·`mk_fmbundle_check5.py`. 패치 스크립트 `patch_la_femalefacemale_1_json.py`(`patch_la_malefacefemale_1_json.py`의 번들명 치환, 샌드박스에서 100개 생성 확인).
+
+### 79-4. 번들 샘플 시험
+- 번들에서 무작위로 뽑은 6개(`LumineX_FMBundle_Pick_6.md`, 솔로 2·듀오 2·트리오 2, 포즈는 번들 그대로): 1번 1차·2번 2차·3번 2차(뒷포즈라 판정 불가)·4·5·6번 성공 → **판정 가능 5개 모두 성공**.
+- 사용자 평: 어려운 프롬프트인 것을 감안하면 안정적.
+- MF를 글래머형으로 바꾼 뒤 MF+FM+MF 트리오 확인 2개(정면 포즈, `LumineX_FM_MFFMMF_Check_2.md`): **둘 다 1차 성공**. 이로써 번들의 모든 구성이 확인됨.
+
+### 79-5. 등록
+- 사용자가 집에서 `preset_builders\`에 `la_femalefacemale_100_bundle.json`·`patch_la_femalefacemale_1_json.py`를 넣고 실행: `patch_la_femalefacemale_1_json.py`(100개) → `patch_livingartifact_2_meta.py`(`Done. AST OK. categories added=1, keys added=100`, 백업 `presets_meta.py.bak_livingartifact`) → `(Get-ChildItem presets\la_*.json).Count` = **17690** → `git add presets preset_builders core/presets_meta.py` → 커밋(속성 줄 포함) → push **`26fc61d4..9c4b7ccb`**.
+- 직전 합계 17,590 + 100으로 추정(직전 합계는 확인 못 함). 앱에서 새 카테고리 표시는 미확인.
+
+### 79-6. 교훈
+- **같은 문자열이 두 함수에 있을 때 `str.replace(..., 1)`은 첫 번째(옛 `build`)만 바꿔서** 배경 대명사 교체가 `build2`에 안 들어갔다. 누출 검사로 발견해 `rindex`로 `build2` 쪽을 고침. 수정 후에는 반드시 누출·중복 검사를 다시 돌린다.
+- 성별 읽힘 시험 결과를 볼 때 **"1차에 생성됐다"와 "의도한 구성으로 나왔다"는 다르다**(6번 MF+FF+MF, 5번 MF+FM+MM). 구성이 어긋나면 실패로 센다.
+- 구성원 하나의 체형이 구성 전체를 흔든다: 부피 큰 FM 체형은 FM을 여성으로, 운동형 MF 체형은 MF를 남성으로 되돌린다. 교차 구성의 체형 풀은 "그 성별 단서가 가장 뚜렷한 체형"으로 좁힌다.
+- 사용자가 이미 집이라고 말한 경우 다시 "집에서 하라"고 안내하지 않는다(이번에 잘못 말함).
+- 샘플은 번들 생성기로 그대로 뽑고, 성별 읽힘만 보는 시험에서만 정면 포즈로 바꾼다.
+
+### 79-7. 열린 과제
+- 앱에서 신규 카테고리 1개·프리셋 100개 표시 확인, 티어 미부여.
+- 부피 큰 남성 체형 FM(파워리프터·대형 헤비)은 바디페인팅 정면 솔로 시험까지 마쳤고 현 문장으로는 불가(78-6의 미실시 과제는 종결). 스트롱맨은 미시험, 다른 문장 구조 시험 여부 미정.
+- 듀오에서 FM을 왼쪽에 두는 순서는 시험하지 않음(번들은 F·MF가 왼쪽).
+- FM+남성·FM+FM·F+MF+FM 구성은 약해서 미등록. 이레즈미 틀의 성별 교차는 약세 확인(78장), 미등록.
+- **얼굴형 8종 반영 방침(사용자 결정, 2026-10-18)**: **이미 등록된 번들은 그대로 두고 앞으로 만드는 번들에만 반영**한다. 현재 8종(`master/defs_faceshape.json`: 블루블랙 4 + 백인 4)은 Master Mix 틀의 인종 축(10 → 18종)에만 들어 있다. **바디페인팅 계열 생성기**(`face_nohair(makeup)` → 국적, `REG_F`·`REG_W`·`MN_REG` 국적 표 사용: 오늘의 FM 번들·Mixed Gender·Male Face Female Body 등)는 이 축과 별개라 **아직 8종이 없다**. 다음에 이 계열 번들을 만들 때 `REG_F["BLACK"]`·`REG_F["EU"]`(및 남성용 `MN_REG`)에 8종을 넣는 어댑터를 먼저 만들고 **솔로 샘플로 시험한 뒤** 번들을 만든다(8종은 지역 메이크업과 짝이 없어 중립 메이크업으로 짝지어야 함). **"멍한 순수" 표정은 번들에 반영하지 않기로 했다**(사용자 결정, 2026-10-18; `cjk_face_lib.py`·`gen_facesculpt.py`의 정의는 그대로 두되 새 번들에 넣지 않는다).
+- 이전 열린 과제 유지(78-6·77-6).
+
+## 80장. 소재 마이크로비키니(Material Micro Bikini) 시험 · 보류 시험 기록 (v6.86, 2026-10-18)
+
+> 79장 이후 같은 날의 시험 전부. **번들은 만들지 않았다**(사용자가 만들라고 할 때만). 결과는 모두 사용자가 번호별 1차/2차/3차/실패로만 알려준 것이다.
+
+### 80-1. 보류·종결 시험 (79장 이후 이월 기록)
+- **반신 좌우 성별 분할**: 8개 중 2개만 성공(2/8). 눈 광장 배경·매끈한 남성 체형 가설은 2×2 확인으로 반증. 보류.
+- **상하 분할**(상체 남/하체 여 2, 상체 여/하체 남 2): 생성은 잘 되나 기존 체형과 특이점이 별로 없다고 판단. 보류.
+- **중성 얼굴**(여성/남성 체형 각 1): "어디서 본 듯한 예쁜 얼굴"로 읽혀 변별력이 없다고 판단. 폐기.
+- **3축(바디페인팅·소재·의상) 추가 아이디어 검토 후 미시험 항목**: 대기 효과 옵션, 소재 축 FM, 얼굴 축 정형화. (소재로 만든 옷·환경 일체는 이번에 시험.)
+- 카테고리 지도·`la_` 접두어 목록(영문·한글) 파일 작성: `LumineX_CategoryMap_2026-10-18.md`·`LumineX_la_prefix_list_*`.
+
+### 80-2. 페이스 스왑 쌍 (MF+FM 듀오, `LumineX_FaceSwap_2.md`)
+- 구성: LEFT 남성 얼굴+여성 체형(MF), RIGHT 여성 얼굴+남성 체형(FM). **헤어 스타일·색, 귀걸이, 주얼리, 네일, 신발, 페인팅 문양, 포즈를 같게 맞춰** 얼굴·몸의 성별만 서로 바뀐 쌍둥이. 얼굴 생김새·메이크업·피부색·체형은 각자 랜덤. 정면 포즈 4종만 사용.
+- 결과: **2/2 1차 성공**. 사용자 평: "재미있는 변주 정도". 번들 미제작.
+- 생성기 `bk/mk_faceswap2.py`(`person` 래퍼가 MF의 줄을 FM에 복사, `POSE_GRP`를 MF가 고른 포즈로 덮어써 두 사람 포즈를 일치). 처음 두 사람 포즈가 달라 assert가 실패했던 것을 `POSE_GRP[:] = [pk]`로 수정.
+
+### 80-3. 얼음 가운 · 환경 일체 바디페인팅 (솔로 샘플 각 1개)
+- 얼음 가운(`LumineX_IceGown_1.md`): 코스튬 생성기 `cost_pool` 틀에 항목 추가(불투명 서리 얼음 컵+마이크로 비키니 하의+투명 얼음 가운 자락+얼음 결정 칼라). 사용자 평: **얼음 팬티·브라가 인상적**, 얼음 브라는 원형으로 생성. 이 평가가 소재 마이크로비키니 시험의 계기.
+- 환경 일체(`LumineX_EnvMerge_1.md`, 이슬람 타일 벽에 같은 타일 문양을 몸에 이어 칠함, 서 있는 전신): 결과 미보고. 기존 `merge_*` 21종은 누운 탑다운 구도였다(`build_merge_bodypaint_presets.py`).
+
+### 80-4. 소재 마이크로비키니 — 기본 구성과 소재 풀
+- 생성기 계열: 코스튬 생성기(`bk/mk_costume_bundle.py` 앞부분 + `mk_cloth_bundle.py`)의 `gen(entries, bodyfns, bgs)`. 항목은 `[신발·네일용 소재 문구, 의상 문장]`. 여성 얼굴+여성 체형만 입히고 하의는 항상 끈 달린 마이크로 비키니.
+- **확정 조건**: 불투명, 소재별로 구체적인 컵 모양(원형 컵은 피함), **끈 있음**, 주얼리 포함, 신발·네일은 같은 소재 색, 실제 피부 보강(80-7).
+- **소재 확정(솔로 시험)**:
+  - 단단한 12종: 유리(3차, 원형 컵)·수정·도자기·조개껍질·옥(불투명 연꽃잎으로 수정 후 1차)·대리석·호박·흑요석·초콜릿·월넛(2차)·에보니·로즈우드. 월넛은 체형 3종 변경 시험도 3/3 1차. 나무 종류 3종(에보니·로즈우드·메이플) 3/3.
+  - 금속 8종: 크롬·은(2차)·청동·블랙 아이언·티타늄 1차. **금·구리·로즈골드는 매끈한 질감이 천·주얼리로 읽혀 금 "의상으로 표현", 구리·로즈골드 실패** → 질감 강화(금 필리그리, 구리 두드린 자국, 로즈골드 엠보싱)와 **주얼리를 은·진주로 교체**하니 3/3 성공(1차 1·2차 2).
+  - 깃털·나뭇잎·타일: 80-6.
+  - 제외: **산호**(가지 엉킨 울퉁불퉁 컵, 실패).
+- 통계(이번 날 솔로 31개): 1차 21(68%), 2차까지 27(87%), 최종 성공 28/31.
+- 옥 첫 실패 원인은 원형 컵+반투명 중 어느 쪽인지 가르지 못했고, 둘 다 바꿔서 해결.
+- **끈 없는 구성은 전부 실패**: 옥 끈 없이 붙임(주얼리 있음·없음 모두), 도자기·금속 패치형, 패스티(유두·유륜만 덮는 작은 컵, 호박·대리석 2개). 주얼리는 끈 있는 구성에서 빼도 성공(도자기·금속 2개 1차) → **있어도 없어도 되며 규칙대로 포함**.
+
+### 80-5. 상의 방식 (확정 5 / 접은 것)
+- **컵**(기본). **밴도**(손가락 2개 높이 띠, 은·청동·티타늄 3/3 성공). **벨트**(가슴 벨트 손가락 2개 높이, 중앙 버클, 크롬·청동·블랙 아이언 3/3 1차).
+- **슬링**(팬티에서 이어진 끈이 배를 올라와 가슴 위에서 넓어져 유두·유륜까지 불투명하게 덮고 목 뒤로 넘어감, 컵·별도 상의 없음): 금속(크롬·은·청동) 1번 실패·2번 3차·3번 2차, 천(블랙 새틴·화이트 라이크라·레드 새틴) 3차·1차·1차. **이미지는 금속이 더 좋아 보이나 안정성은 천이 높다**(금속 1차 0/3).
+- **크로스 랩**(띠 두 줄이 가슴 위에서 X): 넓은 띠 — 블랙 새틴 1차(너무 넓음)·청동 실패. 좁은 띠(손가락 2개) — 천·은 모두 실패. **가림 문장을 "covering only what it must, leaving the curve of her bust visible"로 바꾸자 천 1차 성공, 은은 실패** → 크로스 랩은 **천·가죽만**, 금속 제외.
+- **가림 문장 통일 규칙**: "유두·유륜만 덮고 나머지는 드러난다" 계열(패스티, 좁은 크로스 랩)은 실패. 앞으로 "covering only what it must, leaving the curve of her bust visible above and below"로 통일. 유두·유륜 덮음을 명시하는 건 슬링·재킷처럼 면이 충분한 구조에서만.
+- **하네스**(가운데 링+스트랩): 크롬 2차·블랙 레더 1차 성공이나 슬링·밴도와 비슷해 **미채택**.
+- **재킷류**: 오픈 재킷(처음에 안쪽에 밴도를 넣었으나 사용자 의도는 "브라·밴도·끈 없이 재킷이 가림"이라 수정), 재킷 단독 상의, 상단 오픈·하단 클로즈(코르셋 형태라 비선호), 짧은 재킷 상단 클로즈·아래 가슴 노출, 여성 정장 블레이저 노브라+마이크로 비키니. 재킷류는 결과 보고 없이 방향을 바꿨고 **블레이저 노브라는 "보류, 다음에"**.
+
+### 80-6. 깃털·조각 계열
+- 깃털 컵(큰 깃털 한 장씩) 성공이나 가슴을 거의 다 가림. 작은 깃털(손 폭 이하) 1차·3차 성공, 여전히 많이 가림. 가로 띠(손가락 2개 높이) 화이트 타조 1차·공작 실패(눈 무늬 복잡). 납작하고 볼륨 없는 깃털 띠 — 검정 까마귀 1차·핑크 3차 성공이나 천보다 많이 가림.
+- 꽃잎·비늘·나뭇잎·진주 구슬·타일 모자이크(여러 조각): 1차 4·2차 1 성공(나뭇잎 2차)이지만 **나뭇잎 외에는 가슴 전체를 덮음**. 한 조각으로 바꿔도 꽃잎(2차)·비늘(1차)·진주 띠(1차)는 가슴 전체를 덮고, **타일 한 장(1차)·나뭇잎 한 장·조개껍질·금속 판처럼 단단하고 납작한 한 조각만 컵 크기를 유지**한다.
+- 결론: 소재 풀에는 깃털(납작한 단색 띠)·나뭇잎·타일을 넣고, **꽃잎·비늘·진주는 "넓게 가리는 소재"로 가중치를 낮추거나 제외(사용자 결정 대기)**.
+
+### 80-7. 신발 · 이레즈미 포인트 타투 · 실제 피부
+- **신발**: 소재 비키니 장면은 **부츠 제외, 높이 40인치 유지**(사용자 결정). 종류 5가지(스트랩 샌들, 발목 스트랩 펌프스, 피프토 펌프스, 포인티드 펌프스, 글래디에이터 가는 스트랩 샌들). 원인 분리 4개(초콜릿·대리석 × [허벅지 타투+일반 샌들 / 타투 없음+글래디에이터]) **모두 성공(1차 3·2차 1)** → 글래디에이터는 원인이 아니고, 초콜릿 타투 샘플 1번 실패는 케바케. 허벅지까지 올라오는 글래디에이터 2개는 2차 성공.
+- **이레즈미 포인트 타투**: 사람마다 **30% 랜덤**, 한 곳만(팔 슬리브·허벅지·골반 옆·어깨·종아리), **컬러 위주**(진한 피부는 컬러 100%, 밝은 피부는 컬러 70%·먹 30%), 비키니 소재와 같은 색계열 모티프는 회피. 모티프 10종(잉어·모란·용·한냐 가면·벚꽃 가지·큰 파도·호랑이·연꽃·봉황·뱀과 모란). 먹 타투 문장은 영어 모티프 이름만 쓴다(한글 누출을 고침). 타투 동반 샘플 대부분 성공.
+- **실제 피부 보강**(사용자 지적: 마네킹 같다): 피부 문단("Real photographic skin ... No smooth illustration finish, no plastic or mannequin sheen, no doll or statue look"), 사진 문장("A real photograph, not an illustration, not CGI, not a render ... 85mm lens, realistic photographic grain"), `goddess`→`woman`, "Extreme macro detail on the fabric texture"→"material texture" 교체. 시험 대리석·도자기 1차 2/2, 타투 동반 시 1차·2차로 성공률 영향 없음. 선호 반영: 프롬프트가 조금 길어져도 피부 표현은 허용.
+
+### 80-8. 다인(듀오·트리오) 시험과 템플릿 결함 수정
+- 사람마다 소재를 다르게 준 듀오 2개(유리+수정 1차, 대리석+옥 2차).
+- **다인 프롬프트 "All:" 줄에 바디페인팅 템플릿 잔재**("all N women's legs must show FULL BODY ART coverage from hip to ankle ... soles of the boots")가 남아 있던 것을 발견해 **일반 문장으로 교체**하고 `boots`→`shoes`로 바꿈. 이전 소재 듀오도 성공은 했으나 이 문장의 영향 가능성이 있었다.
+- 컵·밴도·벨트 혼합(금속은 상의 랜덤, 금속 외 소재는 컵) 듀오 2·트리오 2: 듀오 1번 3차, 나머지 1차 → **소재가 사람 사이에 섞이지 않음**.
+
+### 80-9. 파일
+- 생성기(`bk/`): `mk_matbikini6.py`·`mk_matbikini2_6.py`·`mk_woodbikini3.py`·`mk_walnut3.py`·`mk_matduo2.py`·`mk_mattattoo3.py`·`mk_split4.py`·`mk_realskin2.py`·`mk_realskintattoo2.py`·`mk_gladthigh2.py`·`mk_metals7.py`·`mk_metals2_6.py`·`mk_metalbelt3.py`·`mk_matmix4.py`(컵·밴도·벨트 혼합 다인, `variant()`·`real_multi()`·`tattoo_p()`)·`mk_sling3.py`·`mk_slingfab3.py`·`mk_openjacket*.py`·`mk_blazer2.py`·`mk_crossharness4.py`·`mk_crossnarrow2*.py`·`mk_feather2~4.py`·`mk_newmat5.py`·`mk_newmat2.py`·`mk_faceswap2.py`. 체인: `mk_costume_bundle.py` 앞부분 → `mk_matduo2.py`(소재 사전 `M`) → `mk_mattattoo3.py`(타투 `TT`, `AVOID`) → `mk_matmix4.py`.
+- 샘플 md: `LumineX_MatBikini_6`·`MatBikini2_6`·`WoodBikini_3`·`Walnut_3`·`MatDuo_2`·`MatMix_4`·`Metals_7`·`Metals2_6`·`MetalBelt_3`·`Sling_3`·`SlingFabric_3`·`CrossHarness_4`·`CrossNarrow_2`·`CrossNarrow2_2`·`Feather_2~4`·`NewMat_5`·`NewMat2_4` 등.
+
+### 80-10. 번들 후보 설정(요청 시 적용)
+- 인물: 여성 얼굴+여성 체형, 사람마다 소재 다름, 솔로~트리오(다인은 소재 섞임 없음 확인).
+- 소재 풀 약 23종(단단한 12·금속 8·깃털·나뭇잎·타일) + 꽃잎·비늘·진주(저가중 또는 제외), 상의 방식 컵·밴도·벨트·슬링(천 우선)·크로스 랩(천 한정), 금계열은 질감 강화+은·진주 주얼리, 신발 부츠 제외·40인치, 타투 30%, 실제 피부 보강, 가림 문장 통일.
+- 사용자 선호는 메모리에 반영됨(마네킹 느낌 싫음, 소재 비키니 신발·타투 규칙).
+
+### 80-11. 열린 과제
+- 소재 마이크로비키니 번들 설계(수량·비율)는 사용자 요청 대기. 꽃잎·비늘·진주 처리(가중치 낮춤/제외)는 사용자 결정 대기.
+- 얼음 가운 · 환경 일체 바디페인팅(이슬람 타일 벽) 결과 미보고. 페이스 스왑 번들 여부 미정.
+- 슬링 금속의 낮은 1차 성공률, 블레이저 노브라(보류), 재킷류 결과 보고 없음.
+- **미시험 상의 방식 후보(제안만 하고 시험 안 함)**: ① 코르셋·부스티에(몸통 위쪽을 단단한 판이 감쌈, 기존 의상 풀에 발코네트 코르셋 있음), ② 체인 커튼(목에 건 짧은 체인·구슬 줄이 늘어지고 판 하나로 가림, 주얼리와 겹쳐 읽힐 위험). 기존 의상 풀(`outfit_pool.json`)의 가슴 가림 계열 중 Bust 발코네트·Plunge·Cutout·Mesh는 소재 버전을 시험함(아래 80-12), Latex 보디수트는 미시험.
+- 소재 가운(옷 전체) 솔로 6개(`LumineX_MatGown_1.md`: 유리·수정·도자기·옥·대리석·은, 소재 비키니 + 엉덩이에서 떨어지는 앞이 열린 긴 자락 + 높은 칼라, `mk_matgown1.py`)를 시험한 뒤 **접음**(번호별 결과 미보고).
+- 아직 안 한 시험: 꽃잎·비늘·진주의 가림을 줄이는 다른 표현, 산호 매끈한 컵 재시험, 대기 효과 옵션, 소재 축 FM.
+- 이전 열린 과제 유지(79-7): 앱 표시 확인·티어 미부여, 얼굴형 8종 어댑터(앞으로 만드는 번들에만 반영), "멍한 순수"는 반영 안 함 등.
+
+### 80-12. 기존 의상 풀 가슴 가림 4종의 소재 버전 (`LumineX_ChestFam_1.md`, 솔로 각 1개, `mk_chestfam1.py`)
+- 형식은 소재 마이크로 비키니와 동일(실제 피부·샌들류 40인치·주얼리·타투 30%, 하의는 같은 소재 마이크로 비키니). 소재는 청동·티타늄·대리석·은으로 하나씩 배정.
+- **채택: 플런지 코르셋 (티타늄)** — 작은 판 컵 두 개 + 가는 체인 끈, 깊은 V 네크라인이 코르셋 아래 끝에서 닫히고 그 아래 밴드 없음. 소재 상의 방식 풀에 추가 후보(번들 설계 시 반영).
+- **제외: 발코네트 코르셋 브라 (청동)** — 처음엔 애매로 보류했으나, 가슴 아랫부분을 감싸는 형태라 일반 브라처럼 읽혀 변주가 안 된다는 이유로 제외.
+- **제외: 컷아웃 보디스 (대리석)**, **메시 탑 (은 체인메일)** — 버리기로 함. 컷아웃은 보디스가 배까지 내려오고, 메시는 하의 마이크로 비키니 규칙과 안 맞아 상의만 소재로 바꿨던 것.
+- 후속 시험(번호별 결과 미보고): `ChestFam_2`(체인 커튼 은·코르셋 부스티에 흑요석·라텍스 보디수트 크림슨), `ChestFam_3`(일반 천 버전: 리본 커튼 블랙 새틴·부스티에 레드 새틴·홀터 보디수트 탑 화이트 저지), `ChestFam_4/5`(홀터 탑·라텍스, 레전더리 바스트), `ChestFam_6`(일반 밴도탑), `ChestFam_7/8`(목에서 내려오는 끈 — 팬티까지 / 가슴에서 끝남), `ChestFam_9`(가슴 밑 밴드 + 가슴 가운데 끈 + 목 고리).
+- **결론: 위 후속 시험은 모두 접음(2026-10-18).** 목 끈 계열은 밴도의 변형(홀터 밴도)이거나 하네스·슬링과 겹쳐 새 방식으로 인정하지 않음. 소재 버전 상의 풀에는 플런지 코르셋(티타늄)만 추가.
+
+### 80-13. 소재 몸에 금·깨짐(속 소재 노출) + 가죽 신발 + 목 맨살 (`mk_crackbody1~3.py`, `mk_crackshoe1~3.py`)
+- 동기: 바디페인팅과 소재 몸은 구분이 어려우므로, 몸 자체가 재질임을 보여주려고 금·깨짐을 넣음("바디페인팅은 깨질 수 없다"). 기존 `la_woodstone2_600` 소재 몸 솔로 프롬프트(목부터 발목까지 재질, 얼굴·귀 실제 피부)에 `Cracks:` 줄을 `Footwear:` 앞에 삽입.
+- 규칙(사용자 확정): 금 1곳 + 깨진(chipped) 곳 1~2곳, **가슴은 제외**, 상체·하체에 나눠서(상1+하1 / 상2+하1 / 상1+하2). 깨진 자리에는 거친 속 소재가 보이게(대리석=거친 회백 돌 단면, 옥=무딘 회녹 돌, 타이거아이=무딘 황갈 섬유 돌, 나무=연한 속살 나무결). 금·깨짐은 몸에만, 얼굴은 그대로. 문구는 `cracked`·`chipped`만 쓰고 fracture·wound·blood류는 피함.
+- 신발: 소재 몸의 신발·부츠를 같은 재질로 하면 마네킹처럼 보일 수 있다는 사용자 의견으로 **실제 가죽 신발**(에나멜 펌프스·가죽 샌들·크림 펌프스, 부츠는 정강이를 가려 제외)로 교체. 네일은 재질 그대로.
+- 맨살 범위: **얼굴·귀·목(턱 아래 목 기둥)만 실제 피부, 나머지는 전부 재질**. 처음 "쇄골까지의 목은 맨살"이라고 쓰자 가슴·손목·발목까지 맨살로 샜고(`CrackShoe_2`), "신발만 실제" 문장도 손목·발목 누출 원인이었음 → 두 문장을 빼고 "어깨·가슴·팔·손·손목·다리·발목은 재질"로 명시한 `CrackShoe_3`이 **4개 모두 1차 성공**.
+- 남은 문제: 팔을 드는 포즈에서 팔과 겨드랑이 주변이 가끔 맨살로 나옴, 4번(로즈우드)은 가슴 윗부분까지 맨살로 나옴. 고치려면 팔 드는 포즈에만 "겨드랑이·안쪽 팔은 재질" 한 줄을 조건부로 넣는 방식이 후보(전 프롬프트에 보강 문장을 늘리지 않기 위해).
+- 팔 드는 포즈 시험(`CrackArm_1`: 겨드랑이·안쪽 팔 한 줄 / `CrackArm_2`: 손·손가락·손톱·겨드랑이 재질 문장 강화, `mk_crackarm1~2.py`): 양손 깍지(대리석)·머리 쓸기(타이거아이)는 성공했으나 한 손 머리 위(옥)는 겨드랑이·팔뚝·손이 맨살, 양손 깍지(로즈우드)는 손이 맨살로 나옴/애매. 문장을 늘려도 손 맨살이 안 잡혀서 **문장 추가는 중단**.
+- **최종 결정(사용자, 2026-10-18)**: 손이 머리 근처·위로 가는 포즈에서 손·겨드랑이가 맨살로 나오는 건 **이전처럼 케바케로 두고 포즈를 빼지 않음**(문장도 더 늘리지 않음). 소재 몸 포즈는 **손이 가슴 아래에 있는 자세를 다양하게 변주**하는 풀(`mk_crackpose1.py`의 15가지, `LumineX_CrackPose_1.md`)을 쓰고, 손이 머리 근처인 기존 포즈도 풀에 그대로 둠. 얼굴 감싸기·팔짱은 가슴 가림 포즈 제외 규칙대로 제외.
+- 마지막 시험: `CrackPose_1`(새 포즈 풀, 손 낮은 포즈)과 같은 4개를 금지 표현(NO·not·zero)을 긍정형으로 바꾼 `CrackPos_1`로도 뽑았으나(`mk_crackpos1.py`) 비교 결과는 확인하지 않음. 사용자가 "그냥 케바케로 하고 넘어가자, 한도 끝도 없을 듯"이라고 하여 **소재 몸 시험은 여기서 마무리**. 긍정형 문구 교체는 필요하면 번들 작성 시 선택 가능(기존 등록 문구 `NO dark background NO black void`, `nothing added to her face or ears`는 유지).
+- 소재 몸 확장 시험 `LumineX_CrackMat_1/2.md`(청자 도자기·코발트 유리·금박·녹청 청동, `mk_crackmat1/2.py`): 기존 돌 몸 프롬프트의 재질 문구만 교체(`swap()`), 금·깨짐·손 낮은 포즈·긍정형 문구·가죽 신발·얼굴/목만 맨살은 동일. 결과 미보고.
+- **규칙(사용자, 2026-10-18)**: **소재 축에는 배꼽 피어싱·배꼽 장식을 넣지 않는다**(배 쪽이 맨살로 나옴). 소재 몸 주얼리 풀(`gen_woodstone_*.py`의 `JW`)에서 `a gold belly chain with a small pendant at her navel` 항목을 뺐다(작업 폴더 생성기 9개). 등록된 소재 번들(`la_woodstone*`, `la_mixed*`, 트리오 등)에 같은 문구가 남아 있을 수 있어 확인·패치는 미실시. 바디페인팅·의상 축은 변경 없음.
+- **금박 제외(사용자, 2026-10-18)**: 금박은 맨살에 붙이는 표현이라 금·깨짐(찢어진 표현)을 넣지 않는다. 금·깨짐은 속이 있는 단단한 재질 몸(돌·나무·도자기·유리·청동)에만 쓴다. 금박 샘플 `CrackGold_1`(배꼽 단어 추가 시험)은 보류.
+- 아직 안 한 것: 트리오(페인팅+소재+의상) 적용, 번들 반영, 등록된 소재 번들의 배꼽 문구 확인.
+
+### 80-14. 축 믹스(페인팅+소재+의상) 듀오·트리오 시험 — 전부 1차 성공 (`LumineX_AxisMix_Crack_1/2.md`, `mk_axissample1/2.py`)
+- `mk_mixedaxis_bundle11.py`의 `build2()`(`rows = []` 앞부분 exec, `scratchpad/zx/glassface`에서 실행)로 뽑은 프롬프트의 **소재 인물 블록만 후처리**(`fix()`): `Body Art` 부정문 5종 긍정형 교체, 얼굴·귀·목만 맨살 + "배꼽이 있는 배·가슴·손·손목·다리·발목은 재질" 문장, `Cracks:` 줄(금 1곳+깨짐 1~2곳, 가슴 제외, 상·하체 분산, 속 소재 노출), 가죽 신발(펌프스·샌들, 남성은 가끔 컴뱃 부츠), 손이 낮은 포즈 풀, 배꼽 장식 없음. 속 소재는 돌/나무/도자기/유리/청동만 지원(그 외 신소재는 제외).
+- 의상 인물: 하의 마이크로 비키니 + 상의 마이크로 비키니·밴도류·플런지 코르셋 등, 발코네트·컷아웃·메시 제외. 의상 인물은 여+여 또는 남+남만. 바디페인팅 인물 변경 없음.
+- `Crack_1`(전원 여+여, 듀오 2·트리오 2) 1~4 성공. `Crack_2`(남여 혼합: 남+남 소재, 남얼굴+여체형 소재 포함, 듀오 2·트리오 2) 1~4 성공. 
+- 아직 안 한 것: 번들 반영(요청 시), 등록된 소재 번들의 배꼽 문구 확인, 핸드오프 레포 업로드(가끔).
+- **등록 완료(2026-10-18 집, commit `dab016a7`)**: Axis Mix 200개(`la_mixedaxis_{duo,trio}_*` 100 + `la_mixedaxis45_{quad,quint}_*` 100)를 새 소재 규칙으로 같은 키 덮어쓰기. 생성기 `bk/mk_mixedaxis_bundle12.py`·`mk_mixedaxis45_bundle2.py`(= `*_dd.py` + `bk/axisfix_lib.py`의 `axis_fix()` 후처리를 `build2` 뒤에 끼움; 소재 인물 블록만 바뀌고 나머지는 옛 번들과 동일함을 확인), 이전 JSON은 `outputs/prev_axiscrack/`. 소재 인물이 있는 167개(2·3인 69, 4·5인 98)가 바뀌었고 `Cracks:` 포함 파일 167개 실측, 나머지 33개는 소재 인물 없음/철근이라 그대로. 속 소재는 돌·나무·도자기·청동·용암암·호박·얼음까지 지원. 메타 등록 불필요, `la_` 합계 불변. 
+- 아직 안 한 것: 다른 소재 번들(`la_woodstone*`, `la_mixedstone/wood/mat` 등)의 같은 규칙 반영·배꼽 문구 점검, 핸드오프 레포 업로드.
+
+### 80-15. 소재 번들(몸이 석재·목재) 4종 1,040개에 새 소재 규칙 제자리 적용 (commit `982c06e5`)
+- 대상 `la_wood2_*`·`la_stone2_*`(300+300)·`la_wsmix_*`(240)·`la_mixedstone_*`·`la_mixedwood_*`(각 100). 스크립트 `preset_builders\patch_la_matrules_1.py`(번들 JSON 불필요, 레포의 현재 프롬프트를 읽어 제자리 수정, `Cracks:`가 이미 있으면 건너뜀, 재실행 안전). 규칙: 금 1+깨짐 1~2(가슴 제외·상하체 분산·속 소재 노출), 얼굴·귀·목만 맨살(나머지·배꼽 있는 배도 재질), 가죽 신발, 낮은 손 포즈, 배꼽 펜던트 벨리 체인 제거(다른 보석으로 교체), 몸 덮는 문장 긍정형, 그룹은 인물 줄 분리. 실행 결과 변경 1040·이미 0·실패 0, `Cracks:` 1040개·펜던트 문구 0개 실측. 생성기 `bk/axisfix_lib.py`(`axis_fix`, 축 믹스 줄 구조용)·`bk/legacyfix_lib.py`(`legacy_fix`, 옛 `#N:` 줄 구조용).
+- **주의(교훈)**: 처음엔 번들 JSON을 새로 만들어 같은 키로 덮어쓰려 했으나, 레포 프리셋에는 번들 이후 제자리 패치(신발 문구 C 840개 등)가 적용돼 있어 덮어쓰면 되돌려진다. 이미 제자리 패치가 들어간 키에는 번들 덮어쓰기 대신 제자리 스크립트를 쓴다. (축 믹스 200개는 번들 덮어쓰기로 등록했고 그 사이 별도 제자리 패치는 기록상 없음.) 번들 JSON 4개(`outputs/la_woodstone2_600_bundle.json` 등)는 새 규칙이 들어간 버전이며 레포 현재 상태와 신발 C 문구만 다르다. 원본은 `outputs/prev_axiscrack/`.
+- **시험 결과(전원 소재 그룹)**: `LumineX_MatBundle_Check_1~6.md`. 전원이 소재 몸인 그룹(듀오~트리오)은 손·발·팔·가슴 위가 맨살로 번지는 일이 흔하다. 대조군(등록된 기존 프롬프트 그대로, Check_6 1~4)도 같은 정도로 번졌고, 목 맨살 문장 제거(Check_5 1~4)·금·깨짐 제거(Check_5 5~8)·부정형 복원(Check_6 5~8)·줄 구조 분리(Check_4)로도 줄지 않았다 → 새 규칙이 맨살을 늘리는 증거 없음, 전원 소재 그룹의 원래 한계로 보고 케바케로 둔다. 축 믹스(소재 인물 1명 + 다른 축 인물)는 Crack_1/2에서 8/8 정상이었다. 
+- **정리 불필요(사용자 확인, 2026-10-18)**: `la_matmix`(Material Mix)·`la_personamix`는 58-1 축 정의상 **바디페인팅 축**(실제 몸 위에 얹음)이라 소재 축 규칙(배꼽 펜던트 제거·금·깨짐·가죽 신발·목만 맨살)의 대상이 아니다. 프롬프트 문장이 목재·석재 포뮬러와 같은 `fused directly` 틀이어도 분류는 개념 기준. `la_lightmix`·`la_mastermix`·`la_shoemix`·`la_extreme`·`la_kintsuliquid` 등 Material Mix 계열도 같다. 이번에 소재 규칙을 입힌 것은 몸 자체가 석재·목재인 `la_wood2_`·`la_stone2_`·`la_wsmix_`·`la_mixedstone_`·`la_mixedwood_`뿐. 남은 것: 핸드오프 레포 업로드(가끔).
+
+### 80-16. 전신 신부 헤나 3종 + 주조 금속 조각상 시험 (`LumineX_HennaCast_1.md`, `LumineX_CastMetal_2.md`, `mk_henna1.py`·`mk_cast1.py`·`mk_cast2.py`)
+- **헤나(바디페인팅 축) 3종 전부 생성 실패(사용자 보고 2026-10-18, 각 3번씩 시험해 한 번도 성공 못함)**: 라자스탄 인도식·아라비아 걸프식·수단/모로코 기하식. Core 솔로 3개의 Body Art 문단만 헤나로 교체(레이스 표현 제거, 문양 사이 맨살 노출, 말린 페이스트 능선 문장). 이전 헤나 실패(57장 Newmat7, 14장 표)에 이은 3번째 실패 → **전신 헤나는 접는다**(얼굴 이마 헤나는 그대로 가능).
+- **주조 금속 조각상 1차(소재 축, 새 소재 규칙 적용)**: 순금·로즈골드·은은 **팔·발 맨살** + 맨살에 금·깨짐이 표현됨(금은 여러 번 시험해도 동일), **흑은(산화 은)만 정상**. 원인 추정: 밝은 금·로즈골드는 살 색과 가깝고 반짝이는 은은 살 하이라이트처럼 읽힘(살 색에 가까운 목재 실패와 같은 패턴). 2차(`CastMetal_2`)는 몸을 어둡게 하고 모서리만 밝은 금속으로 빛나게 한 4종(흑금·앤티크 다크 골드·흑 로즈골드·건메탈 퓨터) — 결과 대기.
+- **주조 금속 2차 결과(사용자 보고)**: 1 흑금 = 양팔·허벅지 이하 무늬 미생성(실패), 2 앤티크 다크 골드 = 양손·양발 맨살, 3 흑 로즈골드 = 성공, 4 건메탈 퓨터 = 양손 맨살. 손·발만 샌 2·4번은 소재 몸 손·발 케바케 규칙에 해당 → **채택 후보: 흑은·흑 로즈골드·앤티크 다크 골드·건메탈 퓨터(어두운 금속 4종)**, 제외: 밝은 순금·로즈골드·은, 흑금. 결론: 살 색에 가깝거나 반짝여 살처럼 읽히는 금속은 팔·발이 맨살로 나오고, 몸 전체가 어두운 금속은 된다. 등록·풀 반영은 요청 대기.
+
+
+## 81장. Outfit Layer Formula 200 · 구속(페티쉬) 축 시험 기록 (v6.87, 2026-10-19)
+
+> 결과는 모두 사용자가 번호별 1차/2차/3차/생성 실패로만 알려준 것이다. **생성 실패 = 이미지가 아예 안 나오는 차단**(안전 필터, 확률적 — 재시도하면 통과하기도 함). 구조가 복잡해서 틀리는 것이 아니다.
+
+### 81-1. Outfit Layer Formula 200 — 등록 완료
+- 키 `la_outlayer_solo_001~200`, 카테고리 `🏺 Living Artifact · Outfit Layer Formula`(새 카테고리 1개). 등록: `patch_la_outlayer_1_json.py`(200개) → `patch_livingartifact_2_meta.py`(AST OK, **categories added=1, keys added=200**, backup `presets_meta.py.bak_livingartifact`) → git push `982c06e5..b4fec91d`. 합계 실측 `(Get-ChildItem presets\la_*.json).Count` = **17890**(2026-10-20 사용자 확인). `la_clothes_*` 495개(의상 400 번들 등록 확인, 나머지 95는 기존 파일), `la_cost*` 215개(코스튬 번들 등록 확인).
+- 확인 샘플 6개(`LumineX_OutLayer_confirm_6.md`): 1번 4차 성공, 2~6번 1차 성공. 구성: 슬링 Y, 지퍼 탑+미니, 허리 체인 하네스, 다리 타투/글러브 레이어, 비치/버킷햇, 옆끈 체인·진주 하의.
+- 생성기 `bk/mk_outlayer_bundle.py`(시드 20271201). 베이스는 `la_cloth_400_bundle.json`의 솔로(group_size==1) 중 포즈 필터 통과분 201개(BAD 포즈 = 팔짱·얼굴 감싸기·손 모으기·앉기·뒷모습 3/4·옆모습 제외, `soaked`·`floor-length` 제외). 베이스 소진 시 재사용. 체형이 베이스 풀을 따라 쏠림(legendary bust 32·curved bust 22 … USSBBW 1) — 균형 조정은 사용자 선택 대기.
+- **플랫폼**: 패밀리별 의상 대신 검증된 마이크로 비키니 계열로 통일 — 투 피스(65%: 스트링 트라이앵글·링 홀터·끈 레이스업 브라렛·랩 타이 탑 + 마이크로 하의), 지퍼 탑+마이크로 미니 15%, 슬링샷 20%(블랙 라텍스, V/Y/11자). 소재 8종(블랙 라텍스·체리 레드 PVC·버건디 벨벳·체인메일·골드 라메·샴페인 실크·화이트 레더·레드 새틴)을 신발·네일 소재와 함께 교체.
+- 제목 형식 `OutLayer 솔로 #NNN · 체형 · 의상 · 레이어 태그(최대 2) · 포즈 · 배경`(≤103자).
+
+### 81-2. 레이어 확률과 규칙 (실제 구현값)
+- 허리 40%(슬링샷 제외), 다리 30%, 팔 25%, 머리 장식 10%, 장식 요소 40%(그 안에서 1~2개), 레이어 그룹은 최대 3개. 하의 옆끈 골드 체인 10%·진주 10%.
+- **허리 4종**: 가죽 허리 하네스(두 벨트+세로 끈 4개, 이음마다 은 링, 배꼽을 감쌈), 체인 하네스(체인 허리·엉덩이 + 사선 격자 + 배꼽 위 체인 술), 레드 새틴 새시(허리 두 바퀴·왼쪽 엉덩이 큰 리본), 골드 허리 커프(힌지·앞 클래스프·거울 광택). 허리 레이어가 붙으면 주얼리의 허리 체인 제거, 포즈는 손이 허리·엉덩이에 닿는 것 제외. **폐기**: 어깨에 걸치는 겉옷(퍼 숄·케이프·재킷), 넓은 코르셋 벨트·언더버스트 코르셋 벨트.
+- **다리 7종**: 시어 심, 피쉬넷, 레드 라텍스 스타킹, 실버 글리터 시어, OTK 삭스, 파스텔 핑크 레그워머, 리본 감김. 구성 = 양다리 같음 35% / 양다리 다름 35% / 한쪽만+반대쪽 이레즈미 타투 15% / 한쪽만+반대쪽 바디 페인팅 15%. **시어·글리터는 문장에 해당 샘플의 실제 피부색을 넣어 몸과 이어지게**(`her {t} skin faintly visible…`), 진한 피부(블루블랙·딥 에보니·딥 브라운)에서는 시어 계열 제외, 피쉬넷·라텍스·OTK·레그워머·리본은 진한 피부도 사용.
+- **팔 7종**: 오페라 글러브, 라텍스 암슬리브, 레이스 소매, 핑거리스 글러브, 손목 커프, 피쉬넷 암슬리브, 팔뚝 밴드(투 피스에서만). 같은 구성비(30/40/15/15). 타투 = "irezumi tattoo … entire {side} arm from the shoulder to the wrist only … permanent ink in the skin, not paint on it", 바디 페인팅(흰/검정 레이스·골드 덩굴). 한 샘플에 타투·페인팅 줄은 최대 1줄(다리에서 썼으면 팔은 타투/페인팅 제외). 암 밴드/팔찌 주얼리(`bangles`, `armbands`)는 팔 레이어가 있으면 제거.
+- **머리 장식 11종**(낮은 비율): 페도라, 챙 넓은 크림 밀짚, 베레, 레드 새틴 리본 밴드, 파시네이터, 장미 화관, 보터, 초대형 비치햇, 체리 레드 PVC 버킷햇, 샴페인 실크 터번, 흰 야구 캡. **비치햇·버킷햇은 seaside·summer_beach·pool·harbor 배경에서만**. 실크 헤드스카프 제외.
+- **장식 요소**: 링 칼라(`a black leather collar with a small silver ring at the front, snug around her neck`), 참 앵클릿(다리 레이어와 함께는 제외), 바디 라인스톤(쇄골+배꼽 둘레, 허리 레이어와 함께는 제외), 바디 글리터, 칼라+긴 체인 직선(배꼽 작은 링에서 끝남)·사선(왼쪽 엉덩이 술). 칼라가 들어가면 주얼리의 choker·necklace·body chain 제거. **체인은 굵은 링크가 취지**(사용자 선호; 이번 번들의 허리·칼라 체인 문구는 `fine chain` 그대로여서 굵게 바꾸는 개정은 대기).
+- **슬링샷 3종**(블랙 라텍스만): V(앞 중앙에서 두 줄이 벌어져 가슴 위에서 넓은 밴드가 됨), Y(한 줄이 가슴 중앙에서 둘로 갈라짐; 기본 `Slingshot_Solo_5` 3번), 11자(명치 아래에서 둘로 갈라져 평행하게 올라감). 문구는 `bk/mk_slingshot5.py`·`mk_slingshot8.py`.
+- **기본값 변경(이번 번들부터)**: ① **배꼽 피어싱 필수·크게**(배꼽이 보이고 가려지지 않을 때). 코인 크기 골드 링+큰 타원 보석, 곡선 골드 바벨+큰 루비, 골드 후프+큰 진주, 은 링+큰 사파이어, 골드 링+에메랄드 물방울, 곡선 바벨+하트 핑크 보석 6종. 제외: 슬링샷 Y·11자, 지퍼 탑(슬라이더가 배꼽), 가죽/체인 허리 하네스(배꼽 프레임), 긴 드레스·캣슈트·구속복. ② **귀걸이 필수**: "nothing added to her face or ears" 삭제, 중대형 드롭 귀걸이 6종(혼합 금속, 줄은 금/은 등 + 무게추는 무쇠·금·주석·은·납 등 다양, 쇄골 위에서 끝남, 무쇠만 쓰지 않음). 이 두 가지는 전신 프롬프트에 피어싱 없음/귀 장식 없음이던 옛 결정을 대체.
+
+### 81-3. 의상 쪽 규칙 정리 (이번 세션 반영분)
+- 코스튬 풀 43개, 절개는 지퍼로 표현, 트임 비율 한 줄 80%·여러 줄 20%, 다리·팔 혼합 규칙. 하의는 슬릿 가능하면 슬릿. 상의는 배꼽까지 절개 기본(코스튬처럼 끝단이 가슴 아래면 제외). 가슴을 감싸는 상의는 지퍼 열림 고정.
+- 풀 후드 캣슈트는 보류, 와이드 팬츠 옆트임은 우선순위 낮음, `ArmArt_Solo_2` 결과는 미수신.
+- 이미 성공한 요소끼리 합치는 조합(슬링 비키니+다리 레이어)의 중복 확인 샘플은 보내지 않는다.
+
+### 81-4. 구속(페티쉬) 축 — 시험 전 과정과 확정 목록 (번들 미제작, "구속은 나중에")
+- 페티쉬 축은 일반 "몸이 드러나는" 레이어와 **별도 축**: 노출이 크지 않아도 구속력이 센 것(다리 사이 바 등)을 시험. 하네스보다 **칼라에서 나온 굵은 체인이 벽·기둥 링에 고정**되는 장면이 우선, 손목·발목 커프는 두껍고 튼튼하게. 체인은 굵은 링크.
+- **차단 패턴**: 구속 요소를 겹치거나(2개 이상 동시), 명시적 구속 표현("fastened ends to rings", "thick bar", "held", "legs apart", "holding")을 쓰면 차단률이 올라간다. "joined by …" 같은 단순 표현과 장면당 구속 1개는 통과. 프롬프트 길이·의상·체형·배경 최소화는 효과 없었음(체형을 안정적으로 바꿔도 동일).
+- **통과 문구**
+  - 목 칼라+굵은 체인: "She wears a black leather collar with a small silver ring at the front, snug around her neck, from which a heavy chain of chunky thick silver links runs in a long loose curve out to her left, ending at [large iron ring bolted into the concrete wall at shoulder height / heavy iron ring bolted to a thick bare-concrete pillar / large iron ring looped around a horizontal black iron pipe / hook on steel beam above / ring hooked around black iron bar / ring welded to thick black iron post]."
+  - 손목 바: "Her wrists wear [wide black leather cuffs with silver rings | thick, sturdy black leather cuffs as wide as her palm, riveted with steel studs, each with a heavy steel ring], joined by a polished steel bar between the two wrists, her hands as wide apart as her shoulders above her head [at hip height | behind her back]."
+  - 발목 바: "Her ankles wear wide black leather cuffs with silver rings, joined by a polished steel spreader bar between the two ankles."
+  - 볼&체인: "Her left ankle wears a wide black leather cuff with a silver ring, linked by a chain of thick silver links to a heavy black iron ball that rests on the concrete floor beside her foot."
+- **채택(성공)**: 
+  - 목(칼라+굵은 체인): 가로봉(서서 1차·무릎 꿇기 1차), 천장 고리 1차, 벽 어깨 높이 링 1차 / 벽 바닥 링(무릎) 1차, 기둥 어깨 링 2차 / 기둥 바닥 링(무릎) 1차, 철창·창살 1~2차, 세로 기둥(링 용접) 서서 1차·무릎 3차, 자세 칼라(posture collar), 칼라+바닥 리시 체인 1차. 후드·마스크 추가 가능(후드 2차, 안대 3차, 하프 마스크 1차).
+  - 손목: 천장 체인/훅, 가로봉, 세로 기둥 높은 링, 철창(서서); 손목 바 머리 위/엉덩이 높이/등 뒤(전부 통과, 두꺼운 커프 OK); 모노글러브, 구속복(무릎 꿇기 가능).
+  - 발목: 발목 바(일반), 호블 체인, 볼&체인, 발목→벽 체인(서서 3차), 발목→기둥 바닥 링(서서 1차).
+  - 몸 보조: 가슴 하네스, 레그 하네스+종아리 커프, 허벅지-허리 하네스. 무릎 꿇기는 목·모노글러브·자세 칼라·구속복에서 통과.
+- **제외**: 성 안드레아 십자, 로프, 무릎 바, 손목·발목을 벽 링에 고정하거나 무릎 꿇기 고정, 두 바에 V자 고정, 구속 2개 이상 결합, 두꺼운 발목 바, "fastened ends" 문장, 손목 바 "holding"(바를 손으로 쥐는 장면이 됨).
+- 미시험 소과제: 두꺼운 징 박힌 발목 커프+일반 바. 오픈 페이스 라텍스 후드·눈 마스크·하프 마스크 문구는 `mk_bondage*.py`, `mk_fetish1.py`.
+- 생성 파일: `LumineX_Bondage_Solo_1~20.md`, 빌더 `bk/mk_bondage1~20.py`(+ `patch12~20.py`).
+
+### 81-5. 생성기 구현 메모
+- 솔로 샘플 빌더 파이프라인: 베이스 솔로에서 정규식으로 `wearing (.+?)\. Pose:` 교체, Footwear `(?m)^(Footwear: .*?made of )[^,]+(, each with)`, Nails `(?m)^(Nails: .*? in )[^,.]+?( with a high polish)` 교체, Jewelry 줄은 항목으로 쪼개 재조립, 포즈 덮어쓰기 `Pose: .*? — most extreme`, 배경 `(?m)^Background: .*?(?= ONE woman only\.)`. 무릎 꿇기 변형은 `— most extreme …` 제거, 신발을 6인치 스틸레토로, "ONE woman standing." → "ONE woman."
+- 발생했던 오류와 수정: `..` 이중 마침표(`clause.rstrip('.')`), 체형 문장 정규식이 "in correct proportion"으로 끝나지 않는 체형에서 실패(헤어 절 lookahead로 일반화), 구속복(`full`) 분기에서 gear 누락, 소재 인덱스 `MAT[i%len(MAT)]`, 이번 번들 생성기는 후보 필터가 너무 좁아 후보 0개(`pumps`·`boot`·`thigh` 조건 제거로 201개 확보).
+- 파일: `la_outlayer_200_bundle.json`, `patch_la_outlayer_1_json.py`(= `patch_la_cloth_1_json.py` 복사, BUNDLES만 교체).
+
+### 81-6. 열린 과제
+- 구속 축 번들(요청 시): 위 채택 목록을 축 정의로 사용, 장면당 구속 1개(목 칼라+체인 앵커 우선), 서기/무릎 꿇기 변형.
+- Outfit Layer 개정 후보: 칼라·허리 체인을 굵은 링크로(현재 `fine chain`), 체형 균형.
+- 의상 400 번들·코스튬 번들은 등록 완료 확인(위 실측). 남은 등록 후보: 구속 축 번들, 소재 마이크로비키니 번들(80-10), 어두운 주조 금속 4종 풀 반영(80-16).
+- 핸드오프 md의 레포 업로드는 가끔만(큰 작업이 끝났을 때).
+
+
+## 82장. 소재 마이크로비키니 200 · Fetish Bondage 100 등록 · 구속 확장 시험 (v6.88, 2026-10-19~20)
+
+> 결과는 모두 사용자가 번호별 1차/2차/3차/생성 실패로만 알려준 것이다. **구속(페티쉬) 축은 성공률이 높지 않은 축**이라, 1차에 생성되는 프롬프트에서 구속이 조금씩 바뀌거나 일부 누락되는 것은 실패가 아니라 **변주**로 둔다(사용자 결정 2026-10-20). 실패 = 이미지가 아예 안 나오는 경우.
+
+### 82-1. 등록 현황
+- **Material Micro Bikini Formula 200**: `la_matbikini_{solo|duo|trio}_NNN`, 번들 `la_matbikini_200_bundle.json`, 카테고리 1개, 확인 샘플 6개 모두 1차 성공, `categories added=1, keys added=200`, commit `b03b529d`(이전 `b4fec91d`). 생성기 `bk/mk_matbikini_bundle.py`(`mk_matmix4.py` 앞부분 exec). 상의: 컵 45% · 밴드 15%(금속 5종+깃털 3색) · 벨트 15%(금속 5종) · 슬링 15%(천 80%) · 크로스랩 10%. 추가 재질: 나뭇잎·타일(단일 조각 컵)·깃털(까마귀/핑크/흰 타조).
+- **Fetish Bondage Formula 100**: `la_bondage_solo_001~100`, 번들 `la_bondage_100_bundle.json`, 카테고리 `🏺 Living Artifact · Fetish Bondage Formula`(1개), 비키니 기반, 확인 샘플 6개(1번 1차·2번 실패·3번 3차·4번 2차(바를 손으로 잡음)·5,6번 1차), `categories added=1, keys added=100`, commit `e25ad50c`. 생성기 `bk/mk_bondage_bundle.py`(시드 20271020).
+- **알려진 미수정 문제**: 위 구속 100개 중 서 있는 48개가 부츠(무릎 레이스업 / 발레 부츠)라 **발목 커프가 부츠에 가려진다**. 수정안(부츠→펌프스, 장면 문장 boots→shoes, 같은 키 덮어쓰기)은 사용자 결정 대기.
+- 파일 개수(사용자 실측): `la_*.json` 17,890(소재 마이크로비키니·구속 등록 전) → 계산값 18,190(미실측). 후드 번들 550 등록 후 계산값 18,740(미실측). `(Get-ChildItem presets\la_*.json).Count`로 재확인할 것.
+
+### 82-2. 구속 확장 시험(비키니 기반, 모두 미등록)
+- 레이어: OTK 삭스·레드 라텍스 스타킹·오페라 글러브는 통과, 피쉬넷+발목 바 실패, 가죽 리드줄 실패. 발목 로프 실패, 손목 로프 통과, 목 로프 3차 통과.
+- 발목 사이(바 대신): 스틸 바·체인 곡선·가운데 링에서 두 체인·가죽 끈·바닥 체인 통과, 로프 제외.
+- 손목 사이: 바·체인 곡선·로프·가죽 끈 통과, 가운데 링 체인(손이 링을 쥠)·등 뒤 체인 제외, 머리 위 체인 미보고.
+- 2개 이상 조합(목+손목, 목+발목, 손+발 쇠구슬 등): 대부분 실패(1,3번 3차 / 2,4번 실패 / 6번 1차), 손목 바·발목 바를 더한 8개는 7번 3차(손목 바 소실)만 통과. 결론: **비키니 기반에서는 구속 1개가 안정**.
+- 방독면(`LumineX_GasMask_1.md`) 결과는 보고되지 않음. 이후 사용자가 "캣슈트 스타일에서 성공했었다"고 해 후드 캣슈트 쪽으로 전환(83장).
+
+## 83장. 전체 후드 캣슈트 구속 시험 — 확정 문법 (v6.88, 2026-10-20)
+
+### 83-1. 기반과 핵심 발견
+- **최고 기반**: 눈·코·입만 뚫린 전체 후드 라텍스 캣슈트(앞 지퍼 배꼽까지, 가슴 완전히 덮음). 색은 블랙 라텍스·체리 레드 PVC·화이트 라텍스·에메랄드 라텍스 모두 통과. **방독면/바이저/호흡기 후드는 불안정**(방독면 후드는 캣슈트가 사라짐) → 전체 후드만 쓴다.
+- **비키니보다 성공률이 높다**: 몸을 덮으면 생성이 잘 됨(사용자 추측이 맞았음). 슈트 일체형 시험 5개 중 3개 1차(실패 2).
+- **코스튬 의상(훌라·전사·간호사 등)은 구속 1개로도 불안정**(CostumeBond_1 전부 실패, CostumeBond_2 3개 중 1개), 비키니는 구속 1개까지.
+- **솔로 전체 캣슈트는 구속 최대 4개까지 통과**하지만 4개째에서 손목 바가 사라진다. 손목 쪽은 바 대신 **가죽 끈·굵은 로프로 두 손목을 모아 묶기**가 통과(글러브·손목 바·손목 체인·미텐·스틸 클립은 제외).
+- **굵은 체인**(`a massive chain of enormous thick silver links, each link as thick as her wrist and as long as her hand`)은 모든 구성에서 통과. 칼라→발목 연결은 **두 체인이 만나는 가운데 링**에 이어야 성공. 발목은 체인이 정답(바는 맨다리에서 소실).
+- **맨다리 하의**(핫팬츠·플리츠 미니스커트·슬릿 펜슬 스커트): 목-벽 링 + 발목 체인/가죽 끈은 통과, 발목 바는 소실 → 맨다리는 구속 2개 이하.
+- **발목 중량**: 바닥 볼트 철 링, 모루, 배 닻, 쇠구슬 1~2개 통과. 부츠는 커프를 가려서 부츠 위로 커프를 채움.
+- **신발**: 펌프스·앵클 스트랩·스트래피·글래디에이터 샌들·레이스업 무릎 부츠·발레 부츠 모두 통과.
+- **목을 벽에 직접 고정**은 구속력이 너무 강해 실패(4개 중 3 실패·1개 2차). 사지를 벽에 직접 고정도 불안정(체인으로 벽에 연결하는 정도만 가능).
+
+### 83-2. 사물 장면(몸을 사물에 묶기)
+- **통과**: 신호등 기둥·가로등 기둥(+허리 벨트)·나무 의자·철제 사물함·항구 계선주·식당 롤링 셔터(1차), 철제 캐비닛·통나무 기둥·목조 격자 창틀·계단 난간(2~3차). 손목은 가죽 끈/로프로 모아 머리 위나 의자 등 뒤에 걸고 양 발목은 각자 굵은 체인으로 바닥 링에 연결.
+- **실패**: 방범창·봉 셔터·철제 사다리·X자 십자 프레임·마차 바퀴·감옥 철창·침대 기둥·석조 기둥·레일 기둥(창살/격자류와 큰 구조물). **단일 기둥형 사물 + 명확한 고정점 하나**가 규칙.
+
+### 83-3. 듀오
+- 구속 합쳐서 1개가 안정. 바는 듀오에서 실패. **안쪽 발목 체인/가죽 끈**, **각자 바깥 발목 바닥 링**, **목-목 체인**(칼라 링끼리)은 통과. "한 명 목-벽 + 다른 명 바닥 링"은 불안정해 제외. 벽에 체인은 걸리지만 목과 연결이 실패하는 경우 많음.
+- **추가 확정(2026-10-20)**: 가로등 하나에 두 사람의 칼라 체인을 같은 링에 연결(2차), 벤치에 나란히 앉아 안쪽 발목 체인(1차), **한 여성의 칼라 체인을 옆 여성이 손으로 잡고 있고 그녀도 구속(손목 묶임 / 발목 체인)**: 둘 다 1차 → 듀오에서 가장 안정적.
+- 프롬프트 길이는 문제 아님(솔로 640~946단어, 듀오 1,182~1,542단어 모두 통과).
+
+### 83-4. 추가 시험 결과(2026-10-20, 모두 솔로, 화이트 라텍스 후드)
+- 통과: 손목 천장 고리 + 양 발목 바닥 링 / 쇠구슬(둘 다 3차), 꿇어앉기 + 칼라→바닥 링 + 손목 묶기(2차), 바닥 앉기 + 목-벽 링 + 양 발목 바닥 링(2차).
+- **제외**: 허벅지 벨트(단독은 구속력이 약하고, 손목 묶기·발목 체인과 함께는 벨트가 연결 안 되거나 한쪽 허벅지에 2개가 생김), 무릎 사이 체인(실패), 허벅지 벨트 + 목-벽 링(실패).
+
+## 84장. Fetish Bondage Hood Formula 550 등록 (v6.88, 2026-10-20)
+- 카테고리 2개: `🏺 Living Artifact · Fetish Bondage Hood Solo Formula`(350) / `Duo Formula`(200). 키 `la_bondagehood_solo_001~350`, `la_bondagehood_duo_001~200`.
+- 번들 3개: `la_bondagehood_300_bundle.json`(솔로 240: 목 계열 120 + 사물 120, 듀오 60) · `la_bondagehood_200b_bundle.json`(솔로 110: 천장 20·꿇어앉기 45·바닥 앉기 45, 듀오 90: 가로등/신호등/계선주 40 + 벤치 50) · `la_bondagehood_50c_bundle.json`(듀오 50: 목줄 체인 잡기, 잡는 쪽 구속 = 손목 묶임 20·발목 체인 17·양 발목 바닥 링 8·쇠구슬 5, 배경 산업 홀 30·통나무 홀 8·락커룸 5·항구 7, 좌우 30% 반전).
+- 체형 = Core Body 19종 균형, 색 4종(블랙 라텍스·레드 PVC·화이트 라텍스·에메랄드 라텍스), 신발 6종(펌프스 30·앵클 스트랩 10·스트래피 15·글래디에이터 10·레이스업 부츠 20·발레 부츠 15), 얼굴 인종·나이·메이크업은 코스튬 번들 베이스 상속. 제목 ≤103자, 한글 없음, 연속 중복 단어 없음 검사 통과.
+- 확인 샘플(300 번들) 6개: 1,2,4번 1차 · 3번 2차 · 5번 3차 · 6번 실패(듀오 안쪽 발목 가죽 끈 + 바깥 발목 바닥 링 — 같은 구성이 HoodDuo_5에서는 1차 성공이라 우연으로 판단, 유지).
+- 등록: `patch_la_bondagehood_1_json.py`(BUNDLES 3개, `patch_la_cloth_1_json.py` 복사본) → `patch_livingartifact_2_meta.py`(AST OK, **categories added=2, keys added=550**, backup `presets_meta.py.bak_livingartifact`) → git. **commit `7b6a9d95`(이전 `e25ad50c`)**, `la_bondagehood_*` 550개 확인.
+- 생성기: `bk/mk_bondagehood_bundle.py`(150, 앞부분을 후속 생성기가 exec) · `mk_bondagehood_bundle2.py`(300) · `mk_bond_next2.py`(200b) · `mk_bond_next3.py`(50c). 베이스는 `la_costume_310_bundle.json` 솔로 중 코스튬 풀에 있는 96개(포즈 BAD 목록 제외), 체형 설명은 정규식으로 교체, 의상 문장·신발·손톱·배경·스케일 문구·포즈를 후드 캣슈트용으로 치환.
+- 후드 번들의 구속 문법 재사용 시 지킬 것: 맨다리 하의는 구속 2개 이하 / 부츠는 커프를 부츠 위에 채움 / 손목은 모아 묶기 / 체인은 굵은 링크 / 듀오는 구속 합쳐 1개 또는 목줄 체인 잡기 / 사물은 단일 기둥형.
+
+## 85장. 4축 분류 · 보류·폐기 기록 · 열린 과제 (v6.88, 2026-10-20)
+- **축 4개 확정**: 바디페인팅 · 소재 · 의상 · 페티쉬(구속). 페티쉬는 의상의 세부 축이 아니라 별도 축으로 둔다(사용자 결정). 피어싱·쥬얼리·메이크업·헤어·신발·손톱·피부톤·연령은 어느 축에나 붙는 공통 옵션.
+- **파츠 축(뿔·날개·꼬리·뾰족한 귀) — 보류**: 몸 재질 위·후드 위 샘플(`LumineX_PartsStatue_1.md`)은 "실제 몸에서 난 것 같지 않다", 맨살 몸에서 자란 것으로 서술한 재시험(`LumineX_Parts_2.md`)도 "와 닿지 않는다"며 보류. 코스튬 풀에 이미 악마·천사·요정·인어·뱀파이어가 있어 겹치기도 함.
+- **살아있는 조각상 축(받침대·명판·광장 연출) — 폐기**: 몸이 이미 조각상 재질인데 받침대를 얹어 코스프레처럼 읽히고, 극단 하이힐이 받침대와 안 맞음. 조각상은 기존 Statue 계열과 소재 축에서 다룬다. 어두운 주조 금속(흑금·흑은·흑 로즈골드·건메탈 퓨터) 몸은 소재 축 시험(80-16)이 최종.
+- **카무플라주 바디페인팅(배경과 같게 칠해 아주 흐린 실루엣만 남김) — 보류**: 서 있는 실제 몸 프롬프트(`Camo_1~2, 4`)는 생성 실패, 옛 `merge_*` 21종 형식(`Camo_3`; 옛 프리셋은 누운 탑다운 위주, 벽돌·나무껍질 2종 스킵)도 완벽한 흡수는 아님. 저부조·음각·막·사포로 간 부조(`Camo_4~6`)는 벽에 잠기지만 **사람이 아니라 조각**. 롤러/스프레이 한 번에 칠하기(`Camo_7~8`, 첨부 변환 포함)는 몸이 돌처럼 변해 실패. 핵심 충돌: 사람으로 읽히려면 피부결과 경계가 필요한데 경계를 없앨수록 돌·벽 재질로 변함. 재시도 아이디어: 실제 작업처럼 "카메라 지점에서 맞춰 그린 사람"으로 서술(눈 뜨고 정면, 가장자리 작은 어긋남 허용).
+- **열린 과제**: ① 구속 100개 부츠 수정(48개) ② Bondage Layer 번들(레그웨어 35%·팔 레이어 20%·로프 리드 15%)은 미승인 ③ 장식 커프 시험 ④ 후드 번들 앱 카테고리 2개 표시 확인 ⑤ 신규 카테고리 티어(HOF/SSS) ⑥ 핸드오프 레포 업로드는 가끔만.
