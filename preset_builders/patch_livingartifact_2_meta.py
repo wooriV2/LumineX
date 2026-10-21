@@ -7,6 +7,7 @@ core/presets_meta.py -> PRESET_CATEGORIES.
 - Groups presets by their JSON "category" field (must start with "🏺 Living Artifact")
 - Creates missing categories, appends missing keys to existing ones (idempotent)
 - Tier sets (HOF/SSS) are NOT touched — tiers are assigned after generation review
+- ABORTS (writes nothing) if any la_*.json has a category not starting with "🏺 Living Artifact"
 - Backup: core/presets_meta.py.bak_livingartifact
 - AST validation before writing; aborts without writing on any error
 
@@ -31,6 +32,7 @@ TARGET = "PRESET_CATEGORIES"
 
 def collect_groups():
     groups = {}
+    skipped = []
     for path in sorted(PRESETS_DIR.glob(f"{KEY_PREFIX}*.json")):
         try:
             data = json.loads(path.read_text(encoding="utf-8-sig"))
@@ -39,9 +41,20 @@ def collect_groups():
             return None
         cat = data.get("category", "")
         if not cat.startswith(CAT_PREFIX):
-            print(f"[WARN] skipped (category not Living Artifact): {path.name} -> {cat!r}")
+            skipped.append((path.name, cat))
             continue
         groups.setdefault(cat, []).append(path.stem)
+    if skipped:
+        for name, cat in skipped[:20]:
+            print(f"[WARN] category not Living Artifact: {name} -> {cat!r}")
+        by_cat = {}
+        for _, cat in skipped:
+            by_cat[cat] = by_cat.get(cat, 0) + 1
+        print(f"[ABORT] {len(skipped)} preset(s) would be left out of the app. Category must start with {CAT_PREFIX!r}:")
+        for cat, n in by_cat.items():
+            print(f"        {cat!r}: {n}")
+        print("        Fix the category in the JSON files (or the bundle) and run again. Nothing was written.")
+        return None
     return groups
 
 
