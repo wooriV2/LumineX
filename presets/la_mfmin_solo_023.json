@@ -1,0 +1,22 @@
+{
+  "key": "la_mfmin_solo_023",
+  "category": "🏺 Living Artifact · Male Face Female Body Ext Formula",
+  "title": "MF Min Solo #023 · 남얼굴+여체형 커브드 버스트 · 젖은 비키니 블랙 · 손 허리 · 바닷가 산책로",
+  "prompt": "Professional fashion photograph, full body shot. ONE person standing.\n\na fair porcelain complexion with a cool undertone, a man in his late 20s with a handsome man's face on a full, curvaceous female body, curved bust physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large figure, far beyond any real person; both her bust and her hips are simultaneously, dramatically enormous, a colossal heavy bust resting full and wide, and enormous round hips flaring just as dramatically wide below, but unlike a sharply cinched hourglass, her waistline stays soft and only gently defined between them, a full, natural figure rather than a snatched one; gigantic soft thighs pressed together, very thick soft arms, a full round face; her head looks small on top of her massive body; her arms, hands, legs and feet stay in correct proportion to each other, dark brown hair styled as a sleek slicked-back undercut — wearing a jet-black glossy halter bikini with high-cut bottoms, soaked and clinging, water streaming down her whole body in glistening rivulets with countless beads and droplets clinging to her skin, her hair soaking wet and slicked. Pose: one hand on her waist, the other lifted to her chin, weight on one leg — most extreme curved bust silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, knee-high lace-up platform stiletto boots made of glossy wet black, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, curved talon nails each a full hand-length past her fingertips, in glossy wet black with a high polish.\nJewelry: a delicate silver body chain draped across her collarbones and down her torso, a long layered gold necklace falling between her breasts, and a pearl choker and a long strand of pearls hanging low on her chest. Ears: a different earring on each ear: on one ear a large brass hoop carrying three heavy rough hammered matte metal weights on brass chains of different lengths (a gold teardrop-shaped sinker, a silver pyramid-shaped lump, a gold cube-shaped block), all hanging clear of the body and none below the collarbone, and on the other ear a single long copper chain ending in one large faceted amethyst drop with a heavy rough lead a teardrop-shaped sinker hanging at its end. Jewelry is metal and pearl only, worn on the body and ears.\nFace: his face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Russian man with high cheekbones, light eyes and a defined jaw, a clean-cut young male model face with defined cheekbones, a firm jaw and strong straight brows, a very faint trace of stubble, a calm easy look, makeup: deep plum smoky eyes with dark lashes\n\nBackground: a sunny seaside promenade of pale paving stones with a waist-high white railing, a lamp post and a row of normal-height beach huts, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE person only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "mf-ext",
+    "family": "MF Min",
+    "subtype": "최소 의상 비키니",
+    "source": "la_clothes_bikini_solo_025",
+    "persons": [
+      {
+        "kind": "MF",
+        "body": "커브드 버스트",
+        "age": "late 20s"
+      }
+    ],
+    "male_shoe": false
+  }
+}

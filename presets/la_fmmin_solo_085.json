@@ -1,0 +1,21 @@
+{
+  "key": "la_fmmin_solo_085",
+  "category": "🏺 Living Artifact · Female Face Male Body Ext Formula",
+  "title": "FM Min Solo #085 · 여얼굴+남체형 맨즈 피지크 · 초미니스커트 · 양옆 슬릿",
+  "prompt": "Professional fashion photograph, full body shot. ONE man standing.\n\na warm bronze-brown complexion, a man in his early 30s, stage-ready men's physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — An extraordinarily tall and large man, far beyond any real person, with a men's physique build. Enormously broad shoulders with round capped deltoids, a wide upper chest tapering sharply to a very narrow waist in a dramatic V-taper, a lean sharply defined six-pack abdomen with visible obliques, thick strong arms, and long lean athletic legs that are muscular but not bulky. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other, sculpted updo platinum silver hair — wearing nothing but a skin-tight white liquid-satin ultra-mini skirt ending at the very top of his thighs, with a slit cut up both sides all the way to the waistband, his whole chest and stomach bare and fully visible. Pose: standing facing the camera straight on, his left hand resting on his hip and his right arm relaxed at his side — most extreme stage-ready men's silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, knee-high lace-up platform stiletto boots made of glossy white satin, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, his feet arched fully vertical on the very tips of his toes like a dancer on pointe, his legs stretched impossibly long and his whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, stiletto nails each as long as his whole hand, in glossy white satin with a high polish.\nJewelry: heavy gold rings on every finger, heavy gold rings on every finger, and a long layered gold necklace falling across his chest. He wears a different earring on each ear: on one ear a single long rose-gold chain ending in one large faceted emerald drop, and on the other ear a large bronze hoop carrying three heavy rough hammered matte metal weights on bronze chains of different lengths (a copper chunky hexagonal nut-shaped weight with a round hole through the centre, a silver square-sided cowbell, a gold pyramid-shaped lump), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Polynesian woman with a broad face, full lips and large dark eyes, an unmistakably feminine, beautiful woman's face with a soft rounded jaw, delicate features and long curled lashes, makeup: extremely heavy, fully saturated and bold feminine makeup: thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge\n\nBackground: the long reflecting pool path in front of the Taj Mahal with pale marble paving, a waist-high ornamental rail and low steps, empty of tourists, in clear sunny daylight, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE man only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of his head completely visible, with the door, railing or steps beside him at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "fm-ext",
+    "family": "FM Min",
+    "subtype": "초미니스커트",
+    "source": "la_clothes_umini_solo_030",
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "맨즈 피지크"
+      }
+    ],
+    "male_shoe": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "key": "la_fmmin_solo_024",
+  "category": "🏺 Living Artifact · Female Face Male Body Ext Formula",
+  "title": "FM Min Solo #024 · 여얼굴+남체형 파워리프터 · 쇼츠+오페라 글러브 · 정면",
+  "prompt": "Professional fashion photograph, full body shot. ONE man standing.\n\na warm caramel complexion, a man in his early 20s, powerlifter physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — An extraordinarily large, thick, heavy and extremely strong man, far beyond any real person, built like a powerlifter. A huge barrel chest, enormously wide shoulders and back, a thick solid waist with a firm rounded belly over strong abs, massive arms, and enormous thick thighs and calves. Every part is large, dense and continuous rather than sharply cut. His arms, hands, legs and feet stay in correct proportion to each other, high ponytail teal hair — wearing skin-tight deep purple leather shorts ending at the top of his thighs and nothing else, his whole chest and stomach bare and fully visible. His left leg wears a glossy deep-red latex thigh-high stocking with a thin elastic top band, stretched over his left thigh, knee, calf and ankle with mirror shine and fine pull-creases at the knee, completely opaque and running down into his heel. His right leg wears a glossy deep-red latex thigh-high stocking with a thin elastic top band, stretched over his right thigh, knee, calf and ankle with mirror shine and fine pull-creases at the knee, completely opaque and running down into his heel. His left arm wears a white satin opera glove covering his left hand and arm from the fingertips up to the upper arm, smooth and fitted with a soft sheen. His right arm wears a white satin opera glove covering his right hand and arm from the fingertips up to the upper arm, smooth and fitted with a soft sheen. Pose: standing tall facing the camera straight on, both arms relaxed at his sides, weight even on both feet — most extreme powerlifter silhouette ever displayed.\nFootwear: extreme motorcycle boots in dark leather, with thick platform soles rising far higher than his ankle bone, at least three times the thickness of an ordinary sole, a natural relaxed stance with his weight settled on his feet.\nNails: the longest nails physically imaginable, curved talon nails each as long as his forearm is wide, in glossy black lacquer with a high polish.\nPiercing: a large silver navel ring with a big round blue sapphire, resting directly on his skin at his navel.\nJewelry: heavy gold rings on every finger, a long layered gold necklace falling across his chest, and large drop earrings of mixed metals, a long silver chain ending in a heavy gold anvil-shaped weight on each ear, hanging above his collarbones. Jewelry is metal and pearl only.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Latina woman with high cheekbones, large dark eyes and full lips, an unmistakably feminine, beautiful woman's face with a soft rounded jaw, delicate features and long curled lashes, makeup: softly arched brows, shimmering champagne eyeshadow with winged black liner, voluminous curled lashes, a peach-pink blush swept high on the cheekbones, glossy full coral-pink lips\n\nBackground: a bright white-walled modern gallery hall with a polished pale floor and a full-height doorway standing open behind him, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE man only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of his head completely visible, with the door, railing or steps beside him at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "fm-ext",
+    "family": "FM Min",
+    "subtype": "쇼츠+오페라 글러브",
+    "source": "la_outlayer_solo_175",
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "파워리프터"
+      }
+    ],
+    "male_shoe": true
+  }
+}

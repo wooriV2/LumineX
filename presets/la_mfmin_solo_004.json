@@ -1,0 +1,22 @@
+{
+  "key": "la_mfmin_solo_004",
+  "category": "🏺 Living Artifact · Male Face Female Body Ext Formula",
+  "title": "MF Min Solo #004 · 남얼굴+여체형 커브드 버스트 · 마이크로 비키니 골드 메탈 · 서 있기 · 하얀 안뜰",
+  "prompt": "Professional fashion photograph, full body shot. ONE person standing.\n\na fair porcelain complexion with a cool undertone, a man in his early 20s with a handsome man's face on a full, curvaceous female body, curved bust physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large figure, far beyond any real person; both her bust and her hips are simultaneously, dramatically enormous, a colossal heavy bust resting full and wide, and enormous round hips flaring just as dramatically wide below, but unlike a sharply cinched hourglass, her waistline stays soft and only gently defined between them, a full, natural figure rather than a snatched one; gigantic soft thighs pressed together, very thick soft arms, a full round face; her head looks small on top of her massive body; her arms, hands, legs and feet stay in correct proportion to each other, honey-blonde hair styled as medium-length soft wavy layers swept off the forehead — wearing a tiny gold micro bikini of small polished gold-metal triangle cups joined by thin gold chains and a minimal gold-chain-and-plate bottom, the small opaque pieces fully covering her. Pose: standing full height, both arms slightly spread commanding the frame — most extreme curved bust silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, thigh-high platform stiletto boots made of polished gold metal, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, curved talon nails each longer than her middle finger, in polished gold metal with a high polish.\nJewelry: a delicate silver body chain draped across her collarbones and down her torso, a fine gold chain looped around her thigh above the knee, and thick polished gold bangles stacked on both wrists. Ears: matching-style earrings on both ears, each ear a large silver hoop carrying two heavy rough hammered matte metal weights on silver chains of different lengths (a bronze teardrop-shaped sinker, a gold small flared temple bell), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: his face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Russian man with high cheekbones, light eyes and a defined jaw, a handsome young man's idol face with a clean sharp jawline, straight thick brows and defined expressive eyes, clean-shaven, a relaxed half-smile, makeup: silver foil-lined eyes with a cool shimmer\n\nBackground: a sunlit white-washed courtyard with a pale tiled floor, an arched doorway at normal height, low stone steps and a waist-high wall, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE person only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "mf-ext",
+    "family": "MF Min",
+    "subtype": "최소 의상 마이크로비키니",
+    "source": "la_clothes_microbik_solo_024",
+    "persons": [
+      {
+        "kind": "MF",
+        "body": "커브드 버스트",
+        "age": "early 20s"
+      }
+    ],
+    "male_shoe": false
+  }
+}

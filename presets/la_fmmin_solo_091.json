@@ -1,0 +1,21 @@
+{
+  "key": "la_fmmin_solo_091",
+  "category": "🏺 Living Artifact · Female Face Male Body Ext Formula",
+  "title": "FM Min Solo #091 · 여얼굴+남체형 파워리프터 · T백 · 정면",
+  "prompt": "Professional fashion photograph, full body shot. ONE man standing.\n\na warm caramel complexion, a man in his early 20s, powerlifter physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — An extraordinarily large, thick, heavy and extremely strong man, far beyond any real person, built like a powerlifter. A huge barrel chest, enormously wide shoulders and back, a thick solid waist with a firm rounded belly over strong abs, massive arms, and enormous thick thighs and calves. Every part is large, dense and continuous rather than sharply cut. His arms, hands, legs and feet stay in correct proportion to each other, high ponytail ash brown hair — wearing nothing but a minimal white leather T-back thong with one tiny opaque front panel on thin side strings tied high at the hips and a single thin strap down the back, the small opaque piece fully covering him, his skin otherwise fully bare. Pose: standing in a wide stance facing the camera straight on, both hands resting on his hips — most extreme powerlifter silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, knee-high lace-up platform stiletto boots made of glossy white leather, each with a razor-thin tapered heel taller than his entire shin from ankle to knee and a towering hidden front platform, his feet arched fully vertical on the very tips of his toes like a dancer on pointe, his legs stretched impossibly long and his whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, almond nails each as long as his forearm is wide, in glossy white leather with a high polish.\nJewelry: a pearl choker and a long strand of pearls hanging low on his chest, a long layered gold necklace falling across his chest, and heavy gold rings on every finger. He wears a different earring on each ear: on one ear a large silver hoop carrying two heavy rough hammered matte metal weights on silver chains of different lengths (a bronze pyramid-shaped lump, a silver square-sided cowbell), all hanging clear of the body and none below the collarbone, and on the other ear a large silver hoop carrying four heavy rough hammered matte metal weights on silver chains of different lengths (a bronze small flared temple bell, a silver cube-shaped block, a copper miniature anvil, a gold square-sided cowbell), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Latina woman with high cheekbones, large dark eyes and full lips, an unmistakably feminine, beautiful woman's face with a soft rounded jaw, delicate features and long curled lashes, makeup: sculpted arched brows, smoky rose-gold eyeshadow with glitter on the lids, long dramatic lashes, a bright pink blush on the cheeks, plump glossy pink lips with a shine\n\nBackground: the sunlit arches of the Roman Colosseum with worn stone paving, standard-height arched doorways and low stone steps, empty of tourists, in warm golden late-afternoon light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE man only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of his head completely visible, with the door, railing or steps beside him at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "fm-ext",
+    "family": "FM Min",
+    "subtype": "T백",
+    "source": "la_clothes_bandeau_solo_001",
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "파워리프터"
+      }
+    ],
+    "male_shoe": false
+  }
+}

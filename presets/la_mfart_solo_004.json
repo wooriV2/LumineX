@@ -1,0 +1,22 @@
+{
+  "key": "la_mfart_solo_004",
+  "category": "🏺 Living Artifact · Male Face Female Body Ext Formula",
+  "title": "MF Art Solo #004 · 남얼굴+여체형 글래머러스 아워글래스 · chrysanthemum · 기도 자세 · 검정 배경",
+  "prompt": "Professional fashion photograph, full body shot. ONE person standing.\n\na fair porcelain complexion with a cool undertone, a man in his late 20s with a handsome man's face on a full, curvaceous female body, glamour hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — a stunning hourglass figure, far more dramatically curved than any ordinary figure; a full, rounded bust, a dramatically narrow, sharply cinched waist with a deep shadowed groove running around her middle, and wide, curvaceous hips flaring well beyond her shoulders, soft rounded thighs, toned but soft arms; not thin, not androgynous, not boyish, not a straight figure; her arms, hands, legs and feet stay in correct proportion to each other, auburn hair styled as a neat comma hairstyle with soft see-through bangs — full body chrysanthemum irezumi covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE. Bold black ink outlines — BLAZING DEEP GOLD chrysanthemum blooms enormous layered petals full torso both legs neck to ankle, VIVID EMERALD leaf lattice filling every gap, NO airbrush NO gradient wash. Pose: hands pressed together raised above her head in a devotional pose, eyes lifted — most extreme glamour hourglass silhouette ever displayed.\nFootwear: shoes of the most absurdly extreme height imaginable, knee-high mega platform boots entirely in the exact same colours as her own body art — blazing deep gold and vivid emerald — NOT black, NOT dark, NOT plain — the footwear must be a bright, saturated, glossy colour taken straight from her own body art, each with a very thick monolithic platform sole, a natural relaxed stance with her weight settled on her feet.\nNails: the longest nails physically imaginable, curved talon nails each a full hand-length past her fingertips, painted in the same colours as her body art.\nJewelry: a fine gold chain looped around her thigh above the knee, thick polished gold bangles stacked on both wrists, and heavy gold rings on every finger. Ears: a different earring on each ear: on one ear a single long platinum chain ending in one large faceted topaz drop, and on the other ear a large silver hoop carrying three heavy rough hammered matte metal weights on silver chains of different lengths (an iron barrel-shaped weight, a tin ship's anchor, a silver round bell), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: his face and ears are NOT painted — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Russian man with high cheekbones, light eyes and a defined jaw, a stylish handsome actor-like young male face with a strong straight brow line, expressive deep-set eyes, a defined chin and clear skin, a very faint trace of stubble, a soft amused smile, makeup: natural idol makeup with soft brown eyeshadow and a tinted lip\n\nBackground: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE person only. Extreme macro detail on every surface texture and shadow. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. Full-length steep high-angle shot taken from far above with a long telephoto lens, the camera directly above and in front of her angled roughly seventy degrees downward as if from a high ceiling or drone, flat telephoto compression with natural proportions and no wide-angle distortion, the whole figure from head to boots fully visible, the whole figure from the soles of the shoes to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so her extreme height reads at a glance, the towering soles clearly lifting her far above the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "mf-ext",
+    "family": "MF Art",
+    "subtype": "이레즈미",
+    "source": "la_irezumi2_solo_052",
+    "persons": [
+      {
+        "kind": "MF",
+        "body": "글래머러스 아워글래스",
+        "age": "late 20s"
+      }
+    ],
+    "male_shoe": false
+  }
+}

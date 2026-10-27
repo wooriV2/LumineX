@@ -1,0 +1,22 @@
+{
+  "key": "la_mfmin_solo_065",
+  "category": "🏺 Living Artifact · Male Face Female Body Ext Formula",
+  "title": "MF Min Solo #065 · 남얼굴+여체형 브라질리언 부티 글램 · 가슴 벨트 + 마이크로 미니 블랙 레더 · 서 있기 · 만리장성",
+  "prompt": "Professional fashion photograph, full body shot. ONE person standing.\n\na warm caramel complexion, a man in his early 30s with a handsome man's face on a full, curvaceous female body, Brazilian booty glam physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large figure, far beyond any real person, her hips and rear so wide; a dramatically narrow, sharply cinched waist sits above hips and a rear so massively rounded and projecting that they dominate her entire silhouette from every angle, the rear itself curving outward and upward in a high, rounded, gravity-defying shape; a full round bust above the cinched waist, gigantic thick thighs meeting the rear's curve, thick soft arms; her head looks small on top of her body; not a plus-size model, not evenly proportioned; her arms, hands, legs and feet stay in correct proportion to each other, jet-black hair styled as a voluminous pompadour with short faded sides — wearing a skin-tight black leather micro-mini skirt with its hem at the very top of her thighs, fully covering her, paired with a single wide black leather belt buckled around her chest as her only top, two fingers tall, pulled tightly across the middle of her bust with a silver buckle at the center front and the strap end tucked short, covering only what it must, leaving the curve of her bust visible above and below it, no other garment on her chest, her stomach fully visible below it. Pose: standing full height, both arms slightly spread commanding the frame — most extreme Brazilian booty glam silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, pointed platform stiletto pumps made of glossy black leather, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, coffin nails each as long as her forearm is wide, in glossy black leather with a high polish.\nJewelry: a long layered gold necklace falling between her breasts, a fine gold chain looped around her thigh above the knee, and a wide gold waist chain resting over the carved curve of her hips. Ears: matching-style earrings on both ears, each ear a large platinum hoop carrying two heavy rough hammered matte metal weights on platinum chains of different lengths (a lead barrel-shaped weight, a silver hammer head), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: his face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Latina man with high cheekbones, large dark eyes and full lips, a refined intellectual young male face with a high forehead, calm thoughtful dark eyes under straight neat brows, a straight nose and a clean jaw, clean-shaven, a gentle soft smile, makeup: silver foil-lined eyes with a cool shimmer\n\nBackground: a sunlit stretch of the Great Wall of China with worn brick paving, waist-high crenellated parapet, standard-height arched gate and stone steps, empty of tourists, under a soft overcast sky with gentle diffused light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE person only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "mf-ext",
+    "family": "MF Min",
+    "subtype": "최소 의상 벨트",
+    "source": "la_clothes_belt_solo_017",
+    "persons": [
+      {
+        "kind": "MF",
+        "body": "브라질리언 부티 글램",
+        "age": "early 30s"
+      }
+    ],
+    "male_shoe": false
+  }
+}

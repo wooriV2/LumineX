@@ -1,0 +1,22 @@
+{
+  "key": "la_mfbond_solo_001",
+  "category": "🏺 Living Artifact · Male Face Female Body Ext Formula",
+  "title": "MF Bond Solo #001 · 남얼굴+여체형 레전더리 버스트 · 목 칼라+체인 벽 링",
+  "prompt": "Professional fashion photograph, full body shot. ONE person standing.\n\na warm golden-brown complexion, a man in his late 20s with a handsome man's face on a full, curvaceous female body, legendary bust physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large figure, far beyond any real person, her upper body so wide; a mythologically, legendarily enormous bust dominates her entire silhouette, resting heavy and full, far wider than her own shoulders and projecting well forward of the rest of her body, the single defining feature of her frame, every other curve secondary to it; below it a waistline still draws in with a visible inward pull, round hips and soft thighs continue her curves; her head looks small in comparison to her massive bust; the bust is unmistakably, overwhelmingly the dominant feature; her arms, hands, legs and feet stay in correct proportion to each other, ash-brown hair styled as a clean side-parted taper cut with a neat textured top — wearing a deep burgundy velvet micro wrap-tie top, a narrow opaque strip crossing over both breasts and tied in a knot at the back, and a minimal low-rise deep burgundy velvet bottom of one tiny opaque triangle on thin side strings tied at the hips, the small opaque pieces fully covering her, her stomach bare. The figure wears a black leather collar with a small silver ring at the front, snug around her neck, from which a heavy chain of chunky thick silver links runs in a long loose curve out to her left, looped around the horizontal black iron pipe mounted across the wall beside her at shoulder height and fastened with a large iron ring. Pose: standing tall facing the camera straight on, both arms relaxed at her sides, weight even on both feet, her chest, shoulders and stomach fully in view — most extreme powerlifter silhouette ever displayed.\nFootwear: extreme platform loafers in dark leather, with thick platform soles rising far higher than her ankle bone, at least three times the thickness of an ordinary sole, a natural relaxed stance with her weight settled on her feet.\nNails: the longest nails physically imaginable, stiletto nails each a full hand-length past her fingertips, in glossy deep burgundy lacquer with a high polish.\nPiercing: a large gold navel hoop with a big white pearl, resting directly on her skin at her navel.\nJewelry: heavy gold rings on every finger, and large drop earrings, a gold chain ending in a heavy tin weight on one ear and a silver chain ending in a heavy lead weight on the other, hanging above her collarbones. Jewelry is metal and pearl only.\nFace: his face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Indian man with large almond eyes, strong brows and a defined nose, a refined intellectual young male face with a high forehead, calm thoughtful dark eyes under straight neat brows, a straight nose and a clean jaw, clean-shaven, a restrained serious look with a faint tightness at the brows, makeup: graphic electric-blue eyeliner extended into bold wings\n\nBackground: a dim industrial hall with a thick black iron pipe mounted horizontally across a concrete wall beside her at shoulder height, a concrete floor, steel beams and hanging lamps casting warm light. ONE person only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the shoes to the top of her head completely visible, with the concrete floor and steel beams around her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the shoe soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "mf-ext",
+    "family": "MF Bond",
+    "subtype": "목 칼라+체인 벽 링",
+    "source": "la_bondage_solo_090",
+    "persons": [
+      {
+        "kind": "MF",
+        "body": "레전더리 버스트",
+        "age": "late 20s"
+      }
+    ],
+    "male_shoe": true
+  }
+}

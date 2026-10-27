@@ -1,0 +1,22 @@
+{
+  "key": "la_mfart_solo_020",
+  "category": "🏺 Living Artifact · Male Face Female Body Ext Formula",
+  "title": "MF Art Solo #020 · 남얼굴+여체형 커브드 버스트 · tiger · 손 허리 · 검정 배경",
+  "prompt": "Professional fashion photograph, full body shot. ONE person standing.\n\na deep blue-black complexion, a man in his early 20s with a handsome man's face on a full, curvaceous female body, curved bust physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — an extraordinarily large figure, far beyond any real person; both her bust and her hips are simultaneously, dramatically enormous, a colossal heavy bust resting full and wide, and enormous round hips flaring just as dramatically wide below, but unlike a sharply cinched hourglass, her waistline stays soft and only gently defined between them, a full, natural figure rather than a snatched one; gigantic soft thighs pressed together, very thick soft arms, a full round face; her head looks small on top of her massive body; her arms, hands, legs and feet stay in correct proportion to each other, chestnut brown hair styled as a voluminous pompadour with short faded sides — full body tiger irezumi covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE. Bold black ink outlines — BLAZING VIVID ORANGE tiger stripes wrapping the full torso both legs neck to ankle, STARK BLACK stripe detail and fierce tiger face motifs filling every gap, NO airbrush NO gradient wash. Pose: hands on her hips in a powerful stance, chin lifted, weight on one leg — most extreme curved bust silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, plain stiletto pumps entirely in the exact same colours as her own body art — blazing vivid orange and stark black — NOT black, NOT dark, NOT plain — the footwear must be a bright, saturated, glossy colour taken straight from her own body art, each with a very tall razor-thin tapered heel and a hidden front platform, a natural relaxed stance with her weight settled on her feet.\nNails: the longest nails physically imaginable, round nails each a full hand-length past her fingertips, painted in the same colours as her body art.\nJewelry: sculpted gold armbands high on both upper arms, thick polished gold bangles stacked on both wrists, and heavy gold rings on every finger. Ears: a different earring on each ear: on one ear a large bronze hoop carrying four heavy rough hammered matte metal weights on bronze chains of different lengths (a tin miniature anvil, a gold round bell, a gold pyramid-shaped lump, a bronze chunky hexagonal nut-shaped weight with a round hole through the centre), all hanging clear of the body and none below the collarbone, and on the other ear a single long gold chain ending in one large faceted amethyst drop with a heavy rough tin a ship's anchor hanging at its end. Jewelry is metal and pearl only, worn on the body and ears.\nFace: his face and ears are NOT painted — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Black man with strong, striking features, a broad nose and full lips, a sleek male idol face with a straight nose, a sharp jawline, thick brows and cool intense eyes, clean-shaven, a confident smirk, makeup: silver foil-lined eyes with a cool shimmer\n\nBackground: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE person only. Extreme macro detail on every surface texture and shadow. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the shoes to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so her extreme height reads at a glance, the towering heels clearly separating the soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "mf-ext",
+    "family": "MF Art",
+    "subtype": "이레즈미",
+    "source": "la_irezumi2_solo_016",
+    "persons": [
+      {
+        "kind": "MF",
+        "body": "커브드 버스트",
+        "age": "early 20s"
+      }
+    ],
+    "male_shoe": false
+  }
+}

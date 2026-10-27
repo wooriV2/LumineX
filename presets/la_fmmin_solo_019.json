@@ -1,0 +1,21 @@
+{
+  "key": "la_fmmin_solo_019",
+  "category": "🏺 Living Artifact · Female Face Male Body Ext Formula",
+  "title": "FM Min Solo #019 · 여얼굴+남체형 라인맨 · 쇼츠 · 정면",
+  "prompt": "Professional fashion photograph, full body shot. ONE man standing.\n\na warm bronze-brown complexion, a man in his early 20s, lineman physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — An extraordinarily large man, far beyond any real person, built like a professional football offensive lineman. Enormously broad shoulders and a huge wide back, a deep thick barrel chest, a heavy hard muscular torso with a firm flat-fronted midsection, massive thick arms, and enormous straight muscular thighs and calves. Every part is dense, hard and powerfully muscled. His arms, hands, legs and feet stay in correct proportion to each other, high ponytail deep burgundy hair — wearing skin-tight red satin shorts ending at the top of his thighs and nothing else, his whole chest and stomach bare and fully visible. Pose: standing tall facing the camera straight on, both arms relaxed at his sides, weight even on both feet — most extreme lineman silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, knee-high lace-up platform stiletto boots made of glossy red satin, each with a razor-thin tapered heel taller than his entire shin from ankle to knee and a towering hidden front platform, his feet arched fully vertical on the very tips of his toes like a dancer on pointe, his legs stretched impossibly long and his whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, coffin nails each as long as his whole hand, in glossy red satin with a high polish.\nJewelry: a pearl choker and a long strand of pearls hanging low on his chest, sculpted gold armbands high on both upper arms, and heavy gold rings on every finger. He wears a different earring on each ear: on one ear a large rose-gold hoop carrying five heavy rough hammered matte metal weights on rose-gold chains of different lengths (a silver chunky hexagonal nut-shaped weight with a round hole through the centre, a tin small flared temple bell, a copper teardrop-shaped sinker, a tin miniature anvil, a silver round bell), all hanging clear of the body and none below the collarbone, and on the other ear a single long brass chain ending in one large faceted topaz drop with a heavy rough silver a pyramid-shaped lump hanging at its end. Jewelry is metal and pearl only, worn on the body and ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Polynesian woman with a broad face, full lips and large dark eyes, an unmistakably feminine, beautiful woman's face with a soft rounded jaw, delicate features and long curled lashes, makeup: softly arched brows, shimmering champagne eyeshadow with winged black liner, voluminous curled lashes, a peach-pink blush swept high on the cheekbones, glossy full coral-pink lips\n\nBackground: a bright white-sand beach at midday with calm turquoise water, a wooden boardwalk with a waist-high rail and a row of closed striped cabanas of normal door height, in clear sunny daylight, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE man only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of his head completely visible, with the door, railing or steps beside him at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "fm-ext",
+    "family": "FM Min",
+    "subtype": "쇼츠",
+    "source": "la_clothes_bust_solo_029",
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "라인맨"
+      }
+    ],
+    "male_shoe": false
+  }
+}

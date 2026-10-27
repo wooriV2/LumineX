@@ -1,0 +1,21 @@
+{
+  "key": "la_fmmin_solo_095",
+  "category": "🏺 Living Artifact · Female Face Male Body Ext Formula",
+  "title": "FM Min Solo #095 · 여얼굴+남체형 클래식 머슬 · 마이크로 비키니 하의 · 정면",
+  "prompt": "Professional fashion photograph, full body shot. ONE man standing.\n\na warm golden-brown complexion, a man in his early 30s, classic muscle physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — An extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous. His arms, hands, legs and feet stay in correct proportion to each other, sculpted updo jet-black hair — wearing a minimal black leather micro bikini bottom of one tiny low-rise opaque triangle on thin side strings tied at the hips, the small opaque piece fully covering him, his bare chest and stomach fully visible above it. Pose: standing tall facing the camera straight on, both arms relaxed at his sides, weight even on both feet — most extreme classic muscle silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, pointed platform stiletto pumps made of glossy black leather, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, his feet arched fully vertical on the very tips of his toes like a dancer on pointe, his legs stretched impossibly long and his whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, coffin nails each a full hand-length past his fingertips, in glossy black leather with a high polish.\nJewelry: a delicate silver chain necklace resting across his collarbones, a long layered gold necklace falling across his chest, and a fine gold chain looped around his thigh above the knee. He wears a different earring on each ear: on one ear a large gold hoop carrying two heavy rough hammered matte metal weights on gold chains of different lengths (a copper hammer head, a silver ship's anchor), all hanging clear of the body and none below the collarbone, and on the other ear a large rose-gold hoop carrying six heavy rough hammered matte metal weights on rose-gold chains of different lengths (a silver ship's anchor, a lead barrel-shaped weight, a tin square-sided cowbell, a silver round bell, a gold miniature anvil, a copper cube-shaped block), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Indian woman with large almond eyes, strong brows and a defined nose, an unmistakably feminine, beautiful woman's face with a soft rounded jaw, delicate features and long curled lashes, makeup: sculpted arched brows, smoky rose-gold eyeshadow with glitter on the lids, long dramatic lashes, a bright pink blush on the cheeks, plump glossy pink lips with a shine\n\nBackground: a bright spring garden terrace of pale stone with blooming tulip beds, a low trimmed hedge, a standard-height garden gate and a bench, in warm golden late-afternoon light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE man only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of his head completely visible, with the door, railing or steps beside him at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "fm-ext",
+    "family": "FM Min",
+    "subtype": "마이크로 비키니 하의",
+    "source": "la_clothes_bust_solo_016",
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "클래식 머슬"
+      }
+    ],
+    "male_shoe": false
+  }
+}

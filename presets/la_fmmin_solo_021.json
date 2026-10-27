@@ -1,0 +1,21 @@
+{
+  "key": "la_fmmin_solo_021",
+  "category": "🏺 Living Artifact · Female Face Male Body Ext Formula",
+  "title": "FM Min Solo #021 · 여얼굴+남체형 머슬 모델 · 초미니스커트 · 양옆 지퍼",
+  "prompt": "Professional fashion photograph, full body shot. ONE man standing.\n\na warm bronze-brown complexion, a man in his mid 20s, muscle model physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — An extraordinarily large and muscular man, far beyond any real person, built like a muscle model. Wide broad shoulders, a full thick defined chest, large rounded arms with clear biceps and triceps, a hard defined abdomen on a trim waist, wide flaring lats, and strong muscular thighs and calves in balance with the upper body. Powerful and imposing, yet lean and polished. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other, high ponytail deep burgundy hair — wearing nothing but a skin-tight black leather ultra-mini skirt ending at the very top of his thighs, with a zipper running up each side, unzipped from the hem all the way to the waistband, his whole chest and stomach bare and fully visible. Pose: standing facing the camera straight on, his left hand resting on his hip and his right arm relaxed at his side — most extreme muscle model silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, platform stiletto ballet boots made of glossy black leather, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, his feet arched fully vertical on the very tips of his toes like a dancer on pointe, his legs stretched impossibly long and his whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, curved talon nails each as long as his forearm is wide, in glossy black leather with a high polish.\nJewelry: thick polished gold bangles stacked on both wrists, heavy gold rings on every finger, and a delicate silver chain necklace resting across his collarbones. He wears a different earring on each ear: on one ear a large bronze hoop carrying one heavy rough hammered matte metal weight on bronze chain (a silver small flared temple bell), all hanging clear of the body and none below the collarbone, and on the other ear a large brass hoop carrying four heavy rough hammered matte metal weights on brass chains of different lengths (a gold round bell, a copper ship's anchor, a gold cube-shaped block, an iron small flared temple bell), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Polynesian woman with a broad face, full lips and large dark eyes, an unmistakably feminine, beautiful woman's face with a soft rounded jaw, delicate features and long curled lashes, makeup: sculpted arched brows, smoky rose-gold eyeshadow with glitter on the lids, long dramatic lashes, a bright pink blush on the cheeks, plump glossy pink lips with a shine\n\nBackground: the long reflecting pool path in front of the Taj Mahal with pale marble paving, a waist-high ornamental rail and low steps, empty of tourists, in warm golden late-afternoon light, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE man only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of his head completely visible, with the door, railing or steps beside him at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "fm-ext",
+    "family": "FM Min",
+    "subtype": "초미니스커트",
+    "source": "la_clothes_umini_solo_023",
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "머슬 모델"
+      }
+    ],
+    "male_shoe": false
+  }
+}

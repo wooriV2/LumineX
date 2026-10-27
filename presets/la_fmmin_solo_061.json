@@ -1,0 +1,21 @@
+{
+  "key": "la_fmmin_solo_061",
+  "category": "🏺 Living Artifact · Female Face Male Body Ext Formula",
+  "title": "FM Min Solo #061 · 여얼굴+남체형 클래식 머슬 · 초미니스커트 · 양옆 지퍼",
+  "prompt": "Professional fashion photograph, full body shot. ONE man standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, a man in his mid 20s, classic muscle physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — An extraordinarily large and powerful, classically muscular man, far beyond any real person, in the shape of a Greek statue. Wide shoulders, a full defined chest, a clean six-pack abdomen, strong rounded arms, and muscular thighs and calves, balanced and proportionate from head to toe, powerful and enormous. His arms, hands, legs and feet stay in correct proportion to each other, long straight dark brown hair — wearing nothing but a skin-tight black leather ultra-mini skirt ending at the very top of his thighs, with a zipper running up each side, unzipped from the hem all the way to the waistband, his whole chest and stomach bare and fully visible. Pose: standing tall facing the camera straight on, both arms relaxed at his sides, weight even on both feet — most extreme classic muscle silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, pointed platform stiletto pumps made of glossy black leather, each with a razor-thin tapered heel taller than his entire shin from ankle to knee and a towering hidden front platform, his feet arched fully vertical on the very tips of his toes like a dancer on pointe, his legs stretched impossibly long and his whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, almond nails each longer than his middle finger, in glossy black leather with a high polish.\nJewelry: thick polished gold bangles stacked on both wrists, a delicate silver chain necklace resting across his collarbones, and a pearl choker and a long strand of pearls hanging low on his chest. He wears matching-style earrings on both ears, each ear a large bronze hoop carrying two heavy rough hammered matte metal weights on bronze chains of different lengths (a copper teardrop-shaped sinker, a gold hammer head), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Black woman with strong, striking features, a broad nose and full lips, an unmistakably feminine, beautiful woman's face with a soft rounded jaw, delicate features and long curled lashes, makeup: extremely heavy, fully saturated and bold feminine makeup: thin sharply arched brows, soft brown and rose eyeshadow, a fine black liner with a small flick, long curled lashes, large eyes with bright real catchlights, a strong rose-red blush on the apples of the cheeks, deep glossy red lips with a defined edge\n\nBackground: a wide red-carpeted grand staircase with standard-height steps, a waist-high brass handrail and warm daylight from tall windows, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE man only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of his head completely visible, with the door, railing or steps beside him at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "fm-ext",
+    "family": "FM Min",
+    "subtype": "초미니스커트",
+    "source": "la_clothes_umini_solo_006",
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "클래식 머슬"
+      }
+    ],
+    "male_shoe": false
+  }
+}

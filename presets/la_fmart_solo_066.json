@@ -1,0 +1,21 @@
+{
+  "key": "la_fmart_solo_066",
+  "category": "🏺 Living Artifact · Female Face Male Body Ext Formula",
+  "title": "FM Art Solo #066 · 여얼굴+남체형 V자 보디빌더 · iris field · 뒷모습 · 검정 배경",
+  "prompt": "Professional fashion photograph, full body shot. ONE man standing.\n\nextremely pale milky-white skin with a pink undertone and a light scatter of freckles, a man in his early 20s, V-shaped bodybuilder physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — An extraordinarily large and powerful man, far beyond any real person. A massive V-shaped torso: enormously broad shoulders with capped, rounded deltoids, a thick heavy chest, a deeply carved six-pack abdomen narrowing to a comparatively small waist, huge thick arms with split biceps and horseshoe triceps, wide flaring lats, and powerful thick quads and diamond calves. His head stays in correct proportion to his broad frame. His arms, hands, legs and feet stay in correct proportion to each other, hair coloured bold vivid electric-blue worn as tight zigzag crimped waves — full body iris field irezumi covering EVERY inch of skin from neck to ankle WITHOUT EXCEPTION, both legs FULLY covered to ankles, NO bare skin below neck ANYWHERE. Bold black ink outlines — BLAZING ELECTRIC VIOLET iris blossoms cascading the full torso both legs neck to ankle, VIVID EMERALD leaf blade detail filling every gap, NO airbrush NO gradient wash. Pose: back to the camera, shoulder blades emphasized, face turned in profile — most extreme V-shaped bodybuilder silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, sculptural heels entirely in the exact same colours as his own body art — blazing electric violet and vivid emerald — NOT black, NOT dark, NOT plain — the footwear must be a bright, saturated, glossy colour taken straight from his own body art, each with a very tall razor-thin tapered heel and a hidden front platform, a natural relaxed stance with his weight settled on his feet.\nNails: the longest nails physically imaginable, stiletto nails each as long as his whole hand, painted in the same colours as his body art.\nJewelry: a fine gold chain looped around his thigh above the knee, sculpted gold armbands high on both upper arms, and a pearl choker and a long strand of pearls hanging low on his chest. He wears matching-style earrings on both ears, each ear a large gold hoop carrying two heavy rough hammered matte metal weights on gold chains of different lengths (a silver square-sided cowbell, a gold miniature anvil), all hanging clear of the body and none below the collarbone. Jewelry is metal and pearl only, worn on the body and ears.\nFace: her face and ears are NOT painted — they are real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Irish woman (British Isles features: a softly rounded oval face with a broad forehead and high-set cheeks, a slightly upturned nose, round wide-set eyes, a gently pointed chin, full soft lips, fine freckles across the nose and cheeks), an unmistakably feminine, beautiful woman's face with a soft rounded jaw, delicate features and long curled lashes, makeup: sculpted arched brows, smoky rose-gold eyeshadow with glitter on the lids, long dramatic lashes, a bright pink blush on the cheeks, plump glossy pink lips with a shine\n\nBackground: MANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE man only. Extreme macro detail on every surface texture and shadow. Pattern density MAXIMUM — zero bare skin anywhere from neck to ankle. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the shoes to the top of his head completely visible, with the door, railing or steps beside him at normal human scale so his extreme height reads at a glance, the towering heels clearly separating the soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "fm-ext",
+    "family": "FM Art",
+    "subtype": "이레즈미",
+    "source": "la_irezumi2_solo_008",
+    "persons": [
+      {
+        "kind": "FM",
+        "body": "V자 보디빌더"
+      }
+    ],
+    "male_shoe": false
+  }
+}
