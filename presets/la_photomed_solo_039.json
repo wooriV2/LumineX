@@ -1,0 +1,20 @@
+{
+  "key": "la_photomed_solo_039",
+  "category": "🏺 Living Artifact · Photo Medium Pattern Formula",
+  "title": "Photo Medium 솔로 #039 · super hourglass · 더블 익스포저 · 손 깍지 · 천문대 · 글래스 스킨",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na fair porcelain complexion with a cool undertone, late 20s goddess, super hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum beyond any proportion, most dramatic hourglass ratio ever recorded on any human body, thighs so thick pressing together, waist-length braids chestnut brown hair — her bare skin covered from the neck down in a double-exposure photograph: a soft blend of misty pine forest and mountain silhouettes overlaid across her torso, flowing waves and drifting birds across her arms and legs, the two exposures merging in smooth translucent gradients of deep teal and warm amber, the print sitting on living skin and following every curve beneath it, covering all of her skin from the neck to the ankles and the backs of her hands, her face left unpainted and the pattern fading out at the neck. Her face, ears, neck and hands are real living skin with visible pores and fine grain, fine peach-fuzz hairs, a soft natural flush. Pose: hands clasped behind her head, elbows wide, hips thrust to one side — most extreme super hourglass silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, knee-high lace-up platform stiletto boots made of polished slate-blue leather, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, curved talon nails each as long as her whole hand, in glossy slate-blue polish.\nJewelry: heavy gold rings on every finger, a wide gold waist chain resting over the carved curve of her hips, and a fine gold chain looped around her thigh above the knee. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Russian woman with high cheekbones, light eyes and a defined jaw, an unmistakably feminine face with a calm, composed expression, makeup: wet-look glass skin glowing as if coated in clear gel, strong liquid highlighter on the cheekbones, nose bridge and the center of the forehead, a flushed rosy blush, high-shine glossy lips.\n\nBackground: a bright observatory hall with a pale floor, a large white telescope dome behind her, a standard-height door and a short steel stair, lit by natural light with soft shadows on the skin, the whole floor and surroundings clearly visible and in focus. ONE woman only. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. This is one single photograph taken with one camera at one moment, shot on a medium format camera with an 85mm lens at f/5.6, realistic photographic grain, a real photograph. Portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "pattern-skin",
+    "family": "Photo Medium Pattern",
+    "pattern": "더블 익스포저",
+    "source": "la_costume_solo_010",
+    "persons": [
+      {
+        "kind": "F",
+        "body": "super hourglass"
+      }
+    ]
+  }
+}

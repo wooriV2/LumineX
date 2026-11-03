@@ -1,0 +1,20 @@
+{
+  "key": "la_printgfx_solo_045",
+  "category": "🏺 Living Artifact · Print Graphic Pattern Formula",
+  "title": "Print Graphic 솔로 #045 · powerlifter bombshell · 모아레·옵아트 · 손 허리 · 경기장 · 구풍",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na warm bronze-brown complexion, early 20s goddess, powerlifter bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — immense powerful thighs and shoulders built with real strength, a thick solid waist, overwhelming muscular bulk layered with soft curves everywhere, the snakes are her hair — her bare skin covered from the neck down in moire and op-art interference patterns: fine black and white concentric lines and ripple grids overlapping across her torso, arms and legs, producing shimmering curved wave bands that appear to pulse and bend around her body, the pattern sitting on living skin and following every curve beneath it, covering all of her skin from the neck to the ankles and the backs of her hands, her face left unpainted and the pattern fading out at the neck. Her face, ears, neck and hands are real living skin with visible pores and fine grain, fine peach-fuzz hairs, a soft natural flush. Pose: both hands on her hips, elbows out — most extreme powerlifter bombshell silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, strappy platform stiletto sandals made of polished charcoal leather, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, coffin nails each a full hand-length past her fingertips, in glossy charcoal polish.\nJewelry: sculpted gold armbands high on both upper arms, thick polished gold bangles stacked on both wrists, and a fine gold chain looped around her thigh above the knee. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Polynesian woman with a broad face, full lips and large dark eyes, an unmistakably feminine face with a calm, composed expression, makeup: slender upswept willow-leaf brows, a fine red floral huadian mark painted on the forehead, softly flushed rosy cheeks, an upswept eyeliner tail, large eyes with bright real catchlights, a small vivid red lip.\n\nBackground: an empty sunlit stadium with green turf, a running track, standard-height gates and low stands behind her, in clear sunny daylight, lit by natural light with soft shadows on the skin, the whole floor and surroundings clearly visible and in focus. ONE woman only. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. This is one single photograph taken with one camera at one moment, shot on a medium format camera with an 85mm lens at f/5.6, realistic photographic grain, a real photograph. Portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "pattern-skin",
+    "family": "Print Graphic Pattern",
+    "pattern": "모아레·옵아트",
+    "source": "la_costume_solo_006",
+    "persons": [
+      {
+        "kind": "F",
+        "body": "powerlifter bombshell"
+      }
+    ]
+  }
+}
