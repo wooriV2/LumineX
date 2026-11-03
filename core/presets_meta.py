@@ -6059,6 +6059,17 @@ PRESET_CATEGORIES = {
         "la_costume_trio_013", "la_costume_trio_014", "la_costume_trio_015",
         "la_costume_trio_016", "la_costume_trio_017", "la_costume_trio_018",
         "la_costume_trio_019", "la_costume_trio_020",
+    
+        "la_costume_solo_141", "la_costume_solo_142", "la_costume_solo_143",
+        "la_costume_solo_144", "la_costume_solo_145", "la_costume_solo_146",
+        "la_costume_solo_147", "la_costume_solo_148", "la_costume_solo_149",
+        "la_costume_solo_150", "la_costume_solo_151", "la_costume_solo_152",
+        "la_costume_solo_153", "la_costume_solo_154", "la_costume_solo_155",
+        "la_costume_solo_156", "la_costume_solo_157", "la_costume_solo_158",
+        "la_costume_solo_159", "la_costume_solo_160", "la_costume_solo_161",
+        "la_costume_solo_162", "la_costume_solo_163", "la_costume_solo_164",
+        "la_costume_solo_165", "la_costume_solo_166", "la_costume_solo_167",
+        "la_costume_solo_168", "la_costume_solo_169", "la_costume_solo_170",
     ],
 
     "🏺 Living Artifact · Outfit Group Formula": [

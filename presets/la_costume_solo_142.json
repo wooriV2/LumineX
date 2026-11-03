@@ -1,0 +1,26 @@
+{
+  "key": "la_costume_solo_142",
+  "category": "🏺 Living Artifact · Costume Formula",
+  "title": "Costume 솔로 #142 · glamour hourglass · Y2K 팝스타 · 손 허리 · 버스 터미널 · 히메갸루",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na luminous warm-ivory complexion, early 20s goddess, glamour hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — a stunning hourglass figure, far more dramatically curved than any ordinary woman; a full, rounded bust, a dramatically narrow, sharply cinched waist with a deep shadowed groove running around her middle, and wide, curvaceous hips flaring well beyond her shoulders, soft rounded thighs, toned but soft arms; not thin, not androgynous, not boyish, not a straight figure; her arms, hands, legs and feet stay in correct proportion to each other, waist-length braids lavender hair — wearing a minimal Y2K pop-star costume of a tiny hot-pink metallic halter top of two small opaque cups studded with rhinestones, a low-rise opaque hot-pink metallic micro-mini skirt with a high side slit and a rhinestone chain belt, glittering butterfly hair clips and a rhinestone choker, fully opaque and covering only what it must, her stomach bare. Pose: one hand on her waist, the other lifted to her chin, weight on one leg — most extreme glamour hourglass silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, pointed platform stiletto pumps made of glossy hot-pink metallic, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, coffin nails each a full hand-length past her fingertips, in glossy hot-pink metallic with a high polish.\nJewelry: a long layered gold necklace falling between her breasts, a fine gold chain looped around her thigh above the knee, and a delicate silver body chain draped across her collarbones and down her torso. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Chinese woman (East Asian Chinese features: a longer oval face with prominent high cheekbones and a defined jawline, long upturned phoenix-shaped eyes with sharp inner folds, a high strong nose bridge, thin arched eyebrows with a slight rise, balanced lips), an unmistakably feminine face with a calm, composed expression, makeup: soft pink blush across the cheeks, sparkling pink eyeshadow, long curled lashes, large eyes with bright real catchlights, glossy candy-pink lips.\n\nBackground: a bright modern bus terminal with a clean pale concrete floor, a glass canopy, standard-height bus doors and a bench, bright and evenly lit, shadows soft, the whole floor and surroundings clearly visible and in focus, NO dark background NO black void. ONE woman only. Extreme macro detail on the fabric texture, the skin and the shadows. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "costume",
+    "family": "Costume",
+    "outfit": "Y2K 팝스타",
+    "physiques": [
+      "glamour hourglass"
+    ],
+    "ethnicity": [
+      "Chinese"
+    ],
+    "poses": [
+      "one hand on her waist, the other lifted to her chin, weight on one leg"
+    ],
+    "background": "bus_terminal",
+    "weather": null,
+    "heel_mode": "relative",
+    "jewelry": true
+  }
+}
