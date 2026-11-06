@@ -1,5 +1,7 @@
 # LumineX · Living Artifact — 인수인계 메모 v6.67 (2026-10-16)
 
+> **v6.97 추가 수정 (114-87~114-93)**: 2026-11-04~11-07 — 전통·교복·슈트·의상 그룹·애니 얼굴 시험 요약(상세는 메모리 토픽 포인터), **의상 606 등록**(commit `959ff9a8`), **애니 코스프레 얼굴 컷 246 등록**(commit `dacaf41f`), **애니 코스프레 가슴·허리·힙 컷 1,650 등록**(솔로 1,230 + 그룹 420, commit `c004116b`, 새 카테고리 9개, 일반·임산부·혼합 체형), 애니 단계 정의와 생성기 구조, 열린 과제 갱신. 이번 구간 등록 합계 +2,502.
+
 > **v6.96 추가 수정 (114-70~114-86)**: 2026-10-30~11-04 — 키스 장면 시험 결론, 피부 리얼 표현 방향, **바디페인팅 축 새 패턴 풀 23종(4묶음) 확정**, 구속 밧줄 매듭 접음, **소재별 전신 슈트·시스루 시험과 정식 등록 계획**, 영역 바디아트(가슴·팬티) 시험, **소재 축 새 재질 25종 채택 → FM Material Formula 300 등록**(commit `6a362ee5`), **Face Sculpt Contour Group Formula 300 등록**(commit `fe81d7bb`), 코 과장 폐기, 코스튬 6종 등록 대기. 등록된 번들은 2종(위), 나머지는 전부 번들 미제작.
 
 > **v6.95 추가 수정 (114-60~114-69)**: 2026-10-28 후반~10-29 — 갈라진 혀 Ultra Apart Plus 확정, **Face Sculpt 신규 축 6종**(목 장식·체인 웹·쇄골 브리지·얼굴 타투·교정기 체인·가운데 추 1개)을 기존 한도 안의 랜덤 풀로 결정(번들은 아직 없음), Hair Sculpture·체인 당기기·그림자 분리·중력렌즈·페로플루이드·장력 실·카우스틱·피시넷 메쉬 폐기, **크로노 잔상 유지**, **산업용 테이프 의상 축 확정**(상의 판 7종·하의 3종·질감), 공중 곡예(후프·실크 통과, 트래피즈·링 제외, 참고용 보류). 전부 번들 미제작.
@@ -5583,3 +5585,60 @@ Master Mix 300 중 약 20개: 배경 문법(`beach at with` 8, `a open-air` 3, `
 ### 114-86. 작업 환경 메모
 - 생성기는 샌드박스 scratchpad(`bk/`, 루트의 `mk_fsgrp*.py` 등)에 있어 세션이 초기화되면 사라짐 — 필요 시 `LumineX_generators_backup_*.zip` 방식으로 outputs에 백업(마지막 백업 2026-10-06). 대화 기록(`/root/.claude/projects/.../*.jsonl`)에서 복원 가능.
 - 등록 절차(고정): 번들·패치를 `preset_builders\`에 둠 → `$env:PYTHONUTF8="1"` → `python preset_builders\patch_xxx_1_json.py` → 새 카테고리면 `python preset_builders\patch_livingartifact_2_meta.py` → `git add presets preset_builders core/presets_meta.py` → `git commit` → **결과 확인 후 별도로** `git push`(`git add -A` 금지, 핸드오프 md가 같이 올라가지 않게).
+
+
+### 114-87. 2026-11-04~06 시험 요약 (상세는 메모리 토픽)
+- 전통·로브·교복·스포츠 의상: 메모리 `luminex-trad-uniform-tests` — 통과 의상 한복·사리·실크 로브·세일러·발레리나·테니스·플라멩코·피겨·스키·디른들·유카타·레헹가·배구·비서·파일럿·플래드 교복 등, 아이콘 강한 의상(스팀펑크·글래디에이터·죄수복·공주·로코코), 코스튬 아이콘×구조 6종, 교복 시리즈·어깨 노출 교복·최소의상 상의 10종(흰 모달 저지). 기준: 평범한 일반 스포츠·직업복 제외, 상체를 가리는 구조나 눈에 안 띄는 장식 제외.
+- 극박 밀착 전신 슈트·바디콘·하이컷 원피스 수영복: 메모리 `luminex-suit-bodycon-tests`·`luminex-suit-tests`. 시스루 전신 슈트: `luminex-seethrough-tests`(통과 8소재 재검증 뒤 정식 등록은 아직 대기).
+- 의상 그룹(듀오~5인): 메모리 `luminex-garment-group-tests` — New 의상 8/8 1차, 혼합 7/8 1차, **FM(여성 얼굴+남성 체형)은 의상 축에서 접음**(바디페인팅·소재에서만 사용), **임산부 의상 그룹은 3인까지**(4인 이상은 읽힘이 약함), 유두만 마이크로 비키니는 실패 없음, 립 과장은 전신 컷에서 효과 없어 얼굴 컷에만 사용. New 풀·혼합 풀 번들은 만들라고 할 때.
+- 구속 후드 트리오·라텍스 모노키니/바디콘 구속: 메모리 `luminex-bondage-trio-tests`.
+- 애니 얼굴 컷(아이스 퀸·애니 눈·화풍 → 실사애니/중간/애니애니 단계 확정): 메모리 `luminex-anime-face-tests` — 아래 114-89에 확정 정의.
+
+### 114-88. 의상 606 등록 (2026-11-07 집) — commit `959ff9a8` (이전 `dacaf41f`)
+- 7개 카테고리, 번들 `la_garment_606_bundle.json`, 스크립트 `patch_la_garment_1_json.py`. 메타 categories added=7·keys added=606, **609 files changed**(프리셋 606 + 번들 + 패치 + 메타).
+| 카테고리 | 키 | 개수 |
+|---|---|---|
+| Bodycon Cutout | `la_bodycon_solo_001~132` | 132 |
+| School Uniform | `la_uniform_solo_001~132` | 132 |
+| Traditional and Sport Dress | `la_trad_solo_001~114` | 114 |
+| Monokini Structure | `la_monostr_solo_001~090` | 90 |
+| Full-Body Suit | `la_bsuit_solo_001~072` | 72 |
+| Costume Structure | `la_costruct_solo_001~036` | 36 |
+| Icon Costume | `la_icon_solo_001~030` | 30 |
+- 푸시 `dacaf41f..959ff9a8`. LF→CRLF 경고는 무시해도 됨.
+
+### 114-89. 애니 코스프레 얼굴 컷 246 등록 (2026-11-06~07) — commit `dacaf41f` (`dda88b0f..dacaf41f`)
+- 82개 스타일 × 단계 3 = 246. 키 `la_framecut_face_{real|mid|ani}_001~082`, 카테고리 `🏺 Living Artifact · Anime Cosplay {Real|Mid|Full} Face Formula`(3개), 번들 `la_framecut_anime_246_bundle.json`, 스크립트 `patch_la_anime_1_json.py`(실행 후 `patch_livingartifact_2_meta.py`), 메타 categories added=3·keys added=246, 249 files changed.
+- 스타일 82 = 세트별 F5·G10·H10·M6·B10·C10·A6·X5·N5·P5·S5·Q5(소스: `LumineX_Anime*_*.md` 얼굴 컷 샘플들을 `mk_anime_register.py`가 `styles`로 병합, id 예: F1 고딕 다크 판타지, B6 파스텔 트윈테일).
+- **단계 정의**: 눈 크기 문장 은행(EYEBANK: 3 얼굴 폭 절반 가까이 / 4 약 절반 / 5 절반 이상 / 6 절반 크게 초과 / 7 2/3 / 8 3/4 / 9 4/5) + 블러셔·코 문장 교체(`conv(src, eye_t, nose_t, band)`). **실사애니=P3**(눈 3·코 3, C8 비 오는 날 옐로·B1 온천 스팀은 **P3+**: 눈 4·코 3), **중간=P4**, **애니애니=스타일별 검증값 P5~P9**(`aa`).
+- **"anime" 단어 축소(실사·중간만)**: `anime heroine look`→`heroine look`, `flawless anime transformation`→`flawless cosplay transformation`(샘플에서는 `anime heroine cosplay costume`→`cosplay costume`도). 애니애니는 원래 문구 유지. 효과: 임산부 v2 8종이 1차 8/8, 실사애니 5 — 판정이 애매해 사용자가 "애니로 나오는 건 감수하고 케바케"로 정리.
+- **주얼리**: 귀 추 5종 금속(무쇠 40%·납/주석/금/은 35%·대형 일반 귀걸이 25%) + 실제 금속 목걸이. **애니애니는 추 계열 100%**(실측: 무쇠 38·다른 금속 44·대형 0). 실사·중간은 "anime" 평균 약 2개, 애니애니 약 4개.
+- 메타: group_size 1, aspect_ratio(3:4/2:3), format `anime-cosplay-face`, cut face, tier_label, tier(P3·P3+·P4·P5~P9), style, nat, jewelry, source_id. 생성기 `bk/mk_anime_register2.py`(주의: import하면 번들을 다시 쓴다).
+
+### 114-90. 애니 코스프레 가슴·허리·힙 컷 1,650 등록 (2026-11-07 집) — commit `c004116b` (`959ff9a8..c004116b`)
+- 결정(사용자 "한꺼번에 다 해"): **일반 체형만·임산부 체형만·혼합**을 허리 컷·힙 컷에, **일반(바스트) 체형을 가슴 컷**에, 솔로·그룹(듀오·트리오) 모두. 가슴 컷에는 임산부 없음(배가 안 보임). 임산부는 듀오·트리오까지만.
+- 번들 2개: `la_framecut_cuts_solo_1230_bundle.json`(1,230), `la_framecut_cuts_group_420_bundle.json`(420), 스크립트 `patch_la_cuts_1_json.py`(실행 후 메타 스크립트). 메타 새 카테고리 **9개**(`🏺 Living Artifact · Anime Cosplay {Real|Mid|Full} {Chest|Waist|Hip} Formula`), **1654 files changed**.
+- 키 규칙 `la_framecut_{chest|waist|hip}_{bust|std|preg|mix}_{solo|duo|trio}_{real|mid|ani}_{NNN}` — 가슴=bust(일반 바스트), 허리·힙=std(일반 19종)·preg(임산부 13종)·mix(혼합, 그룹만). 솔로: 컷×체형 5세트(chest-bust·waist-std·waist-preg·hip-std·hip-preg) × 82스타일 × 3단계 = 1,230(스타일당 체형 1개 고정, 3단계 공통). 그룹: 14세트(chest-bust 듀오·트리오 + waist/hip × std·preg·mix × 듀오·트리오) × 조합 10 × 3단계 = 420(조합당 스타일·체형이 3단계 공통, 한 장면 안에서 국적 중복 없음).
+- **체형 풀**: 일반 = Core Body 19종 검증 원문(`bodies19_clean.json`, 4개는 옛 조각에서 복원·부정문 긍정형 재작성), 임산부 = 검증 13종(`preg13.json`), 가슴 = 짧은 글래머 아워글래스 문장 + 바스트 3단계(풍만/아주 풍만/압도적, 한 장면 안 중복 없음). 혼합: 듀오는 임산부 1+일반 1, 트리오는 조합 번호가 홀수면 임산부 1·짝수면 2.
+- **의상**: 스타일마다 앞 지퍼 상의(기존 귀여운 풀 24종 + **이번에 새로 정한 58종**: `mk_reg_tops.py`의 NEWTOP) + 같은 소재·색 울트라 마이크로 비키니 하의(허리·힙 일반은 옆끈, **임산부는 배 곡선 아래로 낮게**), 가슴 컷은 상의만. 배경은 스타일 고유 배경(그룹은 첫 인물). 비율 3:4·`vertical portrait-orientation`.
+- 단계: 실사 P3(C8·B1은 P3+)·중간 P4·**솔로 애니애니는 스타일별 P5~P9, 그룹 애니애니는 P5 고정**. 주얼리: 솔로는 114-89와 같은 확률(애니애니 100% 추), 그룹은 컴팩트 추 3개씩. "anime" 단어 축소는 실사·중간만.
+- 검증(전부 통과): 한글·부정어·연속 중복 단어 0, a/an 관사 불일치 0, 인물 문단에 피부·코스프레 문장 잔여 0, "professional cosplayer" 1회, 그룹 인원 = group_size, 가슴·일반에 'pregnant' 0, 임산부 세트에 'pregnant' 전부 포함, 혼합은 항상 두 체형 포함, 키 1,650 고유. 단어 수 솔로 평균 약 800·그룹 평균 약 1,590(최대 약 2,080). **이미지 생성 시험은 안 한 번들**(샘플로는 허리·힙 혼합 8/8 1차, 일반+임산부 구성 확인).
+- 만들면서 고친 것: ① `an cosplay costume`(축소 치환 순서) ② 모음 국적 솔로 관사(`An Indian` 등) ③ 인물 문단에 피부 문장이 남던 변형("flesh and warmth", 정규식 `SKIN2`) ④ `mk_cute_group10.py` 등은 import 때 샘플을 다시 쓰므로 `ast`로 TOP·BODYU만 읽음 ⑤ `mk_anime_register.py`(v1)에는 `jewelry(force)`가 없어 로컬 복제.
+- 생성기(scratchpad `bk/`): `mk_reg_cuts.py`·`mk_reg_tops.py`(본체), 의존 `mk_anime_register.py`·`mk_mix_group.py`·`mk_sexy_group.py`·`mk_chest_group.py`·`mk_cute_group5.py`(TOP·BODYU)·`bodies19_clean.json`·`preg13.json`. 샘플용 `mk_cute_group11.py`(일반/임산부 분리)·`mk_cute_group12.py`(혼합, `build3`).
+
+### 114-91. 샘플 시험 결과 (2026-11-06~07, 상세는 메모리 `luminex-anime-face-tests`)
+- 가슴 컷은 실사 체형이 잘 안 먹어 "글래머 문장 + 바스트 3단계" 확정, 허리 컷 이하는 전체 체형 풀. 허리·힙 일반 19종 솔로~트리오는 전부 1차. 임산부 8종은 애니애니에서는 얼굴이 애니로 쏠려 실사애니(P3)+단어 축소로 확정. 바디아트(바디페인팅·이레즈미·금박·UV) 12→8종은 1차 2·3·4·7, 2차 8, 3차 5, 실패 1·6(이레즈미+바디페인팅 혼합이 의심 요인이나 미확인, UV는 불안정하지 않아 유지) — **바디아트 컷은 아직 번들 미제작**.
+- 일반+임산부 혼합 허리·힙 8종(실사애니 P3): **8/8 1차**. 얼굴이 인형 같거나 애니로 쏠리는 건 "다 케바케"로 둠(제미나이 변동).
+
+### 114-92. 이번 구간 등록 요약 (2026-11-06~07)
+| 번들 | 키 | 개수 | commit |
+|---|---|---|---|
+| 애니 코스프레 얼굴 컷 | `la_framecut_face_{real,mid,ani}_001~082` | 246 | `dacaf41f` |
+| 의상 7개 카테고리 | `la_{monostr,bodycon,bsuit,trad,icon,costruct,uniform}_solo_*` | 606 | `959ff9a8` |
+| 애니 가슴·허리·힙 컷(솔로+그룹) | `la_framecut_{chest,waist,hip}_*` | 1,650 | `c004116b` |
+- 합계 +2,502. 전체 합계는 `(Get-ChildItem presets\la_*.json).Count`로 실측할 것(이전 문서 마지막 확정 합계 20,810은 107장 시점이라 그 뒤 등록분이 더해져 있음). 새 카테고리는 총 **19개**(얼굴 3 + 의상 7 + 컷 9). 앱 표시 확인은 사용자 몫.
+
+### 114-93. 열린 과제 (2026-11-07)
+- **번들 대기(사용자가 "줘" 할 때)**: ① 구역 아트 이레즈미 ② 바디페인팅 패턴 풀 23종 4묶음(114-74) ③ 코스튬 6종(114-72) ④ 소재별 전신 슈트 풀(114-76) ⑤ 시스루 통과 8소재 재검증 후 정식 등록 ⑥ **애니 코스프레 바디아트(의상 없는) 허리·힙 컷** ⑦ 애니 코스프레 데미·쓰리쿼터·전신 컷 ⑧ 의상 그룹 New/혼합 번들(임산부 그룹은 3인까지) ⑨ 오리지널 원형·야한 원형 풀의 추가 활용.
+- 정리: 앱에서 새 카테고리 19개 표시 확인, 새 컷 번들(1,650)을 실제로 돌려 본 뒤 단계(실사/중간/애니애니)별 경향 확인, 핸드오프는 큰 작업이 끝났을 때만 레포에 올리고 루트에는 최신 한 개만 둠(v6_96은 이 파일로 대체).
+- 환경 메모: 생성기는 scratchpad `bk/`에 있어 세션 초기화 시 사라짐 — 마지막 백업 zip은 2026-10-06이므로 필요하면 새로 백업. 등록 절차는 114-86의 고정 절차와 같음.
