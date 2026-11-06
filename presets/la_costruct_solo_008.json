@@ -1,0 +1,27 @@
+{
+  "key": "la_costruct_solo_008",
+  "category": "🏺 Living Artifact · Costume Structure Formula",
+  "title": "Costume Structure 솔로 #008 · hourglass bombshell · 간호사 × 바디콘 원피스 · scuba crepe · 양팔 들기 · 미술관 · 글래스 스킨",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na luminous light-neutral complexion with a soft peach-beige undertone, late 30s goddess, hourglass bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — waist cinched to absolute impossible minimum, hips AND bust simultaneously flaring to absolute maximum, thighs pressing together, every curve maximized at once, shaggy layered deep burgundy hair — wearing a skin-tight micro nurse bodycon mini dress of ultra-thin matte crisp white scuba crepe with thin shoulder straps, a small red cross on the left of her chest and a thin red trim along the hem, the front zipper pulled down the center of her chest to her belly button, the two sides of the scuba crepe fully covering her bust, a plain ultra-high slit cut up the left side of the dress from the hem to her hip bone, the slit baring her whole left thigh and the side of her left hip, the hem ending just below her hip bones, a micro length hardly longer than a belt, her arms and legs bare, the scuba crepe shrink-wrapped onto her body like a second skin, fully opaque, her face and hands bare. Real photographic skin on her face, neck, arms, hands, stomach, thighs and legs, with visible pores and fine grain, fine peach-fuzz hairs and a faint natural flush on her cheeks and chest, a small beauty mark beside her navel and faint freckles on her chest V and the backs of her hands. The garments cling like a second skin and show real material behaviour: the thin scuba crepe molded so closely that it shows the soft relief of her collarbones, her hip bones and the gentle rise of her bust and hips, the small red cross and the thin red hem trim crisp against the white, the open slit falling in a clean line, a smooth pebbled crepe texture and fine stretch lines. Pose: three-quarter angle, one hand on the outer hip, the other raised overhead — most extreme hourglass bombshell silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, thigh-high platform stiletto boots made of glossy white leather, each with a razor-thin tapered heel a full forty inches tall and a twelve-inch hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, stiletto nails each as long as her whole hand, in white lacquer with a high polish.\nJewelry: a fine gold chain looped around her thigh above the knee, sculpted gold armbands high on both upper arms, and a wide gold waist chain resting over the carved curve of her hips. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Korean woman (East Asian Korean features: a slim V-line face with a small tapered chin and smooth forehead, large double-lidded eyes with soft fullness under them, a straight narrow nose bridge with a small rounded tip, softly full lips, gently straight eyebrows), an unmistakably feminine face with a calm, composed expression, makeup: dewy skin with a light highlighter on the cheekbones, a soft peach blush, juicy peach-tinted lips.\n\nBackground: a bright art museum atrium with a pale stone floor, tall blank white walls, a wide staircase of standard steps and a normal-height doorway, lit by natural light with soft shadows, the whole floor and surroundings clearly visible and in focus. ONE woman only. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. This is one single photograph taken with one camera at one moment, shot on a medium format camera with an 85mm lens at f/5.6, realistic photographic grain, a real photograph. Portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "costume-structure",
+    "family": "Costume Structure",
+    "outfit": "간호사 × 바디콘 원피스 · scuba crepe",
+    "physiques": [
+      "hourglass bombshell"
+    ],
+    "ethnicity": [
+      "Korean"
+    ],
+    "poses": [
+      "three-quarter angle, one hand on the outer hip, the other raised overhead"
+    ],
+    "background": "art_museum",
+    "weather": null,
+    "heel_mode": "forty",
+    "jewelry": true,
+    "design_source": "LumineX_Costume_Struct_6#1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "key": "la_uniform_solo_024",
+  "category": "🏺 Living Artifact · School Uniform Formula",
+  "title": "School Uniform 솔로 #024 · glamour hourglass · 스카프 탑 × 스카프 + 금 핀 + 포레스트 그린 · modal jersey · 손 허리 · 고층빌딩 광장 · 코갸루",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\na luminous warm-ivory complexion, early 20s goddess, glamour hourglass physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — a stunning hourglass figure, far more dramatically curved than any ordinary woman; a full, rounded bust, a dramatically narrow, sharply cinched waist with a deep shadowed groove running around her middle, and wide, curvaceous hips flaring well beyond her shoulders, soft rounded thighs, toned but soft arms; not thin, not androgynous, not boyish, not a straight figure; her arms, hands, legs and feet stay in correct proportion to each other, voluminous curls jet-black hair — wearing a skin-tight micro school uniform set, a scarf top made from a navy-bordered white triangular school scarf of ultra-thin matte crisp white modal jersey folded around her bust, tied behind her neck and back, with its front corners knotted at the center of her chest under a small gold school pin and the two short ends hanging down, her shoulders, arms and midriff bare, and a micro pleated skirt of ultra-thin matte forest-green modal jersey with a thin white stripe along the hem, sitting at the top of her hip bones with a plain ultra-high slit up the left side from the hem to her hip bone, with the hem ending just below her hip bones. Real photographic skin on her face, neck, arms, hands, stomach, thighs and legs, with visible pores and fine grain, fine peach-fuzz hairs and a faint natural flush on her cheeks and chest, a light scatter of faint freckles across her shoulders and upper arms and fine blue-green veins on the backs of her hands. The garments cling like a second skin and show real material behaviour: the thin modal jersey molded so closely that it shows the soft relief of her collarbones, her hip bones and the gentle rise of her bust and hips, the soft matte drape of the white modal jersey against her bare shoulders and the crisp pleats of the skirt, fine stretch lines and a soft powdery matte finish. Pose: full frontal wide stance, both fists pressing outer hips outward to absolute maximum — most extreme glamour hourglass silhouette ever displayed.\nFootwear: heels of the most absurdly extreme height imaginable, strappy platform stiletto sandals made of glossy forest green leather, each with a razor-thin tapered heel taller than her entire shin from ankle to knee and a towering hidden front platform, her feet arched fully vertical on the very tips of her toes like a dancer on pointe, her legs stretched impossibly long and her whole body lifted far above the ground on them as if standing on stilts.\nNails: the longest nails physically imaginable, almond nails each longer than her middle finger, in forest green lacquer with a high polish.\nJewelry: a delicate silver body chain draped across her collarbones and down her torso, a long layered gold necklace falling between her breasts, and a pearl choker and a long strand of pearls hanging low on her chest. Jewelry is metal and pearl only, worn on the body, nothing added to her face or ears.\nFace: her face is bare of any garment — real living flesh with real pores, a soft sheen of natural oils and bright real catchlights, the face of a real Chinese woman (East Asian Chinese features: a longer oval face with prominent high cheekbones and a defined jawline, long upturned phoenix-shaped eyes with sharp inner folds, a high strong nose bridge, thin arched eyebrows with a slight rise, balanced lips), an unmistakably feminine face with a calm, composed expression, makeup: clearly visible, bold and well defined: bold white eyeshadow across the lids, white glossy lips, a bright turquoise liner accent at the outer corners, long lashes, large eyes with bright real catchlights.\n\nBackground: a sunny plaza at the foot of glass skyscrapers with pale paving, a low fountain edge, standard-height glass doors and benches, under a soft overcast sky with gentle diffused light, lit by natural light with soft shadows, the whole floor and surroundings clearly visible and in focus. ONE woman only. Full-length wide shot from a moderate distance with the camera at waist height, the whole figure from the soles of the boots to the top of her head completely visible, with the door, railing or steps beside her at normal human scale so the extreme heel height reads at a glance, the towering heels clearly separating the boot soles from the floor. This is one single photograph taken with one camera at one moment, shot on a medium format camera with an 85mm lens at f/5.6, realistic photographic grain, a real photograph. Portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "school-uniform",
+    "family": "School Uniform",
+    "outfit": "스카프 탑 × 스카프 + 금 핀 + 포레스트 그린 · modal jersey",
+    "physiques": [
+      "glamour hourglass"
+    ],
+    "ethnicity": [
+      "Chinese"
+    ],
+    "poses": [
+      "full frontal wide stance, both fists pressing outer hips outward to absolute maximum"
+    ],
+    "background": "skyscraper_plaza",
+    "weather": "흐린 낮",
+    "heel_mode": "relative",
+    "jewelry": true,
+    "design_source": "LumineX_Uniform_TopTypes_10#7"
+  }
+}
