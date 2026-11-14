@@ -1,0 +1,22 @@
+{
+  "key": "la_regmix_solo_027",
+  "category": "🏺 Living Artifact · Region Mix Formula",
+  "title": "영역 믹스 솔로 #027 · 블루블랙·검정 배경 고정 매체+명화 믹스 · 동심원·매끈 · 5영역(클림트+마티스+수채+반 고흐+미로) · amazon bombshell · 왼 힙 팝 · 블루블랙 · 배경 검정 스튜디오 · 메이크업 없음(블루블랙)",
+  "prompt": "Professional fashion photograph, full body shot. ONE woman standing.\n\nTHE ABSOLUTE DARKEST BLACK SKIN ON EARTH blue-black void complexion darker than night sky, early 20s goddess, amazon bombshell physique THE MOST EXTREME PHYSICALLY POSSIBLE beyond all anatomy limits — impossibly tall commanding frame with simultaneously the most massive full-figure curves, enormous powerful presence dominating the entire frame top to bottom, legs endlessly long massively thick and powerful, high ponytail swept sleek — her body is painted in 5 different painting styles at once, each style claiming its own region of her figure. Her figure is divided into 5 concentric regions around a single centre point located about 50% of the way down her figure from the top on the centre line of her figure, separated by 4 hazy ring-shaped transition zones at about 19%, 49%, 78% and 91% of the way out from that centre point to the farthest edge of her figure. Region 1 is the innermost core around the centre point: it carries Klimt style golden spirals and mosaic squares with ornate gold, black and green geometric ornaments. Region 2 is the ring between transition zone 1 and transition zone 2: it carries Matisse style paper cut-out shapes, bold seaweed-like leaf forms in flat cobalt blue, coral and yellow. Region 3 is the ring between transition zone 2 and transition zone 3: it carries translucent watercolour washes in rose and cerulean with pooled edges and thin downward drips. Region 4 is the ring between transition zone 3 and transition zone 4: it carries Van Gogh Starry Night style swirling thick brushstrokes in deep ultramarine, cobalt and glowing yellow, big spiralling skies flowing over her curves. Region 5 is the outermost region beyond the last ring: it carries Miro style playful biomorphic shapes, stars and curling black lines on flat primary colour fields. Where two regions meet, the two neighbouring paintings blend along the edge: brushwork of one reaches into the other and the two styles simply touch, so the boundary is made only of the two neighbouring paintings, with no gap between them. Each transition zone follows a smooth, even, perfectly circular course, every painting laid on her own living skin and covering her completely from neck to ankle. Her face and ears stay real living blue-black skin with visible pores, fine peach-fuzz hairs and a soft natural flush. Pose: strong hip pop left, both hands pressing outer hips outward arching back to extreme, every region clearly visible to the camera — most extreme amazon bombshell silhouette ever displayed.\nextreme platform stiletto heels of real glossy patent leather, each in a main colour of whichever painting that leg falls in, and extra long nails each polished in a main colour of whichever painting that hand falls in.\n\nMANDATORY pure pitch black void background only, absolutely NO studio backdrop NO texture NO grey NO gradient. ONE woman only. Extreme macro detail on every brush stroke and every blended transition. Pattern density MAXIMUM — every inch from neck to ankle filled with painting. 8K portrait 2:3 aspect ratio.",
+  "meta": {
+    "group_size": 1,
+    "aspect_ratio": "2:3",
+    "format": "region-mix",
+    "family": "Region Mix",
+    "pregnant": false,
+    "outfit": "블루블랙·검정 배경 고정 매체+명화 믹스 · 동심원·매끈 · 5영역(클림트+마티스+수채+반 고흐+미로)",
+    "pattern": "매체+명화 믹스(블루블랙·검정 배경)",
+    "category_group": "매체+명화 믹스(블루블랙·검정 배경)",
+    "physique": "amazon bombshell",
+    "ethnicity": "블루블랙",
+    "background": "검정 스튜디오",
+    "pose": "왼 힙 팝",
+    "gender": "all female",
+    "source_sample": "LumineX_RegionMix_FullRandom_10.md"
+  }
+}
